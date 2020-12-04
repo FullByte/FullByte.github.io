@@ -1,22 +1,10 @@
-# Welcome to MkDocs
+# Welcome to 0xfab1
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Hi internet stranger,
 
-## Commands
+this website is dedicated to the notes and lists I made, code i have written, copied or modified, things i created, modified or repaired and basically anything I find of interest.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+I hope you enjoy the content and found your visit worthwhile :)
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-
-
-## Test
-
-test
+Regards,
+0xfab1
