@@ -1,18 +1,7 @@
-# FullByte.github.io -> 0xfab1.net
-
-<p>
-  <a href="https://github.com/FullByte/FullByte.github.io/actions"><img
-    src="https://github.com/FullByte/FullByte.github.io/workflows/mkdocs%20gh-deploy/badge.svg?branch=master"
-    alt="Build Status"
-  /></a>
-  <a href="https://gitter.im/FullByte/community"><img 
-    src="https://badges.gitter.im/FullByte.github.io.svg"
-    alt="Chat on Gitter"
-  /></a>
-</p>
-
 ![mkdocs gh-deploy](https://github.com/FullByte/FullByte.github.io/workflows/mkdocs%20gh-deploy/badge.svg?branch=master)
+[![Chat on Gitter](https://badges.gitter.im/FullByte.github.io.svg)](https://gitter.im/FullByte/community/)
 
+# FullByte.github.io -> 0xfab1.net
 
 My personal wiki based on markdown files.
 Visit <https://0xfab1.net/> for online view.
