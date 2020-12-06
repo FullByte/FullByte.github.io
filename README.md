@@ -4,6 +4,6 @@
 My personal wiki based on markdown files.
 Visit <https://0xfab1.net/> for online view.
 
-This website is dedicated to the notes and lists I made, code i have written, copied or modified, things i created, modified or repaired and basically anything I find of interest.
+This website is dedicated to the notes and lists I made, code I have written, copied, or modified, things I created, modified, or repaired and basically anything I find of interest.
 
-Built with mkdocs, material theme, github pages and github actions.
+Built with [MkDocs](https://github.com/mkdocs/mkdocs/), [Material](https://github.com/squidfunk/mkdocs-material), [GitHub Pages](https://pages.github.com/) and [GitHub Actions](https://github.com/features/actions).
