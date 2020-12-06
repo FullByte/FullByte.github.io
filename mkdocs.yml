@@ -26,3 +26,6 @@ shortcuts:
   next: 78     # n
   previous: 80 # p
   search: 83   # s
+google_analytics:
+  - UA-33862817-3
+  - auto
