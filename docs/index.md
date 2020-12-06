@@ -1,6 +1,6 @@
-# Welcome to 0xfab1
+# Welcome
 
-Hi internet stranger,
+Hi Internet stranger,
 
 this website is dedicated to the notes and lists I made, code i have written, copied or modified, things i created, modified or repaired and basically anything I find of interest.
 

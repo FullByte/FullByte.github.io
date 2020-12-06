@@ -1,4 +1,4 @@
-# OpenSSL Examples
+# OpenSSL
 
 Examples using OpenSSL
 

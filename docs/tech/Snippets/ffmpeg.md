@@ -1,4 +1,4 @@
-# FFmpeg Examples
+# FFmpeg
 
 FFmpeg is a great tool and here are some examples.
 

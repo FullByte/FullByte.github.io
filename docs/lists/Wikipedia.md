@@ -1,4 +1,4 @@
-# List of interesting Wikipedia pages
+# Wikipedia
 
 I occasionally find interesting wikipedia pages and collect them here to share and store them in a central place.
 

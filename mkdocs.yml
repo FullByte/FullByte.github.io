@@ -1,1 +1,28 @@
 site_name: "0xfab1"
+site_url: https://0xfab1.net
+repo_url: https://github.com/FullByte/FullByte.github.io
+site_description: 
+site_author: 
+theme:
+  name: material
+  language: en
+  palette:
+    scheme: slate
+    primary: green
+    accent: yellow
+  font: false
+  highlightjs: true
+  favicon: icons/favicon.ico
+  icon:
+    logo: logo
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/zerogdoubled
+    - icon: fontawesome/brands/github
+      link: https://github.com/FullByte
+shortcuts:
+  help: 191    # ?
+  next: 78     # n
+  previous: 80 # p
+  search: 83   # s
