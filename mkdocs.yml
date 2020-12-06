@@ -10,7 +10,6 @@ theme:
     scheme: slate
     primary: green
     accent: yellow
-  font: false
   highlightjs: true
   favicon: icons/favicon.ico
   icon:
@@ -26,6 +25,3 @@ shortcuts:
   next: 78     # n
   previous: 80 # p
   search: 83   # s
-google_analytics:
-  - UA-33862817-3
-  - auto
