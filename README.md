@@ -1,8 +1,6 @@
 ![mkdocs gh-deploy](https://github.com/FullByte/FullByte.github.io/workflows/mkdocs%20gh-deploy/badge.svg?branch=master)
 [![Chat on Gitter](https://badges.gitter.im/FullByte.github.io.svg)](https://gitter.im/FullByte/community/)
 
-# FullByte.github.io -> 0xfab1.net
-
 My personal wiki based on markdown files.
 Visit <https://0xfab1.net/> for online view.
 
