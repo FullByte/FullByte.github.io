@@ -3,6 +3,7 @@
 ## DNS Server
 
 A list of public DNS Servers
+
 |Provider|Primary DNS Server|Secondary DNS Server|
 |---|---|---|
 |OpenDNS|208.67.222.222|208.67.220.220|
@@ -28,6 +29,9 @@ A list of public DNS Servers
 |CCC|213.73.91.35||
 
 ## TTL as OS identifier
+
+There is a chance to guess the OS based on its TTL.
+Here is an overview:
 
 |OS | Version | Protocol | TTL |
 |------|---------|----|-----|
