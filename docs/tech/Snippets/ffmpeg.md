@@ -26,6 +26,22 @@ More details: <https://trac.ffmpeg.org/wiki/Encode/H.264>
 ffmpeg -i input.avi -c:v libx264 -preset slow -crf 15 output.mkv
 ```
 
+## Save video to share with Whatsapp
+
+If it doesn't work possibly max size is reached.
+
+With sound:
+
+```shell
+ffmpeg -i obc_input.mkv -vf -an scale=960x540 whatsapp.mp4
+```
+
+No sound:
+
+```shell
+ffmpeg -i obc_input.mkv -vf -an scale=960x540 whatsapp.mp4
+```
+
 ## Save as AV1
 
 ### Pass 1
