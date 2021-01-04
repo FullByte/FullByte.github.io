@@ -41,7 +41,7 @@ Die DJI Mini 2 gehört in die Kategorie "C0".
 
 ### Tools und Infos
 
-- Droniq ist eine digitale Plattform für die unbemannte Luftfahrt: <https://droniq.de/>
+- DronIQ ist eine digitale Plattform für die unbemannte Luftfahrt: <https://droniq.de/>
 - Air&More AT: <https://airandmore.at/>
 - Drohnen.de: <https://www.drohnen.de>
 
@@ -50,4 +50,3 @@ Die DJI Mini 2 gehört in die Kategorie "C0".
 - DJI Mini 2 official page: <https://www.dji.com/de/mini-2>
 - DJI Mini 2 app: <https://www.dji.com/de/downloads/djiapp/dji-fly>
 - DJI Mini 2 Support: <https://www.dji.com/de/support/product/mini-2>
-
