@@ -4,16 +4,16 @@ Examples using youtube-dl
 
 ## YouTube video download
 
-Download to a specific location:
+Download to a specific location in best quality:
 
 ```shell
-youtube-dl -o 'path' '<youtube-link>'
+youtube-dl -f 22 -o 'path' '<youtube-link>'
 ```
 
 Download with details:
 
 ```shell
-youtube-dl --write-description --write-info-json --write-annotations --write-sub --write-thumbnail '<youtube-link>'
+youtube-dl -f 22 --write-description --write-info-json --write-annotations --write-sub --write-thumbnail '<youtube-link>'
 ```
 
 ## YouTube Playlists
@@ -21,7 +21,7 @@ youtube-dl --write-description --write-info-json --write-annotations --write-sub
 Download a playlist:
 
 ```shell
-youtube-dl -i --prefer-ffmpeg --yes-playlist '<playlist-link'
+youtube-dl -f 22 -i --prefer-ffmpeg --yes-playlist '<playlist-link'
 ```
 
 Download a playlist with audio only:
