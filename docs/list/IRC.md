@@ -3,8 +3,8 @@
 ## Server/Channel
 
 - [freenode#crypto](irc://irc.freenode.net:+7000/#crypto "irc://irc.freenode.net:+7000/##crypto")
-- [darkscience-us2](irc://irc-eu-2.darkscience.net/#darkscience "irc://irc-eu-2.darkscience.net/#darkscience")
-- [darkscience-eu](irc://irc-us-east-2.darkscience.net#darkscience "irc://irc-us-east-2.darkscience.net#darkscience")
+- [darkscience-us2](irc://irc-eu-2.darkscience.net/#darkscience "irc://irc-eu-2.darkscience.net/darkscience")
+- [darkscience-eu](irc://irc-us-east-2.darkscience.net/#darkscience "irc://irc-us-east-2.darkscience.net/darkscience")
 - [freenode](ircs://chat.freenode.net:6697/#infra-talk "ircs://chat.freenode.net:6697/#infra-talk")
 - [cyberia](ircs://irc.cyberia.is:6697/#cyberia "ircs://irc.cyberia.is:6697/#cyberia")
 - [geekshed](irc://eu.geekshed.net:+6697 "irc://eu.geekshed.net:+6697")

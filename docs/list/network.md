@@ -11,7 +11,6 @@ A list of public DNS Servers
 |Verisign|64.6.64.6|64.6.65.6|
 |Google|8.8.8.8|8.8.4.4|
 |Quad9|9.9.9.9|149.112.112.112|
-|DNS.WATCH5|84.200.69.80|84.200.70.40|
 |Comodo DNS|8.26.56.26|8.20.247.20|
 |OpenDNS Home|208.67.222.222|208.67.220.220|
 |Norton ConnectSafe|199.85.126.10|199.85.127.10|
@@ -27,6 +26,8 @@ A list of public DNS Servers
 |Hurricane Electric|74.82.42.42| ||
 |puntCAT|109.69.8.51||
 |CCC|213.73.91.35||
+|anycast censurfridns|91.239.100.100|89.233.43.71|
+|dns.watch|84.200.69.80|84.200.70.40|
 
 ## TTL as OS identifier
 
