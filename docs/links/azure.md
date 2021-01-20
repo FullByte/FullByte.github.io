@@ -88,10 +88,6 @@ A selection of Microsoft Learning Paths:
 - Germany: <https://www.microsoft.com/en-us/download/confirmation.aspx?id=54770>
 - Default: <https://www.microsoft.com/en-us/download/confirmation.aspx?id=41653>
 
-### ServiceNow Links
-
-- ServiceNow Showroom Instance: <https://showroomproserviade.service-now.com/navpage.do>
-
 ### Azure Service Links (Placeholder)
 
 - Websites: <https://yourwebsite.scm.azurewebsites.net/>
@@ -134,11 +130,13 @@ Other Sources:
 
 Overview of links to regularly check to stay up-to-date on Azure.
 
-- AzureTipsAndTricks: <https://microsoft.github.io/AzureTipsAndTricks>
+- Azure Tips And Tricks: <https://microsoft.github.io/AzureTipsAndTricks>
 - Azure Case Studies: <https://azure.microsoft.com/de-de/case-studies/>
 - Heise Azure News: <https://www.heise.de/suche/?q=azure&search_submit.x=0&search_submit.y=0&rm=search>
-- Hacker News Azure Filter: <https://hn.algolia.com/?query=azure&sort=byPopularity&prefix&page=0&dateRange=pastYear&type=all>
+- Hacker News Azure: <https://hn.algolia.com/?query=azure&sort=byPopularity&prefix&page=0&dateRange=pastYear&type=all>
 - Azure Update heat map: <https://azurecharts.com/>
+- Cloud News: <https://www.cloudnews.dev/>
+- Sapico Cloudnews: <http://cloudnews.sapico.me/>
 
 ### Blogs and Feeds
 
