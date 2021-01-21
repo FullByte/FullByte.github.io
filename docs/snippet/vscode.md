@@ -1,4 +1,4 @@
-# Setup Powershell
+# VScode
 
 ## Install
 
@@ -7,7 +7,7 @@ Install the latest version of git from here: <https://git-scm.com/download/win>
 
 ## Install Recommended Extensions
 
-### Recommended
+### Recommended Extensions
 
 - AwesomeAutomationTeam.azureautomation
 - AzurePolicy.azurepolicyextension
@@ -54,6 +54,6 @@ Install the latest version of git from here: <https://git-scm.com/download/win>
 - esbenp.prettier-vscode
 - vscode-icons-team.vscode-icons
 
-## User Guthub or Mircosoft Account to Sync settings
+## User Github or Microsoft Account to Sync settings
 
 If you want to restore your settings or use VSCode on multiple machines consider syncing the VSCode settings such as extensions, settings, snippets, keyboard shortcuts and UI states.

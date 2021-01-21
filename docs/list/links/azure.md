@@ -1,4 +1,4 @@
-# Azure Links
+# Azure
 
 A list of azure tools, links to learn azure and news sources.
 
