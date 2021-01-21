@@ -1,6 +1,6 @@
 # Switch Games
 
-A list of nintendo switch games i have.
+A list of nintendo switch games I have and play.
 
 Game|Local Player|Comment|
 -|-|-|
@@ -135,3 +135,44 @@ Worms W.M.D|4|
 Xeodrifter|1|
 Yoku's Island Express|1|
 Zen Pinball|1|
+Little Racer||
+Creature in the Well||
+Tricky Towers||
+Odium to the Core||
+Super Meat Boy Forever||
+Destropolis||
+Crypt of the NecroDancer||
+CARRION||
+GONNER2||
+Oddworld: New 'n' Tasty||
+Crawl||
+SpeedRunners||
+Bite the Bullet||
+Astro Bears||
+RunGunJumpGun||
+Mo:Astray||
+Slain: Back From Hell||
+Spinch||
+Sayonara Wild Hearts||
+FAST RMX||
+Duke Nukem 3D||
+Guacamelee!||
+Guacamelee! 2||
+Shovel Knight Showdown||
+Splasher||
+Down to Hell||
+Völgarr the Viking||
+Giana Sisters: Twisted Dreams||
+Just Dance 2020||
+Feudal Alloy||
+PAC-MAN Championship Edition 2 PLUS||
+DOOM 64||
+Fe||
+Transistor||
+The Stretchers||
+Little Nightmares||
+Gunbrick: Reloaded||
+Death Road to Canada||
+Pikuniku||
+The First Tree||
+X-Morph: Defense||
