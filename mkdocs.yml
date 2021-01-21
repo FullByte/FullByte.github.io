@@ -20,6 +20,8 @@ extra:
       link: https://twitter.com/zerogdoubled
     - icon: fontawesome/brands/github
       link: https://github.com/FullByte
+markdown_extensions:
+  - pymdownx.inlinehilite
 shortcuts:
   help: 191    # ?
   next: 78     # n
