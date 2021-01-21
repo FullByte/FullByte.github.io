@@ -2,11 +2,11 @@
 
 ## Setup Powershell (Admin Rights required)
 
-1. Install [Powershell 7](https://github.com/PowerShell/powershell/releases)
+**1. Install [Powershell 7](https://github.com/PowerShell/powershell/releases)**
 
 A guide to follow is available here: https://docs.microsoft.com/de-de/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7
 
-2. Update [PowerShellGet](https://github.com/Azure/azure-powershell):
+**2. Update [PowerShellGet](https://github.com/Azure/azure-powershell):**
 
 ```powershell
 Install-PackageProvider -Name NuGet -Forces -scope AllUsers
@@ -14,7 +14,7 @@ Install-Module -Name PowerShellGet -Force -scope AllUsers
 Update-Module -Name PowerShellGet -scope AllUsers
 ```
 
-3. Install Module for Azure
+**3. Install Module for Azure**
 
 Install the AZ Powershell Module, AzureAD and PSScriptAnalyzer with this command:
 
@@ -117,19 +117,19 @@ $Error[0].Exception | fl * -force
 For example Az modules can be installed in various versions when updated.
 Follow these three steps to update, find old modules and delete all but the latest:
 
-1. Update Az.Modules:
+**1. Update Az.Modules:**
 
 ```powershell
 Update-Module -Name Az
 ```
 
-2. Find out what versions you have installed:
+**2. Find out what versions you have installed**
 
 ```powershell
 Get-InstalledModule -Name Az -AllVersions | Select-Object -Property Name, Version
 ```
 
-3. Delete the older Module (or all and start over)
+**3. Delete the older Module (or all and start over)**
 
 Install the module "Az.Tools.Installer" to be able to delete an older Az Module version:
 
