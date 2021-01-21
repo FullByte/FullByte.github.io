@@ -4,47 +4,58 @@ A list of azure tools, links to learn azure and news sources.
 
 ## Tools
 
-- Overviews
-  - VM Chooser: <https://www.vmchooser.com/>
-  - Azure Speed: <https://www.azurespeed.com>
-  - ARM Visualizer: <http://armviz.io/>
-  - Azure Charts: <https://azurecharts.com/>
-  - Azure Services: <https://azureservices.io/>
-  - Azure Portals: <https://msportals.io/>
-  - Azure DC Map: <https://build5nines.com/map-azure-regions/>
-  - Release and change tracking on Azure Governance capabilities: <https://www.azadvertizer.net/>
-- Comparing Cloud Solutions:
-  - Comparing Azure and WS Services: <https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services#>
-  - AWS vs Azure: <https://docs.microsoft.com/en-us/azure/architecture/aws-professional/index>
-  - Cloud Comparison: <https://www.rightscale.com/cloud-comparison-tool/>
-- Dev Tools
-  - Scrumpoker: <https://planningpokeronline.com/>
-  - DevOps: <https://app.vssps.visualstudio.com>
-  - Azure CLI (online) <https://shell.azure.com/powershell>
-  - Azure DevOps Demo Generator: <https://azuredevopsdemogenerator.azurewebsites.net/>
-  - Package search for .NET Core packages: <http://packagesearch.azurewebsites.net/>
-  - Resource Explorer Online: <https://resources.azure.com/>
-  - Azure Building Blocks: Simplifying Resource Deployment: <https://github.com/mspnp/template-building-blocks>
-- Database Helper
-  - Azure Cosmos DB Account Settings: <https://cosmos.azure.com/capacitycalculator/>
-  - Documentdb Capacity Planner: <https://www.documentdb.com/capacityplanner>
-  - DB Migration: <https://datamigration.microsoft.com/>
+**Overviews**
+
+- VM Chooser: <https://www.vmchooser.com/>
+- Azure Speed: <https://www.azurespeed.com>
+- ARM Visualizer: <http://armviz.io/>
+- Azure Charts: <https://azurecharts.com/>
+- Azure Services: <https://azureservices.io/>
+- Azure Portals: <https://msportals.io/>
+- Azure DC Map: <https://build5nines.com/map-azure-regions/>
+- Release and change tracking on Azure Governance capabilities: <https://www.azadvertizer.net/>
+
+**Comparing Cloud Solutions**
+
+- Comparing Azure and WS Services: <https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services#>
+- AWS vs Azure: <https://docs.microsoft.com/en-us/azure/architecture/aws-professional/index>
+- Cloud Comparison: <https://www.rightscale.com/cloud-comparison-tool/>
+
+**Dev Tools**
+
+- Scrumpoker: <https://planningpokeronline.com/>
+- DevOps: <https://app.vssps.visualstudio.com>
+- Azure CLI (online) <https://shell.azure.com/powershell>
+- Azure DevOps Demo Generator: <https://azuredevopsdemogenerator.azurewebsites.net/>
+- Package search for .NET Core packages: <http://packagesearch.azurewebsites.net/>
+- Resource Explorer Online: <https://resources.azure.com/>
+- Azure Building Blocks: Simplifying Resource Deployment: <https://github.com/mspnp/template-building-blocks>
+
+**Database Helper**
+
+- Azure Cosmos DB Account Settings: <https://cosmos.azure.com/capacitycalculator/>
+- Documentdb Capacity Planner: <https://www.documentdb.com/capacityplanner>
+- DB Migration: <https://datamigration.microsoft.com/>
 - Pricing
-  - Azure Price :<https://azureprice.net/>
-  - Pricing Calculator: <https://azure.microsoft.com/en-us/pricing/calculator/>
-  - Total Cost of Ownership: <https://azure.microsoft.com/en-us/pricing/tco/calculator/>
-- IP ranges
-  - Search IPs online: <https://azureipranges.azurewebsites.net/>
-  - Public: <https://www.microsoft.com/download/details.aspx?id=56519>
-  - AzureGovernment: <https://www.microsoft.com/download/details.aspx?id=57063>
-  - China: <https://www.microsoft.com/download/details.aspx?id=57062>
-  - AzureGermany: <https://www.microsoft.com/download/details.aspx?id=57064>
-- Service Status
-  - M365 Status: <https://admin.microsoft.com/AdminPortal/Home#/servicehealth>
-  - Azure Status: <https://status.azure.com/de-de/status>
-    - Azure Status History: <https://status.azure.com/de-de/status/history/>
-  - DevOps Status: <https://status.dev.azure.com/>
-    - DevOps Status History: <https://status.dev.azure.com/_history>
+- Azure Price :<https://azureprice.net/>
+- Pricing Calculator: <https://azure.microsoft.com/en-us/pricing/calculator/>
+- Total Cost of Ownership: <https://azure.microsoft.com/en-us/pricing/tco/calculator/>
+
+**IP ranges**
+
+- Search IPs online: <https://azureipranges.azurewebsites.net/>
+- Public: <https://www.microsoft.com/download/details.aspx?id=56519>
+- AzureGovernment: <https://www.microsoft.com/download/details.aspx?id=57063>
+- China: <https://www.microsoft.com/download/details.aspx?id=57062>
+- AzureGermany: <https://www.microsoft.com/download/details.aspx?id=57064>
+
+**Service Status**
+
+- M365 Status: <https://admin.microsoft.com/AdminPortal/Home#/servicehealth>
+- Azure Status: <https://status.azure.com/de-de/status>
+- Azure Status History: <https://status.azure.com/de-de/status/history/>
+- DevOps Status: <https://status.dev.azure.com/>
+- DevOps Status History: <https://status.dev.azure.com/_history>
 
 ## Architecture
 
@@ -79,23 +90,21 @@ A list of azure tools, links to learn azure and news sources.
 
 ## Learning Azure
 
-General Azure Training Sites
+Azure Training Sites
 
-- Microsoft:
-  - Microsoft Learning: <https://docs.microsoft.com/en-us/learn/azure/>
-  - Azure Online-Training <https://www.microsoft.com/de-de/learning/azure-skills-training.aspx>
-  - Certification Overview: <https://docs.microsoft.com/de-de/learn/certifications/browse/>
-  - AzureAcadamy: <https://www.youtube.com/c/AzureAcademy/videos>
-- Other offers:
-  - Pluralsight: <https://app.pluralsight.com>
-  - Certbase <https://www.certbase.de/>
-  - Fastlane: <https://www.fastlane.live/de_en>
-  - Skillpipe: <https://www.Skillpipe.com>
-  - Whizlabs: <https://www.whizlabs.com/>
-  - Midhub: <https://www.mindhub.com/>
-  - Udemy Azure Courses: <https://www.udemy.com/topic/microsoft-azure/>
-  - Cloud Security based training: <http://flaws.cloud/>
-  - CS349D: Cloud Computing Technology: <https://web.stanford.edu/class/cs349d/>
+- Microsoft Learning: <https://docs.microsoft.com/en-us/learn/azure/>
+- Azure Online-Training <https://www.microsoft.com/de-de/learning/azure-skills-training.aspx>
+- Certification Overview: <https://docs.microsoft.com/de-de/learn/certifications/browse/>
+- AzureAcadamy: <https://www.youtube.com/c/AzureAcademy/videos>
+- Pluralsight: <https://app.pluralsight.com>
+- Certbase <https://www.certbase.de/>
+- Fastlane: <https://www.fastlane.live/de_en>
+- Skillpipe: <https://www.Skillpipe.com>
+- Whizlabs: <https://www.whizlabs.com/>
+- Midhub: <https://www.mindhub.com/>
+- Udemy Azure Courses: <https://www.udemy.com/topic/microsoft-azure/>
+- Cloud Security based training: <http://flaws.cloud/>
+- CS349D: Cloud Computing Technology: <https://web.stanford.edu/class/cs349d/>
 
 ### Microsoft Learning Paths
 
