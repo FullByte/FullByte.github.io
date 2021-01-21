@@ -32,7 +32,7 @@ To update all modules run this command:
 Update-Module -scope AllUsers
 ```
 
-## Test AZ Module
+## Test AZ Module (Azure)
 
 Best way to test if the AZ-Module is installed and to get started login to your Azure Tenant with this command:
 If your Azure powershell commands don't work check the following:

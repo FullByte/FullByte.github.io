@@ -1,4 +1,4 @@
-# Setup Cloud Shell
+# Setup Azure Cloud Shell
 
 The azure cloud shell can be accessed using this link: <https://shell.azure.com/>
 

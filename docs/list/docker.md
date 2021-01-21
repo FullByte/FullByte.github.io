@@ -78,3 +78,14 @@ docker run -d --name ipfs_host -v $ipfs_staging:/export -v $ipfs_data:/data/ipfs
 docker exec ipfs_host ipfs swarm peers
 docker logs -f ipfs_host
 ```
+
+## Matrix Synapse
+
+Sources:
+
+- <https://registry.hub.docker.com/r/matrixdotorg/synapse/>
+
+```shell
+docker pull matrixdotorg/synapse
+docker run -it --rm --mount type=volume,src=synapse-data,dst=/data -e SYNAPSE_SERVER_NAME=my.matrix.host -e SYNAPSE_REPORT_STATS=yes matrixdotorg/synapse:latest generate
+```
