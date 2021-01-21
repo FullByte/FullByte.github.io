@@ -39,6 +39,12 @@ A list of azure tools, links to learn azure and news sources.
   - AzureGovernment: <https://www.microsoft.com/download/details.aspx?id=57063>
   - China: <https://www.microsoft.com/download/details.aspx?id=57062>
   - AzureGermany: <https://www.microsoft.com/download/details.aspx?id=57064>
+- Service Status
+  - M365 Status: <https://admin.microsoft.com/AdminPortal/Home#/servicehealth>
+  - Azure Status: <https://status.azure.com/de-de/status>
+    - Azure Status History: <https://status.azure.com/de-de/status/history/>
+  - DevOps Status: <https://status.dev.azure.com/>
+    - DevOps Status History: <https://status.dev.azure.com/_history>
 
 ## Architecture
 
