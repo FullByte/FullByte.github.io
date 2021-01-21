@@ -18,13 +18,13 @@
 - <https://www.tourendatenbank.com/staudamm-klettern-am-diga-di-luzzone/>
 - <http://www.alpenverein-hannover.de/dav-hannover/cfscripts/main.cfm>
 
-## Knoten
+## Knots
 
-- https://de.wikipedia.org/wiki/Doppelter_Palstek
-- https://de.wikipedia.org/wiki/Achterknoten_(Schlaufe)
-- https://de.wikipedia.org/wiki/Halbmastwurf
-- https://de.wikipedia.org/wiki/Prusikknoten
-- https://de.wikipedia.org/wiki/Sackstich
+- <https://de.wikipedia.org/wiki/Doppelter_Palstek>
+- <https://de.wikipedia.org/wiki/Achterknoten_(Schlaufe>)
+- <https://de.wikipedia.org/wiki/Halbmastwurf>
+- <https://de.wikipedia.org/wiki/Prusikknoten>
+- <https://de.wikipedia.org/wiki/Sackstich>
 
 ## Random
 
