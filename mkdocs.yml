@@ -24,6 +24,8 @@ extra:
       link: https://github.com/FullByte
 markdown_extensions:
   - pymdownx.inlinehilite
+  - pymdownx.highlight
+  - pymdownx.keys
 shortcuts:
   help: 191    # ?
   next: 78     # n
