@@ -5,6 +5,8 @@ site_description:
 site_author: 
 theme:
   name: material
+  static_templates:
+    - 404.html
   language: en
   palette:
     scheme: slate
