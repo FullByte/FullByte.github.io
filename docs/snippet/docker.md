@@ -1,12 +1,22 @@
 # Docker Containers
 
+## Getting started
+
+TODO
+
+## Useful Commands
+
+TODO
+
+## Cool things to run with docker
+
 A list of docker containers
 
-## Tutorials
+### Tutorials
 
 - <https://www.ezzeddinabdullah.com/posts/how-to-clean-text-data-at-the-command-line>
 
-## I2P
+### I2P
 
 Sources:
 
@@ -17,7 +27,7 @@ Sources:
 docker pull meeh/i2p.i2p
 ```
 
-## Drawio
+### Drawio
 
 Sources:
 
@@ -27,7 +37,7 @@ Sources:
 docker run -it --rm --name="draw" -p 8080:8080 -p 8443:8443 fjudith/draw.io
 ```
 
-## NoteCalc
+### NoteCalc
 
 Sources:
 
@@ -40,7 +50,7 @@ docker build . --tag notecalc3
 docker run --rm -d -p 5000:5000 notecalc3
 ```
 
-## Archive Box
+### Archive Box
 
 Sources:
 
@@ -55,7 +65,7 @@ docker run -v $PWD:/data -it archivebox/archivebox manage createsuperuser
 docker run -v $PWD:/data -p 8000:8000 archivebox/archivebox server 0.0.0.0:8000
 ```
 
-## Wireguard
+### Wireguard
 
 Sources:
 
@@ -65,7 +75,7 @@ Sources:
 docker pull ghcr.io/linuxserver/wireguard
 ```
 
-## IPFS
+### IPFS
 
 Sources:
 
@@ -79,7 +89,7 @@ docker exec ipfs_host ipfs swarm peers
 docker logs -f ipfs_host
 ```
 
-## Matrix Synapse
+### Matrix Synapse
 
 Sources:
 
@@ -88,4 +98,17 @@ Sources:
 ```shell
 docker pull matrixdotorg/synapse
 docker run -it --rm --mount type=volume,src=synapse-data,dst=/data -e SYNAPSE_SERVER_NAME=my.matrix.host -e SYNAPSE_REPORT_STATS=yes matrixdotorg/synapse:latest generate
+```
+
+### Jellyfin
+
+Sources:
+
+- <https://github.com/jellyfin/jellyfin>
+- <https://jellyfin.org/>
+
+```bash
+docker pull jellyfin/jellyfin:latest
+mkdir -p /srv/jellyfin/{config,cache}
+docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /media:/media --net=host jellyfin/jellyfin:latest
 ```
