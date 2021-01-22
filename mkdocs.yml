@@ -5,6 +5,8 @@ site_description:
 site_author: 
 theme:
   name: material
+  static_templates:
+    - 404.html
   language: en
   palette:
     scheme: slate
@@ -20,6 +22,10 @@ extra:
       link: https://twitter.com/zerogdoubled
     - icon: fontawesome/brands/github
       link: https://github.com/FullByte
+markdown_extensions:
+  - pymdownx.inlinehilite
+  - pymdownx.highlight
+  - pymdownx.keys
 shortcuts:
   help: 191    # ?
   next: 78     # n
