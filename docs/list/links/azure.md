@@ -4,7 +4,9 @@ A list of azure tools, links to learn azure and news sources.
 
 ## Tools
 
-**Overviews**
+The best websites with overviews and helpers i know for azure.
+
+### Overviews
 
 - VM Chooser: <https://www.vmchooser.com/>
 - Azure Speed: <https://www.azurespeed.com>
@@ -15,13 +17,13 @@ A list of azure tools, links to learn azure and news sources.
 - Azure DC Map: <https://build5nines.com/map-azure-regions/>
 - Release and change tracking on Azure Governance capabilities: <https://www.azadvertizer.net/>
 
-**Comparing Cloud Solutions**
+### Comparing Cloud Solutions**
 
 - Comparing Azure and WS Services: <https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services#>
 - AWS vs Azure: <https://docs.microsoft.com/en-us/azure/architecture/aws-professional/index>
 - Cloud Comparison: <https://www.rightscale.com/cloud-comparison-tool/>
 
-**Dev Tools**
+### Dev Tools
 
 - Scrumpoker: <https://planningpokeronline.com/>
 - DevOps: <https://app.vssps.visualstudio.com>
@@ -31,7 +33,7 @@ A list of azure tools, links to learn azure and news sources.
 - Resource Explorer Online: <https://resources.azure.com/>
 - Azure Building Blocks: Simplifying Resource Deployment: <https://github.com/mspnp/template-building-blocks>
 
-**Database Helper**
+### Database Helper
 
 - Azure Cosmos DB Account Settings: <https://cosmos.azure.com/capacitycalculator/>
 - Documentdb Capacity Planner: <https://www.documentdb.com/capacityplanner>
@@ -41,7 +43,7 @@ A list of azure tools, links to learn azure and news sources.
 - Pricing Calculator: <https://azure.microsoft.com/en-us/pricing/calculator/>
 - Total Cost of Ownership: <https://azure.microsoft.com/en-us/pricing/tco/calculator/>
 
-**IP ranges**
+### IP ranges
 
 - Search IPs online: <https://azureipranges.azurewebsites.net/>
 - Public: <https://www.microsoft.com/download/details.aspx?id=56519>
@@ -49,7 +51,7 @@ A list of azure tools, links to learn azure and news sources.
 - China: <https://www.microsoft.com/download/details.aspx?id=57062>
 - AzureGermany: <https://www.microsoft.com/download/details.aspx?id=57064>
 
-**Service Status**
+### Service Status
 
 - M365 Status: <https://admin.microsoft.com/AdminPortal/Home#/servicehealth>
 - Azure Status: <https://status.azure.com/de-de/status>
@@ -73,12 +75,19 @@ A list of azure tools, links to learn azure and news sources.
 - Microsoft Cloud Adoption Framework for Azure: <https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/>
 - Cloud Adoption Framework Tools and Templates <https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/reference/tools-templates>
 
-### Tools to host within Azure
+### Implement these tools within Azure
 
 - Policy Overview: <https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting>
 - Host own ARM Visualizer: <https://github.com/shenglol/arm-visualizer>
 - Continuous Cloud Optimization Power BI Dashboards Project: <https://github.com/Azure/ccodashboard>
 - Azure Optimization Engine: <https://github.com/helderpinto/AzureOptimizationEngine>
+- Policy Management 1: <https://github.com/marketplace/actions/manage-azure-policy>
+- Policy Management 2: <https://github.com/JimGBritt/AzurePolicy/tree/master/AzureMonitor/Scripts>
+- Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization:
+  - Part 1: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1339298>
+  - Part 2: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1457687>
+  - Part 3: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1544796>
+  - Part 4: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/automating-continuous-optimization-with-the-azure-optimization/ba-p/1851317>
 
 ### Azure Code Templates
 
