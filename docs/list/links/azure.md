@@ -84,9 +84,9 @@ The best websites with overviews and helpers i know for azure.
 - Policy Management 1: <https://github.com/marketplace/actions/manage-azure-policy>
 - Policy Management 2: <https://github.com/JimGBritt/AzurePolicy/tree/master/AzureMonitor/Scripts>
 - Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization:
-  - Part 1: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1339298>
-  - Part 2: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1457687>
-  - Part 3: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1544796>
+  -> Part 1: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1339298>
+  -> Part 2: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1457687>
+  -> Part 3: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1544796>
   - Part 4: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/automating-continuous-optimization-with-the-azure-optimization/ba-p/1851317>
 
 ### Azure Code Templates
