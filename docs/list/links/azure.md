@@ -38,7 +38,9 @@ The best websites with overviews and helpers i know for azure.
 - Azure Cosmos DB Account Settings: <https://cosmos.azure.com/capacitycalculator/>
 - Documentdb Capacity Planner: <https://www.documentdb.com/capacityplanner>
 - DB Migration: <https://datamigration.microsoft.com/>
-- Pricing
+
+### Pricing
+
 - Azure Price :<https://azureprice.net/>
 - Pricing Calculator: <https://azure.microsoft.com/en-us/pricing/calculator/>
 - Total Cost of Ownership: <https://azure.microsoft.com/en-us/pricing/tco/calculator/>
@@ -71,7 +73,6 @@ The best websites with overviews and helpers i know for azure.
 - Cloud Design Patterns: <https://docs.microsoft.com/en-us/azure/architecture/patterns/>
 - Azure Architecture Center: <https://github.com/mspnp/architecture-center>
 - Migrate Server to Azure: <https://docs.microsoft.com/en-us/azure/site-recovery/vmware-walkthrough-overview#before-you-start-deployment>
-- Azure Cloud Design Patterns <http://azureinteractives.azurewebsites.net/CloudDesignPatterns/default.html>
 - Microsoft Cloud Adoption Framework for Azure: <https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/>
 - Cloud Adoption Framework Tools and Templates <https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/reference/tools-templates>
 
