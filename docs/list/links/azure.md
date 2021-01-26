@@ -16,6 +16,7 @@ The best websites with overviews and helpers i know for azure.
 - Azure Portals: <https://msportals.io/>
 - Azure DC Map: <https://build5nines.com/map-azure-regions/>
 - Release and change tracking on Azure Governance capabilities: <https://www.azadvertizer.net/>
+- Features by region: <https://azure.microsoft.com/en-us/global-infrastructure/services/>
 
 ### Comparing Cloud Solutions**
 
@@ -72,7 +73,6 @@ The best websites with overviews and helpers i know for azure.
 - Templates and scripts for deploying Azure Reference Architectures: <https://github.com/mspnp/reference-architectures>
 - Cloud Design Patterns: <https://docs.microsoft.com/en-us/azure/architecture/patterns/>
 - Azure Architecture Center: <https://github.com/mspnp/architecture-center>
-- Migrate Server to Azure: <https://docs.microsoft.com/en-us/azure/site-recovery/vmware-walkthrough-overview#before-you-start-deployment>
 - Microsoft Cloud Adoption Framework for Azure: <https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/>
 - Cloud Adoption Framework Tools and Templates <https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/reference/tools-templates>
 
@@ -151,6 +151,7 @@ Overview of links to regularly check to stay up-to-date on Azure.
 - Hacker News Azure: <https://hn.algolia.com/?query=azure&sort=byPopularity&prefix&page=0&dateRange=pastYear&type=all>
 - Azure Update heat map: <https://azurecharts.com/>
 - Cloud News: <https://www.cloudnews.dev/>
+- Azure AppService Blog: <https://azure.github.io/AppService/>
 - Sapico Cloudnews: <http://cloudnews.sapico.me/>
 
 ### Blogs and Feeds
