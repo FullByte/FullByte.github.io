@@ -68,9 +68,10 @@ Fortunately you can import *.io files in Bricklink directly. It will search for 
 | 87079    | 4560178   | 87079   | Tile 2 x 4             | 1         | 15           | White     | Solid Colors  | 44  | 9      |
 
 Turns out the 50x50 plate is not available and that the non 2x2 tiles are way more expensive.
-So i ordered a 50x50 plate online somewhere else and changed the order to 2x2 tiles only which reduced the price significantly (roughly 40% cheaper).
 
-I just went with 350 since 50x50/4 = 625 and i need roughly half black, half white tiles.
+So i ordered a 50x50 plate online somewhere else and changed the order to 2x2 tiles only, which reduced the price significantly (roughly 40% cheaper).
+
+I went with 350 since 50x50/4 = 625 and I need roughly half black, half white tiles.
 Since i didn't re-do the build in Bricklink Studio based on 2x2 tiles I added a few safety tiles = 350 per color which was still cheaper than to original order.
 
 | BLItemNo | ElementId | LdrawId | PartName               | BLColorId | LDrawColorId | ColorName | ColorCategory | Qty | Weight |
