@@ -18,7 +18,7 @@ The best websites with overviews and helpers i know for azure.
 - Release and change tracking on Azure Governance capabilities: <https://www.azadvertizer.net/>
 - Features by region: <https://azure.microsoft.com/en-us/global-infrastructure/services/>
 
-### Comparing Cloud Solutions**
+### Comparing Cloud Solutions
 
 - Comparing Azure and WS Services: <https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services#>
 - AWS vs Azure: <https://docs.microsoft.com/en-us/azure/architecture/aws-professional/index>
@@ -78,17 +78,25 @@ The best websites with overviews and helpers i know for azure.
 
 ### Implement these tools within Azure
 
-- Policy Overview: <https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting>
 - Host own ARM Visualizer: <https://github.com/shenglol/arm-visualizer>
+
+Optimization Tools:
+
 - Continuous Cloud Optimization Power BI Dashboards Project: <https://github.com/Azure/ccodashboard>
 - Azure Optimization Engine: <https://github.com/helderpinto/AzureOptimizationEngine>
-- Policy Management 1: <https://github.com/marketplace/actions/manage-azure-policy>
-- Policy Management 2: <https://github.com/JimGBritt/AzurePolicy/tree/master/AzureMonitor/Scripts>
-- Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization:
-  -> Part 1: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1339298>
-  -> Part 2: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1457687>
-  -> Part 3: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1544796>
-  - Part 4: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/automating-continuous-optimization-with-the-azure-optimization/ba-p/1851317>
+
+Policy Management:
+
+- Policy Overview: <https://github.com/JulianHayward/Azure-MG-Sub-Governance-Reporting>
+- Scripts for Policies Management <https://github.com/marketplace/actions/manage-azure-policy>
+- Management of Azure Diagnostic Policies: <https://github.com/JimGBritt/AzurePolicy/tree/master/AzureMonitor/Scripts>
+
+Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimization:
+
+- Part 1: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1339298>
+- Part 2: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1457687>
+- Part 3: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/augmenting-azure-advisor-cost-recommendations-for-automated/ba-p/1544796>
+- Part 4: <https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/automating-continuous-optimization-with-the-azure-optimization/ba-p/1851317>
 
 ### Azure Code Templates
 
