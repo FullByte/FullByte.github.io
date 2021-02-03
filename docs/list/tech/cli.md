@@ -4,6 +4,7 @@
 
 - Mail: <https://aerc-mail.org/>
 - Calendar: <https://www.calcurse.org/>
+- Time Tracker: <https://github.com/jotaen/klog>
 
 ## Files
 

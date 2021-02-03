@@ -3,6 +3,43 @@
 ## Web IDE
 
 - Sitemap builder <https://octopus.do/>
+- WebAssembly Studio <https://webassembly.studio/>
+- JavaScript IDE p5js <https://editor.p5js.org/>
+- JavaScript IDE ui.dev <https://ui.dev/javascript-visualizer/>
+- Pyhton: <http://www.pythontutor.com/visualize.html#mode=edit>
+- JSFiddle <https://jsfiddle.net>
+- Codepen <https://codepen.io/>
+- C++ IDE <https://gcc.godbolt.org>
+- SLQ IDE <https://app.sqldbm.com/SQLServer/Draft/>
+- React: <https://codesandbox.io/s/new>
+- PHP: https://sandbox.onlinephpfunctions.com/
+- Gitpod: <https://gitpod.io/workspaces/>
+- Pastebin with runnable snippets and API: <https://glot.io/>
+- Ardunio: <https://login.arduino.cc/login>
+- Commander X16 Emulator <https://sebastianvog.github.io/x16-emulator/x16emu.html>
+- 8-bit code IDE: <https://8bitworkshop.com/redir.html>
+- <https://scratch.mit.edu/>
+- <https://repl.it/languages>
+- <https://bbcmic.ro/>
+- https://www.sharepad.io/
+- https://www.tejotron.com/
+
+## Design Tools
+
+- <https://www.planttext.com/>
+
+## Regex Helper
+
+- Regex <https://regex101.com/>
+- <https://regexr.com/>
+- Visual Debugging of Regular Expressions for JavaScript <http://regviz.org/>
+
+## Viewer/Helper
+
+- JSON <https://json-viewer.sohamkamani.com/>
+- JSON Table: <http://json2table.com/>
+- Beautify: <https://beautifier.io/>
+- Shell Script Spellchecker: <https://www.shellcheck.net/>
 
 ## Coding Guidelines
 
@@ -20,6 +57,10 @@
 - Planning poker online <https://planningpokeronline.com/>
 - Fire poker <https://firepoker.io/>
 
+## Picture Sources
+
+- <https://logosear.ch/>
+
 ## Web Development
 
 ### Templates
@@ -29,10 +70,37 @@
 - Charts, Gantt, Datatable,.. <https://frappe.io/>
 - Upload files <https://uppy.io/>
 
+#### Standards
+
+Status Codes
+
+- <https://statuses.now.sh/>
+- <https://httpstatuses.com/>
+- <https://http.cat/>
+
+Example Text and Pictures
+
+- <https://picsum.photos/>
+- <https://www.loremipsum.de/>
+- <https://lipsum.com/>
+
+Other:
+
+- SSL Settings <https://ssl-config.mozilla.org/>
+- securitytxt <https://securitytxt.org/>
+- Web Manifest <https://www.pwabuilder.com/generate>
+
 ### Domains
 
 - Compare Prices <https://tld-list.com/>
 - Gandi <https://www.gandi.net>
+
+### WebDev Helper
+
+- <https://badssl.com/>
+- <http://neverssl.com/>
+- <https://timeops.io>
+- <https://themarkup.org/blacklight>
 
 ### Documentation
 
@@ -69,7 +137,17 @@
 - G-Core Labs <https://gcorelabs.com/>
 - Balena <https://www.balena.io/>
 
-### CSS Templates
+### CSS
+
+#### CSS Tools
+
+- <http://www.patternify.com/>
+- <http://layerstyles.org/builder.html>
+- <http://css3generator.com/>
+- <https://3dbook.xyz/>
+- <https://spritegen.website-performance.org/>
+
+#### CSS Templates
 
 - NES <https://nostalgic-css.github.io/NES.css/>
 - Windows 98 <https://jdan.github.io/98.css/>

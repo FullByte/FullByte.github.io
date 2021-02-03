@@ -110,21 +110,12 @@ Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimizat
 
 ## Learning Azure
 
-Azure Training Sites
+### Microsoft Learning Material
 
 - Microsoft Learning: <https://docs.microsoft.com/en-us/learn/azure/>
 - Azure Online-Training <https://www.microsoft.com/de-de/learning/azure-skills-training.aspx>
 - Certification Overview: <https://docs.microsoft.com/de-de/learn/certifications/browse/>
-- AzureAcadamy: <https://www.youtube.com/c/AzureAcademy/videos>
-- Pluralsight: <https://app.pluralsight.com>
-- Certbase <https://www.certbase.de/>
-- Fastlane: <https://www.fastlane.live/de_en>
-- Skillpipe: <https://www.Skillpipe.com>
-- Whizlabs: <https://www.whizlabs.com/>
-- Midhub: <https://www.mindhub.com/>
-- Udemy Azure Courses: <https://www.udemy.com/topic/microsoft-azure/>
-- Cloud Security based training: <http://flaws.cloud/>
-- CS349D: Cloud Computing Technology: <https://web.stanford.edu/class/cs349d/>
+- Azure Online Events: <https://events.microsoft.com/?timeperiod=all&isSharedInLocalViewMode=false&category=Online&product=Cloud%20Platform&product=Developer%20Tools&product=Microsoft%20Azure&language=English>
 
 ### Microsoft Learning Paths
 
@@ -144,7 +135,20 @@ A selection of Microsoft Learning Paths:
 - Perform data engineering with Azure data bricks <https://docs.microsoft.com/en-us/learn/paths/data-engineering-with-databricks/>
 - Introduction to machine learning with Python and Azure Notebooks <https://docs.microsoft.com/en-us/learn/paths/intro-to-ml-with-python/>
 
-### Forums
+### Other Learning Material
+
+- AzureAcadamy: <https://www.youtube.com/c/AzureAcademy/videos>
+- Pluralsight: <https://app.pluralsight.com>
+- Certbase <https://www.certbase.de/>
+- Fastlane: <https://www.fastlane.live/de_en>
+- Skillpipe: <https://www.Skillpipe.com>
+- Whizlabs: <https://www.whizlabs.com/>
+- Midhub: <https://www.mindhub.com/>
+- Udemy Azure Courses: <https://www.udemy.com/topic/microsoft-azure/>
+- Cloud Security based training: <http://flaws.cloud/>
+- CS349D: Cloud Computing Technology: <https://web.stanford.edu/class/cs349d/>
+
+### Azure Forums
 
 - Azure Knowledge Center: <https://azure.microsoft.com/de-de/resources/knowledge-center/>
 - MSDN Forum: <https://social.msdn.microsoft.com/Forums/en-US/home>
