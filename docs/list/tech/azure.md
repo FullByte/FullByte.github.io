@@ -74,8 +74,9 @@ The best websites with overviews and helpers i know for azure.
 - Cloud Design Patterns: <https://docs.microsoft.com/en-us/azure/architecture/patterns/>
 - Azure Architecture Center: <https://github.com/mspnp/architecture-center>
 - Microsoft Cloud Adoption Framework for Azure: <https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/>
-- Cloud Adoption Framework Tools and Templates <https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/reference/tools-templates>
-- Enterprise-Scale Reference Implementation <https://github.com/Azure/Enterprise-Scale>
+- Cloud Adoption Framework Tools and Templates: <https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/reference/tools-templates>
+- Enterprise-Scale Reference Implementation: <https://github.com/Azure/Enterprise-Scale>
+- Policy Templates: <https://github.com/Azure/Community-Policy>
 
 ### Implement these tools within Azure
 
