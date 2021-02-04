@@ -116,6 +116,8 @@ Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimizat
 - Azure Online-Training <https://www.microsoft.com/de-de/learning/azure-skills-training.aspx>
 - Certification Overview: <https://docs.microsoft.com/de-de/learn/certifications/browse/>
 - Azure Online Events: <https://events.microsoft.com/?timeperiod=all&isSharedInLocalViewMode=false&category=Online&product=Cloud%20Platform&product=Developer%20Tools&product=Microsoft%20Azure&language=English>
+- Microsoft OpenHack: <https://openhack.microsoft.com>
+- Getting started with Azure DevOps: <https://azuredevopslabs.com/>
 
 ### Microsoft Learning Paths
 
