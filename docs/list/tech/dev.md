@@ -60,6 +60,7 @@
 ## Picture Sources
 
 - <https://logosear.ch/>
+- <https://www.iconfinder.com/>
 
 ## Web Development
 

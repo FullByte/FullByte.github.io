@@ -1,0 +1,33 @@
+# Maps
+
+Make maps
+
+- <https://www.openstreetmap.org/#map=7/50.611/7.756>
+- <https://www.electricitymap.org/map>
+- <https://wakingandsleeping-globe.glitch.me/>
+- <https://www.submarinecablemap.com/>
+- <https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#1.93/28.03/22.67>
+- <https://www.openrailwaymap.org/mobile.php>
+- <https://www.internetexchangemap.com/>
+- <https://nyan-sat.com/assets/licensed/orbital_comparison.svg>
+- <https://traintimes.org.uk/map/tube/schematic/>
+- <https://www.strava.com/heatmap#6.18/6.18906/47.63383/hot/all>
+- <https://cybermap.kaspersky.com/>
+- <https://openinframap.org/#2/39.11/26.11>
+- <https://global.adsbexchange.com/>
+- <http://www.flightradar24.com/50.11,14.27/6>
+- <https://app.any.run/>
+- <http://www.digitalattackmap.com/>
+- <https://map33.openbloc.com/>
+- <https://gez.la/>
+- <http://earth.nullschool.net/#current/wind/isobaric/1000hPa/orthographic>
+- <https://nuclearsecrecy.com/nukemap/>
+- <https://earthengine.google.com/timelapse/>
+- <https://darksky.net/forecast/52.36,9.73/us12/en>
+- <https://www.opencaching.de/map2.php>
+- <https://opentopomap.org/#map=4/51.26/51.39>
+- <https://www.openrailwaymap.org/>
+- <https://openinframap.org/#2/26/12>
+- <https://hiking.waymarkedtrails.org>
+- <http://jthatch.com/Terrain2STL/>
+- <https://maphub.net/map>
