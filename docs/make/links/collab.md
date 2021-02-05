@@ -18,6 +18,12 @@
 - <https://pop.com/>
 - <https://app.tutturu.tv/servers>
 
+## Work on Text
+
+- <https://yopad.eu/>
+- <https://cryptpad.fr/>
+- <https://hackmd.io/?nav=overview>
+
 ## Share Files
 
 Text only

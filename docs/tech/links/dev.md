@@ -62,6 +62,10 @@
 - <https://logosear.ch/>
 - <https://www.iconfinder.com/>
 
+## Music Sources
+
+- <https://evokemusic.ai/>
+
 ## Web Development
 
 ### Templates
