@@ -1,8 +1,6 @@
 # Welcome
 
-Hi Internet stranger,
-
-this website is dedicated to the notes and lists I made, code i have written, copied or modified, things i created, modified or repaired and basically anything I find of interest.
+This website is dedicated to the notes and lists I made, code i have written, copied or modified, things i created, modified or repaired and basically anything I find of interest.
 
 I hope you enjoy the content and found your visit worthwhile :)
 
