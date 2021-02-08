@@ -1,5 +1,14 @@
 # Azure Powershell
 
+## Info
+
+|What|Where|
+|-|-|
+|Official Page||
+|Source||
+|Download||
+|Install||
+
 ## Setup Powershell (Admin Rights required)
 
 **1. Install [Powershell 7](https://github.com/PowerShell/powershell/releases)**

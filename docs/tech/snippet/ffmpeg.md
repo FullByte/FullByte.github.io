@@ -2,6 +2,15 @@
 
 FFmpeg is a great tool and here are some examples.
 
+## Info
+
+|What|Where|
+|-|-|
+|Official Page||
+|Source||
+|Download||
+|Install||
+
 ## Create Time Lapse Video
 
 In my case the files are from a GoPro named "G" followed by seven digits e.g. G0011565.jpg.

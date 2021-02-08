@@ -10,3 +10,7 @@
 
 - Sync <https://www.etebase.com/> -> <https://www.etesync.com/>
 - Sync/Backup <https://syncthing.net/>
+
+## Money
+
+- Stocks <https://github.com/achannarasappa/ticker>

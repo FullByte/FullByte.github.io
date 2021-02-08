@@ -1,5 +1,14 @@
 # Steam
 
+## Info
+
+|What|Where|
+|-|-|
+|Official Page||
+|Source||
+|Download||
+|Install||
+
 ## SteamCMD
 
 SteamCMD: <https://developer.valvesoftware.com/wiki/SteamCMD>

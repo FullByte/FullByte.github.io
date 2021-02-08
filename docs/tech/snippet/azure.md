@@ -1,5 +1,11 @@
 # Azure
 
+## Info
+
+|What|Where|
+|-|-|
+|Official Page||
+
 ## Azure Helper
 
 ### Azure JSON Template deployment via Link

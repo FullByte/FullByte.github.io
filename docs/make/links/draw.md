@@ -8,6 +8,7 @@ Tools to create graphics and modify images online.
 - XP Paint: <https://chowderman.github.io/xp-paint.html>
 - <https://aggie.io/>
 - SVG Path Editor: <https://yqnn.github.io/svg-path-editor/>
+- SVG Shape Generator: <https://www.softr.io/tools/svg-shape-generator>
 
 ## Meme maker/helper
 

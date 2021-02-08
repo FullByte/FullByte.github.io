@@ -2,6 +2,15 @@
 
 Examples using youtube-dl
 
+## Info
+
+|What|Where|
+|-|-|
+|Official Page||
+|Source||
+|Download||
+|Install|choco install youtube-dl|
+
 ## YouTube video download
 
 Download to a specific location in best quality:

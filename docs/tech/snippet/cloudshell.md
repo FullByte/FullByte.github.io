@@ -1,6 +1,12 @@
-# Setup Azure Cloud Shell
+# Azure Cloud Shell
 
-The azure cloud shell can be accessed using this link: <https://shell.azure.com/>
+## Info
+
+|What|Where|
+|-|-|
+|Official Page||
+|Online|<https://shell.azure.com/>|
+
 
 ## Attach Storage
 

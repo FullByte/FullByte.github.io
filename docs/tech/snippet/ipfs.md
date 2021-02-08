@@ -1,6 +1,21 @@
-# IPFS Examples
+# IPFS
 
+Examples using IPFS
+
+## Info
+
+|What|Where|
+|-|-|
+|Official Page||
+|Source||
+|Download||
+|Install||
+
+## Find Peers
+
+```bash
 ipfs dht findpeer QmYtQ3iJi5RAQYxWJLts7xN1dRNK2n258QEXk4N1eLMZFM
+```
 
 ## Share encrypted files with IPFS
 

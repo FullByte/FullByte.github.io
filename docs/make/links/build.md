@@ -14,6 +14,7 @@ Templates and creator/helper for cutting objects e.g. with CNC or lasercutter.
 - <https://laser-templates.com/>
 - <https://www.templatemaker.nl>
 - <https://www.prusaprinters.org/>
+- <https://make.co/>
 
 ## Cutter
 
