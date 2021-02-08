@@ -10,6 +10,11 @@ Tools to create graphics and modify images online.
 - SVG Path Editor: <https://yqnn.github.io/svg-path-editor/>
 - SVG Shape Generator: <https://www.softr.io/tools/svg-shape-generator>
 
+## Picture Sources
+
+- <https://logosear.ch/>
+- <https://www.iconfinder.com/>
+
 ## Meme maker/helper
 
 - <https://imgflip.com/memesearch>

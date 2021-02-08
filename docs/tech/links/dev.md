@@ -1,6 +1,13 @@
 # Dev
 
-## Web IDE
+## IDE
+
+### Local IDE
+
+- Spyder IDE (Python) <https://www.spyder-ide.org/>
+- VScode <https://code.visualstudio.com/>
+
+### Web IDE
 
 - Sitemap builder <https://octopus.do/>
 - WebAssembly Studio <https://webassembly.studio/>
@@ -12,7 +19,7 @@
 - C++ IDE <https://gcc.godbolt.org>
 - SLQ IDE <https://app.sqldbm.com/SQLServer/Draft/>
 - React: <https://codesandbox.io/s/new>
-- PHP: https://sandbox.onlinephpfunctions.com/
+- PHP: <https://sandbox.onlinephpfunctions.com/>
 - Gitpod: <https://gitpod.io/workspaces/>
 - Pastebin with runnable snippets and API: <https://glot.io/>
 - Ardunio: <https://login.arduino.cc/login>
@@ -21,8 +28,8 @@
 - <https://scratch.mit.edu/>
 - <https://repl.it/languages>
 - <https://bbcmic.ro/>
-- https://www.sharepad.io/
-- https://www.tejotron.com/
+- <https://www.sharepad.io/>
+- <https://www.tejotron.com/>
 
 ## Design Tools
 
@@ -56,15 +63,6 @@
 
 - Planning poker online <https://planningpokeronline.com/>
 - Fire poker <https://firepoker.io/>
-
-## Picture Sources
-
-- <https://logosear.ch/>
-- <https://www.iconfinder.com/>
-
-## Music Sources
-
-- <https://evokemusic.ai/>
 
 ## Web Development
 

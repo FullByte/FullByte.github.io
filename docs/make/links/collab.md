@@ -47,4 +47,5 @@ Files
 - <https://opentimestamps.org/>
 - <https://webwormhole.io/>
 - <https://www.sharedrop.io/>
+- <https://instant.io/>
 - <https://snapdrop.net/>
