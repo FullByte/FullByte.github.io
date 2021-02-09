@@ -9,11 +9,15 @@
 |Download||
 |Install||
 
-## SteamCMD
+## CLI
+
+<https://developer.valvesoftware.com/wiki/Command_Line_Options>
+
+### SteamCMD
 
 SteamCMD: <https://developer.valvesoftware.com/wiki/SteamCMD>
 
-## SteamCLI
+### SteamCLI
 
 **Open Console**
 

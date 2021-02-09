@@ -7,6 +7,8 @@
 
 ## Travel Ideas
 
+<https://thruhikes.net/>
+
 ### New Zealand
 
 - <https://maps.doc.govt.nz/mapviewer/index.html?viewer=dto>
