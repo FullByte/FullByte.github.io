@@ -14,3 +14,7 @@
 ## Money
 
 - Stocks <https://github.com/achannarasappa/ticker>
+
+## Other
+
+- Weather: "curl wttr.in" (<https://github.com/chubin/wttr.in>)

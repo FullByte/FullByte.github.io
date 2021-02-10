@@ -29,6 +29,11 @@ Templates and creator/helper for cutting objects e.g. with CNC or lasercutter.
 - Create Puzzle <https://cdn.rawgit.com/Draradech/35d36347312ca6d0887aa7d55f366e30/raw/b04cf9cd63a59571910cb226226ce2b3ed46af46/jigsaw.html>
 - <https://svgnest.com/>
 
+### Tools
+
+- <http://linuxcnc.org/>
+- <http://www.estlcam.de/>
+
 ### Shops
 
 - <https://www.sorotec.de/shop/>

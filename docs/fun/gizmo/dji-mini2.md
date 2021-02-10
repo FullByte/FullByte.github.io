@@ -53,6 +53,7 @@ Bei den fünf Drohnenklassen/Risikoklassen von C0 bis C4 geht es um die technisc
 
 ### Tools und Infos
 
+- Dashboard für UAS-Betreiber und Fernpiloten: <https://exam.lba-openuav.de>
 - DronIQ für Flugzonen: <https://droniq.de/>
   - Android App: <https://droniq.de/pages/droniq-app>
 - Air&More AT: <https://airandmore.at/>
