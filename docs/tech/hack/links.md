@@ -44,7 +44,14 @@
 - <https://github.com/gentilkiwi/mimikatz>
 - <https://docs.pwntools.com>
 - <http://www.sleuthkit.org/>
+- <https://github.com/s0md3v/Decodify>
+- <https://github.com/xmendez/wfuzz>
 
 ### Generate Data
 
 - <https://github.com/Marak/faker.js>
+
+## Lists
+
+- <https://github.com/danielmiessler/SecLists>
+
