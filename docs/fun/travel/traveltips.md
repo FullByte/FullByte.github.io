@@ -1,5 +1,5 @@
 
-# Travel
+# Travel Tips
 
 ## Backpacking
 

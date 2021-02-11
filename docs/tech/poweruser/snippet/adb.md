@@ -34,3 +34,14 @@ adb shell
 pm list packages -3 # list hidden system apps
 pm uninstall --user 0 <package name>
 ```
+
+## Pushing CyanogenMod 12 on device
+
+<https://cyanogenmodroms.com> (successor is <https://lineageos.org/>)
+
+```shell
+adb push cm12.zip /sdcard/
+adb reboot bootloader
+fastboot oem unlock
+fastboot flash recovery twrp.img
+```

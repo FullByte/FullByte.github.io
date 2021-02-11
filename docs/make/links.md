@@ -16,6 +16,11 @@ Templates and creator/helper for cutting objects e.g. with CNC or lasercutter.
 - <https://www.prusaprinters.org/>
 - <https://make.co/>
 
+### My Lists
+
+- Pi Projects: <https://www.instructables.com/id/Raspberry-Pi-6-7-8-9-10-11-12-13-14/>
+- Music Projects: <https://www.instructables.com/id/Music-8-9-10/>
+
 ## Cutter
 
 ### Create Templates

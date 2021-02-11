@@ -43,6 +43,7 @@
 - <https://github.com/OJ/gobuster>
 - <https://github.com/gentilkiwi/mimikatz>
 - <https://docs.pwntools.com>
+- <http://www.sleuthkit.org/>
 
 ### Generate Data
 
