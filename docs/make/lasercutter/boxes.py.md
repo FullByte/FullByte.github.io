@@ -7,7 +7,7 @@ Boxes is great for laser cutters that are powerful enough to cut through wood:
 Sofar I tested cuts with these fiberboard types:
 
 - 2,5 mm MDF
-- 3,0 mm MDF (best)
+- 3,0 mm MDF
 - 3,0 mm HDF
 
 With these laser cutters (both work well):

@@ -1,5 +1,9 @@
 # Dev
 
+## Standards
+
+<https://blog.wesleyac.com/posts/timezone-bullshit>
+
 ## IDE
 
 ### Local IDE
@@ -66,12 +70,15 @@
 
 ## Web Development
 
+<https://www.scrapingbee.com/blog/web-scraping-101-with-python/>
+
 ### Templates
 
 - Dashboard <https://github.com/tabler/tabler>
 - HTML presentation framework <https://github.com/hakimel/reveal.js>
 - Charts, Gantt, Datatable,.. <https://frappe.io/>
 - Upload files <https://uppy.io/>
+- <https://doodad.dev/pattern-generator/>
 
 #### Standards
 

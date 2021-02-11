@@ -4,7 +4,7 @@
 
 |What|Where|
 |-|-|
-|Official Page||
+|Official Page|<https://portal.azure.com/>|
 
 ## Azure Helper
 
@@ -23,4 +23,3 @@
 
 - Websites: <https://yourwebsite.scm.azurewebsites.net/>
 - [...]
-

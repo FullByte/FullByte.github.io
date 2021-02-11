@@ -7,7 +7,6 @@
 |Official Page||
 |Online|<https://shell.azure.com/>|
 
-
 ## Attach Storage
 
 Add FileShare to Cloud Shell

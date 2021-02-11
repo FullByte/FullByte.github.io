@@ -1,15 +1,8 @@
-# Azure Powershell
+## Powershell
 
-## Info
+## Setup Powershell
 
-|What|Where|
-|-|-|
-|Official Page||
-|Source||
-|Download||
-|Install||
-
-## Setup Powershell (Admin Rights required)
+Admin Rights required
 
 **1. Install [Powershell 7](https://github.com/PowerShell/powershell/releases)**
 
@@ -39,33 +32,6 @@ To update all modules run this command:
 
 ```powershell
 Update-Module -scope AllUsers
-```
-
-## Test AZ Module (Azure)
-
-Best way to test if the AZ-Module is installed and to get started login to your Azure Tenant with this command:
-If your Azure powershell commands don't work check the following:
-
-- You are not logged in.
-
-```powershell
-Connect-AzAccount
-Get-AzContext
-```
-
-### Resource Providers
-
-Make sure all resource providers required are activated/registered:
-Source: <https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/resource-providers-and-types>
-
-```powershell
-Get-AzureRmResourceProvider -ListAvailable | where {$_.RegistrationState -eq "Registered"} | Select ProviderNamespace, RegistrationState
-```
-
-To register a specific resource provider run the following Powershell command:
-
-```powershell
-Register-AzureRmResourceProvider -ProviderNamespace ResourceProvider.Name
 ```
 
 ## Powershell Basics
@@ -105,6 +71,7 @@ Example:
 ```powershell
 Import-Module -Name Az
 ```
+
 
 ### Code Documentation
 
