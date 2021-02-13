@@ -14,6 +14,9 @@ Tools to create graphics and modify images online.
 
 - <https://logosear.ch/>
 - <https://www.iconfinder.com/>
+- <https://www.svgrepo.com/>
+- <https://www.vecteezy.com/>
+- <https://openclipart.org/>
 
 ## Meme maker/helper
 

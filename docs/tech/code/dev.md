@@ -2,7 +2,27 @@
 
 ## Standards
 
-<https://blog.wesleyac.com/posts/timezone-bullshit>
+Input and Variables
+
+- <https://blog.wesleyac.com/posts/timezone-bullshit>
+
+Status Codes
+
+- <https://statuses.now.sh/>
+- <https://httpstatuses.com/>
+- <https://http.cat/>
+
+Example Text and Pictures
+
+- <https://picsum.photos/>
+- <https://www.loremipsum.de/>
+- <https://lipsum.com/>
+
+Other:
+
+- SSL Settings <https://ssl-config.mozilla.org/>
+- securitytxt <https://securitytxt.org/>
+- Web Manifest <https://www.pwabuilder.com/generate>
 
 ## IDE
 
@@ -79,26 +99,6 @@
 - Charts, Gantt, Datatable,.. <https://frappe.io/>
 - Upload files <https://uppy.io/>
 - <https://doodad.dev/pattern-generator/>
-
-#### Standards
-
-Status Codes
-
-- <https://statuses.now.sh/>
-- <https://httpstatuses.com/>
-- <https://http.cat/>
-
-Example Text and Pictures
-
-- <https://picsum.photos/>
-- <https://www.loremipsum.de/>
-- <https://lipsum.com/>
-
-Other:
-
-- SSL Settings <https://ssl-config.mozilla.org/>
-- securitytxt <https://securitytxt.org/>
-- Web Manifest <https://www.pwabuilder.com/generate>
 
 ### Domains
 
