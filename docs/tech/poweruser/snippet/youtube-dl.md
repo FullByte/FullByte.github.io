@@ -25,6 +25,12 @@ Download with details:
 youtube-dl -f 22 --write-description --write-info-json --write-annotations --write-sub --write-thumbnail '<youtube-link>'
 ```
 
+## Audio only
+
+```shell
+youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 '<youtube-link>'
+```
+
 ## YouTube Playlists
 
 Download a playlist:
