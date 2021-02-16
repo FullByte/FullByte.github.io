@@ -10,6 +10,7 @@
 
 - Sync <https://www.etebase.com/> -> <https://www.etesync.com/>
 - Sync/Backup <https://syncthing.net/>
+- Send Files: <https://github.com/magic-wormhole/magic-wormhole>
 
 ## Money
 

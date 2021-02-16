@@ -24,6 +24,11 @@ Other:
 - securitytxt <https://securitytxt.org/>
 - Web Manifest <https://www.pwabuilder.com/generate>
 
+## Library
+
+- <https://htmx.org/>
+- <https://htmlboilerplates.com/>
+
 ## IDE
 
 ### Local IDE
@@ -90,7 +95,7 @@ Other:
 
 ## Web Development
 
-<https://www.scrapingbee.com/blog/web-scraping-101-with-python/>
+- <https://www.scrapingbee.com/blog/web-scraping-101-with-python/>
 
 ### Templates
 

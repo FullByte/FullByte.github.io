@@ -38,6 +38,7 @@ Text only
 Files
 
 - <https://www.justbeamit.com/>
+- <https://sendfiles.online/>
 - <https://whisp.ly/de>
 - <https://securedrop.org/>
 - <https://wetransfer.com/>

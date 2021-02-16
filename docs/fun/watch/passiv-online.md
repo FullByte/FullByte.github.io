@@ -22,6 +22,7 @@ Passive online screens that are nice to watch.
 - <https://paveldogreat.github.io/WebGL-Fluid-Simulation/>
 - <https://origamisimulator.org/>
 - <https://lavalamp.app/>
+- <https://osm-in-realtime.jwestman.net/>
 - <https://zoomquilt.org/>
 - <http://zoomquilt2.com/>
 

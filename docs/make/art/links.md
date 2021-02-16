@@ -18,6 +18,10 @@ Tools to create graphics and modify images online.
 - <https://www.vecteezy.com/>
 - <https://openclipart.org/>
 
+## Animation
+
+- <https://bestsnip.com/>
+
 ## Meme maker/helper
 
 - <https://imgflip.com/memesearch>
