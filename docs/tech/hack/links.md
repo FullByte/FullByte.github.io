@@ -50,6 +50,7 @@
 - <http://www.sleuthkit.org/>
 - <https://github.com/s0md3v/Decodify>
 - <https://github.com/xmendez/wfuzz>
+- <https://github.com/qeeqbox/social-analyzer>
 
 ### Generate Data
 
@@ -58,4 +59,3 @@
 ## Lists
 
 - <https://github.com/danielmiessler/SecLists>
-
