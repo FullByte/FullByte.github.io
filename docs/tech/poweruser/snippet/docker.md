@@ -121,3 +121,27 @@ docker pull jellyfin/jellyfin:latest
 mkdir -p /srv/jellyfin/{config,cache}
 docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /media:/media --net=host jellyfin/jellyfin:latest
 ```
+
+### Nextcloud
+
+Sources:
+
+- <https://hub.docker.com/_/nextcloud/>
+- <https://nextcloud.com>
+
+```bash
+docker run -d -p 8080:80 nextcloud
+```
+
+### Collabora Online
+
+Sources:
+
+- <https://nextcloud.com/collaboraonline/>
+- <https://www.collaboraoffice.com/code/docker/>
+- <https://github.com/CollaboraOnline/online>
+- <https://collaboraonline.github.io/>
+
+```bash
+docker run -d -p 8080:80 nextcloud
+```
