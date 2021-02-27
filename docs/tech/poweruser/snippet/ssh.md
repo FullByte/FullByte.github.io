@@ -48,6 +48,32 @@ Login to azure server "azureserver" with user "user" and private ssh keyfile "pr
 ssh -i private.key user@azureserver.westeurope.cloudapp.azure.com
 ```
 
+When you SSH into another machine using public key authentication, the key pair from either `~/.ssh/id_dsa`, `~/.ssh/id_ecdsa`, or `~/.ssh/id_rsa` is used by default. The `-i` option can be used to specify a different key pair file.
+
+Use the `-L` flag to forward a connection to a remote server
+
+```
+ssh server -L3000:localhost:3000
+```
+
+## SSH Escape Sequences
+
+To see all escape sequences press `~?`.
+
+```
+ ~.   - terminate connection (and any multiplexed sessions)
+ ~B   - send a BREAK to the remote system
+ ~C   - open a command line
+ ~R   - request rekey
+ ~V/v - decrease/increase verbosity (LogLevel)
+ ~^Z  - suspend ssh
+ ~#   - list forwarded connections
+ ~&   - background ssh (when waiting for connections to terminate)
+ ~?   - this message
+ ~~   - send the escape character by typing it twice
+(Note that escapes are only recognized immediately after newline.)
+```
+
 ## File Transfert with SCP
 
 Copying file to host:
