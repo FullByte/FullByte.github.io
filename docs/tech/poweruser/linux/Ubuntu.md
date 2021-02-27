@@ -9,6 +9,8 @@ Random basics
 - Upgrading to a newer release ```do-release-upgrade```
 - Check who is online ```w```
 - Show all system users ```cut -d: -f1 /etc/passwd```
+- Top commands used ```history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -nr```
+- Commands only used once ```history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -n | grep ' 1 '```
 
 Get system details
 
@@ -17,6 +19,19 @@ Get system details
 - Show ports/connections open ```lsof```
 - Get ubuntu version ```lsb_release -r```
 - Free disk space ```df -h```
+
+System Performance Check
+
+- ```uptime```
+- ```dmesg | tail```
+- ```vmstat 1```
+- ```mpstat -P ALL 1```
+- ```pidstat 1```
+- ```iostat -xz 1```
+- ```free -m```
+- ```sar -n DEV 1```
+- ```sar -n TCP,ETCP 1```
+- ```top```
 
 ## Create the boot script
 

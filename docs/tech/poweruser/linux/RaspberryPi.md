@@ -1,5 +1,21 @@
 # Raspberry Pi
 
+## Basics
+
+**Raspberry Config**
+
+```shell
+raspi-config
+```
+
+**Raspberry Config File**
+
+```shell
+/boot/config.txt
+hdmi_force_hotplug=1
+hdmi_drive=2
+```
+
 ## Find Pi with an ARP scan filtering for known Pi MAC Adresses
 
 Find Pi with an ARP scan filtering for known Pi MAC Adresses
