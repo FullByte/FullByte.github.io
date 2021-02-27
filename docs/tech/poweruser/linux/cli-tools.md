@@ -5,12 +5,18 @@
 - Mail: <https://aerc-mail.org/>
 - Calendar: <https://www.calcurse.org/>
 - Time Tracker: <https://github.com/jotaen/klog>
+- Chat: <https://weechat.org/>
+- Stream Terminal Session: <https://github.com/miguelmota/streamhut>
+- Text Editor: <https://micro-editor.github.io/>
+- Browser: <http://w3m.sourceforge.net/>
 
 ## Files
 
 - Sync <https://www.etebase.com/> -> <https://www.etesync.com/>
 - Sync/Backup <https://syncthing.net/>
 - Send Files: <https://github.com/magic-wormhole/magic-wormhole>
+- rtorrent: <https://github.com/rakshasa/rtorrent>
+- IPFS: <https://ipfs.io>
 
 ## Money
 

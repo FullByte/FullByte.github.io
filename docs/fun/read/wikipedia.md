@@ -12,6 +12,19 @@ What is Wikipedia? [Here is a good explanation.](https://en.m.wikipedia.org/wiki
 
 ## Lists
 
+- [Zone of Death (Yellowstone)](https://en.m.wikipedia.org/wiki/Zone_of_Death_(Yellowstone) "https://en.m.wikipedia.org/wiki/Zone_of_Death_(Yellowstone)")
+- [Cosmic latte](https://en.m.wikipedia.org/wiki/Cosmic_latte "https://en.m.wikipedia.org/wiki/Cosmic_latte")
+- [Atlantropa](https://en.m.wikipedia.org/wiki/Atlantropa "https://en.m.wikipedia.org/wiki/Atlantropa")
+- [The Complete Compendium of Universal Knowledge](https://en.m.wikipedia.org/wiki/The_Complete_Compendium_of_Universal_Knowledge "https://en.m.wikipedia.org/wiki/The_Complete_Compendium_of_Universal_Knowledge")
+- [Wuxing (Chinese philosophy)](https://en.wikipedia.org/wiki/Wuxing_(Chinese_philosophy) "https://en.wikipedia.org/wiki/Wuxing_(Chinese_philosophy)")
+- [Banned in Boston](https://en.m.wikipedia.org/wiki/Banned_in_Boston "https://en.m.wikipedia.org/wiki/Banned_in_Boston")
+- [Heat death paradox](https://en.m.wikipedia.org/wiki/Heat_death_paradox "https://en.m.wikipedia.org/wiki/Heat_death_paradox")
+- [Otokichi](https://en.m.wikipedia.org/wiki/Otokichi "https://en.m.wikipedia.org/wiki/Otokichi")
+- [Open-source cola](https://en.m.wikipedia.org/wiki/Open-source_cola "https://en.m.wikipedia.org/wiki/Open-source_cola")
+- [Kayfabe](https://en.m.wikipedia.org/wiki/Kayfabe "https://en.m.wikipedia.org/wiki/Kayfabe")
+- [List of inventors killed by their own inventions](https://en.m.wikipedia.org/wiki/List_of_inventors_killed_by_their_own_inventions "https://en.m.wikipedia.org/wiki/List_of_inventors_killed_by_their_own_inventions")
+- [].kkrieger](https://en.m.wikipedia.org/wiki/.kkrieger "https://en.m.wikipedia.org/wiki/.kkrieger")
+- [Fursuit](https://en.m.wikipedia.org/wiki/Fursuit "https://en.m.wikipedia.org/wiki/Fursuit")
 - [List of inventors killed by their own inventions](https://en.wikipedia.org/wiki/List_of_inventors_killed_by_their_own_inventions "https://en.wikipedia.org/wiki/List_of_inventors_killed_by_their_own_inventions")
 - [List of accidents and incidents involving commercial aircraft](https://en.wikipedia.org/wiki/List_of_accidents_and_incidents_involving_commercial_aircraft "https://en.wikipedia.org/wiki/List_of_accidents_and_incidents_involving_commercial_aircraft")
 - [List of national_emergencies_in_the_United_States](https://en.wikipedia.org/wiki/List_of_national_emergencies_in_the_United_States "https://en.wikipedia.org/wiki/List_of_national_emergencies_in_the_United_States")

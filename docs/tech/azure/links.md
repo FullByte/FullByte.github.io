@@ -1,4 +1,4 @@
-# Azure
+# Links
 
 A list of azure tools, links to learn azure and news sources.
 
@@ -77,6 +77,7 @@ The best websites with overviews and helpers i know for azure.
 - Cloud Adoption Framework Tools and Templates: <https://docs.microsoft.com/en-us/azure/cloud-adoption-framework/reference/tools-templates>
 - Enterprise-Scale Reference Implementation: <https://github.com/Azure/Enterprise-Scale>
 - Policy Templates: <https://github.com/Azure/Community-Policy>
+- Migration Assistant: <https://azure.microsoft.com/en-us/services/app-service/migration-assistant/>
 
 ### Implement these tools within Azure
 
@@ -226,3 +227,7 @@ Overview of links to regularly check to stay up-to-date on Azure.
 - Tim Warner: <https://www.youtube.com/channel/UCim7PFtynyPuzMHtbNyYOXA>
 - Azure 4 Everyone: <https://www.youtube.com/channel/UCdmEIMC3LBil4o0tjaTbj0w>
 - Tips and Tricks: <https://www.youtube.com/playlist?list=PLLasX02E8BPCNCK8Thcxu-Y-XcBUbhFWC>
+
+## Other Lists
+
+- <https://github.com/kristofferandreasen/awesome-azure>

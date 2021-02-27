@@ -11,6 +11,7 @@ Passive online screens that are nice to watch.
 - <https://www.windows93.net/>
 - <https://svenstaro.github.io/genact/>
 - <http://skynetsimulator.com/>
+- <https://fractal.garden/>
 
 ## Nice to watch
 

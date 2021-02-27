@@ -35,6 +35,7 @@ Text only
 - <https://zerobin.net/>
 - <https://privatebin.net/>
 - <https://emojicrypt.com/>
+- <https://ufile.io/>
 
 Files
 
