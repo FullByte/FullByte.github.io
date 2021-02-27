@@ -72,6 +72,65 @@ Example:
 Import-Module -Name Az
 ```
 
+### Privileges
+
+Make sure you are admin if required
+
+```powershell
+#Requires -RunAsAdministrator
+```
+
+Run a process as non-admin from an elevated PowerShell console
+
+```powershell
+runas /trustlevel:0x20000 "powershell.exe -command 'whoami /groups |clip'"
+```
+
+### Signing Script
+
+Enabling to only run trusted, signed scripts is a good security measurement. This chapter will describe how to sign powershell scripts.
+
+**Getting started**
+
+- Current script execution policy: ```Get-ExecutionPolicy -List```
+- Set execution policy for local user to signed only: ```Set-ExecutionPolicy -ExecutionPolicy AllSigned -Scope CurrentUser```
+- Details on create certificate: ```certutil D:\cert.pfx```
+
+**Create new self-signed cert.pfx**
+
+```powershell
+$Password = ConvertTo-SecureString -String "password" -Force -AsPlainText 
+New-SelfSignedCertificate -subject "SelfSignedCert" -Type CodeSigning  | Export-PfxCertificate -FilePath "D:\cert2.pfx" -password $Password 
+```
+
+**Import cert.pfx to certificate store**
+
+```powershell
+Import-PfxCertificate -FilePath "D:\cert.pfx" -CertStoreLocation "cert:\LocalMachine\My" -Password $Password
+Import-PfxCertificate -FilePath "D:\cert.pfx" -CertStoreLocation "cert:\LocalMachine\Root" -Password $Password
+Import-PfxCertificate -FilePath "D:\cert.pfx" -CertStoreLocation "cert:\LocalMachine\TrustedPublisher" -Password $Password
+```
+
+**Sign script.ps1 with cert.pfx**
+
+```powershell
+$MyCert = Get-PfxCertificate -FilePath "D:\cert.pfx"
+Set-AuthenticodeSignature "script.ps1" -Certificate $MyCert
+```
+
+- Option 1: Use a timestamp server ```Set-AuthenticodeSignature "script.ps1" -Certificate $MyCert -IncludeChain "All" -TimestampServer "http://timestamp.verisign.com/scripts/timstamp.dll"```
+- Option 2: Bulk sign scripts ```get-childitem *.ps1 | Set-AuthenticodeSignature -Certificate $MyCert```
+
+**Check the script signer details**
+
+Status is "UnknownError" if not added to CertStore, else "valid"
+
+```powershell
+Get-AuthenticodeSignature "script.ps1" | select-object *
+
+$Thumbprint = Get-AuthenticodeSignature "script.ps1" | Select-Object -First 1 -ExpandProperty SignerCertificate | Select-Object -First 1 -ExpandProperty Thumbprint
+Get-ChildItem Cert:\LocalMachine\TrustedPublisher\ | Where-object { $_.thumbprint -eq $Thumbprint}
+```
 
 ### Code Documentation
 
@@ -88,7 +147,7 @@ Also helpful to get further information is running this command after the expect
 $Error[0].Exception | fl * -force
 ```
 
-### Only use the latest Modules
+### Use the latest Modules
 
 For example Az modules can be installed in various versions when updated.
 Follow these three steps to update, find old modules and delete all but the latest:
