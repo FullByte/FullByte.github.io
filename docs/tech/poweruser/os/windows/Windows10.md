@@ -4,27 +4,42 @@ Notes on Windows 10.
 
 ## Windows Commands
 
-### Helpful basics
+Basics
 
-- Umfangreiche Systeminformationen: systeminfo
-- Betriebssystemversion: ver
-- Aktive Verbindungen: netstat –a
-- Standards DNS-Server: nslookup
-- Per RPC auf Server: MSTSC server00123 /f
-- net user <username> <neuespasswort>
-- net localgroup &lt;Gruppe z.B."Remote Desktop Users"> <username> /add
-- route print
-- Msconfig
+- Systeminformation: systeminfo
+- NIC and DNS Info: ipconfig -all
+- Active Connections: netstat –a
+- Routing table: route print
+- Users logged in: (Get-CimInstance Win32_LoggedOnUser) | Select-Object -Unique
+- Services Running: Msconfig
 
-### Merge files
+### Files
 
-#### To hide something
+#### Mount Linux File System
+
+List devices (choose the drive you want to mount)
+
+```powershell
+wmic diskdrive list brief
+```
+
+Mount partition 1 of "PHYSICALDRIVE3" and open it
+
+```powershell
+wsl --mount \\.\PHYSICALDRIVE3 --partition 1
+wsl
+cd /mnt/wsl/PHYSICALDRIVE3p1/
+```
+
+#### Merge Files
+
+To hide something
 
 ```shell
 copy /b secret.jpg + pic1.jpg newpic.jpg
 ```
 
-#### To merge video files
+To merge video files
 
 ```shell
 copy /b video1.avi + video2.avi video.avi
