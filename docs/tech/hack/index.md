@@ -9,6 +9,8 @@
 - <https://bazaar.abuse.ch/>
 - <https://www.shodan.io/>
 - <https://urlcanary.com/>
+- <https://osintframework.com/>
+- <https://www.hackerstorm.co.uk/>
 
 ### Helper
 
@@ -25,6 +27,19 @@
 - <http://flaws.cloud/>
 - <https://www.hacking-lab.com>
 - <https://tryhackme.com/>
+- <https://portswigger.net/web-security/learning-path>
+- <https://ctf101.org/>
+- <https://ctf.hacker101.com/>
+- <https://www.enigmagroup.org/>
+- <https://picoctf.org/>
+- <https://defendtheweb.net/?hackthis>
+- <https://www.hackthebox.eu/>
+- <https://capturetheflag.withgoogle.com/>
+- <https://lab.pentestit.ru/>
+- <https://thisislegal.com/>
+- <https://halls-of-valhalla.org/beta/challenges>
+- <http://www.try2hack.nl/>
+- <https://w3challs.com/>
 
 ### Generate Data Online
 

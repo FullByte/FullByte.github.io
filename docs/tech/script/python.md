@@ -19,7 +19,7 @@ python -m http.server
 
 **Removing Duplicates from a List**
 
-``` python
+```python
 L = list(set(L))
 ```
 
@@ -40,7 +40,7 @@ fac=lambda(n):reduce(int.__mul__,range(1,n+1),1)
 **Finding greatest common divisor**
 
 ```python
->>> def gcd(a,b):
-...     while(b):a,b=b,a%b
-...     return a
+def gcd(a,b):
+    while(b):a,b=b,a%b
+        return a
 ```
