@@ -20,13 +20,6 @@ theme:
   icon:
     logo: logo
 
-# Plugins
-plugins:
-  - search
-  - redirects:
-      redirect_maps:
-        extensions/codehilite.md: reference/code-blocks.md
-
 # Social
 extra:
   social:
@@ -41,10 +34,3 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.keys
-
-# Keyboard
-shortcuts:
-  help: 191    # ?
-  next: 78     # n
-  previous: 80 # p
-  search: 83   # s
