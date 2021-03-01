@@ -15,13 +15,13 @@ Examples using OpenSSL
 
 Generate a new private key and Certificate Signing Request
 
-```shell
+``` shell
 openssl req -out CSR.csr -new -newkey rsa:2048 -nodes -keyout privateKey.key
 ```
 
 Generate a self-signed certificate (see How to Create and Install an Apache Self Signed Certificate for more info)
 
-```shell
+``` shell
 openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out certificate.crt
 ```
 

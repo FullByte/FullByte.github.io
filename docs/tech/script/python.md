@@ -19,7 +19,7 @@ python -m http.server
 
 **Removing Duplicates from a List**
 
-```python
+``` python
 L = list(set(L))
 ```
 
