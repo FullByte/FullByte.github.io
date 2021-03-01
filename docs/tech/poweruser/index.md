@@ -1,6 +1,8 @@
-# Collaboration Tools
+# Links
 
-## Chat and Video
+## Collaboration Tools
+
+### Chat and Video
 
 - <https://discord.com/channels/@me>
 - <https://streamhut.io/>
@@ -19,13 +21,13 @@
 - <https://app.tutturu.tv/servers>
 - <https://qvdev.github.io/distributed-talker/>
 
-## Work on Text
+### Work on Text
 
 - <https://yopad.eu/>
 - <https://cryptpad.fr/>
 - <https://hackmd.io/?nav=overview>
 
-## Share Files
+### Share Files
 
 Text only
 
@@ -52,3 +54,10 @@ Files
 - <https://www.sharedrop.io/>
 - <https://instant.io/>
 - <https://snapdrop.net/>
+
+## Random
+
+- Circuit tool <https://www.falstad.com/circuit/circuitjs.html>
+- Graphtoy <https://graphtoy.com/>
+- Shadertoy <https://www.shadertoy.com/>
+- Logo is a programming language that dictates the drawing of a sketch. This is a visualizer for Logo: <https://logomor.com/>

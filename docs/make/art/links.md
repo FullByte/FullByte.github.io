@@ -31,6 +31,11 @@ Tools to create graphics and modify images online.
 - <https://memeful.com/>
 - <https://makeameme.org/>
 
+## Demos
+
+- <https://www.pouet.net/>
+- <https://demozoo.org/>
+
 ## Math
 
 - Recursive Drawing: <http://recursivedrawing.com/draw.html>
