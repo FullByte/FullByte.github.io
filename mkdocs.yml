@@ -1,8 +1,11 @@
+# Wiki Infos
 site_name: "0xfab1"
 site_url: https://0xfab1.net
 repo_url: https://github.com/FullByte/FullByte.github.io
-site_description: 
-site_author: 
+site_description: "Personal wiki of things I felt worth sharing."
+site_author: "Fabian"
+
+# Configuration
 theme:
   name: material
   static_templates:
@@ -16,16 +19,30 @@ theme:
   favicon: icons/favicon.ico
   icon:
     logo: logo
+
+# Plugins
+plugins:
+  - search
+  - redirects:
+      redirect_maps:
+        extensions/codehilite.md: reference/code-blocks.md
+
+# Social
 extra:
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/zerogdoubled
     - icon: fontawesome/brands/github
       link: https://github.com/FullByte
+
+# Extensions
 markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.highlight
+  - pymdownx.superfences
   - pymdownx.keys
+
+# Keyboard
 shortcuts:
   help: 191    # ?
   next: 78     # n

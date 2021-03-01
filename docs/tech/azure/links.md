@@ -17,6 +17,7 @@ The best websites with overviews and helpers i know for azure.
 - Azure DC Map: <https://build5nines.com/map-azure-regions/>
 - Release and change tracking on Azure Governance capabilities: <https://www.azadvertizer.net/>
 - Features by region: <https://azure.microsoft.com/en-us/global-infrastructure/services/>
+- Get Tenant ID: <https://www.whatismytenantid.com/>
 
 ### Comparing Cloud Solutions
 
