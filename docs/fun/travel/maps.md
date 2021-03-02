@@ -1,6 +1,6 @@
 # Maps
 
-Make maps
+Maps of all kind
 
 - <https://www.openstreetmap.org/#map=7/50.611/7.756>
 - <https://www.electricitymap.org/map>
@@ -29,5 +29,6 @@ Make maps
 - <https://www.openrailwaymap.org/>
 - <https://openinframap.org/#2/26/12>
 - <https://hiking.waymarkedtrails.org>
-- <http://jthatch.com/Terrain2STL/>
 - <https://maphub.net/map>
+- <https://www.opencellid.org>
+- <https://alpercinar.com/open-cell-id/>

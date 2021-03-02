@@ -1,6 +1,8 @@
 # Powershell
 
-## Setup Powershell Windows
+## Setup Powershell
+
+### Windows
 
 Admin Rights required
 
@@ -12,10 +14,10 @@ Run this command
 msiexec.exe /package PowerShell-7.1.2-win-x64.msi /quiet ADD_EXPLORER_CONTEXT_MENU_OPENPOWERSHELL=1 ENABLE_PSREMOTING=1 REGISTER_MANIFEST=1
 ```
 
-Latest Version: <https://aka.ms/powershell-release?tag=stable>
-Details: <https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7>
+- Latest Version: <https://aka.ms/powershell-release?tag=stable>
+- Details: <https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7>
 
-**2. Update [PowerShellGet](https://github.com/Azure/azure-powershell):**
+**2. Update [PowerShellGet](https://github.com/Azure/azure-powershell)**
 
 ```powershell
 Install-PackageProvider -Name NuGet -Forces -scope AllUsers
@@ -23,7 +25,7 @@ Install-Module -Name PowerShellGet -Force -scope AllUsers
 Update-Module -Name PowerShellGet -scope AllUsers
 ```
 
-**3. Install Module for Azure**
+**3. Install [Module for Azure](https://docs.microsoft.com/en-us/powershell/azure)**
 
 Install the Powershell Modules you would like to use e.g.:
 
@@ -39,7 +41,7 @@ Consider updating them from time to time with this command:
 Update-Module -scope AllUsers -Force
 ```
 
-## Setup Powershell Linux
+### Linux
 
 Install powershell on Ubuntu 20.04
 
@@ -56,7 +58,7 @@ pwsh # Start PowerShell
 
 Details: <https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7.1>
 
-## Powershell Basics
+## Powershell Tipps
 
 This chapter does not aim to teach powershell. Rather the scope is to teach proper scripting techniques, troubleshooting and collaboration when scripting.
 
@@ -122,7 +124,7 @@ Enabling to only run trusted, signed scripts is a good security measurement. Thi
 
 ```powershell
 $Password = ConvertTo-SecureString -String "password" -Force -AsPlainText 
-New-SelfSignedCertificate -subject "SelfSignedCert" -Type CodeSigning  | Export-PfxCertificate -FilePath "D:\cert2.pfx" -password $Password 
+New-SelfSignedCertificate -subject "SelfSignedCert" -Type CodeSigning  | Export-PfxCertificate -FilePath "D:\cert.pfx" -password $Password 
 ```
 
 **Import cert.pfx to certificate store**
@@ -152,6 +154,204 @@ Get-AuthenticodeSignature "script.ps1" | select-object *
 
 $Thumbprint = Get-AuthenticodeSignature "script.ps1" | Select-Object -First 1 -ExpandProperty SignerCertificate | Select-Object -First 1 -ExpandProperty Thumbprint
 Get-ChildItem Cert:\LocalMachine\TrustedPublisher\ | Where-object { $_.thumbprint -eq $Thumbprint}
+```
+
+### Encrypt Files with Powershell and Cerficates
+
+The following variables are required. Additionally you need a cert name and password but this will be queried in this example.
+
+```powershell
+$path = "D:\test.txt"
+$pwcert = "password"
+```
+
+It is important do create/use a certificate with the properties or "KeyUsage" KeyEncipherment, DataEncipherment, KeyAgreement. In case you have created a certificate without specifically mentioning this feature it may not be available and file encryption/decryption will fail.
+
+The following script will prepare a certificate or use a given one:
+
+```powershell
+$hascert=Read-Host -Prompt 'Do you have a certificate for file encryption? (Y/N)?'
+If ($hascert -eq 'Y') {
+    Write-Host 'Select Certificate.' 
+    $mycert=Get-Childitem Cert:\CurrentUser\My
+    $cert=$mycert | Where-Object hasprivatekey -eq 'true' | Select-Object -Property Issuer,Subject,HasPrivateKey | Out-GridView -Title 'Select Certificate' -PassThru
+}
+If ($hascert -eq 'N') {
+    Write-Host 'This section creates a new self signed certificate. Provide certificate name.'
+    $newcert=Read-Host 'Enter Certificate Name'
+    New-SelfSignedCertificate -DnsName $newcert -CertStoreLocation "Cert:\CurrentUser\My" -KeyUsage KeyEncipherment,DataEncipherment,KeyAgreement -Type DocumentEncryptionCert
+    $cert=Get-ChildItem -Path Cert:\CurrentUser\My\ | Where-Object subject -like "*$newcert*"
+    $thumb=$cert.thumbprint
+    Export-PfxCertificate -Cert Cert:\CurrentUser\My\$thumb -FilePath $home\"cert_"$env:username".pfx" -Password $pwcert 
+}
+```
+
+Now that we have everything setup we can encrypt/decrypt a given file:
+
+```powershell
+$enc=Read-Host -Prompt 'Do you want to [e]ncrypt or [d]ecrypt the file? (E/D)?'
+If ($enc -eq 'E') {
+    Get-Content $path | Protect-CmsMessage -To $cert.Subject -OutFile $path
+}
+If ($enc -eq 'D') {
+    $message = Unprotect-CmsMessage -Path $path -To $cert.Subject
+    Set-Content -Path $path -Value $message
+}
+```
+
+## Snippets
+
+Some handy code snippets for powershell :)
+
+### Get System information
+
+Get WinSAT information
+
+```powershell
+# Run WinSAT (optional)
+WinSAT formal
+
+# Get WinSAT Data (XML)
+$path = Get-ChildItem -Path 'C:\Windows\Performance\WinSAT\DataStore\*Formal.*.xml' | Sort-Object -Property CreationTime -Descending | Select-Object -First 1 -ExpandProperty FullName
+
+# Parse as XML
+$xml = [xml]::new()
+$xml.Load($Path)
+
+# Read XML
+$node = $xml.WinSAT.Metrics.CPUMetrics.CompressionMetric
+'CPU Compression Performance is {0} {1}' -f $node.'#text', $node.units
+'CPU Manufacturer is {0} ' -f $xml.WinSAT.SystemConfig.Processor.Instance.Signature.Manufacturer.friendly
+```
+
+### Windows Defender Stats
+
+```powershell
+$DefenderStatus = (Get-Service WinDefend -ErrorAction SilentlyContinue).Status
+if ($DefenderStatus -ne "Running") {
+    throw "The Windows Defender service is not currently running"
+}
+Get-MpComputerStatus
+```
+
+### Take a screenshot
+
+Take a screenshot and save the image on your desktop:
+
+```powershell
+Add-Type -AssemblyName System.Windows.Forms
+Add-type -AssemblyName System.Drawing
+$Screen = [System.Windows.Forms.SystemInformation]::VirtualScreen
+$bitmap = New-Object System.Drawing.Bitmap $Screen.Width, $Screen.Height
+$graphic = [System.Drawing.Graphics]::FromImage($bitmap)
+$graphic.CopyFromScreen($Screen.Left, $Screen.Top, 0, 0, $bitmap.Size)
+$bitmap.Save([Environment]::GetFolderPath("Desktop") + "\Screenshot.bmp")
+```
+
+### Get Apps Installed
+
+List all programs installed on Windows (and ignore the ones from Microsoft)
+
+```powershell
+Get-WMIObject -Query "SELECT * FROM Win32_Product Where Not Vendor Like '%Microsoft%'" | Format-Table
+```
+
+List files in Programs Folder:
+
+```powershell
+$Path = "$Env:ProgramData\Microsoft\Windows\Start Menu\Programs"
+$StartMenu = Get-ChildItem $Path -Recurse -Include *.lnk
+
+ForEach ($Item in $StartMenu) {
+   $Shell = New-Object -ComObject WScript.Shell
+   $Properties = @{
+        ShortcutName = $Item.Name
+        Target = $Shell.CreateShortcut($Item).targetpath
+        }
+    New-Object PSObject -Property $Properties
+}
+
+[Runtime.InteropServices.Marshal]::ReleaseComObject($Shell) | Out-Null
+```
+
+List installed Windows Store Apps (and ignore some):
+
+```powershell
+#Requires -RunAsAdministrator
+
+Import-Module Appx
+$Packages = Get-AppxPackage
+
+## Ignore MS Stuff
+$Whitelist = @(
+    '*WindowsCalculator*',
+    '*MSPaint*',
+    '*Office.OneNote*',
+    '*Microsoft.net*',
+    '*MicrosoftEdge*',
+    '*Microsoft*'
+)
+
+## Remove all things to ignore
+ForEach($App in $Packages){
+    $Matched = $false
+    Foreach($Item in $Whitelist){
+        If($App -like $Item){
+            $Matched = $true
+            break
+        }
+    }
+
+    if($matched -eq $false){
+        [PSCustomObject]@{
+        Name = $App.Name
+        Location = $App.InstallLocation
+        }
+    }
+}
+```
+
+### Speech
+
+Make powershell read out some given text:
+
+```powershell
+[Reflection.Assembly]::LoadWithPartialName('System.Speech') | Out-Null
+$tts = New-Object System.Speech.Synthesis.SpeechSynthesizer
+$tts.Speak("OMG I can speak!")
+```
+
+It is possible to add [SSML](https://www.w3.org/TR/speech-synthesis) to set pitch and language:
+
+```powershell
+Add-Type -AssemblyName System.speech
+$tts = New-Object System.Speech.Synthesis.SpeechSynthesizer
+
+$Phrase = '
+<speak version="1.0" xmlns="http://www.w3.org/2001/10/synthesis" 
+    xml:lang="en-US">
+    <voice xml:lang="en-US">
+    <prosody rate="1">
+        <p>Normal pitch. </p>
+        <p><prosody pitch="x-high"> High Pitch. </prosody></p>
+    </prosody>
+    </voice>
+</speak>
+'
+$tts.SpeakSsml($Phrase)
+```
+
+### Send Email
+
+```powershell
+$From = "You@gmail.com"
+$To = "sombody@somewhere.com"
+$Attachment = "D:\test.txt"
+$Subject = "Subject"
+$Body = "Hi"
+$SMTPServer = "smtp.gmail.com"
+$SMTPPort = "587"
+Send-MailMessage -From $From -to $To -Subject $Subject -Body $Body -SmtpServer $SMTPServer -port $SMTPPort -UseSsl -Credential (Get-Credential) -Attachments $Attachment
 ```
 
 ## Troubleshooting

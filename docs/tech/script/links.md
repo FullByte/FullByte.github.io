@@ -29,6 +29,10 @@ Other:
 - <https://htmx.org/>
 - <https://htmlboilerplates.com/>
 
+## Helper
+
+- <https://www.tablesgenerator.com/>
+
 ## IDE
 
 ### Local IDE

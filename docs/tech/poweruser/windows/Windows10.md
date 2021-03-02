@@ -31,6 +31,8 @@ wsl
 cd /mnt/wsl/PHYSICALDRIVE3p1/
 ```
 
+Source: <https://docs.microsoft.com/de-de/windows/wsl/wsl2-mount-disk>
+
 #### Merge Files
 
 To hide something

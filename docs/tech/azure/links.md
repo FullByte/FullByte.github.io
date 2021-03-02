@@ -18,6 +18,7 @@ The best websites with overviews and helpers i know for azure.
 - Release and change tracking on Azure Governance capabilities: <https://www.azadvertizer.net/>
 - Features by region: <https://azure.microsoft.com/en-us/global-infrastructure/services/>
 - Get Tenant ID: <https://www.whatismytenantid.com/>
+- MSDN Licence Goodies: <https://visualstudio.microsoft.com/de/vs/benefits/#software-und-downloads>
 
 ### Comparing Cloud Solutions
 
@@ -120,6 +121,7 @@ Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimizat
 - Azure Online Events: <https://events.microsoft.com/?timeperiod=all&isSharedInLocalViewMode=false&category=Online&product=Cloud%20Platform&product=Developer%20Tools&product=Microsoft%20Azure&language=English>
 - Microsoft OpenHack: <https://openhack.microsoft.com>
 - Getting started with Azure DevOps: <https://azuredevopslabs.com/>
+- DevOps Training Days <https://azuredevcollege.com/trainingdays/>
 
 ### Microsoft Learning Paths
 

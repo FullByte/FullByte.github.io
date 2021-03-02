@@ -9,6 +9,7 @@
 - Stream Terminal Session: <https://github.com/miguelmota/streamhut>
 - Text Editor: <https://micro-editor.github.io/>
 - Browser: <http://w3m.sourceforge.net/>
+- Charts: <https://github.com/irevenko/tsukae>
 
 ## Files
 
