@@ -7,3 +7,4 @@
 - <https://teddit.net/>
 - <https://nitter.nixnet.services/>
 - <https://datorss.com>
+- <https://orbitalindex.com/archive/>

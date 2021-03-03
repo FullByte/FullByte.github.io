@@ -16,7 +16,7 @@
 
 - <http://www.bergsteigen.com/klettern/ticino/tessiner-alpen/staumauer-luzzone>
 - <https://www.tourendatenbank.com/staudamm-klettern-am-diga-di-luzzone/>
-- <http://www.alpenverein-hannover.de/dav-hannover/cfscripts/main.cfm>
+- <https://alpenverein-hannover.de/>
 
 ## Knots
 

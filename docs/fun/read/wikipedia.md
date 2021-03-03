@@ -100,7 +100,7 @@ What is Wikipedia? [Here is a good explanation.](https://en.m.wikipedia.org/wiki
 - [Jólasveinar](https://de.wikipedia.org/wiki/J%C3%B3lasveinar "https://de.wikipedia.org/wiki/J%C3%B3lasveinar")
 - [Oblique Strategies](https://en.m.wikipedia.org/wiki/Oblique_Strategies "https://en.m.wikipedia.org/wiki/Oblique_Strategies")
 - [Black Tom explosion](https://en.m.wikipedia.org/wiki/Black_Tom_explosion "https://en.m.wikipedia.org/wiki/Black_Tom_explosion")
-- [Japanische Zeitrechnung](https://de.m.wikipedia.org/wiki/Japanische_Zeitrechnung "https://de.m.wikipedia.org/wiki/Japanische_Zeitrechnung") 
+- [Japanische Zeitrechnung](https://de.m.wikipedia.org/wiki/Japanische_Zeitrechnung "https://de.m.wikipedia.org/wiki/Japanische_Zeitrechnung")
 - [Provopoli](https://de.wikipedia.org/wiki/Provopoli "https://de.wikipedia.org/wiki/Provopoli")
 - [Sexagesimal](https://en.m.wikipedia.org/wiki/Sexagesimal "https://en.m.wikipedia.org/wiki/Sexagesimal")
 
@@ -227,7 +227,7 @@ What is Wikipedia? [Here is a good explanation.](https://en.m.wikipedia.org/wiki
 - [ISO 3103](https://en.wikipedia.org/wiki/ISO_3103 "https://en.wikipedia.org/wiki/ISO_3103")
 - [Trout tickling](https://en.wikipedia.org/wiki/Trout_tickling "https://en.wikipedia.org/wiki/Trout_tickling")
 - [Fast inverse square root](https://en.wikipedia.org/wiki/Fast_inverse_square_root "https://en.wikipedia.org/wiki/Fast_inverse_square_root")
-- [Cross Chess](https://en.wikipedia.org/wiki/Cross_Chess "https://en.ikipedia.org/wiki/Cross_Chess")
+- [Cross Chess](https://en.wikipedia.org/wiki/Cross_Chess "https://en.wikipedia.org/wiki/Cross_Chess")
 - [100 prisoners problem](https://en.wikipedia.org/wiki/100_prisoners_problem "https://en.wikipedia.org/wiki/100_prisoners_problem")
 - [Münchhausen trilemma](https://en.wikipedia.org/wiki/M%C3%BCnchhausen_trilemma "https://en.wikipedia.org/wiki/M%C3%BCnchhausen_trilemma")
 - [Hair ice](https://en.wikipedia.org/wiki/Hair_ice "https://en.wikipedia.org/wiki/Hair_ice")

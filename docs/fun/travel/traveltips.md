@@ -12,7 +12,6 @@
 ### New Zealand
 
 - <https://maps.doc.govt.nz/mapviewer/index.html?viewer=dto>
-- <https://www.nztopomaps.com/>
 - <https://www.doc.govt.nz/parks-and-recreation/places-to-stay/stay-in-a-hut/booking-and-paying/>
 - <https://www.nzpost.co.nz/personal/receiving-mail/poste-restante>
 - <https://www.bookme.co.nz/bookings/queenstown/home>

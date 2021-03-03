@@ -1,3 +1,6 @@
+# Source: https://www.mkdocs.org/user-guide/deploying-your-docs/
+# Build mkdocs page on every push using gh-deploy
+
 name: mkdocs gh-deploy
 
 on:
