@@ -205,7 +205,7 @@ Some handy code snippets for powershell :)
 
 ### Get System information
 
-Get WinSAT information
+**Get WinSAT information**
 
 ```powershell
 # Run WinSAT (optional)
@@ -224,7 +224,7 @@ $node = $xml.WinSAT.Metrics.CPUMetrics.CompressionMetric
 'CPU Manufacturer is {0} ' -f $xml.WinSAT.SystemConfig.Processor.Instance.Signature.Manufacturer.friendly
 ```
 
-### Windows Defender Stats
+**Windows Defender Stats**
 
 ```powershell
 $DefenderStatus = (Get-Service WinDefend -ErrorAction SilentlyContinue).Status
@@ -234,21 +234,13 @@ if ($DefenderStatus -ne "Running") {
 Get-MpComputerStatus
 ```
 
-### Take a screenshot
+**Install apps**
 
-Take a screenshot and save the image on your desktop:
+Get install apps from app-store
 
 ```powershell
-Add-Type -AssemblyName System.Windows.Forms
-Add-type -AssemblyName System.Drawing
-$Screen = [System.Windows.Forms.SystemInformation]::VirtualScreen
-$bitmap = New-Object System.Drawing.Bitmap $Screen.Width, $Screen.Height
-$graphic = [System.Drawing.Graphics]::FromImage($bitmap)
-$graphic.CopyFromScreen($Screen.Left, $Screen.Top, 0, 0, $bitmap.Size)
-$bitmap.Save([Environment]::GetFolderPath("Desktop") + "\Screenshot.bmp")
+Get-AppxPackage | Select-Object -Property Name, Status, Version, InstallLocation | Format-Table
 ```
-
-### Get Apps Installed
 
 List all programs installed on Windows (and ignore the ones from Microsoft)
 
@@ -256,7 +248,7 @@ List all programs installed on Windows (and ignore the ones from Microsoft)
 Get-WMIObject -Query "SELECT * FROM Win32_Product Where Not Vendor Like '%Microsoft%'" | Format-Table
 ```
 
-List files in Programs Folder:
+List files in programs folder:
 
 ```powershell
 $Path = "$Env:ProgramData\Microsoft\Windows\Start Menu\Programs"
@@ -311,6 +303,20 @@ ForEach($App in $Packages){
 }
 ```
 
+### Take a screenshot
+
+Take a screenshot and save the image on your desktop:
+
+```powershell
+Add-Type -AssemblyName System.Windows.Forms
+Add-type -AssemblyName System.Drawing
+$Screen = [System.Windows.Forms.SystemInformation]::VirtualScreen
+$bitmap = New-Object System.Drawing.Bitmap $Screen.Width, $Screen.Height
+$graphic = [System.Drawing.Graphics]::FromImage($bitmap)
+$graphic.CopyFromScreen($Screen.Left, $Screen.Top, 0, 0, $bitmap.Size)
+$bitmap.Save([Environment]::GetFolderPath("Desktop") + "\Screenshot.bmp")
+```
+
 ### Speech
 
 Make powershell read out some given text:
@@ -343,6 +349,8 @@ $tts.SpeakSsml($Phrase)
 
 ### Send Email
 
+Sind Mail with depreacted Send-MailMessage command
+
 ```powershell
 $From = "You@gmail.com"
 $To = "sombody@somewhere.com"
@@ -352,6 +360,28 @@ $Body = "Hi"
 $SMTPServer = "smtp.gmail.com"
 $SMTPPort = "587"
 Send-MailMessage -From $From -to $To -Subject $Subject -Body $Body -SmtpServer $SMTPServer -port $SMTPPort -UseSsl -Credential (Get-Credential) -Attachments $Attachment
+```
+
+
+# Get a list of meetings occurring today
+
+```powershell
+$ns = New-Object -ComObject Outlook.Application.GetNamespace('MAPI')
+$Start = (Get-Date).ToShortDateString()
+$End = (Get-Date).ToShortDateString()
+$appointments = $ns.GetDefaultFolder(9).Items
+$appointments.IncludeRecurrences = $true
+$appointments.Restrict("[MessageClass]='IPM.Appointment' AND [Start] > '$Start' AND [End] < '$End'") |  
+ForEach-Object {
+    if (-Not $_.IsRecurring ) { $_;  } else {
+        try { $_.GetRecurrencePattern().GetOccurrence((Get-Date).ToString("yyyy-MM-dd") + " " + $_.Start.ToString("HH:mm")) } 
+        catch {  }
+		}
+	} | Sort-Object -property Start | ForEach-Object { 
+    $arrr = ($_.RequiredAttendees.split(';') | ForEach-Object { $_.Trim() } | ForEach-Object { $_.split(' ')[1] + ' ' + $_.split(' ')[0] } )
+    $attendees = ($arrr -join " ").Replace(", ",",").TrimEnd(',')
+    "`n`t`t[ ] $($_.Start.ToString("HH:mm")) - $($_.Subject.ToUpper()) with: $attendees"
+}
 ```
 
 ## Troubleshooting
