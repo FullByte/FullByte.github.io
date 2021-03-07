@@ -2,11 +2,11 @@
 
 ## Config Kismet
 
-/usr/local/etc/kismet.conf
-source=ipw2200,eth1,Intel
+Config this file ```/usr/local/etc/kismet.conf```
+And add a sourece e.g. ```source=ipw2200,eth1,Intel```
 
 ## Kismet Commands
 
-ss (tippen)
-L (WLAN & Channel auswählen)
-i (für die Info --> BSSID kopieren)
+- ss (type)
+- L (choose WIFI+Channel)
+- i (Info -> copy BSSID)
