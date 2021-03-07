@@ -11,6 +11,14 @@ FFmpeg is a great tool and here are some examples.
 |Download||
 |Install||
 
+## Get File Information
+
+Get codec details of a given video file e.g. "video.mp4":
+
+```shell
+ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 video.mp4
+```
+
 ## Create Time Lapse Video
 
 In my case the files are from a GoPro named "G" followed by seven digits e.g. G0011565.jpg.
