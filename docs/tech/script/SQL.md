@@ -8,9 +8,11 @@ Right Join --> Auch wenn links keine Werte zu rechts stehen wird links angezeigt
 
 ## CASE Anweisung
 
+This example translates ```[Table].[statusID]``` into a given text value.
+
 ```SQL
-SELECT [InstallationWorkflow] =
-CASE [Servers].[InstallationWorkflowID]
+SELECT [Table] =
+CASE [Table].[statusID]
     WHEN 0 THEN 'Created'
     WHEN 200 THEN 'Running'
     WHEN 300 THEN 'HALTED'

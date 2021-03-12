@@ -1,8 +1,14 @@
 # Watch List
 
-## Top 10 Movies
+This is a list of movies I enjoyed watching.
+For more details view the IMDB link.
+The IMDB full list may contain more than my current Top 10 per category.
 
-### Top 10 Movies Ever
+## Best movies ever
+
+Full list: <http://www.imdb.com/list/ls025677564/>
+
+My current favorites:
 
 - Valhalla Rising
 - Mad Max: Fury Road
@@ -15,59 +21,62 @@
 - Nightcrawler
 - Rampage (2009)
 
-### Top 10 Animated
+## Animated movies
+
+Full list: N/A
+
+My current favorites:
 
 - Mutafukaz
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+- Werner - gekotzt wird später
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
 
-### Top 10 Anime
+## Anime movies
+
+Full list: N/A
+
+My current favorites:
 
 - Ghost in the Shell
 - Spirited Away
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
 
-### Top 10 Serien
+## Serien
 
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+Full list: N/A
 
-### Top 10 Cartoons
+My current favorites:
 
-- Werner - gekotzt wird später
-- A s
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
 
-### Top 10 Stumpfe Action
+## Keep it simple and brutal action movies
+
+Full list: N/A
+
+My current favorites:
 
 - Death Race
 - Hardcore
@@ -78,9 +87,13 @@
 - John Wick 3
 - Apocalypto
 - The Expendables 3
-- XXX
+- N/A
 
-### Top 10 Strange Movies
+## Strange Movies
+
+Full list: N/A
+
+My current favorites:
 
 - Bird Man
 - Border
@@ -91,7 +104,11 @@
 - Frank
 - Bug (2006)
 
-### Top 10 Comedy
+## Comedy movies
+
+Full list: N/A
+
+My current favorites:
 
 - Dodgeball - Voll auf die Nüsse
 - Happy Gilmore
@@ -104,7 +121,11 @@
 - New Kids Turbo
 - Hot Tub Time Machine 2
 
-### Top 10 Triologien
+## Trilogy Movies
+
+Full list: N/A
+
+My current favorites:
 
 - Matrix 1-3
 - Herr der Ringe 1-3
@@ -117,20 +138,28 @@
 - Alien 1-2 + 4
 - The Dark Night 1-3
 
-### Top 10 Romanzen
+## Romantic Movies
+
+Full list: N/A
+
+My current favorites:
 
 - Her
 - Match Point
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
-- XXX
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
+- N/A
 
-### Top 10 Trash Movies
+## Trash Movies
+
+Full list: <http://www.imdb.com/list/ls025677553/>
+
+My current favorites:
 
 - Sharknado 3
 - Chillerama
@@ -143,11 +172,9 @@
 - Rubber
 - Turbo Kid
 
-## Recommended to watch
+## Series
 
-### Series
-
-#### Good Series
+### Good Series
 
 - American gods
 - Better Call Saul
@@ -171,7 +198,7 @@
 - Westworld
 - X-Files
 
-#### Animated Series
+### Animated Series
 
 - Adventure Time
 - Aqua Teen Hunger Force
@@ -204,9 +231,9 @@
 - Ugly Americans
 - Wonder Showzen
 
-### Movies
+## Movies
 
-#### Good Movies
+### Good Movies
 
 - 12 Monkeys
 - 28 Days Later
@@ -282,7 +309,7 @@
 - Valhalla Rising
 - Whiplash
 
-#### Trash Movies
+### Trash Movies
 
 - Black Dynamite
 - Chillerama

@@ -40,9 +40,12 @@
 
 ## 2 Player
 
-- <https://papergames.io/en>
-- <http://en.lichess.org/>
-- <https://go.mattle.online/welcome>
+- Chess <http://en.lichess.org/>
+- Go <https://go.mattle.online/>
+- Pai Sho <https://skudpaisho.com/>
+- Battleship <https://papergames.io/en/battleship>
+- Connect4 <https://papergames.io/en/connect4>
+- Gomoku <https://papergames.io/en/gomoku>
 
 ## 2+ Player
 
