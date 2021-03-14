@@ -96,6 +96,8 @@ What is Wikipedia? [Here is a good explanation.](https://en.m.wikipedia.org/wiki
 
 ## Unsorted
 
+- [Spaghettification](https://en.m.wikipedia.org/wiki/Spaghettification "https://en.m.wikipedia.org/wiki/Spaghettification")
+- [Crypto-anarchism](https://en.m.wikipedia.org/wiki/Crypto-anarchism "https://en.m.wikipedia.org/wiki/Crypto-anarchism")
 - [Chanakya](https://en.m.wikipedia.org/wiki/Chanakya "https://en.m.wikipedia.org/wiki/Chanakya")
 - [Jólasveinar](https://de.wikipedia.org/wiki/J%C3%B3lasveinar "https://de.wikipedia.org/wiki/J%C3%B3lasveinar")
 - [Oblique Strategies](https://en.m.wikipedia.org/wiki/Oblique_Strategies "https://en.m.wikipedia.org/wiki/Oblique_Strategies")
@@ -103,7 +105,6 @@ What is Wikipedia? [Here is a good explanation.](https://en.m.wikipedia.org/wiki
 - [Japanische Zeitrechnung](https://de.m.wikipedia.org/wiki/Japanische_Zeitrechnung "https://de.m.wikipedia.org/wiki/Japanische_Zeitrechnung")
 - [Provopoli](https://de.wikipedia.org/wiki/Provopoli "https://de.wikipedia.org/wiki/Provopoli")
 - [Sexagesimal](https://en.m.wikipedia.org/wiki/Sexagesimal "https://en.m.wikipedia.org/wiki/Sexagesimal")
-
 - [Bardcore](https://en.m.wikipedia.org/wiki/Bardcore "https://en.m.wikipedia.org/wiki/Bardcore")
 - [Barkley Marathons](https://en.wikipedia.org/wiki/Barkley_Marathons "https://en.wikipedia.org/wiki/Barkley_Marathons")
 - [Hawthorne effect](https://en.wikipedia.org/wiki/Hawthorne_effect "https://en.wikipedia.org/wiki/Hawthorne_effect")

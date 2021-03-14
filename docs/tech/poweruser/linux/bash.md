@@ -2,6 +2,42 @@
 
 Add <https://explainshell.com/> link to all cool commands :)
 
+## Add/Remove User
+
+```shell
+adduser <user> # Add user
+gpasswd -a <user> <group> # Add user to group
+groups <user> # Show groups the user is added to
+gpasswd -d <user> <group> # Remove user from group
+
+passwd -l <user> # Lock the  User account
+killall -9 -u <user> # Kill all running processes of the User
+crontab -r -u <user> # Delete the user's cron jobs
+lprm <user> # Delete printer jobs run
+userdel -r <user> # Delete/ remove user account and files
+```
+
+## Install xrdp
+
+```shell
+sudo apt-get updates
+sudo apt-get install tasksel
+sudo apt-get install xrdp # start RDP
+sudo systemctl status xrdp #verify
+```
+
+## Install TeamViewer
+
+```shell
+wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+sudo apt-get install ./teamviewer_amd64.deb
+teamviewer
+teamviewer --passwd password
+teamviewer daemon restart
+teamviewer -info
+teamviewer license accept
+```
+
 ## Install and Update
 
 **Keyboard layout**
