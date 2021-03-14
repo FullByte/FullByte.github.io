@@ -29,31 +29,29 @@
 
 ### Share Files
 
-Text only
-
-- <https://privnote.com/>
-- <https://hardbin.com/>
-- <https://ctxt.io/>
-- <https://zerobin.net/>
-- <https://privatebin.net/>
-- <https://emojicrypt.com/>
-- <https://ufile.io/>
-
-Files
-
-- <https://www.justbeamit.com/>
-- <https://sendfiles.online/>
-- <https://whisp.ly/de>
-- <https://securedrop.org/>
-- <https://wetransfer.com/>
-- <https://instant.io/>
-- <https://cryptsend.io/cat/public/index.html>
-- <https://enzypt.io/>
-- <https://opentimestamps.org/>
-- <https://webwormhole.io/>
-- <https://www.sharedrop.io/>
-- <https://instant.io/>
-- <https://snapdrop.net/>
+|Service|URL|Features|Comments|
+|---|---|--|--|
+|Priv Note|<https://privnote.com/>|Text only||
+||<https://hardbin.com/>|Text only||
+||<https://ctxt.io/>|Text only||
+||<https://zerobin.net/>|Text only||
+||<https://privatebin.net/>|Text only||
+||<https://emojicrypt.com/>|Text only||
+||<https://ufile.io/>|Files only||
+||<https://www.justbeamit.com/>|Files only||
+||<https://sendfiles.online/>|Files only||
+||<https://whisp.ly/de>|Files only||
+||<https://securedrop.org/>|Files only||
+||<https://wetransfer.com/>|Files only||
+||<https://instant.io/>|Files only||
+||<https://cryptsend.io/cat/public/index.html>|Files only||
+||<https://enzypt.io/>|Files only||
+||<https://opentimestamps.org/>|Files only||
+||<https://webwormhole.io/>|Files only||
+||<https://www.sharedrop.io/>|Files only||
+||<https://instant.io/>|Files only||
+||<https://snapdrop.net/>|Files only||
+|bitwarden sends|<https://vault.bitwarden.com/#/sends>|Test and Files|Account required|
 
 ## Random
 

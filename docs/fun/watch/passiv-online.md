@@ -6,16 +6,34 @@ Passive online screens that are nice to watch.
 
 - <https://www.robscanlon.com/encom-boardroom/>
 - <https://fakeupdate.net/>
-- <https://hackertyper.net/>
-- <http://geektyper.com/>
 - <https://www.windows93.net/>
+
+### Hacker
+
+Web/Online
+
 - <https://svenstaro.github.io/genact/>
+- <https://hackertyper.net/>
+- <https://hacker-simulator.com/>
+- <https://geektyper.com/mobile/>
 - <http://skynetsimulator.com/>
-- <https://fractal.garden/>
+- <https://cybermap.kaspersky.com/>
+
+Run on yout own machine (ubuntu)
+
+```bash
+sudo add-apt-repository ppa:vantuz/cool-retro-term
+sudo apt-get update
+sudo apt-get install cool-retro-term
+sudo apt-get install hollywood
+cool-retro-term
+Byobu
+hollywood
+```
 
 ## Nice to watch
 
-- <https://cybermap.kaspersky.com/>
+- <https://fractal.garden/>
 - <https://earthview.withgoogle.com/>
 - <http://iacopoapps.appspot.com/hopalongwebgl/>
 - <http://dn.ht/picklecat/>
