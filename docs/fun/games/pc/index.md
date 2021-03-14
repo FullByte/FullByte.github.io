@@ -1,5 +1,9 @@
 # Computer Games
 
+## Links
+
+- Steam Updates: <https://steamdb.info/apps/>
+
 ## Games I enjoy
 
 TODO

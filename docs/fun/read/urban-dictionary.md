@@ -12,3 +12,5 @@ A list of the most entertaining Urban Dictionary pages
 - [Faangsexual](https://www.urbandictionary.com/define.php?term=Faangsexual "https://www.urbandictionary.com/define.php?term=Faangsexual")
 - [Hobosexual](https://www.urbandictionary.com/define.php?term=Hobosexual "https://www.urbandictionary.com/define.php?term=Hobosexual")
 - [Helisexual](https://www.urbandictionary.com/define.php?term=helisexual "https://www.urbandictionary.com/define.php?term=helisexual")
+- [fjdn](https://www.urbandictionary.com/define.php?term=fjdn "https://www.urbandictionary.com/define.php?term=fjdn")
+

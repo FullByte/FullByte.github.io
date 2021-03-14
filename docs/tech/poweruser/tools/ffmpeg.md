@@ -43,54 +43,50 @@ More details: <https://trac.ffmpeg.org/wiki/Encode/H.264>
 ffmpeg -i input.avi -c:v libx264 -preset slow -crf 15 output.mkv
 ```
 
-## Save video to share with Whatsapp
+## Save Video optimized for Messenger
 
-If it doesn't work possibly max size is reached.
+This works well for Whatsapp, Signal, Threema, Telegram, etc...
+Make sure not to reach current allowed max files size.
 
 With sound:
 
 ```shell
-ffmpeg -i obc_input.mkv -vf -an scale=960x540 whatsapp.mp4
+ffmpeg -i input.mkv -vf -an scale=960x540 messenger.mp4
 ```
 
 No sound:
 
 ```shell
-ffmpeg -i obc_input.mkv -vf -an scale=960x540 whatsapp.mp4
+ffmpeg -i input.mkv -vf -an scale=960x540 messenger.mp4
 ```
 
 ## Save as AV1
 
-### Pass 1
-
 ```shell
-ffmpeg.exe -i input.mp4 -c:v libaom-av1 -b:v 200k -filter:v scale=720:-1 -strict experimental -cpu-used 1 -tile-columns 2 -row-mt 1 -threads 8 -pass 1 -f mp4 NUL && ^
+# Pass 1
+ffmpeg -i input.mp4 -c:v libaom-av1 -b:v 200k -filter:v scale=720:-1 -strict experimental -cpu-used 1 -tile-columns 2 -row-mt 1 -threads 8 -pass 1 -f mp4 NUL && ^
+# Pass 2
+ffmpeg -i input.mp4 -pix_fmt yuv420p -movflags faststart -c:v libaom-av1 -b:v 200k -filter:v scale=720:-1 -strict experimental -cpu-used 1 -tile-columns 2 -row-mt 1 -threads 8 -pass 2 output.mp4
 ```
 
-### Pass 2
+## Convert from/to GIF
+
+From GIF to MP4
 
 ```shell
-ffmpeg.exe -i input.mp4 -pix_fmt yuv420p -movflags faststart -c:v libaom-av1 -b:v 200k -filter:v scale=720:-1 -strict experimental -cpu-used 1 -tile-columns 2 -row-mt 1 -threads 8 -pass 2 output.mp4
+ffmpeg -i input.gif -filter_complex "[0:v] fps=15" -vsync 0 -f mp4 -pix_fmt yuv420p output.mp4
 ```
 
-## Convert from MOV to GIF
+From MP4 to GIF
 
 ```shell
-ffmpeg.exe -i input.mov -ss 00:08:08 -t 12 -filter_complex "[0:v] fps=12,scale=720:-1" -y scene2.gif
+ffmpeg -i input.mp4 -filter_complex "[0:v] fps=12,scale=480:-1,split [a][b];[a] palettegen [p];[b][p] paletteuse" output.gif
 ```
 
-## Convert from GIF to MP4
+Add e.g. "-ss 5.0 -t 3.2" to only create GIF for 3.2 secounds ot "input.mp4"
 
 ```shell
-ffmpeg -f gif -i favmeme.gif betterfavmeme.mp4
-```
-
-## Convert from MP4 to minimized GIF
-
-Turn input.mp4 into a small output.gif by cutting the gif palette size with palettegen=max_colors=64 to improve the compression:
-
-```shell
-ffmpeg -ss 00:03 -t 00:03.7 -i input.mp4 -an -vf "transpose=2, crop=in_w-200:in_h-50:0:0, fps=11, scale=-1:360:flags=lanczos, split[s0][s1];[s0]palettegen=max_colors=64[p];[s1][p]paletteuse" -loop 1 output.gif
+ffmpeg -ss 5.0 -t 3.2 -i input.mp4 -filter_complex "[0:v] fps=12,scale=480:-1,split [a][b];[a] palettegen [p];[b][p] paletteuse" output.gif
 ```
 
 ## Stack Videos in a Grid (Horizontally and Vertically)
