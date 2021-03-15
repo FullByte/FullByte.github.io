@@ -1,4 +1,7 @@
-# Ubuntu
+# Linux / Ubuntu
+
+Most commands listed here will work on any linux distributions but if in doubt it will most likely run on the latest Ubuntu.
+Great tool to understand commands: <https://explainshell.com/>
 
 ## Basics
 
@@ -59,74 +62,259 @@ update-rc.d bootupdate.sh start 2
 
 ## Make Ubuntu Desktop nice
 
-Get Video Codecs
-
 ```shell
+# Get Video Codecs
 sudo apt-get install ubuntu-restricted-extras ubuntu-restricted-addons
-```
 
-Get Compiz and Docky
-
-```shell
+# Get Compiz and Docky
 sudo apt-get install gnome-session-flashback compiz compiz-core compiz-plugins compiz-plugins-default compiz-plugins-extra compiz-plugins-main compiz-plugins-main-default compiz-plugins-main-dev compizconfig-settings-manager docky
-```
 
-Gnome Tweak
-
-```shell
+#Gnome Tweak
 sudo apt-get install gnome-tweaks gnome-tweak-tool
 ```
 
-## Network Tools
+## Add/Remove User
 
-1. arpwatch – Ethernet Activity Monitor.
-2. bmon – bandwidth monitor and rate estimator.
-3. bwm-ng – live network bandwidth monitor.
-4. curl – transferring data with URLs.
-5. darkstat – captures network traffic, usage statistics.
-6. dhclient – Dynamic Host Configuration Protocol Client
-7. dig – query DNS servers for information.
-8. dstat – replacement for vmstat, iostat, mpstat, netstat and ifstat.
-9. ethtool – utility for controlling network drivers and hardware.
-10. ftp – simplest file transfer protocol.
-11. gated – gateway routing daemon.
-12. host – DNS lookup utility.
-13. hping – TCP/IP packet assembler/analyzer.
-14. ibmonitor – shows bandwidth and total data transferred.
-15. ifstat –  report network interfaces bandwidth.
-16. iftop – display bandwidth usage.
-17. ip (PDF file) – a command with more features that ifconfig (net-tools).
-18. iperf3 – network bandwidth measurement tool. (above screenshot Stacklinux VPS)
-19. iproute2 – collection of utilities for controlling TCP/IP.
-20. IPTraf – An IP Network Monitor.
-21. iputils – set of small useful utilities for Linux networking.
-22. jwhois (whois) – client for the whois service.
-23. mtr – network diagnostic tool.
-24. net-tools – utilities include: arp, hostname, ifconfig, netstat, rarp, route, plipconfig, slattach, mii-tool, iptunnel and ipmaddr.
-25. ncat – improved re-implementation of the venerable netcat.
-26. netcat – networking utility for reading/writing network connections.
-27. nethogs – a small ‘net top’ tool.
-28. Netperf – Network bandwidth Testing.
-29. netsniff-ng – Swiss army knife for daily Linux network plumbing.
-30. netstat – Print network connections, routing tables, statistics, etc.
-31. netwatch – monitoring Network Connections.
-32. nload – display network usage.
-33. nmap – network discovery and security auditing.
-34. nslookup – query Internet name servers interactively.
-35. ping – send icmp echo_request to network hosts.
-36. route – show / manipulate the IP routing table.
-37. slurm – network load monitor.
-38. smokeping –  keeps track of your network latency.
-39. speedometer – Measure and display the rate of data across a network.
-40. speedtest-cli – test internet bandwidth using speedtest.net
-41. ss – utility to investigate sockets.
-42. ssh –  secure system administration and file transfers over insecure networks.
-43. tcpdump – command-line packet analyzer.
-44. tcptrack – Displays information about tcp connections on a network interface.
-45. telnet – user interface to the TELNET protocol.
-46. tracepath – very similar function to traceroute.
-47. traceroute – print the route packets trace to network host.
-48. vnStat – network traffic monitor.
-49. wget –  retrieving files using HTTP, HTTPS, FTP and FTPS.
-50. Wireless Tools for Linux – includes iwconfig, iwlist, iwspy, iwpriv and ifrename.
-51. Wireshark – network protocol analyzer.
+```shell
+adduser <user> # Add user
+gpasswd -a <user> <group> # Add user to group
+groups <user> # Show groups the user is added to
+gpasswd -d <user> <group> # Remove user from group
+
+passwd -l <user> # Lock the  User account
+killall -9 -u <user> # Kill all running processes of the User
+crontab -r -u <user> # Delete the user's cron jobs
+lprm <user> # Delete printer jobs run
+userdel -r <user> # Delete/ remove user account and files
+```
+
+## Install xrdp
+
+```shell
+sudo apt-get updates
+sudo apt-get install tasksel
+sudo apt-get install xrdp # start RDP
+sudo systemctl status xrdp #verify
+```
+
+## Install TeamViewer
+
+```shell
+wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+sudo apt-get install ./teamviewer_amd64.deb
+teamviewer
+teamviewer --passwd password
+teamviewer daemon restart
+teamviewer -info
+teamviewer license accept
+```
+
+## Install latest Node.js version
+
+```shell
+sudo apt update
+sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
+sudo apt -y install nodejs
+sudo apt -y  install gcc g++ make
+node --version
+npm --version
+```
+
+## Install and Update
+
+**Keyboard layout**
+
+```shell
+dpkg-reconfigure keyboard-configuration
+service keyboard-setup restart
+```
+
+**Define a new password**
+
+```shell
+passwd
+```
+
+**Configure WiFi**
+
+```shell
+sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
+network={
+    ssid="WiFi"
+    psk="WiFiPassword"
+}
+sudo wpa_cli reconfigure
+```
+
+eventually reboot and/or try this:
+
+```shell
+sudo ifconfig wlan0 down
+sudo ifconfig wlan0 up
+sudo ifconfig wlan0 | grep inet
+sudo service networking restart
+```
+
+Test Config:
+
+```shell
+wpa_supplicant -i wlan0 -D wext -c /etc/wpa_supplicant/wpa_supplicant.conf -d
+```
+
+## System Information
+
+- List open file descriptors (-i flag for network interfaces): ```lsof -i :8080```
+- Stream current disk, network, CPU activity, etc: ```dstat -a```
+- Trace system calls of a program: ```strace -f -e <syscall> <cmd>```
+- Print currently active processes: ```ps aux | head -n20```
+- Visualize process forks: ```pstree```
+- Show size on disk for directories and their contents: ```du -ha```
+- List currently open Internet/UNIX sockets and related information ```netstat | head -n20```
+- Find hostname for a remote IP address: ```nslookup <IP address>```
+- Current installed version: ```cat /etc/issue```
+- Kernel information: ```uname -a```
+- OS information: ```lsb_release -a```
+- Device Information: ```lspci -v```
+- Check the hostname of your machine: ```hostname```
+- Shows last logged in users: ```last```
+- Shows currently logged in user and groups for the user: ```id```
+- List users on Linux: ```getent passwd```
+- Show mounted drives: ```mount```
+- Shows running kernel version: ```uname -ar```
+- Show bash history, commands the user has entered previously: ```history```
+
+## Disk Stuff
+
+**DD:** low-level data dumping utility
+
+- burning an ISO image to USB stick is just one command away: ```sudo dd if=ubuntu-18.04.1-desktop-amd64.iso of=/dev/sdb bs=1M```
+- hard wipe a disk: ```sudo dd if=/dev/zero of=/dev/sda```
+
+**DU:** Disk usage command is used for quickly estimating the drive space used in a folder or partition
+
+- Show files and sort by size: ```/data/java$ du -sh * | sort -h```
+
+**DF:** Used for estimating disk space but for the entire disk rather than a directory or folder.
+
+- show which partition is how much full: ```df -h```
+
+## MORE STUFF
+
+- Execute a command and report statistics about how long it took: ```time <cmd>```
+- Send a process in current tty into background and back to foreground: ```CTRL + z ; bg; jobs; fg```
+- Count unique words in a file: ```cat file.txt | xargs -n1 | sort | uniq -c```
+- Line count in a file: ```wc -l <file>```
+- Display contents of a zipped text file: ```zcat <file.gz>```
+- Copy a file from remote to local server, or vice versa: ```scp <user@remote_host> <local_path>```
+
+## String Manipulation
+
+- Add "new entry" in line 13 of file "file.txt" ```sed -n -i 'p;13a new entry' file.txt```
+
+## Network Stuff
+
+- Find Device in Monitoring Mode: ```iwconfig 2>/dev/null | grep "Mode\\:Monitor" | awk '{print $1}'```
+- Find Access Point: ```iwconfig 2>&1 | sed -n -e 's/^.\*Access Point: //p'```
+- Linux IPv6 search devices in local network: ```ping6 -c 2 -I en0 -w ff02::1```
+- Show Linux network ports with process ID’s (PIDs): ```netstat -tulpn```
+- Watch TCP, UDP open ports in real time with socket summary: ```watch ss -stplu```
+- Show established connections: ```lsof -i```
+- Change MAC address: ```macchanger -m MACADDR INTR```
+- Change MAC address using ifconfig: ```ifconfig eth0 hw ether MACADDR```
+- Get hostname for IP address ```nbtstat -A x.x.x.x```
+- Block access to e.g. "google.com" from the host machine ```tcpkill -9 host google.com```
+- Enable IP forwarding: ```echo "1" > /proc/sys/net/ipv4/ip_forward```
+- Change DNS to 1.1.1.1: ```echo "1.1.1.1" > /etc/resolv.conf```
+
+## Fun Stuff
+
+- Loop Train: ```for i in {1..10}; do sl; done```
+
+## COMMANDs
+
+### Misc Commands
+
+init 6	Reboot Linux from the command line.
+gcc -o output.c input.c	Compile C code.
+gcc -m32 -o output.c input.c	Cross compile C code, compile 32 bit binary on 64 bit Linux.
+unset HISTORYFILE	Disable bash history logging.
+rdesktop X.X.X.X	Connect to RDP server from Linux.
+kill -9 $$	Kill current session.
+
+ssh user@X.X.X.X | cat /dev/null > ~/.bash_history   Clear bash history
+    
+### Linux File System Permissions
+
+- Change owner of file or dir: ```chown user:group blah```
+- Change owner of file or dir recersive for all folders below: ```chown -R user:group blah```
+- Change file / dir permissions: ```chmod 600 file```
+
+|VALUE|RWX|MEANING|
+|---|--|--|
+|777|rwxrwxrwx| No restriction, global WRX any user can do anything.|
+|755|rwxr-xr-x| Owner has full access, others can read and execute the file.|
+|700|rwx------| Owner has full access, no one else has access.|
+|666|rw-rw-rw-| All users can read and write but not execute.|
+|644|rw-r--r--| Owner can read and write, everyone else can read.|
+|600|rw-------| Owner can read and write, everyone else has no access.|
+
+### Linux File System
+
+- **/bin** Common programs, shared by the system, the system administrator and the users.
+- **/boot** Boot files, boot loader (grub), kernels, vmlinuz
+- **/dev** Contains references to system devices, files with special properties.
+- **/etc** Important system config files.
+- **/home** Home directories for system users.
+- **/lib** Library files, includes files for all kinds of programs needed by the system and the users.
+- **/lost+found** Files that were saved during failures are here.
+- **/mnt** Standard mount point for external file systems.
+- **/media** Mount point for external file systems (on some distros).
+- **/net** Standard mount point for entire remote file systems – nfs.
+- **/opt** Typically contains extra and third party software.
+- **/proc** A virtual file system containing information about system resources.
+- **/root** root users home dir.
+- **/sbin** Programs for use by the system and the system administrator.
+- **/tmp** Temporary space for use by the system, cleaned upon reboot.
+- **/usr** Programs, libraries, documentation etc. for all user-related programs.
+- **/var** Storage for all variable files and temporary files created by users, such as log files, mail queue, print spooler. Web servers, Databases etc.
+
+### Linux interesting files and directories
+
+Places that are worth a look if you are attempting to privilege escalate / perform post exploitation.
+
+- **/etc/passwd** Contains local Linux users.
+- **/etc/shadow** Contains local account password hashes.
+- **/etc/group** Contains local account groups.
+- **/etc/init.d/** Contains service init script – worth a look to see whats installed.
+- **/etc/hostname** System hostname.
+- **/etc/network/interfaces** Network interfaces.
+- **/etc/resolv.conf** System DNS servers.
+- **/etc/profile** System environment variables.
+- **~/.ssh/** SSH keys.
+- **~/.bash_history** Users bash history log.
+- **/var/log/** Linux system log files are typically stored here.
+- **/var/adm/** UNIX system log files are typically stored here.
+- **/var/log/httpd/access.log** Apache access log file typical path.
+- **/etc/fstab** File system mounts.
+
+## Cron Jobs
+
+### Examples
+
+```shell
+Every Minute    * * * * *
+Every Five Minutes    */5 * * * *
+Every 10 Minutes    */10 * * * *
+Every 15 Minutes    */15 * * * *
+Every 30 Minutes    */30 * * * *
+Every Hour    0 * * * *
+Every Two Hours    0 */2 * * *
+Every Six Hours    0 */6 * * *
+Every 12 Hours    0 */12 * * *
+During the Work Day    */5 9-17 * * *
+Every day at Midnight    0 0 * * *
+Every Two Weeks    0 0 * * Sun [ $(expr $(date +%W) % 2) -eq 1 ] && /path/to/command
+At the Start of Every Month    0 0 1 * *
+On January 1st at Midnight    0 0 1 1 *
+```

@@ -6,10 +6,15 @@ FFmpeg is a great tool and here are some examples.
 
 |What|Where|
 |-|-|
-|Official Page||
-|Source||
-|Download||
-|Install||
+|Official Page|<https://ffmpeg.org/>|
+|Source|<https://github.com/FFmpeg/FFmpeg>|
+|Download|<https://ffmpeg.org/download.html>|
+|Docs|<https://ffmpeg.org/documentation.html>|
+|Install|```choco install ffmpeg```|
+
+Helper:
+
+- FFmpeg Command Generator <https://www.mrfdev.com/ffmpeg-command-generator>
 
 ## Get File Information
 

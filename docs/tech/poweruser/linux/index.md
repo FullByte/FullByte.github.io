@@ -1,6 +1,23 @@
-# CLI Tools
+# Linux Links
 
-## Office
+## Services
+
+- Reliable, High Performance TCP/HTTP Load Balancer <https://www.haproxy.org/>
+- Backup with Restic <https://restic.net/>
+- NetBox is an IP address management (IPAM) and data center infrastructure management (DCIM) tool <https://github.com/netbox-community/netbox>
+
+## Smart Home
+
+- <https://www.ai-cam.app/>
+- <https://shinobi.video/>
+- <https://pi-hole.net/>
+- <https://sandstorm.io>
+- <https://truenas.de/>
+- <https://docs.pivpn.io/>
+
+## CLI Tools
+
+### Office
 
 - Mail: <https://aerc-mail.org/>
 - Calendar: <https://www.calcurse.org/>
@@ -11,7 +28,7 @@
 - Browser: <http://w3m.sourceforge.net/>
 - Charts: <https://github.com/irevenko/tsukae>
 
-## Files
+### Files
 
 - Sync <https://www.etebase.com/> -> <https://www.etesync.com/>
 - Sync/Backup <https://syncthing.net/>
@@ -19,37 +36,37 @@
 - rtorrent: <https://github.com/rakshasa/rtorrent>
 - IPFS: <https://ipfs.io>
 
-## Money
+### Money
 
 - Stocks <https://github.com/achannarasappa/ticker>
 - CoinMon <https://github.com/bichenkk/coinmon>
 
-## Other
+### Other
 
 - Weather: "curl wttr.in" (<https://github.com/chubin/wttr.in>)
 
-### certstream
+#### certstream
 
 ```shell
 pip install certstream
 certstream
 ```
 
-### nba-go
+#### nba-go
 
 ```shell
 sudo npm install -g nba-go
 nba-go game -T
 ```
 
-### Mapscii
+#### Mapscii
 
 ```shell
 npm install -g mapscii
 mapscii
 ```
 
-### asciinema
+#### asciinema
 
 ```shell
 sudo apt-get install asciinema

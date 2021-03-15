@@ -9,17 +9,8 @@
 
 ## Attach Storage
 
-Add FileShare to Cloud Shell
-
-```powershell
-clouddrive mount -s <secret> -g <rg-name> -n <fileshare> -f <share>
-```
-
-Show Drives
-
-```powershell
-Get-CloudDrive
-```
+- Add FileShare to Cloud Shell: ```clouddrive mount -s <secret> -g <rg-name> -n <fileshare> -f <share>```
+- Show Drives: ```Get-CloudDrive```
 
 Link: <https://docs.microsoft.com/de-de/azure/cloud-shell/persisting-shell-storage>
 
