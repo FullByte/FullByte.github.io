@@ -1,6 +1,23 @@
 # Welcome
 
-This website is dedicated to the notes and lists I made, code i have written, copied or modified, things i created, modified or repaired and basically anything I find of interest.
+Publishing my notes in a wiki format has been great exercise for me to to keep a certain level of quality and stay organized. As longs as this works well for me I will continue doing so :)
+
+The content may appear random as it is basically anything I find interesting and noteworthy. ¯\(ツ)/¯
+
+Query DNS for TXT records of [0xfab1.net](https://0xfab1.net) as follows:
+
+```bash
+curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'  | jq -r .Answer[].data
+```
+
+and you will receive this result:
+
+```shell
+"v=me; github=https://github.com/FullByte"
+"v=me; twitter=https://twitter.com/ZeroGdoubleD"
+"v=me; about=https://0xfab1.net/about/"
+"v=me; gravatar=https://de.gravatar.com/0xfab1"
+```
 
 I hope you enjoy the content and found your visit worthwhile :)
 

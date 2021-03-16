@@ -1,21 +1,6 @@
 # About me
 
-## Public Pages
-
-Query DNS for TXT records of [0xfab1.net](https://0xfab1.net) as follows
-
-```bash
-curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'  | jq -r .Answer[].data
-```
-
-and you will receive this result:
-
-```shell
-"v=me; github=https://github.com/FullByte"
-"v=me; twitter=https://twitter.com/ZeroGdoubleD"
-"v=me; about=https://0xfab1.net/about/"
-"v=me; gravatar=https://de.gravatar.com/0xfab1"
-```
+This is a one-person operation and here are some details about me.
 
 ## Geek Codes
 
