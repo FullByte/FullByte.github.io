@@ -94,3 +94,9 @@ Note that if the remote host uses a port other than the default of 22, it can be
 ```shell
 scp -P 666 user@host:directory/SourceFile TargetFile
 ```
+
+## Helpful commands
+
+Examples:
+
+- Forward Multiple Ports Over SSH: ```ssh dev@server.com -L 3000:localhost:3000 -L 9009:localhost:9009```

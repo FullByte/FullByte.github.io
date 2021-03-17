@@ -178,3 +178,18 @@ openssl req -newkey rsa:2048 -nodes -x509 -subj '/CN=name-you-want.example.com' 
 ```shell
 openssl s_server -accept 7781 -cert server.cert -key server.key -WWW
 ```
+
+## Extract a certificate and private key from PFX file
+
+```shell
+CertName='cert.pfx'
+openssl pkcs12 -in $PfxCert -nocerts -out key.pem -nodes #Export the private key
+openssl pkcs12 -in $PfxCert -nokeys -out $CertName.pem #Export the certificate
+openssl rsa -in key.pem -out $CertName.key #Remove the passphrase from the private key
+```
+
+## Create a random password
+
+```shell
+openssl rand -base64 32
+```

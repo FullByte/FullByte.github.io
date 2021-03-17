@@ -8,7 +8,8 @@ Basics
 - Routing table: ```route print```
 - Users logged in: ```(Get-CimInstance Win32_LoggedOnUser) | Select-Object -Unique```
 - Services Running: ```Msconfig```
-- Firewall settings ```netsh advfirewall show currentprofile```
+- Firewall settings: ```netsh advfirewall show currentprofile```
+- Power Config: ```powercfg /l```
 
 ## Robocopy
 

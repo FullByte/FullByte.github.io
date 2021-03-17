@@ -15,6 +15,12 @@ Download all files recursively from a given URI:
 wget -e robots=off -r -np --page-requisites --convert-links --user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36" http://example.com/dir/
 ```
 
+Alternative:
+
+```shell
+wget -e robots=off --verbose --debug --adjust-extension --backup-converted --base=http://example.com/dir/ --no-http-keep-alive --no-parent --mirror http://example.com/dir/
+```
+
 Download only images
 
 ```shell

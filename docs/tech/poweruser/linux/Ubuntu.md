@@ -203,14 +203,63 @@ wpa_supplicant -i wlan0 -D wext -c /etc/wpa_supplicant/wpa_supplicant.conf -d
 
 - Execute a command and report statistics about how long it took: ```time <cmd>```
 - Send a process in current tty into background and back to foreground: ```CTRL + z ; bg; jobs; fg```
-- Count unique words in a file: ```cat file.txt | xargs -n1 | sort | uniq -c```
-- Line count in a file: ```wc -l <file>```
-- Display contents of a zipped text file: ```zcat <file.gz>```
-- Copy a file from remote to local server, or vice versa: ```scp <user@remote_host> <local_path>```
+- Change Default Shell For A User: ```chsh -s /usr/bin/zsh username```
+- Make and Change To That New Directory: ```mkdir new_dir && cd $```
+- Configure Your Server Timezone: ```dpkg-reconfigure tzdata```
+- Kill Everything Running On A Certain Port ```sudo kill "sudo lsof -t -i:3000"```
+- See if the http status of the request changes: ``` watch -d curl -LIs localhost:3000```
+- Update access and modify time: ```touch README.md```
+- Update access time: ```touch -a README.md```
+- Update modify time: ```touch -m README.md```
+- Show The Size Of Everything In A Directory ```ls | xargs du -sh```
+- Saying Yes: ```yes | rm -r ~/some/dir```
+- Show Disk Usage For The Current Directory: ```du -h | sort -nr```
+
+## Display all terminal colors
+
+```bash
+for x in {0..8}; do 
+    for i in {30..37}; do 
+        for a in {40..47}; do 
+            echo -ne "\e[$x;$i;$a""m\\\e[$x;$i;$a""m\e[0;37;40m "
+        done
+        echo
+    done
+done
+echo ""
+```
 
 ## String Manipulation
 
 - Add "new entry" in line 13 of file "file.txt" ```sed -n -i 'p;13a new entry' file.txt```
+
+## Work with a file
+
+- Cat A File With Line Numbers: ```cat -n file```
+- Line count in a file: ```wc -l <file>```
+- Count unique words in a file: ```cat file.txt | xargs -n1 | sort | uniq -c```
+- Display contents of a zipped text file: ```zcat <file.gz>```
+- Copy a file from remote to local server, or vice versa: ```scp <user@remote_host> <local_path>```
+- List Stats For A File: ```stat -x README.md```
+- Securely Remove Files ```srm -vz README.md``` or ```shred -uvz -n 5 README.md```
+- Securely Remove Files after rm was used: ```sfill -lvz /home```
+- Copying File Contents To System Paste Buffer: ```cat some-file.txt | pbcopy```
+- Exclude A Directory With Find: ```find . -type f -not -path './.git/*' -ctime -10```
+- File Type Info With File: ```file data.txt```
+- Find Newer Files than this file: ```find blog -name '*.md' -newer blog/first-post.md```
+- Get The Unix Timestamp: ```date +%s```
+- Hexdump A Compiled File  ```cat Hello.class | hexdump -C ```
+- Grep For Files Without A Match: ```grep -L "foobar" ./*```
+
+**Grep For Files With Multiple Matches**
+
+Get a list of filenames that contain both a line with `@media only screen` and a line with `.class-name`.
+If you need to, chain more `grep` commands on to narrow things down even farther.
+
+```bash
+$ grep -rl "@media only screen" src/css |
+    xargs grep -l ".class-name"
+```
 
 ## Network Stuff
 

@@ -199,11 +199,35 @@ If ($enc -eq 'D') {
 }
 ```
 
+### Parallel tasks and throttle limit
+
+Example running 10x 1sec sleep single thread, parallel, parallel optimized:
+
+```powershell
+#Requires -Version 7
+Measure-Command -expression {1..10 | foreach-object {Start-Sleep -seconds 1}} # Serial Execution of 10 tasks of 1 seconds
+Measure-Command -expression {1..10 | foreach-object -parallel {Start-Sleep -seconds 1}} # Parallel Execution of 10 tasks of 1 seconds
+Measure-Command -expression {1..10 | foreach-object -parallel {Start-Sleep -seconds 1} -throttlelimit 10} #Setting Throttlelimit to 10 instead 5 (default value)
+```
+
 ## Snippets
 
 Some handy code snippets for powershell :)
 
-### Get System information
+### String manipulation
+
+Base64
+
+- Decode: ```[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("dGVzdA=="))```
+- Encode: ```[Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("test"))```
+
+### System information
+
+**Last boot time**
+
+```powershell
+Write-Host "System boot:" (Get-CimInstance -ClassName win32_operatingsystem | Select-Object -ExpandProperty LastBootUpTime)
+```
 
 **Get WinSAT information**
 
@@ -303,6 +327,16 @@ ForEach($App in $Packages){
 }
 ```
 
+### System Config
+
+Enable Remote Desktop
+
+```powershell
+(Get-WmiObject Win32_TerminalServiceSetting -Namespace root\cimv2\TerminalServices).SetAllowTsConnections(1,1) | Out-Null
+(Get-WmiObject -Class "Win32_TSGeneralSetting" -Namespace root\cimv2\TerminalServices -Filter "TerminalName='RDP-tcp'").SetUserAuthenticationRequired(0) | Out-Null
+Get-NetFirewallRule -DisplayName "Remote Desktop*" | Set-NetFirewallRule -enabled true
+```
+
 ### Take a screenshot
 
 Take a screenshot and save the image on your desktop:
@@ -315,6 +349,14 @@ $bitmap = New-Object System.Drawing.Bitmap $Screen.Width, $Screen.Height
 $graphic = [System.Drawing.Graphics]::FromImage($bitmap)
 $graphic.CopyFromScreen($Screen.Left, $Screen.Top, 0, 0, $bitmap.Size)
 $bitmap.Save([Environment]::GetFolderPath("Desktop") + "\Screenshot.bmp")
+```
+
+### Sound
+
+Tune the guitar
+
+```powershell
+82, 110, 146, 196, 246, 329 | Foreach-Object {[console]::beep($_,4000)} # E,A,D,G,B,E
 ```
 
 ### Speech
@@ -347,7 +389,7 @@ $Phrase = '
 $tts.SpeakSsml($Phrase)
 ```
 
-### Send Email
+### Email and Calendar
 
 Sind Mail with depreacted Send-MailMessage command
 
@@ -362,8 +404,7 @@ $SMTPPort = "587"
 Send-MailMessage -From $From -to $To -Subject $Subject -Body $Body -SmtpServer $SMTPServer -port $SMTPPort -UseSsl -Credential (Get-Credential) -Attachments $Attachment
 ```
 
-
-# Get a list of meetings occurring today
+Get a list of meetings occurring today
 
 ```powershell
 $ns = New-Object -ComObject Outlook.Application.GetNamespace('MAPI')
