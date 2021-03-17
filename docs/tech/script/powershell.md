@@ -216,10 +216,16 @@ Some handy code snippets for powershell :)
 
 ### String manipulation
 
-Base64
+Base64 Decode/Encode
 
 - Decode: ```[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("dGVzdA=="))```
 - Encode: ```[Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("test"))```
+
+Create md file for each file found in current folder and remove first and last chars:
+
+```powershell
+foreach ($file in (dir | select-object name)){New-Item ($file.name.Substring(3, $file.name.Length-7)+".md") -ItemType file}
+```
 
 ### System information
 

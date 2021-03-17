@@ -1,4 +1,4 @@
-# SQL Basics
+# MS SQL
 
 ## JOINs
 
