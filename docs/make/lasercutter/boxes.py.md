@@ -31,24 +31,20 @@ This is the script to get all the requirements installed, download the code and 
 ```powershell
 #Requires -RunAsAdministrator
 
-# Install Chocolatey if needed
-if (!(Test-Path "$($env:ProgramData)\chocolatey\choco.exe")) {
-    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) # Download and Install Chocolatey
-}
-    
 # Install/Update tools
-choco install -y python git # Install python and git
-python -m pip install --upgrade pip # Update PIP
-pip install Markdown lxml affine # Install/upgrade pip tools
+if (!(Test-Path "$($env:ProgramData)\chocolatey\choco.exe")) { Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) }
+choco install -y python git
+python -m pip install --upgrade pip 
+pip install Markdown lxml affine
     
 # Install/Update boxes
-$boxes = "${PSScriptRoot}\boxes" # Boxes will be copied to this path
+$boxes = "${PSScriptRoot}\boxes" 
 if (Test-Path $boxes) { git --work-tree=$boxes --git-dir=$boxes\.git pull }
 else { git clone https://github.com/florianfesti/boxes.git $boxes } 
         
 # Run Boxes
-Start-Process python $boxes\scripts\boxesserver # run boxes webserver
-Start-Process http://localhost:8000 # open browser
+Start-Process python $boxes\scripts\boxesserver
+Start-Process http://localhost:8000
 ```
 
 ## Templates
