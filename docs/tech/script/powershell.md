@@ -216,15 +216,49 @@ Some handy code snippets for powershell :)
 
 ### String manipulation
 
-Base64 Decode/Encode
+**Base64 Decode/Encode**
 
 - Decode: ```[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("dGVzdA=="))```
 - Encode: ```[Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("test"))```
+
+**Create files based on files**
 
 Create md file for each file found in current folder and remove first and last chars:
 
 ```powershell
 foreach ($file in (dir | select-object name)){New-Item ($file.name.Substring(3, $file.name.Length-7)+".md") -ItemType file}
+```
+
+**Create a password**
+
+```powershell
+$pwlength = 20 # Something between 8 and 32
+
+# Create a password
+Function New-RandomPassword{
+    Param([ValidateRange(8, 32)] [int] $Length = 16)
+    $AsciiCharsList = @()
+
+    foreach ($a in (33..126)){ $AsciiCharsList += , [char][byte]$a }
+
+    do {
+        $Password = ""
+        $loops = 1..$Length
+        Foreach ($loop in $loops) { $Password += $AsciiCharsList | Get-Random }
+    }
+    until ($Password -match "(?=^.{8,32}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*")
+    return $Password
+}
+
+# Looks cool and why use the first best choice? lol
+for ($i = 0; $i -lt ($pwlength); $i++) {
+    $line = ""
+    for ($j = 0; $j -lt (5); $j++) { $line += "$(New-RandomPassword($pwlength)) " }
+    Write-Host($line) -ForegroundColor Green
+}
+
+# Result
+Write-Host("Password:") -ForegroundColor black -BackgroundColor yellow -NoNewline; Write-Host(" " + $(New-RandomPassword($pwlength))) -ForegroundColor Red
 ```
 
 ### System information
