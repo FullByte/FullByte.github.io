@@ -1,4 +1,4 @@
-# Weh Store
+# Web Store
 
 ## opencart
 

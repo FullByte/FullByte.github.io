@@ -1,4 +1,7 @@
-# Boxes.py
+# Boxes py
+
+- Website: <https://www.festi.info/boxes.py/>
+- Github: <https://github.com/florianfesti/boxes>
 
 "Boxes.py" is an [online](https://www.festi.info/boxes.py/index.html) and [Inkscape plug-in](https://github.com/florianfesti/boxes) with ready-to-use, fully parametrized generators for various boxes.
 
@@ -17,7 +20,36 @@ With these laser cutters (both work well):
 
 This is a script I wrote to install and run boxes locally on Windows 10:
 
-<script src="https://gist.github.com/FullByte/f0140dda330ffb19cee4e0cf24a0cdfd.js"></script>
+One-liner executing the gist I created:
+
+```powershell
+iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/FullByte/f0140dda330ffb19cee4e0cf24a0cdfd/raw/5b81224d02959514b65c4216ee585c1cfa1b2861/%25E2%2580%258B%2520Start-Boxes.ps1
+```
+
+This is the script to get all the requirements installed, download the code and run a local webserver serving boxes py:
+
+```powershell
+#Requires -RunAsAdministrator
+
+# Install Chocolatey if needed
+if (!(Test-Path "$($env:ProgramData)\chocolatey\choco.exe")) {
+    Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) # Download and Install Chocolatey
+}
+    
+# Install/Update tools
+choco install -y python git # Install python and git
+python -m pip install --upgrade pip # Update PIP
+pip install Markdown lxml affine # Install/upgrade pip tools
+    
+# Install/Update boxes
+$boxes = "${PSScriptRoot}\boxes" # Boxes will be copied to this path
+if (Test-Path $boxes) { git --work-tree=$boxes --git-dir=$boxes\.git pull }
+else { git clone https://github.com/florianfesti/boxes.git $boxes } 
+        
+# Run Boxes
+Start-Process python $boxes\scripts\boxesserver # run boxes webserver
+Start-Process http://localhost:8000 # open browser
+```
 
 ## Templates
 
