@@ -22,6 +22,8 @@ Tools
 
 ## Free Games
 
+Games that can be played for free
+
 ### Computer Games
 
 - Soldat <https://soldat.pl/en/>
@@ -31,7 +33,7 @@ Tools
 - Cube 2: Sauerbraten <http://cubeengine.com/>
 - YuGiOh (Project Ignis: EDOPro): <https://github.com/ProjectIgnis/EDOPro>
 - Battle for Wesnoth <https://www.wesnoth.org/>
-- <http://www.armagetronad.org/>
+- armagetron <http://www.armagetronad.org/>
 - openclonk <https://www.openclonk.org/>
 - <https://viewizard.com/>
 - Warzone 2100 <https://wz2100.net/>
