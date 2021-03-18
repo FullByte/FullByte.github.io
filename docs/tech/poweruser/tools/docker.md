@@ -13,6 +13,10 @@
 
 TODO
 
+
+
+
+
 ## Useful Commands
 
 TODO
@@ -20,6 +24,20 @@ TODO
 ## Cool things to run with docker
 
 A list of docker containers
+
+### Powershell in Docker
+
+Run the container
+
+```shell
+docker run -it mcr.microsoft.com/azure-powershell
+```
+
+Trigger script in Powershell in Docker
+
+```shell
+docker run -it -v C:\Users\fabia\src:/src mcr.microsoft.com/azure-powershell:3.6.1-ubuntu-18.04 pwsh -file /src/script.ps1
+```
 
 ### Tutorials
 
@@ -144,4 +162,17 @@ Sources:
 
 ```bash
 docker run -d -p 8080:80 nextcloud
+```
+
+
+### Burpsuite
+
+```bash
+docker run -d --name burpsuite -e DISPLAY -v ${HOME}:/home/burpsuite -v /tmp/.X11-unix/:/tmp/.X11-unix/ --p 8080:8080 alexandreoda/burpsuite
+```
+
+# mitmproxy
+
+```bash
+docker run --rm -it -p 8080:8080 mitmproxy/mitmproxy
 ```

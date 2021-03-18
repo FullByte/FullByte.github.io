@@ -231,6 +231,20 @@ foreach ($file in (dir | select-object name)){New-Item ($file.name.Substring(3, 
 
 **Create a password**
 
+Option 1
+
+```powershell
+Function New-Password([int] $length, $pw = "")
+{    
+    $rng = New-Object System.Random
+    for($i=0;$i -lt $length;$i++) { $pw = $pw +[char]$rng.next(33,126) }
+    return $pw
+}
+New-Password 15
+```
+
+Option 2
+
 ```powershell
 $pwlength = 20 # Something between 8 and 32
 
@@ -260,6 +274,15 @@ for ($i = 0; $i -lt ($pwlength); $i++) {
 # Result
 Write-Host("Password:") -ForegroundColor black -BackgroundColor yellow -NoNewline; Write-Host(" " + $(New-RandomPassword($pwlength))) -ForegroundColor Red
 ```
+
+Option 3
+
+```powershell
+$buffer = New-Object byte[] 32;
+[System.Security.Cryptography.RandomNumberGenerator]::Create().GetBytes(($buffer));
+return [BitConverter]::ToString($buffer).Replace("-", [string]::Empty);
+```
+
 
 ### System information
 
