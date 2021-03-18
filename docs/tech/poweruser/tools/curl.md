@@ -19,3 +19,8 @@ Example of using curl with basic auth credentials
 curl -u username:password staging.example.com
 ```
 
+Query a website e.g. request a json response from cloudflare-dns.com on TXT records of the domain 0xfab1.net
+
+```bash
+curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'
+```

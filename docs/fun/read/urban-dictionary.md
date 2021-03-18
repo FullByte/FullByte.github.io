@@ -13,4 +13,4 @@ A list of the most entertaining Urban Dictionary pages
 - [Hobosexual](https://www.urbandictionary.com/define.php?term=Hobosexual "https://www.urbandictionary.com/define.php?term=Hobosexual")
 - [Helisexual](https://www.urbandictionary.com/define.php?term=helisexual "https://www.urbandictionary.com/define.php?term=helisexual")
 - [fjdn](https://www.urbandictionary.com/define.php?term=fjdn "https://www.urbandictionary.com/define.php?term=fjdn")
-
+- [schrodinger’s douchebag](https://www.urbandictionary.com/define.php?term=schrodinger%E2%80%99s%20douchebag "https://www.urbandictionary.com/define.php?term=schrodinger%E2%80%99s%20douchebag")
