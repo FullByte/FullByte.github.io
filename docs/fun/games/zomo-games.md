@@ -1,6 +1,6 @@
-# Zomo-Games
+# ZoMo-Games
 
-## Games for Zocking-Montag
+## Games for Zocking-Monday
 
 Action
 
