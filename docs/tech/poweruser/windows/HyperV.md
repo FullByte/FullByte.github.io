@@ -57,7 +57,7 @@ Foreach ($HyperVNode in $HyperVNodes)
 		}
 		if ($VHDPath -Match $VHDName)
 		{
-			Write-Host "The VM named $($VM.ElementName) is connected to the VHD $VHDName"
+			Write-Output "The VM named $($VM.ElementName) is connected to the VHD $VHDName"
 		}
 	}
 }

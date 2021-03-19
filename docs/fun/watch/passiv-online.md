@@ -19,13 +19,13 @@ Web/Online
 - <http://skynetsimulator.com/>
 - <https://cybermap.kaspersky.com/>
 
-Run on yout own machine (ubuntu)
+Run on your own machine (ubuntu)
 
 ```bash
 sudo add-apt-repository ppa:vantuz/cool-retro-term
-sudo apt-get update
-sudo apt-get install cool-retro-term
-sudo apt-get install hollywood
+sudo apt update
+sudo apt install cool-retro-term
+sudo apt install hollywood
 cool-retro-term
 Byobu
 hollywood

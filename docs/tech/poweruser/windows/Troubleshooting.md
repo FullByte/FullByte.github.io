@@ -2,6 +2,14 @@
 
 Fixing Windows 10 issues
 
+## Get Information
+
+**Get Win10 key**
+
+```powershell
+(Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
+```
+
 ## Windows 10 boots in Recovery Mode
 
 **Recovery Deaktivieren**

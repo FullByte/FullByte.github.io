@@ -11,6 +11,40 @@ Basics
 - Firewall settings: ```netsh advfirewall show currentprofile```
 - Power Config: ```powercfg /l```
 
+## Systeminfo
+
+Simple systeminfo.bat script
+
+```cmd
+@echo off
+chcp 65001
+whoami 2>&1
+hostname 2>&1
+echo ________________________________IpConfig______________________________ 
+ipconfig /all 2>&1 
+echo __________________________Domian Admins_______________________________ 
+net group "domain admins" /domain 2>&1 
+echo _______________________net local group members________________________ 
+net localgroup administrators 2>&1 
+echo ________________________________netstat_______________________________ 
+netstat -an 2>&1 & 
+echo _____________________________systeminfo_______________________________ 
+systeminfo 2>&1 & 
+echo ________________________________RDP___________________________________ 
+reg query "HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default" 2>&1 
+echo ____________________________Custom Command_______________________________ 
+wmic os get Caption /value | more 2>&1 
+echo ________________________________Task__________________________________ 
+schtasks /query /FO List /V | findstr /b /n /c:"Repeat: Every:" 2>&1
+echo ______________________________________________________________________ 
+```
+
+For are more detailed systeminfo dump run [winPEAS](https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/winPEAS/winPEASbat/winPEAS.bat).
+
+```cmd
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/AdamDimech/08ba988211b55c71a480449b3b8ab6cd/raw'))"
+```
+
 ## Robocopy
 
 exclude files

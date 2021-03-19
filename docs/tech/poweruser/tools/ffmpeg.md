@@ -10,7 +10,8 @@ FFmpeg is a great tool and here are some examples.
 |Source|<https://github.com/FFmpeg/FFmpeg>|
 |Download|<https://ffmpeg.org/download.html>|
 |Docs|<https://ffmpeg.org/documentation.html>|
-|Install|```choco install ffmpeg```|
+|Windows|```choco install ffmpeg```|
+|Linux|```apt install ffmpeg```|
 
 Helper:
 

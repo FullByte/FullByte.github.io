@@ -46,13 +46,13 @@ Update-Module -scope AllUsers -Force
 Install powershell on Ubuntu 20.04
 
 ```bash
-sudo apt-get update # Update the list of packages
-sudo apt-get install -y wget apt-transport-https software-properties-common # Install pre-requisite packages.
+sudo apt update # Update the list of packages
+sudo apt install -y wget apt-transport-https software-properties-common # Install pre-requisite packages.
 wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb # Download the Microsoft repository GPG keys
 sudo dpkg -i packages-microsoft-prod.deb # Register the Microsoft repository GPG keys
-sudo apt-get update # Update the list of products
+sudo apt update # Update the list of products
 sudo add-apt-repository universe # Enable the "universe" repositories
-sudo apt-get install -y powershell # Install PowerShell
+sudo apt install -y powershell # Install PowerShell
 pwsh # Start PowerShell
 ```
 
@@ -61,6 +61,42 @@ Details: <https://docs.microsoft.com/en-us/powershell/scripting/install/installi
 ## Powershell Tipps
 
 This chapter does not aim to teach powershell. Rather the scope is to teach proper scripting techniques, troubleshooting and collaboration when scripting.
+
+### Variables
+
+**Paths**
+
+Powershell defaults:
+
+- Script location: ```$PSScriptRoot```
+- Current location when the script is running: ```$PWD```
+- User's home directory: ```$HOME```
+- Script that invoked the current command (only populated if caller is a script): ```$PSCommandPath```
+
+You can also use the [.NET Environment.SpecialFolder](https://docs.microsoft.com/en-us/dotnet/api/system.environment.specialfolder) Enum e.g.:
+
+```Powershell
+$DesktopPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::Desktop)
+$DocumentsPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::CommonDocuments)
+$ProgramFilesX86Path = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::ProgramFilesX86 )
+$ProgramFilesPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::ProgramFiles)
+$RecentFilesPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::Recent)
+$SendToPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::SendTo)
+$UserProfilePath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::UserProfile)
+$StartupPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::Startup)
+```
+
+**Other**
+
+- First token in the last line received by the session: ```$^```
+- Last token in the last line received by the session: ```$$```
+- Execution status (true/false) on if the last command succeeded: ```$?```
+- Current object in the pipeline object: ```$_``` or ```$PSItem```
+- Array of error objects: ```$Error``` e.g. first error entry = ```$Error[0]```
+- Check OS with: ```$IsLinux``` or ```$IsMacOS``` or ```$IsWindows```
+- Use True/False with these : ```$true``` and ```$false```
+- Details on user who started the PSSession: ```$PSSenderInfo```
+- Get version details of the run environment: ```$PSVersionTable``` e.g. ```$PSVersionTable.PSVersion``` or ```$PSVersionTable.OS```
 
 ### Script Description
 
@@ -172,12 +208,12 @@ The following script will prepare a certificate or use a given one:
 ```powershell
 $hascert=Read-Host -Prompt 'Do you have a certificate for file encryption? (Y/N)?'
 If ($hascert -eq 'Y') {
-    Write-Host 'Select Certificate.' 
+    Write-Output 'Select Certificate.' 
     $mycert=Get-Childitem Cert:\CurrentUser\My
     $cert=$mycert | Where-Object hasprivatekey -eq 'true' | Select-Object -Property Issuer,Subject,HasPrivateKey | Out-GridView -Title 'Select Certificate' -PassThru
 }
 If ($hascert -eq 'N') {
-    Write-Host 'This section creates a new self signed certificate. Provide certificate name.'
+    Write-Output 'This section creates a new self signed certificate. Provide certificate name.'
     $newcert=Read-Host 'Enter Certificate Name'
     New-SelfSignedCertificate -DnsName $newcert -CertStoreLocation "Cert:\CurrentUser\My" -KeyUsage KeyEncipherment,DataEncipherment,KeyAgreement -Type DocumentEncryptionCert
     $cert=Get-ChildItem -Path Cert:\CurrentUser\My\ | Where-Object subject -like "*$newcert*"
@@ -208,6 +244,25 @@ Example running 10x 1sec sleep single thread, parallel, parallel optimized:
 Measure-Command -expression {1..10 | foreach-object {Start-Sleep -seconds 1}} # Serial Execution of 10 tasks of 1 seconds
 Measure-Command -expression {1..10 | foreach-object -parallel {Start-Sleep -seconds 1}} # Parallel Execution of 10 tasks of 1 seconds
 Measure-Command -expression {1..10 | foreach-object -parallel {Start-Sleep -seconds 1} -throttlelimit 10} #Setting Throttlelimit to 10 instead 5 (default value)
+```
+
+### Logging
+
+Adding log (better: event-logs) helps understand what went wrong and why things are they way they currently are.
+
+General logging:
+
+```powershell
+Function writeEventLogEntry
+{
+    $message = "$args[0] Time: " + (get-date).ToString('yyyy-MM-dd HH:mm:ss') + " User: " + $env:userdomain + "\" + $env:username
+    if ($args[1] -eq "Information") {
+        write-eventlog -logname "Windows PowerShell" -source PowerShell -eventID 1999 -entrytype Information -message $message -category 1 -rawdata 10,20    }
+    elseif ($args[1] -eq "Warning") {
+        write-eventlog -logname "Windows PowerShell" -source PowerShell -eventID 1999 -entrytype Warning -message $message -category 1 -rawdata 10,20    }
+    elseif ($args[1] -eq "Error") {
+        write-eventlog -logname "Windows PowerShell" -source PowerShell -eventID 1999 -entrytype Error -message $message -category 1 -rawdata 10,20    }
+}
 ```
 
 ## Snippets
@@ -268,11 +323,11 @@ Function New-RandomPassword{
 for ($i = 0; $i -lt ($pwlength); $i++) {
     $line = ""
     for ($j = 0; $j -lt (5); $j++) { $line += "$(New-RandomPassword($pwlength)) " }
-    Write-Host($line) -ForegroundColor Green
+    Write-Output($line) -ForegroundColor Green
 }
 
 # Result
-Write-Host("Password:") -ForegroundColor black -BackgroundColor yellow -NoNewline; Write-Host(" " + $(New-RandomPassword($pwlength))) -ForegroundColor Red
+Write-Output("Password:") -ForegroundColor black -BackgroundColor yellow -NoNewline; Write-Output(" " + $(New-RandomPassword($pwlength))) -ForegroundColor Red
 ```
 
 Option 3
@@ -283,23 +338,29 @@ $buffer = New-Object byte[] 32;
 return [BitConverter]::ToString($buffer).Replace("-", [string]::Empty);
 ```
 
-
 ### System information
 
 **Last boot time**
 
 ```powershell
-Write-Host "System boot:" (Get-CimInstance -ClassName win32_operatingsystem | Select-Object -ExpandProperty LastBootUpTime)
+Write-Output "System boot:" (Get-CimInstance -ClassName win32_operatingsystem | Select-Object -ExpandProperty LastBootUpTime)
+```
+
+**Get WiFi Passwords**
+
+Add more cultures if needed
+
+```powershell
+$keyword = @{"de-DE" = 'Schlüsselinhalt'; "en-US" = 'Key Content'}
+Invoke-Expression -Command '(netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)} | Select-String ($keyword[(get-culture).Name]+"\W+\:(.+)$") | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ WiFi=$name;PASSWORD=$pass }} | Format-Table -AutoSize'
 ```
 
 **Get WinSAT information**
 
 ```powershell
-# Run WinSAT (optional)
-WinSAT formal
-
 # Get WinSAT Data (XML)
-$path = Get-ChildItem -Path 'C:\Windows\Performance\WinSAT\DataStore\*Formal.*.xml' | Sort-Object -Property CreationTime -Descending | Select-Object -First 1 -ExpandProperty FullName
+WinSAT formal
+$path = Get-ChildItem -Path 'C:\Windows\Performance\WinSAT\DataStore\*Formal.*.xml' | Sort-Object -Property CreationTime -Descending | Select-Object -First 1 -ExpandProperty FullName 
 
 # Parse as XML
 $xml = [xml]::new()
@@ -319,6 +380,12 @@ if ($DefenderStatus -ne "Running") {
     throw "The Windows Defender service is not currently running"
 }
 Get-MpComputerStatus
+```
+
+**Get Win10 key**
+
+```powershell
+(Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
 ```
 
 **Install apps**
@@ -360,16 +427,7 @@ List installed Windows Store Apps (and ignore some):
 
 Import-Module Appx
 $Packages = Get-AppxPackage
-
-## Ignore MS Stuff
-$Whitelist = @(
-    '*WindowsCalculator*',
-    '*MSPaint*',
-    '*Office.OneNote*',
-    '*Microsoft.net*',
-    '*MicrosoftEdge*',
-    '*Microsoft*'
-)
+$Whitelist = @('*WindowsCalculator*', '*MSPaint*', '*Office.OneNote*', '*Microsoft.net*', '*MicrosoftEdge*', '*Microsoft*') ## Ignore MS Stuff
 
 ## Remove all things to ignore
 ForEach($App in $Packages){
@@ -450,6 +508,36 @@ $Phrase = '
 </speak>
 '
 $tts.SpeakSsml($Phrase)
+```
+
+### Web
+
+**Download Images**
+
+```powershell
+$url = [System.Uri]"https://example.org"
+$regex = '(http(s)?:\/\/)([^\s(["<,>/]*)(\/)[^\s[",><]*(.png|.jpg|.gif|.jpeg|.svg)(\?[^\s[",><]*)?'
+$useragent = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
+
+$FilePath = (([System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::Desktop))+"\"+$url.Authority)
+New-Item -ItemType Directory -Force -Path $FilePath | Select-Object | Out-Null
+
+Add-Type -AssemblyName System.Web
+$webClient = New-Object System.Net.WebClient
+$webClient.Headers.Add("user-agent", $useragent)
+$webClient.Headers.Add("Content-Type","application/x-www-form-urlencoded")
+$webpage = $webclient.DownloadString($url)
+$listImgUrls = $webpage.ToLower() | Select-String -pattern $regex -Allmatches | ForEach-Object {$_.Matches} | Select-Object $_.Value -Unique
+
+foreach($imgUrlString in $listImgUrls) {
+    try {
+        [System.Uri]$imgUri = New-Object System.Uri -ArgumentList $imgUrlString
+        $imgSaveDestination = $FilePath+"\"+([System.IO.Path]::GetFileName($imgUri.LocalPath))
+        $webClient.DownloadFile($imgUri, $imgSaveDestination)       
+        Write-Output("Downloaded '$imgUrlString' to '$imgSaveDestination'")
+    }
+    catch { Write-Host("Error: " + $imgUrlString + " - ") -ForegroundColor Yellow -NoNewline; Write-Host($_.Exception.Message) -ForegroundColor Red }
+}
 ```
 
 ### Email and Calendar

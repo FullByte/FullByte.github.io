@@ -21,3 +21,11 @@ Run sysinternals tools from the explorer
 ```powershell
 \\live.sysinternals.com\tools\procexp.exe
 ```
+
+Or zoom ...
+
+```powershell
+\\live.sysinternals.com\tools\ZoomIt.exe
+```
+
+You get the idea :)

@@ -1,4 +1,4 @@
-# Python Snippets
+# Python
 
 ## Cool Stuff
 

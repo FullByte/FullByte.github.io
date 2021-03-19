@@ -33,6 +33,14 @@ arp-scan --localnet --interface=eth0 | grep b8:27:eb
 arp-scan --localnet --interface=wlan0 | grep b8:27:eb
 ```
 
+## Desktop
+
+**Widevine** enables to stream content from popular websites such as Netflix, Amazon Prime, Hulu, HBO Go, Disney+, Spotify, Pandora and more, using the default Chromium web browser:
+
+```shell
+sudo apt install libwidevinecdm0
+```
+
 ## Retro Gaming Stations
 
 All are good choices. Pick the one best for your hardware/roms:

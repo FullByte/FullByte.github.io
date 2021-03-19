@@ -69,7 +69,7 @@ mapscii
 #### asciinema
 
 ```shell
-sudo apt-get install asciinema
+sudo apt install asciinema
 
 asciinema rec
 asciinema auth

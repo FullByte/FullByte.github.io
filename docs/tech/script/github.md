@@ -34,3 +34,29 @@ Example:
 - Smee receives payloads then sends them to your locally running application: <https://smee.io/>
 - Probot automates and improves your github workflows with pre-built apps: <https://probot.github.io/>
 - Search for code: <https://gowalker.org/>
+
+## Execute Gist/Github Script
+
+You can run remote scripts from e.g. Github (either gists or raw content):
+
+From powershell with github raw file:
+
+**Windows**
+
+```PowerShell
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/project/master/file.file'))
+```
+
+From cmd with gist link:
+
+```cmd
+PowerShell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/FullByte/000000000000000000000000000000000000/raw'))"
+```
+
+**Linux**
+
+From bash
+
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/FullByte/scripts/master/something)
+```

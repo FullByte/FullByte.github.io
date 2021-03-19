@@ -8,7 +8,7 @@ Great tool to understand commands: <https://explainshell.com/>
 Random basics
 
 - Check installed packges ```sudo tasksel```
-- Update and upgrade ```sudo apt update && sudo apt upgrade -y```
+- Update and upgrade ```sudo apt update && apt -y full-upgrade && apt -y autoremove```
 - Upgrading to a newer release ```do-release-upgrade```
 - Check who is online ```w```
 - Show all system users ```cut -d: -f1 /etc/passwd```
@@ -44,7 +44,7 @@ The script "bootupdate.sh":
 
 ```shell
 #!/bin/bash
-sudo apt update && sudo apt upgrade -y
+sudo apt update && apt -y full-upgrade && apt -y autoremove
 exit 0
 ```
 
@@ -64,13 +64,13 @@ update-rc.d bootupdate.sh start 2
 
 ```shell
 # Get Video Codecs
-sudo apt-get install ubuntu-restricted-extras ubuntu-restricted-addons
+sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons
 
 # Get Compiz and Docky
-sudo apt-get install gnome-session-flashback compiz compiz-core compiz-plugins compiz-plugins-default compiz-plugins-extra compiz-plugins-main compiz-plugins-main-default compiz-plugins-main-dev compizconfig-settings-manager docky
+sudo apt install gnome-session-flashback compiz compiz-core compiz-plugins compiz-plugins-default compiz-plugins-extra compiz-plugins-main compiz-plugins-main-default compiz-plugins-main-dev compizconfig-settings-manager docky
 
 #Gnome Tweak
-sudo apt-get install gnome-tweaks gnome-tweak-tool
+sudo apt install gnome-tweaks gnome-tweak-tool
 ```
 
 ## Add/Remove User
@@ -91,9 +91,9 @@ userdel -r <user> # Delete/ remove user account and files
 ## Install xrdp
 
 ```shell
-sudo apt-get updates
-sudo apt-get install tasksel
-sudo apt-get install xrdp # start RDP
+sudo apt update
+sudo apt install tasksel
+sudo apt install xrdp # start RDP
 sudo systemctl status xrdp #verify
 ```
 
@@ -101,7 +101,7 @@ sudo systemctl status xrdp #verify
 
 ```shell
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
-sudo apt-get install ./teamviewer_amd64.deb
+sudo apt install ./teamviewer_amd64.deb
 teamviewer
 teamviewer --passwd password
 teamviewer daemon restart
@@ -160,6 +160,17 @@ Test Config:
 
 ```shell
 wpa_supplicant -i wlan0 -D wext -c /etc/wpa_supplicant/wpa_supplicant.conf -d
+```
+
+Install Wine
+
+```shell
+sudo dpkg --add-architecture i386
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+deb https://dl.winehq.org/wine-builds/debian/ buster main
+sudo apt update
+sudo apt install --install-recommends winehq-stable
 ```
 
 ## System Information
@@ -284,15 +295,14 @@ $ grep -rl "@media only screen" src/css |
 
 ### Misc Commands
 
-init 6	Reboot Linux from the command line.
-gcc -o output.c input.c	Compile C code.
-gcc -m32 -o output.c input.c	Cross compile C code, compile 32 bit binary on 64 bit Linux.
-unset HISTORYFILE	Disable bash history logging.
-rdesktop X.X.X.X	Connect to RDP server from Linux.
-kill -9 $$	Kill current session.
+- Reboot: ```init 6```
+- Compile C code: ```gcc -o output.c input.c```
+- Compile 32 bit binary on 64 bit Linux: ```gcc -m32 -o output.c input.c```
+- Disable bash history logging: ```unset HISTORYFILE```
+- Connect to RDP server from Linux. ```rdesktop X.X.X.X```
+- Kill current session: ```kill -9 $$```
+- Clear bash history: ```cat /dev/null > ~/.bash_history```
 
-ssh user@X.X.X.X | cat /dev/null > ~/.bash_history   Clear bash history
-    
 ### Linux File System Permissions
 
 - Change owner of file or dir: ```chown user:group blah```

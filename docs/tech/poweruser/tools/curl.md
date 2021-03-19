@@ -1,4 +1,16 @@
-# Curl
+# curl
+
+|What|Where|
+|-|-|
+|Official Page|<https://curl.se/>|
+|Source|<https://github.com/curl/curl>|
+|Download|<https://github.com/curl/curl/releases>|
+|Docs| <https://everything.curl.dev>|
+|Book| <https://curl.se/docs/> |
+|Windows|```scoop install curl```|
+|Ubuntu|```apt install curl```|
+
+## Examples
 
 Example to check /24 range in abuseipdb.com for the last 3 days
 

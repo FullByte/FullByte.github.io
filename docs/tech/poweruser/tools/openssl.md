@@ -122,7 +122,7 @@ Install openssl and the associated development libraries'
 Run **openssl version -a** to check if openssl is installed or just run this command to install all requirements for this demo:
 
 ```shell
-sudo apt-get install libssl-dev openssl
+sudo apt install libssl-dev openssl
 ```
 
 Create a test file named **"plain.txt"** which we shall encrypt & decrypt in the next step.

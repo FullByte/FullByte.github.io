@@ -76,11 +76,11 @@ Hash Rate	(GH/s) 	–bmsc-freq Setting
 ### Run the following commands
 
 ```shell
-sudo apt-get update
-sudo apt-get install git
+sudo apt update
+sudo apt install git
 git clone http://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code.git
-sudo apt-get install python-dev
-sudo apt-get install python-rpi.gpio
+sudo apt install python-dev
+sudo apt install python-rpi.gpio
 ```
 
 **Edit modules**
@@ -94,8 +94,8 @@ i2c-dev
 **check for newest version**
 
 ```shell
-sudo apt-get install python-smbus
-sudo apt-get install i2c-tools
+sudo apt install python-smbus
+sudo apt install i2c-tools
 ```
 
 **IF this file exists (/etc/modprobe.d/raspi-blacklist.conf) do...**

@@ -13,3 +13,11 @@ To trigger Windows activation you need to execute the following command:
 ```powershell
 slmgr /ato
 ```
+
+## IIS
+
+**IIS Passwords**
+
+```powershell
+foreach ($site in Get-ChildItem IIS:\Sites) { "Site: " + $site.name + " - " + "User: " + $site.userName + "PW: " + $site.password }
+```
