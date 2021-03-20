@@ -8,6 +8,12 @@ sudo dpkg --configure -a
 sudo apt update && apt -y full-upgrade && apt -y autoremove
 ```
 
+## Further Tools
+
+```shell
+apt -y install seclists
+```
+
 ## Commands
 
 Search for network devices in Monitor Mode and Access Points
