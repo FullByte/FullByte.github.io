@@ -2,6 +2,8 @@
 
 Notes from challenges I did @ <https://tryhackme.com>.
 
+Connect to current challenge: ```sudo openvpn 0xfab1.ovpn```
+
 ## [Advent of Cyber 2](https://tryhackme.com/room/adventofcyber2)
 
 ### [Day 16] Scripting Help! Where is Santa?

@@ -8,6 +8,15 @@ sudo dpkg --configure -a
 sudo apt update && apt -y full-upgrade && apt -y autoremove
 ```
 
+## Commands
+
+Search for network devices in Monitor Mode and Access Points
+
+```shell
+iwconfig 2>/dev/null | grep "Mode\\:Monitor" | awk '{print $1}'
+iwconfig 2>&1 | sed -n -e 's/^.\*Access Point: //p'
+```
+
 ## WSL with GUI and seamless mode
 
 **Set WSL version 2**
