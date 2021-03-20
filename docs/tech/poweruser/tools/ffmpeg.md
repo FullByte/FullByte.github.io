@@ -77,22 +77,32 @@ ffmpeg -i input.mp4 -pix_fmt yuv420p -movflags faststart -c:v libaom-av1 -b:v 20
 
 ## Convert from/to GIF
 
-From GIF to MP4
+**From GIF to MP4**
 
 ```shell
 ffmpeg -i input.gif -filter_complex "[0:v] fps=15" -vsync 0 -f mp4 -pix_fmt yuv420p output.mp4
 ```
 
-From MP4 to GIF
+**From MP4 to GIF**
 
 ```shell
 ffmpeg -i input.mp4 -vf "fps=12,scale=480:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif
 ```
 
+**GIF from a special section**
+
 Add e.g. "-ss 5.0 -t 3.2" to only create GIF for 3.2 secounds ot "input.mp4"
 
 ```shell
 ffmpeg -ss 5.0 -t 3.2 -i input.mp4 -vf "fps=12,scale=480:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif
+```
+
+**GIF video summery**
+
+Create a short GIF from a long video
+
+```shell
+ffmpeg.exe -i input.mp4 -vf  "scale=vga,thumbnail=100,split[a][b],[b]palettegen=reserve_transparent=0:stats_mode=single[b];[a][b]paletteuse=new=1,settb=1/25,setpts=N" output.gif
 ```
 
 ## Convert from/to webp
