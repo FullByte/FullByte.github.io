@@ -31,10 +31,15 @@ Tools to create graphics and modify images online.
 - <https://memeful.com/>
 - <https://makeameme.org/>
 
-## Demos
+## Demo-Scene
 
 - <https://www.pouet.net/>
 - <https://demozoo.org/>
+- <https://demoscene-the-art-of-coding.net/>
+- <https://files.scene.org/>
+- <https://www.demoparty.net/>
+- <http://www.kameli.net/demoresearch2/>
+- <https://www.demoscene.info/>
 
 ## Math
 

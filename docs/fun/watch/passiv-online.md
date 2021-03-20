@@ -62,3 +62,7 @@ hollywood
 - <https://coub.com/>
 - <http://9gag.com/hot>
 - <https://www.librarything.com/profile/fabianfromm/recommendations>
+
+## Random
+
+- <https://clickclickclick.click/>
