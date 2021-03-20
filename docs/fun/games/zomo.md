@@ -1,4 +1,4 @@
-# ZoMo-Games
+# ZoMo
 
 ## Games for Zocking-Monday
 

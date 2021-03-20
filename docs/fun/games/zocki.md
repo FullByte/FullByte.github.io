@@ -1,6 +1,8 @@
-# Zocki-Ten-Fight
+# Zocki
 
-The Zocki-Ten-Fight is an epic battle over 10 switch games over who is the best player today.
+## Ten-Fight
+
+The **Zocki-Ten-Fight** is an epic battle over 10 switch games over who is the best player today.
 
 All games chosen worthy for this event support a 4 player local couch competitive mode.
 
