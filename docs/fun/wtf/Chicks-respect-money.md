@@ -10,6 +10,8 @@ It's like: We need to get a cool looking chick; maybe then people will start to 
 
 ![audio](firstchick.mp4)
 
+<firstchick.mp4>
+
 <video width="320" height="240" controls>
   <source src="firstchick.mp4" type="video/mp4">
 </video>
