@@ -62,6 +62,22 @@ Details: <https://docs.microsoft.com/en-us/powershell/scripting/install/installi
 
 This chapter does not aim to teach powershell. Rather the scope is to teach proper scripting techniques, troubleshooting and collaboration when scripting.
 
+### Languages
+
+In case you run a command and want to query e.g. windows commands the result/keywords to look for may vary per language
+
+Create a hash table with an expected search string entry per language:
+
+```Powershell
+$keyword = @{"de-DE" = 'Schlüsselinhalt'; "en-US" = 'Key Content'}
+```
+
+Then call the correct entry with ```get-culture```:
+
+```Powershell
+echo something | Select-String ($keyword[(get-culture).Name])
+```
+
 ### Variables
 
 **Paths**

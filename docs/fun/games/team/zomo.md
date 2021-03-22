@@ -11,6 +11,7 @@ Strategy
 
 - Dungeons 3
 - Starcraft 2
+- Stellaris
 - Age of Empires II Definitive Edition
 - Planetary Annihilation: TITANS
 - Ashes of the Singularity: Escalation
@@ -31,7 +32,6 @@ Strategy
 - ARK
 - Path of Exile
 - Battle for Wesnoth
-- Stellaris
 - Crusader Kings II
 - Lara Croft and the Temple of Osiris
 - Factorio
