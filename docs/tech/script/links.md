@@ -20,8 +20,9 @@ Example Text and Pictures
 
 Other:
 
+- Browser Standards: <https://browseraudit.com>
 - SSL Settings <https://ssl-config.mozilla.org/>
-- securitytxt <https://securitytxt.org/>
+- Security.txt <https://securitytxt.org/>
 - Web Manifest <https://www.pwabuilder.com/generate>
 
 ## Library

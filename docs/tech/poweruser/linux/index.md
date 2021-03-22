@@ -23,6 +23,7 @@
 - Calendar: <https://www.calcurse.org/>
 - Time Tracker: <https://github.com/jotaen/klog>
 - Chat: <https://weechat.org/>
+- Chat: <https://github.com/irssi/irssi> e.g. ```apt install irssi```
 - Stream Terminal Session: <https://github.com/miguelmota/streamhut>
 - Text Editor: <https://micro-editor.github.io/>
 - Browser: <http://w3m.sourceforge.net/>

@@ -60,7 +60,44 @@ TODO
 ------END GOTH CODE BLOCK------
 ```
 
-## GPG
+## $upport
+
+Thanks for all the fish.
+
+### M€
+
+You can support me by transferring money here:
+
+Crypto currencies:
+
+- Bitcoin: 1DGPKnZ6VuHD4R93dL96QpvpuTvttandpW
+- Ethereum: 0x11b8881E57EA61810b44053Fc70fc3B6658A84dB
+- zcash: t1StvTKicuaTshVTkyxqS6tN7CsD9fU39uo
+- Stellar: GDQP2KPQGKIHYJGXNUIYOMHARUARCA7DJT5FO2FFOOKY3B2WSQHG4W37 (Memo: 3593387952)
+- Litecoin: LMfELCzKSvpUVgq5hGzV3p8h9Hz3DXR2eV
+- Filecoin: f12zguoe44sdjov5lfkrgulpd75zruvp5zclmx4cq
+
+Other support channels:
+
+- liberapay <https://liberapay.com/Fullbyte>
+- patreon <https://www.patreon.com/0gdd/creators>
+
+### Oth€r$
+
+You can support others that I support by transferring money here:
+
+- correctiv <https://correctiv.org/ueber-uns/#unterstuetzen-sie-unabhaengigen-journalismus>
+- wauland <https://www.wauland.de/de/donate/>
+- WWF <https://www.wwf.de/spenden-helfen/allgemeine-spende>
+- unicef <https://www.unicef.de/spenden/jetzt-spenden>
+- Wikimedia <https://spenden.wikimedia.de/>
+- EFF <https://supporters.eff.org/donate>
+- torproject <https://donate.torproject.org/>
+- oceancleanup <https://www.theoceancleanup.com/>
+
+## Contact
+
+Send a mail, use [PGP](https://de.wikipedia.org/wiki/Pretty_Good_Privacy) - here is my [GPG](https://gnupg.org/) public key:
 
 ```GPG
 -----BEGIN PGP PUBLIC KEY BLOCK-----

@@ -1,5 +1,13 @@
 # Zocki
 
+## Cross-Play
+
+Games that work in [crossplay](https://de.wikipedia.org/wiki/Crossplay) between PlayStation and pc and have been played sofar :
+
+- Call of Duty Warzone
+- RocketLeague
+- Brawlhalla
+
 ## Ten-Fight
 
 The **Zocki-Ten-Fight** is an epic battle over 10 switch games over who is the best player today.
@@ -15,7 +23,7 @@ Scoring per round works as follows:
 | 3     | 1     |
 | 4     | 0     |
 
-## Ten-Fight-Table
+### Ten-Fight-Table
 
 Currently we play the following games in these settings:
 
@@ -32,7 +40,7 @@ Currently we play the following games in these settings:
 | Puyo Puyo Tetris | Muliplayer Arcade -> Single Screen -> Versus -> 4 Player -> Win Count = 2, Harddrop = ON, Hold = ON               |
 | Mario Kart 8     | 4P -> vs race -> 150cc -> No Teams, Normal Items, No CPU, all Verhicles, Random  random map, 4 Races              |
 
-## Match Table
+### Match Table
 
 | Game             | J0n4s | M4r10 | Chr1$ | F4b1 |
 | ---------------- | ----- | ----- | ----- | ---- |
@@ -47,7 +55,7 @@ Currently we play the following games in these settings:
 | Puyo Puyo Tetris |       |       |       |      |
 | Mario Kart 8     |       |       |       |      |
 
-## Epic Battles
+### Epic Battles
 
 The following epic battles have been fought:
 
@@ -57,7 +65,7 @@ The following epic battles have been fought:
 | 24.10.2020 | 19    | 20    | 25    | 10     | Chr1$  |
 | N/A        |       |       |       |        |        |
 
-## Other Games
+### Other Games
 
 Some games are better than others. These are the games currently not in the Ten-Fight-Table but are generally suitable.
 
