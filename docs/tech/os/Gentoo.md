@@ -1,4 +1,6 @@
-# Gentoo Installation on a Lenovo/IBM T500/T60 Laptop
+# Gentoo
+
+Installation on a Lenovo/IBM T500/T60 Laptop
 
 ## Let's start
 
