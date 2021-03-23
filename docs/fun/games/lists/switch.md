@@ -1,4 +1,4 @@
-# My Switch Games
+# Switch Games
 
 A list of nintendo switch games I have and play.
 

@@ -1,11 +1,11 @@
 # Gentoo Installation on a Lenovo/IBM T500/T60 Laptop
 
-## Lets start :D
+## Let's start
 
 ```shell
 gentoo acpi=on docache dosshd passwd=pw
-10 -> for german
-net-setup eth0 -> follow guide
+10 # for german
+net-setup eth0
 ```
 
 ## Partitioning
@@ -19,7 +19,7 @@ n (Swappartition erstellen P= Primär, 2=Partitionsnummer, Start = default, Ende
 n (Rootpartition erstellen P= Primär, 3=Partitionsnummer, Start = default, Ende = default)
 ```
 
-## Dateisysteme erstellen
+## Create Filesystem
 
 ```shell
 mke2fs /dev/sda1
@@ -33,19 +33,23 @@ mkdir /mnt/gentoo/boot
 mount /dev/sda1 /mnt/gentoo/boot
 ```
 
-## Stage3
+## add mirror
 
 ```shell
 cd /mnt/gentoo
 links http://www.gentoo.org/main/en/mirrors.xml
-Mirror auswählen, releases/x86/autobuilds/, x86, i686
+```
+
+choose mirror ```releases/x86/autobuilds/, x86, i686```
+
+```shell
 tar xvjpf stage3-*.tar.bz2
 ```
 
 ## Portage
 
-links <http://www.gentoo.org/main/en/mirrors.xml>
-Mirror wählen, snapshots/, portage-latest.tar.bz2
+Link: <http://www.gentoo.org/main/en/mirrors.xml>
+Choose mirror: ```snapshots/, portage-latest.tar.bz2```
 
 ```shell
 tar xvjf /mnt/gentoo/portage-latest.tar.bz2 -C /mnt/gentoo/usr
@@ -95,11 +99,15 @@ eselect profile set 2
 
 ```shell
 nano -w /etc/locale.gen
-	Auswählen:
-	en_US ISO-8859-1
-	en_US.UTF-8 UTF-8
-	de_DE ISO-8859-1
-	de_DE@euro ISO-8859-15
+```
+
+Choose:
+
+```
+en_US ISO-8859-1
+en_US.UTF-8 UTF-8
+de_DE ISO-8859-1
+de_DE@euro ISO-8859-15
 ```
 
 ```shell
@@ -113,9 +121,9 @@ emerge gentoo-sources
 ```shell
 cd /usr/src/linux
 make menuconfig
-	--> Viel Spaß!
-	--> http://de.gentoo-wiki.com/wiki/IBM_Lenovo_Thinkpad_R60
 ```
+
+More details: <http://de.gentoo-wiki.com/wiki/IBM_Lenovo_Thinkpad_R60>
 
 ## Special Lenovo T60 Devices
 
@@ -262,7 +270,7 @@ nano -w /etc/X11/xorg.conf.d
 Xorg -configure
 ```
 
-Testen
+Test
 
 ```shell
 X -retro -config /root/xorg.conf.new

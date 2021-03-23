@@ -1,4 +1,4 @@
-# Online Board Games
+# Browser Games
 
 ## Plattform
 

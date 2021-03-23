@@ -1,4 +1,89 @@
-# System
+# Windows 10
+
+## Windows Apps
+
+### File Recovery
+
+Link: <https://www.microsoft.com/en-us/p/windows-file-recovery/9n26s50ln705?activetab=pivot:overviewtab>
+
+### Windows Terminal
+
+Link: <https://www.microsoft.com/de-de/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab>
+
+Open a new Terminal Window with powershell 7, cmd and WSL (in my case ubuntu)
+
+```powershell
+wt -p "PowerShell 7" `; split-pane -p "cmd" `; split-pane -H wsl.exe
+```
+
+### WSL
+
+Set WSL version 2
+
+```powershell
+(New-Object System.Net.WebClient).DownloadFile("https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi", "wsl_update_x64.msi") 
+Start-Process msiexec.exe -Wait -ArgumentList '/I wsl_update_x64.msi /quiet' 
+wsl --set-version kali-linux 2
+```
+
+#### Ubuntu 20.04 LTS
+
+Link: <https://www.microsoft.com/de-de/p/ubuntu-2004-lts/9n6svws3rx71?cid=msft_web_chart&activetab=pivot:overviewtab>
+
+#### Kali with GUI
+
+```bash
+sudo apt update
+sudo apt install -y kali-linux-large
+sudo apt install -y kali-win-kex
+kex start
+kex --esm --sound
+```
+
+## Troubleshooting
+
+Fixing Windows 10 issues
+
+### Get Information
+
+**Get Win10 key**
+
+```powershell
+(Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
+```
+
+### Windows 10 boots in Recovery Mode
+
+**Recovery Deaktivieren**
+
+Problembehandlung -> Eingabeaufforderung -> command:
+
+```cmd
+bcdedit /set {current} recoveryenabled No
+```
+
+**MBR reparieren**
+
+Problembehandlung -> Eingabeaufforderung -> commands:
+
+```cmd
+bootrec.exe /fixmbr
+bootrec.exe /fixboot
+bootrec.exe /rebuildbcd
+```
+
+Sektor bzw. Festplatten reparieren
+Problembehandlung -> Eingabeaufforderung -> command:
+
+```cmd
+chkdsk /f /r
+```
+
+**Windows 10 abgesicherten Modus**
+
+Problembehandlung“, dann „Erweiterte Optionen“, dann „Starteinstellungen“, dann „Neu starten“
+Drücke auf „F5-Taste“, um Abgesicherten Modus mit Netzwerktreibern zu aktivieren.
+
 
 ## launch-settings URI
 

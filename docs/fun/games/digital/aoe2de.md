@@ -6,9 +6,24 @@
 
 ## Mods
 
+The mods i use:
+
 ![AOE2DEMods](_aoe2de_mods.jpg)
 
-## Bloodpack example
+Some other fun mods:
+
+### AoE Tetris
+
+Download:
+
+- Age of Empires II DE: Tetris: <https://www.ageofempires.com/mods/details/21466/>
+- Age of Empires II DE: Tetris Visual Mod: <https://www.ageofempires.com/mods/details/21464/>
+
+Watch:
+
+- Video: <https://www.youtube.com/watch?v=9ZMobR31qdE>
+
+### Bloodpack example
 
 | Before|After|
 |---|---|

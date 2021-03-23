@@ -2,7 +2,7 @@
 
 This is a one-person operation and here are some details about me.
 
-## Geek Codes
+## G33k C0d3s
 
 My Geek Code 3.1
 
@@ -82,7 +82,7 @@ Other support channels:
 - liberapay <https://liberapay.com/Fullbyte>
 - patreon <https://www.patreon.com/0gdd/creators>
 
-### Oth€r$
+### Other$
 
 You can support others that I support by transferring money here:
 
@@ -95,7 +95,7 @@ You can support others that I support by transferring money here:
 - torproject <https://donate.torproject.org/>
 - oceancleanup <https://www.theoceancleanup.com/>
 
-## Contact
+## Cont@ct
 
 Send a mail, use [PGP](https://de.wikipedia.org/wiki/Pretty_Good_Privacy) - here is my [GPG](https://gnupg.org/) public key:
 
