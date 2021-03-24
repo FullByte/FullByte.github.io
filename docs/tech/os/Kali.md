@@ -1,17 +1,113 @@
 # Kali
 
-## Update
+## Update & Config
+
+Update
 
 ```shell
 sudo wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add # Get latest key
 sudo dpkg --configure -a
-sudo apt update && apt -y full-upgrade && apt -y autoremove
+sudo apt update && apt -y full-upgrade && apt -y autoremove && apt -y autoclean
+```
+
+Config
+
+```shell
+apt install awscli eyewitness freeipmi-tools hcxdumptool hcxtools gcc-mingw-w64 ncat ntpstat python3-dnspython python3-netaddr python3-virtualenv python3-pyftpdlib python3-jwt
+apt purge -y network-manager
+```
+
+Disable network manager
+
+If you prefer having hardcoded configuration and/or network manager is causing issues you can purge it:
+
+```shell
+sudo systemctl stop NetworkManager.service
+sudo systemctl disable NetworkManager.service
+
+sudo systemctl stop NetworkManager-wait-online.service
+sudo systemctl disable NetworkManager-wait-online.service
+
+sudo systemctl stop NetworkManager-dispatcher.service
+sudo systemctl disable NetworkManager-dispatcher.service
+
+sudo systemctl stop network-manager.service
+sudo systemctl disable network-manager.service
 ```
 
 ## Further Tools
 
+seclists
+
 ```shell
 apt -y install seclists
+```
+
+Dnscan
+
+```shell
+git clone https://github.com/rbsec/dnscan /opt/dnscan
+ln -s /opt/dnscan/dnscan.py /usr/local/bin/dnscan.py
+
+Reposcanner
+
+```shell
+git clone https://github.com/dionach/reposcanner /opt/reposcanner
+ln -s /opt/reposcanner/reposcanner.py /usr/local/bin/reposcanner.py
+```
+
+pwdumpstats
+
+```shell
+git clone https://github.com/Dionach/pwdumpstats /opt/pwdumpstats
+ln -s /opt/pwdumpstats/pwdumpstats.py /usr/local/bin/pwdumpstats.py
+```
+
+CODA Pentest Scripts
+
+```shell
+git clone https://github.com/codagroup/pentestscripts /opt/pentestscripts
+ln -s /opt/pentestscripts/sourcescan.py /usr/local/bin/sourcescan.py
+```
+
+Frogger
+
+```shell
+git clone https://github.com/commonexploits/vlan-hopping /opt/frogger
+ln -s /opt/frogger/froggers.sh /usr/local/bin/froggers.sh
+chmod +x /opt/frogger/froggers.sh
+```
+
+ScoutSuite
+
+```shell
+git clone https://github.com/nccgroup/ScoutSuite /opt/scoutsuite
+cd /opt/scoutsuite
+virtualenv -p python3 venv
+. venv/bin/activate
+pip3 install -r requirements.txt
+pip3 install azure-cli
+cat <<EOT > /usr/local/bin/scout.sh
+#!/bin/sh
+. /opt/scoutsuite/venv/bin/activate > /dev/null 2>&1 && /opt/scoutsuite/scout.py $@
+EOT
+chmod +x /usr/local/bin/scout.sh
+exit
+```
+
+jwt2john
+
+```shell
+wget --quiet -O /usr/local/bin/jwt2john.py "https://raw.githubusercontent.com/Sjord/jwtcrack/master/jwt2john.py"
+sed -i '1s;^;#!/usr/bin/env python\n;' /usr/local/bin/jwt2john.py
+chmod +x /usr/local/bin/jwt2john.py
+```
+
+Prowler
+
+```shell
+pip3 install ansi2html detect-secrets
+git clone https://github.com/toniblyx/prowler /opt/prowler
 ```
 
 ## Commands
@@ -23,7 +119,7 @@ iwconfig 2>/dev/null | grep "Mode\\:Monitor" | awk '{print $1}'
 iwconfig 2>&1 | sed -n -e 's/^.\*Access Point: //p'
 ```
 
-## WSL with GUI and seamless mode
+## Kali in WSL2 with GUI
 
 **Set WSL version 2**
 

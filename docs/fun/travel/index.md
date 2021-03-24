@@ -1,6 +1,6 @@
 # Maps
 
-## Maps of all kind
+## Maps
 
 **Travel**
 

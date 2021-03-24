@@ -8,6 +8,16 @@ I followed this guide: <https://docs.microsoft.com/en-us/azure/cognitive-service
 
 Here are the steps i took to make it work.
 
+**Convert input to wav**
+
+Make sure the input is a wav file. You can use FFMPEG for this task e.g.
+
+```shell
+ffmpeg -i input.mp4 -vn -acodec pcm_s16le -ar 44100 -ac 2 output.wav
+```
+
+For more options view my [FFMPEG notes](https://0xfab1.net/tech/tools/ffmpeg/) or visit <https://ffmpeg.org/documentation.html>
+
 **Install required tools**
 
 ```powershell

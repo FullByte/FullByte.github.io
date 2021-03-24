@@ -140,3 +140,23 @@ ffmpeg -i input0.mp4 -i input1.mp4 -i input2.mp4 -i input3.mp4 -filter_complex "
 ```shell
 ffmpeg -i input0.mp4 -i input1.mp4 -i input2.mp4 -i input3.mp4 -i input4.mp4 -i input5.mp4 -filter_complex "[0:v][1:v][2:v]hstack=inputs=3[top]; [3:v][4:v][5:v]hstack=inputs=3[bottom]; [top][bottom]vstack=inputs=2[v]" -map "[v]" finalOutput.mp4
 ```
+
+## Audio only
+
+Convert MP4 to WAV e.g. for [Azure Speech to Text conversion](https://0xfab1.net/tech/azure/speech/).
+
+```shell
+ffmpeg -i input.mp4 -vn -acodec pcm_s16le -ar 44100 -ac 2 output.wav
+```
+
+Convert MP4 to FLAC
+
+```shell
+ffmpeg -i input.mp4 -acodec flac -bits_per_raw_sample 16 -ar 44100 output.flac
+```
+
+Convert MP4 to MP3
+
+```shell
+ffmpeg -i input.mp4 -vn -acodec mp3 -ab 320k -ar 44100 -ac 2 output.mp3
+```
