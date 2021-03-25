@@ -2,13 +2,56 @@
 
 ## Windows Apps
 
+### WinGet
+
+Source: <https://github.com/microsoft/winget-cli>
+Store: <https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1>
+Docs: <https://docs.microsoft.com/en-us/windows/package-manager/>
+
+Example:
+
+```powershell
+winget install powertoys 
+```
+
 ### File Recovery
 
-Link: <https://www.microsoft.com/en-us/p/windows-file-recovery/9n26s50ln705?activetab=pivot:overviewtab>
+Store: <https://www.microsoft.com/en-us/p/windows-file-recovery/9n26s50ln705?activetab=pivot:overviewtab>
+
+Recover a specific file from your C: drive to the recovery folder on an E: drive.
+
+```powershell
+winfr C: E: /n \Users\<username>\Documents\QuarterlyStatement.docx
+```
+
+Recover jpeg and png photos from your Pictures folder to the recovery folder on an E: drive.
+
+```powershell
+winfr C: E: /n \Users\<username>\Pictures\*.JPEG /n \Users\<username>\Pictures\*.PNG
+```
+
+Recover your Documents folder from your C: drive to the recovery folder on an E: drive.
+
+```powershell
+winfr C: E: /n \Users\<username>\Documents\ 
+```
+
+Recover PDF and Word files from your C: drive to the recovery folder on an E: drive.
+
+```powershell
+winfr C: E: /r /n *.pdf /n *.docx
+```
+
+Recover any file with the string "invoice" in the filename by using wildcard characters.
+
+```powershell
+winfr C: E: /r /n *invoice* 
+```
 
 ### Windows Terminal
 
-Link: <https://www.microsoft.com/de-de/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab>
+Store: <https://www.microsoft.com/de-de/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab>
+Doc: <https://docs.microsoft.com/en-us/windows/terminal/>
 
 Open a new Terminal Window with powershell 7, cmd and WSL (in my case ubuntu)
 
@@ -28,7 +71,7 @@ wsl --set-version kali-linux 2
 
 #### Ubuntu 20.04 LTS
 
-Link: <https://www.microsoft.com/de-de/p/ubuntu-2004-lts/9n6svws3rx71?cid=msft_web_chart&activetab=pivot:overviewtab>
+Store: <https://www.microsoft.com/de-de/p/ubuntu-2004-lts/9n6svws3rx71?cid=msft_web_chart&activetab=pivot:overviewtab>
 
 #### Kali with GUI
 

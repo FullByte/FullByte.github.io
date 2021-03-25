@@ -25,42 +25,49 @@
 
 ### IT News
 
-- t3n RSS Feed - News: xmlUrl="http://t3n.de/rss.xml"
-- Golem.de: xmlUrl="https://rss.golem.de/rss.php?feed=RSS2.0"
-- DataGenetics: xmlUrl="http://datagenetics.com/feed/rss.xml"
-- Hackaday: xmlUrl="https://hackaday.com/blog/feed/"
-- iX news: xmlUrl="https://www.heise.de/ix/news/news-atom.xml"
-- TechCrunch: xmlUrl="https://techcrunch.com/feed/"
-- c't: xmlUrl="https://www.heise.de/ct/rss/artikel-atom.xml"
-- heise Video: xmlUrl="https://www.heise.de/video/heise-atom.xml"
-- WIRED: xmlUrl="https://www.wired.com/category/threatlevel/feed/"
-- heise developer: xmlUrl="https://www.heise.de/developer/rss/news-atom.xml"
-- The Old New Thing: xmlUrl="https://blogs.msdn.microsoft.com/oldnewthing/feed"
-- Reddit Technology: xmlUrl="https://www.reddit.com/r/technology/.rss"
+- t3n RSS Feed - News: <http://t3n.de/rss.xml>
+- Golem.de: <https://rss.golem.de/rss.php?feed=RSS2.0>
+- DataGenetics: <http://datagenetics.com/feed/rss.xml>
+- Hackaday: <https://hackaday.com/blog/feed/>
+- iX news: <https://www.heise.de/ix/news/news-atom.xml>
+- TechCrunch: <https://techcrunch.com/feed/>
+- c't: <https://www.heise.de/ct/rss/artikel-atom.xml>
+- heise Video: <https://www.heise.de/video/heise-atom.xml>
+- WIRED: <https://www.wired.com/category/threatlevel/feed/>
+- heise developer: <https://www.heise.de/developer/rss/news-atom.xml>
+- The Old New Thing: <https://blogs.msdn.microsoft.com/oldnewthing/feed>
+- Reddit Technology: <https://www.reddit.com/r/technology/.rss>
 
 ### IT Security
 
-- Schneier on Security": xmlUrl="https://www.schneier.com/blog/atom.xml"
-- Troy Hunt's Blog": xmlUrl="http://feeds.feedburner.com/TroyHunt"
-- IT Security Expert Blog: xmlUrl="http://blog.itsecurityexpert.co.uk/feeds/posts/default"
-- Golem.de - Security: xmlUrl="https://rss.golem.de/rss.php?tp=sec&amp;feed=RSS2.0"
-- heise Security: xmlUrl="https://www.heise.de/security/news/news-atom.xml"
-- Krebs on Security": xmlUrl="http://krebsonsecurity.com/feed/"
-- A Few Thoughts on Cryptographic Engineering": xmlUrl="https://blog.cryptographyengineering.com/feed/"
-- Matt Suiche": xmlUrl="http://feeds.feedburner.com/msuicheblog"
-- TaoSecurity: xmlUrl="https://taosecurity.blogspot.com/feeds/posts/default"
-- cryptome: xmlUrl="https://www.freelists.org/feed/cryptome"
-- Deeplinks: xmlUrl="https://www.eff.org/rss/updates.xml"
-- Paul's Security Weekly xmlUrl="http://podcast.securityweekly.com/rss"
-- Threatpost: xmlUrl="http://threatpost.com/feed/"
-- Graham Cluley: xmlUrl="https://www.grahamcluley.com/feed/"
-- Naked Security: xmlUrl="https://nakedsecurity.sophos.com/feed/"
+- Schneier on Security>: <https://www.schneier.com/blog/atom.xml>
+- Troy Hunt's Blog>: <http://feeds.feedburner.com/TroyHunt>
+- IT Security Expert Blog: <http://blog.itsecurityexpert.co.uk/feeds/posts/default>
+- Golem.de - Security: <https://rss.golem.de/rss.php?tp=sec&amp;feed=RSS2.0>
+- heise Security: <https://www.heise.de/security/news/news-atom.xml>
+- Krebs on Security>: <http://krebsonsecurity.com/feed/>
+- A Few Thoughts on Cryptographic Engineering>: <https://blog.cryptographyengineering.com/feed/>
+- Matt Suiche>: <http://feeds.feedburner.com/msuicheblog>
+- TaoSecurity: <https://taosecurity.blogspot.com/feeds/posts/default>
+- cryptome: <https://www.freelists.org/feed/cryptome>
+- Deeplinks: <https://www.eff.org/rss/updates.xml>
+- Paul's Security Weekly <http://podcast.securityweekly.com/rss>
+- Threatpost: <http://threatpost.com/feed/>
+- Graham Cluley: <https://www.grahamcluley.com/feed/>
+- Naked Security: <https://nakedsecurity.sophos.com/feed/>
 
 ### Other
 
-- World News: xmlUrl="https://www.reddit.com/r/worldnews/.rss"
-- Today I Learned (TIL): xmlUrl="https://www.reddit.com/r/todayilearned/.rss"
-- Google News: xmlUrl="https://news.google.com/?output=rss"
-- Reddit: xmlUrl="https://www.reddit.com/.rss
-- law blog: xmlUrl="http://www.lawblog.de/index.php/feed/"
-- vice: xmlUrl="https://www.vice.com/de/rss"
+- World News: <https://www.reddit.com/r/worldnews/.rss>
+- Today I Learned (TIL): <https://www.reddit.com/r/todayilearned/.rss>
+- Google News: <https://news.google.com/?output=rss>
+- Reddit: xmlUrl=<https://www.reddit.com/.rss>
+- law blog: <http://www.lawblog.de/index.php/feed/>
+- vice: <https://www.vice.com/de/rss>
+
+### YouTube
+
+You can get the atom feed of a YouTube channel by adding the channel id to this URL: ```https://www.youtube.com/feeds/videos.xml?channel_id=```
+
+Channel: <https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw>
+Atom: <https://www.youtube.com/feeds/videos.xml?channel_id=UCuAXFkgsw1L7xaCfnd5JJOw>

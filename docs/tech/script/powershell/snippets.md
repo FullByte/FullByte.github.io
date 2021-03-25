@@ -401,6 +401,7 @@ Get Binding Info
 
 ## Random (sort this)
 
+- Format new, raw disk: ```Get-Disk | Where-Object {$_.partitionstyle -eq 'raw' -and $_.OperationalStatus -like 'Online' } | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "newDisk" -Confirm:$false```
 - Check if a specific port is open e.g. port 8080 ```netstat -ano | Select-String "8080"```
 - Get all "svchost" process-ids: ```Get-Process "svchost" | select -expand id```
 - View open connections for a given service: ```get-nettcpconnection | select local*,remote*,state,@{Name="Process";Expression={(Get-Process -Id $_.OwningProcess).ProcessName}} | Where-Object {$_.Process -eq "svchost"} | Format-Table```

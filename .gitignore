@@ -1,5 +1,5 @@
 site/
 _temp/
 debug.log
-wikistats.ps1
+build.ps1
 wordcount.lua

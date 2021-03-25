@@ -4,7 +4,7 @@ Azure offers a service to convert text to speech and speech to text. Here are so
 
 ## Speech-to-text demo
 
-I followed this guide: <https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/index-speech-to-tex>.
+I followed this guide: <https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/index-speech-to-text>.
 
 Here are the steps i took to make it work.
 
@@ -117,6 +117,6 @@ Run the code with:
 dotnet run
 ```
 
-This example output shows how the program first checks word for word and once the sentence  is over commits a sentence. Sometimes content of the sentence changes based on the following word(s). The example running is a child story by Nils Holgersson in german language:
+This example output shows how the program first checks word for word and once the sentence  is over commits a sentence. Sometimes content of the sentence changes based on the following word(s). The example is analyzing a story by Nils Holgersson in german language:
 
 ![speechtotext](speechtotext.webp)

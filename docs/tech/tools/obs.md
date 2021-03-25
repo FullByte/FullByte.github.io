@@ -1,4 +1,4 @@
-# Stream with OBS
+# OBS
 
 ## Links
 
@@ -7,9 +7,9 @@ OBS+Restream=free multi-platform streaming
 - OBS: <https://obsproject.com/>
 - Restream: <https://restream.io>
 - VR Streaming <https://github.com/baffler/OBS-OpenVR-Input-Plugin>
-- StreamFX: https://github.com/Xaymar/obs-StreamFX/releases
-- Inpput overlay https://github.com/univrsal/input-overlay
-- OBS-virtual-cam: https://github.com/CatxFish/obs-virtual-cam 
+- StreamFX: <https://github.com/Xaymar/obs-StreamFX/releases>
+- Inpput overlay <https://github.com/univrsal/input-overlay>
+- OBS-virtual-cam: <https://github.com/CatxFish/obs-virtual-cam>
 
 ## General Settings
 

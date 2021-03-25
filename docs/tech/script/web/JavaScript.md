@@ -391,6 +391,7 @@ function EscapeEntities(str) str.replace(/[^\x20-\x7E]/g, function(str) charToEn
 
 ## 534 ways to reload the page with JavaScript
 
+```javascript
 - location = location
 - location = location.href
 - location = window.location
@@ -926,3 +927,4 @@ function EscapeEntities(str) str.replace(/[^\x20-\x7E]/g, function(str) charToEn
 - self['location'].reload()
 - self.location['reload'](<>)
 - self['location']['reload']()
+```
