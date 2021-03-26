@@ -3,3 +3,4 @@ _temp/
 debug.log
 build.ps1
 wordcount.lua
+urlcheck.py
