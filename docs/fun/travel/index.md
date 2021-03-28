@@ -20,12 +20,6 @@
 
 - London Underground: <https://traintimes.org.uk/map/tube/schematic/>
 
-**Cyber Maps**
-
-- <http://www.digitalattackmap.com/>
-- <https://cybermap.kaspersky.com/>
-- <https://app.any.run/>
-
 **Infrastructure**
 
 - Hike and Foot paths: <https://hiking.waymarkedtrails.org>
