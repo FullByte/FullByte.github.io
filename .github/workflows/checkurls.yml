@@ -16,7 +16,7 @@ jobs:
     - name: urls-checker
       uses: urlstechie/urlchecker-action@master
       with:
-        subfolder: docs
+        subfolder: docs/tech
         file_types: .md
         print_all: false
         timeout: 4
