@@ -61,7 +61,6 @@ hollywood
 - <https://3dforreddit.com/r/pics>
 - <https://coub.com/>
 - <http://9gag.com/hot>
-- <https://www.librarything.com/profile/fabianfromm/recommendations>
 
 ## Random
 

@@ -4,22 +4,10 @@
 
 |What|Where|
 |-|-|
-|Official Page||
-|Source||
-|Download||
-|Install||
-
-## Getting started
-
-TODO
-
-
-
-
-
-## Useful Commands
-
-TODO
+|Official Page|<https://www.docker.com/>|
+|Docs|<https://docs.docker.com/get-started/>|
+|Download|<https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe>|
+|Install|```choco install docker-desktop```|
 
 ## Cool things to run with docker
 
@@ -36,7 +24,7 @@ docker run -it mcr.microsoft.com/azure-powershell
 Trigger script in Powershell in Docker
 
 ```shell
-docker run -it -v C:\Users\fabia\src:/src mcr.microsoft.com/azure-powershell:3.6.1-ubuntu-18.04 pwsh -file /src/script.ps1
+docker run -it -v C:\Users\username\src:/src mcr.microsoft.com/azure-powershell:3.6.1-ubuntu-18.04 pwsh -file /src/script.ps1
 ```
 
 ### Tutorials
@@ -164,15 +152,20 @@ Sources:
 docker run -d -p 8080:80 nextcloud
 ```
 
-
 ### Burpsuite
 
 ```bash
 docker run -d --name burpsuite -e DISPLAY -v ${HOME}:/home/burpsuite -v /tmp/.X11-unix/:/tmp/.X11-unix/ --p 8080:8080 alexandreoda/burpsuite
 ```
 
-# mitmproxy
+### mitmproxy
 
 ```bash
 docker run --rm -it -p 8080:8080 mitmproxy/mitmproxy
+```
+
+### pytorch
+
+```bash
+docker run --gpus all --rm -ti --ipc=host pytorch/pytorch:latest
 ```
