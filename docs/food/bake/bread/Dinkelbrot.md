@@ -1,6 +1,6 @@
-# Dinkelbrot
+# 🍞 Dinkelbrot
 
-##  Zubereitung
+## Zubereitung
 
 Alle Zutate vermengen und in eine gefettete Kastenform geben und gehen lassen, bis der Teig sich über den Rand der Form vergrößert hat.
 

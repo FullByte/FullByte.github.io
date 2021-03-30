@@ -1,4 +1,4 @@
-# Apfelwaffeln
+# 🧇 Apfelwaffeln
 
 ## Zubereitung
 

@@ -1,9 +1,11 @@
 # pytorch
 
-Install CUDA: <https://developer.nvidia.com/cuda-downloads>
-Install Miniconda: <https://docs.conda.io/en/latest/miniconda.html>
+Install tools:
 
-See status of nvidea settings:
+- Install CUDA: <https://developer.nvidia.com/cuda-downloads>
+- Install Miniconda: <https://docs.conda.io/en/latest/miniconda.html>
+
+Check status of nvidia settings:
 
 ```shell
 nvidia-smi
@@ -53,11 +55,28 @@ I created a video of all 34 pictures created while running this command ```imagi
 
 ![pytorch output](_pytorch-test.webp)
 
-This is the script I used to create a webp video from the picture input of deep-daze
+This script will create a new folder on the local desktop and run deep-daze for 60min. The resulting images will be used to create an mp4 and webp video within the same folder.
 
 ```powershell
-ffmpeg -framerate 5 -i "a_house_in_the_forest.%06d.jpg" -c:v libx264 "D:\input.mp4" # Create Video
-ffmpeg -i "D:\input.mp4" -vf "fps=10,scale=512:-1:flags=lanczos" -vcodec libwebp -lossless 0 -compression_level 6 -q:v 50 -loop 0 -preset picture -an -vsync 0 output.webp # Convert Video to WebP for Wiki
+# Add a new input
+$text = "Correct Horse Battery Staple"
+
+# Create folder and prepare variables
+$DesktopPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::Desktop)
+Set-Location -Path $DesktopPath
+$folder = $text -replace " ","_"
+$fullpath = $DesktopPath +  "/" + $folder
+New-Item -Path $DesktopPath -Name ($text -replace " ","_") -ItemType "directory" -Force
+Set-Location -Path $fullpath
+
+# Run imagine for 60min
+$job = Start-Job -ScriptBlock { imagine $input } -InputObject ("'" + $text + "'")
+Start-Sleep -s 3600
+Stop-Job $job
+
+# Create Video
+ffmpeg -framerate 5 -i "$folder.%06d.jpg" -c:v libx264 "$folder.mp4"
+ffmpeg -i "$folder.mp4" -vf "fps=10,scale=512:-1:flags=lanczos" -vcodec libwebp -lossless 0 -compression_level 6 -q:v 50 -loop 0 -preset picture -an -vsync 0 "$folder.webp"
 ```
 
 ### deep-daze script

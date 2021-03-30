@@ -1,4 +1,4 @@
-# Schokoladenkuchen
+# 🎂 Schokoladenkuchen
 
 ## 1. Schoko schmelzen
 

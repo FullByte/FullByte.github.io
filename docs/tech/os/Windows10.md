@@ -718,18 +718,18 @@ Linke ALT-Taste und linke UMSCHALTTASTE+DRUCK-Taste: Kontrast ein- und ausschalt
 
 ## Environment Variables
 
-%ALLUSERSPROFILE% (%PROGRAMDATA%) --> C:\\ProgramData
-%APPDATA% --> C:\\Users{username}\\AppData\\Roaming
-%COMPUTERNAME% --> hostname
-%COMMONPROGRAMFILES% --> C:\\Program Files\\Common Files
-%COMMONPROGRAMFILES(x86)% --> C:\\Program Files (x86)\\Common Files
-%COMSPEC% --> Pfad zum Kommandozeilen-Interpreter
-%HOMEDRIVE%  --> C:\\
-%HOMEPATH%  --> \\Users{username}
-%LOCALAPPDATA%  --> C:\\Users{username}\\AppData\\Local
-%PROGRAMFILES%  --> C:\\Program Files
-%PROGRAMFILES(X86)%  --> C:\\Program Files (x86)
-%USERPROFILE%  --> C:\\Users{username}
-%WINDIR%  --> C:\\Windows
-%PUBLIC%  --> C:\\Users\\Public
-%PSModulePath%  --> %SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\Modules\\
+- %ALLUSERSPROFILE% (%PROGRAMDATA%) --> C:\\ProgramData
+- %APPDATA% --> C:\\Users{username}\\AppData\\Roaming
+- %COMPUTERNAME% --> hostname
+- %COMMONPROGRAMFILES% --> C:\\Program Files\\Common Files
+- %COMMONPROGRAMFILES(x86)% --> C:\\Program Files (x86)\\Common Files
+- %COMSPEC% --> Pfad zum Kommandozeilen-Interpreter
+- %HOMEDRIVE%  --> C:\\
+- %HOMEPATH%  --> \\Users{username}
+- %LOCALAPPDATA%  --> C:\\Users{username}\\AppData\\Local
+- %PROGRAMFILES%  --> C:\\Program Files
+- %PROGRAMFILES(X86)%  --> C:\\Program Files (x86)
+- %USERPROFILE%  --> C:\\Users{username}
+- %WINDIR%  --> C:\\Windows
+- %PUBLIC%  --> C:\\Users\\Public
+- %PSModulePath%  --> %SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\Modules\\

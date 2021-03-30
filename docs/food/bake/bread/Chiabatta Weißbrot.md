@@ -1,4 +1,4 @@
-# Chiabatta Weißbrot
+# 🍞 Chiabatta Weißbrot
 
 ## Zubereitung
 

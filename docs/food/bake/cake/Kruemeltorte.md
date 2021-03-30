@@ -1,4 +1,4 @@
-# Krümeltorte
+# 🥧 Krümeltorte
 
 ## Zubereitung
 

@@ -1,4 +1,4 @@
-# Schokoladenkipferl
+# 🍪 Schokoladenkipferl
 
 ## Zubereitung
 

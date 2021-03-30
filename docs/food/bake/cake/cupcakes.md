@@ -1,6 +1,6 @@
-# Himbeer-Joghurt Cupcake
+# 🧁 Cupcake
 
-Rezept für 12 Cupcakes.
+Rezept für 12 Himbeer-Joghurt Cupcakes.
 
 ## Cupcakes
 

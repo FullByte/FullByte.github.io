@@ -1,4 +1,4 @@
-# Pfannkuchen
+# 🥞 Pfannkuchen
 
 Zutaten:
 
@@ -12,7 +12,7 @@ Zutaten:
 |60 ml|Mineralwasser|
 || Speiseöl zum Ausbacken|
 
-Zubereitung:
+## Zubereitung:
 
 Eier mit Milch, Zucker, Salz, Mehl und Mineralwasser zu einem glatten Teig rühren. Bei Bedarf noch etwas Mehl oder Wasser hinzugeben, um die gewünschte Konsistenz zu erreichen.
 

@@ -1,4 +1,4 @@
-# Nußecken
+# 🍪 Nußecken
 
 ## Nußecken Rezept
 

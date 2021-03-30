@@ -1,4 +1,4 @@
-# Apfelkuchen
+# 🥧 Apfelkuchen
 
 ## Zubereitung
 

@@ -1,7 +1,36 @@
-# About me
+# 🤔 About me
 
 This is a one-person operation.
 Thanks for your interest!
+
+Query a DNS for TXT records of [0xfab1.net](https://0xfab1.net) to get some contact details:
+
+Linux
+
+```bash
+curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'  | jq -r .Answer[].data
+```
+
+Windows
+
+```powershell
+(Resolve-DnsName 0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | Format-Table
+```
+
+and you will receive this result:
+
+```shell
+"v=me; github=https://github.com/FullByte"
+"v=me; twitter=https://twitter.com/ZeroGdoubleD"
+"v=me; about=https://0xfab1.net/about/"
+"v=me; gravatar=https://de.gravatar.com/0xfab1"
+```
+
+## Avatar
+
+I often use this avatar. More about how to create this with [Context Free Art is written here](https://0xfab1.net/make/art/contextfreeart/).
+
+![avatar](_avatar_aboutme.png)
 
 ## G33k C0d3
 
