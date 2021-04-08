@@ -125,6 +125,9 @@ What is Wikipedia? [Here is a good explanation.](https://enwikipedia.org/wiki/Wi
 
 ## Unsorted
 
+- [Hofstadter's law](https://en.wikipedia.org/wiki/Hofstadter's_law "https://en.wikipedia.org/wiki/Hofstadter's_law")
+- [Conspiracy theory](https://en.m.wikipedia.org/wiki/Conspiracy_theory "https://en.m.wikipedia.org/wiki/Conspiracy_theory")
+- [Clearingstelle Urheberrecht im Internet](https://de.wikipedia.org/wiki/Clearingstelle_Urheberrecht_im_Internet "https://de.wikipedia.org/wiki/Clearingstelle_Urheberrecht_im_Internet")
 - [Immortal Game](https://en.wikipedia.org/wiki/Immortal_Game "https://en.wikipedia.org/wiki/Immortal_Game")
 - [100 point check](https://en.wikipedia.org/wiki/100_point_check "https://en.wikipedia.org/wiki/100_point_check")
 - [100 prisoners problem](https://en.wikipedia.org/wiki/100_prisoners_problem "https://en.wikipedia.org/wiki/100_prisoners_problem")
