@@ -1,4 +1,4 @@
-# 🍫 Müsliriegel
+# Müsliriegel
 
 ## Zubereitung
 

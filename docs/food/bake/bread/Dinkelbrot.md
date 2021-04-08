@@ -1,4 +1,4 @@
-# 🍞 Dinkelbrot
+# Dinkelbrot
 
 ## Zubereitung
 

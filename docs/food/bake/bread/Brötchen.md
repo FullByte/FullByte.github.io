@@ -1,4 +1,4 @@
-# 🍞 Brötchen
+# Brötchen
 
 ## Zubereitung
 

@@ -1,4 +1,4 @@
-# 📄 Links
+# Links
 
 Tools to create graphics and modify images online.
 

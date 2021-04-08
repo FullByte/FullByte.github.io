@@ -1,4 +1,4 @@
-# ⭐ Zimtsterne
+# Zimtsterne
 
 ## Zubereitung
 

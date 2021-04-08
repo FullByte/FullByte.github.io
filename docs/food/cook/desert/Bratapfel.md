@@ -1,4 +1,4 @@
-# 🍎 Bratapfel
+# Bratapfel
 
 ## Zubereitung
 

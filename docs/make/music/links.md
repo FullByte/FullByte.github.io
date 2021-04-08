@@ -1,4 +1,4 @@
-# 📄 Links
+# Links
 
 - <http://ardour.org/>
 - <https://lmms.io>

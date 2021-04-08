@@ -1,4 +1,4 @@
-# 🧁 Muffins
+# Muffins
 
 ## Zubereitung
 

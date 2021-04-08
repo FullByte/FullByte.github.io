@@ -1,4 +1,4 @@
-# 🥧 Mirabellenkuchen
+# Mirabellenkuchen
 
 ## Zubereitung
 
