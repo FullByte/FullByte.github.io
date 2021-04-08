@@ -57,13 +57,13 @@ Make sure not to reach current allowed max files size.
 With sound:
 
 ```shell
-ffmpeg -i input.mkv -vf -an scale=960x540 messenger.mp4
+ffmpeg -i input.mp4 -vf "scale=vga" messenger.mp4
 ```
 
 No sound:
 
 ```shell
-ffmpeg -i input.mkv -vf -an scale=960x540 messenger.mp4
+ffmpeg -i input.mp4 -an -vf "scale=vga" messenger.mp4
 ```
 
 ## Save as AV1
@@ -102,7 +102,7 @@ ffmpeg -ss 5.0 -t 3.2 -i input.mp4 -vf "fps=12,scale=480:-1:flags=lanczos,split[
 Create a short GIF from a long video
 
 ```shell
-ffmpeg.exe -i input.mp4 -vf  "scale=vga,thumbnail=100,split[a][b],[b]palettegen=reserve_transparent=0:stats_mode=single[b];[a][b]paletteuse=new=1,settb=1/25,setpts=N" output.gif
+ffmpeg.exe -i input.mp4 -vf "scale=vga,thumbnail=100,split[a][b],[b]palettegen=reserve_transparent=0:stats_mode=single[b];[a][b]paletteuse=new=1,settb=1/25,setpts=N" output.gif
 ```
 
 ## Convert from/to webp
