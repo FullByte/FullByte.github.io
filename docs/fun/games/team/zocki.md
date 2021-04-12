@@ -2,7 +2,7 @@
 
 ## Cross-Play
 
-Games that work in [crossplay](https://de.wikipedia.org/wiki/Crossplay) between PlayStation and pc and have been played sofar :
+Games that work in [crossplay](https://de.wikipedia.org/wiki/Crossplay) between PlayStation and PC and have been played sofar :
 
 - Call of Duty Warzone
 - RocketLeague
