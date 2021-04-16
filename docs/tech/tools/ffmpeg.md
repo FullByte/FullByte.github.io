@@ -27,18 +27,21 @@ ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default
 
 ## Create Time Lapse Video
 
-In my case the files are from a GoPro named "G" followed by seven digits e.g. G0011565.jpg.
-The starting number of the series of pictures is 11021 in my example.
-Change the start_number value, the filename prefix (in this case "G") and the length of the number if required.
-More details: <http://ffmpeg.org/ffmpeg-all.html#image2-1>
+**Time Lapse using pictures**
+
+This example will create a video based on pictures as input. In this case the files are from a GoPro so all pictures start with a "G" followed by seven digits e.g. G0011565.jpg. The starting number of the series of pictures is 11021 in my example. Change the value for "start_number", the filename prefix (in this case "G") and the length of the number (currently 7) to match your requirements.
 
 ```shell
 ffmpeg -framerate 30 -start_number 11021 -i "E:\path\G%07d.jpg" -c:v libx264 "E:\path\output.mp4"
 ```
 
-Example output:
+**Time Lapse using long video**
 
-![Timelapse video using FFmpeg](_ffmpeg_timelapse.jpg)
+This example will shorten a given video to create a time lapse video. The video quality in this example will be reduced to VGA and reduce image quality. If the video is to slow/fast change the value for "thumbnail" (currently at 100).
+
+```shell
+ffmpeg -i input.mp4 -vf "scale=vga,thumbnail=100,split[a][b],[b]palettegen=reserve_transparent=0:stats_mode=single[b];[a][b]paletteuse=new=1,settb=1/25,setpts=N" output.mp4
+```
 
 ## Compress Video
 
@@ -102,7 +105,7 @@ ffmpeg -ss 5.0 -t 3.2 -i input.mp4 -vf "fps=12,scale=480:-1:flags=lanczos,split[
 Create a short GIF from a long video
 
 ```shell
-ffmpeg.exe -i input.mp4 -vf "scale=vga,thumbnail=100,split[a][b],[b]palettegen=reserve_transparent=0:stats_mode=single[b];[a][b]paletteuse=new=1,settb=1/25,setpts=N" output.gif
+ffmpeg -i input.mp4 -vf "scale=vga,thumbnail=100,split[a][b],[b]palettegen=reserve_transparent=0:stats_mode=single[b];[a][b]paletteuse=new=1,settb=1/25,setpts=N" output.gif
 ```
 
 ## Convert from/to webp
