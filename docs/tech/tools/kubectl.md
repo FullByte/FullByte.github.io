@@ -1,5 +1,14 @@
 # Kubectl
 
+## Info
+
+|What|Where|
+|-|-|
+|Official Page||
+|Source||
+|Download||
+|Install||
+
 kubectl controls the Kubernetes cluster manager
 
 - Docs: <https://kubernetes.io/docs/reference/kubectl/kubectl/>

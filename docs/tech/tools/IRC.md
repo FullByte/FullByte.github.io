@@ -1,5 +1,14 @@
 # IRC
 
+## Info
+
+|What|Where|
+|-|-|
+|Official Page||
+|Source||
+|Download||
+|Install||
+
 ## Server/Channel
 
 - [freenode#crypto](irc://irc.freenode.net:+7000/#crypto "irc://irc.freenode.net:+7000/##crypto")

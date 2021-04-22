@@ -1,5 +1,7 @@
 # ZoMo
 
+First recorded ZoMo event happened in 30.11.2015.
+
 ## Games for Zocking-Monday
 
 Action

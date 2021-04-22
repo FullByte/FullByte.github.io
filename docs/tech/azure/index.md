@@ -23,6 +23,7 @@ The best websites with overviews and helpers i know for azure.
 ### Comparing Cloud Solutions
 
 - Comparing Azure and WS Services: <https://docs.microsoft.com/en-us/azure/architecture/aws-professional/services#>
+- VM Comparer (platform/region): <https://cloudoptimizer.io/>
 - AWS vs Azure: <https://docs.microsoft.com/en-us/azure/architecture/aws-professional/index>
 - Cloud Comparison: <https://www.rightscale.com/cloud-comparison-tool/>
 - Google comparing AWS/Azure: <https://cloud.google.com/free/docs/aws-azure-gcp-service-comparison>

@@ -1,6 +1,16 @@
 # Pandoc
 
-- pandoc <https://pandoc.org/>
+## Info
+
+|What|Where|
+|-|-|
+|Official Page|<https://pandoc.org/>|
+|Source||
+|Download||
+|Install||
+
+Additional tools:
+
 - miktex for pdf conversion from LaTeX <https://miktex.org/>
 
 ## Markdown

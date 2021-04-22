@@ -1,5 +1,7 @@
 # Zocki
 
+First recorded Zocki event happened in 9.9.2019.
+
 ## Cross-Play
 
 Games that work in [crossplay](https://de.wikipedia.org/wiki/Crossplay) between PlayStation and PC and have been played sofar :

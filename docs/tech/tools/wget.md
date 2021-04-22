@@ -1,5 +1,14 @@
 # Wget
 
+## Info
+
+|What|Where|
+|-|-|
+|Official Page||
+|Source||
+|Download||
+|Install||
+
 ## Download all files from website
 
 Generally, this can be blocked but works in most cases. To avoid a few things:

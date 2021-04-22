@@ -1,5 +1,14 @@
 # ImageMagick
 
+## Info
+
+|What|Where|
+|-|-|
+|Official Page||
+|Source||
+|Download||
+|Install||
+
 ## GIF
 
 Use ImageMagick to optimize a GIF

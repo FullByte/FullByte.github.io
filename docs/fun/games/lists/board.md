@@ -4,150 +4,101 @@ A list of board games I have and play.
 
 This list is an export from [Board Game Geek (BGG)](https://boardgamegeek.com/collection/user/zerogdoubled) and possibly newer entries are only available there.
 
-Games|Geek Rating|Comment
+## Unsorted
+
+|Games|Expansions|Comment|
 |-|-|-|
-|Adventure Time Card Wars: BMO vs. Lady Rainicorn (English edition) (2014)|5.614|HGE Test|
-|A Game of Thrones: The Board Game (Second Edition) – A Dance with Dragons (2012)|6.416||
-|A Game of Thrones: The Board Game (Second Edition) – A Feast for Crows (2013)|6.605||
-|A Game of Thrones: The Board Game (Second Edition) – Mother of Dragons (2018)|6.610|Extension|
-|A Game of Thrones: The Board Game (Second Edition) (2011)|7.404|GOTT|
-|Adventure Time Card Wars: Doubles Tournament (English edition) (2016)|N/A|Extension|
-|Adventure Time Card Wars: Finn vs. Jake (English edition) (2014)|5.682|Extension|
-|Adventure Time Card Wars: Fionna vs Cake (First edition) (2016)|5.554|Extension|
-|Adventure Time Card Wars: For The Glory! Booster Pack (First edition) (2014)|5.524|Extension|
-|Adventure Time Card Wars: Hero Pack #1 (First edition) (2015)|5.537|Extension|
-|Adventure Time Card Wars: Ice King vs. Marceline (English edition) (2015)|5.567|Extension|
-|Adventure Time Card Wars: Lemongrab vs. Gunter (English edition) (2015)|5.545|Extension|
-|Adventure Time Card Wars: Princess Bubblegum vs. Lumpy Space Princess (English edition) (2014)|5.587|Extension|
-|Adventure Time: Love Letter (English first edition (boxed)) (2015)|6.322|Extension|
-|Arimaa (Tournament edition) (2011)|5.949|2P|
 |Aye, Dark Overlord! The Red Box (2005)|5.697||
-|Azul (German second edition) (2018)|7.713|SF Test|
-|Azul: Die Buntglasfenster von Sintra (2018)|7.099|SF Test|
-|Azul: Summer Pavilion (English/German edition) (2019)|7.343|SF Test|
-|Backgammon (-3000)|6.361|SF|
-|BANG! The Bullet! (2007)|6.599||
+
+## 2 Player Games
+
+|Games|Comment|
+|-|-|
+|Arimaa |N/A|
+|Backgammon (-3000)|N/A|
 |Barragoon (2014)|5.638|2P|
-|Bears vs Babies (English edition) (2017)|5.434|HGE|
-|Bears vs Babies: NSFW Expansion Pack (English edition) (2017)|5.582|Extension|
-|Bluff Jubiläumsausgabe (German edition) (2018)|5.682|HGE|
-|Carcassonne (2000)|7.310|HGE|
-|Carcassonne: Expansion 1 – Inns & Cathedrals (2002)|7.414|Extension|
-|Carcassonne: Expansion 2 – Traders & Builders (2003)|7.363|Extension|
-|Carcassonne: Expansion 3 – The Princess & The Dragon (2005)|6.512|Extension|
-|Carcassonne: Expansion 4 – The Tower (2006)|6.282|Extension|
-|Carcassonne: Expansion 5 – Abbey & Mayor (2007)|6.670|Extension|
-|Carcassonne: Expansion 6 – Count, King & Robber (2007)|6.141|Extension|
-|Carcassonne: Expansion 7 – The Catapult (2008)|5.152|Extension|
-|Carcassonne: Expansion 8 – Bridges, Castles and Bazaars (2010)|6.359|Extension|
-|Carcassonne: Expansion 9 – Hills & Sheep (2014)|6.348|Extension|
-|Cards Against Humanity: The Bigger, Blacker Box (2013)|5.882|HGE|
-|Catan (1995)|6.991|HGE|
-|Catan: 5-6 Player Extension (1996)|6.734|Extension|
-|Catan: Cities & Knights – 5-6 Player Extension (2000)|6.561|Extension|
-|Catan: Cities & Knights (1998)|7.197|Extension|
-|Catan: Seafarers – 5-6 Player Extension (1999)|6.497|Extension|
-|Catan: Seafarers (1997)|6.937|Extension|
-|Catan: Traders & Barbarians – 5-6 Player Extension (2008)|5.892||
-|Catan: Traders & Barbarians (2007)|6.515||
-|Catan: Traveler – Compact Edition (2015)|5.727|Extension|
-|Cheating Moth (2011)|6.067|HGE|
 |Chess (1475)|6.939|2P|
-|Clank! In! Space!: A Deck-Building Adventure (2017)|7.480|HGE Test|
-|Clank! In! Space!: Apocalypse! (2018)|6.452|Extension|
-|Clank! In! Space!: Cyber Station 11 (2019)|5.974||
-|Cockroach Salad (2007)|5.895|HGE|
-|Crocodile Dentist (1991)|5.356||
-|Crokinole (1876)|7.623|Party|
-|Dice Throne Adventures (2020)|5.822||
-|Dice Throne Adventures: Promo Pack (2020)|N/A|Extension|
-|Dice Throne: Season One Rerolled – Promo Pack (2020)|N/A|Extension|
-|Dice Throne: Season One ReRolled (2020)|5.791|Extension|
-|Dice Throne: Season Two – Battle Chest (2018)|6.948|Extension|
-|Dice Throne: Season Two Promo Card Set (2018)|5.575|Extension|
-|Disney Villainous (2018)|6.749||
-|Disney Villainous: Evil Comes Prepared (2019)|6.508|Extension|
-|Disney Villainous: Wicked to the Core (2019)|6.593|Extension|
-|Dixit (2008)|7.151|HGE|
-|Dixit: Anniversary (2018)|6.185|Extension|
-|Dixit: Daydreams (2014)|6.679|Extension|
-|Dixit: Harmonies (2017)|6.132|Extension|
-|Dixit: Journey (2012)|6.868|Extension|
-|Dixit: Memories (2015)|6.772|Extension|
-|Dixit: Mirrors (2020)|5.563|Extension|
-|Dixit: Odyssey (2011)|7.242|Extension|
-|Dixit: Odyssey (expansion) (2013)|6.161|Extension|
-|Dixit: Origins (2013)|6.842|Extension|
-|Dixit: Quest (2010)|7.248|Extension|
-|Dixit: Revelations (2016)|6.660|Extension|
-|Do De Li Do (2016)|5.821|HGE|
-|Dominion (2008)|7.514|SF Test|
-|Dominion: Adventures (2015)|7.119|Extension|
-|Dominion: Alchemy (2010)|6.672|Extension|
-|Dominion: Dark Ages (2012)|7.424|Extension|
-|Dominion: Empires (2016)|7.045|Extension|
-|Dominion: Guilds (2013)|7.012|Extension|
-|Dominion: Hinterlands (2011)|7.400|Extension|
-|Dominion: Intrigue (2009)|7.572|Extension|
-|Dominion: Nocturne (2017)|6.329|Extension|
-|Dominion: Prosperity (2010)|7.927|Extension|
-|Dominion: Seaside (2009)|7.756|Extension|
-|DOS (English edition) (2018)|5.357|Extension|
-|Dune (2019)|7.127||
-|Dune: Ixians & Tleilaxu (2020)|5.738|Extension|
 |DVONN (2001)|6.919|2P|
-|Eckolo (2010)|5.505|LIZZ|
+|GIPF (1996)|6.531|2P|
+|Go (-2200)|7.330|2P|
+|ZÈRTZ (1999)|6.754|2P|
+|YINSH (2003)|7.293|2P|
+|Kamisado (2008)|6.307|2P|
+|LYNGK (2017)|6.240|2P|
+|Onitama (2014)|Expansions: Sensei's Path, Way of the Wind|
+
+## S&F Games
+
+|Games|Comment|
+|-|-|
+|Onitama (2014)|Expansions: Sensei's Path, Way of the Wind|
+
+## Action Games
+
+|Games|Comment|
+|-|-|
+|Crokinole (1876)|Party|
+|KLASK (2014)|7.157|Party|
+|KLASK 4 (2019)|5.727|Party|
+
+## Travel Games
+
+|Games|Comment|
+|-|-|
+|Catan: Traveler – Compact Edition||
+
+## HGE Games
+
+Games for atleast 4 people, easy to play.
+
+|Games|Expansions|Comment|
+|-|-|-|
+|A Game of Thrones: The Board Game (Second Edition)|Mother of Dragons (2018), A Feast for Crows (2013), A Dance with Dragons (2012)|G.o.T.T.|
+|Adventure Time Card Wars|BMO vs. Lady Rainicorn, Doubles Tournament, Finn vs. Jake, Fionna vs Cake, For The Glory! Booster Pack, Hero Pack #1, Ice King vs. Marceline, Lemongrab vs. Gunter, Princess Bubblegum vs. Lumpy Space Princess, Love Letter|HGE|
+|Azul|Variants: Die Buntglasfenster von Sintra & Summer Pavilion||
+|BANG! The Bullet!|||
+|Bears vs Babies|NSFW Expansion Pack||
+|Bluff |||
+|Carcassonne|Inns & Cathedrals, Traders & Builders, The Princess & The Dragon, The Tower, Abbey & Mayor, Count, King & Robber, The Catapult, Bridges, Castles and Bazaars, Hills & Sheep||
+|Cards Against Humanity|||
+|Settlers of Catan|Cities & Knights, Seafarers,Traders & Barbarians|5-6 Player|
+|Cheating Moth |||
+|Cockroach Salad (2007)|5.895|HGE|
+|Disney Villainous|Evil Comes Prepared, Wicked to the Core||
+|Dixit|Anniversary, Daydreams, Harmonies, Journey, Memories, Mirrors, Odyssey, Origins, Quest, Revelations||
+|Do De Li Do (2016)|5.821|HGE|
+|Dominion|Adventures, Alchemy, Dark Ages, Empires, Guilds, Hinterlands, Intrigue, Nocturne, Prosperity, Seaside||
+|DOS (English edition) (2018)|5.357|Extension|
+|Dune|Ixians & Tleilaxu||
+|Exploding Kittens|Imploding Kittens, NSFW Deck, Party Pack, Streaking Kittens||
 |El Grande Big Box (2015)|7.191||
 |Escape from the Aliens in Outer Space (English-only second edition) (2016)|6.501|HGE Test|
 |Evolution: Climate (2016)|7.145||
-|Exclusive Warehouse 23 Munchkin Booster (2010)|5.566|Extension|
-|Exploding Kittens (2015)|5.837|HGE|
-|Exploding Kittens: Imploding Kittens (2016)|6.411|Extension|
-|Exploding Kittens: NSFW Deck (2015)|5.958|Extension|
-|Exploding Kittens: Party Pack (2017)|5.808|Extension|
-|Exploding Kittens: Streaking Kittens (2018)|6.052|Extension|
+|Halli Galli|Halli Galli Extreme||
+
+## Drinking Games
+
+|Games|Drinking instructions|players|
+|-|-|-|
+|Crocodile Dentist|||
 |Flitzpuck (2002)|N/A|Party|
-|Flügelschlag (2019)|7.934|SF Test|
-|Flügelschlag: Europa-Erweiterung (2019)|7.745|Extension|
-|GIPF (1996)|6.531|2P|
-|Go (-2200)|7.330|2P|
-|Halli Galli (1990)|5.655|HGE|
-|Halli Galli Extreme (2005)|5.518|Extension|
-|Halt mal kurz: Das Känguru-Spiel (2016)|5.590|HGE|
-|Hanabi (2010)|6.995||
-|Hare & Tortoise (1973)|6.312|LIZZ|
-|Hive Pocket (2010)|7.308|SF Test|
-|Hive: The Pillbug (2013)|6.694|Extension|
-|Ingenious (2004)|6.958||
+|Looping Louie (2015)|6.564|Party|
+
+## Advanced Games
+
+|Games|Expansions|Comment|
+|-|-|-|
+|Clank! In! Space!|Apocalypse!, Cyber Station 11||
+|Dice Throne|Adventures, Season One Rerolled – Promo Pack, Adventures: Promo Pack (2020), Season One ReRolled, Season Two – Battle Chest, Season Two Promo Card Set (2018)||
+|Flügelschlag|Europa-Erweiterung||
+
 |Isle of Skye: Druids (2018)|6.157|HGE Test|
 |Isle of Skye: From Chieftain to King (2015)|7.279|Extension|
 |Isle of Skye: Journeyman (2017)|6.207|Extension|
-|Istanbul: Big Box (2018)|6.657||
-|Jenga (1983)|5.541|LIZZ|
-|Joking Hazard (2016)|6.101|HGE|
-|Joking Hazard: Deck Enhancement #1 (2017)|5.718|Extension|
-|Joking Hazard: Deck Enhancement #2 (2017)|5.604|Extension|
-|Joking Hazard: Deck Enhancement #3 (2018)|5.567|Extension|
-|Joking Hazard: Stroking Hazard (2018)|5.578|Extension|
-|Kakerlakensuppe (2008)|5.710|HGE|
-|Kamisado (2008)|6.307|2P|
-|Kingdom Builder: Big Box (Second Edition) (2017)|6.044||
-|Kingdomino (2016)|7.231|HGE|
-|Kingdomino: Age of Giants (2018)|6.453|Extension|
-|KLASK (2014)|7.157|Party|
-|KLASK 4 (2019)|5.727|Party|
-|Krazy Wordz (2016)|5.768|Extension|
-|Krazy Wordz: Erwachsenen Edition (2016)|6.168|HGE|
-|Labyrinth: The Card Game (2000)|5.523|Travel|
-|Latice (2015)|5.742|SF|
-|Lobo 77 (2013)|5.514|HGE|
-|Looping Louie (2015)|6.564|Party|
-|LYNGK (2017)|6.240|2P|
-|Magic Dance (1988)|5.566|LIZZ|
-|Mastermind (1971)|5.510|2P|
-|Minecraft: Builders & Biomes (2019)|6.063||
-|Minecraft: Farmer's Market Expansion (2020)|N/A||
-|Monster Mash (1987)|5.525||
+
+## Unsorted
+
+|Munchkin|Exclusive Warehouse 23 Munchkin Booster||
 |Munchkin (2001)|5.730|HGE|
 |Munchkin 2: Unnatural Axe (2002)|6.148|Extension|
 |Munchkin 3: Clerical Errors (2003)|6.122|Extension|
@@ -163,15 +114,49 @@ Games|Geek Rating|Comment
 |Munchkin Reloaded! (2010)|5.655|Extension|
 |Munchkin Sammlerbox (2006)|5.556|Extension|
 |Munchkin: Go Up a Level (2010)|5.572|Extension|
+
+
+
+|Halt mal kurz: Das Känguru-Spiel (2016)|5.590|HGE|
+|Hanabi (2010)|6.995||
+|Hare & Tortoise (1973)|6.312|LIZZ|
+|Hive Pocket (2010)|7.308|SF Test|
+|Hive: The Pillbug (2013)|6.694|Extension|
+|Ingenious (2004)|6.958||
+
+|Istanbul: Big Box (2018)|6.657||
+|Jenga (1983)|5.541|LIZZ|
+|Joking Hazard (2016)|6.101|HGE|
+|Joking Hazard: Deck Enhancement #1 (2017)|5.718|Extension|
+|Joking Hazard: Deck Enhancement #2 (2017)|5.604|Extension|
+|Joking Hazard: Deck Enhancement #3 (2018)|5.567|Extension|
+|Joking Hazard: Stroking Hazard (2018)|5.578|Extension|
+|Kakerlakensuppe (2008)|5.710|HGE|
+
+|Kingdom Builder: Big Box (Second Edition) (2017)|6.044||
+|Kingdomino (2016)|7.231|HGE|
+|Kingdomino: Age of Giants (2018)|6.453|Extension|
+
+|Krazy Wordz (2016)|5.768|Extension|
+|Krazy Wordz: Erwachsenen Edition (2016)|6.168|HGE|
+|Labyrinth: The Card Game (2000)|5.523|Travel|
+|Latice (2015)|5.742|SF|
+|Lobo 77 (2013)|5.514|HGE|
+
+
+|Magic Dance (1988)|5.566|LIZZ|
+|Mastermind (1971)|5.510|2P|
+|Minecraft: Builders & Biomes (2019)|6.063||
+|Minecraft: Farmer's Market Expansion (2020)|N/A||
+|Monster Mash (1987)|5.525||
+
 |Mysterium (2015)|7.174||
 |Mysterium: Hidden Signs (2016)|6.875|Extension|
 |Mysterium: Secrets & Lies (2017)|6.574|Extension|
 |Nova Luna (2019)|6.647||
 |Oceans (2020)|6.793||
 |Octi (1999)|5.691|2P|
-|Onitama (2014)|7.189|SF Test|
-|Onitama: Sensei's Path (2017)|6.488|Extension|
-|Onitama: Way of the Wind (2018)|5.934|Extension|
+
 |Otrio (2015)|5.563||
 |Patchwork (2014)|7.552||
 |Phase 10 (1982)|5.101|HGE|
@@ -232,7 +217,6 @@ Games|Geek Rating|Comment
 |Wizard (1984)|6.669|HGE|
 |X nimmt! (German second edition) (2016)|5.858|2P|
 |Yedo: Deluxe Master Set (2020)|6.156||
-|YINSH (2003)|7.293|2P|
+
 |You've Got Crabs: Imitation Crab Expansion Kit (English edition) (2018)|5.534|HGE Test|
-|ZÈRTZ (1999)|6.754|2P|
 
