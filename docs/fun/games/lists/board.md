@@ -75,6 +75,8 @@ Games for atleast 4 people, easy to play.
 |Escape from the Aliens in Outer Space (English-only second edition) (2016)|6.501|HGE Test|
 |Evolution: Climate (2016)|7.145||
 |Halli Galli|Halli Galli Extreme||
+|Munchkin|Exclusive Warehouse 23 Munchkin Booster, Unnatural Axe, Clerical Errors, The Need for Steed, De-Ranged, Demented Dungeons, Cheat With Both Hands, More Good Cards, Half Horse, Will Travel, Game Changers, Promo Cards, Reloaded!, Go Up a Level ||
+|Isle of Skye|From Chieftain to King, Journeyman, Druids||
 
 ## Drinking Games
 
@@ -92,30 +94,7 @@ Games for atleast 4 people, easy to play.
 |Dice Throne|Adventures, Season One Rerolled – Promo Pack, Adventures: Promo Pack (2020), Season One ReRolled, Season Two – Battle Chest, Season Two Promo Card Set (2018)||
 |Flügelschlag|Europa-Erweiterung||
 
-|Isle of Skye: Druids (2018)|6.157|HGE Test|
-|Isle of Skye: From Chieftain to King (2015)|7.279|Extension|
-|Isle of Skye: Journeyman (2017)|6.207|Extension|
-
 ## Unsorted
-
-|Munchkin|Exclusive Warehouse 23 Munchkin Booster||
-|Munchkin (2001)|5.730|HGE|
-|Munchkin 2: Unnatural Axe (2002)|6.148|Extension|
-|Munchkin 3: Clerical Errors (2003)|6.122|Extension|
-|Munchkin 4: The Need for Steed (2005)|6.117|Extension|
-|Munchkin 5: De-Ranged (2007)|6.005|Extension|
-|Munchkin 6: Demented Dungeons (2008)|5.906|Extension|
-|Munchkin 7: Cheat With Both Hands (2011)|5.779|Extension|
-|Munchkin 7: More Good Cards (2008)|5.709|Extension|
-|Munchkin 8: Half Horse, Will Travel (2012)|5.814|Extension|
-|Munchkin Game Changers (2013)|5.613|Extension|
-|Munchkin Promo Cards|5.609|Extension|
-|Munchkin Promotional Bookmarks (2001)|5.493|Extension|
-|Munchkin Reloaded! (2010)|5.655|Extension|
-|Munchkin Sammlerbox (2006)|5.556|Extension|
-|Munchkin: Go Up a Level (2010)|5.572|Extension|
-
-
 
 |Halt mal kurz: Das Känguru-Spiel (2016)|5.590|HGE|
 |Hanabi (2010)|6.995||

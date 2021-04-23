@@ -5,6 +5,7 @@
 ## Fitness app
 
 Plank and press the button if flashing. Light will start flashing after some (random time again).
+The inspiration comes from this product: <https://blazepod.eu/collections>
 
 GUI
 
