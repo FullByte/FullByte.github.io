@@ -40,14 +40,14 @@
 
 ### IT Security
 
-- Schneier on Security>: <https://www.schneier.com/blog/atom.xml>
-- Troy Hunt's Blog>: <http://feeds.feedburner.com/TroyHunt>
+- Schneier on Security: <https://www.schneier.com/blog/atom.xml>
+- Troy Hunt's Blog: <http://feeds.feedburner.com/TroyHunt>
 - IT Security Expert Blog: <http://blog.itsecurityexpert.co.uk/feeds/posts/default>
 - Golem.de - Security: <https://rss.golem.de/rss.php?tp=sec&amp;feed=RSS2.0>
 - heise Security: <https://www.heise.de/security/news/news-atom.xml>
-- Krebs on Security>: <http://krebsonsecurity.com/feed/>
-- A Few Thoughts on Cryptographic Engineering>: <https://blog.cryptographyengineering.com/feed/>
-- Matt Suiche>: <http://feeds.feedburner.com/msuicheblog>
+- Krebs on Security: <http://krebsonsecurity.com/feed/>
+- A Few Thoughts on Cryptographic Engineering: <https://blog.cryptographyengineering.com/feed/>
+- Matt Suiche: <http://feeds.feedburner.com/msuicheblog>
 - TaoSecurity: <https://taosecurity.blogspot.com/feeds/posts/default>
 - cryptome: <https://www.freelists.org/feed/cryptome>
 - Deeplinks: <https://www.eff.org/rss/updates.xml>
