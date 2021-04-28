@@ -32,3 +32,17 @@ for %%x in (%*) do (
     copy %%x output\%%~nx\
 )
 ```
+
+### Slideshow
+
+Slidshow using revealjs
+
+```shell
+pandoc -s -t revealjs slides.md -o slides.html
+```
+
+Slidshow using slidy
+
+```shell
+pandoc -s -t slidy slides.md -o slides.html
+```
