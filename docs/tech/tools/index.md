@@ -53,6 +53,7 @@
 |snapdrop|<https://snapdrop.net/>|Files only||
 |bitwarden sends|<https://vault.bitwarden.com/#/sends>|Test and Files|Account required|
 |sendfiles dev|<https://sendfiles.dev/>||
+|siasky skytransfer|<https://skytransfer.hns.siasky.net>||
 
 ## Linux Tools
 
