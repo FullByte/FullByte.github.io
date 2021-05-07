@@ -47,7 +47,7 @@ These are all wooden parts i made. The grip is the only piece i purchased. All b
 
 After all parts where as desired and everything fits I added a layer of wood oil to the outside.
 
-![hoerbert wood oil](_hoerbert_wood_oil.png)
+![hoerbert wood oil](_hoerbert_wood_oil.jpg)
 
 ### Laser cutter
 
@@ -69,7 +69,7 @@ I had to put the electronics in the case while glueing it all together as it wou
 
 With the bluetooth module the Hörbert comes with some optional configurations.
 
-![hoerbert bluetooth](_hoerbert_bluetooth.png)
+![hoerbert bluetooth](_hoerbert_bluetooth.jpg)
 
 Switches
 
