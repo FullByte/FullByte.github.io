@@ -43,7 +43,6 @@
 |whisply|<https://whisp.ly/de>|Files only||
 |securedrop|<https://securedrop.org/>|Files only||
 |wetransfer|<https://wetransfer.com/>|Files only||
-|instant|<https://instant.io/>|Files only||
 |cryptsend|<https://cryptsend.io/cat/public/index.html>|Files only||
 |enzypt|<https://enzypt.io/>|Files only||
 |opentimestamps|<https://opentimestamps.org/>|Files only||
@@ -54,6 +53,11 @@
 |bitwarden sends|<https://vault.bitwarden.com/#/sends>|Test and Files|Account required|
 |sendfiles dev|<https://sendfiles.dev/>||
 |siasky skytransfer|<https://skytransfer.hns.siasky.net>||
+|wormhole.app|<https://wormhole.app/>||
+|file.pizza|<https://file.pizza/>||
+|justbeamit|<https://justbeamit.com/>||
+|send.vis.ee|<https://send.vis.ee/>||
+|send tresorit|https://send.tresorit.com/||
 
 ## Linux Tools
 

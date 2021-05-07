@@ -124,20 +124,22 @@ Other support channels:
 
 You can support others that I support by transferring money here:
 
-- correctiv <https://correctiv.org/ueber-uns/#unterstuetzen-sie-unabhaengigen-journalismus>
-- wauland <https://www.wauland.de/de/donate/>
+- Correctiv <https://correctiv.org/unterstuetzen/>
+- Wauland <https://www.wauland.de/de/donate/>
 - WWF <https://www.wwf.de/spenden-helfen/allgemeine-spende>
-- unicef <https://www.unicef.de/spenden/jetzt-spenden>
+- UNICEF <https://www.unicef.de/spenden/jetzt-spenden>
 - Wikimedia <https://spenden.wikimedia.de/>
 - EFF <https://supporters.eff.org/donate>
-- torproject <https://donate.torproject.org/>
-- oceancleanup <https://www.theoceancleanup.com/>
+- Tor <https://donate.torproject.org/>
+- Ocean Cleanup <https://www.theoceancleanup.com/>
+
+You can support those organizations in other ways too - they will have details on this on their website.
 
 ## Cont@ct
 
-Send a mail, use [PGP](https://de.wikipedia.org/wiki/Pretty_Good_Privacy) - here is my [GPG](https://gnupg.org/) public key:
+Send a mail, use [PGP](https://de.wikipedia.org/wiki/Pretty_Good_Privacy) - here is my public key:
 
-```GPG
+```PGP
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 xsFNBF4m3SYBEACpOXmA5FZYzLNkJygwZ6jjpsHIi+rLeCg7UCOFRwJ0Vzcw
 HRxyosAkKIiv/UALa/nOjAKlmdrcedu7c8Dx29el4e7MQVzJVHr4TArysEiO

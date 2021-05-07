@@ -268,7 +268,7 @@ ffmpeg -i input.mp4 -vf "scale=vga,thumbnail=100,split[a][b],[b]palettegen=reser
 ### Convert from/to webp
 
 ```ffmpeg
-ffmpeg -ss 32.5 -t 7 -i input.mp4 -vf "fps=10,scale=720:-1:flags=lanczos" -vcodec libwebp -lossless 0 -compression_level 6 -q:v 50 -loop 0 -preset picture -an -vsync 0 output.webp
+ffmpeg -i input.mp4 -vf "fps=30,scale=720:-1:flags=lanczos" -vcodec libwebp -lossless 0 -compression_level 6 -q:v 50 -loop 0 -preset picture -an -vsync 0 output.webp
 ```
 
 ## Convert to audio file
