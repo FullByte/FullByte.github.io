@@ -10,7 +10,7 @@ My **personal but public wiki webpage** (PBPWW) ¯\\_(ツ)_/¯ LoL
 
 ![Header](header.svg)
 
-Publishing my notes in a wiki format has been great exercise for me to to keep a certain level of quality and stay organized. As longs as this works well for me I will continue doing so :) The content may appear random as it is basically anything I find interesting and noteworthy.
+Publishing my notes in a wiki format has been great exercise for me to to keep a certain level of quality and stay organized. As longs as this works well for me I will continue doing so :) The content may appear random as it deals with basically anything I find interesting and noteworthy.
 
 - Visit <https://0xfab1.net> for online view
 - or <https://fullbyte.github.io> in case I messed up DNS

@@ -11,6 +11,8 @@ Purchases I made:
 - Speaker Cover
 - Bluetooth Headset
 
+When checking for the best option I my 2nd favorite option was the [phoniebox](http://phoniebox.de/). Maybe this is an interesting alternative.
+
 ## Electronics
 
 A first I ordered the electronics and hooked them up for a quick test if everything works as expected.
