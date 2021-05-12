@@ -1,83 +1,91 @@
 # Browser Games
 
+This is a list of games you can play for free online.
+
 ## Game Platform
 
 Some games are free to play, others require a played membership.
 
 - Board game arena <https://boardgamearena.com>
-- Tabletopia <https://tabletopia.com/>
 - Brettspielwelt <https://brettspielwelt.de/>
+- Tabletopia <https://tabletopia.com/>
 
 ## 1 Player Games
 
-- Puzzle Script <https://www.puzzlescript.net/editor.html>
-- Regex Crossword <https://regexcrossword.com/>
-- Untrusted <http://alex.nisnevich.com/untrusted/>
-- Wikipedia Game <https://thewikigame.com/>
-- Dual N-Back <http://brainscale.net/dual-n-back>
-- Geo guesser <https://www.geoguessr.com/>
-- Crowds <https://ncase.me/crowds/>
-- NAND game <http://nandgame.com/>
-- Game about squares<http://gameaboutsquares.com/>
-- Quickdraw <https://quickdraw.withgoogle.com/>
-- Stock Market <http://www.bloomberg.com/features/2015-stock-chart-trading-game/>
-- IKEA or Death metal <http://ikeaordeath.com/>
-- Cumming or Drumming <http://cummingordrumming.com/>#
-- Pokemon or Big data <https://pixelastic.github.io/pokemonorbigdata/>
+Some of these are quite special and nerdy.
+
 - 0hh1 <http://0hh1.com/>
 - 0hn0 <http://0hn0.com/>
 - 2048 <http://2048game.info/>
-- Pacman <http://worldsbiggestpacman.com/>#
 - AI Dungeon <https://play.aidungeon.io/>
+- Avabranch <https://avabranch.zolmeister.com/>
+- Block out<https://blockoutunity.github.io/>
+- Chess <https://lichess.org/>
+- Crowds <https://ncase.me/crowds/>
+- cube composer <https://david-peter.de/cube-composer/>
+- Cumming or Drumming <http://cummingordrumming.com/>#
+- Diablo <https://d07riv.github.io/diabloweb/>
+- Dual N-Back <http://brainscale.net/dual-n-back>
 - Entanglement <http://entanglement.gopherwoodstudios.com/>
 - findtheinvisiblecow <https://findtheinvisiblecow.com/>
+- Game about squares<http://gameaboutsquares.com/>
+- Geo guesser <https://www.geoguessr.com/>
+- IKEA or Death metal <http://ikeaordeath.com/>
 - ISS Docking Simulator <https://iss-sim.spacex.com/>
-- Diablo <https://d07riv.github.io/diabloweb/>
+- NAND game <http://nandgame.com/>
 - Not pron <http://www.deathball.net/notpron/>
-- Avabranch <https://avabranch.zolmeister.com/>
-- cube composer <https://david-peter.de/cube-composer/>
+- Pacman <http://worldsbiggestpacman.com/>#
 - Parity <https://www.abefehr.com/parity/>
-- Chess <https://lichess.org/>
-- Block out<https://blockoutunity.github.io/>
+- Pokemon or Big data <https://pixelastic.github.io/pokemonorbigdata/>
+- Puzzle Script <https://www.puzzlescript.net/editor.html>
+- Quickdraw <https://quickdraw.withgoogle.com/>
+- Regex Crossword <https://regexcrossword.com/>
+- Stock Market <http://www.bloomberg.com/features/2015-stock-chart-trading-game/>
+- Untrusted <http://alex.nisnevich.com/untrusted/>
+- Wikipedia Game <https://thewikigame.com/>
 
 ## 2 Player Games
 
-- Chess <http://en.lichess.org/>
-- Go <https://go.mattle.online/>
-- Pai Sho <https://skudpaisho.com/>
+Games for two players only:
+
 - Battleship <https://papergames.io/en/battleship>
+- Chess <http://en.lichess.org/>
 - Connect4 <https://papergames.io/en/connect4>
+- Go <https://go.mattle.online/>
 - Gomoku <https://papergames.io/en/gomoku>
+- Pai Sho <https://skudpaisho.com/>
 
 ## 2+ Player Games
 
-- Set with Friends <https://setwithfriends.com/>
-- Tak <https://www.playtak.com/>
-- Netrunner <https://www.jinteki.net/play>
-- Wavelength <https://longwave.web.app/>
-- Just One <https://oneword.games/>
+Well known and rather special games that can be played with a group of people online:
+
 - 7 Wonders Duel <https://sevenee.mattle.online>
-- Skull <https://skull.games/>
+- Azul <https://azee.mattle.online/>
 - Blokus <https://blokee.mattle.online>
-- Dominion <https://dominion.games/>
-- Qwirkle <https://pont.mattkeeter.com/>
-- Settler of Catan <https://colonist.io/>
-- Dixit <https://isolant.games/en/>
-- Dominoes <https://dominoes.playdrift.com/>
-- UNO <https://play.unofreak.com/game>
+- Boggle <https://www.ewordchallenge.net/>
+- Card Games <https://playcards.club/>
 - Code names <https://codenames.game/>
+- Dixit <https://isolant.games/en/>
+- Dominion <https://dominion.games/>
+- Dominoes <https://dominoes.playdrift.com/>
+- Game of Thrones Tabletop <https://swordsandravens.net/>
+- Gartic phone <https://garticphone.com>
 - Hanabi <https://hanab.live/>
+- Just One <https://oneword.games/>
 - Minesweeper <https://www.multisweeper.com/>
 - Monopoly <https://www.webopoly.org/>
 - Monopoly Covid <https://www.covidopoly.io/>
-- Secret Hitler <https://private.secrethitler.io/>
+- Netrunner <https://www.jinteki.net/play>
+- Qwirkle <https://pont.mattkeeter.com/>
 - Secret Hitler <https://netgames.io/games/secret-hitler/>
-- Splendor <https://spendee.mattle.online/>
-- Azul <https://azee.mattle.online/>
-- Boggle <https://www.ewordchallenge.net/>
-- Game of Thrones Tabletop <https://swordsandravens.net/>
-- Card Games <https://playcards.club/>
-- Skribbl <https://skribbl.io/>
+- Secret Hitler <https://private.secrethitler.io/>
+- Set with Friends <https://setwithfriends.com/>
+- Settler of Catan <https://colonist.io/>
 - Sketchful <https://sketchful.io/>
+- Skribbl <https://skribbl.io/>
+- Skull <https://skull.games/>
+- Splendor <https://spendee.mattle.online/>
+- Tak <https://www.playtak.com/>
+- UNO <https://play.unofreak.com/game>
+- Wavelength <https://longwave.web.app/>
 - Writey drawey <https://writeydrawey.site/>
-- Gartic phone <https://garticphone.com>

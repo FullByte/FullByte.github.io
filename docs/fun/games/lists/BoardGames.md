@@ -4,12 +4,6 @@ A list of board games I have and play.
 
 This list is an export from [Board Game Geek (BGG)](https://boardgamegeek.com/collection/user/zerogdoubled) and possibly newer entries are only available there.
 
-## Unsorted
-
-|Games|Expansions|Comment|
-|-|-|-|
-|Aye, Dark Overlord! The Red Box (2005)|5.697||
-
 ## 2 Player Games
 
 |Games|Comment|
@@ -37,7 +31,6 @@ This list is an export from [Board Game Geek (BGG)](https://boardgamegeek.com/co
 |Quixo||
 |Squadro||
 |TZAAR||
-
 
 2P Simple
 
@@ -137,6 +130,9 @@ Games for atleast 4 people, easy to play.
 
 ## Unsorted
 
+|Games|Expansions|Comment|
+|-|-|-|
+|Aye, Dark Overlord! The Red Box (2005)|5.697||
 |Halt mal kurz: Das Känguru-Spiel (2016)|5.590|HGE|
 |Hanabi|||
 |Ingenious|||
@@ -179,5 +175,3 @@ Games for atleast 4 people, easy to play.
 |UNO Wild Jackpot (English edition) (2016)|N/A|Extension|
 |Yedo|Deluxe Master Set||
 |You've Got Crabs|Imitation Crab Expansion Kit||
-
-
