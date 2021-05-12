@@ -11,22 +11,6 @@ Templates and creator/helper for 3D Printer.
 - <https://www.help.prusa3d.com/en/guide/how-to-change-a-heaterblock-heatbreak-mini_122769>
 - <https://help.prusa3d.com/en/article/regular-maintenance-mini_133222>
 
-## Project Ideas
-
-General Ideas
-
-- Thingiverse <https://www.thingiverse.com/>
-- Grabcad <https://grabcad.com>
-- Sketchfab <https://sketchfab.com/3d-models/popular>
-- P3d <https://p3d.in/>
-- Prusaprinters <https://www.prusaprinters.org/>
-- Tinkercad <https://www.tinkercad.com/things>
-
-Cool Projects
-
-- Sliding Legolini <https://legolini.com/>
-- Lego man toilet paper holder <https://www.thingiverse.com/thing:1996077>
-
 ## Tools and Services
 
 - octoprint <https://octoprint.org/download/>

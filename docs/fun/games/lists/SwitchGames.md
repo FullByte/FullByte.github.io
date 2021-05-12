@@ -175,4 +175,4 @@ A list of nintendo switch games I have and play.
 | Xeodrifter                             | 1            |                 |
 | Yoku's Island Express                  | 1            |                 |
 | Zen Pinball                            | 1            |                 |
-| vWorms W.M.D                           | 4            |                 |
+| Worms W.M.D                            | 4            |                 |
