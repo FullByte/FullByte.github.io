@@ -36,7 +36,7 @@ The most challenging part is to get the holes for the 11 buttons perfectly align
 
 If you want to build one yourself, these files may be helpful to you:
 
-- [Schematics PNG](_hoerbertbohrschablone.png)
+- [Schematics PNG](_hoerbert_bohrschablone.png)
 - [Schematics SVG](_hoerbert.svg)
 - [Schematics PDF Part 1](_HoerbertFrontVorlage.pdf)
 - [Schematics PDF Part 2](_HoerbertTastenVorlage1.pdf)
