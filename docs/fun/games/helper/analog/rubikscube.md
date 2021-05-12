@@ -2,7 +2,7 @@
 
 ## Solving Helper
 
-TODO
+![_RubixCube](_RubixCube.jpg)
 
 ## Online Cubes
 
