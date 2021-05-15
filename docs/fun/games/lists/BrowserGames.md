@@ -54,6 +54,7 @@ Games for two players only:
 - Go <https://go.mattle.online/>
 - Gomoku <https://papergames.io/en/gomoku>
 - Pai Sho <https://skudpaisho.com/>
+- Draughts, Emoji matching pairs, Chess <https://gamesroom.io/>
 
 ## 2+ Player Games
 

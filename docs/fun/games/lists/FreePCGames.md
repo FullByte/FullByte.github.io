@@ -5,6 +5,7 @@ Good games that are free
 - Armagetron <http://www.armagetronad.org/>
 - Battle for Wesnoth <https://www.wesnoth.org/>
 - cataclys <https://cataclysmdda.org/>
+- C&C Red Alert 2: Chrono Divide <https://game.chronodivide.com/>
 - Cube 2: Sauerbraten <http://cubeengine.com/>
 - Endless-sky <https://endless-sky.github.io/>
 - Civilization <http://www.freeciv.org/>

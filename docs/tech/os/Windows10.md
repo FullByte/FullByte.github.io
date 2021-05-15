@@ -4,9 +4,9 @@
 
 ### WinGet
 
-Source: <https://github.com/microsoft/winget-cli>
-Store: <https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1>
-Docs: <https://docs.microsoft.com/en-us/windows/package-manager/>
+- Source: <https://github.com/microsoft/winget-cli>
+- Store: <https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1>
+- Docs: <https://docs.microsoft.com/en-us/windows/package-manager/>
 
 Example:
 
@@ -50,8 +50,8 @@ winfr C: E: /r /n *invoice*
 
 ### Windows Terminal
 
-Store: <https://www.microsoft.com/de-de/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab>
-Doc: <https://docs.microsoft.com/en-us/windows/terminal/>
+- Store: <https://www.microsoft.com/de-de/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab>
+- Doc: <https://docs.microsoft.com/en-us/windows/terminal/>
 
 Open a new Terminal Window with powershell 7, cmd and WSL (in my case ubuntu)
 
@@ -71,7 +71,7 @@ wsl --set-version kali-linux 2
 
 #### Ubuntu 20.04 LTS
 
-Store: <https://www.microsoft.com/de-de/p/ubuntu-2004-lts/9n6svws3rx71?cid=msft_web_chart&activetab=pivot:overviewtab>
+- Store: <https://www.microsoft.com/de-de/p/ubuntu-2004-lts/9n6svws3rx71?cid=msft_web_chart&activetab=pivot:overviewtab>
 
 #### Kali with GUI
 
@@ -126,7 +126,6 @@ chkdsk /f /r
 
 Problembehandlung“, dann „Erweiterte Optionen“, dann „Starteinstellungen“, dann „Neu starten“
 Drücke auf „F5-Taste“, um Abgesicherten Modus mit Netzwerktreibern zu aktivieren.
-
 
 ## launch-settings URI
 
