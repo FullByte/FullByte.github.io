@@ -57,7 +57,8 @@
 |file.pizza|<https://file.pizza/>||
 |justbeamit|<https://justbeamit.com/>||
 |send.vis.ee|<https://send.vis.ee/>||
-|send tresorit|https://send.tresorit.com/||
+|send tresorit|<https://send.tresorit.com/>||
+|blaze|<https://blaze.vercel.app/>||
 
 ## Linux Tools
 
