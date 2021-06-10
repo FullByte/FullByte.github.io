@@ -32,3 +32,8 @@ A list of public DNS Servers
 | UncensoredDNS                  | 91.239.100.100  | 89.233.43.71    |                      |                                        |                                                |                       |
 | Verisign                       | 64.6.64.6       | 64.6.65.6       |                      |                                        |                                                |                       |
 | Yandex.DNS                     | 77.88.8.8       | 77.88.8.1       |                      |                                        |                                                |                       |
+
+## Other lists and tools
+
+- <https://www.publicdns.xyz/>
+- <https://dns.google/>

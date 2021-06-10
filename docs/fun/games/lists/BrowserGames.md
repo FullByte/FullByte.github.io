@@ -9,6 +9,10 @@ Some games are free to play, others require a played membership.
 - Board game arena <https://boardgamearena.com>
 - Brettspielwelt <https://brettspielwelt.de/>
 - Tabletopia <https://tabletopia.com/>
+- Cardtables Online <https://cardtables.online/>
+- Screentop <https://screentop.gg/>
+- Virtual Tabletop: <https://virtualtabletop.io>
+- Playing cards: <https://playingcards.io/>
 
 ## 1 Player Games
 
@@ -43,6 +47,9 @@ Some of these are quite special and nerdy.
 - Stock Market <http://www.bloomberg.com/features/2015-stock-chart-trading-game/>
 - Untrusted <http://alex.nisnevich.com/untrusted/>
 - Wikipedia Game <https://thewikigame.com/>
+- Yare <https://yare.io/> (Real-Time Strategy game where you control your units by writing JavaScript code)
+- Hatetris: <https://qntm.org/files/hatetris/hatetris.html>
+- DOS games: <https://dos.zone>
 
 ## 2 Player Games
 
@@ -55,11 +62,14 @@ Games for two players only:
 - Gomoku <https://papergames.io/en/gomoku>
 - Pai Sho <https://skudpaisho.com/>
 - Draughts, Emoji matching pairs, Chess <https://gamesroom.io/>
+- Doom: <https://silentspacemarine.com/>
 
 ## 2+ Player Games
 
 Well known and rather special games that can be played with a group of people online:
 
+- Deck of Cards: <https://deck.of.cards/>
+- Just poker: <https://justpoker.games/>
 - 7 Wonders Duel <https://sevenee.mattle.online>
 - Azul <https://azee.mattle.online/>
 - Blokus <https://blokee.mattle.online>

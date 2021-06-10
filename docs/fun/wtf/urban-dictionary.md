@@ -14,3 +14,4 @@ A list of the most entertaining Urban Dictionary pages
 - [Helisexual](https://www.urbandictionary.com/define.php?term=helisexual "https://www.urbandictionary.com/define.php?term=helisexual")
 - [fjdn](https://www.urbandictionary.com/define.php?term=fjdn "https://www.urbandictionary.com/define.php?term=fjdn")
 - [schrodinger’s douchebag](https://www.urbandictionary.com/define.php?term=schrodinger%E2%80%99s%20douchebag "https://www.urbandictionary.com/define.php?term=schrodinger%E2%80%99s%20douchebag")
+- [Rule 34](https://www.urbandictionary.com/define.php?term=Rule%2034 "https://www.urbandictionary.com/define.php?term=Rule%2034")

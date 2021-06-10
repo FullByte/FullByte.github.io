@@ -15,6 +15,12 @@
 ### Helper
 
 - <https://tineye.com/>
+- Zero Width Shortener: <https://zws.im/>
+
+### Payloads
+
+- All: <https://github.com/swisskyrepo/PayloadsAllTheThings>
+- SQL: <https://github.com/payloadbox/sql-injection-payload-list>
 
 ### Maps
 
@@ -26,6 +32,7 @@
 
 ### Hack Labs
 
+- <https://ctftime.org/ctfs>
 - <https://cryptohack.org/>
 - <https://pentesterlab.com/exercises>
 - <https://book.hacktricks.xyz/>
@@ -55,10 +62,11 @@
 - <https://random-data-api.com/>
 - <https://rawgit.com/Marak/faker.js/master/examples/browser/index.html>
 
-### IP Infos
+### Network Infos
 
-- Torrent Download History <https://iknowwhatyoudownload.com>
-- <http://iplists.firehol.org/>
+- Torrent Download History: <https://iknowwhatyoudownload.com>
+- Cybercrime IP Feeds: <http://iplists.firehol.org/>
+- Hurricane Electric BGP Toolkit: <https://bgp.he.net/>
 
 ### Test
 
@@ -76,6 +84,13 @@
 - <https://github.com/qeeqbox/social-analyzer>
 - <https://github.com/Marak/faker.js>
 
+## Cheat Sheets
+
+- High on coffee <https://highon.coffee/>
+- Privilege Escalation Collection: <https://gtfobins.github.io/>
+
+## Tools
+
 **SQL Injection Vulnerability Scanner Tool's :**
 
 - [SQLMap](https://github.com/sqlmapproject/sqlmap) – Automatic SQL Injection And Database Takeover Tool
@@ -89,6 +104,6 @@
 - [Leviathan](https://github.com/leviathan-framework/leviathan) – Wide Range Mass Audit Toolkit
 - [Blisqy](https://github.com/JohnTroony/Blisqy) – Exploit Time-based blind-SQL-injection in HTTP-Headers (MySQL/MariaDB)
 
-## Lists
+## List of Lists
 
 - <https://github.com/danielmiessler/SecLists>

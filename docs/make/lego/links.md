@@ -43,14 +43,18 @@ Lejos (Java)
 
 Examples
 
-- vscode-hello-python https://github.com/ev3dev/vscode-hello-python
-- <http://inspiredtoeducate.net/inspiredtoeducate/programming-lego-mindstorms-ev3-with-python/>
+- vscode-hello-python <https://github.com/ev3dev/vscode-hello-python>
+- programming-lego-mindstorms-ev3-with-python <http://inspiredtoeducate.net/inspiredtoeducate/programming-lego-mindstorms-ev3-with-python/>
 
 ### Projects and Ideas
 
 - Game Station <https://www.hackster.io/jkbrickworks/game-station-b08587>
 - Printer <https://www.hackster.io/jk-brickworks/ev3-print-bot-8f5fb8>
 - Various: <https://www.fllcasts.com/>
+- Mindcuber: <https://mindcuber.com>
+- Spectrometer: <https://publiclab.org/wiki/lego-spectrometer>
+- Microscope: <https://ideas.lego.com/projects/fcce15cd-27e0-405b-990b-681b7787fbc6>
+- Microscope: <https://github.com/tobetz/LegoMicroscope>
 
 ## Shops and Bricks
 

@@ -27,6 +27,9 @@ The best websites with overviews and helpers i know for azure.
 - AWS vs Azure: <https://docs.microsoft.com/en-us/azure/architecture/aws-professional/index>
 - Cloud Comparison: <https://www.rightscale.com/cloud-comparison-tool/>
 - Google comparing AWS/Azure: <https://cloud.google.com/free/docs/aws-azure-gcp-service-comparison>
+- Azure Network Latency: <https://docs.microsoft.com/en-us/azure/networking/azure-network-latency>
+- Google Network Latency: <https://datastudio.google.com/u/0/reporting/fc733b10-9744-4a72-a502-92290f608571/page/70YCB>
+- AWS Network Latency: <https://www.cloudping.co/grid>
 
 ### Dev Tools
 
@@ -37,6 +40,8 @@ The best websites with overviews and helpers i know for azure.
 - Package search for .NET Core packages: <http://packagesearch.azurewebsites.net/>
 - Resource Explorer Online: <https://resources.azure.com/>
 - Azure Building Blocks: Simplifying Resource Deployment: <https://github.com/mspnp/template-building-blocks>
+- Microsoft 365 DSC: <https://github.com/microsoft/Microsoft365DSC>
+- Azure Bicep: <https://github.com/Azure/bicep/releases>
 
 ### Database Helper
 
@@ -65,6 +70,8 @@ The best websites with overviews and helpers i know for azure.
 - Azure Status History: <https://status.azure.com/de-de/status/history/>
 - DevOps Status: <https://status.dev.azure.com/>
 - DevOps Status History: <https://status.dev.azure.com/_history>
+- Azure Service Deprecation Github: <https://github.com/azure-deprecation/dashboard/projects/2>
+- Azure Service Deprecation Twitter: <https://mobile.twitter.com/azureendoflife>
 
 ## Architecture
 
@@ -125,24 +132,6 @@ Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimizat
 - Getting started with Azure DevOps: <https://azuredevopslabs.com/>
 - DevOps Training Days <https://azuredevcollege.com/trainingdays/>
 
-### Microsoft Learning Paths
-
-A selection of Microsoft Learning Paths:
-
-- Azure fundamentals <https://docs.microsoft.com/en-us/learn/paths/azure-fundamentals/>
-- Create serverless applications <https://docs.microsoft.com/en-us/learn/paths/create-serverless-applications/>
-- Connect your services together <https://docs.microsoft.com/en-us/learn/paths/connect-your-services-together/>
-- Work with relational data in Azure <https://docs.microsoft.com/en-us/learn/paths/work-with-relational-data-in-azure/>
-- Store data in Azure <https://docs.microsoft.com/en-us/learn/paths/store-data-in-azure/>
-- Deploy a website with Azure virtual machines <https://docs.microsoft.com/en-us/learn/paths/deploy-a-website-with-azure-virtual-machines/>
-- Deploy a website to Azure with Azure App Service <https://docs.microsoft.com/en-us/learn/paths/deploy-a-website-with-azure-app-service/>
-- Manage resources in Azure <https://docs.microsoft.com/en-us/learn/paths/manage-resources-in-azure/>
-- Secure your cloud data <https://docs.microsoft.com/en-us/learn/paths/secure-your-cloud-data/>
-- Work with NoSQL data in Azure Cosmos DB <https://docs.microsoft.com/en-us/learn/paths/work-with-nosql-data-in-azure-cosmos-db/>
-- Extract knowledge and insights from your data with Azure data bricks <https://docs.microsoft.com/en-us/learn/paths/data-science/>
-- Perform data engineering with Azure data bricks <https://docs.microsoft.com/en-us/learn/paths/data-engineering-with-databricks/>
-- Introduction to machine learning with Python and Azure Notebooks <https://docs.microsoft.com/en-us/learn/paths/intro-to-ml-with-python/>
-
 ### Other Learning Material
 
 - AzureAcadamy: <https://www.youtube.com/c/AzureAcademy/videos>
@@ -153,7 +142,7 @@ A selection of Microsoft Learning Paths:
 - Whizlabs: <https://www.whizlabs.com/>
 - Midhub: <https://www.mindhub.com/>
 - Udemy Azure Courses: <https://www.udemy.com/topic/microsoft-azure/>
-- Cloud Security based training: <http://flaws.cloud/>
+- Cloud Security based training: <http://flaws.cloud/> and <http://flaws2.cloud/>
 - CS349D: Cloud Computing Technology: <https://web.stanford.edu/class/cs349d/>
 
 ### Azure Forums
@@ -178,45 +167,19 @@ Overview of links to regularly check to stay up-to-date on Azure.
 
 ### Blogs and Feeds
 
-- Azure Updates News:
-  - Link: <https://azure.microsoft.com/en-in/updates/>
-  - Feed: <https://azurecomcdn.azureedge.net/en-in/updates/feed/>
-- Azure Blog by James Randall:
-  - Link: <https://www.azurefromthetrenches.com/>
-  - Feed: <https://www.azurefromthetrenches.com/feed>
-- Azure Official Blog:
-  - Link: <https://azure.microsoft.com/en-us/blog/#popular>
-  - Feed: <https://azure.microsoft.com/en-us/blog/feed>
-- Azure Blog Michael Collier:
-  - Link: <https://michaelcollier.wordpress.com/>
-  - Feed: <https://michaelcollier.wordpress.com/feed>
-- Azure Blog Brent Stineman:
-  - Link: <https://brentdacodemonkey.wordpress.com/>
-  - Feed: <https://brentdacodemonkey.wordpress.com/feed/>
-- Azure Blog "we do azure":
-  - Link: <https://wedoazure.ie/>
-  - Feed: <https://wedoazure.ie/feed>
-- Last week in Azure:
-  - Link: <https://azure.microsoft.com/en-us/blog/topics/last-week-in-azure/>
-  - Feed: <https://azurecomcdn.azureedge.net/en-us/blog/topics/last-week-in-azure/feed/>
-- Azure Friday:
-  - Link: <https://azure.microsoft.com/en-us/resources/videos/azure-friday>
-  - Feed: <https://s.ch9.ms/Shows/Azure-Friday/feed/mp4high>
-- Cloud Expert:
-  - Link: <http://azurecloud.expert/category/news/>
-  - Feed: <http://azurecloud.expert/feed/>
-- Microsoft Open Source:
-  - Link: <https://cloudblogs.microsoft.com/opensource/>
-  - Feed: <https://cloudblogs.microsoft.com/opensource/feed>
-- Microsoft .NET Blog:
-  - Link: <https://devblogs.microsoft.com/dotnet/>
-  - Feed: <https://devblogs.microsoft.com/dotnet/feed>
-- Heise on Azure:
-  - Link: <https://www.heise.de/thema/Microsoft-Azure>
-  - Feed: <https://www.heise.de/thema/Microsoft-Azure?view=atom>
-- Azure Weekly:
-  - Link. <https://azureweekly.info/>
-  - Feed: <https://azureweekly.info/rss.xml>
+- Azure Updates News: [Link](https://azure.microsoft.com/en-in/updates/) + [Feed](https://azurecomcdn.azureedge.net/en-in/updates/feed/)
+- Azure Blog by James Randall: [Link](https://www.azurefromthetrenches.com/) + [Feed](https://www.azurefromthetrenches.com/feed)
+- Azure Official Blog: [Link](https://azure.microsoft.com/en-us/blog/#popular) + [Feed](https://azure.microsoft.com/en-us/blog/feed)
+- Azure Blog Michael Collier: [Link](https://michaelcollier.wordpress.com/) + [Feed](https://michaelcollier.wordpress.com/feed)
+- Azure Blog Brent Stineman: [Link](https://brentdacodemonkey.wordpress.com/) + [Feed](https://brentdacodemonkey.wordpress.com/feed/)
+- Azure Blog "we do azure": [Link](https://wedoazure.ie/) + [Feed](https://wedoazure.ie/feed)
+- Last week in Azure: [Link](https://azure.microsoft.com/en-us/blog/topics/last-week-in-azure/) + [Feed](https://azurecomcdn.azureedge.net/en-us/blog/topics/last-week-in-azure/feed/)
+- Azure Friday: [Link](https://azure.microsoft.com/en-us/resources/videos/azure-friday) + [Feed](https://s.ch9.ms/Shows/Azure-Friday/feed/mp4high)
+- Cloud Expert: [Link](http://azurecloud.expert/category/news/) + [Feed](http://azurecloud.expert/feed/)
+- Microsoft Open Source: [Link](https://cloudblogs.microsoft.com/opensource/) + [Feed](https://cloudblogs.microsoft.com/opensource/feed)
+- Microsoft .NET Blog: [Link](https://devblogs.microsoft.com/dotnet/) + [Feed](https://devblogs.microsoft.com/dotnet/feed)
+- Heise on Azure: [Link](https://www.heise.de/thema/Microsoft-Azure) + [Feed](https://www.heise.de/thema/Microsoft-Azure?view=atom)
+- Azure Weekly: [Link](https://azureweekly.info/) + [Feed](https://azureweekly.info/rss.xml)
 
 ### YouTube Channels and Lists
 
@@ -235,4 +198,4 @@ Overview of links to regularly check to stay up-to-date on Azure.
 
 ## Other Lists
 
-- <https://github.com/kristofferandreasen/awesome-azure>
+- Awesome Azure: <https://github.com/kristofferandreasen/awesome-azure>

@@ -1,5 +1,7 @@
 # CMD
 
+More: <https://bytescout.com/blog/windows-command-prompt-commands.html>
+
 Basics
 
 - Systeminformation: ```systeminfo```
@@ -20,30 +22,17 @@ Simple systeminfo.bat script
 chcp 65001
 whoami 2>&1
 hostname 2>&1
-echo ________________________________IpConfig______________________________ 
 ipconfig /all 2>&1 
-echo __________________________Domian Admins_______________________________ 
 net group "domain admins" /domain 2>&1 
-echo _______________________net local group members________________________ 
 net localgroup administrators 2>&1 
-echo ________________________________netstat_______________________________ 
 netstat -an 2>&1 & 
-echo _____________________________systeminfo_______________________________ 
 systeminfo 2>&1 & 
-echo ________________________________RDP___________________________________ 
 reg query "HKEY_CURRENT_USER\Software\Microsoft\Terminal Server Client\Default" 2>&1 
-echo ____________________________Custom Command_______________________________ 
 wmic os get Caption /value | more 2>&1 
-echo ________________________________Task__________________________________ 
 schtasks /query /FO List /V | findstr /b /n /c:"Repeat: Every:" 2>&1
-echo ______________________________________________________________________ 
 ```
 
 For are more detailed systeminfo dump run [winPEAS](https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/winPEAS/winPEASbat/winPEAS.bat).
-
-```cmd
-PowerShell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/AdamDimech/08ba988211b55c71a480449b3b8ab6cd/raw'))"
-```
 
 ## Robocopy
 
@@ -63,7 +52,7 @@ Robocopy -s -h
 
 ### Format FAT32 on >32GB
 
-use diskpart to clean the disk (as Admin)
+Use ```diskpart``` to clean the disk (requires Admin)
 
 ```cmd
 diskpart
@@ -132,19 +121,17 @@ copy /b video1.avi + video2.avi video.avi
 
 ## Network
 
-**Find hidden WiFi network**
+Find hidden WiFi network
 
 ```shell
 Netsh wlan show networks mode=bssid
 ```
 
-**Reply from IP: TTL expired in transit**
+Reply from IP: TTL expired in transit
 
 ```shell
 ARP -p <IP> <MAC>
 ```
-
-**Firewall config**
 
 ### Get MAC Address of remote PC
 
@@ -157,65 +144,49 @@ nbtstat -a machinename
 
 Option 2
 
-```shell
+```cmd
 Ping <IP/machinename>
 Arp –a
 ```
 
 Option 3
 
-```shell
+```cmd
 getmac
 ```
 
 ### Netzwerkverkehr umleiten
 
-Die Addresse 8.8.8.8 mit der eigenen IP 10.155.84.186 aufrufen:
+Requests to 10.11.12.13 will be routed via 8.8.8.8:
 
-```shell
-route add 8.8.8.8 MASK 255.255.255.255 10.155.84.186
+```cmd
+route add 8.8.8.8 MASK 255.255.255.255 10.11.12.13
 route print
 ```
 
 ### traceroute
 
-pathping (alternative to tracert: https://de.wikipedia.org/wiki/Pathping)
+[pathping](https://de.wikipedia.org/wiki/Pathping) (alternative to tracert)
 
-Using ICMP
-
-```shell
-traceroute -I www.microsoft.com
-```
-
-Using UDP
-
-```shell
-traceroute -U www.microsoft.com
-```
-
-Using TCP Port 80 (usually allowed by firewalls)
-
-```shell
-traceroute -T -p 80 www.microsoft.com
-```
+Using ICMP: ```traceroute -I www.microsoft.com```
+Using UDP: ```traceroute -U www.microsoft.com```
+Using TCP Port 80 (usually allowed by firewalls): ```traceroute -T -p 80 www.microsoft.com```
 
 ### Send Message
 
-Anderen usern auf einem System eine Nachricht schicken:
-
-```shell
+```cmd
 net send /users This is a test message
 msg \* /SERVER:localhost /TIME:666 /W This is a test message
 ```
 
 ## Benchmark Drive
 
-```shell
+```cmd
 Winsat disk –write –ran –ransize 262144 –drive f
 ```
 
 ## Create Symbolic links
 
-```shell
+```cmd
 fsutil hardlink create <destination_path> <file_path>
 ```

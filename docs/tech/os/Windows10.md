@@ -1,5 +1,11 @@
 # Windows 10
 
+Releases and Editions
+
+- [Windows 10 Enterprise LTSC](https://docs.microsoft.com/en-us/windows/whats-new/ltsc/) is a version with less updates and less noise.
+- [Windows 10 Releases](https://docs.microsoft.com/en-us/windows/release-health/release-information)
+- [Compare Windows 10 Editions](https://www.microsoft.com/en-us/WindowsForBusiness/Compare) and also check [wikipedia](https://en.wikipedia.org/wiki/Windows_10_editions)
+
 ## Windows Apps
 
 ### WinGet

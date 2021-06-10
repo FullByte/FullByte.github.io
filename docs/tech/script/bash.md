@@ -1,7 +1,11 @@
 # Linux Bash
 
 Most commands listed here will work on any linux distributions but if in doubt it will most likely run on the latest Ubuntu.
-Great tool to understand commands: <https://explainshell.com/>
+
+Some great helpers:
+
+- Understand commands: <https://explainshell.com/>
+- ShellCheck gives warnings and suggestions for bash/sh shell scripts: <https://github.com/koalaman/shellcheck>
 
 ## Basics
 
@@ -15,9 +19,20 @@ Random basics
 - Top commands used ```history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -nr```
 - Commands only used once ```history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -n | grep ' 1 '```
 
+## bashrc
+
+Paste these function in the ~/.bashrc file.
+
+Make a new folder and cd into it
+
+- Usage: mkcd name1
+- Code ```mkcd(){ NAME=$1; mkdir -p "$NAME"; cd "$NAME"; }```
+
+## System Information
+
 Get system details
 
-- Get all enviornment variables ```printenv```
+- Get all environment variables ```printenv```
 - Get all configuration variables ```getconf -a```
 - Show ports/connections open ```lsof```
 - Get ubuntu version ```lsb_release -r```
@@ -36,7 +51,7 @@ System Performance Check
 - ```sar -n TCP,ETCP 1```
 - ```top```
 
-## System Information
+More...
 
 - List open file descriptors (-i flag for network interfaces): ```lsof -i :8080```
 - Stream current disk, network, CPU activity, etc: ```dstat -a```
@@ -124,16 +139,7 @@ echo ""
 - Get The Unix Timestamp: ```date +%s```
 - Hexdump A Compiled File  ```cat Hello.class | hexdump -C ```
 - Grep For Files Without A Match: ```grep -L "foobar" ./*```
-
-**Grep For Files With Multiple Matches**
-
-Get a list of filenames that contain both a line with `@media only screen` and a line with `.class-name`.
-If you need to, chain more `grep` commands on to narrow things down even farther.
-
-```bash
-$ grep -rl "@media only screen" src/css |
-    xargs grep -l ".class-name"
-```
+- Grep For Files With Multiple Matches ```grep -rl "match1" src/css | xargs grep -l "match2"```
 
 ## Network Stuff
 
@@ -149,6 +155,8 @@ $ grep -rl "@media only screen" src/css |
 - Block access to e.g. "google.com" from the host machine ```tcpkill -9 host google.com```
 - Enable IP forwarding: ```echo "1" > /proc/sys/net/ipv4/ip_forward```
 - Change DNS to 1.1.1.1: ```echo "1.1.1.1" > /etc/resolv.conf```
+- Nmap scan every interface that is assigned an IP: ```ifconfig -a | grep -Po '\b(?!255)(?:\d{1,3}\.){3}(?!255)\d{1,3}\b' | xargs nmap -A -p0-```
+- Extract your external IP address using dig: ```dig +short myip.opendns.com @resolver1.opendns.com```
 
 ## Fun Stuff
 
@@ -157,8 +165,8 @@ $ grep -rl "@media only screen" src/css |
 ### Screen
 
 ```shell
-screen
-strg+a --> "d" # dettach
+screen # attach
+strg+a --> "d" # detach
 screen -r # re-attach
 ```
 

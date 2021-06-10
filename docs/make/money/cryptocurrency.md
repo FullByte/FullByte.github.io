@@ -54,3 +54,53 @@ Overview of Signing and Curve algorithms used
 | XRP              | XRP    | ECDSA, EdDSA                                                  | curve25519, secp256k1 (default)       |
 | Zcash            | ZEC    | ECDSA, ZK-SNARKs (for shielded/anonymous transactions)        |                                       |
 | Zilliqa          | ZIL    | EC-Schnorr                                                    | secp256k1                             |
+
+## Links
+
+### Mining
+
+- <https://ethermine.org/>
+- <https://slushpool.com/>
+- <https://www.genesis-mining.com/>
+- <https://hashflare.io/>
+- <https://bitminter.com/>
+
+### Trade
+
+- <https://www.bitpanda.com/>
+- <https://cex.io/>
+- <https://shapeshift.io/#/coins>
+- <https://www.bitfinex.com/trading>
+- <https://www.coinbase.com/accounts/primary>
+- <https://blockchain.info/de/wallet/#/login>
+
+### Watch
+
+- <https://coinmarketcap.com/>
+- <https://cryptowat.ch/>
+- <https://finance.yahoo.com/cryptocurrencies>
+- <https://tradeblock.com/markets/>
+- <https://www.coinwarz.com/>
+- <https://whattomine.com/>
+- <https://www.cryptocompare.com/>
+- <https://cryptoli.st/>
+
+### Blockchains
+
+- <https://blockchain.info/de/>
+- <http://blockexplorer.com/>
+- <https://live.blockcypher.com/>
+- <https://etherscan.io/>
+- <https://www.blockchain.com/explorer?view=btc>
+- <https://tradeblock.com/bitcoin>
+- <https://symphony.iohk.io/en/>
+
+### Fun
+
+- <http://bitcoinstrings.com/>
+- <http://deadcoins.com/>
+- <https://blockchain.info/de/unconfirmed-transactions>
+- <https://ifyouhadboughtcrypto.com/>
+- <https://www.crypto51.app/>
+- <https://symphony.iohk.io/>
+- Cool data embedded in the Bitcoin blockchain: <https://cirosantilli.com/cool-data-embedded-in-the-bitcoin-blockchain>

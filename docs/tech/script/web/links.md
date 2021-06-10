@@ -2,6 +2,10 @@
 
 - <https://www.scrapingbee.com/blog/web-scraping-101-with-python/>
 
+## Standards
+
+- security.txt: <https://securitytxt.org/>
+
 ## Templates
 
 - Dashboard <https://github.com/tabler/tabler>
@@ -22,6 +26,20 @@
 - <https://timeops.io>
 - <https://themarkup.org/blacklight>
 - <https://permission.site/>
+- <https://httpstatusdogs.com/>
+- <https://http.cat/>
+
+### Web Calendar Service
+
+- calendly <https://calendly.com/>
+- doodle <https://doodle.com/>
+- dr-plano <https://www.dr-plano.com/>
+
+## website analytics
+
+- umami <https://github.com/mikecao/umami>
+- goatcounter <https://github.com/zgoat/goatcounter>
+- awesome-analytics <https://github.com/0xnr/awesome-analytics>
 
 ## Documentation
 
@@ -58,34 +76,3 @@
 - Heroku <https://www.heroku.com/>
 - G-Core Labs <https://gcorelabs.com/>
 - Balena <https://www.balena.io/>
-
-## CSS
-
-### CSS Tools
-
-- <http://www.patternify.com/>
-- <http://layerstyles.org/builder.html>
-- <http://css3generator.com/>
-- <https://3dbook.xyz/>
-- <https://spritegen.website-performance.org/>
-
-### CSS Templates
-
-- NES <https://nostalgic-css.github.io/NES.css/>
-- Windows 98 <https://jdan.github.io/98.css/>
-- Windows XP <https://botoxparty.github.io/XP.css/>
-- Windows 7 <https://khang-nd.github.io/7.css/>
-- Windows 10 <https://github.com/jianzhongli/csswin10>
-- BOOTSTRA.386 <http://kristopolous.github.io/BOOTSTRA.386/>
-- Text-based user interface <https://github.com/vinibiavatti1/TuiCss>
-- Mac OS 8.1 <https://github.com/npjg/classic.css>
-- Amiga Workbench <https://github.com/renkman/Renkbench>
-- AnderShell 3000 <https://github.com/andersevenrud/retro-css-shell-demo>
-- Paper <https://www.getpapercss.com/>
-- LaTeX <https://latex.now.sh/>
-- Commodore 64 <http://pixelambacht.nl/2013/css3-c64/>
-- Old Internet <https://code.divshot.com/geo-bootstrap/>
-
-Lists of others
-
-- sw-yx spark-joy <https://github.com/sw-yx/spark-joy>

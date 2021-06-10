@@ -13,6 +13,7 @@
 
 - Sliding Legolini <https://legolini.com/>
 - Lego man toilet paper holder <https://www.thingiverse.com/thing:1996077>
+- microscope <https://openflexure.org/projects/microscope/>
 
 ## Open-source Astronomy Equipment
 

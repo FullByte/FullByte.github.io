@@ -4,8 +4,17 @@
 
 |What|Where|
 |-|-|
-|Official Page||
-|Online|<https://shell.azure.com/>|
+|Official Page|<https://azure.microsoft.com/en-us/features/cloud-shell/>|
+|Docs|<https://docs.microsoft.com/en-us/azure/cloud-shell/overview>|
+|Online|<https://shell.azure.com/> </br> <https://portal.azure.com/#cloudshell/>|
+
+## Edit files
+
+To get a GUI editor run this command:
+
+```powershell
+code .
+```
 
 ## Attach Storage
 

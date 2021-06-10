@@ -123,7 +123,29 @@ What is Wikipedia? [Here is a good explanation.](https://enwikipedia.org/wiki/Wi
 - [Al-Gaddafi International Prize for Human Rights](https://en.wikipedia.org/wiki/Al-Gaddafi_International_Prize_for_Human_Rights "https://en.wikipedia.org/wiki/Al-Gaddafi_International_Prize_for_Human_Rights")
 - [Goldenes Brett](https://en.wikipedia.org/wiki/Goldenes_Brett "https://en.wikipedia.org/wiki/Goldenes_Brett")
 
+## Lookup Tables
+
+https://de.wikipedia.org/wiki/Liste_der_Schraubenkopfantriebe
+
+
 ## Unsorted
+
+https://en.wikipedia.org/wiki/Frequency_illusion
+https://en.wikipedia.org/wiki/B._Traven
+https://en.wikipedia.org/wiki/Old_person_smell
+https://en.wikipedia.org/wiki/Jonbar_hinge
+https://en.wikipedia.org/wiki/Blinking_twelve_problem
+https://en.wikipedia.org/wiki/Reverse_mathematics
+https://en.wikipedia.org/wiki/Wallenberg_family
+https://en.wikipedia.org/wiki/Frankenstein_veto
+https://en.wikipedia.org/wiki/Nordic_Biker_War
+https://en.wikipedia.org/wiki/MIM-104_Patriot#Failure_at_Dhahran
+https://en.wikipedia.org/wiki/X-Seed_4000
+https://en.wikipedia.org/wiki/Obsolete_German_units_of_measurement
+https://en.wikipedia.org/wiki/Japanese_units_of_measurement
+https://en.wikipedia.org/wiki/Josh_fight
+https://en.wikipedia.org/wiki/Analysis_paralysis
+
 
 - [Hofstadter's law](https://en.wikipedia.org/wiki/Hofstadter's_law "https://en.wikipedia.org/wiki/Hofstadter's_law")
 - [Conspiracy theory](https://en.m.wikipedia.org/wiki/Conspiracy_theory "https://en.m.wikipedia.org/wiki/Conspiracy_theory")

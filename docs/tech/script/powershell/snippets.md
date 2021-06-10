@@ -79,6 +79,12 @@ return [BitConverter]::ToString($buffer).Replace("-", [string]::Empty);
 Write-Output "System boot:" (Get-CimInstance -ClassName win32_operatingsystem | Select-Object -ExpandProperty LastBootUpTime)
 ```
 
+**Last Installation Date**
+
+```powershell
+Get-ChildItem -Path HKLM:\System\Setup\Source* | ForEach-Object {Get-ItemProperty -Path Registry::$_} | Select-Object ProductName, ReleaseID, CurrentBuild, @{n="Install Date"; e={([DateTime]'1/1/1970').AddSeconds($_.InstallDate)}} | Sort-Object "Install Date"
+```
+
 **Get WiFi Passwords**
 
 Add more cultures if needed
@@ -201,6 +207,12 @@ Enable Remote Desktop
 Get-NetFirewallRule -DisplayName "Remote Desktop*" | Set-NetFirewallRule -enabled true
 ```
 
+Run Repair-Volume on all valid drives
+
+```powershell
+Get-Volume | Where { $_.OperationalStatus -eq "OK" -and $_.DriveType -ne "CD-ROM" -and $_.FileSystemType -ne "Unknown" -and $_.DriveLetter.length -ne 0} | Foreach-Object { Write-Host("Checking Drive: " + $_.DriveLetter); Repair-Volume -DriveLetter $_.DriveLetter }
+```
+
 ## Take a screenshot
 
 Take a screenshot and save the image on your desktop:
@@ -225,7 +237,7 @@ Tune the guitar
 
 ## Speech
 
-Make powershell read out some given text:
+Here are two examples using System.Speech.Synthesis.SpeechSynthesizer to read out some given text with powershell (doesn't work with powershell 7):
 
 ```powershell
 [Reflection.Assembly]::LoadWithPartialName('System.Speech') | Out-Null
@@ -251,6 +263,13 @@ $Phrase = '
 </speak>
 '
 $tts.SpeakSsml($Phrase)
+```
+
+This version uses the SAPI.SpVoice COM object and works with powershell 5 and 7:
+
+```powershell
+$sp = New-Object -ComObject SAPI.SpVoice
+$sp.Speak("Time for the $((Get-Date).DayOfWeek) shuffle")
 ```
 
 ## Web

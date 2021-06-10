@@ -1,5 +1,23 @@
 # Python
 
+Some nice tools to use for python
+
+VSCode + Extensions
+
+- TODO
+
+Other IDE
+
+- pydev <https://www.pydev.org>
+- pycharm <https://www.jetbrains.com/pycharm/>
+- spyder <https://github.com/spyder-ide/spyder>
+
+Jupyter Notebooks
+
+- Jupyter Notebook: <https://jupyter.org/install>
+- ipynb viewer online: <https://github.nextjournal.com/>
+- ipynb viewer online: <https://deepnote.com/viewer>
+
 ## Cool Stuff
 
 **Simple Webserver**

@@ -17,6 +17,10 @@ Helper:
 
 - FFmpeg Command Generator <https://www.mrfdev.com/ffmpeg-command-generator>
 
+## Links
+
+- ffmpeg libav tutorial: <https://github.com/leandromoreira/ffmpeg-libav-tutorial>
+
 ## Get File Information
 
 Get codec details of a given video file e.g. "video.mp4":

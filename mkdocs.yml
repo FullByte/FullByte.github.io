@@ -34,3 +34,10 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.superfences
   - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tabbed
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.tasklist
+  - pymdownx.arithmatex
+  - pymdownx.details
