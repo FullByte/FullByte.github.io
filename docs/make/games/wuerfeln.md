@@ -1,6 +1,6 @@
 # Würfeln
 
-```Würfeln ist Einstellungssache``` is a game of luck and high precision dice rolling. Tweak statistics to your advantage with the right mindset. Is your dice role determination stronger than the one of your opponents? Play a game, bet on your role attempts and show that you have mastered the art of rolling the die.
+```Würfeln ist Einstellungssache``` is a game of luck and high precision dice rolling. Tweak statistics to your advantage with the right mindset. Is your dice roll determination stronger than the one of your opponents? Play a game, bet on your roll attempts and show that you have mastered the art of rolling the die.
 
 ## How to play
 
@@ -12,7 +12,7 @@ Everyone starts with 10 points. The person closest to the die at this point star
 
 ### Play
 
-The current player decides to either predict the upcoming role or not (passive role).
+The current player decides to either predict the upcoming roll or not (passive roll).
 
 Roll the dice and add/remove points based on the result combination and if the prediction was correct (if made).
 
@@ -25,13 +25,13 @@ Roll the dice and add/remove points based on the result combination and if the p
 
 ### Example round
 
-For example: If it is your turn, you bet on rolling 🎁(Wunsch) and you rolled 1,2,5 which is ⚰️(Das Unvermeidliche). Therefore, you lose 2 points. If this is the first round of the game, you started with 10 points and now have 8 points. Now it is the next players turn. The player choses to not predict anything and roles a 2,2,2 which is ☢️(Dreifaltigkeit). In this case the player gains 3 points and it is the next players turn. The third player predicts an 🦄(Einhorn) and roles a 1,3,6 and gains 5 points.
+For example: If it is your turn, you bet on rolling 🎁(Wunsch) and you rolled 1,2,5 which is ⚰️(Das Unvermeidliche). Therefore, you lose 2 points. If this is the first round of the game, you started with 10 points and now have 8 points. Now it is the next players turn. The player choses to not predict anything and roll a 2,2,2 which is ☢️(Dreifaltigkeit). In this case the player gains 3 points and it is the next players turn. The third player predicts an 🦄(Einhorn) and roll a 1,3,6 and gains 5 points.
 
 ### Win
 
 Whoever has 0 points or less first loses the game. The game ends at this point and the player with the most points wins the game.
 
-Should you play multiple rounds note down all remaining points from the current game and to the score from previous games played. Agree on how many games shall be played and after that game the player with the highest overall scope wins.
+Should you play multiple rounds note down all remaining points from the current game and add them to the score from previous games played. Agree on how many games shall be played and after that game the player with the highest overall score wins.
 
 ### Example with multiple games
 
@@ -54,7 +54,9 @@ Player 1 wins the game at the end of round 4 with a total of 19 points.
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 ??? warning "Warning: Math"
-    To get all possible combinations we can use this formula for combination with repetition:
+    With a total of 3x D6 die we get a total of 216 (6x6x6 or 6^3) possible outcomes.
+
+    Let us now look at unique roles. To get all possible combinations we can use this formula for combination with repetition:
 
     \begin{align}
         \frac{(n+k-1)!}{k!*(n-1)!}
@@ -68,7 +70,7 @@ Player 1 wins the game at the end of round 4 with a total of 19 points.
         \frac{(6+3-1)!}{3!*(6-1)!} = 56
     \end{align}
 
-    You can copy ```(6+3-1)!/(3!*(6-1)!)``` to wolframalpha to calculate it or you [this link](https://www.wolframalpha.com/input/?i=%286%2B3-1%29%21%2F%283%21*%286-1%29%21%29).
+    You can copy ```(6+3-1)!/(3!*(6-1)!)``` to wolframalpha to calculate it or use [this link](https://www.wolframalpha.com/input/?i=%286%2B3-1%29%21%2F%283%21*%286-1%29%21%29).
 
     These 56 combinations distribute as follows:
 
