@@ -13,8 +13,12 @@ More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 - Text Editor: <https://micro-editor.github.io/>
 - Browser: <http://w3m.sourceforge.net/>
 - Charts: <https://github.com/irevenko/tsukae>
-- Spotify: <https://github.com/clangen/musikcube>
-- Spotify: <https://github.com/Rigellute/spotify-tui>
+
+## Music
+
+- beets: <https://github.com/beetbox/beets> ```pip install beets```
+- musikcube (Spotify): <https://github.com/clangen/musikcube>
+- spotify-tui: <https://github.com/Rigellute/spotify-tui>
 
 ## Files
 
