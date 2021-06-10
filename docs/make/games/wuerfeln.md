@@ -54,7 +54,7 @@ Player 1 wins the game at the end of round 4 with a total of 19 points.
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 
 ??? warning "Warning: Math"
-    With a total of 3x D6 die we get a total of 216 (6x6x6 or 6^3) possible outcomes.
+    With 3x D6 we get a total of 216 (6x6x6 or 6^3) possible outcomes.
 
     Let us now look at unique roles. To get all possible combinations we can use this formula for combination with repetition:
 
