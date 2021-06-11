@@ -12,9 +12,9 @@ Everyone starts with 10 points. The person closest to the die at this point star
 
 ### Play
 
-The current player decides to either predict the upcoming roll or not (passive roll).
+The current player decides to either predict the upcoming roll or not (passive roll) - then rolls all three dice once.
 
-Roll the dice and add/remove points based on the result combination and if the prediction was correct (if made).
+Based on the result add/remove points as follows:
 
 | Result                | Rule / Dice combination     | Correct | Wrong | Passive |
 |-----------------------|-----------------------------|---------|-------|---------|
@@ -25,17 +25,21 @@ Roll the dice and add/remove points based on the result combination and if the p
 
 ### Example round
 
-For example: If it is your turn, you bet on rolling 🎁(Wunsch) and you rolled 1,2,5 which is ⚰️(Das Unvermeidliche). Therefore, you lose 2 points. If this is the first round of the game, you started with 10 points and now have 8 points. Now it is the next players turn. The player choses to not predict anything and roll a 2,2,2 which is ☢️(Dreifaltigkeit). In this case the player gains 3 points and it is the next players turn. The third player predicts an 🦄(Einhorn) and roll a 1,3,6 and gains 5 points.
+If it is your turn, you bet on rolling 🎁(Wunsch) and you rolled 1,2,5 which is ⚰️(Das Unvermeidliche). Therefore, you lose 2 points. If this is the first round of the game, you started with 10 points and now have 8 points. Now it is the next players turn. The player choses to not predict anything and roll a 2,2,2 which is ☢️(Dreifaltigkeit). In this case the player gains 3 points and it is the next players turn. The third player predicts an 🦄(Einhorn) and roll a 1,3,6 and gains 5 points.
 
 ### Win
 
-Whoever has 0 points or less first loses the game. The game ends at this point and the player with the most points wins the game.
+The first player to reach 0 points (or less) loses the game. The game ends at this point and the player with the most points wins the game.
 
-Should you play multiple rounds note down all remaining points from the current game and add them to the score from previous games played. Agree on how many games shall be played and after that game the player with the highest overall score wins.
+### Multiple games
 
-### Example with multiple games
+Should you play multiple games note down all remaining points from the current game and add them to the total score.
 
-Example game of 4 rounds with 3 players:
+Agree on how many games shall be played and after that game the player with the highest overall score wins.
+
+### Multiple games example
+
+This is the score board of an example session with 4 games and 3 players:
 
 | Game | Player 1</br>Points -> Score | Player 2</br>Points -> Score | Player 3</br>Points -> Score |
 |------|------------------------------|------------------------------|------------------------------|
@@ -49,6 +53,10 @@ Player 1 takes the lead in round one with 11 points and can continue the lead in
 Player 3 gets 16 points in round three adding to 18 points in total and taking the lead.
 
 Player 1 wins the game at the end of round 4 with a total of 19 points.
+
+### Extras
+
+Have a look at the math part to see all possible combinations and possibly the rules without words are interesting as well :)
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
