@@ -56,7 +56,7 @@ Let's run gobuster to check for available folders using this command:
 gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.46.238:80
 ```
 
-Reveals that we have these three folders available:
+Gobuster reveals the following three folders:
 
 ```sh
 /cats                 (Status: 301) [Size: 311] [--> http://10.10.46.238/cats/]
@@ -263,7 +263,7 @@ On the netcat terminal we should now have a command prompt :)
 Running ```whoami``` we see we are user "www-data". Searching for flag2 reveals the following file:
 
 ```sh
-find / -type f -iname "*flag*"
+find / -type f -iname "flag*"
 var/www/html/flag.php
 var/www/flag2_QMW7JvaY2LvK.txt
 ```
@@ -293,7 +293,7 @@ Running ```whoami``` we can see that we are root.
 Now, let's again look for a flag:
 
 ```sh
-find / -type f -iname "*flag*"
+find / -type f -iname "flag*"
 /root/flag3.txt
 ```
 
@@ -357,6 +357,6 @@ Running ```whoami``` we can see that we are root - whoop whoop!
 Let's search for flag 4:
 
 ```sh
-find / -type f -iname "*flag*"
+find / -type f -iname "flag*"
 container/flag4.txt
 ```
