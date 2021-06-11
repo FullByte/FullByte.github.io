@@ -42,7 +42,7 @@ FLAG = (xor(bytes.fromhex(KEY1), KEY2, KEY3, bytes.fromhex(FLAGx))) # XOR for FL
 print(FLAG)
 ```
 
-# XOR you dont
+## XOR you dont
 
 ```python
 from pwn import xor
@@ -190,7 +190,7 @@ input.
 listener.start_server(port=13372)
 ```
 
-## Encoding Challenge 
+## Encoding Challenge
 
 **Server**
 
