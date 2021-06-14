@@ -7,14 +7,33 @@
 |Official Page|<https://azure.microsoft.com/en-us/features/cloud-shell/>|
 |Docs|<https://docs.microsoft.com/en-us/azure/cloud-shell/overview>|
 |Online|<https://shell.azure.com/> </br> <https://portal.azure.com/#cloudshell/>|
+|Cloud Shell Tools|<https://docs.microsoft.com/en-us/azure/cloud-shell/features> </br> <https://build5nines.com/azure-cloud-shell-tips-and-tricks/>|
 
-## Edit files
+## Cloud Shell options
 
-To get a GUI editor run this command:
+There are three options to use the cloud shell: Docker, Windows Terminal and the Azure Web Interface:
+
+## Docker
+
+You get a [CloudShell](https://github.com/Azure/CloudShell) container as follows:
 
 ```powershell
-code .
+docker run -it mcr.microsoft.com/azure-cloudshell /bin/bash # for bash
+docker run -it mcr.microsoft.com/azure-cloudshell /usr/bin/pwsh # for powershell
 ```
+
+## Windows Terminal
+
+The [Windows terminal](https://docs.microsoft.com/de-de/windows/terminal/) has the cloud shell integrated. Aside from other features this is a good way to interact with azure on command line.
+
+Install the windows terminal with ```choco install microsoft-windows-terminal```.
+You need to login to azure first to use the terminal.
+
+### Azure Portal
+
+Go to <https://shell.azure.com> and you are logged in with your current user.
+
+To get a GUI editor in the web run ```code .```.
 
 ## Attach Storage
 

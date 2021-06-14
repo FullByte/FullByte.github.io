@@ -18,6 +18,7 @@ Some games are free to play, others require a played membership.
 
 Some of these are quite special and nerdy.
 
+- six degrees of wikipedia: <https://www.sixdegreesofwikipedia.com/>
 - 0hh1 <http://0hh1.com/>
 - 0hn0 <http://0hn0.com/>
 - 2048 <http://2048game.info/>
@@ -68,6 +69,7 @@ Games for two players only:
 
 Well known and rather special games that can be played with a group of people online:
 
+- Scrabble: <https://bluemoose.club/>
 - Deck of Cards: <https://deck.of.cards/>
 - Just poker: <https://justpoker.games/>
 - 7 Wonders Duel <https://sevenee.mattle.online>

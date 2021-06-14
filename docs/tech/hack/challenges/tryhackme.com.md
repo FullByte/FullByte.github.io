@@ -66,7 +66,7 @@ Gobuster reveals the following three folders:
 
 So basically we have a folder /dog with random dog pics and a folder /cat with random cat pics.
 
-Opening /server-status we get the error
+Opening [/server-status](http://httpd.apache.org/docs/2.4/mod/mod_status.html) we get the error so probably with a .htaccess file.
 
 ```txt
 Forbidden
@@ -77,20 +77,41 @@ Apache/2.4.38 (Debian)
 
 #### nikto
 
-In this case running nikto doesn't reveal anything new:
+Running nikto confirms the apache web server and shows PHP is used.
+Nothing else of interest is revealed:
 
 ```sh
 nikto -h 10.10.46.238
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.46.238
++ Target Hostname:    10.10.46.238
++ Target Port:        80
++ Start Time:         2021-00-00 00:00:00 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.38 (Debian)
++ Retrieved x-powered-by header: PHP/7.4.3
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Web Server returns a valid response with junk HTTP methods, this may cause false positives.
++ OSVDB-3233: /icons/README: Apache default file found.
++ 7890 requests: 0 error(s) and 6 item(s) reported on remote host
++ End Time:           2021-00-00 00:00:00 (GMT-4) (326 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+
 ```
 
 ### Visit website
 
-Let's visit the page on port 80 and click on dog or cat
+So now we know machine 10.10.46.238 is running a Debian based Apache (2.4.38 ) webserver with PHP (7.4.3) serving a website with dogs and cats (probably stored under "/dogs" and "/cats").
+
+Let's visit the page on port 80 and click on dog or cat:
 
 - We can see a random dog or cat pic
 - See url changes to ?view=dog or ?view=cat.
-
-To check if the site is running PHP or something else we can request the URL with index.html and index.php. In this case, we can verify that it is a PHP page.
 
 Let's look at the "view?" parameter in more detail:
 
