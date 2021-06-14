@@ -19,6 +19,8 @@ for number in range (1,100,2): print(f'{number} --> ' + requests.get(f'http://lo
 
 ## [DogCat](https://tryhackme.com/room/dogcat)
 
+This is a full write up of the "dogcat" CTF @ <https://tryhackme.com/room/dogcat>.
+
 ### First look
 
 We know there is a website hosting dog and cat pictures. Let's have a look...
