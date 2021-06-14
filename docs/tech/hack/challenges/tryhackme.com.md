@@ -2,15 +2,18 @@
 
 Notes from challenges I did @ <https://tryhackme.com>.
 
-Flags are not fully written to avoid copy & paste ;)
+Connect to tryhackme via openvpn e.g.: ```sudo openvpn 0xfab1.ovpn```
 
-Connect to current challenge: ```sudo openvpn 0xfab1.ovpn```
+Please note:
+
+- Flags are not fully written to avoid copy & paste ;)
+- I used an SSH-Tunnel in case you are wondering why I have "localhost" instead of an IP mentioned.
 
 ## [Advent of Cyber 2](https://tryhackme.com/room/adventofcyber2)
 
 ### [Day 16] Scripting Help! Where is Santa?
 
-Address is localhost because I port-forwarded the tryhackme machine over kali to my host.
+Python One-Liner to query the API :)
 
 ```python
 import requests 
@@ -19,7 +22,7 @@ for number in range (1,100,2): print(f'{number} --> ' + requests.get(f'http://lo
 
 ## [DogCat](https://tryhackme.com/room/dogcat)
 
-This is a full write up of the "dogcat" CTF @ <https://tryhackme.com/room/dogcat>.
+This is a full write up of the great "dogcat" CTF @ <https://tryhackme.com/room/dogcat>.
 
 ### First look
 
