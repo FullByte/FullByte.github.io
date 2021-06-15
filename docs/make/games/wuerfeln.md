@@ -6,9 +6,11 @@
 
 ### Setup
 
-Challenge up to three opponents, gather three standard D6 dice (numbers 1-6) as well as a pen and some paper to keep track of the score.
+Challenge up to three opponents, three standard D6 dice (numbers 1-6) per player (idealy visually different), an einhorn and plenty of smooth rocks.
 
-Everyone starts with 10 points. The person closest to the die at this point starts the game.
+The poor mans option that works is any object that will resemble the einhorn and something to keep track of the score e.g. rocks, coins, etc. Pen and paper works but is a little more work and kills the flow.
+
+Everyone starts with 6 rocks (=points). Roll all three die and the player with highest total number starts the game.
 
 ### Play
 
@@ -25,9 +27,13 @@ Based on the result add/remove points as follows:
 
 ### Example round
 
-If it is your turn, you bet on rolling 🎁(Wunsch) and you rolled 1,2,5 which is ⚰️(Das Unvermeidliche). Therefore, you lose 2 points. If this is the first round of the game, you started with 10 points and now have 8 points. Now it is the next players turn. The player choses to not predict anything and roll a 2,2,2 which is ☢️(Dreifaltigkeit). In this case the player gains 3 points and it is the next players turn. The third player predicts an 🦄(Einhorn) and roll a 1,3,6 and gains 5 points.
+If it is your turn, you bet on rolling 🎁(Wunsch) and you rolled 1,2,5 which is ⚰️(Das Unvermeidliche). Therefore, you lose 2 points. If this is the first round of the game, you started with 6 points and now have 4 points. Now it is the next players turn. The player choses to not predict anything and roll a 2,2,2 which is ☢️(Dreifaltigkeit). In this case the player gains 3 points and it is the next players turn. The third player predicts an 🦄(Einhorn) and roll a 1,3,6 and gains 5 points.
 
-### Win
+### 🦄 Einhorn
+
+In case a player rolls an 🦄(Einhorn) the player then recieves the Einhorn. From this moment on the player no longer takes points from the main rock stash but instead takes the gained points from rolling the die from any one player. If the player with the Einhorn needs to give rocks back those rocks are given to any other player of choice. The 🦄(Einhorn) is passed once another player roles an 🦄(Einhorn).
+
+### How to win
 
 The first player to reach 0 points (or less) loses the game. The game ends at this point and the player with the most points wins the game.
 
@@ -36,6 +42,12 @@ The first player to reach 0 points (or less) loses the game. The game ends at th
 Should you play multiple games note down all remaining points from the current game and add them to the total score.
 
 Agree on how many games shall be played and after that game the player with the highest overall score wins.
+
+On every new round you start again with 6 points but can add already gained points from previous matches into this game if you like. You can add your entire point stach if you want.
+
+You do not keep the 🦄(Einhorn) over multiple games. After each game is over the 🦄(Einhorn) returns to the middle of the table and is called once an 🦄(Einhorn) is rolled.
+
+The looser of the last round begins the new game.
 
 ### Multiple games example
 
@@ -94,7 +106,7 @@ Have a look at the math part to see all possible combinations and possibly the r
 
     | 👱  | 🎲 | ☑   |
     |-----|----|-----|
-    | 2-4 | 3  | +10 |
+    | 2-4 | 3  | +6 |
 
     🎲🎲🎲
 
