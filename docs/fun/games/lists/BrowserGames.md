@@ -51,6 +51,9 @@ Some of these are quite special and nerdy.
 - Yare <https://yare.io/> (Real-Time Strategy game where you control your units by writing JavaScript code)
 - Hatetris: <https://qntm.org/files/hatetris/hatetris.html>
 - DOS games: <https://dos.zone>
+- Play for good: <https://play.gl/>
+- Dot Dot Dot: <http://lalo.li/ddd/>
+- Wayfinder: <https://wayfinder.nfb.ca/>
 
 ## 2 Player Games
 

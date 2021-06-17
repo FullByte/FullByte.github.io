@@ -64,8 +64,6 @@ Just a bunch of links. This page needs some sorting and a lot of additonal links
 - <http://www.try2hack.nl/>
 - <https://w3challs.com/>
 
-
-
 ### Network Infos
 
 - Torrent Download History: <https://iknowwhatyoudownload.com>
@@ -80,6 +78,7 @@ Just a bunch of links. This page needs some sorting and a lot of additonal links
 
 - <https://docs.pwntools.com>
 - <https://github.com/Marak/faker.js>
+- <https://github.com/ajalt/fuckitpy>
 
 ## Lists and Cheat Sheets
 
@@ -87,6 +86,15 @@ Just a bunch of links. This page needs some sorting and a lot of additonal links
 - Privilege Escalation Collection: <https://gtfobins.github.io/>
 - PayloadsAllTheThings <https://github.com/swisskyrepo/PayloadsAllTheThings>
 - <https://github.com/danielmiessler/SecLists>
+
+### Data Interpreter
+
+- <https://github.com/bee-san/pyWhat>
+- <https://github.com/datamade/usaddress>
+- <https://github.com/datamade/probablepeople>
+- Character Encoding Detector: <https://github.com/chardet/chardet>
+- <https://github.com/vstinner/hachoir>
+- <https://github.com/capitalone/DataProfiler>
 
 ## Various
 
