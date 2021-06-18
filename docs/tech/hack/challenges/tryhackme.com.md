@@ -412,9 +412,9 @@ We can see a lot of folders and that there is a wordpress login page.
 
 Further things we can check:
 
-View html/css/js source -> nothing special
-View links on page -> text, videos, nothing special (but cool theme)
-View robots.txt -> first flag :)
+- View html/css/js source -> nothing special
+- View links on page -> text, videos, nothing special (but cool theme)
+- View robots.txt -> first flag :)
 
 In the robots.txt we find the first key ($IP/key-1-of-3.txt) and a dictionary file (probably for wordpress login @ /login).
 
