@@ -37,7 +37,7 @@ Currently we play the following games in these settings:
 | Flat Heros       | Versus -> 3 games: zones, battle, runner (winner aus 3 games total)                                               |
 | Roof Rage        | Local Rooftops -> Stock Match -> Stock: 5 -> HP: 200                                                              |
 | Wand Wars        | Versus -> hexout, 21 wins, merlins rules -> Random map                                                            |
-| Tricky Towers    | TODO                                                                                                              |
+| Tricky Towers    | Local Battle                                                                                                              |
 | Brawlhalla       | Custum -> Create Room -> Private Room -> Custom Online: Stock: Teams=off, Lives=10, Match=10, Damage=100%, All On |
 | Puyo Puyo Tetris | Muliplayer Arcade -> Single Screen -> Versus -> 4 Player -> Win Count = 2, Harddrop = ON, Hold = ON               |
 | Mario Kart 8     | 4P -> vs race -> 150cc -> No Teams, Normal Items, No CPU, all Verhicles, Random  random map, 4 Races              |
@@ -65,7 +65,8 @@ The following epic battles have been fought:
 | ---------- | ----- | ----- | ----- | ------ | ------ |
 | 11.10.2020 | 14    | 12    | 10    | 10     | J0n4s  |
 | 24.10.2020 | 19    | 20    | 25    | 10     | Chr1$  |
-| N/A        |       |       |       |        |        |
+| 20.06.2021 |       |       |       |        |        |
+|            |       |       |       |        |        |
 
 ### Other Games
 
