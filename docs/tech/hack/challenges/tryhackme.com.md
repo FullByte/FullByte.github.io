@@ -416,7 +416,7 @@ Further things we can check:
 - View links on page -> text, videos, nothing special (but cool theme)
 - View robots.txt -> first flag :)
 
-In the robots.txt we find the first key ($IP/key-1-of-3.txt) and a dictionary file (probably for wordpress login @ /login).
+In the robots.txt we find the first key ($IP/key-1-of-3.txt) and a dictionary file (probably for wordpress login @ $IP/login).
 
 ### Flag 2
 
