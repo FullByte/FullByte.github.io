@@ -82,3 +82,7 @@ Tools to create graphics and modify images online.
 - <https://www.demoparty.net/>
 - <http://www.kameli.net/demoresearch2/>
 - <https://www.demoscene.info/>
+
+## Inspiration
+
+- <https://allrgb.com/>
