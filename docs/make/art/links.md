@@ -27,6 +27,7 @@ Tools to create graphics and modify images online.
 - SVG Shape Generator: <https://www.softr.io/tools/svg-shape-generator>
 - Auto Draw: <https://www.autodraw.com/>
 - Pixelart Maker: <http://pixelartmaker.com/>
+- paint <https://david.li/paint/>
 
 ### Animation
 
