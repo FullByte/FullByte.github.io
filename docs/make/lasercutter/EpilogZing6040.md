@@ -6,16 +6,16 @@ Max size: 600mm x 300mm.
 
 ## Presets
 
-## 3mm HDF
+### 3mm HDF
 
 Cut:
-
-- Job Type: Raster
-- Speed: 58%
-- Power: 50%
-
-Engrave:
 
 - Job Type: Vector
 - Speed: 50%
 - Power: 100%
+
+Engrave:
+
+- Job Type: Raster
+- Speed: 58%
+- Power: 50%
