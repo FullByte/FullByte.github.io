@@ -1,6 +1,6 @@
 # Make Stuff
 
-Templates and creator/helper for cutting objects e.g. with CNC or laser cutter.
+Interesting pages for inspiration/ideas as well as general/random stuff for this section.
 
 ## Project Ideas
 

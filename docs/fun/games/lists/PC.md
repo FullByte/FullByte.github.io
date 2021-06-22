@@ -1,4 +1,6 @@
-# Free Games
+# PC
+
+## Free Games
 
 Good games that are free
 

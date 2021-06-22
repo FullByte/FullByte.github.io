@@ -8,7 +8,10 @@
 - P3d <https://p3d.in/>
 - Prusaprinters <https://www.prusaprinters.org/>
 - Tinkercad <https://www.tinkercad.com/things>
-
+- Instructables <https://www.instructables.com/>
+- Make <https://make.co/>
+- Pintrest <https://www.pinterest.de/>
+- Hackster <https://www.hackster.io/projects?ref=topnav>
 ## Cool Projects
 
 - Sliding Legolini <https://legolini.com/>
