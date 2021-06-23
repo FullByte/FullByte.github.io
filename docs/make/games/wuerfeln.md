@@ -18,20 +18,20 @@ The current player decides to either predict the upcoming roll or not (passive r
 
 Based on the result add/remove points as follows:
 
-| Result                | Rule / Dice combination     | Correct | Wrong | Passive |
-|-----------------------|-----------------------------|---------|-------|---------|
-| ⚰️ Das Unvermeidliche | ```n & n+1 & (!n / !n+1)``` | +2      | -2    | 0       |
-| 🎁 Wunsch             | ```2x n & !n```             | +1      | -1    | 0       |
-| 🦄 Einhorn            | ```n & n+2 & (n+4 / n+5)```</br> ```n & n+3 & n+5``` | +5      | -5    | -5      |
-| ☢️ Dreifaltigkeit     | ```3x n```                  | +3      | -3    | +3      |
+| Result                | Rule / Dice combination                                                      | Correct | Wrong | Passive |
+|-----------------------|------------------------------------------------------------------------------|---------|-------|---------|
+| ⚰️ Das Unvermeidliche | ```n & n+1 & (!n / !n+1)```</br>Example: ⚀⚁⚃ or ⚂⚃⚀                          | +2      | -2    | -1      |
+| 🎁 Wunsch             | ```2x n & !n```</br>Example: ⚀⚀⚁                                             | +1      | -1    | 0       |
+| 🦄 Einhorn            | ```n & n+2 & (n+4 / n+5)```</br> ```n & n+3 & n+5```</br>Example: ⚀⚂⚄ or ⚀⚃⚅ | +5      | -5    | -5      |
+| ☢️ Dreifaltigkeit     | ```3x n```</br>Example: ⚁⚁⚁ or ⚅⚅⚅                                           | +3      | -3    | +3      |
 
 ### Example round
 
-If it is your turn, you bet on rolling 🎁(Wunsch) and you rolled 1,2,5 which is ⚰️(Das Unvermeidliche). Therefore, you lose 2 points. If this is the first round of the game, you started with 6 points and now have 4 points. Now it is the next players turn. The player choses to not predict anything and roll a 2,2,2 which is ☢️(Dreifaltigkeit). In this case the player gains 3 points and it is the next players turn. The third player predicts an 🦄(Einhorn) and roll a 1,3,6 and gains 5 points.
+If it is your turn, you bet on rolling 🎁(Wunsch) and you rolled 1,2,5 which is ⚰️(Das Unvermeidliche). Therefore, you lose 2 points. If this is the first round of the game, you started with 6 points and now have 4 points. Now it is the next players turn. The player choses to not predict anything and roll a 2,2,2 which is ☢️(Dreifaltigkeit). In this case the player gains 3 points and it is the next players turn. The third player predicts an 🦄(Einhorn) and roll a 1,3,6 and gains 5 points. (this never happens IRL, lol :D)
 
 ### 🦄 Einhorn
 
-In case a player rolls an 🦄(Einhorn) the player then recieves the Einhorn. From this moment on the player no longer takes points from the main rock stash but instead takes the gained points from rolling the die from any one player. If the player with the Einhorn needs to give rocks back those rocks are given to any other player of choice. The 🦄(Einhorn) is passed once another player roles an 🦄(Einhorn).
+In case a player rolls an 🦄(Einhorn) the player then recieves the Einhorn. It doesn't matter if the prediction was correct, wrong or passiv. From this moment on the player may choose from where to take and give points: either the main rock stash from any other player. If the player with the Einhorn needs to give rocks back, those are given to any other player of choice. The 🦄(Einhorn) is passed once another player roles an 🦄(Einhorn) and returned once the round ends.
 
 ### How to win
 
@@ -94,35 +94,35 @@ Have a look at the math part to see all possible combinations and possibly the r
 
     These 56 combinations distribute as follows:
 
-    | Result                || Amount | Percent |
-    |-----------------------|-|--------|---------|
-    | ⚰️ Das Unvermeidliche | ⚀⚁⚃, ⚀⚁⚄, ⚀⚁⚅, ⚁⚂⚀ </br> ⚁⚂⚄, ⚁⚂⚅, ⚂⚃⚀, ⚂⚃⚁</br>⚂⚃⚅, ⚃⚄⚀, ⚃⚄⚁, ⚃⚄⚂, </br> ⚄⚅⚀, ⚄⚅⚁, ⚄⚅⚂, ⚄⚅⚃ |16     | 29 %    |
-    | 🎁 Wunsch             | ⚀⚀⚁, ⚀⚀⚂, ⚀⚀⚃, ⚀⚀⚄, ⚀⚀⚅</br>⚁⚁⚀, ⚁⚁⚂, ⚁⚁⚃, ⚁⚁⚄, ⚁⚁⚅</br>⚂⚂⚀, ⚂⚂⚁, ⚂⚂⚃, ⚂⚂⚄, ⚂⚂⚅</br>⚃⚃⚀, ⚃⚃⚁, ⚃⚃⚂, ⚃⚃⚄, ⚃⚃⚅</br>⚄⚄⚀, ⚄⚄⚁, ⚄⚄⚂, ⚄⚄⚃, ⚄⚄⚅</br>⚅⚅⚀, ⚅⚅⚁, ⚅⚅⚂, ⚅⚅⚃, ⚅⚅⚄ |30     | 54 %    |
-    | 🦄 Einhorn            | ⚀⚂⚄, ⚀⚂⚅, ⚀⚃⚅, ⚁⚃⚅ |4      | 7 %     |
-    | ☢️ Dreifaltigkeit     |⚀⚀⚀, ⚁⚁⚁, ⚂⚂⚂</br>⚃⚃⚃, ⚄⚄⚄, ⚅⚅⚅  |6      | 11 %    |
+    | Result                |                                                                                                                                                                     | Amount | Percent |
+    |-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------|---------|
+    | ⚰️ Das Unvermeidliche | ⚀⚁⚃, ⚀⚁⚄, ⚀⚁⚅, ⚁⚂⚀ </br> ⚁⚂⚄, ⚁⚂⚅, ⚂⚃⚀, ⚂⚃⚁</br>⚂⚃⚅, ⚃⚄⚀, ⚃⚄⚁, ⚃⚄⚂, </br> ⚄⚅⚀, ⚄⚅⚁, ⚄⚅⚂, ⚄⚅⚃                                                                        | 16     | 29 %    |
+    | 🎁 Wunsch             | ⚀⚀⚁, ⚀⚀⚂, ⚀⚀⚃, ⚀⚀⚄, ⚀⚀⚅</br>⚁⚁⚀, ⚁⚁⚂, ⚁⚁⚃, ⚁⚁⚄, ⚁⚁⚅</br>⚂⚂⚀, ⚂⚂⚁, ⚂⚂⚃, ⚂⚂⚄, ⚂⚂⚅</br>⚃⚃⚀, ⚃⚃⚁, ⚃⚃⚂, ⚃⚃⚄, ⚃⚃⚅</br>⚄⚄⚀, ⚄⚄⚁, ⚄⚄⚂, ⚄⚄⚃, ⚄⚄⚅</br>⚅⚅⚀, ⚅⚅⚁, ⚅⚅⚂, ⚅⚅⚃, ⚅⚅⚄ | 30     | 54 %    |
+    | 🦄 Einhorn            | ⚀⚂⚄, ⚀⚂⚅, ⚀⚃⚅, ⚁⚃⚅                                                                                                                                                  | 4      | 7 %     |
+    | ☢️ Dreifaltigkeit     | ⚀⚀⚀, ⚁⚁⚁, ⚂⚂⚂</br>⚃⚃⚃, ⚄⚄⚄, ⚅⚅⚅                                                                                                                                     | 6      | 11 %    |
 
 ??? dice "Rules without words"
     👱🧔🧕
 
-    | 👱  | 🎲 | ☑   |
-    |-----|----|-----|
+    | 👱  | 🎲 | ☑  |
+    |-----|----|----|
     | 2-4 | 3  | +6 |
 
     🎲🎲🎲
 
-    | =  | 🎲∑ | 🎲🎲🎲 | #  | %  |
-    |----|-----|---------|----|----|
-    | ⚰️ | ```n & n+1 & (!n / !n+1)``` | ⚀⚁⚃, ⚀⚁⚄, ⚀⚁⚅, ⚁⚂⚀ </br> ⚁⚂⚄, ⚁⚂⚅, ⚂⚃⚀, ⚂⚃⚁</br>⚂⚃⚅, ⚃⚄⚀, ⚃⚄⚁, ⚃⚄⚂, </br> ⚄⚅⚀, ⚄⚅⚁, ⚄⚅⚂, ⚄⚅⚃                                                                        | 16 | 29 |
-    | 🎁 | ```2x n & !n```             | ⚀⚀⚁, ⚀⚀⚂, ⚀⚀⚃, ⚀⚀⚄, ⚀⚀⚅</br>⚁⚁⚀, ⚁⚁⚂, ⚁⚁⚃, ⚁⚁⚄, ⚁⚁⚅</br>⚂⚂⚀, ⚂⚂⚁, ⚂⚂⚃, ⚂⚂⚄, ⚂⚂⚅</br>⚃⚃⚀, ⚃⚃⚁, ⚃⚃⚂, ⚃⚃⚄, ⚃⚃⚅</br>⚄⚄⚀, ⚄⚄⚁, ⚄⚄⚂, ⚄⚄⚃, ⚄⚄⚅</br>⚅⚅⚀, ⚅⚅⚁, ⚅⚅⚂, ⚅⚅⚃, ⚅⚅⚄ |  30 | 54 |
-    | 🦄 | ```n & n+2 & (n+4 / n+5)```</br> ```n & n+3 & n+5``` | ⚀⚂⚄, ⚀⚂⚅, ⚀⚃⚅, ⚁⚃⚅                                                                                                                                                  |  4  | 7  |
-    | ☢️ | ```3x n```                  | ⚀⚀⚀, ⚁⚁⚁, ⚂⚂⚂</br>⚃⚃⚃, ⚄⚄⚄, ⚅⚅⚅                                                                                                                                     |  6  | 11 |
+    | =  | 🎲∑                                                  | 🎲🎲🎲                                                                                                                                                              | #  | %  |
+    |----|------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|----|----|
+    | ⚰️ | ```n & n+1 & (!n / !n+1)```                          | ⚀⚁⚃, ⚀⚁⚄, ⚀⚁⚅, ⚁⚂⚀ </br> ⚁⚂⚄, ⚁⚂⚅, ⚂⚃⚀, ⚂⚃⚁</br>⚂⚃⚅, ⚃⚄⚀, ⚃⚄⚁, ⚃⚄⚂, </br> ⚄⚅⚀, ⚄⚅⚁, ⚄⚅⚂, ⚄⚅⚃                                                                        | 16 | 29 |
+    | 🎁 | ```2x n & !n```                                      | ⚀⚀⚁, ⚀⚀⚂, ⚀⚀⚃, ⚀⚀⚄, ⚀⚀⚅</br>⚁⚁⚀, ⚁⚁⚂, ⚁⚁⚃, ⚁⚁⚄, ⚁⚁⚅</br>⚂⚂⚀, ⚂⚂⚁, ⚂⚂⚃, ⚂⚂⚄, ⚂⚂⚅</br>⚃⚃⚀, ⚃⚃⚁, ⚃⚃⚂, ⚃⚃⚄, ⚃⚃⚅</br>⚄⚄⚀, ⚄⚄⚁, ⚄⚄⚂, ⚄⚄⚃, ⚄⚄⚅</br>⚅⚅⚀, ⚅⚅⚁, ⚅⚅⚂, ⚅⚅⚃, ⚅⚅⚄ | 30 | 54 |
+    | 🦄 | ```n & n+2 & (n+4 / n+5)```</br> ```n & n+3 & n+5``` | ⚀⚂⚄, ⚀⚂⚅, ⚀⚃⚅, ⚁⚃⚅                                                                                                                                                  | 4  | 7  |
+    | ☢️ | ```3x n```                                           | ⚀⚀⚀, ⚁⚁⚁, ⚂⚂⚂</br>⚃⚃⚃, ⚄⚄⚄, ⚅⚅⚅                                                                                                                                     | 6  | 11 |
 
-    | =  | 🎲∑                     | ☑  | ☒  | ☐  | 
-    |----|-----------------------------|-----|----|----|
-    | ⚰️ | ```n & n+1 & (!n / !n+1)``` | +2 | -2 | 0  | 
-    | 🎁 | ```2x n & !n```             | +1 | -1 | 0  | 
+    | =  | 🎲∑                                                  | ☑  | ☒  | ☐  |
+    |----|------------------------------------------------------|----|----|----|
+    | ⚰️ | ```n & n+1 & (!n / !n+1)```                          | +2 | -2 | 0  |
+    | 🎁 | ```2x n & !n```                                      | +1 | -1 | 0  |
     | 🦄 | ```n & n+2 & (n+4 / n+5)```</br> ```n & n+3 & n+5``` | +5 | -5 | -5 |
-    | ☢️ | ```3x n```                  | +3 | -3 | +3 |
+    | ☢️ | ```3x n```                                           | +3 | -3 | +3 |
 
     🏁
 
