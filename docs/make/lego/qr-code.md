@@ -49,9 +49,16 @@ The value "https://0xfab1.net" as QR-Code.
 
 I didn't find a cool way to automatically build the QR-Code in Bricklink Studio so I just opened the image of the QR-Codes shared above and rebuilt it using different flat tiles. Classic QR-Codes have black and white pixels so i went with that look and chose a white 50x50 baseplate and used different sized black tiles for the pixels.
 
-[![bricklink studio](_qrcodestudiobricklink.jpg)](_qrcode.mp4 "title")
+![bricklink studio](_qrcodestudiobricklink.jpg)
 
-The result ist [this io file](_qrcode.io "qrcode.io") and [this xml part-list file](_QRcode.xml "QRcode.xml").
+The result is:
+
+- this [qrcode.io](_qrcode.io "qrcode.io") Bricklink file
+- this [QR code.xml](_QRcode.xml "QRcode.xml") part-list file
+
+as well as this cool video:
+
+[![bricklink studio](_qrcode.webp)](_qrcode.mp4 "download me")
 
 ## Bricklink Order
 
@@ -84,6 +91,6 @@ Since i didn't re-do the build in Bricklink Studio based on 2x2 tiles I added a 
 All pieces finally arrived and putting it all together was easier and faster than expected.
 I hope i didn't mess up any pixel - well at least scanning the lego works ¯\_(ツ)_/¯
 
-![QR-Code for https://0xfab1.net](_lego-qrcode-final.jpg)
+This is the final result :)
 
-This is the final result. Turned out a little bigger than expected but i like it :)
+![QR-Code for https://0xfab1.net](_lego-qrcode-final.jpg)

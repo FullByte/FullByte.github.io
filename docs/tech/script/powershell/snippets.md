@@ -427,7 +427,7 @@ Get Binding Info
 - Check for Windows Updates: ```(New-Object -ComObject Microsoft.Update.AutoUpdate).DetectNow()```
 - Export PowerShell command history to a file: ```Get-History | Export-CSV $env:USERPROFILE\Desktop\CommandHistory.CSV```
 - Export all available powershell commands: ```Get-Command  | Export-CSV $env:USERPROFILE\Desktop\CommandsAvailable.CSV```
-- Get last 10 installations: ```get-wmiobject Win32_ReliabilityRecords -computername 127.0.0.1 | select-object -first 10 Message | format-list *```
+- Get last 10 installations: ```get-wmiobject Win32_ReliabilityRecords -computername 127.0.0.1 | Select-Object -first 10 Message | format-list *```
 - Last 10 security event log entries: ```Get-EventLog Security -Newest 10```
 - Get all help examples: ```Get-Command -CommandType cmdlet | % { (get-help $\_.name).examples }```
 - Get Last Server Boot Time: ```([wmi]"").ConvertToDateTime((Get-WmiObject -Class Win32_OperatingSystem).LastBootuptime)```
@@ -441,6 +441,7 @@ Get Binding Info
 - NTFS folder permissions for D:\Temp: ```Get-Acl "D:\Temp"```
 - NTFS folder permissions for all files below D:\Temp: ```Get-ChildItem "D:\Temp" -recurse | Get-Acl```
 - Get SHA1 hash sum of all files of the current folder: ```ForEach ($Item in Get-ChildItem $PWD -Include *.*) {Write-Host((Get-FileHash $Item.Name -Algorithm "SHA1").hash) $Item.Name }```
+- Find largest files in a given Folder (and subfolders): ```Get-ChildItem . -r | sort Length -desc | Select-Object fullname, length -f 20 | Format-Table```
 
 Add WebDAV to local path
 
