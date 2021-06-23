@@ -19,10 +19,10 @@ Für jede Endposition eines gespielten Prömpels ist eine Punktzahl definiert:
 
 | Punkte   | Prömpel | Beschreibung                                              |
 |----------|---------|-----------------------------------------------------------|
-| 0 Punkte |<img src="_proempeln1.png" alt="0 Punkte" width="120"/>| Prömpel liegt nicht auf                                   |
-| 1 Punkt  |<img src="_proempeln2.png" alt="1 Punkte" width="120"/>| Prömpel liegt mit der flachen Seite nach unten auf        |
-| 2 Punkte |<img src="_proempeln3.png" alt="2 Punkte" width="120"/>| Prömpel liegt schräg bzw. seitlich auf                    |
-| 3 Punkte |<img src="_proempeln4.png" alt="3 Punkte" width="120"/>| Prömpel liegt mit der großen, flachen Seite nach oben auf |
+| 0 Punkte |![](_proempeln1.png)| Prömpel liegt nicht auf                                   |
+| 1 Punkt  |![](_proempeln2.png)| Prömpel liegt mit der flachen Seite nach unten auf        |
+| 2 Punkte |![](_proempeln3.png)| Prömpel liegt schräg bzw. seitlich auf                    |
+| 3 Punkte |![](_proempeln4.png)| Prömpel liegt mit der großen, flachen Seite nach oben auf |
 
 Die Punkte werden erst ermittelt, nachdem alle Prömpel einer Runde gespielt wurden. Gleitet beispielsweise ein grenzwertiger 1-Punkt Prömpel unglücklicherweise vor Ende des Spielzugs ab, wird dieser als null Punkte vermerkt. Unklare Positionen zählen ebenfalls immer null Punkte. Die Punkte werden direkt nach dem Spielzug eines Spielers durch Addition der vorangegangenen Punkte notiert (inkl. Berücksichtigung möglicher Zusatzpunkte durch das Spielen von Spezialzügen).
 
