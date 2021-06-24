@@ -73,6 +73,7 @@ Games for two players only:
 Well known and rather special games that can be played with a group of people online:
 
 - Scrabble: <https://bluemoose.club/>
+- Civilization <https://www.freecivweb.org>
 - Deck of Cards: <https://deck.of.cards/>
 - Just poker: <https://justpoker.games/>
 - 7 Wonders Duel <https://sevenee.mattle.online>

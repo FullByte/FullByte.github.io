@@ -15,11 +15,6 @@
 - <https://www.help.prusa3d.com/en/guide/how-to-change-a-heaterblock-heatbreak-mini_122769>
 - <https://help.prusa3d.com/en/article/regular-maintenance-mini_133222>
 
-## Projects
-
-- <https://legolini.com/>
-- <https://www.thingiverse.com/thing:1996077>
-
 ## Templates
 
 - <https://3dp.rocks/lithophane/>

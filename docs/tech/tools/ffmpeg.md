@@ -269,7 +269,9 @@ Create a short GIF from a long video
 ffmpeg -i input.mp4 -vf "scale=vga,thumbnail=100,split[a][b],[b]palettegen=reserve_transparent=0:stats_mode=single[b];[a][b]paletteuse=new=1,settb=1/25,setpts=N" output.gif
 ```
 
-### Convert from/to webp
+### Convert to webp
+
+Webp is great for web content as all browsers can read the format directly. E.g. I use this for videos on the website.
 
 ```ffmpeg
 ffmpeg -i input.mp4 -vf "fps=30,scale=720:-1:flags=lanczos" -vcodec libwebp -lossless 0 -compression_level 6 -q:v 50 -loop 0 -preset picture -an -vsync 0 output.webp
