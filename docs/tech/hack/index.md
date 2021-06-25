@@ -4,11 +4,12 @@ Just a bunch of links. This page needs some sorting and a lot of additonal links
 
 ## Lists and Collections
 
-- <https://book.hacktricks.xyz/>
-- <https://github.com/hackerschoice/thc-tips-tricks-hacks-cheat-sheet>
-- High on coffee <https://highon.coffee/>
+- Hack tricks: <https://book.hacktricks.xyz/>
+- Hacks cheat sheet: <https://github.com/hackerschoice/thc-tips-tricks-hacks-cheat-sheet>
+- High on coffee: <https://highon.coffee/>
 - Privilege Escalation Collection: <https://gtfobins.github.io/>
-- <https://github.com/danielmiessler/SecLists>
+- SecLists: <https://github.com/danielmiessler/SecLists>
+- PENTESTING-BIBLE: <https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE>
 
 ### Payloads
 
@@ -42,35 +43,25 @@ Just a bunch of links. This page needs some sorting and a lot of additonal links
 - Cybercrime IP Feeds: <http://iplists.firehol.org/>
 - Hurricane Electric BGP Toolkit: <https://bgp.he.net/>
 
-### Generate Data Online
-
-- <https://www.fakenamegenerator.com/>
-- <https://random-data-api.com/>
-- <https://rawgit.com/Marak/faker.js/master/examples/browser/index.html>
-
 ## Code Helpers
 
-- <https://docs.pwntools.com>
-- <https://github.com/Marak/faker.js>
-- <https://github.com/ajalt/fuckitpy>
-
-### Data Interpreter
-
-- <https://github.com/bee-san/pyWhat>
-- <https://github.com/datamade/usaddress>
-- <https://github.com/datamade/probablepeople>
+- pwntools <https://docs.pwntools.com>
+- fuckitpy <https://github.com/ajalt/fuckitpy>
 - Character Encoding Detector: <https://github.com/chardet/chardet>
-- <https://github.com/vstinner/hachoir>
-- <https://github.com/capitalone/DataProfiler>
+- hachoir <https://github.com/vstinner/hachoir>
+- IntelOwl <https://github.com/intelowlproject/IntelOwl>
 
-## Various
+## Social Engineering
 
-- PEASS <https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite>
-- mimikatz <https://github.com/gentilkiwi/mimikatz>
-- sleuthkit <http://www.sleuthkit.org/>
-- Decodify <https://github.com/s0md3v/Decodify>
-- wfuzz <https://github.com/xmendez/wfuzz>
 - social-analyzer <https://github.com/qeeqbox/social-analyzer>
+- theHarvester <https://github.com/laramies/theHarvester>
+- DataProfiler <https://github.com/capitalone/DataProfiler>
+- usaddress <https://github.com/datamade/usaddress>
+- probable people<https://github.com/datamade/probablepeople>
+- pyWhat <https://github.com/bee-san/pyWhat>
+- fakenamegenerator <https://www.fakenamegenerator.com/>
+- random-data-api <https://random-data-api.com/>
+- faker.js <https://rawgit.com/Marak/faker.js/master/examples/browser/index.html>
 
 ### Nice to look at
 
