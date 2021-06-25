@@ -1,4 +1,4 @@
-# Hack Challenges
+# Hack CTF Overview
 
 A list of websites offering CTF, guided tutorials or challenges:
 
