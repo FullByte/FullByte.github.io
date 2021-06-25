@@ -4,6 +4,7 @@
 
 - Mecabricks <https://www.mecabricks.com/en/workshop>
 - Bricklink Studio <https://www.bricklink.com/v2/build/studio.page>
+- brickit <https://brickit.app/>
 
 ## Mindstorms
 

@@ -1,4 +1,14 @@
-# Get a TTY Shell
+# Bash
+
+## SUID bits
+
+SUID bits can be dangerous, some binaries such as passwd need to be run with elevated privileges (as its resetting your password on the system), however other custom files could that have the SUID bit can lead to all sorts of issues. To search a system for these type of files run the following:
+
+```shell
+find / -perm -u=s -type f 2>/dev/null
+```
+
+## Get a TTY Shell
 
 If you get shell without TTY, here are some commands you can try to fix this.
 

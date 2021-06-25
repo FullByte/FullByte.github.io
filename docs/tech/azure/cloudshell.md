@@ -9,6 +9,10 @@
 |Online|<https://shell.azure.com/> </br> <https://portal.azure.com/#cloudshell/>|
 |Cloud Shell Tools|<https://docs.microsoft.com/en-us/azure/cloud-shell/features> </br> <https://build5nines.com/azure-cloud-shell-tips-and-tricks/>|
 
+Further Links
+
+- persisting-shell-storage <https://docs.microsoft.com/en-us/azure/cloud-shell/persisting-shell-storage>
+
 ## Cloud Shell options
 
 There are three options to use the cloud shell: Docker, Windows Terminal and the Azure Web Interface:

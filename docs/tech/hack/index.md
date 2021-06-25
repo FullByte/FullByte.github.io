@@ -2,6 +2,19 @@
 
 Just a bunch of links. This page needs some sorting and a lot of additonal links :)
 
+## Lists and Collections
+
+- <https://book.hacktricks.xyz/>
+- <https://github.com/hackerschoice/thc-tips-tricks-hacks-cheat-sheet>
+- High on coffee <https://highon.coffee/>
+- Privilege Escalation Collection: <https://gtfobins.github.io/>
+- <https://github.com/danielmiessler/SecLists>
+
+### Payloads
+
+- All: <https://github.com/swisskyrepo/PayloadsAllTheThings>
+- SQL: <https://github.com/payloadbox/sql-injection-payload-list>
+
 ## Online Tools
 
 - Exploit Database: <https://www.exploit-db.com/>
@@ -9,60 +22,19 @@ Just a bunch of links. This page needs some sorting and a lot of additonal links
 - censys <https://censys.io>
 - <https://incoherency.co.uk/chess-steg/>
 - <https://bazaar.abuse.ch/>
-- <https://www.shodan.io/>
-- <https://urlcanary.com/>
+- shodan <https://www.shodan.io/>
+- url canary <https://urlcanary.com/>
 - <https://osintframework.com/>
 - <https://www.hackerstorm.co.uk/>
-
-### Generate Data Online
-
-- <https://www.fakenamegenerator.com/>
-- <https://random-data-api.com/>
-- <https://rawgit.com/Marak/faker.js/master/examples/browser/index.html>
-
-### Helper
-
-- <https://tineye.com/>
+- Reverse Image Search: <https://tineye.com/>
 - Zero Width Shortener: <https://zws.im/>
+- EFF Browser Check <https://coveryourtracks.eff.org/>
 
-### Payloads
+### Overviews
 
-- All: <https://github.com/swisskyrepo/PayloadsAllTheThings>
-- SQL: <https://github.com/payloadbox/sql-injection-payload-list>
-
-### Maps
-
-- <http://www.digitalattackmap.com/>
-- <https://cybermap.kaspersky.com/>
-- <https://app.any.run/>
-- <http://www.internettrafficreport.com/>
-- <https://www.thousandeyes.com/outages/>
-
-### Hack Labs
-
-- <https://ctftime.org/ctfs>
-- <https://cryptohack.org/>
-- <https://pentesterlab.com/exercises>
-- <https://book.hacktricks.xyz/>
-- <https://www.hackthebox.eu>
-- <https://www.freecodecamp.org/learn/information-security/python-for-penetration-testing/>
-- <http://flaws2.cloud/>
-- <http://flaws.cloud/>
-- <https://www.hacking-lab.com>
-- <https://tryhackme.com/>
-- <https://portswigger.net/web-security/learning-path>
-- <https://ctf101.org/>
-- <https://ctf.hacker101.com/>
-- <https://www.enigmagroup.org/>
-- <https://picoctf.org/>
-- <https://defendtheweb.net/?hackthis>
-- <https://www.hackthebox.eu/>
-- <https://capturetheflag.withgoogle.com/>
-- <https://lab.pentestit.ru/>
-- <https://thisislegal.com/>
-- <https://halls-of-valhalla.org/beta/challenges>
-- <http://www.try2hack.nl/>
-- <https://w3challs.com/>
+- owasp top 10: <https://owasp.org/www-project-top-ten/>
+- d3fend: a knowledge graph of cybersecurity countermeasures: <https://d3fend.mitre.org/>
+- MITRE ATT&CK: a knowledge base of adversary tactics: <https://attack.mitre.org/>
 
 ### Network Infos
 
@@ -70,22 +42,17 @@ Just a bunch of links. This page needs some sorting and a lot of additonal links
 - Cybercrime IP Feeds: <http://iplists.firehol.org/>
 - Hurricane Electric BGP Toolkit: <https://bgp.he.net/>
 
-### Test
+### Generate Data Online
 
-- EFF Browser Check <https://coveryourtracks.eff.org/>
+- <https://www.fakenamegenerator.com/>
+- <https://random-data-api.com/>
+- <https://rawgit.com/Marak/faker.js/master/examples/browser/index.html>
 
 ## Code Helpers
 
 - <https://docs.pwntools.com>
 - <https://github.com/Marak/faker.js>
 - <https://github.com/ajalt/fuckitpy>
-
-## Lists and Cheat Sheets
-
-- High on coffee <https://highon.coffee/>
-- Privilege Escalation Collection: <https://gtfobins.github.io/>
-- PayloadsAllTheThings <https://github.com/swisskyrepo/PayloadsAllTheThings>
-- <https://github.com/danielmiessler/SecLists>
 
 ### Data Interpreter
 
@@ -104,3 +71,13 @@ Just a bunch of links. This page needs some sorting and a lot of additonal links
 - Decodify <https://github.com/s0md3v/Decodify>
 - wfuzz <https://github.com/xmendez/wfuzz>
 - social-analyzer <https://github.com/qeeqbox/social-analyzer>
+
+### Nice to look at
+
+Maps
+
+- <http://www.digitalattackmap.com/>
+- <https://cybermap.kaspersky.com/>
+- <https://app.any.run/>
+- <http://www.internettrafficreport.com/>
+- <https://www.thousandeyes.com/outages/>
