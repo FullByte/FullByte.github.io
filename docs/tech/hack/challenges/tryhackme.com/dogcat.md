@@ -1,4 +1,4 @@
-# [DogCat](https://tryhackme.com/room/dogcat)
+# DogCat
 
 Notes from challenges I did @ <https://tryhackme.com>.
 

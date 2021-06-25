@@ -1,4 +1,4 @@
-# [Mr. Robot](https://tryhackme.com/room/mrrobot)
+# MrRobot
 
 Notes from challenges I did @ <https://tryhackme.com>.
 
