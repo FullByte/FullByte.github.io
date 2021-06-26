@@ -22,7 +22,7 @@ youtube-dl -f 22 -o 'path' '<youtube-link>'
 Download with details:
 
 ```shell
-youtube-dl -f 22 --write-description --write-info-json --write-annotations --write-sub --write-thumbnail '<youtube-link>'
+youtube-dl -f best --write-description --write-info-json --write-annotations --write-sub --write-thumbnail '<youtube-link>'
 ```
 
 ## Audio only
@@ -36,7 +36,7 @@ youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 '<youtube-lin
 Download a playlist:
 
 ```shell
-youtube-dl -f 22 -i --prefer-ffmpeg --yes-playlist '<playlist-link'
+youtube-dl -best 22 --yes-playlist '<playlist-link'
 ```
 
 Download a playlist with audio only:

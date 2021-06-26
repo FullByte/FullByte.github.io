@@ -307,7 +307,6 @@ Using the information from the intercepted post command of a failed login attemp
 hydra -l admin -P /usr/share/wordlists/rockyou.txt localhost -s 31340 http-post-form "/j_acegi_security_check:j_username=admin&j_password=^PASS^&from=&Submit=Sign+in:F=Invalid"
 ```
 
-
 ## Jenkins groovy reverse shell
 
 Luckily the password is simple and cracked rather fast using the rockyou.txt. Now that we are logged in as admin in the Jenkins portal let's run [this groovy reverse shell](https://gist.githubusercontent.com/frohoff/fed1ffaab9b9beeb1c76/raw/7cfa97c7dc65e2275abfb378101a505bfb754a95/revsh.groovy) in the jenkins script conosole and just changed "cmd" to "/bin/bash" as well as IP and port and started a new netcat session on port 7777
