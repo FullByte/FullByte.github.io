@@ -5,6 +5,7 @@
 ## Standards
 
 - security.txt: <https://securitytxt.org/>
+- web design: <http://bettermotherfuckingwebsite.com/>
 
 ## Templates
 

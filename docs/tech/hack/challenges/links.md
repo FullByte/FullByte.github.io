@@ -18,7 +18,6 @@ A list of websites offering CTF, guided tutorials or challenges:
 - <https://www.enigmagroup.org/>
 - <https://picoctf.org/>
 - <https://defendtheweb.net/?hackthis>
-- <https://www.hackthebox.eu/>
 - <https://capturetheflag.withgoogle.com/>
 - <https://lab.pentestit.ru/>
 - <https://thisislegal.com/>

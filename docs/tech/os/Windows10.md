@@ -65,9 +65,47 @@ Open a new Terminal Window with powershell 7, cmd and WSL (in my case ubuntu)
 wt -p "PowerShell 7" `; split-pane -p "cmd" `; split-pane -H wsl.exe
 ```
 
+#### Customized command prompt
+
+Install the required modules
+
+```powershell
+Install-Module posh-git -Scope CurrentUser
+Install-Module oh-my-posh -Scope CurrentUser
+```
+
+Check available themes:
+
+```powershell
+Get-PoshThemes
+```
+
+If this doesn't look good install a font that works e.g. [NerdFonts](https://www.nerdfonts.com/).
+
+Now update $PROFILE to load modules with every start
+
+```powershell
+echo "Import-Module posh-git") >> $PROFILE
+echo "Import-Module oh-my-posh" >> $PROFILE
+```
+
+Add the Theme you like as well e.g. paradox:
+
+```powershell
+echo "Set-PoshPrompt -Theme paradox" >> $PROFILE
+```
+
+#### settings.json
+
+Edit the "settings.json" and add under "profiles", "defaults" a line for a font you like e.g.:
+
+```json
+"fontFace": "MesloLGM NF"
+```
+
 ### WSL
 
-Set WSL version 2
+Set WSL version 2 e.g. for kali
 
 ```powershell
 (New-Object System.Net.WebClient).DownloadFile("https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi", "wsl_update_x64.msi") 
@@ -75,35 +113,13 @@ Start-Process msiexec.exe -Wait -ArgumentList '/I wsl_update_x64.msi /quiet'
 wsl --set-version kali-linux 2
 ```
 
-#### Ubuntu 20.04 LTS
-
-- Store: <https://www.microsoft.com/de-de/p/ubuntu-2004-lts/9n6svws3rx71?cid=msft_web_chart&activetab=pivot:overviewtab>
-
-#### Kali with GUI
-
-```bash
-sudo apt update
-sudo apt install -y kali-linux-large
-sudo apt install -y kali-win-kex
-kex start
-kex --esm --sound
-```
-
 ## Troubleshooting
 
 Fixing Windows 10 issues
 
-### Get Information
-
-**Get Win10 key**
-
-```powershell
-(Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
-```
-
 ### Windows 10 boots in Recovery Mode
 
-**Recovery Deaktivieren**
+#### Recovery Deaktivieren
 
 Problembehandlung -> Eingabeaufforderung -> command:
 
@@ -111,7 +127,7 @@ Problembehandlung -> Eingabeaufforderung -> command:
 bcdedit /set {current} recoveryenabled No
 ```
 
-**MBR reparieren**
+#### Fix MBR
 
 Problembehandlung -> Eingabeaufforderung -> commands:
 
@@ -128,7 +144,7 @@ Problembehandlung -> Eingabeaufforderung -> command:
 chkdsk /f /r
 ```
 
-**Windows 10 abgesicherten Modus**
+#### Windows 10 abgesicherten Modus
 
 Problembehandlung“, dann „Erweiterte Optionen“, dann „Starteinstellungen“, dann „Neu starten“
 Drücke auf „F5-Taste“, um Abgesicherten Modus mit Netzwerktreibern zu aktivieren.
@@ -172,9 +188,6 @@ Source: <https://docs.microsoft.com/en-us/windows/uwp/launch-resume/launch-setti
 | Permissions & History | ms-settings:cortana-permissions |
 | Searching Windows | ms-settings:cortana-windowssearch |
 | Talk to Cortana | ms-settings:cortana-language<br/>ms-settings:cortana<br/>ms-settings:cortana-talktocortana |
-
-> [!NOTE] 
-> This Settings section on desktop will be called Search when the PC is set to regions where Cortana is not currently available or Cortana has been disabled. Cortana-specific pages (Cortana across my devices, and Talk to Cortana) will not be listed in this case. 
 
 ### Devices
 

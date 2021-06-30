@@ -2,6 +2,10 @@
 
 [PICO-8](https://www.lexaloffle.com/) is a fantasy console for making, sharing and playing tiny games and other computer programs. It feels like a regular console, but runs on Windows / Mac / Linux. When you turn it on, the machine greets you with a commandline, a suite of cartridge creation tools, and an online cartridge browser called SPLORE.
 
+More Links:
+
+- Pico Hardware: <https://github.com/Neotron-Compute/Neotron-Pico>
+
 ## Games
 
 - Cap Ride: Drive a train, forever, through a dreamlike land <https://www.lexaloffle.com/bbs/?tid=41332> and <https://powersaurus.itch.io/cab-ride>
