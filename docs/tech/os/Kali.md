@@ -38,6 +38,12 @@ su 0xfab1
 whoami
 ```
 
+## Set german keyboard
+
+```shell
+setxkbmap -layout de
+```
+
 ### Get a GUI
 
 Run ```startx``` if you are on a local machine, in a console and have a GUI installed.
