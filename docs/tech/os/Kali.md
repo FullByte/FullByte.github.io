@@ -65,11 +65,32 @@ whoami
 setxkbmap -layout de
 ```
 
+## Enlargen Disk
+
+Use fdisk to enlargen ```/dev/sda``` (e.g. when providing more disk space to the VM)
+
+```shell
+df -h # check current space
+sudo fdisk /dev/sda # run fdisk to resize the partition
+-> u # change the units to sectors
+-> p # list the partitions details
+-> d # delete the partition
+-> n # create a new partition
+-> p # create a primary partition
+-> 1 # create first partition
+-> (default) # starting sector  
+-> (default) # ending sector
+-> w # Write the partition
+sudo resize2fs /dev/sda1
+sudo reboot
+df -h # verfiy space has increased
+```
+
 ### Get a GUI
 
 Run ```startx``` if you are on a local machine, in a console and have a GUI installed.
 
-### Kali in WSL2 with GUI
+#### Kali in WSL2 with GUI
 
 Set WSL version 2
 
@@ -101,7 +122,7 @@ Basic Win-KeX in seamless mode with sound:
 }
 ```
 
-### Enable RDP for Azure
+#### Enable RDP for Azure
 
 Make sure ssh (22) and rdp (3389) ports are open.
 
