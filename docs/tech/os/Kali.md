@@ -4,7 +4,14 @@ Install and config Kali
 
 ## Update
 
-Run this once on old Kali versions
+Set the password for root and switch to root
+
+```shell
+sudo passwd root
+su root
+```
+
+Run this once on old Kali versions and run this as root:
 
 ```shell
 sudo apt install gcc-8-base
@@ -12,10 +19,22 @@ sudo wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
 sudo dpkg --configure -a
 ```
 
+Switch back to your user e.g. fab1
+
+```shell
+su fab1
+```
+
 Run an update
 
 ```shell
 sudo apt update && sudo apt -y full-upgrade && sudo apt -y autoremove && sudo apt -y autoclean
+```
+
+Install more tools (alt install ```kali-linux-default``` or ```kali-linux-large```)
+
+```shell
+sudo apt-get install kali-linux-everything
 ```
 
 Options to get current version
@@ -28,6 +47,8 @@ hostnamectl
 ```
 
 ## Add new user
+
+Add new user e.g. 0xfab1 with full privileges:
 
 ```shell
 sudo useradd -m 0xfab1
@@ -93,7 +114,7 @@ az vm open-port --resource-group myResourceGroup --name myVM --port 3389
 Connect via SSH to Kali and run the following commands:
 
 ```shell
-sudo apt update && sudo apt dist-upgrade && sudo apt full-upgrade
+sudo apt update
 sudo apt-get -y install xfce4
 sudo apt-get -y install xrdp
 sudo systemctl enable xrdp

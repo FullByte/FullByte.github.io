@@ -54,6 +54,12 @@ Recover any file with the string "invoice" in the filename by using wildcard cha
 winfr C: E: /r /n *invoice* 
 ```
 
+### Snip & Sketch
+
+Windows + Shift + S
+
+- Store: <https://www.microsoft.com/en-us/p/snip-sketch/9mz95kl8mr0l?activetab=pivot:overviewtab>
+
 ### Windows Terminal
 
 - Store: <https://www.microsoft.com/de-de/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab>

@@ -33,6 +33,23 @@ docker run -it -v C:\Users\username\src:/src mcr.microsoft.com/azure-powershell:
 
 - <https://www.ezzeddinabdullah.com/posts/how-to-clean-text-data-at-the-command-line>
 
+### webtop
+
+Sources:
+
+- <https://github.com/linuxserver/docker-webtop>
+- <https://www.linuxserver.io/blog/2021-05-05-meet-webtops-a-linux-desktop-environment-in-your-browser>
+
+```shell
+docker run -d --name=webtop -e PUID=1000 -e PGID=1000 -e TZ=Europe/London -p 3000:3000 -v /home --shm-size="1gb" --restart unless-stopped ghcr.io/linuxserver/webtop
+```
+
+If you lose your password you can reset it by execing into the container as root:
+
+```shell
+docker exec -it webtop passwd abc
+```
+
 ### I2P
 
 Sources:

@@ -30,7 +30,7 @@ python -m SimpleHTTPServer 8008
 Python 3
 
 ```python
-python -m http.server
+python3 -m http.server 8009
 ```
 
 ## String manipulation
