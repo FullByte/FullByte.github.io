@@ -1,16 +1,14 @@
 # Raspberry Pi
 
-
-
 ## Basics
 
-**Raspberry Config**
+Raspberry Config
 
 ```shell
 raspi-config
 ```
 
-**Raspberry Config File**
+Raspberry Config File
 
 ```shell
 /boot/config.txt

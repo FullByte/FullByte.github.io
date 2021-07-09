@@ -2,7 +2,9 @@
 
 Install and config Kali
 
-## Update
+## Basic Config
+
+### Update OS
 
 Set the password for root and switch to root
 
@@ -86,6 +88,36 @@ sudo reboot
 df -h # verfiy space has increased
 ```
 
+### WiFi issues
+
+Check the NetworkManager.conf
+
+```shell
+sudo nano /etc/NetworkManager/NetworkManager.conf
+```
+
+If "managed=false" set this to true
+
+```shell
+[ifupdown]
+managed=true
+```
+
+now save the file and restart the network manager.
+
+```shell
+systemctl restart NetworkManager
+```
+
+### Monitor Mode
+
+Search for network devices in Monitor Mode and Access Points
+
+```shell
+iwconfig 2>/dev/null | grep "Mode\\:Monitor" | awk '{print $1}'
+iwconfig 2>&1 | sed -n -e 's/^.\*Access Point: //p'
+```
+
 ### Get a GUI
 
 Run ```startx``` if you are on a local machine, in a console and have a GUI installed.
@@ -152,39 +184,7 @@ apt-get remove gnome-core
 apt-get install lxde-core lxde kali-defaults kali-root-login desktop-base
 ```
 
-## Config
-
-### WiFi issues
-
-Check the NetworkManager.conf
-
-```shell
-sudo nano /etc/NetworkManager/NetworkManager.conf
-```
-
-If "managed=false" set this to true
-
-```shell
-[ifupdown]
-managed=true
-```
-
-now save the file and restart the network manager.
-
-```shell
-systemctl restart NetworkManager
-```
-
-### Monitor Mode
-
-Search for network devices in Monitor Mode and Access Points
-
-```shell
-iwconfig 2>/dev/null | grep "Mode\\:Monitor" | awk '{print $1}'
-iwconfig 2>&1 | sed -n -e 's/^.\*Access Point: //p'
-```
-
-## Tools
+## More Tools
 
 Tools ready to be installed
 
