@@ -4,11 +4,11 @@
 
 ## How to play
 
-Bet on your role outcome and receive or pay rocks. Beware of the unicorn. The first player with 0 rocks loses the round. All other players keep their rocks. Bet on the unicorn and play another rounds until all rocks are gone, a player has the agreed amount of rocks in their stash or see who has the most rocks after an agreed amount of rounds.
+Bet on your role outcome and receive or pay rocks. Beware of the 🦄. The first player with 0 rocks loses the round. All other players keep their rocks. Bet on the 🦄 and play another rounds until all rocks are gone, a player has the agreed amount of rocks in their stash or see who has the most rocks after an agreed amount of rounds.
 
 ### Setup
 
-Setup the game by providing 3 dice per players and at least 50 rocks. Ideally you have a bowl for the rocks and centrally placed place to roll the dice. Place the unicorn next to the central rock stash.
+Setup the game by providing 3 dice per players and at least 50 rocks. Ideally you have a bowl for the rocks and centrally placed place to roll the dice. Place the 🦄 next to the central rock stash.
 
 Agree on how many rounds shall be played to determine the winner.
 
@@ -27,58 +27,65 @@ There are 4 different predictable outcomes. Below is a list of all possible comb
 
 | Result         | Rule                                                 | Example    | Total combinations | distinct  combinations |
 |----------------|------------------------------------------------------|------------|--------------------|------------------------|
-| Unvermeidlich  | ```n & n+1 & (!n / !n+1)```                          | ⚀⚁⚃ or ⚂⚃⚀ | 97 (45%)           | 16 (29%)               |
-| Wunsch         | ```2x n & !n```                                      | ⚀⚀⚁        | 89 (41%)           | 30 (54%)               |
-| Einhorn        | ```n & n+2 & (n+4 / n+5)```</br> ```n & n+3 & n+5``` | ⚀⚂⚄ or ⚀⚃⚅ | 24 (11%)           | 4 (7%)                 |
-| Dreifaltigkeit | ```3x n```                                           | ⚁⚁⚁ or ⚅⚅⚅ | 6 (3%)             | 6 (11%)                |
+| ⚰️ Unvermeidlich  | ```n & n+1 & (!n / !n+1)```                          | ⚀⚁⚃ or ⚂⚃⚀ | 97 (45%)           | 16 (29%)               |
+| 🎁 Wunsch         | ```2x n & !n```                                      | ⚀⚀⚁        | 89 (41%)           | 30 (54%)               |
+| 🦄 Einhorn        | ```n & n+2 & (n+4 / n+5)```</br>```n & n+3 & n+5``` | ⚀⚂⚄ or ⚀⚃⚅ | 24 (11%)           | 4 (7%)                 |
+| ☢️ Dreifaltigkeit | ```3x n```                                           | ⚁⚁⚁ or ⚅⚅⚅ | 6 (3%)             | 6 (11%)                |
 
 For a list of all combinations and total possible combinations view the overview at the bottom.
 
-Based on the result of the players role attempt add or remove rocks (points) as follows:
+Based on the result of the players role attempt add or remove rocks as follows:
 
 | Result                | Correct | Wrong | Passive |
 |-----------------------|---------|-------|---------|
-| ⚰️ Das Unvermeidliche | +2      | -2    | -1      |
-| 🎁 Wunsch             | +1      | -1    | 0       |
-| 🦄 Einhorn            | +5      | -5    | -5      |
-| ☢️ Dreifaltigkeit     | +3      | -3    | +3      |
+| ⚰️ Das Unvermeidliche | +1      | -1    | -1      |
+| 🎁 Wunsch             | +1      | -1    | 0      |
+| 🦄 Einhorn            | +5      | -5    | -2      |
+| ☢️ Dreifaltigkeit     | +9      | +3    | +6      |
 
-In case the role result was a 🎁(Wunsch) go to that line in the table, then check if the prediction was correct/wrong or passive and add or remove rocks accordingly. It does not matter what prediction was made specificity. All that matters is if the prediction was correct, wrong or if no prediction was made.
+In case the role result was a 🎁 go to that line in the table, then check if the prediction was correct/wrong or passive and add or remove rocks accordingly. It does not matter what prediction was made specificity. All that matters is if the prediction was correct, wrong or if no prediction was made.
 
 ### 🦄 Einhorn
 
-Additionally to the rocks earned/payed, a player that rolls an 🦄(Einhorn) receives the Einhorn. If the player already has the Einhorn no rocks are earned/payed for rolling an Einhorn (nothing happens).
+Additionally to the rocks earned/payed, a player that rolls an 🦄 receives the 🦄 figure.
 
-Normally all players can only take rocks from the central stash and put rocks back to the central stash depending on their role and prediction outcome. A player with the Einhorn can give and take rocks either from the central stash or from any other player. Of course a player with the Einhorn still needs to pay for mistakes from the own stash (but can give the rocks to some other player instead of putting it in the central stash if desired).
+Once a player receives the 🦄 figure:
 
-The 🦄(Einhorn) is passed once another player roles an 🦄(Einhorn).
+- When rolling an 🦄 no rocks are earned/payed (nothing happens).
+- A player with the 🦄 can give and take (depending on the roll attempt outcome) rocks either from the central stash or from any other player.
+- The 🦄 is passed once another player roles an 🦄. The player gaining the 🦄 also receives one stone from the player loosing the 🦄.
 
-Once the round ends the Einhorn is placed in the middle of the dice rolling area and all players bet with their personal rock stash (if available) to receive the Einhorn in the next round. It is recommended to not show how much you are bidding on the Einhorn. The Einhorn goes to the highest bidder but all bidders loose all the rocks used to bet for the Einhorn and place those rocks in the central stash. In case there is a tie all highest bidders role their 3 die and the player with the highest total sum receives the Einhorn. This step is repeated in case there is another tie. The player with the unicorn starts the next round.
+Once the round ends the 🦄 is placed in the middle of the dice rolling area and all players bet with their personal rock stash (if available) to receive the 🦄 in the next round. It is recommended to not show how much you are bidding on the 🦄. You may bid zero rocks if you want. The 🦄 goes to the highest bidder but all bidders loose all the rocks used to bet for the 🦄 and place those rocks in the central stash. In case there is a tie all highest bidders role their 3 die and the player with the highest total sum receives the 🦄. If all bid zero, all must role the die. This step is repeated in case there is another tie. The player with the 🦄 starts the next round.
 
 ### How to win
 
-The first player with 0 rocks loses the round. The game round ends at this point and all players but their remaining rocks in their rock stash. All players then bet on the unicorn und start another rounds. For the new round all players receive 6 rocks from the main stash. Players with a personal rock stash may choose to add rocks to their current game stash at this time only.
+The first player with no rocks left loses the round. The round ends at this point and all players put their remaining rocks in their rock stash.
 
-## Example game (todo)
+All players then bet on the 🦄 und begin another round. (see above)
 
-- If it is your turn, you bet on rolling 🎁(Wunsch) and you rolled 1,2,5 which is ⚰️(Das Unvermeidliche). Therefore, you lose 2 rocks. If this is your first round of the game, then since you started with 6 rocks and now have 4 rocks. Now it is the next players turn.
-- The next player choses to not predict anything and roll a 2,2,2 which is ☢️(Dreifaltigkeit). In this case the player gains 3 points and it is the next players turn.
-- The third player predicts an 🦄(Einhorn) and roll a 1,3,6 and gains 5 points.
+For the new round all players receive 6 rocks from the main stash. Players with a personal rock stash may choose to add rocks to their current game stash at this time only.
 
-This is the score board of an example session with 4 games and 3 players:
+## Example game
 
-| Game | Player 1</br>Points -> Score | Player 2</br>Points -> Score | Player 3</br>Points -> Score |
-|------|------------------------------|------------------------------|------------------------------|
-| 1    | 11 -> 11+0 = 11              | 0 -> 0+0 = 0                 | 2 -> 2+0 = 2                 |
-| 2    | 5 -> 5+11 = 16               | 6 -> 6+0 = 6                 | 0 -> 0+2 = 2                 |
-| 3    | 0 -> 0+16 = 16               | 8 -> 8+6 = 14                | 16 -> 16+2 = 18              |
-| 4    | 3 -> 3+16 = 19               | 2 -> 2+14 = 16               | 0 -> 0+18 = 18               |
+The following is an example game play with three players:
 
-Player 1 takes the lead in round one with 11 points and can continue the lead in round 2.
+All players agree to play 5 rounds.
 
-Player 3 gets 16 points in round three adding to 18 points in total and taking the lead.
+- Player 1 starts the game and bets on rolling a 🎁. Player 1 then proceeds to roll 1,2,5 which is ⚰️ and therefore loses 1 rock. Player 1 started with 6 rocks and now has 5. Now it is the next players turn.
+- The 2nd player predicts an 🦄 and rolls a 1,3,6 and therefore gains 5 rocks.
+- The 3rd player choses to not predict anything and rolls 2,2,2 which is ☢️. In this case the player gains 6 rocks.
+- It is player 1 turn again and predicts ⚰️, then rolls 3,1,4 which is ⚰️. Player 1 takes one rock from the central stash.
+- Player 2 now has the 🦄 and predicts ⚰️ as well and rolls 4,5,6 which is ⚰️. Player 2 takes the rock from player 1 instead of the central stash.
 
-Player 1 wins the game at the end of round 4 with a total of 19 points.
+The game goes on like this for a while until in this case player 2 looses the first round. At this point player 1 has 6 rocks and player 3 has 4 rocks.
+
+The 🦄 is now open for auction. Since this is the 1st round and player 2 lost the game there are no rocks to bet with for this player. Player 1 bets 3 rocks and player 3 bets 1 rock. Both players put the rocks they bet in the center stash and player 1 receives the 🦄.
+
+All players now receive 6 new rocks. Player 1 decides to add 2 rocks from the own stash to the current player stash. Player 1 now has 1 rock remaining in the stash and 8 rocks to play with for the round as well as the 🦄 figure. Both other players do not add rocks and start with 6 rocks.
+
+Player 1 with the 🦄 starts the new round and the game continues.
+
+At the end of round 5 player 1 has 20 rocks, player 2 has 15 rocks and player 3 has 22 rocks. Player 3 wins the game.
 
 ### Extras
 
@@ -121,10 +128,10 @@ Have a look at the math part to see all possible combinations and possibly the r
 
     | Result         | total    | distinct |
     |----------------|----------|----------|
-    | Das Unvermeidlich  | 97 (45%) | 16 (29%) |
-    | Wunsch         | 89 (41%) | 30 (54%) |
-    | Einhorn        | 24 (11%) | 4 (7%)   |
-    | Dreifaltigkeit | 6 (3%)   | 6 (11%)  |
+    | ⚰️ Das Unvermeidlich  | 97 (45%) | 16 (29%) |
+    | 🎁 Wunsch         | 89 (41%) | 30 (54%) |
+    | 🦄 Einhorn        | 24 (11%) | 4 (7%)   |
+    | ☢️ Dreifaltigkeit | 6 (3%)   | 6 (11%)  |
 
     The result shows that Das Unvermeidliche has less distinct variations than Wunsch but more possible combinations.
 

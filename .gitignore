@@ -1,5 +1,6 @@
 site/
 _temp/
+.vs/
 debug.log
 build.ps1
 wordcount.lua
