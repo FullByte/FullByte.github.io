@@ -45,7 +45,7 @@ Based on the result of the players role attempt add or remove rocks as follows:
 
 In case the role result was a 🎁 go to that line in the table, then check if the prediction was correct/wrong or passive and add or remove rocks accordingly. It does not matter what prediction was made specificity. All that matters is if the prediction was correct, wrong or if no prediction was made.
 
-### 🦄 Einhorn
+### Einhorn
 
 Additionally to the rocks earned/payed, a player that rolls an 🦄 receives the 🦄 figure.
 
