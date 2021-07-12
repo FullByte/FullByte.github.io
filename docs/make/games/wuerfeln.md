@@ -89,7 +89,7 @@ At the end of round 5 player 1 has 20 rocks, player 2 has 15 rocks and player 3 
 
 ## Extras
 
-Have a look at the math part to see all possible combinations and possibly the rules without words are interesting as well :)
+This is not needed to understand or play the game. If you are interested have a look at the math part or see all possible dice combinations :)
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
