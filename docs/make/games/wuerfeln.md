@@ -1,10 +1,16 @@
 # Würfeln
 
-```Würfeln ist Einstellungssache``` is a game of luck and high precision dice rolling. Tweak statistics to your advantage with the right mindset. Is your dice roll determination stronger than the one of your opponents? Challenge up to five opponents, bet on your roll attempts and show that you have mastered the art of rolling the die.
+```Würfeln ist Einstellungssache``` is a game of luck and high precision dice rolling. Tweak statistics to your advantage with the right mindset. Is your dice roll determination stronger than the one of your opponents? Challenge up to five opponents, bet on your roll attempts and show that you have mastered the art of rolling the dice.
 
 ## How to play
 
-Bet on your role outcome and receive or pay rocks. Beware of the 🦄. The first player with 0 rocks loses the round. All other players keep their rocks. Bet on the 🦄 and play another rounds until all rocks are gone, a player has the agreed amount of rocks in their stash or see who has the most rocks after an agreed amount of rounds.
+Bet on your role outcome and receive or pay rocks. Beware of the 🦄. The first player with 0 rocks loses the round. All other players keep their rocks. Bet on the 🦄 and play another round.
+
+Winner is whoever has the most rocks either:
+
+A) once all rocks are gone (game ends at this point)
+B) a player has the agreed amount of rocks in their stash
+C) after an agreed amount of rounds
 
 ### Setup
 
@@ -17,24 +23,24 @@ To start, each player gets
 - 3 standard D6 (numbers 1-6) dice
 - 6 rocks
 
-Each player rolls all three die once and the player with highest total number starts the game. If there is a draw those players role again until a starting player is determined.
+Each player rolls all three dice once and the player with highest total number starts the game. If there is a draw those players role again until a starting player is determined.
 
 ### Play
 
-The current player decides to either predict the upcoming roll or not (passive roll) - then proceeds to roll all three die once.
+The current player decides to either predict the upcoming roll attempt or to remain silent and do a passive roll; then proceeds to roll all three dice once in the dice tray.
 
-There are 4 different predictable outcomes. Below is a list of all possible combinations and their probability:
+There are 4 predictable outcomes. Below is a list of all possible results and their probability (percent of "total combinations"):
 
-| Result            | Rule / Example                                                                  | Total Combinations | Distinct Combinations |
-|-------------------|---------------------------------------------------------------------------------|--------------------|-----------------------|
-| ⚰️ Unvermeidlich  | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 97 (45%)           | 16 (29%)              |
-| 🎁 Wunsch         | ```2x n & !n``` </br> Example: ⚀⚀⚁                                              | 89 (41%)           | 30 (54%)              |
-| 🦄 Einhorn        | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 (11%)           | 4 (7%)                |
-| ☢️ Dreifaltigkeit | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 (3%)             | 6 (11%)               |
+| Result                | Rule / Example                                                                  | Total Combinations | Distinct Combinations |
+|-----------------------|---------------------------------------------------------------------------------|--------------------|-----------------------|
+| ⚰️ Das Unvermeidliche | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 97 (45%)           | 16 (29%)              |
+| 🎁 Wunsch             | ```2x n & !n``` </br> Example: ⚀⚀⚁                                              | 89 (41%)           | 30 (54%)              |
+| 🦄 Einhorn            | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 (11%)           | 4 (7%)                |
+| ☢️ Dreifaltigkeit     | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 (3%)             | 6 (11%)               |
 
-For a list of all combinations and total possible combinations view the overview at the bottom.
+Memorize the Rule and understand the example for each result group. Each Result uses a symbol and name to represent the dice result. For a list of all combinations and total possible combinations view the overview at the bottom.
 
-Based on the result of the players role attempt add or remove rocks as follows:
+Based on the result of the players role attempt and the prediction made, add or remove rocks as follows:
 
 | Result                | Correct | Wrong | Passive |
 |-----------------------|---------|-------|---------|
@@ -43,25 +49,33 @@ Based on the result of the players role attempt add or remove rocks as follows:
 | 🦄 Einhorn            | +5      | -5    | -2      |
 | ☢️ Dreifaltigkeit     | +9      | +3    | +6      |
 
-In case the role result was a 🎁 go to that line in the table, then check if the prediction was correct/wrong or passive and add or remove rocks accordingly. It does not matter what prediction was made specificity. All that matters is if the prediction was correct, wrong or if no prediction was made.
+E.g. in case the role result was a 🎁 (Wunsch) go to that line in the table, then check if the prediction was correct, wrong or passive and add or remove rocks accordingly.
+
+It does not matter what prediction was made specificity. All that matters is if the prediction was correct, wrong or if no prediction was made.
+
+The rocks added or removed are determined by the result rolled, not by what was predicted. E.g. if a 🎁 (Wunsch) is rolled, it doesn't matter if 🦄 (Einhorn) or ☢️ (Dreifaltig) were predicted, both are wrong and the player must return 1 stone to the central stash.
+
+Once the stones are taken or given the player takes back the rolled dice from the dice tray and the turn ends.
 
 ### Einhorn
 
-Additionally to the rocks earned/payed, a player that rolls an 🦄 receives the 🦄 figure.
+Additionally to the rocks earned/payed, if a player that rolls an 🦄 receives the 🦄 figure.
 
-Once a player receives the 🦄 figure:
+The 🦄 figure has the follow effects for the owner:
 
 - When rolling an 🦄 no rocks are earned/payed (nothing happens).
-- A player with the 🦄 can give and take (depending on the roll attempt outcome) rocks either from the central stash or from any other player.
-- The 🦄 is passed once another player roles an 🦄. The player gaining the 🦄 also receives one stone from the player loosing the 🦄.
+- The player can give and take (depending on the roll attempt outcome) rocks either from the central stash or from any other player.
+- The 🦄 is passed once another player roles an 🦄. The player gaining the 🦄 additionally receives one stone from the player loosing the 🦄.
 
-Once the round ends the 🦄 is placed in the middle of the dice rolling area and all players bet with their personal rock stash (if available) to receive the 🦄 in the next round. It is recommended to not show how much you are bidding on the 🦄. You may bid zero rocks if you want. The 🦄 goes to the highest bidder but all bidders loose all the rocks used to bet for the 🦄 and place those rocks in the central stash. In case there is a tie all highest bidders role their 3 die and the player with the highest total sum receives the 🦄. If all bid zero, all must role the die. This step is repeated in case there is another tie. The player with the 🦄 starts the next round.
+Once the round ends the 🦄 is placed in the middle of the dice tray and all players bet with their personal rock stash (if available) to receive the 🦄 in the next round. It is recommended to not show how much you are bidding on the 🦄 to get players to bid more then they needed. You may bid zero rocks if you want. The 🦄 goes to the highest bidder but all bidders pay their rocks and place them in the central stash. In case there is a tie all highest bidders role their 3 dice and the player with the highest total sum receives the 🦄 figure. If all bid zero, all must role the die. This step is repeated in case there is another tie.
+
+The player with the 🦄 starts the next round.
 
 ### How to win
 
 The first player with no rocks left loses the round. The round ends at this point and all players put their remaining rocks in their rock stash.
 
-All players then bet on the 🦄 und begin another round. (see above)
+All players then bet on the 🦄 with their rocks stash and begin another round.
 
 For the new round all players receive 6 rocks from the main stash. Players with a personal rock stash may choose to add rocks to their current game stash at this time only.
 
