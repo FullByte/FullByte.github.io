@@ -67,7 +67,7 @@ The 🦄 figure has the follow effects for the owner:
 - The player can give and take (depending on the roll attempt outcome) rocks either from the central stash or from any other player.
 - The 🦄 is passed once another player roles an 🦄. The player gaining the 🦄 additionally receives one stone from the player loosing the 🦄.
 
-Once the round ends the 🦄 is placed in the middle of the dice tray and all players bet with their personal rock stash (if available) to receive the 🦄 in the next round. It is recommended to not show how much you are bidding on the 🦄 to get players to bid more then they needed. You may bid zero rocks if you want. The 🦄 goes to the highest bidder but all bidders pay their rocks and place them in the central stash. In case there is a tie all highest bidders role their 3 dice and the player with the highest total sum receives the 🦄 figure. If all bid zero, all must role the die. This step is repeated in case there is another tie.
+Once the round ends the 🦄 is placed in the middle of the dice tray and all players bet with their personal rock stash (if available) to receive the 🦄 in the next round. It is recommended to not show how much you are bidding on the 🦄 to get players to bid more then they needed. You may bid zero rocks if you want. The 🦄 goes to the highest bidder but all bidders pay their rocks and place them in the central stash. In case there is a tie all highest bidders role their 3 dice and the player with the highest total sum receives the 🦄 figure. If all bid zero, all must role their dice. This step is repeated in case there is another tie.
 
 The player with the 🦄 starts the next round.
 
@@ -138,7 +138,7 @@ This is not needed to understand or play the game. If you are interested have a 
 
     However, this is not the probability of each combination since the distinct combinations are not evenly distributed over the 216 possible outcomes.
 
-    I do not know how to calculate this so I created a list of all possible outcomes. To view the full list expand "Full list of possible die combinations". The outcome is as follows:
+    I do not know how to calculate this so I created a list of all possible outcomes. To view the full list expand "Full list of possible dice combinations". The outcome is as follows:
 
     | Result               | total    | distinct |
     |----------------------|----------|----------|
@@ -149,8 +149,8 @@ This is not needed to understand or play the game. If you are interested have a 
 
     The result shows that Das Unvermeidliche has less distinct variations than Wunsch but more possible combinations.
 
-??? info "Full list of possible die combinations"
-    This is a full list of all possible die throws in this game and the result based on the described rules above.
+??? info "Full list of possible dice combinations"
+    This is a full list of all possible roll combinations in this game and the result based on the described rules above.
 
     | D1 | D2 | D3 | Result             |
     |----|----|----|--------------------|
