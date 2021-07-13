@@ -8,9 +8,9 @@ Bet on your role outcome and receive or pay rocks. Beware of the 🦄. The first
 
 Winner is whoever has the most rocks either:
 
-A) once all rocks are gone (game ends at this point)
-B) a player has the agreed amount of rocks in their stash
-C) after an agreed amount of rounds
+- once all rocks are gone (game ends at this point)
+- a player has the agreed amount of rocks in their stash
+- after an agreed amount of rounds
 
 ### Setup
 

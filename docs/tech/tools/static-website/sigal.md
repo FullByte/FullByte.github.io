@@ -1,0 +1,7 @@
+# Signal
+
+```bash
+sigal build
+```
+
+
