@@ -26,7 +26,7 @@ The current player decides to either predict the upcoming roll or not (passive r
 There are 4 different predictable outcomes. Below is a list of all possible combinations and their probability:
 
 | Result         | Rule / Example    | Total Combinations | Distinct Combinations |
-|----------------|------------------------------------------------------|------------|--------------------|------------------------|
+|----------------|-------------------|--------------------|-----------------------|
 | ⚰️ Unvermeidlich  | ```n & n+1 & (!n / !n+1)```  </br>Example: ⚀⚁⚃ or ⚂⚃⚀ | 97 (45%)           | 16 (29%)               |
 | 🎁 Wunsch         | ```2x n & !n```   </br>Example: ⚀⚀⚁        | 89 (41%)           | 30 (54%)               |
 | 🦄 Einhorn        | ```n & n+2 & (n+4 / n+5)```</br>```n & n+3 & n+5``` </br>Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 (11%)           | 4 (7%)                 |
