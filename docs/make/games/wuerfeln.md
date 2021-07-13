@@ -8,7 +8,7 @@ Bet on your role outcome and receive or pay rocks. Beware of the 🦄. The first
 
 ### Setup
 
-Setup the game by providing 3 dice per players and at least 50 rocks. Ideally you have a bowl for the rocks and centrally placed place to roll the dice. Place the 🦄 next to the central rock stash.
+Setup the game by providing 3 dice per player and at least 50 rocks. Ideally you have a bowl for the rocks and centrally placed place to roll the dice. Place the 🦄 next to the central rock stash.
 
 Agree on how many rounds shall be played to determine the winner.
 
@@ -25,12 +25,12 @@ The current player decides to either predict the upcoming roll or not (passive r
 
 There are 4 different predictable outcomes. Below is a list of all possible combinations and their probability:
 
-| Result         | Rule                                                 | Example    | Total combinations | distinct  combinations |
+| Result         | Rule / Example    | Total combinations | distinct  combinations |
 |----------------|------------------------------------------------------|------------|--------------------|------------------------|
-| ⚰️ Unvermeidlich  | ```n & n+1 & (!n / !n+1)```                          | ⚀⚁⚃ or ⚂⚃⚀ | 97 (45%)           | 16 (29%)               |
-| 🎁 Wunsch         | ```2x n & !n```                                      | ⚀⚀⚁        | 89 (41%)           | 30 (54%)               |
-| 🦄 Einhorn        | ```n & n+2 & (n+4 / n+5)```</br>```n & n+3 & n+5``` | ⚀⚂⚄ or ⚀⚃⚅ | 24 (11%)           | 4 (7%)                 |
-| ☢️ Dreifaltigkeit | ```3x n```                                           | ⚁⚁⚁ or ⚅⚅⚅ | 6 (3%)             | 6 (11%)                |
+| ⚰️ Unvermeidlich  | ```n & n+1 & (!n / !n+1)```  </br>Example: ⚀⚁⚃ or ⚂⚃⚀ | 97 (45%)           | 16 (29%)               |
+| 🎁 Wunsch         | ```2x n & !n```   </br>Example: ⚀⚀⚁        | 89 (41%)           | 30 (54%)               |
+| 🦄 Einhorn        | ```n & n+2 & (n+4 / n+5)```</br>```n & n+3 & n+5``` </br>Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 (11%)           | 4 (7%)                 |
+| ☢️ Dreifaltigkeit | ```3x n```  </br>Example: ⚁⚁⚁ or ⚅⚅⚅ | 6 (3%)             | 6 (11%)                |
 
 For a list of all combinations and total possible combinations view the overview at the bottom.
 
@@ -39,7 +39,7 @@ Based on the result of the players role attempt add or remove rocks as follows:
 | Result                | Correct | Wrong | Passive |
 |-----------------------|---------|-------|---------|
 | ⚰️ Das Unvermeidliche | +1      | -1    | -1      |
-| 🎁 Wunsch             | +1      | -1    | 0      |
+| 🎁 Wunsch             | +1      | -1    | 0       |
 | 🦄 Einhorn            | +5      | -5    | -2      |
 | ☢️ Dreifaltigkeit     | +9      | +3    | +6      |
 
@@ -126,12 +126,12 @@ This is not needed to understand or play the game. If you are interested have a 
 
     I do not know how to calculate this so I created a list of all possible outcomes. To view the full list expand "Full list of possible die combinations". The outcome is as follows:
 
-    | Result         | total    | distinct |
-    |----------------|----------|----------|
-    | ⚰️ Das Unvermeidlich  | 97 (45%) | 16 (29%) |
-    | 🎁 Wunsch         | 89 (41%) | 30 (54%) |
-    | 🦄 Einhorn        | 24 (11%) | 4 (7%)   |
-    | ☢️ Dreifaltigkeit | 6 (3%)   | 6 (11%)  |
+    | Result               | total    | distinct |
+    |----------------------|----------|----------|
+    | ⚰️ Das Unvermeidlich | 97 (45%) | 16 (29%) |
+    | 🎁 Wunsch            | 89 (41%) | 30 (54%) |
+    | 🦄 Einhorn           | 24 (11%) | 4 (7%)   |
+    | ☢️ Dreifaltigkeit    | 6 (3%)   | 6 (11%)  |
 
     The result shows that Das Unvermeidliche has less distinct variations than Wunsch but more possible combinations.
 
