@@ -1,9 +1,5 @@
 # Würfeln
 
-```Würfeln ist Einstellungssache``` is a game of luck and high precision dice rolling. Tweak statistics to your advantage with the right mindset. Is your dice roll determination stronger than the one of your opponents? Challenge up to five opponents, bet on your roll attempts and show that you have mastered the art of rolling the dice.
-
-## How to play
-
 Bet on your role outcome and receive or pay rocks. Beware of the 🦄. The first player with 0 rocks loses the round. All other players keep their rocks. Bet on the 🦄 and play another round.
 
 Winner is whoever has the most rocks either:
@@ -12,7 +8,7 @@ Winner is whoever has the most rocks either:
 - a player has the agreed amount of rocks in their stash
 - after an agreed amount of rounds
 
-### Setup
+## Setup
 
 Setup the game by providing 3 dice per player and at least 50 rocks. Ideally you have a bowl for the rocks and centrally placed place to roll the dice. Place the 🦄 next to the central rock stash.
 
@@ -25,7 +21,7 @@ To start, each player gets
 
 Each player rolls all three dice once and the player with highest total number starts the game. If there is a draw those players role again until a starting player is determined.
 
-### Play
+## Play
 
 The current player decides to either predict the upcoming roll attempt or to remain silent and do a passive roll; then proceeds to roll all three dice once in the dice tray.
 
@@ -57,7 +53,7 @@ The rocks added or removed are determined by the result rolled, not by what was 
 
 Once the stones are taken or given the player takes back the rolled dice from the dice tray and the turn ends.
 
-### Einhorn
+## Einhorn
 
 Additionally to the rocks earned/payed, if a player that rolls an 🦄 receives the 🦄 figure.
 
@@ -71,7 +67,7 @@ Once the round ends the 🦄 is placed in the middle of the dice tray and all pl
 
 The player with the 🦄 starts the next round.
 
-### How to win
+## How to win
 
 The first player with no rocks left loses the round. The round ends at this point and all players put their remaining rocks in their rock stash.
 
@@ -79,31 +75,31 @@ All players then bet on the 🦄 with their rocks stash and begin another round.
 
 For the new round all players receive 6 rocks from the main stash. Players with a personal rock stash may choose to add rocks to their current game stash at this time only.
 
-## Example game
-
-The following is an example game play with three players:
-
-All players agree to play 5 rounds.
-
-- Player 1 starts the game and bets on rolling a 🎁. Player 1 then proceeds to roll 1,2,5 which is ⚰️ and therefore loses 1 rock. Player 1 started with 6 rocks and now has 5. Now it is the next players turn.
-- The 2nd player predicts an 🦄 and rolls a 1,3,6 and therefore gains 5 rocks.
-- The 3rd player choses to not predict anything and rolls 2,2,2 which is ☢️. In this case the player gains 6 rocks.
-- It is player 1 turn again and predicts ⚰️, then rolls 3,1,4 which is ⚰️. Player 1 takes one rock from the central stash.
-- Player 2 now has the 🦄 and predicts ⚰️ as well and rolls 4,5,6 which is ⚰️. Player 2 takes the rock from player 1 instead of the central stash.
-
-The game goes on like this for a while until in this case player 2 looses the first round. At this point player 1 has 6 rocks and player 3 has 4 rocks.
-
-The 🦄 is now open for auction. Since this is the 1st round and player 2 lost the game there are no rocks to bet with for this player. Player 1 bets 3 rocks and player 3 bets 1 rock. Both players put the rocks they bet in the center stash and player 1 receives the 🦄.
-
-All players now receive 6 new rocks. Player 1 decides to add 2 rocks from the own stash to the current player stash. Player 1 now has 1 rock remaining in the stash and 8 rocks to play with for the round as well as the 🦄 figure. Both other players do not add rocks and start with 6 rocks.
-
-Player 1 with the 🦄 starts the new round and the game continues.
-
-At the end of round 5 player 1 has 20 rocks, player 2 has 15 rocks and player 3 has 22 rocks. Player 3 wins the game.
-
 ## Extras
 
 This is not needed to understand or play the game. If you are interested have a look at the math part or see all possible dice combinations :)
+
+??? game "Example game"
+
+    The following is an example game play with three players:
+
+    All players agree to play 5 rounds.
+
+    - Player 1 starts the game and bets on rolling a 🎁. Player 1 then proceeds to roll 1,2,5 which is ⚰️ and therefore loses 1 rock. Player 1 started with 6 rocks and now has 5. Now it is the next players turn.
+    - The 2nd player predicts an 🦄 and rolls a 1,3,6 and therefore gains 5 rocks.
+    - The 3rd player choses to not predict anything and rolls 2,2,2 which is ☢️. In this case the player gains 6 rocks.
+    - It is player 1 turn again and predicts ⚰️, then rolls 3,1,4 which is ⚰️. Player 1 takes one rock from the central stash.
+    - Player 2 now has the 🦄 and predicts ⚰️ as well and rolls 4,5,6 which is ⚰️. Player 2 takes the rock from player 1 instead of the central stash.
+
+    The game goes on like this for a while until in this case player 2 looses the first round. At this point player 1 has 6 rocks and player 3 has 4 rocks.
+
+    The 🦄 is now open for auction. Since this is the 1st round and player 2 lost the game there are no rocks to bet with for this player. Player 1 bets 3 rocks and player 3 bets 1 rock. Both players put the rocks they bet in the center stash and player 1 receives the 🦄.
+
+    All players now receive 6 new rocks. Player 1 decides to add 2 rocks from the own stash to the current player stash. Player 1 now has 1 rock remaining in the stash and 8 rocks to play with for the round as well as the 🦄 figure. Both other players do not add rocks and start with 6 rocks.
+
+    Player 1 with the 🦄 starts the new round and the game continues.
+
+    At the end of round 5 player 1 has 20 rocks, player 2 has 15 rocks and player 3 has 22 rocks. Player 3 wins the game.
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
