@@ -1,6 +1,6 @@
 # Würfeln
 
-Bet on your role outcome and receive or pay rocks. Beware of the 🦄. The first player with 0 rocks loses the round. All other players keep their rocks. Bet on the 🦄 and play another round.
+Bet on your roll outcome and receive or pay rocks. Beware of the 🦄. The first player with 0 rocks loses the round. All other players keep their rocks. Bet on the 🦄 and play another round.
 
 Winner is whoever has the most rocks either:
 
@@ -19,7 +19,7 @@ To start, each player gets
 - 3 standard D6 (numbers 1-6) dice
 - 6 rocks
 
-Each player rolls all three dice once and the player with highest total number starts the game. If there is a draw those players role again until a starting player is determined.
+Each player rolls all three dice once and the player with highest total number starts the game. If there is a draw those players roll again until a starting player is determined.
 
 ## Play
 
@@ -36,7 +36,7 @@ There are 4 predictable outcomes. Below is a list of all possible results and th
 
 Memorize the Rule and understand the example for each result group. Each Result uses a symbol and name to represent the dice result. For a list of all combinations and total possible combinations view the overview at the bottom.
 
-Based on the result of the players role attempt and the prediction made, add or remove rocks as follows:
+Based on the result of the players roll attempt and the prediction made, add or remove rocks as follows:
 
 | Result                | Correct | Wrong | Passive |
 |-----------------------|---------|-------|---------|
@@ -45,7 +45,7 @@ Based on the result of the players role attempt and the prediction made, add or 
 | 🦄 Einhorn            | +5      | -5    | -2      |
 | ☢️ Dreifaltigkeit     | +9      | +3    | +6      |
 
-E.g. in case the role result was a 🎁 (Wunsch) go to that line in the table, then check if the prediction was correct, wrong or passive and add or remove rocks accordingly.
+E.g. in case the roll result was a 🎁 (Wunsch) go to that line in the table, then check if the prediction was correct, wrong or passive and add or remove rocks accordingly.
 
 It does not matter what prediction was made specificity. All that matters is if the prediction was correct, wrong or if no prediction was made.
 
@@ -61,9 +61,9 @@ The 🦄 figure has the follow effects for the owner:
 
 - When rolling an 🦄 no rocks are earned/payed (nothing happens).
 - The player can give and take (depending on the roll attempt outcome) rocks either from the central stash or from any other player.
-- The 🦄 is passed once another player roles an 🦄. The player gaining the 🦄 additionally receives one stone from the player loosing the 🦄.
+- The 🦄 is passed once another player rolls an 🦄. The player gaining the 🦄 additionally receives one stone from the player loosing the 🦄.
 
-Once the round ends the 🦄 is placed in the middle of the dice tray and all players bet with their personal rock stash (if available) to receive the 🦄 in the next round. It is recommended to not show how much you are bidding on the 🦄 to get players to bid more then they needed. You may bid zero rocks if you want. The 🦄 goes to the highest bidder but all bidders pay their rocks and place them in the central stash. In case there is a tie all highest bidders role their 3 dice and the player with the highest total sum receives the 🦄 figure. If all bid zero, all must role their dice. This step is repeated in case there is another tie.
+Once the round ends the 🦄 is placed in the middle of the dice tray and all players bet with their personal rock stash (if available) to receive the 🦄 in the next round. It is recommended to not show how much you are bidding on the 🦄 to get players to bid more then they needed. You may bid zero rocks if you want. The 🦄 goes to the highest bidder but all bidders pay their rocks and place them in the central stash. In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the 🦄 figure. If all bid zero, all must roll their dice. This step is repeated in case there is another tie.
 
 The player with the 🦄 starts the next round.
 
@@ -107,7 +107,7 @@ This is not needed to understand or play the game. If you are interested have a 
 ??? warning "Warning: Math"
     With 3x D6 we get a total of 216 (6x6x6 or 6^3) possible outcomes.
 
-    Let us now look at unique roles. To get all possible combinations we can use this formula for combination with repetition:
+    Let us now look at unique rolls. To get all possible combinations we can use this formula for combination with repetition:
 
     \begin{align}
         \frac{(n+k-1)!}{k!*(n-1)!}
