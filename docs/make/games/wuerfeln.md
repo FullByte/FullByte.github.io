@@ -134,20 +134,80 @@ This is not needed to understand or play the game. If you are interested have a 
 
     However, this is not the probability of each combination since the distinct combinations are not evenly distributed over the 216 possible outcomes.
 
-    I do not know how to calculate this so I created a list of all possible outcomes. To view the full list expand "Full list of possible dice combinations". The outcome is as follows:
+    I do not know how to calculate this so I created a python script and analysed of all possible outcomes. To view the full list expand "Full list of possible dice combinations". The outcome is as follows:
 
-    | Result               | total    | distinct |
-    |----------------------|----------|----------|
-    | ⚰️ Das Unvermeidlich | 97 (45%) | 16 (29%) |
-    | 🎁 Wunsch            | 89 (41%) | 30 (54%) |
-    | 🦄 Einhorn           | 24 (11%) | 4 (7%)   |
-    | ☢️ Dreifaltigkeit    | 6 (3%)   | 6 (11%)  |
+    | Result               | total      | distinct |
+    |----------------------|------------|----------|
+    | ⚰️ Das Unvermeidlich | 96 (44,4%) | 16 (29%) |
+    | 🎁 Wunsch            | 90 (41,7%) | 30 (54%) |
+    | 🦄 Einhorn           | 24 (11,1%) | 4 (7%)   |
+    | ☢️ Dreifaltigkeit    | 6 (2,8%)   | 6 (11%)  |
 
     The result shows that Das Unvermeidliche has less distinct variations than Wunsch but more possible combinations.
 
+??? script "Script to analyse all possible roll attempts"
+    Here is the script I wrote to calculate the result:
+
+    ```py
+    # Check groups for Würfel game:
+    # Step 1 create all possible options for 3x D6 dice
+    # Step 2 remove doubles -> if total is 1 = Dreifaltigkeit, 2 = Wunsch
+    # Step 3 with all remaining sort numbers and count min distance between all three values. If min distance is 1 = Unvermeidlich, else Einhorn
+
+    from itertools import product # pip install itertools
+    from collections import OrderedDict
+    import math
+
+    # Dice settings
+    diceFaces = 6
+    diceSmallestNumber = 1
+    diceHighestNumber = 6
+    diceAmount = 3
+
+    # Counter
+    Dreifaltigkeit = 0
+    Wunsch = 0
+    Unvermeidlich = 0
+    Einhorn = 0
+
+    # Create a list of all possible roll attempts
+    rolls = list(product(range(diceSmallestNumber,diceHighestNumber+1), repeat=diceAmount))
+
+    # Iterate roll attempts and check result
+    for roll in rolls:
+        # Prepare list
+        removedDoubleRoll = tuple(OrderedDict.fromkeys(roll).keys())
+        sortedRoll = list(removedDoubleRoll)
+        sortedRoll.sort() 
+
+        # Count and print result
+        if (len(sortedRoll)==2):
+            print(roll, " Wunsch")
+            Wunsch += 1
+        elif (len(sortedRoll)==1):
+            print(roll, " Dreifaltigkeit")
+            Dreifaltigkeit += 1
+        else:
+            if ((sortedRoll[1]-sortedRoll[0]==1) or (sortedRoll[2]-sortedRoll[1]==1)):
+                print(sortedRoll, " Unvermeidlich")
+                Unvermeidlich += 1
+            else:
+                print(sortedRoll, " Einhorn")
+                Einhorn += 1
+
+    # Print stats
+    print("\nTotal amount of possible rolls: ", len(rolls))
+    print("Total amount of distint rolls: ", int((math.factorial(diceFaces+diceAmount-1))/(math.factorial(diceAmount)*(math.factorial(diceFaces-1)))))
+
+    print("\nDreifaltigkeit: ", Dreifaltigkeit, "({:.1f}".format(Dreifaltigkeit / len(rolls) * 100), "%)")
+    print("Wunsch: ", Wunsch, "({:.1f}".format(Wunsch / len(rolls) * 100), "%)")
+    print("Unvermeidlich: ", Unvermeidlich, "({:.1f}".format(Unvermeidlich / len(rolls) * 100), "%)")
+    print("Einhorn: ", Einhorn, "({:.1f}".format(Einhorn / len(rolls) * 100), "%)")
+    ```
+
 ??? info "Full list of possible dice combinations"
     This is a full list of all possible roll combinations in this game and the result based on the described rules above.
-
+    
     | D1 | D2 | D3 | Result             |
     |----|----|----|--------------------|
     | 1  | 1  | 1  | Dreifaltigkeit     |
@@ -163,201 +223,201 @@ This is not needed to understand or play the game. If you are interested have a 
     | 1  | 2  | 5  | Das Unvermeidliche |
     | 1  | 2  | 6  | Das Unvermeidliche |
     | 1  | 3  | 1  | Wunsch             |
-    | 1  | 3  | 2  | Das Unvermeidliche |
+    | 1  | 2  | 3  | Das Unvermeidliche |
     | 1  | 3  | 3  | Wunsch             |
     | 1  | 3  | 4  | Das Unvermeidliche |
     | 1  | 3  | 5  | Einhorn            |
     | 1  | 3  | 6  | Einhorn            |
     | 1  | 4  | 1  | Wunsch             |
-    | 1  | 4  | 2  | Das Unvermeidliche |
-    | 1  | 4  | 3  | Das Unvermeidliche |
+    | 1  | 2  | 4  | Das Unvermeidliche |
+    | 1  | 3  | 4  | Das Unvermeidliche |
     | 1  | 4  | 4  | Wunsch             |
     | 1  | 4  | 5  | Das Unvermeidliche |
     | 1  | 4  | 6  | Einhorn            |
     | 1  | 5  | 1  | Wunsch             |
-    | 1  | 5  | 2  | Das Unvermeidliche |
-    | 1  | 5  | 3  | Einhorn            |
-    | 1  | 5  | 4  | Das Unvermeidliche |
+    | 1  | 2  | 5  | Das Unvermeidliche |
+    | 1  | 3  | 5  | Einhorn            |
+    | 1  | 4  | 5  | Das Unvermeidliche |
     | 1  | 5  | 5  | Wunsch             |
     | 1  | 5  | 6  | Das Unvermeidliche |
     | 1  | 6  | 1  | Wunsch             |
-    | 1  | 6  | 2  | Das Unvermeidliche |
-    | 1  | 6  | 3  | Einhorn            |
-    | 1  | 6  | 4  | Einhorn            |
-    | 1  | 6  | 5  | Das Unvermeidliche |
+    | 1  | 2  | 6  | Das Unvermeidliche |
+    | 1  | 3  | 6  | Einhorn            |
+    | 1  | 4  | 6  | Einhorn            |
+    | 1  | 5  | 6  | Das Unvermeidliche |
     | 1  | 6  | 6  | Wunsch             |
     | 2  | 1  | 1  | Wunsch             |
     | 2  | 1  | 2  | Wunsch             |
-    | 2  | 1  | 3  | Das Unvermeidliche |
-    | 2  | 1  | 4  | Das Unvermeidliche |
-    | 2  | 1  | 5  | Das Unvermeidliche |
-    | 2  | 1  | 6  | Das Unvermeidliche |
+    | 1  | 2  | 3  | Das Unvermeidliche |
+    | 1  | 2  | 4  | Das Unvermeidliche |
+    | 1  | 2  | 5  | Das Unvermeidliche |
+    | 1  | 2  | 6  | Das Unvermeidliche |
     | 2  | 2  | 1  | Wunsch             |
     | 2  | 2  | 2  | Dreifaltigkeit     |
     | 2  | 2  | 3  | Wunsch             |
     | 2  | 2  | 4  | Wunsch             |
     | 2  | 2  | 5  | Wunsch             |
     | 2  | 2  | 6  | Wunsch             |
-    | 2  | 3  | 1  | Das Unvermeidliche |
+    | 1  | 2  | 3  | Das Unvermeidliche |
     | 2  | 3  | 2  | Wunsch             |
     | 2  | 3  | 3  | Wunsch             |
     | 2  | 3  | 4  | Das Unvermeidliche |
     | 2  | 3  | 5  | Das Unvermeidliche |
     | 2  | 3  | 6  | Das Unvermeidliche |
-    | 2  | 4  | 1  | Das Unvermeidliche |
+    | 1  | 2  | 4  | Das Unvermeidliche |
     | 2  | 4  | 2  | Wunsch             |
-    | 2  | 4  | 3  | Das Unvermeidliche |
+    | 2  | 3  | 4  | Das Unvermeidliche |
     | 2  | 4  | 4  | Wunsch             |
     | 2  | 4  | 5  | Das Unvermeidliche |
     | 2  | 4  | 6  | Einhorn            |
-    | 2  | 5  | 1  | Das Unvermeidliche |
+    | 1  | 2  | 5  | Das Unvermeidliche |
     | 2  | 5  | 2  | Wunsch             |
-    | 2  | 5  | 3  | Das Unvermeidliche |
-    | 2  | 5  | 4  | Das Unvermeidliche |
+    | 2  | 3  | 5  | Das Unvermeidliche |
+    | 2  | 4  | 5  | Das Unvermeidliche |
     | 2  | 5  | 5  | Wunsch             |
     | 2  | 5  | 6  | Das Unvermeidliche |
-    | 2  | 6  | 1  | Das Unvermeidliche |
+    | 1  | 2  | 6  | Das Unvermeidliche |
     | 2  | 6  | 2  | Wunsch             |
-    | 2  | 6  | 3  | Das Unvermeidliche |
-    | 2  | 6  | 4  | Einhorn            |
-    | 2  | 6  | 5  | Das Unvermeidliche |
+    | 2  | 3  | 6  | Das Unvermeidliche |
+    | 2  | 4  | 6  | Einhorn            |
+    | 2  | 5  | 6  | Das Unvermeidliche |
     | 2  | 6  | 6  | Wunsch             |
     | 3  | 1  | 1  | Wunsch             |
-    | 3  | 1  | 2  | Das Unvermeidliche |
+    | 1  | 2  | 3  | Das Unvermeidliche |
     | 3  | 1  | 3  | Wunsch             |
-    | 3  | 1  | 4  | Das Unvermeidliche |
-    | 3  | 1  | 5  | Einhorn            |
-    | 3  | 1  | 6  | Einhorn            |
-    | 3  | 2  | 1  | Das Unvermeidliche |
+    | 1  | 3  | 4  | Das Unvermeidliche |
+    | 1  | 3  | 5  | Einhorn            |
+    | 1  | 3  | 6  | Einhorn            |
+    | 1  | 2  | 3  | Das Unvermeidliche |
     | 3  | 2  | 2  | Wunsch             |
     | 3  | 2  | 3  | Wunsch             |
-    | 3  | 2  | 4  | Das Unvermeidliche |
-    | 3  | 2  | 5  | Das Unvermeidliche |
-    | 3  | 2  | 6  | Das Unvermeidliche |
+    | 2  | 3  | 4  | Das Unvermeidliche |
+    | 2  | 3  | 5  | Das Unvermeidliche |
+    | 2  | 3  | 6  | Das Unvermeidliche |
     | 3  | 3  | 1  | Wunsch             |
     | 3  | 3  | 2  | Wunsch             |
     | 3  | 3  | 3  | Dreifaltigkeit     |
     | 3  | 3  | 4  | Wunsch             |
     | 3  | 3  | 5  | Wunsch             |
     | 3  | 3  | 6  | Wunsch             |
-    | 3  | 4  | 1  | Das Unvermeidliche |
-    | 3  | 4  | 2  | Das Unvermeidliche |
+    | 1  | 3  | 4  | Das Unvermeidliche |
+    | 2  | 3  | 4  | Das Unvermeidliche |
     | 3  | 4  | 3  | Wunsch             |
-    | 3  | 4  | 4  | Das Unvermeidliche |
+    | 3  | 4  | 4  | Wunsch             |
     | 3  | 4  | 5  | Das Unvermeidliche |
     | 3  | 4  | 6  | Das Unvermeidliche |
-    | 3  | 5  | 1  | Einhorn            |
-    | 3  | 5  | 2  | Das Unvermeidliche |
+    | 1  | 3  | 5  | Einhorn            |
+    | 2  | 3  | 5  | Das Unvermeidliche |
     | 3  | 5  | 3  | Wunsch             |
-    | 3  | 5  | 4  | Das Unvermeidliche |
+    | 3  | 4  | 5  | Das Unvermeidliche |
     | 3  | 5  | 5  | Wunsch             |
     | 3  | 5  | 6  | Das Unvermeidliche |
-    | 3  | 6  | 1  | Einhorn            |
-    | 3  | 6  | 2  | Das Unvermeidliche |
+    | 1  | 3  | 6  | Einhorn            |
+    | 2  | 3  | 6  | Das Unvermeidliche |
     | 3  | 6  | 3  | Wunsch             |
-    | 3  | 6  | 4  | Das Unvermeidliche |
-    | 3  | 6  | 5  | Das Unvermeidliche |
+    | 3  | 4  | 6  | Das Unvermeidliche |
+    | 3  | 5  | 6  | Das Unvermeidliche |
     | 3  | 6  | 6  | Wunsch             |
     | 4  | 1  | 1  | Wunsch             |
-    | 4  | 1  | 2  | Das Unvermeidliche |
-    | 4  | 1  | 3  | Das Unvermeidliche |
+    | 1  | 2  | 4  | Das Unvermeidliche |
+    | 1  | 3  | 4  | Das Unvermeidliche |
     | 4  | 1  | 4  | Wunsch             |
-    | 4  | 1  | 5  | Das Unvermeidliche |
-    | 4  | 1  | 6  | Einhorn            |
-    | 4  | 2  | 1  | Das Unvermeidliche |
+    | 1  | 4  | 5  | Das Unvermeidliche |
+    | 1  | 4  | 6  | Einhorn            |
+    | 1  | 2  | 4  | Das Unvermeidliche |
     | 4  | 2  | 2  | Wunsch             |
-    | 4  | 2  | 3  | Das Unvermeidliche |
+    | 2  | 3  | 4  | Das Unvermeidliche |
     | 4  | 2  | 4  | Wunsch             |
-    | 4  | 2  | 5  | Das Unvermeidliche |
-    | 4  | 2  | 6  | Einhorn            |
-    | 4  | 3  | 1  | Das Unvermeidliche |
-    | 4  | 3  | 2  | Das Unvermeidliche |
+    | 2  | 4  | 5  | Das Unvermeidliche |
+    | 2  | 4  | 6  | Einhorn            |
+    | 1  | 3  | 4  | Das Unvermeidliche |
+    | 2  | 3  | 4  | Das Unvermeidliche |
     | 4  | 3  | 3  | Wunsch             |
     | 4  | 3  | 4  | Wunsch             |
-    | 4  | 3  | 5  | Das Unvermeidliche |
-    | 4  | 3  | 6  | Das Unvermeidliche |
+    | 3  | 4  | 5  | Das Unvermeidliche |
+    | 3  | 4  | 6  | Das Unvermeidliche |
     | 4  | 4  | 1  | Wunsch             |
     | 4  | 4  | 2  | Wunsch             |
     | 4  | 4  | 3  | Wunsch             |
     | 4  | 4  | 4  | Dreifaltigkeit     |
     | 4  | 4  | 5  | Wunsch             |
     | 4  | 4  | 6  | Wunsch             |
-    | 4  | 5  | 1  | Das Unvermeidliche |
-    | 4  | 5  | 2  | Das Unvermeidliche |
-    | 4  | 5  | 3  | Das Unvermeidliche |
+    | 1  | 4  | 5  | Das Unvermeidliche |
+    | 2  | 4  | 5  | Das Unvermeidliche |
+    | 3  | 4  | 5  | Das Unvermeidliche |
     | 4  | 5  | 4  | Wunsch             |
     | 4  | 5  | 5  | Wunsch             |
     | 4  | 5  | 6  | Das Unvermeidliche |
-    | 4  | 6  | 1  | Einhorn            |
-    | 4  | 6  | 2  | Einhorn            |
-    | 4  | 6  | 3  | Das Unvermeidliche |
+    | 1  | 4  | 6  | Einhorn            |
+    | 2  | 4  | 6  | Einhorn            |
+    | 3  | 4  | 6  | Das Unvermeidliche |
     | 4  | 6  | 4  | Wunsch             |
-    | 4  | 6  | 5  | Das Unvermeidliche |
+    | 4  | 5  | 6  | Das Unvermeidliche |
     | 4  | 6  | 6  | Wunsch             |
     | 5  | 1  | 1  | Wunsch             |
-    | 5  | 1  | 2  | Das Unvermeidliche |
-    | 5  | 1  | 3  | Einhorn            |
-    | 5  | 1  | 4  | Das Unvermeidliche |
+    | 1  | 2  | 5  | Das Unvermeidliche |
+    | 1  | 3  | 5  | Einhorn            |
+    | 1  | 4  | 5  | Das Unvermeidliche |
     | 5  | 1  | 5  | Wunsch             |
-    | 5  | 1  | 6  | Das Unvermeidliche |
-    | 5  | 2  | 1  | Das Unvermeidliche |
+    | 1  | 5  | 6  | Das Unvermeidliche |
+    | 1  | 2  | 5  | Das Unvermeidliche |
     | 5  | 2  | 2  | Wunsch             |
-    | 5  | 2  | 3  | Das Unvermeidliche |
-    | 5  | 2  | 4  | Das Unvermeidliche |
+    | 2  | 3  | 5  | Das Unvermeidliche |
+    | 2  | 4  | 5  | Das Unvermeidliche |
     | 5  | 2  | 5  | Wunsch             |
-    | 5  | 2  | 6  | Das Unvermeidliche |
-    | 5  | 3  | 1  | Einhorn            |
-    | 5  | 3  | 2  | Das Unvermeidliche |
+    | 2  | 5  | 6  | Das Unvermeidliche |
+    | 1  | 3  | 5  | Einhorn            |
+    | 2  | 3  | 5  | Das Unvermeidliche |
     | 5  | 3  | 3  | Wunsch             |
-    | 5  | 3  | 4  | Das Unvermeidliche |
+    | 3  | 4  | 5  | Das Unvermeidliche |
     | 5  | 3  | 5  | Wunsch             |
-    | 5  | 3  | 6  | Das Unvermeidliche |
-    | 5  | 4  | 1  | Das Unvermeidliche |
-    | 5  | 4  | 2  | Das Unvermeidliche |
-    | 5  | 4  | 3  | Das Unvermeidliche |
+    | 3  | 5  | 6  | Das Unvermeidliche |
+    | 1  | 4  | 5  | Das Unvermeidliche |
+    | 2  | 4  | 5  | Das Unvermeidliche |
+    | 3  | 4  | 5  | Das Unvermeidliche |
     | 5  | 4  | 4  | Wunsch             |
     | 5  | 4  | 5  | Wunsch             |
-    | 5  | 4  | 6  | Das Unvermeidliche |
+    | 4  | 5  | 6  | Das Unvermeidliche |
     | 5  | 5  | 1  | Wunsch             |
     | 5  | 5  | 2  | Wunsch             |
     | 5  | 5  | 3  | Wunsch             |
     | 5  | 5  | 4  | Wunsch             |
     | 5  | 5  | 5  | Dreifaltigkeit     |
     | 5  | 5  | 6  | Wunsch             |
-    | 5  | 6  | 1  | Das Unvermeidliche |
-    | 5  | 6  | 2  | Das Unvermeidliche |
-    | 5  | 6  | 3  | Das Unvermeidliche |
-    | 5  | 6  | 4  | Das Unvermeidliche |
+    | 1  | 5  | 6  | Das Unvermeidliche |
+    | 2  | 5  | 6  | Das Unvermeidliche |
+    | 3  | 5  | 6  | Das Unvermeidliche |
+    | 4  | 5  | 6  | Das Unvermeidliche |
     | 5  | 6  | 5  | Wunsch             |
     | 5  | 6  | 6  | Wunsch             |
     | 6  | 1  | 1  | Wunsch             |
-    | 6  | 1  | 2  | Das Unvermeidliche |
-    | 6  | 1  | 3  | Einhorn            |
-    | 6  | 1  | 4  | Einhorn            |
-    | 6  | 1  | 5  | Das Unvermeidliche |
+    | 1  | 2  | 6  | Das Unvermeidliche |
+    | 1  | 3  | 6  | Einhorn            |
+    | 1  | 4  | 6  | Einhorn            |
+    | 1  | 5  | 6  | Das Unvermeidliche |
     | 6  | 1  | 6  | Wunsch             |
-    | 6  | 2  | 1  | Das Unvermeidliche |
+    | 1  | 2  | 6  | Das Unvermeidliche |
     | 6  | 2  | 2  | Wunsch             |
-    | 6  | 2  | 3  | Das Unvermeidliche |
-    | 6  | 2  | 4  | Einhorn            |
-    | 6  | 2  | 5  | Das Unvermeidliche |
+    | 2  | 3  | 6  | Das Unvermeidliche |
+    | 2  | 4  | 6  | Einhorn            |
+    | 2  | 5  | 6  | Das Unvermeidliche |
     | 6  | 2  | 6  | Wunsch             |
-    | 6  | 3  | 1  | Einhorn            |
-    | 6  | 3  | 2  | Das Unvermeidliche |
+    | 1  | 3  | 6  | Einhorn            |
+    | 2  | 3  | 6  | Das Unvermeidliche |
     | 6  | 3  | 3  | Wunsch             |
-    | 6  | 3  | 4  | Das Unvermeidliche |
-    | 6  | 3  | 5  | Das Unvermeidliche |
+    | 3  | 4  | 6  | Das Unvermeidliche |
+    | 3  | 5  | 6  | Das Unvermeidliche |
     | 6  | 3  | 6  | Wunsch             |
-    | 6  | 4  | 1  | Einhorn            |
-    | 6  | 4  | 2  | Einhorn            |
-    | 6  | 4  | 3  | Das Unvermeidliche |
+    | 1  | 4  | 6  | Einhorn            |
+    | 2  | 4  | 6  | Einhorn            |
+    | 3  | 4  | 6  | Das Unvermeidliche |
     | 6  | 4  | 4  | Wunsch             |
-    | 6  | 4  | 5  | Das Unvermeidliche |
+    | 4  | 5  | 6  | Das Unvermeidliche |
     | 6  | 4  | 6  | Wunsch             |
-    | 6  | 5  | 1  | Das Unvermeidliche |
-    | 6  | 5  | 2  | Das Unvermeidliche |
-    | 6  | 5  | 3  | Das Unvermeidliche |
-    | 6  | 5  | 4  | Das Unvermeidliche |
+    | 1  | 5  | 6  | Das Unvermeidliche |
+    | 2  | 5  | 6  | Das Unvermeidliche |
+    | 3  | 5  | 6  | Das Unvermeidliche |
+    | 4  | 5  | 6  | Das Unvermeidliche |
     | 6  | 5  | 5  | Wunsch             |
     | 6  | 5  | 6  | Wunsch             |
     | 6  | 6  | 1  | Wunsch             |
