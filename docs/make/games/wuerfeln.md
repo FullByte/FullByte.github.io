@@ -27,12 +27,12 @@ The current player decides to either predict the upcoming roll attempt or to rem
 
 There are 4 predictable outcomes. Below is a list of all possible results and their probability (percent of "total combinations"):
 
-| Result                | Rule / Example                                                                  | Total Combinations | Distinct Combinations |
-|-----------------------|---------------------------------------------------------------------------------|--------------------|-----------------------|
-| ⚰️ Das Unvermeidliche | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 97 (45%)           | 16 (29%)              |
-| 🎁 Wunsch             | ```2x n & !n``` </br> Example: ⚀⚀⚁                                              | 89 (41%)           | 30 (54%)              |
-| 🦄 Einhorn            | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 (11%)           | 4 (7%)                |
-| ☢️ Dreifaltigkeit     | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 (3%)             | 6 (11%)               |
+| Result                | Rule  Example                                                                  | Total Combinations |
+|-----------------------|---------------------------------------------------------------------------------|--------------------|
+| ⚰️ Das Unvermeidliche | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 (44,4%)         |
+| 🎁 Wunsch             | ```2x n & !n``` </br> Example: ⚀⚀⚁                                              | 90 (41,7%)         |
+| 🦄 Einhorn            | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 (11,1%)         |
+| ☢️ Dreifaltigkeit     | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6  (2,8%)          |
 
 Memorize the Rule and understand the example for each result group. Each Result uses a symbol and name to represent the dice result. For a list of all combinations and total possible combinations view the overview at the bottom.
 
