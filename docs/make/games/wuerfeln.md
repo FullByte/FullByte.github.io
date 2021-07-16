@@ -27,7 +27,7 @@ The current player decides to either predict the upcoming roll attempt or to rem
 
 There are 4 predictable outcomes. Below is a list of all possible results and their probability (percent of "total combinations"):
 
-| Result                | Rule  Example                                                                  | Total Combinations |
+| Result                | Rule  Example                                                                   | Total Combinations |
 |-----------------------|---------------------------------------------------------------------------------|--------------------|
 | ⚰️ Das Unvermeidliche | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 (44,4%)         |
 | 🎁 Wunsch             | ```2x n & !n``` </br> Example: ⚀⚀⚁                                              | 90 (41,7%)         |
@@ -40,10 +40,10 @@ Based on the result of the players roll attempt and the prediction made, add or 
 
 | Result                | Correct | Wrong | Passive |
 |-----------------------|---------|-------|---------|
-| ⚰️ Das Unvermeidliche | +1      | -1    | -1      |
-| 🎁 Wunsch             | +1      | -1    | 0       |
-| 🦄 Einhorn            | +5      | -5    | -2      |
-| ☢️ Dreifaltigkeit     | +9      | +3    | +6      |
+| ⚰️ Das Unvermeidliche | +1      | -2    | -1      |
+| 🎁 Wunsch             | +1      | -2    | -1      |
+| 🦄 Einhorn            | +5      | -5    | +1      |
+| ☢️ Dreifaltigkeit     | +5      | +1    | +5      |
 
 E.g. in case the roll result was a 🎁 (Wunsch) go to that line in the table, then check if the prediction was correct, wrong or passive and add or remove rocks accordingly.
 
@@ -75,12 +75,31 @@ All players then bet on the 🦄 with their rocks stash and begin another round.
 
 For the new round all players receive 6 rocks from the main stash. Players with a personal rock stash may choose to add rocks to their current game stash at this time only.
 
+## Tokens (WIP)
+
+Each player chooses 3 tokens at the beginning of the game. The tokens chosen should be kept secret from other players to see until activated.
+
+Each token can only be played once: Either as a one-time effect, a token valid for a given round or valid for the entire game.
+
+- One-time tokens can be played anytime and do not need to be activated. Simply interrupt the game and execute the action. Dispose token once used.
+- Tokens valid for a given round need to be activated before the round starts. Display the token for all players to see when active. Dispose token after the round ended.
+- Tokens that are active over the entire game are directly made visible for all players and kept until the score is counted at the end of the game.
+
+This is an overview of all available tokens:
+
+| Token              | Meaning               | Type     | Effect                                                                                                                                                                                                                                                                                                            |
+|--------------------|-----------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tupla              | Double or nothing     | round    | Add "double" or "nothing" before your roll attempt prediction e.g. "double unvermeidlich". If you win, you get double the rocks, if you loose you pay the normal price.</br>If you add "nothing" to the prediction e.g. "nothing einhorn" you can not loose anything (but could win in case predicted correctly). |
+| Yksisarvinen varas | Unicorn thief         | one-time | Take the unicorn at any time, no questions asked.                                                                                                                                                                                                                                                                 |
+| Kivenvaihto        | Fair trade            | one-time | Swap the current rocks played in the round (not the stash) at any given time with any player.                                                                                                                                                                                                                     |
+| Toista             | Repeat a roll attempt | round    | You may re-roll all 3 dice once. If you choose to do so your previous roll-attempt does not count. You can not change the prediction. If the second roll-attempt worsens the situation you must play it                                                                                                           |
+| Itsekeskeisyys     | Ego-Trip              | game     | Players must congratulate you on all wins and say something nice if you loose rocks. Unicorn owner can not steal from you. If you choose this token and the game ends with a tie you win.                                                                                                                         |
+
 ## Extras
 
-This is not needed to understand or play the game. If you are interested have a look at the math part or see all possible dice combinations :)
+This is not needed to understand or play the game.
 
 ??? game "Example game"
-
     The following is an example game play with three players:
 
     All players agree to play 5 rounds.
@@ -145,8 +164,8 @@ This is not needed to understand or play the game. If you are interested have a 
 
     The result shows that Das Unvermeidliche has less distinct variations than Wunsch but more possible combinations.
 
-??? script "Script to analyse all possible roll attempts"
-    Here is the script I wrote to calculate the result:
+??? code "Script to analyse all possible roll attempts"
+    Here is the python script I wrote to calculate the result:
 
     ```py
     # Check groups for Würfel game:
