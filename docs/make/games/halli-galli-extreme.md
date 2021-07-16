@@ -1,26 +1,18 @@
 # Halli Galli Extreme
 
-Eine Halli Galli Adaption - Regelwerk v1.3
+## §1 Spielaufbau und -ablauf
 
-# Intro
-
-Das vorliegende Regelwerk wurde seit Anbeginn der Zeit weiterentwickelt und wird von Generation zu Generation nur an die würdigsten Nachkommen weitergegeben. Es ist mittlerweile ein im Grunde perfekt ausgearbeitetes und fehlerfreies Manuskript aller offiziellen Halli Galli Regeln und sollte daher gebührend gewürdigt und respektiert werden. Die Regeln lassen sich anwenden, wenn dem Leser jeweils ein Exemplar von „Halli Galli“ und „Halli Galli Extreme“ von AMIGO Spielen vorliegen. Jedes dieser Spiele wird mit einer Glocke geliefert, für MeGa HaGa wird jedoch nur eine Glocke benötigt. Da es bei ausgewachsenen Primaten allerdings zu überraschend hoher Gewaltbereitschaft kommen kann, ist eine Ersatzglocke als begehrenswertes Extra anzusehen. Das vom Spielehersteller bekannte Basisregelwerk erwies sich in der Praxis als dürftig und wurde um sinnvolle Zusatzregeln ergänzt. Die Ergänzungen wurden mit besonderem Augenmerk auf die Urinstinkte des Reagierens und Draufhauens zwecks Besitzanspruch entwickelt und vernachlässigen den Spielfluss nicht. Es gilt die Faustregel: Neue Spieler gewöhnen sich im Laufe des ersten Spiels an das Regelwerk in ca. 30min, je nach Halli Galli Vorerfahrung (+/- 10min) und kognitiven Fähigkeiten (+/- 20min). Es ist zudem anzumerken, dass „Halli Galli Extreme“ keinesfalls regulär als Erweiterung von „Halli Galli“ zu betrachten ist. Die folgenden Regeln schaffen eine Symbiose der beiden Meisterwerke und bilden das ultimative Halli Galli Erlebnis. 
-
-## §1 Spielaufbau und -ablauf 
-
-1. Spielerzahl
-
-    Es empfiehlt sich genau 6 Spieler zu finden. Alles von 3 bis 8 Spielern ist gut spielbar.
+1. Spielerzahl: Es empfiehlt sich genau 6 Spieler zu finden. Alles von 3 bis 6 Spielern ist gut spielbar.
 
 2. Karten verteilen
 
     Alle Karten werden unter allen Spielern gleichmäßig verteilt.
 
-    - a. Bleibt eine Karte (bzw. Karten) übrig, wird diese zur Seite gelegt und dem Ersten, der schwimmt, gegeben. (zu „Schwimmen“ siehe §4 Absatz 2a)
+    Bleibt eine Karte (bzw. Karten) übrig, wird diese zur Seite gelegt und dem Ersten, der schwimmt, gegeben. (zu „Schwimmen“ siehe §4 Absatz 2a)
 
 3. Glockenausrichtung
 
-    Die Glocke ist für alle Spieler gleichweit vom eigenen Stapel entfernt, egal wie jemand sitzt oder die Armlänge beschaffen ist. 
+    Die Glocke ist für alle Spieler gleichweit vom eigenen Stapel entfernt, egal wie jemand sitzt oder die Armlänge beschaffen ist.
 
     - a. Es empfiehlt sich, die Glocke zu fixieren oder zumindest mittig auf einem rutschfesten Untergrund zu platzieren.
     - b. Ein runder Tisch ist von Vorteil, aber nicht zwingend erforderlich.
@@ -33,7 +25,7 @@ Das vorliegende Regelwerk wurde seit Anbeginn der Zeit weiterentwickelt und wird
     - 4a. Die gespielten Karten liegen sauber gestapelt vor dem eigenen Kartenstapel, also zwischen Stapel und Glocke.
     - 4b. Es empfiehlt sich, eine Vorrichtung zu bauen oder Markierungen auf dem Tisch zu befestigen.
 
-## §2 Karten spielen 
+## §2 Karten spielen
 
 1. Es wird einhändig gespielt
 
@@ -42,19 +34,17 @@ Das vorliegende Regelwerk wurde seit Anbeginn der Zeit weiterentwickelt und wird
     - 1a. Ist die Hand von Spieler 1 (warum auch immer) in der Nähe der Glocke und ein Schlag von Spieler 2 gegen die Hand von Spieler 1 erwirkt, dass dieser mit seiner Hand einen Glockenton auslöst, so gilt dies als gültiger Glockenschlag von Spieler 1. Die Konsequenzen sind entsprechend von Spieler 1 zu tragen (Siehe §3 Absatz 1)
     - 1b. Kommt es bei der Anwendung dieser Spielregel wiederholt zu Problemen, empfiehlt es sich angepasste, einarmige Zwangsjacken mit Halli Galli Logo einzusetzen.
 
-1. Karten geben
+2. Karten geben
 
 Jede Karte wird so gegeben, dass die Rückseite dem Geber beim Drehen sichtbar ist.
 
-   - 2a. Ein schnelles Wenden der Karte wird im eigenen Sinne empfohlen.
-   - 2b. Falsches Geben führt zu einer Ermahnung des Spielers.
-   - 2c. Die Karten werden beim Geben schnell und sauber übereinander gelegt, um zu vermeiden, dass Symbole vorheriger Karten einen falschen Eindruck über die aktuell gegeben Situation vermitteln.
+- 2a. Ein schnelles Wenden der Karte wird im eigenen Sinne empfohlen.
+- 2b. Falsches Geben führt zu einer Ermahnung des Spielers.
+- 2c. Die Karten werden beim Geben schnell und sauber übereinander gelegt, um zu vermeiden, dass Symbole vorheriger Karten einen falschen Eindruck über die aktuell gegeben Situation vermitteln.
 
-3. Reihenfolge
+3. Reihenfolge: Es wird im Uhrzeigersinn gelegt.
 
-    Es wird im Uhrzeigersinn gelegt.
-
-## §3 Glockenschlag 
+## §3 Glockenschlag
 
 1. Glockenschlag
 
@@ -85,7 +75,7 @@ Jede Karte wird so gegeben, dass die Rückseite dem Geber beim Drehen sichtbar i
     - b. Liegt nur der Affe bzw. Elefant und keine anderen Karten im Spiel bzw. nur weitere Affen und/oder Elefanten. (Siehe §2 Absatz 2 b und c)
     - a. Affe(n) UND Limette(n) bzw. Elefant(en) UND Erdbeere(n). (Siehe auch §2 Absatz 2 b und c)
 
-## §4 Zusätzliche Regeln 
+## §4 Zusätzliche Regeln
 
 1. Doppelpaar
 
