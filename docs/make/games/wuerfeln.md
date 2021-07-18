@@ -77,24 +77,18 @@ For the new round all players receive 6 rocks from the main stash. Players with 
 
 ## Tokens (WIP)
 
-Each player chooses 3 tokens at the beginning of the game. The tokens chosen should be kept secret from other players to see until activated.
-
-Each token can only be played once: Either as a one-time effect, a token valid for a given round or valid for the entire game.
+All players receive tokens at the beginning of the game. Each token can only be played once: Either as a one-time effect or valid for a given round.
 
 - One-time tokens can be played anytime and do not need to be activated. Simply interrupt the game and execute the action. Dispose token once used.
 - Tokens valid for a given round need to be activated before the round starts. Display the token for all players to see when active. Dispose token after the round ended.
-- Tokens that are active over the entire game are directly made visible for all players and kept until the score is counted at the end of the game.
 
 This is an overview of all available tokens:
 
-| Token              | Meaning               | Type     | Effect                                                                                                                                                                                                                                                                                                            |
-|--------------------|-----------------------|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 🖕 Yksisarvinen varas | Unicorn thief         | one-time | Take the unicorn at any time, no questions asked.                                                                                                                                                                                                                                                                 |
-| 💸💱 Kivenvaihto        | Fair trade            | one-time | Swap the current rocks played in the round (not the stash) at any given time with any player.                                                                                                                                                                                                                     |
-| 🍻 Tupla              | Double or nothing     | round    | Add "double" or "nothing" before your roll attempt prediction e.g. "double unvermeidlich". If you win, you get double the rocks, if you loose you pay the normal price.</br>If you add "nothing" to the prediction e.g. "nothing einhorn" you can not loose anything (but could win in case predicted correctly). |
-| ♻♳ Toista             | Repeat a roll attempt | round    | You may choose to re-roll all 3 dice in this round. If you choose to do so your previous roll-attempt does not count. You can not change the prediction.                                                                                                           |
-| 🤳 Itsekeskeisyys     | Ego-Trip              | game     | Players must congratulate you on all wins and say something nice if you loose rocks. Unicorn owner can not steal from you if this would end the round (you have no rocks left). If you choose this token and the game ends with a tie you win.                                                                                                                         |
-| 💣 kivi paperi sakset | rock paper scissors | game | Choose two players that need to duel in rock paper scissors. Winner gets 2 rocks from the looser.
+| Token          | Type     | Effect                                                                                                                                                   |
+|----------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 🖕 Dieb        | one-time | Take the unicorn at any time, no questions asked.                                                                                                        |
+| 💸 Tausch      | one-time | Swap the current rocks played in the round (not the stash) at any given time with any player.                                                            |
+| ♻ Wiederholung | round    | You may choose to re-roll all 3 dice in this round. If you choose to do so your previous roll-attempt does not count. You can not change the prediction. |
 
 ## Extras
 
