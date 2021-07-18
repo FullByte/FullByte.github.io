@@ -40,8 +40,8 @@ Based on the result of the players roll attempt and the prediction made, add or 
 
 | Result                | Correct | Wrong | Passive |
 |-----------------------|---------|-------|---------|
-| ⚰️ Das Unvermeidliche | +1      | -2    | -1      |
-| 🎁 Wunsch             | +1      | -2    | -1      |
+| ⚰️ Das Unvermeidliche | +2      | -2    | -1      |
+| 🎁 Wunsch             | +2      | -2    | -1      |
 | 🦄 Einhorn            | +5      | -5    | +1      |
 | ☢️ Dreifaltigkeit     | +5      | +1    | +5      |
 
@@ -61,7 +61,7 @@ The 🦄 figure has the follow effects for the owner:
 
 - When rolling an 🦄 no rocks are earned/payed (nothing happens).
 - The player can give and take (depending on the roll attempt outcome) rocks either from the central stash or from any other player.
-- The 🦄 is passed once another player rolls an 🦄. The player gaining the 🦄 additionally receives one stone from the player loosing the 🦄.
+- The 🦄 is passed once another player rolls an 🦄.
 
 Once the round ends the 🦄 is placed in the middle of the dice tray and all players bet with their personal rock stash (if available) to receive the 🦄 in the next round. It is recommended to not show how much you are bidding on the 🦄 to get players to bid more then they needed. You may bid zero rocks if you want. The 🦄 goes to the highest bidder but all bidders pay their rocks and place them in the central stash. In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the 🦄 figure. If all bid zero, all must roll their dice. This step is repeated in case there is another tie.
 
