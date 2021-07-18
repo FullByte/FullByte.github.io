@@ -99,11 +99,11 @@ This is not needed to understand or play the game.
 
     All players agree to play 5 rounds.
 
-    - Player 1 starts the game and bets on rolling a 🎁. Player 1 then proceeds to roll 1,2,5 which is ⚰️ and therefore loses 1 rock. Player 1 started with 6 rocks and now has 5. Now it is the next players turn.
+    - Player 1 starts the game and bets on rolling a 🎁. Player 1 then proceeds to roll 1,2,5 which is ⚰️ and therefore loses 2 rocks. Player 1 started with 6 rocks and now has 4. Now it is the next players turn.
     - The 2nd player predicts an 🦄 and rolls a 1,3,6 and therefore gains 5 rocks.
-    - The 3rd player choses to not predict anything and rolls 2,2,2 which is ☢️. In this case the player gains 6 rocks.
-    - It is player 1 turn again and predicts ⚰️, then rolls 3,1,4 which is ⚰️. Player 1 takes one rock from the central stash.
-    - Player 2 now has the 🦄 and predicts ⚰️ as well and rolls 4,5,6 which is ⚰️. Player 2 takes the rock from player 1 instead of the central stash.
+    - The 3rd player choses to not predict anything and rolls 2,2,2 which is ☢️. In this case the player gains 5 rocks.
+    - It is player 1 turn again and predicts ⚰️, then rolls 3,1,4 which is ⚰️. Player 2 takes one rock from the central stash.
+    - Player 2 now has the 🦄 and predicts ⚰️ as well and rolls 4,5,6 which is ⚰️. Player 2 takes the 2 rocks from player 1 instead of the central stash.
 
     The game goes on like this for a while until in this case player 2 looses the first round. At this point player 1 has 6 rocks and player 3 has 4 rocks.
 
