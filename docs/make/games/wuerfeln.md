@@ -2,24 +2,27 @@
 
 Bet on your roll outcome and receive or pay rocks. Beware of the 🦄. The first player with 0 rocks loses the round. All other players keep their rocks. Bet on the 🦄 and play another round.
 
-Winner is whoever has the most rocks either:
-
-- once all rocks are gone (game ends at this point)
-- a player has the agreed amount of rocks in their stash
-- after an agreed amount of rounds
+Winner is whoever has the most rocks after an agreed amount of rounds. The game ends early if all rocks are gone and winner is the player with the most rocks at this point in the game.
 
 ## Setup
 
-Setup the game by providing 3 dice per player and at least 50 rocks. Ideally you have a bowl for the rocks and centrally placed place to roll the dice. Place the 🦄 next to the central rock stash.
+Setup the game:
 
-Agree on how many rounds shall be played to determine the winner.
+- Put all rocks (> 50) in a bowl.
+- Place the dice tray centrally.
+- Place the round counter (a D10) in the center and set it to 1.
+- Place the 🦄 (Einhorn) centrally between rock stash and dice tray.
+- Each player receives 3 standard D6 (numbers 1-6) dice, a card with the roll-result overview and 6 rocks to start with.
 
-To start, each player gets
+Agree on the win condition:
 
-- 3 standard D6 (numbers 1-6) dice
-- 6 rocks
+- Agree on how many rounds shall be played to determine the winner. (Default is 5)
 
-Each player rolls all three dice once and the player with highest total number starts the game. If there is a draw those players roll again until a starting player is determined.
+Determine who starts:
+
+- Each player rolls all three dice once and the player with highest total number starts the game.
+- If there is a draw those players roll again until a starting player is determined.
+- The winner and player that starts the game receives the 🦄 (Einhorn).
 
 ## Play
 
@@ -30,13 +33,13 @@ There are 4 predictable outcomes. Below is a list of all possible results and th
 | Result                | Rule  Example                                                                   | Total Combinations |
 |-----------------------|---------------------------------------------------------------------------------|--------------------|
 | ⚰️ Das Unvermeidliche | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 (44,4%)         |
-| 🎁 Wunsch             | ```2x n & !n``` </br> Example: ⚀⚀⚁                                              | 90 (41,7%)         |
+| 🎁 Wunsch             | ```2x n & !n``` </br> Example: ⚀⚀⚁ or ⚁⚃⚁                                       | 90 (41,7%)         |
 | 🦄 Einhorn            | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 (11,1%)         |
 | ☢️ Dreifaltigkeit     | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6  (2,8%)          |
 
-Memorize the Rule and understand the example for each result group. Each Result uses a symbol and name to represent the dice result. For a list of all combinations and total possible combinations view the overview at the bottom.
+Each possible roll result is represented by a symbol and name. Most common are ⚰️ (Das Unvermeidliche) and 🎁 (Wunsch). At the beginning your card with the roll-result overview may be helpful to determine the result.
 
-Based on the result of the players roll attempt and the prediction made, add or remove rocks as follows:
+Based on the players roll attempt and the prediction made, there is one possible result that leads to adding or removing rocks from the players game stash. The table looks as follows:
 
 | Result                | Correct | Wrong | Passive |
 |-----------------------|---------|-------|---------|
@@ -45,50 +48,38 @@ Based on the result of the players roll attempt and the prediction made, add or 
 | 🦄 Einhorn            | +5      | -5    | +1      |
 | ☢️ Dreifaltigkeit     | +5      | +1    | +5      |
 
-E.g. in case the roll result was a 🎁 (Wunsch) go to that line in the table, then check if the prediction was correct, wrong or passive and add or remove rocks accordingly.
+E.g., in case the roll result was a 🎁 (Wunsch) go to that line in the table, then check if the prediction was correct, wrong or passive and add or remove rocks accordingly.
 
-It does not matter what prediction was made specificity. All that matters is if the prediction was correct, wrong or if no prediction was made.
+It does not matter what prediction was made specifically. All that matters is if the prediction was correct, wrong or if no prediction was made. In other words: The rocks added or removed are determined by the result rolled, not by what was predicted. E.g., if a 🎁 (Wunsch) is rolled, it doesn't matter if 🦄 (Einhorn) or ☢️ (Dreifaltig) were predicted, both are wrong and the player must return 2 rocks to the central stash.
 
-The rocks added or removed are determined by the result rolled, not by what was predicted. E.g. if a 🎁 (Wunsch) is rolled, it doesn't matter if 🦄 (Einhorn) or ☢️ (Dreifaltig) were predicted, both are wrong and the player must return 1 stone to the central stash.
-
-Once the stones are taken or given the player takes back the rolled dice from the dice tray and the turn ends.
+Once the rocks are taken or given the player takes back the rolled dice from the dice tray and the turn ends.
 
 ## Einhorn
 
-Additionally to the rocks earned/payed, if a player that rolls an 🦄 receives the 🦄 figure.
+Additionally, if a player that rolls an 🦄 (Einhorn) receives the 🦄 figure.
 
 The 🦄 figure has the follow effects for the owner:
 
-- When rolling an 🦄 no rocks are earned/payed (nothing happens).
-- The player can give and take (depending on the roll attempt outcome) rocks either from the central stash or from any other player.
+- When rolling an 🦄 no rocks are earned/paid (nothing happens).
+- The player can give and take (depending on the roll attempt outcome) rocks either from the central stash or from any other player!
 - The 🦄 is passed once another player rolls an 🦄.
 
-Once the round ends the 🦄 is placed in the middle of the dice tray and all players bet with their personal rock stash (if available) to receive the 🦄 in the next round. It is recommended to not show how much you are bidding on the 🦄 to get players to bid more then they needed. You may bid zero rocks if you want. The 🦄 goes to the highest bidder but all bidders pay their rocks and place them in the central stash. In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the 🦄 figure. If all bid zero, all must roll their dice. This step is repeated in case there is another tie.
+Once the round ends the 🦄 is placed in the middle of the dice tray and all players bet with their personal rock stash (if available) to receive the 🦄 in the next round. It is recommended to not show how much you are bidding on the 🦄 to get players to bid more then they needed. You may bid zero rocks if you want. The 🦄 goes to the highest bidder but all bidders pay their rocks and place them in the central stash. In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the 🦄 figure. E.g., if all bid zero, all must roll their dice. In case there is another tie the players re-roll the dice until a winner can be determined.
 
 The player with the 🦄 starts the next round.
 
 ## How to win
 
-The first player with no rocks left loses the round. The round ends at this point and all players put their remaining rocks in their rock stash.
+Once a player has no rocks left the round ends. All other players put their remaining rocks in their rock stash.
 
-All players then bet on the 🦄 with their rocks stash and begin another round.
+If this is not the last round:
 
-For the new round all players receive 6 rocks from the main stash. Players with a personal rock stash may choose to add rocks to their current game stash at this time only.
+- All players can now bet on the 🦄 with their rocks available from their stash as described above.
+- A new round begins and all players receive 6 rocks from the main stash.
+- Add one to the D10 round counter.
+- Players with a personal rock stash may choose to add rocks to their current game stash at this time only.
 
-## Tokens (WIP)
-
-All players receive tokens at the beginning of the game. Each token can only be played once: Either as a one-time effect or valid for a given round.
-
-- One-time tokens can be played anytime and do not need to be activated. Simply interrupt the game and execute the action. Dispose token once used.
-- Tokens valid for a given round need to be activated before the round starts. Display the token for all players to see when active. Dispose token after the round ended.
-
-This is an overview of all available tokens:
-
-| Token          | Type     | Effect                                                                                                                                                   |
-|----------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 🖕 Dieb        | one-time | Take the unicorn at any time, no questions asked.                                                                                                        |
-| 💸 Tausch      | one-time | Swap the current rocks played in the round (not the stash) at any given time with any player.                                                            |
-| ♻ Wiederholung | round    | You may choose to re-roll all 3 dice in this round. If you choose to do so your previous roll-attempt does not count. You can not change the prediction. |
+Once the agreed number of rounds are played the player with the most rocks in their stash wins the game.
 
 ## Extras
 
@@ -105,7 +96,7 @@ This is not needed to understand or play the game.
     - It is player 1 turn again and predicts ⚰️, then rolls 3,1,4 which is ⚰️. Player 2 takes one rock from the central stash.
     - Player 2 now has the 🦄 and predicts ⚰️ as well and rolls 4,5,6 which is ⚰️. Player 2 takes the 2 rocks from player 1 instead of the central stash.
 
-    The game goes on like this for a while until in this case player 2 looses the first round. At this point player 1 has 6 rocks and player 3 has 4 rocks.
+    The game goes on like this until, in our example, player 2 loses the first round. At this point player 1 has 6 rocks and player 3 has 4 rocks.
 
     The 🦄 is now open for auction. Since this is the 1st round and player 2 lost the game there are no rocks to bet with for this player. Player 1 bets 3 rocks and player 3 bets 1 rock. Both players put the rocks they bet in the center stash and player 1 receives the 🦄.
 
@@ -113,7 +104,7 @@ This is not needed to understand or play the game.
 
     Player 1 with the 🦄 starts the new round and the game continues.
 
-    At the end of round 5 player 1 has 20 rocks, player 2 has 15 rocks and player 3 has 22 rocks. Player 3 wins the game.
+    At the end of round 5 player 1 has 20 rocks, player 2 has 15 rocks and player 3 has 22 rocks. Player 3 therefore wins the game.
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -148,7 +139,7 @@ This is not needed to understand or play the game.
 
     However, this is not the probability of each combination since the distinct combinations are not evenly distributed over the 216 possible outcomes.
 
-    I do not know how to calculate this so I created a python script and analysed of all possible outcomes. To view the full list expand "Full list of possible dice combinations". The outcome is as follows:
+    I do not know how to calculate this, so I created a python script and analyzed of all possible outcomes. To view the full list, expand "Full list of possible dice combinations". The outcome is as follows:
 
     | Result               | total      | distinct |
     |----------------------|------------|----------|
@@ -159,7 +150,7 @@ This is not needed to understand or play the game.
 
     The result shows that Das Unvermeidliche has less distinct variations than Wunsch but more possible combinations.
 
-??? code "Script to analyse all possible roll attempts"
+??? code "Script to analyze all possible roll attempts"
     Here is the python script I wrote to calculate the result:
 
     ```py
@@ -218,6 +209,17 @@ This is not needed to understand or play the game.
     print("Unvermeidlich: ", Unvermeidlich, "({:.1f}".format(Unvermeidlich / len(rolls) * 100), "%)")
     print("Einhorn: ", Einhorn, "({:.1f}".format(Einhorn / len(rolls) * 100), "%)")
     ```
+
+??? work "creating the game"
+    Creating a box
+
+    Using boxes.py: <https://www.festi.info/boxes.py/TwoPiece?FingerJoint_angle=90.0&FingerJoint_style=rectangular&FingerJoint_surroundingspaces=2.0&FingerJoint_edge_width=1.0&FingerJoint_finger=2.0&FingerJoint_play=0.0&FingerJoint_space=2.0&FingerJoint_width=1.0&x=182&y=182&h=65&hi=0.0&outside=0&play=0.15&thickness=3.0&format=svg&tabs=0.0&debug=0&labels=0&labels=1&reference=100&burn=0.1&render=1>
+
+    These are the settings:
+
+    ![_wuerfeln](_wuerfeln.jpg)
+
+    Here are the files for the laser cutter: [SVG](_wuerfeln.svg), [CDR-part1](_wuerfeln.cdr) and [CDR-part2](_wuerfeln2.cdr)
 
 ??? info "Full list of possible dice combinations"
     This is a full list of all possible roll combinations in this game and the result based on the described rules above.

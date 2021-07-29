@@ -16,11 +16,12 @@ Y88b  d88P .d8""8b. 888   d8888888888 888   d88P  888
 Publishing my stuff in a wiki format has been great exercise and helps me stay organized.
 As longs as this works well for me I will continue doing so.
 
-The content may appear random as it is basically anything I find interesting and noteworthy. ¯\_(ツ)_/¯
+The content may appear random as it is basically everything I find interesting and noteworthy. ```¯\_(ツ)_/¯```
 Use the navigation on the left to find the topics of interest or try the search bar with a keyword.
 The content of this site is mainly written in english aside of some very few german posts.
 
-I hope you appreciate the lack of adds, pop-ups and 3rd party dependencies (frames, javascript,..), enjoy the content and find your visit worthwhile :)
+I hope you appreciate the lack of adds, pop-ups and 3rd party dependencies.
+Enjoy the content and find your visit worthwhile :)
 
 Regards,
 0xfab1

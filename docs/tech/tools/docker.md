@@ -188,3 +188,16 @@ docker run --rm -it -p 8080:8080 mitmproxy/mitmproxy
 ```bash
 docker run --gpus all --rm -ti --ipc=host pytorch/pytorch:latest
 ```
+
+### Archivebox
+
+```bash
+docker run -v ${PWD}/data -it archivebox/archivebox init --setup
+docker run -v ${PWD}/data -p 8000:8000 archivebox/archivebox
+```
+
+### Kali
+
+```bash
+docker pull kalilinux/kali-rolling
+```

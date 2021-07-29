@@ -55,23 +55,6 @@ My current favorites:
 - N/A
 - N/A
 
-## Serien
-
-Full list: N/A
-
-My current favorites:
-
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-
 ## Keep it simple and brutal action movies
 
 Full list: N/A
@@ -214,6 +197,7 @@ My current favorites:
 - Frisky Dingo
 - Futurama
 - LOVE DEATH + ROBOTS
+- Masters of the Universe: Revelation
 - Metalocalypse
 - Ren and Stimpy
 - Rick and Morty

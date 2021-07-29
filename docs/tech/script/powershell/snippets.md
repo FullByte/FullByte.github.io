@@ -73,28 +73,34 @@ return [BitConverter]::ToString($buffer).Replace("-", [string]::Empty);
 
 ## System information
 
-**Last boot time**
+Programs that run on this system
+
+```powershell
+Get-ScheduledTask | Get-ScheduledTaskInfo
+Get-Service
+Get-Process
+```
+
+Last boot time
 
 ```powershell
 Write-Output "System boot:" (Get-CimInstance -ClassName win32_operatingsystem | Select-Object -ExpandProperty LastBootUpTime)
 ```
 
-**Last Installation Date**
+Last Installation Date
 
 ```powershell
 Get-ChildItem -Path HKLM:\System\Setup\Source* | ForEach-Object {Get-ItemProperty -Path Registry::$_} | Select-Object ProductName, ReleaseID, CurrentBuild, @{n="Install Date"; e={([DateTime]'1/1/1970').AddSeconds($_.InstallDate)}} | Sort-Object "Install Date"
 ```
 
-**Get WiFi Passwords**
-
-Add more cultures if needed
+Get WiFi Passwords (add more cultures if needed):
 
 ```powershell
 $keyword = @{"de-DE" = 'Schlüsselinhalt'; "en-US" = 'Key Content'}
 Invoke-Expression -Command '(netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)} | Select-String ($keyword[(get-culture).Name]+"\W+\:(.+)$") | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ WiFi=$name;PASSWORD=$pass }} | Format-Table -AutoSize'
 ```
 
-**Get WinSAT information**
+WinSAT information
 
 ```powershell
 # Get WinSAT Data (XML)
@@ -111,7 +117,7 @@ $node = $xml.WinSAT.Metrics.CPUMetrics.CompressionMetric
 'CPU Manufacturer is {0} ' -f $xml.WinSAT.SystemConfig.Processor.Instance.Signature.Manufacturer.friendly
 ```
 
-**Windows Defender Stats**
+Windows Defender statistics/information
 
 ```powershell
 $DefenderStatus = (Get-Service WinDefend -ErrorAction SilentlyContinue).Status
@@ -121,23 +127,19 @@ if ($DefenderStatus -ne "Running") {
 Get-MpComputerStatus
 ```
 
-**Get Win10 key**
+Win10 key
 
 ```powershell
 (Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
 ```
 
-**Install apps**
-
-Get install apps from app-store
+List installed apps
 
 ```powershell
+# Get install apps from app-store
 Get-AppxPackage | Select-Object -Property Name, Status, Version, InstallLocation | Format-Table
-```
 
-List all programs installed on Windows (and ignore the ones from Microsoft)
-
-```powershell
+# List all programs installed on Windows (and ignore the ones from Microsoft)
 Get-WMIObject -Query "SELECT * FROM Win32_Product Where Not Vendor Like '%Microsoft%'" | Format-Table
 ```
 
