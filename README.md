@@ -5,6 +5,7 @@
 [![Check URLs](https://github.com/FullByte/FullByte.github.io/actions/workflows/checkurls.yml/badge.svg)](https://github.com/FullByte/FullByte.github.io/actions/workflows/checkurls.yml)
 [![Chat on Gitter](https://badges.gitter.im/FullByte.github.io.svg)](https://gitter.im/FullByte/community/)
 [![Twitter](https://img.shields.io/badge/twitter-%40zerogdoubled-%231da1f2)](https://twitter.com/zerogdoubled)
+[![volkswagen status](https://auchenberg.github.io/volkswagen/volkswargen_ci.svg?v=1)](https://github.com/auchenberg/volkswagen)
 
 My **personal but public wiki webpage** (PBPWW) ¯\\_(ツ)_/¯ LoL
 
