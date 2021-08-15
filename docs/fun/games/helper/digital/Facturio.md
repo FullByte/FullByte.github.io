@@ -1,5 +1,7 @@
 # Facturio Recipes
 
+Verilog to Factorio Blueprint compiler: <https://redcrafter.github.io/verilog2factorio/>
+
 ## Basic Balancers
 
 ```Facturio
