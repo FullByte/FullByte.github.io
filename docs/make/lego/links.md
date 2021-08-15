@@ -15,6 +15,8 @@
 
 EV3
 
+- <https://education.lego.com/en-us/product-resources/mindstorms-ev3/downloads/firmware-update>
+- <https://makecode.mindstorms.com/troubleshoot>
 - <https://ev3manager.education.lego.com>
 - <https://makecode.mindstorms.com/>
 - <https://www.fllcasts.com/courses/134-python-with-lego-mindstorms-ev3-level-1>
