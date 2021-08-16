@@ -104,3 +104,4 @@ Overview of Signing and Curve algorithms used
 - <https://www.crypto51.app/>
 - <https://symphony.iohk.io/>
 - Cool data embedded in the Bitcoin blockchain: <https://cirosantilli.com/cool-data-embedded-in-the-bitcoin-blockchain>
+- https://ethburned.info/
