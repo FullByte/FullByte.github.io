@@ -47,3 +47,17 @@ Passive Spezialzüge gelten ohne Ankündigen, müssen aber beim Notieren der Pun
 |---|---|---|---|---|
 |Meier|Runde 1-6|Mit der Aussprache des Satzes „Es gibt immer noch Meier“ wird der Anspruch auf diese Kombination geltend gemacht.|Eine Mischung aus 1ern und 2ern (ohne Fehler) ist ein Meier und wird mit 21 Punkten bewertet. Es können beispielsweise auch nur eine 1 und sechs 2er sein.|21 Punkte anstelle der eigentlichen Gesamtzahl.|
 |Königszug|Runde 1-6|„Ich bin König“ & Jubel|Das perfekte Spiel: Alle sieben Prömpel geben jeweils drei Punkte.|Sieg des Spiels und König|
+
+## Making the game
+
+### Tests
+
+I tested to laser the points you get at a given position on the Prömpel itself.
+
+This didn't turn our as expected:
+
+![_proempel_laser_test1](_proempel_laser_test1.jpg)
+
+![_proempel_laser_test2](_proempel_laser_test2.jpg)
+
+I guess this is not necessary and players can identify the points per prömpel position without labeling numbers on them.
