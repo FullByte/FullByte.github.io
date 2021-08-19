@@ -24,3 +24,7 @@ A list of websites offering CTF, guided tutorials or challenges:
 - <https://halls-of-valhalla.org/beta/challenges>
 - <http://www.try2hack.nl/>
 - <https://w3challs.com/>
+
+## Other
+
+- Binary Golf: <https://n0.lol/bggp/>

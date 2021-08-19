@@ -3,6 +3,7 @@
 Not the links we need but the links we deserve.
 
 - <https://pointerpointer.com/>
+- shadyurl: <http://www.shadyurl.com/>
 
 ## Meme maker
 

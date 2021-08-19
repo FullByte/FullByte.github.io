@@ -2,6 +2,12 @@
 
 More: <https://github.com/awesome-selfhosted/awesome-selfhosted>
 
+## Infrastructure
+
+- https://github.com/mizzy/serverspec
+- https://github.com/aelsabbahy/goss
+- https://github.com/argoproj/argo-cd
+
 ## Services
 
 - Reliable, High Performance TCP/HTTP Load Balancer <https://www.haproxy.org/>
@@ -29,12 +35,12 @@ More: <https://github.com/awesome-selfhosted/awesome-selfhosted>
 - Source: <https://github.com/PrestaShop/PrestaShop>
 - Website: <https://www.prestashop.com/de>
 
-## woocommerce
+### woocommerce
 
 - Source: <https://github.com/woocommerce/woocommerce>
 - Website: <https://woocommerce.com/>
 
-## nopCommerce
+### nopCommerce
 
 - Source: <https://github.com/nopSolutions/nopCommerce>
 - Website: <https://www.nopcommerce.com/>

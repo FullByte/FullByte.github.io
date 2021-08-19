@@ -5,6 +5,8 @@
 - Mecabricks <https://www.mecabricks.com/en/workshop>
 - Bricklink Studio <https://www.bricklink.com/v2/build/studio.page>
 - brickit <https://brickit.app/>
+- lego-mosaic <https://shiny.rstudio.com/gallery/lego-mosaic.html>
+- https://lego-art-remix.debkbanerji.com/
 
 ## Mindstorms
 
