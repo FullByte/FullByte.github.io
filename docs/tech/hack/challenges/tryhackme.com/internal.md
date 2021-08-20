@@ -1,8 +1,6 @@
 # Internal
 
-Notes from challenges I did @ <https://tryhackme.com>.
-
-This is a full write up of the Internal Penetration Testing Challenge: <https://tryhackme.com/room/internal>
+These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [Internal Penetration Testing Challenge](https://tryhackme.com/room/internal).
 
 Connect to tryhackme via openvpn e.g.: ```sudo openvpn 0xfab1.ovpn```
 

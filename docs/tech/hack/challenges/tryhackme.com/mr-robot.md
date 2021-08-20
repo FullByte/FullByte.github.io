@@ -1,8 +1,6 @@
 # MrRobot
 
-Notes from challenges I did @ <https://tryhackme.com>.
-
-This is a full write up of the "Mr. Robot" CTF @ <https://tryhackme.com/room/mrrobot>.
+These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [Mr. Robot](https://tryhackme.com/room/mrrobot).
 
 Connect to tryhackme via openvpn e.g.: ```sudo openvpn 0xfab1.ovpn```
 
