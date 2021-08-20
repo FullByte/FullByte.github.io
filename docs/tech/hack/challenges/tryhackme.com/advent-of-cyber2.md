@@ -1,8 +1,6 @@
 # adventofcyber2
 
-Notes from challenges I did @ <https://tryhackme.com>.
-
-These are notes from [Advent of Cyber 2](https://tryhackme.com/room/adventofcyber2).
+These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [Advent of Cyber 2](https://tryhackme.com/room/adventofcyber2).
 
 ## [Day 16] Scripting Help! Where is Santa?
 
