@@ -1,6 +1,6 @@
 # Würfeln
 
-Bet on your roll outcome and receive or pay rocks. Beware of the 🦄. The first player with 0 rocks loses the round. All other players keep their rocks. Bet on the 🦄 and play another round.
+Bet on your roll outcome and receive or pay rocks. Beware of the 🦄. The first player with no rocks left loses the round. All other players keep their rocks. Bet on the 🦄 and play another round.
 
 Winner is whoever has the most rocks after an agreed amount of rounds. The game ends early if all rocks are gone and winner is the player with the most rocks at this point in the game.
 
