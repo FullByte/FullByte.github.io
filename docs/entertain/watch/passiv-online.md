@@ -7,6 +7,7 @@ Passive online screens that are nice to watch.
 - <https://www.robscanlon.com/encom-boardroom/>
 - <https://fakeupdate.net/>
 - <https://www.windows93.net/>
+- <https://windows96.net/>
 - <https://geekprank.com/>
 
 ### Hacker

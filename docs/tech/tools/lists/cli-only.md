@@ -28,6 +28,7 @@ More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 - rtorrent: <https://github.com/rakshasa/rtorrent>
 - IPFS: <https://ipfs.io>
 - File Explorer: <https://github.com/sayanarijit/xplr>
+- transfer.sh <https://github.com/dutchcoders/transfer.sh>
 
 ## Money
 

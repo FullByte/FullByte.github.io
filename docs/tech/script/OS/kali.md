@@ -4,6 +4,8 @@ Install and config Kali
 
 ## Basic Config
 
+[Kali's Default Credentials](https://www.kali.org/docs/introduction/default-credentials/)
+
 ### Update OS
 
 Set the password for root and switch to root

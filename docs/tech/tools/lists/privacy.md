@@ -9,3 +9,6 @@ Please note the "right" tools are not the entire solution to privacy.
 - Privacy tools <https://www.privacytools.io/>
 - Switching software <https://switching.software/>
 - Open Source alternatives: <https://github.com/GorvGoyl/clone-wars>
+- Browser Fingerprint <https://amiunique.org/fp>
+- briar <https://briarproject.org/>
+- Magisk <https://github.com/topjohnwu/Magisk>

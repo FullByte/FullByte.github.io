@@ -1,5 +1,6 @@
 # SNES
 
+Maps: <https://noclip.website/>
 ## Super Mario World Widescreen HD
 
 To play "Super Mario World" on SNES in Widescreen (16:9) do the following:

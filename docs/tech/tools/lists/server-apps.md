@@ -2,17 +2,22 @@
 
 More: <https://github.com/awesome-selfhosted/awesome-selfhosted>
 
+## Helper
+
+- endoflife date <https://endoflife.date/>
+
 ## Infrastructure
 
-- https://github.com/mizzy/serverspec
-- https://github.com/aelsabbahy/goss
-- https://github.com/argoproj/argo-cd
+- <https://github.com/mizzy/serverspec>
+- <https://github.com/aelsabbahy/goss>
+- <https://github.com/argoproj/argo-cd>
 
 ## Services
 
 - Reliable, High Performance TCP/HTTP Load Balancer <https://www.haproxy.org/>
 - Backup with Restic <https://restic.net/>
 - NetBox is an IP address management (IPAM) and data center infrastructure management (DCIM) tool <https://github.com/netbox-community/netbox>
+- A private network system that uses WireGuard under the hood. <https://github.com/tonarino/innernet>
 
 ## Smart Home
 

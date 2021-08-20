@@ -9,12 +9,17 @@ Just a bunch of links. This page needs some sorting and a lot of additonal links
 - High on coffee: <https://highon.coffee/>
 - Privilege Escalation Collection: <https://gtfobins.github.io/>
 - SecLists: <https://github.com/danielmiessler/SecLists>
+- hacktricks <https://book.hacktricks.xyz/>
 - PENTESTING-BIBLE: <https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE>
+- hacker-laws: <https://github.com/dwmkerr/hacker-laws>
 
 ### Payloads
 
 - All: <https://github.com/swisskyrepo/PayloadsAllTheThings>
 - SQL: <https://github.com/payloadbox/sql-injection-payload-list>
+- LOLBins and LOLScripts <https://github.com/LOLBAS-Project/LOLBAS>
+- GTFOBins <https://github.com/GTFOBins/GTFOBins.github.io>
+- PHP reverse shell: <https://github.com/ivan-sincek/php-reverse-shell>
 
 ## Online Tools
 
@@ -30,6 +35,8 @@ Just a bunch of links. This page needs some sorting and a lot of additonal links
 - Reverse Image Search: <https://tineye.com/>
 - Zero Width Shortener: <https://zws.im/>
 - EFF Browser Check <https://coveryourtracks.eff.org/>
+- cryptool <https://www.cryptool.org/de/cto/>
+- toolsley <https://www.toolsley.com/>
 
 ### Overviews
 
@@ -72,3 +79,8 @@ Maps
 - <https://app.any.run/>
 - <http://www.internettrafficreport.com/>
 - <https://www.thousandeyes.com/outages/>
+
+## More Tools
+
+- <https://github.com/leebaird/discover>
+- <https://github.com/bats3c/shad0w>

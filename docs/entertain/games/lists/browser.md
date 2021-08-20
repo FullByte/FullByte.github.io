@@ -54,6 +54,7 @@ Some of these are quite special and nerdy.
 - Play for good: <https://play.gl/>
 - Dot Dot Dot: <http://lalo.li/ddd/>
 - Wayfinder: <https://wayfinder.nfb.ca/>
+- isthisprime: <https://isthisprime.com/game/>
 
 ## 2 Player Games
 

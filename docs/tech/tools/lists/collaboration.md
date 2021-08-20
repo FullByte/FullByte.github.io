@@ -59,3 +59,4 @@
 |send.vis.ee|<https://send.vis.ee/>||
 |send tresorit|<https://send.tresorit.com/>||
 |blaze|<https://blaze.vercel.app/>||
+|send-anywhere|<https://send-anywhere.com/>||

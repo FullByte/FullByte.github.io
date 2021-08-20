@@ -145,7 +145,27 @@ https://en.wikipedia.org/wiki/Obsolete_German_units_of_measurement
 https://en.wikipedia.org/wiki/Japanese_units_of_measurement
 https://en.wikipedia.org/wiki/Josh_fight
 https://en.wikipedia.org/wiki/Analysis_paralysis
-
+https://en.wikipedia.org/wiki/Killing_of_Tim_McLean
+https://en.wikipedia.org/wiki/Mobile_phones_on_aircraft
+https://en.wikipedia.org/wiki/Analog_Protection_System
+https://en.wikipedia.org/wiki/Paint_Drying
+https://en.wikipedia.org/wiki/Wealth_and_religion
+https://en.wikipedia.org/wiki/Timeline_of_food
+https://en.wikipedia.org/wiki/Twike
+https://en.wikipedia.org/wiki/Boolean_satisfiability_problem
+https://en.wikipedia.org/wiki/Self-tiling_tile_set
+https://en.wikipedia.org/wiki/Pfeilstorch
+https://en.wikipedia.org/wiki/Stephen_Cook
+https://en.wikipedia.org/wiki/Close_encounter
+https://en.wikipedia.org/wiki/The_Magical_Number_Seven,_Plus_or_Minus_Two
+https://en.wikipedia.org/wiki/Cell_Broadcast
+https://en.wikipedia.org/wiki/Jean-Eug%C3%A8ne_Robert-Houdin
+https://en.wikipedia.org/wiki/List_of_lists_of_lists
+https://en.wikipedia.org/wiki/Forgetting_curve
+https://en.wikipedia.org/wiki/Mathematical_coincidence
+https://en.wikipedia.org/wiki/DCF77
+https://en.wikipedia.org/wiki/Diderot_effect
+https://en.wikipedia.org/wiki/List_of_military_nuclear_accidents
 
 - [Hofstadter's law](https://en.wikipedia.org/wiki/Hofstadter's_law "https://en.wikipedia.org/wiki/Hofstadter's_law")
 - [Conspiracy theory](https://en.m.wikipedia.org/wiki/Conspiracy_theory "https://en.m.wikipedia.org/wiki/Conspiracy_theory")
