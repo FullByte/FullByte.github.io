@@ -1,12 +1,10 @@
-# attacktivedirectory
+# Attacktive Directory
 
-Notes from challenges I did @ <https://tryhackme.com>.
-
-These are notes from [attacktivedirectory](https://tryhackme.com/room/attacktivedirectory).
+These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [attacktivedirectory](https://tryhackme.com/room/attacktivedirectory).
 
 ## Prepare
 
-Install Impacket, kerbrute, Bloodhound and Neo4j
+Install [Impacket](https://github.com/SecureAuthCorp/impacket), [kerbrute](https://github.com/TarlogicSecurity/kerbrute), [evil-winrm](https://github.com/Hackplayers/evil-winrm), [Bloodhound](https://github.com/adaptivethreat/Bloodhound) and [Neo4j](https://neo4j.com/):
 
 ```bash
 sudo git clone <https://github.com/SecureAuthCorp/impacket.git> /opt/impacket
@@ -14,6 +12,7 @@ sudo pip3 install -r /opt/impacket/requirements.txt
 cd /opt/impacket/ && sudo python3 ./setup.py install
 sudo apt install bloodhound neo4j
 go get github.com/ropnop/kerbrute
+gem install evil-winrm
 sudo apt update && sudo apt upgrade
 ```
 
