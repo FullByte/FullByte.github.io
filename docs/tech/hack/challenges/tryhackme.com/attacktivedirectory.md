@@ -22,57 +22,61 @@ sudo apt update && sudo apt upgrade
 Scan target with ```nmap -sC -sV 10.10.12.33```
 
 ??? output "Nmap output"
-  ```txt
-  Nmap scan report for 10.10.12.33
-  Host is up (0.021s latency).
-  Not shown: 987 closed ports
-  PORT     STATE SERVICE       VERSION
-  53/tcp   open  domain        Simple DNS Plus
-  80/tcp   open  http          Microsoft IIS httpd 10.0
-  | http-methods:
-  |_  Potentially risky methods: TRACE
-  |_http-server-header: Microsoft-IIS/10.0
-  |_http-title: IIS Windows Server
-  88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2021-08-19 19:17:25Z)
-  135/tcp  open  msrpc         Microsoft Windows RPC
-  139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
-  389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: spookysec.local0., Site: Default-First-Site-Name)
-  445/tcp  open  microsoft-ds?
-  464/tcp  open  kpasswd5?
-  593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
-  636/tcp  open  tcpwrapped
-  3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: spookysec.local0., Site: Default-First-Site-Name)
-  3269/tcp open  tcpwrapped
-  3389/tcp open  ms-wbt-server Microsoft Terminal Services
-  | rdp-ntlm-info:
-  |   Target_Name: THM-AD
-  |   NetBIOS_Domain_Name: THM-AD
-  |   NetBIOS_Computer_Name: ATTACKTIVEDIREC
-  |   DNS_Domain_Name: spookysec.local
-  |   DNS_Computer_Name: AttacktiveDirectory.spookysec.local
-  |   Product_Version: 10.0.17763
-  |_  System_Time: 2021-08-19T19:17:27+00:00
-  | ssl-cert: Subject: commonName=AttacktiveDirectory.spookysec.local
-  | Not valid before: 2021-08-18T18:37:51
-  |_Not valid after:  2022-02-17T18:37:51
-  |_ssl-date: 2021-08-19T19:17:35+00:00; 0s from scanner time.
-  Service Info: Host: ATTACKTIVEDIREC; OS: Windows; CPE: cpe:/o:microsoft:windows
+    Nmap output:
 
-  Host script results:
-  | smb2-security-mode:
-  |   2.02:
-  |_    Message signing enabled and required
-  | smb2-time:
-  |   date: 2021-08-19T19:17:29
-  |_  start_date: N/A
+    ```txt
+    Nmap scan report for 10.10.12.33
+    Host is up (0.021s latency).
+    Not shown: 987 closed ports
+    PORT     STATE SERVICE       VERSION
+    53/tcp   open  domain        Simple DNS Plus
+    80/tcp   open  http          Microsoft IIS httpd 10.0
+    | http-methods:
+    |_  Potentially risky methods: TRACE
+    |_http-server-header: Microsoft-IIS/10.0
+    |_http-title: IIS Windows Server
+    88/tcp   open  kerberos-sec  Microsoft Windows Kerberos (server time: 2021-08-19 19:17:25Z)
+    135/tcp  open  msrpc         Microsoft Windows RPC
+    139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+    389/tcp  open  ldap          Microsoft Windows Active Directory LDAP (Domain: spookysec.local0., Site: Default-First-Site-Name)
+    445/tcp  open  microsoft-ds?
+    464/tcp  open  kpasswd5?
+    593/tcp  open  ncacn_http    Microsoft Windows RPC over HTTP 1.0
+    636/tcp  open  tcpwrapped
+    3268/tcp open  ldap          Microsoft Windows Active Directory LDAP (Domain: spookysec.local0., Site: Default-First-Site-Name)
+    3269/tcp open  tcpwrapped
+    3389/tcp open  ms-wbt-server Microsoft Terminal Services
+    | rdp-ntlm-info:
+    |   Target_Name: THM-AD
+    |   NetBIOS_Domain_Name: THM-AD
+    |   NetBIOS_Computer_Name: ATTACKTIVEDIREC
+    |   DNS_Domain_Name: spookysec.local
+    |   DNS_Computer_Name: AttacktiveDirectory.spookysec.local
+    |   Product_Version: 10.0.17763
+    |_  System_Time: 2021-08-19T19:17:27+00:00
+    | ssl-cert: Subject: commonName=AttacktiveDirectory.spookysec.local
+    | Not valid before: 2021-08-18T18:37:51
+    |_Not valid after:  2022-02-17T18:37:51
+    |_ssl-date: 2021-08-19T19:17:35+00:00; 0s from scanner time.
+    Service Info: Host: ATTACKTIVEDIREC; OS: Windows; CPE: cpe:/o:microsoft:windows
 
-  Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-  Nmap done: 1 IP address (1 host up) scanned in 18.37 seconds
-  ```
+    Host script results:
+    | smb2-security-mode:
+    |   2.02:
+    |_    Message signing enabled and required
+    | smb2-time:
+    |   date: 2021-08-19T19:17:29
+    |_  start_date: N/A
+
+    Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+    Nmap done: 1 IP address (1 host up) scanned in 18.37 seconds
+    ```
 
 Enumerate port 139/445 with ```enum4linux -U -o 10.10.12.33```
 
-??? output "enum4linux output"
+??? output "enum4linux output"  
+  enum4linux output
+  
   ```txt
   Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Thu Aug 19 15:24:22 2021
 
