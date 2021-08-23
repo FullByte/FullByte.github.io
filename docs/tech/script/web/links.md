@@ -6,6 +6,7 @@
 
 - security.txt: <https://securitytxt.org/>
 - web design: <http://bettermotherfuckingwebsite.com/>
+- bad example: <https://how-i-experience-web-today.com/>
 
 ## Templates
 
