@@ -201,3 +201,10 @@ docker run -v ${PWD}/data -p 8000:8000 archivebox/archivebox
 ```bash
 docker pull kalilinux/kali-rolling
 ```
+
+### Croc
+
+```bash
+docker run -d -p 9009-9013:9009-9013 -e CROC_PASS='YOURPASSWORD' schollz/croc
+croc --pass YOURPASSWORD --relay "localhost:9009" send file.txt
+```

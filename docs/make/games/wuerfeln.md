@@ -85,7 +85,7 @@ Once the agreed number of rounds are played the player with the most rocks in th
 
 This is not needed to understand or play the game.
 
-??? game "Example game"
+??? check "Example game"
     The following is an example game play with three players:
 
     All players agree to play 5 rounds.
@@ -150,7 +150,7 @@ This is not needed to understand or play the game.
 
     The result shows that Das Unvermeidliche has less distinct variations than Wunsch but more possible combinations.
 
-??? code "Script to analyze all possible roll attempts"
+??? note "Script to analyze all possible roll attempts"
     Here is the python script I wrote to calculate the result:
 
     ```py
@@ -210,7 +210,7 @@ This is not needed to understand or play the game.
     print("Einhorn: ", Einhorn, "({:.1f}".format(Einhorn / len(rolls) * 100), "%)")
     ```
 
-??? work "creating the game"
+??? tip "creating the game"
     Creating a box
 
     Using boxes.py: <https://www.festi.info/boxes.py/TwoPiece?FingerJoint_angle=90.0&FingerJoint_style=rectangular&FingerJoint_surroundingspaces=2.0&FingerJoint_edge_width=1.0&FingerJoint_finger=2.0&FingerJoint_play=0.0&FingerJoint_space=2.0&FingerJoint_width=1.0&x=182&y=182&h=65&hi=0.0&outside=0&play=0.15&thickness=3.0&format=svg&tabs=0.0&debug=0&labels=0&labels=1&reference=100&burn=0.1&render=1>
@@ -221,7 +221,7 @@ This is not needed to understand or play the game.
 
     Here are the files for the laser cutter: [SVG](_wuerfeln.svg), [CDR-part1](_wuerfeln.cdr) and [CDR-part2](_wuerfeln2.cdr)
 
-??? info "Full list of possible dice combinations"
+??? info  "Full list of possible dice combinations"
     This is a full list of all possible roll combinations in this game and the result based on the described rules above.
     
     | D1 | D2 | D3 | Result             |

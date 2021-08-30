@@ -1,10 +1,12 @@
 # mkdocs
 
-[MkDocs](https://github.com/mkdocs/mkdocs/) is a great way to host a simple, static website. This website uses [Material for MkDocs](https://github.com/squidfunk/mkdocs-material). Material for MkDocs is a theme for MkDocs, a static site generator geared towards (technical) project documentation. 
+[MkDocs](https://github.com/mkdocs/mkdocs/) is a great way to host a simple, static website. This website uses [Material for MkDocs](https://github.com/squidfunk/mkdocs-material). Material for MkDocs is a theme for MkDocs, a static site generator geared towards (technical) project documentation.
+
+## Hosting
 
 Use docker or python to quickly create and host a static website.
 
-## Container
+### Container
 
 ```shell
 git clone https://github.com/FullByte/FullByte.github.io.git # clone repo
@@ -12,7 +14,7 @@ cd FullByte.github.io # Go to main folder
 docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/mkdocs-material # run the container
 ```
 
-## Python
+### Python
 
 Run this once to install all requirements:
 
@@ -44,3 +46,9 @@ Then run this in the main folder with mkdocs.yml file
 ```shell
 py -3.8-64 -m mkdocs serve
 ```
+
+## Create page
+
+### mkdocs-material admonitions
+
+<https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks>

@@ -2,33 +2,44 @@
 
 More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 
+## Internet
+
+- Browser: <http://w3m.sourceforge.net/>
+
 ## Office
 
 - Mail: <https://aerc-mail.org/>
 - Calendar: <https://www.calcurse.org/>
+- Charts: <https://github.com/irevenko/tsukae>
 - Time Tracker: <https://github.com/jotaen/klog>
+- Text Editor: <https://micro-editor.github.io/>
+
+## Collaborate
+
 - Chat: <https://weechat.org/>
 - Chat: <https://github.com/irssi/irssi> e.g. ```apt install irssi```
 - Stream Terminal Session: <https://github.com/miguelmota/streamhut>
-- Text Editor: <https://micro-editor.github.io/>
-- Browser: <http://w3m.sourceforge.net/>
-- Charts: <https://github.com/irevenko/tsukae>
 
 ## Music
 
-- beets: <https://github.com/beetbox/beets> ```pip install beets```
-- musikcube (Spotify): <https://github.com/clangen/musikcube>
-- spotify-tui: <https://github.com/Rigellute/spotify-tui>
+- Beets: <https://github.com/beetbox/beets> ```pip install beets```
+- Musikcube (Spotify): <https://github.com/clangen/musikcube>
+- Spotify: <https://github.com/Rigellute/spotify-tui>
 
-## Files
+## File Transfer
 
 - Sync <https://www.etebase.com/> -> <https://www.etesync.com/>
 - Sync/Backup <https://syncthing.net/>
 - Send Files: <https://github.com/magic-wormhole/magic-wormhole>
 - rtorrent: <https://github.com/rakshasa/rtorrent>
 - IPFS: <https://ipfs.io>
+- transfer.sh: <https://github.com/dutchcoders/transfer.sh>
+- croc: <https://github.com/schollz/croc>
+
+## Work with files
+
 - File Explorer: <https://github.com/sayanarijit/xplr>
-- transfer.sh <https://github.com/dutchcoders/transfer.sh>
+- Photo Search Tool: https://github.com/yurijmikhalevich/rclip
 
 ## Money
 

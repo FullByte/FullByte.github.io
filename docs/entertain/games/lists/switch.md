@@ -176,3 +176,22 @@ A list of nintendo switch games I have and play.
 | Yoku's Island Express                  | 1            |                 |
 | Zen Pinball                            | 1            |                 |
 | Worms W.M.D                            | 4            |                 |
+| Steredenn: Binary Stars|           |                 |
+| 9 Monkeys of Shaolin|           |                 |
+| Taiko no Tatsujin: Drum'n'Fun!|           |                 |
+| FLATLAND Vol. 2|           |                 |
+| Stick Fight: The Game|           |                 |
+| Exit the Gungeon|           |                 |
+| Streets of Rage 4|           |                 |
+| PAC-MAN 99|           |                 |
+| Brick Breaker|           |                 |
+| Pinkman+|           |                 |
+| Robonauts|           |                 |
+| Space Pioneer|           |                 |
+| 10 Second Run RETURNS|           |                 |
+| Stellar Interface|           |                 |
+| Unto The End|           |                 |
+| ScourgeBringer|           |                 |
+| Jet Lancer|           |                 |
+| Huntdown|           |                 |
+| Super Mario 3D World + Bowser's Fury|           |                 |

@@ -61,7 +61,7 @@ Currently we play the following games in these settings:
 
 The following epic battles have been fought:
 
-| Date       | Jonas | Mario | Chris | Fabian | Winner |
+| Date       | J0n4s | M4r10 | Chr1$ | F4b1 | Winner |
 | ---------- | ----- | ----- | ----- | ------ | ------ |
 | 11.10.2020 | 14    | 12    | 10    | 10     | J0n4s  |
 | 24.10.2020 | 19    | 20    | 25    | 10     | Chr1$  |

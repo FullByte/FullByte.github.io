@@ -11,6 +11,10 @@ Examples using youtube-dl
 |Download|<https://github.com/ytdl-org/youtube-dl/releases>|
 |Install|choco install youtube-dl|
 
+Forks:
+
+- <https://github.com/yt-dlp/yt-dlp>
+
 ## YouTube video download
 
 Download to a specific location in best quality:
