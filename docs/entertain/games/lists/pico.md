@@ -5,6 +5,7 @@
 More Links:
 
 - Pico Hardware: <https://github.com/Neotron-Compute/Neotron-Pico>
+- Pico Software: <https://www.lexaloffle.com/pico-8.php>
 
 ## Games
 

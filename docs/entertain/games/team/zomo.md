@@ -18,6 +18,7 @@ Strategy
 - Ashes of the Singularity: Escalation
 - Offworld Trading Company
 - Ancestors Legacy Free Peasant Edition
+- Warhammer 40k Dawn of War II
 
 Heavy Strategy
 
@@ -28,7 +29,6 @@ Heavy Strategy
 ## To be played
 
 - Galatic Civilizations III
-- Warhammer 40k Dawn of War II
 - Total War: Warhammer
 
 ## Played but currently not active
