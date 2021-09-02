@@ -34,6 +34,10 @@ Other:
 
 - <https://www.tablesgenerator.com/>
 
+### Regex
+
+- <https://www.regextester.com>
+
 ## IDE
 
 ### Local IDE
