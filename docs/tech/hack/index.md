@@ -1,6 +1,6 @@
 # Links
 
-Just a bunch of links. This page needs some sorting and a lot of additonal links :)
+Just a bunch of links for further tools, tips and lists on messing with the network, servers and clients. Does anybody still remember Back Orifice, Sub7 and NetBus?
 
 ## Lists and Collections
 

@@ -2,10 +2,7 @@
 
 Not the links we need but the links we deserve.
 
-- <https://pointerpointer.com/>
-- shadyurl: <http://www.shadyurl.com/>
-- nestflix <https://nestflix.fun/>
-
-## Meme maker
-
-- lasch-o-mat: <https://lasch-o-mat.de/>
+- pointer pointer: <https://pointerpointer.com/>
+- Shadyurl: <http://www.shadyurl.com/>
+- Nestflix: <https://nestflix.fun/>
+- LinkedIn Pro: <https://www.shlinkedin.com>
