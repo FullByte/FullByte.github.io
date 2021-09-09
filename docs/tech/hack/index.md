@@ -12,6 +12,7 @@ Just a bunch of links for further tools, tips and lists on messing with the netw
 - hacktricks <https://book.hacktricks.xyz/>
 - PENTESTING-BIBLE: <https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE>
 - hacker-laws: <https://github.com/dwmkerr/hacker-laws>
+- 0xsp <http://0xsp.com/>
 
 ### Payloads
 

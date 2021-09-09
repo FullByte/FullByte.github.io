@@ -108,3 +108,4 @@ Well known and rather special games that can be played with a group of people on
 - Wavelength <https://longwave.web.app/>
 - Writey drawey <https://writeydrawey.site/>
 - Majority (10P only) <https://majority.longwelwind.net/>
+- Keyforge <https://thecrucible.online/play/>

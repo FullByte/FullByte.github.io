@@ -6,6 +6,7 @@ Listen to a radio/stream online.
 
 - Globe Radio: <http://radio.garden/visit/hanover/rFFOtEq3>
 - Wide Band WebSDR: <http://websdr.ewi.utwente.nl:8901/m.html>
+- Radio: <https://www.radio-browser.info/>
 
 ### Websites
 

