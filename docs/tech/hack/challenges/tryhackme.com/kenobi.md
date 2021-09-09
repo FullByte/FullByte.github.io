@@ -1,4 +1,4 @@
-# Internal
+# Kenobi
 
 These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [Kenobi](https://tryhackme.com/room/kenobi).
 
