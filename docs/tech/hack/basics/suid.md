@@ -1,5 +1,7 @@
 # SUID
 
+![SUID](_suid.png)
+
 | Permission | On Files                                                      | On Directories                                           |
 |------------|---------------------------------------------------------------|----------------------------------------------------------|
 | SUID Bit   | User executes the file with permissions of the file owner     | -                                                        |
