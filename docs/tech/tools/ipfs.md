@@ -13,7 +13,7 @@ Examples using IPFS
 
 ## Find Peers
 
-```bash
+```sh
 ipfs dht findpeer QmYtQ3iJi5RAQYxWJLts7xN1dRNK2n258QEXk4N1eLMZFM
 ```
 
@@ -21,21 +21,21 @@ ipfs dht findpeer QmYtQ3iJi5RAQYxWJLts7xN1dRNK2n258QEXk4N1eLMZFM
 
 create key
 
-```bash
+```sh
 gpg --gen-key
 gpg --export --armor -email > pubkey.asc
 ```
 
 share and import key
 
-```bash
+```sh
 gpg --import pubkey.asc
 gpg --list-keys
 ```
 
 share enrypted files
 
-```bash
+```sh
 ipfs init
 gpg --encrypt --recipient "Cory Heath" myriad.pdf
 ipfs add myriad.pdf.gpg
@@ -43,7 +43,7 @@ ipfs add myriad.pdf.gpg
 
 get encrypted files
 
-```bash
+```sh
 ipfs get QmYqSCWuzG8cYo4MFQzqKcC14ct4ybAWyrAc9qzdJaFYTL
 gpg --decrypt QmYqSCWUZg8Cyo4MFQzqKcC14ct4ybAWyrAc9qzdJaFYTL > myriad.pdf
 ```

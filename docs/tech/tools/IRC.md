@@ -1,13 +1,9 @@
 # IRC
 
-## Info
+## IRC clients
 
-|What|Where|
-|-|-|
-|Official Page||
-|Source||
-|Download||
-|Install||
+- mIRC (GUI) <https://www.mirc.com/>
+- weechat (CLI): sudo apt-get install weechat
 
 ## Server/Channel
 
@@ -25,3 +21,52 @@
 - [rizon](irc://irc.rizon.net:+6697 "irc://irc.rizon.net:+6697")
 - [theonering](irc://irc.theonering.net:+6697 "irc://irc.theonering.net:+6697")
 - [efnet](irc://ssl.efnet.org:+9999 "irc://ssl.efnet.org:+9999")
+
+## Register a Channel
+
+In this example we use weechat to register a channel on server libra.chat
+
+Configure weechat
+
+```irc
+/server add libera irc.libera.chat/6697 -ssl
+/set irc.server.libera.autoconnect on
+/set irc.server.libera.sasl_username "fab1"
+/set irc.server.libera.sasl_password "password"
+/set irc.server.libera.username "fab1"
+/set irc.server.libera.realname "fab1"
+/secure passphrase my-secret-passphrase
+/set irc.server.libera.sasl_password "${sec.data.libera_password}"
+/set irc.server.libera.autojoin "#my-new-channel"
+```
+
+Connect to libra chat, make sure your username is correct and register your user:
+
+```irc
+/connect libera
+/nick fab1
+/msg NickServ REGISTER password email@address.net
+/msg NickServ VERIFY REGISTER fab11 your-code-by-mail
+```
+
+Join a channel and make yourself operator, then register the channel
+
+```irc
+/JOIN #my-new-channel
+/op fab1
+/msg ChanServ REGISTER #my-new-channel password
+```
+
+You can now make the channel private, secret and add a password:
+
+```irc
+/mode #my-new-channel +s
+/mode #my-new-channel +p
+/MODE #my-new-channel +k channel-password
+```
+
+To join the channel, now run this command:
+
+```irc
+/JOIN #my-new-channel channel-password
+```

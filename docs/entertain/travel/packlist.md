@@ -1,6 +1,8 @@
-# Wandern Packliste
+# Pack list
 
-## Infos
+## Wandern Packliste
+
+### Infos
 
 - Rucksack so klein wie möglich wählen. Man macht den Rucksack immer voll.
 - Rucksack wiegen:
@@ -20,7 +22,7 @@
     - Geräte aufladen
     - ...
 
-## Taschen/Beutel
+### Taschen/Beutel
 
 - 3-4x Wasserdichte Beutel (Kleidung, Schlafsack, Kochen (optional), Rest)
 - 1x Schutzhülle für den Rucksack (Gut für Regen sowie Hin und Rückflug)
@@ -28,7 +30,7 @@
 - 1x Kulturbeutel für Hygieneartikel
 - 1x Trinksystem (3L)
 
-## Kleidung
+### Kleidung
 
 - 3x Wandersocken
 - 2x Unterhose
@@ -43,14 +45,14 @@
 - 1x Sandalen (Wasserfest)
 - 1x Hut
 
-\*Infos Kleidung
+*Infos Kleidung
 
 - Alle Anziehsachen sollten leicht sein, gut zu waschen und sehr schnell trocknen.
 - Badehose + T-Shirt dient als schlaf Outfit für warme tage
 - Lange Unterhose + Longsleeve dient als schlaf Outfit für kalte tage (optional)
 - Gelistete Kleidung ist inkl. dem was man anhat, wenn man aufbricht.
 
-## Schlafsachen
+### Schlafsachen
 
 - 1x Stirnlampe
 - 1x Kissen (aufpustbar)
@@ -61,15 +63,15 @@
 - 1x Isomatte
 - 1x Daunenschlafsack
 
-### Hüttenübernachtung
+#### Hüttenübernachtung
 
 - 1x Kleiner Schlafsack (ehr als Schutz und Komfort)
 - 1x Ohrstöpsel
 - 1x Augenmaske
 
-## Rest
+### Rest
 
-### Papiere
+#### Papiere
 
 - Reiseunterlagen:\*
   - Alle Tickets und Reservierungsbestätigungen in ausgedruckter Form
@@ -96,7 +98,7 @@
 - Ggf. Allergien, gesundheitliche Informationen in lokaler Sprache sowie Deutsch aufschreiben
 - Zusatzversicherungen? (Telefonnummer etc.)
 
-### Kulturbeutel
+#### Kulturbeutel
 
 - Hygiene:
   - 1x Zahnpasta\* (z.B. Ajona Stomaticum)
@@ -116,7 +118,7 @@
 \*Hier gibt es extreme Unterschiede in der Ergiebigkeit. Logischerweise Produkte wählen von denen man nur sehr wenig pro Anwendung benötigt :)
 \*\*Kleine Packungen bzw. in Portionen abfüllen/trennen
 
-### Sonstiges
+#### Sonstiges
 
 - Technik:
   - 1x Fotoapparat inkl. 2x Speicherkarte und USB Kabel\* (optional)
@@ -132,7 +134,7 @@
 
 \*Idealerweise max. 2 USB Kabel und ggf. ein Adapter
 
-## Kochen (optional)
+### Kochen (optional)
 
 - 1x kompakter Gaskocher mit Standfuß\*
 - 1x Gaskartusche\*
@@ -173,3 +175,148 @@ Essen:
   - Energieriegel
 - Je nach Reiseziel besser erst vor Ort kaufen (Einfuhrregel beachten)
 - Müsliriegel mit viel Kalorien als Backup immer dabei haben ;)
+
+## Auto Camping
+
+### Ausrüstung
+
+- Vorzelt
+- Werkzeug für das Auto
+- Buch über Auto
+- GPS Diebstahlschutz
+- Computeranschlusskabel
+- Musikanlage mit Audioeingang
+- Funkgerät
+- Öl
+- Scheibenwischerwasser
+- Gefrierschutzmittel
+- Reifenflickzeug
+- Sonnenschutz (Scheibe)
+- Bett aus Alustangen dings
+- 
+- Küche muss nicht sein(Lieber einen „Mobilen-Kasten“ – So dass man damit auch draußen kochen kann)
+- Plastik-Wanne zum Spülen
+- Alles in Alu-Kisten packen und aufstapeln
+
+### Utensilien
+
+- Tisch + Stühle für draußen
+- Zelt
+- Hängematten
+- Decken, Handtücher
+- Walkietalkies
+- Satelietenschüssel/Antenne für TV, Radio, GPS, Handy, Funk
+- Erste Hilfe Koffer
+- Grill
+- Musikinstrumente, Spiele, Frisbee, Jonglierzeug,..
+- Alles fürn Strand
+- Schaufel
+- Wörterbuch, Buch über das Land (evtl. Digital)
+- Fernglas/Fernrohr
+- Absperrband
+- Gaffatape
+- Schere, Besteck, Weinöffner
+- Öl-Lampe
+- Kabelbinder
+
+### Sort
+
+- Zelt mit Schlafsack
+- extra großes Handtuch
+- Flagge mit Landesemblem
+- aufblasbares Beiboot inklusive 2\*Paddel und Flickzeug
+- Rucksack
+- Universalladegerät (AA- und AAA-Zellen) für 12V und 230V-Betrieb
+- Handyladegerät
+- Ladegerät für die große Taschenlampe
+- DC12V-3V-Konverter
+- DC12V-AC230V-Konverter
+- Blasebalg
+- kurzes Seil (9m)
+- einige 120er-Bandschlingen
+- wasserdichte Tasche
+- Taschenlampe
+- Nachtsichtgerät inklusive IR-Illuminator
+- 12V-Kompressor
+- Erste-Hilfe-Box
+- Rettungsdecke
+- Erfrischungtücher
+- Lutschbonbons (zuckerfrei)
+- große Knicklichter, grün
+- Mückenschutzmittel
+- Mückenstichmittel
+- Toilettenpapier
+- OP-Handschuhe (nicht steril)
+- Fernglas 7\*50BGA, schwimmfähig durch Neoprenband
+- Sonnencreme
+- Apres-Sun
+- Desinfektionsspray
+- Zeckenenfernungspinzette
+- 2K-Kleber (5min Aushärtezeit)
+- Ersatzfeuerzeug
+- CITO-Beutel 120l
+- Pfanne
+- Gabel
+- Löffel
+- Stirnlampe
+- Impfbuch
+- Sportboot-Führerschein Binnen/See
+- Europäischer medizinischer Notfallausweis
+- GPSr mit Ersatzakkus
+- Externe GPSr-Antenne
+- PMR
+- Kompass
+- Notizblock
+- Gelschreiber
+- 5B-Bleistift
+- Kajal-Stift (schreibt auch im Wasser)
+- Ersatzakkus kleine Taschenlampe
+- kleine Taschenlampe
+- Luftbild des Einsatzgebietes (laminiert)
+- Topo-Karte des Einsatzgebietes (laminiert)
+- wissenschaftlicher Taschenrechner
+- Draht
+- Rollmaß
+- Universal-Fernmeldezange
+- Taschenmesser
+- größerer wasserdichter Beutel
+
+* * *
+
+Auto
+Rolltür auf einer Seite --> Auf dieser Seite Markise anbringen
+Unterbodenschutz
+
+4 Ersatzreifen (kein Ersatzreifen, sondern vollwertige Reifen)
+Flickzeug für Reifen
+Autoanhebegerät
+Zwei Benzinkanister für 10 Liter Sprit
+Werkzeug fürs Auto
+Autoanleitung (Komplette Beschreibung aller Teile)
+Motor Öl
+Solarplatten fürs Dach (Muss abnehmbar sein) und eigenen Batterien
+1x 220 Volt Trafo/Umwandler
+
+Kommunikation
+Mobiltelefon, Walki Talkies, Funkgerät fürs Auto
+
+Elektronik
+USB Stick, Fotoapparat, Laptop, Naivgationsgerät (Weltkarte)
+
+Schlafen
+2-3 Personenzelt (Leicht, also auch zum Transport geeignet à 3KG), Schlafsäcke, Aufblasbare Matte, Taschenlampe, Akkuaufladegerät
+
+Hygieneartikel
+Nassrasierer (und Ersatzklingen), Rasierschaum, Zahnbürste, Zahnpasta, Shampoo, Klopapier, Deo
+
+Kochen
+Gasbrenner (und Gaskatuschen), Töpfe, Wasserfilter (und extra Filterstäbe), Spülmittel, Schwamm, Lappen, Pfanne, Besteck (Messer, Gable, Löffel), Teller, Becher, Scharfes Messer, Brotmesser, Schneidebrett
+
+Essen
+Wasserkanister (25Liter) ((Kleidung) Waschen, Trinken, Putzen,...), Gewürze
+
+Notration
+Alles in eine Kiste tun und nicht anrühren: Wasser, Dosenfutter, H-Milch, Müsli, Marlelade, Honig, Nudeln, Wein
+
+Sonstiges
+Gaffertape, Allzweckmesser, Vitamin-Tabletten, Traubenzucker, Sonnencreme, Sonnenbrille, Ladegerät
