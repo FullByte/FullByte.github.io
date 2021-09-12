@@ -17,13 +17,13 @@ More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 
 ## Collaborate
 
-- Chat: <https://weechat.org/>
-- Chat: <https://github.com/irssi/irssi> e.g. ```apt install irssi```
+- Chat: <https://weechat.org/> `sudo apt-get install weechat` ([Documentation](https://weechat.org/files/doc/devel/weechat_quickstart.en.html))
+- Chat: <https://github.com/irssi/irssi> e.g. `apt install irssi`
 - Stream Terminal Session: <https://github.com/miguelmota/streamhut>
 
 ## Music
 
-- Beets: <https://github.com/beetbox/beets> ```pip install beets```
+- Beets: <https://github.com/beetbox/beets> `pip install beets`
 - Musikcube (Spotify): <https://github.com/clangen/musikcube>
 - Spotify: <https://github.com/Rigellute/spotify-tui>
 

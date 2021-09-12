@@ -57,16 +57,19 @@ Join a channel and make yourself operator, then register the channel
 /msg ChanServ REGISTER #my-new-channel password
 ```
 
-You can now make the channel private, secret and add a password:
+You can now make the channel private, secret, add a password etc:
 
-```irc
-/mode #my-new-channel +s
-/mode #my-new-channel +p
-/MODE #my-new-channel +k channel-password
-```
+| Channel Command        | Description                                                                                                                                                |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `/mode #2team +m`      | Only opped and voiced users can send to the channel. This mode does not prevent users from changing nicks.                                                 |
+| `/mode #2team +i`      | Users are unable to join invite-only channels unless they are invited or match a +I entry.                                                                 |
+| `/mode #2team +I fab1` | Users are unable to join invite-only channels unless they are invited or match a +I entry.                                                                 |
+| `/mode #2team +l 10`   | 10 users can be in the channel at the same time.                                                                                                           |
+| `/mode #2team +p`      | The KNOCK command cannot be used on the channel, and users will not be shown the channel in WHOIS output unless they share the channel with the requestor. |
+| `/mode #2team +s`      | This channel will not appear on channel lists or WHO or WHOIS output unless you are on it.                                                                 |
+| `/mode #2team +S`      | Only users connected via TLS may join the channel while this mode is set. Users already in the channel are not affected.                                   |
+| `/mode #2team P`       | Channel does not disappear when empty.                                                                                                                     |
+| `/mode #2team +j 3:60` | Only 3 users can join within 10 seconds are allowed to join the channel                                                                                    |
 
-To join the channel, now run this command:
-
-```irc
-/JOIN #my-new-channel channel-password
-```
+To join the channel, now run this command: `/JOIN #my-new-channel channel-password`
+Get details on the channel owner: `/msg ChanServ info #my-new-channel`
