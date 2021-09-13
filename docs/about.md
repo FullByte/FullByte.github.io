@@ -108,43 +108,25 @@ Languages used
 
 ![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Fullbyte&theme=blue-green)
 
-Follower
-
-![Follower](https://img.shields.io/github/followers/Fullbyte.svg?style=social&label=Follow&maxAge=2592000)
-
 Stargazers
 
 [![Stargazers](https://starchart.cc/FullByte/FullByte.github.io.svg)](https://starchart.cc/FullByte/FullByte.github.io)
 
 More stats
 
-- ![license](https://img.shields.io/github/license/Fullbyte/FullByte.github.io.svg)
-- ![release](https://img.shields.io/github/release/Fullbyte/FullByte.github.io.svg)
-- ![commits](https://img.shields.io/github/commits-since/Fullbyte/FullByte.github.io/1.svg)
-- ![downloads](https://img.shields.io/github/downloads/Fullbyte/FullByte.github.io/total.svg)
-- ![forks](https://img.shields.io/github/forks/Fullbyte/FullByte.github.io.svg)
-- ![stars](https://img.shields.io/github/stars/Fullbyte/FullByte.github.io.svg)
-- ![watchers](https://img.shields.io/github/watchers/Fullbyte/FullByte.github.io.svg)
-- ![issues](https://img.shields.io/github/issues/Fullbyte/FullByte.github.io.svg)
-- ![issues-closed](https://img.shields.io/github/issues-closed/Fullbyte/FullByte.github.io.svg)
-- ![issues-pr](https://img.shields.io/github/issues-pr/Fullbyte/FullByte.github.io.svg)
-- ![issues-pr-closed](https://img.shields.io/github/issues-pr-closed/Fullbyte/FullByte.github.io.svg)
+![Follower](https://img.shields.io/github/followers/Fullbyte.svg?style=social&label=Follow&maxAge=2592000) ![license](https://img.shields.io/github/license/Fullbyte/FullByte.github.io.svg) ![release](https://img.shields.io/github/release/Fullbyte/FullByte.github.io.svg) ![commits](https://img.shields.io/github/commits-since/Fullbyte/FullByte.github.io/1.svg) ![downloads](https://img.shields.io/github/downloads/Fullbyte/FullByte.github.io/total.svg) ![forks](https://img.shields.io/github/forks/Fullbyte/FullByte.github.io.svg) ![stars](https://img.shields.io/github/stars/Fullbyte/FullByte.github.io.svg) ![watchers](https://img.shields.io/github/watchers/Fullbyte/FullByte.github.io.svg) ![issues](https://img.shields.io/github/issues/Fullbyte/FullByte.github.io.svg) ![issues-closed](https://img.shields.io/github/issues-closed/Fullbyte/FullByte.github.io.svg) ![issues-pr](https://img.shields.io/github/issues-pr/Fullbyte/FullByte.github.io.svg) ![issues-pr-closed](https://img.shields.io/github/issues-pr-closed/Fullbyte/FullByte.github.io.svg)
 
 ### Reddit
 
-- ![karma](https://badgen.net/reddit/karma/u/0xfab1)
-- ![post-karma](https://badgen.net/reddit/post-karma/u/0xfab1)
-- ![comment-karma](https://badgen.net/reddit/comment-karma/u/0xfab1)
-- ![subscribers](https://badgen.net/reddit/subscribers/r/0xfab1)
+![karma](https://badgen.net/reddit/karma/u/0xfab1) ![post-karma](https://badgen.net/reddit/post-karma/u/0xfab1) ![comment-karma](https://badgen.net/reddit/comment-karma/u/0xfab1) ![subscribers](https://badgen.net/reddit/subscribers/r/0xfab1)
 
 ### Twitter
 
-- ![twitter](https://badgen.net/twitter/follow/ZeroGdoubleD)
+![twitter](https://badgen.net/twitter/follow/ZeroGdoubleD)
 
 ### Docker
 
-- ![docker-pulls](https://badgen.net/docker/pulls/0gdd/get-started)
-- ![docker-stars](https://badgen.net/docker/stars/0gdd/get-started)
+![docker-pulls](https://badgen.net/docker/pulls/0gdd/get-started) ![docker-stars](https://badgen.net/docker/stars/0gdd/get-started)
 
 ## $upport
 
