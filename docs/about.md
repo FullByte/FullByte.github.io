@@ -275,4 +275,8 @@ Use [ConsoleChat.io](https://www.consolechat.io/) with the functions below in yo
 - Get insturctions `cc.help()`
 - Close ConsoleChat.io `cc.close()`
 
+Example:
+
+![chat-example](_chat-example.png)
+
 <script src="https://cdn.consolechat.io/console-chat-min.js"></script>
