@@ -1,9 +1,17 @@
 # Crypto Currency
 
-Ferengi (Star Trek) Rules of Acquisition:
+## Crypto Currency Invest Strategy
+
+1. Don't buy, HODL
+
+2. Ferengi (Star Trek) Rules of Acquisition:
 
 - <https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition>
 - <https://memory-beta.fandom.com/wiki/Ferengi_Rules_of_Acquisition>
+
+3. [Bogleheads investment philosophy](https://www.bogleheads.org/wiki/Video:Bogleheads%c2%ae_investment_philosophy)
+
+## Algorithms overview
 
 Overview of Signing and Curve algorithms used
 

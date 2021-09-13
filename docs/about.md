@@ -90,6 +90,62 @@ TODO
 ------END GOTH CODE BLOCK------
 ```
 
+## Badges
+
+### TryHackMe
+
+Overall TryHackMe stats
+
+<img src="https://tryhackme-badges.s3.amazonaws.com/0xfab1.png" alt="TryHackMe">
+
+### Github
+
+Public repositories
+
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api?username=Fullbyte&show_icons=true&theme=blue-green)
+
+Languages used
+
+![Your Repository's Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=Fullbyte&theme=blue-green)
+
+Follower
+
+![Follower](https://img.shields.io/github/followers/Fullbyte.svg?style=social&label=Follow&maxAge=2592000)
+
+Stargazers
+
+[![Stargazers](https://starchart.cc/FullByte/FullByte.github.io.svg)](https://starchart.cc/FullByte/FullByte.github.io)
+
+More stats
+
+- ![license](https://img.shields.io/github/license/Fullbyte/FullByte.github.io.svg)
+- ![release](https://img.shields.io/github/release/Fullbyte/FullByte.github.io.svg)
+- ![commits](https://img.shields.io/github/commits-since/Fullbyte/FullByte.github.io/1.svg)
+- ![downloads](https://img.shields.io/github/downloads/Fullbyte/FullByte.github.io/total.svg)
+- ![forks](https://img.shields.io/github/forks/Fullbyte/FullByte.github.io.svg)
+- ![stars](https://img.shields.io/github/stars/Fullbyte/FullByte.github.io.svg)
+- ![watchers](https://img.shields.io/github/watchers/Fullbyte/FullByte.github.io.svg)
+- ![issues](https://img.shields.io/github/issues/Fullbyte/FullByte.github.io.svg)
+- ![issues-closed](https://img.shields.io/github/issues-closed/Fullbyte/FullByte.github.io.svg)
+- ![issues-pr](https://img.shields.io/github/issues-pr/Fullbyte/FullByte.github.io.svg)
+- ![issues-pr-closed](https://img.shields.io/github/issues-pr-closed/Fullbyte/FullByte.github.io.svg)
+
+### Reddit
+
+- ![karma](https://badgen.net/reddit/karma/u/0xfab1)
+- ![post-karma](https://badgen.net/reddit/post-karma/u/0xfab1)
+- ![comment-karma](https://badgen.net/reddit/comment-karma/u/0xfab1)
+- ![subscribers](https://badgen.net/reddit/subscribers/r/0xfab1)
+
+### Twitter
+
+- ![twitter](https://badgen.net/twitter/follow/ZeroGdoubleD)
+
+### Docker
+
+- ![docker-pulls](https://badgen.net/docker/pulls/0gdd/get-started)
+- ![docker-stars](https://badgen.net/docker/stars/0gdd/get-started)
+
 ## $upport
 
 Thanks for all the fish.
@@ -101,6 +157,10 @@ You can support the wiki by [reporting an issue](https://github.com/FullByte/Ful
 Let me know if something is wrong, could be improved, is a problem in any way (please explain why).
 
 I'm am happy for any input/feedback but may take a while to respond.
+
+Thanks to these contributors:
+
+![GitHub Contributors Image](https://contrib.rocks/image?repo=Fullbyte/FullByte.github.io)
 
 ### M€
 
@@ -117,8 +177,8 @@ Crypto currencies:
 
 Other support channels:
 
-- liberapay <https://liberapay.com/Fullbyte>
-- patreon <https://www.patreon.com/0gdd/creators>
+- [liberapay](https://liberapay.com/Fullbyte) ![gives](https://badgen.net/liberapay/gives/fullbyte) ![receives](https://badgen.net/liberapay/receives/fullbyte) ![patrons](https://badgen.net/liberapay/patrons/fullbyte)
+- [Patreon](https://www.patreon.com/0xfab1/creators)
 
 ### Other$
 
@@ -136,6 +196,8 @@ You can support others that I support by transferring money here:
 You can support those organizations in other ways too - they will have details on this on their website.
 
 ## Cont@ct
+
+### M@il
 
 Send a mail, use [PGP](https://de.wikipedia.org/wiki/Pretty_Good_Privacy) - here is my public key:
 
@@ -193,3 +255,24 @@ zsLIegxYpSXhaL+6rPbk56QvokrSpBe6lQ0DA0DRWYJHuVkzktz5fnldp/lE
 =j6zk
 -----END PGP PUBLIC KEY BLOCK-----
 ```
+
+### Ch@t
+
+Use [ConsoleChat.io](https://www.consolechat.io/) with the functions below in your browser's console for chatting:
+
+- Launch the chat `cc.start()`
+- Set your username `cc.username('Your username')`
+- Say something `cc.say('Hi!')`
+- Talk only to the users on the site you are currently browsing (current tab) `cc.onsite()`
+- Go back to public channel `cc.public()`
+- Send a private message to a user `cc.msg('username', 'Your hush hush message')`
+- List all available public channels `cc.list()`
+- Join a channel. Or create one of the channel does not exist yet. `cc.join('channel name')`
+- Create/Join a private channel that will not be visible. `consolechat.list()`
+- Join a secret channel `cc.join('channel name', 'private')`
+- List all users currently online on the channel `cc.who()`
+- Leave a channel `cc.leave()`
+- Get insturctions `cc.help()`
+- Close ConsoleChat.io `cc.close()`
+
+<script src="https://cdn.consolechat.io/console-chat-min.js"></script>

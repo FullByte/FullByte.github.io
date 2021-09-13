@@ -25,3 +25,5 @@ Enjoy the content and find your visit worthwhile :)
 
 Regards,
 0xfab1
+
+![Jokes Card](https://readme-jokes.vercel.app/api)

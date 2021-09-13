@@ -31,7 +31,8 @@ docker run -it -v C:\Users\username\src:/src mcr.microsoft.com/azure-powershell:
 
 ### Tutorials
 
-- <https://www.ezzeddinabdullah.com/posts/how-to-clean-text-data-at-the-command-line>
+- Many Images: <https://hub.docker.com/u/linuxserver/>
+- how-to-clean-text-data-at-the-command-line <https://www.ezzeddinabdullah.com/posts/how-to-clean-text-data-at-the-command-line>
 
 ### webtop
 

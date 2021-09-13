@@ -19,6 +19,12 @@ theme:
   favicon: icons/favicon.ico
   icon:
     logo: logo
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
 
 # Social
 extra:

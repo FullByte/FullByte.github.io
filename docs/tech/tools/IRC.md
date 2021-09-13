@@ -46,7 +46,7 @@ Connect to libra chat, make sure your username is correct and register your user
 /connect libera
 /nick fab1
 /msg NickServ REGISTER password email@address.net
-/msg NickServ VERIFY REGISTER fab11 your-code-by-mail
+/msg NickServ VERIFY REGISTER fab1 your-code-by-mail
 ```
 
 Join a channel and make yourself operator, then register the channel

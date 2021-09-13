@@ -130,7 +130,8 @@ Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimizat
 - Azure Online Events: <https://events.microsoft.com/?timeperiod=all&isSharedInLocalViewMode=false&category=Online&product=Cloud%20Platform&product=Developer%20Tools&product=Microsoft%20Azure&language=English>
 - Microsoft OpenHack: <https://openhack.microsoft.com>
 - Getting started with Azure DevOps: <https://azuredevopslabs.com/>
-- DevOps Training Days <https://azuredevcollege.com/trainingdays/>
+- DevOps Training Days: <https://azuredevcollege.com/trainingdays/>
+- Azure CSAs in Microsoft OCP team in Germany: <https://github.com/CSA-OCP-GER>
 
 ### Other Learning Material
 
