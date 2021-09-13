@@ -73,3 +73,20 @@ You can now make the channel private, secret, add a password etc:
 
 To join the channel, now run this command: `/JOIN #my-new-channel channel-password`
 Get details on the channel owner: `/msg ChanServ info #my-new-channel`
+
+## Use matrix.org as IRC client
+
+Join the room `#freenode_#channel:matrix.org` on matrix.org.
+
+If you have a Freenode-registered nickname and want to use it from Matrix, you can do it like this:
+
+1. Leave with your nick on IRC
+2. On Matrix, open a new chat
+3. Invite `@appservice-irc:matrix.org` to the new chat
+4. Say `!nick <yournick>`
+5. A request for new chat with `NickServ` will pop up
+6. Accept it and identify yourself with your Freenode password (`identify <password>`)
+
+Voila, you'll be using your Freenode-registered nick through Matrix, being able to use multiple devices simultaneously with shared history and all!
+
+To start private IRC Chats, invite `@freenode_<nick>:matrix.org` to the new chat. This works for nicks that are known to matrix.org, i.e. if the nick has never joined an IRC channel that was bridged to matrix it won't work.
