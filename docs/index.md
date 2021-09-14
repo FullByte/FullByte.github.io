@@ -1,4 +1,4 @@
-# 👋 Welcome
+# Welcome
 
 Welcome to 0xFAB1.net
 

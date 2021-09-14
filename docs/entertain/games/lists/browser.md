@@ -30,31 +30,32 @@ Some of these are quite special and nerdy.
 - cube composer <https://david-peter.de/cube-composer/>
 - Cumming or Drumming <http://cummingordrumming.com/>#
 - Diablo <https://d07riv.github.io/diabloweb/>
-- Dual N-Back <http://brainscale.net/dual-n-back>
-- Entanglement <http://entanglement.gopherwoodstudios.com/>
-- findtheinvisiblecow <https://findtheinvisiblecow.com/>
-- Game about squares<http://gameaboutsquares.com/>
-- Geo guesser <https://www.geoguessr.com/>
-- IKEA or Death metal <http://ikeaordeath.com/>
-- ISS Docking Simulator <https://iss-sim.spacex.com/>
-- NAND game <http://nandgame.com/>
-- Not pron <http://www.deathball.net/notpron/>
-- Pacman <http://worldsbiggestpacman.com/>#
-- Parity <https://www.abefehr.com/parity/>
-- Pokemon or Big data <https://pixelastic.github.io/pokemonorbigdata/>
-- Puzzle Script <https://www.puzzlescript.net/editor.html>
-- Quickdraw <https://quickdraw.withgoogle.com/>
-- Regex Crossword <https://regexcrossword.com/>
-- Stock Market <http://www.bloomberg.com/features/2015-stock-chart-trading-game/>
-- Untrusted <http://alex.nisnevich.com/untrusted/>
-- Wikipedia Game <https://thewikigame.com/>
+- Dual N-Back: <http://brainscale.net/dual-n-back>
+- Entanglement: <http://entanglement.gopherwoodstudios.com/>
+- Find the invisible cow: <https://findtheinvisiblecow.com/>
+- Game about squares: <http://gameaboutsquares.com/>
+- Geo guesser: <https://www.geoguessr.com/>
+- IKEA or Death metal: <http://ikeaordeath.com/>
+- ISS Docking Simulator: <https://iss-sim.spacex.com/>
+- NAND game: <http://nandgame.com/>
+- Not pron: <http://www.deathball.net/notpron/>
+- Pacman: <http://worldsbiggestpacman.com/>#
+- Parity: <https://www.abefehr.com/parity/>
+- Pokemon or Big data: <https://pixelastic.github.io/pokemonorbigdata/>
+- Puzzle Script: <https://www.puzzlescript.net/editor.html>
+- Quickdraw: <https://quickdraw.withgoogle.com/>
+- Quake: <https://phoboslab.org/q1k3/>
+- Regex Crossword: <https://regexcrossword.com/>
+- Stock Market: <http://www.bloomberg.com/features/2015-stock-chart-trading-game/>
+- Untrusted: <http://alex.nisnevich.com/untrusted/>
+- Wikipedia Game: <https://thewikigame.com/>
 - Yare <https://yare.io/> (Real-Time Strategy game where you control your units by writing JavaScript code)
 - Hatetris: <https://qntm.org/files/hatetris/hatetris.html>
 - DOS games: <https://dos.zone>
 - Play for good: <https://play.gl/>
 - Dot Dot Dot: <http://lalo.li/ddd/>
 - Wayfinder: <https://wayfinder.nfb.ca/>
-- isthisprime: <https://isthisprime.com/game/>
+- Is this prime?: <https://isthisprime.com/game/>
 
 ## 2 Player Games
 
@@ -86,7 +87,7 @@ Well known and rather special games that can be played with a group of people on
 - Dixit <https://isolant.games/en/>
 - Dominion <https://dominion.games/>
 - Dominoes <https://dominoes.playdrift.com/>
-- Game of Thrones Tabletop <https://swordsandravens.net/>
+- Game of Thrones Tabletop <https://swordsandravens.net/> ([My Profile](https://swordsandravens.net/user/2975df79-bd76-47e8-a740-518bb4bd0d47))
 - Gartic phone <https://garticphone.com>
 - Hanabi <https://hanab.live/>
 - Just One <https://oneword.games/>

@@ -1,4 +1,4 @@
-# 🤔 About me
+# About 0xfab1
 
 This is a one-person operation.
 Thanks for your interest!
