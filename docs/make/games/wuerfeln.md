@@ -30,12 +30,12 @@ The current player decides to either predict the upcoming roll attempt or to rem
 
 There are 4 predictable outcomes. Below is a list of all possible results and their probability (percent of "total combinations"):
 
-| Result                | Rule  Example                                                                   | Total Combinations |
-|-----------------------|---------------------------------------------------------------------------------|--------------------|
-| ⚰️ Das Unvermeidliche | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 (44,4%)         |
-| 🎁 Wunsch             | ```2x n & !n``` </br> Example: ⚀⚀⚁ or ⚁⚃⚁                                       | 90 (41,7%)         |
-| 🦄 Einhorn            | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 (11,1%)         |
-| ☢️ Dreifaltigkeit     | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6  (2,8%)          |
+| Result                | Rule                                                                           | Example                                                                         | Combinations    |
+|-----------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------|
+| ⚰️ Das Unvermeidliche | A number and that number +1 and</br>something elsewhich is not one of the two | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 of 216</br>(44,4%) |
+| 🎁 Wunsch             | Two of a kind and something else                                               | ```2x n & !n``` </br> Example: ⚀⚀⚁ or ⚁⚃⚁                                       | 90 of 216</br>(41,7%) |
+| 🦄 Einhorn            | All numbers must be at least 2 apart                                           | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216</br>(11,1%) |
+| ☢️ Dreifaltigkeit     | Three of a kind.                                                               | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 of 216</br>(2,8%)   |
 
 Each possible roll result is represented by a symbol and name. Most common are ⚰️ (Das Unvermeidliche) and 🎁 (Wunsch). At the beginning your card with the roll-result overview may be helpful to determine the result.
 
@@ -52,11 +52,13 @@ E.g., in case the roll result was a 🎁 (Wunsch) go to that line in the table, 
 
 It does not matter what prediction was made specifically. All that matters is if the prediction was correct, wrong or if no prediction was made. In other words: The rocks added or removed are determined by the result rolled, not by what was predicted. E.g., if a 🎁 (Wunsch) is rolled, it doesn't matter if 🦄 (Einhorn) or ☢️ (Dreifaltig) were predicted, both are wrong and the player must return 2 rocks to the central stash.
 
-Once the rocks are taken or given the player takes back the rolled dice from the dice tray and the turn ends.
+If a player forgets to make a prediction and rolls the dice or mentions the prediciton too late this is dealt as a passive role.
+
+First taken or give rocks, then put your dice back from the dice tray. With this action your turn ends and it's the next players turn.
 
 ## Einhorn
 
-Additionally, if a player that rolls an 🦄 (Einhorn) receives the 🦄 figure.
+Additionally to receiving or taking rocks based on the players prediction, when rolling an 🦄 (Einhorn) this player additionally receives the 🦄 figure.
 
 The 🦄 figure has the follow effects for the owner:
 
