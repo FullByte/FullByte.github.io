@@ -2,13 +2,6 @@
 
 These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [Kenobi](https://tryhackme.com/room/kenobi).
 
-Connect to tryhackme via openvpn e.g.: ```sudo openvpn 0xfab1.ovpn```
-
-Please note:
-
-- Flags are not fully written to avoid copy & paste ;)
-- I used an SSH-Tunnel in case you are wondering why I have "localhost" instead of an IP mentioned.
-
 ## Task 1 Scan
 
 Scan with nmap to see what (and how many) ports are open: ```nmap -sC -sV 10.10.153.226```

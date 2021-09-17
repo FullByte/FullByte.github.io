@@ -2,12 +2,7 @@
 
 These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [Internal Penetration Testing Challenge](https://tryhackme.com/room/internal).
 
-Connect to tryhackme via openvpn e.g.: ```sudo openvpn 0xfab1.ovpn```
 
-Please note:
-
-- Flags are not fully written to avoid copy & paste ;)
-- I used an SSH-Tunnel in case you are wondering why I have "localhost" instead of an IP mentioned.
 
 ## First Checks
 

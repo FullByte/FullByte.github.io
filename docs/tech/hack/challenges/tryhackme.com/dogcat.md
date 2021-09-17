@@ -2,13 +2,6 @@
 
 These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [dogcat](https://tryhackme.com/room/dogcat).
 
-Connect to tryhackme via openvpn e.g.: ```sudo openvpn 0xfab1.ovpn```
-
-Please note:
-
-- Flags are not fully written to avoid copy & paste ;)
-- I used an SSH-Tunnel in case you are wondering why I have "localhost" instead of an IP mentioned.
-
 ## First look
 
 We know there is a website hosting dog and cat pictures. Let's have a look...
