@@ -87,12 +87,14 @@ Engrave (Raster):
 - Power: 50%
 - Freq: 2500 Hz
 
-Cut (Vektor, [Example Cut](_fleece_example_cut.png)):
+Cut (Vektor):
 
 - Job Type: Vector
 - Speed: 50%
 - Power: 100%
 - Freq: 2500 Hz
+
+!(epilog-zing-printer-settings)[_epilog-zing-printer-settings.png]
 
 #### 4mm fleece
 
@@ -103,7 +105,7 @@ Engrave (Raster):
 - Power: 36%
 - Freq: 5000 Hz
 
-Cut (Vektor):
+Cut (Vektor, [Example Cut](_fleece_example_cut.png)):
 
 - Job Type: Vector
 - Speed: 100%

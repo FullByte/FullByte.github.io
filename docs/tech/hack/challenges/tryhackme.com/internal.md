@@ -2,8 +2,6 @@
 
 These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [Internal Penetration Testing Challenge](https://tryhackme.com/room/internal).
 
-
-
 ## First Checks
 
 Let's add internal.thm to the hosts file as requested and run nmap, niktio and gobuster to scan the target.

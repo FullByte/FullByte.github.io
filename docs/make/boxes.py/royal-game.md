@@ -15,3 +15,15 @@ Here are some pictures of the first print without paint:
 ![royal-game-result](_royal-game-result2.jpg)
 
 ![royal-game-result](_royal-game-result3.jpg)
+
+## Dice
+
+This is the probability of the dice role outcome.
+
+| Result | Chance      |
+|--------|-------------|
+| 4      | 1/16 = 6%   |
+| 3      | 4/16 = 25 % |
+| 2      | 6/16 = 38%  |
+| 1      | 4/16 =25%   |
+| 0      | 1/16 = 6%   |

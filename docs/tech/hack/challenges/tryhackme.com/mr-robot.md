@@ -1,4 +1,4 @@
-# MrRobot
+# Mr. Robot
 
 These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [Mr. Robot](https://tryhackme.com/room/mrrobot).
 

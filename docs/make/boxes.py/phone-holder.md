@@ -32,7 +32,7 @@ Settings:
 
 ![_fire_hd10-2021](_fire_hd10-2021.png)
 
-Laser cutter file:
+Laser cutter files:
 
-- Version 1: [SVG](_fire_hd10-2021.svg) and [CDR](_fire_hd10-2021.cdr)
-- Version 2: [SVG](_fire_hd10-2021-v2.eps) and [EPS](_fire_hd10-2021-v2.eps)
+- CDR Files: [Part1](_fire_hd10-2021-part1.cdr), [Part2](_fire_hd10-2021-part1-cut.cdr), [Part3](_fire_hd10-2021-part1-raster.cdr), [Part4](_fire_hd10-2021-part2.cdr), [Part5](_fire_hd10-2021-part3.cdr)
+- SVG Files: [part1](_fire_hd10-2021-part1_cut.svg), [part1](_fire_hd10-2021-part1-raster.svg), [part1](_fire_hd10-2021-part2.svg), [part1](_fire_hd10-2021-part3.svg)
