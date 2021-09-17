@@ -80,17 +80,35 @@ Max size: 600mm x 300mm.
 
 #### 3mm HDF
 
-Cut:
-
-- Job Type: Vector
-- Speed: 50%
-- Power: 100%
-
-Engrave:
+Engrave (Raster):
 
 - Job Type: Raster
 - Speed: 58%
 - Power: 50%
+- Freq: 2500 Hz
+
+Cut (Vektor, [Example Cut](_fleece_example_cut.png)):
+
+- Job Type: Vector
+- Speed: 50%
+- Power: 100%
+- Freq: 2500 Hz
+
+#### 4mm fleece
+
+Engrave (Raster):
+
+- Job Type: Raster
+- Speed: 100%
+- Power: 36%
+- Freq: 5000 Hz
+
+Cut (Vektor):
+
+- Job Type: Vector
+- Speed: 100%
+- Power: 62%
+- Freq: 5000 Hz
 
 ### Trotec Speedy 360
 
