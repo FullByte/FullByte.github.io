@@ -1,5 +1,7 @@
 # Netcat
 
+Install ```sudo apt install ncat```
+
 ## Example 1
 
 Start netcat listening on e.g. port 1234
