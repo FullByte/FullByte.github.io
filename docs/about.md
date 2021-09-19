@@ -1,4 +1,4 @@
-# About 0xfab1
+# About
 
 This is a one-person operation.
 Thanks for your interest!
