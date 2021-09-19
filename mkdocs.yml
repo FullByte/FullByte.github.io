@@ -1,13 +1,12 @@
-# Wiki Infos
 site_name: "0xfab1"
 site_url: https://0xfab1.net
 repo_url: https://github.com/FullByte/FullByte.github.io
 site_description: "0xfab1 wiki"
 site_author: "Fabian"
 
-# Configuration
 theme:
   name: material
+  custom_dir: overrides
   static_templates:
     - 404.html
   language: en
@@ -24,18 +23,22 @@ theme:
     - navigation.tracking
     - navigation.top
 
-# Social
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+          remove_comments: true
+
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/zerogdoubled
     - icon: fontawesome/brands/github
       link: https://github.com/FullByte
 
-extra:
-  generator: false
-
-# Extensions
 markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.highlight

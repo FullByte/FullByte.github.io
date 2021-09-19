@@ -71,7 +71,7 @@ I am using [Github Pages](https://pages.github.com/) to host the content, [Mkdoc
 
 ### Github Pages Repo
 
-I created a repo named `FullByte.github.io` (Replace "FullByte" with your github username). Enable github pages for this repo in settings page of the repo. You will by default have a page available at [FullByte.github.io](FullByte.github.io).
+I created a repo named `FullByte.github.io` (Replace "FullByte" with your github username). Enable github pages for this repo in settings page of the repo. You will by default have a page available at [FullByte.github.io](https://FullByte.github.io).
 
 ### Custom Domain
 
