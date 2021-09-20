@@ -1,4 +1,4 @@
-# mkdocs
+# MkDocs
 
 [MkDocs](https://github.com/mkdocs/mkdocs/) is a great way to host a simple, static website. This website uses [Material for MkDocs](https://github.com/squidfunk/mkdocs-material). Material for MkDocs is a theme for MkDocs, a static site generator geared towards (technical) project documentation.
 

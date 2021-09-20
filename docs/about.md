@@ -34,60 +34,18 @@ I often use this avatar. More about how to create this with [Context Free Art is
 
 ## G33k C0d3
 
-My Geek Code 3.1
+My geek codes:
 
 ```GEEKCODE
 -----BEGIN GEEK CODE BLOCK-----
-GCS d- s+ a C++$ L+++ P+ L++ E---- W+++$ N+++ o+ K++ w++$ O M V-- PS+++ PE Y+ PGP++ t+@ 5+@ X++ R+++>$ !tv b+>++ DI++ D++>+++ G- e+++ h++/h--- r+++ y?
+Geek Code 3.1: GCS d- s+ a C++$ L+++ P+ L++ E---- W+++$ N+++ o+ K++ w++$ O M V-- PS+++ PE Y+ PGP++ t+@ 5+@ X++ R+++>$ !tv b+>++ DI++ D++>+++ G- e+++ h++/h--- r+++ y?
+Furry Code 1.3: 
+Cat Code: 
+Knitty Code 1.1: 
+Ranger Code: 
+AutCode 3.0: 
+Goth Code 2.5A: GoCS7$ TYinYdmYyu cNRZ3 PPeSlG M3p1wD ZMehMezTeiTezPutGoi C9o a30- b65T H183 g6T w6AT r3s s10 k5 Rm SmNn Lde
 ------END GEEK CODE BLOCK------
-```
-
-My Furry Code 1.3
-
-```GEEKCODE
------BEGIN FURRY CODE BLOCK-----
-FFX
-------END FURRY CODE BLOCK------
-```
-
-My Cat Code
-
-```GEEKCODE
------BEGIN CAT CODE BLOCK-----
-TODO
-------END CAT CODE BLOCK------
-```
-
-My Knitty Code 1.1
-
-```GEEKCODE
------BEGIN KNITTY CODE BLOCK-----
-TODO
-------END KNITTY CODE BLOCK------
-```
-
-My Ranger Code
-
-```GEEKCODE
------BEGIN RANGER CODE BLOCK-----
-TODO
-------END RANGER CODE BLOCK------
-```
-
-My AutCode 3.0
-
-```GEEKCODE
------BEGIN AUTCODE CODE BLOCK-----
-TODO
-------END AUTCODE CODE BLOCK------
-```
-
-My Goth Code 2.5A
-
-```GEEKCODE
------BEGIN GOTH CODE BLOCK-----
-TODO
-------END GOTH CODE BLOCK------
 ```
 
 ## Badges
