@@ -32,7 +32,6 @@ plugins:
           remove_comments: true
 
 extra:
-  generator: false
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/zerogdoubled
@@ -41,9 +40,9 @@ extra:
     - icon: fontawesome/brands/spotify
       link: https://open.spotify.com/user/1132374314/playlists
     - icon: fontawesome/brands/soundcloud
-      links: https://soundcloud.com/0gdd
+      link: https://soundcloud.com/0gdd
     - icon: fontawesome/brands/docker
-      links: https://hub.docker.com/repository/docker/0gdd/0xfab1.net
+      link: https://hub.docker.com/repository/docker/0gdd/0xfab1.net
 
 markdown_extensions:
   - attr_list
