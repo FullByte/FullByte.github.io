@@ -89,3 +89,7 @@ markdown_extensions:
         * [ ] Praesent sed risus massa
     * [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
     ```
+
+Lazy load a picutre:
+
+![Placeholder](https://dummyimage.com/600x400/eee/aaa){ loading=lazy }

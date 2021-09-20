@@ -40,6 +40,7 @@ extra:
       link: https://github.com/FullByte
 
 markdown_extensions:
+  - attr_list
   - pymdownx.inlinehilite
   - pymdownx.highlight
   - pymdownx.superfences
