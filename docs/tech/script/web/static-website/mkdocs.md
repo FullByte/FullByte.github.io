@@ -49,6 +49,43 @@ py -3.8-64 -m mkdocs serve
 
 ## Create page
 
-### mkdocs-material admonitions
+### Extensions
 
-<https://squidfunk.github.io/mkdocs-material/reference/admonitions/#inline-blocks>
+[MKdocs-material](https://squidfunk.github.io/mkdocs-material/) is a [great theme](https://squidfunk.github.io/mkdocs-material/setup/changing-the-colors/) and comes [integrated](https://squidfunk.github.io/mkdocs-material/reference/abbreviations/) with the [pymkdown extensions](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/), which lets you add tabbed code blocks, progress bars, task lists, keyboard symbols and more.
+
+Further plugins:
+
+- [mkdocs-minify-plugin](https://github.com/byrnereese/mkdocs-minify-plugin): `pip install mkdocs-minify-plugin`
+- [mkdocs-redirects](https://github.com/datarobot/mkdocs-redirects): `pip install mkdocs-redirects`
+
+### Examples
+
+Checkable List
+
+```yaml
+markdown_extensions:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+```
+
+=== "List"
+
+    * [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    * [ ] Vestibulum convallis sit amet nisi a tincidunt
+        * [x] In hac habitasse platea dictumst
+        * [x] In scelerisque nibh non dolor mollis congue sed et metus
+        * [ ] Praesent sed risus massa
+    * [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+
+=== "Markdown"
+
+    ``` md
+    * [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    * [ ] Vestibulum convallis sit amet nisi a tincidunt
+        * [x] In hac habitasse platea dictumst
+        * [x] In scelerisque nibh non dolor mollis congue sed et metus
+        * [ ] Praesent sed risus massa
+    * [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+    ```

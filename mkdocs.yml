@@ -51,3 +51,7 @@ markdown_extensions:
   - pymdownx.tasklist
   - pymdownx.arithmatex
   - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tasklist:
+      clickable_checkbox: true
