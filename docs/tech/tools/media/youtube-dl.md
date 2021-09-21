@@ -11,10 +11,6 @@ Examples using youtube-dl
 |Download|<https://github.com/ytdl-org/youtube-dl/releases>|
 |Install|choco install youtube-dl|
 
-Forks:
-
-- <https://github.com/yt-dlp/yt-dlp>
-
 ## YouTube video download
 
 Download to a specific location in best quality:
@@ -82,3 +78,15 @@ Function ytdlpl
     Get-ChildItem | Rename-Item -NewName { ($_.Name -replace ' .mp3', '.mp3')}
 }
 ```
+
+## Extras
+
+### Alternative fork yt-dlp
+
+Alternative <https://github.com/yt-dlp/yt-dlp>
+
+You can swap yt-dlp with youtube-dl by renaming and not worry about commands fail. If the GUI parses the -F output to give format selection, it could cause a bit of a problem. To fix that, create yt-dlp.conf in the same dir as yt-dlp and put --list-formats-old in it.
+
+### GUI
+
+[Youtube-dl-gui](https://github.com/oleksis/youtube-dl-gui) is a cross platform front-end GUI of the popular youtube-dl written in wxPython.

@@ -75,6 +75,7 @@ Games for two players only:
 Well known and rather special games that can be played with a group of people online:
 
 - Scrabble: <https://bluemoose.club/>
+- Blood On The Clocktower: <https://clocktower.online/>
 - Civilization <https://www.freecivweb.org>
 - Deck of Cards: <https://deck.of.cards/>
 - Just poker: <https://justpoker.games/>
