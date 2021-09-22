@@ -27,8 +27,12 @@ A list of public DNS Servers
 | [Yandex.DNS Safe](https://dns.yandex.com/)                                   | 77.88.8.88</br>77.88.8.2            |                                                           |                                                                                 |
 | [Yandex.DNS Family](https://dns.yandex.com/)                                 | 77.88.8.7</br>77.88.8.3             |                                                           |                                                                                 |
 
-## Other lists and tools
+## Other DNS lists
 
 - <https://www.publicdns.xyz/>
 - <https://public-dns.info/>
 - <https://dns.google/>
+
+## IP LIsts
+
+- ISPs per country <https://www.nirsoft.net/countryip/>

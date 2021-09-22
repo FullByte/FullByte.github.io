@@ -69,6 +69,8 @@ Other
 - EFF Browser Check <https://coveryourtracks.eff.org/>
 - cryptool <https://www.cryptool.org/de/cto/>
 - toolsley <https://www.toolsley.com/>
+- VPN & Proxy Detection <https://vpnapi.io/>
+- Transfer Files via Sound ID <https://www.ozzillate.com/>
 
 ### Overviews
 

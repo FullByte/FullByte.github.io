@@ -18,12 +18,14 @@
 - Pop <https://pop.com/>
 - Tutturu tv <https://app.tutturu.tv/servers>
 - Distributed talker <https://qvdev.github.io/distributed-talker/>
+- LeapChat <https://www.leapchat.org>
 
 ## Work on Text
 
 - Yopad <https://yopad.eu/>
 - Cryptpad <https://cryptpad.fr/>
 - Hackmd <https://hackmd.io/?nav=overview>
+- Real-time code sharing for your lectures and presentations: <https://brunosimon.github.io/keppler/>
 
 ## Share Files/Text
 

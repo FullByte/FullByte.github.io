@@ -127,9 +127,19 @@ What is Wikipedia? [Here is a good explanation.](https://enwikipedia.org/wiki/Wi
 
 https://de.wikipedia.org/wiki/Liste_der_Schraubenkopfantriebe
 
-
 ## Unsorted
 
+https://de.wikipedia.org/wiki/Lobotomie
+https://en.wikipedia.org/wiki/Pantograph
+https://en.wikipedia.org/wiki/Thought_Reform_and_the_Psychology_of_Totalism#Thought-terminating_clich%C3%A9
+https://en.wikipedia.org/wiki/Self-surgery
+https://en.wikipedia.org/wiki/Chekhov%27s_gun
+https://en.wikipedia.org/wiki/PayPal_Mafia
+https://en.wikipedia.org/wiki/Sterile_flight_deck_rule
+https://en.wikipedia.org/wiki/Finger_binary
+https://en.wikipedia.org/wiki/Extreme_ironing
+https://en.wikipedia.org/wiki/Hashcash
+https://en.wikipedia.org/wiki/Sam_Panopoulos
 https://en.wikipedia.org/wiki/Frequency_illusion
 https://en.wikipedia.org/wiki/B._Traven
 https://en.wikipedia.org/wiki/Old_person_smell
@@ -168,7 +178,7 @@ https://en.wikipedia.org/wiki/Diderot_effect
 https://en.wikipedia.org/wiki/List_of_military_nuclear_accidents
 
 - [Hofstadter's law](https://en.wikipedia.org/wiki/Hofstadter's_law "https://en.wikipedia.org/wiki/Hofstadter's_law")
-- [Conspiracy theory](https://en.m.wikipedia.org/wiki/Conspiracy_theory "https://en.m.wikipedia.org/wiki/Conspiracy_theory")
+- [Conspiracy theory](https://en.wikipedia.org/wiki/Conspiracy_theory "https://en.wikipedia.org/wiki/Conspiracy_theory")
 - [Clearingstelle Urheberrecht im Internet](https://de.wikipedia.org/wiki/Clearingstelle_Urheberrecht_im_Internet "https://de.wikipedia.org/wiki/Clearingstelle_Urheberrecht_im_Internet")
 - [Immortal Game](https://en.wikipedia.org/wiki/Immortal_Game "https://en.wikipedia.org/wiki/Immortal_Game")
 - [100 point check](https://en.wikipedia.org/wiki/100_point_check "https://en.wikipedia.org/wiki/100_point_check")

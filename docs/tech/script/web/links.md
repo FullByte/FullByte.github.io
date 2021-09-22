@@ -42,6 +42,7 @@
 - umami <https://github.com/mikecao/umami>
 - goatcounter <https://github.com/zgoat/goatcounter>
 - awesome-analytics <https://github.com/0xnr/awesome-analytics>
+- Image Optimization Test <https://images.cloudflare.com/>
 
 ## Documentation
 

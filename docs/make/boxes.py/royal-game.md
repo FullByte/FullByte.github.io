@@ -16,6 +16,14 @@ Here are some pictures of the first print without paint:
 
 ![royal-game-result](_royal-game-result3.jpg)
 
+And after painting using acrylic paint:
+
+![royal-game-painted](_royal-game-painted1.jpg)
+
+![royal-game-painted](_royal-game-painted2.jpg)
+
+![royal-game-painted](_royal-game-painted3.jpg)
+
 ## Dice
 
 This is the probability of the dice role outcome.

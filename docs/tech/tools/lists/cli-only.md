@@ -23,11 +23,21 @@ More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 - Share Files using QR code: <https://github.com/claudiodangelis/qrcp>
 - GPG: <https://github.com/orhun/gpg-tui>
 
-## Music
+## Media
+
+Music
 
 - Beets: <https://github.com/beetbox/beets> `pip install beets`
 - Musikcube (Spotify): <https://github.com/clangen/musikcube>
 - Spotify: <https://github.com/Rigellute/spotify-tui>
+
+Watch Movies in ASCII
+
+```shell
+sudo apt-get install mplayer
+wget https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.ogg
+mplayer -vo caca big_buck_bunny_480p_stereo.ogg
+```
 
 ## File Transfer
 

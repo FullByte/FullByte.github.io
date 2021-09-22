@@ -11,10 +11,10 @@ This list is an export from [Board Game Geek (BGG)](https://boardgamegeek.com/co
 |Arimaa |N/A|
 |Backgammon|N/A|
 |Barragoon||
-|Chess||
+|Chess|<https://github.com/tromp/ChessPositionRanking>|
 |DVONN||
 |GIPF||
-|Go||
+|Go|<https://tromp.github.io/go/legal.html>|
 |ZÈRTZ||
 |YINSH||
 |Kamisado||
@@ -64,7 +64,7 @@ Games for atleast 4 people, easy to play.
 
 |Games|Expansions|Comment|
 |-|-|-|
-|A Game of Thrones: The Board Game (Second Edition)|Mother of Dragons (2018), A Feast for Crows (2013), A Dance with Dragons (2012)|G.o.T.T.|
+|A Game of Thrones: The Board Game (Second Edition)|Mother of Dragons (2018), A Feast for Crows (2013), A Dance with Dragons (2012)|Helper:<br><http://www.cardgamedb.com/index.php/gameofthrones/game-of-thrones-deck-builder><br><http://www.cardgamedb.com/index.php/GoTCards.html><br><http://www.cardgamedb.com/index.php/gameofthrones/game-of-thrones-decks>|
 |Adventure Time Card Wars|BMO vs. Lady Rainicorn, Doubles Tournament, Finn vs. Jake, Fionna vs Cake, For The Glory! Booster Pack, Hero Pack #1, Ice King vs. Marceline, Lemongrab vs. Gunter, Princess Bubblegum vs. Lumpy Space Princess, Love Letter|HGE|
 |Azul|Variants: Die Buntglasfenster von Sintra & Summer Pavilion||
 |BANG! The Bullet!|||

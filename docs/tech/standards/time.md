@@ -1,5 +1,16 @@
 # Time
 
+## Links
+
+- 120 years of timezones: <https://blog.scottlogic.com/2021/09/14/120-years-timezone.html>
+- <https://en.wikipedia.org/wiki/ISO_3166-1>
+- <https://www.timeanddate.com/time/zones/>
+- <https://www.iana.org/time-zones>
+- <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>
+- <https://www.ibm.com/docs/en/workload-scheduler/8.6.0?topic=zones-complete-table-time-variable-length-notation>
+
+## Facts
+
 - UTC: The time at zero degrees longitude (the Prime Meridian) is called Universal Coordinated Time (UTC).
 - GMT: UTC used to be called Greenwich Mean Time (GMT) because the Prime Meridian was (arbitrarily) chosen to pass through the Royal Observatory in Greenwich.
 - Other timezones can be written as an offset from UTC. Australian Eastern Standard Time is UTC+1000. e.g. 10:00 UTC is 20:00 EST on the same day.
