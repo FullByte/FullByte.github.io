@@ -57,12 +57,16 @@ Some of these are quite special and nerdy.
 - Dot Dot Dot: <http://lalo.li/ddd/>
 - Wayfinder: <https://wayfinder.nfb.ca/>
 - Is this prime?: <https://isthisprime.com/game/>
+- Super Mario Clone with Map Maker: <https://js13kgames.com/games/super-chrono-portal-maker/index.html>
+- underrun <https://js13kgames.com/games/underrun/index.html>
+- 1024-moves <https://js13kgames.com/games/1024-moves/index.html>
 
 ## 2 Player Games
 
 Games for two players only:
 
 - Battleship <https://papergames.io/en/battleship>
+- Royal Game of Ur: <https://royalur.net/game/>
 - Chess <http://en.lichess.org/>
 - Connect4 <https://papergames.io/en/connect4>
 - Go <https://go.mattle.online/>

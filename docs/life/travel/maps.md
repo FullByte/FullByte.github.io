@@ -20,6 +20,7 @@
 ## Specific Locations
 
 - London Underground: <https://traintimes.org.uk/map/tube/schematic/>
+- California Department of Forestry and Fire Protection: <https://www.fire.ca.gov/incidents>
 
 ## Society
 
@@ -42,6 +43,7 @@
 - Internet Exchange Map: <https://www.internetexchangemap.com/>
 - Railways: <https://www.openrailwaymap.org>
 - Air Quality <https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#1.93/28.03/22.67>
+- Global mcdonald’s ice cream machine status: <https://mcbroken.com/>
 
 ## Marine
 
@@ -52,10 +54,16 @@
 
 ## Satellites
 
-- satellites <https://james.darpinian.com/satellites/>
-- satellites <https://platform.leolabs.space/visualization>
-- Starlink satellites <https://findstarlink.com/>
-- Starlink satellites <https://orbitalindex.com/feature/starlink-coverage/>
+General maps
+
+- <https://james.darpinian.com/satellites/>
+- <https://platform.leolabs.space/visualization>
+- <https://satellitemap.space/>
+
+Starlink
+
+- <https://findstarlink.com/>
+- <https://orbitalindex.com/feature/starlink-coverage/>
 
 ## Other Planets
 

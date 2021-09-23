@@ -32,21 +32,12 @@ wmic os get Caption /value | more 2>&1
 schtasks /query /FO List /V | findstr /b /n /c:"Repeat: Every:" 2>&1
 ```
 
-For are more detailed systeminfo dump run [winPEAS](https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/winPEAS/winPEASbat/winPEAS.bat).
+For are more detailed system info dump run [winPEAS](https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/winPEAS/winPEASbat/winPEAS.bat).
 
 ## Robocopy
 
-exclude files
-
-```cmd
-Robocopy /xd excludethis
-```
-
-Ignore hidden files
-
-```cmd
-Robocopy -s -h
-```
+- Exclude files: ```Robocopy /xd excludethis```
+- Ignore hidden files ```Robocopy -s -h```
 
 ## Format and Image stuff
 
@@ -87,52 +78,6 @@ wmic nteventlog where LogFileName=’PowerShell’ Call ClearEventlog
 ren %1 temp000 & copy /y %windir%\regedit.exe temp000 & del temp000
 ```
 
-## Mount Linux File System
-
-List devices (choose the drive you want to mount)
-
-```powershell
-wmic diskdrive list brief
-```
-
-Mount partition 1 of "PHYSICALDRIVE3" and open it
-
-```powershell
-wsl --mount \\.\PHYSICALDRIVE3 --partition 1
-wsl
-cd /mnt/wsl/PHYSICALDRIVE3p1/
-```
-
-Source: <https://docs.microsoft.com/de-de/windows/wsl/wsl2-mount-disk>
-
-## Merge Files
-
-To hide something
-
-```shell
-copy /b secret.jpg + pic1.jpg newpic.jpg
-```
-
-To merge video files
-
-```shell
-copy /b video1.avi + video2.avi video.avi
-```
-
-## Network
-
-Find hidden WiFi network
-
-```shell
-Netsh wlan show networks mode=bssid
-```
-
-Reply from IP: TTL expired in transit
-
-```shell
-ARP -p <IP> <MAC>
-```
-
 ### Get MAC Address of remote PC
 
 Option 1
@@ -155,7 +100,7 @@ Option 3
 getmac
 ```
 
-### Netzwerkverkehr umleiten
+### Route network traffic
 
 Requests to 10.11.12.13 will be routed via 8.8.8.8:
 
@@ -179,14 +124,11 @@ net send /users This is a test message
 msg \* /SERVER:localhost /TIME:666 /W This is a test message
 ```
 
-## Benchmark Drive
+## More
 
-```cmd
-Winsat disk –write –ran –ransize 262144 –drive f
-```
-
-## Create Symbolic links
-
-```cmd
-fsutil hardlink create <destination_path> <file_path>
-```
+- To hide something: ```copy /b secret.jpg + pic1.jpg newpic.jpg```
+- To merge video files: ```copy /b video1.avi + video2.avi video.avi```
+- Find hidden WiFi network: ```Netsh wlan show networks mode=bssid```
+- Reply from IP: TTL expired in transit: ```ARP -p <IP> <MAC>```
+- Benchmark Drive: ```Winsat disk –write –ran –ransize 262144 –drive f```
+- Create Symbolic links: ```fsutil hardlink create <destination_path> <file_path>```

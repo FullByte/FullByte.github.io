@@ -24,9 +24,16 @@ And after painting using acrylic paint:
 
 ![royal-game-painted](_royal-game-painted3.jpg)
 
-## Dice
+## Play the game
 
-This is the probability of the dice role outcome.
+Rules
+
+- Play online: <https://royalur.net/game/> and https://tabletopia.com/games/trgo-ur
+- Rules: <https://royalur.net/rules/> and <https://www.mastersgames.com/rules/royal-ur-rules.htm>
+- Wikipedia: <https://en.wikipedia.org/wiki/Royal_Game_of_Ur>
+- Ben's Royal Game of Ur <https://www.dvgc.com/gk/Bens_ur.html>
+
+Dice probability
 
 | Result | Chance      |
 |--------|-------------|

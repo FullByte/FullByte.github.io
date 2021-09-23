@@ -104,15 +104,22 @@ Other
 - random-data-api <https://random-data-api.com/>
 - faker.js <https://rawgit.com/Marak/faker.js/master/examples/browser/index.html>
 
-### Nice to look at
+### Maps
 
-Maps
+Nice to look at
 
 - <http://www.digitalattackmap.com/>
 - <https://cybermap.kaspersky.com/>
 - <https://app.any.run/>
 - <http://www.internettrafficreport.com/>
 - <https://www.thousandeyes.com/outages/>
+
+Map APIs
+
+- <https://oikolab.com/api-details#api=weather&operation=weather-data>
+- <https://openweathermap.org/api>
+- <https://www.visualcrossing.com/weather-api>
+- <https://open-meteo.com/en/docs>
 
 ## Mobile
 

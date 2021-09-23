@@ -111,12 +111,34 @@ Edit the "settings.json" and add under "profiles", "defaults" a line for a font 
 
 ### WSL
 
-Set WSL version 2 e.g. for kali
+Some helpful [commands](https://docs.microsoft.com/en-us/windows/wsl/basic-commands):
+
+- Check for updates: ```wsl --update```
+- List all available WSL distributions: ```wsl --list --online```
+- List locally installed distros: ```wsl --list --verbose```
+- Install a distribution: ```wsl --install -d Ubuntu-20.04```
+- Delete Distro: ```wsl --unregister Ubuntu-18.04```
+- Set default distro: ```wsl --set-default Ubuntu-20.04```
+- Open WSL in pwsh: ```wsl --distribution Ubuntu-20.04 --user fab1```
+- Change distro to version 2 ```wsl --set-version kali-linux 2```*
+
+wsl --distribution Ubuntu-20.04 --user fab1
+
+*This may require installing the following
 
 ```powershell
 (New-Object System.Net.WebClient).DownloadFile("https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi", "wsl_update_x64.msi") 
-Start-Process msiexec.exe -Wait -ArgumentList '/I wsl_update_x64.msi /quiet' 
-wsl --set-version kali-linux 2
+Start-Process msiexec.exe -Wait -ArgumentList '/I wsl_update_x64.msi /quiet'
+```
+
+[Mount Linux File System](https://docs.microsoft.com/de-de/windows/wsl/wsl2-mount-disk)
+
+List devices (choose the drive you want to mount) ```wmic diskdrive list brief```, then mount partition 1 of "PHYSICALDRIVE3" and open it:
+
+```powershell
+wsl --mount \\.\PHYSICALDRIVE3 --partition 1
+wsl
+cd /mnt/wsl/PHYSICALDRIVE3p1/
 ```
 
 ## Troubleshooting
