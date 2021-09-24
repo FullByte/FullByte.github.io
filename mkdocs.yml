@@ -2,7 +2,7 @@ site_name: "0xfab1"
 site_url: https://0xfab1.net
 repo_url: https://github.com/FullByte/FullByte.github.io
 site_description: "0xfab1 wiki"
-site_author: "Fabian"
+site_author: "0xfab1"
 
 theme:
   name: material
