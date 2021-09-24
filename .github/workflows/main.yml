@@ -33,24 +33,17 @@ jobs:
           git pull
           mkdocs gh-deploy
 
-  build:
-    runs-on: ubuntu-latest
+      - uses: actions/checkout@v2
+      - name: Check URLs
+        uses: urlstechie/urlchecker-action@master
+        with:
+          subfolder: docs/tech
+          file_types: .md
+          print_all: false
+          timeout: 4
+          retry_count: 1
+          force_pass : true
 
-    steps:
-    - uses: actions/checkout@v2
-    - name: Check URLs
-      uses: urlstechie/urlchecker-action@master
-      with:
-        subfolder: docs/tech
-        file_types: .md
-        print_all: false
-        timeout: 4
-        retry_count: 1
-        force_pass : true
-
-  Scan-Build:
-      runs-on: ubuntu-latest
-      steps:
       - uses: actions/checkout@v1
 
       - name: Vuln Scan
