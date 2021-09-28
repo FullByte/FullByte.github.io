@@ -25,6 +25,34 @@ Other:
 - Security.txt <https://securitytxt.org/>
 - Web Manifest <https://www.pwabuilder.com/generate>
 
+## Learn to code
+
+Gamification approach:
+
+- <https://www.gocoder.one/bomberland>
+- <https://www.pommerman.com/>
+- <https://play.battlesnake.com/>
+- <http://fruitbots.org/>
+- <https://nethackchallenge.com/>
+
+Learning platforms
+
+- <https://www.tutorialspoint.com/codingground.htm>
+- <https://eu.pythonanywhere.com/>
+- <https://programmieren-starten.de/>
+- <https://simpleclub.com/>
+- <https://www.rheinwerk-verlag.de/openbook/>
+- <https://docs.python.org/3.3/tutorial/index.html>
+- <https://thonny.org/>
+- <https://www.ilsb.tuwien.ac.at/lva/317.530_2019/index.html>
+- <https://open.hpi.de/>
+
+Youtube
+
+- <https://www.youtube.com/channel/UCLGY6_j7kZfA1dmmjR1J_7w>
+- <https://www.youtube.com/playlist?list=PLWjV3rrL77CAZGdXwnqJDUDXCCqh-Au-0>
+- <https://www.youtube.com/playlist?list=PLFrEKxgBmsV8IgxZP56tlXZ1inlJLqf8w>
+
 ## Library
 
 - <https://htmx.org/>

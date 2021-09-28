@@ -9,16 +9,19 @@
 |Download||
 |Install||
 
-## Test AZ Module (Azure)
+## Login
 
-Best way to test if the AZ-Module is installed and to get started login to your Azure Tenant with this command:
-If your Azure powershell commands don't work check the following:
-
-- You are not logged in.
+Login to azure:
 
 ```ps1
 Connect-AzAccount
 Get-AzContext
+```
+
+Use device code to login:
+
+```powershell
+Connect-AzAccount -Tenant <tenantID> -UseDeviceAuthentication
 ```
 
 ## Helpers

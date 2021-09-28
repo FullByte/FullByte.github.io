@@ -1,5 +1,13 @@
 # Azure CLI
 
+## Login
+
+Use device code to login:
+
+```bash
+az login --tenant <tenantID> --use-device-code
+```
+
 ## Who am I
 
 Login and check the current context

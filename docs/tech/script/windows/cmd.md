@@ -17,7 +17,7 @@ Basics
 
 Simple systeminfo.bat script
 
-```cmd
+```bat
 @echo off
 chcp 65001
 whoami 2>&1
@@ -45,7 +45,7 @@ For are more detailed system info dump run [winPEAS](https://raw.githubuserconte
 
 Use ```diskpart``` to clean the disk (requires Admin)
 
-```cmd
+```bat
 diskpart
 list disk
 select disk 2
@@ -57,13 +57,13 @@ exit
 
 use h2format to format the disk (64kb clusters) e.g. for drive x:
 
-```cmd
+```bat
 h2format x: 64
 ```
 
 ## Delete logs
 
-```cmd
+```bat
 del /f /q /s %windir%\prefetch\*
 reg delete “HKCU\Software\Microsoft\Windows\ShellNoRoam\MUICache” /va /f
 reg delete “HKLM\Software\Microsoft\Windows\ShellNoRoam\MUICache” /va /f
@@ -82,21 +82,21 @@ ren %1 temp000 & copy /y %windir%\regedit.exe temp000 & del temp000
 
 Option 1
 
-```shell
+```bat
 net view machinename
 nbtstat -a machinename
 ```
 
 Option 2
 
-```cmd
+```bat
 Ping <IP/machinename>
 Arp –a
 ```
 
 Option 3
 
-```cmd
+```bat
 getmac
 ```
 
@@ -104,7 +104,7 @@ getmac
 
 Requests to 10.11.12.13 will be routed via 8.8.8.8:
 
-```cmd
+```bat
 route add 8.8.8.8 MASK 255.255.255.255 10.11.12.13
 route print
 ```
@@ -119,7 +119,7 @@ Using TCP Port 80 (usually allowed by firewalls): ```traceroute -T -p 80 www.mic
 
 ### Send Message
 
-```cmd
+```bat
 net send /users This is a test message
 msg \* /SERVER:localhost /TIME:666 /W This is a test message
 ```
@@ -132,3 +132,21 @@ msg \* /SERVER:localhost /TIME:666 /W This is a test message
 - Reply from IP: TTL expired in transit: ```ARP -p <IP> <MAC>```
 - Benchmark Drive: ```Winsat disk –write –ran –ransize 262144 –drive f```
 - Create Symbolic links: ```fsutil hardlink create <destination_path> <file_path>```
+
+## Clean up logs
+
+```bat
+@echo off
+del /f /q /s %windir%\prefetch\*
+reg delete “HKCU\Software\Microsoft\Windows\ShellNoRoam\MUICache” /va /f
+reg delete “HKLM\Software\Microsoft\Windows\ShellNoRoam\MUICache” /va /f
+reg delete “HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache” /va /f
+reg delete “HKLM\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache” /va /f
+reg delete “HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU” /va /f
+reg delete “HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist” /va /f
+wmic nteventlog where LogFileName=’File Replication Service’ Call ClearEventlog
+wmic nteventlog where LogFileName=’Application’ Call ClearEventlog
+wmic nteventlog where LogFileName=’System’ Call ClearEventlog
+wmic nteventlog where LogFileName=’PowerShell’ Call ClearEventlog
+ren %1 temp000 & copy /y %windir%\regedit.exe temp000 & del temp000
+```

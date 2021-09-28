@@ -104,18 +104,20 @@ More...
 - Saying Yes: ```yes | rm -r ~/some/dir```
 - Show Disk Usage For The Current Directory: ```du -h | sort -nr```
 
-## Display all terminal colors
+## VIM
 
-```bash
-for x in {0..8}; do 
-    for i in {30..37}; do 
-        for a in {40..47}; do 
-            echo -ne "\e[$x;$i;$a""m\\\e[$x;$i;$a""m\e[0;37;40m "
-        done
-        echo
-    done
-done
-echo ""
+To make a default Vim installation more useful, type the following 5 lines into its .vimrc file: 
+
+```shell
+set hls ic is nu noswf
+```
+
+## Screen
+
+```shell
+screen # attach
+strg+a --> "d" # detach
+screen -r # re-attach
 ```
 
 ## String Manipulation
@@ -171,12 +173,24 @@ Alternatives for `tree` command:
 
 If you don't have `tree` maybe create an as such: `alias tree='command from above here'`
 
-### Screen
+Display all terminal colors
 
-```shell
-screen # attach
-strg+a --> "d" # detach
-screen -r # re-attach
+```bash
+for x in {0..8}; do 
+    for i in {30..37}; do 
+        for a in {40..47}; do 
+            echo -ne "\e[$x;$i;$a""m\\\e[$x;$i;$a""m\e[0;37;40m "
+        done
+        echo
+    done
+done
+echo ""
+```
+
+[Langton's ant](https://en.wikipedia.org/wiki/Langton%27s_ant) simulation
+
+```sh
+echo -ne "\033#8";X=`tput cols`;Y=`tput lines`;((a=$X/2));((b=$Y/2));d=1;while case $d in 0)((a=a<2?X:a-1));;1)((b=b<2?Y:b-1));;2)((a=a==X?1:a+1));;3)((b=b==Y?1:b+1));; esac;do ((c=b+a*X));v=${k[c]:- };[ $v. = @. ]&&{((d=d>2?0:d+1));k[c]="";}||{(( d=d<1?3:d-1));k[c]=@;};echo -ne "\033[$b;${a}H$v";done
 ```
 
 ## Other
@@ -188,11 +202,3 @@ screen -r # re-attach
 - Connect to RDP server from Linux. ```rdesktop X.X.X.X```
 - Kill current session: ```kill -9 $$```
 - Clear bash history: ```cat /dev/null > ~/.bash_history```
-
-### Fun
-
-[Langton's ant](https://en.wikipedia.org/wiki/Langton%27s_ant) simulation
-
-```sh
-echo -ne "\033#8";X=`tput cols`;Y=`tput lines`;((a=$X/2));((b=$Y/2));d=1;while case $d in 0)((a=a<2?X:a-1));;1)((b=b<2?Y:b-1));;2)((a=a==X?1:a+1));;3)((b=b==Y?1:b+1));; esac;do ((c=b+a*X));v=${k[c]:- };[ $v. = @. ]&&{((d=d>2?0:d+1));k[c]="";}||{(( d=d<1?3:d-1));k[c]=@;};echo -ne "\033[$b;${a}H$v";done
-```
