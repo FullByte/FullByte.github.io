@@ -33,7 +33,6 @@ jobs:
 
       # scan URLs
       - name: Check URLs
-        uses: actions/checkout@v2
         uses: urlstechie/urlchecker-action@master
         with:
           subfolder: docs
