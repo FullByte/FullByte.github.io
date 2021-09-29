@@ -11,16 +11,12 @@ jobs:
     name: Build and Deploy Documentation
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
-      - uses: github/codeql-action/upload-sarif@v1
-      - uses: urlstechie/urlchecker-action@master
-      - uses: ShiftLeftSecurity/scan-action@master
-
       - name: Set up Python 3.9
         with:
           python-version: '3.9'
 
+      - uses: actions/checkout@v2
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip          
@@ -32,6 +28,7 @@ jobs:
           git pull
           mkdocs gh-deploy
 
+      - uses: urlstechie/urlchecker-action@master
       - name: Check URLs
         with:
           subfolder: docs/tech
@@ -41,6 +38,7 @@ jobs:
           retry_count: 1
           force_pass : true
 
+      - uses: ShiftLeftSecurity/scan-action@master
       - name: Vuln Scan
         env:
           WORKSPACE: ""
@@ -49,6 +47,7 @@ jobs:
         with:
           output: reports
 
+      - uses: github/codeql-action/upload-sarif@v1
       - name: Upload report      
         with:
           sarif_file: reports
