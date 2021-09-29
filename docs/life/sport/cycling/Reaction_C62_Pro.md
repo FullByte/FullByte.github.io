@@ -2,6 +2,8 @@
 
 The Reaction C:62 Pro's (Art. No 416110) low weight, razor-sharp handling and surprising on-trail comfort give you the edge you need to get ahead. We selected Shimano's ultra-reliable 12 speed components for their smooth shifting and incredible range, and added powerful Shimano XT hydraulic disc brakes - with a bigger rotor up front - to make sure you're always in full control. And, with its easy adjustability and smooth performance, the RockShox Judy Gold air suspension fork helps keep the front wheel planted and pointing in the right direction.
 
+![reaction_c62_pro](_reaction_c62_pro.jpg)
+
 ## Components
 
 | Component       | Details                                                                                                                                         |

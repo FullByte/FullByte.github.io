@@ -79,6 +79,12 @@ Function ytdlpl
 }
 ```
 
+Alternatively use this script
+
+```powershell
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/scripts/main/tools/youtubedl/youtube-dl.ps1'))
+```
+
 ## Extras
 
 ### Alternative fork yt-dlp
