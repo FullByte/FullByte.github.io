@@ -6,10 +6,8 @@ My **personal but public wiki webpage** (PBPWW) ¯\\_(ツ)_/¯ LoL
 
 ## Stats
 
-- Build Stats: ![mkdocs gh-deploy](https://github.com/FullByte/FullByte.github.io/workflows/mkdocs%20gh-deploy/badge.svg?branch=master)
-[![SL Scan](https://github.com/FullByte/FullByte.github.io/actions/workflows/shiftleft-analysis.yml/badge.svg?branch=master)](https://github.com/FullByte/FullByte.github.io/actions/workflows/shiftleft-analysis.yml)
-[![Check URLs](https://github.com/FullByte/FullByte.github.io/actions/workflows/checkurls.yml/badge.svg)](https://github.com/FullByte/FullByte.github.io/actions/workflows/checkurls.yml)
-![Check URLs](https://img.shields.io/website-up-down-green-red/http/0xfab1.net.svg)
+- Build Stats: ![mkdocs deploy](https://github.com/FullByte/FullByte.github.io/workflows/mkdocs%20gh-deploy/badge.svg?branch=master)
+![website](https://img.shields.io/website-up-down-green-red/http/0xfab1.net.svg)
 [![volkswagen status](https://auchenberg.github.io/volkswagen/volkswargen_ci.svg?v=1)](https://github.com/auchenberg/volkswagen)
 - Uptime: ![uptime](https://badgen.net/uptime-robot/status/m789173114-297aedeb6117b9a7cac6bb7e) ![day](https://badgen.net/uptime-robot/day/m789173114-297aedeb6117b9a7cac6bb7e) ![week](https://badgen.net/uptime-robot/week/m789173114-297aedeb6117b9a7cac6bb7e) ![month](https://badgen.net/uptime-robot/month/m789173114-297aedeb6117b9a7cac6bb7e) ![response](https://badgen.net/uptime-robot/response/m789173114-297aedeb6117b9a7cac6bb7e)
 - Github Stats: ![license](https://img.shields.io/github/license/Fullbyte/FullByte.github.io.svg)

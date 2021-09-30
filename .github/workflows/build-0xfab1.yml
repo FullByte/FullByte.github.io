@@ -32,15 +32,15 @@ jobs:
           mkdocs gh-deploy
 
       # scan URLs
-      - name: Check URLs
-        uses: urlstechie/urlchecker-action@master
-        with:
-          subfolder: docs
-          file_types: .md
-          print_all: false
-          timeout: 4
-          retry_count: 1
-          force_pass : true
+      #- name: Check URLs
+      #  uses: urlstechie/urlchecker-action@master
+      #  with:
+      #    subfolder: docs
+      #    file_types: .md
+      #    print_all: false
+      #    timeout: 4
+      #    retry_count: 1
+      #    force_pass : true
 
       # scan for vulnerabilities
       - name: Vuln Scan
