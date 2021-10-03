@@ -1,10 +1,12 @@
-# BMC CROSS MACHINE CX02 (2010)
+# Cycling
+
+## BMC CROSS MACHINE CX02 (2010)
 
 Die komplette 105-Gruppe mit Kompaktkurbel und Shimanos günstige, aber stabile RS10-Räder sind an dem brettsteifen Rahmen mit seinem eigenständigen Design montiert. Bei der Geometrie tanzt das BMC aber aus der Reihe: Im Verhältnis zum 56,5 Zentimeter langen Oberrohr gerät das Sitzrohr mit 59,6 Zentimetern sehr lang. Im Geländeeinsatz wirkt der Rahmen durch das hohe Oberrohr etwas unhandlich, zudem eignet sich die kantige Unterseite mit unten verlegten Zügen nicht zum Schultern. Wer mit dem BMC dennoch ins Gelände will, sollte den Rahmen eine Nummer kleiner kaufen und sitzt dann sportlich-gedrungen. Das schwerste Rahmen-Set und das höchste Gesamtgewicht kosten einige Punkte und etwas Spritzigkeit.
 
 ![bmc_cx02](_bmc_cx02.jpg)
 
-## Components
+### Components
 
 - Total Wight: 9830 g
 - Frame: SCC (weight 1950g)
@@ -25,7 +27,7 @@ Die komplette 105-Gruppe mit Kompaktkurbel und Shimanos günstige, aber stabile 
 - Rims: Shimano, RS10
 - Tires: Continental, Twister Pro
 
-## Size
+### Size
 
 |        Size       |     50    |     52    |     54    |     56    |     58    |     61    |
 |:-----------------:|:---------:|:---------:|:---------:|:---------:|:---------:|:---------:|

@@ -201,16 +201,30 @@ Here is a overview of the Github Pages settings I use:
 
 [Mkdocs](https://www.mkdocs.org/) specifically uses the branch "gh-pages" by default to build the static website that will be served.
 
-I added a custom domain "0xfab1.net" and added a file in the main folder of my repo called [CNAME](https://github.com/FullByte/FullByte.github.io/blob/master/CNAME) with one line containing my domain "0xfab1.net".
+I added a [custom domain](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site) "0xfab1.net" and added a file in the main folder of my repo called [CNAME](https://github.com/FullByte/FullByte.github.io/blob/master/CNAME) with one line containing my domain "0xfab1.net".
 
-I added the following DNS records to the domain:
+I added the following IPv4 DNS records (`dig 0xfab1.net +noall +answer -t A`):
 
 ```dns
-@ 1800 IN A 185.199.108.153
-@ 1800 IN A 185.199.109.153
-@ 1800 IN A 185.199.110.153
-@ 1800 IN A 185.199.111.153
-www 10800 IN CNAME fullbyte.github.io.
+0xfab1.net.             0       IN      A       185.199.108.153
+0xfab1.net.             0       IN      A       185.199.109.153
+0xfab1.net.             0       IN      A       185.199.110.153
+0xfab1.net.             0       IN      A       185.199.111.153
+```
+
+as well as these IPv6 DNS records (`dig 0xfab1.net +noall +answer -t AAAA`):
+
+```dns
+0xfab1.net.             0       IN      AAAA    2606:50c0:8000::153
+0xfab1.net.             0       IN      AAAA    2606:50c0:8001::153
+0xfab1.net.             0       IN      AAAA    2606:50c0:8002::153
+0xfab1.net.             0       IN      AAAA    2606:50c0:8003::153
+```
+
+and a CNAME record for www.0xfab1.net (`dig www.0xfab1.net +noall +answer -t CNAME`):
+
+```dns
+www.0xfab1.net.         0       IN      CNAME   fullbyte.github.io.
 ```
 
 #### Github Actions
