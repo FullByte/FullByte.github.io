@@ -89,11 +89,28 @@ mapscii
 
 ### asciinema
 
-```shell
-sudo apt install asciinema
+Install
 
+```shell
+sudo apt-get install python3 pip
+sudo apt install asciinema
+```
+
+or
+
+```shell
+sudo pip3 install asciinema
+```
+
+```shell
 asciinema rec
-asciinema auth
+echo "hello world"
+exit
+```
+
+Play existing recordings (local/online):
+
+```shell
 asciinema play /path/to/asciicast.cast
-asciinema play https://asciinema.org/a/22124.cast
+asciinema play https://asciinema.org/a/237459
 ```
