@@ -2,6 +2,342 @@
 
 Most of this is the work of someone else but as I found this stuff hard to find I just want to make sure it is not lost. Links where known are added.
 
+## SSH
+
+### [Tron](http://sshtron.zachlatta.com/)
+
+Run this command to play
+
+```sh
+ssh sshtron.zachlatta.com
+```
+
+Choose a color (e.g. red):
+
+```sh
+ssh red@sshtron.zachlatta.com
+```
+
+Download [tron.json](_tron.json), get the [source](https://github.com/zachlatta/sshtron), or view below:
+
+<script id="asciicast-154041" src="https://asciinema.org/a/154041.js" async></script>
+
+## Bash
+
+### [nyancat](https://github.com/klange/nyancat)
+
+Download and install
+
+```sh
+git clone https://github.com/klange/nyancat
+cd nyancat
+make && cd src
+./nyancat
+```
+
+To use the telnet server, you need to add a configuration that runs:
+
+```sh
+nyancat -t
+```
+
+Download [nyancat.json](_nyancat.json) or view below:
+
+<script id="asciicast-23012" src="https://asciinema.org/a/23012.js" async></script>
+
+### Steam Locomotive (sl)
+
+Install ```sudo apt install sl```
+
+Use ```sl```
+
+Download [sl.cast](_sl.cast) or view below:
+
+<script id="asciicast-234381" src="https://asciinema.org/a/234381.js" async></script>
+
+### Cowsay and Cowthink
+
+Install ```sudo apt install cowsay```
+
+Use cowsay ```cowsay 0xfab1.net```
+
+```txt
+ ____________
+< 0xfab1.net >
+ ------------
+        \   ^__^
+         \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+Use cowthink (e.g. pipe it a fortune cookie) ```fortune | cowthink```
+
+```txt
+ ________________________________________
+( You will attract cultured and artistic )
+( people to your home.                   )
+ ----------------------------------------
+        o   ^__^
+         o  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+### Toilet
+
+Install ```sudo apt install toilet```
+
+Use Toilet ```toilet 0xfab1.net```
+
+```txt
+  mmmm           m""         #      mmm                           m
+ m"  "m m   m  mm#mm   mmm   #mmm     #           m mm    mmm   mm#mm
+ #  m #  #m#     #    "   #  #" "#    #           #"  #  #"  #    #
+ #    #  m#m     #    m"""#  #   #    #           #   #  #""""    #
+  #mm#  m" "m    #    "mm"#  ##m#"  mm#mm    #    #   #  "#mm"    "mm
+```
+
+Another example: ```toilet -kf mono12 0xfab1.net```
+
+```txt
+  ▄▄▄▄             ▄▄▄▄       ▄▄        ▄▄▄
+ ██▀▀██           ██▀▀▀       ██       █▀██                      ██
+██    ██▀██  ██▀███████▄█████▄██▄███▄    ██     ██▄████▄ ▄████▄███████
+██ ██ ██  ████    ██   ▀ ▄▄▄████▀  ▀██   ██     ██▀   ████▄▄▄▄██ ██
+██    ██  ▄██▄    ██  ▄██▀▀▀████    ██   ██     ██    ████▀▀▀▀▀▀ ██
+ ██▄▄██  ▄█▀▀█▄   ██  ██▄▄▄██████▄▄██▀▄▄▄██▄▄▄████    ██▀██▄▄▄▄█ ██▄▄▄
+  ▀▀▀▀  ▀▀▀  ▀▀▀  ▀▀   ▀▀▀▀ ▀▀▀▀ ▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀▀    ▀▀  ▀▀▀▀▀   ▀▀▀▀
+```
+
+Another example with color: ```toilet -f mono12 -F metal 0xfab1```
+
+![toilet-color](_toilet-color.png)
+
+You can also use toilet to pipe stuff e.g. this example for the current time:
+
+```sh
+while true; do clear; echo "$(date '+%D %T' | toilet -f term -F border --gay)"; sleep 1; done
+```
+
+![toilet-time](_toilet-time.png)
+
+### Figlet
+
+Install ```sudo apt install figlet```
+
+Use Figlet ```figlet 0xfab1.net```
+
+```txt
+  ___        __       _     _              _
+ / _ \__  __/ _| __ _| |__ / |  _ __   ___| |_
+| | | \ \/ / |_ / _` | '_ \| | | '_ \ / _ \ __|
+| |_| |>  <|  _| (_| | |_) | |_| | | |  __/ |_
+ \___//_/\_\_|  \__,_|_.__/|_(_)_| |_|\___|\__|
+```
+
+Another example: ```figlet -c -k -w 100 -f shadow 0xfab1.net```
+
+figlet -f $font 0xfab1.net
+
+```txt
+  _ \           _|         |    _ |                  |
+ |   | \ \  /  |     _` |  __ \   |     __ \    _ \  __|
+ |   |  `  <   __|  (   |  |   |  |     |   |   __/  |
+\___/   _/\_\ _|   \__,_| _.__/  _| _) _|  _| \___| \__|
+```
+
+You can use any tlf-font available here ```ls /usr/share/figlet/``` and loop through all options to see what looks good e.g. as such:
+
+```sh
+for f in /usr/share/figlet/*.tlf; do file=$(echo "${f##*/}"); font=$(echo $file| cut -d'.' -f 1); figlet -f $font 0xfab1.net; done
+```
+
+??? output "figlet with all fonts"
+    ```txt
+
+    ░████░               ▒████             ██         ░███
+    ██████               █████             ██         ████
+    ▒██  ██▒              ██                ██         █▒██
+    ██▒  ▒██  ███  ███  ███████    ▒████▓   ██░███▒      ██
+    ██    ██   ██▒▒██   ███████    ██████▓  ███████▒     ██
+    ██ ██ ██   ▒████▒     ██       █▒  ▒██  ███  ███     ██
+    ██ ██ ██    ████      ██        ▒█████  ██░  ░██     ██
+    ██    ██    ▒██▒      ██      ░███████  ██    ██     ██
+    ██▒  ▒██    ████      ██      ██▓░  ██  ██░  ░██     ██
+    ▒██  ██▒   ▒████▒     ██      ██▒  ███  ███  ███     ██        ██
+    ██████    ██▒▒██     ██      ████████  ███████▒  ████████     ██
+    ░████░   ███  ███    ██       ▓███░██  ██░███▒   ████████     ██
+
+
+                        ██
+                        ██
+    ██░████    ░████▒   ███████
+    ███████▓  ░██████▒  ███████
+    ███  ▒██  ██▒  ▒██    ██
+    ██    ██  ████████    ██
+    ██    ██  ████████    ██
+    ██    ██  ██          ██
+    ██    ██  ███░  ▒█    ██░
+    ██    ██  ░███████    █████
+    ██    ██   ░█████▒    ░████
+
+
+                    ▒██         █
+    ▓██▓           █░          █      ███                           █
+    ▒█  █▒          █           █        █                           █
+    █░  ▒█ █▒ ▒█  █████  ░███░  █▓██     █           █▒██▒   ███   █████
+    █    █ ░█ █░    █    █▒ ▒█  █▓ ▓█    █           █▓ ▒█  ▓▓ ▒█    █
+    █  █ █  ▓█▓     █        █  █   █    █           █   █  █   █    █
+    █    █  ░█░     █    ▒████  █   █    █           █   █  █████    █
+    █░  ▒█  ███     █    █▒  █  █   █    █           █   █  █        █
+    ▒█  █▒ ░█ █░    █    █░ ▓█  █▓ ▓█    █      █    █   █  ▓▓  █    █░
+    ▓██▓  █▒ ▒█    █    ▒██▒█  █▓██   █████    █    █   █   ███▒    ▒██
+
+
+    ⓪ⓧⓕⓐⓑ①⊙ⓝⓔⓣ
+    ┏━┃┃ ┃┏━┛┏━┃┏━ ━┃  ┏━ ┏━┛━┏┛
+    ┃┛┃ ┛ ┏━┛┏━┃┏━┃ ┃  ┃ ┃┏━┛ ┃
+    ━━┛┛ ┛┛  ┛ ┛━━ ━━┛┛┛ ┛━━┛ ┛
+    ╔═║║ ║╔═╝╔═║╔═ ═║  ╔═ ╔═╝═╔╝
+    ║╝║ ╝ ╔═╝╔═║╔═║ ║  ║ ║╔═╝ ║
+    ══╝╝ ╝╝  ╝ ╝══ ══╝╝╝ ╝══╝ ╝
+    ┏━┓╻ ╻┏━╸┏━┓┏┓ ╺┓  ┏┓╻┏━╸╺┳╸
+    ┃┃┃┏╋┛┣╸ ┣━┫┣┻┓ ┃  ┃┗┫┣╸  ┃
+    ┗━┛╹ ╹╹  ╹ ╹┗━┛╺┻╸╹╹ ╹┗━╸ ╹
+    000  X   X FFFFF   A   BBBB   1      N   N EEEEE TTTTT
+    0   0  X X  F      A A  B   B 11      NN  N E       T
+    0 0 0   X   FFFF  AAAAA BBBB   1      N N N EEEE    T
+    0   0  X X  F     A   A B   B  1  ..  N  NN E       T
+    000  X   X F     A   A BBBB  111 ..  N   N EEEEE   T
+
+
+    ▄▄▄▄                 ▄▄▄▄             ▄▄          ▄▄▄
+    ██▀▀██               ██▀▀▀             ██         █▀██
+    ██    ██  ▀██  ██▀  ███████    ▄█████▄  ██▄███▄      ██
+    ██ ██ ██    ████      ██       ▀ ▄▄▄██  ██▀  ▀██     ██
+    ██    ██    ▄██▄      ██      ▄██▀▀▀██  ██    ██     ██
+    ██▄▄██    ▄█▀▀█▄     ██      ██▄▄▄███  ███▄▄██▀  ▄▄▄██▄▄▄     ██
+    ▀▀▀▀    ▀▀▀  ▀▀▀    ▀▀       ▀▀▀▀ ▀▀  ▀▀ ▀▀▀    ▀▀▀▀▀▀▀▀     ▀▀
+
+
+                        ██
+    ██▄████▄   ▄████▄   ███████
+    ██▀   ██  ██▄▄▄▄██    ██
+    ██    ██  ██▀▀▀▀▀▀    ██
+    ██    ██  ▀██▄▄▄▄█    ██▄▄▄
+    ▀▀    ▀▀    ▀▀▀▀▀      ▀▀▀▀
+
+    ▄▄▄▄           ▄▀▀         █      ▄▄▄                           ▄
+    ▄▀  ▀▄ ▄   ▄  ▄▄█▄▄   ▄▄▄   █▄▄▄     █           ▄ ▄▄    ▄▄▄   ▄▄█▄▄
+    █  ▄ █  █▄█     █    ▀   █  █▀ ▀█    █           █▀  █  █▀  █    █
+    █    █  ▄█▄     █    ▄▀▀▀█  █   █    █           █   █  █▀▀▀▀    █
+    █▄▄█  ▄▀ ▀▄    █    ▀▄▄▀█  ██▄█▀  ▄▄█▄▄    █    █   █  ▀█▄▄▀    ▀▄▄
+
+
+    ░▄▀▄░█░█░█▀▀░█▀█░█▀▄░▀█░░░░░█▀█░█▀▀░▀█▀
+    ░█/█░▄▀▄░█▀▀░█▀█░█▀▄░░█░░░░░█░█░█▀▀░░█░
+    ░░▀░░▀░▀░▀░░░▀░▀░▀▀░░▀▀▀░▀░░▀░▀░▀▀▀░░▀░
+
+    .m,        mm      .,    .m
+    W"W       ]P"      ][    PW                  ][
+    ][ ]['W W`]WWW  dWW,]bWb   W       ]bWW, dWb ]WWW
+    ][W][ ]W[  ][   `md[]P T[  W       ]P ][]bmd[ ][
+    ][ ][ .W,  ][  .W"T[][ ][  W       ][ ][]P""` ][
+    WmW  d"b  ][  ]bmW[]WmW`.mWm,  W  ][ ]['Wmm[ ]bm
+    '"` '" "` '`   ""'`'`"` '"""`  "  '` '` '""   ""
+
+
+    mm      ."     ]   .m               .
+    .`',. . .dm  m, ]m,  ]      ..,  m, .dm
+    ] ,[ b[  ]  ' ] ]`T  ]      ]`] ]`]  ]
+    ]  [ d,  ]  ."T ] ]  ]      ] ] ]""  ]
+    bd .`\  ]  'mT ]bP .dm  ]  ] ] 'b/  'm
+
+
+    ▞▀▖   ▗▀▖   ▌ ▗▌         ▐
+    ▌▞▌▚▗▘▐  ▝▀▖▛▀▖▌   ▛▀▖▞▀▖▜▀
+    ▛ ▌▗▚ ▜▀ ▞▀▌▌ ▌▌ ▗▖▌ ▌▛▀ ▐ ▖
+    ▝▀ ▘ ▘▐  ▝▀▘▀▀▝▀ ▝▘▘ ▘▝▀▘ ▀
+    ⣎⣵ ⡀⢀ ⣰⡁ ⢀⣀ ⣇⡀ ⢺    ⣀⡀ ⢀⡀ ⣰⡀
+    ⠫⠜ ⠜⠣ ⢸  ⠣⠼ ⠧⠜ ⠼⠄ ⠶ ⠇⠸ ⠣⠭ ⠘⠤
+
+    ▗▄▖        ▄▄      ▗▖    ▗▄
+    █▀█       ▐▛▀      ▐▌    ▛█                  ▐▌
+    ▐▌ ▐▌▝█ █▘▐███  ▟██▖▐▙█▙   █       ▐▙██▖ ▟█▙ ▐███
+    ▐▌█▐▌ ▐█▌  ▐▌   ▘▄▟▌▐▛ ▜▌  █       ▐▛ ▐▌▐▙▄▟▌ ▐▌
+    ▐▌ ▐▌ ▗█▖  ▐▌  ▗█▀▜▌▐▌ ▐▌  █       ▐▌ ▐▌▐▛▀▀▘ ▐▌
+    █▄█  ▟▀▙  ▐▌  ▐▙▄█▌▐█▄█▘▗▄█▄▖  █  ▐▌ ▐▌▝█▄▄▌ ▐▙▄
+    ▝▀▘ ▝▀ ▀▘ ▝▘   ▀▀▝▘▝▘▀▘ ▝▀▀▀▘  ▀  ▝▘ ▝▘ ▝▀▀   ▀▀
+
+    ▄▄      ▗▀     ▐   ▗▄               ▗
+    ▗▘▝▖▗ ▗ ▗▟▄  ▄▖ ▐▄▖  ▐      ▗▗▖  ▄▖ ▗▟▄
+    ▐ ▖▌ ▙▌  ▐  ▝ ▐ ▐▘▜  ▐      ▐▘▐ ▐▘▐  ▐
+    ▐  ▌ ▟▖  ▐  ▗▀▜ ▐ ▐  ▐      ▐ ▐ ▐▀▀  ▐
+    ▙▟ ▗▘▚  ▐  ▝▄▜ ▐▙▛ ▗▟▄  ▐  ▐ ▐ ▝▙▞  ▝▄
+
+    ０ｘｆａｂ１．ｎｅｔ
+    ```
+
+### cmatrix
+
+Install ```sudo apt install cmatrix```
+
+Use cmatrix ```cmatrix```
+
+### a Fire
+
+Install ```sudo apt install libaa-bin```
+
+Use aafire ```aafire```
+
+??? output "aafire"
+    ```
+                                .  .                            . ..                               . .                   .
+                                    .                              .  . .  . .-::::--                       . ..            . .
+                                    . . .                        . ....  .  .:+ivnSnnI=.                      .         .-::==+=:.
+                                .   . .-.. .. ....          . .-+||=:-. . :+inSZ#:#Si-.                    . . ..-+ivXZZ##ZZSI+.
+                                .:|ii++==+++=:=:==+=-          .-+vSXZXnI|=:::=+InXZ##Zni-                  ....-:|vZ#QQ=====QQ:XI:.
+                            .:nZW:#ZnIIIIvIIiIIIIi=.       ..=IXZ:::::#Xni++++=+|iIvvI|=.. .       . :=+iIi|||in#W;==|||i|+=;WXI=-.
+                            -iZWQ;;QWZSvvnSSXXSnnI|=.      .-+nX::QQQ::#ZSnI|+=:-...------::++||++::=|nX#::#ZZZ#:Q==||i|ii||==#XI+:. .
+                        .:v#Q=====::SvvnX###ZSI|+=::-:=|iInX#WQ;QQW:#ZSXZZXnI+:..     ..:+InSXSnvIvSZ:WQQQWQWQ;==|+|||i|||+;:#nI=-..
+                        :v#Q=+||+=Q:ZnnS##::#S|===+|nXZ::::WQ=====QW##:WWQQ::Zvi:-.   ...=inZ###ZXX#:WQQ;QQ;;========++||||==W#Xv+:.
+                        .=XW==|||++;W#XnSZ:QW:ZnIiIvSZ:WQQQQ;==|||+==QQ;==+===WW:Zn|:-. ..=iX:WWWW::WQQQ;;QQ;Q;Q;;QQWQQ=+|i|i|=QWXv+-.
+                        -n:Q=||||==W#SnS#:WQQQW:WW::::WQ;===+||||||+++||||||===QQ:#ni+==+IXWQ===;;QQQQ;QQQ::ZZZXXSvvS#Q=|iii||=;W#n|-.
+                        -I#Q==+++==#ZnSX#:QQ;;======QQQ==+|+|||i::ii||+||||||+==QW:#SvvvX#W;=+++==QQQQQQW#S|:---::=+|v#Q=||i||==W:Zv|=..
+                        -=v#:Q=+|+=;:#XX#:QQ===+|ii|+====+|++++||::i||+++|||i||+==;QQ:##:WQ==++++==QQ:#XXXv|-....:=+|IvZW;=+++==Q:#Xvi+-.
+                    .:inZ#:Q==+|+|=QW#:QQ===+||:::ii|++++==Q;==+||i||=+=+|||||++===;;QQQ;;;;=;===;QW#XnSvi+==|iIvvvnZ#WQ====QQ#XXnv|=-
+                    .|X#:WQQ==+||||+==QQQ==+||iilll:i||++=QWW:WQ=+|||=+===++|===============QQWWWWQ;QW:#ZXvIvSZ::#SSZWQ=|+|==QW#ZZXSI+..
+                    :vZ:WWQ==+|i:::||=QQQ==|i::vIIli|+++==;QQQ;=+|+|+||======;QQWQ==+=========QQQQ=;====;Q:ZX##W:#Z#W=|ii:::||====;Q:X+-
+                    .:vX#:WQ;=||::ll:|+=;Q==|i:IIv:i+=Q;;====++|||||||||++=+++====+|+|====+|||||+|++|||ii||QW#XSXnnX:=|ilvvvvvll::i||=:X:
+                    -|n#:W;=++|i:lIvl:i|++|||iil::|+QW::Q=+iilIIvl:i|||+|||ii:iiii|i||++||i:ll:ll::::llIli|;QZv+-:i#;|ilvvnnvvvvvl:|+=X:
+                . ..-iZW;=+|+|||lvvvvvIIl:i|iii:i|==::WQ=|:Ivnnnvl:||=|||:lvvvvvvI:::::i:lvvvvvvvvIIvIvl:i|+=:n+:iZQ=|i:lvlvvvvll:i+=:I.
+                . . .+ZW=+|||||i:Ivnnnooonvlli:ii|+==Q==|:lvnnonnv:i|++|ilvno==nvvvvvvvvvvvvvvvvvvvIvIll:::::|=Q##:Q===|||ii:l:::i|+=;#i.
+                    ..=n:;=|iiiiiii:vvvn==onvvIll:i||++|||i:lvvvnvvvlli||||lvvnvvvllIvvvvvllIvIvIvIvvIIvlllvvvv:i+=QWW:Q==+|iill::i||+==WZ|.
+                    ..+n:;=|iii:l:i|::Ivvvvvv:::vII:i||:iii:::lIvvvvvvnvI:||ii::l:|ii:Ivvl:i::lllllvIvvvlvlIIlI:i|+=QW:WQ=|:Ivvvv::ii|+==:#I:
+                    -I#Q=||i:Ivvl:::Ivvnvl|+||lvvv:i|ilvvvllllvIvIvv===ovl:i|ii||||i:ll:l:iiiii::vvvnvvIl:::i|+=QQ======+ivn===vl::ii|;Q:#ZI=---:.
+                .:iX:Q==|ilvvvvvlvnn==nl|+|ilvvl:|i:vnnnvv:lvvvvvn==X=ovv::::lvlIl:llIIvIll:::vvo=nnI:i||i||==Q=+|i|||i:v===onvvvli=Q:ZXSvvnX###n+.
+                -+ISX#:Q=+:lvvvvvvvnn==X=v:||:vvI::::vno==vvllllvvnn=nnvnnvl::v===onvnvnnnoonnvn==X==vl:||i::i|+++|iiiiiiIno===oo=nv:|QWZXSSSZ:Q;QWS-
+            -=inZ::WQQ;=:vnnvvIvvvnvn===v|+|ii:i:lvvnnvnvvvl:::lvvnvl|||lIl:ln=======X=========XXX=nvl:::lII:|=+|:vvvl:Iv=XXX=nvnnnvi||===:##:Q;;QZ+.
+            -vZ#::WQ==+==|ln=onI:::vvnv===v|=Q==|iIn===vvvvnnv:|i:IvvI|=Q+:vvvvvnn=XZZXX=no==X==nn==nIi|:lvnnv:|+|:n=X==vn=XXZXov:lvnvvl:::|=WZ#:QW:ZI:
+        .nWQQQQ=+||||=|:v==ov|=|vvvvvnnvi=Q;|iv=ZX=nvvvo==nIlvvvoonliiilvn=====XXXZZX==o=X#Z==nnnvi==|lvonvI::loX###XXXZ##ZX=v::v===nvl:i|=#SSZ#ZXv=.
+        .+ZW:::;+iii|==+ilvnnl|=|vvvIvIl|=Q+iv=ZZ=ovllv=Z#ZXX===XZ#X=v:i||ivn==on==X##ZXo=Z#ZXnvnvl+==|lv=oonno==XZZZZ=XZ##XX=nI:InXX=v:ii|+QW#:::#n+. .
+        .=X:W::W;+|||=Q+ilvvvvv::v==nvnnniQQ|l=XX=nvvv:vX#####X=n=Z#ZX=vi=Q=|lvvvn==X#ZZX==XX=v:ilIi||ivnnn===XXXnvn==nvv=#ZXnvIllIn==vIi||||===Q#ZXI=.
+        .+X:QQ;;=+i::|==|:l:vn==nn=ZZ=nnvI|==|IvovvnXZ=vn=Z#ZXX=nvnvn=XXn:|||i:lvvnn====n=X##Zolln=ni=|vXXnvlIn=X=on=nvi|lnX=vvlIvn==nvll::||====QZXXi.
+    -:.+S#:WWQ+|:vvl|=|lvllv=o=XX=XZZZZ=:;Z:|:vvi|:o====XX##Z=vn=Xn:I=#XXXXov:+|vvn===XXZ##Xon=X#X}=+voX=vvvnXZX==Z#Zavv=ZXXn====XZZZ=lilvv:i+=QQ:##X+.-.
+    :ni.+ZWQ:XQ|:vvvIiivn:=<nnnX##ZXX#Wm#ma==<>QQ|=i||i=Z=:|=#Xvn=vvvvvv+lv>:i+|nZ##ZZw#XmmmZvIn=#Xs>v=n:lo=I+3##=XmWW#Xe3XWmZvn}v=ZX3XX=v|^:v:=:=+Q::#ZXi-.v=- -|:==WW+i|lvl:vnn=n>lnn==Z#ZXwW#XI#m=%}^=jwa=n=ivmwc:=mWmme|Q<wwci=v===:)Z}!##WWmZ!XWm=|=m#Z{wmw}:wZv|<mWWWZ"!11{awZ7VW2vIv=e=S-{{I:-S+v|,;Q=||=#|:+i=[ ::IZ|+WQ+:+nIvv)nn=X(]nv#em##eQWmevdW[#WQ)iQfQ#+)(WWil3mFi#nQ::WQQ)on:==W:F:]XZQW#f|#mWf|jWmv(WWW||3#ei=iQWW#==]=[WmWW]Qn(nnd]++Z:fl`.vQnIvvZ=|||+X:n#v)`  =: - `n"--""-'-S""-``""-`!`!``")"`!~-^ ~-`"v~^v""^`~^""`~"!-~-~`"-!'`!"--~ `-!~""""'"~`^"!^^"'"`"""""^`"~'""```-!'"`'~!"!'"`!" `--`^-|-"I`v```^-==:= 
+    ```
+
+### BB
+
+Install ```sudo apt install bb```
+
+Use cmatrix ```bb```
+
+Watch this video to see what it does without running it: <https://www.youtube.com/watch?v=9ukhOAUseKY>
+
 ## CurL
 
 ### [QR code](http://qrenco.de/)
@@ -11,7 +347,7 @@ curl qrenco.de/0xfab1.net
 ```
 
 ??? output "parrot.live"
-    ```txt
+    ```
     █████████████████████████████
     █████████████████████████████
     ████ ▄▄▄▄▄ █▀▀ ▄ █ ▄▄▄▄▄ ████
@@ -58,6 +394,11 @@ curl parrot.live
     ```
 
 
+
+Download [parrot.cast](_parrot.cast) or view below:
+
+<script id="asciicast-8" src="https://asciinema.org/a/239367.js" async></script>
+
 ### [Run Forrest](https://github.com/hugomd/ascii-live)
 
 ```sh
@@ -97,21 +438,25 @@ curl ascii.live/forrest
 
 ### [Star Wars](http://www.asciimation.co.nz/)
 
+Service no longer available:
+
 ```sh
 telnet towel.blinkenlights.nl
 ```
 
-Watch online:
+Download [nyancat.cast](_nyancat.cast) or view below:
 
 <script id="asciicast-8" src="https://asciinema.org/a/8.js" async></script>
 
-Download [ascii cast file](_starwars.cast).
+### Nyan Cat
 
-### 
+Service no longer available:
 
 ```sh
 telnet miku.acm.uiuc.edu
 ```
+
+Download [nyancat.cast](_nyancat.cast) or view below:
 
 <script id="asciicast-3" src="https://asciinema.org/a/3.js" async></script>
 

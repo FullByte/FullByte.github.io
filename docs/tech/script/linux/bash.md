@@ -202,3 +202,4 @@ echo -ne "\033#8";X=`tput cols`;Y=`tput lines`;((a=$X/2));((b=$Y/2));d=1;while c
 - Connect to RDP server from Linux. ```rdesktop X.X.X.X```
 - Kill current session: ```kill -9 $$```
 - Clear bash history: ```cat /dev/null > ~/.bash_history```
+- one-time table: ```for i in {1..12}; do for j in $(seq 1 $i); do echo -ne $iÃ—$j=$((i*j))\\t;done; echo;done```

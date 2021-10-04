@@ -31,6 +31,7 @@ Music
 - Beets: <https://github.com/beetbox/beets> `pip install beets`
 - Musikcube (Spotify): <https://github.com/clangen/musikcube>
 - Spotify: <https://github.com/Rigellute/spotify-tui>
+- Pictures: <https://github.com/posva/catimg>
 
 Watch Movies in ASCII
 
@@ -60,6 +61,12 @@ mplayer -vo caca big_buck_bunny_480p_stereo.ogg
 
 - Stocks <https://github.com/achannarasappa/ticker>
 - CoinMon <https://github.com/bichenkk/coinmon>
+
+## Games
+
+- nudoku is a ncurses based sudoku game. <https://bronevichok.ru/ttygames/#nudoku>
+- Chess: <https://github.com/vinc/littlewing>
+- Solitaire: <https://github.com/mpereira/tty-solitaire>
 
 ## Other
 
@@ -92,15 +99,17 @@ mapscii
 Install
 
 ```shell
-sudo apt-get install python3 pip
 sudo apt install asciinema
 ```
 
 or
 
 ```shell
+sudo apt-get install python3 pip
 sudo pip3 install asciinema
 ```
+
+Record a session
 
 ```shell
 asciinema rec
