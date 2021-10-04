@@ -14,7 +14,7 @@ Y88b  d88P .d8""8b. 888   d8888888888 888   d88P  888
 ```
 
 Publishing my stuff in a wiki format has been great exercise and helps me stay organized.
-As longs as this works well for me I will continue doing so.
+As long as this works well for me I will continue doing so.
 
 The content may appear random as it is basically everything I find interesting and noteworthy. ```¯\_(ツ)_/¯```
 Use the navigation on the left to find the topics of interest or try the search bar with a keyword.

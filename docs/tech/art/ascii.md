@@ -2,6 +2,97 @@
 
 Most of this is the work of someone else but as I found this stuff hard to find I just want to make sure it is not lost. Links where known are added.
 
+## CurL
+
+### [QR code](http://qrenco.de/)
+
+```sh
+curl qrenco.de/0xfab1.net
+```
+
+??? output "parrot.live"
+    ```txt
+    █████████████████████████████
+    █████████████████████████████
+    ████ ▄▄▄▄▄ █▀▀ ▄ █ ▄▄▄▄▄ ████
+    ████ █   █ █▀▀▄▄ █ █   █ ████
+    ████ █▄▄▄█ █▀▄█▀▄█ █▄▄▄█ ████
+    ████▄▄▄▄▄▄▄█▄▀▄█▄█▄▄▄▄▄▄▄████
+    ████ ▄ ▄▄▀▄▄▄▀▀ ▀ ▀ ▀▄█ ▀████
+    ████ ▄██ ▄▄▀▄  ▀ ▀▄▀▀▀ ▄█████
+    ██████▄█▄▄▄▄ █ █ ▀▄▀ ▀▀▀▀████
+    ████ ▄▄▄▄▄ █▄▄▀▄█ █▄█▀▀▀▀████
+    ████ █   █ █ ▀▀▄▀ ▄▄▀█▀█▄████
+    ████ █▄▄▄█ █ ▀ █▄██ ▀  ██████
+    ████▄▄▄▄▄▄▄█▄▄▄████▄███▄█████
+    █████████████████████████████
+    █████████████████████████████
+    ```
+
+### [Parrot](https://github.com/hugomd/parrot.live)
+
+```sh
+curl parrot.live
+```
+
+<script id="asciicast-239367" src="https://asciinema.org/a/239367.js" async></script>
+
+??? output "curl parrot.live"
+    ```txt
+                                .ccccc.
+                            .cc;'coooxkl;.
+                        .:c:::c:,,,,,;c;;,.'.
+                    .clc,',:,..:xxocc;'..c;
+                    .c:,';:ox:..:c,,,,,,...cd,
+                    .c:'.,oxxxxl::l:.,loll;..;ol.
+                    ;Oc..:xxxxxxxxx:.,llll,....oc
+                .,;,',:loxxxxxxxxx:.,llll;.,,.'ld,
+                .lo;..:xxxxxxxxxxxx:.'cllc,.:l:'cO;
+            .:;...'cxxxxxxxxxxxxoc;,::,..cdl;;l'
+            .cl;':,'';oxxxxxxdxxxxxx:....,cooc,cO;
+        .,,,::;,lxoc:,,:lxxxxxxxxxxxo:,,;lxxl;'oNc
+    .cdxo;':lxxxxxxc'';cccccoxxxxxxxxxxxxo,.;lc.
+    .loc'.'lxxxxxxxxocc;''''';ccoxxxxxxxxx:..oc
+    olc,..',:cccccccccccc:;;;;;;;;:ccccccccc,.'c,
+    Ol;......................................;l'
+    ```
+
+
+### [Run Forrest](https://github.com/hugomd/ascii-live)
+
+```sh
+curl ascii.live/forrest
+```
+
+??? output "curl ascii.live/forrest"
+    ```txt
+                        .':xc.
+                        .:ccxOd'
+                        ,l';dOxo'
+                        ';:ccll.
+                    .,,:clol,'.
+                    'lddddxdoc.
+                'codxkdc:cdo;.
+                'loxd:,,;:cclc.
+                'ccxx;.',:ccc;.
+                .;:ld:'';llccol;;,;:,.
+                .;col:cdkdc:ccc:;:cl.
+                    'ccdxxOOdoc....,,.
+                    .;:ododkOOx:
+                    .:,,,,,:oxOOo,
+        ..        'c;:cc:,,;cdkko'
+        'ldxl,......;:;cooooc;;;cdkd:.
+    ;olodolcccloxdc;cllo:..',;:oxd'
+    .clloc,,:c:;;:loc:clld;   ,l;lxd,
+    .;,''.  .....'.',;:cl:.   'c;cdd,
+                    .....     'l;:lo'
+                            .;:;:l'
+                                .:;:l:.
+                                .::oxl'.
+                                'c:oxxool.
+                                .,,,;;;;,
+    ```
+
 ## Telnet
 
 ### [Star Wars](http://www.asciimation.co.nz/)
@@ -12,9 +103,17 @@ telnet towel.blinkenlights.nl
 
 Watch online:
 
-[![asciicast](https://asciinema.org/a/8.svg)](https://asciinema.org/a/8)
+<script id="asciicast-8" src="https://asciinema.org/a/8.js" async></script>
 
 Download [ascii cast file](_starwars.cast).
+
+### 
+
+```sh
+telnet miku.acm.uiuc.edu
+```
+
+<script id="asciicast-3" src="https://asciinema.org/a/3.js" async></script>
 
 ## Tracert
 
@@ -34,7 +133,7 @@ traceroute -I -m 60 -q 1 trh.milek7.pl
 ??? output "star-wars-traceroute"
     ![tetris.png](_tetris.png)
 
-## [star-wars-traceroute](https://beaglenetworks.net/post/42707829171/star-wars-traceroute)
+### [star-wars-traceroute](https://beaglenetworks.net/post/42707829171/star-wars-traceroute)
 
 ```sh
 traceroute -m 100 216.81.59.173 | awk '{print $2}'
