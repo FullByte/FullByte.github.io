@@ -2,5 +2,4 @@
 
 Random knowledge and interesting stuff:
 
-- https://ptable.com/
-- 
+- <https://ptable.com/>

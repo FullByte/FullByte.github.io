@@ -1,12 +1,17 @@
 # Database Art
 
-You can draw in databases using geo features.
-
 The following examples are not mine but this is soooo cool :)
 
-## Venus in SQL
+## Spatial Data (SQL Server)
 
-[download](_sql-venus.sql)
+This is a collection of SQL queries that force SQL Server’s spatial results tab to display something pretty :)
+
+### Venus in SQL
+
+- Source: <https://michaeljswart.com/2010/02/more-images-from-the-spatial-results-tab/>
+- [Download](_sql-venus.sql)
+
+![db_venus](_db_venus.png)
 
 ??? code "Venus in SQL"
     ```sql
@@ -238,9 +243,10 @@ The following examples are not mine but this is soooo cool :)
     )', 0)
     ```
 
-## Grinch in SQL
+### Grinch in SQL
 
-[download](_sql-grinch.sql)
+- Source: unknown
+- [download](_sql-grinch.sql)
 
 ??? code "Venus in SQL"
     ```sql
@@ -529,3 +535,299 @@ The following examples are not mine but this is soooo cool :)
     )
     )', 0);
     ```
+
+### SQLbits
+
+- Source: <https://www.purplefrogsystems.com/blog/2011/03/drawing-a-logo-or-diagram-using-sql-spatial-data/>
+- [Download](_sql-bits.sql)
+
+![sql-bits](_sql-bits.png)
+
+??? code "SQLbits"
+    ```sql
+    SELECT geometry::STPolyFromText(‘POLYGON ((104 -222, 173 -222, 174 -174, 171 -160, 163 -147, 150 -137, 136 -128, 123 -123, 110 -117, 82 -116, 61 -122, 41 -134, 17 -150, 6 -173, 1 -194, 0 -232, 9 -259, 21 -276, 32 -289, 52 -302, 69 -312, 88 -320, 105 -335, 110 -375, 102 -390, 84 -395, 75 -385, 76 -330, 5 -333, 7 -390, 11 -411, 25 -428, 42 -442, 67 -451, 105 -453, 126 -446, 144 -439, 162 -424, 173 -404, 180 -382, 182 -337, 178 -311, 167 -296, 153 -279, 138 -268, 89 -234, 75 -222, 71 -208, 73 -188, 88 -178, 100 -190, 105 -220, 104 -222))’,0) AS Drawing
+
+    UNION ALL
+
+    SELECT geometry::STMPolyFromText(‘MULTIPOLYGON (((324 -127, 404 -127, 405 -488, 322 -490, 322 -421, 311 -432, 291 -446, 277 -452, 259 -453, 248 -446, 239 -440, 228 -429, 221 -419, 215 -402, 215 -386, 213 -188, 216 -174, 219 -159, 226 -148, 235 -140, 245 -132, 261 -127, 278 -127, 294 -134, 306 -143, 322 -158, 324 -127)),((296 -191, 300 -186, 308 -182, 319 -188, 324 -196, 322 -384, 317 -391, 311 -395, 305 -395, 300 -395, 293 -388, 296 -191)))’,0) AS Drawing
+
+    UNION ALL
+
+    SELECT geometry::STPolyFromText(‘POLYGON ((447 -62, 532 -65, 532 -450, 447 -450, 447 -62))’,0) AS Drawing
+
+    UNION ALL
+
+    SELECT geometry::STMPolyFromText(‘MULTIPOLYGON (((991 -170, 1053 -146, 1055 -209, 1065 -201, 1072 -190, 1089 -183, 1108 -181, 1122 -191, 1134 -199, 1139 -217, 1140 -386, 1133 -399, 1129 -408, 1116 -418, 1104 -422, 1090 -419, 1078 -413, 1073 -405, 1066 -397, 1055 -386, 1054 -405, 991 -381, 991 -170)),((1053 -233, 1057 -226, 1067 -224, 1078 -235, 1078 -366, 1074 -373, 1063 -375, 1054 -367, 1053 -233)))’,0) AS Drawing
+
+    UNION ALL
+
+    SELECT geometry::STMPolyFromText(‘MULTIPOLYGON (((1159 -199, 1226 -198, 1227 -431, 1160 -428, 1159 -199)),((1161 -121, 1227 -111, 1228 -162, 1162 -169, 1161 -121)))’,0) AS Drawing
+
+    UNION ALL
+
+    SELECT geometry::STPolyFromText(‘POLYGON ((1260 -132, 1322 -133, 1324 -183, 1348 -184, 1350 -227, 1323 -227, 1323 -378, 1354 -377, 1354 -421, 1297 -433, 1283 -432, 1274 -426, 1267 -420, 1260 -407, 1261 -224, 1243 -225, 1241 -179, 1260 -181, 1260 -132))’,0) AS Drawing
+
+    UNION ALL
+
+    SELECT geometry::STPolyFromText(‘POLYGON ((1445 -259, 1447 -233, 1445 -228, 1438 -224, 1427 -225, 1424 -236, 1426 -252, 1435 -266, 1451 -275, 1465 -286, 1479 -294, 1491 -307, 1499 -319, 1498 -341, 1493 -354, 1485 -369, 1476 -382, 1459 -393, 1440 -401, 1421 -404, 1404 -404, 1393 -398, 1379 -386, 1376 -370, 1373 -364, 1373 -334, 1423 -330, 1424 -359, 1432 -366, 1440 -364, 1448 -358, 1449 -340, 1447 -328, 1440 -319, 1426 -314, 1416 -307, 1406 -300, 1393 -294, 1385 -283, 1379 -270, 1376 -258, 1371 -245, 1371 -232, 1375 -219, 1382 -204, 1390 -189, 1405 -182, 1428 -182, 1442 -192, 1458 -201, 1473 -214, 1489 -231, 1494 -260, 1445 -259))’,0) AS Drawing
+
+    UNION ALL
+
+    SELECT geometry::STMPolyFromText(‘MULTIPOLYGON (((579 -40, 589 -29, 602 -22, 621 -15, 639 -13, 656 -9, 676 -7, 698 -4, 722 -2, 749 -1, 853 -0, 886 -4, 915 -7, 937 -12, 967 -16, 984 -25, 1000 -32, 1006 -59, 999 -61, 986 -65, 976 -75, 970 -88, 968 -102, 971 -121, 956 -127, 945 -135, 931 -149, 921 -166, 921 -183, 928 -199, 939 -209, 945 -216, 937 -224, 927 -234, 918 -246, 915 -260, 915 -278, 923 -293, 928 -308, 944 -317, 936 -328, 927 -341, 924 -354, 923 -374, 933 -389, 943 -400, 957 -404, 968 -407, 967 -420, 967 -437, 976 -449, 988 -459, 1008 -467, 1000 -476, 991 -483, 971 -492, 957 -494, 943 -500, 926 -503, 906 -507, 888 -507, 709 -508, 692 -506, 674 -505, 656 -501, 642 -498, 624 -496, 606 -491, 591 -485, 577 -473, 579 -40)), ‘
+
+    + ‘((579 -136, 591 -144, 606 -150, 623 -154, 641 -159, 664 -163, 684 -165, 702 -169, 732 -170, 758 -171, 845 -173, 873 -170, 925 -162, 922 -172, 901 -177, 862 -183, 818 -186, 759 -185, 714 -183, 681 -182, 647 -174, 613 -168, 588 -161, 580 -151, 579 -136)),’
+
+    + ‘((578 -246, 593 -257, 613 -265, 636 -271, 664 -276, 694 -277, 724 -281, 789 -283, 833 -283, 873 -281, 916 -273, 919 -285, 884 -293, 840 -295, 809 -299, 768 -299, 731 -298, 703 -295, 672 -293, 647 -289, 624 -281, 605 -276, 593 -271, 580 -262, 579 -262, 578 -246)),’
+
+    + ‘((578 -360, 593 -369, 615 -377, 635 -382, 664 -388, 689 -390, 716 -394, 751 -395, 857 -394, 881 -391, 905 -389, 932 -383, 939 -392, 917 -399, 880 -405, 839 -409, 786 -411, 739 -411, 701 -409, 667 -405, 635 -399, 611 -392, 591 -383, 580 -377, 578 -360)))’,0) AS Drawing
+    ```
+
+## Stored Procedures
+
+### Sierpinski triangle
+
+SQL CLR procedure to draw a Sierpinski triangle fractal
+
+- Source: <https://alastaira.wordpress.com/2012/03/06/drawing-fractals-with-sql-server-spatial/>
+
+Code:
+
+```csharp
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Microsoft.SqlServer.Types;
+using System.Data.SqlTypes;
+using System.Data.SqlClient;
+using Microsoft.SqlServer.Server;
+using System.Data;
+ 
+namespace ProSpatial
+{
+  public partial class StoredProcedures
+  {
+    [Microsoft.SqlServer.Server.SqlProcedure]
+    public static void SierpinskiTriangle(int size)
+    {
+       // Set properties of exterior equilateral triangle
+      int w = size;  // Width. e.g. 512
+      int h = (int)(w * Math.Sqrt(3) / 2);  // Height
+      int[] x = { 0, w, w/2 };  // x vertices
+      int[] y = { h, h, 0 };  // y vertices
+ 
+      // Create a new SqlGeometry Instance to hold the output
+      SqlGeometry Triangles = new SqlGeometry();
+      Triangles.STSrid = 0;
+ 
+      // Start recursion
+      Triangles = drawSierpinskiTriangle(x, y, w/2, 2, Triangles);
+ 
+      // Send the results back to SQL Server
+      SendResults(Triangles);
+    } 
+ 
+    private static SqlGeometry drawSierpinskiTriangle(int[] x, int[] y, int d, int dMin, SqlGeometry Triangles)
+    {
+ 
+      // If triangles are too small to render then make this the last recursion
+      if (d <= dMin)
+      {
+        // Create a new triangle and add it to the collection
+        SqlGeometry Polygon = TriangleFromPoints(x[0], y[0], x[1], y[1],  x[2], y[2]);
+        Triangles = Triangles.STUnion(Polygon);
+      }
+      else
+      {
+        // Calculate centre of each side
+        int xMc = (x[0] + x[1]) / 2, yMc = (y[0] + y[1]) / 2;
+        int xMb = (x[0] + x[2]) / 2, yMb = (y[0] + y[2]) / 2;
+        int xMa = (x[1] + x[2]) / 2, yMa = (y[1] + y[2]) / 2;
+ 
+        // Subdivide into three new triangles
+        int[] xNew1 = { x[0], xMc, xMb };
+        int[] yNew1 = { y[0], yMc, yMb };
+        Triangles = drawSierpinskiTriangle(xNew1, yNew1, d / 2, dMin, Triangles);
+ 
+        int[] xNew2 = { x[1], xMc, xMa };
+        int[] yNew2 = { y[1], yMc, yMa };
+        Triangles = drawSierpinskiTriangle(xNew2, yNew2, d / 2, dMin, Triangles);
+ 
+        int[] xNew3 = { x[2], xMb, xMa };
+        int[] yNew3 = { y[2], yMb, yMa };
+        Triangles = drawSierpinskiTriangle(xNew3, yNew3, d / 2, dMin, Triangles);
+      }
+ 
+      // Recursion finished - return the result
+      return Triangles;
+    }
+ 
+    // Send the results back to the client
+    private static void SendResults(SqlGeometry Triangles)
+    {
+      // Define the metadata of the results column
+      SqlMetaData metadata = new SqlMetaData("Triangle", SqlDbType.Udt, typeof(SqlGeometry));
+ 
+      // Create a record based on this metadata
+      SqlDataRecord record = new SqlDataRecord(metadata);
+      record.SetValue(0, Triangles);
+ 
+      // Send the results back to the client
+      SqlContext.Pipe.Send(record);
+    }
+ 
+    // Construct a triangle from 3 vertices
+    private static SqlGeometry TriangleFromPoints(double x0, double y0, double x1, double y1, double x2, double y2)
+    {
+      SqlGeometryBuilder TriangleBuilder = new SqlGeometryBuilder();
+      TriangleBuilder.SetSrid(0);
+      TriangleBuilder.BeginGeometry(OpenGisGeometryType.Polygon);
+      TriangleBuilder.BeginFigure(x0, y0);
+      TriangleBuilder.AddLine(x1, y1);
+      TriangleBuilder.AddLine(x2, y2);
+      TriangleBuilder.AddLine(x0, y0);
+      TriangleBuilder.EndFigure();
+      TriangleBuilder.EndGeometry();
+      return TriangleBuilder.ConstructedGeometry;
+    }
+ 
+  }
+}
+```
+
+Import the assembly (SierpinskiTriangle.dll), register the procedure, and then execute it (using 512 as size input):
+
+```sql
+/* Import Assembly */
+CREATE ASSEMBLY SierpinskiTriangle
+FROM 'c:\temp\SierpinskiTriangle.dll'
+WITH PERMISSION_SET = SAFE;
+GO
+ 
+/* Register function */
+CREATE PROCEDURE dbo.SierpinskiTriangle(@size int)
+AS EXTERNAL NAME SierpinskiTriangle.[ProSpatial.StoredProcedures].SierpinskiTriangle;
+GO
+ 
+/* Execute Procedure */
+EXEC dbo.SierpinskiTriangle 512;
+```
+
+Result:
+
+![sp_sierpinski](_sp_sierpinski.png)
+
+## SQL Queries
+
+## Christmas Tree
+
+ASCII art christmas tree using Recursion and CTEs.
+
+- Source: <https://learnsql.com/blog/draw-christmas-tree-sql/>
+
+??? code "christmas-tree"
+    ```sql
+    WITH small_tree(tree_depth,pine) AS (
+      SELECT 1 tree_depth,
+      rpad(' ',10,' ') || '*'
+      || rpad(' ',20,' ') || '*'
+      || rpad(' ',20,' ') || '*'
+      pine
+      FROM   dual
+      UNION ALL
+      SELECT small_tree.tree_depth +1 tree_depth,
+      rpad(' ',10-small_tree.tree_depth,' ') || rpad('*',small_tree.tree_depth+1,'.') || lpad('*',small_tree.tree_depth,'.')
+      || rpad(' ',20-small_tree.tree_depth-tree_depth,' ') || rpad('*',small_tree.tree_depth+1,'.') || lpad('*',small_tree.tree_depth,'.')
+      || rpad(' ',20-small_tree.tree_depth-tree_depth,' ') || rpad('*',small_tree.tree_depth+1,'.') || lpad('*',small_tree.tree_depth,'.') pine
+      FROM   small_tree
+      where small_tree.tree_depth < 10
+    )
+    SELECT pine
+    FROM small_tree;
+    ```
+
+??? result "christmas-tree"
+    ```txt
+              *                    *                    *
+             *.*                  *.*                  *.*
+            *...*                *...*                *...*
+           *.....*              *.....*              *.....*
+          *.......*            *.......*            *.......*
+         *.........*          *.........*          *.........*
+        *...........*        *...........*        *...........*
+       *.............*      *.............*      *.............*
+      *...............*    *...............*    *...............*
+     *.................*  *.................*  *.................*
+    ```
+
+### Man with a Hat
+
+Draw a man with a hat using recursive queries and Common Table Expressions (CTEs).
+
+- Source: <https://learnsql.com/blog/draw-sql-recursive-queries/>
+
+??? code "Man with a Hat"
+    ```sql
+    WITH RECURSIVE hat
+    AS (
+      SELECT
+        CAST(REPEAT(' ', 11) || '/V\' AS VARCHAR(100))
+          AS hat_pattern,
+        1 AS level
+      
+      UNION ALL
+          
+      SELECT
+        CAST(
+          REPEAT(' ', 10-level) || '/'
+            || REPEAT('V', 2 * level + 1) || 'V\'
+            AS VARCHAR(100))
+          AS repeated_pattern,
+        hat.level + 1
+      FROM hat
+      WHERE level < 6
+    )
+      
+      
+    SELECT hat_pattern
+    FROM hat
+      
+    UNION ALL
+      
+    SELECT
+      CAST(
+        REPEAT(' ', 5) || '|' || '             ' || '|'
+        AS VARCHAR(100))
+      AS forehead
+      
+    UNION ALL
+      
+    SELECT
+      CAST(
+        REPEAT(' ', 5) || '|' || '  O   /   O  ' || '|'
+        AS VARCHAR(100))
+      AS eyes
+      
+    UNION ALL
+      
+    SELECT
+      CAST(
+        REPEAT(' ', 5) || '|' || '     /_      ' || '|'
+        AS VARCHAR(100))
+      AS nose
+      
+    UNION ALL
+    SELECT
+      CAST(
+        REPEAT(' ', 5) || '|' || '     ~~~~~   ' || '|'
+        AS VARCHAR(100))
+      AS mouth
+      
+    UNION ALL
+    SELECT
+      CAST(
+        REPEAT(' ', 5) || '|' || '   {  |  }   ' || '|'
+        AS VARCHAR(100))
+      AS chin;
+    ```
+
+![sql-hat-guy](_sql-hat-guy.png)

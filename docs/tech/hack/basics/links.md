@@ -125,6 +125,10 @@ Map APIs
 
 - Mobile Verification Toolkit <https://github.com/mvt-project/mvt>
 
+## Insecure by design
+
+- OWASP WebGoat <https://github.com/WebGoat/WebGoat> (<https://owasp.org/www-project-webgoat/>)
+
 ## More Tools
 
 - <https://github.com/leebaird/discover>

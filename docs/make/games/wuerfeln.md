@@ -4,73 +4,82 @@ Bet on your roll outcome and receive or pay rocks. Beware of the 🦄. The first
 
 Winner is whoever has the most rocks after an agreed amount of rounds. The game ends early if all rocks are gone and winner is the player with the most rocks at this point in the game.
 
-## Setup
+![wuerfeln](wuerfeln.drawio.svg)
 
-Setup the game:
+## Prepare Game
 
-- Put all rocks (> 50) in a bowl.
-- Place the dice tray centrally.
-- Place the round counter (a D10) in the center and set it to 1.
-- Place the 🦄 (Einhorn) centrally between rock stash and dice tray.
-- Each player receives 3 standard D6 (numbers 1-6) dice, a card with the roll-result overview and 6 rocks to start with.
+1. **Setup the game**
+   - Put all rocks (> 50) in a bowl. (also called "central stash")
+   - Place the dice tray centrally.
+   - Place the round counter (a D10) in the center and set it to 1.
+   - Place the 🦄 (Einhorn) centrally e.g. next to the D10.
+   - Each player receives 3 standard D6 (numbers 1-6) dice, a card with the roll-result overview and 6 rocks to start with.
+2. **Agree on the win condition**
+   - Agree on how many rounds shall be played to determine the winner. (default is 10)
+3. **Determine who starts**
+   - Each player rolls all three dice once and the player with highest total number starts the game.
+   - If there is a draw, those players roll again until a starting player is determined.
+   - The winner starts the game with one extra rock.
 
-Agree on the win condition:
+## Play 10 rounds
 
-- Agree on how many rounds shall be played to determine the winner. (Default is 5)
-
-Determine who starts:
-
-- Each player rolls all three dice once and the player with highest total number starts the game.
-- If there is a draw those players roll again until a starting player is determined.
-- The winner and player that starts the game receives the 🦄 (Einhorn).
-
-## Play
-
-The current player decides to either predict the upcoming roll attempt or to remain silent and do a passive roll; then proceeds to roll all three dice once in the dice tray.
+The current player decides to either predict the upcoming roll attempt or to remain silent and do a passive roll, then proceeds to roll all three dice once in the dice tray.
 
 There are 4 predictable outcomes. Below is a list of all possible results and their probability (percent of "total combinations"):
 
 | Result                | Rule                                                                           | Example                                                                         | Combinations    |
 |-----------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------|
-| ⚰️ Das Unvermeidliche | A number and that number +1 and</br>something elsewhich is not one of the two | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 of 216</br>(44,4%) |
+| ⚰️ Das Unvermeidliche | A number and that number +1 and </br> something else which is not one of the two | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 of 216</br>(44,4%) |
 | 🎁 Wunsch             | Two of a kind and something else                                               | ```2x n & !n``` </br> Example: ⚀⚀⚁ or ⚁⚃⚁                                       | 90 of 216</br>(41,7%) |
 | 🦄 Einhorn            | All numbers must be at least 2 apart                                           | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216</br>(11,1%) |
 | ☢️ Dreifaltigkeit     | Three of a kind.                                                               | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 of 216</br>(2,8%)   |
 
-Each possible roll result is represented by a symbol and name. Most common are ⚰️ (Das Unvermeidliche) and 🎁 (Wunsch). At the beginning your card with the roll-result overview may be helpful to determine the result.
+Each possible roll result is represented by a symbol (⚰️,🎁,🦄,☢️) and a name (Das Unvermeidliche, Wunsch, Einhorn, Dreifaltigkeit). Most common roll results are ⚰️ (Das Unvermeidliche) and 🎁 (Wunsch). Have a look at your roll-result overview card.
 
-Based on the players roll attempt and the prediction made, there is one possible result that leads to adding or removing rocks from the players game stash. The table looks as follows:
+Based on the players roll attempt and the prediction made, there is one possible result that leads to adding or removing rocks from the players game stash. E.g., in case the roll result was a 🎁 (Wunsch) view that line in your roll-result overview card, then check if the prediction was correct, wrong or passive and add or remove rocks accordingly.
 
 | Result                | Correct | Wrong | Passive |
 |-----------------------|---------|-------|---------|
 | ⚰️ Das Unvermeidliche | +2      | -2    | -1      |
 | 🎁 Wunsch             | +2      | -2    | -1      |
 | 🦄 Einhorn            | +5      | -5    | +1      |
-| ☢️ Dreifaltigkeit     | +5      | +1    | +5      |
+| ☢️ Dreifaltigkeit     | WIN*    | +1    | +5      |
 
-E.g., in case the roll result was a 🎁 (Wunsch) go to that line in the table, then check if the prediction was correct, wrong or passive and add or remove rocks accordingly.
+*you win this round and receive all rocks from all players.
 
-It does not matter what prediction was made specifically. All that matters is if the prediction was correct, wrong or if no prediction was made. In other words: The rocks added or removed are determined by the result rolled, not by what was predicted. E.g., if a 🎁 (Wunsch) is rolled, it doesn't matter if 🦄 (Einhorn) or ☢️ (Dreifaltig) were predicted, both are wrong and the player must return 2 rocks to the central stash.
+Please Note:
 
-If a player forgets to make a prediction and rolls the dice or mentions the prediciton too late this is dealt as a passive role.
+- It doesn't matter what prediction was made specifically. What matters is if the prediction was correct, wrong or if no prediction was made. In other words: The rocks added or removed are determined by the result rolled, not by what was predicted. E.g., if a 🎁 (Wunsch) is rolled, it doesn't matter if 🦄 (Einhorn) or ☢️ (Dreifaltigkeit) were predicted, both are wrong and the player must return 2 rocks to the central stash.
+- If a player forgets to make a prediction and rolls the dice or mentions the prediction too late this is dealt as a passive role.
 
-First taken or give rocks, then put your dice back from the dice tray. With this action your turn ends and it's the next players turn.
+Remember to first take or give rocks, then put your dice back from the dice tray. With this action your turn ends and it's the next players turn.
 
-## Einhorn
+### Einhorn
 
-Additionally to receiving or taking rocks based on the players prediction, when rolling an 🦄 (Einhorn) this player additionally receives the 🦄 figure.
+#### Einhorn owner
 
-The 🦄 figure has the follow effects for the owner:
+When rolling an 🦄 (Einhorn) this player additionally receives the 🦄-figure.
 
-- When rolling an 🦄 no rocks are earned/paid (nothing happens).
+The 🦄-figure has the follow effects for the owner:
+
+- When rolling an 🦄 no rocks are earned/paid = nothing happens.
 - The player can give and take (depending on the roll attempt outcome) rocks either from the central stash or from any other player!
 - The 🦄 is passed once another player rolls an 🦄.
 
-Once the round ends the 🦄 is placed in the middle of the dice tray and all players bet with their personal rock stash (if available) to receive the 🦄 in the next round. It is recommended to not show how much you are bidding on the 🦄 to get players to bid more then they needed. You may bid zero rocks if you want. The 🦄 goes to the highest bidder but all bidders pay their rocks and place them in the central stash. In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the 🦄 figure. E.g., if all bid zero, all must roll their dice. In case there is another tie the players re-roll the dice until a winner can be determined.
+#### Bidding on the Einhorn
 
-The player with the 🦄 starts the next round.
+Once a round ends the Einhorn is returned to the center of the dice tray, the round counter is updated and layed next to Einhorn. Now the bidding on the Einhorn starts. Winner may start the next round owning the Einhorn.
 
-## How to win
+Bidding on the Einhorn works as follows:
+
+- Place the 🦄 in the middle of the dice tray.
+- All players bet with their personal rock stash (if available) to receive the 🦄 in the next round. You may bid zero rocks if you want but you have to bid!
+- Do not show how much you are bidding until all reveal their bet at the same time.
+- All players put their rocks used for the bid in the central stash.
+- The 🦄 goes to the highest bidder.
+  - In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the 🦄 figure. E.g., if all bid zero, all must roll their dice. In case there is another tie the remaining players re-roll the dice until a winner can be determined.
+
+## Determine the Winner
 
 Once a player has no rocks left the round ends. All other players put their remaining rocks in their rock stash.
 
@@ -90,23 +99,29 @@ This is not needed to understand or play the game.
 ??? check "Example game"
     The following is an example game play with three players:
 
-    All players agree to play 5 rounds.
+    Preparing the game:
 
-    - Player 1 starts the game and bets on rolling a 🎁. Player 1 then proceeds to roll 1,2,5 which is ⚰️ and therefore loses 2 rocks. Player 1 started with 6 rocks and now has 4. Now it is the next players turn.
-    - The 2nd player predicts an 🦄 and rolls a 1,3,6 and therefore gains 5 rocks.
-    - The 3rd player choses to not predict anything and rolls 2,2,2 which is ☢️. In this case the player gains 5 rocks.
+    - All players agree to play the default of 10 rounds.
+    - All players take 3 dice and 6 rocks.
+    - Player 1 roles the highest total number with 3 dice (1+4+5=10) and may start the game. Player 1 receives and extra rock.
+
+    First round:
+
+    - Player 1 starts the game and bets on rolling a 🎁 Wunsch. Player 1 then proceeds to roll 1,2,5 which is ⚰️ and therefore loses 2 rocks. Player 1 started with 7 rocks and now has 5. Now it is the next players turn.
+    - The 2nd player predicts an 🦄 and rolls a 1,3,6 and therefore gains 5 rocks as well as the Einhorn figure.
+    - The 3rd player choses to not predict anything and rolls 2,2,2 which is ☢️. In this case the player gains 1 rock.
     - It is player 1 turn again and predicts ⚰️, then rolls 3,1,4 which is ⚰️. Player 2 takes one rock from the central stash.
     - Player 2 now has the 🦄 and predicts ⚰️ as well and rolls 4,5,6 which is ⚰️. Player 2 takes the 2 rocks from player 1 instead of the central stash.
 
-    The game goes on like this until, in our example, player 2 loses the first round. At this point player 1 has 6 rocks and player 3 has 4 rocks.
+    The game goes on like this until, in our example, player 2 loses the first round. At this point player 1 has 8 rocks and player 3 has 4 rocks.
 
-    The 🦄 is now open for auction. Since this is the 1st round and player 2 lost the game there are no rocks to bet with for this player. Player 1 bets 3 rocks and player 3 bets 1 rock. Both players put the rocks they bet in the center stash and player 1 receives the 🦄.
+    The 🦄 is now returned (player 3 had it last) and placed on the dice try. The Einhorn is now open for auction. Since this is the 1st round and player 2 lost the game there are no rocks to bet with for this player. Player 1 bets 3 rocks and player 3 bets 1 rock. Both players put the rocks they bet in the center stash and player 1 receives the 🦄. Player 1 now has 8-3=5 rocks in the stash and player 3 has 4-1 rocks in the stash.
 
-    All players now receive 6 new rocks. Player 1 decides to add 2 rocks from the own stash to the current player stash. Player 1 now has 1 rock remaining in the stash and 8 rocks to play with for the round as well as the 🦄 figure. Both other players do not add rocks and start with 6 rocks.
+    All players now receive 6 new rocks. Player 1 decides to add 2 rocks from the own stash to the current play stash. Player 1 now has 4 rocks remaining in stash and 6+2=8 rocks to play with in this round as well as the 🦄 figure. Both other players do not add rocks and start with 6 rocks.
 
     Player 1 with the 🦄 starts the new round and the game continues.
 
-    At the end of round 5 player 1 has 20 rocks, player 2 has 15 rocks and player 3 has 22 rocks. Player 3 therefore wins the game.
+    At the end of round 10 player 1 has 20 rocks, player 2 has 15 rocks and player 3 has 22 rocks. Player 3 therefore wins the game.
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>

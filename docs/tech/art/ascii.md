@@ -1,45 +1,36 @@
 # ASCII
 
-Most of this is the work of someone else but as I found this stuff hard to find I just want to make sure it is not lost. Links where known are added.
+Most of the stuff below is is the work of someone else but as I found this stuff hard to find I just want to make sure it is not lost. Links were added where known.
+
+```txt
+ .d8888b.           8888888888  d8888 888888b.   d888   
+d88P  Y88b          888        d88888 888  "88b d8888   
+888    888          888       d88P888 888  .88P   888   
+888    888 888  888 8888888  d88P 888 8888888K.   888   
+888    888 `Y8bd8P' 888     d88P  888 888  "Y88b  888   
+888    888   X88K   888    d88P   888 888    888  888   
+Y88b  d88P .d8""8b. 888   d8888888888 888   d88P  888   
+ "Y8888P"  888  888 888  d88P     888 8888888P" 8888888 
+```
 
 ## SSH
 
-### [Tron](http://sshtron.zachlatta.com/)
+### Tron
 
-Run this command to play
-
-```sh
-ssh sshtron.zachlatta.com
-```
-
-Choose a color (e.g. red):
-
-```sh
-ssh red@sshtron.zachlatta.com
-```
-
-Download [tron.json](_tron.json), get the [source](https://github.com/zachlatta/sshtron), or view below:
+- Link: <http://sshtron.zachlatta.com>
+- Play: ```ssh sshtron.zachlatta.com```
+- Choose a color (e.g. red): ```ssh red@sshtron.zachlatta.com```
+- Download [tron.json](_tron.json), get the [source](https://github.com/zachlatta/sshtron), or view below:
 
 <script id="asciicast-154041" src="https://asciinema.org/a/154041.js" async></script>
 
-## Bash
+## Local tools
 
-### [nyancat](https://github.com/klange/nyancat)
+### nyancat
 
-Download and install
-
-```sh
-git clone https://github.com/klange/nyancat
-cd nyancat
-make && cd src
-./nyancat
-```
-
-To use the telnet server, you need to add a configuration that runs:
-
-```sh
-nyancat -t
-```
+- Link: <https://github.com/klange/nyancat>
+- Install: ```git clone https://github.com/klange/nyancat && cd nyancat && make && cd src && ./nyancat```
+- Host telnet server: ```nyancat -t```
 
 Download [nyancat.json](_nyancat.json) or view below:
 
@@ -47,44 +38,43 @@ Download [nyancat.json](_nyancat.json) or view below:
 
 ### Steam Locomotive (sl)
 
-Install ```sudo apt install sl```
-
-Use ```sl```
-
-Download [sl.cast](_sl.cast) or view below:
+- Install ```sudo apt install sl```
+- Use ```sl```
+- Download [sl.cast](_sl.cast) or view below:
 
 <script id="asciicast-234381" src="https://asciinema.org/a/234381.js" async></script>
 
 ### Cowsay and Cowthink
 
-Install ```sudo apt install cowsay```
+- Install ```sudo apt install cowsay```
+- Use cowsay ```cowsay 0xfab1.net```
 
-Use cowsay ```cowsay 0xfab1.net```
+??? output "cowsay 0xfab1.net"
+    ```txt
+    ____________
+    < 0xfab1.net >
+    ------------
+            \   ^__^
+            \  (oo)\_______
+                (__)\       )\/\
+                    ||----w |
+                    ||     ||
+    ```
 
-```txt
- ____________
-< 0xfab1.net >
- ------------
-        \   ^__^
-         \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
+- Use cowthink (e.g. pipe it a fortune cookie) ```fortune | cowthink```
 
-Use cowthink (e.g. pipe it a fortune cookie) ```fortune | cowthink```
-
-```txt
- ________________________________________
-( You will attract cultured and artistic )
-( people to your home.                   )
- ----------------------------------------
-        o   ^__^
-         o  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
+??? output "fortune | cowthink"
+    ```txt
+    ________________________________________
+    ( You will attract cultured and artistic )
+    ( people to your home.                   )
+    ----------------------------------------
+            o   ^__^
+            o  (oo)\_______
+                (__)\       )\/\
+                    ||----w |
+                    ||     ||
+    ```
 
 ### Toilet
 
@@ -283,15 +273,13 @@ for f in /usr/share/figlet/*.tlf; do file=$(echo "${f##*/}"); font=$(echo $file|
 
 ### cmatrix
 
-Install ```sudo apt install cmatrix```
-
-Use cmatrix ```cmatrix```
+- Install ```sudo apt install cmatrix```
+- Use cmatrix ```cmatrix```
 
 ### a Fire
 
-Install ```sudo apt install libaa-bin```
-
-Use aafire ```aafire```
+- Install ```sudo apt install libaa-bin```
+- Use aafire ```aafire```
 
 ??? output "aafire"
     ```
@@ -332,19 +320,331 @@ Use aafire ```aafire```
 
 ### BB
 
-Install ```sudo apt install bb```
-
-Use cmatrix ```bb```
+- Install ```sudo apt install bb```
+- Use BB ```bb```
 
 Watch this video to see what it does without running it: <https://www.youtube.com/watch?v=9ukhOAUseKY>
 
-## CurL
+### lolcat
 
-### [QR code](http://qrenco.de/)
+To make any of the ASCII output more colorful use lolcat. Note: doesn't work with animations e.g. ```aafire | lolcat```
+
+- Link: <https://github.com/busyloop/lolcat>
+- Install: ```sudo apt install lolcat```
+- Use lolcat: ```fortune | cowthink | lolcat```
+
+![lolcat-fortune-cow.png](_lolcat-fortune-cow.png)
+
+Another cool idea is to use this fo successful tests or builds e.g.:
+
+- Store ASCII art ([pikachu.tp](_pikachu.tp)) in a folder (~/important/)
+- Set alias: ```alias success-message='if [ "$?" -eq "0" ]; then lolcat ~/important/pikachu.tp -a -s 40 -d 2; fi;'```
+- Usage: ```do_tests && success-message```
+
+![pikachu.png](_pikachu.png)
+
+### asciimatics
+
+[Asciimatics](https://github.com/peterbrittain/asciimatics) is a package to help people create full-screen text UIs on any platform. It comes with some very cool samples!
+
+- Install: ```pip install asciimatics``` (Note: depending on the sample/demo there are more dependencies)
+- Documentation: <https://asciimatics.readthedocs.io>
+- Samples: <https://github.com/peterbrittain/asciimatics/tree/master/samples>
+
+### asciiquarium
+
+To run asciiquarium you need Term-Animation and Perl.
+
+First install Perl:
 
 ```sh
-curl qrenco.de/0xfab1.net
+sudo apt-get install libcurses-perl
 ```
+
+Download and install [Term-Animation](_term-animation-2.6.tar.gz) to /tmp
+
+```sh
+cd /tmp
+wget https://cpan.metacpan.org/authors/id/K/KB/KBAUCOM/Term-Animation-2.6.tar.gz
+tar -zxvf Term-Animation-2.6.tar.gz
+cd Term-Animation-2.6/
+perl Makefile.PL && make && make test
+sudo make install
+```
+
+Download [asciiquarium](_asciiquarium.tar.gz) to /tmp
+
+```sh
+cd /tmp
+wget https://robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
+tar -zxvf asciiquarium.tar.gz
+cd asciiquarium_1.1/
+sudo cp asciiquarium /usr/local/bin
+sudo chmod 0755 /usr/local/bin/asciiquarium
+```
+
+Run asciiquarium
+
+```sh
+perl /usr/local/bin/asciiquarium
+```
+
+[![asciiquarium.webp](_asciiquarium.webp)](_asciiquarium.mkv)
+
+### ART
+
+ART is a Python lib for text converting to ASCII art fancy.
+
+- Source: <https://github.com/sepandhaghighi/art>
+- Docs: <https://www.4r7.ir/>
+- Install: pip install art
+
+Example `art-example.py`
+
+```py
+from art import *
+Art=text2art("0xfab1",font='block',chr_ignore=True)
+print(Art)
+```
+
+??? output "art-example.py"
+    ```
+    .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.
+    | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
+    | |     ____     | || |  ____  ____  | || |  _________   | || |      __      | || |   ______     | || |     __       | |
+    | |   .'    '.   | || | |_  _||_  _| | || | |_   ___  |  | || |     /  \     | || |  |_   _ \    | || |    /  |      | |
+    | |  |  .--.  |  | || |   \ \  / /   | || |   | |_  \_|  | || |    / /\ \    | || |    | |_) |   | || |    `| |      | |
+    | |  | |    | |  | || |    > `' <    | || |   |  _|      | || |   / ____ \   | || |    |  __'.   | || |     | |      | |
+    | |  |  `--'  |  | || |  _/ /'`\ \_  | || |  _| |_       | || | _/ /    \ \_ | || |   _| |__) |  | || |    _| |_     | |
+    | |   '.____.'   | || | |____||____| | || | |_____|      | || ||____|  |____|| || |  |_______/   | || |   |_____|    | |
+    | |              | || |              | || |              | || |              | || |              | || |              | |
+    | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
+    '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'
+    ```
+
+Example `art-random-example.py`
+
+```py
+from art import *
+for lp in range(100):
+    print(randart() + "\n")
+```
+
+Don't forget to use lolcat to run this :)
+
+```sh
+python3 art-random-example.py | lolcat
+```
+
+??? output "art-example.py"
+    ```
+    '-=,o
+
+    >:)
+
+    /V\
+
+    |-o-| (-o-) |-o-|
+
+    @}~}~~~
+
+    :o + :p = 69
+
+    < )))) ><
+
+    (o'3'o)
+
+    ^.--.^
+
+    (  . Y .  )
+
+    ><>
+
+    [($)]
+
+    (_!_)
+
+    .,.,\______/,..,.,
+
+    B-)
+
+    --------{---(@
+
+    < )))) ><
+
+    [{-_-}] ZZZzz zz z...
+
+    @(o),(o)
+
+    (-(-_-(-_(-_(-_-)_-)-_-)_-)_-)-)
+
+    c[_]
+
+    ^.--.^
+
+    (O.O)
+
+    @__
+
+    @__
+
+    (///_ ;)
+
+    (:)
+
+    :-/
+
+    :-I
+
+    ^i^
+
+    [^_^]
+
+    (///_ ;)
+
+    \*/
+
+    Y_Y
+
+    ><>
+
+    l_D
+
+    :-P~~~
+
+    =:-)
+
+    [|^^^^^^^
+
+    o==[]::::::::::::::::>
+
+    <-|-'_'-|->
+
+    ~(^-^)~
+
+    ,/\,/\,/\,/\,/\,/\,o
+
+    @( * O * )@
+
+    :-"
+
+    8====D
+
+    (. )( .)
+
+    V(-.o)V
+
+    ::)
+
+    ~~~~~~\o/~~~~~/\~~~~~
+
+    =:-)
+
+    =:-(
+
+    <^__)~
+
+    8======D
+
+    (-.-)Zzz...
+
+    >>-;;;------;;-->
+
+    \m/_(>_<)_\m/
+
+    t(-_-t)
+
+    d(-_-)b
+
+    ===========(8888)
+
+    >:-D
+
+    \,,/(^_^)\,,/
+
+    -_-
+
+    O.o
+
+    -_-
+
+    O=('-'Q)
+
+    (<>..<>)
+
+    ::)
+
+    (U) [^_^] (U)
+
+    [|^^^^^^^
+
+    (O.O)
+
+    q:o)
+
+    (===||:::::::::::::::>
+
+    [^_^]
+
+    ><>
+
+    @}~}~~~
+
+    O.o
+
+    (__!__)
+
+    <-|-'_'-|->
+
+    <3
+
+    :o + :p = 69
+
+    \m/_(>_<)_\m/
+
+    <(''<)  <( ' ' )>  (> '')>
+
+    l_D
+
+    <^__)~
+
+    O==I======>
+
+    @-}--
+
+    V(-.o)V
+
+    (| - _ - |)
+
+    ^O^
+
+    -_-
+
+    /W\
+
+    (===||:::::::::::::::>
+
+    8=D
+
+    Y_Y
+
+    ^_^
+
+    @(o),(o)
+
+    (-.-)Zzz...
+
+    ---=======[}
+
+    .,.,\______/,..,.,
+    ```
+
+## CurL
+
+### QR code
+
+- Link: http://qrenco.de/
+- Use: ```curl qrenco.de/0xfab1.net```
 
 ??? output "parrot.live"
     ```
@@ -365,13 +665,13 @@ curl qrenco.de/0xfab1.net
     █████████████████████████████
     ```
 
-### [Parrot](https://github.com/hugomd/parrot.live)
+### Parrot
 
-```sh
-curl parrot.live
-```
+- Link: https://github.com/hugomd/parrot.live
+- Use: ```curl parrot.live```
+- Download [parrot.cast](_parrot.cast) or view below:
 
-<script id="asciicast-239367" src="https://asciinema.org/a/239367.js" async></script>
+<script id="asciicast-8" src="https://asciinema.org/a/239367.js" async></script>
 
 ??? output "curl parrot.live"
     ```txt
@@ -393,17 +693,10 @@ curl parrot.live
     Ol;......................................;l'
     ```
 
+### Run Forrest Run
 
-
-Download [parrot.cast](_parrot.cast) or view below:
-
-<script id="asciicast-8" src="https://asciinema.org/a/239367.js" async></script>
-
-### [Run Forrest](https://github.com/hugomd/ascii-live)
-
-```sh
-curl ascii.live/forrest
-```
+- Link: https://github.com/hugomd/ascii-live
+- Use: ```curl ascii.live/forrest```
 
 ??? output "curl ascii.live/forrest"
     ```txt
@@ -434,29 +727,58 @@ curl ascii.live/forrest
                                 .,,,;;;;,
     ```
 
+### Run Forrest Run
+
+- Link: https://github.com/hugomd/ascii-live
+- Use: ```curl ascii.live/rick```
+
+??? output "curl ascii.live/rick"
+    ```txt
+    ttttttffffttfLLftff1:,ii,,,,iiiiii1ffffftt11tttt1ttt111fffttfffttttfft
+    tttttttttttttfffffff1,,,,,,,iiiii1tffffffftt1ttt1111111tfftffffttttttt
+    fffffffftttt1tffftft1i,,,,,,,iiii1ttfffffttt1tffft11111tfttfffttt1tttt
+    ffffffft1tftt1tft1,ii,,,,,,,,ii1111ttftft11tttttfft1111tt1tffttffttfff
+    ffffffft1tttt1ii,,.:i,,,i,iii111t111ttt111tffttttftt1111tt1ttttfft1tff
+    fftfttt111ii,:,....,i1,,iiiii1i:,,,i11111tfffft11t11111tfftttttttt1tff
+    tt1111ii,:,.........,11iiii,,11,::,,,:,1tftfffft1111111tttt11ttfft11tt
+    11111:,.............:1tt1iii1t1,,:,:,,.,:1tffftt11t1111ttt11tt1tffftt1
+    tttt,................:iiiiii11,:,:,:,,,,.:tttt111tt1111ttt11tf1tffffft
+    ttt1,.................,,,,,:,:.,:i:,,,,,,,it11111111111tt111tft1tfffft
+    ttti...................:,,,,,:,,:1,.......,t1tt11111111111t11tf1tffftt
+    tt1:...................,,:,,,:..,1,.......:tt111t11t1111111111t1tffttt
+    11,.....................:,:,,,..,,:.......,111tttt11111111tttt11tttfLf
+    11,.....................,::,,,..,:,.......,1ttttttt111111tttffttttffLL
+    1,.......................:::,,..,:,........itttttttt1111tttttfftttffff
+    1,.......................,,,,,:,,:,........,11tttt11111111ttffttttffLL
+    i,.....................,::,i,,,,,:.........:111tt1111111111tttttttffLL
+    i.....................,:::,i,i:.,:,........,1t1111t111111t111ttfttffLL
+    ,.....................,:::,,,,,.,:..........1tt111tt11111ttt1tffttffff
+    :......................:::::,...,:..........:i1tttt1tt111t1111tttttftt
+    i.......................... ....,,.......... .,,:i11iii11111tt1t1ttfff
+    1,...     ......................,:............   .,:::,iiii1111111tftt
+    1t1i,,::::......................,:..,:..   .......,::,,,,,,iii11111ttt
+    11ttttttt1,.....................,:......:,..    ..,:,,,:,,,iiii1111111
+    111111111i,.................,::..,.... ,tt1ii,,,.. ..,:i,,iii111111111
+    111111111i,.................,,:,,,......1tttttt11i,,::itt11t1111111111
+    111111111i,................ ,,:::,......it1t1tttttttttt11tt11t11111111
+    111111111,................. ,,,::,......it1tttttttt1111111t11111111111
+    ```
+
 ## Telnet
 
-### [Star Wars](http://www.asciimation.co.nz/)
+### Star Wars
 
-Service no longer available:
-
-```sh
-telnet towel.blinkenlights.nl
-```
-
-Download [nyancat.cast](_nyancat.cast) or view below:
+- Link: http://www.asciimation.co.nz/ (Service no longer available)
+- Use: ```telnet towel.blinkenlights.nl```
+- Download [nyancat.cast](_nyancat.cast) or view below:
 
 <script id="asciicast-8" src="https://asciinema.org/a/8.js" async></script>
 
 ### Nyan Cat
 
-Service no longer available:
-
-```sh
-telnet miku.acm.uiuc.edu
-```
-
-Download [nyancat.cast](_nyancat.cast) or view below:
+- Link: miku.acm.uiuc.edu (Service no longer available)
+- Use: ```telnet miku.acm.uiuc.edu```
+- Download [nyancat.cast](_nyancat.cast) or view below:
 
 <script id="asciicast-3" src="https://asciinema.org/a/3.js" async></script>
 
@@ -471,18 +793,16 @@ Try this online tool for IPv6 tracert:
 
 ### Tetris
 
-```sh
-traceroute -I -m 60 -q 1 trh.milek7.pl
-```
+Link: trh.milek7.pl (Service no longer available)
+Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
 
 ??? output "star-wars-traceroute"
     ![tetris.png](_tetris.png)
 
-### [star-wars-traceroute](https://beaglenetworks.net/post/42707829171/star-wars-traceroute)
+### Star Wars
 
-```sh
-traceroute -m 100 216.81.59.173 | awk '{print $2}'
-```
+- Link: <https://beaglenetworks.net/post/42707829171/star-wars-traceroute>
+- Use: ```traceroute -m 100 216.81.59.173 | awk '{print $2}'```
 
 ??? output "star-wars-traceroute"
     ```txt
@@ -537,13 +857,12 @@ traceroute -m 100 216.81.59.173 | awk '{print $2}'
     FIN
     ```
 
-### tng.prolixium.com
+### Star Trek
 
-```sh
-traceroute6 -m 120 tng.prolixium.com
-```
+- Link: tng.prolixium.com
+- Use: ```traceroute6 -m 120 tng.prolixium.com```
 
-??? output "star-wars-traceroute"
+??? output "traceroute6 -m 120 tng.prolixium.com"
     ```txt
     traceroute to tng.prolixium.com (2001:48c8:1:137::32), 120 hops max, 24 byte packets
 
@@ -570,13 +889,12 @@ traceroute6 -m 120 tng.prolixium.com
     EOF (2001:48c8:1:137::32)  309.623 ms  311.074 ms  313.958 ms
     ```
 
-### traceroute hand.bb0.nl
+### traceroute hand
 
-```sh
-traceroute -6 -m 50 hand.bb0.nl
-```
+- Link: hand.bb0.nl
+- Use: ```traceroute -6 -m 50 hand.bb0.nl```
 
-??? output "hand.bb0.nl"
+??? output "traceroute -6 -m 50 hand.bb0.nl"
     ```txt
     traceroute to hand.bb0.nl (2a0e:fd45:2a0a:2::cafe), 50 hops max, 80 byte packets
      7  MYLOC-MANAG.ear3.Amsterdam1.Level3.net (2001:1900:5:2:2:0:8:780a)  253.218 ms  251.177 ms  251.017 ms
@@ -625,13 +943,12 @@ traceroute -6 -m 50 hand.bb0.nl
     50  _______________________________________________ (2a0e:fd45:2a0a:2::ca26)  245.333 ms  245.198 ms  245.186 ms
     ```
 
-### traceroute bad.horse
+### bad horse
 
-```sh
-traceroute bad.horse
-```
+- Link: bad.horse
+- Use: ```traceroute bad.horse```
 
-??? output "bad.horse"
+??? output "traceroute bad.horse"
     ```txt
     13 bad.horse (162.252.205.130) 163.913 ms 163.985 ms 164.169 ms
     14 bad.horse (162.252.205.131) 166.228 ms 169.604 ms 168.837 ms
@@ -663,16 +980,3 @@ traceroute bad.horse
     42 it-s.hi-ho.silver (162.252.205.156) 150.319 ms 145.497 ms 149.632 ms
     43 signed.bad.horse (162.252.205.157) 147.734 ms 151.973 ms 167.310 ms
     ```
-
-## 0xfab1
-
-```txt
- .d8888b.           8888888888  d8888 888888b.   d888   
-d88P  Y88b          888        d88888 888  "88b d8888   
-888    888          888       d88P888 888  .88P   888   
-888    888 888  888 8888888  d88P 888 8888888K.   888   
-888    888 `Y8bd8P' 888     d88P  888 888  "Y88b  888   
-888    888   X88K   888    d88P   888 888    888  888   
-Y88b  d88P .d8""8b. 888   d8888888888 888   d88P  888   
- "Y8888P"  888  888 888  d88P     888 8888888P" 8888888 
-```

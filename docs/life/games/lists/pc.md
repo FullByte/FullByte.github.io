@@ -39,3 +39,5 @@ Good games that are free
 - yorg <https://ya2.itch.io/yorg>
 - YuGiOh (Project Ignis: EDOPro): <https://github.com/ProjectIgnis/EDOPro>
 - zero-k <https://zero-k.info/>
+- Wolfenstein: Enemy Territory: <https://www.etlegacy.com/>
+- Xonotic  <https://xonotic.org/>
