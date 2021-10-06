@@ -8,10 +8,6 @@ Below is an overview of how the game is setup and played.
 
 ![wuerfeln](wuerfeln.drawio.svg)
 
-This is an example setup for 4 players
-
-![wuerfeln-setup](wuerfeln-setup.drawio.svg)
-
 ## Prepare the game
 
 **Setup the game**
@@ -31,6 +27,10 @@ This is an example setup for 4 players
 - Each player rolls all three dice once and the player with highest total number starts the game.
 - If there is a draw, those players roll again until a starting player is determined.
 - The winner starts the game with one extra rock.
+
+This is an example setup for 4 players:
+
+![wuerfeln-setup](wuerfeln-setup.drawio.svg)
 
 ## Play 10 games
 
@@ -62,7 +62,7 @@ Based on the players roll attempt and the prediction made, there is one possible
 
 *you win this game and receive all game rocks from all players (player stash excluded!).
 
-Please Note:
+Please note:
 
 - It doesn't matter what prediction was made specifically. What matters is if the prediction was correct, wrong or if no prediction was made. In other words: The rocks added or removed are determined by the result rolled, not by what was predicted. E.g., if a 🎁 (Wunsch) is rolled, it doesn't matter if 🦄 (Einhorn) or ☢️ (Dreifaltigkeit) were predicted, both are wrong and the player must return 2 rocks to the central stash.
 - If a player forgets to make a prediction and rolls the dice or mentions the prediction too late this is dealt as a passive role.

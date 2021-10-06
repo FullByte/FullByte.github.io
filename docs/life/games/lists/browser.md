@@ -61,6 +61,7 @@ Some of these are quite special and nerdy.
 - Wayfinder: <https://wayfinder.nfb.ca/>
 - Wikipedia Game: <https://thewikigame.com/>
 - Yare <https://yare.io/> (Real-Time Strategy game where you control your units by writing JavaScript code)
+- Cookie Clicker: <https://orteil.dashnet.org/cookieclicker/>
 
 ## 2 Player Games
 

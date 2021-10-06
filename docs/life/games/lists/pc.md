@@ -5,6 +5,7 @@ Good games that are free
 
 - Armagetron <http://www.armagetronad.org/>
 - Battle for Wesnoth <https://www.wesnoth.org/>
+- Blobby volley <http://blobbyvolley.de/> ([source](https://github.com/danielknobe/blobbyvolley2))
 - C&C Red Alert 2: Chrono Divide <https://game.chronodivide.com/>
 - Cataclys <https://cataclysmdda.org/>
 - Civilization <http://www.freeciv.org/>
@@ -36,8 +37,8 @@ Good games that are free
 - Viewizard <https://viewizard.com/>
 - Warzone 2100 <https://wz2100.net/>
 - Widelands: <https://github.com/widelands/widelands>
+- Wolfenstein: Enemy Territory: <https://www.etlegacy.com/>
+- Xonotic  <https://xonotic.org/>
 - yorg <https://ya2.itch.io/yorg>
 - YuGiOh (Project Ignis: EDOPro): <https://github.com/ProjectIgnis/EDOPro>
 - zero-k <https://zero-k.info/>
-- Wolfenstein: Enemy Territory: <https://www.etlegacy.com/>
-- Xonotic  <https://xonotic.org/>
