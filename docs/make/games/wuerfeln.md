@@ -1,8 +1,8 @@
 # Würfeln
 
-Bet on your roll outcome and receive or pay rocks. Beware of the 🦄. The first player with no rocks left loses the round. All other players keep their rocks. Bet on the 🦄 and play another round.
+Würfeln is a game for 2-6 players and takes about 30min to play. The rules are rather simple, the game is fast and luck is a main factor to winning the game.
 
-Winner is whoever has the most rocks after an agreed amount of rounds. If all rocks are gone from the central stash the game ends early.
+The game in short: Bet on your roll outcome and receive or pay rocks. Beware of the 🦄. The first player with no rocks left loses the game. All other players keep their rocks. Bet on the 🦄 and play another game. Winner is whoever has the most rocks after an agreed amount of games (default=10). If all rocks are gone from the central stash the game ends early.
 
 Below is an overview of how the game is setup and played.
 
@@ -18,13 +18,13 @@ This is an example setup for 4 players
 
 - Put all rocks (> 50) in a bowl. (also called "central stash")
 - Place the dice tray centrally.
-- Place the round counter (a D10) in the center and set it to 1.
+- Place the game counter (a D10) in the center and set it to 1.
 - Place the 🦄 (Einhorn) centrally e.g. next to the D10.
 - Each player receives 3 standard D6 (numbers 1-6) dice, a card with the roll-result overview and 6 rocks to start with.
 
 **Agree on the win condition**
 
-- Agree on how many rounds shall be played to determine the winner. (default is 10)
+- Agree on how many games shall be played to determine the winner. (default is 10)
 
 **Determine who starts**
 
@@ -32,7 +32,7 @@ This is an example setup for 4 players
 - If there is a draw, those players roll again until a starting player is determined.
 - The winner starts the game with one extra rock.
 
-## Play 10 rounds
+## Play 10 games
 
 This section explains the actions in a players turn.
 
@@ -60,7 +60,7 @@ Based on the players roll attempt and the prediction made, there is one possible
 | 🦄 Einhorn            | +5      | -5    | +1      |
 | ☢️ Dreifaltigkeit     | WIN*    | +1    | +5      |
 
-*you win this round and receive all game rocks from all players (player stash excluded!).
+*you win this game and receive all game rocks from all players (player stash excluded!).
 
 Please Note:
 
@@ -81,13 +81,13 @@ The 🦄-figure has the follow effects for the owner:
 
 *Give or take rocks still depends on the roll attempt outcome!
 
-### Round ends
+### Game ends
 
-Once a player has no rocks left the round ends.
+Once a player has no rocks left the game ends.
 
-Players proceed to the steps explained in "Prepare next round".
+Players proceed to the steps explained in "Prepare next game".
 
-If this is the last round, proceed to "Determine the winner" instead.
+If this is the last game, proceed to "Determine the winner" instead.
 
 The game also ends if all rocks from the central stash are gone. Proceed to "Determine the winner" in this case as well.
 
@@ -101,16 +101,16 @@ Understand the difference between game rocks, players rocks stash and the centra
 | Player stash  | Rocks a player has won in previous games |
 | Central stash | Rocks available                          |
 
-### Prepare next round
+### Prepare next game
 
-Once a round ends:
+Once a game ends:
 
 - All players take their current rocks and add them to their stash
 - The Einhorn is returned to the center of the dice tray
-- The round counter is updated and layed next to Einhorn
+- The game counter is updated and layed next to Einhorn
 - All players bid on the Einhorn
 - Everyone receives 6 rocks from the central stash
-- A new round begins and the Einhorn owner starts
+- A new game begins and the Einhorn owner starts
 
 #### Bidding on the Einhorn
 
@@ -119,7 +119,7 @@ All players can now bet on the 🦄 with their rocks available from their own st
 Bidding on the Einhorn works as follows:
 
 - Place the 🦄 in the middle of the dice tray.
-- All players bet with their personal rock stash (if available) to receive the 🦄 in the next round. You may bid zero rocks if you want but you have to bid!
+- All players bet with their personal rock stash (if available) to receive the 🦄 in the next game. You may bid zero rocks if you want but you have to bid!
 - Do not show how much you are bidding until all reveal their bet at the same time.
 - All players put their rocks used for the bid in the central stash.
 - The 🦄 goes to the highest bidder. In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the 🦄 figure. E.g., if all bid zero, all must roll their dice. In case there is another tie the remaining players re-roll the dice until a winner can be determined.
@@ -128,9 +128,9 @@ Bidding on the Einhorn works as follows:
 
 All players receive 6 rocks from the central stash.
 
-Players with a personal rock stash may choose to add rocks to their rocks for the current round at this time only.
+Players with a personal rock stash may choose to add rocks to their rocks for the current game at this time only.
 
-Note: You can only loose rocks added to the current game. Rocks in a players personal stash can only be used to bet on the Einhorn and add rocks for the next round.
+Note: You can only loose rocks added to the current game. Rocks in a players personal stash can only be used to bet on the Einhorn and add rocks for the next game.
 
 ## Determine the winner
 
@@ -147,11 +147,11 @@ This is not needed to understand or play the game.
 
     Preparing the game:
 
-    - All players agree to play the default of 10 rounds.
+    - All players agree to play the default of 10 games.
     - All players take 3 dice and 6 rocks.
     - Player 1 roles the highest total number with 3 dice (1+4+5=10) and may start the game. Player 1 receives an extra rock.
 
-    First round:
+    First game:
 
     - Player 1 starts the game and bets on rolling a 🎁 Wunsch. Player 1 then proceeds to roll 1,2,5 which is ⚰️ and therefore loses 2 rocks. Player 1 started with 7 rocks and now has 5. Now it is the next players turn.
     - The 2nd player predicts an 🦄 and rolls a 1,3,6 and therefore gains 5 rocks as well as the Einhorn figure.
@@ -159,15 +159,15 @@ This is not needed to understand or play the game.
     - It is player 1 turn again and predicts ⚰️, then rolls 3,1,4 which is ⚰️. Player 2 takes one rock from the central stash.
     - Player 2 now has the 🦄 and predicts ⚰️ as well and rolls 4,5,6 which is ⚰️. Player 2 takes the 2 rocks from player 1 instead of the central stash.
 
-    The game goes on like this until, in our example, player 2 loses the first round. At this point player 1 has 8 rocks and player 3 has 4 rocks.
+    The game goes on like this until, in our example, player 2 loses the first game. At this point player 1 has 8 rocks and player 3 has 4 rocks.
 
-    The 🦄 is now returned (player 3 had it last) and placed on the dice tray. The Einhorn is now open for auction. Since this is the 1st round and player 2 lost the game there are no rocks to bet with for this player. Player 1 bets 3 rocks and player 3 bets 1 rock. Both players put the rocks they bet in the central stash and player 1 receives the 🦄. Player 1 now has 8-3=5 rocks in their own rock stash and player 3 has 4-1 rocks in their stash.
+    The 🦄 is now returned (player 3 had it last) and placed on the dice tray. The Einhorn is now open for auction. Since this is the first game and player 2 lost the game there are no rocks to bet with for this player. Player 1 bets 3 rocks and player 3 bets 1 rock. Both players put the rocks they bet in the central stash and player 1 receives the 🦄. Player 1 now has 8-3=5 rocks in their own rock stash and player 3 has 4-1 rocks in their stash.
 
-    All players now receive 6 new rocks. Player 1 decides to add 2 rocks from the own stash to the current play stash. Player 1 now has 4 rocks remaining in their own stash and 6+2=8 rocks to play with in this round as well as the 🦄 figure. Both other players do not add rocks and start with 6 rocks.
+    All players now receive 6 new rocks. Player 1 decides to add 2 rocks from the own stash to the current play stash. Player 1 now has 4 rocks remaining in their own stash and 6+2=8 rocks to play with in this game as well as the 🦄 figure. Both other players do not add rocks and start with 6 rocks.
 
-    Player 1 with the 🦄 starts the new round and the game continues.
+    Player 1 with the 🦄 starts the new game and the game continues.
 
-    At the end of round 10 player 1 has 20 rocks, player 2 has 15 rocks and player 3 has 22 rocks. Player 3 therefore wins the game.
+    At the end of game 10 player 1 has 20 rocks, player 2 has 15 rocks and player 3 has 22 rocks. Player 3 therefore wins the game.
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
