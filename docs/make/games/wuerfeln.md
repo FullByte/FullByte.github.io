@@ -8,18 +8,23 @@ Winner is whoever has the most rocks after an agreed amount of rounds. The game 
 
 ## Prepare Game
 
-1. **Setup the game**
-   - Put all rocks (> 50) in a bowl. (also called "central stash")
-   - Place the dice tray centrally.
-   - Place the round counter (a D10) in the center and set it to 1.
-   - Place the 🦄 (Einhorn) centrally e.g. next to the D10.
-   - Each player receives 3 standard D6 (numbers 1-6) dice, a card with the roll-result overview and 6 rocks to start with.
-2. **Agree on the win condition**
-   - Agree on how many rounds shall be played to determine the winner. (default is 10)
-3. **Determine who starts**
-   - Each player rolls all three dice once and the player with highest total number starts the game.
-   - If there is a draw, those players roll again until a starting player is determined.
-   - The winner starts the game with one extra rock.
+**Setup the game**
+
+- Put all rocks (> 50) in a bowl. (also called "central stash")
+- Place the dice tray centrally.
+- Place the round counter (a D10) in the center and set it to 1.
+- Place the 🦄 (Einhorn) centrally e.g. next to the D10.
+- Each player receives 3 standard D6 (numbers 1-6) dice, a card with the roll-result overview and 6 rocks to start with.
+
+**Agree on the win condition**
+
+- Agree on how many rounds shall be played to determine the winner. (default is 10)
+
+**Determine who starts**
+
+- Each player rolls all three dice once and the player with highest total number starts the game.
+- If there is a draw, those players roll again until a starting player is determined.
+- The winner starts the game with one extra rock.
 
 ## Play 10 rounds
 
