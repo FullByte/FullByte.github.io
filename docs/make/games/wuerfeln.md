@@ -6,7 +6,7 @@ Winner is whoever has the most rocks after an agreed amount of rounds. The game 
 
 ![wuerfeln](wuerfeln.drawio.svg)
 
-## Prepare Game
+## Prepare the game
 
 **Setup the game**
 
@@ -84,7 +84,7 @@ Bidding on the Einhorn works as follows:
 - The 🦄 goes to the highest bidder.
   - In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the 🦄 figure. E.g., if all bid zero, all must roll their dice. In case there is another tie the remaining players re-roll the dice until a winner can be determined.
 
-## Determine the Winner
+## Determine the winner
 
 Once a player has no rocks left the round ends. All other players put their remaining rocks in their rock stash.
 
