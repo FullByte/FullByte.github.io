@@ -8,6 +8,10 @@ Below is an overview of how the game is setup and played.
 
 ![wuerfeln](wuerfeln.drawio.svg)
 
+This is an example setup for 4 players
+
+![wuerfeln-setup](wuerfeln-setup.drawio.svg)
+
 ## Prepare the game
 
 **Setup the game**
@@ -30,16 +34,20 @@ Below is an overview of how the game is setup and played.
 
 ## Play 10 rounds
 
+This section explains the actions in a players turn.
+
+### Predicting the next role attempt
+
 The current player decides to either predict the upcoming roll attempt or to remain silent and do a passive roll, then proceeds to roll all three dice once in the dice tray.
 
 There are 4 predictable outcomes. Below is a list of all possible results and their probability (percent of "total combinations"):
 
-| Result                | Rule                                                                           | Example                                                                         | Combinations    |
-|-----------------------|--------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------|
+| Result                | Rule                                                                             | Example                                                                         | Combinations          |
+|-----------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------|
 | ⚰️ Das Unvermeidliche | A number and that number +1 and </br> something else which is not one of the two | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 of 216</br>(44,4%) |
-| 🎁 Wunsch             | Two of a kind and something else                                               | ```2x n & !n``` </br> Example: ⚀⚀⚁ or ⚁⚃⚁                                       | 90 of 216</br>(41,7%) |
-| 🦄 Einhorn            | All numbers must be at least 2 apart                                           | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216</br>(11,1%) |
-| ☢️ Dreifaltigkeit     | Three of a kind.                                                               | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 of 216</br>(2,8%)   |
+| 🎁 Wunsch             | Two of a kind and something else                                                 | ```2x n & !n``` </br> Example: ⚀⚀⚁ or ⚁⚃⚁                                       | 90 of 216</br>(41,7%) |
+| 🦄 Einhorn            | All numbers must be at least 2 apart                                             | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216</br>(11,1%) |
+| ☢️ Dreifaltigkeit     | Three of a kind.                                                                 | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 of 216</br>(2,8%)   |
 
 Each possible roll result is represented by a symbol (⚰️,🎁,🦄,☢️) and a name (Das Unvermeidliche, Wunsch, Einhorn, Dreifaltigkeit). Most common roll results are ⚰️ (Das Unvermeidliche) and 🎁 (Wunsch). Have a look at your roll-result overview card.
 
@@ -61,9 +69,7 @@ Please Note:
 
 Remember to first take or give rocks, then put your dice back from the dice tray. With this action your turn ends and it's the next players turn.
 
-### Einhorn
-
-#### Einhorn owner
+### Einhorn owner
 
 When rolling an 🦄 (Einhorn) this player additionally receives the 🦄-figure.
 
@@ -75,9 +81,40 @@ The 🦄-figure has the follow effects for the owner:
 
 *Give or take rocks still depends on the roll attempt outcome!
 
+### Round ends
+
+Once a player has no rocks left the round ends.
+
+Players proceed to the steps explained in "Prepare next round".
+
+If this is the last round, proceed to "Determine the winner" instead.
+
+The game also ends if all rocks from the central stash are gone. Proceed to "Determine the winner" in this case as well.
+
+### Rock stash
+
+Understand the difference between game rocks, players rocks stash and the central rock stash:
+
+| Term          | Explanation                              |
+|---------------|------------------------------------------|
+| Game rocks    | Rocks a player has for the current game  |
+| Player stash  | Rocks a player has won in previous games |
+| Central stash | Rocks available                          |
+
+### Prepare next round
+
+Once a round ends:
+
+- All players take their current rocks and add them to their stash
+- The Einhorn is returned to the center of the dice tray
+- The round counter is updated and layed next to Einhorn
+- All players bid on the Einhorn
+- Everyone receives 6 rocks from the central stash
+- A new round begins and the Einhorn owner starts
+
 #### Bidding on the Einhorn
 
-Once a round ends the Einhorn is returned to the center of the dice tray, the round counter is updated and layed next to Einhorn. Now the bidding on the Einhorn starts. Winner may start the next round owning the Einhorn.
+All players can now bet on the 🦄 with their rocks available from their own stash as described above.
 
 Bidding on the Einhorn works as follows:
 
@@ -85,21 +122,21 @@ Bidding on the Einhorn works as follows:
 - All players bet with their personal rock stash (if available) to receive the 🦄 in the next round. You may bid zero rocks if you want but you have to bid!
 - Do not show how much you are bidding until all reveal their bet at the same time.
 - All players put their rocks used for the bid in the central stash.
-- The 🦄 goes to the highest bidder.
-  - In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the 🦄 figure. E.g., if all bid zero, all must roll their dice. In case there is another tie the remaining players re-roll the dice until a winner can be determined.
+- The 🦄 goes to the highest bidder. In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the 🦄 figure. E.g., if all bid zero, all must roll their dice. In case there is another tie the remaining players re-roll the dice until a winner can be determined.
+
+#### Receive 6 rocks
+
+All players receive 6 rocks from the central stash.
+
+Players with a personal rock stash may choose to add rocks to their rocks for the current round at this time only.
+
+Note: You can only loose rocks added to the current game. Rocks in a players personal stash can only be used to bet on the Einhorn and add rocks for the next round.
 
 ## Determine the winner
 
-Once a player has no rocks left the round ends. All other players put their remaining rocks in their own rock stash.
+All players put their remaining rocks (if any) in their own rock stash.
 
-If this is not the last round:
-
-- All players can now bet on the 🦄 with their rocks available from their own stash as described above.
-- A new round begins and all players receive 6 rocks from the central stash.
-- Add one to the D10 round counter.
-- Players with a personal rock stash may choose to add rocks to their rocks for the current round at this time only.
-
-Once the agreed number of rounds are played the player with the most rocks in their own stash wins the game.
+The winner of the game is player with most rocks. In case of a tie both players are ranked 1 place.
 
 ## Extras
 
