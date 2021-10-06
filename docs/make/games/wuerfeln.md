@@ -36,7 +36,7 @@ This is an example setup for 4 players
 
 This section explains the actions in a players turn.
 
-### Predicting the next role attempt
+### Predicting
 
 The current player decides to either predict the upcoming roll attempt or to remain silent and do a passive roll, then proceeds to roll all three dice once in the dice tray.
 
@@ -69,7 +69,7 @@ Please Note:
 
 Remember to first take or give rocks, then put your dice back from the dice tray. With this action your turn ends and it's the next players turn.
 
-### Einhorn owner
+### Einhorn
 
 When rolling an 🦄 (Einhorn) this player additionally receives the 🦄-figure.
 
@@ -91,7 +91,7 @@ If this is the last game, proceed to "Determine the winner" instead.
 
 The game also ends if all rocks from the central stash are gone. Proceed to "Determine the winner" in this case as well.
 
-### Rock stash
+### Understanding the rock stashes
 
 Understand the difference between game rocks, players rocks stash and the central rock stash:
 
@@ -101,7 +101,7 @@ Understand the difference between game rocks, players rocks stash and the centra
 | Player stash  | Rocks a player has won in previous games. These can only be used during betting on the unicorn, adding to the game rocks at the beginning of a new game. The player with the most rocks in this stash wins the game |
 | Central stash | All rocks remaining in the game. Take rocks from here or return rocks depending on your roll prediction outcome. |
 
-### Prepare next game
+## Prepare next game
 
 Once a game ends:
 
@@ -112,7 +112,7 @@ Once a game ends:
 - Everyone receives 6 rocks from the central stash
 - A new game begins and the Einhorn owner starts
 
-#### Bidding on the Einhorn
+### Bidding on the Einhorn
 
 All players can now bet on the 🦄 with their rocks available from their own stash as described above.
 
@@ -124,7 +124,7 @@ Bidding on the Einhorn works as follows:
 - All players put their rocks used for the bid in the central stash.
 - The 🦄 goes to the highest bidder. In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the 🦄 figure. E.g., if all bid zero, all must roll their dice. In case there is another tie the remaining players re-roll the dice until a winner can be determined.
 
-#### Receive 6 rocks
+### Receive 6 rocks
 
 All players receive 6 rocks from the central stash.
 
