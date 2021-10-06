@@ -1,8 +1,8 @@
 # Würfeln
 
-Würfeln is a game for 2-6 players and takes about 30min to play. The rules are rather simple, the game is fast and luck is a main factor to winning the game.
+Würfeln is a game for 2-6 players and takes about 30min to play. The rules are rather simple, the game is fast paced and luck is a main factor to winning the game.
 
-The game in short: Bet on your roll outcome and receive or pay rocks. Beware of the 🦄. The first player with no rocks left loses the game. All other players keep their rocks. Bet on the 🦄 and play another game. Winner is whoever has the most rocks after an agreed amount of games (default=10). If all rocks are gone from the central stash the game ends early.
+The game in short: Bet on your roll outcome and receive or pay rocks. Beware of the 🦄. The first player with no rocks left loses the game. All other players keep their rocks. Bet on the 🦄 and play another game. After ten rounds, the player with the most rocks wins.
 
 Below is an overview of how the game is setup and played.
 
