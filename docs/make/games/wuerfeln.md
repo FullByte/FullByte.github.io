@@ -97,9 +97,9 @@ Understand the difference between game rocks, players rocks stash and the centra
 
 | Term          | Explanation                              |
 |---------------|------------------------------------------|
-| Game rocks    | Rocks a player has for the current game  |
-| Player stash  | Rocks a player has won in previous games |
-| Central stash | Rocks available                          |
+| Game rocks    | Rocks a player has for the current game. If a player has no more rocks the game ends.  |
+| Player stash  | Rocks a player has won in previous games. These can only be used during betting on the unicorn, adding to the game rocks at the beginning of a new game. The player with the most rocks in this stash wins the game |
+| Central stash | All rocks remaining in the game. Take rocks from here or return rocks depending on your roll prediction outcome. |
 
 ### Prepare next game
 
