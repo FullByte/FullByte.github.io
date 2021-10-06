@@ -52,7 +52,7 @@ Based on the players roll attempt and the prediction made, there is one possible
 | 🦄 Einhorn            | +5      | -5    | +1      |
 | ☢️ Dreifaltigkeit     | WIN*    | +1    | +5      |
 
-*you win this round and receive all rocks from all players.
+*you win this round and receive all game rocks from all players (player stash excluded!).
 
 Please Note:
 
