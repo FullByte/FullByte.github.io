@@ -2,7 +2,9 @@
 
 Bet on your roll outcome and receive or pay rocks. Beware of the 🦄. The first player with no rocks left loses the round. All other players keep their rocks. Bet on the 🦄 and play another round.
 
-Winner is whoever has the most rocks after an agreed amount of rounds. The game ends early if all rocks are gone and winner is the player with the most rocks at this point in the game.
+Winner is whoever has the most rocks after an agreed amount of rounds. If all rocks are gone from the central stash the game ends early.
+
+Below is an overview of how the game is setup and played.
 
 ![wuerfeln](wuerfeln.drawio.svg)
 
@@ -68,8 +70,10 @@ When rolling an 🦄 (Einhorn) this player additionally receives the 🦄-figure
 The 🦄-figure has the follow effects for the owner:
 
 - When rolling an 🦄 no rocks are earned/paid = nothing happens.
-- The player can give and take (depending on the roll attempt outcome) rocks either from the central stash or from any other player!
+- The player can give or take rocks not only from the central stash, but also from any other player.*
 - The 🦄 is passed once another player rolls an 🦄.
+
+*Give or take rocks still depends on the roll attempt outcome!
 
 #### Bidding on the Einhorn
 
@@ -86,16 +90,16 @@ Bidding on the Einhorn works as follows:
 
 ## Determine the winner
 
-Once a player has no rocks left the round ends. All other players put their remaining rocks in their rock stash.
+Once a player has no rocks left the round ends. All other players put their remaining rocks in their own rock stash.
 
 If this is not the last round:
 
-- All players can now bet on the 🦄 with their rocks available from their stash as described above.
-- A new round begins and all players receive 6 rocks from the main stash.
+- All players can now bet on the 🦄 with their rocks available from their own stash as described above.
+- A new round begins and all players receive 6 rocks from the central stash.
 - Add one to the D10 round counter.
-- Players with a personal rock stash may choose to add rocks to their current game stash at this time only.
+- Players with a personal rock stash may choose to add rocks to their rocks for the current round at this time only.
 
-Once the agreed number of rounds are played the player with the most rocks in their stash wins the game.
+Once the agreed number of rounds are played the player with the most rocks in their own stash wins the game.
 
 ## Extras
 
@@ -120,9 +124,9 @@ This is not needed to understand or play the game.
 
     The game goes on like this until, in our example, player 2 loses the first round. At this point player 1 has 8 rocks and player 3 has 4 rocks.
 
-    The 🦄 is now returned (player 3 had it last) and placed on the dice try. The Einhorn is now open for auction. Since this is the 1st round and player 2 lost the game there are no rocks to bet with for this player. Player 1 bets 3 rocks and player 3 bets 1 rock. Both players put the rocks they bet in the center stash and player 1 receives the 🦄. Player 1 now has 8-3=5 rocks in the stash and player 3 has 4-1 rocks in the stash.
+    The 🦄 is now returned (player 3 had it last) and placed on the dice try. The Einhorn is now open for auction. Since this is the 1st round and player 2 lost the game there are no rocks to bet with for this player. Player 1 bets 3 rocks and player 3 bets 1 rock. Both players put the rocks they bet in the central stash and player 1 receives the 🦄. Player 1 now has 8-3=5 rocks in their own rock stash and player 3 has 4-1 rocks in their stash.
 
-    All players now receive 6 new rocks. Player 1 decides to add 2 rocks from the own stash to the current play stash. Player 1 now has 4 rocks remaining in stash and 6+2=8 rocks to play with in this round as well as the 🦄 figure. Both other players do not add rocks and start with 6 rocks.
+    All players now receive 6 new rocks. Player 1 decides to add 2 rocks from the own stash to the current play stash. Player 1 now has 4 rocks remaining in their own stash and 6+2=8 rocks to play with in this round as well as the 🦄 figure. Both other players do not add rocks and start with 6 rocks.
 
     Player 1 with the 🦄 starts the new round and the game continues.
 
@@ -232,12 +236,10 @@ This is not needed to understand or play the game.
     print("Einhorn: ", Einhorn, "({:.1f}".format(Einhorn / len(rolls) * 100), "%)")
     ```
 
-??? tip "creating the game"
+??? tip "Creating the game"
     Creating a box
 
-    Using boxes.py: <https://www.festi.info/boxes.py/TwoPiece?FingerJoint_angle=90.0&FingerJoint_style=rectangular&FingerJoint_surroundingspaces=2.0&FingerJoint_edge_width=1.0&FingerJoint_finger=2.0&FingerJoint_play=0.0&FingerJoint_space=2.0&FingerJoint_width=1.0&x=182&y=182&h=65&hi=0.0&outside=0&play=0.15&thickness=3.0&format=svg&tabs=0.0&debug=0&labels=0&labels=1&reference=100&burn=0.1&render=1>
-
-    These are the settings:
+    Using [boxes.py](https://www.festi.info/boxes.py) with these [settings](https://www.festi.info/boxes.py/TwoPiece?FingerJoint_angle=90.0&FingerJoint_style=rectangular&FingerJoint_surroundingspaces=2.0&FingerJoint_edge_width=1.0&FingerJoint_finger=2.0&FingerJoint_play=0.0&FingerJoint_space=2.0&FingerJoint_width=1.0&x=182&y=182&h=65&hi=0.0&outside=0&play=0.15&thickness=3.0&format=svg&tabs=0.0&debug=0&labels=0&labels=1&reference=100&burn=0.1&render=1):
 
     ![_wuerfeln](_wuerfeln.jpg)
 
