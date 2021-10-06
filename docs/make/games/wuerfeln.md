@@ -112,7 +112,7 @@ This is not needed to understand or play the game.
 
     - All players agree to play the default of 10 rounds.
     - All players take 3 dice and 6 rocks.
-    - Player 1 roles the highest total number with 3 dice (1+4+5=10) and may start the game. Player 1 receives and extra rock.
+    - Player 1 roles the highest total number with 3 dice (1+4+5=10) and may start the game. Player 1 receives an extra rock.
 
     First round:
 
@@ -124,7 +124,7 @@ This is not needed to understand or play the game.
 
     The game goes on like this until, in our example, player 2 loses the first round. At this point player 1 has 8 rocks and player 3 has 4 rocks.
 
-    The 🦄 is now returned (player 3 had it last) and placed on the dice try. The Einhorn is now open for auction. Since this is the 1st round and player 2 lost the game there are no rocks to bet with for this player. Player 1 bets 3 rocks and player 3 bets 1 rock. Both players put the rocks they bet in the central stash and player 1 receives the 🦄. Player 1 now has 8-3=5 rocks in their own rock stash and player 3 has 4-1 rocks in their stash.
+    The 🦄 is now returned (player 3 had it last) and placed on the dice tray. The Einhorn is now open for auction. Since this is the 1st round and player 2 lost the game there are no rocks to bet with for this player. Player 1 bets 3 rocks and player 3 bets 1 rock. Both players put the rocks they bet in the central stash and player 1 receives the 🦄. Player 1 now has 8-3=5 rocks in their own rock stash and player 3 has 4-1 rocks in their stash.
 
     All players now receive 6 new rocks. Player 1 decides to add 2 rocks from the own stash to the current play stash. Player 1 now has 4 rocks remaining in their own stash and 6+2=8 rocks to play with in this round as well as the 🦄 figure. Both other players do not add rocks and start with 6 rocks.
 
