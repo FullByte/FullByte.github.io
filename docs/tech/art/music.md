@@ -1,5 +1,9 @@
 # Music
 
+## MIDI / Chip Tune
+
+- <https://mmontag.github.io/chip-player-js/browse/>
+
 ## List with links
 
 - <https://github.com/pjagielski/awesome-live-coding-music>
@@ -9,7 +13,6 @@
 - <https://evokemusic.ai/>
 - <https://filmmusic.io/>
 - <https://freesound.org/>
-
 
 ## Learn
 

@@ -1,6 +1,6 @@
 # ASCII
 
-Most of the stuff below is is the work of someone else but as I found this stuff hard to find I just want to make sure it is not lost. Links were added where known.
+I love [ASCII Art](https://en.wikipedia.org/wiki/ASCII_art) and this page is dedicated to some beautiful things I found. Most of the stuff below is is the work of someone else but as I found this stuff hard to find I just want to make sure it is not lost. Links were added where known.
 
 ```txt
  .d8888b.           8888888888  d8888 888888b.   d888   
@@ -397,7 +397,7 @@ ART is a Python lib for text converting to ASCII art fancy.
 
 - Source: <https://github.com/sepandhaghighi/art>
 - Docs: <https://www.4r7.ir/>
-- Install: pip install art
+- Install: ```pip install art```
 
 Example `art-example.py`
 

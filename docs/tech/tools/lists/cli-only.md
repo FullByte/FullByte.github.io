@@ -23,6 +23,7 @@ More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 - Stream Terminal Session: <https://github.com/miguelmota/streamhut>
 - Share Files using QR code: <https://github.com/claudiodangelis/qrcp>
 - GPG: <https://github.com/orhun/gpg-tui>
+- Video-Chat: <https://github.com/dialup-inc/ascii>
 
 ## Media
 
