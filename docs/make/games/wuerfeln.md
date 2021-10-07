@@ -2,8 +2,8 @@
 
 Einhorn is a game for 2-6 players and takes about 30min to play. The rules are rather simple, the game is fast paced and luck is a main factor to winning the game.
 
-| Einhorn | TL;DR |
-|------------------------------|------------------------------------------|
+| Einhorn                      | TL;DR                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an Einhorn and recieve the Einhorn-figure to take stones from your opponents. The first player with no stones left loses and the game ends. All other players keep their stones. Bet on the Einhorn for an adnvatage in the next game. Be better at predicting your role outcome than the other players. After ten games, the player with the most stones wins. |
 
 Below is an overview of how the game is setup and played.
@@ -38,11 +38,11 @@ This is an example setup for 4 players:
 
 Understand the difference between game stones, players stones stash and the central stone stash:
 
-| Term          | Explanation |
-|---------------|----------------------------------------|
-| Game stones   | Stones a player has for the [current game](#play). </br> If a player has no more stones the [game ends](#game-ends).                                                                                                                                                                         |
+| Term          | Explanation                                                                                                                                                                                                                                                                                   |
+|---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Game stones   | Stones a player has for the [current game](#play). </br> If a player has no more stones the [game ends](#game-ends).                                                                                                                                                                          |
 | Player stash  | Stones a player has won in previous games. </br> Only usable when [betting on the unicorn](#bidding-on-the-einhorn) and </br> when [adding stones](#receive-6-stones) to the six game stones at the beginning of a new game.</br>The player with the most stones in this stash wins the game. |
-| Central stash | All stones remaining in the game. </br> [Take stones or return stones](#take-or-return-stones) depending on your roll prediction outcome.                                                                                                                                                    |
+| Central stash | All stones remaining in the game. </br> [Take stones or return stones](#take-or-return-stones) depending on your roll prediction outcome.                                                                                                                                                     |
 
 ## Play
 
@@ -54,12 +54,12 @@ The current player decides to either predict the upcoming roll attempt or to rem
 
 There are 4 predictable outcomes. Below is a list of all possible results and their probability (percent of "total combinations"):
 
-| Result                | Rule                                                                       | Example                                                                         | Combinations           |
-|-----------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------|
-| ⚰️ Das Unvermeidliche | A number and that number +1 and </br> something else which is not one of the two | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 of 216 </br> (44,4%) |
-| 🎁 Wunsch             | Two of a kind and something else </br> which is not that number                  | ```2x n & !n``` </br> Example: ⚀⚀⚁ or ⚁⚃⚁                                       | 90 of 216 </br> (41,7%) |
-| 🦄 Einhorn            | All numbers must be at least 2 apart                                       | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216 </br> (11,1%) |
-| ☢️ Dreifaltigkeit     | Three of a kind.                                                           | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 of 216 </br> (2,8%)   |
+| Result                | Rule                                                                             | Formula                                               | Example    | Combinations | Probability |
+|-----------------------|----------------------------------------------------------------------------------|-------------------------------------------------------|------------|--------------|-------------|
+| ⚰️ Das Unvermeidliche | A number & that number +1 & </br> something else which is not one of the two | ```n & n+1 & (!n / !n+1)```                           | ⚀⚁⚃ or ⚂⚃⚀ | 96 of 216    | 44,4%       |
+| 🎁 Wunsch             | Two of a kind & something else </br> which is not that number                  | ```2x n & !n```                                       | ⚀⚀⚁ or ⚁⚃⚁ | 90 of 216    | 41,7%       |
+| 🦄 Einhorn            | All numbers must be at least 2 apart                                             | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` | ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216    | 11,1%       |
+| ☢️ Dreifaltigkeit     | Three of a kind.                                                                 | ```3x n```                                            | ⚁⚁⚁ or ⚅⚅⚅ | 6 of 216     | 2,8%        |
 
 ### Take or return stones
 
