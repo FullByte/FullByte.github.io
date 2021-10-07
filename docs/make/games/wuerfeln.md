@@ -1,8 +1,8 @@
-# Würfeln
+# Einhorn
 
-Würfeln is a game for 2-6 players and takes about 30min to play. The rules are rather simple, the game is fast paced and luck is a main factor to winning the game.
-
-The game in short: Bet on your roll outcome and receive or pay stones. Beware of the 🦄. The first player with no stones left loses the game. All other players keep their stones. Bet on the 🦄 and play another game. After ten rounds, the player with the most stones wins.
+|Einhorn|TL;DR|
+|--|--|
+|![einhorn.png](_einhorn.png)|Einhorn is a game for 2-6 players and takes about 30min to play. The rules are rather simple, the game is fast paced and luck is a main factor to winning the game. The game in short: Bet on your roll outcome and receive or pay stones. Beware of the 🦄. The first player with no stones left loses the game. All other players keep their stones. Bet on the 🦄 and play another game. After ten rounds, the player with the most stones wins.|
 
 Below is an overview of how the game is setup and played.
 
@@ -32,9 +32,9 @@ This is an example setup for 4 players:
 
 ![wuerfeln-setup](wuerfeln-setup.drawio.svg)
 
-## Play 10 games
+## Play
 
-This section explains the actions in a players turn.
+This section explains the actions in a players turn and how one game is played. One game may be as fast as 1min but can also take 10min depending on how fast one player looses all stones. Play 10 games for standard match.
 
 ### Predicting
 
