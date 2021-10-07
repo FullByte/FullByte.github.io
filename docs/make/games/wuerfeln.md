@@ -131,7 +131,7 @@ Bidding on the Einhorn works as follows:
 
 ## Determine the winner
 
-All players put their remaining stones (if any) in their own stone stash.
+All players put their remaining stones in their own stone stash.
 
 Winner of the game is the player with most stones. In case of a tie, all tied players are ranked 1 place.
 
