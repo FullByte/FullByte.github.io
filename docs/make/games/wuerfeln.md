@@ -136,7 +136,7 @@ Note: You can only loose stones added to the current game. Stones in a players p
 
 All players put their remaining stones (if any) in their own stone stash.
 
-The winner of the game is player with most stones. In case of a tie both players are ranked 1 place.
+Winner of the game is the player with most stones. In case of a tie players in scope are all ranked 1 place.
 
 ## Extras
 
@@ -217,7 +217,7 @@ This is not needed to understand or play the game.
     Here is the python script I wrote to calculate the result:
 
     ```py
-    # Check groups for Würfel game:
+    # Check groups for Einhorn game:
     # Step 1 create all possible options for 3x D6 dice
     # Step 2 remove doubles -> if total is 1 = Dreifaltigkeit, 2 = Wunsch
     # Step 3 with all remaining sort numbers and count min distance between all three values. If min distance is 1 = Unvermeidlich, else Einhorn
