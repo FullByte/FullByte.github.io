@@ -54,23 +54,23 @@ The current player decides to either predict the upcoming roll attempt or to rem
 
 There are 4 predictable outcomes. Below is a list of all possible results and their probability (percent of "total combinations"):
 
-| Result                | Rule                                                                             | Formula                                               | Example    | Combinations | Probability |
-|-----------------------|----------------------------------------------------------------------------------|-------------------------------------------------------|------------|--------------|-------------|
-| ⚰️ Das Unvermeidliche | A number & that number +1 & </br> something else which is not one of the two | ```n & n+1 & (!n / !n+1)```                           | ⚀⚁⚃ or ⚂⚃⚀ | 96 of 216    | 44,4%       |
-| 🎁 Wunsch             | Two of a kind & something else </br> which is not that number                  | ```2x n & !n```                                       | ⚀⚀⚁ or ⚁⚃⚁ | 90 of 216    | 41,7%       |
-| 🦄 Einhorn            | All numbers must be at least 2 apart                                             | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` | ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216    | 11,1%       |
-| ☢️ Dreifaltigkeit     | Three of a kind.                                                                 | ```3x n```                                            | ⚁⚁⚁ or ⚅⚅⚅ | 6 of 216     | 2,8%        |
+|    | Result             | Rule                                                                     | Formula                                             | Example    | Combinations | Probability |
+|----|--------------------|--------------------------------------------------------------------------|-----------------------------------------------------|------------|--------------|-------------|
+| ⚰️ | Das Unvermeidliche | A number & that number +1 and something else which is not one of the two | ```n & n+1 & (!n / !n+1)```                         | ⚀⚁⚃ or ⚂⚃⚀ | 96 of 216    | 44,4%       |
+| 🎁 | Wunsch             | Two of a kind & something else and which is not that number              | ```2x n & !n```                                     | ⚀⚀⚁ or ⚁⚃⚁ | 90 of 216    | 41,7%       |
+| 🦄 | Einhorn            | All numbers must be at least 2 apart                                     | ```n & n+2 & (n+4 / n+5)``` and ```n & n+3 & n+5``` | ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216    | 11,1%       |
+| ☢️ | Dreifaltigkeit     | Three of a kind.                                                         | ```3x n```                                          | ⚁⚁⚁ or ⚅⚅⚅ | 6 of 216     | 2,8%        |
 
 ### Take or return stones
 
 Based on the players roll attempt and the prediction made, there is one possible result that leads to adding or removing stones from the players game stash. E.g., in case the roll result was a `Wunsch`, read that line in your roll-result overview card, then check if the prediction was correct, wrong or passive, then add or remove stones accordingly.
 
-| Result                | Correct                        | Wrong | Passive |
-|-----------------------|--------------------------------|-------|---------|
-| ⚰️ Das Unvermeidliche | +2                             | -2    | -1      |
-| 🎁 Wunsch             | +2                             | -2    | -1      |
-| 🦄 Einhorn            | +5                             | -5    | +1      |
-| ☢️ Dreifaltigkeit     | [WIN](#rolling-dreifaltigkeit) | +1    | +5      |
+|    | Result             | Correct                        | Wrong | Passive |
+|----|--------------------|--------------------------------|-------|---------|
+| ⚰️ | Das Unvermeidliche | +2                             | -2    | -1      |
+| 🎁 | Wunsch             | +2                             | -2    | -1      |
+| 🦄 | Einhorn            | +5                             | -5    | +1      |
+| ☢️ | Dreifaltigkeit     | [WIN](#rolling-dreifaltigkeit) | +1    | +5      |
 
 As you can see from the table above, the most common roll results are `Das Unvermeidliche` and `Wunsch`. The improbable results `Einhorn` and `Dreifaltigkeit` promise higher rewards.
 
