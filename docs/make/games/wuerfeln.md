@@ -91,7 +91,7 @@ The Einhorn-figure has the following effects:
 
 #### Rolling `Dreifaltigkeit`
 
-If you roll `Dreifaltigkeit` you will always receive stones (see [overview)](#take-or-return-stones). However, if you predict `Dreifaltigkeit` correctly, which is a 2,8% chance, you receive all game stones from all players (player stash excluded!)and therewith instantly [end the current game](#game-ends).
+If you roll `Dreifaltigkeit` you will always receive stones (see [overview)](#take-or-return-stones). However, if you predict `Dreifaltigkeit` correctly (2,8% chance), you receive all game stones from all players (player stash excluded!) and therewith instantly [end the current game](#game-ends).
 
 ### Game ends
 
@@ -102,7 +102,7 @@ Once a player has no stones left the game ends.
 
 ## Prepare next game
 
-Once a game ends:
+To prepare for the next game, follow these steps:
 
 - All players take their current stones and add them to their stash.
 - The Einhorn is returned to the center of the dice tray.
