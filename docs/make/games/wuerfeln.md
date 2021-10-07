@@ -14,9 +14,9 @@ Below is an overview of how the game is setup and played.
 
 - Put all stones (> 50) in a bowl. (also called "central stash")
 - Place the dice tray centrally.
-- Place the game counter (a D10) in the center and set it to 1.
-- Place the 🦄 (Einhorn) centrally e.g. next to the D10.
-- Each player receives 3 standard D6 (numbers 1-6) dice, a card with the roll-result overview and 6 stones to start with.
+- Place the game counter dice (D10) in the center and set it to 1.
+- Place the 🦄 (Einhorn) centrally between dice tray and central stash.
+- Each player receives 3x six sided dice (D6), a card with the roll-result overview and 6 stones.
 
 **Agree on the win condition**
 
@@ -49,9 +49,7 @@ There are 4 predictable outcomes. Below is a list of all possible results and th
 | 🦄 Einhorn            | All numbers must be at least 2 apart                                             | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216</br>(11,1%) |
 | ☢️ Dreifaltigkeit     | Three of a kind.                                                                 | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 of 216</br>(2,8%)   |
 
-Each possible roll result is represented by a symbol (⚰️,🎁,🦄,☢️) and a name (Das Unvermeidliche, Wunsch, Einhorn, Dreifaltigkeit). Most common roll results are ⚰️ (Das Unvermeidliche) and 🎁 (Wunsch). Have a look at your roll-result overview card.
-
-Based on the players roll attempt and the prediction made, there is one possible result that leads to adding or removing stones from the players game stash. E.g., in case the roll result was a 🎁 (Wunsch) view that line in your roll-result overview card, then check if the prediction was correct, wrong or passive and add or remove stones accordingly.
+Based on the players roll attempt and the prediction made, there is one possible result that leads to adding or removing stones from the players game stash. E.g., in case the roll result was a `Wunsch` view that line in your roll-result overview card, then check if the prediction was correct, wrong or passive and add or remove stones accordingly.
 
 | Result                | Correct | Wrong | Passive |
 |-----------------------|---------|-------|---------|
@@ -62,22 +60,24 @@ Based on the players roll attempt and the prediction made, there is one possible
 
 *you win this game and receive all game stones from all players (player stash excluded!).
 
+As you can see form the table above, the most common roll results are `Das Unvermeidliche` and `Wunsch`. The less likely results `Einhorn` and `Dreifaltigkeit` promise higher rewards.
+
 Please note:
 
-- It doesn't matter what prediction was made specifically. What matters is if the prediction was correct, wrong or if no prediction was made. In other words: The stones added or removed are determined by the result rolled, not by what was predicted. E.g., if a 🎁 (Wunsch) is rolled, it doesn't matter if 🦄 (Einhorn) or ☢️ (Dreifaltigkeit) were predicted, both are wrong and the player must return 2 stones to the central stash.
-- If a player forgets to make a prediction and rolls the dice or mentions the prediction too late this is dealt as a passive role.
+- It doesn't matter what prediction was made specifically. What matters is if the prediction was correct, wrong or if no prediction was made. In other words: The stones added or removed are determined by the result rolled, not by what was predicted. E.g., if a `Wunsch` is rolled, it doesn't matter if `Das Unvermeidliche`, `Einhorn` or `Dreifaltigkeit` were predicted, all three are wrong and the player must return 2 stones to the central stash.
+- If a player forgets to make a prediction or mentions the prediction too late and rolls the dice this is dealt as a passive role.
 
 Remember to first take or give stones, then put your dice back from the dice tray. With this action your turn ends and it's the next players turn.
 
 ### Einhorn
 
-When rolling an 🦄 (Einhorn) this player additionally receives the 🦄-figure.
+When rolling an `Einhorn` this player additionally receives the Einhorn-figure.
 
-The 🦄-figure has the follow effects for the owner:
+The Einhorn-figure has the follow effects for the owner:
 
-- When rolling an 🦄 no stones are earned/paid = nothing happens.
+- When rolling an `Einhorn` no stones are earned/paid = nothing happens.
 - The player can give or take stones not only from the central stash, but also from any other player.*
-- The 🦄 is passed once another player rolls an 🦄.
+- The Einhorn-figure is passed once another player rolls an `Einhorn`.
 
 *Give or take stones still depends on the roll attempt outcome!
 
@@ -97,9 +97,9 @@ Understand the difference between game stones, players stones stash and the cent
 
 | Term          | Explanation                              |
 |---------------|------------------------------------------|
-| Game stones    | Stones a player has for the current game. If a player has no more stones the game ends.  |
-| Player stash  | Stones a player has won in previous games. These can only be used during betting on the unicorn, adding to the game stones at the beginning of a new game. The player with the most stones in this stash wins the game |
-| Central stash | All stones remaining in the game. Take stones from here or return stones depending on your roll prediction outcome. |
+| Game stones    | Stones a player has for the current game.</br>If a player has no more stones the game ends.|
+| Player stash  | Stones a player has won in previous games.</br>Only usable when betting on the unicorn and </br>when adding stones to the six game stones at the beginning of a new game.</br>The player with the most stones in this stash wins the game.|
+| Central stash | All stones remaining in the game.</br>Take stones from here or return stones depending on your roll prediction outcome.|
 
 ## Prepare next game
 
@@ -108,21 +108,21 @@ Once a game ends:
 - All players take their current stones and add them to their stash
 - The Einhorn is returned to the center of the dice tray
 - The game counter is updated and layed next to Einhorn
-- All players bid on the Einhorn
-- Everyone receives 6 stones from the central stash
-- A new game begins and the Einhorn owner starts
+- All players bid on the Einhorn and all stones used for bidding return to the central stash
+- Everyone receives 6 stones from the central stash and players may add more stones from their stash
+- A new game begins and the owner of the Einhorn starts
 
 ### Bidding on the Einhorn
 
-All players can now bet on the 🦄 with their stones available from their own stash as described above.
+All players can now bet on the Einhorn with their stones available from their own stash as described above.
 
 Bidding on the Einhorn works as follows:
 
-- Place the 🦄 in the middle of the dice tray.
-- All players bet with their personal stone stash (if available) to receive the 🦄 in the next game. You may bid zero stones if you want but you have to bid!
+- Place the Einhorn in the middle of the dice tray.
+- All players bet with their personal stone stash (if available) to receive the Einhorn in the next game. You may bid zero stones if you want but you have to bid!
 - Do not show how much you are bidding until all reveal their bet at the same time.
 - All players put their stones used for the bid in the central stash.
-- The 🦄 goes to the highest bidder. In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the 🦄 figure. E.g., if all bid zero, all must roll their dice. In case there is another tie the remaining players re-roll the dice until a winner can be determined.
+- The Einhorn goes to the highest bidder. In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the Einhorn-figure. E.g., if all bid zero, all must roll their dice. In case there is another tie the remaining players re-roll the dice until a winner can be determined.
 
 ### Receive 6 stones
 
@@ -153,19 +153,19 @@ This is not needed to understand or play the game.
 
     First game:
 
-    - Player 1 starts the game and bets on rolling a 🎁 Wunsch. Player 1 then proceeds to roll 1,2,5 which is ⚰️ and therefore loses 2 stones. Player 1 started with 7 stones and now has 5. Now it is the next players turn.
-    - The 2nd player predicts an 🦄 and rolls a 1,3,6 and therefore gains 5 stones as well as the Einhorn figure.
-    - The 3rd player choses to not predict anything and rolls 2,2,2 which is ☢️. In this case the player gains one stone.
-    - It is player 1 turn again and predicts ⚰️, then rolls 3,1,4 which is ⚰️. Player 2 takes one stone from the central stash.
-    - Player 2 now has the 🦄 and predicts ⚰️ as well and rolls 4,5,6 which is ⚰️. Player 2 takes the 2 stones from player 1 instead of the central stash.
+    - Player 1 starts the game and bets on rolling a `Wunsch`. Player 1 then proceeds to roll 1,2,5 which is `das unvermeidliche` and therefore loses 2 stones. Player 1 started with 7 stones and now has 5. Now it is the next players turn.
+    - The 2nd player predicts an `Einhorn` and rolls a 1,3,6 and therefore gains 5 stones as well as the Einhorn-figure.
+    - The 3rd player choses to not predict anything and rolls 2,2,2 which is `Dreifaltigkeit`. In this case the player gains one stone.
+    - It is player 1 turn again and predicts `das unvermeidliche`, then rolls 3,1,4 which is `das unvermeidliche`. Player 2 takes one stone from the central stash.
+    - Player 2 now has the `Einhorn` and predicts `das unvermeidliche` as well and rolls 4,5,6 which is `das unvermeidliche`. Player 2 takes the 2 stones from player 1 instead of the central stash.
 
     The game goes on like this until, in our example, player 2 loses the first game. At this point player 1 has 8 stones and player 3 has 4 stones.
 
-    The 🦄 is now returned (player 3 had it last) and placed on the dice tray. The Einhorn is now open for auction. Since this is the first game and player 2 lost the game there are no stones to bet with for this player. Player 1 bets 3 stones and player 3 bets 1 stone. Both players put the stones they bet in the central stash and player 1 receives the 🦄. Player 1 now has 8-3=5 stones in their own stone stash and player 3 has 4-1 stones in their stash.
+    The `Einhorn` is now returned (player 3 had it last) and placed on the dice tray. The `Einhorn` is now open for auction. Since this is the first game and player 2 lost the game there are no stones to bet with for this player. Player 1 bets 3 stones and player 3 bets 1 stone. Both players put the stones they bet in the central stash and player 1 receives the Einhorn-figure. Player 1 now has 8-3=5 stones in their own stone stash and player 3 has 4-1 stones in their stash.
 
-    All players now receive 6 new stones. Player 1 decides to add 2 stones from the own stash to the current play stash. Player 1 now has 4 stones remaining in their own stash and 6+2=8 stones to play with in this game as well as the 🦄 figure. Both other players do not add stones and start with 6 stones.
+    All players now receive 6 new stones. Player 1 decides to add 2 stones from the own stash to the current play stash. Player 1 now has 4 stones remaining in their own stash and 6+2=8 stones to play with in this game as well as the Einhorn-figure. Both other players do not add stones and start with 6 stones.
 
-    Player 1 with the 🦄 starts the new game and the game continues.
+    Player 1 with the Einhorn-figure starts the new game and the game continues.
 
     At the end of game 10 player 1 has 20 stones, player 2 has 15 stones and player 3 has 22 stones. Player 3 therefore wins the game.
 
@@ -282,7 +282,7 @@ This is not needed to understand or play the game.
     
     **Dice**
 
-    There are no real options here. Buy some nice dice: You need 3 dice of the same color and 6 different colors so a total of 18x D6. 12mm is a good size for a dice. I prefer the numbers written on the sides instead of the dots but both works fine. Additionally you need a D10 to count the games played. As always, it is cheaper to buy in bulk and dice packs are available in a 36x dice box as well as mixed color option for 50x dice and 100x dice. This way you should spend about 7 Euro for all dice.
+    There are no real options here. Buy some nice dice: You need 3 dice of the same color and 6 different colors so a total of 18x D6. 12mm is a good size for a dice. I prefer the numbers written on the sides instead of the dots but both is perfectly fine. Additionally, you need a D10 to count the games played. As always, it is cheaper to buy in bulk and dice packs are available in a 36x dice box as well as mixed color option for 50x dice and 100x dice. This way you should spend about 7 Euro for all dice.
 
     **Stones**
 
