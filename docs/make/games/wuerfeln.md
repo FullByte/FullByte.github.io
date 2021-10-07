@@ -1,8 +1,8 @@
 # Einhorn
 
-|Einhorn|TL;DR|
-|--|--|
-|![einhorn.png](_einhorn.png)|Einhorn is a game for 2-6 players and takes about 30min to play. The rules are rather simple, the game is fast paced and luck is a main factor to winning the game. The game in short: Bet on your roll outcome and receive or pay stones. Beware of the 🦄. The first player with no stones left loses the game. All other players keep their stones. Bet on the 🦄 and play another game. After ten rounds, the player with the most stones wins.|
+| Einhorn                      | TL;DR                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+|------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![einhorn.png](_einhorn.png) | Einhorn is a game for 2-6 players and takes about 30min to play. The rules are rather simple, the game is fast paced and luck is a main factor to winning the game.</br></br>Each player starts with six stones. Bet on your roll outcome and receive or pay stones. The first player with no stones left loses and the game ends. All other players keep their stones. Bet on the Einhorn to steal stones from other players. After ten games, the player with the most stones wins. |
 
 Below is an overview of how the game is setup and played.
 
@@ -12,31 +12,41 @@ Below is an overview of how the game is setup and played.
 
 **Setup the game**
 
-- Put all stones (> 50) in a bowl. (also called "central stash")
+- Put all stones in a bowl. (also called "central stash")
 - Place the dice tray centrally.
 - Place the game counter dice (D10) in the center and set it to 1.
-- Place the 🦄 (Einhorn) centrally between dice tray and central stash.
+- Place the Einhorn-figure centrally between dice tray and central stash.
 - Each player receives 3x six sided dice (D6), a card with the roll-result overview and 6 stones.
 
 **Agree on the win condition**
 
-- Agree on how many games shall be played to determine the winner. (default is 10)
+- Agree on how many games shall be played to determine the winner (default is 10)
 
 **Determine who starts**
 
-- Each player rolls all three dice once and the player with highest total number starts the game.
+- All players roll all three dice once and the player with highest sum starts the game.
 - If there is a draw, those players roll again until a starting player is determined.
-- The winner starts the game with one extra stone.
+- The player that starts the game receives an additional stone.
 
 This is an example setup for 4 players:
 
 ![wuerfeln-setup](wuerfeln-setup.drawio.svg)
 
+### Understanding the stone stashes
+
+Understand the difference between game stones, players stones stash and the central stone stash:
+
+| Term          | Explanation                                                                                                                                                                                                                                                                                |
+|---------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Game stones   | Stones a player has for the [current game](#play).</br>If a player has no more stones the [game ends](#game-ends).                                                                                                                                                                         |
+| Player stash  | Stones a player has won in previous games.</br>Only usable when [betting on the unicorn](#bidding-on-the-einhorn) and </br>when [adding stones](#receive-6-stones) to the six game stones at the beginning of a new game.</br>The player with the most stones in this stash wins the game. |
+| Central stash | All stones remaining in the game.</br>[Take stones or return stones](#take-or-return-stones) depending on your roll prediction outcome.                                                                                                                                                    |
+
 ## Play
 
-This section explains the actions in a players turn and how one game is played. One game may be as fast as 1min but can also take 10min depending on how fast one player looses all stones. Play 10 games for standard match.
+This section explains the actions in a players turn and how one game is played. One game may be as fast as 1min but can also take 10min depending on how fast one player looses all stones. Play 10 games for a standard match.
 
-### Predicting and roll result
+### Predict outcome or remain silent
 
 The current player decides to either predict the upcoming roll attempt or to remain silent and do a passive roll, then proceeds to roll all three dice once in the dice tray.
 
@@ -44,23 +54,23 @@ There are 4 predictable outcomes. Below is a list of all possible results and th
 
 | Result                | Rule                                                                             | Example                                                                         | Combinations          |
 |-----------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------|
-| ⚰️ Das Unvermeidliche | A number and that number +1 and </br> something else which is not one of the two | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 of 216</br>(44,4%) |
-| 🎁 Wunsch             | Two of a kind and something else                                                 | ```2x n & !n``` </br> Example: ⚀⚀⚁ or ⚁⚃⚁                                       | 90 of 216</br>(41,7%) |
-| 🦄 Einhorn            | All numbers must be at least 2 apart                                             | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216</br>(11,1%) |
-| ☢️ Dreifaltigkeit     | Three of a kind.                                                                 | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 of 216</br>(2,8%)   |
+| ⚰️ Das Unvermeidliche | A number and that number +1 and </br> something else which is not one of the two | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 of 216</br> (44,4%) |
+| 🎁 Wunsch             | Two of a kind and something else                                                 | ```2x n & !n``` </br> Example: ⚀⚀⚁ or ⚁⚃⚁                                       | 90 of 216</br> (41,7%) |
+| 🦄 Einhorn            | All numbers must be at least 2 apart                                             | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216</br> (11,1%) |
+| ☢️ Dreifaltigkeit     | Three of a kind.                                                                 | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 of 216</br> (2,8%)   |
 
-Based on the players roll attempt and the prediction made, there is one possible result that leads to adding or removing stones from the players game stash. E.g., in case the roll result was a `Wunsch` view that line in your roll-result overview card, then check if the prediction was correct, wrong or passive and add or remove stones accordingly.
+### Take or return stones
 
-| Result                | Correct | Wrong | Passive |
-|-----------------------|---------|-------|---------|
-| ⚰️ Das Unvermeidliche | +2      | -2    | -1      |
-| 🎁 Wunsch             | +2      | -2    | -1      |
-| 🦄 Einhorn            | +5      | -5    | +1      |
-| ☢️ Dreifaltigkeit     | WIN*    | +1    | +5      |
+Based on the players roll attempt and the prediction made, there is one possible result that leads to adding or removing stones from the players game stash. E.g., in case the roll result was a `Wunsch`, read that line in your roll-result overview card, then check if the prediction was correct, wrong or passive, then add or remove stones accordingly.
 
-*you win this game and receive all game stones from all players (player stash excluded!).
+| Result                | Correct                        | Wrong | Passive |
+|-----------------------|--------------------------------|-------|---------|
+| ⚰️ Das Unvermeidliche | +2                             | -2    | -1      |
+| 🎁 Wunsch             | +2                             | -2    | -1      |
+| 🦄 Einhorn            | +5                             | -5    | +1      |
+| ☢️ Dreifaltigkeit     | [WIN](#rolling-dreifaltigkeit) | +1    | +5      |
 
-As you can see form the table above, the most common roll results are `Das Unvermeidliche` and `Wunsch`. The less likely results `Einhorn` and `Dreifaltigkeit` promise higher rewards.
+As you can see from the table above, the most common roll results are `Das Unvermeidliche` and `Wunsch`. The improbable results `Einhorn` and `Dreifaltigkeit` promise higher rewards.
 
 Please note:
 
@@ -69,48 +79,37 @@ Please note:
 
 Remember to first take or give stones, then put your dice back from the dice tray. With this action your turn ends and it's the next players turn.
 
-### Rolling an Einhorn
+#### Rolling `Einhorn`
 
 When rolling an `Einhorn` this player additionally receives the Einhorn-figure.
 
-The Einhorn-figure has the follow effects for the owner:
+The Einhorn-figure has the following effects:
 
 - When rolling an `Einhorn` no stones are earned/paid = nothing happens.
-- The player can give or take stones not only from the central stash, but also from any other player.*
-- The Einhorn-figure is passed once another player rolls an `Einhorn`.
+- The player can give or take stones not only from the central stash, but also from any other player. However, whether the player can take stones still depends on the roll attempt outcome!
+- The Einhorn-figure is passed if another player rolls an `Einhorn`.
 
-*Give or take stones still depends on the roll attempt outcome!
+#### Rolling `Dreifaltigkeit`
+
+If you roll `Dreifaltigkeit` you will always receive stones (see [overview)](#take-or-return-stones). However, if you predict `Dreifaltigkeit` correctly, which is a 2,8% chance, you receive all game stones from all players (player stash excluded!)and therewith instantly [end the current game](#game-ends).
 
 ### Game ends
 
 Once a player has no stones left the game ends.
 
-Players proceed to the steps explained in "Prepare next game".
-
-If this is the last game, proceed to "Determine the winner" instead.
-
-The game also ends if all stones from the central stash are gone. Proceed to "Determine the winner" in this case as well.
-
-### Understanding the stone stashes
-
-Understand the difference between game stones, players stones stash and the central stone stash:
-
-| Term          | Explanation                              |
-|---------------|------------------------------------------|
-| Game stones    | Stones a player has for the current game.</br>If a player has no more stones the game ends.|
-| Player stash  | Stones a player has won in previous games.</br>Only usable when betting on the unicorn and </br>when adding stones to the six game stones at the beginning of a new game.</br>The player with the most stones in this stash wins the game.|
-| Central stash | All stones remaining in the game.</br>Take stones from here or return stones depending on your roll prediction outcome.|
+- If this was the last game (e.g. game #10) or if all stones from the central stash are gone, proceed to [determine the winner](#determine-the-winner).
+- Else, proceed with the steps to [prepare the next game](#prepare-next-game).
 
 ## Prepare next game
 
 Once a game ends:
 
-- All players take their current stones and add them to their stash
-- The Einhorn is returned to the center of the dice tray
-- The game counter is updated and layed next to Einhorn
-- All players bid on the Einhorn and all stones used for bidding return to the central stash
-- Everyone receives 6 stones from the central stash and players may add more stones from their stash
-- A new game begins and the owner of the Einhorn starts
+- All players take their current stones and add them to their stash.
+- The Einhorn is returned to the center of the dice tray.
+- The game counter is updated and layed next to Einhorn.
+- All players [bid on the Einhorn](#bidding-on-the-einhorn) and all stones used for bidding return to the central stash.
+- Everyone [receives 6 stones](#receive-6-stones) from the central stash and players may add more stones from their stash.
+- A [new game](play) begins and the owner of the Einhorn starts.
 
 ### Bidding on the Einhorn
 
@@ -126,11 +125,9 @@ Bidding on the Einhorn works as follows:
 
 ### Receive 6 stones
 
-All players receive 6 stones from the central stash.
-
-Players with a personal stone stash may choose to add stones to their stones for the current game at this time only.
-
-Note: You can only loose stones added to the current game. Stones in a players personal stash can only be used to bet on the Einhorn and add stones for the next game.
+- All players receive 6 stones from the central stash.
+- Players with a personal stone stash may choose to add stones to their stones for the current game at this time only.
+- You can only loose stones added to the current game. Stones in a players personal stash can only be used to bet on the Einhorn and add stones for the next game.
 
 ## Determine the winner
 
