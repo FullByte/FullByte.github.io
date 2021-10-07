@@ -52,12 +52,12 @@ The current player decides to either predict the upcoming roll attempt or to rem
 
 There are 4 predictable outcomes. Below is a list of all possible results and their probability (percent of "total combinations"):
 
-| Result                | Rule                                                                             | Example                                                                         | Combinations          |
-|-----------------------|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------|-----------------------|
-| ⚰️ Das Unvermeidliche | A number and that number +1 and </br> something else which is not one of the two | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 of 216</br> (44,4%) |
-| 🎁 Wunsch             | Two of a kind and something else                                                 | ```2x n & !n``` </br> Example: ⚀⚀⚁ or ⚁⚃⚁                                       | 90 of 216</br> (41,7%) |
-| 🦄 Einhorn            | All numbers must be at least 2 apart                                             | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216</br> (11,1%) |
-| ☢️ Dreifaltigkeit     | Three of a kind.                                                                 | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 of 216</br> (2,8%)   |
+| Result                | Rule                                                                       | Example                                                                         | Combinations           |
+|-----------------------|----------------------------------------------------------------------------|---------------------------------------------------------------------------------|------------------------|
+| ⚰️ Das Unvermeidliche | A number and that number +1 and something else which is not one of the two | ```n & n+1 & (!n / !n+1)``` </br> Example: ⚀⚁⚃ or ⚂⚃⚀                           | 96 of 216</br> (44,4%) |
+| 🎁 Wunsch             | Two of a kind and something else which is not that number                  | ```2x n & !n``` </br> Example: ⚀⚀⚁ or ⚁⚃⚁                                       | 90 of 216</br> (41,7%) |
+| 🦄 Einhorn            | All numbers must be at least 2 apart                                       | ```n & n+2 & (n+4 / n+5)``` </br> ```n & n+3 & n+5``` </br> Example: ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216</br> (11,1%) |
+| ☢️ Dreifaltigkeit     | Three of a kind.                                                           | ```3x n``` </br> Example: ⚁⚁⚁ or ⚅⚅⚅                                            | 6 of 216</br> (2,8%)   |
 
 ### Take or return stones
 
