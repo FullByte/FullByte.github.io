@@ -36,7 +36,7 @@ This is an example setup for 4 players:
 
 This section explains the actions in a players turn and how one game is played. One game may be as fast as 1min but can also take 10min depending on how fast one player looses all stones. Play 10 games for standard match.
 
-### Predicting
+### Predicting and roll result
 
 The current player decides to either predict the upcoming roll attempt or to remain silent and do a passive roll, then proceeds to roll all three dice once in the dice tray.
 
@@ -65,11 +65,11 @@ As you can see form the table above, the most common roll results are `Das Unver
 Please note:
 
 - It doesn't matter what prediction was made specifically. What matters is if the prediction was correct, wrong or if no prediction was made. In other words: The stones added or removed are determined by the result rolled, not by what was predicted. E.g., if a `Wunsch` is rolled, it doesn't matter if `Das Unvermeidliche`, `Einhorn` or `Dreifaltigkeit` were predicted, all three are wrong and the player must return 2 stones to the central stash.
-- If a player forgets to make a prediction or mentions the prediction too late and rolls the dice this is dealt as a passive role.
+- If a player forgets to make a prediction or mentions the prediction too late and rolls the dice this is dealt as a passive roll.
 
 Remember to first take or give stones, then put your dice back from the dice tray. With this action your turn ends and it's the next players turn.
 
-### Einhorn
+### Rolling an Einhorn
 
 When rolling an `Einhorn` this player additionally receives the Einhorn-figure.
 
@@ -149,7 +149,7 @@ This is not needed to understand or play the game.
 
     - All players agree to play the default of 10 games.
     - All players take 3 dice and 6 stones.
-    - Player 1 roles the highest total number with 3 dice (1+4+5=10) and may start the game. Player 1 receives an extra stone.
+    - Player 1 rolls the highest total number with 3 dice (1+4+5=10) and may start the game. Player 1 receives an extra stone.
 
     First game:
 

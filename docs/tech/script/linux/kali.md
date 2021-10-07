@@ -1,6 +1,6 @@
 # Kali
 
-Install and config Kali
+Some note on installing, configuring and using Kali.
 
 ## Basic Config
 
