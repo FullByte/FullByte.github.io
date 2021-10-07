@@ -1,8 +1,10 @@
 # Einhorn
 
+Einhorn is a game for 2-6 players and takes about 30min to play. The rules are rather simple, the game is fast paced and luck is a main factor to winning the game.
+
 | Einhorn | TL;DR |
 |------------------------------|------------------------------------------|
-| ![einhorn.png](_einhorn.png) | Einhorn is a game for 2-6 players and takes about 30min to play. The rules are rather simple, the game is fast paced and luck is a main factor to winning the game. </br> </br> Each player starts with six stones. Bet on your roll outcome and receive or pay stones. The first player with no stones left loses and the game ends. All other players keep their stones. Bet on the Einhorn to steal stones from other players. After ten games, the player with the most stones wins. |
+| ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an Einhorn and recieve the Einhorn-figure to take stones from your opponents. The first player with no stones left loses and the game ends. All other players keep their stones. Bet on the Einhorn for an adnvatage in the next game. Be better at predicting your role outcome than the other players. After ten games, the player with the most stones wins. |
 
 Below is an overview of how the game is setup and played.
 
