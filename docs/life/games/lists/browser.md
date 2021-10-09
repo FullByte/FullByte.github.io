@@ -15,6 +15,7 @@ Some games are free to play, others require a played membership.
 - Playing cards: <https://playingcards.io/>
 - Free Board Games <https://www.freeboardgames.org/>
 - Poki: <https://poki.com/>
+- Emulator Games: <https://emulatorgames.online/>
 
 ## 1 Player Games
 

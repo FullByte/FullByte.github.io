@@ -4,7 +4,7 @@ Einhorn is a game for 2-6 players and takes about 30min to play. The rules are r
 
 | Einhorn                      | TL;DR                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an Einhorn and recieve the Einhorn-figure to take stones from your opponents. The first player with no stones left loses and the game ends. All other players keep their stones. Bet on the Einhorn for an adnvatage in the next game. Be better at predicting your role outcome than the other players. After ten games, the player with the most stones wins. |
+| ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an Einhorn and receive the Einhorn-figure to take stones from your opponents. The first player with no stones left loses and the game ends. All other players keep their stones. Bet on the Einhorn for an advantage in the next game. Be better at predicting your role outcome than the other players. After ten games, the player with the most stones wins. |
 
 Below is an overview of how the game is setup and played.
 
@@ -26,7 +26,7 @@ Below is an overview of how the game is setup and played.
 
 **Determine who starts**
 
-- All players roll all three dice once and the player with highest sum starts the game.
+- All players roll their three dice and the player with highest sum starts the game.
 - If there is a draw, those players roll again until a starting player is determined.
 - The player that starts the game receives an additional stone.
 
@@ -36,13 +36,13 @@ This is an example setup for 4 players:
 
 ### Understanding the stone stashes
 
-Understand the difference between game stones, players stones stash and the central stone stash:
+Understand the difference between game stones, players stone stash and the central stone stash:
 
 | Term          | Explanation                                                                                                                                                                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Game stones   | Stones a player has for the [current game](#play). </br> If a player has no more stones the [game ends](#game-ends).                                                                                                                                                                          |
 | Player stash  | Stones a player has won in previous games. </br> Only usable when [betting on the unicorn](#bidding-on-the-einhorn) and </br> when [adding stones](#receive-6-stones) to the six game stones at the beginning of a new game.</br>The player with the most stones in this stash wins the game. |
-| Central stash | All stones remaining in the game. </br> [Take stones or return stones](#take-or-return-stones) depending on your roll prediction outcome.                                                                                                                                                     |
+| Central stash | All stones remaining in the game. </br> [Take stones or return stones](#take-or-give-stones) depending on your roll prediction outcome.                                                                                                                                                     |
 
 ## Play
 
@@ -50,40 +50,47 @@ This section explains the actions in a players turn and how one game is played. 
 
 ### Predict outcome or remain silent
 
-The current player decides to either predict the upcoming roll attempt or to remain silent and do a passive roll, then proceeds to roll all three dice once in the dice tray.
-
 There are 4 predictable outcomes. Below is a list of all possible results and their probability (percent of "total combinations"):
 
-|    | Result             | Rule                                                                     | Formula                                             | Example    | Combinations | Probability |
-|----|--------------------|--------------------------------------------------------------------------|-----------------------------------------------------|------------|--------------|-------------|
-| ⚰️ | Das Unvermeidliche | A number & that number +1 and something else which is not one of the two | ```n & n+1 & (!n / !n+1)```                         | ⚀⚁⚃ or ⚂⚃⚀ | 96 of 216    | 44,4%       |
-| 🎁 | Wunsch             | Two of a kind & something else and which is not that number              | ```2x n & !n```                                     | ⚀⚀⚁ or ⚁⚃⚁ | 90 of 216    | 41,7%       |
-| 🦄 | Einhorn            | All numbers must be at least 2 apart                                     | ```n & n+2 & (n+4 / n+5)``` and ```n & n+3 & n+5``` | ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216    | 11,1%       |
-| ☢️ | Dreifaltigkeit     | Three of a kind.                                                         | ```3x n```                                          | ⚁⚁⚁ or ⚅⚅⚅ | 6 of 216     | 2,8%        |
+|   Roll Result             | Rule                                                                     | Formula                                             | Example    | Combinations | Probability |
+|-----------------------|--------------------------------------------------------------------------|-----------------------------------------------------|------------|--------------|-------------|
+| ⚰️ Das Unvermeidliche | A number & that number +1 and something else which is not one of the two | ```n & n+1 & (!n / !n+1)```                         | ⚀⚁⚃ or ⚂⚃⚀ | 96 of 216    | 44,4%       |
+| 🎁 Wunsch             | Two of a kind & something else and which is not that number              | ```2x n & !n```                                     | ⚀⚀⚁ or ⚁⚃⚁ | 90 of 216    | 41,7%       |
+| 🦄 Einhorn            | All numbers must be at least 2 apart                                     | ```n & n+2 & (n+4 / n+5)``` and ```n & n+3 & n+5``` | ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216    | 11,1%       |
+| ☢️ Dreifaltigkeit     | Three of a kind.                                                         | ```3x n```                                          | ⚁⚁⚁ or ⚅⚅⚅ | 6 of 216     | 2,8%        |
 
-### Take or return stones
+The current player decides to either:
 
-Based on the players roll attempt and the prediction made, there is one possible result that leads to adding or removing stones from the players game stash. E.g., in case the roll result was a `Wunsch`, read that line in your roll-result overview card, then check if the prediction was correct, wrong or passive, then add or remove stones accordingly.
+- predict the upcoming roll attempt
+- **or** remain silent (passive roll / no prediction)
 
-|    | Result             | Correct                        | Wrong | Passive |
-|----|--------------------|--------------------------------|-------|---------|
-| ⚰️ | Das Unvermeidliche | +2                             | -2    | -1      |
-| 🎁 | Wunsch             | +2                             | -2    | -1      |
-| 🦄 | Einhorn            | +5                             | -5    | +1      |
-| ☢️ | Dreifaltigkeit     | [WIN](#rolling-dreifaltigkeit) | +1    | +5      |
+Once done, the player proceeds to roll all three dice in the dice tray.
+
+Depending on the rolled outcome the player then [takes or gives stones)](#take-or-give-stones).
+
+### Take or give stones
+
+Based on the players roll attempt and the prediction made, there is one possible result that leads to adding or removing stones from the players game stash. E.g., in case the roll result was a `Wunsch`, read that line in your roll-result overview card, then check if the prediction was correct, wrong or no prediction was made (passive). Then add or remove stones accordingly.
+
+|    Roll Result             | Correct Prediction                       | Wrong Prediction | No Prediction |
+|-----------------------|--------------------------------|-------|---------|
+| ⚰️ Das Unvermeidliche | +2                             | -2    | -1      |
+| 🎁 Wunsch             | +2                             | -2    | -1      |
+| 🦄 Einhorn            | +5                             | -5    | +1      |
+| ☢️ Dreifaltigkeit     | [WIN](#rolling-dreifaltigkeit) | +1    | +5      |
 
 As you can see from the table above, the most common roll results are `Das Unvermeidliche` and `Wunsch`. The improbable results `Einhorn` and `Dreifaltigkeit` promise higher rewards.
 
 Please note:
 
 - It doesn't matter what prediction was made specifically. What matters is if the prediction was correct, wrong or if no prediction was made. In other words: The stones added or removed are determined by the result rolled, not by what was predicted. E.g., if a `Wunsch` is rolled, it doesn't matter if `Das Unvermeidliche`, `Einhorn` or `Dreifaltigkeit` were predicted, all three are wrong and the player must return 2 stones to the central stash.
-- If a player forgets to make a prediction or mentions the prediction too late and rolls the dice this is dealt as a passive roll.
+- If a player forgets to make a prediction or mentions the prediction too late and rolls the dice, this is dealt as a passive roll (no prediction).
 
 Remember to first take or give stones, then put your dice back from the dice tray. With this action your turn ends and it's the next players turn.
 
 #### Rolling Einhorn
 
-When rolling an `Einhorn` this player additionally receives the Einhorn-figure.
+When rolling an `Einhorn`, this player additionally receives the Einhorn-figure.
 
 The Einhorn-figure has the following effects:
 
@@ -93,11 +100,11 @@ The Einhorn-figure has the following effects:
 
 #### Rolling Dreifaltigkeit
 
-If you roll `Dreifaltigkeit` you will always receive stones (see [overview)](#take-or-return-stones). However, if you predict `Dreifaltigkeit` correctly (2,8% chance), you receive all game stones from all players (player stash excluded!) and therewith instantly [end the current game](#game-ends).
+If you roll `Dreifaltigkeit` you will always receive stones (see [overview)](#take-or-give-stones). However, if you predict `Dreifaltigkeit` correctly (2,8% chance), you receive all game stones from all players (player stash excluded!) and therewith instantly [end the current game](#game-ends).
 
 ### Game ends
 
-Once a player has no stones left the game ends.
+Once a player has no stones left, the game ends. In case a player needs to pay more than available in their game stone stash than only the available amount is spent. (Example: `Einhorn` was rolled and predicted wrong and the player only has 3 stones left only those 3 stones return to the central stash)
 
 - If this was the last game (e.g. game #10) or if all stones from the central stash are gone, proceed to [determine the winner](#determine-the-winner).
 - Else, proceed with the steps to [prepare the next game](#prepare-next-game).
@@ -123,7 +130,7 @@ Bidding on the Einhorn works as follows:
 - All players bet with their personal stone stash (if available) to receive the Einhorn in the next game. You may bid zero stones if you want but you have to bid!
 - Do not show how much you are bidding until all reveal their bet at the same time.
 - All players put their stones used for the bid in the central stash.
-- The Einhorn goes to the highest bidder. In case there is a tie all highest bidders roll their 3 dice and the player with the highest total sum receives the Einhorn-figure. E.g., if all bid zero, all must roll their dice. In case there is another tie the remaining players re-roll the dice until a winner can be determined.
+- The Einhorn goes to the highest bidder. In case there is a tie, all highest bidders roll their 3 dice and the player with the highest total sum receives the Einhorn-figure. E.g., if all bid zero, all must roll their dice. In case there is another tie, the remaining players re-roll the dice until a winner can be determined.
 
 ### Receive 6 stones
 
@@ -152,11 +159,11 @@ This is not needed to understand or play the game.
 
     First game:
 
-    - Player 1 starts the game and bets on rolling a `Wunsch`. Player 1 then proceeds to roll 1,2,5 which is `das unvermeidliche` and therefore loses 2 stones. Player 1 started with 7 stones and now has 5. Now it is the next players turn.
+    - Player 1 starts the game and bets on rolling a `Wunsch`. Player 1 then proceeds to roll 1,2,5 which is `das Unvermeidliche` and therefore loses 2 stones. Player 1 started with 7 stones and now has 5. Now it is the next players turn.
     - The 2nd player predicts an `Einhorn` and rolls a 1,3,6 and therefore gains 5 stones as well as the Einhorn-figure.
     - The 3rd player choses to not predict anything and rolls 2,2,2 which is `Dreifaltigkeit`. In this case the player gains one stone.
-    - It is player 1 turn again and predicts `das unvermeidliche`, then rolls 3,1,4 which is `das unvermeidliche`. Player 2 takes one stone from the central stash.
-    - Player 2 now has the `Einhorn` and predicts `das unvermeidliche` as well and rolls 4,5,6 which is `das unvermeidliche`. Player 2 takes the 2 stones from player 1 instead of the central stash.
+    - It is player 1 turn again and predicts `das Unvermeidliche`, then rolls 3,1,4 which is `das Unvermeidliche`. Player 2 takes one stone from the central stash.
+    - Player 2 now has the `Einhorn` and predicts `das Unvermeidliche` as well and rolls 4,5,6 which is `das Unvermeidliche`. Player 2 takes the 2 stones from player 1 instead of the central stash.
 
     The game goes on like this until, in our example, player 2 loses the first game. At this point player 1 has 8 stones and player 3 has 4 stones.
 
@@ -278,7 +285,7 @@ This is not needed to understand or play the game.
     - Option 1: Laser cut from boxes.py: You can create a simple box using [boxes.py](https://www.festi.info/boxes.py) with these [settings](https://www.festi.info/boxes.py/TwoPiece?FingerJoint_angle=90.0&FingerJoint_style=rectangular&FingerJoint_surroundingspaces=2.0&FingerJoint_edge_width=1.0&FingerJoint_finger=2.0&FingerJoint_play=0.0&FingerJoint_space=2.0&FingerJoint_width=1.0&x=182&y=182&h=65&hi=0.0&outside=0&play=0.15&thickness=3.0&format=svg&tabs=0.0&debug=0&labels=0&labels=1&reference=100&burn=0.1&render=1). I used [these settings](_wuerfeln.jpg). Here are the files for the laser cutter: [SVG](_wuerfeln.svg), [CDR-part1](_wuerfeln.cdr) and [CDR-part2](_wuerfeln2.cdr). This box is perfect for 6 foldable dice trays, D6 and D10 dice, stones and unicorn. In this setup i recommend using one sack for the stones and one for everything else.
     - Option 2: Laser cut from thingiverse: I found a great design on [thingiverse](https://www.thingiverse.com) called [Octagonal Dice Tray, Laser Cut](https://www.thingiverse.com/thing:3694820) by [Patrik Grip-Jansson (kap42)](https://www.thingiverse.com/kap42/designs).
     - Option 3: Buy a dice tray:  Try to find a dice tray with a top/lid. There are some nice but expensive octagonal shaped dice trays available. I even found one with a unicorn artwork :)
-    
+        
     **Dice**
 
     There are no real options here. Buy some nice dice: You need 3 dice of the same color and 6 different colors so a total of 18x D6. 12mm is a good size for a dice. I prefer the numbers written on the sides instead of the dots but both is perfectly fine. Additionally, you need a D10 to count the games played. As always, it is cheaper to buy in bulk and dice packs are available in a 36x dice box as well as mixed color option for 50x dice and 100x dice. This way you should spend about 7 Euro for all dice.
