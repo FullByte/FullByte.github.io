@@ -1,14 +1,5 @@
 # Wget
 
-## Info
-
-|What|Where|
-|-|-|
-|Official Page||
-|Source||
-|Download||
-|Install||
-
 ## Download all files from website
 
 Generally, this can be blocked but works in most cases. To avoid a few things:
@@ -22,19 +13,19 @@ Generally, this can be blocked but works in most cases. To avoid a few things:
 
 Example:
 
-```shell
+```sh
 wget -e robots=off -r -np --page-requisites --convert-links --user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36" http://example.com/dir/
 ```
 
 Alternative:
 
-```shell
+```sh
 wget -e robots=off --verbose --debug --adjust-extension --backup-converted --base=http://example.com/dir/ --no-http-keep-alive --no-parent --mirror http://example.com/dir/
 ```
 
 ## Download specific files types
 
-```shell
+```sh
 wget -e robots=off -r -A ogg,mp3 http://example.com/dir/ # Specific audio files
 wget -e robots=off -r -A png,jpeg,jpg,gif http://example.com/dir/ # Specific Image Files
 wget -e robots=off -r -l 3 -np -p  http://example.com/dir/ # All pictures

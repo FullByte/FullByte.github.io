@@ -275,26 +275,25 @@ This is not needed to understand or play the game.
     ```
 
 ??? tip "Creating the game"
-    **Dice tray**
+    **Self-made version**
 
-    - Option 1: Laser cut from boxes.py: You can create a simple box using [boxes.py](https://www.festi.info/boxes.py) with these [settings](https://www.festi.info/boxes.py/TwoPiece?FingerJoint_angle=90.0&FingerJoint_style=rectangular&FingerJoint_surroundingspaces=2.0&FingerJoint_edge_width=1.0&FingerJoint_finger=2.0&FingerJoint_play=0.0&FingerJoint_space=2.0&FingerJoint_width=1.0&x=182&y=182&h=65&hi=0.0&outside=0&play=0.15&thickness=3.0&format=svg&tabs=0.0&debug=0&labels=0&labels=1&reference=100&burn=0.1&render=1). I used [these settings](_wuerfeln.jpg). Here are the files for the laser cutter: [SVG](_wuerfeln.svg), [CDR-part1](_wuerfeln.cdr) and [CDR-part2](_wuerfeln2.cdr). This box is perfect for 6 foldable dice trays, D6 and D10 dice, stones and unicorn. In this setup i recommend using one sack for the stones and one for everything else.
-    - Option 2: Laser cut from thingiverse: I found a great design on [thingiverse](https://www.thingiverse.com) called [Octagonal Dice Tray, Laser Cut](https://www.thingiverse.com/thing:3694820) by [Patrik Grip-Jansson (kap42)](https://www.thingiverse.com/kap42/designs).
-    - Option 3: Buy a dice tray: Try to find a dice tray with a top/lid. There are some nice but expensive octagonal shaped dice trays available. I even found one with a unicorn artwork :)
-        
-    **Dice**
+    Required: 3D Printer, Laser Cutter, spray paint, acrylic paint
 
-    There are no real options here. Buy some nice dice: You need 3 dice of the same color and 6 different colors so a total of 18x D6. 12mm is a good size for a dice. I prefer the numbers written on the sides instead of the dots but both is perfectly fine. Additionally, you need a D10 to count the games played. As always, it is cheaper to buy in bulk and dice packs are available in a 36x dice box as well as mixed color option for 50x dice and 100x dice. This way you should spend about 7 Euro for all dice.
+    - **Dice tray**: Laser cut from thingiverse: I found a great design on [thingiverse](https://www.thingiverse.com) called [Octagonal Dice Tray, Laser Cut](https://www.thingiverse.com/thing:3694820) by [Patrik Grip-Jansson (kap42)](https://www.thingiverse.com/kap42/designs).
+    - **Dice**: 3D print [these dice](https://www.thingiverse.com/thing:2627417) by [Udo](https://www.thingiverse.com/physudo/designs) from [thingiverse](https://www.thingiverse.com). Use different colored PLA for each player. You only need to print the D6 (3x 6 colors) and D10 (1x).
+    - **Stones**: Go outside and collect stones. Choose a size that works with the size of your dice tray. Stones should all roughly have the same size and form. Paint them with acrylic paint if you like.
+    - **Unicorn figure**: 3D print this [unicorn](https://www.thingiverse.com/thing:182335) by [Yahoo! JAPAN](https://www.thingiverse.com/yahoojapan/designs) from [thingiverse](https://www.thingiverse.com) and color it with spray paint and acrylic paint.
 
-    **Stones**
+    You can [download all required files here](_einhorn-game.7z).
 
-    - Option 1: Go outside and collect stones. Paint them with acrylic paint if you like.
-    - Option 2: Drum stones feel and look great and this what i went with. You can save a lot of money when buying in bulk (e.g. 5kg), mixed stones and avoid terms like esoteric, etc. However, anything can be used as long as enough fit in the dice tray and are more or less the same size. I tried different stone sizes and 1-2cm work best in my opinion (depends on the size of your dice tray holding the stones). The stone costs vary a lot but I spent about 6 Euro for the stones needed for one game.
-    - Other options that could work are marbles (but round things may be annoying during play) or any small glass objects, coins, poker chips, ...    
+    **Buy version**
 
-    **Unicorn figure**
+    Required: 30-100 Euro
 
-    - Option 1: You can print this [unicorn](https://www.thingiverse.com/thing:182335) design i found on [thingiverse](https://www.thingiverse.com) by [Yahoo! JAPAN](https://www.thingiverse.com/yahoojapan/designs) and color it with spray paint and acrylic paint.
-    - Option 2: I found a set of 10 unicorns used to decorate cakes for 10 Euro. The quality is not the best but it fits the purpose. Since I will be creating a few games I think I can use the extra unicorns (and they make a good small present as well) so I spent about 1 Euro on the unicorn.
+    - **Dice tray**: Try to find a dice tray with a top/lid. There are some nice but expensive octagonal shaped dice trays available. I even found one with a unicorn artwork :)
+    - Dice: You need 3 dice of the same color and 6 different colors so a total of 18x D6. 12mm is a good size for a dice. I prefer the numbers written on the sides instead of the dots but both is perfectly fine. Additionally, you need a D10 to count the games played. As always, it is cheaper to buy in bulk and dice packs are available in a 36x dice box as well as mixed color option for 50x dice and 100x dice. This way you should spend about 7 Euro for all dice.
+    - **Stones**: Drum stones feel and look great and this what i went with. You can save a lot of money when buying in bulk (e.g. 5kg), mixed stones and avoid terms like esoteric, etc. However, anything can be used as long as enough fit in the dice tray and are more or less the same size. I tried different stone sizes and 1-2cm work best in my opinion (depends on the size of your dice tray holding the stones). The stone costs vary a lot but I spent about 6 Euro for the stones needed for one game. Other options that could work are marbles (but round things may be annoying during play) or any small glass objects, coins, poker chips, ...    
+    - **Unicorn figure**: I found a set of 10 unicorns used to decorate cakes for 10 Euro. The quality is not the best but it fits the purpose. Since I will be creating a few games I think I can use the extra unicorns (and they make a good small present as well) so I spent about 1 Euro on the unicorn.
 
 ??? info "Full list of possible dice combinations"
     This is a full list of all possible roll combinations in this game and the result based on the described rules above.
