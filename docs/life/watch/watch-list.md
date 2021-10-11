@@ -171,6 +171,7 @@ My current favorites:
 - Preacher
 - Scrubs
 - Shameless
+- Squid Game
 - Star Trek: Discovery
 - Stranger Things
 - The Blacklist

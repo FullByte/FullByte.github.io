@@ -174,7 +174,7 @@ This is not needed to understand or play the game.
 
     Player 1 with the unicorn figure starts the new game and the game continues.
 
-    At the end of game 10 player 1 has 20 stones, player 2 has 15 stones and player 3 has 22 stones. Player 3 therefore wins the game.
+    At the end of game 10, player 1 has 20 stones, player 2 has 15 stones and player 3 has 30 stones. Player 3 therefore wins the game.
 
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
@@ -293,7 +293,7 @@ This is not needed to understand or play the game.
     - **Dice tray**: Try to find a dice tray with a top/lid. There are some nice but expensive octagonal shaped dice trays available. I even found one with a unicorn artwork :)
     - Dice: You need 3 dice of the same color and 6 different colors so a total of 18x D6. 12mm is a good size for a dice. I prefer the numbers written on the sides instead of the dots but both is perfectly fine. Additionally, you need a D10 to count the games played. As always, it is cheaper to buy in bulk and dice packs are available in a 36x dice box as well as mixed color option for 50x dice and 100x dice. This way you should spend about 7 Euro for all dice.
     - **Stones**: Drum stones feel and look great and this what i went with. You can save a lot of money when buying in bulk (e.g. 5kg), mixed stones and avoid terms like esoteric, etc. However, anything can be used as long as enough fit in the dice tray and are more or less the same size. I tried different stone sizes and 1-2cm work best in my opinion (depends on the size of your dice tray holding the stones). The stone costs vary a lot but I spent about 6 Euro for the stones needed for one game. Other options that could work are marbles (but round things may be annoying during play) or any small glass objects, coins, poker chips, ...    
-    - **Unicorn figure**: I found a set of 10 unicorns used to decorate cakes for 10 Euro. The quality is not the best but it fits the purpose. Since I will be creating a few games I think I can use the extra unicorns (and they make a good small present as well) so I spent about 1 Euro on the unicorn.
+    - **Unicorn figure**: I found a set of 10 unicorns used to decorate cakes for 10 Euro. Search for "Unicorn Mini Figures Set" or "Unicorn Cake Decoration". Since I will be creating a few games I think I can use the extra unicorns (and they make a good small present as well) so I spent about 1 Euro on the unicorn.
 
 ??? info "Full list of possible dice combinations"
     This is a full list of all possible roll combinations in this game and the result based on the described rules above.
