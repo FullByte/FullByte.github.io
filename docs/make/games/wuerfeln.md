@@ -116,9 +116,11 @@ To prepare for the next game, follow these steps:
 - All players take their current stones and add them to their stash.
 - The unicorn figure is returned to the center of the dice tray.
 - The game counter is updated and layed next to the unicorn figure.
-- All players [bid on the unicorn](#bidding-on-the-unicorn) and all stones used for bidding return to the central stash.
-- Everyone [receives 6 stones](#receive-6-game-stones) from the central stash and players may add more stones from their stash.
-- A [new game](play) begins and the owner of the unicorn figure starts.
+- All players [bid on the unicorn](#bidding-on-the-unicorn).
+- All stones used for bidding are returned to the central stash.
+- Everyone [receives 6 stones](#receive-6-game-stones) from the central stash.
+- Every players may add more stones from their stash to the game stones for the next game.
+- A [new game](#play) begins and the owner of the unicorn figure starts.
 
 ### Bidding on the unicorn
 
