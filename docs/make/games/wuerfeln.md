@@ -4,7 +4,7 @@ Einhorn is a game for 2-6 players (best 3-5) and takes about 30min to play. The 
 
 | Einhorn                      | TL;DR                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
 |------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an `Einhorn` and receive the unicorn figure to take stones from your opponents. The first player with no stones left loses and the game ends. All other players keep their stones. Bet on the unicorn figure for an advantage in the next game. Be better at predicting your role outcome than the other players. After ten games, the player with the most stones wins. |
+| ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an `Einhorn` and receive the unicorn figure to take stones from your opponents. Once a player looses all stones the current game ends. All other players keep their stones. Bet on the unicorn figure for an advantage in the next game. Be better at predicting your role outcome than the other players. After ten games, the player with the most stones wins.|
 
 Below is an overview of how the game is setup and played.
 
@@ -66,7 +66,7 @@ The current player decides to either:
 
 Once done, the player proceeds to roll all three dice in the dice tray.
 
-Depending on the rolled outcome the player then [takes or gives stones)](#take-or-give-stones).
+Depending on the rolled outcome the player then [takes or gives stones](#take-or-give-stones).
 
 ### Take or give stones
 
@@ -83,7 +83,7 @@ As you can see from the table above, the most common roll results are `Das Unver
 
 Please note:
 
-- It doesn't matter what prediction was made specifically. What matters is if the prediction was correct, wrong or if no prediction was made. In other words: The stones added or removed are determined by the result rolled, not by what was predicted. E.g., if a `Wunsch` is rolled, it doesn't matter if `Das Unvermeidliche`, `Einhorn` or `Dreifaltigkeit` were predicted, all three are wrong and the player must return 2 stones to the central stash.
+- It doesn't matter what prediction was made specifically. What matters, is if the prediction was correct, wrong or if no prediction was made. In other words: The stones added or removed are determined by the result rolled, not by what was predicted. E.g., if a `Wunsch` is rolled, it doesn't matter if `Das Unvermeidliche`, `Einhorn` or `Dreifaltigkeit` were predicted, all three are wrong and the player must return 2 stones to the central stash.
 - If a player forgets to make a prediction or mentions the prediction too late and rolls the dice, this is dealt as a passive roll (no prediction).
 
 Remember to first take or give stones, then put your dice back from the dice tray. With this action your turn ends and it's the next players turn.
@@ -126,7 +126,7 @@ All players can now bet on the unicorn figure with their stones available from t
 
 - Place the unicorn figure in the middle of the dice tray.
 - All players bet with their personal stone stash (if available) to receive the unicorn figure in the next game. You may bid zero stones if you want but you have to bid!
-- Do not show how much you are bidding until all reveal their bet at the same time.
+- Place the stones in your hand. Don't show how much you are bidding and reveal your bet at the same time.
 - All players put their stones used for the bid in the central stash. This means, if you do not win the unicorn figure you still loose the stones you used for your bet!
 - The unicorn figure goes to the highest bidder. In case there is a tie, all highest bidders roll their 3 dice and the player with the highest total sum receives the unicorn figure. E.g., if all bid zero stones, all must roll their dice. In case there is another tie, the remaining players now tied re-roll the dice until a winner can be determined.
 
