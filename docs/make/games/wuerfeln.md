@@ -104,7 +104,7 @@ If you roll `Dreifaltigkeit` you will always receive stones (see [overview)](#ta
 
 ### Game ends
 
-Once a player has no stones left, the game ends. In case a player needs to pay more than available in their game stone stash than only the available amount is spent. (Example: `Einhorn` was rolled and predicted wrong and the player only has 3 stones left only those 3 stones return to the central stash)
+Once a player has no stones left, the game ends. In case a player needs to pay more stones than they have, only the available game stones are given. (Example: `Einhorn` was rolled and predicted wrong and the player has 3 stones left, only those 3 stones return to the central stash.)
 
 - If this was the last game (e.g. game #10) or if all stones from the central stash are gone, proceed to [determine the winner](#determine-the-winner).
 - Else, proceed with the steps to [prepare the next game](#prepare-next-game).
