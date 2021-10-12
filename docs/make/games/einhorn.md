@@ -1,16 +1,20 @@
 # Einhorn
 
-Einhorn is a game for 2-6 players (best 3-5) and takes about 30min to play. The rules are rather simple, the game is fast paced and luck is a main factor to winning the game.
-
-| Einhorn                      | TL;DR                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-|------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Einhorn  |  is a simple, fast paced dice rolling game in which luck is the main factor to win the game. |
+|------------------------------------------------------|--|
 | ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an `Einhorn` and receive the unicorn figure to take stones from your opponents. Once a player looses all stones the current game ends. All other players keep their stones. Bet on the unicorn figure for an advantage in the next game. Be better at predicting your role outcome than the other players. After ten games, the player with the most stones wins.|
 
-Below is an overview of how the game is setup and played.
+Below is an overview of main steps in the game:
 
-![wuerfeln](wuerfeln.drawio.svg)
+![einhorn](_einhorn.drawio.svg)
 
 ## Prepare the game
+
+|||
+|--|--|
+|Players: |2-6 (best 3-5)|
+|Time: |30 min|
+|Age: |6+|
 
 **Setup the game**
 
@@ -32,9 +36,9 @@ Below is an overview of how the game is setup and played.
 
 This is an example setup for 4 players:
 
-![wuerfeln-setup](wuerfeln-setup.drawio.svg)
+![einhorn-setup](_einhorn-setup.drawio.svg)
 
-### Understanding the stone stashes
+### Differences between the stone stashes
 
 The table explains the differences between the central stone stash, the game stones and the players stone stash:
 
@@ -42,7 +46,7 @@ The table explains the differences between the central stone stash, the game sto
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Central stash | All stones remaining in the game. [Take stones or return stones](#take-or-give-stones) depending on your roll prediction outcome. If there are no stones left in this stash the [game ends](#game-ends).|
 | Game stones   | Stones a player has for the [current game](#play). If a player has no more stones the [game ends](#game-ends).|
-| Player stash  | Stones a player has won in previous games. Only usable when [betting on the unicorn](#bidding-on-the-einhorn) or [adding stones](#receive-6-game-stones) to the initial 6 game stones received at the beginning of a new game. The player with the most stones in this stash [wins the game](#determine-the-winner).|
+| Player stash  | Stones a player has won in previous games. Only usable when [betting on the unicorn](#bid-on-the-einhorn) or [adding stones](#receive-6-game-stones) to the initial 6 game stones received at the beginning of a new game. The player with the most stones in this stash [wins the game](#determine-the-winner).|
 
 ## Play
 
@@ -77,7 +81,7 @@ Based on the players roll attempt and the prediction made, there is one possible
 | ⚰️ Das Unvermeidliche | +2                             | -2               | -1            |
 | 🎁 Wunsch             | +2                             | -2               | -1            |
 | 🦄 Einhorn            | +5                             | -5               | +1            |
-| ☢️ Dreifaltigkeit     | [WIN](#rolling-dreifaltigkeit) | +1               | +5            |
+| ☢️ Dreifaltigkeit     | [WIN](#roll-dreifaltigkeit) | +1               | +5            |
 
 As you can see from the table above, the most common roll results are `Das Unvermeidliche` and `Wunsch`. The improbable results `Einhorn` and `Dreifaltigkeit` reward taking higher risks with higher rewards.
 
@@ -88,7 +92,7 @@ Please note:
 
 Remember to first take or give stones, then put your dice back from the dice tray. With this action your turn ends and it's the next players turn.
 
-#### Rolling Einhorn
+#### Roll Einhorn
 
 When rolling an `Einhorn`, this player additionally receives the unicorn figure.
 
@@ -98,7 +102,7 @@ The unicorn figure has the following effects:
 - The player can give or take stones not only from the central stash, but also from any other player. However, whether the player can take stones still depends on the roll attempt outcome! You can only take stones from one player. If the player doesn't have enough stones you only get what the player can offer (and the [current game ends](#game-ends)).
 - The unicorn figure is passed once another player rolls an `Einhorn`.
 
-#### Rolling Dreifaltigkeit
+#### Roll Dreifaltigkeit
 
 If you roll `Dreifaltigkeit` you will always receive stones (see [overview)](#take-or-give-stones). However, if you predict `Dreifaltigkeit` correctly (2,8% chance), you receive all game stones from all players (player stash excluded!) and therewith instantly [end the current game](#game-ends).
 
@@ -116,19 +120,19 @@ To prepare for the next game, follow these steps:
 - All players take their current stones and add them to their stash.
 - The unicorn figure is returned to the center of the dice tray.
 - The game counter is updated and layed next to the unicorn figure.
-- All players [bid on the unicorn](#bidding-on-the-unicorn).
+- All players [bid on the unicorn](#bid-on-the-unicorn).
 - All stones used for bidding are returned to the central stash.
-- Everyone [receives 6 stones](#receive-6-game-stones) from the central stash.
+- Everyone [receives 6 stones](#receive-6-game-stones) from the central stash as their game stones for the next game.
 - Every players may add more stones from their stash to the game stones for the next game.
 - A [new game](#play) begins and the owner of the unicorn figure starts.
 
-### Bidding on the unicorn
+### Bid on the unicorn
 
 All players can now bet on the unicorn figure with their stones available from their own stash. Bidding on the unicorn works as follows:
 
 - Place the unicorn figure in the middle of the dice tray.
-- All players bet with their personal stone stash (if available) to receive the unicorn figure in the next game. You may bid zero stones if you want but you have to bid!
-- Place the stones in your hand. Don't show how much you are bidding and reveal your bet at the same time.
+- All players bet with their personal stone stash (if available) to receive the unicorn figure in the next game. You may bid zero stones if you want but you have to bid! E.g. if you have no stones in your stash you must close your hand and hold it over the table until all are ready.
+- Secretly place stones in your hand to be on the unicorn figure. Don't show how much you are bidding until all reveal their bet by opening their hands at the same time.
 - All players put their stones used for the bid in the central stash. This means, if you do not win the unicorn figure you still loose the stones you used for your bet!
 - The unicorn figure goes to the highest bidder. In case there is a tie, all highest bidders roll their 3 dice and the player with the highest total sum receives the unicorn figure. E.g., if all bid zero stones, all must roll their dice. In case there is another tie, the remaining players now tied re-roll the dice until a winner can be determined.
 
