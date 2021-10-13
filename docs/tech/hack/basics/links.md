@@ -47,11 +47,25 @@ Other
 
 ### Payloads
 
-- All: <https://github.com/swisskyrepo/PayloadsAllTheThings>
-- SQL: <https://github.com/payloadbox/sql-injection-payload-list>
+Various
+
+- <https://github.com/swisskyrepo/PayloadsAllTheThings>
+
+Windows:
+
 - LOLBins and LOLScripts <https://github.com/LOLBAS-Project/LOLBAS>
-- GTFOBins <https://github.com/GTFOBins/GTFOBins.github.io>
+
+Linux:
+
+- GTFOBins (Linux) <https://github.com/GTFOBins/GTFOBins.github.io>
+
+PHP
+
 - PHP reverse shell: <https://github.com/ivan-sincek/php-reverse-shell>
+
+SQL
+
+- <https://github.com/payloadbox/sql-injection-payload-list>
 
 ## Online Tools
 

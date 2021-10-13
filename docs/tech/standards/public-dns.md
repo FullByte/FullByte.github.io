@@ -27,6 +27,10 @@ A list of public DNS Servers
 | [Yandex.DNS Safe](https://dns.yandex.com/)                                   | 77.88.8.88</br>77.88.8.2            |                                                           |                                                                                 |
 | [Yandex.DNS Family](https://dns.yandex.com/)                                 | 77.88.8.7</br>77.88.8.3             |                                                           |                                                                                 |
 
+## More Services
+
+- <https://www.rethinkdns.com/>
+
 ## Other DNS lists
 
 - <https://www.publicdns.xyz/>
