@@ -6,7 +6,7 @@
 
 This is how a self-made version of the game looks like:
 
-![unicorn-game](_unicorn-game.jpg)
+![unicorn-game](_einhorn-game.jpg)
 
 Below is an overview of main steps in the game:
 
@@ -296,7 +296,9 @@ This is not needed to understand or play the game.
 
     You can [download all required files here](_einhorn-game.7z).
 
-    ![unicorn game](_unicorn-game1.jpg) ![unicorn game](_unicorn-game2.jpg)
+    ![unicorn game](_einhorn-game1.jpg) ![unicorn game](_einhorn-game2.jpg)
+
+    ![einhorn-game-stones](_einhorn-game-stones.jpg)
 
     **Buy version**
 
@@ -307,10 +309,10 @@ This is not needed to understand or play the game.
     - **Stones**: Drum stones feel and look great and this what i went with. You can save a lot of money when buying in bulk (e.g. 5kg), mixed stones and avoid terms like esoteric, etc. However, anything can be used as long as enough fit in the dice tray and are more or less the same size. I tried different stone sizes and 1-2cm work best in my opinion (depends on the size of your dice tray holding the stones). The stone costs vary a lot but I spent about 6 Euro for the stones needed for one game. Other options that could work are marbles (but round things may be annoying during play) or any small glass objects, coins, poker chips, ...    
     - **Unicorn figure**: I found a set of 10 unicorns used to decorate cakes for 10 Euro. Search for "Unicorn Mini Figures Set" or "Unicorn Cake Decoration". Since I will be creating a few games I think I can use the extra unicorns (and they make a good small present as well) so I spent about 1 Euro on the unicorn.
 
-    ![unicorn-game-purchased](_unicorn-game-purchased-material.jpg)
+    ![unicorn-game-purchased](_einhorn-game-purchased-material.jpg)
 
     **Lego version**
-
+    
     TODO
 
 ??? info "Full list of possible dice combinations"
