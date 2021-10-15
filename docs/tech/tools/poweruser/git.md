@@ -125,6 +125,7 @@ chmod u+x script.sh
 |What|Where|
 |-|-|
 |Official Page|<https://github.com>|
+|Service Status|<https://www.githubstatus.com/>|
 |Docs|<https://docs.github.com>|
 |Download|<https://desktop.github.com/>|
 |Install|choco install github-desktop|

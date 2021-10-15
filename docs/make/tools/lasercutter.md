@@ -78,52 +78,34 @@ The Lasercutter EpilogZing 6040 is a 40 Watt CO2-Laser.
 
 Max size: 600mm x 300mm.
 
+![epilog-zing-printer-settings](_epilog-zing-printer-settings.png)
+
 #### 3mm HDF
 
-Engrave (Raster):
-
-- Job Type: Raster
-- Speed: 58%
-- Power: 50%
-- Freq: 2500 Hz
-
-Cut (Vektor):
-
-- Job Type: Vector
-- Speed: 50%
-- Power: 100%
-- Freq: 2500 Hz
-
-!(epilog-zing-printer-settings)[_epilog-zing-printer-settings.png]
+| Variable | Engrave (Raster) | Cut (Vektor) |
+|----------|------------------|--------------|
+| Speed    | 58%              | 50%          |
+| Power    | 50%              | 100%         |
+| Freq     | 2500 Hz          | 2500 Hz      |
 
 #### 4mm fleece
 
-Engrave (Raster):
+| Variable | Engrave (Raster) | Cut (Vektor) |
+|----------|------------------|--------------|
+| Speed    | 100%             | 100%         |
+| Power    | 36%              | 62%          |
+| Freq     | 5000 Hz          | 5000 Hz      |
 
-- Job Type: Raster
-- Speed: 100%
-- Power: 36%
-- Freq: 5000 Hz
-
-Cut (Vektor, [Example Cut](_fleece_example_cut.png)):
-
-- Job Type: Vector
-- Speed: 100%
-- Power: 62%
-- Freq: 5000 Hz
+Fleece [example cut](_fleece_example_cut.png)
 
 ### Trotec Speedy 360
 
-#### 4mm MDF
+#### Cut MDF
 
-- Power: 80,00
-- Velocity: 1,00
-- PPI/Hz: 1000
-- Runs: 3
+| Variable | Cut 4mm MDF | Cut 5mm MDF |
+|----------|-------------|-------------|
+| Power    | 80,00       | 100         |
+| Velocity | 1           | 3           |
+| PPI/Hz   | 1000        | 1000        |
+| Runs     | 3           | 2           |
 
-#### 5mm MDF
-
-Power: 100
-Velocity: 3
-PPI/Hz: 1000
-Runs: 2

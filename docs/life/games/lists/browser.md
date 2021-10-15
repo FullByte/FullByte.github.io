@@ -8,14 +8,15 @@ Some games are free to play, others require a played membership.
 
 - Board game arena <https://boardgamearena.com>
 - Brettspielwelt <https://brettspielwelt.de/>
-- Tabletopia <https://tabletopia.com/>
+- Card Games <https://playcards.club/>
 - Cardtables Online <https://cardtables.online/>
-- Screentop <https://screentop.gg/>
-- Virtual Tabletop: <https://virtualtabletop.io>
-- Playing cards: <https://playingcards.io/>
-- Free Board Games <https://www.freeboardgames.org/>
-- Poki: <https://poki.com/>
 - Emulator Games: <https://emulatorgames.online/>
+- Free Board Games <https://www.freeboardgames.org/>
+- Playing cards: <https://playingcards.io/>
+- Poki: <https://poki.com/>
+- Screentop <https://screentop.gg/>
+- Tabletopia <https://tabletopia.com/>
+- Virtual Tabletop: <https://virtualtabletop.io>
 
 ## 1 Player Games
 
@@ -29,6 +30,7 @@ Some of these are quite special and nerdy.
 - Avabranch <https://avabranch.zolmeister.com/>
 - Block out<https://blockoutunity.github.io/>
 - Chess <https://lichess.org/>
+- Cookie Clicker: <https://orteil.dashnet.org/cookieclicker/>
 - Crowds <https://ncase.me/crowds/>
 - cube composer <https://david-peter.de/cube-composer/>
 - Cumming or Drumming <http://cummingordrumming.com/>#
@@ -63,21 +65,20 @@ Some of these are quite special and nerdy.
 - Wayfinder: <https://wayfinder.nfb.ca/>
 - Wikipedia Game: <https://thewikigame.com/>
 - Yare <https://yare.io/> (Real-Time Strategy game where you control your units by writing JavaScript code)
-- Cookie Clicker: <https://orteil.dashnet.org/cookieclicker/>
 
 ## 2 Player Games
 
 Games for two players only:
 
 - Battleship <https://papergames.io/en/battleship>
-- Royal Game of Ur: <https://royalur.net/game/>
 - Chess <http://en.lichess.org/>
 - Connect4 <https://papergames.io/en/connect4>
+- Doom: <https://silentspacemarine.com/>
+- Draughts, Emoji matching pairs, Chess <https://gamesroom.io/>
 - Go <https://go.mattle.online/>
 - Gomoku <https://papergames.io/en/gomoku>
 - Pai Sho <https://skudpaisho.com/>
-- Draughts, Emoji matching pairs, Chess <https://gamesroom.io/>
-- Doom: <https://silentspacemarine.com/>
+- Royal Game of Ur: <https://royalur.net/game/>
 
 ## 2+ Player Games
 
@@ -92,22 +93,19 @@ Well known and rather special games that can be played with a group of people on
 - Azul <https://azee.mattle.online/>
 - Blokus <https://blokee.mattle.online>
 - Boggle <https://www.ewordchallenge.net/>
-- Card Games <https://playcards.club/>
 - Code names <https://codenames.game/>
 - Dixit <https://isolant.games/en/>
 - Dominion <https://dominion.games/>
 - Dominoes <https://dominoes.playdrift.com/>
-- Game of Thrones Tabletop <https://swordsandravens.net/> ([My Profile](https://swordsandravens.net/user/2975df79-bd76-47e8-a740-518bb4bd0d47))
+- Game of Thrones Tabletop: [Swords and ravens](https://swordsandravens.net/) and ([my profile](https://swordsandravens.net/user/2975df79-bd76-47e8-a740-518bb4bd0d47)), alternative: [Throne master](https://www.thronemaster.net)
 - Gartic phone <https://garticphone.com>
 - Hanabi <https://hanab.live/>
 - Just One <https://oneword.games/>
 - Minesweeper <https://www.multisweeper.com/>
-- Monopoly <https://www.webopoly.org/>
-- Monopoly Covid <https://www.covidopoly.io/>
+- [Monopoly](https://www.webopoly.org/) and [Monopoly Covid Edition](https://www.covidopoly.io/)
 - Netrunner <https://www.jinteki.net/play>
 - Qwirkle <https://pont.mattkeeter.com/>
-- Secret Hitler <https://netgames.io/games/secret-hitler/>
-- Secret Hitler <https://private.secrethitler.io/>
+- [Secret Hitler](https://netgames.io/games/secret-hitler/) or [this version](https://private.secrethitler.io/)
 - Set with Friends <https://setwithfriends.com/>
 - Settler of Catan <https://colonist.io/>
 - Sketchful <https://sketchful.io/>

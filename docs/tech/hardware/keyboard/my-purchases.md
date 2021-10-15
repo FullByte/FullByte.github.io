@@ -1,4 +1,4 @@
-# Keyboards Purchased
+# Purchases
 
 ## Durgod Fusion Navigator
 
@@ -34,3 +34,9 @@ I am considering adding a track-point module to the right and a key cluster modu
 Steelseries 6G V2
 
 ![steelseries-6gv2](_steelseries-6gv2.jpg)
+
+## Stack Overflow The Key Macropad
+
+Stack Overflow + Copy + Paste = +10 on Developer Skills
+
+![stack-overflow-macropad](_stack-overflow-macropad.png)

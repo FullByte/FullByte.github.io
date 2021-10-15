@@ -145,5 +145,19 @@ Map APIs
 
 ## More Tools
 
-- <https://github.com/leebaird/discover>
-- <https://github.com/bats3c/shad0w>
+- discover <https://github.com/leebaird/discover>
+- shad0w <https://github.com/bats3c/shad0w>
+- [mlget](https://github.com/xorhex/mlget): query multiple sources for a given malware hash and [download](https://blog.xorhex.com/blog/mlget-for-all-your-malware-download-needs/) it
+
+
+## Malware Analysis
+
+### Python Tools
+
+- [Pyew](https://github.com/joxeankoret/pyew) is a command-line hexadecimal editor and disassembler
+- [Yara](https://github.com/VirusTotal/yara) is a tool aimed at (but not limited to) helping malware researchers to identify and classify malware samples. [This is the python](https://github.com/VirusTotal/yara-python) library that allows you to use YARA from your python programs.
+- [Angr](https://github.com/angr/angr) is a multi-architecture python framework for analyzing binaries that comes with the capability to perform dynamic symbolic execution and various static analyses.
+- [Exefilter](https://github.com/decalage2/exefilter) can detect many file formats and remove any active content (scripts or macros) according to a configured policy.
+- [Malgazer](https://github.com/keithjjones/malgazer) is a python library for malware analysis with machine learning.
+- [Clamd](https://pypi.org/project/clamd/) allows you to use the ClamAV anti-virus engine on Windows, Linux, MacOSX and other platforms (requires a running instance of the clamd daemon).
+- [r2pipe](https://www.radare.org/n/r2pipe.html) is the python API [Radare2](https://www.radare.org/n/radare2.html).

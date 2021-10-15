@@ -5,9 +5,8 @@
 |What|Where|
 |-|-|
 |Official Page||
-|Source||
 |Download|<https://docs.microsoft.com/sysinternals/>|
-|Install||
+|Install|<https://www.microsoft.com/en-us/p/sysinternals-suite/9p7knl5rwt25#activetab=pivot:overviewtab>|
 
 ## PsExec
 
