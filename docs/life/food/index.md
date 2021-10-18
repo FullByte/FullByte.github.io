@@ -11,3 +11,7 @@
 - Lieber Fisch als Fleisch
 - Joghurt: ja. Käse: auch okay. Milch: lala
 - Zucker minimieren, industrielle Transfette meiden
+
+## Links
+
+- Food timeline: <https://foodtimeline.org/>

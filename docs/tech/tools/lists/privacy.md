@@ -13,3 +13,12 @@ Please note the "right" tools are not the entire solution to privacy.
 - [Magisk](https://github.com/topjohnwu/Magisk)
 - [Privacy Guides](https://www.privacyguides.org)
 - [privacy is sexy](https://privacy.sexy/)
+
+## Client Alternatives
+
+| Service | Client                          |
+|---------|---------------------------------|
+| Youtube | [newpipe](https://newpipe.net/) and [Piped](https://github.com/TeamPiped/Piped) and [Invidious](https://github.com/iv-org/invidious) [hosts](https://redirect.invidious.io/) |
+| Twitter | [Nitter](https://nitter.net) |
+| Instagram | [Bibliogram](https://bibliogram.art/)|
+| Reddit| [Teddit](https://teddit.net/) |

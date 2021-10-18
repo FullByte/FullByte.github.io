@@ -298,7 +298,11 @@ This is not needed to understand or play the game.
 
     ![unicorn game](_einhorn-game1.jpg) ![unicorn game](_einhorn-game2.jpg)
 
-    ![einhorn-game-stones](_einhorn-game-stones.jpg)
+    Additionally you can create boxes to hold the game stones as well as boxes for each player for their stones stash. I am using the [boxes.py TwoPiece](https://festi.info/boxes.py/TwoPiece) template to create all 4 boxes. The 3 stone stash boxes are all identical. The larger box for the game stones is reaches below the dice tray for better fixation. 
+
+    ![einhorn-boxes.drawio.svg](_einhorn-boxes.drawio.svg)
+
+    ![einhorn-boxes-py](_einhorn-boxes-py.jpg)
 
     **Buy version**
 

@@ -1,7 +1,12 @@
 # PC
+
+## Best Games
+
+TODO
+
 ## Free Games
 
-Good games that are free
+Good free games that are free
 
 - Armagetron <http://www.armagetronad.org/>
 - Battle for Wesnoth <https://www.wesnoth.org/>
@@ -12,27 +17,27 @@ Good games that are free
 - Cube 2: Sauerbraten <http://cubeengine.com/>
 - Dungeon Crawl: Stone Soup <https://crawl.develz.org/>
 - Endless Sky: <https://endless-sky.github.io/>
-- free orion<https://www.freeorion.org/index.php/Main_Page>
+- Free orion: <https://www.freeorion.org/index.php/Main_Page>
 - Mindustry <https://anuke.itch.io/mindustry>
-- minetest <https://www.minetest.net/>
-- nethack <https://www.nethack.org/>
-- open ra<https://www.openra.net/>
+- Minetest <https://www.minetest.net/>
+- Nethack <https://www.nethack.org/>
+- Open ra <https://www.openra.net/>
 - Open Transport Tycoon Deluxe (OpenTTD) <https://www.openttd.org/>
 - OpenClonk <https://www.openclonk.org/>
-- pixelwheels <https://agateau.com/projects/pixelwheels/>
+- Pixelwheels <https://agateau.com/projects/pixelwheels/>
 - Quake <http://www.quakejs.com/>
 - Seven Kingdoms <https://7kfans.com/downloads/>
 - Shapez <https://github.com/tobspr/shapez.io>
 - Soldat <https://soldat.pl/en/>
 - spacestation13 <https://spacestation13.com/>
-- step mania <https://www.stepmania.com/>
-- stunt rally <https://stuntrally.tuxfamily.org/>
-- supertux <https://www.supertux.org/>
+- Step mania <https://www.stepmania.com/>
+- Stunt rally <https://stuntrally.tuxfamily.org/>
+- Supertux <https://www.supertux.org/>
 - supertuxkart <https://supertuxkart.net>
 - teeworlds <https://www.teeworlds.com/>
 - Thrive <https://revolutionarygamesstudio.com/>
-- unknown-horizons <https://unknown-horizons.org/>
-- unvanquished <https://unvanquished.net/>
+- Unknown-horizons <https://unknown-horizons.org/>
+- Unvanquished <https://unvanquished.net/>
 - Veloren <https://veloren.net/>
 - Viewizard <https://viewizard.com/>
 - Warzone 2100 <https://wz2100.net/>
@@ -41,4 +46,4 @@ Good games that are free
 - Xonotic  <https://xonotic.org/>
 - yorg <https://ya2.itch.io/yorg>
 - YuGiOh (Project Ignis: EDOPro): <https://github.com/ProjectIgnis/EDOPro>
-- zero-k <https://zero-k.info/>
+- Zero-k <https://zero-k.info/>
