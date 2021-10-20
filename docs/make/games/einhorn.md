@@ -298,7 +298,11 @@ This is not needed to understand or play the game.
 
     ![unicorn game](_einhorn-game1.jpg) ![unicorn game](_einhorn-game2.jpg)
 
-    Additionally you can create boxes to hold the game stones as well as boxes for each player for their stones stash. I am using the [boxes.py TwoPiece](https://festi.info/boxes.py/TwoPiece) template to create all 4 boxes. The 3 stone stash boxes are all identical. The larger box for the game stones is reaches below the dice tray for better fixation. 
+    Additionally you can create boxes to hold the game stones as well as boxes for each player for their stones stash. I thought about how to divide the octagon best to use up the space and also be able to easily create the required boxes.
+
+    ![octagon](_einhorn-octagon1.png) ![octagon](_einhorn-octagon2.png)
+
+    I am using the [boxes.py TwoPiece](https://festi.info/boxes.py/TwoPiece) template to create all 4 boxes. The 3 stone stash boxes are all identical. The larger box for the game stones is reaches below the dice tray for better fixation.
 
     ![einhorn-boxes.drawio.svg](_einhorn-boxes.drawio.svg)
 
@@ -317,7 +321,9 @@ This is not needed to understand or play the game.
 
     **Lego version**
     
-    TODO
+    ![einhorn-lego](_einhorn-lego1.jpg)
+
+    ![einhorn-lego](_einhorn-lego2.jpg)
 
 ??? info "Full list of possible dice combinations"
     This is a full list of all possible roll combinations in this game and the result based on the described rules above.

@@ -10,7 +10,7 @@
 |Windows|```scoop install curl```|
 |Ubuntu|```apt install curl```|
 
-## Examples
+## Random Examples
 
 Example to check /24 range in abuseipdb.com for the last 3 days
 
@@ -36,3 +36,27 @@ Query a website e.g. request a json response from cloudflare-dns.com on TXT reco
 ```bash
 curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'
 ```
+
+## Send Mail
+
+```bash
+curl --ssl-reqd --url 'smtps://smtp.gmail.com:465' --user 'username@gmail.com:password' --mail-from 'username@gmail.com' --mail-rcpt 'john@example.com' --upload-file mail.txt
+```
+
+mail.txt file contents:
+
+```txt
+From: "User Name" <username@gmail.com>
+To: "John Smith" <john@example.com>
+Subject: This is a test
+
+Hi John,
+I’m sending this mail with curl thru my gmail account.
+Bye!
+```
+
+Some more information:
+
+- [gmail: turn on access for less secure apps](https://myaccount.google.com/lesssecureapps)
+- Use [--netrc-file](https://everything.curl.dev/usingcurl/netrc) instead of credentials in curl command
+- [Use curl with ssl](https://curl.se/docs/sslcerts.html)

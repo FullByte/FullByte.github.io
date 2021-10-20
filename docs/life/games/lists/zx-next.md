@@ -15,3 +15,7 @@ Play in Browser: <https://rgb.yandex.ru/2020?lang=en#no-opened-game>
 ## Tools
 
 AtariSID like engine for the ZX Next: <https://github.com/em00k/NextSID>
+
+## Programming challenges
+
+- BASIC Challenges: <http://www.retroprogramming.com/2017/05/zx-spectrum-basic-challenges.html?m=1>

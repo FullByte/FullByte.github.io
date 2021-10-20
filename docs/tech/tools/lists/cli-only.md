@@ -33,6 +33,7 @@ Music
 - Musikcube (Spotify): <https://github.com/clangen/musikcube>
 - Spotify: <https://github.com/Rigellute/spotify-tui>
 - Pictures: <https://github.com/posva/catimg>
+- Wikipedia: <https://github.com/yashsinghcodes/fetch>
 
 Watch Movies in ASCII
 

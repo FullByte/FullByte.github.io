@@ -2,12 +2,23 @@
 
 ## Tools
 
-- Mecabricks <https://www.mecabricks.com/en/workshop>
-- Bricklink Studio <https://www.bricklink.com/v2/build/studio.page>
-- brickit <https://brickit.app/>
-- lego-mosaic <https://shiny.rstudio.com/gallery/lego-mosaic.html>
-- <https://lego-art-remix.debkbanerji.com/>
-- Lego Logic Gates: <https://www.randomwraith.com/logic.html>
+- [Mecabricks](https://www.mecabricks.com/en/workshop)
+- [Bricklink Studio](https://www.bricklink.com/v2/build/studio.page)
+- [brickit](https://brickit.app/)
+- [lego mosaic](https://shiny.rstudio.com/gallery/lego-mosaic.html)
+- [lego art remix](https://lego-art-remix.debkbanerji.com)
+- [Lego Logic Gates](https://www.randomwraith.com/logic.html)
+
+## MOCs and Marketplace
+
+- [Brick owl](https://www.brickowl.de/)
+- [Rebrickable](https://rebrickable.com)
+- [Meca bricks](https://mecabricks.com)
+- [Bricklink](https://www.bricklink.com)
+- [Brickset](https://brickset.com)
+- [MOCs market](https://www.mocsmarket.com)
+- [Euro bricks](https://www.eurobricks.com/forum/)
+- [brick set](https://brickset.com/)
 
 ## Mindstorms
 
@@ -15,6 +26,9 @@
 
 - Lego & Python: <https://education.lego.com/de-de/product-resources/mindstorms-ev3/materialien-f%C3%BCr-lehrkr%C3%A4fte/mit-python-programmieren>
 - compare platforms: <https://www.ev3dev.org/docs/platform-comparison/>
+- LEGO Wireless Protocol: <https://lego.github.io/lego-ble-wireless-protocol-docs/index.html>
+- [Bricknil](https://github.com/virantha/bricknil): Control LEGO Bluetooth Sensors and Motors with Python
+- [pylgbst](https://github.com/undera/pylgbst): Python library for LEGO® PoweredUp devices
 
 EV3
 
@@ -31,6 +45,8 @@ EV3dev
 
 - <https://www.ev3dev.org/>
 - <https://www.ev3dev.org/docs/getting-started/>
+- <https://docs.ev3dev.org/projects/lego-linux-drivers/en/ev3dev-jessie/index.html>
+- <https://docs.ev3dev.org/en/ev3dev-stretch/>
 - <https://python-ev3dev.readthedocs.io/en/ev3dev-stretch/index.html>
 
 Ev3 Micropython
@@ -52,6 +68,12 @@ Examples
 - vscode-hello-python <https://github.com/ev3dev/vscode-hello-python>
 - programming-lego-mindstorms-ev3-with-python <http://inspiredtoeducate.net/inspiredtoeducate/programming-lego-mindstorms-ev3-with-python/>
 
+Raspberry Pi Build HAT with LPF2 connector
+
+- <https://www.raspberrypi.com/products/build-hat/>
+- <https://www.raspberrypi.com/documentation/accessories/build-hat.html#device-compatibility>
+- <https://projects.raspberrypi.org/en/pathways/lego-intro>
+
 ### Projects and Ideas
 
 - Game Station <https://www.hackster.io/jkbrickworks/game-station-b08587>
@@ -62,15 +84,8 @@ Examples
 - Microscope: <https://ideas.lego.com/projects/fcce15cd-27e0-405b-990b-681b7787fbc6>
 - Microscope: <https://github.com/tobetz/LegoMicroscope>
 
-## Shops and Bricks
-
-- <https://rebrickable.com>
-- <https://mecabricks.com>
-- <https://www.bricklink.com>
-- <https://brickset.com/>
-- <https://www.mocsmarket.com/>
-
 ## Information
 
 - Comparing Motors: <https://www.philohome.com/motors/motorcomp.htm>
 - <https://brickipedia.fandom.com/wiki/LEGO_Wiki>
+- <http://www.mindsensors.com/>
