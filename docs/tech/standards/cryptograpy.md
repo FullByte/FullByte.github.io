@@ -1,6 +1,4 @@
-# cryptography
-
-## Links
+# Cryptography
 
 - Safe curves for elliptic-curve cryptography: <https://safecurves.cr.yp.to/>
 - Benchmarking of Cryptographic Systems: <https://bench.cr.yp.to/>

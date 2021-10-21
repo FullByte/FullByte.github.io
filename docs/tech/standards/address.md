@@ -1,5 +1,7 @@
 # Addresses
 
+## Incorrect assumptions on addresses
+
 Addressing is a fertile ground for incorrect assumptions, because everyone’s used to dealing with addresses and 99% of the time they seem so simple. Below are some incorrect assumptions:
 
 - An address will start with, or at least include, a building number.
