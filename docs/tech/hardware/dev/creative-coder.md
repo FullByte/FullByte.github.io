@@ -1,6 +1,4 @@
-# Creativ Coder
-
-
+# Creative Coder
 
 ## Fitness app
 
