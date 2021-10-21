@@ -64,7 +64,7 @@ nikto -h $IP
     ```
 
 ??? output "gobuster output"
-    ```sh
+    ```txt
     gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.156.30:80
     ===============================================================
     /blog                 (Status: 301) [Size: 311] [--> http://10.10.156.30/blog/]
@@ -75,7 +75,7 @@ nikto -h $IP
     ```
 
 ??? output "Wordpress output"
-    ```sh
+    ```txt
     wpscan --url http://10.10.156.30/wordpress -P rockyou.txt -U admin
     _______________________________________________________________
             __          _______   _____

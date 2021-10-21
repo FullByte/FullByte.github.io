@@ -113,7 +113,7 @@ More...
 - Make and Change To That New Directory: ```mkdir new_dir && cd $```
 - Configure Your Server Timezone: ```dpkg-reconfigure tzdata```
 - Kill Everything Running On A Certain Port ```sudo kill "sudo lsof -t -i:3000"```
-- See if the http status of the request changes: ``` watch -d curl -LIs localhost:3000```
+- See if the http status of the request changes: ```watch -d curl -LIs localhost:3000```
 - Update access and modify time: ```touch README.md```
 - Update access time: ```touch -a README.md```
 - Update modify time: ```touch -m README.md```
@@ -123,7 +123,7 @@ More...
 
 ## VIM
 
-To make a default Vim installation more useful, type the following 5 lines into its .vimrc file: 
+To make a default Vim installation more useful, type the following 5 lines into its .vimrc file:
 
 ```shell
 set hls ic is nu noswf
@@ -156,7 +156,7 @@ screen -r # re-attach
 - File Type Info With File: ```file data.txt```
 - Find Newer Files than this file: ```find blog -name '*.md' -newer blog/first-post.md```
 - Get The Unix Timestamp: ```date +%s```
-- Hexdump A Compiled File  ```cat Hello.class | hexdump -C ```
+- Hexdump A Compiled File  ```cat Hello.class | hexdump -C```
 - Grep For Files Without A Match: ```grep -L "foobar" ./*```
 - Grep For Files With Multiple Matches ```grep -rl "match1" src/css | xargs grep -l "match2"```
 
