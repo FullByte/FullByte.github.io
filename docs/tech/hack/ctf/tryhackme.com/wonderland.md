@@ -313,9 +313,9 @@ We can see the hatter password in `/home/hatter/password.txt`
 
 Since we have the user name and password, let' us login with ssh: ```ssh hatter@10.10.28.31```
 
-`sudo -l`, `find / -perm -u=s -type f 2>/dev/null` and `find / -xdev -user hatter 2>/dev/null` don't reveal any interesting output but `find / -xdev -group hatter 2>/dev/null` shows that we can run perl. Unfortunately sudo is not possible and the suid bit isn’t set on the perl executable.
+`sudo -l`, `find / -perm -u=s -type f 2>/dev/null` and `find / -xdev -user hatter 2>/dev/null` don't reveal any interesting output but `find / -xdev -group hatter 2>/dev/null` shows group hatter owns perl. Unfortunately sudo is not possible and the suid bit isn’t set on the perl executable.
 
-With `getcap -r / 2>/dev/null` we can check for capabilities and we see perl in the list:
+There is another thing we can check: With `getcap -r / 2>/dev/null` we can check for "capabilities" and we see perl in the list:
 
 ```txt
 /usr/bin/perl5.26.1 = cap_setuid+ep
