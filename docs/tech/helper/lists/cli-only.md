@@ -4,7 +4,9 @@ More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 
 ## Internet
 
-- Browser: <http://w3m.sourceforge.net/>
+- w3m Browser: <http://w3m.sourceforge.net/>
+- Googler: <https://github.com/jarun/googler>
+- DuckDuckGo: <https://github.com/jarun/ddgr> (Browser: <https://duckduckgo.com/tty/>)
 
 ## Office
 
@@ -15,6 +17,7 @@ More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 - Text Editor: <https://micro-editor.github.io/>
 - plaintext accounting tool: <https://github.com/simonmichael/hledger>
 - CSV pretty printer: <https://github.com/alexhallam/tv>
+- Bits, bytes and address calculator: <https://github.com/jarun/bcal>
 
 ## Collaborate
 

@@ -4,7 +4,8 @@ Listen to a radio/stream online.
 
 ## Tools
 
-- Globe Radio: <http://radio.garden/visit/hanover/rFFOtEq3>
+- Globe Radio: <http://radio.garden>
+- radiooooo: <https://radiooooo.com/>
 - Wide Band WebSDR: <http://websdr.ewi.utwente.nl:8901/m.html>
 - Radio: <https://www.radio-browser.info/>
 

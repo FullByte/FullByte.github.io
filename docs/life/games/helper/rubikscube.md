@@ -4,6 +4,8 @@
 
 ![_RubixCube](_RubixCube.jpg)
 
+- <http://www.chessandpoker.com/rubiks-cube-solution.html>
+
 ## Online Cubes
 
 - <https://gregfjohnson.com/rubik.html>

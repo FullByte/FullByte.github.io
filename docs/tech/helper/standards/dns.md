@@ -59,6 +59,10 @@ A list of [DNS root zones](https://www.iana.org/domains/root/servers):
 - <https://public-dns.info/>
 - <https://dns.google/>
 
-## IP LIsts
+## IP Lists
 
 - ISPs per country <https://www.nirsoft.net/countryip/>
+
+## Maps
+
+- Root Servers: <https://root-servers.org/>

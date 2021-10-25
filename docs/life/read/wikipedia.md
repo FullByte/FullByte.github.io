@@ -4,6 +4,10 @@ I occasionally find interesting wikipedia pages and collect them here to share a
 
 What is Wikipedia? [Here is a good explanation.](https://enwikipedia.org/wiki/Wikipedia:Wikipedia_is_an_MMORPG "https://enwikipedia.org/wiki/Wikipedia:Wikipedia_is_an_MMORPG")
 
+This is my private version of [Wikipedia:Unusual_articles](https://en.wikipedia.org/wiki/Wikipedia:Unusual_articles) ^^
+
+WARNING: currently this list is a mess, but i'll clean - pinky-promise!
+
 ## Tech
 
 - [Digitale Poesie -> ASCII Art Ensemble](https://de.wikipedia.org/wiki/Digitale_Poesie#ASCII_Art_Ensemble "https://de.wikipedia.org/wiki/Digitale_Poesie#ASCII_Art_Ensemble")
@@ -176,6 +180,14 @@ https://en.wikipedia.org/wiki/Mathematical_coincidence
 https://en.wikipedia.org/wiki/DCF77
 https://en.wikipedia.org/wiki/Diderot_effect
 https://en.wikipedia.org/wiki/List_of_military_nuclear_accidents
+https://en.wikipedia.org/wiki/Wall_of_Sound_(Grateful_Dead)
+https://en.wikipedia.org/wiki/Mpemba_effect
+https://en.wikipedia.org/wiki/Method_of_loci
+https://en.wikipedia.org/wiki/Halloween_documents
+https://en.wikipedia.org/wiki/Joybubbles
+https://en.wikipedia.org/wiki/Nothing-up-my-sleeve_number
+https://en.wikipedia.org/wiki/List_of_films_that_most_frequently_use_the_word_%22fuck%22
+https://en.m.wikipedia.org/wiki/Thermal_grill_illusion
 
 - [Hofstadter's law](https://en.wikipedia.org/wiki/Hofstadter's_law "https://en.wikipedia.org/wiki/Hofstadter's_law")
 - [Conspiracy theory](https://en.wikipedia.org/wiki/Conspiracy_theory "https://en.wikipedia.org/wiki/Conspiracy_theory")

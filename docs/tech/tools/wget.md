@@ -30,3 +30,35 @@ wget -e robots=off -r -A ogg,mp3 http://example.com/dir/ # Specific audio files
 wget -e robots=off -r -A png,jpeg,jpg,gif http://example.com/dir/ # Specific Image Files
 wget -e robots=off -r -l 3 -np -p  http://example.com/dir/ # All pictures
 ```
+
+## Download features
+
+In case you are downloading clear text files it may come in handy to preview the download:
+
+```sh
+wget http://0xfab1.net/todo.txt --output-document - | head -n4
+```
+
+Continue a partially downloaded file where the download was interrupted with `-c` for continue:
+
+```sh
+wget -c https://0xfab1.net/best-distro2.iso
+```
+
+You can copy an entire web page with `--mirror` which is the same as adding parameters `--recursive --level inf --timestamping --no-remove-listing`. When using mirror consider using `--no-cookies --page-requisites --convert-links` as additional parameters:
+
+```sh
+wget --mirror --no-cookies --page-requisites --convert-links http://0xfab1.net
+```
+
+Use `--debug` to view HTTP header information of your download request.
+
+```sh
+wget --debug https://0xfab1.net
+```
+
+If you want to deal with redirects as error set `--max-redirect 0`. This is also handy if you don't want to follow URL-shorter links:
+
+```sh
+wget --max-redirect 0 "https://bit.ly/0xfab1"
+```

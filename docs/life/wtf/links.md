@@ -17,3 +17,11 @@ Don't just send the link, be smart:
 - LMGTFY: <https://googlethatforyou.com/>
 - Shadyurl: <http://www.shadyurl.com/>
 - URL Lengthener: <https://aaa.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa.com/>
+
+Random:
+
+- https://virtualpiano.net/?song-post-26947
+- https://screamintothevoid.com/
+- Random Street View Map: https://www.mapcrunch.com/
+- https://zoomquilt.org/
+- https://www.howmanypeopleareinspacerightnow.com/

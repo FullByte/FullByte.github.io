@@ -141,14 +141,16 @@ Map APIs
 
 ## Insecure by design
 
-- OWASP WebGoat <https://github.com/WebGoat/WebGoat> (<https://owasp.org/www-project-webgoat/>)
+- [OWASP WebGoat](https://github.com/WebGoat/WebGoat) ([Project](https://owasp.org/www-project-webgoat/))
+- [OWASP Bricks](https://sechow.com/bricks/index.html)
+- [Damn Vulnerable Web Application (DVWA)](https://dvwa.co.uk/)
+- [RasPwn OS](https://raspwn.org/)
 
 ## More Tools
 
 - discover <https://github.com/leebaird/discover>
 - shad0w <https://github.com/bats3c/shad0w>
 - [mlget](https://github.com/xorhex/mlget): query multiple sources for a given malware hash and [download](https://blog.xorhex.com/blog/mlget-for-all-your-malware-download-needs/) it
-
 
 ## Malware Analysis
 

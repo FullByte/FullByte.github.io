@@ -25,6 +25,8 @@ Tools to create graphics and modify images online.
 - Pixelart Maker: <http://pixelartmaker.com/>
 - Paint: <https://david.li/paint/>
 - kidpix: <https://kidpix.app/>
+- Remove objects: <https://cleanup.pictures/>
+- Graffiti: <https://graffiter.com/app>
 
 ### Animation
 

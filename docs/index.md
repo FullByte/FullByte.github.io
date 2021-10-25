@@ -25,7 +25,3 @@ Regards,
 0xfab1
 
 ![Jokes Card](https://readme-jokes.vercel.app/api)
-
-*No need for a disclaimer, I've done nothing wrong!*
-
-*No need for a copyright, I've done nothing good!*

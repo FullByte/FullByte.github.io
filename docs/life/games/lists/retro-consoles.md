@@ -1,6 +1,13 @@
-# SNES
+# Retro Consoles
+
+## N64
+
+- A web based N64 Emulator: <https://www.neilb.net/n64wasm/>
+
+## SNES
 
 Maps: <https://noclip.website/>
+
 ## Super Mario World Widescreen HD
 
 To play "Super Mario World" on SNES in Widescreen (16:9) do the following:
