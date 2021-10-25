@@ -17,8 +17,6 @@ Strategy
 - Planetary Annihilation: TITANS
 - Ashes of the Singularity: Escalation
 - Offworld Trading Company
-- Ancestors Legacy Free Peasant Edition
-- Warhammer 40k Dawn of War II
 
 Heavy Strategy
 
@@ -42,5 +40,7 @@ Heavy Strategy
 - Battle for Wesnoth
 - Crusader Kings II
 - Lara Croft and the Temple of Osiris
+- Ancestors Legacy Free Peasant Edition
 - Factorio
 - Total War: SHOGUN 2
+- Warhammer 40k Dawn of War II
