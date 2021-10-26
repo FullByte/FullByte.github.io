@@ -1,13 +1,6 @@
 # Time
 
-## Links
-
-- 120 years of timezones: <https://blog.scottlogic.com/2021/09/14/120-years-timezone.html>
-- <https://en.wikipedia.org/wiki/ISO_3166-1>
-- <https://www.timeanddate.com/time/zones/>
-- <https://www.iana.org/time-zones>
-- <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>
-- <https://www.ibm.com/docs/en/workload-scheduler/8.6.0?topic=zones-complete-table-time-variable-length-notation>
+![xkcd_iso_8601](https://imgs.xkcd.com/comics/iso_8601.png)
 
 ## Facts
 
@@ -267,12 +260,12 @@ A list of time zones:
 The Lunar year consists of twelve days, named after the first men who walked on the Moon. Each day is divided into 30 cycles of time, with each cycle being divided into 24 moon-hours. Each moon-hour then has 60 moon-minutes, which in turn of course are made up of 60 moon-seconds each. The inverted triangle ∇ is the LST symbol, and if used it suffixes date and prefixes time. The standard notation is: Year-Day-Cycle ∇ Hour:Minute:Second example: 55-11-14 ∇ 14:36:49
 
 | Measure | Terrestrial Time       | Lunar Time       |
-|----------|------------------------|------------------|
-| seconds  | 1                      | 0.9843529666671  |
-| minute   | 60 terrestrial seconds | 60 lunar seconds |
-| hour     | 60 terrestrial minutes | 60 lunar minutes |
-| day      | 24 terrestrial hours   | 30 lunar cycles* |
-| year     | 365 days               | 12 lunar days    |
+|---------|------------------------|------------------|
+| seconds | 1                      | 0.9843529666671  |
+| minute  | 60 terrestrial seconds | 60 lunar seconds |
+| hour    | 60 terrestrial minutes | 60 lunar minutes |
+| day     | 24 terrestrial hours   | 30 lunar cycles* |
+| year    | 365 days               | 12 lunar days    |
 
 *Each is day named after one of the twelve men that walked on the Moon during the Apollo projects:
 
@@ -293,10 +286,108 @@ The Lunar year consists of twelve days, named after the first men who walked on 
 
 On the moon you have about 15 days of continuous daylight and then 15 days of total darkness. So, a "day" on the Moon, would correspond to about a month or 29.5 Earth-days. Once, about every 29 days, you have a full moon, which is "noon" on the center of the disk. This is also called the synodic month. So a day on the moon, counting from noon to noon, lasts about 29.27 to 29.83 Earth days. Neil Armstrong set foot on the Moon surface on July 21th 1969 at 02:56:15 UT, and this is the obvious choice for a point in time for the calendar to start. So, this is Year 1, day 1 cycle 1, 00:00:00.
 
-Here is the current time:
-
-<iframe src="http://lunarclock.org/service/lst-for-iframe.php?style=0&color=0" height="60px" width="170px" frameborder="0" marginwidth="0" scrolling="no"><a href="http://lunarclock.org">Lunar Standard Time - What time is it on the Moon?</a></iframe>
-
 You can use this tool to convert a time to lunar time: <http://lunarclock.org/convert-to-lunar-standard-time.php>
 
-Source: <http://lunarclock.org/>
+Sources:
+
+- <http://lunarclock.org/>
+
+## Metric Time
+
+| Measure | Time as we Know it                          | Metric Time Usage                            |
+|---------|---------------------------------------------|----------------------------------------------|
+| day     | 24 hours or 1,440 minutes or 86,400 seconds | 10 hours or 1,000 minutes or 100,000 seconds |
+| hour    | 60 minutes or 3,600 seconds                 | 100 minutes or 10,000 seconds                |
+| minute  | 60 seconds                                  | 100 seconds                                  |
+
+Sources:
+
+- <https://en.wikipedia.org/wiki/Metric_time>
+- <https://timeity.com/metric-time/>
+
+## Calendar
+
+List of calendars: <https://en.wikipedia.org/wiki/List_of_calendars>
+
+Representation in various calendars of the year 2021
+
+| Calendar                     | Year 2021                                                                                         |
+|------------------------------|---------------------------------------------------------------------------------------------------|
+| Gregorian calendar           | 2021 MMXXI                                                                                        |
+| Ab urbe condita              | 2774                                                                                              |
+| Armenian calendar            | 1470 ԹՎ ՌՆՀ                                                                                       |
+| Assyrian calendar            | 6771                                                                                              |
+| Bahá'í calendar              | 177–178                                                                                           |
+| Balinese saka calendar       | 1942–1943                                                                                         |
+| Bengali calendar             | 1428                                                                                              |
+| Berber calendar              | 2971                                                                                              |
+| British Regnal year          | 69 Eliz. 2 – 70 Eliz. 2                                                                           |
+| Buddhist calendar            | 2565                                                                                              |
+| Burmese calendar             | 1383                                                                                              |
+| Byzantine calendar           | 7529–7530                                                                                         |
+| Chinese calendar             | 庚子年 (Metal Rat) 4717 or 4657 — to — 辛丑年 (Metal Ox) 4718 or 4658                             |
+| Coptic calendar              | 1737–1738                                                                                         |
+| Discordian calendar          | 3187                                                                                              |
+| Ethiopian calendar           | 2013–2014                                                                                         |
+| Hebrew calendar              | 5781–5782                                                                                         |
+| Hindu calendar Vikram Samvat | 2077–2078                                                                                         |
+| Hindu calendar Shaka Samvat  | 1942–1943                                                                                         |
+| Hindu calendar Kali Yuga     | 5121–5122                                                                                         |
+| Holocene calendar            | 12021                                                                                             |
+| Igbo calendar                | 1021–1022                                                                                         |
+| Iranian calendar             | 1399–1400                                                                                         |
+| Islamic calendar             | 1442–1443                                                                                         |
+| Japanese calendar            | Reiwa 3 (令和３年)                                                                                 |
+| Javanese calendar            | 1954–1955                                                                                         |
+| Juche calendar               | 110                                                                                               |
+| Julian calendar              | Gregorian minus 13 days                                                                           |
+| Korean calendar              | 4354                                                                                              |
+| Minguo calendar              | ROC 110 民國110年                                                                                 |
+| Nanakshahi calendar          | 553                                                                                               |
+| Thai solar calendar          | 2564                                                                                              |
+| Tibetan calendar             | 阳金鼠年 (male Iron-Rat) 2147 or 1766 or 994 — to — 阴金牛年 (female Iron-Ox) 2148 or 1767 or 995 |
+| Unix time                    | 1609459200 – 1640995199                                                                           |
+
+## Non 7-day weeks
+
+| Tradition                  | week length |
+|----------------------------|-------------|
+| Bali                       | various     |
+| Korea                      | 5 days      |
+| Java                       | 5 days      |
+| Discordian                 | 5 days      |
+| Akan                       | 6 days      |
+| Ancient Rome               | 8 days      |
+| Burmese                    | 8 days      |
+| Celtic                     | 8 days      |
+| Baltic                     | 9 days      |
+| Chinese                    | 10 days     |
+| Egyptian Calendar          | 10 days     |
+| French Republican Calendar | 10 days     |
+| Aztecs                     | 13 days     |
+
+## Fun facts
+
+A **moment** was a medieval unit of time. The movement of a shadow on a sundial covered 40 moments in a solar hour. An hour in this case meant one twelfth of the period between sunrise and sunset. The length of a solar hour depended on the length of the day, which in turn varied with the season, so the length of a moment in modern seconds was not fixed, but on average, a moment corresponded to 90 seconds.
+
+Fictional calendars
+
+- [Discworld](https://en.wikipedia.org/wiki/Discworld_(world)#Calendar)
+- [Middle-earth](https://en.wikipedia.org/wiki/History_of_Arda)
+- [Star Trek (Stardates)](https://en.wikipedia.org/wiki/Stardate)
+
+## Links
+
+- 120 years of timezones: <https://blog.scottlogic.com/2021/09/14/120-years-timezone.html>
+- <https://en.wikipedia.org/wiki/ISO_3166-1>
+- <https://www.timeanddate.com/time/zones/>
+- <https://www.iana.org/time-zones>
+- <https://www.ibm.com/docs/en/workload-scheduler/8.6.0?topic=zones-complete-table-time-variable-length-notation>
+
+Wikipedia on time, calendars and dates
+
+- <https://en.wikipedia.org/wiki/List_of_tz_database_time_zones>
+- <https://en.wikipedia.org/wiki/List_of_dates_predicted_for_apocalyptic_events>
+- <https://en.wikipedia.org/wiki/List_of_unusual_units_of_measurement#Time>
+- <https://en.wikipedia.org/wiki/Soviet_calendar>
+- <https://en.wikipedia.org/wiki/Hanke%E2%80%93Henry_Permanent_Calendar>
