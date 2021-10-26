@@ -182,7 +182,7 @@ Some links to time zone standards:
 A list of time zones:
 
 | INDEX | NAME OF Time                    | ZONE Time   | IANA                                                    | Time ZONE                      |
-| ----- | ------------------------------- | ----------- | ------------------------------------------------------- | ------------------------------ |
+|-------|---------------------------------|-------------|---------------------------------------------------------|--------------------------------|
 | 10    | Azores Standard Time            | (GMT-01:00) | Azores                                                  | Atlantic/Azores                |
 | 12    | Cape Verde Standard Time        | (GMT-01:00) | Cape Verde Islands                                      | Atlantic/Cape_Verde            |
 | 43    | Mid-Atlantic Standard Time      | (GMT-02:00) | Mid-Atlantic                                            | Atlantic/South_Georgia         |
@@ -261,3 +261,42 @@ A list of time zones:
 | 50    | New Zealand Standard Time       | (GMT+12:00) | Auckland, Wellington                                    | Pacific/Auckland               |
 | 31    | Fiji Standard Time              | (GMT+12:00) | Fiji Islands, Kamchatka, Marshall Islands               | Pacific/Fiji                   |
 | 69    | Tonga Standard Time             | (GMT+13:00) | Nuku'alofa                                              | Pacific/Tongatapu              |
+
+## Lunar Standard Time (LST)
+
+The Lunar year consists of twelve days, named after the first men who walked on the Moon. Each day is divided into 30 cycles of time, with each cycle being divided into 24 moon-hours. Each moon-hour then has 60 moon-minutes, which in turn of course are made up of 60 moon-seconds each. The inverted triangle ∇ is the LST symbol, and if used it suffixes date and prefixes time. The standard notation is: Year-Day-Cycle ∇ Hour:Minute:Second example: 55-11-14 ∇ 14:36:49
+
+| Measure | Terrestrial Time       | Lunar Time       |
+|----------|------------------------|------------------|
+| seconds  | 1                      | 0.9843529666671  |
+| minute   | 60 terrestrial seconds | 60 lunar seconds |
+| hour     | 60 terrestrial minutes | 60 lunar minutes |
+| day      | 24 terrestrial hours   | 30 lunar cycles* |
+| year     | 365 days               | 12 lunar days    |
+
+*Each is day named after one of the twelve men that walked on the Moon during the Apollo projects:
+
+| Day    | Name      | Days |
+|--------|-----------|------|
+| Day 1  | Armstrong | 1-30 |
+| Day 2  | Aldrin    | 1-30 |
+| Day 3  | Conrad    | 1-30 |
+| Day 4  | Bean      | 1-30 |
+| Day 5  | Shepard   | 1-30 |
+| Day 6  | Mitchell  | 1-30 |
+| Day 7  | Scott     | 1-30 |
+| Day 8  | Irwin     | 1-30 |
+| Day 9  | Young     | 1-30 |
+| Day 10 | Duke      | 1-30 |
+| Day 11 | Cernan    | 1-30 |
+| Day 12 | Schmitt   | 1-30 |
+
+On the moon you have about 15 days of continuous daylight and then 15 days of total darkness. So, a "day" on the Moon, would correspond to about a month or 29.5 Earth-days. Once, about every 29 days, you have a full moon, which is "noon" on the center of the disk. This is also called the synodic month. So a day on the moon, counting from noon to noon, lasts about 29.27 to 29.83 Earth days. Neil Armstrong set foot on the Moon surface on July 21th 1969 at 02:56:15 UT, and this is the obvious choice for a point in time for the calendar to start. So, this is Year 1, day 1 cycle 1, 00:00:00.
+
+Here is the current time:
+
+<iframe src="http://lunarclock.org/service/lst-for-iframe.php?style=0&color=0" height="60px" width="170px" frameborder="0" marginwidth="0" scrolling="no"><a href="http://lunarclock.org">Lunar Standard Time - What time is it on the Moon?</a></iframe>
+
+You can use this tool to convert a time to lunar time: <http://lunarclock.org/convert-to-lunar-standard-time.php>
+
+Source: <http://lunarclock.org/>
