@@ -36,7 +36,7 @@
 - WIRED: <https://www.wired.com/category/threatlevel/feed/>
 - heise developer: <https://www.heise.de/developer/rss/news-atom.xml>
 - The Old New Thing: <https://blogs.msdn.microsoft.com/oldnewthing/feed>
-- Reddit Technology: <https://www.reddit.com/r/technology/.rss>
+- Reddit Technology: <https://old.reddit.com/r/technology/.rss>
 
 ### IT Security
 
@@ -58,10 +58,10 @@
 
 ### Other
 
-- World News: <https://www.reddit.com/r/worldnews/.rss>
-- Today I Learned (TIL): <https://www.reddit.com/r/todayilearned/.rss>
+- World News: <https://old.reddit.com/r/worldnews/.rss>
+- Today I Learned (TIL): <https://old.reddit.com/r/todayilearned/.rss>
 - Google News: <https://news.google.com/?output=rss>
-- Reddit: xmlUrl=<https://www.reddit.com/.rss>
+- Reddit: xmlUrl=<https://old.reddit.com/.rss>
 - law blog: <http://www.lawblog.de/index.php/feed/>
 - vice: <https://www.vice.com/de/rss>
 

@@ -11,7 +11,7 @@ Characters
 
 - <https://genshin-helper.com/>
 - <https://traveler.gg/community-character-builds/>
-- <https://www.reddit.com/r/Genshin_Impact/comments/l41dgc/latest_community_character_builds_by_the_genshin/>
+- <https://old.reddit.com/r/Genshin_Impact/comments/l41dgc/latest_community_character_builds_by_the_genshin/>
 - <https://buildsim.netlify.app/>
 - <https://genshinimpactcalculator.com/genshinCalc>
 - <https://genshin.aspirine.su/>

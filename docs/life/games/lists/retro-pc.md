@@ -1,5 +1,8 @@
 # Retro PCs
 
+- <https://old.reddit.com/r/retrobattlestations/>
+- <https://old.reddit.com/r/vintagecomputing/>
+
 ## C64
 
 ### C64 Mini
