@@ -308,11 +308,11 @@ This is not needed to understand or play the game.
 
     ![einhorn-boxes-py](_einhorn-boxes-py.jpg)
 
-    This is the print process creating dice and unicorn figure using PA 12 (SLS) with a Sinterit Lisa printer:
+    This is the print process creating dice and unicorn figure using [PA 12 Smooth (SLS)](https://www.sinterit.com/pa12-smooth/) with a [Sinterit Lisa Rev.B printer](https://www.sinterit.com/sinterit-lisa/lisa-de/#):
 
     [![einhorn-print](_einhorn-print.webp)](_einhorn-print.mp4)
 
-    And this is the result
+    And this is the result:
 
     ![einhorn-print-result](_einhorn-print-result.jpg)
 
