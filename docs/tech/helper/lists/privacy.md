@@ -29,3 +29,4 @@ If you can't or don't want to use platform alternatives you can at least use dif
 | Social  | [Twitter](https://nitter.net), [Instagram](https://bibliogram.art/), [Reddit](https://teddit.net/) or [old Reddit](https://old.reddit.com/) |
 | World News | [NPR](https://text.npr.org/), [Google News](http://68k.news/), [CNN](https://lite.cnn.com/en),  [CBC](https://www.cbc.ca/lite/trending-news), [The Guadian](https://guardian.gyford.com/), [New York Times](https://www.nytimes.com/timeswire) |
 | Tech News | [skimfeed](https://skimfeed.com/), [Hacker News](https://hackerweb.app/) |
+| Search | [SearXNG](https://github.com/searxng/searxng) [instances](https://searx.space/), [startpage](https://www.startpage.com), [DuckDuckGo](https://duckduckgo.com/), [millionshort](https://millionshort.com/) |

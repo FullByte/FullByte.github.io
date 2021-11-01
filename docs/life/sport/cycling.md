@@ -27,6 +27,11 @@ Die komplette 105-Gruppe mit Kompaktkurbel und Shimanos günstige, aber stabile 
 - Rims: Shimano, RS10
 - Tires: Continental, Twister Pro
 
+Modifications:
+
+- Replaced bottom bracket with Campagnolo Record Pista BSA
+- Added Red Cube Bike Ribbon Carbon Tape
+
 ### Size
 
 |        Size       |     50    |     52    |     54    |     56    |     58    |     61    |

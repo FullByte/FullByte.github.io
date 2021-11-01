@@ -2,7 +2,7 @@
 
 | Einhorn  |  is a simple, fast paced dice rolling game in which luck is the main factor to win the game. |
 |------------------------------------------------------|--|
-| ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an `Einhorn` and receive the unicorn figure to take stones from your opponents. Once a player looses all stones the current game ends. All other players keep their stones. Bet on the unicorn figure for an advantage in the next game. Be better at predicting your role outcome than the other players. After ten games, the player with the most stones wins.|
+| ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an `Einhorn` and receive the unicorn figure to take stones from your opponents. Once a player looses all stones the current game ends. All other players keep their stones. Bet on the unicorn figure for an advantage in the next game. Be better at predicting your roll outcome than the other players. After ten games, the player with the most stones wins.|
 
 This is how a self-made version of the game looks like:
 
@@ -22,11 +22,11 @@ Below is an overview of main steps in the game:
 
 **Setup the game**
 
-- Put all stones in a bowl. (also called "central stash")
+- Put 25 stones per participating player in a bowl; also refereed to as "central stash"
 - Place the dice tray centrally.
 - Place the game counter dice (D10) in the center and set it to 1.
 - Place the unicorn figure centrally between dice tray and central stash.
-- Each player receives 3x six sided dice (D6), a card with the roll-result overview and 6 stones.
+- Each player receives 3x six sided dice (D6), a card with the roll result overview and 6 stones from the central stash.
 
 **Agree on the win condition**
 
@@ -36,7 +36,7 @@ Below is an overview of main steps in the game:
 
 - All players roll their three dice and the player with highest sum starts the game.
 - If there is a draw, those players roll again until a starting player is determined.
-- The player that starts the game receives an additional stone.
+- The player that starts the game receives an additional stone from the central stash.
 
 This is an example setup for 4 players:
 
@@ -48,8 +48,8 @@ The table explains the differences between the central stone stash, the game sto
 
 | Term          | Explanation                                                                                                                                                                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Central stash | All stones remaining in the game. [Take stones or return stones](#take-or-give-stones) depending on your roll prediction outcome. If there are no stones left in this stash the [game ends](#game-ends).|
-| Game stones   | Stones a player has for the [current game](#play). If a player has no more stones the [game ends](#game-ends).|
+| Central stash | All stones remaining in the game. [Take stones or return stones](#take-or-give-stones) depending on your roll prediction outcome. If there are no stones left in this stash the [entire game ends](#game-ends) and a winner is determined.|
+| Game stones   | Stones a player has for the [current game](#play). If a player has no more stones the [current game ends](#game-ends). If this is not the last game a [new game starts](#prepare-next-game)|
 | Player stash  | Stones a player has won in previous games. Only usable when [betting on the unicorn](#bid-on-the-einhorn) or [adding stones](#receive-6-game-stones) to the initial 6 game stones received at the beginning of a new game. The player with the most stones in this stash [wins the game](#determine-the-winner).|
 
 ## Play
@@ -58,7 +58,7 @@ This section explains the actions in a players turn and how one game is played. 
 
 ### Predict outcome or remain silent
 
-There are 4 predictable outcomes. Below is a list of all possible results and their probability:
+There are 4 predictable roll results. Below is a list explaining the different outcomes and their probability:
 
 | Roll Result           | Rule                                                                     | Formula                                             | Example    | Combinations | Probability |
 |-----------------------|--------------------------------------------------------------------------|-----------------------------------------------------|------------|--------------|-------------|
@@ -67,10 +67,7 @@ There are 4 predictable outcomes. Below is a list of all possible results and th
 | 🦄 Einhorn            | All numbers must be at least 2 apart                                     | ```n & n+2 & (n+4 / n+5)``` and ```n & n+3 & n+5``` | ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216    | 11,1%       |
 | ☢️ Dreifaltigkeit     | Three of a kind.                                                         | ```3x n```                                          | ⚁⚁⚁ or ⚅⚅⚅ | 6 of 216     | 2,8%        |
 
-The current player decides to either:
-
-- predict the upcoming roll attempt
-- **or** remain silent (passive roll / no prediction)
+The current player decides to either predict the upcoming roll attempt **or** remain silent (passive roll / no prediction).
 
 Once done, the player proceeds to roll all three dice in the dice tray.
 
@@ -78,7 +75,13 @@ Depending on the rolled outcome the player then [takes or gives stones](#take-or
 
 ### Take or give stones
 
-Based on the players roll attempt and the prediction made, there is one possible result that leads to adding or removing stones from the players game stash. E.g., in case the roll result was a `Wunsch`, read that line in your roll-result overview card, then check if the prediction was correct, wrong or no prediction was made (passive). Then add or remove stones accordingly.
+Based on the players roll attempt and the prediction made, **there is one possible result** that leads to adding or removing stones from the players game stash. Read the table below as follows:
+
+1. Check your roll result and go to that line
+2. Then, in that line check what applies to your prediction (correct, wrong, no prediction)
+3. Now add or remove stones based on what applies to your roll outcome & prediciton.
+
+It doesn't matter what prediction was made specifically. What matters, is if the prediction was correct, wrong or if no prediction was made. In other words: The stones added or removed are determined by the result rolled, not by what was predicted. E.g., if a `Wunsch` is rolled, it doesn't matter if `Das Unvermeidliche`, `Einhorn` or `Dreifaltigkeit` were predicted, all three are wrong and the player must return 2 stones to the central stash.
 
 | Roll Result           | Correct Prediction             | Wrong Prediction | No Prediction |
 |-----------------------|--------------------------------|------------------|---------------|
@@ -89,10 +92,7 @@ Based on the players roll attempt and the prediction made, there is one possible
 
 As you can see from the table above, the most common roll results are `Das Unvermeidliche` and `Wunsch`. The improbable results `Einhorn` and `Dreifaltigkeit` reward taking higher risks with higher rewards.
 
-Please note:
-
-- It doesn't matter what prediction was made specifically. What matters, is if the prediction was correct, wrong or if no prediction was made. In other words: The stones added or removed are determined by the result rolled, not by what was predicted. E.g., if a `Wunsch` is rolled, it doesn't matter if `Das Unvermeidliche`, `Einhorn` or `Dreifaltigkeit` were predicted, all three are wrong and the player must return 2 stones to the central stash.
-- If a player forgets to make a prediction or mentions the prediction too late and rolls the dice, this is dealt as a passive roll (no prediction).
+If a player forgets to make a prediction or mentions the prediction too late (dice already rolled), this is dealt as a passive roll (no prediction).
 
 Remember to first take or give stones, then put your dice back from the dice tray. With this action your turn ends and it's the next players turn.
 
@@ -103,16 +103,18 @@ When rolling an `Einhorn`, this player additionally receives the unicorn figure.
 The unicorn figure has the following effects:
 
 - When rolling an `Einhorn` no stones are earned/paid = nothing happens. Therefore, as the owner of the unicorn figure, avoid predicting an `Einhorn`.
-- The player can give or take stones not only from the central stash, but also from any other player. However, whether the player can take stones still depends on the roll attempt outcome! You can only take stones from one player. If the player doesn't have enough stones you only get what the player can offer (and the [current game ends](#game-ends)).
+- The player can give or take stones not only from the central stash, but also from any other player. However, whether the player can take stones still depends on the roll attempt outcome! You can only take stones from one player. If the player doesn't have enough stones you only get what the player can offer and the [current game ends](#game-ends).
 - The unicorn figure is passed once another player rolls an `Einhorn`.
 
 #### Roll Dreifaltigkeit
 
-If you roll `Dreifaltigkeit` you will always receive stones (see [overview)](#take-or-give-stones). However, if you predict `Dreifaltigkeit` correctly (2,8% chance), you receive all game stones from all players (player stash excluded!) and therewith instantly [end the current game](#game-ends).
+If you roll `Dreifaltigkeit` [you will always receive stones](#take-or-give-stones). However, if you predict `Dreifaltigkeit` correctly, which is a 2,8% chance, you receive all game stones from all players and therewith instantly [end the current game](#game-ends). In this event the player's stash is of course excluded!
 
 ### Game ends
 
-Once a player has no stones left, the game ends. In case a player needs to pay more stones than they have, only the available game stones are given. (Example: `Einhorn` was rolled and predicted wrong and the player has 3 stones left, only those 3 stones return to the central stash.)
+Once a player has no stones left, the game ends. In case a player needs to pay more stones than they have, only the available game stones are given.
+
+Example: `Einhorn` was rolled and predicted wrong and the player has 3 stones left, only those 3 stones return to the central stash.
 
 - If this was the last game (e.g. game #10) or if all stones from the central stash are gone, proceed to [determine the winner](#determine-the-winner).
 - Else, proceed with the steps to [prepare the next game](#prepare-next-game).
@@ -164,8 +166,9 @@ This is not needed to understand or play the game.
 
     Preparing the game:
 
+    - Put 3x25 = 75 stones in the central stash.
     - All players agree to play the default of 10 games.
-    - All players take 3 dice and 6 stones.
+    - All players 6 stones from the central stash.
     - Player 1 rolls the highest total number with 3 dice (1+4+5=10) and may start the game. Player 1 receives an extra stone.
 
     First game:

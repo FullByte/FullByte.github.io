@@ -16,8 +16,6 @@
 
 ## Learn
 
-- <https://learningsynths.ableton.com/en/playground>
-- <https://learningmusic.ableton.com/>
 - <https://noise.sh/>
 - <https://vcvrack.com/>
 - <https://tytel.org/helm/>
@@ -26,7 +24,11 @@
 - <https://music.ishkur.com/>
 - <https://apps.musedlab.org/groovepizza>
 - <https://www.sequencer64.com/sequencer/session>
-- <https://www.vitling.xyz/toys/acid-banger>
+- [acid-banger](https://www.vitling.xyz/toys/acid-banger)
+- [Ableton Learning Music](https://learningmusic.ableton.com/)
+- [Ableton learning synths](https://learningsynths.ableton.com/en/get-started)
+- [Ableton synth playground](https://learningsynths.ableton.com/en/playground)
+- [Fundamentals of Piano Practice](https://fundamentals-of-piano-practice.readthedocs.io/)
 
 ## Make Music
 
