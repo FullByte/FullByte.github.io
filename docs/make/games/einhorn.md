@@ -48,9 +48,9 @@ The table explains the differences between the central stone stash, the game sto
 
 | Term          | Explanation                                                                                                                                                                                                                                                                                   |
 |---------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Central stash | All stones remaining in the game. [Take stones or return stones](#take-or-give-stones) depending on your roll prediction outcome. If there are no stones left in this stash the [entire game ends](#game-ends) and a winner is determined.|
-| Game stones   | Stones a player has for the [current game](#play). If a player has no more stones the [current game ends](#game-ends). If this is not the last game a [new game starts](#prepare-next-game)|
-| Player stash  | Stones a player has won in previous games. Only usable when [betting on the unicorn](#bid-on-the-einhorn) or [adding stones](#receive-6-game-stones) to the initial 6 game stones received at the beginning of a new game. The player with the most stones in this stash [wins the game](#determine-the-winner).|
+| Central stash | All stones remaining in the game. [Take stones or return stones](#take-or-give-stones) depending on your roll prediction outcome. If there are no stones left in this stash the game ends immediately and [a winner is determined](#determine-the-winner)|
+| Game stones   | Stones a player has for the [current game](#play). If a player has no more game stones the [current game ends](#game-ends). If this is not the last game, [prepare a new game](#prepare-next-game)|
+| Player stash  | Stones a player has won in previous games. These stones can only be used when [betting on the unicorn](#bid-on-the-einhorn) or [adding stones](#receive-6-game-stones) to the initial 6 game stones received at the beginning of a new game. The player with the most stones in this stash [wins the game](#determine-the-winner).|
 
 ## Play
 
@@ -98,9 +98,7 @@ Remember to first take or give stones, then put your dice back from the dice tra
 
 #### Roll Einhorn
 
-When rolling an `Einhorn`, this player additionally receives the unicorn figure.
-
-The unicorn figure has the following effects:
+When rolling an `Einhorn`, this player additionally receives the unicorn figure. The unicorn figure has the following effects:
 
 - When rolling an `Einhorn` no stones are earned/paid = nothing happens. Therefore, as the owner of the unicorn figure, avoid predicting an `Einhorn`.
 - The player can give or take stones not only from the central stash, but also from any other player. However, whether the player can take stones still depends on the roll attempt outcome! You can only take stones from one player. If the player doesn't have enough stones you only get what the player can offer and the [current game ends](#game-ends).
@@ -116,8 +114,7 @@ Once a player has no stones left, the game ends. In case a player needs to pay m
 
 Example: `Einhorn` was rolled and predicted wrong and the player has 3 stones left, only those 3 stones return to the central stash.
 
-- If this was the last game (e.g. game #10) or if all stones from the central stash are gone, proceed to [determine the winner](#determine-the-winner).
-- Else, proceed with the steps to [prepare the next game](#prepare-next-game).
+If this was the last game or if all stones from the central stash are gone, proceed to [determine the winner](#determine-the-winner), else proceed with the steps to [prepare the next game](#prepare-next-game).
 
 ## Prepare next game
 
