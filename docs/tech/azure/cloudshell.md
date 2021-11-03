@@ -17,7 +17,7 @@ Further Links
 
 There are three options to use the cloud shell: Docker, Windows Terminal and the Azure Web Interface:
 
-## Docker
+### Docker
 
 You get a [CloudShell](https://github.com/Azure/CloudShell) container as follows:
 
@@ -26,7 +26,7 @@ docker run -it mcr.microsoft.com/azure-cloudshell /bin/bash # for bash
 docker run -it mcr.microsoft.com/azure-cloudshell /usr/bin/pwsh # for powershell
 ```
 
-## Windows Terminal
+### Windows Terminal
 
 The [Windows terminal](https://docs.microsoft.com/de-de/windows/terminal/) has the cloud shell integrated. Aside from other features this is a good way to interact with azure on command line.
 
@@ -43,8 +43,11 @@ To get a GUI editor in the web run ```code .```.
 
 - Add FileShare to Cloud Shell: ```clouddrive mount -s <secret> -g <rg-name> -n <fileshare> -f <share>```
 - Show Drives: ```Get-CloudDrive```
+- Remove or re-configure your cloud drive: ```dismount-clouddrive```
 
-Link: <https://docs.microsoft.com/de-de/azure/cloud-shell/persisting-shell-storage>
+Sources:
+
+- <https://docs.microsoft.com/de-de/azure/cloud-shell/persisting-shell-storage>
 
 ## Connect to VM console
 

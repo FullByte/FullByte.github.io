@@ -9,16 +9,17 @@ The best websites with overviews and helpers i know for azure.
 ### Overviews
 
 - VM Chooser: <https://www.vmchooser.com/>
-- Azure Speed: <https://www.azurespeed.com>
+- Infrastructure: <https://infrastructuremap.microsoft.com/>
+- DC Map: <https://build5nines.com/map-azure-regions/>
+- Speed: <https://www.azurespeed.com>
 - ARM Visualizer: <http://armviz.io/>
-- Azure Charts: <https://azurecharts.com/>
-- Azure Services: <https://azureservices.io/>
-- Azure Portals: <https://msportals.io/>
-- Azure DC Map: <https://build5nines.com/map-azure-regions/>
+- Charts: <https://azurecharts.com/>
+- Services: <https://azureservices.io/>
+- Portals: <https://msportals.io/>
 - Release and change tracking on Azure Governance capabilities: <https://www.azadvertizer.net/>
 - Features by region: <https://azure.microsoft.com/en-us/global-infrastructure/services/>
 - Get Tenant ID: <https://www.whatismytenantid.com/>
-- MSDN Licence Goodies: <https://visualstudio.microsoft.com/de/vs/benefits/#software-und-downloads>
+- MSDN License Goodies: <https://visualstudio.microsoft.com/de/vs/benefits/#software-und-downloads>
 
 ### Comparing Cloud Solutions
 
@@ -33,7 +34,7 @@ The best websites with overviews and helpers i know for azure.
 
 ### Dev Tools
 
-- Scrumpoker: <https://planningpokeronline.com/>
+- Scrum poker: <https://planningpokeronline.com/>
 - DevOps: <https://app.vssps.visualstudio.com>
 - Azure CLI (online) <https://shell.azure.com/powershell>
 - Azure DevOps Demo Generator: <https://azuredevopsdemogenerator.azurewebsites.net/>
