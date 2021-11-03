@@ -23,7 +23,7 @@ This is the source of my personal but public webpage ¯\\_(ツ)_/¯
 - Contact: [![Chat on Gitter](https://badges.gitter.im/FullByte.github.io.svg)](https://gitter.im/FullByte/community/)
 [![Twitter](https://img.shields.io/badge/twitter-%40zerogdoubled-%231da1f2)](https://twitter.com/zerogdoubled)
 
-## Intro
+## 0xfab1
 
 Documenting and publishing my projects and notes has been great exercise for me. As longs as this works well for me I will continue doing so :) The content may appear random as it deals with basically anything I find interesting and noteworthy. Thanks for your interest and I appreciate your pull-request for typos/errors in existing pages.
 
