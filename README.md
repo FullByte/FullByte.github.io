@@ -34,3 +34,10 @@ Visit:
 - <https://ipfs.0xfab1.net/> for access using IPFS
 
 This static website is built using [MkDocs](https://github.com/mkdocs/mkdocs/), [Material](https://github.com/squidfunk/mkdocs-material), [GitHub Pages](https://pages.github.com/) and [GitHub Actions](https://github.com/features/actions).
+
+## Build
+
+pip install --upgrade pip
+pip install mkdocs mkdocs-material mkdocs-minify-plugin
+mkdocs build
+mkdocs serve
