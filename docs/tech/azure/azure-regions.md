@@ -1,61 +1,12 @@
 # Azure Regions
 
-Infrastructure Map: <https://infrastructuremap.microsoft.com>
+Here is a nice [Infrastructure Map](https://infrastructuremap.microsoft.com). According to the [azure global-infrastructure](https://azure.microsoft.com/en-us/global-infrastructure) we have [geography](https://azure.microsoft.com/en-us/global-infrastructure/data-residency) in which there are [regions](https://azure.microsoft.com/en-us/global-infrastructure/services/) which is a set of data centers:
 
-## Locations Naming
-
-Overview of regions in azure and their official short name:
-
-| Continent     | Country              | Name                 | Location           | Short Name | Short Name (Country First) |
-|---------------|----------------------|----------------------|--------------------|------------|----------------------------|
-| Africa        | South Africa North   | southafricanorth     | sfno               | sfno       |                            |
-| Africa        | South Africa West    | southafricawest      | sfwe               | sfwe       |                            |
-| Asia          | East Asia            | eastasia             | eaas               | asea       |                            |
-| Asia          | Southeast Asia       | southeastasia        | seas               | assoea     |                            |
-| Asia          | Japan                | Japan West           | japanwest          | jawe       | jawe                       |
-| Asia          | Japan                | Japan East           | japaneast          | jaea       | jaea                       |
-| Asia          | India                | South India          | southindia         | soin       | inso                       |
-| Asia          | India                | Central India        | centralindia       | cnin       | incn                       |
-| Asia          | India                | West India           | westindia          | wein       | inwe                       |
-| Asia          | Korea                | Korea Central        | koreacentral       | krcn       | krcn                       |
-| Asia          | Korea                | Korea South          | koreasouth         | krso       | krso                       |
-| Asia          | United Arab Emirates | UAE Central          | uaecentral         | aecn       | aecn                       |
-| Asia          | United Arab Emirates | UAE North            | uaenorth           | aeno       | aeno                       |
-| Australia     | Australia            | Australia East       | australiaeast      | auea       | auea                       |
-| Australia     | Australia            | Australia Southeast  | australiasoutheast | ause       | ause                       |
-| Australia     | Australia            | Australia Central    | australiacentral   | aucn       | aucn                       |
-| Australia     | Australia            | Australia Central 2  | australiacentral2  | aucn2      | aucn3                      |
-| Europe        | North Europe         | northeurope          | noeu               | euno       |                            |
-| Europe        | West Europe          | westeurope           | weeu               | euwe       |                            |
-| Europe        | United Kingdom       | UK South             | uksouth            | ukso       | ukso                       |
-| Europe        | United Kingdom       | UK West              | ukwest             | ukwe       | ukwe                       |
-| Europe        | France               | France Central       | francecentral      | frcn       | frcn                       |
-| Europe        | France               | France South         | francesouth        | frso       | frso                       |
-| Europe        | Swizterland          | Switzerland North    | switzerlandnorth   | chno       | chno                       |
-| Europe        | Swizterland          | Switzerland West     | switzerlandwest    | chwe       | chwe                       |
-| Europe        | Germany              | Germany North        | germanynorth       | deno       | deno                       |
-| Europe        | Germany              | Germany West Central | germanywestcentral | dewecn     | dewecn                     |
-| Europe        | Norway               | Norway West          | norwaywest         | nowe       | nowe                       |
-| Europe        | Norway               | Norway East          | norwayeast         | noea       | noea                       |
-| North America | United States        | Central US           | centralus          | cnus       | uscn                       |
-| North America | United States        | East US              | eastus             | eaus       | usea                       |
-| North America | United States        | East US 2            | eastus2            | eaus2      | usea2                      |
-| North America | United States        | West US              | westus             | weus       | uswe                       |
-| North America | United States        | North Central US     | northcentralus     | nocnus     | usnocn                     |
-| North America | United States        | South Central US     | southcentralus     | socnus     | ussocn                     |
-| North America | Central America      | Canada Central       | canadacentral      | cacn       | cacn                       |
-| North America | Central America      | Canada East          | canadaeast         | caea       | caea                       |
-| North America | United States        | West Central US      | westcentralus      | wecnus     | uswecn                     |
-| North America | United States        | West US 2            | westus2            | weus2      | uswe2                      |
-| South America | Brazil               | Brazil South         | brazilsouth        | brso       | brso                       |
+- An Azure **geography** typically contains at least one or more regions, that preserves data residency and compliance boundaries.
+- An Azure **region** has a discrete pricing and service availability and is a set of data centers, deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network.
+- Azure **data centers** are unique physical buildings located all over the globe that house a group of networked computer servers.
 
 ## Geography and Regions
-
-According to the [azure global-infrastructure](https://azure.microsoft.com/en-us/global-infrastructure) we have [geography](https://azure.microsoft.com/en-us/global-infrastructure/data-residency) in which there are [regions](https://azure.microsoft.com/en-us/global-infrastructure/services/) which is a set of datacenters:
-
-- An Azure **geography** is a discrete market, typically containing at least one or more regions, that preserves data residency and compliance boundaries. Geographies allow customers with specific data-residency and compliance needs to keep their data and applications close. Geographies are fault-tolerant to withstand complete region failure through their connection to the dedicated high-capacity networking infrastructure of Azure.
-- An Azure **region** is a set of datacenters, deployed within a latency-defined perimeter and connected through a dedicated regional low-latency network. With more global regions than any other cloud provider, Azure gives customers the flexibility to deploy applications where they need. An Azure region has discrete pricing and service availability.
-- Azure **datacenters** are unique physical buildings—located all over the globe—that house a group of networked computer servers.
 
 The following command shows us all available regions: ```az account list-locations -o table```
 
@@ -334,3 +285,50 @@ Further (deprecated) Files
 
 - [geoloc-Microsoft.csv](public-ip/geoloc-Microsoft.csv)
 - [msft-public-ips.csv](public-ip/msft-public-ips.csv)
+
+## Locations Naming
+
+Aside Azure Public IPs using different terms e.g. Service Tags instead of regions and different microsoft sources listing different geografy sets and associated regions there are various names and short names:
+
+| Continent     | Country              | Name                 | Location           | Short Name | Short Name (Country First) |
+|---------------|----------------------|----------------------|--------------------|------------|----------------------------|
+| Africa        | South Africa North   | southafricanorth     | sfno               | sfno       |                            |
+| Africa        | South Africa West    | southafricawest      | sfwe               | sfwe       |                            |
+| Asia          | East Asia            | eastasia             | eaas               | asea       |                            |
+| Asia          | Southeast Asia       | southeastasia        | seas               | assoea     |                            |
+| Asia          | Japan                | Japan West           | japanwest          | jawe       | jawe                       |
+| Asia          | Japan                | Japan East           | japaneast          | jaea       | jaea                       |
+| Asia          | India                | South India          | southindia         | soin       | inso                       |
+| Asia          | India                | Central India        | centralindia       | cnin       | incn                       |
+| Asia          | India                | West India           | westindia          | wein       | inwe                       |
+| Asia          | Korea                | Korea Central        | koreacentral       | krcn       | krcn                       |
+| Asia          | Korea                | Korea South          | koreasouth         | krso       | krso                       |
+| Asia          | United Arab Emirates | UAE Central          | uaecentral         | aecn       | aecn                       |
+| Asia          | United Arab Emirates | UAE North            | uaenorth           | aeno       | aeno                       |
+| Australia     | Australia            | Australia East       | australiaeast      | auea       | auea                       |
+| Australia     | Australia            | Australia Southeast  | australiasoutheast | ause       | ause                       |
+| Australia     | Australia            | Australia Central    | australiacentral   | aucn       | aucn                       |
+| Australia     | Australia            | Australia Central 2  | australiacentral2  | aucn2      | aucn3                      |
+| Europe        | North Europe         | northeurope          | noeu               | euno       |                            |
+| Europe        | West Europe          | westeurope           | weeu               | euwe       |                            |
+| Europe        | United Kingdom       | UK South             | uksouth            | ukso       | ukso                       |
+| Europe        | United Kingdom       | UK West              | ukwest             | ukwe       | ukwe                       |
+| Europe        | France               | France Central       | francecentral      | frcn       | frcn                       |
+| Europe        | France               | France South         | francesouth        | frso       | frso                       |
+| Europe        | Swizterland          | Switzerland North    | switzerlandnorth   | chno       | chno                       |
+| Europe        | Swizterland          | Switzerland West     | switzerlandwest    | chwe       | chwe                       |
+| Europe        | Germany              | Germany North        | germanynorth       | deno       | deno                       |
+| Europe        | Germany              | Germany West Central | germanywestcentral | dewecn     | dewecn                     |
+| Europe        | Norway               | Norway West          | norwaywest         | nowe       | nowe                       |
+| Europe        | Norway               | Norway East          | norwayeast         | noea       | noea                       |
+| North America | United States        | Central US           | centralus          | cnus       | uscn                       |
+| North America | United States        | East US              | eastus             | eaus       | usea                       |
+| North America | United States        | East US 2            | eastus2            | eaus2      | usea2                      |
+| North America | United States        | West US              | westus             | weus       | uswe                       |
+| North America | United States        | North Central US     | northcentralus     | nocnus     | usnocn                     |
+| North America | United States        | South Central US     | southcentralus     | socnus     | ussocn                     |
+| North America | Central America      | Canada Central       | canadacentral      | cacn       | cacn                       |
+| North America | Central America      | Canada East          | canadaeast         | caea       | caea                       |
+| North America | United States        | West Central US      | westcentralus      | wecnus     | uswecn                     |
+| North America | United States        | West US 2            | westus2            | weus2      | uswe2                      |
+| South America | Brazil               | Brazil South         | brazilsouth        | brso       | brso                       |
