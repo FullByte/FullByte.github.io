@@ -209,3 +209,9 @@ docker pull kalilinux/kali-rolling
 docker run -d -p 9009-9013:9009-9013 -e CROC_PASS='YOURPASSWORD' schollz/croc
 croc --pass YOURPASSWORD --relay "localhost:9009" send file.txt
 ```
+
+### Standard Notes
+
+```bash
+docker run -d -p 3001:3001 --env-file=your-env-file standardnotes/web:stable
+```
