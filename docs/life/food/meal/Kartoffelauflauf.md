@@ -7,7 +7,7 @@ gemahlenem Pfeffer nach Belieben abschmecken.
 
 ## Zutaten
 
-- 750 g kartofeln
+- 750 g Kartoffeln
 - 50 g Margarine
 - 30 g Dinkelmehl
 - 750 g Gemüsebrühe
