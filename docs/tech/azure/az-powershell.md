@@ -24,6 +24,15 @@ Use device code to login:
 Connect-AzAccount -Tenant <tenantID> -UseDeviceAuthentication
 ```
 
+## Useful Information
+
+Images
+
+```ps1
+Get-AzImage -ResourceGroupName 'ResourceGroup01' -ImageName 'Image01'
+```
+
+
 ## Helpers
 
 One-liner to get any tenant ID without being logged in:

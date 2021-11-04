@@ -35,9 +35,30 @@ kubectl get pods -o wide --all-namespaces
 
 ## Azure Kubernetes Service (AKS)
 
-- Login: ```az aks get-credentials --resource-group <myResourceGroup> --name <myAKSCluster>```
-- List Nodepools: ```az aks nodepool list --cluster-name MyManagedCluster -g MyResourceGroup -o table```
-- Add Nodepool: ```az aks nodepool add -g MyResourceGroup -n nodepool1 --cluster-name MyManagedCluster --node-vm-size=Standard_XX --mode User```
+Login
+
+```az
+az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
+az acr login --name myAKSCluster
+docker login myAKSCluster.azurecr.io
+```
+
+Nodepools
+
+```az
+az aks nodepool list --cluster-name MyManagedCluster -g MyResourceGroup -o table```
+az aks nodepool add -g MyResourceGroup -n nodepool1 --cluster-name MyManagedCluster --node-vm-size=Standard_XX --mode User
+```
+
+Pods and namespaces
+
+```az
+kubectl get nodes
+kubectl describe node your-node
+kubectl get namespaces
+kubectl get pods -o wide --all-namespaces
+kubectl config set-context --current --namespace=your-namespace
+```
 
 ## Other Kubernetes Tools
 
