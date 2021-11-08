@@ -140,6 +140,7 @@ Some helpful [commands](https://docs.microsoft.com/en-us/windows/wsl/basic-comma
 - Delete Distro: ```wsl --unregister Ubuntu-18.04```
 - Set default distro: ```wsl --set-default Ubuntu-20.04```
 - Open WSL in pwsh: ```wsl --distribution Ubuntu-20.04 --user fab1```
+- Restart WSL: ```Get-Service LxssManager | Restart-Service``` or ```wsl --shutdown```
 - Change distro to version 2 ```wsl --set-version kali-linux 2```*
 
 wsl --distribution Ubuntu-20.04 --user fab1
