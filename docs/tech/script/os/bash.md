@@ -45,6 +45,24 @@ Make a new folder and cd into it
 - Usage: mkcd name1
 - Code ```mkcd(){ NAME=$1; mkdir -p "$NAME"; cd "$NAME"; }```
 
+## last 10 commands that ran in the current directory
+
+Add this function to your `.zshrc`
+
+```sh
+function zshaddhistory() {
+	echo "${1%%$'\n'}|${PWD}   " >> ~/.zsh_history_ext
+}
+```
+
+Create file e.g. `folderhistory` with the content below and add it to your `$PATH`
+
+```sh
+grep -v "folderhistory" ~/.zsh_history_ext | grep -a --color=never "${PWD}   " | cut -f1 -d"|" | tail
+```
+
+Source: <https://github.com/natethinks/jog>
+
 ## System Information
 
 Get system details

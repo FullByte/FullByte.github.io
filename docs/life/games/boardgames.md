@@ -1,28 +1,23 @@
 # Board Games
 
-## Chess
+## Host Board Game event helper
+
+TODO
+
+- How to best explain rules
+
+### Services
+
+- Set up a tournament: <https://www.toornament.com>
+- More counters: <https://scorecount.com/>
+
+## Game Helper
+
+### Chess
 
 - Chess Openings: <https://deepnote.com/@jstastny/Chess-Openings-CuVqER2CT-qv1-TjJjNHLw>
 - lichess: <https://lichess.org/analysis>
 - ECO Codes: A classification system for the chess openings moves: <https://www.365chess.com/eco.php>
-
-## Rubik's Cude
-
-Solving Helper
-
-![_RubixCube](_RubixCube.jpg)
-
-- <http://www.chessandpoker.com/rubiks-cube-solution.html>
-- <https://ruwix.com/the-rubiks-cube/different-rubiks-cube-solving-methods/>
-- <https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/>
-
-Online Cubes
-
-- <https://gregfjohnson.com/rubik.html>
-
-Buy Cubes
-
-- Go Cube <https://getgocube.com/>
 
 ## My Games
 

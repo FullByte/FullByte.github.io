@@ -18,6 +18,7 @@ More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 - plaintext accounting tool: <https://github.com/simonmichael/hledger>
 - CSV pretty printer: <https://github.com/alexhallam/tv>
 - Bits, bytes and address calculator: <https://github.com/jarun/bcal>
+- Code Editor: <https://micro-editor.github.io/>
 
 ## Collaborate
 
@@ -78,53 +79,11 @@ mplayer -vo caca big_buck_bunny_480p_stereo.ogg
 - Weather: "curl wttr.in" (<https://github.com/chubin/wttr.in>)
 - jmespath: <https://github.com/jmespath/jmespath.terminal>
 
-### certstream
+Fun Stuff
 
-```shell
-pip install certstream
-certstream
-```
-
-### nba-go
-
-```shell
-sudo npm install -g nba-go
-nba-go game -T
-```
-
-### Mapscii
-
-```shell
-npm install -g mapscii
-mapscii
-```
-
-### asciinema
-
-Install
-
-```shell
-sudo apt install asciinema
-```
-
-or
-
-```shell
-sudo apt-get install python3 pip
-sudo pip3 install asciinema
-```
-
-Record a session
-
-```shell
-asciinema rec
-echo "hello world"
-exit
-```
-
-Play existing recordings (local/online):
-
-```shell
-asciinema play /path/to/asciicast.cast
-asciinema play https://asciinema.org/a/237459
-```
+| Tool       | Install                    | Use            |
+|------------|----------------------------|----------------|
+| certstream | pip install certstream     | certstream     |
+| nba-go     | sudo npm install -g nba-go | nba-go game -T |
+| Mapscii    | npm install -g mapscii     | mapscii        |
+| asciinema  | pip install asciinema      | asciinema rec  |

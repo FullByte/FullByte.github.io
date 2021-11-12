@@ -60,6 +60,14 @@ kubectl get pods -o wide --all-namespaces
 kubectl config set-context --current --namespace=your-namespace
 ```
 
+## Clean up
+
+Delete all evicted pods:
+
+```sh
+kubectl get pod -n mynamespace | grep Evicted | awk '{print $1}' | xargs kubectl delete pod -n mynamespace
+```
+
 ## Other Kubernetes Tools
 
 - Lens (Kubernetes IDE): <https://github.com/lensapp/lens>
