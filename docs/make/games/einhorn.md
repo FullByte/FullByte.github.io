@@ -2,7 +2,7 @@
 
 | Einhorn  |  is a simple, fast paced dice rolling game in which luck is the main factor to win the game. |
 |------------------------------------------------------|--|
-| ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an `Einhorn` and receive the unicorn figure to take stones from your opponents. Once a player looses all stones the current game ends. All other players keep their stones. Bet on the unicorn figure for an advantage in the next game. Be better at predicting your roll outcome than the other players. After ten games, the player with the most stones wins.|
+| ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an `Einhorn` and receive the unicorn figure to take stones from your opponents. Once a player loses all stones the current game ends. All other players keep their stones. Bet on the unicorn figure for an advantage in the next game. Be better at predicting your roll outcome than the other players. After ten games, the player with the most stones wins. Enjoy the drama of the unexpected integer, master predicting randomness and dominate your oponents in the only game that matters.|
 
 This is how a self-made version of the game looks like:
 
@@ -22,11 +22,11 @@ Below is an overview of main steps in the game:
 
 **Setup the game**
 
-- Put 25 stones per participating player in a bowl; also refereed to as "central stash"
+- Put 25 stones per participating player in a bowl; also referred to as "central stash"
 - Place the dice tray centrally.
 - Place the game counter dice (D10) in the center and set it to 1.
 - Place the unicorn figure centrally between dice tray and central stash.
-- Each player receives 3x six sided dice (D6), a card with the roll result overview and 6 stones from the central stash.
+- Each player receives 3x six-sided dice (D6), a card with the roll result overview and 6 stones from the central stash.
 
 **Agree on the win condition**
 
@@ -54,7 +54,7 @@ The table explains the differences between the central stone stash, the game sto
 
 ## Play
 
-This section explains the actions in a players turn and how one game is played. One game may be as fast as 1min but can also take 10min depending on how fast one player looses all stones. Play 10 games for a standard match.
+This section explains the actions in a players turn and how one game is played. One game may be as fast as 1min but can also take 10min depending on how fast one player loses all stones. Play 10 games for a standard match.
 
 ### Predict outcome or remain silent
 
@@ -79,7 +79,7 @@ Based on the players roll attempt and the prediction made, **there is one possib
 
 1. Check your roll result and go to that line
 2. Then, in that line check what applies to your prediction (correct, wrong, no prediction)
-3. Now add or remove stones based on what applies to your roll outcome & prediciton.
+3. Now add or remove stones based on what applies to your roll outcome & prediction.
 
 It doesn't matter what prediction was made specifically. What matters, is if the prediction was correct, wrong or if no prediction was made. In other words: The stones added or removed are determined by the result rolled, not by what was predicted. E.g., if a `Wunsch` is rolled, it doesn't matter if `Das Unvermeidliche`, `Einhorn` or `Dreifaltigkeit` were predicted, all three are wrong and the player must return 2 stones to the central stash.
 
@@ -112,7 +112,7 @@ If you roll `Dreifaltigkeit` [you will always receive stones](#take-or-give-ston
 
 Once a player has no stones left, the game ends. In case a player needs to pay more stones than they have, only the available game stones are given.
 
-Example: `Einhorn` was rolled and predicted wrong and the player has 3 stones left, only those 3 stones return to the central stash.
+Example: `Einhorn` was rolled and predicted wrong, and the player has 3 stones left, only those 3 stones return to the central stash.
 
 If this was the last game or if all stones from the central stash are gone, proceed to [determine the winner](#determine-the-winner), else proceed with the steps to [prepare the next game](#prepare-next-game).
 
@@ -122,21 +122,21 @@ To prepare for the next game, follow these steps:
 
 - All players take their current stones and add them to their stash.
 - The unicorn figure is returned to the center of the dice tray.
-- The game counter is updated and layed next to the unicorn figure.
+- The game counter is updated and laid next to the unicorn figure.
 - All players [bid on the unicorn](#bid-on-the-unicorn).
 - All stones used for bidding are returned to the central stash.
 - Everyone [receives 6 stones](#receive-6-game-stones) from the central stash as their game stones for the next game.
-- Every players may add more stones from their stash to the game stones for the next game.
-- A [new game](#play) begins and the owner of the unicorn figure starts.
+- Every player may add more stones from their stash to the game stones for the next game.
+- A [new game](#play) begins, and the owner of the unicorn figure starts.
 
 ### Bid on the unicorn
 
 All players can now bet on the unicorn figure with their stones available from their own stash. Bidding on the unicorn works as follows:
 
 - Place the unicorn figure in the middle of the dice tray.
-- All players bet with their personal stone stash (if available) to receive the unicorn figure in the next game. You may bid zero stones if you want but you have to bid! E.g. if you have no stones in your stash you must close your hand and hold it over the table until all are ready.
+- All players bet with their personal stone stash (if available) to receive the unicorn figure in the next game. You may bid zero stones if you want but you must bid! E.g., if you have no stones in your stash you must close your hand and hold it over the table until all are ready.
 - Secretly place stones in your hand to be on the unicorn figure. Don't show how much you are bidding until all reveal their bet by opening their hands at the same time.
-- All players put their stones used for the bid in the central stash. This means, if you do not win the unicorn figure you still loose the stones you used for your bet!
+- All players put their stones used for the bid in the central stash. This means, if you do not win the unicorn figure you still lose the stones you used for your bet!
 - The unicorn figure goes to the highest bidder. In case there is a tie, all highest bidders roll their 3 dice and the player with the highest total sum receives the unicorn figure. E.g., if all bid zero stones, all must roll their dice. In case there is another tie, the remaining players now tied re-roll the dice until a winner can be determined.
 
 ### Receive 6 game stones
@@ -144,7 +144,7 @@ All players can now bet on the unicorn figure with their stones available from t
 - All players receive 6 stones from the central stash.
 - Players with a personal stone stash may choose to add stones to their game stones at this time only.
 
-Please note: You can only loose your game stones. If you add stones from your stone stash to your current game stones you can loose them but have a higher chance of not loosing the game.
+Please note: You can only lose your game stones. If you add stones from your stone stash to your current game stones, you can lose them but have a higher chance of not losing the game.
 
 ## Determine the winner
 
