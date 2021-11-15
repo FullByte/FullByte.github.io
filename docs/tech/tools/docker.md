@@ -215,3 +215,18 @@ croc --pass YOURPASSWORD --relay "localhost:9009" send file.txt
 ```bash
 docker run -d -p 3001:3001 --env-file=your-env-file standardnotes/web:stable
 ```
+
+### Windows 2000
+
+A Docker image for Windows 2000 Advanced Server with SP4. ([docker](https://hub.docker.com/r/hectormolinero/qemu-win2000) [github](https://github.com/hectorm/docker-qemu-win2000))
+
+```bash
+docker run --detach --name qemu-win2000 --device /dev/kvm --publish 127.0.0.1:3389:3389/tcp --publish 127.0.0.1:5900:5900/tcp --publish 127.0.0.1:6080:6080/tcp docker.io/hectormolinero/qemu-win2000:latest
+```
+
+The instance can be accessed from:
+
+- RDP (3389/TCP): any RDP client, login with Administrator / password.
+- VNC (5900/TCP): any VNC client, without credentials.
+- noVNC (6080/TCP): <http://127.0.0.1:6080/vnc.html>
+- Shell: docker exec -it qemu-win2000 vmshell

@@ -1,4 +1,4 @@
-# CLI Tools
+# CLI/TUI Tools
 
 More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 
@@ -7,6 +7,7 @@ More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 - w3m Browser: <http://w3m.sourceforge.net/>
 - Googler: <https://github.com/jarun/googler>
 - DuckDuckGo: <https://github.com/jarun/ddgr> (Browser: <https://duckduckgo.com/tty/>)
+- Twitter: [rainbowstream](https://github.com/orakaro/rainbowstream) `sudo apt -y install python3-pip && sudo pip3 install rainbowstream`
 
 ## Office
 
@@ -35,16 +36,32 @@ Music
 
 - Beets: <https://github.com/beetbox/beets> `pip install beets`
 - Musikcube (Spotify): <https://github.com/clangen/musikcube>
-- Spotify: <https://github.com/Rigellute/spotify-tui>
+- Spotify: [spotify-tui](https://github.com/Rigellute/spotify-tui) or [ncspot](https://github.com/hrkfdn/ncspot)
 - Pictures: <https://github.com/posva/catimg>
 - Wikipedia: <https://github.com/yashsinghcodes/fetch>
 
+Example running ncspot:
+
+![ncspot](_ncspot.png)
+
 Watch Movies in ASCII
 
-```shell
+```sh
 sudo apt-get install mplayer
 wget https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.ogg
 mplayer -vo caca big_buck_bunny_480p_stereo.ogg
+```
+
+Using [mpv](https://mpv.io/) with [libcaca](http://caca.zoy.org/wiki/libcaca)
+
+```sh
+mpv --quiet -vo=caca 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
+```
+
+Using [mpv](https://mpv.io/) with tct:
+
+```sh
+mpv --quiet -vo=tct 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 ```
 
 ## File Transfer

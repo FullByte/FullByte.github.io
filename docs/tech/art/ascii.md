@@ -766,6 +766,12 @@ python3 art-random-example.py | lolcat
 
 ## Telnet
 
+### mapscii
+
+- Link: [mapscii.me](https://github.com/rastapasta/mapscii)
+- Use: ```telnet mapscii.me```
+- Download: https://github.com/rastapasta/mapscii/releases
+
 ### Star Wars
 
 - Link: http://www.asciimation.co.nz/ (Service no longer available)
