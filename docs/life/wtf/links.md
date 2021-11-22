@@ -56,7 +56,8 @@ A list of the most entertaining Urban Dictionary pages
 - Nestflix: <https://nestflix.fun/>
 - LinkedIn Pro: <https://www.shlinkedin.com>
 - It's play time: <https://neal.fun/>
-- http://godxiliary.com
+- <http://godxiliary.com>
+- <https://bongo.cat/>
 
 ## Share Links
 
@@ -72,9 +73,10 @@ A list of the most entertaining Urban Dictionary pages
 - Endless Zoom: <https://zoomquilt.org/>
 - People in Space: <https://www.howmanypeopleareinspacerightnow.com/>
 - Pointer Pointer: <https://pointerpointer.com/>
-- https://dreamcult.xyz/
-- http://sod.jodi.org/index.html
-- https://www.floppyswop.co.uk
+- <https://dreamcult.xyz/>
+- <http://sod.jodi.org/index.html>
+- <https://www.floppyswop.co.uk>
+- <http://www.hasthelargehadroncolliderdestroyedtheworldyet.com/>
 
 ## Art
 

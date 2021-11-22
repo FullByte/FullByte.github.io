@@ -29,15 +29,23 @@ Documenting and publishing my projects and notes has been great exercise for me.
 
 Visit:
 
-- <https://0xfab1.net> for online view (HTTPS with Let's Encrypt, supports IPv4 and IPv6)
-- <https://fullbyte.github.io> in case I messed up something with my DNS
-- <https://ipfs.0xfab1.net/> for access using IPFS
+- <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org/doc/html/rfc2818) with [Let's Encrypt](https://letsencrypt.org/), supports [IPv4](https://datatracker.ietf.org/doc/html/rfc3344) and [IPv6](https://datatracker.ietf.org/doc/html/rfc8200))
+- <https://fullbyte.github.io> in case I (or [my DNS provider](https://www.gandi.net)) messed something up
+- <https://ipfs.0xfab1.net/> for access using [IPFS](https://ipfs.io/)
+- <https://netlify.0xfab1.net> or <https://0xfab1.netlify.app/> for the [netlify](https://app.netlify.com) hosted version
+- <https://azure.0xfab1.net> or <https://black-flower-0adbf0903.azurestaticapps.net> for the azure hosted version
 
 This static website is built using [MkDocs](https://github.com/mkdocs/mkdocs/), [Material](https://github.com/squidfunk/mkdocs-material), [GitHub Pages](https://pages.github.com/) and [GitHub Actions](https://github.com/features/actions).
 
 ## Build
 
+Run the following code to install and update the required tools using python and build as well as serve the website (build is optional).
+
+```sh
 pip install --upgrade pip
 pip install mkdocs mkdocs-material mkdocs-minify-plugin
 mkdocs build
 mkdocs serve
+```
+
+Navigate to the link provided in the output of your CLI e.g. <http://127.0.0.1:8000/>

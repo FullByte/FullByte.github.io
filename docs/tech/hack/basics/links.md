@@ -45,6 +45,27 @@ Other
 - hacker-laws: <https://github.com/dwmkerr/hacker-laws>
 - 0xsp <http://0xsp.com/>
 
+### Vulnerability Lists
+
+Routers
+
+- <https://modemly.com/m1/pulse>
+- <http://routerpwn.com/>
+
+Software
+
+- <https://cve.mitre.org/cve/search_cve_list.html>
+- <https://www.cvedetails.com/>
+
+General Information
+
+- <https://nvd.nist.gov/vuln/full-listing>
+- <https://owasp.org/www-project-top-ten/>
+
+### Public Shaming
+
+- <https://github.com/duffn/dumb-password-rules>
+
 ### Payloads
 
 Various

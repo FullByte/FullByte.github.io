@@ -46,8 +46,11 @@
 
 ## Documentation
 
-- Static Website Generators <https://jamstack.org/generators/>
-- Honkit <https://github.com/honkit/honkit>
+There are many [Static Website Generators](https://jamstack.org/generators/) which work great for documentation.
+
+- [Honkit](https://github.com/honkit/honkit)
+- [Docusaurus](https://docusaurus.io/)
+- [MkDocs](https://www.mkdocs.org/)
 
 ## Services
 
@@ -79,3 +82,7 @@
 - Heroku <https://www.heroku.com/>
 - G-Core Labs <https://gcorelabs.com/>
 - Balena <https://www.balena.io/>
+
+## Unsorted
+
+- <https://github.com/PostHog/posthog>

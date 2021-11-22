@@ -95,6 +95,7 @@ mpv --quiet -vo=tct 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
 
 - Weather: "curl wttr.in" (<https://github.com/chubin/wttr.in>)
 - jmespath: <https://github.com/jmespath/jmespath.terminal>
+- Text-based desktop environment: <https://github.com/netxs-group/vtm>
 
 Fun Stuff
 
