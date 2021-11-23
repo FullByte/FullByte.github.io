@@ -2,6 +2,8 @@
 
 This is a list of interesting operating systems
 
+[![xkcd](https://imgs.xkcd.com/comics/mac_pc.png)](https://xkcd.com)
+
 ## Using this
 
 |OS|Comment|
@@ -27,3 +29,4 @@ This is a list of interesting operating systems
 |[Red Star OS](https://archiveos.org/redstar/)|a North Korean Linux based operating system, developed at the Korea Computer Center (KCC)|
 |[qubes-os](https://www.qubes-os.org/)|Qubes OS is a free and open-source, security-oriented operating system for single-user desktop computing.|
 |[GrapheneOS](https://grapheneos.org/)|GrapheneOS is a privacy and security focused mobile OS with Android app compatibility developed as a non-profit open source project.|
+|[dietpi](https://dietpi.com/)|DietPi is a highly optimised & minimal Debian-based Linux distribution.|

@@ -18,7 +18,7 @@ Winterberg
 
 - <https://www.bikepark-winterberg.de/>
 
-Braunlage
+Braunlage (near [Elend and Sorge](_elend-sorge.jpg))
 
 - <https://www.wurmberg-seilbahn.de/bikepark-sommer.html>
 - <https://www.bikepark-braunlage.de/>

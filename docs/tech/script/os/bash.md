@@ -31,7 +31,7 @@ arp -a | findstr b8-27-eb
 
 From linux
 
-```shell
+```sh
 arp-scan --localnet --interface=eth0 | grep b8:27:eb
 arp-scan --localnet --interface=wlan0 | grep b8:27:eb
 ```
@@ -143,16 +143,59 @@ More...
 
 To make a default Vim installation more useful, type the following 5 lines into its .vimrc file:
 
-```shell
+```sh
 set hls ic is nu noswf
 ```
 
 ## Screen
 
-```shell
+```sh
 screen # attach
 strg+a --> "d" # detach
 screen -r # re-attach
+```
+
+## tmux
+
+create a new tmux session
+
+```sh
+tmux
+```
+
+or create a new session with a name e.g. "SessionName"
+
+```sh
+tmux new-session -sSessionName
+```
+
+Use these commands to navigate between windows:
+
+- Control + B + N next session
+- Control + B + C new session
+
+Join a tmux session (e.g. from a different device or user)
+
+```sh
+tmux attach
+```
+
+or be specific:
+
+```sh
+tmux attach-sesssion -t SessionName
+```
+
+Kill first window (0):
+
+```sh
+tmux kill-window -t 0
+```
+
+Kill a session:
+
+```sh
+tmux kill-session
 ```
 
 ## String Manipulation

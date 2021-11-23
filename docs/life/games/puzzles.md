@@ -1,5 +1,7 @@
 # Puzzles
 
+[![su_doku.jpg](https://imgs.xkcd.com/comics/su_doku.jpg)](https://xkcd.com/)
+
 ## Rubik's Cude
 
 Solving Helper

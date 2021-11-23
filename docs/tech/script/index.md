@@ -144,3 +144,10 @@ Youtube
 - Graphtoy <https://graphtoy.com/>
 - Shadertoy <https://www.shadertoy.com/>
 - Logo (programming language) visualizer: <https://logomor.com/>
+
+## Esoteric Programming Languages
+
+- [rost](https://github.com/michidk/rost) is german rust (or [french](https://github.com/bnjbvr/rouille) or [dutch](https://github.com/jeroenhd/roest) if you don't like german)
+- [piet](https://www.dangermouse.net/esoteric/piet.html) since programming is an art form
+- [brainfuck](https://www.tutorialspoint.com/execute_brainfk_online.php) is almost a standard by now
+- [emojicode](https://www.emojicode.org/) for the script kids

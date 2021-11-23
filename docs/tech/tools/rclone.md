@@ -2,6 +2,15 @@
 
 rclone is a great tool to backup, copy, sync files to the cloud encrypted and without the client installed on the local machine.
 
+## Info
+
+|What|Where|
+|-|-|
+|Official Page||
+|Source||
+|Download||
+|Install||
+
 ## Restore rclone.conf
 
 Run this command to find out where your `rclone.conf` file is.

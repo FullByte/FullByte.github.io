@@ -2,6 +2,10 @@
 
 More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 
+## System
+
+- System resource monitor: <https://github.com/aristocratos/btop>
+
 ## Internet
 
 - w3m Browser: <http://w3m.sourceforge.net/>

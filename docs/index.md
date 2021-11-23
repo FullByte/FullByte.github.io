@@ -13,13 +13,13 @@ Y88b  d88P .d8""8b. 888   d8888888888 888   d88P  888
  "Y8888P"  888  888 888  d88P     888 8888888P" 8888888 
 ```
 
-Publishing my stuff in a wiki format has been great exercise and helps me stay organized.
+Publishing my stuff in a documentation/book format has been great exercise and helps me stay organized.
 As long as this works well for me I will continue doing so.
 
 The content may appear random as it is basically everything I find interesting and noteworthy. ```¯\_(ツ)_/¯```
 Use the navigation on the left to find the topics of interest or try the search bar with a keyword.
 
-The content of this site is mainly written in english aside of some very few german posts. I hope you appreciate the lack of adds and pop-ups. Enjoy the content and find your visit worthwhile :)
+The content of this site is mainly written in english aside of some very few german posts. I hope you appreciate the lack of adds and pop-ups as well as a reference to the most suitable [xkcd](https://xkcd.com/) or [meme](https://knowyourmeme.com/) per topic, if available. Enjoy the content and find your visit worthwhile :)
 
 Regards,
 0xfab1

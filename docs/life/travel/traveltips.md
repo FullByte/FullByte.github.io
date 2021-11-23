@@ -1,6 +1,8 @@
 
 # Travel Tips
 
+[![bored_with_the_internet](https://imgs.xkcd.com/comics/bored_with_the_internet.jpg)](https://xkcd.com)
+
 - Flag Information: <https://flagid.org/>
 
 ## Backpacking

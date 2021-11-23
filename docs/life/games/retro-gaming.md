@@ -1,5 +1,7 @@
 # Retro
 
+[![xkcd](https://imgs.xkcd.com/comics/penny_arcade.jpg)](https://xkcd.com/)
+
 ## Fantasy Consoles
 
 ### Pico
