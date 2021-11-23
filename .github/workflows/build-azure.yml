@@ -5,6 +5,7 @@ on:
     branches:
       - gh-pages
   pull_request:
+    types: [assigned, opened, synchronize, reopened, edited]
     branches:
       - gh-pages
 
