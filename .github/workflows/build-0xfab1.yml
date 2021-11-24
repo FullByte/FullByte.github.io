@@ -33,17 +33,6 @@ jobs:
           mkdocs build
           mkdocs gh-deploy
 
-      # scan URLs
-      #- name: Check URLs
-      #  uses: urlstechie/urlchecker-action@master
-      #  with:
-      #    subfolder: docs
-      #    file_types: .md
-      #    print_all: false
-      #    timeout: 4
-      #    retry_count: 1
-      #    force_pass : true
-
   build_and_deploy_job:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest

@@ -1,0 +1,32 @@
+name: Check Markdown links
+
+on: 
+  push:
+    branches:
+    - master
+  schedule:
+  # Run everyday Sunday
+  - cron: "0 0 * * 0"
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      with:
+        use-quiet-mode: 'yes'
+        use-verbose-mode: 'yes'
+        config-file: 'mlc_config.json'
+        folder-path: 'docs/markdown_files'
+        
+  # scan URLs
+  #- name: Check URLs
+  #  uses: urlstechie/urlchecker-action@master
+  #  with:
+  #    subfolder: docs
+  #    file_types: .md
+  #    print_all: false
+  #    timeout: 4
+  #    retry_count: 1
+  #    force_pass : true
