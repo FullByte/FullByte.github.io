@@ -1,11 +1,11 @@
-# IRC
+## IRC
 
-## IRC clients
+### IRC clients
 
 - mIRC (GUI) <https://www.mirc.com/>
 - weechat (CLI): sudo apt-get install weechat
 
-## Server/Channel
+### Server/Channel
 
 - [freenode#crypto](irc://irc.freenode.net:+7000/#crypto "irc://irc.freenode.net:+7000/##crypto")
 - [darkscience-us2](irc://irc-eu-2.darkscience.net/#darkscience "irc://irc-eu-2.darkscience.net/darkscience")
@@ -22,7 +22,7 @@
 - [theonering](irc://irc.theonering.net:+6697 "irc://irc.theonering.net:+6697")
 - [efnet](irc://ssl.efnet.org:+9999 "irc://ssl.efnet.org:+9999")
 
-## Register a Channel
+### Register a Channel
 
 In this example we use weechat to register a channel on server libra.chat
 
@@ -74,7 +74,7 @@ You can now make the channel private, secret, add a password etc:
 To join the channel, now run this command: `/JOIN #my-new-channel channel-password`
 Get details on the channel owner: `/msg ChanServ info #my-new-channel`
 
-## Use matrix.org as IRC client
+### Use matrix.org as IRC client
 
 Join the room `#freenode_#channel:matrix.org` on matrix.org.
 

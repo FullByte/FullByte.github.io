@@ -1,6 +1,8 @@
-# Sysinternals
+# Admin
 
-## Info
+## Sysinternals
+
+Info
 
 |What|Where|
 |-|-|
@@ -8,7 +10,7 @@
 |Download|<https://docs.microsoft.com/sysinternals/>|
 |Install|<https://www.microsoft.com/en-us/p/sysinternals-suite/9p7knl5rwt25#activetab=pivot:overviewtab>|
 
-## PsExec
+### PsExec
 
 Add User to log on remotely:
 LocalUser = evtl. ein service account z.B. für updates/monitoring/…
@@ -20,7 +22,7 @@ PsExec.exe \\Server -u "Server\\LocalUser" -p "LocalUserPW" net localgroup "Admi
 PsExec.exe \\Server -u "Server\\LocalUser" -p "LocalUserPW" net localgroup "Remote Desktop Users" testuser /add
 ```
 
-## Sysinternals live
+### Sysinternals live
 
 Run sysinternals tools from the explorer
 

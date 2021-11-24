@@ -30,3 +30,18 @@ If you can't or don't want to use platform alternatives you can at least use dif
 | World News | [NPR](https://text.npr.org/), [Google News](http://68k.news/), [CNN](https://lite.cnn.com/en),  [CBC](https://www.cbc.ca/lite/trending-news), [The Guadian](https://guardian.gyford.com/), [New York Times](https://www.nytimes.com/timeswire) |
 | Tech News | [skimfeed](https://skimfeed.com/), [Hacker News](https://hackerweb.app/) |
 | Search | [SearXNG](https://github.com/searxng/searxng) [instances](https://searx.space/), [startpage](https://www.startpage.com), [DuckDuckGo](https://duckduckgo.com/), [millionshort](https://millionshort.com/) |
+
+## Android Apps
+
+### Open board
+
+100% FOSS keyboard, based on AOSP
+
+- Github: <https://github.com/dslul/openboard>
+- f-droid: <https://f-droid.org/packages/org.dslul.openboard.inputmethod.latin/>
+
+### Gadgetbridge
+
+- homepage: https://gadgetbridge.org/
+- f-droid: https://f-droid.org/packages/nodomain.freeyourgadget.gadgetbridge/
+- Source: https://codeberg.org/Freeyourgadget/Gadgetbridge/

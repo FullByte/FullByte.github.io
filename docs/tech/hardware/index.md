@@ -11,3 +11,8 @@
 ## Circuit Boards
 
 - <https://siliconpr0n.org/>
+
+## Graphics
+
+- vulkan <https://vulkan.gpuinfo.org/listdevices.php>
+- opengl <https://opengl.gpuinfo.org/>

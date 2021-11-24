@@ -1,8 +1,10 @@
-# Docker
+# Containers
+
+## Docker
 
 More: <https://github.com/hexops/dockerfile>
 
-## Info
+### Info
 
 |What|Where|
 |-|-|
@@ -11,11 +13,11 @@ More: <https://github.com/hexops/dockerfile>
 |Download|<https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe>|
 |Install|```choco install docker-desktop```|
 
-## Cool things to run with docker
+### Cool things to run with docker
 
 A list of docker containers
 
-### Powershell in Docker
+#### Powershell in Docker
 
 Run the container
 
@@ -29,12 +31,12 @@ Trigger script in Powershell in Docker
 docker run -it -v C:\Users\username\src:/src mcr.microsoft.com/azure-powershell:3.6.1-ubuntu-18.04 pwsh -file /src/script.ps1
 ```
 
-### Tutorials
+#### Tutorials
 
 - Many Images: <https://hub.docker.com/u/linuxserver/>
 - how-to-clean-text-data-at-the-command-line <https://www.ezzeddinabdullah.com/posts/how-to-clean-text-data-at-the-command-line>
 
-### webtop
+#### webtop
 
 Sources:
 
@@ -51,7 +53,7 @@ If you lose your password you can reset it by execing into the container as root
 docker exec -it webtop passwd abc
 ```
 
-### I2P
+#### I2P
 
 Sources:
 
@@ -62,7 +64,7 @@ Sources:
 docker pull meeh/i2p.i2p
 ```
 
-### Drawio
+#### Drawio
 
 Sources:
 
@@ -72,7 +74,7 @@ Sources:
 docker run -it --rm --name="draw" -p 8080:8080 -p 8443:8443 fjudith/draw.io
 ```
 
-### NoteCalc
+#### NoteCalc
 
 Sources:
 
@@ -85,7 +87,7 @@ docker build . --tag notecalc3
 docker run --rm -d -p 5000:5000 notecalc3
 ```
 
-### Archive Box
+#### Archive Box
 
 Sources:
 
@@ -100,7 +102,7 @@ docker run -v $PWD:/data -it archivebox/archivebox manage createsuperuser
 docker run -v $PWD:/data -p 8000:8000 archivebox/archivebox server 0.0.0.0:8000
 ```
 
-### Wireguard
+#### Wireguard
 
 Sources:
 
@@ -110,7 +112,7 @@ Sources:
 docker pull ghcr.io/linuxserver/wireguard
 ```
 
-### IPFS
+#### IPFS
 
 Sources:
 
@@ -124,7 +126,7 @@ docker exec ipfs_host ipfs swarm peers
 docker logs -f ipfs_host
 ```
 
-### Matrix Synapse
+#### Matrix Synapse
 
 Sources:
 
@@ -135,7 +137,7 @@ docker pull matrixdotorg/synapse
 docker run -it --rm --mount type=volume,src=synapse-data,dst=/data -e SYNAPSE_SERVER_NAME=my.matrix.host -e SYNAPSE_REPORT_STATS=yes matrixdotorg/synapse:latest generate
 ```
 
-### Jellyfin
+#### Jellyfin
 
 Sources:
 
@@ -148,7 +150,7 @@ mkdir -p /srv/jellyfin/{config,cache}
 docker run -d -v /srv/jellyfin/config:/config -v /srv/jellyfin/cache:/cache -v /media:/media --net=host jellyfin/jellyfin:latest
 ```
 
-### Nextcloud
+#### Nextcloud
 
 Sources:
 
@@ -159,7 +161,7 @@ Sources:
 docker run -d -p 8080:80 nextcloud
 ```
 
-### Collabora Online
+#### Collabora Online
 
 Sources:
 
@@ -172,51 +174,51 @@ Sources:
 docker run -d -p 8080:80 nextcloud
 ```
 
-### Burpsuite
+#### Burpsuite
 
 ```bash
 docker run -d --name burpsuite -e DISPLAY -v ${HOME}:/home/burpsuite -v /tmp/.X11-unix/:/tmp/.X11-unix/ --p 8080:8080 alexandreoda/burpsuite
 ```
 
-### mitmproxy
+#### mitmproxy
 
 ```bash
 docker run --rm -it -p 8080:8080 mitmproxy/mitmproxy
 ```
 
-### pytorch
+#### pytorch
 
 ```bash
 docker run --gpus all --rm -ti --ipc=host pytorch/pytorch:latest
 ```
 
-### Archivebox
+#### Archivebox
 
 ```bash
 docker run -v ${PWD}/data -it archivebox/archivebox init --setup
 docker run -v ${PWD}/data -p 8000:8000 archivebox/archivebox
 ```
 
-### Kali
+#### Kali
 
 ```bash
 docker pull kalilinux/kali-rolling
 ```
 
-### Croc
+#### Croc
 
 ```bash
 docker run -d -p 9009-9013:9009-9013 -e CROC_PASS='YOURPASSWORD' schollz/croc
 croc --pass YOURPASSWORD --relay "localhost:9009" send file.txt
 ```
 
-### Standard Notes
+#### Standard Notes
 
 ```bash
 docker run -d -p 3001:3001 --env-file=your-env-file standardnotes/web:stable
 ```
 
-### Windows 2000
+#### Windows 2000
 
 A Docker image for Windows 2000 Advanced Server with SP4. ([docker](https://hub.docker.com/r/hectormolinero/qemu-win2000) [github](https://github.com/hectorm/docker-qemu-win2000))
 
@@ -230,3 +232,78 @@ The instance can be accessed from:
 - VNC (5900/TCP): any VNC client, without credentials.
 - noVNC (6080/TCP): <http://127.0.0.1:6080/vnc.html>
 - Shell: docker exec -it qemu-win2000 vmshell
+
+## Kubectl
+
+### Info
+
+|What|Where|
+|-|-|
+|Official Page||
+|Source||
+|Download||
+|Install||
+
+kubectl controls the Kubernetes cluster manager
+
+- Docs: <https://kubernetes.io/docs/reference/kubectl/kubectl/>
+- Cheatsheet: <https://kubernetes.io/docs/reference/kubectl/cheatsheet/>
+- AKS: <https://docs.microsoft.com/en-us/azure/aks/>
+- AKS Concepts: <https://docs.microsoft.com/en-us/azure/aks/concepts-clusters-workloads>
+
+### Basics
+
+Some basics to get information:
+
+```shell
+kubectl get nodes
+kubectl describe node <your-node>
+kubectl get namespaces
+kubectl get pods -o wide --all-namespaces
+```
+
+- Set contect to namespace: ```kubectl config set-context --current --namespace=<your-namespace>```
+- Dump pod logs, with label name=myLabel (stdout): ```kubectl logs -l name=myLabel -c my-container```
+- Restart Rollout (and pull container image if imagePullPolicy: Always): ```kubectl rollout restart deployment/frontend```
+- Auto scale a deployment "foo": ```kubectl autoscale deployment foo --cpu-percent=20 --min=1 --max=10```
+- Delete Nodepool: ```az aks nodepool delete -n OldNodePool --cluster-name MyManagedCluster -g MyResourceGroup```
+
+### Azure Kubernetes Service (AKS)
+
+Login
+
+```az
+az aks get-credentials --resource-group myResourceGroup --name myAKSCluster
+az acr login --name myAKSCluster
+docker login myAKSCluster.azurecr.io
+```
+
+Nodepools
+
+```az
+az aks nodepool list --cluster-name MyManagedCluster -g MyResourceGroup -o table```
+az aks nodepool add -g MyResourceGroup -n nodepool1 --cluster-name MyManagedCluster --node-vm-size=Standard_XX --mode User
+```
+
+Pods and namespaces
+
+```az
+kubectl get nodes
+kubectl describe node your-node
+kubectl get namespaces
+kubectl get pods -o wide --all-namespaces
+kubectl config set-context --current --namespace=your-namespace
+```
+
+### Clean up
+
+Delete all evicted pods:
+
+```sh
+kubectl get pod -n mynamespace | grep Evicted | awk '{print $1}' | xargs kubectl delete pod -n mynamespace
+```
+
+### Other Kubernetes Tools
+
+- Lens (Kubernetes IDE): <https://github.com/lensapp/lens>
+- <https://learnk8s.io/troubleshooting-deployments>
