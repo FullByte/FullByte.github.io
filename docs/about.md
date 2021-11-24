@@ -5,17 +5,8 @@ Thanks for your interest!
 
 Query a DNS for TXT records of [0xfab1.net](https://0xfab1.net) to get some contact details:
 
-Linux
-
-```bash
-curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'  | jq -r .Answer[].data
-```
-
-Windows
-
-```powershell
-(Resolve-DnsName 0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | Format-Table
-```
+- Linux: ```curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'  | jq -r .Answer[].data```
+- Windows ```(Resolve-DnsName 0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | Format-Table```
 
 and you will receive this result:
 

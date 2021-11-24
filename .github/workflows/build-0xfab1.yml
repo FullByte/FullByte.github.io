@@ -30,6 +30,7 @@ jobs:
       - name: Deploy 0xfab1.net
         run: |
           git pull
+          mkdocs build
           mkdocs gh-deploy
 
       # scan URLs
