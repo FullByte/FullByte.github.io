@@ -2,8 +2,6 @@
 
 ## VScode
 
-### Info
-
 | What          | Where                                  |
 |---------------|----------------------------------------|
 | Official Page | <https://code.visualstudio.com/>       |

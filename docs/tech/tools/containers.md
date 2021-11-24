@@ -235,8 +235,6 @@ The instance can be accessed from:
 
 ## Kubectl
 
-### Info
-
 |What|Where|
 |-|-|
 |Official Page||
@@ -307,3 +305,8 @@ kubectl get pod -n mynamespace | grep Evicted | awk '{print $1}' | xargs kubectl
 
 - Lens (Kubernetes IDE): <https://github.com/lensapp/lens>
 - <https://learnk8s.io/troubleshooting-deployments>
+
+## More tools
+
+- <https://github.com/portainer/portainer>
+- <https://github.com/opsgenie/kubernetes-event-exporter>

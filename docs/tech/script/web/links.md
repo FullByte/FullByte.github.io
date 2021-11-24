@@ -86,3 +86,4 @@ There are many [Static Website Generators](https://jamstack.org/generators/) whi
 ## Unsorted
 
 - <https://github.com/PostHog/posthog>
+- <https://github.com/ssleptsov/ninja-keys>

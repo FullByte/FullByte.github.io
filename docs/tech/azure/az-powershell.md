@@ -1,7 +1,5 @@
 # Azure Powershell
 
-## Info
-
 |What|Where|
 |-|-|
 |Official Page||

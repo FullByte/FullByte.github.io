@@ -50,3 +50,16 @@
 - Wiki: <https://tonejs.github.io/>
 - Code: <https://github.com/Tonejs/Tone.js>
 - Instruments: <https://github.com/nbrosowsky/tonejs-instruments>
+
+### VSTs
+
+Synths
+
+- [surge](ttps://surge-synthesizer.github.io/index.html)
+- [helm](https://github.com/mtytel/helm)
+- [dexed](https://github.com/asb2m10/dexed)
+- [vital](https://vital.audio/)
+
+## Drivers
+
+- native-instruments: <https://www.native-instruments.com/en/support/downloads/drivers-other-files/>

@@ -1,13 +1,11 @@
 # Azure Cloud Shell
 
-## Info
-
-|What|Where|
-|-|-|
-|Official Page|<https://azure.microsoft.com/en-us/features/cloud-shell/>|
-|Docs|<https://docs.microsoft.com/en-us/azure/cloud-shell/overview>|
-|Online|<https://shell.azure.com/> </br> <https://portal.azure.com/#cloudshell/>|
-|Cloud Shell Tools|<https://docs.microsoft.com/en-us/azure/cloud-shell/features> </br> <https://build5nines.com/azure-cloud-shell-tips-and-tricks/>|
+| What              | Where                                                                                                                            |
+|-------------------|----------------------------------------------------------------------------------------------------------------------------------|
+| Official Page     | <https://azure.microsoft.com/en-us/features/cloud-shell/>                                                                        |
+| Docs              | <https://docs.microsoft.com/en-us/azure/cloud-shell/overview>                                                                    |
+| Online            | <https://shell.azure.com/> </br> <https://portal.azure.com/#cloudshell/>                                                         |
+| Cloud Shell Tools | <https://docs.microsoft.com/en-us/azure/cloud-shell/features> </br> <https://build5nines.com/azure-cloud-shell-tips-and-tricks/> |
 
 Further Links
 

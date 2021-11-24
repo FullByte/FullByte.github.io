@@ -201,6 +201,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://0xfab1.net/life/games/lan-party/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://0xfab1.net/life/games/party-games/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
@@ -252,6 +257,11 @@
     </url>
     <url>
          <loc>https://0xfab1.net/life/read/comics/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0xfab1.net/life/read/lern/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -921,12 +931,22 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://0xfab1.net/tech/hardware/keyboard/keyboard-only/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://0xfab1.net/tech/hardware/keyboard/my-builds/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://0xfab1.net/tech/hardware/keyboard/my-purchases/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0xfab1.net/tech/hardware/keyboard/pi-400/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -957,116 +977,6 @@
     </url>
     <url>
          <loc>https://0xfab1.net/tech/hardware/robots/wlkata-mirobot/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/lists/android-apps/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/lists/cli-only/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/lists/collaboration/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/lists/hardware/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/lists/help-mom/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/lists/keyboard-only/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/lists/lan-party/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/lists/lern/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/lists/notes/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/lists/privacy/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/lists/server-apps/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/standards/address/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/standards/cryptocurrency/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/standards/cryptograpy/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/standards/dns/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/standards/ip-addresses/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/standards/mobile/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/standards/name/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/standards/rfc/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/standards/speed/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/standards/time/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/helper/standards/unicode/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1156,6 +1066,56 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://0xfab1.net/tech/script/standards/address/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0xfab1.net/tech/script/standards/cryptocurrency/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0xfab1.net/tech/script/standards/dns/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0xfab1.net/tech/script/standards/ip-addresses/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0xfab1.net/tech/script/standards/mobile/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0xfab1.net/tech/script/standards/name/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0xfab1.net/tech/script/standards/rfc/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0xfab1.net/tech/script/standards/speed/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0xfab1.net/tech/script/standards/time/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://0xfab1.net/tech/script/standards/unicode/</loc>
+         <lastmod>2021-11-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://0xfab1.net/tech/script/web/links/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
@@ -1191,137 +1151,72 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/adb/</loc>
+         <loc>https://0xfab1.net/tech/tools/admin/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/asciinema/</loc>
+         <loc>https://0xfab1.net/tech/tools/android/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/curl/</loc>
+         <loc>https://0xfab1.net/tech/tools/chat/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/docker/</loc>
+         <loc>https://0xfab1.net/tech/tools/cli-only/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/drawio/</loc>
+         <loc>https://0xfab1.net/tech/tools/code/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/excel/</loc>
+         <loc>https://0xfab1.net/tech/tools/containers/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/exiftool/</loc>
+         <loc>https://0xfab1.net/tech/tools/convert-files/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/ffmpeg/</loc>
+         <loc>https://0xfab1.net/tech/tools/copy-files/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/git/</loc>
+         <loc>https://0xfab1.net/tech/tools/draw/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/gpg/</loc>
+         <loc>https://0xfab1.net/tech/tools/gaming/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/image-magick/</loc>
+         <loc>https://0xfab1.net/tech/tools/help-with-it/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/ipfs/</loc>
+         <loc>https://0xfab1.net/tech/tools/office/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/irc/</loc>
+         <loc>https://0xfab1.net/tech/tools/privacy/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://0xfab1.net/tech/tools/kubectl/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/mobaxterm/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/obs/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/openssl/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/pandoc/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/rclone/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/restic/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/ssh/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/steam/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/sysinternals/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/vscode/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/wget/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/wireguard/</loc>
-         <lastmod>2021-11-24</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://0xfab1.net/tech/tools/youtube-dl/</loc>
+         <loc>https://0xfab1.net/tech/tools/remote-access/</loc>
          <lastmod>2021-11-24</lastmod>
          <changefreq>daily</changefreq>
     </url>

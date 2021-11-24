@@ -2,9 +2,9 @@
 
 ## Info
 
-|What|Where|
-|-|-|
-|Official Page|<https://portal.azure.com/>|
+| What          | Where                       |
+|---------------|-----------------------------|
+| Official Page | <https://portal.azure.com/> |
 
 ## Azure Helper
 

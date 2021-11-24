@@ -63,7 +63,34 @@ Some more information:
 - Use [--netrc-file](https://everything.curl.dev/usingcurl/netrc) instead of credentials in curl command
 - [Use curl with ssl](https://curl.se/docs/sslcerts.html)
 
+### WebDAV
+
+Create Folders
+
+```bash
+curl -X MKCOL 'http://your.server/uploads/nested_folder1' --user 'name:pwd'
+```
+
+Copy Files
+
+```bash
+curl -T <filename> -u <username>:<password> <url> -o /dev/stdout
+```
+
+Copy all files in a Folder (and subfolder). Folders must already exist.
+
+```bash
+cd local_folder_to_upload && find . -exec curl -T {} 'http://your.server/uploads/{}' --user 'name:pwd' \;
+```
+
 ## Wget
+
+| What          | Where |
+|---------------|-------|
+| Official Page |       |
+| Source        |       |
+| Download      |       |
+| Install       |       |
 
 ### Download all files from website
 
@@ -132,12 +159,12 @@ wget --max-redirect 0 "https://bit.ly/0xfab1"
 
 Examples using IPFS
 
-|What|Where|
-|-|-|
-|Official Page|<https://ipfs.io/>|
-|Documentation|<https://docs.ipfs.io/>|
-|Source|<https://github.com/ipfs>|
-|Download|<https://github.com/ipfs/go-ipfs/releases>|
+| What          | Where                                      |
+|---------------|--------------------------------------------|
+| Official Page | <https://ipfs.io/>                         |
+| Documentation | <https://docs.ipfs.io/>                    |
+| Source        | <https://github.com/ipfs>                  |
+| Download      | <https://github.com/ipfs/go-ipfs/releases> |
 
 ### Find Peers
 
@@ -213,6 +240,13 @@ scp -P 666 user@host:directory/SourceFile TargetFile
 
 ### WinSCP
 
+| What          | Where |
+|---------------|-------|
+| Official Page |       |
+| Source        |       |
+| Download      |       |
+| Install       |       |
+
 #### Connect OneDrive over WebDAV
 
 - After you log in to your OneDrive accoutn, your URL should be like: https://onedrive.live.com/?id=root&cid=ABCDEFGHIJKLMNOP. The ABCDEFGHIJKLMNOP part is your “customer ID”. Select it and copy it to the clipboard.
@@ -225,7 +259,11 @@ scp -P 666 user@host:directory/SourceFile TargetFile
 
 #### Script
 
-Save this script to a file (e.g. WinSCPWebDAVExample.txt)
+In a commmand prompt run `winscp.com` and login to a session. It is also possible to pass on all commands directly or attach a script with all commands.
+
+**Basic Example:**
+
+Save this [script](https://winscp.net/eng/docs/scripting) to a file (e.g. WinSCPWebDAVExample.txt)
 
 ```txt
 open https://username@webdav.domain.com/
@@ -243,6 +281,41 @@ You can also run this example as a one-liner as follows:
 
 ```sh
 winscp.com /command "open https://username@webdav.domain.com/" "put copythisfile.txt /path/destination/" "exit"
+```
+
+**My settings**
+
+I trigger winscp.com in a batch file as follows:
+
+```bat
+@echo off
+winscp.com /rawconfig Interface\SynchronizeParams=4096 /ini=nul /script=myscript.txt
+```
+
+- `/rawconfig Interface\SynchronizeParams=4096` [enables mirror mode](https://winscp.net/eng/docs/rawconfig) when using [synchronize](https://winscp.net/eng/docs/scriptcommand_synchronize). It is possible to set `-mirror` but this didn't work for me.
+- Force scripting mode to start with the [default configuration](https://winscp.net/eng/docs/config#no) with `/ini=nul`
+
+My example script file to upload to a WebDAV server:
+
+```scp
+# Connect to WebDAV server using a password
+open davs://user%40domain.com:password@myfiles.domain.com/
+
+# Settings
+option batch on
+option confirm off
+
+# Set local dir
+lcd "L:\o\c\a\l"
+
+# Set remote dir
+cd "/www"
+
+# Sync Files
+synchronize remote -delete -mirror "L:\o\c\a\l" "/remote/"
+
+# Exit WinSCP
+exit
 ```
 
 ## rclone
@@ -294,11 +367,11 @@ The process will walk though parts of the steps you did whenever you set up this
 
 Restic is a great tool for backups and uses rclone for various tasks.
 
-|What|Where|
-|-|-|
-|Official Page|<https://restic.net/>|
-|Source|<https://github.com/restic/restic>|
-|Install|<https://restic.readthedocs.io/en/stable/020_installation.html>|
+| What          | Where                                                           |
+|---------------|-----------------------------------------------------------------|
+| Official Page | <https://restic.net/>                                           |
+| Source        | <https://github.com/restic/restic>                              |
+| Install       | <https://restic.readthedocs.io/en/stable/020_installation.html> |
 
 ### Examples
 
@@ -306,9 +379,7 @@ TODO
 
 ## youtube-dl
 
-Examples using youtube-dl
-
-Info
+Some examples on how to use youtube-dl or ytdlpl to download videos.
 
 | What          | Where                                             |
 |---------------|---------------------------------------------------|
