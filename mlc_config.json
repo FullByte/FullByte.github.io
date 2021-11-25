@@ -1,7 +1,7 @@
 {
     "ignorePatterns": [
         {
-            "pattern": "10.0.4.(?:[4-9]|10)*."
+            "pattern": "^(http|https)://10.0.4.*."
         },
         {
             "pattern": "^(http|https)://localhost"

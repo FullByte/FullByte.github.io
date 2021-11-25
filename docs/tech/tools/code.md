@@ -9,6 +9,11 @@
 | Download      | <https://aka.ms/win32-x64-user-stable> |
 | Install       | choco install vscode                   |
 
+### Shortcuts
+
+- Menu: F1 or CTRL+SHift+P
+- Insert cursor to select vertically: CTRL+ALT+up/down
+
 ### User Github or Microsoft Account to Sync settings
 
 If you want to restore your settings or use VSCode on multiple machines consider syncing the VSCode settings such as extensions, settings, snippets, keyboard shortcuts and UI states.

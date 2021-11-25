@@ -37,6 +37,8 @@
 - <http://ardour.org/>
 - <https://lmms.io>
 - <https://github.com/spotify/pedalboard>
+- [Virtual MIDI Keyboard](https://vmpk.sourceforge.io/)
+- [VirtualMIDISynth](https://coolsoft.altervista.org/en/virtualmidisynth) MIDI synthesizer
 
 ### Online
 
