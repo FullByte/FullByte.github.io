@@ -11,6 +11,7 @@ Tools to create graphics and modify images online.
 - <https://www.svgrepo.com/>
 - <https://www.vecteezy.com/>
 - <https://openclipart.org/>
+- <https://svgsilh.com/>
 
 ## Tools
 
@@ -27,7 +28,7 @@ Tools to create graphics and modify images online.
 - kidpix: <https://kidpix.app/>
 - Remove objects: <https://cleanup.pictures/>
 - Graffiti: <https://graffiter.com/app>
-- https://www.tldraw.com/
+- <https://www.tldraw.com/>
 
 ### Animation
 

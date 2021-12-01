@@ -6,6 +6,10 @@ More: <https://github.com/you-dont-need/You-Dont-Need-GUI>
 
 - System resource monitor: <https://github.com/aristocratos/btop>
 
+## Develop
+
+- [git interactive rebase tool](https://github.com/MitMaro/git-interactive-rebase-tool)
+
 ## Internet
 
 - w3m Browser: <http://w3m.sourceforge.net/>

@@ -6,12 +6,12 @@ More: <https://github.com/hexops/dockerfile>
 
 ### Info
 
-|What|Where|
-|-|-|
-|Official Page|<https://www.docker.com/>|
-|Docs|<https://docs.docker.com/get-started/>|
-|Download|<https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe>|
-|Install|```choco install docker-desktop```|
+| What          | Where                                                                    |
+|---------------|--------------------------------------------------------------------------|
+| Official Page | <https://www.docker.com/>                                                |
+| Docs          | <https://docs.docker.com/get-started/>                                   |
+| Download      | <https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe> |
+| Install       | ```choco install docker-desktop```                                       |
 
 ### Cool things to run with docker
 
@@ -235,12 +235,12 @@ The instance can be accessed from:
 
 ## Kubectl
 
-|What|Where|
-|-|-|
-|Official Page||
-|Source||
-|Download||
-|Install||
+| What          | Where |
+|---------------|-------|
+| Official Page |       |
+| Source        |       |
+| Download      |       |
+| Install       |       |
 
 kubectl controls the Kubernetes cluster manager
 

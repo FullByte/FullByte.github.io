@@ -39,13 +39,27 @@ This static website is built using [MkDocs](https://github.com/mkdocs/mkdocs/), 
 
 ## Build
 
-Run the following code to install and update the required tools using python and build as well as serve the website (build is optional).
+Run the following code to install and update the required tools using [python](https://www.python.org/) and build as well as serve the website (build is optional).
 
 ```sh
 pip install --upgrade pip
 pip install mkdocs mkdocs-material mkdocs-minify-plugin
-mkdocs build
-mkdocs serve
 ```
 
-Navigate to the link provided in the output of your CLI e.g. <http://127.0.0.1:8000/>
+If all above is already installed, make sure to use the latest version:
+
+```sh
+pip install -U mkdocs mkdocs-material mkdocs-minify-plugin
+```
+
+Building the site will reveal all possible issues with the current version:
+
+```sh
+mkdocs build
+```
+
+Run this command and navigate to <http://127.0.0.1:8000/> to browse locally.
+
+```sh
+mkdocs serve
+```

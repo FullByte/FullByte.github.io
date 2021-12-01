@@ -76,6 +76,8 @@ Download [nyancat.json](_nyancat.json) or view below:
                     ||     ||
     ```
 
+A new implementation of cowsay written in go: [Neo-cowsay](https://github.com/Code-Hex/Neo-cowsay)
+
 ### Toilet
 
 Install ```sudo apt install toilet```
