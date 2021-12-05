@@ -19,7 +19,7 @@ and you will receive this result:
 
 ## Avatar
 
-I often use this avatar. More about how to create this with [Context Free Art is written here](https://0xfab1.net/make/art/contextfreeart/).
+I often use this avatar. More about how to create this with [Context Free Art is written here](https://0xfab1.net/tech/art/contextfreeart/).
 
 ![avatar](_avatar_aboutme.png)
 
