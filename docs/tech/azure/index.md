@@ -4,7 +4,7 @@ A list of azure tools, links to learn azure and news sources.
 
 ## Tools
 
-The best websites with overviews and helpers i know for azure.
+The best websites I know for Azure providing overviews, helpers and tools.
 
 ### Overviews
 
@@ -20,6 +20,7 @@ The best websites with overviews and helpers i know for azure.
 - Features by region: <https://azure.microsoft.com/en-us/global-infrastructure/services/>
 - Get Tenant ID: <https://www.whatismytenantid.com/>
 - MSDN License Goodies: <https://visualstudio.microsoft.com/de/vs/benefits/#software-und-downloads>
+- [List of security mistakes by cloud service providers (AWS, GCP, and Azure)](https://github.com/SummitRoute/csp_security_mistakes)
 
 ### Comparing Cloud Solutions
 

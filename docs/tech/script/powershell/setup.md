@@ -18,9 +18,11 @@ msiexec.exe /package PowerShell-7.1.2-win-x64.msi /quiet ADD_EXPLORER_CONTEXT_ME
 **2. Update [PowerShellGet](https://github.com/Azure/azure-powershell)**
 
 ```powershell
-Install-PackageProvider -Name NuGet -Forces -scope AllUsers
-Install-Module -Name PowerShellGet -Force -scope AllUsers
-Update-Module -Name PowerShellGet -scope AllUsers
+Register-PackageSource -Name MyNuGet -Location https://www.nuget.org/api/v2 -ProviderName NuGet
+Install-PackageProvider -Name NuGet -Force
+Install-Module -Name PowerShellGet -Force -AllowClobber
+Update-Module -Name PowerShellGet
+Get-PackageSource
 ```
 
 **3. Install [Module for Azure](https://docs.microsoft.com/en-us/powershell/azure)**

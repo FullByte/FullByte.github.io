@@ -12,6 +12,21 @@ Other IDE
 - pycharm <https://www.jetbrains.com/pycharm/>
 - spyder <https://github.com/spyder-ide/spyder>
 
+## PIP
+
+PIP is a package manager for Python packages/modules.
+
+- Update PIP: ```pip install --upgrade pip``` and see the version: ```pip --version```
+- Install a package: ```pip install yourpackage```. You can now use ```import yourpackage``` in your python script to include this package and call it's functions.
+- List all packages installed: ```pip list```
+- Uninstall all package: ```pip uninstall yourpackage```
+
+Update all packages
+
+- Linux (bash): ```pip list --outdated --format=freeze | grep -v '^\-e' | cut -d = -f 1  | xargs -n1 pip install -U```
+- Windows (cmd): ```for /F "delims= " %i in ('pip list --outdated') do pip install -U %i```
+- Or use [pipupgrade](https://github.com/achillesrasquinha/pipupgrade) (Install: ```pip install pipupgrade```): ```pipupgrade --verbose --latest --yes```
+
 ## Jupyter Notebooks
 
 [Jupyter Notebooks](https://jupyter.org/install) are a great way to teach python and demonstrate exampes. You can view `ipynb` files online e.g. with [nextjournal](https://github.nextjournal.com) and [deepnote](https://deepnote.com/viewer) or install locally: ```pip install notebook```. To launch jupyter locally run ```jupyter notebook```. There is a great extension for [vscode](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter).
