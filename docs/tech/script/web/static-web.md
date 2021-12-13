@@ -20,6 +20,34 @@ Then run the build command
 sigal build
 ```
 
+## thumbsup (Video and Image Gallery)
+
+[Thumbsup](https://github.com/thumbsup/thumbsup) is a Video and Image Gallery but i prefer Signal for images. Thumbsup works great with videos. Read the [documentation](https://thumbsup.github.io/docs/) for details. To get started:
+
+**Requirements**
+
+Option 1: Install on machine
+
+```bash
+# Install Nodejs and NPM
+# Install GraphicsMagick
+npm install -g thumbsup
+```
+
+Option 2: Run Docker
+
+```bash
+docker run -t -v /Volumes/photos:/input:ro -v "$(pwd)/website:/output" -u $(id -u):$(id -g) ghcr.io/thumbsup/thumbsup thumbsup --input /input --output /output
+```
+
+**New Gallery**
+
+Create a new Gallery in subfolder `gallery` from subfolder `source`:
+
+```bash
+thumbsup --input ./source --output ./gallery
+```
+
 ## MkDocs
 
 [MkDocs](https://github.com/MkDocs/MkDocs/) is a great way to host a simple, static website. This website uses [Material for MkDocs](https://github.com/squidfunk/MkDocs-material). Material for MkDocs is a theme for MkDocs, a static site generator geared towards (technical) project documentation.

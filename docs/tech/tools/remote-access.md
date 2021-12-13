@@ -80,7 +80,7 @@ New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH-Server-In-TCP' -Enabled Tru
 
 Login to azure server "azureserver" with user "user" and private ssh keyfile "private.key". The passphrase will be queried after executing the command.
 
-```shell
+```sh
 ssh -i private.key user@azureserver.westeurope.cloudapp.azure.com
 ```
 
@@ -88,7 +88,7 @@ When you SSH into another machine using public key authentication, the key pair 
 
 Use the `-L` flag to forward a connection to a remote server
 
-```
+```sh
 ssh server -L3000:localhost:3000
 ```
 
@@ -96,7 +96,7 @@ ssh server -L3000:localhost:3000
 
 To see all escape sequences press `~?`.
 
-```
+```txt
  ~.   - terminate connection (and any multiplexed sessions)
  ~B   - send a BREAK to the remote system
  ~C   - open a command line

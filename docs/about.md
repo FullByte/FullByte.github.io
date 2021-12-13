@@ -17,6 +17,8 @@ and you will receive this result:
 "v=me; gravatar=https://de.gravatar.com/0xfab1"
 ```
 
+My Unicode Hexadecimal: 0xFAB1 is &#xFAB1;
+
 ## Avatar
 
 I often use this avatar. More about how to create this with [Context Free Art is written here](https://0xfab1.net/tech/art/contextfreeart/).

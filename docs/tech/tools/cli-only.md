@@ -47,6 +47,7 @@ Music
 - Spotify: [spotify-tui](https://github.com/Rigellute/spotify-tui) or [ncspot](https://github.com/hrkfdn/ncspot)
 - Pictures: <https://github.com/posva/catimg>
 - Wikipedia: <https://github.com/yashsinghcodes/fetch>
+- Background Noise: <https://github.com/JaDogg/noisebox>
 
 Example running ncspot:
 
