@@ -75,13 +75,20 @@ There are many [Static Website Generators](https://jamstack.org/generators/) whi
 
 ## Host
 
+Services
+
 - Netlify <https://app.netlify.com/>
-- Digital Ocean <https://www.digitalocean.com/>
-- Scaleway <https://www.scaleway.com>
 - Cloudron <https://www.cloudron.io/>
 - Heroku <https://www.heroku.com/>
 - G-Core Labs <https://gcorelabs.com/>
 - Balena <https://www.balena.io/>
+
+Hardware
+
+- Digital Ocean <https://www.digitalocean.com/>
+- Scaleway <https://www.scaleway.com>
+- Linode <https://www.linode.com/>
+- Hetzner <https://www.hetzner.com/>
 
 ## Unsorted
 

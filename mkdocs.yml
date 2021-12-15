@@ -11,17 +11,28 @@ theme:
     - 404.html
   language: en
   palette:
-    scheme: slate
-    primary: green
-    accent: yellow
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
   highlightjs: true
-  favicon: icons/favicon.ico
-  icon:
-    logo: logo
+  favicon: assets/images/0xfab1.png
+  logo: assets/images/0xfab1.png
+  font: false
   features:
     - navigation.instant
     - navigation.tracking
     - navigation.top
+    - header.autohide
+    - announce.dismiss
 
 plugins:
   - search
@@ -43,6 +54,7 @@ extra:
       link: https://soundcloud.com/0gdd
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/repository/docker/0gdd/0xfab1.net
+  generator: false
 
 markdown_extensions:
   - attr_list

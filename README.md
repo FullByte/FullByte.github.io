@@ -1,6 +1,6 @@
 # README
 
-This is the source of my personal but public webpage ¯\\_(ツ)_/¯
+This is the source of my personal but public webpage ```¯\_(ツ)_/¯```
 
 [![Header](header.svg)](https://0xfab1.net)
 
@@ -25,17 +25,19 @@ This is the source of my personal but public webpage ¯\\_(ツ)_/¯
 
 ## 0xfab1
 
-Documenting and publishing my projects and notes has been great exercise for me. As longs as this works well for me I will continue doing so :) The content may appear random as it deals with basically anything I find interesting and noteworthy. Thanks for your interest and I appreciate your pull-request for typos/errors in existing pages.
+Publishing my projects and notes has been great exercise for me. As longs as this works well for me I will continue doing so :) The content may appear random as it deals with basically anything I find interesting and noteworthy ```¯\_(ツ)_/¯```
 
-Visit:
+Thanks for your interest and I appreciate your [pull-request](#contribute) for typos/errors in existing pages!
 
-- <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org/doc/html/rfc2818) with [Let's Encrypt](https://letsencrypt.org/), supports [IPv4](https://datatracker.ietf.org/doc/html/rfc3344) and [IPv6](https://datatracker.ietf.org/doc/html/rfc8200))
-- <https://fullbyte.github.io> in case I (or [my DNS provider](https://www.gandi.net)) messed something up
-- <https://ipfs.0xfab1.net/> for access using [IPFS](https://ipfs.io/)
-- <https://netlify.0xfab1.net> or <https://0xfab1.netlify.app/> for the [netlify](https://app.netlify.com) hosted version
-- <https://azure.0xfab1.net> or <https://black-flower-0adbf0903.azurestaticapps.net> for the azure hosted version
+Visit <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org/doc/html/rfc2818) with [Let's Encrypt](https://letsencrypt.org/), supports [IPv4](https://datatracker.ietf.org/doc/html/rfc3344) and [IPv6](https://datatracker.ietf.org/doc/html/rfc8200)). This static website is built using [MkDocs](https://github.com/mkdocs/mkdocs/), [Material](https://github.com/squidfunk/mkdocs-material), [GitHub Pages](https://pages.github.com/) and [GitHub Actions](https://github.com/features/actions).
 
-This static website is built using [MkDocs](https://github.com/mkdocs/mkdocs/), [Material](https://github.com/squidfunk/mkdocs-material), [GitHub Pages](https://pages.github.com/) and [GitHub Actions](https://github.com/features/actions).
+Alternative hosts:
+
+- [0xfab1@github](https://fullbyte.github.io) using [GitHub Pages](https://pages.github.com/) (alternative link: <https://www.0xfab1.net/>)
+- [0xfab1@IFPS](http://fb62c5359b88d00d5924.b-cdn.net) using [IPFS](https://ipfs.io/) (alternative link: <https://ipfs.0xfab1.net/>)
+- [0xfab1@netlify](https://0xfab1.netlify.app/) using [Netlify](https://www.netlify.com/) (alternative link: <https://netlify.0xfab1.net>)
+- [0xfab1@azure](https://black-flower-0adbf0903.azurestaticapps.net) using [Azure](https://azure.microsoft.com) (alternative link: <https://azure.0xfab1.net>)
+- [0xfab1@digitalocean](https://oxfab1-3l4ou.ondigitalocean.app/) using [Digital Ocean](https://www.digitalocean.com/) (alternative link: <https://digitalocean.0xfab1.net>)
 
 ## Build
 
@@ -63,3 +65,12 @@ Run this command and navigate to <http://127.0.0.1:8000/> to browse locally.
 ```sh
 mkdocs serve
 ```
+
+## Contribute
+
+I appreciate your pull-request for typos/errors in existing pages. If you think something is generally wrong or I missed to link you where appropiate, please let me know!
+
+- Fork the current version
+- Change whatever needs an udpate
+- [Build](#build) the page based on your update
+- Open a pull request and tell what you updated and why
