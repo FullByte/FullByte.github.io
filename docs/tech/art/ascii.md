@@ -784,11 +784,14 @@ python3 art-random-example.py | lolcat
 
 ### Nyan Cat
 
-- Link: miku.acm.uiuc.edu (Service no longer available)
-- Use: ```telnet miku.acm.uiuc.edu```
-- Download [nyancat.cast](_nyancat.cast) or view below:
+- Install nyan cat ```sudo apt install nyancat``` ([source](https://github.com/klange/nyancat)) or ```sudo pip install nyancat``` ([source](https://github.com/taizilongxu/nyancat))
+- Get [nyancat.cast](_nyancat.cast) or view below:
 
 <script id="asciicast-3" src="https://asciinema.org/a/3.js" async></script>
+
+![nyancat-terminal](_nyancat-terminal.jpg)
+
+![nyancat-terminal](_nyancat-terminal.webp)
 
 ## Tracert
 
