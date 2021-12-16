@@ -2,9 +2,13 @@ name: Deploy Azure
 
 on:
   push:
-    branches: [gh-pages]
+    branches:
+      - gh-pages
   pull_request:
-    branches: [gh-pages]
+    branches:
+      - gh-pages
+  schedule:
+    - cron: "0 0 * * 0"
 
 jobs:
 
