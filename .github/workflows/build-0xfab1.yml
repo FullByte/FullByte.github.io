@@ -5,17 +5,16 @@ on:
     branches: [master]
   pull_request:
     branches: [master]
+  workflow_dispatch:
 
 jobs:
   build:
     name: Build and Deploy to Github Pages
     runs-on: ubuntu-latest
     steps:
-      # Check out repo
       - name: Checkout Master
         uses: actions/checkout@v2
 
-      # Deploy website
       - name: Set up Python 3.10
         uses: actions/setup-python@v2
         with:
@@ -27,7 +26,34 @@ jobs:
           pip install mkdocs-material
           pip install mkdocs-minify-plugin
 
-      - name: Deploy 0xfab1.net
+      - name: Deploy Github Pages
         run: |
           git pull
           mkdocs gh-deploy
+      
+      - name: Build 0xfab1.net for Azure
+        run: |          
+          mkdocs build
+
+      - name: Deploy to Azure
+        id: builddeploy
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BLACK_FLOWER_0ADBF0903 }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }} 
+          action: "upload"
+          app_location: "site/"
+          #api_location: ""
+          #output_location: ""
+
+  close_pull_request_job:
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    runs-on: ubuntu-latest
+    name: Close Pull Request Job
+    steps:
+      - name: Close Pull Request
+        id: closepullrequest
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_BLACK_FLOWER_0ADBF0903 }}
+          action: "close"
