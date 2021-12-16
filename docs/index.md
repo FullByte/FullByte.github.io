@@ -1,4 +1,4 @@
-# Welcome to 0xFAB1.net
+# Welcome
 
 ```text
  .d8888b.           8888888888  d8888 888888b.   d888   

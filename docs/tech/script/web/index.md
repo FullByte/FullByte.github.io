@@ -85,7 +85,7 @@ Services
 
 Hardware
 
-- Digital Ocean <https://www.digitalocean.com/>
+- Digital Ocean <https://m.do.co/c/0ef5c6b3f680>
 - Scaleway <https://www.scaleway.com>
 - Linode <https://www.linode.com/>
 - Hetzner <https://www.hetzner.com/>

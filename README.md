@@ -37,7 +37,7 @@ Alternative hosts:
 - [0xfab1@IFPS](http://fb62c5359b88d00d5924.b-cdn.net) using [IPFS](https://ipfs.io/) (alternative link: <https://ipfs.0xfab1.net/>)
 - [0xfab1@netlify](https://0xfab1.netlify.app/) using [Netlify](https://www.netlify.com/) (alternative link: <https://netlify.0xfab1.net>)
 - [0xfab1@azure](https://black-flower-0adbf0903.azurestaticapps.net) using [Azure](https://azure.microsoft.com) (alternative link: <https://azure.0xfab1.net>)
-- [0xfab1@digitalocean](https://oxfab1-3l4ou.ondigitalocean.app/) using [Digital Ocean](https://www.digitalocean.com/) (alternative link: <https://digitalocean.0xfab1.net>)
+- [0xfab1@digitalocean](https://oxfab1-3l4ou.ondigitalocean.app/) using [Digital Ocean](https://m.do.co/c/0ef5c6b3f680) (alternative link: <https://digitalocean.0xfab1.net>)
 
 ## Build
 
@@ -57,13 +57,13 @@ pip install -U mkdocs mkdocs-material mkdocs-minify-plugin
 Building the site will reveal all possible issues with the current version:
 
 ```sh
-mkdocs build
+mkdocs build -v
 ```
 
-Run this command and navigate to <http://127.0.0.1:8000/> to browse locally.
+Run this command and navigate to <http://127.0.0.1:8888/> to browse locally.
 
 ```sh
-mkdocs serve
+mkdocs serve -a localhost:8888 --dirtyreload --watch-theme -v
 ```
 
 ## Contribute

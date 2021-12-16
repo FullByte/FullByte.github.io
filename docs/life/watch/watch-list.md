@@ -103,6 +103,7 @@ My current favorites:
 - Sausage Party
 - New Kids Turbo
 - Hot Tub Time Machine 2
+- Vacation Friends
 
 ## Trilogy Movies
 
