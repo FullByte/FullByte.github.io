@@ -1,4 +1,4 @@
-name: Check Markdown links
+name: Check Links
 
 # Run everyday Sunday
 on: 
@@ -17,7 +17,7 @@ jobs:
         config-file: 'mlc_config.json'
         folder-path: 'docs'
         
-  # scan URLs
+  # scan URLs alternative
   #- name: Check URLs
   #  uses: urlstechie/urlchecker-action@master
   #  with:
