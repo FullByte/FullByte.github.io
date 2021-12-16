@@ -4,156 +4,160 @@ This is a list of movies I enjoyed watching.
 For more details view the IMDB link.
 The IMDB full list may contain more than my current Top 10 per category.
 
-## Best movies ever
+## Movies
 
-Full list: <http://www.imdb.com/list/ls025677564/>
+### Classics
 
-My current favorites:
+- 28 Days Later
+- Fear and Loathing in Las Vegas
+- Natural Born Killers
+- Pulp Fiction
+- The Big Lebowski
+- Trainspotting
 
-- Valhalla Rising
+### Fight Movies
+
+- Creed
+- Million Dollar Babe
+
+### Science Fiction
+
+- Inception
+- Interstallar
+- The Zero Theorem
+- Turbo Kid
+
+### Animated movies
+
+- Caroline
+- Ghost in the Shell
+- Mary and Max
+- Mutafukaz
+- Spirited Away
+- Toroto
+- Up
+- Werner - gekotzt wird später
+- Winnie the Pooh
+
+### Action
+
+- Apocalypto
+- Crank 1+2
+- Death Race
+- Faster
+- Hardcore
+- John Wick 1+2+3
 - Mad Max: Fury Road
-- Sin City
+- Rambo 4
+- Robocop
+- The Expendables 1+3
+
+### Intersting Story
+
+- 12 Monkeys
+- Amélie
+- Angel-A
+- Being John Malcovich
+- Ben X
+- Big Fish
+- Border
+- Bug (2006)
+- Burnt
+- Cheyenne
+- Cube
+- Dead Man
+- Defendor
+- Django Unchained
+- Donnie Darko
+- Ex Machina
 - Falling Down
-- Predestination
-- Oldboy
 - Fight Club
+- Frank
+- Horns
+- I Origins
+- Inglorious Basterds
+- Into the Wild
+- Kiss Kiss Bang Bang
+- Life of Pi
+- Man on the moon
+- Moon
+- Naked Lunch
 - Natural Born Killers
 - Nightcrawler
+- Oldboy
+- Oldboy
+- Pan's Labyrinth
+- Pi
+- Predestination
 - Rampage (2009)
-
-## Animated movies
-
-Full list: N/A
-
-My current favorites:
-
-- Mutafukaz
-- Werner - gekotzt wird später
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-
-## Anime movies
-
-Full list: N/A
-
-My current favorites:
-
-- Ghost in the Shell
-- Spirited Away
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-
-## Keep it simple and brutal action movies
-
-Full list: N/A
-
-My current favorites:
-
-- Death Race
-- Hardcore
-- Crank 2
-- Rambo 4
-- John Wick 1
-- John Wick 2
-- John Wick 3
-- Apocalypto
-- The Expendables 3
-- N/A
-
-## Strange Movies
-
-Full list: N/A
-
-My current favorites:
-
-- Bird Man
-- Border
-- Horns
+- Run Lola Run
 - Southland Tales
+- Super - shut up crime
 - Swiss Army Man
+- The Curious Case of Benjamin Button
+- The Fountain
 - The Lobster
-- Frank
-- Bug (2006)
+- Whiplash
 
-## Comedy movies
+### Cinematic
 
-Full list: N/A
+- Blade Runner 2048
+- Dead Man
+- Ghost in the Shell
+- Kill Bill Vol 1+2
+- Mad Max: Fury Road: Black & Chrome
+- Sin City
+- Valhalla Rising
 
-My current favorites:
+### Comedy movies
 
-- Dodgeball - Voll auf die Nüsse
-- Happy Gilmore
-- Zoolander
 - Anchorman
 - Bad Santa
+- Dodgeball - Voll auf die Nüsse
 - Ey Mann - wo is mein Auto
 - George - der aus dem Dschungel kam
-- Sausage Party
-- New Kids Turbo
+- Happy Gilmore
 - Hot Tub Time Machine 2
+- New Kids Turbo
+- Sausage Party
 - Vacation Friends
+- Zoolander
 
-## Trilogy Movies
+### Trilogy Movies
 
-Full list: N/A
-
-My current favorites:
-
-- Matrix 1-3
-- Herr der Ringe 1-3
+- Alien 1-2 + 4
 - Der Hobbit 1-3
 - Der Pate 1-3
-- Star Wars 4-6
+- Herr der Ringe 1-3
 - John Wick 1-3
-- Planet der Affen 1-3
+- Matrix 1-3
 - Pirates of the Caribian 1-3
-- Alien 1-2 + 4
+- Planet der Affen 1-3
+- Star Wars 4-6
 - The Dark Night 1-3
 
-## Romantic Movies
-
-Full list: N/A
-
-My current favorites:
+### Romantic Movies
 
 - Her
+- I love you Philipp Morris
 - Match Point
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
-- N/A
 
-## Trash Movies
+### Trash Movies
 
-Full list: <http://www.imdb.com/list/ls025677553/>
+[imdb list](http://www.imdb.com/list/ls025677553/)
 
-My current favorites:
-
-- Sharknado 3
+- Black Dynamite
 - Chillerama
 - Dead Snow 2: Red vs Dead
+- Demoliution Man
 - Drive Angry
+- Hot Tub Time Machine 2
 - Machete
 - New Kids
 - Piranha 2 3D
 - Planet Terror
 - Rubber
+- Sharknado 3
 - Turbo Kid
 
 ## Series
@@ -217,105 +221,10 @@ My current favorites:
 - Ugly Americans
 - Wonder Showzen
 
-## Movies
+## Music Videos
 
-### Good Movies
+TODO
 
-- 12 Monkeys
-- 28 Days Later
-- Alien
-- Amélie
-- Angel-A
-- Being John Malcovich
-- Ben X
-- Big Fish
-- Blade Runner 2048
-- Burnt
-- Cheyenne
-- Crank 1+2
-- Creed
-- Cube
-- Das Dschunglebuch
-- Dead Man
-- Defendor
-- Django Unchained
-- Donnie Darko
-- Ex Machina
-- Falling Down
-- Faster
-- Fear and Loathing in Las Vegas
-- Fight Club
-- Frank
-- Ghost in the Shell
-- Hobbit Trilogy
-- Horns
-- I love you Philipp Morris
-- I Origins
-- Inception
-- Inglorious Basterds
-- Interstallar
-- Into the Wild
-- Kill Bill Vol 1+2
-- Kiss Kiss Bang Bang
-- Life of Pi
-- Lord of the Rings Trilogy
-- Mad Max: Fury Road
-- Man on the moon
-- Match Point
-- Matrix Trilogy
-- Million Dollar Babe
-- Moon
-- Naked Lunch
-- Natural Born Killers
-- Nightcrawler
-- Oldboy
-- Pan's Labyrinth
-- Pi
-- Predestination
-- Pulp Fiction
-- Rambo 4
-- Ratatouille
-- Robocop
-- Run Lola Run
-- Sin City
-- Southland Tales
-- Spirited Away
-- Super - shut up crime
-- Swiss Army Man
-- The Big Lebowski
-- The Curious Case of Benjamin Button
-- The Dark Night Trilogy
-- The Expendables
-- The Lobster
-- The Fountain
-- The Zero Theorem
-- Trainspotting
-- Turbo Kid
-- Up
-- Valhalla Rising
-- Whiplash
+## Shorts
 
-### Trash Movies
-
-- Black Dynamite
-- Chillerama
-- Dead Snow 2: Red vs Dead
-- Demoliution Man
-- Drive Angry
-- Hey Dude, where is my car
-- Hot Tub Time Machine
-- Hot Tub Time Machine 2
-- Machete
-- New Kids
-- Piranha 3D
-- Planet Terror
-- Rubber
-
-#### Animated Movies
-
-- Caroline
-- Ghost in the Shell
-- Mary and Max
-- The Simpons Movie
-- Toroto
-- Winnie the Pooh
+TODO
