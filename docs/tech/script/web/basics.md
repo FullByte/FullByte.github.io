@@ -4,13 +4,13 @@
 
 ### Show Base64 Images
 
- ```html
+``` html
 <img src="data:image/png;base64,<Base64codehere>"/>
 ```
 
 ### Link Trick
 
- ```html
+``` html
 <!doctype html>
 <head>
 <script>
@@ -26,7 +26,7 @@
 
 ### Empty HTML File Template
 
- ```html
+``` html
 <!doctype html>
 <html lang="en">
 <head>

