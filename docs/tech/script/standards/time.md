@@ -12,7 +12,7 @@
 - Leap seconds don't have to be announced much more than six months before they happen. This is a problem if you need second-accurate planning beyond six months.
 - Unix time: Measured as the number of seconds since epoch (the beginning of 1970 in UTC). Unix time is not affected by time zones or daylight saving.
 - According to POSIX.1, Unix time is supposed to handle a leap second by replaying the previous second. e.g.:
-    ```POSIX
+   ```POSIX
     59.00
     59.25
     59.50
@@ -23,7 +23,7 @@
     59.75
     00.00 ← increment
     00.25
-    ```
+   ```
 
 This is a trade-off: you can't represent a leap second, and your time is guaranteed to go backwards. On the other hand, every day is exactly 86,400 seconds long, and you don't need a table of all previous and future leap seconds in order to format Unix time as human-preferred hours-minutes-seconds.
 ntpd is supposed to make the replay happen after it sees the "leap bits" from upstream timeservers, but I've also seen it do nothing: the system goes one second into the future, then slowly slews back to the correct time.

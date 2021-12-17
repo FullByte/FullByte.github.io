@@ -4,7 +4,7 @@
 
 ## powershell
 
- ``` ps11
+``` ps11
 $From = "email@address"
 $To = "email@address"
 $Cc = ""

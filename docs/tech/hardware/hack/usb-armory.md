@@ -13,7 +13,7 @@ Alternative Guide: <https://github.com/ev3dev/ev3dev/wiki/Setting-Up-Windows-USB
 A new network device should show up
 Change settings of IPv4 to:
 
- ``` sh
+``` sh
 IP: 10.0.0.10
 Subnet: 255.0.0.0
 Gateway: 10.0.0.2

@@ -18,8 +18,8 @@ Y88b  d88P .d8""8b. 888   d8888888888 888   d88P  888
 ### Tron
 
 - Link: <http://sshtron.zachlatta.com>
-- Play: ```ssh sshtron.zachlatta.com```
-- Choose a color (e.g. red): ```ssh red@sshtron.zachlatta.com```
+- Play:```ssh sshtron.zachlatta.com```
+- Choose a color (e.g. red):```ssh red@sshtron.zachlatta.com```
 - Download [tron.json](_tron.json), get the [source](https://github.com/zachlatta/sshtron), or view below:
 
 <script id="asciicast-154041" src="https://asciinema.org/a/154041.js" async></script>
@@ -29,8 +29,8 @@ Y88b  d88P .d8""8b. 888   d8888888888 888   d88P  888
 ### nyancat
 
 - Link: <https://github.com/klange/nyancat>
-- Install: ```git clone https://github.com/klange/nyancat && cd nyancat && make && cd src && ./nyancat```
-- Host telnet server: ```nyancat -t```
+- Install:```git clone https://github.com/klange/nyancat && cd nyancat && make && cd src && ./nyancat```
+- Host telnet server:```nyancat -t```
 
 Download [nyancat.json](_nyancat.json) or view below:
 
@@ -38,19 +38,19 @@ Download [nyancat.json](_nyancat.json) or view below:
 
 ### Steam Locomotive (sl)
 
-- Install ```sudo apt install sl```
-- Use ```sl```
+- Install```sudo apt install sl```
+- Use```sl```
 - Download [sl.cast](_sl.cast) or view below:
 
 <script id="asciicast-234381" src="https://asciinema.org/a/234381.js" async></script>
 
 ### Cowsay and Cowthink
 
-- Install ```sudo apt install cowsay```
-- Use cowsay ```cowsay 0xfab1.net```
+- Install```sudo apt install cowsay```
+- Use cowsay```cowsay 0xfab1.net```
 
 ??? output "cowsay 0xfab1.net"
-    ``` txt
+   ``` txt
     ____________
     < 0xfab1.net >
     ------------
@@ -59,12 +59,12 @@ Download [nyancat.json](_nyancat.json) or view below:
                 (__)\       )\/\
                     ||----w |
                     ||     ||
-    ```
+   ```
 
-- Use cowthink (e.g. pipe it a fortune cookie) ```fortune | cowthink```
+- Use cowthink (e.g. pipe it a fortune cookie)```fortune | cowthink```
 
 ??? output "fortune | cowthink"
-    ``` txt
+   ``` txt
     ________________________________________
     ( You will attract cultured and artistic )
     ( people to your home.                   )
@@ -74,15 +74,15 @@ Download [nyancat.json](_nyancat.json) or view below:
                 (__)\       )\/\
                     ||----w |
                     ||     ||
-    ```
+   ```
 
 A new implementation of cowsay written in go: [Neo-cowsay](https://github.com/Code-Hex/Neo-cowsay)
 
 ### Toilet
 
-Install ```sudo apt install toilet```
+Install```sudo apt install toilet```
 
-Use Toilet ```toilet 0xfab1.net```
+Use Toilet```toilet 0xfab1.net```
 
 ``` txt
   mmmm           m""         #      mmm                           m
@@ -92,7 +92,7 @@ Use Toilet ```toilet 0xfab1.net```
   #mm#  m" "m    #    "mm"#  ##m#"  mm#mm    #    #   #  "#mm"    "mm
 ```
 
-Another example: ```toilet -kf mono12 0xfab1.net```
+Another example:```toilet -kf mono12 0xfab1.net```
 
 ``` txt
   ▄▄▄▄             ▄▄▄▄       ▄▄        ▄▄▄
@@ -104,7 +104,7 @@ Another example: ```toilet -kf mono12 0xfab1.net```
   ▀▀▀▀  ▀▀▀  ▀▀▀  ▀▀   ▀▀▀▀ ▀▀▀▀ ▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀▀    ▀▀  ▀▀▀▀▀   ▀▀▀▀
 ```
 
-Another example with color: ```toilet -f mono12 -F metal 0xfab1```
+Another example with color:```toilet -f mono12 -F metal 0xfab1```
 
 ![toilet-color](_toilet-color.png)
 
@@ -118,9 +118,9 @@ while true; do clear; echo "$(date '+%D %T' | toilet -f term -F border --gay)"; 
 
 ### Figlet
 
-Install ```sudo apt install figlet```
+Install```sudo apt install figlet```
 
-Use Figlet ```figlet 0xfab1.net```
+Use Figlet```figlet 0xfab1.net```
 
 ``` txt
   ___        __       _     _              _
@@ -130,7 +130,7 @@ Use Figlet ```figlet 0xfab1.net```
  \___//_/\_\_|  \__,_|_.__/|_(_)_| |_|\___|\__|
 ```
 
-Another example: ```figlet -c -k -w 100 -f shadow 0xfab1.net```
+Another example:```figlet -c -k -w 100 -f shadow 0xfab1.net```
 
 figlet -f $font 0xfab1.net
 
@@ -141,14 +141,14 @@ figlet -f $font 0xfab1.net
 \___/   _/\_\ _|   \__,_| _.__/  _| _) _|  _| \___| \__|
 ```
 
-You can use any tlf-font available here ```ls /usr/share/figlet/``` and loop through all options to see what looks good e.g. as such:
+You can use any tlf-font available here```ls /usr/share/figlet/``` and loop through all options to see what looks good e.g. as such:
 
 ``` sh
 for f in /usr/share/figlet/*.tlf; do file=$(echo "${f##*/}"); font=$(echo $file| cut -d'.' -f 1); figlet -f $font 0xfab1.net; done
 ```
 
 ??? output "figlet with all fonts"
-    ``` txt
+   ``` txt
 
     ░████░               ▒████             ██         ░███
     ██████               █████             ██         ████
@@ -271,20 +271,20 @@ for f in /usr/share/figlet/*.tlf; do file=$(echo "${f##*/}"); font=$(echo $file|
     ▙▟ ▗▘▚  ▐  ▝▄▜ ▐▙▛ ▗▟▄  ▐  ▐ ▐ ▝▙▞  ▝▄
 
     ０ｘｆａｂ１．ｎｅｔ
-    ```
+   ```
 
 ### cmatrix
 
-- Install ```sudo apt install cmatrix```
-- Use cmatrix ```cmatrix```
+- Install```sudo apt install cmatrix```
+- Use cmatrix```cmatrix```
 
 ### a Fire
 
-- Install ```sudo apt install libaa-bin```
-- Use aafire ```aafire```
+- Install```sudo apt install libaa-bin```
+- Use aafire```aafire```
 
 ??? output "aafire"
-    ```
+   ```
                                 .  .                            . ..                               . .                   .
                                     .                              .  . .  . .-::::--                       . ..            . .
                                     . . .                        . ....  .  .:+ivnSnnI=.                      .         .-::==+=:.
@@ -318,30 +318,30 @@ for f in /usr/share/figlet/*.tlf; do file=$(echo "${f##*/}"); font=$(echo $file|
         .+X:QQ;;=+i::|==|:l:vn==nn=ZZ=nnvI|==|IvovvnXZ=vn=Z#ZXX=nvnvn=XXn:|||i:lvvnn====n=X##Zolln=ni=|vXXnvlIn=X=on=nvi|lnX=vvlIvn==nvll::||====QZXXi.
     -:.+S#:WWQ+|:vvl|=|lvllv=o=XX=XZZZZ=:;Z:|:vvi|:o====XX##Z=vn=Xn:I=#XXXXov:+|vvn===XXZ##Xon=X#X}=+voX=vvvnXZX==Z#Zavv=ZXXn====XZZZ=lilvv:i+=QQ:##X+.-.
     :ni.+ZWQ:XQ|:vvvIiivn:=<nnnX##ZXX#Wm#ma==<>QQ|=i||i=Z=:|=#Xvn=vvvvvv+lv>:i+|nZ##ZZw#XmmmZvIn=#Xs>v=n:lo=I+3##=XmWW#Xe3XWmZvn}v=ZX3XX=v|^:v:=:=+Q::#ZXi-.v=- -|:==WW+i|lvl:vnn=n>lnn==Z#ZXwW#XI#m=%}^=jwa=n=ivmwc:=mWmme|Q<wwci=v===:)Z}!##WWmZ!XWm=|=m#Z{wmw}:wZv|<mWWWZ"!11{awZ7VW2vIv=e=S-{{I:-S+v|,;Q=||=#|:+i=[ ::IZ|+WQ+:+nIvv)nn=X(]nv#em##eQWmevdW[#WQ)iQfQ#+)(WWil3mFi#nQ::WQQ)on:==W:F:]XZQW#f|#mWf|jWmv(WWW||3#ei=iQWW#==]=[WmWW]Qn(nnd]++Z:fl`.vQnIvvZ=|||+X:n#v)`  =: - `n"--""-'-S""-``""-`!`!``")"`!~-^ ~-`"v~^v""^`~^""`~"!-~-~`"-!'`!"--~ `-!~""""'"~`^"!^^"'"`"""""^`"~'""```-!'"`'~!"!'"`!" `--`^-|-"I`v```^-==:= 
-    ```
+   ```
 
 ### BB
 
-- Install ```sudo apt install bb```
-- Use BB ```bb```
+- Install```sudo apt install bb```
+- Use BB```bb```
 
 Watch this video to see what it does without running it: <https://www.youtube.com/watch?v=9ukhOAUseKY>
 
 ### lolcat
 
-To make any of the ASCII output more colorful use lolcat. Note: doesn't work with animations e.g. ```aafire | lolcat```
+To make any of the ASCII output more colorful use lolcat. Note: doesn't work with animations e.g.```aafire | lolcat```
 
 - Link: <https://github.com/busyloop/lolcat>
-- Install: ```sudo apt install lolcat```
-- Use lolcat: ```fortune | cowthink | lolcat```
+- Install:```sudo apt install lolcat```
+- Use lolcat:```fortune | cowthink | lolcat```
 
 ![lolcat-fortune-cow.png](_lolcat-fortune-cow.png)
 
 Another cool idea is to use this fo successful tests or builds e.g.:
 
 - Store ASCII art ([pikachu.tp](_pikachu.tp)) in a folder (~/important/)
-- Set alias: ```alias success-message='if [ "$?" -eq "0" ]; then lolcat ~/important/pikachu.tp -a -s 40 -d 2; fi;'```
-- Usage: ```do_tests && success-message```
+- Set alias:```alias success-message='if [ "$?" -eq "0" ]; then lolcat ~/important/pikachu.tp -a -s 40 -d 2; fi;'```
+- Usage:```do_tests && success-message```
 
 ![pikachu.png](_pikachu.png)
 
@@ -349,7 +349,7 @@ Another cool idea is to use this fo successful tests or builds e.g.:
 
 [Asciimatics](https://github.com/peterbrittain/asciimatics) is a package to help people create full-screen text UIs on any platform. It comes with some very cool samples!
 
-- Install: ```pip install asciimatics``` (Note: depending on the sample/demo there are more dependencies)
+- Install:```pip install asciimatics``` (Note: depending on the sample/demo there are more dependencies)
 - Documentation: <https://asciimatics.readthedocs.io>
 - Samples: <https://github.com/peterbrittain/asciimatics/tree/master/samples>
 
@@ -399,7 +399,7 @@ ART is a Python lib for text converting to ASCII art fancy.
 
 - Source: <https://github.com/sepandhaghighi/art>
 - Docs: <https://www.4r7.ir/>
-- Install: ```pip install art```
+- Install:```pip install art```
 
 Example `art-example.py`
 
@@ -410,7 +410,7 @@ print(Art)
 ```
 
 ??? output "art-example.py"
-    ```
+   ```
     .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.
     | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
     | |     ____     | || |  ____  ____  | || |  _________   | || |      __      | || |   ______     | || |     __       | |
@@ -422,7 +422,7 @@ print(Art)
     | |              | || |              | || |              | || |              | || |              | || |              | |
     | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
     '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'
-    ```
+   ```
 
 Example `art-random-example.py`
 
@@ -439,7 +439,7 @@ python3 art-random-example.py | lolcat
 ```
 
 ??? output "art-example.py"
-    ```
+   ```
     '-=,o
 
     >:)
@@ -639,17 +639,17 @@ python3 art-random-example.py | lolcat
     ---=======[}
 
     .,.,\______/,..,.,
-    ```
+   ```
 
 ## CurL
 
 ### QR code
 
 - Link: http://qrenco.de/
-- Use: ```curl qrenco.de/0xfab1.net```
+- Use:```curl qrenco.de/0xfab1.net```
 
 ??? output "parrot.live"
-    ```
+   ```
     █████████████████████████████
     █████████████████████████████
     ████ ▄▄▄▄▄ █▀▀ ▄ █ ▄▄▄▄▄ ████
@@ -665,18 +665,18 @@ python3 art-random-example.py | lolcat
     ████▄▄▄▄▄▄▄█▄▄▄████▄███▄█████
     █████████████████████████████
     █████████████████████████████
-    ```
+   ```
 
 ### Parrot
 
 - Link: https://github.com/hugomd/parrot.live
-- Use: ```curl parrot.live```
+- Use:```curl parrot.live```
 - Download [parrot.cast](_parrot.cast) or view below:
 
 <script id="asciicast-8" src="https://asciinema.org/a/239367.js" async></script>
 
 ??? output "curl parrot.live"
-    ``` txt
+   ``` txt
                                 .ccccc.
                             .cc;'coooxkl;.
                         .:c:::c:,,,,,;c;;,.'.
@@ -693,15 +693,15 @@ python3 art-random-example.py | lolcat
     .loc'.'lxxxxxxxxocc;''''';ccoxxxxxxxxx:..oc
     olc,..',:cccccccccccc:;;;;;;;;:ccccccccc,.'c,
     Ol;......................................;l'
-    ```
+   ```
 
 ### Run Forrest Run
 
 - Link: https://github.com/hugomd/ascii-live
-- Use: ```curl ascii.live/forrest```
+- Use:```curl ascii.live/forrest```
 
 ??? output "curl ascii.live/forrest"
-    ``` txt
+   ``` txt
                         .':xc.
                         .:ccxOd'
                         ,l';dOxo'
@@ -727,15 +727,15 @@ python3 art-random-example.py | lolcat
                                 .::oxl'.
                                 'c:oxxool.
                                 .,,,;;;;,
-    ```
+   ```
 
 ### Run Forrest Run
 
 - Link: https://github.com/hugomd/ascii-live
-- Use: ```curl ascii.live/rick```
+- Use:```curl ascii.live/rick```
 
 ??? output "curl ascii.live/rick"
-    ``` txt
+   ``` txt
     ttttttffffttfLLftff1:,ii,,,,iiiiii1ffffftt11tttt1ttt111fffttfffttttfft
     tttttttttttttfffffff1,,,,,,,iiiii1tffffffftt1ttt1111111tfftffffttttttt
     fffffffftttt1tffftft1i,,,,,,,iiii1ttfffffttt1tffft11111tfttfffttt1tttt
@@ -764,27 +764,27 @@ python3 art-random-example.py | lolcat
     111111111i,.................,,:,,,......1tttttt11i,,::itt11t1111111111
     111111111i,................ ,,:::,......it1t1tttttttttt11tt11t11111111
     111111111,................. ,,,::,......it1tttttttt1111111t11111111111
-    ```
+   ```
 
 ## Telnet
 
 ### mapscii
 
 - Link: [mapscii.me](https://github.com/rastapasta/mapscii)
-- Use: ```telnet mapscii.me```
+- Use:```telnet mapscii.me```
 - Download: https://github.com/rastapasta/mapscii/releases
 
 ### Star Wars
 
 - Link: http://www.asciimation.co.nz/ (Service no longer available)
-- Use: ```telnet towel.blinkenlights.nl```
+- Use:```telnet towel.blinkenlights.nl```
 - Download [nyancat.cast](_nyancat.cast) or view below:
 
 <script id="asciicast-8" src="https://asciinema.org/a/8.js" async></script>
 
 ### Nyan Cat
 
-- Install nyan cat ```sudo apt install nyancat``` ([source](https://github.com/klange/nyancat)) or ```sudo pip install nyancat``` ([source](https://github.com/taizilongxu/nyancat))
+- Install nyan cat```sudo apt install nyancat``` ([source](https://github.com/klange/nyancat)) or```sudo pip install nyancat``` ([source](https://github.com/taizilongxu/nyancat))
 - Get [nyancat.cast](_nyancat.cast) or view below:
 
 <script id="asciicast-3" src="https://asciinema.org/a/3.js" async></script>
@@ -805,7 +805,7 @@ Try this online tool for IPv6 tracert:
 ### Tetris
 
 Link: trh.milek7.pl (Service no longer available)
-Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
+Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
 
 ??? output "star-wars-traceroute"
     ![tetris.png](_tetris.png)
@@ -813,10 +813,10 @@ Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
 ### Star Wars
 
 - Link: <https://beaglenetworks.net/post/42707829171/star-wars-traceroute>
-- Use: ```traceroute -m 100 216.81.59.173 | awk '{print $2}'```
+- Use:```traceroute -m 100 216.81.59.173 | awk '{print $2}'```
 
 ??? output "star-wars-traceroute"
-    ``` txt
+   ``` txt
     *
     Episode.IV
     A.NEW.HOPE
@@ -866,15 +866,15 @@ Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
     When.CCIEs.Get.Bored
     CCIE.38168
     FIN
-    ```
+   ```
 
 ### Star Trek
 
 - Link: tng.prolixium.com
-- Use: ```traceroute6 -m 120 tng.prolixium.com```
+- Use:```traceroute6 -m 120 tng.prolixium.com```
 
 ??? output "traceroute6 -m 120 tng.prolixium.com"
-    ``` txt
+   ``` txt
     traceroute to tng.prolixium.com (2001:48c8:1:137::32), 120 hops max, 24 byte packets
 
     v6-seattle-ix.voxel.net (2001:504:16::745f)  209.28 ms  207.781 ms  207.18 ms
@@ -898,15 +898,15 @@ Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
     where.no.one.has.gone.before (2001:48c8:1:137::2a)  308.284 ms  311.138 ms  310.111 ms
     . (2001:48c8:1:137::2e)  310.227 ms  309.217 ms  309.752 ms
     EOF (2001:48c8:1:137::32)  309.623 ms  311.074 ms  313.958 ms
-    ```
+   ```
 
 ### traceroute hand
 
 - Link: hand.bb0.nl
-- Use: ```traceroute -6 -m 50 hand.bb0.nl```
+- Use:```traceroute -6 -m 50 hand.bb0.nl```
 
 ??? output "traceroute -6 -m 50 hand.bb0.nl"
-    ``` txt
+   ``` txt
     traceroute to hand.bb0.nl (2a0e:fd45:2a0a:2::cafe), 50 hops max, 80 byte packets
      7  MYLOC-MANAG.ear3.Amsterdam1.Level3.net (2001:1900:5:2:2:0:8:780a)  253.218 ms  251.177 ms  251.017 ms
      8  2a00:a7c0:e20a:20::1 (2a00:a7c0:e20a:20::1)  250.961 ms  250.912 ms  250.870 ms
@@ -952,15 +952,15 @@ Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
     48  _______you_can_stop_your_traceroute_here_______ (2a0e:fd45:2a0a:2::ca24)  248.702 ms  246.836 ms  248.054 ms
     49  * _______________________________________________ (2a0e:fd45:2a0a:2::ca25)  256.373 ms  255.375 ms
     50  _______________________________________________ (2a0e:fd45:2a0a:2::ca26)  245.333 ms  245.198 ms  245.186 ms
-    ```
+   ```
 
 ### bad horse
 
 - Link: bad.horse
-- Use: ```traceroute bad.horse```
+- Use:```traceroute bad.horse```
 
 ??? output "traceroute bad.horse"
-    ``` txt
+   ``` txt
     13 bad.horse (162.252.205.130) 163.913 ms 163.985 ms 164.169 ms
     14 bad.horse (162.252.205.131) 166.228 ms 169.604 ms 168.837 ms
     15 bad.horse (162.252.205.132) 172.249 ms 174.163 ms 172.610 ms
@@ -990,4 +990,4 @@ Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
     41 there-s.no.recourse (162.252.205.155) 138.434 ms 139.004 ms 137.495 ms
     42 it-s.hi-ho.silver (162.252.205.156) 150.319 ms 145.497 ms 149.632 ms
     43 signed.bad.horse (162.252.205.157) 147.734 ms 151.973 ms 167.310 ms
-    ```
+   ```

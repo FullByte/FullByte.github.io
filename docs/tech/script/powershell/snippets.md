@@ -6,8 +6,8 @@ Some handy code snippets for powershell :)
 
 **Base64 Decode/Encode**
 
-- Decode: ```[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("dGVzdA=="))```
-- Encode: ```[Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("test"))```
+- Decode:```[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("dGVzdA=="))```
+- Encode:```[Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("test"))```
 
 **Create files based on files**
 
@@ -415,11 +415,11 @@ ForEach-Object {
 
 **Install and config**
 
-- Install Hyper V Feature: ```Install-WindowsFeature -Name Hyper-V -ComputerName localhost -IncludeManagementTools -Restart```
-- Check Hyper V Installation: ```Get-WindowsFeature -Name Hyper-V -ComputerName HOSTNAME```
-- Reconfigure the service ```sc config vmms start=auto```
-- Stop and start the service ```sc stop vmms; sc start vmms```
-- Remove ```VM Remove-VM -Name "Linux" -Force```
+- Install Hyper V Feature:```Install-WindowsFeature -Name Hyper-V -ComputerName localhost -IncludeManagementTools -Restart```
+- Check Hyper V Installation:```Get-WindowsFeature -Name Hyper-V -ComputerName HOSTNAME```
+- Reconfigure the service```sc config vmms start=auto```
+- Stop and start the service```sc stop vmms; sc start vmms```
+- Remove```VM Remove-VM -Name "Linux" -Force```
 
 **Get VHD owner**
 
@@ -493,28 +493,28 @@ Get Binding Info
 
 ## Random (sort this)
 
-- Format new, raw disk: ```Get-Disk | Where-Object {$_.partitionstyle -eq 'raw' -and $_.OperationalStatus -like 'Online' } | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "newDisk" -Confirm:$false```
-- Check if a specific port is open e.g. port 8080 ```netstat -ano | Select-String "8080"```
-- Get all "svchost" process-ids: ```Get-Process "svchost" | select -expand id```
-- View open connections for a given service: ```get-nettcpconnection | select local*,remote*,state,@{Name="Process";Expression={(Get-Process -Id $_.OwningProcess).ProcessName}} | Where-Object {$_.Process -eq "svchost"} | Format-Table```
-- Check for Windows Updates: ```(New-Object -ComObject Microsoft.Update.AutoUpdate).DetectNow()```
-- Export PowerShell command history to a file: ```Get-History | Export-CSV $env:USERPROFILE\Desktop\CommandHistory.CSV```
-- Export all available powershell commands: ```Get-Command  | Export-CSV $env:USERPROFILE\Desktop\CommandsAvailable.CSV```
-- Get last 10 installations: ```get-wmiobject Win32_ReliabilityRecords -computername 127.0.0.1 | Select-Object -first 10 Message | format-list *```
-- Last 10 security event log entries: ```Get-EventLog Security -Newest 10```
-- Get all help examples: ```Get-Command -CommandType cmdlet | % { (get-help $\_.name).examples }```
-- Get Last Server Boot Time: ```([wmi]"").ConvertToDateTime((Get-WmiObject -Class Win32_OperatingSystem).LastBootuptime)```
-- Search recursively for a certain string within files ```dir –r | select string "searchforthis"```
-- Top5 processes using the most memory: ``` ps1 | sort –property ws | select –last 5```
-- Get all self-signed certs: ```Get-ChildItem -path cert:\\LocalMachine\\My```
-- Create NIC Teaming: ```New-NetLBfoTeam –Name Guest –TeamMembers Guest-A,Guest-B -TeamingMode SwitchIndependent```
-- Find something in (large) files: ```Get-Content myTestLog.log -wait | where { $\_ -match “WARNING” }```
-- Read Registry Key: ```Get-ItemProperty -Path Registry::"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\" | format-list```
-- Report all of the USB devices installed: ```gwmi Win32_USBControllerDevice -computername SERVER1 |fl Antecedent,Dependent```
-- NTFS folder permissions for D:\Temp: ```Get-Acl "D:\Temp"```
-- NTFS folder permissions for all files below D:\Temp: ```Get-ChildItem "D:\Temp" -recurse | Get-Acl```
-- Get SHA1 hash sum of all files of the current folder: ```ForEach ($Item in Get-ChildItem $PWD -Include *.*) {Write-Host((Get-FileHash $Item.Name -Algorithm "SHA1").hash) $Item.Name }```
-- Find largest files in a given Folder (and subfolders): ```Get-ChildItem . -r | sort Length -desc | Select-Object fullname, length -f 20 | Format-Table```
+- Format new, raw disk:```Get-Disk | Where-Object {$_.partitionstyle -eq 'raw' -and $_.OperationalStatus -like 'Online' } | Initialize-Disk -PartitionStyle MBR -PassThru | New-Partition -AssignDriveLetter -UseMaximumSize | Format-Volume -FileSystem NTFS -NewFileSystemLabel "newDisk" -Confirm:$false```
+- Check if a specific port is open e.g. port 8080```netstat -ano | Select-String "8080"```
+- Get all "svchost" process-ids:```Get-Process "svchost" | select -expand id```
+- View open connections for a given service:```get-nettcpconnection | select local*,remote*,state,@{Name="Process";Expression={(Get-Process -Id $_.OwningProcess).ProcessName}} | Where-Object {$_.Process -eq "svchost"} | Format-Table```
+- Check for Windows Updates:```(New-Object -ComObject Microsoft.Update.AutoUpdate).DetectNow()```
+- Export PowerShell command history to a file:```Get-History | Export-CSV $env:USERPROFILE\Desktop\CommandHistory.CSV```
+- Export all available powershell commands:```Get-Command  | Export-CSV $env:USERPROFILE\Desktop\CommandsAvailable.CSV```
+- Get last 10 installations:```get-wmiobject Win32_ReliabilityRecords -computername 127.0.0.1 | Select-Object -first 10 Message | format-list *```
+- Last 10 security event log entries:```Get-EventLog Security -Newest 10```
+- Get all help examples:```Get-Command -CommandType cmdlet | % { (get-help $\_.name).examples }```
+- Get Last Server Boot Time:```([wmi]"").ConvertToDateTime((Get-WmiObject -Class Win32_OperatingSystem).LastBootuptime)```
+- Search recursively for a certain string within files```dir –r | select string "searchforthis"```
+- Top5 processes using the most memory:``` ps1 | sort –property ws | select –last 5```
+- Get all self-signed certs:```Get-ChildItem -path cert:\\LocalMachine\\My```
+- Create NIC Teaming:```New-NetLBfoTeam –Name Guest –TeamMembers Guest-A,Guest-B -TeamingMode SwitchIndependent```
+- Find something in (large) files:```Get-Content myTestLog.log -wait | where { $\_ -match “WARNING” }```
+- Read Registry Key:```Get-ItemProperty -Path Registry::"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\" | format-list```
+- Report all of the USB devices installed:```gwmi Win32_USBControllerDevice -computername SERVER1 |fl Antecedent,Dependent```
+- NTFS folder permissions for D:\Temp:```Get-Acl "D:\Temp"```
+- NTFS folder permissions for all files below D:\Temp:```Get-ChildItem "D:\Temp" -recurse | Get-Acl```
+- Get SHA1 hash sum of all files of the current folder:```ForEach ($Item in Get-ChildItem $PWD -Include *.*) {Write-Host((Get-FileHash $Item.Name -Algorithm "SHA1").hash) $Item.Name }```
+- Find largest files in a given Folder (and subfolders):```Get-ChildItem . -r | sort Length -desc | Select-Object fullname, length -f 20 | Format-Table```
 
 Add WebDAV to local path
 

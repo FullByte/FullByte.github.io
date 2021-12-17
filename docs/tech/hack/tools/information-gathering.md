@@ -10,8 +10,8 @@ Scan a network. ([MAN pages](https://nmap.org/book/man.html) and [scripts](https
 
 Press "v" if you forgot du add "-v" in the scan and need to increase verbosity.
 
-- Simple IP scan: ```nmap -sC -sV $ip```
-- Enumerate the SMB shares: ```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse $ip```
+- Simple IP scan:```nmap -sC -sV $ip```
+- Enumerate the SMB shares:```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse $ip```
 
 [ncat](https://nmap.org/ncat/): todo
 
@@ -19,7 +19,7 @@ Press "v" if you forgot du add "-v" in the scan and need to increase verbosity.
 
 wordlist-based DNS subdomain scanner
 
- ``` sh
+``` sh
 sudo apt install python3-dnspython 
 sudo git clone https://github.com/rbsec/dnscan /opt/dnscan
 sudo pip install -r /opt/dnscan/requirements.txt
@@ -28,7 +28,7 @@ sudo ln -s /opt/dnscan/dnscan.py /usr/local/bin/dnscan.py
 
 Run example:
 
- ``` sh
+``` sh
 ./dnscan.py -d dev-%%.example.org
 ```
 
@@ -43,7 +43,7 @@ TODO
 Find dirs that work
 
 - Source: <https://github.com/OJ/gobuster>
-- Install: ```sudo apt-get install gobuster```
+- Install:```sudo apt-get install gobuster```
 
 Example:
 
@@ -69,7 +69,7 @@ SQLMap
 
 ### Reposcanner
 
- ``` sh
+``` sh
 sudo apt install python3-git
 sudo git clone https://github.com/dionach/reposcanner /opt/reposcanner
 ln -s /opt/reposcanner/reposcanner.py /usr/local/bin/reposcanner.py
@@ -77,7 +77,7 @@ ln -s /opt/reposcanner/reposcanner.py /usr/local/bin/reposcanner.py
 
 Run example:
 
- ``` sh
+``` sh
 reposcanner.py -r https://github.com/FullByte/FullByte.github.io
 ```
 
@@ -91,7 +91,7 @@ TODO
 
 ### ScoutSuite (AWS, Azure, GCP)
 
- ``` sh
+``` sh
 git clone https://github.com/nccgroup/ScoutSuite /opt/scoutsuite
 cd /opt/scoutsuite
 virtualenv -p python3 venv
@@ -108,7 +108,7 @@ exit
 
 ### Prowler (AWS)
 
- ``` sh
+``` sh
 pip3 install ansi2html detect-secrets
 git clone https://github.com/toniblyx/prowler /opt/prowler
 ```

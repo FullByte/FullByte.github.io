@@ -23,7 +23,7 @@ Ghidra Scripts/Plugins/Extension:
 
 Example from doing this tryhackme challenge <https://tryhackme.com/room/adventofcyber2> -> "[Day 17] Reverse Engineering ReverseELFneering"
 
- ``` sh
+``` sh
 r2 -d ./challenge1
 
 b+1024
@@ -130,7 +130,7 @@ Just some notes from the tryhackme tutorials [intro to x86-64](https://tryhackme
 
 Open "if2" to analyses the program:
 
- ``` sh
+``` sh
 r2 -d if2
 e asm.syntax=att
 aaa
@@ -143,7 +143,7 @@ Output:
 
 Set breakpoint at popq %rbp
 
- ``` sh
+``` sh
 pdf @main
 db 0x561d78dd863c
 ```
@@ -154,7 +154,7 @@ Output:
 
 Start execution of the program:
 
- ``` sh
+``` sh
 dc
 px @ rbp-0x8
 px @ rbp-0x4
@@ -169,7 +169,7 @@ Read value of var_ch, var_8h, var_4h before popq/retq as requested.
 
 Task 5 open loop2
 
- ``` sh
+``` sh
 r2 -d loop2
 e asm.syntax=att
 aaa
@@ -183,14 +183,14 @@ dc
 
 Read at secound loop
 
- ``` sh
+``` sh
 px @ rbp-0x8
 px @ rbp-0xc
 ```
 
 Read at end of loop
 
- ``` sh
+``` sh
 dc
 px @ rbp-0x8
 px @ rbp-0xc
@@ -198,7 +198,7 @@ px @ rbp-0xc
 
 task6 - crackme1
 
- ``` sh
+``` sh
 r2 -d crackme1
 e asm.syntax=att
 aaa

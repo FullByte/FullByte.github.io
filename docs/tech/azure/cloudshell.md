@@ -19,7 +19,7 @@ There are three options to use the cloud shell: Docker, Windows Terminal and the
 
 You get a [CloudShell](https://github.com/Azure/CloudShell) container as follows:
 
- ``` ps11
+``` ps11
 docker run -it mcr.microsoft.com/azure-cloudshell /bin/bash # for bash
 docker run -it mcr.microsoft.com/azure-cloudshell /usr/bin/pwsh # for powershell
 ```
@@ -28,20 +28,20 @@ docker run -it mcr.microsoft.com/azure-cloudshell /usr/bin/pwsh # for powershell
 
 The [Windows terminal](https://docs.microsoft.com/de-de/windows/terminal/) has the cloud shell integrated. Aside from other features this is a good way to interact with azure on command line.
 
-Install the windows terminal with ```choco install microsoft-windows-terminal```.
+Install the windows terminal with```choco install microsoft-windows-terminal```.
 You need to login to azure first to use the terminal.
 
 ### Azure Portal
 
 Go to <https://shell.azure.com> and you are logged in with your current user.
 
-To get a GUI editor in the web run ```code .```.
+To get a GUI editor in the web run```code .```.
 
 ## Attach Storage
 
-- Add FileShare to Cloud Shell: ```clouddrive mount -s <secret> -g <rg-name> -n <fileshare> -f <share>```
-- Show Drives: ```Get-CloudDrive```
-- Remove or re-configure your cloud drive: ```dismount-clouddrive```
+- Add FileShare to Cloud Shell:```clouddrive mount -s <secret> -g <rg-name> -n <fileshare> -f <share>```
+- Show Drives:```Get-CloudDrive```
+- Remove or re-configure your cloud drive:```dismount-clouddrive```
 
 Sources:
 
@@ -54,19 +54,19 @@ You can access an Azure VM within the Azure Cloud Shell.
 
 Enable remoting if not yet done:
 
- ``` ps11
+``` ps11
 Enable-AzVMPSRemoting -Name MyVM1 -ResourceGroupname MyResourceGroup
 ```
 
 Execute script on VM:
 
- ``` ps11
+``` ps11
 Invoke-AzVMCommand -Name MyVM1 -ResourceGroupName MyResourceGroup -Scriptblock {Get-ComputerInfo} -Credential (Get-Credential)
 ```
 
 Enter VMs commandline:
 
- ``` ps11
+``` ps11
 Enter-AzVM -Name MyVM1 -ResourceGroupName MyResourceGroup -Credential (Get-Credential)
 ```
 
@@ -75,7 +75,7 @@ Enter-AzVM -Name MyVM1 -ResourceGroupName MyResourceGroup -Credential (Get-Crede
 **Posh-Git** provides us with information at the command line about the state of the current repository we are in. It also provides tab completion for Git commands.
 <https://github.com/dahlbyk/posh-git>
 
- ``` ps11
+``` ps11
 install-module posh-git
 import-module posh-git
 ```
@@ -83,7 +83,7 @@ import-module posh-git
 **Oh-My-Posh** allows you to theme your prompt with various color schemes, Git status indicators, Admin status and many other things.
 <https://github.com/JanDeDobbeleer/oh-my-posh>
 
- ``` ps11
+``` ps11
 Install-Module oh-my-posh
 Import-module oh-my-posh
 ```
@@ -91,7 +91,7 @@ Import-module oh-my-posh
 **Get-ChildItemColor** is a simple tool which adds color coding to the get-childitem command. When you run this command, you get different colors used for folders vs. files and different file types.
 <https://github.com/joonro/Get-ChildItemColor>
 
- ``` ps11
+``` ps11
 Install-Module Get-ChildItemColor
 Import-Module Get-ChildItemColor
 ```

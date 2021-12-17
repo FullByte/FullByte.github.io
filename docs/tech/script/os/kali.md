@@ -10,14 +10,14 @@ Some note on installing, configuring and using Kali.
 
 Set the password for root and switch to root
 
- ``` sh
+``` sh
 sudo passwd root
 su root
 ```
 
 Run this once on old Kali versions and run this as root:
 
- ``` sh
+``` sh
 sudo apt install gcc-8-base
 sudo wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
 sudo dpkg --configure -a
@@ -25,25 +25,25 @@ sudo dpkg --configure -a
 
 Switch back to your user e.g. fab1
 
- ``` sh
+``` sh
 su fab1
 ```
 
 Run an update
 
- ``` sh
+``` sh
 sudo apt update && sudo apt -y full-upgrade && sudo apt -y autoremove && sudo apt -y autoclean
 ```
 
-Install more tools (alt install ```kali-linux-default``` or ```kali-linux-large```)
+Install more tools (alt install```kali-linux-default``` or```kali-linux-large```)
 
- ``` sh
+``` sh
 sudo apt-get install kali-linux-everything
 ```
 
 Options to get current version
 
- ``` sh
+``` sh
 lsb_release -a
 cat /etc/os-release
 hostnamectl
@@ -54,7 +54,7 @@ hostnamectl
 
 Add new user e.g. 0xfab1 with full privileges:
 
- ``` sh
+``` sh
 sudo useradd -m 0xfab1
 sudo passwd 0xfab1
 sudo usermod -a -G sudo 0xfab1
@@ -65,15 +65,15 @@ whoami
 
 ## Set german keyboard
 
- ``` sh
+``` sh
 setxkbmap -layout de
 ```
 
 ## Enlargen Disk
 
-Use fdisk to enlargen ```/dev/sda``` (e.g. when providing more disk space to the VM)
+Use fdisk to enlargen```/dev/sda``` (e.g. when providing more disk space to the VM)
 
- ``` sh
+``` sh
 df -h # check current space
 sudo fdisk /dev/sda # run fdisk to resize the partition
 -> u # change the units to sectors
@@ -94,20 +94,20 @@ df -h # verfiy space has increased
 
 Check the NetworkManager.conf
 
- ``` sh
+``` sh
 sudo nano /etc/NetworkManager/NetworkManager.conf
 ```
 
 If "managed=false" set this to true
 
- ``` sh
+``` sh
 [ifupdown]
 managed=true
 ```
 
 now save the file and restart the network manager.
 
- ``` sh
+``` sh
 systemctl restart NetworkManager
 ```
 
@@ -115,20 +115,20 @@ systemctl restart NetworkManager
 
 Search for network devices in Monitor Mode and Access Points
 
- ``` sh
+``` sh
 iwconfig 2>/dev/null | grep "Mode\\:Monitor" | awk '{print $1}'
 iwconfig 2>&1 | sed -n -e 's/^.\*Access Point: //p'
 ```
 
 ### Get a GUI
 
-Run ```startx``` if you are on a local machine, in a console and have a GUI installed.
+Run```startx``` if you are on a local machine, in a console and have a GUI installed.
 
 #### Kali in WSL2 with GUI
 
 Set WSL version 2
 
- ``` ps11
+``` ps11
 (New-Object System.Net.WebClient).DownloadFile("https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi", "wsl_update_x64.msi") 
 Start-Process msiexec.exe -Wait -ArgumentList '/I wsl_update_x64.msi /quiet' 
 wsl --set-version kali-linux 2
@@ -136,7 +136,7 @@ wsl --set-version kali-linux 2
 
 Update Kali and install kex
 
- ``` sh
+``` sh
 sudo apt update && sudo apt install -y kali-linux-large
 sudo apt install -y kali-win-kex
 kex start
@@ -162,13 +162,13 @@ Make sure ssh (22) and rdp (3389) ports are open.
 
 Depending on your setup you can open a port in Azure CLI as follows:
 
- ``` sh
+``` sh
 az vm open-port --resource-group myResourceGroup --name myVM --port 3389
 ```
 
 Connect via SSH to Kali and run the following commands:
 
- ``` sh
+``` sh
 sudo apt update
 sudo apt-get -y install xfce4
 sudo apt-get -y install xrdp
@@ -179,7 +179,7 @@ sudo service xrdp restart
 
 Some notes: (ignore this)
 
- ``` sh
+``` sh
 service xrdp-sesman start
 update-rc.d xrdp enable
 apt-get remove gnome-core

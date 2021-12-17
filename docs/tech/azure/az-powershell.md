@@ -18,7 +18,7 @@ Get-AzContext
 
 Use device code to login:
 
- ``` ps11
+``` ps11
 Connect-AzAccount -Tenant <tenantID> -UseDeviceAuthentication
 ```
 

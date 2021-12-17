@@ -15,7 +15,7 @@ Info
 
 Remove EXIF data except orientation information
 
- ``` sh
+``` sh
 exiftool "-overwrite_original" "-all:all=" "-tagsfromfile" "@" "-exif:Orientation" "file.jpg"
 ```
 
@@ -58,13 +58,13 @@ for %%x in (%*) do (
 
 Slidshow using revealjs
 
- ``` sh
+``` sh
 pandoc -s -t revealjs slides.md -o slides.html
 ```
 
 Slidshow using slidy
 
- ``` sh
+``` sh
 pandoc -s -t slidy slides.md -o slides.html
 ```
 
@@ -80,8 +80,8 @@ Info
 | Source        | <https://github.com/FFmpeg/FFmpeg>      |
 | Download      | <https://ffmpeg.org/download.html>      |
 | Docs          | <https://ffmpeg.org/documentation.html> |
-| Windows       | ```choco install ffmpeg```              |
-| Linux         | ```apt install ffmpeg```                |
+| Windows       |```choco install ffmpeg```              |
+| Linux         |```apt install ffmpeg```                |
 
 Helper:
 
@@ -172,7 +172,7 @@ ffmpeg -framerate 30 -start_number 11021 -i "E:\path\G%07d.jpg" -c:v libx264 "E:
 
 Add the subtitles to the video file (not just overlay).
 
-Run ``` sh``` to see if "--enable-libass" is listed under section "configuration:". If not you need to get libass/enable libass.
+Run``` sh``` to see if "--enable-libass" is listed under section "configuration:". If not you need to get libass/enable libass.
 
 Convert the subtitles to .ass format, then use them for a video filter:
 
@@ -335,7 +335,7 @@ ffmpeg -i input.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*
 
 or for many GIF in one folder:
 
- ``` ps11
+``` ps11
 Get-ChildItem -file -Path * -Include *.gif | Foreach-Object { ffmpeg -i ('"' + $_.Name + '"') -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ('"' + $_.BaseName + '.mp4"') }
 ```
 
@@ -401,7 +401,7 @@ ffmpeg -i input.mp3 -c:a libvorbis output.oga
 
 This uses `libmp3lame` with default settings. The script will convert all media files it can handel and continue on error.
 
- ``` ps11
+``` ps11
 Get-ChildItem -file -exclude *.mp3 | Foreach-Object { ffmpeg -i ('"' + $_.Name + '"') -map_metadata -1 -acodec libmp3lame ('"' + $_.BaseName + '.mp3"') }
 ```
 
@@ -421,13 +421,13 @@ Info
 
 Use ImageMagick to optimize a GIF
 
- ``` sh
+``` sh
 convert -layers Optimize input.gif output.gif
 ```
 
 ### Resize
 
- ``` sh
+``` sh
 convert file.jpg -resize 1024 × 768 "folder\file.jpg"
 ```
 
@@ -437,13 +437,13 @@ Using ImageMagick with git ([Source](https://github.com/niedzielski/git-diff-img
 
 Set alias "diff-img"
 
- ``` sh
+``` sh
 git config --global alias.diff-img difftool\ -x\ \''compare -alpha copy "$LOCAL" "$REMOTE" png:- | montage -mode concatenate "$LOCAL" png:- "$REMOTE" png:- | display -title "$BASE: Local | Diff | Remote" png:-'\'
 ```
 
 or as a script for `~/bin/git-diff-img`
 
- ``` sh
+``` sh
 #!/usr/bin/env sh
 # $@ images
 exec git difftool -x '
@@ -455,7 +455,7 @@ exec git difftool -x '
 
 Execute against png images only:
 
- ``` sh
+``` sh
 git diff-img **.png
 ```
 
@@ -474,12 +474,12 @@ Info
 
 Encrypt with symmetric cypher
 
- ``` sh
+``` sh
 gpg --symmetric --cipher-algo aes256 -o test.txt.gpg test.txt
 ```
 
 Decrypt with symmetric cypher
 
- ``` sh
+``` sh
 gpg -d -o test.txt test.txt.gpg
 ```

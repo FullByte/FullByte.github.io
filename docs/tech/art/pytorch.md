@@ -7,24 +7,24 @@ Install tools:
 
 Check status of nvidia settings:
 
- ``` sh
+``` sh
 nvidia-smi
 nvcc -V
 ```
 
 Install tools using Miniconda CLI:
 
- ``` sh
+``` sh
 conda install numpy ninja pyyaml mkl mkl-include setuptools cmake cffi typing_extensions future six requests dataclasses
 conda install -c conda-forge libuv=1.39 # Windows
 ```
 
-PyTorch does not use the systems CUDA library. You can clone and compile pytorch yourself or you need to choose the correct precompiled binaries matching your local CUDA library. So, use the right CUDA version you got from ```nvcc -V``` and check the [pytorch install guide](https://pytorch.org/) for details.
+PyTorch does not use the systems CUDA library. You can clone and compile pytorch yourself or you need to choose the correct precompiled binaries matching your local CUDA library. So, use the right CUDA version you got from```nvcc -V``` and check the [pytorch install guide](https://pytorch.org/) for details.
 
 Example for CUDA 11 for windows with Conda or PIP:
 
-- Install PyTorch via Csonda: ```conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge```
-Install PyTorch via PIP: ```pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio===0.8.1 -f https://download.pytorch.org/whl/torch_stable.html```
+- Install PyTorch via Csonda:```conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge```
+Install PyTorch via PIP:```pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio===0.8.1 -f https://download.pytorch.org/whl/torch_stable.html```
 
 Now, test with python if tools are installed and pytorch with CUDA works.
 
@@ -47,17 +47,17 @@ Expected output:
 
 ### deep-daze examples
 
-- Create Image: ```imagine "a house in the forest"```
-- Create Image with better quality: ```imagine "shattered plates on the ground" --deeper```
-- Create Image and add more layers = better results: ```imagine "stranger in strange lands" --num-layers 32```
+- Create Image:```imagine "a house in the forest"```
+- Create Image with better quality:```imagine "shattered plates on the ground" --deeper```
+- Create Image and add more layers = better results:```imagine "stranger in strange lands" --num-layers 32```
 
-I created a video of all 34 pictures created while running this command ```imagine "a house in the forest"``` and the output looks like this:
+I created a video of all 34 pictures created while running this command```imagine "a house in the forest"``` and the output looks like this:
 
 ![pytorch output](_pytorch-test.webp)
 
 This script will create a new folder on the local desktop and run deep-daze for 60min. The resulting images will be used to create an mp4 and webp video within the same folder.
 
- ``` ps11
+``` ps11
 # Add a new input
 $text = "Correct Horse Battery Staple"
 
@@ -103,7 +103,7 @@ imagine()
 
 ### Big Sleep example
 
-- Create Image ```dream "a pyramid made of ice"```
+- Create Image```dream "a pyramid made of ice"```
 
 ### Big Sleep script
 

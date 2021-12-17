@@ -5,12 +5,12 @@ Thanks for your interest!
 
 Query a DNS for TXT records of [0xfab1.net](https://0xfab1.net) to get some contact details:
 
-- Linux: ```curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'  | jq -r .Answer[].data```
-- Windows ```(Resolve-DnsName 0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | Format-Table```
+- Linux:```curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'  | jq -r .Answer[].data```
+- Windows```(Resolve-DnsName 0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | Format-Table```
 
 and you will receive this result:
 
- ``` sh
+``` sh
 "v=me; github=https://github.com/FullByte"
 "v=me; twitter=https://twitter.com/ZeroGdoubleD"
 "v=me; about=https://0xfab1.net/about/"
@@ -101,12 +101,12 @@ You can support me by transferring money here:
 
 Crypto currencies:
 
-- Bitcoin: ```1DGPKnZ6VuHD4R93dL96QpvpuTvttandpW```
-- Ethereum: ```0x11b8881E57EA61810b44053Fc70fc3B6658A84dB```
-- zcash: ```t1StvTKicuaTshVTkyxqS6tN7CsD9fU39uo```
-- Stellar: ```GDQP2KPQGKIHYJGXNUIYOMHARUARCA7DJT5FO2FFOOKY3B2WSQHG4W37``` (Memo: ```3593387952```)
-- Litecoin: ```LMfELCzKSvpUVgq5hGzV3p8h9Hz3DXR2eV```
-- Filecoin: ```f12zguoe44sdjov5lfkrgulpd75zruvp5zclmx4cq```
+- Bitcoin:```1DGPKnZ6VuHD4R93dL96QpvpuTvttandpW```
+- Ethereum:```0x11b8881E57EA61810b44053Fc70fc3B6658A84dB```
+- zcash:```t1StvTKicuaTshVTkyxqS6tN7CsD9fU39uo```
+- Stellar:```GDQP2KPQGKIHYJGXNUIYOMHARUARCA7DJT5FO2FFOOKY3B2WSQHG4W37``` (Memo:```3593387952```)
+- Litecoin:```LMfELCzKSvpUVgq5hGzV3p8h9Hz3DXR2eV```
+- Filecoin:```f12zguoe44sdjov5lfkrgulpd75zruvp5zclmx4cq```
 
 Other support channels:
 

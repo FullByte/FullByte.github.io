@@ -8,7 +8,7 @@ Right Join --> Auch wenn links keine Werte zu rechts stehen wird links angezeigt
 
 ## CASE Anweisung
 
-This example translates ```[Table].[statusID]``` into a given text value.
+This example translates```[Table].[statusID]``` into a given text value.
 
 ```SQL
 SELECT [Table] =

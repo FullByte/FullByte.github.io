@@ -67,7 +67,7 @@
 
 ### YouTube
 
-You can get the atom feed of a YouTube channel by adding the channel id to this URL: ```https://www.youtube.com/feeds/videos.xml?channel_id=```
+You can get the atom feed of a YouTube channel by adding the channel id to this URL:```https://www.youtube.com/feeds/videos.xml?channel_id=```
 
 Channel: <https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw>
 Atom: <https://www.youtube.com/feeds/videos.xml?channel_id=UCuAXFkgsw1L7xaCfnd5JJOw>

@@ -21,39 +21,39 @@ All mentioned tools are described in more detail below.
 | Download      | <https://github.com/curl/curl/releases>                              |
 | Docs          | <https://everything.curl.dev> or <https://curl.se/docs/manpage.html> |
 | Book          | <https://curl.se/docs/>                                              |
-| Windows       | ```scoop install curl```                                             |
-| Ubuntu        | ```apt install curl```                                               |
+| Windows       |```scoop install curl```                                             |
+| Ubuntu        |```apt install curl```                                               |
 
 ### Random Examples
 
 Example to check /24 range in abuseipdb.com for the last 3 days
 
- ``` sh
+``` sh
 curl -s -G https://api.abuseipdb.com/api/v2/check-block --data-urlencode "network=123.123.123.1/24" -d maxAgeInDays=$DAYS -H "Key: apikeyfromabuseipdb.com" -H "Accept: application/json" |jq '.data.reportedAddress'
 ```
 
 If you want to inspect the headers of a response from some endpoint include the `-I` flag and `curl` will
 return just the headers.
 
- ``` sh
+``` sh
 curl -I localhost:3000/posts
 ```
 
 Example of using curl with basic auth credentials
 
- ``` sh
+``` sh
 curl -u username:password staging.example.com
 ```
 
 Query a website e.g. request a json response from cloudflare-dns.com on TXT records of the domain 0xfab1.net
 
- ``` sh
+``` sh
 curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'
 ```
 
 ### Send Mail
 
- ``` sh
+``` sh
 curl --ssl-reqd --url 'smtps://smtp.gmail.com:465' --user 'username@gmail.com:password' --mail-from 'username@gmail.com' --mail-rcpt 'john@example.com' --upload-file mail.txt
 ```
 
@@ -79,19 +79,19 @@ Some more information:
 
 Create Folders
 
- ``` sh
+``` sh
 curl -X MKCOL 'http://your.server/uploads/nested_folder1' --user 'name:pwd'
 ```
 
 Copy Files
 
- ``` sh
+``` sh
 curl -T <filename> -u <username>:<password> <url> -o /dev/stdout
 ```
 
 Copy all files in a Folder (and subfolder). Folders must already exist.
 
- ``` sh
+``` sh
 cd local_folder_to_upload && find . -exec curl -T {} 'http://your.server/uploads/{}' --user 'name:pwd' \;
 ```
 
@@ -108,10 +108,10 @@ cd local_folder_to_upload && find . -exec curl -T {} 'http://your.server/uploads
 
 Generally, this can be blocked but works in most cases. To avoid a few things:
 
-- Ignore **robots.txt** blocking the download by using ```-e robots=off```
-- Add **user-agent**; either one that guarantees a math e.g. ```--user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"``` or just the one you are using atm e.g. ```Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0``` (Firefox: about:config --> devtools.responsive.userAgent)
-- **Random service blocks**: Try removing some options as they may the reason access is blocked e.g. ```-N``` blocked by AWS S3.
-- Adding a **referrer** may help. Figure out what you need by checking why it works in the browser e.g. ```wget --referer='http://example.net' http://example.com/```
+- Ignore **robots.txt** blocking the download by using```-e robots=off```
+- Add **user-agent**; either one that guarantees a math e.g.```--user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"``` or just the one you are using atm e.g.```Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0``` (Firefox: about:config --> devtools.responsive.userAgent)
+- **Random service blocks**: Try removing some options as they may the reason access is blocked e.g.```-N``` blocked by AWS S3.
+- Adding a **referrer** may help. Figure out what you need by checking why it works in the browser e.g.```wget --referer='http://example.net' http://example.com/```
 - Checking the details of the **HTTP status code** you get as an error may help resolve the issue too: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
 - A required **cookie** or missing **authorization** can be further reasons why the download doesn't work or run though fully.
 
@@ -233,20 +233,20 @@ List of public gateways: <https://ipfs.github.io/public-gateway-checker/>
 
 Copying file to host:
 
- ``` sh
+``` sh
 scp SourceFile user@host:~/TargetFile
 ```
 
 Copying file from host and copying folder from host (with -r switch):
 
- ``` sh
+``` sh
 scp user@host:~/remotefolder .
 scp -r user@host:~/remotefolder TargetFolder
 ```
 
 Note that if the remote host uses a port other than the default of 22, it can be specified in the command. For example, copying a file from host:
 
- ``` sh
+``` sh
 scp -P 666 user@host:directory/SourceFile TargetFile
 ```
 
@@ -404,19 +404,19 @@ Some examples on how to use youtube-dl or ytdlpl to download videos.
 
 Download to a specific location in best quality:
 
- ``` sh
+``` sh
 youtube-dl -f 22 -o 'path' '<youtube-link>'
 ```
 
 Download with details:
 
- ``` sh
+``` sh
 youtube-dl -f best --write-description --write-info-json --write-annotations --write-sub --write-thumbnail '<youtube-link>'
 ```
 
 ### Audio only
 
- ``` sh
+``` sh
 youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 '<youtube-link>'
 ```
 
@@ -424,13 +424,13 @@ youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 '<youtube-lin
 
 Download a playlist:
 
- ``` sh
+``` sh
 youtube-dl -best 22 --yes-playlist '<playlist-link'
 ```
 
 Download a playlist with audio only:
 
- ``` sh
+``` sh
 youtube-dl -f 22 --yes-playlist '<playlist-link'
 ```
 
@@ -438,7 +438,7 @@ youtube-dl -f 22 --yes-playlist '<playlist-link'
 
 Get Source formats available:
 
- ``` sh
+``` sh
 youtube-dl --list-formats '<youtube-link>'
 ```
 
@@ -447,7 +447,7 @@ youtube-dl --list-formats '<youtube-link>'
 Run ytdlpl (youtube downloader playlist) and add the playlist you want to download.
 This script will download the latest youtube-dl version for windows to the current folder if not available.
 
- ``` ps11
+``` ps11
 Function ytdlpl
 {
     Param ($playlist)
@@ -470,7 +470,7 @@ Function ytdlpl
 
 Alternatively use this script
 
- ``` ps11
+``` ps11
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/scripts/main/tools/youtubedl/youtube-dl.ps1'))
 ```
 

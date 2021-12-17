@@ -44,20 +44,20 @@ Windows 10
 
 View Options
 
- ``` ps11
+``` ps11
 Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
 ```
 
 Install SSH Client and or Server
 
- ``` ps11
+``` ps11
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ```
 
 **Configure SSH**
 
- ``` ps11
+``` ps11
 Start-Service sshd
 Set-Service -Name sshd -StartupType 'Automatic'
 ```
@@ -66,13 +66,13 @@ Set-Service -Name sshd -StartupType 'Automatic'
 
 There should be a firewall rule named "OpenSSH-Server-In-TCP", which should be enabled
 
- ``` ps11
+``` ps11
 Get-NetFirewallRule -Name *ssh*
 ```
 
 If the firewall does not exist, create one
 
- ``` ps11
+``` ps11
 New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH-Server-In-TCP' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
 ```
 
@@ -114,7 +114,7 @@ To see all escape sequences press `~?`.
 
 Examples:
 
-- Forward Multiple Ports Over SSH: ```ssh dev@server.com -L 3000:localhost:3000 -L 9009:localhost:9009```
+- Forward Multiple Ports Over SSH:```ssh dev@server.com -L 3000:localhost:3000 -L 9009:localhost:9009```
 
 ## Wireguard
 

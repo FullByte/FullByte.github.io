@@ -8,7 +8,7 @@ Here is a nice [Infrastructure Map](https://infrastructuremap.microsoft.com). Ac
 
 ## Geography and Regions
 
-The following command shows us all available regions: ```az account list-locations -o table```
+The following command shows us all available regions:```az account list-locations -o table```
 
 | DisplayName              | Name                | RegionalDisplayName                   |
 |--------------------------|---------------------|---------------------------------------|
@@ -87,7 +87,7 @@ The following command shows us all available regions: ```az account list-locatio
 | UAE Central              | uaecentral          | (Middle East) UAE Central             |
 | Brazil Southeast         | brazilsoutheast     | (South America) Brazil Southeast      |
 
-We can filter all regions of a given geography e.g. Europe: ```az account list-locations --query "[? contains(regionalDisplayName,'(Europe)')]" -o table```
+We can filter all regions of a given geography e.g. Europe:```az account list-locations --query "[? contains(regionalDisplayName,'(Europe)')]" -o table```
 
 | Name               | DisplayName          | RegionalDisplayName           |
 |--------------------|----------------------|-------------------------------|
@@ -235,7 +235,7 @@ United Kingdom
 United States
 ```
 
-The command ```az account list-locations | jq 'map(.metadata.geographyGroup)' | sort | uniq``` returns the following unique list of geographies:
+The command```az account list-locations | jq 'map(.metadata.geographyGroup)' | sort | uniq``` returns the following unique list of geographies:
 
 ``` txt
 Africa

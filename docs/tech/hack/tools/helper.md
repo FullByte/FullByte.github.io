@@ -2,8 +2,8 @@
 
 ## Chat between two users with netcat
 
-- User 1 (with IP 10.9.182.239) runs this command: ```nc -l -p 3303```
-- Other chat user then runs this command: ```nc 10.9.182.239 3303```
+- User 1 (with IP 10.9.182.239) runs this command:```nc -l -p 3303```
+- Other chat user then runs this command:```nc 10.9.182.239 3303```
 
 ## Wireshark
 
@@ -11,7 +11,7 @@ Wireshark
 
 ## seclists
 
-seclists ```sudo apt -y install seclists```
+seclists```sudo apt -y install seclists```
 
 ## wfuzz
 
@@ -52,20 +52,20 @@ TODO
 
 Generate statistics from a pwdump file
 
- ``` sh
+``` sh
 sudo git clone https://github.com/Dionach/pwdumpstats /opt/pwdumpstats
 sudo ln -s /opt/pwdumpstats/pwdumpstats.py /usr/local/bin/pwdumpstats.py
 ```
 
 Run example:
 
- ``` sh
+``` sh
 pwdumpstats.py /usr/share/wordlists/rockyou.txt
 ```
 
 ## CODA Pentest Scripts
 
- ``` sh
+``` sh
 git clone https://github.com/codagroup/pentestscripts /opt/pentestscripts
 ln -s /opt/pentestscripts/sourcescan.py /usr/local/bin/sourcescan.py
 ```
@@ -77,7 +77,7 @@ High-performance load testing tool, written in Golang.
 | Content | Info                                      |
 |---------|-------------------------------------------|
 | Source  | <https://github.com/ddosify/ddosify>      |
-| Docker  | ```docker run -it --rm ddosify/ddosify``` |
+| Docker  |```docker run -it --rm ddosify/ddosify``` |
 
 Example:
 
@@ -87,15 +87,15 @@ ddosify -t 0xfab1.net
 
 ## Eyewitness
 
-Eyewitness (screenshot pws): ```sudo apt install eyewitness```
+Eyewitness (screenshot pws):```sudo apt install eyewitness```
 
 ## FreeIPMI
 
-FreeIPMI: ```sudo apt install freeipmi-tools```
+FreeIPMI:```sudo apt install freeipmi-tools```
 
 ## Frogger
 
- ``` sh
+``` sh
 git clone https://github.com/commonexploits/vlan-hopping /opt/frogger
 ln -s /opt/frogger/froggers.sh /usr/local/bin/froggers.sh
 chmod +x /opt/frogger/froggers.sh
@@ -103,7 +103,7 @@ chmod +x /opt/frogger/froggers.sh
 
 ## hcxtools
 
-hcxtools to convert packets: ```sudo apt install hcxdumptool hcxtools```
+hcxtools to convert packets:```sudo apt install hcxdumptool hcxtools```
 
 ## mimikatz
 

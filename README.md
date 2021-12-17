@@ -1,6 +1,6 @@
 # README
 
-This is the source of my personal but public webpage ```¯\_(ツ)_/¯```
+This is the source of my personal but public webpage```¯\_(ツ)_/¯```
 
 [![Header](header.svg)](https://0xfab1.net)
 
@@ -25,7 +25,7 @@ This is the source of my personal but public webpage ```¯\_(ツ)_/¯```
 
 ## About
 
-Publishing my projects and notes has been great exercise for me. As longs as this works well for me I will continue doing so :) The content may appear random as it deals with basically anything I find interesting and noteworthy ```¯\_(ツ)_/¯```
+Publishing my projects and notes has been great exercise for me. As longs as this works well for me I will continue doing so :) The content may appear random as it deals with basically anything I find interesting and noteworthy```¯\_(ツ)_/¯```
 
 Thanks for your interest and I appreciate your [pull-request](#contribute) for typos/errors in existing pages!
 

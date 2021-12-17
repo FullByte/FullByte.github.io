@@ -4,14 +4,14 @@ More: <https://bytescout.com/blog/windows-command-prompt-commands.html>
 
 Basics
 
-- Systeminformation: ```systeminfo```
-- NIC and DNS Info: ```ipconfig -all```
-- Active Connections: ```netstat –a```
-- Routing table: ```route print```
-- Users logged in: ```(Get-CimInstance Win32_LoggedOnUser) | Select-Object -Unique```
-- Services Running: ```Msconfig```
-- Firewall settings: ```netsh advfirewall show currentprofile```
-- Power Config: ```powercfg /l```
+- Systeminformation:```systeminfo```
+- NIC and DNS Info:```ipconfig -all```
+- Active Connections:```netstat –a```
+- Routing table:```route print```
+- Users logged in:```(Get-CimInstance Win32_LoggedOnUser) | Select-Object -Unique```
+- Services Running:```Msconfig```
+- Firewall settings:```netsh advfirewall show currentprofile```
+- Power Config:```powercfg /l```
 
 ## Systeminfo
 
@@ -36,14 +36,14 @@ For are more detailed system info dump run [winPEAS](https://raw.githubuserconte
 
 ## Robocopy
 
-- Exclude files: ```Robocopy /xd excludethis```
-- Ignore hidden files ```Robocopy -s -h```
+- Exclude files:```Robocopy /xd excludethis```
+- Ignore hidden files```Robocopy -s -h```
 
 ## Format and Image stuff
 
 ### Format FAT32 on >32GB
 
-Use ```diskpart``` to clean the disk (requires Admin)
+Use```diskpart``` to clean the disk (requires Admin)
 
 ```bat
 diskpart
@@ -113,9 +113,9 @@ route print
 
 [pathping](https://de.wikipedia.org/wiki/Pathping) (alternative to tracert)
 
-Using ICMP: ```traceroute -I www.microsoft.com```
-Using UDP: ```traceroute -U www.microsoft.com```
-Using TCP Port 80 (usually allowed by firewalls): ```traceroute -T -p 80 www.microsoft.com```
+Using ICMP:```traceroute -I www.microsoft.com```
+Using UDP:```traceroute -U www.microsoft.com```
+Using TCP Port 80 (usually allowed by firewalls):```traceroute -T -p 80 www.microsoft.com```
 
 ### Send Message
 
@@ -126,12 +126,12 @@ msg \* /SERVER:localhost /TIME:666 /W This is a test message
 
 ## More
 
-- To hide something: ```copy /b secret.jpg + pic1.jpg newpic.jpg```
-- To merge video files: ```copy /b video1.avi + video2.avi video.avi```
-- Find hidden WiFi network: ```Netsh wlan show networks mode=bssid```
-- Reply from IP: TTL expired in transit: ```ARP -p <IP> <MAC>```
-- Benchmark Drive: ```Winsat disk –write –ran –ransize 262144 –drive f```
-- Create Symbolic links: ```fsutil hardlink create <destination_path> <file_path>```
+- To hide something:```copy /b secret.jpg + pic1.jpg newpic.jpg```
+- To merge video files:```copy /b video1.avi + video2.avi video.avi```
+- Find hidden WiFi network:```Netsh wlan show networks mode=bssid```
+- Reply from IP: TTL expired in transit:```ARP -p <IP> <MAC>```
+- Benchmark Drive:```Winsat disk –write –ran –ransize 262144 –drive f```
+- Create Symbolic links:```fsutil hardlink create <destination_path> <file_path>```
 
 ## Clean up logs
 

@@ -24,13 +24,13 @@ This is a script I wrote to install and run boxes locally on Windows 10:
 
 One-liner executing the gist I created:
 
- ``` ps11
+``` ps11
 iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/FullByte/f0140dda330ffb19cee4e0cf24a0cdfd/raw/5b81224d02959514b65c4216ee585c1cfa1b2861/%25E2%2580%258B%2520Start-Boxes.ps1'))
 ```
 
 This is the script to get all the requirements installed, download the code and run a local webserver serving boxes py:
 
- ``` ps11
+``` ps11
 #Requires -RunAsAdministrator
 
 # Install/Update tools

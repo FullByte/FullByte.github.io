@@ -559,7 +559,7 @@ function EscapeEntities(str) str.replace(/[^\x20-\x7E]/g, function(str) charToEn
 
 ### 534 ways to reload the page with JavaScript
 
- ```js
+```js
 - location = location
 - location = location.href
 - location = window.location

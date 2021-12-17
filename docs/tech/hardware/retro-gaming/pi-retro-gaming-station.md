@@ -15,13 +15,13 @@ All are good choices. Pick the one best for your hardware/roms:
 
 Raspberry Config
 
- ``` sh
+``` sh
 raspi-config
 ```
 
 Raspberry Config File
 
- ``` sh
+``` sh
 /boot/config.txt
 hdmi_force_hotplug=1
 hdmi_drive=2
@@ -33,7 +33,7 @@ First Retro Gaming Pi with Raspberry Pi 1 using analog video output to a 7" Car 
 
 Edit config.txt:
 
- ``` sh
+``` sh
 # uncomment the following to adjust overscan. Use positive numbers if console
 # goes off screen, and negative if there is too much border
 overscan_left=22

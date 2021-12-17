@@ -6,7 +6,7 @@ Bitcoin miner using ASIC Chips attached via USB (2015)
 
 Install and build
 
- ``` sh
+``` sh
 git clone https://github.com/luke-jr/bfgminer
 cd bfgminer
 ./autogen.sh
@@ -16,26 +16,26 @@ make
 
 For Raspberry Pi:
 
- ``` sh
+``` sh
 sudo nano /boot/cmdline.txt
 Add "slub_debug=FP" to the code at the end of the first line (same line)
 ```
 
 Configure bfgminer
 
- ``` sh
+``` sh
 sudo ./bfgminer -S antminer:all -o stratum.bitcoin.cz:3333 -u FullByte.worker1 -p xZ7du2qE --set-device antminer:freq=4F02
 ```
 
 Add to autostart
 
- ``` sh
+``` sh
 sudo nano /etc/rc.local
 ```
 
 Add the following lines at the bottom but above "exit 0" :
 
- ``` sh
+``` sh
 cd /home/pi/PiMiner
 sudo python PiMiner.py &
 
@@ -50,13 +50,13 @@ sudo screen -S bfgminder -d -m sudo ./bfgminer -S antminer:all -o eu-stratum.bt$
 
 Now with the following command you can access the bfgminer screen:
 
- ``` sh
+``` sh
 sudo screen -r
 ```
 
 Kill mining task
 
- ``` sh
+``` sh
 ps aux | grep PiMiner
 sudo kill <processID>
 ps aux | grep bfgminer
@@ -77,7 +77,7 @@ Hash Rate	(GH/s) 	–bmsc-freq Setting
 
 Run the following commands
 
- ``` sh
+``` sh
 sudo apt update
 sudo apt install git
 git clone http://github.com/adafruit/Adafruit-Raspberry-Pi-Python-Code.git
@@ -87,7 +87,7 @@ sudo apt install python-rpi.gpio
 
 Edit modules
 
- ``` sh
+``` sh
 sudo nano /etc/modules
 i2c-bcm2708
 i2c-dev
@@ -95,7 +95,7 @@ i2c-dev
 
 check for newest version
 
- ``` sh
+``` sh
 sudo apt install python-smbus
 sudo apt install i2c-tools
 ```
@@ -104,7 +104,7 @@ IF this file exists (/etc/modprobe.d/raspi-blacklist.conf) do...
 
 Comment out these 2 lines:
 
- ``` sh
+``` sh
 sudo nano /etc/modprobe.d/raspi-blacklist.conf
 #blacklist spi-bcm2708
 #blacklist i2c-bcm2708
@@ -112,6 +112,6 @@ sudo nano /etc/modprobe.d/raspi-blacklist.conf
 
 Test connection
 
- ``` sh
+``` sh
 sudo i2cdetect -y 1
 ```

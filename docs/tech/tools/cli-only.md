@@ -119,14 +119,14 @@ Fun Stuff
 
 Install
 
- ``` sh
+``` sh
 sudo apt-get install python3 pip
 sudo pip3 install asciinema
 ```
 
 Record a session
 
- ``` sh
+``` sh
 asciinema rec
 echo "hello world"
 exit
@@ -134,7 +134,7 @@ exit
 
 Play existing recordings (local/online):
 
- ``` sh
+``` sh
 asciinema play /path/to/asciicast.cast
 asciinema play https://asciinema.org/a/237459
 ```

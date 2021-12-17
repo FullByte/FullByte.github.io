@@ -36,7 +36,7 @@ Let's download the dictionary file "fsocity.dic" and have a look:
 wget $IP/fsocity.dic
 ```
 
-The file seems to be a password list but there are a lot of redundant entries. If we want to use this to brute-force login to the word-press admin portal we should remove all duplicate entries. We can use ```uniq``` for this but uniq expects a sorted list so we run the following:
+The file seems to be a password list but there are a lot of redundant entries. If we want to use this to brute-force login to the word-press admin portal we should remove all duplicate entries. We can use```uniq``` for this but uniq expects a sorted list so we run the following:
 
 ``` sh
 sort fsocity.dic | uniq > uniqfsocity.dic
@@ -118,7 +118,7 @@ cat password.raw-md5
 robot:c3fcd3d76192e4007dfb496cca67e13b
 ```
 
-This looks like the hashed password of user "robot". Let's find out what hash type is used by running ```hash-identifier```.
+This looks like the hashed password of user "robot". Let's find out what hash type is used by running```hash-identifier```.
 
 ``` sh
 hash-identifier c3fcd3d76192e4007dfb496cca67e13b
@@ -128,7 +128,7 @@ Possible Hashs:
 [+] Domain Cached Credentials - MD4(MD4(($pass)).(strtolower($username)))
 ```
 
-Let's crack the MD5 hash with ```hashcat``` using the rockyou password list.
+Let's crack the MD5 hash with```hashcat``` using the rockyou password list.
 
 ``` sh
 hashcat -m0 --force c3fcd3d76192e4007dfb496cca67e13b /home/0xfab1/rockyou.txt

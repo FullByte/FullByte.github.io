@@ -62,10 +62,10 @@ There are 4 predictable roll results. Below is a list explaining the different o
 
 | Roll Result           | Rule                                                                     | Formula                                             | Example    | Combinations | Probability |
 |-----------------------|--------------------------------------------------------------------------|-----------------------------------------------------|------------|--------------|-------------|
-| ⚰️ Das Unvermeidliche | A number & that number +1 and something else which is not one of the two | ```n & n+1 & (!n / !n+1)```                         | ⚀⚁⚃ or ⚂⚃⚀ | 96 of 216    | 44,4%       |
-| 🎁 Wunsch             | Two of a kind & something else and which is not that number              | ```2x n & !n```                                     | ⚀⚀⚁ or ⚁⚃⚁ | 90 of 216    | 41,7%       |
-| 🦄 Einhorn            | All numbers must be at least 2 apart                                     | ```n & n+2 & (n+4 / n+5)``` and ```n & n+3 & n+5``` | ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216    | 11,1%       |
-| ☢️ Dreifaltigkeit     | Three of a kind.                                                         | ```3x n```                                          | ⚁⚁⚁ or ⚅⚅⚅ | 6 of 216     | 2,8%        |
+| ⚰️ Das Unvermeidliche | A number & that number +1 and something else which is not one of the two |```n & n+1 & (!n / !n+1)```                         | ⚀⚁⚃ or ⚂⚃⚀ | 96 of 216    | 44,4%       |
+| 🎁 Wunsch             | Two of a kind & something else and which is not that number              |```2x n & !n```                                     | ⚀⚀⚁ or ⚁⚃⚁ | 90 of 216    | 41,7%       |
+| 🦄 Einhorn            | All numbers must be at least 2 apart                                     |```n & n+2 & (n+4 / n+5)``` and```n & n+3 & n+5``` | ⚀⚂⚄ or ⚀⚃⚅ | 24 of 216    | 11,1%       |
+| ☢️ Dreifaltigkeit     | Three of a kind.                                                         |```3x n```                                          | ⚁⚁⚁ or ⚅⚅⚅ | 6 of 216     | 2,8%        |
 
 The current player decides to either predict the upcoming roll attempt **or** remain silent (passive roll / no prediction).
 
@@ -206,7 +206,7 @@ This is not needed to understand or play the game.
         \frac{(6+3-1)!}{3!*(6-1)!} = 56
     \end{align}
 
-    You can copy ```(6+3-1)!/(3!*(6-1)!)``` to WolframAlpha to calculate it or use [this link](https://www.wolframalpha.com/input/?i=%286%2B3-1%29%21%2F%283%21*%286-1%29%21%29).
+    You can copy```(6+3-1)!/(3!*(6-1)!)``` to WolframAlpha to calculate it or use [this link](https://www.wolframalpha.com/input/?i=%286%2B3-1%29%21%2F%283%21*%286-1%29%21%29).
 
     These 56 combinations distribute as follows:
 
@@ -233,7 +233,7 @@ This is not needed to understand or play the game.
 ??? note "Script to analyze all possible roll attempts"
     This python script calculates all possible dice results of the game Einhorn, counts the combinations and prints the probability of each of the four roll outcomes.
 
-    ``` py
+   ``` py
     from itertools import product # pip install itertools
     from collections import OrderedDict
     import math
@@ -282,7 +282,7 @@ This is not needed to understand or play the game.
     print("Wunsch: ", Wunsch, "({:.1f}".format(Wunsch / len(rolls) * 100), "%)")
     print("Das Unvermeidliche: ", Unvermeidlich, "({:.1f}".format(Unvermeidlich / len(rolls) * 100), "%)")
     print("Einhorn: ", Einhorn, "({:.1f}".format(Einhorn / len(rolls) * 100), "%)")
-    ```
+   ```
 
 ??? tip "Creating the game"
     **Self-made version**
