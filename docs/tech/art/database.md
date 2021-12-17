@@ -14,7 +14,7 @@ This is a collection of SQL queries that force SQL Server’s spatial results ta
 ![db_venus](_db_venus.png)
 
 ??? code "Venus in SQL"
-   ```sql
+    ```sql
     SELECT geometry::STGeomFromText('GEOMETRYCOLLECTION(
       POLYGON((0.0 -312.8,1.9 -308.7,3.9 -304.7,6.6 -301.4,10.5 -299.3,11.4 -299.9,12.3 -300.5,13.4 -300.9,15.0 -300.8,20.1 -291.5,23.1 -280.1,26.7 -269.3,33.7 -261.8,32.5 -263.3,31.3 -264.7,30.3 -266.4,29.8 -268.6,26.5 -274.3,24.5 -281.3,24.2 -288.9,26.0 -296.3,26.4 -296.9,26.6 -297.6,26.9 -298.2,27.5 -298.5,27.5 -298.7,27.5 -298.9,27.5 -299.1,27.5 -299.3,20.5 -302.1,13.8 -305.1,7.7 -308.8,2.7 -313.5,1.7 -313.5,0.8 -313.5,0.1 -313.3,0.0 -312.8)),
       POLYGON((113.3 -96.8,113.0 -98.0,112.6 -99.1,112.2 -100.2,111.7 -101.2,109.8 -101.2,107.9 -101.2,106.2 -101.0,105.0 -100.4,105.5 -97.2,107.8 -95.5,110.8 -95.3,113.3 -96.8)),
@@ -241,7 +241,7 @@ This is a collection of SQL queries that force SQL Server’s spatial results ta
       POLYGON((89.3 -215.3,89.3 -215.5,89.3 -215.7,89.3 -215.9,89.3 -216.1,86.7 -219.3,84.9 -223.3,83.6 -227.8,82.6 -232.6,82.4 -227.6,83.1 -222.1,85.2 -217.5,89.3 -215.3)),
       POLYGON((91.5 -86.3,90.9 -89.6,90.5 -93.1,89.8 -96.4,88.5 -99.0,88.4 -95.2,89.0 -92.0,89.9 -89.1,90.8 -86.2,91.0 -86.2,91.2 -86.2,91.4 -86.2,91.5 -86.3))
     )', 0)
-   ```
+    ```
 
 ### Grinch in SQL
 
@@ -249,7 +249,7 @@ This is a collection of SQL queries that force SQL Server’s spatial results ta
 - [download](_sql-grinch.sql)
 
 ??? code "Venus in SQL"
-   ```sql
+    ```sql
     SELECT geometry::STGeomFromText('GEOMETRYCOLLECTION(
     POLYGON(
       (169 -166, 118 -152, 93 -154, 45 -192, 39 -208, 35 -233, 37 -262, 45 -289, 42 -328, 44 -347, 53 -376, 60 -359, 
@@ -534,7 +534,7 @@ This is a collection of SQL queries that force SQL Server’s spatial results ta
       156 -304, 121 -280, 104 -283
     )
     )', 0);
-   ```
+    ```
 
 ### SQLbits
 
@@ -544,7 +544,7 @@ This is a collection of SQL queries that force SQL Server’s spatial results ta
 ![sql-bits](_sql-bits.png)
 
 ??? code "SQLbits"
-   ```sql
+    ```sql
     SELECT geometry::STPolyFromText(‘POLYGON ((104 -222, 173 -222, 174 -174, 171 -160, 163 -147, 150 -137, 136 -128, 123 -123, 110 -117, 82 -116, 61 -122, 41 -134, 17 -150, 6 -173, 1 -194, 0 -232, 9 -259, 21 -276, 32 -289, 52 -302, 69 -312, 88 -320, 105 -335, 110 -375, 102 -390, 84 -395, 75 -385, 76 -330, 5 -333, 7 -390, 11 -411, 25 -428, 42 -442, 67 -451, 105 -453, 126 -446, 144 -439, 162 -424, 173 -404, 180 -382, 182 -337, 178 -311, 167 -296, 153 -279, 138 -268, 89 -234, 75 -222, 71 -208, 73 -188, 88 -178, 100 -190, 105 -220, 104 -222))’,0) AS Drawing
 
     UNION ALL
@@ -580,7 +580,7 @@ This is a collection of SQL queries that force SQL Server’s spatial results ta
     + ‘((578 -246, 593 -257, 613 -265, 636 -271, 664 -276, 694 -277, 724 -281, 789 -283, 833 -283, 873 -281, 916 -273, 919 -285, 884 -293, 840 -295, 809 -299, 768 -299, 731 -298, 703 -295, 672 -293, 647 -289, 624 -281, 605 -276, 593 -271, 580 -262, 579 -262, 578 -246)),’
 
     + ‘((578 -360, 593 -369, 615 -377, 635 -382, 664 -388, 689 -390, 716 -394, 751 -395, 857 -394, 881 -391, 905 -389, 932 -383, 939 -392, 917 -399, 880 -405, 839 -409, 786 -411, 739 -411, 701 -409, 667 -405, 635 -399, 611 -392, 591 -383, 580 -377, 578 -360)))’,0) AS Drawing
-   ```
+    ```
 
 ## Stored Procedures
 
@@ -725,7 +725,7 @@ ASCII art christmas tree using Recursion and CTEs.
 - Source: <https://learnsql.com/blog/draw-christmas-tree-sql/>
 
 ??? code "christmas-tree"
-   ```sql
+    ```sql
     WITH small_tree(tree_depth,pine) AS (
       SELECT 1 tree_depth,
       rpad(' ',10,' ') || '*'
@@ -743,10 +743,10 @@ ASCII art christmas tree using Recursion and CTEs.
     )
     SELECT pine
     FROM small_tree;
-   ```
+    ```
 
 ??? result "christmas-tree"
-   ``` txt
+    ``` txt
               *                    *                    *
              *.*                  *.*                  *.*
             *...*                *...*                *...*
@@ -757,7 +757,7 @@ ASCII art christmas tree using Recursion and CTEs.
        *.............*      *.............*      *.............*
       *...............*    *...............*    *...............*
      *.................*  *.................*  *.................*
-   ```
+    ```
 
 ### Man with a Hat
 
@@ -766,7 +766,7 @@ Draw a man with a hat using recursive queries and Common Table Expressions (CTEs
 - Source: <https://learnsql.com/blog/draw-sql-recursive-queries/>
 
 ??? code "Man with a Hat"
-   ```sql
+    ```sql
     WITH RECURSIVE hat
     AS (
       SELECT
@@ -828,6 +828,6 @@ Draw a man with a hat using recursive queries and Common Table Expressions (CTEs
         REPEAT(' ', 5) || '|' || '   {  |  }   ' || '|'
         AS VARCHAR(100))
       AS chin;
-   ```
+    ```
 
 ![sql-hat-guy](_sql-hat-guy.png)

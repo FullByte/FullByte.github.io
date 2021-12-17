@@ -13,7 +13,7 @@ Running nmap to search for available services and versions:```nmap -sC -sV 10.10
 ??? output "Nmap output"
     Result: two ports open SSH on 22 and HTTP on 80
 
-   ``` txt
+    ``` txt
     Host is up (0.021s latency).
     Not shown: 998 closed ports
     PORT   STATE SERVICE VERSION
@@ -26,7 +26,7 @@ Running nmap to search for available services and versions:```nmap -sC -sV 10.10
     |_http-server-header: Apache/2.4.38 (Debian)
     |_http-title: dogcat
     Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-   ```
+    ```
 
 ### gobuster
 
@@ -60,7 +60,7 @@ Apache/2.4.38 (Debian)
 Running nikto confirms the apache web server and shows PHP is used:```nikto -h 10.10.46.238```
 
 ??? output "nikto output"
-   ``` sh
+    ``` sh
     nikto -h 10.10.46.238
     - Nikto v2.1.6
     ---------------------------------------------------------------------------
@@ -81,7 +81,7 @@ Running nikto confirms the apache web server and shows PHP is used:```nikto -h 1
     + End Time:           2021-00-00 00:00:00 (GMT-4) (326 seconds)
     ---------------------------------------------------------------------------
     + 1 host(s) tested
-   ```
+    ```
 
 ## Visit website
 
