@@ -43,26 +43,26 @@ Alternative hosts:
 
 Run the following code to install and update the required tools using [python](https://www.python.org/) and build as well as serve the website (build is optional).
 
-``` sh
+``` sh title="Install"
 pip install --upgrade pip
 pip install mkdocs mkdocs-material mkdocs-minify-plugin
 ```
 
 If all above is already installed, make sure to use the latest version:
 
-``` sh
+``` sh title="Update"
 pip install -U mkdocs mkdocs-material mkdocs-minify-plugin
 ```
 
 Building the site will reveal all possible issues with the current version:
 
-``` sh
+``` sh title="Build"
 mkdocs build -v
 ```
 
 Run this command and navigate to <http://127.0.0.1:8888/> to browse locally.
 
-``` sh
+``` sh title="Serve"
 mkdocs serve -a localhost:8888 --dirtyreload --watch-theme -v
 ```
 

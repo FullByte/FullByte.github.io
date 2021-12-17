@@ -148,11 +148,11 @@ def getpassword(pwlength, extrachars):
         password.append(random.choice(string.ascii_letters + string.digits + string.punctuation + extrachars))
     return "".join(password)
 
-print("English password: " + getpassword(20, ""))
-print("German password:  " + getpassword(20, "äöüßÄÖÜẞ"))
-print("Italian password: " + getpassword(20, "ÀÈÉÌÒÙàèéìòù"))
-print("French password:  " + getpassword(20, "ÀÂÄÆÇÈÉÊËÎÏÔŒÙÛÜàâäæçrèéêëîïôœùûü"))
-print("Spanish password: " + getpassword(20, "¡¿ÁÉÍÑÓÚÜáéíñóúü"))
+print("English password: " + getpassword(22, ""))
+print("German password:  " + getpassword(22, "äöüßÄÖÜẞ"))
+print("Italian password: " + getpassword(22, "ÀÈÉÌÒÙàèéìòù"))
+print("French password:  " + getpassword(22, "ÀÂÄÆÇÈÉÊËÎÏÔŒÙÛÜàâäæçrèéêëîïôœùûü"))
+print("Spanish password: " + getpassword(22, "¡¿ÁÉÍÑÓÚÜáéíñóúü"))
 ```
 
 ## Art
