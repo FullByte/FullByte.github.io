@@ -1,6 +1,9 @@
-# TTL as OS identifier
+# Network
+
+## TTL as OS identifier
 
 There is a chance to guess the OS based on its TTL.
+
 Here is an overview:
 
 | OS                | Version               | Protocol     | TTL |

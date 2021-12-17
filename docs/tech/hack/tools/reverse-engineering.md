@@ -1,11 +1,23 @@
-# Radare2
+# Reverse Engineering
 
-|What|Where|
-|-|-|
-|Official Page|<https://www.radare.org>|
-|Source|<https://github.com/radareorg/radare2>|
-|Download|<https://github.com/radareorg/radare2/releases/>|
-|Install|sys/install.sh|
+## Ghidra
+
+- Ghidra source: <https://github.com/NationalSecurityAgency/ghidra>
+- Ghidra page: <https://ghidra-sre.org>
+
+Ghidra Scripts/Plugins/Extension:
+
+- <https://github.com/AllsafeCyberSecurity/awesome-ghidra>
+- <https://github.com/AllsafeCyberSecurity/ghidra_scripts>
+
+## Radare2
+
+| What          | Where                                            |
+|---------------|--------------------------------------------------|
+| Official Page | <https://www.radare.org>                         |
+| Source        | <https://github.com/radareorg/radare2>           |
+| Download      | <https://github.com/radareorg/radare2/releases/> |
+| Install       | sys/install.sh                                   |
 
 ## Example usage
 
