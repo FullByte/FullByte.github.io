@@ -4,14 +4,14 @@
 
 Start PostgreSQL und Metasploit on boot
 
-```shell
+ ```sh
 update-rc.d postgresql enable
 update-rc.d metasploit enable
 ```
 
 Manuall start
 
-```shell
+ ```sh
 service postgresql start
 service metasploit start
 ```

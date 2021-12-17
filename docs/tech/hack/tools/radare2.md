@@ -11,7 +11,7 @@
 
 Example from doing this tryhackme challenge <https://tryhackme.com/room/adventofcyber2> -> "[Day 17] Reverse Engineering ReverseELFneering"
 
-```shell
+ ```sh
 r2 -d ./challenge1
 
 b+1024
@@ -118,7 +118,7 @@ Just some notes from the tryhackme tutorials [intro to x86-64](https://tryhackme
 
 Open "if2" to analyses the program:
 
-```shell
+ ```sh
 r2 -d if2
 e asm.syntax=att
 aaa
@@ -131,7 +131,7 @@ Output:
 
 Set breakpoint at popq %rbp
 
-```shell
+ ```sh
 pdf @main
 db 0x561d78dd863c
 ```
@@ -142,7 +142,7 @@ Output:
 
 Start execution of the program:
 
-```shell
+ ```sh
 dc
 px @ rbp-0x8
 px @ rbp-0x4
@@ -157,7 +157,7 @@ Read value of var_ch, var_8h, var_4h before popq/retq as requested.
 
 Task 5 open loop2
 
-```shell
+ ```sh
 r2 -d loop2
 e asm.syntax=att
 aaa
@@ -171,14 +171,14 @@ dc
 
 Read at secound loop
 
-```shell
+ ```sh
 px @ rbp-0x8
 px @ rbp-0xc
 ```
 
 Read at end of loop
 
-```shell
+ ```sh
 dc
 px @ rbp-0x8
 px @ rbp-0xc
@@ -186,7 +186,7 @@ px @ rbp-0xc
 
 task6 - crackme1
 
-```shell
+ ```sh
 r2 -d crackme1
 e asm.syntax=att
 aaa

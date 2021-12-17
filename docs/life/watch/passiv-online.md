@@ -23,7 +23,7 @@ Web/Online
 
 Run on your own machine (ubuntu)
 
-```bash
+ ```sh
 sudo add-apt-repository ppa:vantuz/cool-retro-term
 sudo apt update
 sudo apt install cool-retro-term

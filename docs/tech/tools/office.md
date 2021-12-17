@@ -15,7 +15,7 @@ Info
 
 Find double entries
 
-```Excel
+ ```xlsx
 =IF(MATCH(A2;A:A;0)=ROW();"";"Double")
 ```
 
@@ -23,7 +23,7 @@ Create a Sierpinski triangle
 
 Add "1" in field "V1" and copy the formula down and to the sides:
 
-```Excel
+ ```xlsx
 =WENN(SUMME(U1:W1)=1;1;"")
 ```
 
@@ -31,19 +31,19 @@ Add "1" in field "V1" and copy the formula down and to the sides:
 
 Define number format
 
-```Excel
+ ```xlsx
 Selection.NumberFormat = "#,##0_ ;-#,##0 "
 ```
 
 Turn off aAlerts
 
-```Excel
+ ```xlsx
 Application.DisplayAlerts = False
 ```
 
 AutoFit
 
-```Excel
+ ```xlsx
 Worksheets(Customer).Columns("A:X").EntireColumn.AutoFit
 ```
 
@@ -53,7 +53,7 @@ When you add a trendline to a chart, Excel provides an option to display the tre
 
 Linear Trendline
 
-```Excel
+ ```xlsx
 Equation: y = m * x + b
 m: =SLOPE(y,x)
 b: =INTERCEPT(y,x)
@@ -61,7 +61,7 @@ b: =INTERCEPT(y,x)
 
 Logarithmic Trendline
 
-```Excel
+ ```xlsx
 Equation: y = (c * LN(x)) + b
 c: =INDEX(LINEST(y,LN(x)),1)
 b: =INDEX(LINEST(y,LN(x)),1,2)
@@ -69,7 +69,7 @@ b: =INDEX(LINEST(y,LN(x)),1,2)
 
 Power Trendline
 
-```Excel
+ ```xlsx
 Equation: y=c*x^b
 c: =EXP(INDEX(LINEST(LN(y),LN(x),,),1,2))
 b: =INDEX(LINEST(LN(y),LN(x),,),1)
@@ -77,7 +77,7 @@ b: =INDEX(LINEST(LN(y),LN(x),,),1)
 
 Exponential Trendline
 
-```Excel
+ ```xlsx
 Equation: y = c *e ^(b * x)
 c: =EXP(INDEX(LINEST(LN(y),x),1,2))
 b: =INDEX(LINEST(LN(y),x),1)
@@ -85,7 +85,7 @@ b: =INDEX(LINEST(LN(y),x),1)
 
 2nd Order Polynomial Trendline
 
-```Excel
+ ```xlsx
 Equation: y = (c2 * x^2) + (c1 * x ^1) + b
 c2: =INDEX(LINEST(y,x^{1,2}),1)
 C1: =INDEX(LINEST(y,x^{1,2}),1,2)
@@ -94,7 +94,7 @@ b = =INDEX(LINEST(y,x^{1,2}),1,3)
 
 3rd Order Polynomial Trendline
 
-```Excel
+ ```xlsx
 Equation: y = (c3 * x^3) + (c2 * x^2) + (c1 * x^1) + b
 c3: =INDEX(LINEST(y,x^{1,2,3}),1)
 c2: =INDEX(LINEST(y,x^{1,2,3}),1,2)

@@ -16,7 +16,7 @@ Convert a JWT to a format John the Ripper can understand.
 
 Source: <https://github.com/Sjord/jwtcrack>
 
-```shell
+ ```sh
 wget --quiet -O /usr/local/bin/jwt2john.py "https://raw.githubusercontent.com/Sjord/jwtcrack/master/jwt2john.py"
 sed -i '1s;^;#!/usr/bin/env python\n;' /usr/local/bin/jwt2john.py
 chmod +x /usr/local/bin/jwt2john.py

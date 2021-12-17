@@ -18,7 +18,7 @@ Get-AzContext
 
 Use device code to login:
 
-```powershell
+ ```ps1
 Connect-AzAccount -Tenant <tenantID> -UseDeviceAuthentication
 ```
 

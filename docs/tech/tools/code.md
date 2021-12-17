@@ -193,7 +193,7 @@ From powershell with github raw file:
 
 **Windows**
 
-```PowerShell
+ ```ps1
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/project/master/file.file'))
 ```
 
@@ -207,7 +207,7 @@ PowerShell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.
 
 From bash
 
-```bash
+ ```sh
 bash <(curl -Ls https://raw.githubusercontent.com/FullByte/scripts/master/something)
 ```
 
@@ -312,31 +312,31 @@ Examples using OpenSSL
 
 Generate a new private key and Certificate Signing Request
 
-```shell
+ ```sh
 openssl req -out CSR.csr -new -newkey rsa:2048 -nodes -keyout privateKey.key
 ```
 
 Generate a self-signed certificate (see How to Create and Install an Apache Self Signed Certificate for more info)
 
-```shell
+ ```sh
 openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out certificate.crt
 ```
 
 Generate a certificate signing request (CSR) for an existing private key
 
-```shell
+ ```sh
 openssl req -out CSR.csr -key privateKey.key -new
 ```
 
 Generate a certificate signing request based on an existing certificate
 
-```shell
+ ```sh
 openssl x509 -x509toreq -in certificate.crt -out CSR.csr -signkey privateKey.key
 ```
 
 Remove a passphrase from a private key
 
-```shell
+ ```sh
 openssl rsa -in privateKey.pem -out newPrivateKey.pem
 ```
 
@@ -344,7 +344,7 @@ openssl rsa -in privateKey.pem -out newPrivateKey.pem
 
 Check an MD5 hash of the public key to ensure that it matches with what is in a CSR or private key
 
-```shell
+ ```sh
 openssl x509 -noout -modulus -in certificate.crt | openssl md5
 openssl rsa -noout -modulus -in privateKey.key | openssl md5
 openssl req -noout -modulus -in CSR.csr | openssl md5
@@ -352,13 +352,13 @@ openssl req -noout -modulus -in CSR.csr | openssl md5
 
 Check an SSL connection: This displays all (including Intermediates) certificates of a given website.
 
-```shell
+ ```sh
 openssl s_client -connect www.google.com:443
 ```
 
 Check Certificate
 
-```shell
+ ```sh
 openssl x509 -in certificate.crt -text -noout
 ```
 
@@ -366,19 +366,19 @@ Check CSR of Certificate
 
 Decode your Certificate Signing Request (CSR) and and verify that it contains the correct information:
 
-```shell
+ ```sh
 openssl req -in mycsr.csr -noout -text
 ```
 
 Check a private key
 
-```shell
+ ```sh
 openssl rsa -in private.key -check
 ```
 
 Check a PKCS#12 file (.pfx or .p12)
 
-```shell
+ ```sh
 openssl pkcs12 -info -in keyStore.p12
 ```
 
@@ -388,13 +388,13 @@ Convert certificates and keys to different formats to make them compatible with 
 
 Convert a DER file (.crt .cer .der) to PEM
 
-```shell
+ ```sh
 openssl x509 -inform der -in certificate.cer -out certificate.pem
 ```
 
 Convert a PEM file to DER
 
-```shell
+ ```sh
 openssl x509 -outform der -in certificate.pem -out certificate.der
 ```
 
@@ -402,13 +402,13 @@ Convert a PKCS#12 file (.pfx .p12) containing a private key and certificates to 
 
 You can add -nocerts to only output the private key or add -nokeys to only output the certificates.
 
-```shell
+ ```sh
 openssl pkcs12 -in keyStore.pfx -out keyStore.pem -nodes
 ```
 
 Convert a PEM certificate file and a private key to PKCS#12 (.pfx .p12)
 
-```shell
+ ```sh
 openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt -certfile CACert.crt
 ```
 
@@ -418,13 +418,13 @@ Install openssl and the associated development libraries'
 
 Run **openssl version -a** to check if openssl is installed or just run this command to install all requirements for this demo:
 
-```shell
+ ```sh
 sudo apt install libssl-dev openssl
 ```
 
 Create a test file named **"plain.txt"** which we shall encrypt & decrypt in the next step.
 
-```shell
+ ```sh
 echo "this is a test" > plain.txt
 ```
 
@@ -432,14 +432,14 @@ Encrypt and Decrypt example via Triple Data Encryption Standard
 
 The following lines will create the encrypted file **"encrypted.txt"** and decrypted file **"decrypted.txt"**.
 
-```shell
+ ```sh
 openssl des3 -in plain.txt -out encrypted.txt -pass pass:password
 openssl des3 -d -in encrypted.txt -out decrypted.txt -pass pass:password
 ```
 
 The file **"decrypted.txt"** should match with our test file **"plain.txt"**.
 
-```shell
+ ```sh
 diff -s plain.txt decrypted.txt
 ```
 
@@ -447,14 +447,14 @@ Encrypt and Decrypt example via AES-256 with CBC
 
 There are plenty of ciphers availble. Run **openssl help** to see the cipher commands available too you. Here is another example using AES-256 with CBC.
 
-```shell
+ ```sh
 openssl aes-256-cbc -a -salt -in plain.txt -out encrypted.txt -k password
 openssl aes-256-cbc -d -a -in encrypted.txt -out decrypted.txt -k password
 ```
 
 Encrypt images using a key and IV
 
-```shell
+ ```sh
 openssl aes-128-cbc -K "55555555555555555555555555555555" -iv "83deccd3f93b37c70d37297f319cf367" -in WRxFKdq.png -out OMG_SAME_IMAGE.png
 ```
 
@@ -464,21 +464,21 @@ Example screenshot:
 
 ### HTTPS webserver
 
-```shell
+ ```sh
 openssl req -x509 -newkey rsa:4096 -keyout /tmp/key.pem -out /tmp/cert.pem -nodes && openssl s_server -WWW -port 8443 -cert /tmp/cert.pem -key /tmp/key.pem
 ```
 
-```shell
+ ```sh
 openssl req -newkey rsa:2048 -nodes -x509 -subj '/CN=name-you-want.example.com' -days 3650 -out server.cert -keyout server.key
 ```
 
-```shell
+ ```sh
 openssl s_server -accept 7781 -cert server.cert -key server.key -WWW
 ```
 
 ### Extract a certificate and private key from PFX file
 
-```shell
+ ```sh
 CertName='cert.pfx'
 openssl pkcs12 -in $PfxCert -nocerts -out key.pem -nodes #Export the private key
 openssl pkcs12 -in $PfxCert -nokeys -out $CertName.pem #Export the certificate
@@ -487,6 +487,6 @@ openssl rsa -in key.pem -out $CertName.key #Remove the passphrase from the priva
 
 ### Create a random password
 
-```shell
+ ```sh
 openssl rand -base64 32
 ```

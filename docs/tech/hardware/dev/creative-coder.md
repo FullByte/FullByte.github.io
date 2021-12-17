@@ -11,7 +11,7 @@ GUI
 
 Code
 
-```shell
+ ```sh
 gesture activeGestures[3] = { SHAKE, POW, WHEEL };
 mover.setActiveGestures(3, activeGestures);
 

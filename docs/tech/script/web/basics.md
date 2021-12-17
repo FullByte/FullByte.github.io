@@ -4,13 +4,13 @@
 
 ### Show Base64 Images
 
-```HTML
+ ```html
 <img src="data:image/png;base64,<Base64codehere>"/>
 ```
 
 ### Link Trick
 
-```HTML
+ ```html
 <!doctype html>
 <head>
 <script>
@@ -26,7 +26,7 @@
 
 ### Empty HTML File Template
 
-```HTML
+ ```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -559,7 +559,7 @@ function EscapeEntities(str) str.replace(/[^\x20-\x7E]/g, function(str) charToEn
 
 ### 534 ways to reload the page with JavaScript
 
-```javascript
+ ```js
 - location = location
 - location = location.href
 - location = window.location

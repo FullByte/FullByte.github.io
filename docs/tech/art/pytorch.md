@@ -7,14 +7,14 @@ Install tools:
 
 Check status of nvidia settings:
 
-```shell
+ ```sh
 nvidia-smi
 nvcc -V
 ```
 
 Install tools using Miniconda CLI:
 
-```shell
+ ```sh
 conda install numpy ninja pyyaml mkl mkl-include setuptools cmake cffi typing_extensions future six requests dataclasses
 conda install -c conda-forge libuv=1.39 # Windows
 ```
@@ -57,7 +57,7 @@ I created a video of all 34 pictures created while running this command ```imagi
 
 This script will create a new folder on the local desktop and run deep-daze for 60min. The resulting images will be used to create an mp4 and webp video within the same folder.
 
-```powershell
+ ```ps1
 # Add a new input
 $text = "Correct Horse Battery Staple"
 

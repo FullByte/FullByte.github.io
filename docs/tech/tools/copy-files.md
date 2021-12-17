@@ -28,32 +28,32 @@ All mentioned tools are described in more detail below.
 
 Example to check /24 range in abuseipdb.com for the last 3 days
 
-```bash
+ ```sh
 curl -s -G https://api.abuseipdb.com/api/v2/check-block --data-urlencode "network=123.123.123.1/24" -d maxAgeInDays=$DAYS -H "Key: apikeyfromabuseipdb.com" -H "Accept: application/json" |jq '.data.reportedAddress'
 ```
 
 If you want to inspect the headers of a response from some endpoint include the `-I` flag and `curl` will
 return just the headers.
 
-```bash
+ ```sh
 curl -I localhost:3000/posts
 ```
 
 Example of using curl with basic auth credentials
 
-```bash
+ ```sh
 curl -u username:password staging.example.com
 ```
 
 Query a website e.g. request a json response from cloudflare-dns.com on TXT records of the domain 0xfab1.net
 
-```bash
+ ```sh
 curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'
 ```
 
 ### Send Mail
 
-```bash
+ ```sh
 curl --ssl-reqd --url 'smtps://smtp.gmail.com:465' --user 'username@gmail.com:password' --mail-from 'username@gmail.com' --mail-rcpt 'john@example.com' --upload-file mail.txt
 ```
 
@@ -79,19 +79,19 @@ Some more information:
 
 Create Folders
 
-```bash
+ ```sh
 curl -X MKCOL 'http://your.server/uploads/nested_folder1' --user 'name:pwd'
 ```
 
 Copy Files
 
-```bash
+ ```sh
 curl -T <filename> -u <username>:<password> <url> -o /dev/stdout
 ```
 
 Copy all files in a Folder (and subfolder). Folders must already exist.
 
-```bash
+ ```sh
 cd local_folder_to_upload && find . -exec curl -T {} 'http://your.server/uploads/{}' --user 'name:pwd' \;
 ```
 
@@ -233,20 +233,20 @@ List of public gateways: <https://ipfs.github.io/public-gateway-checker/>
 
 Copying file to host:
 
-```shell
+ ```sh
 scp SourceFile user@host:~/TargetFile
 ```
 
 Copying file from host and copying folder from host (with -r switch):
 
-```shell
+ ```sh
 scp user@host:~/remotefolder .
 scp -r user@host:~/remotefolder TargetFolder
 ```
 
 Note that if the remote host uses a port other than the default of 22, it can be specified in the command. For example, copying a file from host:
 
-```shell
+ ```sh
 scp -P 666 user@host:directory/SourceFile TargetFile
 ```
 
@@ -404,19 +404,19 @@ Some examples on how to use youtube-dl or ytdlpl to download videos.
 
 Download to a specific location in best quality:
 
-```shell
+ ```sh
 youtube-dl -f 22 -o 'path' '<youtube-link>'
 ```
 
 Download with details:
 
-```shell
+ ```sh
 youtube-dl -f best --write-description --write-info-json --write-annotations --write-sub --write-thumbnail '<youtube-link>'
 ```
 
 ### Audio only
 
-```shell
+ ```sh
 youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 '<youtube-link>'
 ```
 
@@ -424,13 +424,13 @@ youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 '<youtube-lin
 
 Download a playlist:
 
-```shell
+ ```sh
 youtube-dl -best 22 --yes-playlist '<playlist-link'
 ```
 
 Download a playlist with audio only:
 
-```shell
+ ```sh
 youtube-dl -f 22 --yes-playlist '<playlist-link'
 ```
 
@@ -438,7 +438,7 @@ youtube-dl -f 22 --yes-playlist '<playlist-link'
 
 Get Source formats available:
 
-```shell
+ ```sh
 youtube-dl --list-formats '<youtube-link>'
 ```
 
@@ -447,7 +447,7 @@ youtube-dl --list-formats '<youtube-link>'
 Run ytdlpl (youtube downloader playlist) and add the playlist you want to download.
 This script will download the latest youtube-dl version for windows to the current folder if not available.
 
-```powershell
+ ```ps1
 Function ytdlpl
 {
     Param ($playlist)
@@ -470,7 +470,7 @@ Function ytdlpl
 
 Alternatively use this script
 
-```powershell
+ ```ps1
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/scripts/main/tools/youtubedl/youtube-dl.ps1'))
 ```
 

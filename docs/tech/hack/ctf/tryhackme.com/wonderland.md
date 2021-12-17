@@ -80,7 +80,7 @@ The hint means to follow this path: <http://10.10.28.31/r/a/b/b/i/t/>
 
 Viewing the HTML code we see:
 
-```html
+ ```html
 <p style="display: none;">alice:HowDothTheLittleCrocodileImproveHisShiningTail</p>
 ```
 

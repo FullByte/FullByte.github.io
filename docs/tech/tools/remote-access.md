@@ -44,20 +44,20 @@ Windows 10
 
 View Options
 
-```powershell
+ ```ps1
 Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
 ```
 
 Install SSH Client and or Server
 
-```powershell
+ ```ps1
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ```
 
 **Configure SSH**
 
-```powershell
+ ```ps1
 Start-Service sshd
 Set-Service -Name sshd -StartupType 'Automatic'
 ```
@@ -66,13 +66,13 @@ Set-Service -Name sshd -StartupType 'Automatic'
 
 There should be a firewall rule named "OpenSSH-Server-In-TCP", which should be enabled
 
-```powershell
+ ```ps1
 Get-NetFirewallRule -Name *ssh*
 ```
 
 If the firewall does not exist, create one
 
-```powershell
+ ```ps1
 New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH-Server-In-TCP' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
 ```
 

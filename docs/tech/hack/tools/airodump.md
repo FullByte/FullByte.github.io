@@ -2,7 +2,7 @@
 
 ## Preparing The WIFI Card
 
-```shell
+ ```sh
 modprobe -r iwl3945
 modprobe ipwraw
 airmon-ng start [device]

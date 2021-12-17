@@ -19,7 +19,7 @@ There are three options to use the cloud shell: Docker, Windows Terminal and the
 
 You get a [CloudShell](https://github.com/Azure/CloudShell) container as follows:
 
-```powershell
+ ```ps1
 docker run -it mcr.microsoft.com/azure-cloudshell /bin/bash # for bash
 docker run -it mcr.microsoft.com/azure-cloudshell /usr/bin/pwsh # for powershell
 ```
@@ -54,19 +54,19 @@ You can access an Azure VM within the Azure Cloud Shell.
 
 Enable remoting if not yet done:
 
-```powershell
+ ```ps1
 Enable-AzVMPSRemoting -Name MyVM1 -ResourceGroupname MyResourceGroup
 ```
 
 Execute script on VM:
 
-```powershell
+ ```ps1
 Invoke-AzVMCommand -Name MyVM1 -ResourceGroupName MyResourceGroup -Scriptblock {Get-ComputerInfo} -Credential (Get-Credential)
 ```
 
 Enter VMs commandline:
 
-```powershell
+ ```ps1
 Enter-AzVM -Name MyVM1 -ResourceGroupName MyResourceGroup -Credential (Get-Credential)
 ```
 
@@ -75,7 +75,7 @@ Enter-AzVM -Name MyVM1 -ResourceGroupName MyResourceGroup -Credential (Get-Crede
 **Posh-Git** provides us with information at the command line about the state of the current repository we are in. It also provides tab completion for Git commands.
 <https://github.com/dahlbyk/posh-git>
 
-```powershell
+ ```ps1
 install-module posh-git
 import-module posh-git
 ```
@@ -83,7 +83,7 @@ import-module posh-git
 **Oh-My-Posh** allows you to theme your prompt with various color schemes, Git status indicators, Admin status and many other things.
 <https://github.com/JanDeDobbeleer/oh-my-posh>
 
-```powershell
+ ```ps1
 Install-Module oh-my-posh
 Import-module oh-my-posh
 ```
@@ -91,7 +91,7 @@ Import-module oh-my-posh
 **Get-ChildItemColor** is a simple tool which adds color coding to the get-childitem command. When you run this command, you get different colors used for folders vs. files and different file types.
 <https://github.com/joonro/Get-ChildItemColor>
 
-```powershell
+ ```ps1
 Install-Module Get-ChildItemColor
 Import-Module Get-ChildItemColor
 ```

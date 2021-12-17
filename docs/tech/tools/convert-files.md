@@ -15,7 +15,7 @@ Info
 
 Remove EXIF data except orientation information
 
-```shell
+ ```sh
 exiftool "-overwrite_original" "-all:all=" "-tagsfromfile" "@" "-exif:Orientation" "file.jpg"
 ```
 
@@ -58,13 +58,13 @@ for %%x in (%*) do (
 
 Slidshow using revealjs
 
-```shell
+ ```sh
 pandoc -s -t revealjs slides.md -o slides.html
 ```
 
 Slidshow using slidy
 
-```shell
+ ```sh
 pandoc -s -t slidy slides.md -o slides.html
 ```
 
@@ -335,7 +335,7 @@ ffmpeg -i input.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*
 
 or for many GIF in one folder:
 
-```powershell
+ ```ps1
 Get-ChildItem -file -Path * -Include *.gif | Foreach-Object { ffmpeg -i ('"' + $_.Name + '"') -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ('"' + $_.BaseName + '.mp4"') }
 ```
 
@@ -401,7 +401,7 @@ ffmpeg -i input.mp3 -c:a libvorbis output.oga
 
 This uses `libmp3lame` with default settings. The script will convert all media files it can handel and continue on error.
 
-```powershell
+ ```ps1
 Get-ChildItem -file -exclude *.mp3 | Foreach-Object { ffmpeg -i ('"' + $_.Name + '"') -map_metadata -1 -acodec libmp3lame ('"' + $_.BaseName + '.mp3"') }
 ```
 
@@ -421,13 +421,13 @@ Info
 
 Use ImageMagick to optimize a GIF
 
-```shell
+ ```sh
 convert -layers Optimize input.gif output.gif
 ```
 
 ### Resize
 
-```shell
+ ```sh
 convert file.jpg -resize 1024 × 768 "folder\file.jpg"
 ```
 
@@ -437,13 +437,13 @@ Using ImageMagick with git ([Source](https://github.com/niedzielski/git-diff-img
 
 Set alias "diff-img"
 
-```shell
+ ```sh
 git config --global alias.diff-img difftool\ -x\ \''compare -alpha copy "$LOCAL" "$REMOTE" png:- | montage -mode concatenate "$LOCAL" png:- "$REMOTE" png:- | display -title "$BASE: Local | Diff | Remote" png:-'\'
 ```
 
 or as a script for `~/bin/git-diff-img`
 
-```shell
+ ```sh
 #!/usr/bin/env sh
 # $@ images
 exec git difftool -x '
@@ -455,7 +455,7 @@ exec git difftool -x '
 
 Execute against png images only:
 
-```shell
+ ```sh
 git diff-img **.png
 ```
 
@@ -474,12 +474,12 @@ Info
 
 Encrypt with symmetric cypher
 
-```shell
+ ```sh
 gpg --symmetric --cipher-algo aes256 -o test.txt.gpg test.txt
 ```
 
 Decrypt with symmetric cypher
 
-```shell
+ ```sh
 gpg -d -o test.txt test.txt.gpg
 ```

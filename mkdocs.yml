@@ -54,6 +54,28 @@ extra:
       link: https://soundcloud.com/0gdd
     - icon: fontawesome/brands/docker
       link: https://hub.docker.com/repository/docker/0gdd/0xfab1.net
+    - icon: fontawesome/brands/itch-io
+      link: https://0xfab1.itch.io/
+    - icon: fontawesome/brands/steam
+      link: https://steamcommunity.com/id/0gdd
+    - icon: fontawesome/brands/reddit
+      link: https://www.reddit.com/r/0xfab1/
+    - icon: fontawesome/brands/imdb
+      link: https://www.imdb.com/user/ur81484456/
+    - icon: fontawesome/brands/fort-awesome
+      link: https://www.instructables.com/member/FullByte/
+    - icon: fontawesome/brands/leanpub
+      link: https://www.librarycat.org/lib/0xfab1
+    - icon: fontawesome/brands/laravel
+      link: https://boardgamegeek.com/collection/user/zerogdoubled
+    - icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/channel/UCow5nTdcimuHvO24f152ZPw/videos
+    - icon: fontawesome/brands/lastfm
+      link: https://www.last.fm/de/user/FullByte
+    - icon: fontawesome/brands/patreon
+      link: https://www.patreon.com/0xfab1
+    - icon: fontawesome/brands/twitch
+      link: https://www.twitch.tv/0gdd/
   generator: false
 
 markdown_extensions:

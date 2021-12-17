@@ -4,13 +4,13 @@
 
 Update and clean up:
 
-```shell
+ ```sh
 sudo apt update && sudo apt -y upgrade && sudo apt -y autoremove && sudo apt -y autoclean
 ```
 
 ### Add/Remove User
 
-```shell
+ ```sh
 adduser <user> # Add user
 gpasswd -a <user> <group> # Add user to group
 groups <user> # Show groups the user is added to
@@ -25,20 +25,20 @@ userdel -r <user> # Delete/ remove user account and files
 
 ### Keyboard layout
 
-```shell
+ ```sh
 dpkg-reconfigure keyboard-configuration
 service keyboard-setup restart
 ```
 
 ### New password
 
-```shell
+ ```sh
 passwd
 ```
 
 ### Configure WiFi
 
-```shell
+ ```sh
 sudo nano /etc/wpa_supplicant/wpa_supplicant.conf
 network={
     ssid="WiFi"
@@ -49,7 +49,7 @@ sudo wpa_cli reconfigure
 
 eventually reboot and/or try this:
 
-```shell
+ ```sh
 sudo ifconfig wlan0 down
 sudo ifconfig wlan0 up
 sudo ifconfig wlan0 | grep inet
@@ -58,7 +58,7 @@ sudo service networking restart
 
 Test Config:
 
-```shell
+ ```sh
 wpa_supplicant -i wlan0 -D wext -c /etc/wpa_supplicant/wpa_supplicant.conf -d
 ```
 
@@ -68,7 +68,7 @@ Example script that install updates to ubuntu automatically
 
 The script "bootupdate.sh":
 
-```shell
+ ```sh
 #!/bin/bash
 sudo apt update && apt -y full-upgrade && apt -y autoremove
 exit 0
@@ -76,19 +76,19 @@ exit 0
 
 Move "bootupdate.sh" to init.d
 
-```shell
+ ```sh
 mv bootupdate.sh /etc/init.d/bootupdate.sh
 ```
 
 Add script to boot sequente
 
-```shell
+ ```sh
 update-rc.d bootupdate.sh start 2
 ```
 
 ### Make Ubuntu Desktop nice
 
-```shell
+ ```sh
 # Get Video Codecs
 sudo apt install ubuntu-restricted-extras ubuntu-restricted-addons
 
@@ -103,7 +103,7 @@ sudo apt install gnome-tweaks gnome-tweak-tool
 
 ### xrdp
 
-```shell
+ ```sh
 sudo apt update
 sudo apt install tasksel
 sudo apt install xrdp # start RDP
@@ -112,7 +112,7 @@ sudo systemctl status xrdp #verify
 
 ### TeamViewer
 
-```shell
+ ```sh
 wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
 sudo apt install ./teamviewer_amd64.deb
 teamviewer
@@ -124,7 +124,7 @@ teamviewer license accept
 
 ### Node.js
 
-```shell
+ ```sh
 sudo apt update
 sudo apt -y install curl dirmngr apt-transport-https lsb-release ca-certificates
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
@@ -136,7 +136,7 @@ npm --version
 
 ### Install Wine
 
-```shell
+ ```sh
 sudo dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
@@ -203,7 +203,7 @@ Places that are worth a look if you are attempting to privilege escalate / perfo
 
 ### Examples
 
-```shell
+ ```sh
 Every Minute    * * * * *
 Every Five Minutes    */5 * * * *
 Every 10 Minutes    */10 * * * *

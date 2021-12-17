@@ -4,7 +4,7 @@
 
 Use device code to login:
 
-```bash
+ ```sh
 az login --tenant <tenantID> --use-device-code
 ```
 
@@ -12,7 +12,7 @@ az login --tenant <tenantID> --use-device-code
 
 Login and check the current context
 
-```bash
+ ```sh
 az login
 az account show --output table
 az ad signed-in-user show
@@ -26,7 +26,7 @@ Use jq to filter for only the results you want.
 
 Example:
 
-```bash
+ ```sh
 az account list | jq -r '.[].tenantId'
 ```
 
@@ -34,7 +34,7 @@ az account list | jq -r '.[].tenantId'
 
 Images
 
-```bash
+ ```sh
 az vm image list-publishers --location westus
 az vm image list-offers --location westus --publisher Canonical
 az vm image list-skus --location westus --publisher Canonical --offer UbuntuServer

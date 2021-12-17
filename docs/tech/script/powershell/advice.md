@@ -8,13 +8,13 @@ In case you run a command and want to query e.g. windows commands the result/key
 
 Create a hash table with an expected search string entry per language:
 
-```Powershell
+ ```ps1
 $keyword = @{"de-DE" = 'Schlüsselinhalt'; "en-US" = 'Key Content'}
 ```
 
 Then call the correct entry with ```get-culture```:
 
-```Powershell
+ ```ps1
 echo something | Select-String ($keyword[(get-culture).Name])
 ```
 
@@ -33,7 +33,7 @@ Powershell defaults paths:
 
 You can also use the [.NET Environment.SpecialFolder](https://docs.microsoft.com/en-us/dotnet/api/system.environment.specialfolder) Enum e.g.:
 
-```Powershell
+ ```ps1
 $DesktopPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::Desktop)
 $DocumentsPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::CommonDocuments)
 $ProgramFilesX86Path = [System.Environment]::GetFolderPath([System.Environment+SpecialFolder]::ProgramFilesX86 )
@@ -62,19 +62,19 @@ $StartupPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFo
 
 Make sure you are admin if required
 
-```powershell
+ ```ps1
 #Requires -RunAsAdministrator
 ```
 
 Run a process as non-admin from an elevated PowerShell console
 
-```powershell
+ ```ps1
 runas /trustlevel:0x20000 "powershell.exe -command 'whoami /groups |clip'"
 ```
 
 Check the current privileges:
 
-```powershell
+ ```ps1
 #Requires -RunAsAdministrator
 [bool]([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 [bool](([System.Security.Principal.WindowsIdentity]::GetCurrent()).groups -match "S-1-5-32-544")
@@ -86,7 +86,7 @@ Check the current privileges:
 
 Some Examples:
 
-```powershell
+ ```ps1
 #Requires -Modules @{ ModuleName="Az"; ModuleVersion="5.0.0" }
 ```
 
@@ -104,7 +104,7 @@ Make sure to import all modules required.
 
 Example:
 
-```powershell
+ ```ps1
 Import-Module -Name Az
 ```
 
@@ -125,14 +125,14 @@ Enabling to only run trusted, signed scripts is a good security measurement. Thi
 
 **Create new self-signed cert.pfx**
 
-```powershell
+ ```ps1
 $Password = ConvertTo-SecureString -String "password" -Force -AsPlainText 
 New-SelfSignedCertificate -subject "SelfSignedCert" -Type CodeSigning  | Export-PfxCertificate -FilePath "D:\cert.pfx" -password $Password 
 ```
 
 **Import cert.pfx to certificate store**
 
-```powershell
+ ```ps1
 Import-PfxCertificate -FilePath "D:\cert.pfx" -CertStoreLocation "cert:\LocalMachine\My" -Password $Password
 Import-PfxCertificate -FilePath "D:\cert.pfx" -CertStoreLocation "cert:\LocalMachine\Root" -Password $Password
 Import-PfxCertificate -FilePath "D:\cert.pfx" -CertStoreLocation "cert:\LocalMachine\TrustedPublisher" -Password $Password
@@ -140,7 +140,7 @@ Import-PfxCertificate -FilePath "D:\cert.pfx" -CertStoreLocation "cert:\LocalMac
 
 **Sign script.ps1 with cert.pfx**
 
-```powershell
+ ```ps1
 $MyCert = Get-PfxCertificate -FilePath "D:\cert.pfx"
 Set-AuthenticodeSignature "script.ps1" -Certificate $MyCert
 ```
@@ -152,7 +152,7 @@ Set-AuthenticodeSignature "script.ps1" -Certificate $MyCert
 
 Status is "UnknownError" if not added to CertStore, else "valid"
 
-```powershell
+ ```ps1
 Get-AuthenticodeSignature "script.ps1" | select-object *
 
 $Thumbprint = Get-AuthenticodeSignature "script.ps1" | Select-Object -First 1 -ExpandProperty SignerCertificate | Select-Object -First 1 -ExpandProperty Thumbprint
@@ -163,7 +163,7 @@ Get-ChildItem Cert:\LocalMachine\TrustedPublisher\ | Where-object { $_.thumbprin
 
 The following variables are required. Additionally you need a cert name and password but this will be queried in this example.
 
-```powershell
+ ```ps1
 $path = "D:\test.txt"
 $pwcert = "password"
 ```
@@ -172,7 +172,7 @@ It is important do create/use a certificate with the properties or "KeyUsage" Ke
 
 The following script will prepare a certificate or use a given one:
 
-```powershell
+ ```ps1
 $hascert=Read-Host -Prompt 'Do you have a certificate for file encryption? (Y/N)?'
 If ($hascert -eq 'Y') {
     Write-Output 'Select Certificate.' 
@@ -191,7 +191,7 @@ If ($hascert -eq 'N') {
 
 Now that we have everything setup we can encrypt/decrypt a given file:
 
-```powershell
+ ```ps1
 $enc=Read-Host -Prompt 'Do you want to [e]ncrypt or [d]ecrypt the file? (E/D)?'
 If ($enc -eq 'E') {
     Get-Content $path | Protect-CmsMessage -To $cert.Subject -OutFile $path
@@ -206,7 +206,7 @@ If ($enc -eq 'D') {
 
 Example running 10x 1sec sleep single thread, parallel, parallel optimized:
 
-```powershell
+ ```ps1
 #Requires -Version 7
 Measure-Command -expression {1..10 | foreach-object {Start-Sleep -seconds 1}} # Serial Execution of 10 tasks of 1 seconds
 Measure-Command -expression {1..10 | foreach-object -parallel {Start-Sleep -seconds 1}} # Parallel Execution of 10 tasks of 1 seconds
@@ -219,7 +219,7 @@ Adding log (better: event-logs) helps understand what went wrong and why things 
 
 General logging:
 
-```powershell
+ ```ps1
 Function writeEventLogEntry
 {
     $message = "$args[0] Time: " + (get-date).ToString('yyyy-MM-dd HH:mm:ss') + " User: " + $env:userdomain + "\" + $env:username
@@ -241,21 +241,21 @@ PowerShell supports two optional parameters that can provide information about t
 
 **Option 1)** With a value of 1 you get each line of code as it executes, e.g.:
 
-```powershell
+ ```ps1
 Set-PSDebug -Trace 1
 Get-PSDepth
 ```
 
 With a value of 2 you also get variable assignments and code paths:
 
-```powershell
+ ```ps1
 Set-PSDebug -Trace 2
 Get-PSDepth
 ```
 
 **Option 2)** Use the below in your script.
 
-```powershell
+ ```ps1
 $VerbosePreference="Continue"
 ```
 
@@ -265,13 +265,13 @@ Example missing
 
 Also helpful to get further information is running this command after the expected error:
 
-```powershell
+ ```ps1
 $Error[0].Exception | fl * -force
 ```
 
 Start/Stop the debugger
 
-```powershell
+ ```ps1
 Start Debugging
 Set-PSDebug -step
 

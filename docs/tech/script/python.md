@@ -90,7 +90,7 @@ In case you have multiple python versions installed (like me) you need to explic
 
 In this example we are installing `MkDocs` dependencies using python version 3.8-64:
 
-```shell
+ ```sh
 py -3.8-64 -m pip install --upgrade pip --user
 py -3.8-64 -m pip install MkDocs
 py -3.8-64 -m pip install --upgrade MkDocs-material
@@ -98,7 +98,7 @@ py -3.8-64 -m pip install --upgrade MkDocs-material
 
 In this example we are running `MkDocs` using python version 3.8-64:
 
-```shell
+ ```sh
 py -3.8-64 -m MkDocs serve
 ```
 
@@ -136,9 +136,28 @@ sqr = lambda x: x * x
 print(sqr(5))
 ```
 
-## Random
+Create a random string
 
-- one liner code for half pyramid pattern: ```print('\n'.join('* ' * i for i in range(1, n + 1)))```
+```py
+import random
+import string
+
+def getpassword(pwlength, extrachars):
+    password = []
+    for i in range(pwlength):
+        password.append(random.choice(string.ascii_letters + string.digits + string.punctuation + extrachars))
+    return "".join(password)
+
+print("English password: " + getpassword(20, ""))
+print("German password:  " + getpassword(20, "äöüßÄÖÜẞ"))
+print("Italian password: " + getpassword(20, "ÀÈÉÌÒÙàèéìòù"))
+print("French password:  " + getpassword(20, "ÀÂÄÆÇÈÉÊËÎÏÔŒÙÛÜàâäæçrèéêëîïôœùûü"))
+print("Spanish password: " + getpassword(20, "¡¿ÁÉÍÑÓÚÜáéíñóúü"))
+```
+
+## Art
+
+- One liner code for half pyramid pattern: ```print('\n'.join('* ' * i for i in range(1, n + 1)))```
 
 ## Modules
 
