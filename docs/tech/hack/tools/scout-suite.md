@@ -1,6 +1,6 @@
 # ScoutSuite
 
- ```sh
+ ``` sh
 git clone https://github.com/nccgroup/ScoutSuite /opt/scoutsuite
 cd /opt/scoutsuite
 virtualenv -p python3 venv

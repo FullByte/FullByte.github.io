@@ -4,7 +4,7 @@ Notes from challenges I did @ <https://cryptohack.org>.
 
 ## Client
 
-```python
+``` python
 from pwn import * # pip3 install pwntools
 import json
 import time
@@ -40,7 +40,7 @@ while result is None:
 
 ## Server
 
-```python
+``` python
 #!/usr/bin/env python3
 
 import time

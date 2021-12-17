@@ -8,7 +8,7 @@ Getting started
 
 Create the config file:
 
- ```sh
+ ``` sh
 sigal init
 ```
 
@@ -16,7 +16,7 @@ Edit the config file...
 
 Then run the build command
 
- ```sh
+ ``` sh
 sigal build
 ```
 
@@ -28,7 +28,7 @@ sigal build
 
 Option 1: Install on machine
 
- ```sh
+ ``` sh
 # Install Nodejs and NPM
 # Install GraphicsMagick
 npm install -g thumbsup
@@ -36,7 +36,7 @@ npm install -g thumbsup
 
 Option 2: Run Docker
 
- ```sh
+ ``` sh
 docker run -t -v /Volumes/photos:/input:ro -v "$(pwd)/website:/output" -u $(id -u):$(id -g) ghcr.io/thumbsup/thumbsup thumbsup --input /input --output /output
 ```
 
@@ -44,7 +44,7 @@ docker run -t -v /Volumes/photos:/input:ro -v "$(pwd)/website:/output" -u $(id -
 
 Create a new Gallery in subfolder `gallery` from subfolder `source`:
 
- ```sh
+ ``` sh
 thumbsup --input ./source --output ./gallery
 ```
 
@@ -56,7 +56,7 @@ Use docker or python to quickly create and host a static website:
 
 ### Host MkDocs locally with docker
 
- ```sh
+ ``` sh
 git clone https://github.com/FullByte/FullByte.github.io.git # clone repo
 cd FullByte.github.io # Go to main folder
 docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/MkDocs-material # run the container
@@ -66,7 +66,7 @@ docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/MkDocs-material # run
 
 Run this once to install all requirements:
 
- ```sh
+ ``` sh
 choco install -y python
 python -m pip install --upgrade pip
 pip install MkDocs
@@ -75,7 +75,7 @@ pip install MkDocs-material
 
 Run this in the folder of the MkDocs.yml file to host the MkDocs page:
 
- ```sh
+ ``` sh
 MkDocs serve
 ```
 
@@ -96,7 +96,7 @@ Further plugins:
 
 Checkable List
 
-```yaml
+``` yaml
 markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true

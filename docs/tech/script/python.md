@@ -33,7 +33,7 @@ Update all packages
 
 It is possible to create a jupyter notebook using python ([source](https://gist.github.com/fperez/9716279))
 
-```py
+``` py
 import nbformat as nbf
 nb = nbf.v4.new_notebook()
 text = """# My first automatic Jupyter Notebook"""
@@ -46,7 +46,7 @@ with open(fname, 'w') as f:
 
 This example is a python script to create a jupyter notebook that shows how to create a jupyter notebook shwowing an example on how to use [itertools](https://docs.python.org/3/library/itertools.html) [combinations](https://docs.python.org/3/library/itertools.html#itertools.combinations).
 
-```py
+``` py
 import nbformat as nbf
 
 nb = nbf.v4.new_notebook()
@@ -86,11 +86,11 @@ with open(fname, 'w') as f:
 
 The code you want to run may not support the latest python version which you installed locally. To solve the problem, [download](https://www.python.org/downloads/) and install the latest supported python version e.g. 3.8.x. for this example.
 
-In case you have multiple python versions installed (like me) you need to explicitly mention to use 3.8.x! Run ```py –list``` to get your 3.8.x version. Mine is -3.8-64; your version may vary.
+In case you have multiple python versions installed (like me) you need to explicitly mention to use 3.8.x! Run ``` py –list``` to get your 3.8.x version. Mine is -3.8-64; your version may vary.
 
 In this example we are installing `MkDocs` dependencies using python version 3.8-64:
 
- ```sh
+ ``` sh
 py -3.8-64 -m pip install --upgrade pip --user
 py -3.8-64 -m pip install MkDocs
 py -3.8-64 -m pip install --upgrade MkDocs-material
@@ -98,7 +98,7 @@ py -3.8-64 -m pip install --upgrade MkDocs-material
 
 In this example we are running `MkDocs` using python version 3.8-64:
 
- ```sh
+ ``` sh
 py -3.8-64 -m MkDocs serve
 ```
 
@@ -106,8 +106,8 @@ py -3.8-64 -m MkDocs serve
 
 ## Web
 
-- Webserver on Python 2: ```python -m SimpleHTTPServer 8008```
-- Webserver on Python 3: ```python -m http.server 8008 --bind 127.0.0.1```
+- Webserver on Python 2: ``` python -m SimpleHTTPServer 8008```
+- Webserver on Python 3: ``` python -m http.server 8008 --bind 127.0.0.1```
 
 ## String manipulation
 
@@ -123,7 +123,7 @@ py -3.8-64 -m MkDocs serve
 - Finding all subsets of a set: ```print(list(combinations([1, 2, 3, 4, 5, 6], 3)))```
 - Finding greatest common divisor:
 
-```py
+``` py
 def gcd(a,b):
     while(b):a,b=b,a%b
         return a
@@ -131,14 +131,14 @@ def gcd(a,b):
 
 - lambda function example using square root:
 
-```py
+``` py
 sqr = lambda x: x * x
 print(sqr(5))
 ```
 
 Create a random string
 
-```py
+``` py
 import random
 import string
 
@@ -175,7 +175,7 @@ Install borb: `pip install borb`
 
 Example:
 
-```py
+``` py
 from pathlib import Path
 
 from borb.pdf.canvas.layout.page_layout.multi_column_layout import SingleColumnLayout

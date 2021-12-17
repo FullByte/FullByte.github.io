@@ -28,38 +28,38 @@ All mentioned tools are described in more detail below.
 
 Example to check /24 range in abuseipdb.com for the last 3 days
 
- ```sh
+ ``` sh
 curl -s -G https://api.abuseipdb.com/api/v2/check-block --data-urlencode "network=123.123.123.1/24" -d maxAgeInDays=$DAYS -H "Key: apikeyfromabuseipdb.com" -H "Accept: application/json" |jq '.data.reportedAddress'
 ```
 
 If you want to inspect the headers of a response from some endpoint include the `-I` flag and `curl` will
 return just the headers.
 
- ```sh
+ ``` sh
 curl -I localhost:3000/posts
 ```
 
 Example of using curl with basic auth credentials
 
- ```sh
+ ``` sh
 curl -u username:password staging.example.com
 ```
 
 Query a website e.g. request a json response from cloudflare-dns.com on TXT records of the domain 0xfab1.net
 
- ```sh
+ ``` sh
 curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'
 ```
 
 ### Send Mail
 
- ```sh
+ ``` sh
 curl --ssl-reqd --url 'smtps://smtp.gmail.com:465' --user 'username@gmail.com:password' --mail-from 'username@gmail.com' --mail-rcpt 'john@example.com' --upload-file mail.txt
 ```
 
 mail.txt file contents:
 
-```txt
+``` txt
 From: "User Name" <username@gmail.com>
 To: "John Smith" <john@example.com>
 Subject: This is a test
@@ -79,19 +79,19 @@ Some more information:
 
 Create Folders
 
- ```sh
+ ``` sh
 curl -X MKCOL 'http://your.server/uploads/nested_folder1' --user 'name:pwd'
 ```
 
 Copy Files
 
- ```sh
+ ``` sh
 curl -T <filename> -u <username>:<password> <url> -o /dev/stdout
 ```
 
 Copy all files in a Folder (and subfolder). Folders must already exist.
 
- ```sh
+ ``` sh
 cd local_folder_to_upload && find . -exec curl -T {} 'http://your.server/uploads/{}' --user 'name:pwd' \;
 ```
 
@@ -117,19 +117,19 @@ Generally, this can be blocked but works in most cases. To avoid a few things:
 
 Example:
 
-```sh
+``` sh
 wget -e robots=off -r -np --page-requisites --convert-links --user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36" http://example.com/dir/
 ```
 
 Alternative:
 
-```sh
+``` sh
 wget -e robots=off --verbose --debug --adjust-extension --backup-converted --base=http://example.com/dir/ --no-http-keep-alive --no-parent --mirror http://example.com/dir/
 ```
 
 ### Download specific files types
 
-```sh
+``` sh
 wget -e robots=off -r -A ogg,mp3 http://example.com/dir/ # Specific audio files
 wget -e robots=off -r -A png,jpeg,jpg,gif http://example.com/dir/ # Specific Image Files
 wget -e robots=off -r -l 3 -np -p  http://example.com/dir/ # All pictures
@@ -139,31 +139,31 @@ wget -e robots=off -r -l 3 -np -p  http://example.com/dir/ # All pictures
 
 In case you are downloading clear text files it may come in handy to preview the download:
 
-```sh
+``` sh
 wget http://0xfab1.net/todo.txt --output-document - | head -n4
 ```
 
 Continue a partially downloaded file where the download was interrupted with `-c` for continue:
 
-```sh
+``` sh
 wget -c https://0xfab1.net/best-distro2.iso
 ```
 
 You can copy an entire web page with `--mirror` which is the same as adding parameters `--recursive --level inf --timestamping --no-remove-listing`. When using mirror consider using `--no-cookies --page-requisites --convert-links` as additional parameters:
 
-```sh
+``` sh
 wget --mirror --no-cookies --page-requisites --convert-links http://0xfab1.net
 ```
 
 Use `--debug` to view HTTP header information of your download request.
 
-```sh
+``` sh
 wget --debug https://0xfab1.net
 ```
 
 If you want to deal with redirects as error set `--max-redirect 0`. This is also handy if you don't want to follow URL-shorter links:
 
-```sh
+``` sh
 wget --max-redirect 0 "https://bit.ly/0xfab1"
 ```
 
@@ -180,7 +180,7 @@ Examples using IPFS
 
 ### Find Peers
 
-```sh
+``` sh
 ipfs dht findpeer QmYtQ3iJi5RAQYxWJLts7xN1dRNK2n258QEXk4N1eLMZFM
 ```
 
@@ -188,21 +188,21 @@ ipfs dht findpeer QmYtQ3iJi5RAQYxWJLts7xN1dRNK2n258QEXk4N1eLMZFM
 
 create key
 
-```sh
+``` sh
 gpg --gen-key
 gpg --export --armor -email > pubkey.asc
 ```
 
 share and import key
 
-```sh
+``` sh
 gpg --import pubkey.asc
 gpg --list-keys
 ```
 
 share enrypted files
 
-```sh
+``` sh
 ipfs init
 gpg --encrypt --recipient "Cory Heath" myriad.pdf
 ipfs add myriad.pdf.gpg
@@ -210,7 +210,7 @@ ipfs add myriad.pdf.gpg
 
 get encrypted files
 
-```sh
+``` sh
 ipfs get QmYqSCWuzG8cYo4MFQzqKcC14ct4ybAWyrAc9qzdJaFYTL
 gpg --decrypt QmYqSCWUZg8Cyo4MFQzqKcC14ct4ybAWyrAc9qzdJaFYTL > myriad.pdf
 ```
@@ -233,20 +233,20 @@ List of public gateways: <https://ipfs.github.io/public-gateway-checker/>
 
 Copying file to host:
 
- ```sh
+ ``` sh
 scp SourceFile user@host:~/TargetFile
 ```
 
 Copying file from host and copying folder from host (with -r switch):
 
- ```sh
+ ``` sh
 scp user@host:~/remotefolder .
 scp -r user@host:~/remotefolder TargetFolder
 ```
 
 Note that if the remote host uses a port other than the default of 22, it can be specified in the command. For example, copying a file from host:
 
- ```sh
+ ``` sh
 scp -P 666 user@host:directory/SourceFile TargetFile
 ```
 
@@ -277,7 +277,7 @@ In a commmand prompt run `winscp.com` and login to a session. It is also possibl
 
 Save this [script](https://winscp.net/eng/docs/scripting) to a file (e.g. WinSCPWebDAVExample.txt)
 
-```txt
+``` txt
 open https://username@webdav.domain.com/
 put copythisfile.txt /path/destination/
 exit
@@ -285,13 +285,13 @@ exit
 
 Run the scirpt with WinSCP like this:
 
-```sh
+``` sh
 winscp.com /script=WinSCPWebDAVExample.txt
 ```
 
 You can also run this example as a one-liner as follows:
 
-```sh
+``` sh
 winscp.com /command "open https://username@webdav.domain.com/" "put copythisfile.txt /path/destination/" "exit"
 ```
 
@@ -345,20 +345,20 @@ rclone is a great tool to backup, copy, sync files to the cloud encrypted and wi
 
 Run this command to find out where your `rclone.conf` file is.
 
-```sh
+``` sh
 rclone config file
 ```
 
 If you installed rclone and didn't configure anything yet you will get this information
 
-```txt
+``` txt
 Configuration file doesn't exist, but rclone will use this path:
 C:\Users\0xfab1\AppData\Roaming\rclone\rclone.conf
 ```
 
 else, rclone will repond as follows:
 
-```txt
+``` txt
 Configuration file is stored at:
 C:\Users\0xfab1\AppData\Roaming\rclone\rclone.conf
 ```
@@ -369,7 +369,7 @@ If you restore a file you may need to refresh the token(s) you are using.
 
 Run the following command todo so e.g. for connection call "onedrive":
 
-```sh
+``` sh
 rclone config reconnect onedrive:
 ```
 
@@ -404,19 +404,19 @@ Some examples on how to use youtube-dl or ytdlpl to download videos.
 
 Download to a specific location in best quality:
 
- ```sh
+ ``` sh
 youtube-dl -f 22 -o 'path' '<youtube-link>'
 ```
 
 Download with details:
 
- ```sh
+ ``` sh
 youtube-dl -f best --write-description --write-info-json --write-annotations --write-sub --write-thumbnail '<youtube-link>'
 ```
 
 ### Audio only
 
- ```sh
+ ``` sh
 youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 '<youtube-link>'
 ```
 
@@ -424,13 +424,13 @@ youtube-dl -i --extract-audio --audio-format mp3 --audio-quality 0 '<youtube-lin
 
 Download a playlist:
 
- ```sh
+ ``` sh
 youtube-dl -best 22 --yes-playlist '<playlist-link'
 ```
 
 Download a playlist with audio only:
 
- ```sh
+ ``` sh
 youtube-dl -f 22 --yes-playlist '<playlist-link'
 ```
 
@@ -438,7 +438,7 @@ youtube-dl -f 22 --yes-playlist '<playlist-link'
 
 Get Source formats available:
 
- ```sh
+ ``` sh
 youtube-dl --list-formats '<youtube-link>'
 ```
 
@@ -447,7 +447,7 @@ youtube-dl --list-formats '<youtube-link>'
 Run ytdlpl (youtube downloader playlist) and add the playlist you want to download.
 This script will download the latest youtube-dl version for windows to the current folder if not available.
 
- ```ps1
+ ``` ps11
 Function ytdlpl
 {
     Param ($playlist)
@@ -470,7 +470,7 @@ Function ytdlpl
 
 Alternatively use this script
 
- ```ps1
+ ``` ps11
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/scripts/main/tools/youtubedl/youtube-dl.ps1'))
 ```
 

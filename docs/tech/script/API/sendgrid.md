@@ -4,7 +4,7 @@
 
 ## powershell
 
- ```ps1
+ ``` ps11
 $From = "email@address"
 $To = "email@address"
 $Cc = ""
@@ -29,7 +29,7 @@ Invoke-RestMethod -Uri "https://api.sendgrid.com/v3/mail/send" -Method Post -Hea
 
 ## curl
 
-```sh
+``` sh
 export SENDGRID_API_KEY='something'
 
 curl --request POST --url https://api.sendgrid.com/v3/mail/send --header "Authorization: Bearer $SENDGRID_API_KEY" --header 'Content-Type: application/json' --data '{"personalizations": [{"to": [{"email": "mail@to.you"}]}],"from": {"email": "bot@0xfab1.net"},"subject": "Hello world","content": [{"type": "text/plain", "value": "Nice, mailing with cURL :D"}]}'

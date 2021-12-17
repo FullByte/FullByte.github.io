@@ -4,7 +4,7 @@ Installation on a Lenovo/IBM T500/T60 Laptop
 
 ## Let's start
 
- ```sh
+ ``` sh
 gentoo acpi=on docache dosshd passwd=pw
 10 # for german
 net-setup eth0
@@ -12,7 +12,7 @@ net-setup eth0
 
 ## Partitioning
 
- ```sh
+ ``` sh
 fdisk /dev/sda
 p (Partitionstabelle anzeigen)
 d # (Partition # löschen)
@@ -23,7 +23,7 @@ n (Rootpartition erstellen P= Primär, 3=Partitionsnummer, Start = default, Ende
 
 ## Create Filesystem
 
- ```sh
+ ``` sh
 mke2fs /dev/sda1
 mke2fs -j /dev/sda3
 
@@ -37,14 +37,14 @@ mount /dev/sda1 /mnt/gentoo/boot
 
 ## add mirror
 
- ```sh
+ ``` sh
 cd /mnt/gentoo
 links http://www.gentoo.org/main/en/mirrors.xml
 ```
 
 choose mirror ```releases/x86/autobuilds/, x86, i686```
 
- ```sh
+ ``` sh
 tar xvjpf stage3-*.tar.bz2
 ```
 
@@ -53,11 +53,11 @@ tar xvjpf stage3-*.tar.bz2
 Link: <http://www.gentoo.org/main/en/mirrors.xml>
 Choose mirror: ```snapshots/, portage-latest.tar.bz2```
 
- ```sh
+ ``` sh
 tar xvjf /mnt/gentoo/portage-latest.tar.bz2 -C /mnt/gentoo/usr
 ```
 
- ```sh
+ ``` sh
 nano -w /mnt/gentoo/etc/make.conf
 	+CFLAGS="-O2 -march=i686 -pipe -fomit-frame-pointer"
 	+MAKEOPTS="-j3"
@@ -68,38 +68,38 @@ nano -w /mnt/gentoo/etc/make.conf
 	+INPUT_DEVICES="synaptics"
 ```
 
- ```sh
+ ``` sh
 mirrorselect -i -o >> /mnt/gentoo/etc/make.conf
 mirrorselect -i -r -o >> /mnt/gentoo/etc/make.conf
 ```
 
- ```sh
+ ``` sh
 cp -L /etc/resolv.conf /mnt/gentoo/etc/
 ```
 
- ```sh
+ ``` sh
 mount -t proc none /mnt/gentoo/proc
 mount -o bind /dev /mnt/gentoo/dev
 ```
 
- ```sh
+ ``` sh
 chroot /mnt/gentoo /bin/bash
 env-update
 source /etc/profile
 export PS1="(chroot) $PS1"
 ```
 
- ```sh
+ ``` sh
 emerge --sync
 emerge --oneshot portage
 ```
 
- ```sh
+ ``` sh
 eselect profile list
 eselect profile set 2
 ```
 
- ```sh
+ ``` sh
 nano -w /etc/locale.gen
 ```
 
@@ -112,15 +112,15 @@ de_DE ISO-8859-1
 de_DE@euro ISO-8859-15
 ```
 
- ```sh
+ ``` sh
 cp /usr/share/zoneinfo/Europe /etc/localtime
 ```
 
- ```sh
+ ``` sh
 emerge gentoo-sources
 ```
 
- ```sh
+ ``` sh
 cd /usr/src/linux
 make menuconfig
 ```
@@ -129,14 +129,14 @@ More details: <http://de.gentoo-wiki.com/wiki/IBM_Lenovo_Thinkpad_R60>
 
 ## Special Lenovo T60 Devices
 
- ```sh
+ ``` sh
 emerge radeon-ucode
 echo "media-libs/mesa -classic gallium" >> /etc/portage/package.use
 emerge -uN mesa
 emerge xev
 ```
 
- ```sh
+ ``` sh
 emerge iwl3945-ucode
 emerge alsa-utils
 rc-update add alsasound boot
@@ -153,7 +153,7 @@ alsaconf
 
 ## COMPILE BABY
 
- ```sh
+ ``` sh
 make && make modules_install
 cp arch/i386/boot/bzImage /boot/kernel-2.6.37-gentoo-r4
 find /lib/modules/kernel-2.6.37-gentoo-r4/ -type f -iname '*.o' -or -iname '*.ko' | less
@@ -162,7 +162,7 @@ nano -w /etc/modules.autoload.d/kernel-2.6 -> Dateinamen ohne Pfad und Endung hi
 
 ## Partitionen automatisch mounten
 
- ```sh
+ ``` sh
 /dev/sda1   /boot        ext2    defaults,noatime     1 2
 /dev/sda2   none         swap    sw                   0 0
 /dev/sda3   /            ext3    noatime              0 1
@@ -175,13 +175,13 @@ shm         /dev/shm     tmpfs   nodev,nosuid,noexec  0 0
 
 ## Hostname eintragen:
 
- ```sh
+ ``` sh
 nano -w /etc/conf.d/hostname
 ```
 
 ## Hier das .\\O löschen
 
- ```sh
+ ``` sh
 nano -w /etc/issue
 nano -w /etc/conf.d/net
 	+config_eth0=( "dhcp" )
@@ -205,7 +205,7 @@ rc-update add sshd default
 
 # Bootloader installieren
 
- ```sh
+ ``` sh
 emerge grub
 nano -w /boot/grub/grub.conf
 	~ default 0
@@ -224,7 +224,7 @@ reboot
 
 ## X-Window
 
- ```sh
+ ``` sh
 emerge xorg-server
 emerge xorg-x11
 
@@ -274,7 +274,7 @@ Xorg -configure
 
 Test
 
- ```sh
+ ``` sh
 X -retro -config /root/xorg.conf.new
 
 cp /root/xorg.conf.new /etc/X11/xorg.conf
@@ -284,7 +284,7 @@ cp /root/xorg.conf.new /etc/X11/xorg.conf
 
 ### Edit the make.conf (comment the original USE)
 
- ```sh
+ ``` sh
 XUSE="truetype X new-login xorg xscreensaver xv xcomposite xinerama opengl aiglx"
 IMAGEUSE="jpeg gif tiff png svg pdf"
 MEDIAUSE="alsa mad vidix asf win32codecs dvd mp4 aac x264 xvid nsplugin mp3 real"
@@ -299,7 +299,7 @@ KDESTUFF="nls pam acl fam ipv6 samba ssl consolekit usb threads crypt gtk alsa x
 USE="${KDESTUFF} ${XTRA} ${NOTUSE} ${SYSTEM} ${GENERAL} ${IMAGEUSE} ${XUSE} ${KDEUSE} ${MEDIAUSE}"
 ```
 
- ```sh
+ ``` sh
 emerge kde-meta
 emerge kdm
 locate kdmrc
@@ -309,7 +309,7 @@ kdm
 
 ## Notes
 
- ```sh
+ ``` sh
 nano -w /etc/X11/xorg.conf.d/10-evdev.conf
 	+ Section "InputClass"
 	+ 	Identifier "evdev keyboard catchall"
@@ -317,7 +317,7 @@ nano -w /etc/X11/xorg.conf.d/10-evdev.conf
 	+ EndSection
 ```
 
- ```sh
+ ``` sh
 nano -w /etc/X11/xorg.conf/99-synaptics
 
 	+ Section "InputClass"
@@ -327,7 +327,7 @@ nano -w /etc/X11/xorg.conf/99-synaptics
 	+ EndSection
 ```
 
- ```sh
+ ``` sh
 nano -w /etc/X11/xorg.conf.d/10-evdev.conf
 	+ Section "InputClass"
 	+         Identifier "evdev keyboard catchall"

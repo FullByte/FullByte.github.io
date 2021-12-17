@@ -4,7 +4,7 @@ Notes from challenges I did @ <https://cryptohack.org>.
 
 ## XOR starter
 
-```python
+``` python
 text = "label"
 
 number1= []
@@ -27,7 +27,7 @@ print(solution2)
 
 ## XORProperties
 
-```python
+``` python
 from pwn import xor
 
 KEY1 = "a6c8b6733c9b22de7bc0253266a3867df55acde8635e19c73313"
@@ -44,7 +44,7 @@ print(FLAG)
 
 ## XOR you dont
 
-```python
+``` python
 from pwn import xor
 
 key = bytes.fromhex("0e0b213f26041e480b26217f27342e175d0e070a3c5b103e2526217f27342e175d0e077e263451150104")

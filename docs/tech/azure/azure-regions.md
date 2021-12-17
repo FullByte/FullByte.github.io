@@ -107,7 +107,7 @@ We can filter all regions of a given geography e.g. Europe: ```az account list-l
 
 To get an overview of all locations we can run the following command:
 
-```sh
+``` sh
 az account list-locations --query "[?metadata.regionType=='Physical'] .{Geography:metadata.geographyGroup, RegionName:name, PairedRegion:metadata.pairedRegion[0].name, Location:metadata.physicalLocation, lat:metadata.latitude, long:metadata.longitude}" -o table
 ```
 
@@ -163,7 +163,7 @@ az account list-locations --query "[?metadata.regionType=='Physical'] .{Geograph
 
 The list-locations result also has “logical” instead of physical entries which seems to include staging regions and is yet another set of regions/geographies. Running this command
 
-```sh
+``` sh
 az account list-locations --query "[?metadata.regionType=='Logical']" -o table
 ```
 
@@ -199,7 +199,7 @@ az account list-locations --query "[?metadata.regionType=='Logical']" -o table
 
 According to [azure global-infrastructure](https://azure.microsoft.com/en-us/global-infrastructure/geographies/#overview)
 
-```txt
+``` txt
 Africa
 Asia Pacific
 Australia
@@ -237,7 +237,7 @@ United States
 
 The command ```az account list-locations | jq 'map(.metadata.geographyGroup)' | sort | uniq``` returns the following unique list of geographies:
 
-```txt
+``` txt
 Africa
 Asia Pacific
 Canada

@@ -2,7 +2,7 @@
 
 Notes from challenges I did @ <https://cryptohack.org>.
 
-```python
+``` python
 import os
 import cv2 # pip3 install opencv-python 
 

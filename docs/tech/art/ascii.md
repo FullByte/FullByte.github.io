@@ -2,7 +2,7 @@
 
 I love [ASCII Art](https://en.wikipedia.org/wiki/ASCII_art) and this page is dedicated to some beautiful things I found. Most of the stuff below is is the work of someone else but as I found this stuff hard to find I just want to make sure it is not lost. Links were added where known.
 
-```txt
+``` txt
  .d8888b.           8888888888  d8888 888888b.   d888   
 d88P  Y88b          888        d88888 888  "88b d8888   
 888    888          888       d88P888 888  .88P   888   
@@ -50,7 +50,7 @@ Download [nyancat.json](_nyancat.json) or view below:
 - Use cowsay ```cowsay 0xfab1.net```
 
 ??? output "cowsay 0xfab1.net"
-    ```txt
+    ``` txt
     ____________
     < 0xfab1.net >
     ------------
@@ -64,7 +64,7 @@ Download [nyancat.json](_nyancat.json) or view below:
 - Use cowthink (e.g. pipe it a fortune cookie) ```fortune | cowthink```
 
 ??? output "fortune | cowthink"
-    ```txt
+    ``` txt
     ________________________________________
     ( You will attract cultured and artistic )
     ( people to your home.                   )
@@ -84,7 +84,7 @@ Install ```sudo apt install toilet```
 
 Use Toilet ```toilet 0xfab1.net```
 
-```txt
+``` txt
   mmmm           m""         #      mmm                           m
  m"  "m m   m  mm#mm   mmm   #mmm     #           m mm    mmm   mm#mm
  #  m #  #m#     #    "   #  #" "#    #           #"  #  #"  #    #
@@ -94,7 +94,7 @@ Use Toilet ```toilet 0xfab1.net```
 
 Another example: ```toilet -kf mono12 0xfab1.net```
 
-```txt
+``` txt
   ▄▄▄▄             ▄▄▄▄       ▄▄        ▄▄▄
  ██▀▀██           ██▀▀▀       ██       █▀██                      ██
 ██    ██▀██  ██▀███████▄█████▄██▄███▄    ██     ██▄████▄ ▄████▄███████
@@ -110,7 +110,7 @@ Another example with color: ```toilet -f mono12 -F metal 0xfab1```
 
 You can also use toilet to pipe stuff e.g. this example for the current time:
 
-```sh
+``` sh
 while true; do clear; echo "$(date '+%D %T' | toilet -f term -F border --gay)"; sleep 1; done
 ```
 
@@ -122,7 +122,7 @@ Install ```sudo apt install figlet```
 
 Use Figlet ```figlet 0xfab1.net```
 
-```txt
+``` txt
   ___        __       _     _              _
  / _ \__  __/ _| __ _| |__ / |  _ __   ___| |_
 | | | \ \/ / |_ / _` | '_ \| | | '_ \ / _ \ __|
@@ -134,7 +134,7 @@ Another example: ```figlet -c -k -w 100 -f shadow 0xfab1.net```
 
 figlet -f $font 0xfab1.net
 
-```txt
+``` txt
   _ \           _|         |    _ |                  |
  |   | \ \  /  |     _` |  __ \   |     __ \    _ \  __|
  |   |  `  <   __|  (   |  |   |  |     |   |   __/  |
@@ -143,12 +143,12 @@ figlet -f $font 0xfab1.net
 
 You can use any tlf-font available here ```ls /usr/share/figlet/``` and loop through all options to see what looks good e.g. as such:
 
-```sh
+``` sh
 for f in /usr/share/figlet/*.tlf; do file=$(echo "${f##*/}"); font=$(echo $file| cut -d'.' -f 1); figlet -f $font 0xfab1.net; done
 ```
 
 ??? output "figlet with all fonts"
-    ```txt
+    ``` txt
 
     ░████░               ▒████             ██         ░███
     ██████               █████             ██         ████
@@ -359,13 +359,13 @@ To run asciiquarium you need Term-Animation and Perl.
 
 First install Perl:
 
-```sh
+``` sh
 sudo apt-get install libcurses-perl
 ```
 
 Download and install [Term-Animation](_term-animation-2.6.tar.gz) to /tmp
 
-```sh
+``` sh
 cd /tmp
 wget https://cpan.metacpan.org/authors/id/K/KB/KBAUCOM/Term-Animation-2.6.tar.gz
 tar -zxvf Term-Animation-2.6.tar.gz
@@ -376,7 +376,7 @@ sudo make install
 
 Download [asciiquarium](_asciiquarium.tar.gz) to /tmp
 
-```sh
+``` sh
 cd /tmp
 wget https://robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
 tar -zxvf asciiquarium.tar.gz
@@ -387,7 +387,7 @@ sudo chmod 0755 /usr/local/bin/asciiquarium
 
 Run asciiquarium
 
-```sh
+``` sh
 perl /usr/local/bin/asciiquarium
 ```
 
@@ -403,7 +403,7 @@ ART is a Python lib for text converting to ASCII art fancy.
 
 Example `art-example.py`
 
-```py
+``` py
 from art import *
 Art=text2art("0xfab1",font='block',chr_ignore=True)
 print(Art)
@@ -426,7 +426,7 @@ print(Art)
 
 Example `art-random-example.py`
 
-```py
+``` py
 from art import *
 for lp in range(100):
     print(randart() + "\n")
@@ -434,7 +434,7 @@ for lp in range(100):
 
 Don't forget to use lolcat to run this :)
 
-```sh
+``` sh
 python3 art-random-example.py | lolcat
 ```
 
@@ -676,7 +676,7 @@ python3 art-random-example.py | lolcat
 <script id="asciicast-8" src="https://asciinema.org/a/239367.js" async></script>
 
 ??? output "curl parrot.live"
-    ```txt
+    ``` txt
                                 .ccccc.
                             .cc;'coooxkl;.
                         .:c:::c:,,,,,;c;;,.'.
@@ -701,7 +701,7 @@ python3 art-random-example.py | lolcat
 - Use: ```curl ascii.live/forrest```
 
 ??? output "curl ascii.live/forrest"
-    ```txt
+    ``` txt
                         .':xc.
                         .:ccxOd'
                         ,l';dOxo'
@@ -735,7 +735,7 @@ python3 art-random-example.py | lolcat
 - Use: ```curl ascii.live/rick```
 
 ??? output "curl ascii.live/rick"
-    ```txt
+    ``` txt
     ttttttffffttfLLftff1:,ii,,,,iiiiii1ffffftt11tttt1ttt111fffttfffttttfft
     tttttttttttttfffffff1,,,,,,,iiiii1tffffffftt1ttt1111111tfftffffttttttt
     fffffffftttt1tffftft1i,,,,,,,iiii1ttfffffttt1tffft11111tfttfffttt1tttt
@@ -816,7 +816,7 @@ Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
 - Use: ```traceroute -m 100 216.81.59.173 | awk '{print $2}'```
 
 ??? output "star-wars-traceroute"
-    ```txt
+    ``` txt
     *
     Episode.IV
     A.NEW.HOPE
@@ -874,7 +874,7 @@ Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
 - Use: ```traceroute6 -m 120 tng.prolixium.com```
 
 ??? output "traceroute6 -m 120 tng.prolixium.com"
-    ```txt
+    ``` txt
     traceroute to tng.prolixium.com (2001:48c8:1:137::32), 120 hops max, 24 byte packets
 
     v6-seattle-ix.voxel.net (2001:504:16::745f)  209.28 ms  207.781 ms  207.18 ms
@@ -906,7 +906,7 @@ Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
 - Use: ```traceroute -6 -m 50 hand.bb0.nl```
 
 ??? output "traceroute -6 -m 50 hand.bb0.nl"
-    ```txt
+    ``` txt
     traceroute to hand.bb0.nl (2a0e:fd45:2a0a:2::cafe), 50 hops max, 80 byte packets
      7  MYLOC-MANAG.ear3.Amsterdam1.Level3.net (2001:1900:5:2:2:0:8:780a)  253.218 ms  251.177 ms  251.017 ms
      8  2a00:a7c0:e20a:20::1 (2a00:a7c0:e20a:20::1)  250.961 ms  250.912 ms  250.870 ms
@@ -960,7 +960,7 @@ Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
 - Use: ```traceroute bad.horse```
 
 ??? output "traceroute bad.horse"
-    ```txt
+    ``` txt
     13 bad.horse (162.252.205.130) 163.913 ms 163.985 ms 164.169 ms
     14 bad.horse (162.252.205.131) 166.228 ms 169.604 ms 168.837 ms
     15 bad.horse (162.252.205.132) 172.249 ms 174.163 ms 172.610 ms

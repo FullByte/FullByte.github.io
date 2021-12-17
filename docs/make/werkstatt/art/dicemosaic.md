@@ -18,7 +18,7 @@ We need to translate the chosen picture into a dice mosaic
 Use Metapixel and upload dice faces 1-6
 <https://wiki.ubuntuusers.de/Metapixel/>
 
- ```sh
+ ``` sh
 sudo apt install metapixel
 metapixel-prepare --width=15 --height=15 --recurse "dice directory" "library directory"
 metapixel --library="library directory" --width=15 --height=15 --distance=0 --metric=wavelet --metapixel "infile" "outfile"

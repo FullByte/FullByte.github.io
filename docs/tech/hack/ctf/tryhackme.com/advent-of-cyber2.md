@@ -6,7 +6,7 @@ These notes are from a challenge I did @[tryhackme](https://tryhackme.com) calle
 
 Python One-Liner to query the API :)
 
-```python
+``` python
 import requests 
 for number in range (1,100,2): print(f'{number} --> ' + requests.get(f'http://localhost:8080/api/{number}').text)
 ```

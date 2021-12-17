@@ -10,13 +10,13 @@ Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy
 
 You can export the template for a resource group, and then pass it directly to the decompile command. The following example shows how to decompile an exported template.
 
-```ps1
+``` ps11
 Export-AzResourceGroup -ResourceGroupName "rg-your_resource_group_name" -Path ./my-arm-file.json
 ```
 
 You can now use this "my-arm-file.json" ARM template and convert it to a dicep file:
 
-```ps1
+``` ps11
 az bicep decompile --file .\my-arm-file.json
 ```
 

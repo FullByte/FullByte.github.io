@@ -56,7 +56,7 @@ Example on how to use croc with the azure hosted relay:
 
 I added a CNAME entry (croc) to my DNS entry `service.0xfab1.net` and added the alias: `xfab1.westeurope.azurecontainer.io` so that i can call the service @ `croc.service.0xfab1.net`.
 
-```sh
+``` sh
 croc --relay "croc.service.0xfab1.net:9009" send geohashing.png
 ```
 

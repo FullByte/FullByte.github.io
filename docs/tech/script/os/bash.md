@@ -31,7 +31,7 @@ arp -a | findstr b8-27-eb
 
 From linux
 
-```sh
+``` sh
 arp-scan --localnet --interface=eth0 | grep b8:27:eb
 arp-scan --localnet --interface=wlan0 | grep b8:27:eb
 ```
@@ -49,7 +49,7 @@ Make a new folder and cd into it
 
 Add this function to your `.zshrc`
 
-```sh
+``` sh
 function zshaddhistory() {
 	echo "${1%%$'\n'}|${PWD}   " >> ~/.zsh_history_ext
 }
@@ -57,7 +57,7 @@ function zshaddhistory() {
 
 Create file e.g. `folderhistory` with the content below and add it to your `$PATH`
 
-```sh
+``` sh
 grep -v "folderhistory" ~/.zsh_history_ext | grep -a --color=never "${PWD}   " | cut -f1 -d"|" | tail
 ```
 
@@ -91,8 +91,8 @@ More...
 - List open file descriptors (-i flag for network interfaces): ```lsof -i :8080```
 - Stream current disk, network, CPU activity, etc: ```dstat -a```
 - Trace system calls of a program: ```strace -f -e <syscall> <cmd>```
-- Print currently active processes: ```ps aux | head -n20```
-- Visualize process forks: ```pstree```
+- Print currently active processes: ``` ps1 aux | head -n20```
+- Visualize process forks: ``` ps1tree```
 - Show size on disk for directories and their contents: ```du -ha```
 - List currently open Internet/UNIX sockets and related information ```netstat | head -n20```
 - Find hostname for a remote IP address: ```nslookup <IP address>```
@@ -143,13 +143,13 @@ More...
 
 To make a default Vim installation more useful, type the following 5 lines into its .vimrc file:
 
-```sh
+``` sh
 set hls ic is nu noswf
 ```
 
 ## Screen
 
-```sh
+``` sh
 screen # attach
 strg+a --> "d" # detach
 screen -r # re-attach
@@ -159,13 +159,13 @@ screen -r # re-attach
 
 create a new tmux session
 
-```sh
+``` sh
 tmux
 ```
 
 or create a new session with a name e.g. "SessionName"
 
-```sh
+``` sh
 tmux new-session -sSessionName
 ```
 
@@ -176,25 +176,25 @@ Use these commands to navigate between windows:
 
 Join a tmux session (e.g. from a different device or user)
 
-```sh
+``` sh
 tmux attach
 ```
 
 or be specific:
 
-```sh
+``` sh
 tmux attach-sesssion -t SessionName
 ```
 
 Kill first window (0):
 
-```sh
+``` sh
 tmux kill-window -t 0
 ```
 
 Kill a session:
 
-```sh
+``` sh
 tmux kill-session
 ```
 
@@ -210,7 +210,7 @@ tmux kill-session
 - Display contents of a zipped text file: ```zcat <file.gz>```
 - Copy a file from remote to local server, or vice versa: ```scp <user@remote_host> <local_path>```
 - List Stats For A File: ```stat -x README.md```
-- Securely Remove Files ```srm -vz README.md``` or ```shred -uvz -n 5 README.md```
+- Securely Remove Files ```srm -vz README.md``` or ``` shred -uvz -n 5 README.md```
 - Securely Remove Files after rm was used: ```sfill -lvz /home```
 - Copying File Contents To System Paste Buffer: ```cat some-file.txt | pbcopy```
 - Exclude A Directory With Find: ```find . -type f -not -path './.git/*' -ctime -10```
@@ -253,7 +253,7 @@ If you don't have `tree` maybe create an as such: `alias tree='command from abov
 
 Display all terminal colors
 
- ```sh
+ ``` sh
 for x in {0..8}; do 
     for i in {30..37}; do 
         for a in {40..47}; do 
@@ -267,7 +267,7 @@ echo ""
 
 [Langton's ant](https://en.wikipedia.org/wiki/Langton%27s_ant) simulation
 
-```sh
+``` sh
 echo -ne "\033#8";X=`tput cols`;Y=`tput lines`;((a=$X/2));((b=$Y/2));d=1;while case $d in 0)((a=a<2?X:a-1));;1)((b=b<2?Y:b-1));;2)((a=a==X?1:a+1));;3)((b=b==Y?1:b+1));; esac;do ((c=b+a*X));v=${k[c]:- };[ $v. = @. ]&&{((d=d>2?0:d+1));k[c]="";}||{(( d=d<1?3:d-1));k[c]=@;};echo -ne "\033[$b;${a}H$v";done
 ```
 

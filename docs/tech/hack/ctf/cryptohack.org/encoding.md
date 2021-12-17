@@ -6,7 +6,7 @@ Encoding Challenge
 
 ## Server
 
-```python
+``` python
 #!/usr/bin/env python3
 
 from Crypto.Util.number import bytes_to_long, long_to_bytes
@@ -72,7 +72,7 @@ listener.start_server(port=13377)
 
 ## Client
 
-```python
+``` python
 from pwn import * # pip3 install pwntools
 import json
 from Crypto.Util.number import bytes_to_long, long_to_bytes

@@ -13,7 +13,7 @@ You can overwrite the existing script and it will run :D
 
 Example CSE for Windows to install IIS
 
-```ps1
+``` ps11
 # this custom script extension installs IIS and downloads urlrewrite and install
 $tmpDir = "c:\temp\" # this will be our temp folder for download / logging
 if (!(Test-Path $tmpDir)) { mkdir $tmpDir -force } # create folder if it doesn't exist

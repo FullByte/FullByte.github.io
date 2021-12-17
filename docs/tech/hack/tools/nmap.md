@@ -4,13 +4,13 @@ Press "v" if you forgot du add "-v" in the scan and need to increase verbosity.
 
 ## Simple IP scan
 
-```sh
+``` sh
 nmap -sC -sV $ip
 ```
 
 ## Enumerate the SMB shares
 
-```sh
+``` sh
 nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse $ip
 ```
 

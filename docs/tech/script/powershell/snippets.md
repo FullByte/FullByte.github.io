@@ -13,7 +13,7 @@ Some handy code snippets for powershell :)
 
 Create md file for each file found in current folder and remove first and last chars:
 
-```ps1
+``` ps11
 foreach ($file in (dir | select-object name)){New-Item ($file.name.Substring(3, $file.name.Length-7)+".md") -ItemType file}
 ```
 
@@ -21,7 +21,7 @@ foreach ($file in (dir | select-object name)){New-Item ($file.name.Substring(3, 
 
 Option 1
 
-```ps1
+``` ps11
 Function New-Password([int] $length, $pw = "")
 {    
     $rng = New-Object System.Random
@@ -33,7 +33,7 @@ New-Password 15
 
 Option 2
 
-```ps1
+``` ps11
 $pwlength = 20 # Something between 8 and 32
 
 # Create a password
@@ -65,7 +65,7 @@ Write-Output("Password:") -ForegroundColor black -BackgroundColor yellow -NoNewl
 
 Option 3
 
-```ps1
+``` ps11
 $buffer = New-Object byte[] 32;
 [System.Security.Cryptography.RandomNumberGenerator]::Create().GetBytes(($buffer));
 return [BitConverter]::ToString($buffer).Replace("-", [string]::Empty);
@@ -75,7 +75,7 @@ return [BitConverter]::ToString($buffer).Replace("-", [string]::Empty);
 
 Programs that run on this system
 
-```ps1
+``` ps11
 Get-ScheduledTask | Get-ScheduledTaskInfo
 Get-Service
 Get-Process
@@ -83,26 +83,26 @@ Get-Process
 
 Last boot time
 
-```ps1
+``` ps11
 Write-Output "System boot:" (Get-CimInstance -ClassName win32_operatingsystem | Select-Object -ExpandProperty LastBootUpTime)
 ```
 
 Last Installation Date
 
-```ps1
+``` ps11
 Get-ChildItem -Path HKLM:\System\Setup\Source* | ForEach-Object {Get-ItemProperty -Path Registry::$_} | Select-Object ProductName, ReleaseID, CurrentBuild, @{n="Install Date"; e={([DateTime]'1/1/1970').AddSeconds($_.InstallDate)}} | Sort-Object "Install Date"
 ```
 
 Get WiFi Passwords (add more cultures if needed):
 
-```ps1
+``` ps11
 $keyword = @{"de-DE" = 'Schlüsselinhalt'; "en-US" = 'Key Content'}
 Invoke-Expression -Command '(netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)} | Select-String ($keyword[(get-culture).Name]+"\W+\:(.+)$") | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ WiFi=$name;PASSWORD=$pass }} | Format-Table -AutoSize'
 ```
 
 WinSAT information
 
-```ps1
+``` ps11
 # Get WinSAT Data (XML)
 WinSAT formal
 $path = Get-ChildItem -Path 'C:\Windows\Performance\WinSAT\DataStore\*Formal.*.xml' | Sort-Object -Property CreationTime -Descending | Select-Object -First 1 -ExpandProperty FullName 
@@ -119,7 +119,7 @@ $node = $xml.WinSAT.Metrics.CPUMetrics.CompressionMetric
 
 Windows Defender statistics/information
 
-```ps1
+``` ps11
 $DefenderStatus = (Get-Service WinDefend -ErrorAction SilentlyContinue).Status
 if ($DefenderStatus -ne "Running") {
     throw "The Windows Defender service is not currently running"
@@ -129,13 +129,13 @@ Get-MpComputerStatus
 
 Win10 key
 
-```ps1
+``` ps11
 (Get-WmiObject -query ‘select * from SoftwareLicensingService’).OA3xOriginalProductKey
 ```
 
 List installed apps
 
-```ps1
+``` ps11
 # Get install apps from app-store
 Get-AppxPackage | Select-Object -Property Name, Status, Version, InstallLocation | Format-Table
 
@@ -145,7 +145,7 @@ Get-WMIObject -Query "SELECT * FROM Win32_Product Where Not Vendor Like '%Micros
 
 List files in programs folder:
 
-```ps1
+``` ps11
 $Path = "$Env:ProgramData\Microsoft\Windows\Start Menu\Programs"
 $StartMenu = Get-ChildItem $Path -Recurse -Include *.lnk
 
@@ -163,7 +163,7 @@ ForEach ($Item in $StartMenu) {
 
 List installed Windows Store Apps (and ignore some):
 
-```ps1
+``` ps11
 #Requires -RunAsAdministrator
 
 Import-Module Appx
@@ -191,7 +191,7 @@ ForEach($App in $Packages){
 
 List all Start Menu Programs and their paths
 
-```ps1
+``` ps11
 ForEach ($Item in Get-ChildItem "$Env:ProgramData\Microsoft\Windows\Start Menu\Programs" -Recurse -Include *.lnk) {
     $Shell = New-Object -ComObject WScript.Shell
     $Properties = @{ ShortcutName = $Item.Name; Target = $Shell.CreateShortcut($Item).targetpath }
@@ -203,7 +203,7 @@ ForEach ($Item in Get-ChildItem "$Env:ProgramData\Microsoft\Windows\Start Menu\P
 
 Enable Remote Desktop
 
-```ps1
+``` ps11
 (Get-WmiObject Win32_TerminalServiceSetting -Namespace root\cimv2\TerminalServices).SetAllowTsConnections(1,1) | Out-Null
 (Get-WmiObject -Class "Win32_TSGeneralSetting" -Namespace root\cimv2\TerminalServices -Filter "TerminalName='RDP-tcp'").SetUserAuthenticationRequired(0) | Out-Null
 Get-NetFirewallRule -DisplayName "Remote Desktop*" | Set-NetFirewallRule -enabled true
@@ -211,7 +211,7 @@ Get-NetFirewallRule -DisplayName "Remote Desktop*" | Set-NetFirewallRule -enable
 
 Run Repair-Volume on all valid drives
 
-```ps1
+``` ps11
 Get-Volume | Where { $_.OperationalStatus -eq "OK" -and $_.DriveType -ne "CD-ROM" -and $_.FileSystemType -ne "Unknown" -and $_.DriveLetter.length -ne 0} | Foreach-Object { Write-Host("Checking Drive: " + $_.DriveLetter); Repair-Volume -DriveLetter $_.DriveLetter }
 ```
 
@@ -219,7 +219,7 @@ Get-Volume | Where { $_.OperationalStatus -eq "OK" -and $_.DriveType -ne "CD-ROM
 
 Take a screenshot and save the image on your desktop:
 
-```ps1
+``` ps11
 Add-Type -AssemblyName System.Windows.Forms
 Add-type -AssemblyName System.Drawing
 $Screen = [System.Windows.Forms.SystemInformation]::VirtualScreen
@@ -233,7 +233,7 @@ $bitmap.Save([Environment]::GetFolderPath("Desktop") + "\Screenshot.bmp")
 
 Encrypt or Decrypt a File with Powershell and PFX Cert
 
-```ps1
+``` ps11
 $path = "D:\test.txt"
 $pwcert = "password"
 
@@ -268,7 +268,7 @@ Write-Host "Done"
 
 Tune the guitar
 
-```ps1
+``` ps11
 82, 110, 146, 196, 246, 329 | Foreach-Object {[console]::beep($_,4000)} # E,A,D,G,B,E
 ```
 
@@ -276,7 +276,7 @@ Tune the guitar
 
 Here are two examples using System.Speech.Synthesis.SpeechSynthesizer to read out some given text with powershell (doesn't work with powershell 7):
 
-```ps1
+``` ps11
 [Reflection.Assembly]::LoadWithPartialName('System.Speech') | Out-Null
 $tts = New-Object System.Speech.Synthesis.SpeechSynthesizer
 $tts.Speak("OMG I can speak!")
@@ -284,7 +284,7 @@ $tts.Speak("OMG I can speak!")
 
 It is possible to add [SSML](https://www.w3.org/TR/speech-synthesis) to set pitch and language:
 
-```ps1
+``` ps11
 Add-Type -AssemblyName System.speech
 $tts = New-Object System.Speech.Synthesis.SpeechSynthesizer
 
@@ -304,7 +304,7 @@ $tts.SpeakSsml($Phrase)
 
 This version uses the SAPI.SpVoice COM object and works with powershell 5 and 7:
 
-```ps1
+``` ps11
 $sp = New-Object -ComObject SAPI.SpVoice
 $sp.Speak("Time for the $((Get-Date).DayOfWeek) shuffle")
 ```
@@ -313,7 +313,7 @@ $sp.Speak("Time for the $((Get-Date).DayOfWeek) shuffle")
 
 Download Images
 
-```ps1
+``` ps11
 $url = [System.Uri]"https://example.org"
 $regex = '(http(s)?:\/\/)([^\s(["<,>/]*)(\/)[^\s[",><]*(.png|.jpg|.gif|.jpeg|.svg)(\?[^\s[",><]*)?'
 $useragent = "Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)"
@@ -343,7 +343,7 @@ foreach($imgUrlString in $listImgUrls) {
 
 Example on how to create a new SQLite DB and add a row (Requires [SQLite.dll](http://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki)).
 
-```ps1
+``` ps11
 add-type -Path "sqlite-netFx46-binary-x64-2015-1.0.109.0\System.Data.SQLite.dll"            
             
 $connectionstring = "data source=C:\Users\fabia\desktop\gpstestdb.db"             
@@ -379,7 +379,7 @@ $sqliteconnection.Dispose()
 
 Sind Mail with deprecated Send-MailMessage command
 
-```ps1
+``` ps11
 $From = "You@gmail.com"
 $To = "sombody@somewhere.com"
 $Attachment = "D:\test.txt"
@@ -392,7 +392,7 @@ Send-MailMessage -From $From -to $To -Subject $Subject -Body $Body -SmtpServer $
 
 Get a list of meetings occurring today
 
-```ps1
+``` ps11
 $ns = New-Object -ComObject Outlook.Application.GetNamespace('MAPI')
 $Start = (Get-Date).ToShortDateString()
 $End = (Get-Date).ToShortDateString()
@@ -423,7 +423,7 @@ ForEach-Object {
 
 **Get VHD owner**
 
-```ps1
+``` ps11
 param ($HyperVNodes,$VHDName)
 
 Foreach ($HyperVNode in $HyperVNodes)
@@ -453,13 +453,13 @@ Foreach ($HyperVNode in $HyperVNodes)
 
 To set a KMS Server into Windows Managed Server’s configuration you need to execute the following command:
 
-```ps1
+``` ps11
 slmgr /skms <KMS-FQDN>:1688
 ```
 
 To trigger Windows activation you need to execute the following command:
 
-```ps1
+``` ps11
 slmgr /ato
 ```
 
@@ -467,13 +467,13 @@ slmgr /ato
 
 IIS Passwords
 
-```ps1
+``` ps11
 foreach ($site in Get-ChildItem IIS:\Sites) { "Site: " + $site.name + " - " + "User: " + $site.userName + "PW: " + $site.password }
 ```
 
 Add website to pool and update binding
 
-```ps1
+``` ps11
 Set-ItemProperty 'IIS:\\Sites\\$Site' ApplicationPool $AppPoolName  
 Set-ItemProperty IIS:\\Sites\\$Site -Name bindings -Value (@{protocol="https";bindingInformation="\*:$Port:$Site"})
 
@@ -485,7 +485,7 @@ Clear-ItemProperty IIS:\\Sites\\$Site -Name bindings
 
 Get Binding Info
 
-```ps1
+``` ps11
 [string]$BindingInfo = $Binding.Collection
 [string]$IP = $BindingInfo.SubString($BindingInfo.IndexOf(" "),$BindingInfo.IndexOf(":")-$BindingInfo.IndexOf(" "))
 [string]$Port = $BindingInfo.SubString($BindingInfo.IndexOf(":")+1,$BindingInfo.LastIndexOf(":")-$BindingInfo.IndexOf(":")-1)
@@ -505,7 +505,7 @@ Get Binding Info
 - Get all help examples: ```Get-Command -CommandType cmdlet | % { (get-help $\_.name).examples }```
 - Get Last Server Boot Time: ```([wmi]"").ConvertToDateTime((Get-WmiObject -Class Win32_OperatingSystem).LastBootuptime)```
 - Search recursively for a certain string within files ```dir –r | select string "searchforthis"```
-- Top5 processes using the most memory: ```ps | sort –property ws | select –last 5```
+- Top5 processes using the most memory: ``` ps1 | sort –property ws | select –last 5```
 - Get all self-signed certs: ```Get-ChildItem -path cert:\\LocalMachine\\My```
 - Create NIC Teaming: ```New-NetLBfoTeam –Name Guest –TeamMembers Guest-A,Guest-B -TeamingMode SwitchIndependent```
 - Find something in (large) files: ```Get-Content myTestLog.log -wait | where { $\_ -match “WARNING” }```
@@ -518,7 +518,7 @@ Get Binding Info
 
 Add WebDAV to local path
 
-```ps1
+``` ps11
 (Invoke-WebRequest https://webdav.domain.com/ -Method Options).Headers.DAV  
 [String]$WebDAVShare = '\\webdav.domain.com@SSL/path/to/files'
 New-PSDrive -Name S -PSProvider FileSystem -Root $WebDAVShare -Credential 'user@domain.tdl'
@@ -526,7 +526,7 @@ New-PSDrive -Name S -PSProvider FileSystem -Root $WebDAVShare -Credential 'user@
 
 Set network location to Private for all networks:
 
-```ps1
+``` ps11
 $networkListManager = [Activator]&#x3A;:CreateInstance([Type]&#x3A;:GetTypeFromCLSID([Guid]"{DCB00C01-570F-4A9B-8D69-199FDBA5723B}")) 
 $connections = $networkListManager.GetNetworkConnections() 
 $connections | % {$\_.GetNetwork().SetCategory(1)}

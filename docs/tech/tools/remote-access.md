@@ -44,20 +44,20 @@ Windows 10
 
 View Options
 
- ```ps1
+ ``` ps11
 Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
 ```
 
 Install SSH Client and or Server
 
- ```ps1
+ ``` ps11
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 ```
 
 **Configure SSH**
 
- ```ps1
+ ``` ps11
 Start-Service sshd
 Set-Service -Name sshd -StartupType 'Automatic'
 ```
@@ -66,13 +66,13 @@ Set-Service -Name sshd -StartupType 'Automatic'
 
 There should be a firewall rule named "OpenSSH-Server-In-TCP", which should be enabled
 
- ```ps1
+ ``` ps11
 Get-NetFirewallRule -Name *ssh*
 ```
 
 If the firewall does not exist, create one
 
- ```ps1
+ ``` ps11
 New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH-Server-In-TCP' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
 ```
 
@@ -80,7 +80,7 @@ New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH-Server-In-TCP' -Enabled Tru
 
 Login to azure server "azureserver" with user "user" and private ssh keyfile "private.key". The passphrase will be queried after executing the command.
 
-```sh
+``` sh
 ssh -i private.key user@azureserver.westeurope.cloudapp.azure.com
 ```
 
@@ -88,7 +88,7 @@ When you SSH into another machine using public key authentication, the key pair 
 
 Use the `-L` flag to forward a connection to a remote server
 
-```sh
+``` sh
 ssh server -L3000:localhost:3000
 ```
 
@@ -96,7 +96,7 @@ ssh server -L3000:localhost:3000
 
 To see all escape sequences press `~?`.
 
-```txt
+``` txt
  ~.   - terminate connection (and any multiplexed sessions)
  ~B   - send a BREAK to the remote system
  ~C   - open a command line
@@ -124,14 +124,14 @@ Helpful script: <https://raw.githubusercontent.com/angristan/wireguard-install/m
 
 Install Wireguard
 
-```sh
+``` sh
 sudo apt-get update && sudo apt-get upgrade
 sudo apt-get install –y wireguard
 ```
 
 Create SSH key-value pair
 
-```sh
+``` sh
 mkdir ~/.wireguard
 cd ~/.wireguard
 umask 077
@@ -141,13 +141,13 @@ cat privatekey
 
 Create Wireguard config file
 
-```sh
+``` sh
 sudo nano /etc/wireguard/wg0.conf
 ```
 
 Add the following content:
 
-```sh
+``` sh
 [Interface]
 Address = SERVER-IP
 SaveConfig = true
@@ -161,19 +161,19 @@ AllowedIPs = CLIENT-IP or 0.0.0.0/0
 
 Set the VPN server to launch at startup:
 
-```sh
+``` sh
 sudo systemctl enable wg-quick@wg0
 ```
 
 Start the WireGuard service:
 
-```sh
+``` sh
 sudo wg-quick up wg0
 ```
 
 start wireguard as service
 
-```sh
+``` sh
 sudo cp wg0.conf /etc/wireguard
 sudo systemctl enable systemd-resolved.service
 sudo systemctl start systemd-resolved.service
@@ -182,18 +182,18 @@ sudo ln -s /usr/bin/resolvectl /usr/local/bin/resolvconf
 
 turns on VPN
 
-```sh
+``` sh
 sudo wg-quick up US_NE_WG
 ```
 
 show status
 
-```sh
+``` sh
 sudo wg show
 ```
 
 turns off VPN
 
-```sh
+``` sh
 sudo wg-quick down US_NE_WG
 ```

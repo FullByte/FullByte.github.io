@@ -9,6 +9,6 @@ High-performance load testing tool, written in Golang.
 
 Example:
 
-```sh
+``` sh
 ddosify -t 0xfab1.net
 ```

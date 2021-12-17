@@ -10,7 +10,7 @@ Query a DNS for TXT records of [0xfab1.net](https://0xfab1.net) to get some cont
 
 and you will receive this result:
 
- ```sh
+ ``` sh
 "v=me; github=https://github.com/FullByte"
 "v=me; twitter=https://twitter.com/ZeroGdoubleD"
 "v=me; about=https://0xfab1.net/about/"

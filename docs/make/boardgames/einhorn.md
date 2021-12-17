@@ -233,7 +233,7 @@ This is not needed to understand or play the game.
 ??? note "Script to analyze all possible roll attempts"
     This python script calculates all possible dice results of the game Einhorn, counts the combinations and prints the probability of each of the four roll outcomes.
 
-    ```py
+    ``` py
     from itertools import product # pip install itertools
     from collections import OrderedDict
     import math

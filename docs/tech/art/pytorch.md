@@ -7,14 +7,14 @@ Install tools:
 
 Check status of nvidia settings:
 
- ```sh
+ ``` sh
 nvidia-smi
 nvcc -V
 ```
 
 Install tools using Miniconda CLI:
 
- ```sh
+ ``` sh
 conda install numpy ninja pyyaml mkl mkl-include setuptools cmake cffi typing_extensions future six requests dataclasses
 conda install -c conda-forge libuv=1.39 # Windows
 ```
@@ -28,7 +28,7 @@ Install PyTorch via PIP: ```pip install torch==1.8.1+cu111 torchvision==0.9.1+cu
 
 Now, test with python if tools are installed and pytorch with CUDA works.
 
-```python
+``` python
 import torch
 print(torch.rand(5, 3)) # Torch Test
 print(torch.cuda.is_available()) # CUDA Test
@@ -57,7 +57,7 @@ I created a video of all 34 pictures created while running this command ```imagi
 
 This script will create a new folder on the local desktop and run deep-daze for 60min. The resulting images will be used to create an mp4 and webp video within the same folder.
 
- ```ps1
+ ``` ps11
 # Add a new input
 $text = "Correct Horse Battery Staple"
 
@@ -81,7 +81,7 @@ ffmpeg -i "$folder.mp4" -vf "fps=10,scale=512:-1:flags=lanczos" -vcodec libwebp 
 
 ### deep-daze script
 
-```python
+``` python
 from deep_daze import Imagine
 
 imagine = Imagine(
@@ -107,7 +107,7 @@ imagine()
 
 ### Big Sleep script
 
-```python
+``` python
 from big_sleep import Imagine
 
 dream = Imagine(

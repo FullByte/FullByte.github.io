@@ -8,7 +8,7 @@ Little note:
 
 **Decode**
 
-```python
+``` python
 from pwn import * # pip3 install pwntools
 import json
 import time
@@ -44,7 +44,7 @@ while result is None:
 
 **Program**
 
-```python
+``` python
 import base64
 import os
 from utils import listener

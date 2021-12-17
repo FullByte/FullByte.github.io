@@ -17,7 +17,7 @@ msiexec.exe /package PowerShell-7.1.2-win-x64.msi /quiet ADD_EXPLORER_CONTEXT_ME
 
 **2. Update [PowerShellGet](https://github.com/Azure/azure-powershell)**
 
- ```ps1
+ ``` ps11
 Register-PackageSource -Name MyNuGet -Location https://www.nuget.org/api/v2 -ProviderName NuGet
 Install-PackageProvider -Name NuGet -Force
 Install-Module -Name PowerShellGet -Force -AllowClobber
@@ -29,7 +29,7 @@ Get-PackageSource
 
 Install the Powershell Modules you would like to use e.g.:
 
- ```ps1
+ ``` ps11
 Install-Module -Name Az -AllowClobber -Force -scope AllUsers
 Install-Module -Name AzureAD -AllowClobber -Force -scope AllUsers
 Install-Module -Name PSScriptAnalyzer -AllowClobber -Force -scope AllUsers
@@ -37,7 +37,7 @@ Install-Module -Name PSScriptAnalyzer -AllowClobber -Force -scope AllUsers
 
 Consider updating them from time to time with this command:
 
- ```ps1
+ ``` ps11
 Update-Module -scope AllUsers -Force
 ```
 
@@ -45,7 +45,7 @@ Update-Module -scope AllUsers -Force
 
 Install powershell on Ubuntu 20.04
 
- ```sh
+ ``` sh
 sudo apt update # Update the list of packages
 sudo apt install -y wget apt-transport-https software-properties-common # Install pre-requisite packages.
 wget -q https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb # Download the Microsoft repository GPG keys
@@ -65,13 +65,13 @@ Follow these three steps to update, find old modules and delete all but the late
 
 **1. Update Az.Modules:**
 
- ```ps1
+ ``` ps11
 Update-Module -Name Az
 ```
 
 **2. Find out what versions you have installed**
 
- ```ps1
+ ``` ps11
 Get-InstalledModule -Name Az -AllVersions | Select-Object -Property Name, Version
 ```
 
@@ -79,7 +79,7 @@ Get-InstalledModule -Name Az -AllVersions | Select-Object -Property Name, Versio
 
 Install the module "Az.Tools.Installer" to be able to delete an older Az Module version:
 
- ```ps1
+ ``` ps11
 Install-Module -Name Az.Tools.Installer
 Uninstall-AzModule -Name Az
 ```

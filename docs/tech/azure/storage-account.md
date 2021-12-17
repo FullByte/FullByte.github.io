@@ -13,7 +13,7 @@ More details on the REST API:
 
 Example how to upload a file to a BLOB storage container using SAS token authentication:
 
-```ps1
+``` ps11
 function UploadToBLOB ($file, $storage, $container, $sastoken) {
     $filename = (Get-Item $file).Name
     $uri = https://$($storage).blob.core.windows.net/$($container)/$($filename)$($sastoken)
@@ -44,7 +44,7 @@ Use this SAS token in the postman GET request and postman will automatically sho
 
 I modified the GET request a little bit to use [environment variables](https://learning.postman.com/docs/sending-requests/variables/) for storage account name, container name and file name:
 
-```txt
+``` txt
 https://{{accountName}}.blob.core.windows.net/{{containerName}}/{{fileName}}?sv=...
 ```
 

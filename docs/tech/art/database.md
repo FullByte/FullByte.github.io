@@ -746,7 +746,7 @@ ASCII art christmas tree using Recursion and CTEs.
     ```
 
 ??? result "christmas-tree"
-    ```txt
+    ``` txt
               *                    *                    *
              *.*                  *.*                  *.*
             *...*                *...*                *...*

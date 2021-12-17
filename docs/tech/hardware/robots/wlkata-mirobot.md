@@ -4,7 +4,7 @@
 
 ## Commands
 
- ```sh
+ ``` sh
 $$ (view Grbl settings)
 $# (view # parameters)
 $G (view parser state)
