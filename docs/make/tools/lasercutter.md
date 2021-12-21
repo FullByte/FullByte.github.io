@@ -98,6 +98,14 @@ Max size: 600mm x 300mm.
 
 Fleece [example cut](_fleece_example_cut.png)
 
+#### Paper
+
+| Variable | Cut thin paper | Cut thick paper |
+|----------|----------------|-----------------|
+| Speed    | 30%            | 100%            |
+| Power    | 6%             | 25%             |
+| Freq     | 2500 Hz        | 2500 Hz         |
+
 ### Trotec Speedy 360
 
 #### Cut MDF

@@ -108,3 +108,9 @@ hcxtools to convert packets:```sudo apt install hcxdumptool hcxtools```
 ## mimikatz
 
 source: <https://github.com/gentilkiwi/mimikatz>
+
+## YARA
+
+[YARA](https://virustotal.github.io/yara/), is the "pattern matching swiss knife for malware researchers (and everyone else)". ([source](https://github.com/virustotal/yara))
+
+Here are [some rules](https://github.com/Yara-Rules/rules) and [some usage examples](https://github.com/InQuest/awesome-yara).
