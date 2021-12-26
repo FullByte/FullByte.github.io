@@ -114,3 +114,31 @@ source: <https://github.com/gentilkiwi/mimikatz>
 [YARA](https://virustotal.github.io/yara/), is the "pattern matching swiss knife for malware researchers (and everyone else)". ([source](https://github.com/virustotal/yara))
 
 Here are [some rules](https://github.com/Yara-Rules/rules) and [some usage examples](https://github.com/InQuest/awesome-yara).
+
+Simple example to find the EICAR testfile:
+
+```yml "yara-EICAR-rule.yar"
+rule eicaryara   {
+    meta:
+      author="0xfab1"
+      description="EICAR example"
+    strings:
+      $a="X5O"
+      $b="EICAR"
+      $c="ANTIVIRUS"
+      $d="TEST"
+    condition:
+      $a and $b and $c and $d
+  }
+```
+
+Then run ```yara yara-EICAR-rule.yar targetfile```
+
+## oledump-py
+
+[oledump.py](https://blog.didierstevens.com/programs/oledump-py/) is a program by [Didier](http://didierstevens.com/) [Stevens](https://twitter.com/DidierStevens) to analyze OLE files. oledump requires Python module [OleFileIO_PL](http://www.decalage.info/python/olefileio). [Olefile](https://olefile.readthedocs.io/en/latest/OLE_Overview.html) is a Python package to parse, read and write [Microsoft OLE2 files](https://en.wikipedia.org/wiki/Compound_File_Binary_Format) (also called Structured Storage, Compound File Binary Format or Compound Document File Format), such as Microsoft Office 97-2003 documents, vbaProject.bin in MS Office 2007+ files, Image Composer and FlashPix files, Outlook messages, StickyNotes, several Microscopy file formats, McAfee antivirus quarantine files, etc.
+
+- Run oledump on an supported file and it will show you the available streams
+- The letter M next to stream indicate that the stream contains VBA macros
+- Use -s to select a stream; Use -v to decompress the VBA macro source code, use -d to dump the output
+- You can scan the streams with [YARA rules](#yara) and write python plugins

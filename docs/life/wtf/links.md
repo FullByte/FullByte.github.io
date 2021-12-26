@@ -33,6 +33,21 @@ Not the links we need but the links we deserve.
 - <https://old.reddit.com/r/rareinsults/>
 - <https://old.reddit.com/r/softwaregore/>
 
+## Wiki-How
+
+EN
+
+- [How to Act Like You're Possessed](https://www.wikihow-fun.com/Act-Like-You%27re-Possessed)
+- [How to Act Like a Vampire](https://www.wikihow-fun.com/Act-Like-a-Vampire)
+- [How to Apologize to a Cat](https://www.wikihow.com/Apologize-to-a-Cat)
+- [How to Appreciate Death Metal](https://www.wikihow-fun.com/Appreciate-Death-Metal)
+- [How to Talk Your Mom into Saying Yes](https://www.wikihow.com/Talk-Your-Mom-into-Saying-Yes)
+
+DE
+
+- [Mit Make up krank aussehen](https://de.wikihow.com/Mit-Make-up-krank-aussehen)
+- [Das Ego auflösen nach den Lehren von Eckhart Tolle](https://de.wikihow.com/Das-Ego-aufl%C3%B6sen-nach-den-Lehren-von-Eckhart-Tolle)
+
 ## Urban Dictionary
 
 A list of the most entertaining Urban Dictionary pages

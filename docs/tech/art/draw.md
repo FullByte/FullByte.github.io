@@ -29,6 +29,7 @@ Tools to create graphics and modify images online.
 - Remove objects: <https://cleanup.pictures/>
 - Graffiti: <https://graffiter.com/app>
 - <https://www.tldraw.com/>
+- [word art](https://www.makewordart.com/)
 
 ### Animation
 
