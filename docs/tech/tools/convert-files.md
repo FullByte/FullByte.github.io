@@ -335,7 +335,7 @@ ffmpeg -i input.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*
 
 or for many GIF in one folder:
 
-``` ps11
+``` ps1
 Get-ChildItem -file -Path * -Include *.gif | Foreach-Object { ffmpeg -i ('"' + $_.Name + '"') -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" ('"' + $_.BaseName + '.mp4"') }
 ```
 
@@ -401,7 +401,7 @@ ffmpeg -i input.mp3 -c:a libvorbis output.oga
 
 This uses `libmp3lame` with default settings. The script will convert all media files it can handel and continue on error.
 
-``` ps11
+``` ps1
 Get-ChildItem -file -exclude *.mp3 | Foreach-Object { ffmpeg -i ('"' + $_.Name + '"') -map_metadata -1 -acodec libmp3lame ('"' + $_.BaseName + '.mp3"') }
 ```
 

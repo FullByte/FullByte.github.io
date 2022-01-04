@@ -17,7 +17,7 @@ msiexec.exe /package PowerShell-7.1.2-win-x64.msi /quiet ADD_EXPLORER_CONTEXT_ME
 
 **2. Update [PowerShellGet](https://github.com/Azure/azure-powershell)**
 
-``` ps11
+``` ps1
 Register-PackageSource -Name MyNuGet -Location https://www.nuget.org/api/v2 -ProviderName NuGet
 Install-PackageProvider -Name NuGet -Force
 Install-Module -Name PowerShellGet -Force -AllowClobber
@@ -29,7 +29,7 @@ Get-PackageSource
 
 Install the Powershell Modules you would like to use e.g.:
 
-``` ps11
+``` ps1
 Install-Module -Name Az -AllowClobber -Force -scope AllUsers
 Install-Module -Name AzureAD -AllowClobber -Force -scope AllUsers
 Install-Module -Name PSScriptAnalyzer -AllowClobber -Force -scope AllUsers
@@ -37,7 +37,7 @@ Install-Module -Name PSScriptAnalyzer -AllowClobber -Force -scope AllUsers
 
 Consider updating them from time to time with this command:
 
-``` ps11
+``` ps1
 Update-Module -scope AllUsers -Force
 ```
 
@@ -65,13 +65,13 @@ Follow these three steps to update, find old modules and delete all but the late
 
 **1. Update Az.Modules:**
 
-``` ps11
+``` ps1
 Update-Module -Name Az
 ```
 
 **2. Find out what versions you have installed**
 
-``` ps11
+``` ps1
 Get-InstalledModule -Name Az -AllVersions | Select-Object -Property Name, Version
 ```
 
@@ -79,7 +79,7 @@ Get-InstalledModule -Name Az -AllVersions | Select-Object -Property Name, Versio
 
 Install the module "Az.Tools.Installer" to be able to delete an older Az Module version:
 
-``` ps11
+``` ps1
 Install-Module -Name Az.Tools.Installer
 Uninstall-AzModule -Name Az
 ```

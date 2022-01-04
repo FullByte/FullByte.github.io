@@ -13,7 +13,7 @@ More details on the REST API:
 
 Example how to upload a file to a BLOB storage container using SAS token authentication:
 
-``` ps11
+``` ps1
 function UploadToBLOB ($file, $storage, $container, $sastoken) {
     $filename = (Get-Item $file).Name
     $uri = https://$($storage).blob.core.windows.net/$($container)/$($filename)$($sastoken)

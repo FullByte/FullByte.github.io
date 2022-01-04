@@ -128,7 +128,7 @@ Run```startx``` if you are on a local machine, in a console and have a GUI insta
 
 Set WSL version 2
 
-``` ps11
+``` ps1
 (New-Object System.Net.WebClient).DownloadFile("https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi", "wsl_update_x64.msi") 
 Start-Process msiexec.exe -Wait -ArgumentList '/I wsl_update_x64.msi /quiet' 
 wsl --set-version kali-linux 2

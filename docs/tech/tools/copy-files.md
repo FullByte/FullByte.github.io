@@ -447,7 +447,7 @@ youtube-dl --list-formats '<youtube-link>'
 Run ytdlpl (youtube downloader playlist) and add the playlist you want to download.
 This script will download the latest youtube-dl version for windows to the current folder if not available.
 
-``` ps11
+``` ps1
 Function ytdlpl
 {
     Param ($playlist)
@@ -470,7 +470,7 @@ Function ytdlpl
 
 Alternatively use this script
 
-``` ps11
+``` ps1
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/scripts/main/tools/youtubedl/youtube-dl.ps1'))
 ```
 

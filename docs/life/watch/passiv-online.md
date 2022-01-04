@@ -10,6 +10,8 @@ Passive online screens that are nice to watch.
 - <https://windows96.net/>
 - <https://geekprank.com/>
 
+A lot more interfaces: <https://github.com/zriyans/awesome-OS>
+
 ### Hacker
 
 Web/Online

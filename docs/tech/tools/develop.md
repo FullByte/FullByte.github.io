@@ -193,7 +193,7 @@ From powershell with github raw file:
 
 **Windows**
 
-``` ps11
+``` ps1
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/project/master/file.file'))
 ```
 

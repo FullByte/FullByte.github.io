@@ -61,20 +61,20 @@ You can run a simple webserver using python: ``` python -m http.server 8080```
 
 Check your inbound rules and possibly add a rule/remove a restricition:
 
-``` ps11
+``` ps1
 Get-NetFirewallRule | Where { $_.Enabled -eq 'True' -and $_.Direction -eq 'Inbound' } | Select-Object DisplayName, Direction, Action, Profile | FT
 ```
 
 Alternativly, add firewall rules to allow all local traffic (same subnet):
 
-``` ps11
+``` ps1
 New-NetFirewallRule -DisplayName "Allow LAN Party OUT" -Direction Outbound -LocalPort 1-10000 -Protocol TCP -RemoteAddress LocalSubnet -Action Allow
 New-NetFirewallRule -DisplayName "Allow LAN Party IN" -Direction Inbound -LocalPort 1-10000 -Protocol TCP -RemoteAddress LocalSubnet -Action Allow
 ```
 
 Remove the rules from above:
 
-``` ps11
+``` ps1
 Remove-NetFirewallRule -DisplayName "Allow LAN Party OUT"
 Remove-NetFirewallRule -DisplayName "Allow LAN Party IN"
 ```
@@ -83,7 +83,7 @@ Or, if nothing helps, disable the Firewall for your current profile during the L
 
 You can reset your firewall settings as follows. Windows will then ask you whenever you start an application what to do with this currently blocked application.
 
-``` ps11
+``` ps1
 (New-Object -ComObject HNetCfg.FwPolicy2).RestoreLocalFirewallDefaults()
 ```
 

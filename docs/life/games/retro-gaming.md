@@ -21,6 +21,7 @@ More Links:
 #### Tools
 
 - Pico CAD: picoCAD is a program to build and texture lowpoly 3D models <https://johanpeitz.itch.io/picocad>
+- z-machine interpreter <https://christopherdrum.itch.io/statusline>
 
 ## Consoles
 

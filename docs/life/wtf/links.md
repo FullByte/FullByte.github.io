@@ -69,10 +69,11 @@ A list of the most entertaining Urban Dictionary pages
 ## Entertainment
 
 - Nestflix: <https://nestflix.fun/>
-- LinkedIn Pro: <https://www.shlinkedin.com>
-- It's play time: <https://neal.fun/>
+- [LinkedIn Pro](https://www.shlinkedin.com)
+- [It's play time](https://neal.fun)
 - <http://godxiliary.com>
-- <https://bongo.cat/>
+- bongo cat <https://bongo.cat/>
+- Talk to Eliza <https://www.masswerk.at/eliza/>
 
 ## Share Links
 

@@ -4,7 +4,7 @@
 
 Upload and Download files example
 
-``` ps11
+``` ps1
 $devopsorg = "yourorg"
 $devopsproject = "project"
 $feedname = "feed-name"
@@ -21,7 +21,7 @@ This script **deletes unwanted internal wiki** in DevOps that cant be deleted vi
 
 Requires Azure CLI and Powershell and the DevOps PAT requires right to delete wiki repo.
 
-``` ps11
+``` ps1
 Param(
     [Parameter(Mandatory=$true,
     HelpMessage="DevOps Organization Name aka the name in the URL when you open DevOps.")]

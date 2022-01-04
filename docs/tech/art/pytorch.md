@@ -57,7 +57,7 @@ I created a video of all 34 pictures created while running this command```imagin
 
 This script will create a new folder on the local desktop and run deep-daze for 60min. The resulting images will be used to create an mp4 and webp video within the same folder.
 
-``` ps11
+``` ps1
 # Add a new input
 $text = "Correct Horse Battery Staple"
 

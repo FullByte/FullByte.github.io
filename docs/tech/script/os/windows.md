@@ -22,7 +22,7 @@ Windows History: <https://winhistory.de>
 
 Example:
 
-``` ps11
+``` ps1
 winget install powertoys 
 ```
 
@@ -32,31 +32,31 @@ Store: <https://www.microsoft.com/en-us/p/windows-file-recovery/9n26s50ln705?act
 
 Recover a specific file from your C: drive to the recovery folder on an E: drive.
 
-``` ps11
+``` ps1
 winfr C: E: /n \Users\<username>\Documents\QuarterlyStatement.docx
 ```
 
 Recover jpeg and png photos from your Pictures folder to the recovery folder on an E: drive.
 
-``` ps11
+``` ps1
 winfr C: E: /n \Users\<username>\Pictures\*.JPEG /n \Users\<username>\Pictures\*.PNG
 ```
 
 Recover your Documents folder from your C: drive to the recovery folder on an E: drive.
 
-``` ps11
+``` ps1
 winfr C: E: /n \Users\<username>\Documents\ 
 ```
 
 Recover PDF and Word files from your C: drive to the recovery folder on an E: drive.
 
-``` ps11
+``` ps1
 winfr C: E: /r /n *.pdf /n *.docx
 ```
 
 Recover any file with the string "invoice" in the filename by using wildcard characters.
 
-``` ps11
+``` ps1
 winfr C: E: /r /n *invoice* 
 ```
 
@@ -84,7 +84,7 @@ Windows + Shift + S
 
 Open a new Terminal Window with powershell 7, cmd and WSL (in my case ubuntu)
 
-``` ps11
+``` ps1
 wt -p "PowerShell 7" `; split-pane -p "cmd" `; split-pane -H wsl.exe
 ```
 
@@ -92,14 +92,14 @@ wt -p "PowerShell 7" `; split-pane -p "cmd" `; split-pane -H wsl.exe
 
 Install the required modules
 
-``` ps11
+``` ps1
 Install-Module posh-git -Scope CurrentUser
 Install-Module oh-my-posh -Scope CurrentUser
 ```
 
 Check available themes:
 
-``` ps11
+``` ps1
 Get-PoshThemes
 ```
 
@@ -107,14 +107,14 @@ If this doesn't look good install a font that works e.g. [NerdFonts](https://www
 
 Now update $PROFILE to load modules with every start
 
-``` ps11
+``` ps1
 echo "Import-Module posh-git") >> $PROFILE
 echo "Import-Module oh-my-posh" >> $PROFILE
 ```
 
 Add the Theme you like as well e.g. paradox:
 
-``` ps11
+``` ps1
 echo "Set-PoshPrompt -Theme paradox" >> $PROFILE
 ```
 
@@ -144,7 +144,7 @@ wsl --distribution Ubuntu-20.04 --user fab1
 
 *This may require installing the following
 
-``` ps11
+``` ps1
 (New-Object System.Net.WebClient).DownloadFile("https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi", "wsl_update_x64.msi") 
 Start-Process msiexec.exe -Wait -ArgumentList '/I wsl_update_x64.msi /quiet'
 ```
@@ -153,7 +153,7 @@ Start-Process msiexec.exe -Wait -ArgumentList '/I wsl_update_x64.msi /quiet'
 
 List devices (choose the drive you want to mount)```wmic diskdrive list brief```, then mount partition 1 of "PHYSICALDRIVE3" and open it:
 
-``` ps11
+``` ps1
 wsl --mount \\.\PHYSICALDRIVE3 --partition 1
 wsl
 cd /mnt/wsl/PHYSICALDRIVE3p1/
@@ -166,7 +166,7 @@ To configure WSL there are [2 main config files](https://docs.microsoft.com/en-u
 
 In this `wsl.conf` example, the distribution is `Ubuntu-20.04` and the file path is `\\wsl.localhost\Ubuntu-20.04\etc\wsl.conf`.
 
-``` ps11
+``` ps1
 # Automatically mount Windows drive when the distribution is launched
 [automount]
 
@@ -204,7 +204,7 @@ command = service docker start
 
 By default `.wslconfig` is located here: `C:\Users\<UserName>\.wslconfig`.
 
-``` ps11
+``` ps1
 # Settings apply across all Linux distros running on WSL 2
 [wsl2]
 
