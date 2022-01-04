@@ -149,13 +149,13 @@ chmod u+x script.sh
 
 Info
 
-|What|Where|
-|-|-|
-|Official Page|<https://github.com>|
-|Service Status|<https://www.githubstatus.com/>|
-|Docs|<https://docs.github.com>|
-|Download|<https://desktop.github.com/>|
-|Install|choco install github-desktop|
+| What           | Where                           |
+|----------------|---------------------------------|
+| Official Page  | <https://github.com>            |
+| Service Status | <https://www.githubstatus.com/> |
+| Docs           | <https://docs.github.com>       |
+| Download       | <https://desktop.github.com/>   |
+| Install        | choco install github-desktop    |
 
 ### RSS Feed for Commits
 
@@ -184,6 +184,7 @@ Example:
 - Smee receives payloads then sends them to your locally running application: <https://smee.io/>
 - Probot automates and improves your github workflows with pre-built apps: <https://probot.github.io/>
 - Search for code: <https://gowalker.org/>
+- Look for popular projects: <https://app.tooljet.io/applications/github-star-ranking>
 
 ### Execute Gist/Github Script
 

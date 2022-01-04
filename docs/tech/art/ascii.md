@@ -53,6 +53,90 @@ I love [ASCII Art](https://en.wikipedia.org/wiki/ASCII_art) and this page is ded
 
 ## Local tools
 
+### Image2ascii
+
+Make own ASCII animations with [image2ascii](https://github.com/michaelkofron/image2ascii).
+
+Requirements:
+
+``` sh
+sudo apt update
+sudo apt-get install ruby-full imagemagick libmagickwand-dev
+sudo gem install rmagick image2ascii rainbow
+```
+
+This is the main script `run.rb` which is also in the image2ascii repo [here](https://github.com/michaelkofron/image2ascii/blob/main/MakingWebAnimations/run.rb). I shortend it a little, added the option to pass an argument and use this value to create a unique json so the last one isn't overwritten.
+
+``` rb
+require 'rmagick'
+require 'image2ascii'
+require 'json'
+require 'fileutils'
+
+def createASCII(file)
+    animated = Magick::Image.read(file + ".gif")
+    count = 0
+    tempHash = {}
+    animated.each do |x|
+        x.write("./images/image#{count}.jpg")
+        dude = Image2ASCII.new("./images/image#{count}.jpg")
+        dude.chars = dude.chars.gsub!("'", "").gsub!("<", "").gsub!(">", "")
+        text = dude.generate(hidden: true, width: 100)
+        puts text
+        tempHash["#{count}"] = text.gsub!("\n", "<br>")
+        count = count + 1
+    end
+
+    FileUtils.rm_rf("./images/.", secure: true)
+
+    File.open(file + ".json","w") do |f|
+        f.write(tempHash.to_json)
+    end
+end
+
+createASCII(ARGV[0].to_s)
+```
+
+Run ```ruby run.rb animation``` where `animation` is a gif in the same directory as `run.rb`.
+
+This will generate a file named `animation.json` (because of the input `animation`).
+
+You require the font `courier.ttf` (or any other monospaced fonts) in the same directory as the HTML file below.
+
+Be sure to change `fetch("animation.json")` to the correct output file you created.
+
+``` html
+<html>
+<head>
+    <style>
+        @font-face {font-family: Courier;src: url('courier.ttf');}
+        p#ascii { font-size: 14px; font-family: Courier; white-space: nowrap;}
+        @media screen and (max-width: 750px) { p#ascii { font-size: 8px; } }
+    </style>
+</head>
+<body>
+    <p id="ascii"></p>
+    <script>
+        array = []
+        fetch("animation.json")
+            .then(response => { return response.json(); })
+            .then(json => { for (const object in json) { array.push(json[object]) } loop(array) })
+
+        function loop(arr) {
+            let count = 0
+            let text = document.getElementById("ascii")
+            setInterval(() => {
+                text.innerHTML = arr[count]
+                if (count == arr.length - 1) { count = 0 } else { count++ }
+            }, 50)
+        }
+    </script>
+</body>
+</html>
+```
+
+Run a webserver e.g. with python ```python -m http.server 8008 --bind 127.0.0.1``` to test this locally and open <http://127.0.0.1:8008/> in your browser.
+
 ### nyancat
 
 - Link: <https://github.com/klange/nyancat>
