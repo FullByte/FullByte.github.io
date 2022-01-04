@@ -6,14 +6,14 @@
 
 Use [chocolatey](https://chocolatey.org/) to install [node.js](https://nodejs.org) which includes [NPM](https://www.npmjs.com/) and install [yarn](https://classic.yarnpkg.com/en/) using npm once node.js is installed:
 
-``` ps11
+``` ps1
 choco -y install nodejs
 npm install --global yarn
 ```
 
 Update node.js, NPM and yarn:
 
-``` ps11
+``` ps1
 choco -y update nodejs
 npm cache clean -f
 npm install -g npm@latest
