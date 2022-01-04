@@ -25,13 +25,11 @@ This is the source of my personal but public webpage```¯\_(ツ)_/¯```
 
 ## About
 
-Publishing my projects and notes has been great exercise for me. As longs as this works well for me I will continue doing so :) The content may appear random as it deals with basically anything I find interesting and noteworthy```¯\_(ツ)_/¯```
+Publishing my projects and notes has been great exercise for me. As longs as this works well for me I will continue doing so :) The content may appear random as it deals with basically anything I find interesting and noteworthy ```¯\_(ツ)_/¯```
 
 Thanks for your interest and I appreciate your [pull-request](#contribute) for typos/errors in existing pages!
 
-Visit <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org/doc/html/rfc2818) with [Let's Encrypt](https://letsencrypt.org/), supports [IPv4](https://datatracker.ietf.org/doc/html/rfc3344) and [IPv6](https://datatracker.ietf.org/doc/html/rfc8200)). This static website is built using [MkDocs](https://github.com/mkdocs/mkdocs/), [Material](https://github.com/squidfunk/mkdocs-material), [GitHub Pages](https://pages.github.com/) and [GitHub Actions](https://github.com/features/actions).
-
-Alternative hosts:
+Visit <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org/doc/html/rfc2818) with [Let's Encrypt](https://letsencrypt.org/), supports [IPv4](https://datatracker.ietf.org/doc/html/rfc3344) and [IPv6](https://datatracker.ietf.org/doc/html/rfc8200)). This static website is based on [MkDocs](https://github.com/mkdocs/mkdocs/) with [Material](https://github.com/squidfunk/mkdocs-material) and [minify](https://github.com/byrnereese/mkdocs-minify-plugin) and [rss](https://github.com/Guts/mkdocs-rss-plugin) plugin. The website is built using [GitHub Actions](https://github.com/features/actions) and served by [GitHub Pages](https://pages.github.com/) as well as these alternative hosts:
 
 - [0xfab1@github](https://fullbyte.github.io) using [GitHub Pages](https://pages.github.com/) (alternative link: <https://www.0xfab1.net/>)
 - [0xfab1@IFPS](http://fb62c5359b88d00d5924.b-cdn.net) using [IPFS](https://ipfs.io/) with [fleek](https://fleek.co/) (alternative link: <https://ipfs.0xfab1.net/>)
@@ -45,13 +43,13 @@ Run the following code to install and update the required tools using [python](h
 
 ``` sh title="Install"
 pip install --upgrade pip
-pip install mkdocs mkdocs-material mkdocs-minify-plugin
+pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin
 ```
 
 If all above is already installed, make sure to use the latest version:
 
 ``` sh title="Update"
-pip install -U mkdocs mkdocs-material mkdocs-minify-plugin
+pip install -U mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin
 ```
 
 Building the site will reveal all possible issues with the current version:

@@ -127,3 +127,10 @@ markdown_extensions:
 Lazy load a picutre:
 
 ![Placeholder](https://dummyimage.com/600x400/eee/aaa){ loading=lazy }
+
+## PHP based static page
+
+Use PHP to create a static HTML website with [this code](https://github.com/cadars/portable-php/).
+
+Clone the repo and add content to `content/`, then run ```php portable.php > index.html```
+

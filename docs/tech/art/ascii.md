@@ -45,8 +45,8 @@ I love [ASCII Art](https://en.wikipedia.org/wiki/ASCII_art) and this page is ded
 ### Tron
 
 - Link: <http://sshtron.zachlatta.com>
-- Play:```ssh sshtron.zachlatta.com```
-- Choose a color (e.g. red):```ssh red@sshtron.zachlatta.com```
+- Play: ```ssh sshtron.zachlatta.com```
+- Choose a color (e.g. red): ```ssh red@sshtron.zachlatta.com```
 - Download [tron.json](_tron.json), get the [source](https://github.com/zachlatta/sshtron), or view below:
 
 <script id="asciicast-154041" src="https://asciinema.org/a/154041.js" async></script>
@@ -56,8 +56,8 @@ I love [ASCII Art](https://en.wikipedia.org/wiki/ASCII_art) and this page is ded
 ### nyancat
 
 - Link: <https://github.com/klange/nyancat>
-- Install:```git clone https://github.com/klange/nyancat && cd nyancat && make && cd src && ./nyancat```
-- Host telnet server:```nyancat -t```
+- Install: ```git clone https://github.com/klange/nyancat && cd nyancat && make && cd src && ./nyancat```
+- Host telnet server: ```nyancat -t```
 
 Download [nyancat.json](_nyancat.json) or view below:
 
@@ -65,16 +65,16 @@ Download [nyancat.json](_nyancat.json) or view below:
 
 ### Steam Locomotive (sl)
 
-- Install```sudo apt install sl```
-- Use```sl```
+- Install ```sudo apt install sl```
+- Use ```sl```
 - Download [sl.cast](_sl.cast) or view below:
 
 <script id="asciicast-234381" src="https://asciinema.org/a/234381.js" async></script>
 
 ### Cowsay and Cowthink
 
-- Install```sudo apt install cowsay```
-- Use cowsay```cowsay 0xfab1.net```
+- Install ```sudo apt install cowsay```
+- Use cowsay ```cowsay 0xfab1.net```
 
 ??? output "cowsay 0xfab1.net"
     ``` txt
@@ -88,7 +88,7 @@ Download [nyancat.json](_nyancat.json) or view below:
                     ||     ||
     ```
 
-- Use cowthink (e.g. pipe it a fortune cookie)```fortune | cowthink```
+- Use cowthink (e.g. pipe it a fortune cookie) ```fortune | cowthink```
 
 ??? output "fortune | cowthink"
     ``` txt
@@ -310,26 +310,26 @@ for f in /usr/share/figlet/*.tlf; do file=$(echo "${f##*/}"); font=$(echo $file|
 
 ### BB
 
-- Install```sudo apt install bb```
-- Use BB```bb```
+- Install ```sudo apt install bb```
+- Use BB ```bb```
 
 Watch this video to see what it does without running it: <https://www.youtube.com/watch?v=9ukhOAUseKY>
 
 ### lolcat
 
-To make any of the ASCII output more colorful use lolcat. Note: doesn't work with animations e.g.```aafire | lolcat```
+To make any of the ASCII output more colorful use lolcat. Note: doesn't work with animations e.g. ```aafire | lolcat```
 
 - Link: <https://github.com/busyloop/lolcat>
-- Install:```sudo apt install lolcat```
-- Use lolcat:```fortune | cowthink | lolcat```
+- Install: ```sudo apt install lolcat```
+- Use lolcat: ```fortune | cowthink | lolcat```
 
 ![lolcat-fortune-cow.png](_lolcat-fortune-cow.png)
 
 Another cool idea is to use this fo successful tests or builds e.g.:
 
 - Store ASCII art ([pikachu.tp](_pikachu.tp)) in a folder (~/important/)
-- Set alias:```alias success-message='if [ "$?" -eq "0" ]; then lolcat ~/important/pikachu.tp -a -s 40 -d 2; fi;'```
-- Usage:```do_tests && success-message```
+- Set alias: ```alias success-message='if [ "$?" -eq "0" ]; then lolcat ~/important/pikachu.tp -a -s 40 -d 2; fi;'```
+- Usage: ```do_tests && success-message```
 
 ![pikachu.png](_pikachu.png)
 

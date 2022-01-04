@@ -18,9 +18,9 @@ On Site:
 
 Have a look if you can see everyone in the LAN:
 
-- You can scan the network to see who else is already visible:```nmap -sC -sV 192.168.178.0/24```
-- And/Or run a simple ARP command to see who you already see:```arp -a```
-- Test a connection to a given IP e.g.:```Test-NetConnection -ComputerName 192.168.178.41 -InformationLevel "Detailed"``` (optionally add a port e.g. "-Port 3389")
+- You can scan the network to see who else is already visible: ```nmap -sC -sV 192.168.178.0/24```
+- And/Or run a simple ARP command to see who you already see: ```arp -a```
+- Test a connection to a given IP e.g.: ```Test-NetConnection -ComputerName 192.168.178.41 -InformationLevel "Detailed"``` (optionally add a port e.g. "-Port 3389")
 
 ## Games
 
@@ -55,7 +55,7 @@ Nice old games
 
 Easiest way to share files ist by ziping whatever you want to share first.
 
-You can run a simple webserver using python:``` python -m http.server 8080```
+You can run a simple webserver using python: ``` python -m http.server 8080```
 
 ## Windows Firewall
 
@@ -79,7 +79,7 @@ Remove-NetFirewallRule -DisplayName "Allow LAN Party OUT"
 Remove-NetFirewallRule -DisplayName "Allow LAN Party IN"
 ```
 
-Or, if nothing helps, disable the Firewall for your current profile during the LAN event:```netsh advfirewall set currentprofile state off```
+Or, if nothing helps, disable the Firewall for your current profile during the LAN event: ```netsh advfirewall set currentprofile state off```
 
 You can reset your firewall settings as follows. Windows will then ask you whenever you start an application what to do with this currently blocked application.
 

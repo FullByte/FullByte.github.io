@@ -56,8 +56,8 @@
 
 Display ANSI art and animation in the console:
 
-Local file:```iconv -f 437 ansi1.ans | pv --quiet --rate-limit 7000```
-Online file:```curl www.ansi-art.com/ansi/ansi1.ans | iconv -f 437 | pv --quiet --rate-limit 7000```
+Local file: ```iconv -f 437 ansi1.ans | pv --quiet --rate-limit 7000```
+Online file: ```curl www.ansi-art.com/ansi/ansi1.ans | iconv -f 437 | pv --quiet --rate-limit 7000```
 
 Terminal width should be set to 80 in case of issues.
 

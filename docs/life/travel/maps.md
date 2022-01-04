@@ -2,90 +2,116 @@
 
 ## Travel
 
-- OSM: <https://www.openstreetmap.org/#map=7/50.611/7.756>
-- OSM 3D Buildings: <https://osmbuildings.org/>
-- Bicycle Map: <https://www.cyclosm.org/>
-- Show me the way: <https://osmlab.github.io/show-me-the-way/>
-- 3D Terrain: <https://map33.openbloc.com/>
+Navigation
+
+- [OSM](https://www.openstreetmap.org)
+- [on the go map](https://onthegomap.com)
+- [qwant maps](https://www.qwant.com/maps)
+- [Topo Map](https://opentopomap.org/)
+
+3D view
+
+- [OSM 3D Buildings](https://osmbuildings.org/)
+- [3D Terrain](https://map33.openbloc.com/)
+- [Google Earth](https://earth.google.com/web/) and [Timelapse](https://earthengine.google.com/timelapse/)
+
+Virtual Tours
+
 - Virtual Tours: <https://gez.la/>
-- Timelapse: <https://earthengine.google.com/timelapse/>
-- Geo Caches: <https://www.opencaching.de/map2.php>
-- Topo Map: <https://opentopomap.org/#map=4/51.26/51.39>
-- Virtual Journey: <https://www.airpano.com/>
 - Central Park Tour: <https://www.youvisit.com/tour/centralpark>
-- Geo Caching: <https://www.opencaching.de/map2.php>
-- <https://onthegomap.com>
-
-## Weather
-
-- <http://earth.nullschool.net/#current/wind/isobaric/1000hPa/orthographic>
-- <https://darksky.net/forecast/52.36,9.73/us12/en>
-- Climate <https://weatherspark.com/map>
-- <https://www.ventusky.com>
-
-## Specific Locations
-
-- London Underground: <https://traintimes.org.uk/map/tube/schematic/>
-- California Department of Forestry and Fire Protection: <https://www.fire.ca.gov/incidents>
-
-## Society
-
-- Bike Theft UK: <https://bike-theft-map.bikmo.com/>
+- Virtual Journey: <https://www.airpano.com/>
 
 ## Infrastructure
 
-- Hike and Foot paths: <https://hiking.waymarkedtrails.org>
-- Wheelchair Map: <https://wheelmap.org/>
-- öpnv weltweit: <https://öpnvkarte.de>
-- Cellular Towers: <https://www.opencellid.org>
-- Cellular Towers: <https://alpercinar.com/open-cell-id/>
-- Electric Exchange: <https://www.electricitymap.org/map>
-- Flight Radar: <https://global.adsbexchange.com/>
-- Flight Radar: <http://www.flightradar24.com/50.11,14.27/6>
-- Data Center: <https://www.datacentermap.com/>
-- Root Server: <https://root-servers.org/>
-- nukemap <https://nuclearsecrecy.com/nukemap/>
-- People Running: <https://www.strava.com/heatmap#6.18/6.18906/47.63383/hot/all>
-- Infrastructure :<https://openinframap.org/#2/26/12>
-- Submarine Cable Map <https://www.submarinecablemap.com/>
-- Submarine Cable Map <https://globe.gl/example/submarine-cables/>
-- Internet Exchange Map: <https://www.internetexchangemap.com/>
-- Railways: <https://www.openrailwaymap.org>
-- Air Quality <https://www.purpleair.com/map?opt=1/mAQI/a10/cC0#1.93/28.03/22.67>
-- Global mcdonald’s ice cream machine status: <https://mcbroken.com/>
+Infrastructure
 
-## Marine
+- [Open infra map](https://openinframap.org/)
+- [Nuke Radius Map](https://nuclearsecrecy.com/nukemap/)
+- [Electric Exchange](https://www.electricitymap.org/map)
 
-- Marine Traffic <https://www.marinetraffic.com/en/ais/home/centerx:-12.0/centery:25.0/zoom:4>
-- Ship Traffic: <https://www.shipmap.org/>
-- AIS hub: <https://www.aishub.net/coverage>
-- vessel finder: <https://www.vesselfinder.com/>
+Internet
 
-## Satellites
+- [Submarine Cable Map 1](https://www.submarinecablemap.com/), [Submarine Cable Map 2](https://globe.gl/example/submarine-cables/)
+- [Internet Exchange Map](https://www.internetexchangemap.com/)
+- [Data Center](https://www.datacentermap.com/)
+- [Root Server](https://root-servers.org/)
+- Cellular Towers: [opencellid](https://www.opencellid.org), [alpercinar](https://alpercinar.com/open-cell-id/)
 
-General maps
+Commercial
+
+- [Global mcdonald’s ice cream machine status](https://mcbroken.com/)
+
+## Mobillity
+
+Paths and accessibility
+
+- [Hike and Foot paths](https://hiking.waymarkedtrails.org)
+- [Sport Heatmap (Strava)](https://www.strava.com/heatmap#6.18/6.18906/47.63383/hot/all)
+- [Wheelchair Map](https://wheelmap.org)
+- [Geo Caching](https://www.opencaching.de/map2.php)
+
+Bikes
+
+- [Bike Theft UK](https://bike-theft-map.bikmo.com)
+- [Bicycle Map](https://www.cyclosm.org)
+
+Train
+
+- [Open Railway Map](https://www.openrailwaymap.org)
+- [Tokio Train System](https://minitokyo3d.com/)
+- [öpnv weltweit](https://öpnvkarte.de)
+- [London Underground](https://traintimes.org.uk/map/tube/schematic/)
+
+Flight Radar
+
+- [adsbexchange](https://global.adsbexchange.com)
+- [flightradar24](http://www.flightradar24.com/)
+
+Marine
+
+- [Marine Traffic](https://www.marinetraffic.com/en/ais/home/centerx:-12.0/centery:25.0/zoom:4)
+- [Ship Traffic](https://www.shipmap.org)
+- [AIS hub](https://www.aishub.net/coverage)
+- [vessel finder](https://www.vesselfinder.com/)
+
+## Earth
+
+Nature
+
+- [Air Quality](https://map.purpleair.com/1/mAQI/a10/p604800/cC0#4.48/46.81/20.4)
+- [California Department of Forestry and Fire Protection](https://www.fire.ca.gov/incidents)
+
+Weather
+
+- Current Weather by [nullschool](http://earth.nullschool.net/#current/wind/isobaric/1000hPa/orthographic) and [ventusky](https://www.ventusky.com)
+- [Forecast](https://darksky.net/forecast/50.6275,9.9585/us12/en)
+- [Climate](https://weatherspark.com/map)
+
+## Universe
+
+Stars
+
+- [Stars](http://stars.chromeexperiments.com)
+- [Google Sky](https://www.google.com/sky/)
+
+Satellites
 
 - <https://james.darpinian.com/satellites/>
 - <https://platform.leolabs.space/visualization>
 - <https://satellitemap.space/>
+- Starlink: [find star link](https://findstarlink.com) and [orbitalindex](https://orbitalindex.com/feature/starlink-coverage)
 
-Starlink
+Planets
 
-- <https://findstarlink.com/>
-- <https://orbitalindex.com/feature/starlink-coverage/>
-
-## Other Planets
-
-- Mars: <https://mars26.com/>
-- Google Sky: <https://www.google.com/sky/>
-- Google Mars: <https://www.google.com/mars/>
-- Google Moon: <https://www.google.com/moon/>
-- Stars: <http://stars.chromeexperiments.com/>
+- [Mars](https://mars26.com/)
+- [Google Mars](https://www.google.com/mars)
+- [Google Moon](https://www.google.com/moon)
 
 ## Helper
 
-- Understand Orbit Layers <https://nyan-sat.com/assets/licensed/orbital_comparison.svg>
-- Create new Maps <https://maphub.net/map>
-- Create Map outline of a city: <https://anvaka.github.io/city-roads/>
-- Open Orienteer Map: <https://oomap.co.uk/global/#/new/streeto_global/>
-- Super Tunnel: <https://supertunnel.app/>
+- [Understand Orbit Layers](https://nyan-sat.com/assets/licensed/orbital_comparison.svg)
+- [Create new Map](https://maphub.net/maps)
+- [Create Map outline of a city](https://anvaka.github.io/city-roads/)
+- [Open Orienteer Map](https://oomap.co.uk/global/#/new/streeto_global/)
+- [Super Tunnel](https://supertunnel.app/)
+- [geonames](https://www.geonames.org/)

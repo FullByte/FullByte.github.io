@@ -65,6 +65,9 @@ Youtube
 ### Regex
 
 - <https://www.regextester.com>
+- <https://regexlearn.com/>
+- <https://regexr.com/>
+- <https://regex101.com/>
 
 ## IDE
 

@@ -46,6 +46,7 @@ hollywood
 - <https://osm-in-realtime.jwestman.net/>
 - <https://zoomquilt.org/>
 - <http://zoomquilt2.com/>
+- OSM updates: <https://osmlab.github.io/show-me-the-way/>
 
 ## Space
 

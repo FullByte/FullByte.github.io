@@ -1,8 +1,6 @@
 # Watch List
 
 This is a list of movies I enjoyed watching.
-For more details view the IMDB link.
-The IMDB full list may contain more than my current Top 10 per category.
 
 ## Movies
 
@@ -85,7 +83,6 @@ The IMDB full list may contain more than my current Top 10 per category.
 - Natural Born Killers
 - Nightcrawler
 - Oldboy
-- Oldboy
 - Pan's Labyrinth
 - Pi
 - Predestination
@@ -122,6 +119,7 @@ The IMDB full list may contain more than my current Top 10 per category.
 - Sausage Party
 - Vacation Friends
 - Zoolander
+- The Ballad of Buster Scruggs
 
 ### Trilogy Movies
 
