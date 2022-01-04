@@ -381,6 +381,12 @@ perl /usr/local/bin/asciiquarium
 
 [![asciiquarium.webp](_asciiquarium.webp)](_asciiquarium.mkv)
 
+### taoup
+
+Ruby-powered ANSI colored fortunes
+
+- Source: <https://github.com/globalcitizen/taoup>
+
 ### ART
 
 ART is a Python lib for text converting to ASCII art fancy.

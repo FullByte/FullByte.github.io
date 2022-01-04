@@ -130,17 +130,19 @@ Edit the "settings.json" and add under "profiles", "defaults" a line for a font 
 
 Some helpful [commands](https://docs.microsoft.com/en-us/windows/wsl/basic-commands):
 
-- Check for updates:```wsl --update```
-- List all available WSL distributions:```wsl --list --online```
-- List locally installed distros:```wsl --list --verbose```
-- Install a distribution:```wsl --install -d Ubuntu-20.04```
-- Delete Distro:```wsl --unregister Ubuntu-18.04```
-- Set default distro:```wsl --set-default Ubuntu-20.04```
-- Open WSL in pwsh:```wsl --distribution Ubuntu-20.04 --user fab1```
-- Restart WSL:```Get-Service LxssManager | Restart-Service``` or```wsl --shutdown```
-- Change distro to version 2```wsl --set-version kali-linux 2```*
+- Check for updates: ```wsl --update```
+- List all available WSL distributions: ```wsl --list --online```
+- List locally installed distros: ```wsl --list --verbose```
+- Install a distribution: ```wsl --install -d Ubuntu-20.04```
+- Delete Distro: ```wsl --unregister Ubuntu-18.04```
+- Set default distro: ```wsl --set-default Ubuntu-20.04```
+- Open WSL in pwsh: ```wsl --distribution Ubuntu-20.04 --user fab1```
+- Restart WSL: ```Get-Service LxssManager | Restart-Service``` or```wsl --shutdown```
+- Change distro to version 2: ```wsl --set-version kali-linux 2```*
 
 wsl --distribution Ubuntu-20.04 --user fab1
+
+Note that the root password is set random and needs to be updated using ```sudo passwd```
 
 *This may require installing the following
 
@@ -151,7 +153,7 @@ Start-Process msiexec.exe -Wait -ArgumentList '/I wsl_update_x64.msi /quiet'
 
 [Mount Linux File System](https://docs.microsoft.com/de-de/windows/wsl/wsl2-mount-disk)
 
-List devices (choose the drive you want to mount)```wmic diskdrive list brief```, then mount partition 1 of "PHYSICALDRIVE3" and open it:
+List devices (choose the drive you want to mount) ```wmic diskdrive list brief```, then mount partition 1 of "PHYSICALDRIVE3" and open it:
 
 ``` ps1
 wsl --mount \\.\PHYSICALDRIVE3 --partition 1

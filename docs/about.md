@@ -125,6 +125,8 @@ You can support others that I support by transferring money here:
 - EFF <https://supporters.eff.org/donate>
 - Tor <https://donate.torproject.org/>
 - Ocean Cleanup <https://www.theoceancleanup.com/>
+- Internet Archive <https://archive.org/donate>
+- OpenBSD foundation <https://www.openbsdfoundation.org/donations.html>
 
 You can support those organizations in other ways too - they will have details on this on their website.
 

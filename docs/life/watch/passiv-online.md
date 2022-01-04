@@ -9,6 +9,7 @@ Passive online screens that are nice to watch.
 - <https://www.windows93.net/>
 - <https://windows96.net/>
 - <https://geekprank.com/>
+- [Outlook](https://pcottle.github.io/MSOutlookit//)
 
 A lot more interfaces: <https://github.com/zriyans/awesome-OS>
 

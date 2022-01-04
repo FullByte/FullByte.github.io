@@ -44,14 +44,21 @@ Music
 
 - Beets: <https://github.com/beetbox/beets> `pip install beets`
 - Musikcube (Spotify): <https://github.com/clangen/musikcube>
-- Spotify: [spotify-tui](https://github.com/Rigellute/spotify-tui) or [ncspot](https://github.com/hrkfdn/ncspot)
-- Pictures: <https://github.com/posva/catimg>
-- Wikipedia: <https://github.com/yashsinghcodes/fetch>
 - Background Noise: <https://github.com/JaDogg/noisebox>
+- Spotify: [spotify-tui](https://github.com/Rigellute/spotify-tui) or [ncspot](https://github.com/hrkfdn/ncspot)
 
 Example running ncspot:
 
 ![ncspot](_ncspot.png)
+
+Pictures
+
+- Catimg: <https://github.com/posva/catimg>
+
+Read News
+
+- Wikipedia: <https://github.com/yashsinghcodes/fetch>
+- Hacker News: <https://github.com/donnemartin/haxor-news>
 
 Watch Movies in ASCII
 
