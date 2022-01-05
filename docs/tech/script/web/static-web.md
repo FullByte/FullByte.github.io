@@ -134,3 +134,25 @@ Use PHP to create a static HTML website with [this code](https://github.com/cada
 
 Clone the repo and add content to `content/`, then run ```php portable.php > index.html```
 
+## Hosts
+
+### Surge
+
+[Surge.sh](https://surge.sh/) is a simple, single-command web publishing service to publish HTML, CSS, and JS for free, without leaving the command line.
+
+Install: ```npm install --global surge``` (requires Node.js)
+Deploy: ```surge E:\Website\0xfab1.net\site surge.0xfab1.net```
+
+### Heroku
+
+Heroku is not recommended for simple, static websites with HTML, CSS and JS. Heroku is there to host apps, not static websites.
+
+To get around this e.g. fake your static website in beeing a PHP page like this:
+
+``` sh
+echo '{}' > composer.json
+echo '{ "formation": { "web": { "size": "free" } } }' > app.json
+echo '<?php include_once("index.html"); ?>' > index.php
+```
+
+Now run the deploy and it should work.

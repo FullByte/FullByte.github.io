@@ -85,16 +85,16 @@ Games for two players only:
 
 Well known and rather special games that can be played with a group of people online:
 
-- Scrabble: <https://bluemoose.club/>
-- Blood On The Clocktower: <https://clocktower.online/>
-- Civilization <https://www.freecivweb.org>
-- Deck of Cards: <https://deck.of.cards/>
-- Just poker: <https://justpoker.games/>
+- [Monopoly](https://www.webopoly.org/) and [Monopoly Covid Edition](https://www.covidopoly.io/)
+- [Secret Hitler](https://netgames.io/games/secret-hitler/) or [this version](https://private.secrethitler.io/)
 - 7 Wonders Duel <https://sevenee.mattle.online>
 - Azul <https://azee.mattle.online/>
 - Blokus <https://blokee.mattle.online>
+- Blood On The Clocktower: <https://clocktower.online/>
 - Boggle <https://www.ewordchallenge.net/>
+- Civilization <https://www.freecivweb.org>
 - Code names <https://codenames.game/>
+- Deck of Cards: <https://deck.of.cards/>
 - Dixit <https://isolant.games/en/>
 - Dominion <https://dominion.games/>
 - Dominoes <https://dominoes.playdrift.com/>
@@ -102,11 +102,13 @@ Well known and rather special games that can be played with a group of people on
 - Gartic phone <https://garticphone.com>
 - Hanabi <https://hanab.live/>
 - Just One <https://oneword.games/>
+- Just poker: <https://justpoker.games/>
+- Keyforge <https://thecrucible.online/play/>
+- Majority (10P only) <https://majority.longwelwind.net/>
 - Minesweeper <https://www.multisweeper.com/>
-- [Monopoly](https://www.webopoly.org/) and [Monopoly Covid Edition](https://www.covidopoly.io/)
 - Netrunner <https://www.jinteki.net/play>
 - Qwirkle <https://pont.mattkeeter.com/>
-- [Secret Hitler](https://netgames.io/games/secret-hitler/) or [this version](https://private.secrethitler.io/)
+- Scrabble: <https://bluemoose.club/>
 - Set with Friends <https://setwithfriends.com/>
 - Settler of Catan <https://colonist.io/>
 - Sketchful <https://sketchful.io/>
@@ -116,6 +118,5 @@ Well known and rather special games that can be played with a group of people on
 - Tak <https://www.playtak.com/>
 - UNO <https://play.unofreak.com/game>
 - Wavelength <https://longwave.web.app/>
+- Wikipedia Race: <https://wiki-race.stefannemeth.com/>
 - Writey drawey <https://writeydrawey.site/>
-- Majority (10P only) <https://majority.longwelwind.net/>
-- Keyforge <https://thecrucible.online/play/>

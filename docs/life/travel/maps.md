@@ -41,6 +41,11 @@ Commercial
 
 - [Global mcdonald’s ice cream machine status](https://mcbroken.com/)
 
+## Crime
+
+- [Bike Theft UK](https://bike-theft-map.bikmo.com)
+- [London Hoods & Gangs](https://www.kulturevulturez.com/map-london-hoods/)
+
 ## Mobillity
 
 Paths and accessibility
@@ -52,7 +57,6 @@ Paths and accessibility
 
 Bikes
 
-- [Bike Theft UK](https://bike-theft-map.bikmo.com)
 - [Bicycle Map](https://www.cyclosm.org)
 
 Train
@@ -81,6 +85,7 @@ Nature
 
 - [Air Quality](https://map.purpleair.com/1/mAQI/a10/p604800/cC0#4.48/46.81/20.4)
 - [California Department of Forestry and Fire Protection](https://www.fire.ca.gov/incidents)
+- [Beijing Air Pollution](https://aqicn.org/city/beijing/)
 
 Weather
 
