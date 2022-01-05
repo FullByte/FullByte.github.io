@@ -38,7 +38,8 @@ Visit <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org
 - [0xfab1@digitalocean](https://oxfab1-3l4ou.ondigitalocean.app/) using [Digital Ocean](https://m.do.co/c/0ef5c6b3f680) (alternative link: <https://digitalocean.0xfab1.net>)
 - [0xfab1@vercel](https://0xfab1.vercel.app/) using [Vercel](https://vercel.com/) (alternative link: <https://vercel.0xfab1.net/>)
 - [0xfab1@surge](http://surge.0xfab1.net) using [serge.sh](https://surge.sh) (alternative link: <http://surge.0xfab1.net/>)
-- [0xfab1@cloudflare](https://fullbyte-github-io.pages.dev) using cloudflare (alternative link: <https://cloudflare.0xfab1.net/>)
+- [0xfab1@cloudflare](https://fullbyte-github-io.pages.dev) using [cloudflare](https://www.cloudflare.com/) (alternative link: <https://cloudflare.0xfab1.net/>)
+- [0xfab1@heroku](https://oxfab1.herokuapp.com/) using [heroku](https://heroku.com) (alternative link: <https://heroku.0xfab1.net/>)
 
 ## Build
 
