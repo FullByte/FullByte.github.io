@@ -36,6 +36,9 @@ Visit <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org
 - [0xfab1@netlify](https://0xfab1.netlify.app/) using [Netlify](https://www.netlify.com/) (alternative link: <https://netlify.0xfab1.net>)
 - [0xfab1@azure](https://black-flower-0adbf0903.azurestaticapps.net) using [Azure](https://azure.microsoft.com) (alternative link: <https://azure.0xfab1.net>)
 - [0xfab1@digitalocean](https://oxfab1-3l4ou.ondigitalocean.app/) using [Digital Ocean](https://m.do.co/c/0ef5c6b3f680) (alternative link: <https://digitalocean.0xfab1.net>)
+- [0xfab1@vercel](https://0xfab1.vercel.app/) using [Vercel](https://vercel.com/) (alternative link: <https://vercel.0xfab1.net/>)
+- [0xfab1@surge](surge.0xfab1.net) using [serge.sh](https://surge.sh) (alternative link: <http://surge.0xfab1.net/>)
+- [0xfab1@cloudflare]() using cloudflare (alternative link: <http://cloudflare.0xfab1.net/>)
 
 ## Build
 
@@ -43,7 +46,7 @@ Run the following code to install and update the required tools using [python](h
 
 ``` sh title="Install"
 pip install --upgrade pip
-pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin
+pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin mkdocs-video
 ```
 
 If all above is already installed, make sure to use the latest version:
