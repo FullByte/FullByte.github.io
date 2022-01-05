@@ -10,7 +10,7 @@ Nach ca. 20min kochen sollte alles gut sein - kann aber länger warmgehalten wer
 - 750g Mais
 - 750g Tomaten
 - 4-5x Chilies
-- 2-3x Zwiebeln \\(2 große oder 3 kleine\\)
+- 2-3x Zwiebeln
 - 2x Zehen Knoblauch
 - 3x Paprika
 

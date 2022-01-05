@@ -23,13 +23,13 @@ Zutaten für 4 Personen:
 
 Zubereitung:
 
-- Zwiebeln, Chili,  und Knoblauch klein hacken.
+- Zwiebeln, Chili und Knoblauch klein hacken.
 - Paprika in Steifen schneiden.
-- Zwibeln und Knoblauch in Pfanne mit Öl anbraten.
+- Zwiebeln und Knoblauch in Pfanne mit Öl anbraten.
 - Hackfleish in der Pfanne anbraten und Tomatenmark hinzugeben.
 - Hackfleish mit Salz, Pfeffer und Kreuzkümmel würzen.
 - Paprika dazugeben, deckel drauf.
 - Mit Wasser ablöschen und 5min köcheln lassen
 - Kichererbsen unterrühren und 5min erhitzen
 - W#hrenddessen Schafskäse und Petersilie kleinhacken
-- Essen Servieren, Schafskäse drauf und mit Petersilie bestreuen.
+- Essen servieren, Schafskäse drauf und mit Petersilie bestreuen.
