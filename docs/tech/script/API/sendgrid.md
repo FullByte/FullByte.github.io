@@ -1,6 +1,6 @@
 # Sendgrid
 
-<https://sendgrid.com/>
+[Sendgrid](https://sendgrid.com/) is an email Email API service.
 
 ## powershell
 
