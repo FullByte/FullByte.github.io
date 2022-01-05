@@ -78,6 +78,10 @@ wmic nteventlog where LogFileName=’PowerShell’ Call ClearEventlog
 ren %1 temp000 & copy /y %windir%\regedit.exe temp000 & del temp000
 ```
 
+## Network
+
+- DNS check: ```nslookup -all -debug -type=ANY -class=ANY 0xfab1.net 8.8.8.8```
+
 ### Get MAC Address of remote PC
 
 Option 1
