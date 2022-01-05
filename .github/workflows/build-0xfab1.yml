@@ -32,6 +32,7 @@ jobs:
         run: |
           git pull
           mkdocs gh-deploy
+          mkdocs gh-deploy -b heroku
       
       - name: Build 0xfab1.net for Azure
         run: |          
