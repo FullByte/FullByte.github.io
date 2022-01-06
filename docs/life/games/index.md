@@ -18,6 +18,10 @@ Some games are free to play, others require a played membership.
 - Tabletopia <https://tabletopia.com/>
 - Virtual Tabletop: <https://virtualtabletop.io>
 
+## Party Games
+
+- Escape Room: <https://www.escape-team.com>
+
 ## 1 Player Games
 
 Some of these are quite special and nerdy.
