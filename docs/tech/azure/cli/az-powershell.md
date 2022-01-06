@@ -1,11 +1,11 @@
 # Azure Powershell
 
-|What|Where|
-|-|-|
-|Official Page||
-|Source||
-|Download||
-|Install||
+| What          | Where |
+|---------------|-------|
+| Official Page |       |
+| Source        |       |
+| Download      |       |
+| Install       |       |
 
 ## Login
 
@@ -29,7 +29,6 @@ Images
 ``` ps1
 Get-AzImage -ResourceGroupName 'ResourceGroup01' -ImageName 'Image01'
 ```
-
 
 ## Helpers
 

@@ -120,4 +120,4 @@ dotnet run
 
 This example output shows how the program first checks word for word and once the sentence  is over commits a sentence. Sometimes content of the sentence changes based on the following word(s). The example is analyzing a story by Nils Holgersson in german language:
 
-![speechtotext](speechtotext.webp)
+![speechtotext](_speechtotext.webp)

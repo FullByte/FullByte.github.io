@@ -198,10 +198,6 @@ Kill a session:
 tmux kill-session
 ```
 
-## String Manipulation
-
-- Add "new entry" in line 13 of file "file.txt"```sed -n -i 'p;13a new entry' file.txt```
-
 ## Work with a file
 
 - Cat A File With Line Numbers: ```cat -n file```
@@ -220,6 +216,9 @@ tmux kill-session
 - Hexdump A Compiled File: ```cat Hello.class | hexdump -C```
 - Grep For Files Without A Match: ```grep -L "foobar" ./*```
 - Grep For Files With Multiple Matches: ```grep -rl "match1" src/css | xargs grep -l "match2"```
+- Add "new entry" in line 13 of file "file.txt": ```sed -n -i 'p;13a new entry' file.txt```
+- Remove lines under n (e.g. 6) characters: ```sed -E '/^.{,6}$/d' /path/to/input/file > /path/to/output/file``` or ```gsed -E '/^.{,6}$/d' /path/to/input/file > /path/to/output/file```
+- Sort Alphabetically and Remove Duplicates: ```sort -us -o /path/to/output/file /path/to/input/file``` or ```bash -c "LC_ALL='C' gsort -us -o /path/to/output/file /path/to/input/file"```
 
 ## Validate
 

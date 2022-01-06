@@ -36,6 +36,7 @@ Internet
 - [Data Center](https://www.datacentermap.com/)
 - [Root Server](https://root-servers.org/)
 - Cellular Towers: [opencellid](https://www.opencellid.org), [alpercinar](https://alpercinar.com/open-cell-id/)
+- [IP associated with cybercrime activities per country](https://iplists.firehol.org/#country_map)
 
 Commercial
 
