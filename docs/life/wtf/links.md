@@ -48,6 +48,39 @@ DE
 - [Mit Make up krank aussehen](https://de.wikihow.com/Mit-Make-up-krank-aussehen)
 - [Das Ego auflösen nach den Lehren von Eckhart Tolle](https://de.wikihow.com/Das-Ego-aufl%C3%B6sen-nach-den-Lehren-von-Eckhart-Tolle)
 
+## Hilariously named mathematical objects
+
+- [Ham Sandwich Theorem](https://en.wikipedia.org/wiki/Ham_sandwich_theorem)
+- [Chicken McNugget Theorem](https://en.wikipedia.org/wiki/Coin_problem#McNugget_numbers)
+- [pointless topology](https://en.wikipedia.org/wiki/Pointless_topology)
+- [homicidal chauffeur problem](https://en.wikipedia.org/wiki/Homicidal_chauffeur_problem)
+- [princess snd monster game](https://en.wikipedia.org/wiki/Princess_and_monster_game)
+- [hat problems](https://en.wikipedia.org/wiki/Induction_puzzles#Basic_Hat_Puzzle)
+- [muddy children problem](https://en.wikipedia.org/wiki/Induction_puzzles#Muddy_Children_Puzzle)
+- [Hairy Ball Theorem](https://en.wikipedia.org/wiki/Hairy_ball_theorem)
+- [Dyck paths](https://en.wikipedia.org/wiki/Catalan_number)
+- [Pumping Lemna](https://en.wikipedia.org/wiki/Pumping_lemma)
+- [Tietze extension theorem](https://en.wikipedia.org/wiki/Tietze_extension_theorem)
+- [Tits group](https://en.wikipedia.org/wiki/Tits_group)
+- [Cox-Zucker machine](https://en.wikipedia.org/wiki/Cox%E2%80%93Zucker_machine)
+- [Cox Ring](https://en.wikipedia.org/wiki/Cox_ring)
+- [Pair of pants](https://en.m.wikipedia.org/wiki/Pair_of_pants_(mathematics))
+- [Killing vector field](https://en.wikipedia.org/wiki/Killing_vector_field)
+- [Pizza Theorem](https://en.wikipedia.org/wiki/Pizza_theorem)
+- [Tropical geometry](https://en.wikipedia.org/wiki/Tropical_geometry)
+- [Weak ass(ociated) primes](https://en.wikipedia.org/wiki/Associated_prime)
+- [The lemma that is not Burnside's](https://en.wikipedia.org/wiki/Burnside%27s_lemma#History:_the_lemma_that_is_not_Burnside's)
+- [Fat object](https://en.wikipedia.org/wiki/Fat_object_(geometry))
+- [Law of the unconscious statistician](https://en.wikipedia.org/wiki/Law_of_the_unconscious_statistician)
+- [Swiss cheese](https://en.wikipedia.org/wiki/Swiss_cheese_(mathematics))
+- [Pancake sorting](https://en.wikipedia.org/wiki/Pancake_sorting)
+- [Banach analytic manifolds](https://en.wikipedia.org/wiki/Banach_manifold) is sometimes denoted by BanAnaMan
+- [The Fock space](https://en.wikipedia.org/wiki/Fock_space)
+- [The Fock matrix](https://en.wikipedia.org/wiki/Fock_matrix)
+- [The Hartree Fock method](https://en.wikipedia.org/wiki/Hartree%E2%80%93Fock_method)
+- The [retarded potential](https://en.wikipedia.org/wiki/Retarded_potential?wprov=sfti1) and closely related retarded.
+- The [latus rectum](https://en.m.wikipedia.org/wiki/Conic_section#Conic_parameters) is the chord parallel to the directrix and passing through a focus
+
 ## Urban Dictionary
 
 A list of the most entertaining Urban Dictionary pages
