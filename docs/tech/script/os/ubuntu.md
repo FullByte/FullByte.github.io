@@ -147,9 +147,9 @@ sudo apt install --install-recommends winehq-stable
 
 ### Linux File System Permissions
 
-- Change owner of file or dir:```chown user:group blah```
-- Change owner of file or dir recersive for all folders below:```chown -R user:group blah```
-- Change file / dir permissions:```chmod 600 file```
+- Change owner of file or dir: ```chown user:group blah```
+- Change owner of file or dir recersive for all folders below: ```chown -R user:group blah```
+- Change file / dir permissions: ```chmod 600 file```
 
 |VALUE|RWX|MEANING|
 |---|--|--|

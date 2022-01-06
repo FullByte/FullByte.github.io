@@ -88,56 +88,56 @@ System Performance Check
 
 More...
 
-- List open file descriptors (-i flag for network interfaces):```lsof -i :8080```
-- Stream current disk, network, CPU activity, etc:```dstat -a```
-- Trace system calls of a program:```strace -f -e <syscall> <cmd>```
-- Print currently active processes:``` ps1 aux | head -n20```
-- Visualize process forks:``` ps1tree```
-- Show size on disk for directories and their contents:```du -ha```
+- List open file descriptors (-i flag for network interfaces): ```lsof -i :8080```
+- Stream current disk, network, CPU activity, etc: ```dstat -a```
+- Trace system calls of a program: ```strace -f -e <syscall> <cmd>```
+- Print currently active processes: ``` ps1 aux | head -n20```
+- Visualize process forks: ``` ps1tree```
+- Show size on disk for directories and their contents: ```du -ha```
 - List currently open Internet/UNIX sockets and related information```netstat | head -n20```
-- Find hostname for a remote IP address:```nslookup <IP address>```
-- Current installed version:```cat /etc/issue```
-- Kernel information:```uname -a```
-- OS information:```lsb_release -a```
-- Device Information:```lspci -v```
-- Check the hostname of your machine:```hostname```
-- Shows last logged in users:```last```
-- Shows currently logged in user and groups for the user:```id```
-- List users on Linux:```getent passwd```
-- Show mounted drives:```mount```
-- Shows running kernel version:```uname -ar```
-- Show bash history, commands the user has entered previously:```history```
+- Find hostname for a remote IP address: ```nslookup <IP address>```
+- Current installed version: ```cat /etc/issue```
+- Kernel information: ```uname -a```
+- OS information: ```lsb_release -a```
+- Device Information: ```lspci -v```
+- Check the hostname of your machine: ```hostname```
+- Shows last logged in users: ```last```
+- Shows currently logged in user and groups for the user: ```id```
+- List users on Linux: ```getent passwd```
+- Show mounted drives: ```mount```
+- Shows running kernel version: ```uname -ar```
+- Show bash history, commands the user has entered previously: ```history```
 
 ## Disk Stuff
 
 **DD:** low-level data dumping utility
 
-- burning an ISO image to USB stick is just one command away:```sudo dd if=ubuntu-18.04.1-desktop-amd64.iso of=/dev/sdb bs=1M```
-- hard wipe a disk:```sudo dd if=/dev/zero of=/dev/sda```
+- burning an ISO image to USB stick is just one command away: ```sudo dd if=ubuntu-18.04.1-desktop-amd64.iso of=/dev/sdb bs=1M```
+- hard wipe a disk: ```sudo dd if=/dev/zero of=/dev/sda```
 
 **DU:** Disk usage command is used for quickly estimating the drive space used in a folder or partition
 
-- Show files and sort by size:```/data/java$ du -sh * | sort -h```
+- Show files and sort by size: ```/data/java$ du -sh * | sort -h```
 
 **DF:** Used for estimating disk space but for the entire disk rather than a directory or folder.
 
-- show which partition is how much full:```df -h```
+- show which partition is how much full: ```df -h```
 
 ## MORE STUFF
 
-- Execute a command and report statistics about how long it took:```time <cmd>```
-- Send a process in current tty into background and back to foreground:```CTRL + z ; bg; jobs; fg```
-- Change Default Shell For A User:```chsh -s /usr/bin/zsh username```
-- Make and Change To That New Directory:```mkdir new_dir && cd $```
-- Configure Your Server Timezone:```dpkg-reconfigure tzdata```
+- Execute a command and report statistics about how long it took: ```time <cmd>```
+- Send a process in current tty into background and back to foreground: ```CTRL + z ; bg; jobs; fg```
+- Change Default Shell For A User: ```chsh -s /usr/bin/zsh username```
+- Make and Change To That New Directory: ```mkdir new_dir && cd $```
+- Configure Your Server Timezone: ```dpkg-reconfigure tzdata```
 - Kill Everything Running On A Certain Port```sudo kill "sudo lsof -t -i:3000"```
-- See if the http status of the request changes:```watch -d curl -LIs localhost:3000```
-- Update access and modify time:```touch README.md```
-- Update access time:```touch -a README.md```
-- Update modify time:```touch -m README.md```
+- See if the http status of the request changes: ```watch -d curl -LIs localhost:3000```
+- Update access and modify time: ```touch README.md```
+- Update access time: ```touch -a README.md```
+- Update modify time: ```touch -m README.md```
 - Show The Size Of Everything In A Directory```ls | xargs du -sh```
-- Saying Yes:```yes | rm -r ~/some/dir```
-- Show Disk Usage For The Current Directory:```du -h | sort -nr```
+- Saying Yes: ```yes | rm -r ~/some/dir```
+- Show Disk Usage For The Current Directory: ```du -h | sort -nr```
 
 ## VIM
 
@@ -204,45 +204,54 @@ tmux kill-session
 
 ## Work with a file
 
-- Cat A File With Line Numbers:```cat -n file```
-- Line count in a file:```wc -l <file>```
-- Count unique words in a file:```cat file.txt | xargs -n1 | sort | uniq -c```
-- Display contents of a zipped text file:```zcat <file.gz>```
-- Copy a file from remote to local server, or vice versa:```scp <user@remote_host> <local_path>```
-- List Stats For A File:```stat -x README.md```
-- Securely Remove Files```srm -vz README.md``` or``` shred -uvz -n 5 README.md```
-- Securely Remove Files after rm was used:```sfill -lvz /home```
-- Copying File Contents To System Paste Buffer:```cat some-file.txt | pbcopy```
-- Exclude A Directory With Find:```find . -type f -not -path './.git/*' -ctime -10```
-- File Type Info With File:```file data.txt```
-- Find Newer Files than this file:```find blog -name '*.md' -newer blog/first-post.md```
-- Get The Unix Timestamp:```date +%s```
-- Hexdump A Compiled File ```cat Hello.class | hexdump -C```
-- Grep For Files Without A Match:```grep -L "foobar" ./*```
-- Grep For Files With Multiple Matches```grep -rl "match1" src/css | xargs grep -l "match2"```
+- Cat A File With Line Numbers: ```cat -n file```
+- Line count in a file: ```wc -l <file>```
+- Count unique words in a file: ```cat file.txt | xargs -n1 | sort | uniq -c```
+- Display contents of a zipped text file: ```zcat <file.gz>```
+- Copy a file from remote to local server, or vice versa: ```scp <user@remote_host> <local_path>```
+- List Stats For A File: ```stat -x README.md```
+- Securely Remove Files```srm -vz README.md``` or ``` shred -uvz -n 5 README.md```
+- Securely Remove Files after rm was used: ```sfill -lvz /home```
+- Copying File Contents To System Paste Buffer: ```cat some-file.txt | pbcopy```
+- Exclude A Directory With Find: ```find . -type f -not -path './.git/*' -ctime -10```
+- File Type Info With File: ```file data.txt```
+- Find Newer Files than this file: ```find blog -name '*.md' -newer blog/first-post.md```
+- Get The Unix Timestamp: ```date +%s```
+- Hexdump A Compiled File: ```cat Hello.class | hexdump -C```
+- Grep For Files Without A Match: ```grep -L "foobar" ./*```
+- Grep For Files With Multiple Matches: ```grep -rl "match1" src/css | xargs grep -l "match2"```
+
+## Validate
+
+- Valid IPv4 Address: ```grep -E -o "(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)"```
+- Valid IPv4 CIDR Range: ```grep -E -o "^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])(\/(3[0-2]|[1-2][0-9]|[0-9]))"```
+- Valid IPv6 Address: ```grep -E -o "^s*((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:)))(%.+)?s*"```
+- Valid IPv4 CIDR Range: ```grep -E -o "^s*((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]d|1dd|[1-9]?d)(.(25[0-5]|2[0-4]d|1dd|[1-9]?d)){3}))|:)))(%.+)?s*(\/(12[0-8]|1[0-1][0-9]|[1-9][0-9]|[0-9]))"```
+- Valid Hostname: ```grep -E -o "^(([a-zA-Z]|[a-zA-Z][a-zA-Z0-9-]*[a-zA-Z0-9])\.)*([A-Za-z]|[A-Za-z][A-Za-z0-9-]*[A-Za-z0-9])"```
+- Regex Escape String: ```sed -E 's/([\.\\\+\*\?\[\^\]\$\(\)\{\}\=\!\<\>\|\:\-\#])/\\1/'```
 
 ## Network Stuff
 
-- Find Device in Monitoring Mode:```iwconfig 2>/dev/null | grep "Mode\\:Monitor" | awk '{print $1}'```
-- Find Access Point:```iwconfig 2>&1 | sed -n -e 's/^.\*Access Point: //p'```
-- Linux IPv6 search devices in local network:```ping6 -c 2 -I en0 -w ff02::1```
-- Show Linux network ports with process ID’s (PIDs):```netstat -tulpn```
-- Watch TCP, UDP open ports in real time with socket summary:```watch ss -stplu```
-- Show established connections:```lsof -i```
-- Change MAC address:```macchanger -m MACADDR INTR```
-- Change MAC address using ifconfig:```ifconfig eth0 hw ether MACADDR```
+- Find Device in Monitoring Mode: ```iwconfig 2>/dev/null | grep "Mode\\:Monitor" | awk '{print $1}'```
+- Find Access Point: ```iwconfig 2>&1 | sed -n -e 's/^.\*Access Point: //p'```
+- Linux IPv6 search devices in local network: ```ping6 -c 2 -I en0 -w ff02::1```
+- Show Linux network ports with process ID’s (PIDs): ```netstat -tulpn```
+- Watch TCP, UDP open ports in real time with socket summary: ```watch ss -stplu```
+- Show established connections: ```lsof -i```
+- Change MAC address: ```macchanger -m MACADDR INTR```
+- Change MAC address using ifconfig: ```ifconfig eth0 hw ether MACADDR```
 - Get hostname for IP address```nbtstat -A x.x.x.x```
 - Block access to e.g. "google.com" from the host machine```tcpkill -9 host google.com```
-- Enable IP forwarding:```echo "1" > /proc/sys/net/ipv4/ip_forward```
-- Change DNS to 1.1.1.1:```echo "1.1.1.1" > /etc/resolv.conf```
-- Nmap scan every interface that is assigned an IP:```ifconfig -a | grep -Po '\b(?!255)(?:\d{1,3}\.){3}(?!255)\d{1,3}\b' | xargs nmap -A -p0-```
-- Extract your external IP address using dig:```dig +short myip.opendns.com @resolver1.opendns.com```
+- Enable IP forwarding: ```echo "1" > /proc/sys/net/ipv4/ip_forward```
+- Change DNS to 1.1.1.1: ```echo "1.1.1.1" > /etc/resolv.conf```
+- Nmap scan every interface that is assigned an IP: ```ifconfig -a | grep -Po '\b(?!255)(?:\d{1,3}\.){3}(?!255)\d{1,3}\b' | xargs nmap -A -p0-```
+- Extract your external IP address using dig: ```dig +short myip.opendns.com @resolver1.opendns.com```
 
 ## Fun Stuff
 
 Entertaining nonsense:
 
-- Loop Train:```for i in {1..10}; do sl; done```
+- Loop Train: ```for i in {1..10}; do sl; done```
 
 Alternatives for `tree` command:
 
@@ -273,11 +282,11 @@ echo -ne "\033#8";X=`tput cols`;Y=`tput lines`;((a=$X/2));((b=$Y/2));d=1;while c
 
 ## Other
 
-- Reboot:```init 6```
-- Compile C code:```gcc -o output.c input.c```
-- Compile 32 bit binary on 64 bit Linux:```gcc -m32 -o output.c input.c```
-- Disable bash history logging:```unset HISTORYFILE```
+- Reboot: ```init 6```
+- Compile C code: ```gcc -o output.c input.c```
+- Compile 32 bit binary on 64 bit Linux: ```gcc -m32 -o output.c input.c```
+- Disable bash history logging: ```unset HISTORYFILE```
 - Connect to RDP server from Linux.```rdesktop X.X.X.X```
-- Kill current session:```kill -9 $$```
-- Clear bash history:```cat /dev/null > ~/.bash_history```
-- one-time table:```for i in {1..12}; do for j in $(seq 1 $i); do echo -ne $iÃ—$j=$((i*j))\\t;done; echo;done```
+- Kill current session: ```kill -9 $$```
+- Clear bash history: ```cat /dev/null > ~/.bash_history```
+- one-time table: ```for i in {1..12}; do for j in $(seq 1 $i); do echo -ne $iÃ—$j=$((i*j))\\t;done; echo;done```

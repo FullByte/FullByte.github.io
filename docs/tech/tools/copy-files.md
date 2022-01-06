@@ -330,6 +330,21 @@ synchronize remote -delete -mirror "L:\o\c\a\l" "/remote/"
 exit
 ```
 
+## rsync
+
+| What          | Where |
+|---------------|-------|
+| Official Page |       |
+| Source        |       |
+| Download      |       |
+| Install       |       |
+
+Remove each source file after creating a successful copy (Basically "Move"):
+
+``` sh
+rsync --remove-source-files /path/to/source/folder /path/to/destination/folder
+```
+
 ## rclone
 
 rclone is a great tool to backup, copy, sync files to the cloud encrypted and without the client installed on the local machine.

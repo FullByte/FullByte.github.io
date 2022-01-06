@@ -4,12 +4,12 @@
 
 Info
 
-|What|Where|
-|-|-|
-|Official Page||
-|Source||
-|Download||
-|Install||
+| What          | Where |
+|---------------|-------|
+| Official Page |       |
+| Source        |       |
+| Download      |       |
+| Install       |       |
 
 ### Port Forwarding
 
@@ -92,6 +92,39 @@ Use the `-L` flag to forward a connection to a remote server
 ssh server -L3000:localhost:3000
 ```
 
+### Configuration
+
+Edit ~/.ssh/config for multiple SSH Hops
+
+``` sh
+Host bastion
+Hostname bastion.domain.com
+User bastion-user
+
+Host server
+Hostname server.local.lan
+User server-user
+ProxyCommand ssh bastion -W %h:%p
+```
+
+Edit ~/.ssh/authorized_keys to restrict SSH User Access
+
+``` sh
+from="10.20.30.0/24,44.55.66.77",no-agent-forwarding,no-port-forwarding,no-X11-forwarding,command="/usr/local/bin/whatever" ssh-rsa [...]
+```
+
+Create Secure SSH Key
+
+``` sh
+ssh-keygen -o -a 100 -t ed25519
+```
+
+Add Key to Remote Server
+
+``` sh
+ssh-copy-id -i ~/.ssh/id_ed25519.pub username@remote
+```
+
 ### SSH Escape Sequences
 
 To see all escape sequences press `~?`.
@@ -114,7 +147,11 @@ To see all escape sequences press `~?`.
 
 Examples:
 
-- Forward Multiple Ports Over SSH:```ssh dev@server.com -L 3000:localhost:3000 -L 9009:localhost:9009```
+- Forward Multiple Ports Over SSH: ```ssh dev@server.com -L 3000:localhost:3000 -L 9009:localhost:9009```
+
+## OpenVPN
+
+TODO
 
 ## Wireguard
 

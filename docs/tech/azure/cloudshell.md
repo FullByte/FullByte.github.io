@@ -39,9 +39,9 @@ To get a GUI editor in the web run```code .```.
 
 ## Attach Storage
 
-- Add FileShare to Cloud Shell:```clouddrive mount -s <secret> -g <rg-name> -n <fileshare> -f <share>```
-- Show Drives:```Get-CloudDrive```
-- Remove or re-configure your cloud drive:```dismount-clouddrive```
+- Add FileShare to Cloud Shell: ```clouddrive mount -s <secret> -g <rg-name> -n <fileshare> -f <share>```
+- Show Drives: ```Get-CloudDrive```
+- Remove or re-configure your cloud drive: ```dismount-clouddrive```
 
 Sources:
 

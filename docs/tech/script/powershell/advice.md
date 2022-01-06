@@ -24,10 +24,10 @@ echo something | Select-String ($keyword[(get-culture).Name])
 
 Powershell defaults paths:
 
-- Script location:```$PSScriptRoot```
-- Current location when the script is running:```$PWD```
-- User's home directory:```$HOME```
-- Script that invoked the current command (only populated if caller is a script):```$PSCommandPath```
+- Script location: ```$PSScriptRoot```
+- Current location when the script is running: ```$PWD```
+- User's home directory: ```$HOME```
+- Script that invoked the current command (only populated if caller is a script): ```$PSCommandPath```
 
 .NET Environment paths:
 
@@ -46,15 +46,15 @@ $StartupPath = [System.Environment]::GetFolderPath([System.Environment+SpecialFo
 
 **Other variables:**
 
-- First token in the last line received by the session:```$^```
-- Last token in the last line received by the session:```$$```
-- Execution status (true/false) on if the last command succeeded:```$?```
-- Current object in the pipeline object:```$_``` or```$PSItem```
-- Array of error objects:```$Error``` e.g. first error entry =```$Error[0]```
-- Check OS with:```$IsLinux``` or```$IsMacOS``` or```$IsWindows```
-- Use True/False with these :```$true``` and```$false```
-- Details on user who started the PSSession:```$PSSenderInfo```
-- Get version details of the run environment:```$PSVersionTable``` e.g.```$PSVersionTable.PSVersion``` or```$PSVersionTable.OS```
+- First token in the last line received by the session: ```$^```
+- Last token in the last line received by the session: ```$$```
+- Execution status (true/false) on if the last command succeeded: ```$?```
+- Current object in the pipeline object: ```$_``` or```$PSItem```
+- Array of error objects: ```$Error``` e.g. first error entry =```$Error[0]```
+- Check OS with: ```$IsLinux``` or```$IsMacOS``` or```$IsWindows```
+- Use True/False with these : ```$true``` and```$false```
+- Details on user who started the PSSession: ```$PSSenderInfo```
+- Get version details of the run environment: ```$PSVersionTable``` e.g.```$PSVersionTable.PSVersion``` or```$PSVersionTable.OS```
 
 ## Script Description
 
@@ -119,9 +119,9 @@ Enabling to only run trusted, signed scripts is a good security measurement. Thi
 
 **Getting started**
 
-- Current script execution policy:```Get-ExecutionPolicy -List```
-- Set execution policy for local user to signed only:```Set-ExecutionPolicy -ExecutionPolicy AllSigned -Scope CurrentUser```
-- Details on create certificate:```certutil D:\cert.pfx```
+- Current script execution policy: ```Get-ExecutionPolicy -List```
+- Set execution policy for local user to signed only: ```Set-ExecutionPolicy -ExecutionPolicy AllSigned -Scope CurrentUser```
+- Details on create certificate: ```certutil D:\cert.pfx```
 
 **Create new self-signed cert.pfx**
 

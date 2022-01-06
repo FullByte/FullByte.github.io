@@ -1,6 +1,6 @@
 # About tryhackme.com
 
-Connect to tryhackme via openvpn e.g.:```sudo openvpn 0xfab1.ovpn```
+Connect to tryhackme via openvpn e.g.: ```sudo openvpn 0xfab1.ovpn```
 
 Please note:
 

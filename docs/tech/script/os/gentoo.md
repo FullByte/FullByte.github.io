@@ -51,7 +51,7 @@ tar xvjpf stage3-*.tar.bz2
 ## Portage
 
 Link: <http://www.gentoo.org/main/en/mirrors.xml>
-Choose mirror:```snapshots/, portage-latest.tar.bz2```
+Choose mirror: ```snapshots/, portage-latest.tar.bz2```
 
 ``` sh
 tar xvjf /mnt/gentoo/portage-latest.tar.bz2 -C /mnt/gentoo/usr

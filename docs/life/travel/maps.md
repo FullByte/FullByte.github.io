@@ -45,6 +45,9 @@ Commercial
 
 - [Bike Theft UK](https://bike-theft-map.bikmo.com)
 - [London Hoods & Gangs](https://www.kulturevulturez.com/map-london-hoods/)
+- [USA Crime Map](https://www.crimemapping.com/map)
+- [USA Sex Offender Registry Map](https://www.fbi.gov/scams-and-safety/sex-offender-registry)
+- [USA criminal watchdog](criminalwatchdog.com/neighborhood-watch)
 
 ## Mobillity
 
@@ -102,9 +105,9 @@ Stars
 
 Satellites
 
-- <https://james.darpinian.com/satellites/>
-- <https://platform.leolabs.space/visualization>
-- <https://satellitemap.space/>
+- [Satellites by darpinian.com](https://james.darpinian.com/satellites)
+- [Satellites by leolabs.space](https://platform.leolabs.space/visualization)
+- [Satellites by satellitemap.space](https://satellitemap.space)
 - Starlink: [find star link](https://findstarlink.com) and [orbitalindex](https://orbitalindex.com/feature/starlink-coverage)
 
 Planets

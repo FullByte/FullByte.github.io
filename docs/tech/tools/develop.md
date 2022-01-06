@@ -341,6 +341,18 @@ Remove a passphrase from a private key
 openssl rsa -in privateKey.pem -out newPrivateKey.pem
 ```
 
+Create dhparam
+
+``` sh
+openssl dhparam -out /usr/local/etc/ssl/dhparam.pem 4096
+```
+
+Remove Passphrase from SSL Key
+
+``` sh
+openssl rsa -in www.key -out new.key
+```
+
 ### Validate Certificates and Keys
 
 Check an MD5 hash of the public key to ensure that it matches with what is in a CSR or private key

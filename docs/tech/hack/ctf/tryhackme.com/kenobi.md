@@ -4,7 +4,7 @@ These notes are from a challenge I did @[tryhackme](https://tryhackme.com) calle
 
 ## Task 1 Scan
 
-Scan with nmap to see what (and how many) ports are open:```nmap -sC -sV 10.10.153.226```
+Scan with nmap to see what (and how many) ports are open: ```nmap -sC -sV 10.10.153.226```
 
 ??? output "Nmap output"
     ``` sh
@@ -80,7 +80,7 @@ Scan with nmap to see what (and how many) ports are open:```nmap -sC -sV 10.10.1
 
 ## Task 2 Enumerating Samba for shares
 
-Let's enumerate the SMB shares:```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.153.226```
+Let's enumerate the SMB shares: ```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse 10.10.153.226```
 
 ??? output "Nmap output"
     ``` sh
@@ -122,7 +122,7 @@ Let's enumerate the SMB shares:```nmap -p 445 --script=smb-enum-shares.nse,smb-e
     Nmap done: 1 IP address (1 host up) scanned in 3.15 seconds
     ```
 
-Let's connect with smbclient as anonymous without a password:```smbclient //10.10.153.226/anonymous```
+Let's connect with smbclient as anonymous without a password: ```smbclient //10.10.153.226/anonymous```
 
 ??? output "smbclient output"
     ``` sh
@@ -212,7 +212,7 @@ nc 10.10.153.226 21
 220 ProFTPD 1.3.5 Server (ProFTPD Default Installation) [10.10.153.226]
 ```
 
-Let us look for verunablities for this version:```searchsploit proftpd 1.3.5```
+Let us look for verunablities for this version: ```searchsploit proftpd 1.3.5```
 
 ??? output "nmap output"
     ``` sh
@@ -289,7 +289,7 @@ cat /home/kenobi/user.txt
 
 ## Task 4  Privilege Escalation with Path Variable Manipulation
 
-To search the a system for SUID bits run the following:```find / -perm -u=s -type f 2>/dev/null```
+To search the a system for SUID bits run the following: ```find / -perm -u=s -type f 2>/dev/null```
 
 ??? output "SUID bits"
     ``` sh
@@ -338,4 +338,4 @@ echo $PATH
 /tmp:/home/kenobi/bin:/home/kenobi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 ```
 
-We can now run```/usr/bin/menu``` again and when selecting #`1` we execute `sh` (instead of curl). We are now rood (run```id```) and can access the final flag:```/cat /root/root.txt```.
+We can now run```/usr/bin/menu``` again and when selecting #`1` we execute `sh` (instead of curl). We are now rood (run```id```) and can access the final flag: ```/cat /root/root.txt```.

@@ -10,8 +10,8 @@ Scan a network. ([MAN pages](https://nmap.org/book/man.html) and [scripts](https
 
 Press "v" if you forgot du add "-v" in the scan and need to increase verbosity.
 
-- Simple IP scan:```nmap -sC -sV $ip```
-- Enumerate the SMB shares:```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse $ip```
+- Simple IP scan: ```nmap -sC -sV $ip```
+- Enumerate the SMB shares: ```nmap -p 445 --script=smb-enum-shares.nse,smb-enum-users.nse $ip```
 
 [ncat](https://nmap.org/ncat/): todo
 
@@ -43,7 +43,7 @@ TODO
 Find dirs that work
 
 - Source: <https://github.com/OJ/gobuster>
-- Install:```sudo apt-get install gobuster```
+- Install: ```sudo apt-get install gobuster```
 
 Example:
 

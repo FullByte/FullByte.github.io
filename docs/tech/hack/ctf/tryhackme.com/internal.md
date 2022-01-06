@@ -155,7 +155,7 @@ The wordpress page reveals a private note on credentals of william being william
 
 I used this [php reverse shell](https://github.com/ivan-sincek/php-reverse-shell/blob/master/src/php_reverse_shell.php), modified IP and port and uploaded it to the wordpress 404 page. Now time to start netcat on the chosen port e.g.```nc -lvnp 6666``` and call a page that doesn't exist e.g.```/blog/index.php/2020/08/03/50/``` with e.g. curl.
 
-We now get a reverse shell but no TTY so we can try this:``` python -c 'import pty; pty.spawn("/bin/sh")'``` or this```/bin/sh -i```.
+We now get a reverse shell but no TTY so we can try this: ``` python -c 'import pty; pty.spawn("/bin/sh")'``` or this```/bin/sh -i```.
 
 Let's have a look around:
 
@@ -216,7 +216,7 @@ aubreanna:bubb13guM!@#123
 
 ## Aubreanna
 
-So let's login via aubreanna:```ssh aubreanna@10.10.156.30``` and we find the first flag (user.txt) in the home dir.
+So let's login via aubreanna: ```ssh aubreanna@10.10.156.30``` and we find the first flag (user.txt) in the home dir.
 
 Unfortunately```sudo -l``` is not allowed
 

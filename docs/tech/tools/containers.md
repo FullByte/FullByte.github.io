@@ -260,11 +260,11 @@ kubectl get namespaces
 kubectl get pods -o wide --all-namespaces
 ```
 
-- Set contect to namespace:```kubectl config set-context --current --namespace=<your-namespace>```
-- Dump pod logs, with label name=myLabel (stdout):```kubectl logs -l name=myLabel -c my-container```
-- Restart Rollout (and pull container image if imagePullPolicy: Always):```kubectl rollout restart deployment/frontend```
-- Auto scale a deployment "foo":```kubectl autoscale deployment foo --cpu-percent=20 --min=1 --max=10```
-- Delete Nodepool:```az aks nodepool delete -n OldNodePool --cluster-name MyManagedCluster -g MyResourceGroup```
+- Set contect to namespace: ```kubectl config set-context --current --namespace=<your-namespace>```
+- Dump pod logs, with label name=myLabel (stdout): ```kubectl logs -l name=myLabel -c my-container```
+- Restart Rollout (and pull container image if imagePullPolicy: Always): ```kubectl rollout restart deployment/frontend```
+- Auto scale a deployment "foo": ```kubectl autoscale deployment foo --cpu-percent=20 --min=1 --max=10```
+- Delete Nodepool: ```az aks nodepool delete -n OldNodePool --cluster-name MyManagedCluster -g MyResourceGroup```
 
 ### Azure Kubernetes Service (AKS)
 

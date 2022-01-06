@@ -4,7 +4,7 @@ Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy
 
 - Docs: <https://docs.microsoft.com/en-us/azure/azure-resource-manager/bicep/overview>
 - Source: <https://github.com/Azure/bicep>
-- Install:```choco install -y bicep```
+- Install: ```choco install -y bicep```
 
 ## From ARM to Bicep
 
@@ -35,9 +35,9 @@ You can change "yourPrefix" to whatever you want e.g. a resource prefix "vm-" an
 
 ### Storage
 
-- Create RG:```az group create --name exampleRG --location westeurope```
-- Run main.bicep file to create strage account:```az deployment group create --resource-group exampleRG --template-file main.bicep --parameters storageName=mystorageaccount666666666```
-- Create fileshare:```az storage fs create -n my-file-system --account-name mystorageaccount --auth-mode login```
+- Create RG: ```az group create --name exampleRG --location westeurope```
+- Run main.bicep file to create strage account: ```az deployment group create --resource-group exampleRG --template-file main.bicep --parameters storageName=mystorageaccount666666666```
+- Create fileshare: ```az storage fs create -n my-file-system --account-name mystorageaccount --auth-mode login```
 - Create directory```az storage fs directory create -n my-directory -f my-file-system --account-name mystorageaccount --auth-mode login```
 - Upload file```az storage fs file upload -s "C:\\myFolder\\upload.txt" -p my-directory/upload.txt  -f my-file-system --account-name mystorageaccount --auth-mode login```
-- Download file:```az storage fs file download -p my-directory/upload.txt -f my-file-system -d "C:\\myFolder\\download.txt" --account-name mystorageaccount --auth-mode login```
+- Download file: ```az storage fs file download -p my-directory/upload.txt -f my-file-system -d "C:\\myFolder\\download.txt" --account-name mystorageaccount --auth-mode login```

@@ -23,8 +23,8 @@ PyTorch does not use the systems CUDA library. You can clone and compile pytorch
 
 Example for CUDA 11 for windows with Conda or PIP:
 
-- Install PyTorch via Csonda:```conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge```
-Install PyTorch via PIP:```pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio===0.8.1 -f https://download.pytorch.org/whl/torch_stable.html```
+- Install PyTorch via Csonda: ```conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge```
+Install PyTorch via PIP: ```pip install torch==1.8.1+cu111 torchvision==0.9.1+cu111 torchaudio===0.8.1 -f https://download.pytorch.org/whl/torch_stable.html```
 
 Now, test with python if tools are installed and pytorch with CUDA works.
 
@@ -47,9 +47,9 @@ Expected output:
 
 ### deep-daze examples
 
-- Create Image:```imagine "a house in the forest"```
-- Create Image with better quality:```imagine "shattered plates on the ground" --deeper```
-- Create Image and add more layers = better results:```imagine "stranger in strange lands" --num-layers 32```
+- Create Image: ```imagine "a house in the forest"```
+- Create Image with better quality: ```imagine "shattered plates on the ground" --deeper```
+- Create Image and add more layers = better results: ```imagine "stranger in strange lands" --num-layers 32```
 
 I created a video of all 34 pictures created while running this command```imagine "a house in the forest"``` and the output looks like this:
 

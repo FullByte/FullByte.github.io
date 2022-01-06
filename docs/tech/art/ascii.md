@@ -421,7 +421,7 @@ Another cool idea is to use this fo successful tests or builds e.g.:
 
 [Asciimatics](https://github.com/peterbrittain/asciimatics) is a package to help people create full-screen text UIs on any platform. It comes with some very cool samples!
 
-- Install:```pip install asciimatics``` (Note: depending on the sample/demo there are more dependencies)
+- Install: ```pip install asciimatics``` (Note: depending on the sample/demo there are more dependencies)
 - Documentation: <https://asciimatics.readthedocs.io>
 - Samples: <https://github.com/peterbrittain/asciimatics/tree/master/samples>
 
@@ -477,7 +477,7 @@ ART is a Python lib for text converting to ASCII art fancy.
 
 - Source: <https://github.com/sepandhaghighi/art>
 - Docs: <https://www.4r7.ir/>
-- Install:```pip install art```
+- Install: ```pip install art```
 
 Example `art-example.py`
 
@@ -724,7 +724,7 @@ python3 art-random-example.py | lolcat
 ### QR code
 
 - Link: http://qrenco.de/
-- Use:```curl qrenco.de/0xfab1.net```
+- Use: ```curl qrenco.de/0xfab1.net```
 
 ??? output "parrot.live"
     ```
@@ -748,7 +748,7 @@ python3 art-random-example.py | lolcat
 ### Parrot
 
 - Link: https://github.com/hugomd/parrot.live
-- Use:```curl parrot.live```
+- Use: ```curl parrot.live```
 - Download [parrot.cast](_parrot.cast) or view below:
 
 <script id="asciicast-8" src="https://asciinema.org/a/239367.js" async></script>
@@ -776,7 +776,7 @@ python3 art-random-example.py | lolcat
 ### Run Forrest Run
 
 - Link: https://github.com/hugomd/ascii-live
-- Use:```curl ascii.live/forrest```
+- Use: ```curl ascii.live/forrest```
 
 ??? output "curl ascii.live/forrest"
     ``` txt
@@ -810,7 +810,7 @@ python3 art-random-example.py | lolcat
 ### Run Forrest Run
 
 - Link: https://github.com/hugomd/ascii-live
-- Use:```curl ascii.live/rick```
+- Use: ```curl ascii.live/rick```
 
 ??? output "curl ascii.live/rick"
     ``` txt
@@ -849,13 +849,13 @@ python3 art-random-example.py | lolcat
 ### mapscii
 
 - Link: [mapscii.me](https://github.com/rastapasta/mapscii)
-- Use:```telnet mapscii.me```
+- Use: ```telnet mapscii.me```
 - Download: https://github.com/rastapasta/mapscii/releases
 
 ### Star Wars
 
 - Link: http://www.asciimation.co.nz/ (Service no longer available)
-- Use:```telnet towel.blinkenlights.nl```
+- Use: ```telnet towel.blinkenlights.nl```
 - Download [nyancat.cast](_nyancat.cast) or view below:
 
 <script id="asciicast-8" src="https://asciinema.org/a/8.js" async></script>
@@ -883,7 +883,7 @@ Try this online tool for IPv6 tracert:
 ### Tetris
 
 Link: trh.milek7.pl (Service no longer available)
-Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
+Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
 
 ??? output "Tetris-traceroute"
     ![tetris.png](_tetris.png)
@@ -891,7 +891,7 @@ Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
 ### Star Wars
 
 - Link: <https://beaglenetworks.net/post/42707829171/star-wars-traceroute>
-- Use:```traceroute -m 100 216.81.59.173 | awk '{print $2}'```
+- Use: ```traceroute -m 100 216.81.59.173 | awk '{print $2}'```
 
 ??? output "star-wars-traceroute"
     ``` txt
@@ -949,7 +949,7 @@ Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
 ### Star Trek
 
 - Link: tng.prolixium.com
-- Use:```traceroute6 -m 120 tng.prolixium.com```
+- Use: ```traceroute6 -m 120 tng.prolixium.com```
 
 ??? output "traceroute6 -m 120 tng.prolixium.com"
     ``` txt
@@ -981,7 +981,7 @@ Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
 ### traceroute hand
 
 - Link: hand.bb0.nl
-- Use:```traceroute -6 -m 50 hand.bb0.nl```
+- Use: ```traceroute -6 -m 50 hand.bb0.nl```
 
 ??? output "traceroute -6 -m 50 hand.bb0.nl"
     ``` txt
@@ -1035,7 +1035,7 @@ Use:```traceroute -I -m 60 -q 1 trh.milek7.pl```
 ### bad horse
 
 - Link: bad.horse
-- Use:```traceroute bad.horse```
+- Use: ```traceroute bad.horse```
 
 ??? output "traceroute bad.horse"
     ``` txt

@@ -2,8 +2,8 @@
 
 ## Chat between two users with netcat
 
-- User 1 (with IP 10.9.182.239) runs this command:```nc -l -p 3303```
-- Other chat user then runs this command:```nc 10.9.182.239 3303```
+- User 1 (with IP 10.9.182.239) runs this command: ```nc -l -p 3303```
+- Other chat user then runs this command: ```nc 10.9.182.239 3303```
 
 ## Wireshark
 
@@ -87,11 +87,11 @@ ddosify -t 0xfab1.net
 
 ## Eyewitness
 
-Eyewitness (screenshot pws):```sudo apt install eyewitness```
+Eyewitness (screenshot pws): ```sudo apt install eyewitness```
 
 ## FreeIPMI
 
-FreeIPMI:```sudo apt install freeipmi-tools```
+FreeIPMI: ```sudo apt install freeipmi-tools```
 
 ## Frogger
 
@@ -103,7 +103,7 @@ chmod +x /opt/frogger/froggers.sh
 
 ## hcxtools
 
-hcxtools to convert packets:```sudo apt install hcxdumptool hcxtools```
+hcxtools to convert packets: ```sudo apt install hcxdumptool hcxtools```
 
 ## mimikatz
 
