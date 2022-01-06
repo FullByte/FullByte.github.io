@@ -17,7 +17,7 @@ I built a hardware case for the original [hori taiko drum controller](https://ho
 
 ## Final build
 
-TODO
+![switch-taiko](_switch-taiko3.jpg)
 
 ## Links
 
