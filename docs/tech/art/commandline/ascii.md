@@ -67,7 +67,7 @@ sudo gem install rmagick image2ascii rainbow
 
 This is the main script `run.rb` which is also in the image2ascii repo [here](https://github.com/michaelkofron/image2ascii/blob/main/MakingWebAnimations/run.rb). I shortend it a little, added the option to pass an argument and use this value to create a unique json so the last one isn't overwritten.
 
-``` rb
+``` rb "run.rb"
 require 'rmagick'
 require 'image2ascii'
 require 'json'
