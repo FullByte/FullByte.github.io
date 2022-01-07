@@ -1,5 +1,7 @@
 # JS Libraries
 
+![javascript](_javascript.jpg)
+
 ## Node.js
 
 ### Install and Update Node.js, NPM and yarn

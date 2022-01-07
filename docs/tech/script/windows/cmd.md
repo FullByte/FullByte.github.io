@@ -123,7 +123,7 @@ Using TCP Port 80 (usually allowed by firewalls): ```traceroute -T -p 80 www.mic
 
 ### Send Message
 
-```bat
+``` bat
 net send /users This is a test message
 msg \* /SERVER:localhost /TIME:666 /W This is a test message
 ```
@@ -139,7 +139,7 @@ msg \* /SERVER:localhost /TIME:666 /W This is a test message
 
 ## Clean up logs
 
-```bat
+``` bat
 @echo off
 del /f /q /s %windir%\prefetch\*
 reg delete “HKCU\Software\Microsoft\Windows\ShellNoRoam\MUICache” /va /f
