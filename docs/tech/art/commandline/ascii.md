@@ -79,9 +79,9 @@ def createASCII(file)
     tempHash = {}
     animated.each do |x|
         x.write("./images/image#{count}.jpg")
-        dude = Image2ASCII.new("./images/image#{count}.jpg")
-        dude.chars = dude.chars.gsub!("'", "").gsub!("<", "").gsub!(">", "")
-        text = dude.generate(hidden: true, width: 100)
+        ascii = Image2ASCII.new("./images/image#{count}.jpg")
+        ascii.chars = ascii.chars.gsub!("'", "").gsub!("<", "").gsub!(">", "")
+        text = ascii.generate(hidden: true, width: 100)
         puts text
         tempHash["#{count}"] = text.gsub!("\n", "<br>")
         count = count + 1
@@ -110,8 +110,10 @@ Be sure to change `fetch("animation.json")` to the correct output file you creat
 <head>
     <style>
         @font-face {font-family: Courier;src: url('courier.ttf');}
-        p#ascii { font-size: 14px; font-family: Courier; white-space: nowrap;}
-        @media screen and (max-width: 750px) { p#ascii { font-size: 8px; } }
+        p#ascii {font-size: 6px;color:rgb(50, 255, 50); font-family: Courier; white-space: nowrap;}
+        @media screen and (max-width: 750px){ p#text {font-size: 6px;}}
+        html {display:table; width:100%; height:100%;}
+        body {background: black;display:table-cell; text-align:center; vertical-align:middle; height:100%;}
     </style>
 </head>
 <body>
