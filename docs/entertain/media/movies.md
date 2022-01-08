@@ -1,10 +1,8 @@
-# Watch List
+# Movies
 
 This is a list of movies I enjoyed watching.
 
-## Movies
-
-### Classics
+## Classics
 
 - 28 Days Later
 - Fear and Loathing in Las Vegas
@@ -13,19 +11,19 @@ This is a list of movies I enjoyed watching.
 - The Big Lebowski
 - Trainspotting
 
-### Fight Movies
+## Fight Movies
 
 - Creed
 - Million Dollar Babe
 
-### Science Fiction
+## Science Fiction
 
 - Inception
 - Interstallar
 - The Zero Theorem
 - Turbo Kid
 
-### Animated movies
+## Animated movies
 
 - Caroline
 - Ghost in the Shell
@@ -37,7 +35,7 @@ This is a list of movies I enjoyed watching.
 - Werner - gekotzt wird später
 - Winnie the Pooh
 
-### Action
+## Action
 
 - Apocalypto
 - Crank 1+2
@@ -50,7 +48,7 @@ This is a list of movies I enjoyed watching.
 - Robocop
 - The Expendables 1+3
 
-### Intersting Story
+## Intersting Story
 
 - 12 Monkeys
 - Amélie
@@ -96,7 +94,7 @@ This is a list of movies I enjoyed watching.
 - The Lobster
 - Whiplash
 
-### Cinematic
+## Cinematic
 
 - Blade Runner 2048
 - Dead Man
@@ -106,7 +104,7 @@ This is a list of movies I enjoyed watching.
 - Sin City
 - Valhalla Rising
 
-### Comedy movies
+## Comedy movies
 
 - Anchorman
 - Bad Santa
@@ -121,7 +119,7 @@ This is a list of movies I enjoyed watching.
 - Zoolander
 - The Ballad of Buster Scruggs
 
-### Trilogy Movies
+## Trilogy Movies
 
 - Alien 1-2 + 4
 - Der Hobbit 1-3
@@ -134,13 +132,13 @@ This is a list of movies I enjoyed watching.
 - Star Wars 4-6
 - The Dark Night 1-3
 
-### Romantic Movies
+## Romantic Movies
 
 - Her
 - I love you Philipp Morris
 - Match Point
 
-### Trash Movies
+## Trash Movies
 
 [imdb list](http://www.imdb.com/list/ls025677553/)
 
@@ -157,72 +155,3 @@ This is a list of movies I enjoyed watching.
 - Rubber
 - Sharknado 3
 - Turbo Kid
-
-## Series
-
-### Good Series
-
-- American gods
-- Better Call Saul
-- Black Mirror
-- Breaking Bad
-- Death Note
-- Game of Thrones
-- Happy
-- Mr. Robot
-- New Girl
-- Preacher
-- Scrubs
-- Shameless
-- Squid Game
-- Star Trek: Discovery
-- Stranger Things
-- The Blacklist
-- The Boys
-- The expanse
-- The Mandalorian
-- The Walking Dead
-- Westworld
-- X-Files
-
-### Animated Series
-
-- Adventure Time
-- Aqua Teen Hunger Force
-- Archer
-- Beavis and Butthead
-- Bobs Burgers
-- Brickleberry
-- Celebrity Deathmatch
-- Courage the cowardly dog
-- Dorohedoro
-- Duckman
-- Final Space
-- Frisky Dingo
-- Futurama
-- LOVE DEATH + ROBOTS
-- Masters of the Universe: Revelation
-- Metalocalypse
-- Ren and Stimpy
-- Rick and Morty
-- Rock's Modern Life
-- South Park
-- Squidbillies
-- Superjail!
-- Teenage Mutant Hero Turtles
-- The Amazing World of Gumball
-- The Head
-- The Maxx
-- The Simpsons
-- The Venture Bros Brothers
-- Tiny Toon Adventures
-- Ugly Americans
-- Wonder Showzen
-
-## Music Videos
-
-TODO
-
-## Shorts
-
-TODO

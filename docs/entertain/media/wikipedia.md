@@ -133,6 +133,7 @@ https://de.wikipedia.org/wiki/Liste_der_Schraubenkopfantriebe
 
 ## Unsorted
 
+https://en.wikipedia.org/wiki/Turboencabulator
 https://de.wikipedia.org/wiki/Lobotomie
 https://en.wikipedia.org/wiki/Pantograph
 https://en.wikipedia.org/wiki/Thought_Reform_and_the_Psychology_of_Totalism#Thought-terminating_clich%C3%A9

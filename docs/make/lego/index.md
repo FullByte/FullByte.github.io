@@ -87,5 +87,6 @@ Raspberry Pi Build HAT with LPF2 connector
 ## Information
 
 - Comparing Motors: <https://www.philohome.com/motors/motorcomp.htm>
-- <https://brickipedia.fandom.com/wiki/LEGO_Wiki>
-- <http://www.mindsensors.com/>
+- LEGO Wiki: <https://brickipedia.fandom.com/wiki/LEGO_Wiki>
+- Mindstorm Sensors: <http://www.mindsensors.com/>
+- UX-LEGO-Interfaces: <https://interactionmagic.com/UX-LEGO-Interfaces>

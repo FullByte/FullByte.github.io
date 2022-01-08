@@ -52,7 +52,7 @@ Other IDE
     ```
 
 Create a random string
-    ``` py
+    ``` py title="randomstring.py"
     import random
     import string
 
@@ -71,7 +71,7 @@ Create a random string
 
 - Execute Shell Commands
 
-    ``` py
+    ``` py title="execute-shell-command.py"
     import subprocess
     cmd = subprocess.Popen(
     ['ls', '-l', '.'],
@@ -88,7 +88,7 @@ Create a random string
 
 HTTP JSON request
 
-``` py
+``` py title="HTTP-JSON-request.py"
 import json, urllib.request
 
 req = urllib.request.Request("https://example.com")
@@ -105,7 +105,7 @@ except urllib.error.HTTPError as e:
 
 HTTP Plain request
 
-``` py
+``` py title="HTTP-Plain-request.py"
 import urllib.request
 
 req = urllib.request.Request("https://example.com")
@@ -123,7 +123,7 @@ except urllib.error.HTTPError as e:
 
 Print some colors
 
-``` py
+``` py title="colors.py"
 class colors:
 reset='\033[0m'
 bold='\033[01m'

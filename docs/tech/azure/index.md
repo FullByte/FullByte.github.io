@@ -68,6 +68,7 @@ The best websites I know for Azure providing overviews, helpers and tools.
 ### Service Status
 
 - M365 Status: <https://admin.microsoft.com/AdminPortal/Home#/servicehealth>
+- Office Status: <https://portal.office.com/servicestatus>
 - Azure Status: <https://status.azure.com/de-de/status>
 - Azure Status History: <https://status.azure.com/de-de/status/history/>
 - DevOps Status: <https://status.dev.azure.com/>

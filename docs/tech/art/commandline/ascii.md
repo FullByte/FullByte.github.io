@@ -65,9 +65,15 @@ sudo apt-get install ruby-full imagemagick libmagickwand-dev
 sudo gem install rmagick image2ascii rainbow
 ```
 
-This is the main script `run.rb` which is also in the image2ascii repo [here](https://github.com/michaelkofron/image2ascii/blob/main/MakingWebAnimations/run.rb). I shortend it a little, added the option to pass an argument and use this value to create a unique json so the last one isn't overwritten.
+The expected input is .gif file. I converted a video I wanted to use from mp4 to gif using [ffmpeg](https://ffmpeg.org/).
 
-``` rb "run.rb"
+``` sh
+ffmpeg -i input.mp4 -vf "fps=12,scale=480:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 animation.gif
+```
+
+`run.rb` is the main script (included in the [image2ascii repo](https://github.com/michaelkofron/image2ascii/blob/main/MakingWebAnimations/run.rb). I shortend the script a little, added the option to pass an argument and use this value to create a unique json so the last one isn't overwritten.
+
+``` rb title="run.rb"
 require 'rmagick'
 require 'image2ascii'
 require 'json'
@@ -97,15 +103,13 @@ end
 createASCII(ARGV[0].to_s)
 ```
 
-Run ```ruby run.rb animation``` where `animation` is a gif in the same directory as `run.rb`.
+Run ```ruby run.rb animation``` where `animation` is a gif in the same directory as `run.rb`; in this case "animation.gif".
 
-This will generate a file named `animation.json` (because of the input `animation`).
+Now we can create a web page with the animated ASCII video. The script created a file named `animation.json` containing all ASCII frames.
 
-You require the font `courier.ttf` (or any other monospaced fonts) in the same directory as the HTML file below.
+To display the ASCII video properly we need a monospaced font e.g. `courier.ttf`. Copy this font to the work directory and add the following HTML file:
 
-Be sure to change `fetch("animation.json")` to the correct output file you created.
-
-``` html
+``` html title="index.html"
 <html>
 <head>
     <style>
@@ -137,7 +141,9 @@ Be sure to change `fetch("animation.json")` to the correct output file you creat
 </html>
 ```
 
-Run a webserver e.g. with python ```python -m http.server 8008 --bind 127.0.0.1``` to test this locally and open <http://127.0.0.1:8008/> in your browser.
+Be sure to change `fetch("animation.json")` to the correct output file in case you named it differently.
+
+To test this locally, run a webserver e.g. with python ```python -m http.server 8008 --bind 127.0.0.1``` to test this locally and open <http://127.0.0.1:8008/> in your browser.
 
 ### nyancat
 

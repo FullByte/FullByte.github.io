@@ -103,7 +103,8 @@ markdown_extensions:
   - pymdownx.superfences
   - pymdownx.keys
   - pymdownx.mark
-  - pymdownx.tabbed
+  - pymdownx.tabbed:
+      alternate_style: true 
   - pymdownx.tilde
   - pymdownx.caret
   - pymdownx.tasklist
