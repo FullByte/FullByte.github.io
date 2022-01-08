@@ -4,6 +4,8 @@
 
 ## Fantasy Consoles
 
+- [tiny8bit](https://floooh.github.io/tiny8bit/) is a toolbox of [8-bit chip-emulators](https://github.com/floooh/chips), helper code and complete embeddable system emulators in dependency-free C headers (a subset of C99 that compiles on gcc, clang and cl.exe).
+
 ### Pico
 
 [PICO-8](https://www.lexaloffle.com/) is a fantasy console for making, sharing and playing tiny games and other computer programs. It feels like a regular console, but runs on Windows / Mac / Linux. When you turn it on, the machine greets you with a commandline, a suite of cartridge creation tools, and an online cartridge browser called SPLORE.

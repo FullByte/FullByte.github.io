@@ -7,6 +7,13 @@ Some great helpers:
 - Understand commands: <https://explainshell.com/>
 - ShellCheck gives warnings and suggestions for bash/sh shell scripts: <https://github.com/koalaman/shellcheck>
 
+## Alternative to
+
+| original | alternative |
+|----------|-------------|
+|top|[htop](https://github.com/htop-dev/htop/), [tiptop](https://github.com/nschloe/tiptop)             |
+|tar|[asar](https://github.com/electron/asar)|
+
 ## Basics
 
 Random basics

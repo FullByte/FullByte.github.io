@@ -140,6 +140,7 @@ Share Files/Text
 | [sharedrop](https://www.sharedrop.io/)                   | Files only     |                  |
 | [instant](https://instant.io/)                           | Files only     |                  |
 | [snapdrop](https://snapdrop.net/)                        | Files only     |                  |
+| [standardnotes filesend](https://filesend.standardnotes.com/) | Files only     |                  |
 | [bitwarden sends](https://vault.bitwarden.com/#/sends)   | Test and Files | Account required |
 | [sendfiles dev](https://sendfiles.dev/)                  |                |                  |
 | [siasky skytransfer](https://skytransfer.hns.siasky.net) |                |                  |

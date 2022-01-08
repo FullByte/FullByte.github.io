@@ -133,6 +133,10 @@ https://de.wikipedia.org/wiki/Liste_der_Schraubenkopfantriebe
 
 ## Unsorted
 
+https://en.wikipedia.org/wiki/Sixel
+https://en.wikipedia.org/wiki/Sturgeon's_law
+https://en.wikipedia.org/wiki/Tang_ping
+https://en.wikipedia.org/wiki/Nuclear_Gandhi
 https://en.wikipedia.org/wiki/Turboencabulator
 https://de.wikipedia.org/wiki/Lobotomie
 https://en.wikipedia.org/wiki/Pantograph

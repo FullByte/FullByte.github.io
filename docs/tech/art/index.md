@@ -35,6 +35,7 @@ Tools to create graphics and modify images online.
 - Graffiti: <https://graffiter.com/app>
 - <https://www.tldraw.com/>
 - [word art](https://www.makewordart.com/)
+- Diagrams: <https://excalidraw.com/>
 
 ### Animation
 

@@ -46,3 +46,9 @@ If you can't or don't want to use platform alternatives you can at least use dif
 - homepage: https://gadgetbridge.org/
 - f-droid: https://f-droid.org/packages/nodomain.freeyourgadget.gadgetbridge/
 - Source: https://codeberg.org/Freeyourgadget/Gadgetbridge/
+
+## DRM
+
+Buy DRM free products (Media, Software,..)
+
+- <https://www.defectivebydesign.org/guide>
