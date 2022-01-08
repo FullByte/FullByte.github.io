@@ -11,8 +11,6 @@ Reasons why systems are in insecure:
 
 - [Bear Security](https://www.schneier.com/blog/archives/2006/08/security_is_a_t.html): "There is considerable overlap between the intelligence of the smartest bears and the dumbest tourists."
 
-## Links
-
 Just a bunch of links for further tools, tips and lists on messing with the network, servers and clients. Does anybody still remember Back Orifice, Sub7 and NetBus?
 
 ## Hack CTF Overview
@@ -57,6 +55,12 @@ Other
 - PENTESTING-BIBLE: <https://github.com/blaCCkHatHacEEkr/PENTESTING-BIBLE>
 - hacker-laws: <https://github.com/dwmkerr/hacker-laws>
 - 0xsp <http://0xsp.com/>
+
+## Search Engines
+
+- <https://search.censys.io/>
+- shodan <https://www.shodan.io/>
+- Reverse Image Search: <https://tineye.com/>
 
 ### Vulnerability Lists
 
@@ -108,11 +112,9 @@ SQL
 - censys <https://censys.io>
 - <https://incoherency.co.uk/chess-steg/>
 - <https://bazaar.abuse.ch/>
-- shodan <https://www.shodan.io/>
 - url canary <https://urlcanary.com/>
 - <https://osintframework.com/>
 - <https://www.hackerstorm.co.uk/>
-- Reverse Image Search: <https://tineye.com/>
 - Zero Width Shortener: <https://zws.im/>
 - EFF Browser Check <https://coveryourtracks.eff.org/>
 - cryptool <https://www.cryptool.org/de/cto/>
@@ -131,6 +133,7 @@ SQL
 - Torrent Download History: <https://iknowwhatyoudownload.com>
 - Cybercrime IP Feeds: <http://iplists.firehol.org/>
 - Hurricane Electric BGP Toolkit: <https://bgp.he.net/>
+- [Internet GreyNoise](https://www.greynoise.io/viz/trends)
 
 ## Code Helpers
 
@@ -185,6 +188,7 @@ Map APIs
 - discover <https://github.com/leebaird/discover>
 - shad0w <https://github.com/bats3c/shad0w>
 - [mlget](https://github.com/xorhex/mlget): query multiple sources for a given malware hash and [download](https://blog.xorhex.com/blog/mlget-for-all-your-malware-download-needs/) it
+- <https://github.com/dhondta/dronesploit>
 
 ## Malware Analysis
 

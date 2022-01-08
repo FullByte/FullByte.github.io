@@ -126,3 +126,9 @@ Planets
 - [Open Orienteer Map](https://oomap.co.uk/global/#/new/streeto_global/)
 - [Super Tunnel](https://supertunnel.app/)
 - [geonames](https://www.geonames.org/)
+
+## Historic
+
+- [Old UK Maps](https://maps.nls.uk/)
+- <https://www.davidrumsey.com/>
+- <https://maps.arcanum.com/en/map>

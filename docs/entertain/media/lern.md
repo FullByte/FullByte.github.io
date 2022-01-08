@@ -30,3 +30,4 @@ Random knowledge and interesting stuff:
 
 - <http://www.labinthewild.org/>
 - What are reddit's favorite books? <https://redditfavorites.com/books>
+- <https://ourworldindata.org/>

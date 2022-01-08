@@ -11,7 +11,7 @@ Some great helpers:
 
 | original | alternative |
 |----------|-------------|
-|top|[htop](https://github.com/htop-dev/htop/), [tiptop](https://github.com/nschloe/tiptop)             |
+|top|[htop](https://github.com/htop-dev/htop/), [tiptop](https://github.com/nschloe/tiptop), [btop](https://github.com/aristocratos/btop)          |
 |tar|[asar](https://github.com/electron/asar)|
 
 ## Basics

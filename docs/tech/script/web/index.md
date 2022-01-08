@@ -30,6 +30,7 @@
 - <https://permission.site/>
 - <https://httpstatusdogs.com/>
 - <https://http.cat/>
+- <https://enkhee-osiris.github.io/Decoder-JSFuck/>
 
 ### Web Calendar Service
 

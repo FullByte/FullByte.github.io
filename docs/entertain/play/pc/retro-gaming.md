@@ -5,6 +5,7 @@
 ## Fantasy Consoles
 
 - [tiny8bit](https://floooh.github.io/tiny8bit/) is a toolbox of [8-bit chip-emulators](https://github.com/floooh/chips), helper code and complete embeddable system emulators in dependency-free C headers (a subset of C99 that compiles on gcc, clang and cl.exe).
+- A [list](https://github.com/paladin-t/fantasy) of fantasy consoles
 
 ### Pico
 

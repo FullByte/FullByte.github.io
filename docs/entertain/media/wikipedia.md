@@ -133,6 +133,8 @@ https://de.wikipedia.org/wiki/Liste_der_Schraubenkopfantriebe
 
 ## Unsorted
 
+<https://en.wikipedia.org/wiki/FRACTRAN>
+https://en.wikipedia.org/wiki/Yiddish_words_used_in_English
 https://en.wikipedia.org/wiki/Sixel
 https://en.wikipedia.org/wiki/Sturgeon's_law
 https://en.wikipedia.org/wiki/Tang_ping
