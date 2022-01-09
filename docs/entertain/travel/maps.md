@@ -91,6 +91,8 @@ Nature
 - [Air Quality](https://map.purpleair.com/1/mAQI/a10/p604800/cC0#4.48/46.81/20.4)
 - [California Department of Forestry and Fire Protection](https://www.fire.ca.gov/incidents)
 - [Beijing Air Pollution](https://aqicn.org/city/beijing/)
+- [River Flow World Wide](https://river-runner-global.samlearner.com/)
+- [Shade Map](https://shademap.app/)
 
 Weather
 
