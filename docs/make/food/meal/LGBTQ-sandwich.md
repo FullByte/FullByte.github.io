@@ -2,19 +2,21 @@
 
 A sandwich with **L**ettuce, **G**uacamole, **B**acon, **T**omato and **Q**ueso :)
 
-Ingredients:
+=== "Zutaten"
 
-- 2 slices of bread
-- 3 large pieces of lettuce
-- 1 avocado
-- 3 slices of tomato
-- 2 slices quesoo (pepperjack cheese)
-- salt + pepper
+    - [ ] 2 slices of bread
+    - [ ] 3 large pieces of lettuce
+    - [ ] 1 avocado
+    - [ ] 3 slices of tomato
+    - [ ] 2 slices quesoo (pepperjack cheese)
+    - [ ] salt + pepper
 
-Prepare:
+=== "Zubereitung"
 
-- Prepare the bacon, mash the avocado and add salt and pepper to taste.
-- Spread a layer of butter on one side of each bread slice and placed that side down on the griddle over medium heat, turn sides and lay queso on top until the bread is toasty and the cheese starts to melt.
-- Layer the guacamole, lettuce, bacon, and tomato between your two slices.
+    - [ ] Prepare the bacon, mash the avocado and add salt and pepper to taste.
+    - [ ] Spread a layer of butter on one side of each bread slice and placed that side down on the griddle over medium heat, turn sides and lay queso on top until the bread is toasty and the cheese starts to melt.
+    - [ ] Layer the guacamole, lettuce, bacon, and tomato between your two slices.
 
-![lgtv](_lgtv.jpg)
+=== "Foto"
+
+    ![lgtv](_lgtv.jpg)
