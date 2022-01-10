@@ -1,4 +1,4 @@
-# Linux Bash
+# Bash
 
 Most commands listed here will work on any linux distributions but if in doubt it will most likely run on the latest Ubuntu.
 
@@ -16,7 +16,7 @@ Some great helpers:
 | cat      | [bat](https://github.com/sharkdp/bat)                                                                                                                                                                                                                                              |
 | diff | git + [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy), [delta](https://github.com/dandavison/delta), [diffoscope](https://diffoscope.org/), [icdiff](https://github.com/jeffkaufman/icdiff)                                                                                                                                                                     |
 | ls       | [exa](https://github.com/ogham/exa), [lsd](https://github.com/Peltoche/lsd)                                                                                                                                                                                                        |
-| du       | [duf](https://github.com/muesli/duf), [dust](https://github.com/bootandy/dust)                                                                                                                                                                                                     |
+| du       | [duf](https://github.com/muesli/duf), [dust](https://github.com/bootandy/dust), [space-hogs](https://www.npmjs.com/package/space-hogs)                                                                                                                                                                                                     |
 | curl     | [curlx](https://github.com/shivkanthb/curlx)                                                                                                                                                                                                                                       |
 | tree     | [broot](https://github.com/Canop/broot)                                                                                                                                                                                                                                            |
 | find     | [fd](https://github.com/sharkdp/fd)                                                                                                                                                                                                                                                |
@@ -69,7 +69,8 @@ Other:
 - [starship](https://github.com/starship/starship) creates a customizable prompt for any shell.
 - [loop](https://github.com/Miserlou/Loop) is UNIX's missing `loop` command.
 - [viu](https://github.com/atanunq/viu) allows you to view images in the terminal.
-- [bandwhich](https://github.com/imsnif/bandwhich) is a terminal bandwidth utilization tool 
+- [bandwhich](https://github.com/imsnif/bandwhich) is a terminal bandwidth utilization tool
+- [colorls](https://github.com/athityakumar/colorls) beautifies the terminal's ls command, with color and font-awesome icons.
 
 ## Basics
 

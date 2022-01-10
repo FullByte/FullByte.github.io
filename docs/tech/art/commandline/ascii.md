@@ -40,6 +40,8 @@
 
 I love [ASCII Art](https://en.wikipedia.org/wiki/ASCII_art) and this page is dedicated to some beautiful things I found. Most of the stuff below is is the work of someone else but as I found this stuff hard to find I just want to make sure it is not lost. Links were added where known.
 
+A great place to display animated ascii art is [asciinema](https://asciinema.org/). To save asciinema casts as animated SVG use [svg-term-cli](https://github.com/marionebl/svg-term-cli) e.g. with ```svg-term --cast=117813 --out MapSCII.svg --window```
+
 ## Links
 
 Links to further resources:
