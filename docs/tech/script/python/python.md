@@ -16,10 +16,29 @@ Other IDE
 
 ## Code Snippets
 
+### Requirements
+
+Install requirements of a project: ```pip install -r requirements.txt```
+
+Example
+
+``` txt
+###### Requirements without Version Specifiers ######
+numpy
+pynput
+beautifulsoup4
+
+###### Requirements with Version Specifiers ######
+docopt == 0.6.2             # Version Matching. Must be version 0.6.2
+keyring >= 4.2.1            # Minimum version 4.2.1
+coverage != 3.6             # Version Exclusion. Anything except version 3.6
+Mopidy-Dirble ~= 1.1        # Compatible release. Same as >= 1.1, == 1.*
+```
+
 ### Web
 
-- Webserver on Python 2: ``` python -m SimpleHTTPServer 8008```
-- Webserver on Python 3: ``` python -m http.server 8008 --bind 127.0.0.1```
+- Webserver on Python 2: ```python -m SimpleHTTPServer 8008```
+- Webserver on Python 3: ```python -m http.server 8008 --bind 127.0.0.1```
 
 ### String manipulation
 

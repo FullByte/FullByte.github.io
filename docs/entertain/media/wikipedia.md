@@ -133,7 +133,9 @@ https://de.wikipedia.org/wiki/Liste_der_Schraubenkopfantriebe
 
 ## Unsorted
 
-<https://en.wikipedia.org/wiki/FRACTRAN>
+https://en.m.wikipedia.org/wiki/B.A.T.M.A.N.
+https://en.m.wikipedia.org/wiki/Donner_Party
+https://en.wikipedia.org/wiki/FRACTRAN
 https://en.wikipedia.org/wiki/Yiddish_words_used_in_English
 https://en.wikipedia.org/wiki/Sixel
 https://en.wikipedia.org/wiki/Sturgeon's_law

@@ -4,12 +4,12 @@
 
 Info
 
-|What|Where|
-|-|-|
-|Official Page||
-|Source||
-|Download||
-|Install||
+| What          | Where |
+|---------------|-------|
+| Official Page |       |
+| Source        |       |
+| Download      |       |
+| Install       |       |
 
 ### Random
 
@@ -106,12 +106,12 @@ b: =INDEX(LINEST(y,x^{1,2,3}),1,4)
 
 Info
 
-|What|Where|
-|-|-|
-|Official Page||
-|Source||
-|Download||
-|Install||
+| What          | Where |
+|---------------|-------|
+| Official Page |       |
+| Source        |       |
+| Download      |       |
+| Install       |       |
 
 ### Links
 

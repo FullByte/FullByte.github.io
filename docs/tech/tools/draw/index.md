@@ -17,6 +17,8 @@ Tools to create graphics and modify images online.
 - <https://www.vecteezy.com/>
 - <https://openclipart.org/>
 - <https://svgsilh.com/>
+- <https://github.com/lucaburgio/iconoir>
+- <https://heroicons.com/>
 
 ## Tools
 

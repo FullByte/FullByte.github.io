@@ -71,3 +71,10 @@ You can get the atom feed of a YouTube channel by adding the channel id to this 
 
 Channel: <https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw>
 Atom: <https://www.youtube.com/feeds/videos.xml?channel_id=UCuAXFkgsw1L7xaCfnd5JJOw>
+
+### Notable
+
+I don't use these but they are cool.
+
+- <https://www.govinfo.gov/feeds>
+- <https://www.federalreserve.gov/feeds/feeds.htm>
