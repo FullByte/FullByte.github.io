@@ -84,23 +84,6 @@ Random basics
 - Top commands used: ```history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -nr```
 - Commands only used once: ```history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -n | grep ' 1 '```
 
-## Find Raspberry Pi in network
-
-Find Pi with an ARP scan filtering for known Pi MAC Addresses
-
-From windows:
-
-```cmd
-arp -a | findstr b8-27-eb
-```
-
-From linux
-
-``` sh
-arp-scan --localnet --interface=eth0 | grep b8:27:eb
-arp-scan --localnet --interface=wlan0 | grep b8:27:eb
-```
-
 ## bashrc
 
 Paste these function in the ~/.bashrc file.
