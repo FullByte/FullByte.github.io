@@ -1,4 +1,6 @@
-# ASCII Programs
+# Programs
+
+Programs creating ASCII art.
 
 ## Nurses 2
 

