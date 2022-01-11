@@ -2,15 +2,13 @@
 
 Zutaten:
 
-|Menge|Inhalt|
-|-|-|
-|2x|Eier|
-|200 ml|Milch|
-|1 Prise|Zucker|
-|1 Prise|Salz|
-|200g|Mehl|
-|60 ml|Mineralwasser|
-|| Speiseöl zum Ausbacken|
+2x Eier
+200 ml Milch
+1 Prise Zucker
+1 Prise Salz
+200g Mehl
+60 ml Mineralwasser
+Speiseöl zum Ausbacken
 
 ## Zubereitung:
 

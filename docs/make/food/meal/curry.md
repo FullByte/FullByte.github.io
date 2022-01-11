@@ -2,22 +2,21 @@
 
 === "Zutaten"
 
-    | Menge  | Inhalt           |
-    |--------|------------------|
-    | 1 EL   | Butterschmalz    |
-    | 1x     | Mango            |
-    | 1x     | Zwiebel          |
-    | 3x     | Knoblauchzehen   |
-    | 1 EL   | Ingwer           |
-    | 2 EL   | Currypulver      |
-    | 2x     | Chilischote      |
-    | 500 ml | Gemüsebrühe      |
-    | 400 ml | Kokosmilch       |
-    | 3x     | Pimentkörner     |
-    | 1x     | Lorbeerblatt     |
-    |        | Zucker braun     |
-    |        | Salz und Pfeffer |
-    |        | Limettensaft     |
+    - [ ] 1 EL Butterschmalz
+    - [ ] 1x Mango
+    - [ ] 1x Zwiebel
+    - [ ] 3x Knoblauchzehen
+    - [ ] 1 EL Ingwer
+    - [ ] 2 EL Currypulver
+    - [ ] 2x Chilischote
+    - [ ] 500 ml Gemüsebrühe
+    - [ ] 400 ml Kokosmilch
+    - [ ] 3x Pimentkörner
+    - [ ] 1x Lorbeerblatt
+    - [ ] Brauner Zucker
+    - [ ] Salz
+    - [ ] Pfeffer
+    - [ ] Limettensaft
 
 === "Zubereitung"
 

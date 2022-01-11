@@ -1,41 +1,36 @@
 # Schokoladenkuchen
 
-## 1. Schoko schmelzen
+=== "Zutaten"
 
-Schokolade kleinhacken und mit Butter in Schale geben und bei max. 80°C im Backofen schmelzen:
+    Einkaufen:
 
-- 100g Blockschokolade
-- 20g Butter
+    - [ ] 100g Blockschokolade
+    - [ ] 3 Eier
+    - [ ] 350g brauner Zucker
+    - [ ] 125g Margarine
+    - [ ] 200g Sauerrahm oder Crème fraîche
+    - [ ] 260g Mehl
+    - [ ] 50g Kakao    
 
-## 2. Zutaten verrühren
+    Hat man ggf. schon zuhause:
 
-Zunächst folgende Zutaten zusammenrühren:
+    - [ ] 1 Päckchen Vanillezucker
+    - [ ] 1 Päckchen Backpulver
+    - [ ] 20g Butter
+    - [ ] 5g Salz
+    - [ ] Öl und Paniermehl für die Springform
 
-- 3 Eier
-- 350g brauner Zucker
-- 125g Margarine
-- 60ml heißes Wasser
-- 1 Päckchen Vanillezucker
+=== "Zubereitung"
 
-Anschließend folgende Zutaten dazugeben und nochmals alles zusammenrühren:
+    - [ ] Schokolade kleinhacken und mit Butter in Schale geben und bei max. 80°C im Backofen schmelzen.
+    - [ ] 1 Päckchen Vanillezucker, Eier, brauner Zucker, Margarine zusammenrühren mit 60ml heißem Wasser.
+    - [ ] 200g Sauerrahm oder Crème fraîche und die nun geschmolzene Blockschokolade hinzugeben und rühren.
+    - [ ] Mehl, Kakao, Salz und Backpulver hinzugeben und nochmals gut rühren.
+    - [ ] Backofen auf 160°C erhitzen
+    - [ ] Springform mit Öl einpinseln und Paniermehl über Backform sträuben
+    - [ ] Teig in Form Giesen
+    - [ ] Backform in Backofen schieben und 60min backen
 
-- 200g (Sauerrahm, Crème fraîche, Milch)
-- Geschmolzene Blockschokolade aus Schritt 1
+=== "Foto"
 
-Nun alle restlichen Zutaten dazugeben und zusammenrühren:
-
-- 260g Mehl
-- 50g Kakao
-- 1/2 Löffel Salz
-- 1 Päckchen Backpulver
-
-## 3. Backform vorbereiten
-
-- Springform mit Öl einpinseln
-- Paniermehl über Backform sträuben
-- Teig in Form Giesen
-
-## 4. Backe backe Kuchen
-
-- Backofen auf 160°C erhitzen
-- Backform in Backofen schieben und 60min backen
+    TODO
