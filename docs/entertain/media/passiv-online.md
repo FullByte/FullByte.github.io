@@ -2,6 +2,21 @@
 
 Passive online screens that are nice to watch.
 
+## Nice to watch
+
+- <https://fractal.garden/>
+- <https://earthview.withgoogle.com/>
+- <http://iacopoapps.appspot.com/hopalongwebgl/>
+- <http://dn.ht/picklecat/>
+- <http://www.datapointed.net/visualizations/math/factorization/animated-diagrams/>
+- <https://paveldogreat.github.io/WebGL-Fluid-Simulation/>
+- <https://origamisimulator.org/>
+- <https://lavalamp.app/>
+- <https://osm-in-realtime.jwestman.net/>
+- <https://zoomquilt.org/>
+- <http://zoomquilt2.com/>
+- OSM updates: <https://osmlab.github.io/show-me-the-way/>
+
 ## Interfaces
 
 - <https://www.robscanlon.com/encom-boardroom/>
@@ -36,30 +51,8 @@ Byobu
 hollywood
 ```
 
-## Nice to watch
+## Random
 
-- <https://fractal.garden/>
-- <https://earthview.withgoogle.com/>
-- <http://iacopoapps.appspot.com/hopalongwebgl/>
-- <http://dn.ht/picklecat/>
-- <http://www.datapointed.net/visualizations/math/factorization/animated-diagrams/>
-- <https://paveldogreat.github.io/WebGL-Fluid-Simulation/>
-- <https://origamisimulator.org/>
-- <https://lavalamp.app/>
-- <https://osm-in-realtime.jwestman.net/>
-- <https://zoomquilt.org/>
-- <http://zoomquilt2.com/>
-- OSM updates: <https://osmlab.github.io/show-me-the-way/>
-
-## Space
-
-- <http://www.howmanypeopleareinspacerightnow.com/>
-- <http://haya2now.jp/en.html>
-- <http://stars.chromeexperiments.com/>
-- <http://stuffin.space/>
-- <https://stellarium-web.org/>
-- <http://apollo17.org/>
-- <https://www.meteorshowers.org/>
 - <http://listen.hatnote.com/>
 - <https://anonradio.net/>
 - <https://www.pinterest.de/>
@@ -67,7 +60,4 @@ hollywood
 - <https://3dforreddit.com/r/pics>
 - <https://coub.com/>
 - <http://9gag.com/hot>
-
-## Random
-
 - <https://clickclickclick.click/>
