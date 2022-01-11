@@ -1,10 +1,8 @@
 # Links
 
-## Identifying Food by Qube Rule
+Eat whatever you want... idk, lol.
 
-<http://cuberule.com/>
-
-## 5 wichtige Regeln für eine gesunde Ernährung
+## Gesunde Ernährung
 
 - Essen Sie echtes Essen
 - Machen Sie Pflanzen zu Ihrer Hauptspeise
@@ -12,6 +10,7 @@
 - Joghurt: ja. Käse: auch okay. Milch: lala
 - Zucker minimieren, industrielle Transfette meiden
 
-## Links
+## Other
 
 - Food timeline: <https://foodtimeline.org/>
+- Identifying Food by Qube Rule: <http://cuberule.com/>
