@@ -1,5 +1,14 @@
 # Apfelkuchen
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
 
     - [ ] 400 g Dinkelmehl
@@ -26,6 +35,6 @@
     - [ ] Bei 200º C Heißluft ca. 35-45 Min. backen.
     - [ ] Vor dem Servieren mit dem Puderzucker bestäuben.
 
-=== "Foto"
+## Foto
 
     TODO

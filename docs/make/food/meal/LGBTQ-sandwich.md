@@ -1,6 +1,15 @@
 # LGBTQ sandwich
 
-A sandwich with **L**ettuce, **G**uacamole, **B**acon, **T**omato and **Q**ueso :)
+Ein Sandwich mit **L**ettuce, **G**uacamole, **B**acon, **T**omato and **Q**ueso :)
+
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | 10 Min      |
+| Menge | 1 Personen |
+
+## Rezept
 
 === "Zutaten"
 
@@ -9,7 +18,8 @@ A sandwich with **L**ettuce, **G**uacamole, **B**acon, **T**omato and **Q**ueso 
     - [ ] 1 avocado
     - [ ] 3 slices of tomato
     - [ ] 2 slices quesoo (pepperjack cheese)
-    - [ ] salt + pepper
+    - [ ] salt
+    - [ ] pepper
 
 === "Zubereitung"
 
@@ -17,6 +27,6 @@ A sandwich with **L**ettuce, **G**uacamole, **B**acon, **T**omato and **Q**ueso 
     - [ ] Spread a layer of butter on one side of each bread slice and placed that side down on the griddle over medium heat, turn sides and lay queso on top until the bread is toasty and the cheese starts to melt.
     - [ ] Layer the guacamole, lettuce, bacon, and tomato between your two slices.
 
-=== "Foto"
+## Foto
 
-    ![lgtv](_lgtv.jpg)
+![lgtv](_lgtv.jpg)

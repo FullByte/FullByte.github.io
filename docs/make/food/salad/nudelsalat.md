@@ -1,5 +1,14 @@
 # Nudelsalat
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
 
     - [ ] 500 g Dinkelnudeln
@@ -17,6 +26,6 @@
     - [ ] In der Zwischenzeit aus Olivenöl, gepresstem Knoblauch, Essig, Salz, Pfeffer und Zucker eine Salatsoße herstellen.
     - [ ] Tomaten und Basilikum waschen, kleinschneiden und zu den Nudeln geben. Alles miteinander vermengen und etwas ziehen lassen.
 
-=== "Foto"
+## Foto
 
     TODO

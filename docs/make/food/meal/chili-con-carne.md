@@ -1,17 +1,33 @@
 # Chili Con Carne
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | 60 Min      |
+| Menge | 8 Personen |
+
+## Rezept
+
 === "Zutaten"
+
+    Einkaufen:
 
     - [ ] 1000g Hackfleisch
     - [ ] 1000g Kidney Bohnen
     - [ ] 750g Mais
     - [ ] 750g Tomaten
-    - [ ] 4-5x Chilies
-    - [ ] 2-3x Zwiebeln
-    - [ ] 2x Zehen Knoblauch
+    - [ ] 4x Chili
     - [ ] 3x Paprika
 
-    Dazu passt gut Reis oder Baguettes.
+    Ggf. schon vorhanden:
+
+    - [ ] 3x Zwiebeln
+    - [ ] 2x Knoblauchzehen
+
+    Optional/Beilagen:
+
+    - [ ] Reis oder Baguettes
 
 === "Zubereitung"
 
@@ -20,6 +36,6 @@
     - [ ] Dann alles andere in den Topf geben und mit Pfeffer, Salz und ggf Chilipulver würzen.
     - [ ] 20min kochen lassen; kann aber länger warmgehalten werden / durchgezogen werden.
 
-=== "Foto"
+## Foto
 
     TODO

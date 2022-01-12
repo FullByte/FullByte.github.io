@@ -1,5 +1,12 @@
 # Nußecken
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
 ## Klassische Nußecken
 
 === "Zutaten"
@@ -29,7 +36,7 @@
     - [ ] Sofort nach dem backen in Dreiecke schneiden.
     - [ ] Nach dem Erkalten die Ecken in die geschmolzene Kuvertüre tauchen oder nach Belieben mit Schokoguss überziehen.
 
-=== "Foto"
+## Foto
 
     TODO
 
@@ -54,6 +61,6 @@
     - [ ] Den Teig in eine gut gefettete Form geben und 60-65 Min. bei 175° C backen.
     - [ ] Nach dem Abkühlen mit Puderzucker bestreuen oder mit Schokoladenglasur bestreichen.
 
-=== "Foto"
+## Foto
 
     TODO

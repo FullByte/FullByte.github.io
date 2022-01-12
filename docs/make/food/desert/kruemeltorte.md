@@ -1,5 +1,14 @@
 # Krümeltorte
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | 45 Min      |
+| Menge | 12 Cupcakes |
+
+## Rezept
+
 === "Zutaten"
 
     - [ ] 350 g Dinkelmehl
@@ -23,6 +32,6 @@
     - [ ] Mandelstifte, Eigelb, Zucker und Wasser verrühren und oben drauf verteilen.
     - [ ] Bei 160° C ca. 50-60 Min. backen.
 
-=== "Foto"
+## Foto
 
     TODO

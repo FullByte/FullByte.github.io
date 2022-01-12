@@ -1,5 +1,14 @@
 # Italienischer Kartoffelsalat
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
 
     - [ ] 1 kg gekochte Kartoffeln
@@ -18,6 +27,6 @@
     - [ ] Mit Salz und Balsamico-Essig abschmecken.
     - [ ] Der Salat kann warm oder kalt gegessen werden und passt gut zu allem Gegrillten.
 
-=== "Foto"
+## Foto
 
     TODO

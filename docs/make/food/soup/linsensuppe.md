@@ -1,5 +1,12 @@
 # Linsensuppe
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
 ## Rezept 1
 
 === "Zutaten"
@@ -27,7 +34,7 @@
     - [ ] Alles ca. 20-30 Minuten köcheln lassen.
     - [ ] Würstchen oder Kasseler in mundgerechte Stücke schneiden, zufügen und im Eintopf nachziehen lassen. Mit Salz, Pfeffer, Muskat und Zucker abschmecken und fein geschnittene Petersilie zufügen.
 
-=== "Foto"
+## Foto
 
     TODO
 
@@ -51,7 +58,7 @@
     - [ ] In einem Topf zum Kochen bringen und etwas köcheln lassen.
     - [ ] Mit den gehackten Kräutern und Gewürzen abschmecken und am Besten noch warmes Brot dazu reichen.
 
-=== "Foto"
+## Foto
 
     TODO
 
@@ -75,6 +82,6 @@
     - [ ] Die geschälten Tomaten werden klein geschnitten, zu den Zwiebeln gegeben und zum Köcheln gebracht. Mit Kräutern pikant abschmecken.
     - [ ] Soja-Creme fresh mit Basilikum vermengen und bei Tisch je 1 Eßlöffel auf der Suppe verteilen.
 
-=== "Foto"
+## Foto
 
     TODO

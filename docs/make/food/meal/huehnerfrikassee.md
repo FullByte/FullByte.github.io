@@ -1,31 +1,48 @@
 # Hühnerfrikassee
 
-Hühnerfrikassee mit Möhren und Bulgur
+Hühnerfrikassee mit Möhren und Bulgur.
+
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | x Personen |
+
+## Rezept
 
 === "Zutaten"
 
-    - [ ] Bulgur 125 g
-    - [ ] Erbsen 200 g
-    - [ ] Hähnchenfilet 275 g
-    - [ ] Möhren 4 Stk
-    - [ ] Krauspetersilie 1 Bund
-    - [ ] Sahne 100 g
-    - [ ] Zitrone 12 Stk
-    - [ ] Zwiebel 1 Stk
+    Einkaufen:
+    
+    - [ ] 125g Bulgur
+    - [ ] 200g Erbsen
+    - [ ] 275g Hähnchenfilet
+    - [ ] 4x Möhren
+    - [ ] 1 Bund Krauspetersilie 
+    - [ ] 100g Sahne 
+    - [ ] 1x Zitrone
+
+    Ggf. schon vorhanden:
+
+    - [ ] 1x Zwiebel
     - [ ] Butter
     - [ ] Gemüsebrühe
     - [ ] Lorbeerblatt
     - [ ] Mehl
+
+    Gewürze:
+
     - [ ] Muskatpulver
     - [ ] Pfeffer
     - [ ] Pfefferkörner
     - [ ] Salz
-    - [ ] Thymian getrocknet
+    - [ ] Thymian
 
 === "Zubereitung"
 
     TODO
 
-=== "Foto"
+## Foto
 
     TODO

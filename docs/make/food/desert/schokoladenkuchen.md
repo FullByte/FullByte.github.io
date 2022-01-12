@@ -1,5 +1,14 @@
 # Schokoladenkuchen
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
 
     Einkaufen:
@@ -31,6 +40,6 @@
     - [ ] Teig in Form Giesen
     - [ ] Backform in Backofen schieben und 60min backen
 
-=== "Foto"
+## Foto
 
     TODO

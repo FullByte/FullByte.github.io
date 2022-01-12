@@ -1,22 +1,39 @@
 # Mango Kokos Currysuppe
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | x Personen |
+
+## Rezept
+
 === "Zutaten"
 
+    Einkaufen:
+    
     - [ ] 1 EL Butterschmalz
     - [ ] 1x Mango
+    - [ ] 2x Chilischote
+    - [ ] 400 ml Kokosmilch
+    - [ ] Limettensaft
+
+    Ggf. schon vorhanden:
+
     - [ ] 1x Zwiebel
     - [ ] 3x Knoblauchzehen
     - [ ] 1 EL Ingwer
-    - [ ] 2 EL Currypulver
-    - [ ] 2x Chilischote
     - [ ] 500 ml Gemüsebrühe
-    - [ ] 400 ml Kokosmilch
-    - [ ] 3x Pimentkörner
+
+    Gewürze:
+
     - [ ] 1x Lorbeerblatt
+    - [ ] 3x Pimentkörner
+    - [ ] 10g Currypulver
     - [ ] Brauner Zucker
     - [ ] Salz
     - [ ] Pfeffer
-    - [ ] Limettensaft
 
 === "Zubereitung"
 
@@ -26,6 +43,6 @@
     - [ ] Pimentkörner und Lorbeerblatt wieder entfernen und die Supper mit einem Mixstab pürieren.
     - [ ] Mit Salz, Pfeffer, Zucker und Limettensaft würzen.
 
-=== "Foto"
+## Foto
 
-    TODO
+TODO

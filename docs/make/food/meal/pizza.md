@@ -2,16 +2,33 @@
 
 Jeder kann Pizzabäcker sein, aber manche gehen in die Geschichte ein. Beispielsweise hat der Kanadier Sam Panopoulos vor einem halben Jahrhundert die "Pizza Hawaii" erfunden. Für Bekanntheit in Deutschland sorgte wohl Ananasfreund und Vater von „Toast Hawaii“, Clemens Wilmenrod. Trotzdem sind die weltweit meisten Fans in Australien anzutreffen. Alle Zutaten der Pizza Hawaii sind außerordentlich gesund und der regelmäßige Verzehr wird empfohlen.
 
-## Soße
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | 60 Min      |
+| Menge | 6 Personen |
+
+## Rezept
+
+### Soße
 
 === "Zutaten"
 
+    Einkaufen:
+
     - [ ] 425g Tomaten
-    - [ ] 100g Trockener Rotwein
     - [ ] 2x Schalotten
-    - [ ] 2x Knobluachzehen
-    - [ ] 5 EL Olivenöl nativ
+
+    Ggf. schon vorhanden:
+
+    - [ ] 100 ml Trockener Rotwein
+    - [ ] 2x Knoblauchzehen
+    - [ ] 5 EL Olivenöl
     - [ ] 4 EL Tomatenmark
+
+    Gewürze:
+
     - [ ] 4 EL Oregano
     - [ ] 3 TL Salz
     - [ ] 1 TL Pfeffer
@@ -25,20 +42,24 @@ Jeder kann Pizzabäcker sein, aber manche gehen in die Geschichte ein. Beispiels
     - [ ] Bei leichter Hitze 30min köcheln lassen bis von der Konsistenz gut ist (läuft nicht von Teig)
     - [ ] Pizzasauce kann man gut in großen Mengen vorbereiten und in Portionen abgepackt im Tiefkühlschrank lagern.
 
-=== "Foto"
-
-    TODO
-
-## Teig
+### Teig
 
 === "Zutaten"
 
+    Einkaufen:
+
     - [ ] 20g frische Hefe (halbe Packung)
-    - [ ] 230g weiches Wasser (bei ca. 35-40°C)
-    - [ ] 10 g Zucker (zwei Röhrchen)
     - [ ] 500g „Tipo 00“ Mehl (bzw. speziell gekennzeichnetes Pizzamehl)
-    - [ ] 20g kaltgepresstes und „Extra Vergine“ Olivenöl
-    - [ ] 3g gemahlenes Meersalz
+
+    Ggf. schon vorhanden:
+
+    - [ ] 230g Wasser
+    
+    Gewürze:
+
+    - [ ] 10 g Zucker
+    - [ ] 20g Olivenöl
+    - [ ] 3g Salz
 
 === "Zubereitung"
 
@@ -63,17 +84,18 @@ Jeder kann Pizzabäcker sein, aber manche gehen in die Geschichte ein. Beispiels
     Der Teig ist jetzt schön aufgegangen und jetzt drücken wir ihn wieder platt. Mit der Menge an Teig sollte es möglich sein ein großes Backblech komplett zu füllen oder zwei Pizzen mit einem Durchmesser von 20cm zu machen.
     Es kann hilfreich sein ein wenig Mehl auf die Oberfläche zu streuen auf der der Teig ausgerollt wird. Man sollte ein wenig über die Ränder hinweg ausrollen und anschließend die Ränder umknicken um einen Pizzarand zu schaffen. Der Pizzarand ist praktisch beim Belegen und Backen, damit nichts verläuft und ist, sofern man mit den Händen isst, hilfreich um die Pizza zu verzehren.
 
-=== "Foto"
-
-    TODO
-
 ## Belag
 
 === "Zutaten"
 
+    Einkaufen:
+
     - [ ] 300g Ananas
     - [ ] 200g Kochschinken
     - [ ] 300g Käse
+
+    Gewürze:
+
     - [ ] Oregano
     - [ ] Basilikum
     - [ ] Thymian
@@ -101,6 +123,6 @@ Jeder kann Pizzabäcker sein, aber manche gehen in die Geschichte ein. Beispiels
     - [ ] Mehl auf die Pizzaschaufel (Alternative: Hartweizengrieß oder Nudelmehl) damit die Pizza gut auf dem Pizzastein rutscht.
     - [ ] Nachdem die Pizza aus dem Ofen gekommen ist, ist es empfehlenswert Oregano, Basilikum, Thymian und etwas Chilipulver über die Pizza zu streuen. Manche Gewürzmischungen für Pizza sind auch nicht schlecht :) Die Pizza kann nun serviert werden.
 
-=== "Foto"
+## Foto
 
-    TODO
+TODO

@@ -1,12 +1,24 @@
 # Hackfleisch Kichererbsen Pfanne
 
-Zutaten für 4 Personen.
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | 45 Min      |
+| Menge | 4 Personen |
+
+## Rezept
 
 === "Zutaten"
+
+    Einkaufen:
 
     - [ ] 500 g Rinder Hackfleisch
     - [ ] 400 g Kichererbsen
     - [ ] 200 g Schafskäse
+
+    Ggf. schon vorhanden:
+
     - [ ] 75 g Tomatenmark
     - [ ] 1x Zwiebel
     - [ ] 3x Paprika
@@ -14,6 +26,9 @@ Zutaten für 4 Personen.
     - [ ] 4x Knoblauchzehen
     - [ ] 420 ml Wasser
     - [ ] 25 ml Olivenöl
+
+    Gewürze:
+
     - [ ] 80 g Petersilie
     - [ ] Salz
     - [ ] Pfeffer
@@ -32,6 +47,6 @@ Zutaten für 4 Personen.
     - [ ] W#hrenddessen Schafskäse und Petersilie kleinhacken
     - [ ] Essen servieren, Schafskäse drauf und mit Petersilie bestreuen.
 
-=== "Foto"
+## Foto
 
-    ![hackfleisch-kichererbsen-pfanne](_hackfleisch-kichererbsen-pfanne.jpg)
+![hackfleisch-kichererbsen-pfanne](_hackfleisch-kichererbsen-pfanne.jpg)

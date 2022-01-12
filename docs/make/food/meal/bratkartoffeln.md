@@ -1,13 +1,24 @@
 # Bratkartoffeln
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
+
+    Einkaufen:
 
     - [ ] Kartoffeln
     - [ ] Speck
     - [ ] Zwiebeln
     - [ ] Knoblauch
 
-    Optional:
+    Optional/Beilagen:
 
     - [ ] Zucchini
     - [ ] Lauch
@@ -17,9 +28,9 @@
     
     Gewürze:
     
-      - [ ] Majoran
-      - [ ] Petersilie
-      - [ ] Schnittlauch 
+    - [ ] Majoran
+    - [ ] Petersilie
+    - [ ] Schnittlauch 
 
 === "Zubereitung"
 
@@ -34,6 +45,6 @@
     - [ ] In einer weitere Pfanne können die Beilagen vorberitet werden wie z.B. Speck, Zwiebeln, Sucuk, Paprika, Zucchini, Lauch, Knoblauch, Feta, Ei und Peperoni.
     - [ ] Anschließend Bratkartoffeln und Beilagen zusammen servieren.
 
-=== "Foto"
+## Foto
 
     TODO

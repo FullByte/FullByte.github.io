@@ -1,14 +1,31 @@
 # Kartoffelauflauf
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | x Personen |
+
+## Rezept
+
 === "Zutaten"
 
+    Einkaufen:
+
     - [ ] 750 g Kartoffeln
-    - [ ] 50 g Margarine
     - [ ] 30 g Dinkelmehl
-    - [ ] 750 g Gemüsebrühe
     - [ ] 100 g Schafsgouda
     - [ ] geriebene Muskatnuss
-    - [ ] 1 Prise Zucker
+
+    Ggf. schon vorhanden:
+
+    - [ ] 50 g Margarine
+    - [ ] 750 g Gemüsebrühe
+
+    Gewürze:
+
+    - [ ] 10g Zucker
 
 === "Zubereitung"
 
@@ -18,6 +35,6 @@
     - [ ] Alles zum Kochen bringen und ca. 3 Min. köcheln lassen. 
     - [ ] Dann alles in eine feuerfeste Form geben, mit dem restlichen Käse bestreuen und im Backofen etwa 30-35 Min. bei ca. 180° C (Heißluft) goldbraun backen.
 
-=== "Foto"
+## Foto
 
     TODO

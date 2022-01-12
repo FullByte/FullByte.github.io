@@ -1,5 +1,14 @@
 # Apfelwaffeln
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
 
     - [ ] 150 g Margarine
@@ -24,6 +33,6 @@
     - [ ] Mit Zimt abschmecken und die kleingeschnittenen Äpfel zugeben. Im heißen, gefetteten Waffeleisen nacheinander goldbraun backen.
     - [ ] Mit Puderzucker bestreuen und noch warm genießen.
 
-=== "Foto"
+## Foto
 
     TODO

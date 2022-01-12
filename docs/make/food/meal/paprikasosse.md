@@ -1,16 +1,33 @@
 # Paprikasoße mit Reis
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
 
-    - [ ] je 1 rote grüne und gelbe Paprikaschote
-    - [ ] 1 Zwiebel
-    - [ ] 400 g Thür. Mett
-    - [ ] 1 kleine Zucchini
-    - [ ] 500 ml Gemüsebrühe
-    - [ ] 2 Essl. Margarine
+    Einkaufen:
+    
+    - [ ] 3x Paprikaschoten (rot, grün, gelb)
+    - [ ] 400g Thüringer Mett
+    - [ ] 1x kleine Zucchini
     - [ ] Kartoffelmehl zum Binden
-    - [ ] 250 g Basmati Reis
-    - [ ] 21 Wasser
+    - [ ] 250g Basmati Reis
+
+    Ggf. schon vorhanden:
+
+    - [ ] 500ml Gemüsebrühe
+    - [ ] 15g Margarine    
+    - [ ] 1x Zwiebel
+    - [ ] 2L Wasser
+
+    Gewürze:
+
     - [ ] Salz
     - [ ] Zucker
     - [ ] Paprikapulver
@@ -26,6 +43,6 @@
     - [ ] Nun die gegarte Paprikasoße je nach Geschmack mit Paprikapulver und evtl. etwas Zucker und Salz abschmecken.
     - [ ] Kartoffelmehl mit etwas kaltem Wasser in einer Tasse verrühren, unter die Soße geben und nochmals aufkochen lassen. Den fertigen Reis dazu servieren.
 
-=== "Foto"
+## Foto
 
     TODO

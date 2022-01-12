@@ -1,14 +1,26 @@
 # Kartoffel Mangold Gratin
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | x Personen |
+
+## Rezept
+
 === "Zutaten"
 
-    - [ ] 2 Kopf Mangold (nur die grünen Blätter)
-    - [ ] 3 große Kartoffeln
-    - [ ] 2 Knoblauchzehen
-    - [ ] 2 Eier
+    - [ ] 2 Kopf Mangold (nur die grünen Blätter)    
     - [ ] 150g Joghurt
-    - [ ] 50ml Milch
     - [ ] 200g Schafskäse
+
+    Ggf. schon vorhanden:
+
+    - [ ] 2 Knoblauchzehen
+    - [ ] 3 große Kartoffeln
+    - [ ] 2 Eier    
+    - [ ] 50ml Milch 
 
 === "Zubereitung"
 
@@ -19,6 +31,6 @@
     - [ ] Auf den Mangold den restlichen Schafskäse geben und alles mit der Eier-Joghurt-Milch übergießen.
     - [ ] Bei 225°C 20 Minuten im Ofen backen.
 
-=== "Foto"
+## Foto
 
     TODO

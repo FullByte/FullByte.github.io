@@ -2,6 +2,15 @@
 
 Für trockene Müsliriegel das Backobst weglassen.
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
 
     - [ ] 200 g Haferflocken
@@ -23,6 +32,6 @@ Für trockene Müsliriegel das Backobst weglassen.
     - [ ] Die Masse auf ein Kuchenblech geben und mit einer Teigrolle fest zusammendrücken.
     - [ ] Bei 150° C im Backofen ca. 10 Min. backen. Erst nach dem Erkalten schneiden.
 
-=== "Foto"
+## Foto
 
     TODO

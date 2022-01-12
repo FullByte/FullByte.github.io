@@ -4,6 +4,15 @@ Hokkaidokürbisse muss man nicht schälen.
 
 Optional Garnelen als Einlage hinzufügen.
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
 
     - [ ] 800g Hokkaidokürbis
@@ -26,6 +35,6 @@ Optional Garnelen als Einlage hinzufügen.
     - [ ] Die Kokosmilch unterrühren, mit Salz, Pfeffer, Sojasauce und Zitronensaft abschmecken und noch mal erwärmen.
     - [ ] Mit Korianderblättchen garniert servieren.
 
-=== "Foto"
+## Foto
 
     TODO

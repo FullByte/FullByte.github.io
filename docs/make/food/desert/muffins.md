@@ -1,5 +1,14 @@
 # Muffins
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
 
     - [ ] 200 g Margarine
@@ -22,6 +31,6 @@
     - [ ] Die "belegten" Muffins in den Backofen schieben und bei 150° C ca. 20 Min. goldbraun backen. Mit einer Stricknadel testen, ob der Teig noch klebt.
     - [ ] Jetzt kann je nach Lust und Laune auf die Muffins ein Schokoladen-, ein Zitronen oder Zuckerguss gestrichen werden, einfacher und mindestens genauso lecker ist das Bestäuben mit Puderzucker.
 
-=== "Foto"
+## Foto
 
     TODO

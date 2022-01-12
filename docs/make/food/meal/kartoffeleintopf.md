@@ -1,13 +1,20 @@
 # Kartoffeleintopf
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | x Personen |
+
+## Rezept
+
 === "Zutaten"
 
-    - [ ] 2 Zwiebeln
-    - [ ] 2 Knoblauchzehen
+    Einkaufen:
+
     - [ ] 150g Schweine Schmalz (alt. Griebenschmalz)
-    - [ ] 20g Öl
     - [ ] 600g Mettenden
-    - [ ] 2000g Wasser
     - [ ] 1500g Kartoffeln
     - [ ] 350g Knollensellerie (eine Hälfte)
     - [ ] 350g Steckrüben (eine Hälfte)
@@ -16,11 +23,21 @@
     - [ ] 150g Staudensellerie
     - [ ] 150g Porree
     - [ ] 300g Möhren
-    - [ ] 15g Pfeffer
-    - [ ] 20g Salz
-    - [ ] 30g Gemüsebrühe
+
+    Ggf. schon vorhanden:
+
+    - [ ] 2 Zwiebeln
+    - [ ] 2 Knoblauchzehen
+    - [ ] 20g Öl
+    - [ ] 2000g Wasser
     - [ ] 100g Petersilie
     - [ ] 1 Bund Schnittlauch
+    - [ ] 30g Gemüsebrühe
+
+    Gewürze:
+    
+    - [ ] 15g Pfeffer
+    - [ ] 20g Salz
     - [ ] 10g Muskatnuss
     - [ ] 10g Salatkräuter
     - [ ] 2x Lorbeerblatt
@@ -35,6 +52,6 @@
     - [ ] Restliche Zutaten hinzugeben und umrühren.
     - [ ] Insgesamt sollte es ca. 40-50min kochen.
 
-=== "Foto"
+## Foto
 
-    TODO
+TODO

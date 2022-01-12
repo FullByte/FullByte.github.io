@@ -1,5 +1,14 @@
 # Tomatensuppe
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
 
     - [ ] 600g Tomaten
@@ -24,6 +33,6 @@
     - [ ] Restliche Zutaten in den Topf und umrühren und 30 min Kochen
     - [ ] In Schale servieren und Petersilie oben drauf legen.
 
-=== "Foto"
+## Foto
 
     TODO

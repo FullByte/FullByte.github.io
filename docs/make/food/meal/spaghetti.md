@@ -1,18 +1,39 @@
-# Spaghetti Bolognese
+# Spaghetti
+
+## Bolognese
+
+### Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | 30 Min      |
+| Menge | xx Personen |
+
+### Rezept
 
 === "Zutaten"
 
+    Einkaufen:
+    
     - [ ] 1 kg geschälte Tomaten
-    - [ ] 3-4 Mohrrüben
-    - [ ] 2 1/2 Gemüsebrühwürfel
+    - [ ] 3 Möhren
+    - [ ] 500 g Spaghetti
+    - [ ] 300 g Thüriger Mett
+
+    Ggf. schon vorhanden:
+
+    - [ ] 1 Knoblauchzehe
+    - [ ] 2 Gemüsebrühwürfel
+    - [ ] 2 Liter Wasser
+
+    Gewürze:
+
     - [ ] Basilikum
     - [ ] Bohnenkraut
-    - [ ] 300 g Thür. Mett
-    - [ ] etwas Zimt und Zucker
-    - [ ] Salz,Pfeffer
-    - [ ] 1-2 Knoblauchzehen
-    - [ ] 500 g Dinkelspaghetti
-    - [ ] 2 1 Wasser,etwas Salz
+    - [ ] Zimt
+    - [ ] Zucker
+    - [ ] Salz
+    - [ ] Pfeffer
 
 === "Zubereitung"
 
@@ -23,6 +44,31 @@
     - [ ] Für die Spaghetti das Wasser kochen lassen, das Salz hinzufügen und die Nudeln hineingeben.
     - [ ] Wenn die Spaghetti fast gar sind, das Wasser abgießen und in ein wenig Olivenöl schwenken und servieren.
 
-=== "Foto"
+### Foto
 
     TODO
+
+## Travel Tuna
+
+Eignet sich besonders gut für unterwegs weil es einfach ist und alle Zutaten ungekühlt lange halten.
+
+### Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | 15 Min      |
+| Menge | 2 Personen |
+
+### Rezept
+
+=== "Zutaten"
+
+    - [ ] TODO
+
+=== "Zubereitung"
+
+    - [ ] TODO
+
+### Foto
+
+TODO

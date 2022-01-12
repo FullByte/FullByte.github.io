@@ -1,5 +1,14 @@
 # Zimtsterne
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
 
     - [ ] 375 g Mandeln
@@ -16,6 +25,6 @@
     - [ ] Auf ein mit Backpapier belegtes Backblech legen und bei 150° C Heißluft 20-25 Min. backen.
     - [ ] Puderzucker und Zitronensaft mischen und auf die Sterne pinseln.
 
-=== "Foto"
+## Foto
 
     TODO

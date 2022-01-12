@@ -1,20 +1,37 @@
 # Hühnchen Curry
 
+## Stats
+
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | xx Min      |
+| Menge | xx Personen |
+
+## Rezept
+
 === "Zutaten"
+
+    Einkaufen:
 
     - [ ] 700 g Putenbrust (geschnetzeltes)
     - [ ] 300 g Champignons
-    - [ ] 1,2 L Gemüsebrühe
     - [ ] 200 g geriebener Gouda
+
+    Ggf. schon vorhanden:
+
+    - [ ] 1,5L Gemüsebrühe
     - [ ] 100 g Reis
     - [ ] 2 Knoblauchzehen
-    - [ ] Olivenöl
-    - [ ] Rappsöl
-    - [ ] Salz
-    - [ ] Pfeffer
-    - [ ] Curry
-    - [ ] Zucker
-    - [ ] Mehl
+    - [ ] 15g Olivenöl
+    - [ ] 10g Rappsöl
+
+    Gewürze:
+
+    - [ ] 5g Salz
+    - [ ] 5g Pfeffer
+    - [ ] 5g Curry
+    - [ ] 10g Zucker
+    - [ ] 10g Mehl
 
 === "Zubereitung"
 
@@ -25,6 +42,6 @@
     - [ ] Champignons ebenfalls dazugeben sodass nun alles in einem Topf ist. 
     - [ ] Geriebenen Gouda dazugeben und alles zusammen köcheln lassen.
 
-=== "Foto"
+## Foto
 
     ![chicken-curry](_chicken-curry.jpg)

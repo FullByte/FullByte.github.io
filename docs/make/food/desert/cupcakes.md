@@ -1,8 +1,13 @@
-# Cupcake
+# Himbeer-Joghurt Cupcakes
 
-Rezept für 12 Himbeer-Joghurt Cupcakes.
+## Stats
 
-## Cupcakes
+| Was   | Wert        |
+|-------|-------------|
+| Zeit  | 45 Min      |
+| Menge | 12 Cupcakes |
+
+## Rezept
 
 === "Zutaten"
 
@@ -23,7 +28,7 @@ Rezept für 12 Himbeer-Joghurt Cupcakes.
     - [ ] Den Teig in die Förmchen füllen und pro Cupcake 3 gefrorene Himbeeren in die Mitte unter den Teig drücken.
     - [ ] Dann 20 Minuten backen lassen und währenddessen das Frosting machen.
 
-=== "Foto"
+## Foto
 
     TODO
 
@@ -43,6 +48,6 @@ Rezept für 12 Himbeer-Joghurt Cupcakes.
     - [ ] Das Frosting in den Kühlschrank stellen falls es nicht sofort benötigt wird.
     - [ ] Sobald die Cupcakes fertig sind das frosting auf die Cupcakes verteilen und eine frische Himbeere oben drauf setzen.
 
-=== "Foto"
+## Foto
 
     TODO
