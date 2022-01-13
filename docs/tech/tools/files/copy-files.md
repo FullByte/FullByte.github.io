@@ -104,12 +104,17 @@ cd local_folder_to_upload && find . -exec curl -T {} 'http://your.server/uploads
 | Download      |       |
 | Install       |       |
 
+### Download a file
+
+Download a file: ```wget https://0xfab1.net/CNAME -O CNAME```
+Download a list of files ```wget -i urls.txt -N -e robots=off --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0"```
+
 ### Download all files from website
 
 Generally, this can be blocked but works in most cases. To avoid a few things:
 
 - Ignore **robots.txt** blocking the download by using```-e robots=off```
-- Add **user-agent**; either one that guarantees a math e.g.```--user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"``` or just the one you are using atm e.g.```Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0``` (Firefox: about:config --> devtools.responsive.userAgent)
+- Add **user-agent**; either one that guarantees a math e.g.```--user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"``` or just the one you are using atm e.g.```--user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0"``` (Firefox: about:config --> devtools.responsive.userAgent)
 - **Random service blocks**: Try removing some options as they may the reason access is blocked e.g.```-N``` blocked by AWS S3.
 - Adding a **referrer** may help. Figure out what you need by checking why it works in the browser e.g.```wget --referer='http://example.net' http://example.com/```
 - Checking the details of the **HTTP status code** you get as an error may help resolve the issue too: <https://en.wikipedia.org/wiki/List_of_HTTP_status_codes>
