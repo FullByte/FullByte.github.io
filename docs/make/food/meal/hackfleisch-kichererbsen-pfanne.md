@@ -16,13 +16,13 @@
     - [ ] 500 g Rinder Hackfleisch
     - [ ] 400 g Kichererbsen
     - [ ] 200 g Schafskäse
+    - [ ] 3x Paprika
 
     Ggf. schon vorhanden:
 
     - [ ] 75 g Tomatenmark
     - [ ] 1x Zwiebel
-    - [ ] 3x Paprika
-    - [ ] 1x Chilli
+    - [ ] 1x Chilli oder Chillipulver
     - [ ] 4x Knoblauchzehen
     - [ ] 420 ml Wasser
     - [ ] 25 ml Olivenöl
