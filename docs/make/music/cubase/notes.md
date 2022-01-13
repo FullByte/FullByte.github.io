@@ -14,6 +14,9 @@ Change octave: Group -> Choose one of the blue buttons
 
 [Check for grace_period](https://o.steinberg.net/en/support/grace_period.html) to upgrade for free to new version.
 
+- eq: frequency
+- analyzer: supervision
+
 ### Serum
 
 TODO

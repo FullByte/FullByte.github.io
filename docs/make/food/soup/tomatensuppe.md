@@ -11,19 +11,27 @@
 
 === "Zutaten"
 
+    Einkaufen:
+
     - [ ] 600g Tomaten
     - [ ] 400g gestöckelte Tomaten
-    - [ ] 3 Chilis
-    - [ ] 5g Thymian
-    - [ ] 20 Salz
-    - [ ] 1 Zwiebel
+    - [ ] 3x Chilis
+    - [ ] 200ml Sahne
+
+    Ggf. schon vorhanden:
+
+    - [ ] 1x Zwiebel
     - [ ] 10g Butter
     - [ ] 300g Wasser
     - [ ] 20g Zucker
     - [ ] 5g Mehl
+
+    Gewürze:
+
+    - [ ] 5g Thymian
+    - [ ] 20 Salz
     - [ ] 10g Salz
     - [ ] 20g Pfeffer
-    - [ ] 200ml Sahne
 
 === "Zubereitung"
 

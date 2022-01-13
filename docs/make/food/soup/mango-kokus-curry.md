@@ -4,8 +4,8 @@
 
 | Was   | Wert        |
 |-------|-------------|
-| Zeit  | xx Min      |
-| Menge | x Personen |
+| Zeit  | 35 Min      |
+| Menge | 4 Personen |
 
 ## Rezept
 
@@ -13,36 +13,36 @@
 
     Einkaufen:
     
-    - [ ] 1 EL Butterschmalz
-    - [ ] 1x Mango
+    - [ ] 800ml Kokosmilch
+    - [ ] 2x Mango
+    - [ ] 15g Limettensaft
+    - [ ] 15g Butterschmalz
     - [ ] 2x Chilischote
-    - [ ] 400 ml Kokosmilch
-    - [ ] Limettensaft
 
     Ggf. schon vorhanden:
 
-    - [ ] 1x Zwiebel
-    - [ ] 3x Knoblauchzehen
-    - [ ] 1 EL Ingwer
-    - [ ] 500 ml Gemüsebrühe
+    - [ ] 2x Zwiebel
+    - [ ] 5x Knoblauchzehen
+    - [ ] 20g Ingwer
+    - [ ] 1L Gemüsebrühe
 
     Gewürze:
 
-    - [ ] 1x Lorbeerblatt
-    - [ ] 3x Pimentkörner
-    - [ ] 10g Currypulver
-    - [ ] Brauner Zucker
-    - [ ] Salz
-    - [ ] Pfeffer
+    - [ ] 2x Lorbeerblatt
+    - [ ] 6x Pimentkörner
+    - [ ] 20g Currypulver
+    - [ ] 15g Brauner Zucker
+    - [ ] 15g Salz
+    - [ ] 15g Pfeffer
 
 === "Zubereitung"
 
-    - [ ] Butterschmalz in einem Topf erhitzen und Zwiebel, Knoblauch, Chili, Ingwer und Curry darin anbraten.
-    - [ ] Mit der Gemüsebrühe ablöschen und Pimentkörner, Lorbeerblatt und Mango zugeben und etwas reduzieren lassen.
-    - [ ] Kokosmilch zugießen und ca. 15 Minuten köcheln lassen.
-    - [ ] Pimentkörner und Lorbeerblatt wieder entfernen und die Supper mit einem Mixstab pürieren.
+    - [ ] Butterschmalz in einem Topf erhitzen und erst die Zwiebel dann Knoblauch, Chili, Ingwer und Curry darin anbraten.
+    - [ ] Mit der Gemüsebrühe ablöschen und Pimentkörner, Lorbeerblatt und die kleingeschnitte Mango zugeben.
+    - [ ] Kokosmilch zugießen und 20 Minuten köcheln lassen.
+    - [ ] Pimentkörner und Lorbeerblatt wieder entfernen und die Suppe pürieren.
     - [ ] Mit Salz, Pfeffer, Zucker und Limettensaft würzen.
 
 ## Foto
 
-TODO
+![mango-kokus-curry](_mango-kokus-curry.jpg)

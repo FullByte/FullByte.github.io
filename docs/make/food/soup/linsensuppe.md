@@ -11,21 +11,30 @@
 
 === "Zutaten"
 
-    - [ ] 250 g Rote Linsen bzw Berglinsen
-    - [ ] 1 Zwiebel(n)
-    - [ ] 2 große Möhre(n)
-    - [ ] 2 große Kartoffel(n)
-    - [ ] 1 Stück(e) Knollensellerie
-    - [ ] 1 Stück(e) Speckschwarte
+    Einkaufen:
+
+    - [ ] 250g Rote Linsen bzw Berglinsen
+    - [ ] 2x Möhre
+    - [ ] 2x Kartoffel
+    - [ ] 1x Knollensellerie
+    - [ ] 1x Speckschwarte
+    - [ ] 4x Grobe Schweinswurst oder Kasselerscheiben
+
+    Ggf. schon vorhanden:
+
+    - [ ] 1x Zwiebel
     - [ ] 2 EL Rapsöl
-    - [ ] 1 Schuss Essig
-    - [ ] 1 EL Senf
+    - [ ] 5g Essig
+    - [ ] 10g Senf
     - [ ] 1 Liter Gemüsebrühe
-    - [ ] 4 Würstchen, herzhafte und/oder Kasselerscheiben
-    - [ ] Salz und Pfeffer
+
+    Gewürze:
+
+    - [ ] Salz
+    - [ ] Pfeffer
     - [ ] Zucker
     - [ ] Muskat
-    - [ ] Petersilie, fein geschnitten
+    - [ ] Petersilie
 
 === "Zubereitung"
 
@@ -42,15 +51,25 @@
 
 === "Zutaten"
 
-    - [ ] 1-2 Knoblauchzehen
-    - [ ] 2-2 1/2 Gemüsebrühwürfel
-    - [ ] 3-6 Mohrrüben
+    Einkaufen:
+
+    - [ ] 1kg geschälte Tomaten
+    - [ ] 4x Möhren
+
+    Ggf. schon vorhanden:
+
+    - [ ] 1x Knoblauchzehen
+    - [ ] 2x Gemüsebrühwürfel
+
+    Gewürze:
+
     - [ ] Bohnenkraut
     - [ ] Basilikum
     - [ ] Kräuter der Provence
-    - [ ] Salz, Peffer
-    - [ ] Zimt, Zucker
-    - [ ] 1 kg geschälte Tomaten
+    - [ ] Salz
+    - [ ] Peffer
+    - [ ] Zimt
+    - [ ] Zucker
 
 === "Zubereitung"
 
@@ -60,21 +79,32 @@
 
 ## Foto
 
-    TODO
+TODO
 
 ## Rezept 3
 
 === "Zutaten"
 
-    - [ ] 1-5 Zwiebeln, je nach Geschmack
-    - [ ] Salz, Peffer
-    - [ ] Basilikum, Oregano,
+    Einkaufen:
+
+    - [ ] 2x Zwiebeln
+    - [ ] 1kg geschälte Tomaten
+    - [ ] 150g Creme fresh
+    - [ ] 15g frisches Basilikum
+
+    Ggf. schon vorhanden:
+
+    - [ ] 10g Olivenöl
+
+    Gewürze:
+
+    - [ ] Salz
+    - [ ] Peffer
+    - [ ] Basilikum
+    - [ ] Oregano,
     - [ ] Kräuter der Provence
-    - [ ] Bohnenkraut,
+    - [ ] Bohnenkraut
     - [ ] Italialienische Kräuter
-    - [ ] 1 kg geschälte Tomaten
-    - [ ] Olivenöl zum Anbraten
-    - [ ] evtl. Soja-Creme fresh und frisches Basilikum
 
 === "Zubereitung"
 
