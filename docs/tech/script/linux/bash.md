@@ -11,27 +11,27 @@ Some great helpers:
 
 | original | alternative                                                                                                                                                                                                                                                                        |
 |----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| top      | [btop](https://github.com/aristocratos/btop), [gtop](https://github.com/aksakalli/gtop), [htop](https://github.com/htop-dev/htop/), [tiptop](https://github.com/nschloe/tiptop), [bottom](https://github.com/ClementTsang/bottom), [glances](https://github.com/nicolargo/glances), [bpytop](https://github.com/aristocratos/bpytop) |
-| tar      | [asar](https://github.com/electron/asar)                                                                                                                                                                                                                                           |
+| ack      | [ag](https://github.com/ggreer/the_silver_searcher)                                                                                                                                                                                                                                |
 | cat      | [bat](https://github.com/sharkdp/bat)                                                                                                                                                                                                                                              |
-| diff | git + [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy), [delta](https://github.com/dandavison/delta), [diffoscope](https://diffoscope.org/), [icdiff](https://github.com/jeffkaufman/icdiff)                                                                                                                                                                     |
-| ls       | [exa](https://github.com/ogham/exa), [lsd](https://github.com/Peltoche/lsd)                                                                                                                                                                                                        |
-| du       | [duf](https://github.com/muesli/duf), [dust](https://github.com/bootandy/dust), [space-hogs](https://www.npmjs.com/package/space-hogs)                                                                                                                                                                                                     |
+| cd       | [zoxide](https://github.com/ajeetdsouza/zoxide)                                                                                                                                                                                                                                    |
+| curl     | [curlie](https://github.com/rs/curlie)                                                                                                                                                                                                                                             |
 | curl     | [curlx](https://github.com/shivkanthb/curlx)                                                                                                                                                                                                                                       |
-| tree     | [broot](https://github.com/Canop/broot)                                                                                                                                                                                                                                            |
+| cut      | [choose](https://github.com/theryangeary/choose)                                                                                                                                                                                                                                   |
+| diff | git + [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy), [delta](https://github.com/dandavison/delta), [diffoscope](https://diffoscope.org/), [icdiff](https://github.com/jeffkaufman/icdiff)                                                                                                                                                                     |
+| dig      | [dog](https://github.com/ogham/dog)                                                                                                                                                                                                                                                |
+| du       | [duf](https://github.com/muesli/duf), [dust](https://github.com/bootandy/dust), [space-hogs](https://www.npmjs.com/package/space-hogs)                                                                                                                                                                                                     |
 | find     | [fd](https://github.com/sharkdp/fd)                                                                                                                                                                                                                                                |
 | grep     | [ripgrep](https://github.com/BurntSushi/ripgrep), [ugrep](https://github.com/Genivia/ugrep), [sift](https://github.com/svent/sift)                                                                                                                                                                                                                                   |
-| ack      | [ag](https://github.com/ggreer/the_silver_searcher)                                                                                                                                                                                                                                |
 | history  | [mcfly](https://github.com/cantino/mcfly)                                                                                                                                                                                                                                          |
-| cut      | [choose](https://github.com/theryangeary/choose)                                                                                                                                                                                                                                   |
-| sed      | [sd](https://github.com/chmln/sd)                                                                                                                                                                                                                                                  |
+| locate   | [plocate](https://git.sesse.net/?p=plocate)                                                                                                                                                                                                                                        |
+| ls       | [exa](https://github.com/ogham/exa), [lsd](https://github.com/Peltoche/lsd)                                                                                                                                                                                                        |
 | man      | [tldr](https://github.com/tldr-pages/tldr), [cheet](https://github.com/cheat/cheat)                                                                                                                                                                                                |
 | ping     | [gping](https://github.com/orf/gping), [prettyping](https://github.com/denilsonsa/prettyping)                                                                                                                                                                                                                                              |
 | ps       | [procs](https://github.com/dalance/procs)                                                                                                                                                                                                                                          |
-| curl     | [curlie](https://github.com/rs/curlie)                                                                                                                                                                                                                                             |
-| cd       | [zoxide](https://github.com/ajeetdsouza/zoxide)                                                                                                                                                                                                                                    |
-| dig      | [dog](https://github.com/ogham/dog)                                                                                                                                                                                                                                                |
-| locate   | [plocate](https://git.sesse.net/?p=plocate)                                                                                                                                                                                                                                        |
+| sed      | [sd](https://github.com/chmln/sd)                                                                                                                                                                                                                                                  |
+| tar      | [asar](https://github.com/electron/asar)                                                                                                                                                                                                                                           |
+| top      | [btop](https://github.com/aristocratos/btop), [gtop](https://github.com/aksakalli/gtop), [htop](https://github.com/htop-dev/htop/), [tiptop](https://github.com/nschloe/tiptop), [bottom](https://github.com/ClementTsang/bottom), [glances](https://github.com/nicolargo/glances), [bpytop](https://github.com/aristocratos/bpytop) |
+| tree     | [broot](https://github.com/Canop/broot)                                                                                                                                                                                                                                            |
 |sort \| uniq| [huniq](https://github.com/koraa/huniq)|
 
 ### Alias examples
@@ -54,23 +54,23 @@ JSON
 
 Other:
 
-- [fzf](https://github.com/junegunn/fzf) is a command-line fuzzy finder.
-- [hexyl](https://github.com/sharkdp/hexyl) is a hex viewer.
-- [hyperfine](https://github.com/sharkdp/hyperfine) is a command-line benchmarking tool.
-- [httpie](https://github.com/httpie/httpie) is a command-line HTTP client for the API era.
-- [xd](https://github.com/ducaale/xh) is a tool for sending HTTP requests.
-- [fuck](https://github.com/nvbn/thefuck) correct previously failed command inputs.
-- [nnn](https://github.com/jarun/nnn) is a commandline file manager.
+- [bandwhich](https://github.com/imsnif/bandwhich) is a terminal bandwidth utilization tool
 - [bmon](https://github.com/tgraf/bmon) is a bandwidth monitor and rate estimator.
 - [bv](http://www.ivarch.com/programs/pv.shtml) is a terminal-based tool for monitoring the progress of data through a pipeline.
-- [watchexec](https://github.com/watchexec/watchexec) executes commands in response to file modifications.
-- [pathpicker](https://github.com/facebook/PathPicker) (fpp) accepts a wide range of input and presents you with a nice UI to select which files you're interested in.  
-- [tokei](https://github.com/XAMPPRocky/tokei) counts your code quickly and presents stats.
-- [starship](https://github.com/starship/starship) creates a customizable prompt for any shell.
-- [loop](https://github.com/Miserlou/Loop) is UNIX's missing `loop` command.
-- [viu](https://github.com/atanunq/viu) allows you to view images in the terminal.
-- [bandwhich](https://github.com/imsnif/bandwhich) is a terminal bandwidth utilization tool
 - [colorls](https://github.com/athityakumar/colorls) beautifies the terminal's ls command, with color and font-awesome icons.
+- [fuck](https://github.com/nvbn/thefuck) correct previously failed command inputs.
+- [fzf](https://github.com/junegunn/fzf) is a command-line fuzzy finder.
+- [hexyl](https://github.com/sharkdp/hexyl) is a hex viewer.
+- [httpie](https://github.com/httpie/httpie) is a command-line HTTP client for the API era.
+- [hyperfine](https://github.com/sharkdp/hyperfine) is a command-line benchmarking tool.
+- [loop](https://github.com/Miserlou/Loop) is UNIX's missing `loop` command.
+- [nnn](https://github.com/jarun/nnn) is a commandline file manager.
+- [pathpicker](https://github.com/facebook/PathPicker) (fpp) accepts a wide range of input and presents you with a nice UI to select which files you're interested in.  
+- [starship](https://github.com/starship/starship) creates a customizable prompt for any shell.
+- [tokei](https://github.com/XAMPPRocky/tokei) counts your code quickly and presents stats.
+- [viu](https://github.com/atanunq/viu) allows you to view images in the terminal.
+- [watchexec](https://github.com/watchexec/watchexec) executes commands in response to file modifications.
+- [xd](https://github.com/ducaale/xh) is a tool for sending HTTP requests.
 
 ## Basics
 
@@ -93,20 +93,20 @@ Make a new folder and cd into it
 - Usage: mkcd name1
 - Code: ```mkcd(){ NAME=$1; mkdir -p "$NAME"; cd "$NAME"; }```
 
-## last 10 commands that ran in the current directory
+### last 10 commands that ran in the current directory
 
-Add this function to your `.zshrc`
+Add this function to your `.bashrc`
 
-``` sh
-function zshaddhistory() {
-	echo "${1%%$'\n'}|${PWD}   " >> ~/.zsh_history_ext
+``` sh title=".bashrc"
+function addhistory() {
+    echo "${1%%$'\n'}|${PWD}   " >> ~/.history_ext
 }
 ```
 
 Create file e.g. `folderhistory` with the content below and add it to your `$PATH`
 
-``` sh
-grep -v "folderhistory" ~/.zsh_history_ext | grep -a --color=never "${PWD}   " | cut -f1 -d"|" | tail
+``` sh title="folderhistory"
+grep -v "folderhistory" ~/.history_ext | grep -a --color=never "${PWD}   " | cut -f1 -d"|" | tail
 ```
 
 Source: <https://github.com/natethinks/jog>
@@ -115,11 +115,11 @@ Source: <https://github.com/natethinks/jog>
 
 Get system details
 
-- Get all environment variables```printenv```
-- Get all configuration variables```getconf -a```
-- Show ports/connections open```lsof```
-- Get ubuntu version```lsb_release -r```
-- Free disk space```df -h```
+- Get all environment variables: ```printenv```
+- Get all configuration variables: ```getconf -a```
+- Show ports/connections open: ```lsof```
+- Get ubuntu version: ```lsb_release -r```
+- Free disk space: ```df -h```
 
 System Performance Check
 
@@ -133,6 +133,14 @@ System Performance Check
 - ```sar -n DEV 1```
 - ```sar -n TCP,ETCP 1```
 - ```top```
+
+History
+
+echo $HISTFILE
+
+clear the previous history command in the current shell
+
+history -c command to 
 
 More...
 
