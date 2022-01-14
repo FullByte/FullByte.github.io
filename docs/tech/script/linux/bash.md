@@ -7,82 +7,40 @@ Some great helpers:
 - Understand commands: <https://explainshell.com/>
 - ShellCheck gives warnings and suggestions for bash/sh shell scripts: <https://github.com/koalaman/shellcheck>
 
-## Alternative to
-
-| original | alternative                                                                                                                                                                                                                                                                        |
-|----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ack      | [ag](https://github.com/ggreer/the_silver_searcher)                                                                                                                                                                                                                                |
-| cat      | [bat](https://github.com/sharkdp/bat)                                                                                                                                                                                                                                              |
-| cd       | [zoxide](https://github.com/ajeetdsouza/zoxide)                                                                                                                                                                                                                                    |
-| curl     | [curlie](https://github.com/rs/curlie)                                                                                                                                                                                                                                             |
-| curl     | [curlx](https://github.com/shivkanthb/curlx)                                                                                                                                                                                                                                       |
-| cut      | [choose](https://github.com/theryangeary/choose)                                                                                                                                                                                                                                   |
-| diff | git + [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy), [delta](https://github.com/dandavison/delta), [diffoscope](https://diffoscope.org/), [icdiff](https://github.com/jeffkaufman/icdiff)                                                                                                                                                                     |
-| dig      | [dog](https://github.com/ogham/dog)                                                                                                                                                                                                                                                |
-| du       | [duf](https://github.com/muesli/duf), [dust](https://github.com/bootandy/dust), [space-hogs](https://www.npmjs.com/package/space-hogs)                                                                                                                                                                                                     |
-| find     | [fd](https://github.com/sharkdp/fd)                                                                                                                                                                                                                                                |
-| grep     | [ripgrep](https://github.com/BurntSushi/ripgrep), [ugrep](https://github.com/Genivia/ugrep), [sift](https://github.com/svent/sift)                                                                                                                                                                                                                                   |
-| history  | [mcfly](https://github.com/cantino/mcfly)                                                                                                                                                                                                                                          |
-| locate   | [plocate](https://git.sesse.net/?p=plocate)                                                                                                                                                                                                                                        |
-| ls       | [exa](https://github.com/ogham/exa), [lsd](https://github.com/Peltoche/lsd)                                                                                                                                                                                                        |
-| man      | [tldr](https://github.com/tldr-pages/tldr), [cheet](https://github.com/cheat/cheat)                                                                                                                                                                                                |
-| ping     | [gping](https://github.com/orf/gping), [prettyping](https://github.com/denilsonsa/prettyping)                                                                                                                                                                                                                                              |
-| ps       | [procs](https://github.com/dalance/procs)                                                                                                                                                                                                                                          |
-| sed      | [sd](https://github.com/chmln/sd)                                                                                                                                                                                                                                                  |
-| tar      | [asar](https://github.com/electron/asar)                                                                                                                                                                                                                                           |
-| top      | [btop](https://github.com/aristocratos/btop), [gtop](https://github.com/aksakalli/gtop), [htop](https://github.com/htop-dev/htop/), [tiptop](https://github.com/nschloe/tiptop), [bottom](https://github.com/ClementTsang/bottom), [glances](https://github.com/nicolargo/glances), [bpytop](https://github.com/aristocratos/bpytop) |
-| tree     | [broot](https://github.com/Canop/broot)                                                                                                                                                                                                                                            |
-|sort \| uniq| [huniq](https://github.com/koraa/huniq)|
-
-### Alias examples
-
-#### Exa instead of ls
-
-``` sh
-alias l='exa'
-alias la='exa -a'
-alias ll='exa -lah'
-alias ls='exa --color=auto'
-```
-
-## Tools
-
-JSON
-
-- view json with [fx](https://github.com/antonmedv/fx)
-- [jq](https://github.com/stedolan/jq) is a JSON processor
-
-Other:
-
-- [bandwhich](https://github.com/imsnif/bandwhich) is a terminal bandwidth utilization tool
-- [bmon](https://github.com/tgraf/bmon) is a bandwidth monitor and rate estimator.
-- [bv](http://www.ivarch.com/programs/pv.shtml) is a terminal-based tool for monitoring the progress of data through a pipeline.
-- [colorls](https://github.com/athityakumar/colorls) beautifies the terminal's ls command, with color and font-awesome icons.
-- [fuck](https://github.com/nvbn/thefuck) correct previously failed command inputs.
-- [fzf](https://github.com/junegunn/fzf) is a command-line fuzzy finder.
-- [hexyl](https://github.com/sharkdp/hexyl) is a hex viewer.
-- [httpie](https://github.com/httpie/httpie) is a command-line HTTP client for the API era.
-- [hyperfine](https://github.com/sharkdp/hyperfine) is a command-line benchmarking tool.
-- [loop](https://github.com/Miserlou/Loop) is UNIX's missing `loop` command.
-- [nnn](https://github.com/jarun/nnn) is a commandline file manager.
-- [pathpicker](https://github.com/facebook/PathPicker) (fpp) accepts a wide range of input and presents you with a nice UI to select which files you're interested in.  
-- [starship](https://github.com/starship/starship) creates a customizable prompt for any shell.
-- [tokei](https://github.com/XAMPPRocky/tokei) counts your code quickly and presents stats.
-- [viu](https://github.com/atanunq/viu) allows you to view images in the terminal.
-- [watchexec](https://github.com/watchexec/watchexec) executes commands in response to file modifications.
-- [xd](https://github.com/ducaale/xh) is a tool for sending HTTP requests.
-
 ## Basics
 
 Random basics
 
+- Show all files: ```ls -halt```
 - Check installed packges: ```sudo tasksel```
 - Update and upgrade: ```sudo apt update && apt -y full-upgrade && apt -y autoremove```
 - Upgrading to a newer release: ```do-release-upgrade```
 - Check who is online: ```w```
 - Show all system users: ```cut -d: -f1 /etc/passwd```
-- Top commands used: ```history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -nr```
-- Commands only used once: ```history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -n | grep ' 1 '```
+- Save to file: ```ls -halt > result.txt```
+- Append to file: ```echo "add this" >> existing-file.txt```
+- Pipe output e.g. to trash (to not see it): ```grep "stuff" 2> /dev/null```
+- Change owner of file or dir: ```chown user:group blah```
+- Change owner of file or dir recersive for all folders below: ```chown -R user:group blah```
+- Change file / dir permissions: ```chmod 600 file```
+
+Chain commands:
+
+- Pipe the output of command1 to command2: ```<command1> | <command2>```
+- Execute command2 after command1: ```<command1> ; <command2>```
+- Execute command2 if command1 succeded: ```<command1> && <command2>```
+- Redirect errors of command1 to file1: ```<command1> 2> <file1>```
+- Redirect standard and error output of command1 to file1 ```<command1> &> <file1>```
+
+Cursor
+
+| Command | Description                         |
+|---------|-------------------------------------|
+| Ctrl+A  | Jump to beginning.                  |
+| Ctrl+E  | Jump to end.                        |
+| Ctrl+W  | Delete one word left of the cursor. |
+| Ctrl+U  | Delete entire line.                 |
+| Ctrl+Y  | Paste back what you just deleted.   |
 
 ## bashrc
 
@@ -92,6 +50,26 @@ Make a new folder and cd into it
 
 - Usage: mkcd name1
 - Code: ```mkcd(){ NAME=$1; mkdir -p "$NAME"; cd "$NAME"; }```
+
+Alias
+
+- Count files in directory: ```alias fcount='ls -1 | wc -l'```
+- Disable "Save workspace" promt when closing R: ```alias R='R --no-save'```
+- Tweak df: ```alias df='df -h'```
+- Tweak du: ```alias du='du -h'```
+- Using Exa instead of ls
+
+    ``` sh
+    alias l='exa'
+    alias la='exa -a'
+    alias ll='exa -lah'
+    alias ls='exa --color=auto'
+    ```
+
+More:
+
+- Finding out which linux you are using: uname -m && cat /etc/*release
+- Bulk renaming of files: rename 's/ch0/ch/gi' *.tiff
 
 ### last 10 commands that ran in the current directory
 
@@ -136,11 +114,19 @@ System Performance Check
 
 History
 
-echo $HISTFILE
+Press `Ctrl+R` to search through your history using auto-complete. Press `Ctrl+R` again and it will cycle though the other auto-completion options. Press `Enter` and the command will execute. Press `←`,`→` to edit commands.
 
-clear the previous history command in the current shell
-
-history -c command to 
+- Location of history file: ```echo $HISTFILE```
+- Clear the history of current shell: ```history -c```
+- Overwrite the history file with the current shell's history: ```history -c | history -w | exit```
+- Delete first 15 entries: ```for i in {1..15}; do history -d 1; done```
+- Clear history completly: ```ln -sf /dev/null ~/.bash_history && history -c && exit```
+- Disable history: ```sudo echo "unset HISTFILE" >> /etc/profile```
+- Disable history for user "0xfab1": ```echo "unset HISTFILE" >> /home/0xfab1/.bash_profile```
+- Change number of lines stored in an ongoing history list session: ```echo "HISTFILESIZE=10 >> ~/.bashrc```
+- Change amount of lines used for the history stack when it’s written to the history file: ```echo "HISTSIZE=0 >> ~/.bashrc```
+- Top commands used: ```history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -nr```
+- Commands only used once: ```history | awk 'BEGIN {FS="[ \t]+|\\|"} {print $3}' | sort | uniq -c | sort -n | grep ' 1 '```
 
 More...
 
@@ -205,11 +191,17 @@ set hls ic is nu noswf
 
 ## Screen
 
-``` sh
-screen # attach
-strg+a --> "d" # detach
-screen -r # re-attach
-```
+| Command               | Description                                                                               |
+|-----------------------|-------------------------------------------------------------------------------------------|
+| screen                | Create a new session.                                                                     |
+| Ctrl+A,D              | Detach from current screen session.                                                       |
+| Ctrl+D                | End current session. Similart to `exit`.                                                  |
+| screen -r             | Reattach to session.                                                                      |
+| screen -ls            | List all sessions.                                                                        |
+| screen -S `<name>` -L | Create a new screen session `<name>` with logging enabled.                                |
+| screen -r `<name>`    | Reattach to session with `<name>` if there are multiple ones.                             |
+| screen -rx `<name>`   | Attach to session that is already attached.                                               |
+| Ctrl+A, Esc           | Enter scroll mode. Use ↑ and ↓ or Pg Up and Pg Dn to scroll. Hit Esc to exit scroll mode. |
 
 ## tmux
 

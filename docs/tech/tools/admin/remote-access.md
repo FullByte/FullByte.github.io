@@ -42,11 +42,7 @@ Windows 10
 
 **Install SSH**
 
-View Options
-
-``` ps1
-Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'
-```
+View Options: ```Get-WindowsCapability -Online | ? Name -like 'OpenSSH*'```
 
 Install SSH Client and or Server
 
@@ -141,6 +137,30 @@ To see all escape sequences press `~?`.
  ~?   - this message
  ~~   - send the escape character by typing it twice
 (Note that escapes are only recognized immediately after newline.)
+```
+
+### Creating an SSH key
+
+Creating an SSH key for Github
+
+``` sh
+# Create
+ssh-keygen -t rsa -b 4096 -N "" -C "" -f keyname
+mv keyname* ~/.ssh
+chmod 700 ~/.ssh && chmod 600 ~/.ssh/*
+Host github
+HostName github.com
+User git
+IdentityFile ~/.ssh/keyname
+
+# Copy public key to server.
+ssh-copy-id -i ~/.ssh/keyname user@remote_machine
+
+# Checking the ssh procesd
+ssh -T git@github.com
+eval $(ssh-agent -s)
+ssh-add ~/.ssh/keyname
+ssh -T git@github.com
 ```
 
 ### Helpful commands
