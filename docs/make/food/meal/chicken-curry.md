@@ -13,15 +13,15 @@
 
     Einkaufen:
 
-    - [ ] 700 g Putenbrust (geschnetzeltes)
-    - [ ] 300 g Champignons
-    - [ ] 200 g geriebener Gouda
+    - [ ] 700g Putenbrust (geschnetzeltes)
+    - [ ] 300g Champignons
+    - [ ] 200g geriebener Gouda
 
     Ggf. schon vorhanden:
 
     - [ ] 1,5L Gemüsebrühe
-    - [ ] 100 g Reis
-    - [ ] 2 Knoblauchzehen
+    - [ ] 100g Reis
+    - [ ] 2x Knoblauchzehen
     - [ ] 15g Olivenöl
     - [ ] 10g Rappsöl
 

@@ -1,4 +1,4 @@
-# Hühnchen Curry
+# Hühnchen Wrap
 
 ## Stats
 
@@ -15,9 +15,10 @@
 
     - [ ] 500g Hühnerfleisch
     - [ ] 1x Eisbergsalat
-    - [ ] 2x Rote Paprika
+    - [ ] 2x rote Paprika
     - [ ] 2x Tomate
-    - [ ] 120g Joghurt/Sauerrahm/Creme fraiche
+    - [ ] 1x Gurke
+    - [ ] 120g Joghurt/Sauerrahm/Crème fraîche
 
     Ggf. schon vorhanden:
 
@@ -31,14 +32,14 @@
 
 === "Zubereitung"
 
-    - [ ] Geschnittene, rote Zwiebel leicht anrösten.
-    - [ ] Hühnerfleisch in Streifen schneiden, würzen, salzen und pfeffern.
-    - [ ] Die Wraps leicht in einer Pfanne beidseitig anbraten.
-    - [ ] Eisbergsalat und Gurke waschen und in Scheiben schneiden.
-    - [ ] Hühnerstreifen in einer Pfanne anbraten.
-    - [ ] Knoblauchzehen zerdrücken und mit Sauerrahm, Joghurt, Salz und Pfeffer zu einer Sauce rühren.
-    - [ ] Die warmen Wraps mit Hühnerstreifen, Salat, Paprika, Tomaten und Souce füllen.
+    - [ ] `Zwiebel` schneiden und leicht anrösten.
+    - [ ] `Hühnerfleisch` in Streifen schneiden und in der Pfanne anbraten.
+    - [ ] Die `Wraps` leicht in einer extra Pfanne beidseitig anbraten.
+    - [ ] `Eisbergsalat` und `Gurke` waschen und in Scheiben schneiden.
+    - [ ] `Hühnerstreifen` mit `Salz` und `Pfeffer` würzen
+    - [ ] `Knoblauchzehen` zerdrücken und mit `Sauerrahm`/`Joghurt`/`Crème fraîche`, `Salz` und `Pfeffer` zu einer Sauce rühren.
+    - [ ] Die warmen Wraps mit `Hühnerstreifen`, `Salat`, `Paprika`, `Tomaten` und Souce füllen.
 
 ## Foto
 
-TODO
+![chicken-wrap](_chicken-wrap.jpg)
