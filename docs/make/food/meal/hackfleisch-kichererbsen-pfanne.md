@@ -13,26 +13,26 @@
 
     Einkaufen:
 
-    - [ ] 500 g Rinder Hackfleisch
-    - [ ] 400 g Kichererbsen
-    - [ ] 200 g Schafskäse
-    - [ ] 3x Paprika
+    - [ ] 500g Rinder Hackfleisch
+    - [ ] 400g Kichererbsen
+    - [ ] 200g Schafskäse
+    - [ ] 2x Paprika
 
     Ggf. schon vorhanden:
 
-    - [ ] 75 g Tomatenmark
+    - [ ] 75g Tomatenmark
     - [ ] 1x Zwiebel
-    - [ ] 1x Chilli oder Chillipulver
     - [ ] 4x Knoblauchzehen
-    - [ ] 420 ml Wasser
-    - [ ] 25 ml Olivenöl
+    - [ ] 420ml Wasser
+    - [ ] 25ml Olivenöl
 
     Gewürze:
 
-    - [ ] 80 g Petersilie
-    - [ ] Salz
-    - [ ] Pfeffer
-    - [ ] Kreuzkümmel
+    - [ ] 80g Petersilie
+    - [ ] 8g Salz
+    - [ ] 12g Pfeffer
+    - [ ] 8g Kreuzkümmel
+    - [ ] 8g Chillipulver
 
 === "Zubereitung"
 
@@ -44,7 +44,7 @@
     - [ ] Paprika dazugeben, deckel drauf.
     - [ ] Mit Wasser ablöschen und 5min köcheln lassen
     - [ ] Kichererbsen unterrühren und 5min erhitzen
-    - [ ] W#hrenddessen Schafskäse und Petersilie kleinhacken
+    - [ ] Währenddessen Schafskäse und Petersilie kleinhacken
     - [ ] Essen servieren, Schafskäse drauf und mit Petersilie bestreuen.
 
 ## Foto

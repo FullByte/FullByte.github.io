@@ -1,4 +1,9 @@
 _temp/
 .vs/
 site/
-
+node_modules/
+.layer0/
+layer0.config.js
+routes.js
+package.json
+package-lock.json

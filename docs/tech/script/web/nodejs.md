@@ -1,16 +1,31 @@
 # Node-js
 
+## Versions
+
+Use [NVM](https://github.com/nvm-sh/nvm) to switch between versions.
+
+``` sh
+nvm use 16
+Now using node v16.9.1 (npm v7.21.1)
+node -v
+v16.9.1
+nvm use 14
+Now using node v14.18.0 (npm v6.14.15)
+node -v
+v14.18.0
+```
+
 ## NPM
 
 Use [list-scripts](https://www.npmjs.com/package/list-scripts) and [npm-list-scripts](https://www.npmjs.com/package/npm-list-scripts) to get a list of available npm script including what each script does.
 
-``` npm
+``` sh
 npm i -g list-scripts npm-list-scripts
 ```
 
 Use [ncu](https://www.npmjs.com/package/npm-check-updates) to check the packages in your `package.json` file and gives you major and minor package updates info.
 
-``` npm
+``` sh
 npm i -g npm-check-updates
 ```
 
@@ -22,12 +37,12 @@ loop --every 5s { date +"%T"; speed-test -b -v }
 
 Use [npm-scripts-tree](https://www.npmjs.com/package/npm-scripts-tree) to understand the dependencies between scripts calling other scripts.
 
-``` npm
+``` sh
 npm i -g npm-scripts-tree
 ```
 
 With [npkill](https://github.com/voidcosmos/npkill) you can list any node_modules directories in your system and see the space they take up to delete the ones no longer needed.
 
-``` npm
+``` sh
 npm i -g npkill
 ```

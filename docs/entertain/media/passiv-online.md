@@ -11,11 +11,10 @@ Passive online screens that are nice to watch.
 - <http://www.datapointed.net/visualizations/math/factorization/animated-diagrams/>
 - <https://paveldogreat.github.io/WebGL-Fluid-Simulation/>
 - <https://origamisimulator.org/>
-- <https://lavalamp.app/>
-- <https://osm-in-realtime.jwestman.net/>
-- <https://zoomquilt.org/>
-- <http://zoomquilt2.com/>
-- OSM updates: <https://osmlab.github.io/show-me-the-way/>
+- Lava Lamp: <https://lavalamp.app/>
+- OSM Updates: <https://osm-in-realtime.jwestman.net/>, <https://osmlab.github.io/show-me-the-way/>
+- Zoom in forever <https://zoomquilt.org/> and forever <http://zoomquilt2.com/>
+- The Internet: <https://2000.shodan.io/#/>
 
 ## Interfaces
 

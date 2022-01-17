@@ -1,6 +1,6 @@
 # README
 
-This is the source of my personal but public webpage```¯\_(ツ)_/¯```
+This is the source of my personal but public webpage ```¯\_(ツ)_/¯```
 
 [![Header](header.svg)](https://0xfab1.net)
 
@@ -39,6 +39,7 @@ Visit <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org
 - [0xfab1@vercel](https://0xfab1.vercel.app/) using [Vercel](https://vercel.com/) (alternative link: <https://vercel.0xfab1.net/>)
 - [0xfab1@surge](http://surge.0xfab1.net) using [serge.sh](https://surge.sh) (alternative link: <http://surge.0xfab1.net/>)
 - [0xfab1@cloudflare](https://fullbyte-github-io.pages.dev) using [cloudflare](https://www.cloudflare.com/) (alternative link: <https://cloudflare.0xfab1.net/>)
+- [0xfab1@layer0](https://0xfab1-layer0-0xfab1-net-production.layer0-limelight.link) using [layer0](https://www.layer0.co/) (alternative link: <https://layer0.0xfab1.net/>)
 
 ## Build
 
@@ -69,9 +70,11 @@ mkdocs serve -a localhost:8888 --dirtyreload --watch-theme -v
 
 ## Contribute
 
-I appreciate your pull-request for typos/errors in existing pages. If you think something is generally wrong or I missed to link you where appropiate, please let me know!
+I appreciate your pull-request for typos/errors in existing pages. If you think something is generally wrong or I missed to link you/someone where appropiate, please let me know!
 
-- Fork the current version
-- Change whatever needs an udpate
-- [Build](#build) the page based on your update
-- Open a pull request and tell what you updated and why
+- Fork the current version.
+- Change whatever needs an udpate.
+- Test the reuslt by [building](#build) the site with your update.
+- If there are no errors, open a pull request and tell what you updated and why.
+
+Thanks for your contribution :)
