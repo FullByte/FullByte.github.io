@@ -71,11 +71,16 @@ SizeBench is a utility that analyzes PDB information to help you optimize and re
 - Store: <https://www.microsoft.com/en-us/p/sizebench/9ndf4n1wg7d6#activetab=pivot:overviewtab>
 - Blog Post: <https://devblogs.microsoft.com/performance-diagnostics/sizebench-a-new-tool-for-analyzing-windows-binary-size/>
 
-### Snip & Sketch
+### Snip & Sketch (Screenshot)
 
-Windows + Shift + S
+[Download Snip & Sketch from the store](https://www.microsoft.com/en-us/p/snip-sketch/9mz95kl8mr0l?activetab=pivot:overviewtab)
 
-- Store: <https://www.microsoft.com/en-us/p/snip-sketch/9mz95kl8mr0l?activetab=pivot:overviewtab>
+Take screenshot: Windows + Shift + S
+
+## Record Screen
+
+- Start recording mode: Windows + G
+- start recording: Window + Alt + R
 
 ### Windows Terminal
 
