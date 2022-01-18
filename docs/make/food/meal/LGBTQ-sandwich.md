@@ -13,13 +13,14 @@ Ein Sandwich mit **L**ettuce, **G**uacamole, **B**acon, **T**omato and **Q**ueso
 
 === "Zutaten"
 
-    - [ ] 2 slices of bread
-    - [ ] 3 large pieces of lettuce
-    - [ ] 1 avocado
-    - [ ] 3 slices of tomato
-    - [ ] 2 slices quesoo (pepperjack cheese)
-    - [ ] salt
-    - [ ] pepper
+    - [ ] 1x Baguette
+    - [ ] Salat
+    - [ ] 1x Avocado
+    - [ ] 50g Bacon
+    - [ ] 1 Tomate
+    - [ ] 4 Scheiben Käse
+    - [ ] Salz
+    - [ ] Pfeffer
 
 === "Zubereitung"
 
