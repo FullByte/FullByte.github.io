@@ -1,15 +1,13 @@
-# Spaghetti
+# Spaghetti Bolognese
 
-## Bolognese
-
-### Stats
+## Stats
 
 | Was   | Wert        |
 |-------|-------------|
 | Zeit  | 30 Min      |
 | Menge | xx Personen |
 
-### Rezept
+## Rezept
 
 === "Zutaten"
 
@@ -44,31 +42,6 @@
     - [ ] Für die Spaghetti das Wasser kochen lassen, das Salz hinzufügen und die Nudeln hineingeben.
     - [ ] Wenn die Spaghetti fast gar sind, das Wasser abgießen und in ein wenig Olivenöl schwenken und servieren.
 
-### Foto
-
-    TODO
-
-## Travel Tuna
-
-Eignet sich besonders gut für unterwegs weil es einfach ist und alle Zutaten ungekühlt lange halten.
-
-### Stats
-
-| Was   | Wert        |
-|-------|-------------|
-| Zeit  | 15 Min      |
-| Menge | 2 Personen |
-
-### Rezept
-
-=== "Zutaten"
-
-    - [ ] TODO
-
-=== "Zubereitung"
-
-    - [ ] TODO
-
-### Foto
+## Foto
 
 TODO

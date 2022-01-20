@@ -28,6 +28,7 @@ Electro
 - [psyradio fm - chillchannel](http://streamer.psyradio.org:8020 "http://streamer.psyradio.org:8020")
 - [Musik.HardeR (HARDSTYLE HARDCORE JUMPSTYLE SCHRANZ GABBA AND MORE!](http://harder-high.rautemusik.fm "http://harder-high.rautemusik.fm")
 - [Suburbs of Goa: Desi-influenced Asian world beats. [SomaFM]](http://voxsc1.somafm.com:8850 "http://voxsc1.somafm.com:8850")
+- <https://nightride.fm>
 
 Rock and Metal
 
