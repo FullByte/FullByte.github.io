@@ -81,9 +81,9 @@ MkDocs serve
 
 ### Create page
 
-TODO
+Overriding template blocks: <https://www.mkdocs.org/user-guide/customizing-your-theme/#using-the-theme-custom_dir>
 
-#### Extensions
+### Extensions
 
 [MkDocs-material](https://squidfunk.github.io/MkDocs-material/) is a [great theme](https://squidfunk.github.io/MkDocs-material/setup/changing-the-colors/) and comes [integrated](https://squidfunk.github.io/MkDocs-material/reference/abbreviations/) with the [pymkdown extensions](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/), which lets you add tabbed code blocks, progress bars, task lists, keyboard symbols and more.
 
@@ -92,7 +92,7 @@ Further plugins:
 - [MkDocs-minify-plugin](https://github.com/byrnereese/MkDocs-minify-plugin): `pip install MkDocs-minify-plugin`
 - [MkDocs-redirects](https://github.com/datarobot/MkDocs-redirects): `pip install MkDocs-redirects`
 
-#### Examples
+### Examples
 
 Checkable List
 
