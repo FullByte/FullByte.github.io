@@ -6,8 +6,8 @@ Hühnerfrikassee mit Möhren und Reis.
 
 | Was   | Wert        |
 |-------|-------------|
-| Zeit  | xx Min      |
-| Menge | x Personen |
+| Zeit  | 40 Min      |
+| Menge | 4 Personen |
 
 ## Rezept
 
@@ -50,4 +50,4 @@ Hühnerfrikassee mit Möhren und Reis.
 
 ## Foto
 
-![_huehnerfrikassee](_huehnerfrikassee.jpg
+![huehnerfrikassee](_huehnerfrikassee.jpg).jpg
