@@ -45,4 +45,4 @@
 
 ## Foto
 
-    TODO
+![bratkartoffeln](_bratkartoffeln.jpg)

@@ -30,4 +30,4 @@ Ein Sandwich mit **L**ettuce, **G**uacamole, **B**acon, **T**omato and **Q**ueso
 
 ## Foto
 
-![lgtv](_lgtv.jpg)
+todo
