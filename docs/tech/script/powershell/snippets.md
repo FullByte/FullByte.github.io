@@ -4,6 +4,8 @@ Some handy code snippets for powershell :)
 
 ## String manipulation
 
+- Overwrite JPEG files with MD5 hashsum: ```Get-ChildItem -Recurse -Include "*.jpg" | Get-FileHash -Algorithm MD5 | Rename-Item -NewName { $_.hash + ".jpg"} -Force```
+
 **Base64 Decode/Encode**
 
 - Decode: ```[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("dGVzdA=="))```

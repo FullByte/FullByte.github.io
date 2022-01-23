@@ -28,10 +28,6 @@
     - [ ] Den Teig in die Förmchen füllen und pro Cupcake 3 gefrorene Himbeeren in die Mitte unter den Teig drücken.
     - [ ] Dann 20 Minuten backen lassen und währenddessen das Frosting machen.
 
-## Foto
-
-    TODO
-
 ## Frosting
 
 === "Zutaten"
@@ -50,4 +46,4 @@
 
 ## Foto
 
-    TODO
+![cupcakes](_cupcakes.jpg)
