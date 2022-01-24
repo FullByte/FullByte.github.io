@@ -134,9 +134,16 @@ You can support those organizations in other ways too - they will have details o
 
 ### M@il
 
-Send a mail, use [PGP](https://de.wikipedia.org/wiki/Pretty_Good_Privacy) - here is my public key:
+Send a mail, use [PGP](https://de.wikipedia.org/wiki/Pretty_Good_Privacy)
 
-```PGP
+Download public key:
+
+- From [Keybase](https://keybase.io): ```curl https://keybase.io/0xfab1/pgp_keys.asc | gpg --import```
+- From [keys.mailvelope.com](https://keys.mailvelope.com/): <https://keys.mailvelope.com/pks/lookup?op=get&search=ten.1bafx0%400xfab1.net>
+- From [keyserver.ubuntu.com](https://keyserver.ubuntu.com) ```gpg --keyserver hkp://keyserver.ubuntu.com --search-key '3EDE3E4ADD756300'```
+- by copying below text (or [download the file](0xfab1.net.pub.gpg.asc)):
+
+``` PGP
 -----BEGIN PGP PUBLIC KEY BLOCK-----
 xsFNBGG7vEcBEAC3ZLLZdoz0ZfbwSYEnkhacOaZihxp8Ta6MkBof9qU1/HRX
 Tvv2xjDTp4x7w+rMWSHT/pMtTT6OqR0FCRPPZhF5z/iC8PwK0rNiPdSaSCJT
