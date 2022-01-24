@@ -47,7 +47,7 @@ Run the following code to install and update the required tools using [python](h
 
 ``` sh title="Install"
 pip install --upgrade pip
-pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin mkdocs-video
+pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin
 ```
 
 If all above is already installed, make sure to use the latest version:

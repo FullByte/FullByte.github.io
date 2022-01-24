@@ -36,11 +36,6 @@ theme:
 
 plugins:
   - search
-  - mkdocs-video:
-      mark: "vidz"
-      css_style:
-        width: "100%"
-        height: "22.172vw"
   - rss:
       abstract_chars_count: 160  # -1 for full content
       date_from_meta:
