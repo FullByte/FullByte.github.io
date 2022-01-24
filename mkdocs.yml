@@ -74,8 +74,6 @@ extra:
       link: https://www.librarycat.org/lib/0xfab1
     - icon: fontawesome/brands/laravel
       link: https://boardgamegeek.com/collection/user/zerogdoubled
-    - icon: fontawesome/brands/youtube
-      link: https://www.youtube.com/channel/UCow5nTdcimuHvO24f152ZPw/videos
     - icon: fontawesome/brands/patreon
       link: https://www.patreon.com/0xfab1
   generator: false
