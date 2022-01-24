@@ -1,13 +1,19 @@
 # Standards
 
-
-
-## Standards
+``` txt
+ _    _  _  _  _    _  _  _  _    _  _  _  _   _  _  _
+|_|  |_||_||_||_|  |_||_||_||_|  |_||_||_||_| |_||_||_|   * * *
+ _  _  _  _  _  _  _  _  _  _  _  _  _  ____   _  _  _   _  _  _  _
+|_||_||_||_||_||_||_||_||_||_||_||_||_||____| |_||_||_| |_||_||_||_|
+|___||_||_||_||_||_||_||_||_||_||_||_||_||  | |_||_||_| |_||_||_|| |
+|____||_||_||_||_||_||_||_||_||_||_||_||____|     _     |_||_||_||_|
+|___||_||_||_||_||_||_||_||_||_||_||_||_____|  _ |_| _  |_||_||_|| |
+|__||__||__||_______________||__||__||__||__| |_||_||_| |____||_||_|
+```
 
 Generally there are few things to say:
 
 - Standards are easier to get caps for
-
 
 ## Keyboard layouts
 
@@ -15,21 +21,35 @@ Generally there are few things to say:
 
 - [ARTSEY](https://artsey.io/) is a one-handed keyboard system using 8 keys in a 2x4 layout. The system is designed to be easy to learn, comfortable to use, and fast enough for practical use.
 
-### ISO vs ANSI
+### "ISO vs ANSI"
+
+TODO
 
 ### 100-40% Keyboards
 
-#### 100% Keyboards
+=== "100% Keyboards"
 
-#### 80% Keyboards
+    TODO
 
-#### 75% Keyboards
+=== "80% Keyboards"
 
-#### 65% Keyboards
+    TODO
 
-#### 60% Keyboards
+=== "75% Keyboards"
 
-#### 40% Keyboards
+    TODO
+
+=== "65% Keyboards"
+
+    TODO
+
+=== "60% Keyboards"
+
+    TODO
+
+=== "40% Keyboards"
+
+    TODO
 
 ### Winkeyless (WKS)
 
@@ -54,8 +74,6 @@ Bluetooth vs ???
 LED, RGB
 
 On/off vs controlled LED per key
-
-
 
 ## Components
 
