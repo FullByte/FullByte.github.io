@@ -37,6 +37,7 @@ theme:
 plugins:
   - search
   - mkdocs-video:
+      mark: "vidz"
       css_style:
         width: "100%"
         height: "22.172vw"
