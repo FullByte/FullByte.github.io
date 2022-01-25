@@ -28,6 +28,7 @@ Infrastructure
 - [Open infra map](https://openinframap.org/)
 - [Nuke Radius Map](https://nuclearsecrecy.com/nukemap/)
 - [Electric Exchange](https://www.electricitymap.org/map)
+- [light house map](https://geodienst.github.io/lighthousemap/)
 
 Internet
 
