@@ -7,6 +7,7 @@ Ways to create a CV/resume.
 Inspiring tools/templates:
 
 - <https://www.canva.com/search/templates?q=resume>
+- <https://jsonresume.org/themes/>
 
 ## JSON Resume
 
@@ -33,3 +34,15 @@ resume export resume.pdf --theme .
 resume export resume.html --theme .
 resume serve --theme .
 ```
+
+## Curl
+
+Create a [Linux manual page formated](https://www.man7.org/linux/man-pages/man7/man.7.html) file which can be downloaded and intepreted using the [man](https://www.kernel.org/doc/man-pages/) command.
+
+Exampe file is uploaded to <https://0xfab1.net/cv.7>
+
+This is how to read the file:
+
+- Windows: use [groff](https://www.gnu.org/software/groff/#downloading) or [mandoc](https://embedeo.org/ws/doc/man_windows/) or simply install WSL and follow Linux command below.
+- Linux: ```man <( curl -sL 0xfab1.net/cv.7 )```
+- MacOS: ```curl -sL 0xfab1.net/cv.7 > /tmp/0xfab1-cv.7; man /tmp/0xfab1-cv.7```
