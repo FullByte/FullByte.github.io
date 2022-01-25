@@ -172,6 +172,16 @@ If you want to deal with redirects as error set `--max-redirect 0`. This is also
 wget --max-redirect 0 "https://bit.ly/0xfab1"
 ```
 
+## httrack
+
+Install: ```sudo apt-get install httrack```
+
+Example:
+
+Get all files starting from index.html, with 6 link-depth, and possibility of going everywhere on the web
+
+```httrack www.example.com/site/index.html +* -r6```
+
 ## IPFS
 
 Examples using IPFS

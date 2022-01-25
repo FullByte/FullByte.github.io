@@ -14,13 +14,13 @@
 <!doctype html>
 <head>
 <script>
-   function tricked() {
-      document.getElementById("naughty").href="http://www.bad.org";
-   }
+  function tricked() {
+    document.getElementById("naughty").href="http://www.bad.org";
+  }
 </script>
 </head>
 <body>
-   <a href="http://www.google.com" onclick="tricked()" id="naughty">www.google.com</a>
+  <a href="http://www.google.com" onclick="tricked()" id="naughty">www.google.com</a>
 </body>
 ```
 
@@ -167,6 +167,17 @@ p, h1, h2, h3, h4, h5, h6 {
 ```
 
 ## JavaScript
+
+Set viewport based on mobile or desktop
+
+``` js
+var viewMode = getCookie("view-mode");
+if(viewMode == "desktop"){
+    viewport.setAttribute('content', 'width=1024');
+}else if (viewMode == "mobile"){
+    viewport.setAttribute('content', 'width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no');
+}
+```
 
 ### Integer Stuff
 
@@ -499,14 +510,13 @@ Print(out);
 
 ```js
 function pageToolsBookmark() {
-	bkmkurl= document.URL;
-	bkmktitle= document.title;
-	//if (window.external) {
-	if (document.all) {
-		window.external.AddFavorite(bkmkurl,bkmktitle);
-	} else {
-		alert("Please use Control + D to set a bookmark for this page");
-	}
+  bkmkurl= document.URL;
+  bkmktitle= document.title;
+  if (document.all) {
+    window.external.AddFavorite(bkmkurl,bkmktitle);
+  } else {
+    alert("Please use Control + D to set a bookmark for this page");
+  }
 }
 ```
 
