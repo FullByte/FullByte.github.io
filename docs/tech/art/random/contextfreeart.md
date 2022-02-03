@@ -2,22 +2,21 @@
 
 Context Free is a program that generates images from written instructions called a grammar. The program follows the instructions in a few seconds to create images that can contain millions of shapes.
 
-|What|Where|
-|-|-|
-|Official Page|<https://www.contextfreeart.org>|
-|Source|<https://github.com/MtnViewJohn/context-free>|
+| What          | Where                                         |
+|---------------|-----------------------------------------------|
+| Official Page | <https://www.contextfreeart.org>              |
+| Source        | <https://github.com/MtnViewJohn/context-free> |
 
 ## Avatar
 
 One of my favorite creations with Context Free is [insectivore](https://www.contextfreeart.org/gallery/view.php?id=3215) by [kipling](https://www.contextfreeart.org/gallery/search.php?by=kipling)
 
 I shortened the code and modified some values. The idea was to create a unique but same looking avatar for online accounts.
-In practice this wasn't as easy to do on the fly so I pre-created avatars and moved them to "used" whenever uploaded.
-Unfortunately not all avatars I use are unique as I started this process rather late...
+In practice it wasn't practical to create new avatars on the fly so I pre-created avatars and moved them to "used" whenever uploaded.
 
 Here is the Context Free code to create the image:
 
-```contextfree
+``` cfdg title="avatar.cfdg"
 startshape X
 CF::Background = [hue 180 sat 0.2 b -0.6]
 
@@ -53,8 +52,7 @@ shape SPOT
 	rule 2 {SPOT[] CIRCLE[a -.5 b 1 s .5 sat -1]}
 ```
 
-To create many images it is possible to loop the image creation via command line.
-The following powershell script assumes the cfdg file and the ps1 script are placed in the Context Free program folder which also contains the required ContextFreeCLI.exe.
+To create many images simply loop the image creation step. The following powershell script assumes the cfdg file and the ps1 script are placed in the Context Free program folder which contains the required `ContextFreeCLI.exe`.
 
 ```
 function GenerateAvatars ([string] $InputFile, [string] $OutputPrefix, [int] $Amount) {
@@ -76,8 +74,8 @@ GenerateAvatars "avatar.cfdg" "avatar" 10
 
 Here are some examples of how the results vary:
 
-||||
-|-|-|-|
-|![Example1](avatar_16130457751894587.png)|![Example2](avatar_16130458343669508.png)|![Example3](avatar_16130458978945522.png)|
-|![Example4](avatar_16130459003464671.png)|![Example5](avatar_16130459025078332.png)|![Example6](avatar_16130459046500233.png)|
-|![Example7](avatar_16130459068091189.png)|![Example8](avatar_16130459090147486.png)|![Example9](avatar_16130459112149794.png)|
+|                                           |                                           |                                           |
+|-------------------------------------------|-------------------------------------------|-------------------------------------------|
+| ![Example1](avatar_16130457751894587.png) | ![Example2](avatar_16130458343669508.png) | ![Example3](avatar_16130458978945522.png) |
+| ![Example4](avatar_16130459003464671.png) | ![Example5](avatar_16130459025078332.png) | ![Example6](avatar_16130459046500233.png) |
+| ![Example7](avatar_16130459068091189.png) | ![Example8](avatar_16130459090147486.png) | ![Example9](avatar_16130459112149794.png) |

@@ -6,7 +6,7 @@ Thanks for your interest!
 Query a DNS for TXT records of [0xfab1.net](https://0xfab1.net) to get some contact details:
 
 - Linux: ```curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'  | jq -r .Answer[].data```
-- Windows```(Resolve-DnsName 0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | Format-Table```
+- Windows: ```(Resolve-DnsName 0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | Format-Table```
 
 and you will receive this result:
 
@@ -18,6 +18,8 @@ and you will receive this result:
 ```
 
 My Unicode Hexadecimal: 0xFAB1 is &#xFAB1;
+
+I like to interprete this as beeing a terminal and GUI user :D I use the tool that works best for me and gets the job done. I am not subscripted to any IT religion, do not simp any technology evangelist and try to be as open as possible about knowledge and sharing information.
 
 ## Avatar
 

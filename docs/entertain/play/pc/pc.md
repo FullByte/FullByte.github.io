@@ -4,24 +4,90 @@
 
 <https://0xfab1.itch.io/>
 
-### Games I play
+## Games I play
 
 This is a list of games I play(ed) and like. Any games played for a short time or disliked are not going to be listed.
-
-#### Currently
 
 - Overwatch
 - CoD Warzone
 - Trackmania
-- ...
+- Hunt
 
-#### Play next
-
-- TODO
-
-#### Played
+List of games played and enjoyed:
 
 - TODO
+
+### ZoMo
+
+First recorded ZoMo event happened in 30.11.2015.
+
+#### ZoMo Games
+
+Action
+
+- Alien Swarm - Reactive Drop
+- Verdun
+- Vermintide II
+
+Strategy
+
+- Dungeons 3
+- Age of Empires II Definitive Edition
+- Planetary Annihilation: TITANS
+- Ashes of the Singularity: Escalation
+- Offworld Trading Company
+
+Heavy Strategy
+
+- Stellaris
+- Europa Universalis IV
+- Hearts of Iron IV
+
+#### To be played
+
+- Galatic Civilizations III
+- Total War: Warhammer
+
+#### Played but currently not active
+
+- StarWars BattleFront II
+- Tropico 4
+- Starcraft 2
+- Civilization VI
+- ARK
+- Path of Exile
+- Battle for Wesnoth
+- Crusader Kings II
+- Lara Croft and the Temple of Osiris
+- Ancestors Legacy Free Peasant Edition
+- Factorio
+- Total War: SHOGUN 2
+- Warhammer 40k Dawn of War II
+
+### GGG
+
+Currently playing
+
+- Runaway, The Dream of The Turtle
+
+Played
+
+- N/A
+
+Possible next games
+
+- The Wolf among us
+- Unforeseen Incidents
+- Tales of Monkey Island
+- Silence
+- The Night of the Rabbit
+- LEAVES - The Return
+- LEAVES - The journey
+- Life is Strange Remastered
+- Life is Strange 2
+- Life is Strange: True Colors
+- Lake
+- Road 96
 
 ### Free Games
 

@@ -1,6 +1,6 @@
 # README
 
-This is the source of my personal but public webpage ```¯\_(ツ)_/¯```
+This is the source of my personal, public web page ```¯\_(ツ)_/¯```
 
 [![Header](header.svg)](https://0xfab1.net)
 
@@ -43,28 +43,28 @@ Visit <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org
 
 ## Build
 
-Run the following code to install and update the required tools using [python](https://www.python.org/) and build as well as serve the website (build is optional).
+Use [python](https://www.python.org/) to install the required tools to build/serve this website:
 
-``` sh title="Install"
+``` py title="install.py"
 pip install --upgrade pip
 pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin
 ```
 
 If all above is already installed, make sure to use the latest version:
 
-``` sh title="Update"
+``` py title="update.py"
 pip install -U mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin
 ```
 
 Building the site will reveal all possible issues with the current version:
 
-``` sh title="Build"
+``` py title="build.py"
 mkdocs build -v
 ```
 
 Run this command and navigate to <http://127.0.0.1:8888/> to browse locally.
 
-``` sh title="Serve"
+``` py title="serve.py"
 mkdocs serve -a localhost:8888 --dirtyreload --watch-theme -v
 ```
 
