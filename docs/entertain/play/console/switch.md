@@ -1,5 +1,7 @@
 # Switch Games
 
+## Games
+
 A list of my nintendo switch games:
 
 | Game                                  | Local Player | Comment         |
@@ -273,7 +275,7 @@ Games to try out:
 - Tetris Effect: Connected
 - Mario Party Superstars
 
-#### Great 4-Player Coop games without competitive mode
+#### 4-Player Couch Coop
 
 - Diablo III
 - Unit 4

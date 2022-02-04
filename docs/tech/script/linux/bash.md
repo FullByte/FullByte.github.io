@@ -294,6 +294,34 @@ tmux kill-session
 - Nmap scan every interface that is assigned an IP: ```ifconfig -a | grep -Po '\b(?!255)(?:\d{1,3}\.){3}(?!255)\d{1,3}\b' | xargs nmap -A -p0-```
 - Extract your external IP address using dig: ```dig +short myip.opendns.com @resolver1.opendns.com```
 
+### DNS
+
+Simple DNS performance check:
+
+``` sh
+TIMEFORMAT=%R && (time dig @8.8.8.8 0xfab1.net) 2>&1 > /dev/null
+```
+
+Simple DNS performance check with loop through DNS list "dns.txt"
+
+``` sh
+for dns in `cat dns.txt`; do echo -n $dns: && TIMEFORMAT=%R && (time dig @$dns 0xfab1.net) 2>&1 > /dev/null; done
+```
+
+dns.txt could look like this:
+
+``` txt title="dns.txt"
+1.1.1.1
+8.8.8.8
+9.9.9.9
+```
+
+Loop through DNS list and check website 10x
+
+``` sh
+TIMEFORMAT=%R && for dns in `cat dns.txt`; do (for i in {1..10}; do (echo -n $dns: && (time dig @$dns 0xfab1.net) 2>&1 > /dev/null); done); done
+```
+
 ## Fun Stuff
 
 Entertaining nonsense:

@@ -1,5 +1,7 @@
 # Playstation 5
 
+## Games
+
 A list of my playstation games:
 
 | Game                               | Local Player | Comment |
