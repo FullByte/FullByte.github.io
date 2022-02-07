@@ -1,12 +1,4 @@
-# Mobile
-
-## Android
-
-### Apps
-
-TODO
-
-### adb
+# adb
 
 Info
 
@@ -51,9 +43,3 @@ adb reboot bootloader
 fastboot oem unlock
 fastboot flash recovery twrp.img
 ```
-
-## iOS
-
-### Apps
-
-- [Blink Shell: Mosh & SSH Client](https://apps.apple.com/app/id1156707581) ([website](https://blink.sh/), [source](https://github.com/blinksh/blink))

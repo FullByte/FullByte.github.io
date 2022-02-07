@@ -1,6 +1,4 @@
-# Gaming
-
-## Steam
+# Steam
 
 | What          | Where |
 |---------------|-------|
@@ -9,15 +7,15 @@
 | Download      |       |
 | Install       |       |
 
-### CLI
+## CLI
 
 <https://developer.valvesoftware.com/wiki/Command_Line_Options>
 
-#### SteamCMD
+### SteamCMD
 
 SteamCMD: <https://developer.valvesoftware.com/wiki/SteamCMD>
 
-#### SteamCLI
+### SteamCLI
 
 **Open Console**
 
@@ -28,7 +26,3 @@ run this command to force to run updates:
 ``` steam-cli
 app_info_update
 ```
-
-## Playnite
-
-TODO

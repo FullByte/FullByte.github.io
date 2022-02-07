@@ -1,6 +1,4 @@
-# Encryption
-
-## GPG
+# GPG
 
 | What          | Where |
 |---------------|-------|
@@ -9,7 +7,7 @@
 | Download      |       |
 | Install       |       |
 
-### Using a symmetric cypher (AES 256)
+## Using a symmetric cypher (AES 256)
 
 Encrypt with symmetric cypher
 
@@ -23,7 +21,7 @@ Decrypt with symmetric cypher
 gpg -d -o test.txt test.txt.gpg
 ```
 
-## PGP Email setup
+## Email setup
 
 Generate Key
 

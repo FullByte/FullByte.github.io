@@ -1,7 +1,5 @@
 # Links
 
-A list of azure tools, links to learn azure and news sources.
-
 ## Tools
 
 The best websites I know for Azure providing overviews, helpers and tools.

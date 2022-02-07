@@ -1,13 +1,12 @@
-# Pimp OS
+# Pimp Linux
 
-## Linux
+## Themes/GUI
 
 - gnome extension: <https://github.com/Schneegans/Burn-My-Windows> or <https://extensions.gnome.org/extension/4679/burn-my-windows/>
 - NeXTSTEP-like desktop environment for Linux: <https://github.com/trunkmaster/nextspace>
 - 1995 Microsoft OS GUI for Linux: <https://github.com/grassmunk/Chicago95>
 
-## Windows
+## Virtulize, Emnulate and Port
 
-When using Windows, there are alot of tools built in; Learn to use them; where missing or they suck here are some alternatives:
-
-- Screen Saver: <https://github.com/rocksdanister/lively>
+- DOS for Linux: <https://github.com/dosemu2/dosemu2>
+- Wine for Windows applications on Linux: <https://www.winehq.org/>

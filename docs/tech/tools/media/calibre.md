@@ -1,6 +1,4 @@
-# Books
-
-## Calibre
+# Calibre
 
 Plugins
 
