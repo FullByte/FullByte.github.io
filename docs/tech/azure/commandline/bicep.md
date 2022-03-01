@@ -6,6 +6,10 @@ Bicep is a domain-specific language (DSL) that uses declarative syntax to deploy
 - Source: <https://github.com/Azure/bicep>
 - Install: ```choco install -y bicep```
 
+## Links
+
+- Azure Landing Zones Bicep modules: <https://github.com/Azure/ALZ-Bicep>
+
 ## From ARM to Bicep
 
 You can export the template for a resource group, and then pass it directly to the decompile command. The following example shows how to decompile an exported template.

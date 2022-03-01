@@ -63,5 +63,5 @@ Alternativly it is also possible to use wget: ```wget --http-user=username --htt
 
 Combine this with the command and we have a one-liner to read a cv using `man` :)
 
-- Linux: ```man <( curl -u user:"password" -sL https://cv.example.com/cv.7 )```
-- MacOS: ```curl -u user:"password" -sL https://cv.example.com/cv.7 > /tmp/cv.7; man /tmp/cv.7```
+- Linux: ```man <( curl -u "user":"password" -sL https://cv.example.com/cv.7 )```
+- MacOS: ```curl -u "user":"password" -sL https://cv.example.com/cv.7 > /tmp/cv.7; man /tmp/cv.7```

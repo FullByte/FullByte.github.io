@@ -68,6 +68,11 @@ Run this command and navigate to <http://127.0.0.1:8888/> to browse locally.
 mkdocs serve -a localhost:8888 --dirtyreload --watch-theme -v
 ```
 
+## Docker
+
+Build docker: ```docker build . -t 0xfab1/0xfab1.net```
+Run container: ```docker run -p 8080:8000 -d 0xfab1/0xfab1.net```
+
 ## Contribute
 
 I appreciate your pull-request for typos/errors in existing pages. If you think something is generally wrong or I missed to link you/someone where appropiate, please let me know!

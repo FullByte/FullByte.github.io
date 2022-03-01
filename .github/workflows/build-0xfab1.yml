@@ -25,7 +25,6 @@ jobs:
           pip install --upgrade pip          
           pip install mkdocs-material
           pip install mkdocs-minify-plugin
-          pip install mkdocs-rss-plugin
 
       - name: Deploy Github Pages
         run: |

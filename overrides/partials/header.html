@@ -76,13 +76,6 @@
           {% include "partials/search.html" %}
           {% endif %}
 
-          <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}/feed_rss_updated.xml" title="{{ config.site_name | e }}"
-              class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
-              <label class="md-header__button md-icon">
-            {% include ".icons/fontawesome/solid/rss.svg" %}
-          </label>
-          </a>
-
           {% if config.repo_url %}
           <div class="md-header__source">
               {% include "partials/source.html" %}

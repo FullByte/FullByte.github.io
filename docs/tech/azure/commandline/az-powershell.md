@@ -32,7 +32,7 @@ Get-AzImage -ResourceGroupName 'ResourceGroup01' -ImageName 'Image01'
 
 ## Helpers
 
-One-liner to get any tenant ID without being logged in:
+Get any tenant ID when providing a name:
 
 ``` ps1
 if(($result = Read-Host "Enter a tenant name you want the tenant ID of: ") -eq ''){"You need to add a tenant name"}else{Write-Host('TenantID: ' + (Invoke-WebRequest https://login.windows.net/$result.onmicrosoft.com/.well-known/openid-configuration|ConvertFrom-Json).token_endpoint.Split('/')[3])}
@@ -42,6 +42,13 @@ You can't rename a resource group but you can [move it](https://docs.microsoft.c
 
 ``` ps1
 Get-AzureRmResource -ResourceGroupName <sourceResourceGroupName> | Move-AzureRmResource -DestinationResourceGroupName <destResourceGroupName>
+```
+
+Powershell GUI (GridView) to (in this example) have the user select the correct storag account:
+
+``` ps1
+$storageAccount = Get-AzStorageAccount | Out-GridView -Title "Select StorrageAccount" -OutputMode Single
+$storageAccountName = $storageAccount | Select-Object -ExpandProperty StorageAccountName
 ```
 
 ### Resource Providers
