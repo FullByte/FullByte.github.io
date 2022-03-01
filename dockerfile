@@ -7,4 +7,4 @@ COPY docs ./docs
 COPY overrides ./overrides
 COPY mkdocs.yml .
 ENTRYPOINT ["mkdocs"]
-CMD ["serve", "--dev-addr=0.0.0.0:8000"]
+CMD ["serve", "-a", "localhost:8888"]
