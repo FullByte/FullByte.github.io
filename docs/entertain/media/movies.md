@@ -14,23 +14,23 @@ This is a list of movies I enjoyed watching.
 ## Fight Movies
 
 - Creed
-- Million Dollar Babe
+- Million Dollar Baby
 
 ## Science Fiction
 
 - Inception
-- Interstallar
+- Interstellar
 - The Zero Theorem
 - Turbo Kid
 
 ## Animated movies
 
-- Caroline
+- Coraline
 - Ghost in the Shell
 - Mary and Max
 - Mutafukaz
 - Spirited Away
-- Toroto
+- Totoro
 - Up
 - Werner - gekotzt wird später
 - Winnie the Pooh
@@ -48,7 +48,7 @@ This is a list of movies I enjoyed watching.
 - Robocop
 - The Expendables 1+3
 
-## Intersting Story
+## Interesting Story
 
 - 12 Monkeys
 - Amélie
@@ -127,7 +127,7 @@ This is a list of movies I enjoyed watching.
 - Herr der Ringe 1-3
 - John Wick 1-3
 - Matrix 1-3
-- Pirates of the Caribian 1-3
+- Pirates of the Caribbean 1-3
 - Planet der Affen 1-3
 - Star Wars 4-6
 - The Dark Night 1-3
