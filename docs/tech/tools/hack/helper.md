@@ -11,7 +11,7 @@ Wireshark
 
 ## seclists
 
-seclists```sudo apt -y install seclists```
+seclists ```sudo apt -y install seclists```
 
 ## wfuzz
 
@@ -29,14 +29,11 @@ TODO
 
 Identification of various hashes
 
-### Hash-identifier
-
 ### Decodify
 
 <https://github.com/s0md3v/Decodify>
 
 TODO
-
 
 ## MacChanger
 

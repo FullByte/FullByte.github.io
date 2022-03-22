@@ -41,7 +41,9 @@ Visit <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org
 - [0xfab1@cloudflare](https://fullbyte-github-io.pages.dev) using [cloudflare](https://www.cloudflare.com/) (alternative link: <https://cloudflare.0xfab1.net/>)
 - [0xfab1@layer0](https://0xfab1-layer0-0xfab1-net-production.layer0-limelight.link) using [layer0](https://www.layer0.co/) (alternative link: <https://layer0.0xfab1.net/>)
 
-## Build
+## Build and Run
+
+### Python and MkDocs
 
 Use [python](https://www.python.org/) to install the required tools to build/serve this website:
 
@@ -62,16 +64,17 @@ Building the site will reveal all possible issues with the current version:
 mkdocs build -v
 ```
 
-Run this command and navigate to <http://127.0.0.1:8888/> to browse locally.
+Run this command and navigate to <http://127.0.0.1:8000/> to browse locally.
 
 ``` py title="serve.py"
-mkdocs serve -a localhost:8888 --dirtyreload --watch-theme -v
+mkdocs serve -a localhost:8000 --dirtyreload --watch-theme -v
 ```
 
-## Docker
+### Docker
 
-Build docker: ```docker build . -t 0xfab1/0xfab1.net```
-Run container: ```docker run -p 8080:8000 -d 0xfab1/0xfab1.net```
+This repository contains a `dockerfile` in the main folder which can be used to build a new container with this command: ```docker build . -t 0xfab1/0xfab1.net```
+
+To run the [latest official docker hub build](https://hub.docker.com/repository/docker/0xfab1/0xfab1.net) locally using docker, run this command: ```docker run -it --rm -p 8000:8000 0xfab1/0xfab1.net serve -a 0.0.0.0:8000```
 
 ## Contribute
 

@@ -1,15 +1,37 @@
 # Docker
 
-More: <https://github.com/hexops/dockerfile>
-
-## Info
-
 | What          | Where                                                                    |
 |---------------|--------------------------------------------------------------------------|
 | Official Page | <https://www.docker.com/>                                                |
 | Docs          | <https://docs.docker.com/get-started/>                                   |
 | Download      | <https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe> |
 | Install       |```choco install docker-desktop```                                       |
+
+Links:
+
+- More: <https://github.com/hexops/dockerfile>
+- Many Images: <https://hub.docker.com/u/linuxserver/>
+- how-to-clean-text-data-at-the-command-line <https://www.ezzeddinabdullah.com/posts/how-to-clean-text-data-at-the-command-line>
+
+## Basics
+
+### Network issues on Windows
+
+Network issues on Windows with Docker for Windows:
+
+Show IP address allocated by the docker host: ```docker inspect -f "{{ .NetworkSettings.IPAddress }}" <docker-name>```
+
+Required port is reserved
+
+- Check, if your required port is reserved: ```netsh interface ipv4 show excludedportrange protocol=tcp```
+- If it your port is in one of the ranges, stop winnat: ```net stop winnat```
+- Do stuff that didn't work before
+- Prohibit dynamic reservation for your required port (here for example, 50051, as stated in the original question): ```netsh int ipv4 add excludedportrange protocol=tcp startport=50051 numberofports=1```
+Restart winnat: ```net start winnat```
+
+Stop IIS:
+
+- Stop IIS: ```iisreset /STOP```
 
 ## Cool things to run with docker
 
@@ -28,11 +50,6 @@ Trigger script in Powershell in Docker
 ``` sh
 docker run -it -v C:\Users\username\src:/src mcr.microsoft.com/azure-powershell:3.6.1-ubuntu-18.04 pwsh -file /src/script.ps1
 ```
-
-### Tutorials
-
-- Many Images: <https://hub.docker.com/u/linuxserver/>
-- how-to-clean-text-data-at-the-command-line <https://www.ezzeddinabdullah.com/posts/how-to-clean-text-data-at-the-command-line>
 
 ### webtop
 

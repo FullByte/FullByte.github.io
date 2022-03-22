@@ -37,6 +37,14 @@ Delete all evicted pods:
 kubectl get pod -n mynamespace | grep Evicted | awk '{print $1}' | xargs kubectl delete pod -n mynamespace
 ```
 
+### Port forwarding
+
+Simple example:
+
+``` sh
+kubectl port-forward mycontainer 8080:3000
+```
+
 ## Kubernetes Dashboard
 
 Running Docker for Windows with enabled Kubernetes Cluster

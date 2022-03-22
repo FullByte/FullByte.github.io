@@ -12,6 +12,10 @@ Windows History: <https://winhistory.de>
 
 - Sophia Script for Windows: <https://github.com/farag2/Sophia-Script-for-Windows>
 
+## Commands that help
+
+- Export current drivers: ```pnputil /export-driver * e:\treiber```
+
 ## Windows Apps
 
 ### WinGet
@@ -77,7 +81,7 @@ SizeBench is a utility that analyzes PDB information to help you optimize and re
 
 Take screenshot: Windows + Shift + S
 
-## Record Screen
+### Record Screen
 
 - Start recording mode: Windows + G
 - start recording: Window + Alt + R

@@ -166,9 +166,9 @@ Watch:
 
 Bloodpack example
 
-| Before|After|
-|---|---|
-|![AOE2DEBeforeBlood](_aoe2de_bloodexample1.jpg) | ![AOE2DEafterblood](_aoe2de_bloodexample2.jpg)|
+| Before                                          | After                                          |
+|-------------------------------------------------|------------------------------------------------|
+| ![AOE2DEBeforeBlood](_aoe2de_bloodexample1.jpg) | ![AOE2DEafterblood](_aoe2de_bloodexample2.jpg) |
 
 ### YuGiOh (Project Ignis: EDOPro)
 

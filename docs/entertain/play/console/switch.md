@@ -283,3 +283,11 @@ Games to try out:
 Games to try out:
 
 - Monaco
+
+## Helper
+
+### Mario Kart
+
+- https://mk8dxbuilder.com/
+- https://www.mariowiki.com/Mario_Kart_8_Deluxe_in-game_statistics
+- https://bayesicmk8dx.shinyapps.io/mk8_build_optimizer/

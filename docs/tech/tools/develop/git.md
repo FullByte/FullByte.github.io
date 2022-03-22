@@ -1,6 +1,6 @@
 # Git
 
-# Tools
+## Tools
 
 - Github quick stats: <https://github.com/arzzen/git-quick-stats>
 - [tig](https://github.com/jonas/tig) helps to colorize the git output
@@ -60,6 +60,12 @@ Get all authors:
 
 ``` sh
 git log | Where { $_ -match "Author" } | Select-Object -unique
+```
+
+Download a specific branch:
+
+``` sh
+git clone -b dependabot/npm_and_yarn/pug-3.0.1  https://github.com/microsoft/project-nodejs-express-webapp/
 ```
 
 ## Pretend to be busy
