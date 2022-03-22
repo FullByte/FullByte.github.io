@@ -1,4 +1,4 @@
-# 1 Information Gathering
+# Information Gathering
 
 TODO: WhatWeb
 

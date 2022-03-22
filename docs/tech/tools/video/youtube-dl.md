@@ -9,6 +9,10 @@ Some examples on how to use youtube-dl or ytdlpl to download videos.
 | Download      | <https://github.com/ytdl-org/youtube-dl/releases> |
 | Install       | choco install youtube-dl                          |
 
+As an alternative it is possible to swap youtube-dl with [yt-dlp](https://github.com/yt-dlp/yt-dlp). This should simply work in most cases. IN case of issues e.g. with "-F" output to give format selection create `yt-dlp.conf` in the same dir as yt-dlp and write `--list-formats-old` in it.
+
+If the commandline is not appealing to you, try [youtube-dl-gui](https://github.com/oleksis/youtube-dl-gui) which is a cross platform front-end GUI for youtube-dl.
+
 ## Download Video
 
 Download to a specific location in best quality:
@@ -82,15 +86,3 @@ Alternatively use this script
 ``` ps1
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/scripts/main/tools/youtubedl/youtube-dl.ps1'))
 ```
-
-## Extras
-
-### Alternative fork yt-dlp
-
-Alternative <https://github.com/yt-dlp/yt-dlp>
-
-You can swap yt-dlp with youtube-dl by renaming and not worry about commands fail. If the GUI parses the -F output to give format selection, it could cause a bit of a problem. To fix that, create yt-dlp.conf in the same dir as yt-dlp and put --list-formats-old in it.
-
-### GUI
-
-[Youtube-dl-gui](https://github.com/oleksis/youtube-dl-gui) is a cross platform front-end GUI of the popular youtube-dl written in wxPython.
