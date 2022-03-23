@@ -1,8 +1,11 @@
-name: Publish Docker image
+name: Publish Github Docker Image
 
 on:
-  release:
-    types: [published]
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+  workflow_dispatch:
 
 jobs:
   push_to_registry:
