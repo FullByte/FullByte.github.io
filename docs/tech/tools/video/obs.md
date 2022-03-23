@@ -7,7 +7,8 @@ Info
 | Official Page |       |
 | Source        |       |
 | Download      |       |
-| Install       |       |
+| Windows       |       |
+| Linux       |sudo apt install obs-studio|
 
 ## Links
 
@@ -32,3 +33,11 @@ To put them together you have to:
 - Open OBS -> Tools -> v4l2 Video Output -> select "Start"
 - Go to the audio/video settings of the vidconf software and select the new video device
 - Select new virtual cam from video conferencing tool you use.
+
+## Install on Ubuntu
+
+``` sh
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update
+sudo apt install obs-studio
+```
