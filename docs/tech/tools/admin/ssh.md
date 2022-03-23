@@ -9,7 +9,7 @@ Info
 | Download      |       |
 | Install       |       |
 
-### Install and Configure
+## Install and Configure
 
 Windows 10
 
@@ -45,7 +45,7 @@ If the firewall does not exist, create one
 New-NetFirewallRule -Name sshd -DisplayName 'OpenSSH-Server-In-TCP' -Enabled True -Direction Inbound -Protocol TCP -Action Allow -LocalPort 22
 ```
 
-### Login
+## Login
 
 Login to azure server "azureserver" with user "user" and private ssh keyfile "private.key". The passphrase will be queried after executing the command.
 
@@ -61,7 +61,7 @@ Use the `-L` flag to forward a connection to a remote server
 ssh server -L3000:localhost:3000
 ```
 
-### Configuration
+## Configuration
 
 Edit ~/.ssh/config for multiple SSH Hops
 
@@ -94,7 +94,7 @@ Add Key to Remote Server
 ssh-copy-id -i ~/.ssh/id_ed25519.pub username@remote
 ```
 
-### SSH Escape Sequences
+## SSH Escape Sequences
 
 To see all escape sequences press `~?`.
 
@@ -112,7 +112,7 @@ To see all escape sequences press `~?`.
 (Note that escapes are only recognized immediately after newline.)
 ```
 
-### Creating an SSH key
+## Creating an SSH key
 
 Creating an SSH key for Github
 
@@ -136,8 +136,8 @@ ssh-add ~/.ssh/keyname
 ssh -T git@github.com
 ```
 
-### Helpful commands
+## Helpful commands
 
-Examples:
-
+- Change Password: ```ssh-keygen -p -f C:\Users\0xfab1\.ssh\id_ed25519```
 - Forward Multiple Ports Over SSH: ```ssh dev@server.com -L 3000:localhost:3000 -L 9009:localhost:9009```
+- Test SSH (e.g. to gitlab): ```ssh -vT git@gitlab.com```
