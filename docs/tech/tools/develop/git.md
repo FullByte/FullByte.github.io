@@ -10,15 +10,18 @@
 
 ## Setup
 
-Set global user name and email:
-(remove --global flag for specific repo only)
+### Basics
+
+Set global user name and email (remove --global flag for specific repo only):
 
 ``` sh
 git config --global user.name "0xfab1"
 git config --global user.email "f@bi.an"
 ```
 
-Setup SSH login
+View current config: ```git config --global --list```
+
+### Setup SSH login
 
 Create new key
 
@@ -30,7 +33,7 @@ ssh-add ~/.ssh/id_ed25519
 ssh-add -l
 ```
 
-Copy this to github: <https://github.com/settings/ssh/new>
+Copy this to [github](https://github.com/settings/ssh/new)
 
 ``` sh
 cat ~/.ssh/id_ed25519.pub
@@ -56,17 +59,8 @@ git push
 
 ## Commands
 
-Get all authors:
-
-``` sh
-git log | Where { $_ -match "Author" } | Select-Object -unique
-```
-
-Download a specific branch:
-
-``` sh
-git clone -b dependabot/npm_and_yarn/pug-3.0.1  https://github.com/microsoft/project-nodejs-express-webapp/
-```
+- Get all authors: ```git log | Where { $_ -match "Author" } | Select-Object -unique```
+- Download a specific branch: ```git clone -b dependabot/npm_and_yarn/pug-3.0.1  https://github.com/microsoft/project-nodejs-express-webapp/```
 
 ## Pretend to be busy
 

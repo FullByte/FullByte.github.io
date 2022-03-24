@@ -9,6 +9,8 @@
 
 ## Login
 
+If on Linux, start Powershell in bash with `pwsh`.
+
 Login to azure:
 
 ``` ps1
@@ -66,9 +68,9 @@ To register a specific resource provider run the following Powershell command:
 Register-AzureRmResourceProvider -ProviderNamespace ResourceProvider.Name
 ```
 
-## Virtual Machine (VM)
+## Virtual Machine
 
-### [Encrypt VM](https://docs.microsoft.com/en-us/azure/virtual-machines/disk-encryption-overview)
+### Encrypt VM
 
 List all VMs and if they are using Azure Disk Encryption (but not the extension version):
 
@@ -78,14 +80,12 @@ $dataVolEncrypted= {(Get-AzVMDiskEncryptionStatus -ResourceGroupName $_.Resource
 Get-AzVm | Format-Table @{Label="MachineName"; Expression={$_.Name}}, @{Label="OsVolumeEncrypted"; Expression=$osVolEncrypted}, @{Label="DataVolumesEncrypted"; Expression=$dataVolEncrypted}
 ```
 
-[Encrypt a VM](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-sample-scripts)
-
-Short example
+Short example on how to [encrypt a VM](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disk-encryption-sample-scripts)
 
 ``` ps1
 Function EncryptVM($KeyVault,$KeyName,$VM){
     $kv = Get-azKeyVault -VaultName $KeyVault
-    $key = get-Azkeyvaultkey -Name $KeyName -VaultName $KeyVault
+    $key = Get-Azkeyvaultkey -Name $KeyName -VaultName $KeyVault
     Set-AzVmDiskEncryptionExtension -ResourceGroupName $kv.ResourceGroupName -DiskEncryptionKeyVaultId  $kv.ResourceID -DiskEncryptionKeyVaultUrl $kv.VaultURI -VMName $VM -KeyEncryptionKeyVaultId $kv.ResourceID -KeyEncryptionKeyUrl $key.id -SkipVmBackup -VolumeType "All"
 }
 ```

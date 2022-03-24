@@ -29,7 +29,7 @@ Publishing my projects and notes has been great exercise for me. As longs as thi
 
 Thanks for your interest and I appreciate your [pull-request](#contribute) for typos/errors in existing pages!
 
-Visit <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org/doc/html/rfc2818) with [Let's Encrypt](https://letsencrypt.org/), supports [IPv4](https://datatracker.ietf.org/doc/html/rfc3344) and [IPv6](https://datatracker.ietf.org/doc/html/rfc8200)). This static website is based on [MkDocs](https://github.com/mkdocs/mkdocs/) with [Material](https://github.com/squidfunk/mkdocs-material) and [minify](https://github.com/byrnereese/mkdocs-minify-plugin) and [rss](https://github.com/Guts/mkdocs-rss-plugin) plugin. The website is built using [GitHub Actions](https://github.com/features/actions) and served by [GitHub Pages](https://pages.github.com/) as well as these alternative hosts:
+Visit <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org/doc/html/rfc2818) with [Let's Encrypt](https://letsencrypt.org/), supports [IPv4](https://datatracker.ietf.org/doc/html/rfc3344) and [IPv6](https://datatracker.ietf.org/doc/html/rfc8200)). This static website is based on [MkDocs](https://github.com/mkdocs/mkdocs/) with [Material](https://github.com/squidfunk/mkdocs-material) and [minify](https://github.com/byrnereese/mkdocs-minify-plugin). The website is built using [GitHub Actions](https://github.com/features/actions) and served by [GitHub Pages](https://pages.github.com/) as well as these alternative hosts:
 
 - [0xfab1@github](https://fullbyte.github.io) using [GitHub Pages](https://pages.github.com/) (alternative link: <https://www.0xfab1.net/>)
 - [0xfab1@IFPS](http://fb62c5359b88d00d5924.b-cdn.net) using [IPFS](https://ipfs.io/) with [fleek](https://fleek.co/) (alternative link: <https://ipfs.0xfab1.net/>)
@@ -49,13 +49,13 @@ Use [python](https://www.python.org/) to install the required tools to build/ser
 
 ``` py title="install.py"
 pip install --upgrade pip
-pip install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin
+pip install mkdocs mkdocs-material mkdocs-minify-plugin
 ```
 
 If all above is already installed, make sure to use the latest version:
 
 ``` py title="update.py"
-pip install -U mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin
+pip install -U mkdocs mkdocs-material mkdocs-minify-plugin
 ```
 
 Building the site will reveal all possible issues with the current version:
