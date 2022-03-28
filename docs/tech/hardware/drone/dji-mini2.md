@@ -64,5 +64,5 @@ Bei den fünf Drohnenklassen/Risikoklassen von C0 bis C4 geht es um die technisc
 ### DJI
 
 - DJI Mini 2 Official Page: <https://www.dji.com/de/mini-2>
-- DJI Mini 2 App: <https://www.dji.com/de/downloads/djiapp/dji-fly>
+- DJI Mini 2 App: <https://www.dji.com/de/downloads/djiapp/dji-fly> alt: <https://www.dji.com/de/mini-2/downloads>
 - DJI Mini 2 Support: <https://www.dji.com/de/support/product/mini-2>

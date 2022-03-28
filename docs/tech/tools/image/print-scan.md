@@ -4,13 +4,19 @@ For printing and scanning I personally prefer a laser printer with LAN support. 
 
 ## Windows
 
+### Print
+
 Usually there is no need to install specific drivers to print.
 
-### NAPS2
+### Scan
 
 For scanning on windows I prefer [NAPS2](https://www.naps2.com).
 
+Alternativally try [VueScan](https://www.hamrick.com/).
+
 ## Linux
+
+### Print
 
 Usually there is no need to install specific drivers to print. Use the [HP print and scan drivers for linux](https://developers.hp.com/hp-linux-imaging-and-printing) if you have issues with your printer. This is required for scanning.
 
@@ -22,7 +28,9 @@ Steps to get HP Printers running on Ubuntu 20.04:
 - Run the script with ```sh hplip-<version>.run```
 - Now run the HO Device Manger or your scan tool of choice e.g. SimpleScan or gscan2pdf.
 
-### SimpleScan
+### Scan
+
+Install SimpleScan
 
 ``` sh
 sudo apt-get install simple-scan
@@ -32,7 +40,7 @@ gsettings set org.gnome.SimpleScan brightness -10
 gsettings set org.gnome.SimpleScan contrast 25 
 ```
 
-### gscan2pdf
+Install gscan2pdf
 
 ``` sh
 sudo apt-get install gscan2pdf

@@ -1,76 +1,63 @@
 # Names
 
-- Harry Baals
-- Yuri Tarded
-- Ty Nikox
-- Mike Oxmaul
-- Mike Oxbig
-- Hugh Janas
-- Mike Litoris
-- Tess Tickles
-- Mike Hunt
 - Anita Hanjaab
-- Ivanna Humpalot
 - Annie Chulaydawn
+- Biggus Dickus
 - C. Mike Rack
-- Klee Torres
+- Dicken sider
 - Dill Doe
 - Dixie Normous
-- Dicken sider
+- Dixie Normus
 - Dixie Rect
 - Dixon B. Tweenerlegs
 - Dixon Butts
-- Rae Piste
-- Hugh Janus
-- Nick Gurr
-- Phil T. Cox
-- Dixie Rect
-- Tess Tickles
-- Hugh Jass
-- Moe Lester
-- Mike Oxlong
-- Mike Litoris
-- Hugh Janus
-- Dixie Normus
-- Sakh Madik
-- Mike Hawke
-- Iwan Tifúq
-- Hugh Mungus
-- Jack Mehoff
-- Jenny Tulls
-- Hue G. Rection
 - Dixon Kuntz
-- Willma Dickfit
+- Doris Shutt
 - E. Jack Layte
-- Peter File
 - E. Norma Scock
 - E. Norma Stits
-- Haywood Jablowme
-- Wayne Kerr
-- Gernhard Reinholzen
-- mike oxlong
-- Jenna Tolls
-- Seymour Cox
-- Hans Omaicok
-- Biggus Dickus
-- Harry Balzac
+- Frank N. Stein
 - Gabe Itch
+- Gerey Atrick
+- Gernhard Reinholzen
+- Hans Omaicok
+- Harry Baals
+- Harry Balzac
 - Harry Cox
 - Harry Dix
 - Harry Kuntz
 - Harry Nutt
 - Harry P. Ness
-- Holden McGroin
 - Haywood Jablomi
+- Haywood Jablowme
+- Holden McGroin
+- Hue G. Rection
 - Hugh G. Dildeaux
 - Hugh G. Dill Doe
 - Hugh Gebrests
+- Hugh Janas
+- Hugh Janus
+- Hugh Jass
+- Hugh Mungus
 - I. C Yadick
 - Ivana Fuccu
 - Ivanna B. Spanked
+- Ivanna Humpalot
+- Iwan Tifúq
+- Jack Mehoff
+- Jenny Tulls
+- Klee Torres
+- Levy Tate
 - Liz Bien
 - Master Bates
-- Mike Rotch
+- Max E. Mumm
+- May B. Dunn
+- Mike Hawke
+- Mike Hunt
+- Mike Litoris
+- Mike Oxbig
+- mike oxlong
+- Mike Oxmaul
 - Mike Rotch
 - Miles Long
 - Moe Lester
@@ -78,15 +65,19 @@
 - Neil Down
 - Nick Gurr
 - Nick Row
-- Vye Agra
-- Frank N. Stein
-- May B. Dunn
-- Doris Shutt
+- Peter File
+- Phil T. Cox
+- Rae Piste
 - Rej Oyce
 - Rick O'Shea
 - Robyn Banks
-- Levy Tate
+- Sakh Madik
+- Seymour Cox
 - Stan Dupp
-- Gerey Atrick
-- Max E. Mumm
+- Tess Tickles
+- Ty Nikox
+- Vye Agra
+- Wayne Kerr
+- Willma Dickfit
 - Yul B. Al Wright
+- Yuri Tarded
