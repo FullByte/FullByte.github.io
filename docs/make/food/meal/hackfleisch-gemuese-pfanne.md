@@ -17,8 +17,6 @@
     - [ ] 2 Zucchini
     - [ ] 4 Paprikas
     - [ ] 500g Hackfleisch gewürzt
-  
-
     
     Ggf. schon vorhanden:
 
@@ -27,10 +25,8 @@
     - [ ] Olivenöl
     - [ ] 4TL Tomatenmark
   
-
     Gewürze:
     
-
     - [ ] 10g Salz
     - [ ] 10g Pfeffer
     - [ ] 2TL Gemüsebrühe
@@ -40,10 +36,10 @@
     - [ ] Champignons in Scheiben, Paprika und Zucchini in Würfel schneiden.
     - [ ] Zwiebel und Knoblauch fein hacken.
     - [ ] Öl in eine große Pfanne geben und das Hackfleisch gut anbraten.
-    - [ ] Danach Zwiebel und Knoblauch hinzugeben und etwas mitbraten
-    - [ ] Alles aus der Pfanne nehmen und die Champignons etwas anbraten
-    - [ ] Dann die Paprika und Zucchiniwürfel hinzugeben und mitbraten
-    - [ ] Als nächstes das Hackfleisch-Gemisch wieder hinzugegeben
+    - [ ] Zwiebel und Knoblauch hinzugeben und etwas mitbraten
+    - [ ] Alles aus der Pfanne nehmen und die Champignons anbraten
+    - [ ] Paprika und Zucchiniwürfel hinzugeben und mitbraten
+    - [ ] Hackfleisch-Gemisch wieder hinzugegeben
     - [ ] Mit dem Tomatenmark anrösten und das Ganze mit etwas Brühe ablöschen.
     - [ ] Die Mischung unter gelegentlichem Umrühren köcheln lassen, bis die Flüssigkeit verdampft ist.
     - [ ] Danach mit Salz und Pfeffer abschmecken und genießen.
