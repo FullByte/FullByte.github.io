@@ -1,4 +1,6 @@
-# Prömpeln
+# Rules
+
+Prömpeln
 
 ## Einleitung
 

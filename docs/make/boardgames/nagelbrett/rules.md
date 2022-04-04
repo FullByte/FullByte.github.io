@@ -1,4 +1,4 @@
-# Nagelbrett
+# Rules
 
 Work in progress :)
 

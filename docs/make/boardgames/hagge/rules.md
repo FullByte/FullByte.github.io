@@ -1,4 +1,6 @@
-# Halli Galli Extreme
+# Rules
+
+Halli-Galli-Extreem
 
 ## §1 Spielaufbau und -ablauf
 

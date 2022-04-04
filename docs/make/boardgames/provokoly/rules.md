@@ -1,3 +1,3 @@
-# Provokoly
+# Rules
 
-Work in progress :)
+Provokoly is work in progress :)
