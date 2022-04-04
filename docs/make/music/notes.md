@@ -4,12 +4,6 @@
 
 Change octave: Group -> Choose one of the blue buttons
 
-## VSTs
-
-### Surge
-
-[Manual](https://surge-synthesizer.github.io/manual/)
-
 ## Cubase
 
 [Check for grace_period](https://o.steinberg.net/en/support/grace_period.html) to upgrade for free to new version.

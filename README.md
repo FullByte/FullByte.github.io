@@ -43,7 +43,19 @@ Visit <https://0xfab1.net> for online view ([HTTPS](https://datatracker.ietf.org
 
 ## Build and Run
 
-### Python and MkDocs
+Clone this repository with [git](https://git-scm.com/downloads).
+
+``` sh
+git clone https://github.com/FullByte/FullByte.github.io.git 0xfab1.net
+```
+
+Alternativly fork this repository first (e.g. with [github cli](https://cli.github.com/)) if you want to change anything you want to later push back to this repository (see [Contribute](#contribute) ):
+
+``` sh
+gh repo fork https://github.com/FullByte/FullByte.github.io.git
+```
+
+### Option 1: Python and MkDocs
 
 Use [python](https://www.python.org/) to install the required tools to build/serve this website:
 
@@ -70,17 +82,33 @@ Run this command and navigate to <http://127.0.0.1:8000/> to browse locally.
 mkdocs serve -a localhost:8000 --dirtyreload --watch-theme -v
 ```
 
-### Docker
+### Option 2: Docker
 
-This repository contains a `dockerfile` in the main folder which can be used to build a new container with this command: ```docker build . -t 0xfab1/0xfab1.net```
+Use [docker](https://www.docker.com/) to run a container with all required tools + website enabled.
 
-To run the [latest official docker hub build](https://hub.docker.com/repository/docker/0xfab1/0xfab1.net) locally using docker, run this command: ```docker run -it --rm -p 8000:8000 0xfab1/0xfab1.net serve -a 0.0.0.0:8000```
+This repository contains a `dockerfile` in the main folder which can be used to build a new container with this command:
+
+``` sh
+docker build . -t yourbuild
+```
+
+Now run your docker build:
+
+``` sh
+docker run -it --rm -p 8000:8000 yourbuild serve -a 0.0.0.0:8000
+```
+
+To run the [latest official docker hub build](https://hub.docker.com/repository/docker/0xfab1/0xfab1.net) run this command:
+
+``` sh
+docker run -it --rm -p 8000:8000 0xfab1/0xfab1.net serve -a 0.0.0.0:8000
+```
 
 ## Contribute
 
 I appreciate your pull-request for typos/errors in existing pages. If you think something is generally wrong or I missed to link you/someone where appropiate, please let me know!
 
-- Fork the current version.
+- Fork the current version (e.g. ```gh repo fork https://github.com/FullByte/FullByte.github.io.git```)
 - Change whatever needs an udpate.
 - Test the reuslt by [building](#build) the site with your update.
 - If there are no errors, open a pull request and tell what you updated and why.

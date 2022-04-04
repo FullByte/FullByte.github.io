@@ -12,6 +12,8 @@ Basics
 - Services Running: ```Msconfig```
 - Firewall settings: ```netsh advfirewall show currentprofile```
 - Power Config: ```powercfg /l```
+- Get tasks running: ```tasklist```
+- Current user and groups + priviledges: ```whoami /all```
 
 ## Systeminfo
 
@@ -43,7 +45,7 @@ For are more detailed system info dump run [winPEAS](https://raw.githubuserconte
 
 ### Format FAT32 on >32GB
 
-Use```diskpart``` to clean the disk (requires Admin)
+Use ```diskpart``` to clean the disk (requires Admin)
 
 ```bat
 diskpart

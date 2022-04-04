@@ -1,31 +1,10 @@
-# Board Games
-
-## Host Board Game event helper
-
-TODO
-
-- How to best explain rules
-
-### Services
-
-- Set up a tournament: <https://www.toornament.com>
-- More counters: <https://scorecount.com/>
-
-## Game Helper
-
-### Chess
-
-- Chess Openings: <https://deepnote.com/@jstastny/Chess-Openings-CuVqER2CT-qv1-TjJjNHLw>
-- lichess: <https://lichess.org/analysis>
-- ECO Codes: A classification system for the chess openings moves: <https://www.365chess.com/eco.php>
-
-## My Games
+# My Board Games
 
 A list of board games I have and play.
 
 This list is an export from [Board Game Geek (BGG)](https://boardgamegeek.com/collection/user/zerogdoubled) and possibly newer entries are only available there.
 
-### 2 Player Games
+## 2 Player Games
 
 | Games      | Comment                                                                |
 |------------|------------------------------------------------------------------------|
@@ -59,13 +38,13 @@ This list is an export from [Board Game Geek (BGG)](https://boardgamegeek.com/co
 |----------|---------|
 | X nimmt! |         |
 
-### S&F Games
+## S&F Games
 
 | Games          | Comment                                    |
 |----------------|--------------------------------------------|
 | Onitama (2014) | Expansions: Sensei's Path, Way of the Wind |
 
-### Action Games
+## Action Games
 
 | Games            | Comment |
 |------------------|---------|
@@ -73,13 +52,13 @@ This list is an export from [Board Game Geek (BGG)](https://boardgamegeek.com/co
 |KLASK (2014)|7.157|Party|
 |KLASK 4 (2019)|5.727|Party|
 
-### Travel Games
+## Travel Games
 
 | Games                             | Comment |
 |-----------------------------------|---------|
 | Catan: Traveler – Compact Edition |         |
 
-### HGE Games
+## HGE Games
 
 Games for atleast 4 people, easy to play.
 
@@ -135,13 +114,13 @@ Games for atleast 4 people, easy to play.
 | Dice Throne       | Adventures, Season One Rerolled – Promo Pack, Adventures: Promo Pack (2020), Season One ReRolled, Season Two – Battle Chest, Season Two Promo Card Set (2018) |         |
 | Flügelschlag      | Europa, Oceania                                                                                                                                               |         |
 
-### Travel
+## Travel
 
 | Games                    | players | comment |
 |--------------------------|---------|---------|
 | Labyrinth: The Card Game |         |         |
 
-### Kids Games
+## Kids Games
 
 |Magic Dance|5.566|LIZZ|
 |Jenga||
@@ -149,7 +128,7 @@ Games for atleast 4 people, easy to play.
 |Hase und Igel||
 |Monster Mash|5.525||
 
-### Unsorted
+## Unsorted
 
 | Games                                           | Expansions                   | Comment            |
 |-------------------------------------------------|------------------------------|--------------------|

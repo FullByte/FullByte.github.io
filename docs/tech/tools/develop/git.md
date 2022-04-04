@@ -62,6 +62,17 @@ git push
 - Get all authors: ```git log | Where { $_ -match "Author" } | Select-Object -unique```
 - Download a specific branch: ```git clone -b dependabot/npm_and_yarn/pug-3.0.1  https://github.com/microsoft/project-nodejs-express-webapp/```
 
+## Remove Tags
+
+Run this in your local repository of which you want to remove a tag/tags:
+
+``` sh
+git fetch
+git tag
+git tag -d {tag-name}
+git push origin :refs/tags/{tag-name}
+```
+
 ## Pretend to be busy
 
 Do this on a clean machine
