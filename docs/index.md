@@ -16,12 +16,12 @@ As longs as this works well for me I will continue doing so :)
 The content may appear random as it deals with basically anything I find interesting and noteworthy ```¯\_(ツ)_/¯```
 
 The content of this site is mainly written in english, aside of some very few german posts.
-I hope you appreciate the lack of ads and pop-ups as well as a reference to the most suitable [meme](https://en.wikipedia.org/wiki/Internet_meme) per topic (if available).
+I hope you appreciate the lack of ads and pop-ups.
 
 Use the navigation menu on the left or the search bar on the top right to find the topics of interest.
 Toggle between light and dark mode, depending on what is prefered.
 
-I appreciate your [pull-request](https://github.com/FullByte/FullByte.github.io/) for typos/errors in existing pages.
+I appreciate your pull-request on GitHub for typos/errors in existing pages.
 If you think something is generally wrong or I missed to link you where appropiate, please let me know!
 
 Enjoy the content and find your visit worthwhile :)
@@ -29,3 +29,5 @@ Enjoy the content and find your visit worthwhile :)
 Regards,
 
 0xfab1
+
+![GitHub last commit](https://img.shields.io/github/last-commit/FullByte/FullByte.github.io?color=4cae4f&label=last%20update&style=plastic)

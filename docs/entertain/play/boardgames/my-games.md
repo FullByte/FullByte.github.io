@@ -6,31 +6,31 @@ This list is an export from [Board Game Geek (BGG)](https://boardgamegeek.com/co
 
 ## 2 Player Games
 
-| Games      | Comment                                                                |
-|------------|------------------------------------------------------------------------|
-| Arimaa     | N/A                                                                    |
-| Backgammon | N/A                                                                    |
-| Barragoon  |                                                                        |
-| Chess      | <https://github.com/tromp/ChessPositionRanking>                        |
-| DVONN      |                                                                        |
-| GIPF       |                                                                        |
-| Go         | <https://tromp.github.io/go/legal.html></br><https://senseis.xmp.net/> |
-| ZÈRTZ      |                                                                        |
-| YINSH      |                                                                        |
-| Kamisado   |                                                                        |
-| LYNGK      |                                                                        |
-| Onitama    | Expansions: Sensei's Path, Way of the Wind                             |
-| Hive       | The Pillbug                                                            |
-| Mastermind |                                                                        |
-| Octi       |                                                                        |
-| Otrio      |                                                                        |
-| PÜNCT      |                                                                        |
-| Pylos      |                                                                        |
-| Quarto     |                                                                        |
-| Quoridor   |                                                                        |
-| Quixo      |                                                                        |
-| Squadro    |                                                                        |
-| TZAAR      |                                                                        |
+| Games      | Comment                                                                 |
+|------------|-------------------------------------------------------------------------|
+| Arimaa     | N/A                                                                     |
+| Backgammon | N/A                                                                     |
+| Barragoon  |                                                                         |
+| Chess      | [Chess Position Ranking](https://github.com/tromp/ChessPositionRanking) |
+| DVONN      |                                                                         |
+| GIPF       |                                                                         |
+| Go         | <https://tromp.github.io/go/legal.html></br><https://senseis.xmp.net/>  |
+| ZÈRTZ      |                                                                         |
+| YINSH      |                                                                         |
+| Kamisado   |                                                                         |
+| LYNGK      |                                                                         |
+| Onitama    | Expansions: Sensei's Path, Way of the Wind                              |
+| Hive       | The Pillbug                                                             |
+| Mastermind |                                                                         |
+| Octi       |                                                                         |
+| Otrio      |                                                                         |
+| PÜNCT      |                                                                         |
+| Pylos      |                                                                         |
+| Quarto     |                                                                         |
+| Quoridor   |                                                                         |
+| Quixo      |                                                                         |
+| Squadro    |                                                                         |
+| TZAAR      |                                                                         |
 
 2P Simple
 
@@ -46,11 +46,10 @@ This list is an export from [Board Game Geek (BGG)](https://boardgamegeek.com/co
 
 ## Action Games
 
-| Games            | Comment |
-|------------------|---------|
-| Crokinole (1876) | Party   |
-|KLASK (2014)|7.157|Party|
-|KLASK 4 (2019)|5.727|Party|
+| Games             | Comment                           |
+|-------------------|-----------------------------------|
+| Crokinole (1876)  | Party                             |
+| KLASK (2014/2019) | I have the 2 and 4 Player version |
 
 ## Travel Games
 
@@ -122,51 +121,53 @@ Games for atleast 4 people, easy to play.
 
 ## Kids Games
 
-|Magic Dance|5.566|LIZZ|
-|Jenga||
-|Verflixxt|hoch 2, nochaml||
-|Hase und Igel||
-|Monster Mash|5.525||
+| Games         | players                     | comment |
+|---------------|-----------------------------|---------|
+| Magic Dance   |                             |         |
+| Jenga         |                             |         |
+| Verflixxt     | Expansions: hoch 2, nochmal |         |
+| Hase und Igel |                             |         |
+| Monster Mash  |                             |         |
 
 ## Unsorted
 
-| Games                                           | Expansions                   | Comment            |
-|-------------------------------------------------|------------------------------|--------------------|
-| Aye, Dark Overlord! The Red Box (2005)          | 5.697                        |                    |
-| Halt mal kurz: Das Känguru-Spiel (2016)         | 5.590                        | HGE                |
-| Hanabi                                          |                              |                    |
-| Ingenious                                       |                              |                    |
-| Istanbul                                        | Big Box                      |                    |
-| Kakerlakensuppe                                 |                              |                    |
-| Kingdom Builder                                 | Big Box                      |                    |
-| Kingdomino                                      | Age of Giants                | HGE                |
-| Latice                                          | 5.742                        | SF                 |
-| Lobo 77                                         | 5.514                        | HGE                |
-| Minecraft: Builders & Biomes                    | Farmer's Market Expansion    |                    |
-| Mysterium                                       | Hidden Signs, Secrets & Lies |                    |
-| Nova Luna (2019)                                | 6.647                        |                    |
-| Oceans (2020)                                   | 6.793                        |                    |
-| Phase 10 (1982)                                 | 5.101                        | HGE                |
-| Photosynthesis (2017)                           | 6.956                        | SF Test / HGE Test |
-| Queendomino (2017)                              | 6.952                        |                    |
-| Rick and Morty: Total Rickall Card Game         |                              | HGE Test           |
-| Ring-A-Ding-Ding (2011)                         | 5.515                        | Extension          |
-| Schummel Hummel (2017)                          | 5.634                        | HGE                |
-| Secret Hitler (2016)                            | 7.296                        | HGE / Party        |
-| Seven Dragons (2011)                            | 5.874                        |                    |
-| Shiftago (2016)                                 | 5.545                        |                    |
-| Sì, Oscuro Signore! 2: L'alba degli eroi (2006) | 5.577                        |                    |
-| Small World of Warcraft (2020)                  | 6.100                        |                    |
-| SUPERHOT: The Card Game (2017)                  | 5.823                        |                    |
-| Tackle: Duell der Strategen (2012)              | N/A                          | 2P                 |
-| Take 5! (1998)                                  | 6.025                        |                    |
-| Tantrix (1991)                                  | 5.928                        |                    |
-| That's Life! (2005)                             | 6.139                        |                    |
-| The Mind                                        |                              | HGE Test           |
-| Tiny Towns                                      | Fortune                      |                    |
-| Tsuro                                           | Veterans of the Seas         |                    |
-| Tzolk'in: The Mayan Calendar                    | Tribes & Prophecies          |                    |
-| Ubongo (German edition) (2005)                  | 6.482                        | HGE                |
-| UNO                                       |UNO Attack!, UNO Dice Game, Uno Flip!, UNO Tiki Twist, UNO Wild Jackpot                      | HGE, Party         |
-| Yedo                                            | Deluxe Master Set            |                    |
-| You've Got Crabs                                | Imitation Crab Expansion Kit |                    |
+| Games                                           | Expansions                                                              | Comment            |
+|-------------------------------------------------|-------------------------------------------------------------------------|--------------------|
+| Aye, Dark Overlord! The Red Box (2005)          | 5.697                                                                   |                    |
+| Halt mal kurz: Das Känguru-Spiel (2016)         | 5.590                                                                   | HGE                |
+| Hanabi                                          |                                                                         |                    |
+| Ingenious                                       |                                                                         |                    |
+| Istanbul                                        | Big Box                                                                 |                    |
+| Kakerlakensuppe                                 |                                                                         |                    |
+| Kingdom Builder                                 | Big Box                                                                 |                    |
+| Kingdomino                                      | Age of Giants                                                           | HGE                |
+| Latice                                          | 5.742                                                                   | SF                 |
+| Lobo 77                                         | 5.514                                                                   | HGE                |
+| Minecraft: Builders & Biomes                    | Farmer's Market Expansion                                               |                    |
+| Mysterium                                       | Hidden Signs, Secrets & Lies                                            |                    |
+| Nova Luna (2019)                                | 6.647                                                                   |                    |
+| Oceans (2020)                                   | 6.793                                                                   |                    |
+| Phase 10 (1982)                                 | 5.101                                                                   | HGE                |
+| Photosynthesis (2017)                           | 6.956                                                                   | SF Test / HGE Test |
+| Queendomino (2017)                              | 6.952                                                                   |                    |
+| Rick and Morty: Total Rickall Card Game         |                                                                         | HGE Test           |
+| Ring-A-Ding-Ding (2011)                         | 5.515                                                                   | Extension          |
+| Schummel Hummel (2017)                          | 5.634                                                                   | HGE                |
+| Secret Hitler (2016)                            | 7.296                                                                   | HGE / Party        |
+| Seven Dragons (2011)                            | 5.874                                                                   |                    |
+| Shiftago (2016)                                 | 5.545                                                                   |                    |
+| Sì, Oscuro Signore! 2: L'alba degli eroi (2006) | 5.577                                                                   |                    |
+| Small World of Warcraft (2020)                  | 6.100                                                                   |                    |
+| SUPERHOT: The Card Game (2017)                  | 5.823                                                                   |                    |
+| Tackle: Duell der Strategen (2012)              | N/A                                                                     | 2P                 |
+| Take 5! (1998)                                  | 6.025                                                                   |                    |
+| Tantrix (1991)                                  | 5.928                                                                   |                    |
+| That's Life! (2005)                             | 6.139                                                                   |                    |
+| The Mind                                        |                                                                         | HGE Test           |
+| Tiny Towns                                      | Fortune                                                                 |                    |
+| Tsuro                                           | Veterans of the Seas                                                    |                    |
+| Tzolk'in: The Mayan Calendar                    | Tribes & Prophecies                                                     |                    |
+| Ubongo (German edition) (2005)                  | 6.482                                                                   | HGE                |
+| UNO                                             | UNO Attack!, UNO Dice Game, Uno Flip!, UNO Tiki Twist, UNO Wild Jackpot | HGE, Party         |
+| Yedo                                            | Deluxe Master Set                                                       |                    |
+| You've Got Crabs                                | Imitation Crab Expansion Kit                                            |                    |
