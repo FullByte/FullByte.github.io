@@ -4,9 +4,9 @@
 |---------------|---------------------------------------|
 | Official Page | <https://meet.jit.si/>                |
 | Source        | <https://github.com/jitsi/jitsi-meet> |
-| Documentation | <https://jitsi.github.io/handbook/>     |
+| Documentation | <https://jitsi.github.io/handbook/>   |
 
-### Setup Server
+## Setup Server
 
 - Setup `Ubunutu 20.04 LTS` VM
 - Attach a public IP e.g. `10.11.12.13`
@@ -43,7 +43,7 @@ sudo ufw enable
 sudo ufw status numbered
 ```
 
-### Install jitsi
+## Install jitsi
 
 Install Jitsi and enter the FQDN for jitsi (e.g. jitsi.example.com) and add select an option for the certificate
 

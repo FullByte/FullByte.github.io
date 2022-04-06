@@ -156,3 +156,13 @@ wmic nteventlog where LogFileName=’System’ Call ClearEventlog
 wmic nteventlog where LogFileName=’PowerShell’ Call ClearEventlog
 ren %1 temp000 & copy /y %windir%\regedit.exe temp000 & del temp000
 ```
+
+## Windows batch script snippets
+
+Read argument input
+
+``` bat
+@echo off
+ECHO The %~nx0 script args are...
+for %%I IN (%*) DO ECHO %%I
+```
