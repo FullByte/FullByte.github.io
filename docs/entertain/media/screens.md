@@ -1,4 +1,4 @@
-# Passive Online Screens
+# Screens
 
 Passive online screens that are nice to watch.
 
