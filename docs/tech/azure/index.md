@@ -1,5 +1,26 @@
 # Links
 
+## Accounts
+
+DevOps: 
+Add Alias für DevOps here: <https://my.visualstudio.com/Subscriptions>
+Demos/Solutions: <https://cdx.transform.microsoft.com/>
+Your Test-Tenant: <https://cdx.transform.microsoft.com/my-tenants>
+MPN: 
+MSDN: <https://my.visualstudio.com>
+
+
+Microsoft Azure Portal <https://portal.azure.com>
+Exchange Online <https://outlook.office.com> or <https://outlook.office365.com>
+M365 Online <https://portal.office.com>
+
+M365 Device Management Portal <https://devicemanagement.microsoft.com>
+Preview Azure Portal <https://preview.portal.azure.com>
+Security Only Azure Portal <https://security.microsoft.com>
+Compliance Only Azure Portal <https://compliance.microsoft.com>
+Microsoft Teams Portal <https://teams.microsoft.com>
+Azure Actice Directory: <https://aad.portal.azure.com>
+
 ## Tools
 
 The best websites I know for Azure providing overviews, helpers and tools.
