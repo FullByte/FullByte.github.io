@@ -32,6 +32,7 @@ Not the links we need but the links we deserve.
 - <https://old.reddit.com/r/wasletztepreis/>
 - <https://old.reddit.com/r/rareinsults/>
 - <https://old.reddit.com/r/softwaregore/>
+- <https://www.reddit.com/r/AbruptChaos/>
 
 ## Wiki-How
 
@@ -154,103 +155,101 @@ Search
 
 ## Random
 
-- Virtual Piano: <https://virtualpiano.net>
-- Scream into the void: <https://screamintothevoid.com/>
-- Random Street View Map: <https://www.mapcrunch.com/>
-- Endless Zoom: <https://zoomquilt.org/>
-- People in Space: <https://www.howmanypeopleareinspacerightnow.com/>
-- Pointer Pointer: <https://pointerpointer.com/>
-- <https://dreamcult.xyz/>
+- <http://amialright.com>
+- <http://ascii-middle-finger.com>
+- <http://blankwindows.com>
+- <http://buildshruggie.com>
+- <http://burymewithmymoney.com>
+- <http://buzzybuzz.biz>
+- <http://cat-bounce.com>
+- <http://chihuahuaspin.com>
+- <http://chillestmonkey.com>
+- <http://chrismckenzie.com>
+- <http://corgiorgy.com>
+- <http://corndog.io>
+- <http://corndogoncorndog.com>
+- <http://crossdivisions.com>
+- <http://crouton.net>
+- <http://dogs.are.the.most.moe>
+- <http://donothingfor2minutes.com>
+- <http://doughnutkitten.com>
+- <http://drawing.garden>
+- <http://eelslap.com>
+- <http://endless.horse>
+- <http://everydayim.com>
+- <http://hackertyper.com>
+- <http://hasthelargehadroncolliderdestroyedtheworldyet.com/>
+- <http://iamawesome.com>
+- <http://ihasabucket.com>
+- <http://imaninja.com>
+- <http://isitwhite.com>
+- <http://ismycomputeron.com>
+- <http://koalastothemax.com>
+- <http://lacquerlacquer.com>
+- <http://movenowthinklater.com>
+- <http://muchbetterthanthis.com>
+- <http://ninjaflex.com>
+- <http://nooooooooooooooo.com>
+- <http://notdayoftheweek.com>
+- <http://nullingthevoid.com>
+- <http://oct82.com>
+- <http://omfgdogs.com>
+- <http://onemillionlols.com>
+- <http://papertoilet.com>
+- <http://partridgegetslucky.com>
+- <http://patience-is-a-virtue.org>
+- <http://pixelsfighting.com>
+- <http://potatoortomato.com>
+- <http://randomcolour.com>
+- <http://republiquedesmangues.fr>
+- <http://rrrgggbbb.com>
+- <http://scroll-o-meter.club>
 - <http://sod.jodi.org/index.html>
-- <https://www.floppyswop.co.uk>
-- <http://www.hasthelargehadroncolliderdestroyedtheworldyet.com/>
-- https://longdogechallenge.com
-- https://checkboxrace.com
-- https://onesquareminesweeper.com
-- http://heeeeeeeey.com
-- http://corndog.io
-- https://mondrianandme.com
-- https://puginarug.com
-- https://checkboxolympics.com
-- https://alwaysjudgeabookbyitscover.com
-- https://thatsthefinger.com
-- https://cant-not-tweet-this.com
-- http://eelslap.com
-- http://www.staggeringbeauty.com
-- http://burymewithmymoney.com
-- https://smashthewalls.com
-- https://jacksonpollock.org
-- http://endless.horse
-- https://www.trypap.com
-- http://www.republiquedesmangues.fr
-- http://www.movenowthinklater.com
-- http://www.partridgegetslucky.com
-- http://www.rrrgggbbb.com
-- http://www.koalastothemax.com
-- http://www.everydayim.com
-- http://randomcolour.com
-- http://cat-bounce.com
-- http://chrismckenzie.com
-- https://thezen.zone
-- http://hasthelargehadroncolliderdestroyedtheworldyet.com
-- http://ninjaflex.com
-- http://ihasabucket.com
-- http://corndogoncorndog.com
-- http://www.hackertyper.com
-- https://pointerpointer.com
-- http://imaninja.com
-- http://drawing.garden
-- http://www.ismycomputeron.com
-- http://www.nullingthevoid.com
-- http://www.muchbetterthanthis.com
-- http://www.yesnoif.com
-- http://lacquerlacquer.com
-- http://potatoortomato.com
-- http://iamawesome.com
-- https://strobe.cool
-- http://thisisnotajumpscare.com
-- http://doughnutkitten.com
-- http://crouton.net
-- http://corgiorgy.com
-- http://www.wutdafuk.com
-- http://unicodesnowmanforyou.com
-- http://chillestmonkey.com
-- http://scroll-o-meter.club
-- http://www.crossdivisions.com
-- http://tencents.info
-- https://boringboringboring.com
-- http://www.patience-is-a-virtue.org
-- http://pixelsfighting.com
-- http://isitwhite.com
-- https://existentialcrisis.com
-- http://onemillionlols.com
-- http://www.omfgdogs.com
-- http://oct82.com
-- http://chihuahuaspin.com
-- https://popcat.click
-- http://www.blankwindows.com
-- http://dogs.are.the.most.moe
-- http://tunnelsnakes.com
-- http://www.trashloop.com
-- http://www.ascii-middle-finger.com
-- http://spaceis.cool
-- http://www.donothingfor2minutes.com
-- http://buildshruggie.com
-- http://buzzybuzz.biz
-- http://yeahlemons.com
-- http://wowenwilsonquiz.com
-- https://thepigeon.org
-- http://notdayoftheweek.com
-- http://www.amialright.com
-- http://nooooooooooooooo.com
-- https://greatbignothing.com
-- https://zoomquilt.org
-- https://dadlaughbutton.com
-- https://www.bouncingdvdlogo.com
-- https://remoji.com
-- http://papertoilet.com
-- https://loopedforinfinity.com
-- https://findtheinvisiblecow.com
+- <http://spaceis.cool>
+- <http://staggeringbeauty.com>
+- <http://tencents.info>
+- <http://thisisnotajumpscare.com>
+- <http://trashloop.com>
+- <http://tunnelsnakes.com>
+- <http://unicodesnowmanforyou.com>
+- <http://wowenwilsonquiz.com>
+- <http://wutdafuk.com>
+- <http://yeahlemons.com>
+- <http://yesnoif.com>
+- <https://alwaysjudgeabookbyitscover.com>
+- <https://boringboringboring.com>
+- <https://bouncingdvdlogo.com>
+- <https://cant-not-tweet-this.com>
+- <https://checkboxolympics.com>
+- <https://checkboxrace.com>
+- <https://dadlaughbutton.com>
+- <https://dreamcult.xyz/>
+- <https://existentialcrisis.com>
+- <https://findtheinvisiblecow.com>
+- <https://floppyswop.co.uk>
+- <https://greatbignothing.com>
+- <https://jacksonpollock.org>
+- <https://longdogechallenge.com>
+- <https://loopedforinfinity.com>
+- <https://mondrianandme.com>
+- <https://onesquareminesweeper.com>
+- <https://pointerpointer.com>
+- <https://popcat.click>
+- <https://puginarug.com>
+- <https://remoji.com>
+- <https://smashthewalls.com>
+- <https://strobe.cool>
+- <https://thatsthefinger.com>
+- <https://thepigeon.org>
+- <https://thezen.zone>
+- <https://trypap.com>
+- <https://zoomquilt.org>
+- Endless Zoom: <https://zoomquilt.org/>
+- People in Space: <https://howmanypeopleareinspacerightnow.com/>
+- Pointer Pointer: <https://pointerpointer.com/>
+- Random Street View Map: <https://mapcrunch.com/>
+- Scream into the void: <https://screamintothevoid.com/>
+- Virtual Piano: <https://virtualpiano.net>
 
 ## Art
 
