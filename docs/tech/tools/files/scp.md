@@ -32,13 +32,13 @@ scp -P 666 user@host:directory/SourceFile TargetFile
 
 #### Connect OneDrive over WebDAV
 
-- After you log in to your OneDrive accoutn, your URL should be like: https://onedrive.live.com/?id=root&cid=ABCDEFGHIJKLMNOP. The ABCDEFGHIJKLMNOP part is your “customer ID”. Select it and copy it to the clipboard.
+- After you log in to your OneDrive account, your URL should be like: <https://onedrive.live.com/?id=root&cid=ABCDEFGHIJKLMNOP>. The ABCDEFGHIJKLMNOP part is your "customer ID". Select it and copy it to the clipboard.
 - Start WinSCP and create a new Login/New site node
 - On the New site node, select WebDAV protocol and TLS/SSL Implicit encryption.
 - Enter d.docs.live.net into the Host name box.
 - Enter your Microsoft account credentials. If you have 2FA enabled, [create new app password](https://account.live.com/proofs/Manage/additional#AppPassword) and use this for the password box.
 - Press the Advanced button to open Advanced site settings dialog and go to Environment > Directories page.
-- Paste your “OneDrive customer ID” into the Remote directory box and add a slash in front of it, i.e. like /ABCDEFGHIJKLMNOP.
+- Paste your "OneDrive customer ID" into the Remote directory box and add a slash in front of it, i.e. like /ABCDEFGHIJKLMNOP.
 
 #### Script
 

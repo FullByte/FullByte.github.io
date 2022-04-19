@@ -232,15 +232,15 @@ Currently we play the following games in these settings:
 
 | Game             | Settings                                                                                                          | Type         |
 |------------------|-------------------------------------------------------------------------------------------------------------------|--------------|
-| Akuto Showdown   | Multiplayer -> Survival, 3 Rounds, 5 Lives, Start Weapon = Staff, No Ranged Weapon -> no bots -> All Random Maps  | 2D Shooter   |
-| Astro Bears      | Party -> 4 Player -> 40 Points -> Big Planet -> Finite Ribbon                                                     | 2D Runner    |
-| Flat Heros       | Versus -> 3 games: zones, battle, runner (winner aus 3 games total)                                               | 2D Jumper    |
-| SpeedRunners     | Versus -> Offline -> Create Game - >Random Map (3 Wins)                                                           | Jump and Run |
-| Roof Rage        | Local Rooftops -> Stock Match -> Stock: 5 -> HP: 200                                                              | Fight        |
-| Brawlhalla       | Custum -> Create Room -> Private Room -> Custom Online: Stock: Teams=off, Lives=10, Match=10, Damage=100%, All On | Fight        |
+| Akuto Showdown   | Multiplayer → Survival, 3 Rounds, 5 Lives, Start Weapon = Staff, No Ranged Weapon → no bots → All Random Maps  | 2D Shooter   |
+| Astro Bears      | Party → 4 Player → 40 Points → Big Planet → Finite Ribbon                                                     | 2D Runner    |
+| Flat Heros       | Versus → 3 games: zones, battle, runner (winner aus 3 games total)                                               | 2D Jumper    |
+| SpeedRunners     | Versus → Offline → Create Game - >Random Map (3 Wins)                                                           | Jump and Run |
+| Roof Rage        | Local Rooftops → Stock Match → Stock: 5 → HP: 200                                                              | Fight        |
+| Brawlhalla       | Custum → Create Room → Private Room → Custom Online: Stock: Teams=off, Lives=10, Match=10, Damage=100%, All On | Fight        |
 | Tricky Towers    | Local Battle                                                                                                      | Tetris       |
-| Puyo Puyo Tetris | Muliplayer Arcade -> Single Screen -> Versus -> 4 Player -> Win Count = 2, Harddrop = ON, Hold = ON               | Tetris       |
-| Mario Kart 8     | 4P -> vs race -> 150cc -> No Teams, Normal Items, No CPU, all Verhicles, Random  random map, 4 Races              | Race         |
+| Puyo Puyo Tetris | Muliplayer Arcade → Single Screen → Versus → 4 Player → Win Count = 2, Harddrop = ON, Hold = ON               | Tetris       |
+| Mario Kart 8     | 4P → vs race → 150cc → No Teams, Normal Items, No CPU, all Verhicles, Random  random map, 4 Races              | Race         |
 | Fast RMX         | N/A                                                                                                               | Race         |
 
 #### Other Games
@@ -249,15 +249,15 @@ These are the games currently not in the Ten-Fight-Table but are generally suita
 
 | Game                   | Settings                                                                                                                  | Reason why not in Top 10                                   |
 |------------------------|---------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
-| Mario Party            | 4 Player -> Minigames -> Square Off                                                                                       | Replaced in favor of Tricky Towers                         |
-| Bomberman              | Standard -> Battle -> Local Battle -> Create Room -> Battle Royal (4P, 3 Sets, 3min, Fixed Start, everything else on)     | Disliked by Team                                           |
-| Worms Armageddon       | Multiplayer -> local -> Full Wormage Scheme                                                                               | Slow Pace                                                  |
+| Mario Party            | 4 Player → Minigames → Square Off                                                                                       | Replaced in favor of Tricky Towers                         |
+| Bomberman              | Standard → Battle → Local Battle → Create Room → Battle Royal (4P, 3 Sets, 3min, Fixed Start, everything else on)     | Disliked by Team                                           |
+| Worms Armageddon       | Multiplayer → local → Full Wormage Scheme                                                                               | Slow Pace                                                  |
 | Worms W.M.D            |                                                                                                                           | Disliked by Team                                           |
 | Ultimate Chicken Horse | N/A                                                                                                                       | Disliked by Team                                           |
-| Nidhogg2               | Local -> Tournament -> Double Elimination = Off -> Time Limit 3min                                                        | Only 2 Players play at once and very long battles possible |
-| Smash Bros             | Smash -> Smash -> zocki10 (Stock 5, 6min, FS Meter = off, Spirits = on, Stage = random, Items = med, 2wins) -> random map | Replaced by Brawlhalla and Roof Rage                       |
+| Nidhogg2               | Local → Tournament → Double Elimination = Off → Time Limit 3min                                                        | Only 2 Players play at once and very long battles possible |
+| Smash Bros             | Smash → Smash → zocki10 (Stock 5, 6min, FS Meter = off, Spirits = on, Stage = random, Items = med, 2wins) → random map | Replaced by Brawlhalla and Roof Rage                       |
 | Broforce               | Versus                                                                                                                    | Mulitplayer to chaotic                                     |
-| Wand Wars              | Versus -> hexout, 21 wins, merlins rules -> Random map                                                                    | Replaced in favor of Fast RMX                              |
+| Wand Wars              | Versus → hexout, 21 wins, merlins rules → Random map                                                                    | Replaced in favor of Fast RMX                              |
 | Super Bloody Hockey    |                                                                                                                           | 4 players in 2 Teams                                       |
 | Super Mario Party      |                                                                                                                           | Disliked by Team                                           |
 | Stickfight the game    |                                                                                                                           | Not tested yet                                             |

@@ -39,8 +39,8 @@ gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u 
 Gobuster reveals the following three folders:
 
 ``` sh
-/cats                 (Status: 301) [Size: 311] [--> http://10.10.46.238/cats/]
-/dogs                 (Status: 301) [Size: 311] [--> http://10.10.46.238/dogs/]
+/cats                 (Status: 301) [Size: 311] [→ http://10.10.46.238/cats/]
+/dogs                 (Status: 301) [Size: 311] [→ http://10.10.46.238/dogs/]
 /server-status        (Status: 403) [Size: 277]
 ```
 

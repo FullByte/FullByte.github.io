@@ -32,7 +32,7 @@ Add the mockup shapes:
 
 - Open Shapes
 - click on "More Shapes"
-- Navigate to Software -> Mockups
+- Navigate to Software → Mockups
 - Add Mockups
 
 Create your first page. Use that design as a template for further pages.

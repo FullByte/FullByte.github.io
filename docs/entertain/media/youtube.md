@@ -487,6 +487,7 @@ Brands with cool videos:
 - Revision Demoparty: <https://www.youtube.com/c/RevisionDemoparty>
 - SockPuppetParody: <https://www.youtube.com/c/SockPuppetParody>
 - Made yew look: <https://www.youtube.com/user/MadeYewLook>
+- DeeKayKwon: <https://www.youtube.com/c/DeeKayKwon>
 
 ### Alternative Living
 

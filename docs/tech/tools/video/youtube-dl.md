@@ -69,7 +69,7 @@ Function ytdlpl
     $oldPreference = $ErrorActionPreference
     $ErrorActionPreference = ‘stop’
     try {if(Get-Command youtube-dl){Write-Host("Using youtube-dl version " + (Get-Command youtube-dl).Version + " from source: " + (Get-Command youtube-dl).Source)}}
-    catch {Write-Host “youtube-dl not found, downloading to current folder... ”; Invoke-WebRequest -Uri "https://youtube-dl.org/downloads/latest/youtube-dl.exe" -OutFile ((Get-Location).Path + "\youtube-dl.exe")}
+    catch {Write-Host "youtube-dl not found, downloading to current folder... "; Invoke-WebRequest -Uri "https://youtube-dl.org/downloads/latest/youtube-dl.exe" -OutFile ((Get-Location).Path + "\youtube-dl.exe")}
     $ErrorActionPreference=$oldPreference
 
     # Download and rename playlist

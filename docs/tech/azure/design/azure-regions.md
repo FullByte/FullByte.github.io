@@ -161,7 +161,7 @@ az account list-locations --query "[?metadata.regionType=='Physical'] .{Geograph
 | Middle East   | uaecentral         | uaenorth           | Abu Dhabi       | 24.466667  | 54.366669   |
 | South America | brazilsoutheast    | brazilsouth        | Rio             | -22.90278  | -43.2075    |
 
-The list-locations result also has “logical” instead of physical entries which seems to include staging regions and is yet another set of regions/geographies. Running this command
+The list-locations result also has "logical" instead of physical entries which seems to include staging regions and is yet another set of regions/geographies. Running this command
 
 ``` sh
 az account list-locations --query "[?metadata.regionType=='Logical']" -o table

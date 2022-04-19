@@ -2,9 +2,9 @@
 
 ## JOINs
 
-Inner Join --> Es wird angezeigt, was auf beiden Seiten existiert
-Left Join --> Auch wenn rechts keine Werte zu links stehen wird links angezeigt.
-Right Join --> Auch wenn links keine Werte zu rechts stehen wird links angezeigt.
+Inner Join → Es wird angezeigt, was auf beiden Seiten existiert
+Left Join → Auch wenn rechts keine Werte zu links stehen wird links angezeigt.
+Right Join → Auch wenn links keine Werte zu rechts stehen wird links angezeigt.
 
 ## CASE Anweisung
 

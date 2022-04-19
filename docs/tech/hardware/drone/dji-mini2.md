@@ -21,20 +21,20 @@ Entscheident für die Einordnung sind Gewicht und Einsatzzweck.
 Es handelt sich um eine reine Risikobewertung.
 Ob der Drohnenpilot privat oder gewerblich aufsteigt, spielt keine Rolle.
 
--> Die DJI Mini 2 gehört in die Kategorie "Open".
+→ Die DJI Mini 2 gehört in die Kategorie "Open".
 
 ### Betriebsbedingungen (A0)
 
 Zusätzlich gibt es bei der Kategorie "Open" noch die Unterkategorien A1 bis A3.
 Hier geht es im Wesentlichen um die Verhaltensregeln beim Fliegen selbst.
 
--> Die DJI Mini 2 gehört in die Kategorie "A0"
+→ Die DJI Mini 2 gehört in die Kategorie "A0"
 
 ### Risikoklasse (C0)
 
 Bei den fünf Drohnenklassen/Risikoklassen von C0 bis C4 geht es um die technischen Spezifikationen.
 
--> Die DJI Mini 2 gehört in die Kategorie "C0".
+→ Die DJI Mini 2 gehört in die Kategorie "C0".
 
 ## Links
 

@@ -30,7 +30,7 @@ TODO
 To put them together you have to:
 
 - Follow guide from <https://github.com/CatxFish/obs-virtual-cam>
-- Open OBS -> Tools -> v4l2 Video Output -> select "Start"
+- Open OBS → Tools → v4l2 Video Output → select "Start"
 - Go to the audio/video settings of the vidconf software and select the new video device
 - Select new virtual cam from video conferencing tool you use.
 

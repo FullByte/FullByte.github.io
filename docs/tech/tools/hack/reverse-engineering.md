@@ -21,7 +21,7 @@ Ghidra Scripts/Plugins/Extension:
 
 ## Example usage
 
-Example from doing this tryhackme challenge <https://tryhackme.com/room/adventofcyber2> -> "[Day 17] Reverse Engineering ReverseELFneering"
+Example from doing this tryhackme challenge <https://tryhackme.com/room/adventofcyber2> → "[Day 17] Reverse Engineering ReverseELFneering"
 
 ``` sh
 r2 -d ./challenge1

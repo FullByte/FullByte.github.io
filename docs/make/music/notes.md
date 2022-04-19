@@ -2,7 +2,7 @@
 
 ## Machine Mikro
 
-Change octave: Group -> Choose one of the blue buttons
+Change octave: Group → Choose one of the blue buttons
 
 ## Cubase
 

@@ -510,7 +510,7 @@ Get Binding Info
 - Top5 processes using the most memory: ``` ps1 | sort –property ws | select –last 5```
 - Get all self-signed certs: ```Get-ChildItem -path cert:\\LocalMachine\\My```
 - Create NIC Teaming: ```New-NetLBfoTeam –Name Guest –TeamMembers Guest-A,Guest-B -TeamingMode SwitchIndependent```
-- Find something in (large) files: ```Get-Content myTestLog.log -wait | where { $\_ -match “WARNING” }```
+- Find something in (large) files: ```Get-Content myTestLog.log -wait | where { $\_ -match "WARNING" }```
 - Read Registry Key: ```Get-ItemProperty -Path Registry::"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Auto Update\" | format-list```
 - Report all of the USB devices installed: ```gwmi Win32_USBControllerDevice -computername SERVER1 |fl Antecedent,Dependent```
 - NTFS folder permissions for D:\Temp: ```Get-Acl "D:\Temp"```

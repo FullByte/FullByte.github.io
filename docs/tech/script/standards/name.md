@@ -30,7 +30,7 @@ All of these assumptions are wrong:
 - People’s names are almost globally unique.
 - Alright alright but surely people’s names are diverse enough such that no million people share the same name.
 - My system will never have to deal with names from China... Or Japan.. Or Korea.
-- Or Ireland, the United Kingdom, the United States, Spain, Mexico, Brazil, Peru, Russia, Sweden, Botswana, South Africa, Trinidad, Haiti, France, or the Klingon Empire, all of which have “weird” naming schemes in common use.
+- Or Ireland, the United Kingdom, the United States, Spain, Mexico, Brazil, Peru, Russia, Sweden, Botswana, South Africa, Trinidad, Haiti, France, or the Klingon Empire, all of which have "weird" naming schemes in common use.
 - I can safely assume that this dictionary of bad words contains no people’s names in it.
 - People’s names are assigned at birth ... or at least pretty close to birth.. or within a year or so of birth.
 - Two different systems containing data about the same person will use the same name for that person.

@@ -67,12 +67,12 @@ h2format x: 64
 
 ```bat
 del /f /q /s %windir%\prefetch\*
-reg delete “HKCU\Software\Microsoft\Windows\ShellNoRoam\MUICache” /va /f
-reg delete “HKLM\Software\Microsoft\Windows\ShellNoRoam\MUICache” /va /f
-reg delete “HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache” /va /f
-reg delete “HKLM\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache” /va /f
-reg delete “HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU” /va /f
-reg delete “HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist” /va /f
+reg delete "HKCU\Software\Microsoft\Windows\ShellNoRoam\MUICache" /va /f
+reg delete "HKLM\Software\Microsoft\Windows\ShellNoRoam\MUICache" /va /f
+reg delete "HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache" /va /f
+reg delete "HKLM\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache" /va /f
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" /va /f
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist" /va /f
 wmic nteventlog where LogFileName=’File Replication Service’ Call ClearEventlog
 wmic nteventlog where LogFileName=’Application’ Call ClearEventlog
 wmic nteventlog where LogFileName=’System’ Call ClearEventlog
@@ -144,12 +144,12 @@ msg \* /SERVER:localhost /TIME:666 /W This is a test message
 ``` bat
 @echo off
 del /f /q /s %windir%\prefetch\*
-reg delete “HKCU\Software\Microsoft\Windows\ShellNoRoam\MUICache” /va /f
-reg delete “HKLM\Software\Microsoft\Windows\ShellNoRoam\MUICache” /va /f
-reg delete “HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache” /va /f
-reg delete “HKLM\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache” /va /f
-reg delete “HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU” /va /f
-reg delete “HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist” /va /f
+reg delete "HKCU\Software\Microsoft\Windows\ShellNoRoam\MUICache" /va /f
+reg delete "HKLM\Software\Microsoft\Windows\ShellNoRoam\MUICache" /va /f
+reg delete "HKCU\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache" /va /f
+reg delete "HKLM\Software\Classes\Local Settings\Software\Microsoft\Windows\Shell\MuiCache" /va /f
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\RunMRU" /va /f
+reg delete "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\UserAssist" /va /f
 wmic nteventlog where LogFileName=’File Replication Service’ Call ClearEventlog
 wmic nteventlog where LogFileName=’Application’ Call ClearEventlog
 wmic nteventlog where LogFileName=’System’ Call ClearEventlog

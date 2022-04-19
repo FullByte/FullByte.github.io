@@ -11,12 +11,12 @@ To match the QR-Code pixels with a valid lego base plate size I tried a few opti
 Possible lego base plates
 
 ``` txt
-14x14 -> 14,28,42,56,70
-16x16 -> 16,32,48,64,72
-24x24 -> 24,48,72
-32x32 -> 32,64
-48x48 -> 48
-50x50 -> 50
+14x14 → 14,28,42,56,70
+16x16 → 16,32,48,64,72
+24x24 → 24,48,72
+32x32 → 32,64
+48x48 → 48
+50x50 → 50
 ```
 
 Since a QR-Code has the same length as hight any of the above values would fit perfectly on a given lego base plate.
@@ -35,7 +35,7 @@ The next attempt would to go for "https://0xfab1.net". The results are:
 ``` txt
 7% padding: 25x25 or *2 for double width = 50x50
 15% padding: 25x25 or *2 for double width = 50x50
-25% padding: 25x25 or *2 for double width = 50x50 -> best option
+25% padding: 25x25 or *2 for double width = 50x50 → best option
 30% padding: 29x29 or *2 for double width = 58x58
 ```
 

@@ -103,8 +103,8 @@ Infos Krankenkassenkarte:
 * [ ] Hygiene:
   * [ ] 1x Zahnpasta (z.B. Ajona Stomaticum)
   * [ ] 1x Klappzahnbürste
-  * [ ] 1x Shampoo -> umgefüllt in 200ml Packung mit Drehverschluss
-  * [ ] 1x Handwaschmittel (z.B. "Rei aus der Tube") -> umgefüllt in 200ml Packung mit Drehverschluss
+  * [ ] 1x Shampoo → umgefüllt in 200ml Packung mit Drehverschluss
+  * [ ] 1x Handwaschmittel (z.B. "Rei aus der Tube") → umgefüllt in 200ml Packung mit Drehverschluss
   * [ ] 6x Zahnseide in Hülle
   * [ ] 1x Nagelschere
   * [ ] 1x Taschentücher
@@ -193,7 +193,7 @@ Essen:
 * [ ] Reifenflickzeug
 * [ ] Sonnenschutz (Scheibe)
 * [ ] Bett aus Alustangen dings
-* [ ] Küche muss nicht sein(Lieber einen „Mobilen-Kasten“ – So dass man damit auch draußen kochen kann)
+* [ ] Küche muss nicht sein(Lieber einen „Mobilen-Kasten" – So dass man damit auch draußen kochen kann)
 * [ ] Plastik-Wanne zum Spülen
 * [ ] Alles in Alu-Kisten packen und aufstapeln
 
@@ -283,7 +283,7 @@ Essen:
 ## TODO
 
 Auto
-Rolltür auf einer Seite --> Auf dieser Seite Markise anbringen
+Rolltür auf einer Seite → Auf dieser Seite Markise anbringen
 Unterbodenschutz
 
 4 Ersatzreifen (kein Ersatzreifen, sondern vollwertige Reifen)

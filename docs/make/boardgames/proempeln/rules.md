@@ -13,7 +13,7 @@ Gespielt werden sieben Runden. In jeder Runde prömpelt der Spieler alle Flasche
 
 Vor den Runden 1-6 kann ein Spieler einen seiner drei einmalig ausführbaren Spezialzüge ankündigen. Nur wenn dieser Korrekt angekündigt wurde gelten die entsprechenden Spezialregeln. Das spielen Spezialzüge ist optional, allerdings muss in der siebten Runde ein Doppellörer gespielt werden. (Siehe Kapitel 5, Spezialzüge).
 
-Gewinner und König ist der Spieler mit der höchsten Punktzahl. Kommt es zu einem Stechen, wird der endgültige Sieger mittels Schere-Stein-Papier ermittelt. Das Spiel ist sofort beendet sofern der Königszug (7x3 Punkte = Volle Punktzahl) gespielt wird (Erläuterung siehe Kapitel 5„Spezialzüge“).
+Gewinner und König ist der Spieler mit der höchsten Punktzahl. Kommt es zu einem Stechen, wird der endgültige Sieger mittels Schere-Stein-Papier ermittelt. Das Spiel ist sofort beendet sofern der Königszug (7x3 Punkte = Volle Punktzahl) gespielt wird (Erläuterung siehe Kapitel 5„Spezialzüge").
 
 ## Punkte
 
@@ -36,10 +36,10 @@ Aktive Spezialzüge müssen vor Rundenbeginn vom Spieler angekündigt und anschl
 
 |Spezialzug|Spielbar|Anküdigung|Ziel|Pro|Con|
 |---|---|---|---|---|---|
-|Lampenlörer|Runde 1-6, 1x Spielbar|„Ich mach jetzt nen Lampenlörer“, wobei die Spielhand in die Luft gehoben wird.|Keine null-Punkte Prömpel und alle drei Punkte Prömpel werden belohnt.|Alle 3er Prömpel zählen doppelt|Alle 0er Prömpel zählen minus 3|
-|Kniffel|Runde 1-6, 1x Spielbar|„Ich Kniffel jetzt!“, gefolgt von breitem Grinsen.|Beim Kniffeln darf der Spieler nach der Runde zwei Mal beliebig viele Prömpel erneut spielen|Kommt es zu sieben 3ern gilt nicht der Königszug; allerdings werden anstelle von 21, 30 Punkte notiert|N/A, alle Punkte zählen|
-|Pash-7|Runde 1-6, 1x Spielbar|„Jo, denn … Pash-7 Spezial“, in gleichgültiger Stimmlage|Es werden zwei Mal 1 Punkt, zwei Mal 2 Punkte und zwei Mal 3 Punkte|30 Punkte|N/A, alle Punkte zählen|
-|Doppellörer|Nur in Runde 7|Es muss angesagt werden, ob die mittige (in diesem Fall siebte Flasche) mit links oder rechts gespielt wird: „Doppellorer links“ oder „Doppellörer rechts“|Gespielt wird mit beiden Händen parallel von außen nach innen. Der letzte, siebte und in der Mitte befindliche Prömpel bestimmt den Punktemultiplikator. Alle sieben Prömpel-Punkte werden addiert und mit den Punkten des mittigen Prömpels multipliziert (0-3).| Mulitplikator 2 bzw 3|Mulitplikator 1 bzw 0|
+|Lampenlörer|Runde 1-6, 1x Spielbar|„Ich mach jetzt nen Lampenlörer", wobei die Spielhand in die Luft gehoben wird.|Keine null-Punkte Prömpel und alle drei Punkte Prömpel werden belohnt.|Alle 3er Prömpel zählen doppelt|Alle 0er Prömpel zählen minus 3|
+|Kniffel|Runde 1-6, 1x Spielbar|„Ich Kniffel jetzt!", gefolgt von breitem Grinsen.|Beim Kniffeln darf der Spieler nach der Runde zwei Mal beliebig viele Prömpel erneut spielen|Kommt es zu sieben 3ern gilt nicht der Königszug; allerdings werden anstelle von 21, 30 Punkte notiert|N/A, alle Punkte zählen|
+|Pash-7|Runde 1-6, 1x Spielbar|„Jo, denn … Pash-7 Spezial", in gleichgültiger Stimmlage|Es werden zwei Mal 1 Punkt, zwei Mal 2 Punkte und zwei Mal 3 Punkte|30 Punkte|N/A, alle Punkte zählen|
+|Doppellörer|Nur in Runde 7|Es muss angesagt werden, ob die mittige (in diesem Fall siebte Flasche) mit links oder rechts gespielt wird: „Doppellorer links" oder „Doppellörer rechts"|Gespielt wird mit beiden Händen parallel von außen nach innen. Der letzte, siebte und in der Mitte befindliche Prömpel bestimmt den Punktemultiplikator. Alle sieben Prömpel-Punkte werden addiert und mit den Punkten des mittigen Prömpels multipliziert (0-3).| Mulitplikator 2 bzw 3|Mulitplikator 1 bzw 0|
 
 ### Passive Spezialzüge
 
@@ -47,8 +47,8 @@ Passive Spezialzüge gelten ohne Ankündigen, müssen aber beim Notieren der Pun
 
 |Spezialzug|Spielbar|Anküdigung|Ziel|Pro|
 |---|---|---|---|---|
-|Meier|Runde 1-6|Mit der Aussprache des Satzes „Es gibt immer noch Meier“ wird der Anspruch auf diese Kombination geltend gemacht.|Eine Mischung aus 1ern und 2ern (ohne Fehler) ist ein Meier und wird mit 21 Punkten bewertet. Es können beispielsweise auch nur eine 1 und sechs 2er sein.|21 Punkte anstelle der eigentlichen Gesamtzahl.|
-|Königszug|Runde 1-6|„Ich bin König“ & Jubel|Das perfekte Spiel: Alle sieben Prömpel geben jeweils drei Punkte.|Sieg des Spiels und König|
+|Meier|Runde 1-6|Mit der Aussprache des Satzes „Es gibt immer noch Meier" wird der Anspruch auf diese Kombination geltend gemacht.|Eine Mischung aus 1ern und 2ern (ohne Fehler) ist ein Meier und wird mit 21 Punkten bewertet. Es können beispielsweise auch nur eine 1 und sechs 2er sein.|21 Punkte anstelle der eigentlichen Gesamtzahl.|
+|Königszug|Runde 1-6|„Ich bin König" & Jubel|Das perfekte Spiel: Alle sieben Prömpel geben jeweils drei Punkte.|Sieg des Spiels und König|
 
 ## Making the game
 

@@ -253,7 +253,7 @@ Use `Array.filter()` for an array containing only the unique values.
 
 ```js
 const unique = arr => arr.filter(i => arr.indexOf(i) === arr.lastIndexOf(i));
-// unique([1,2,2,3,4,4,5]) -> [1,3,5]
+// unique([1,2,2,3,4,4,5]) → [1,3,5]
 ```
 
 #### Flatten array
@@ -331,7 +331,7 @@ Use ES6 `Set` and the `...rest` operator to discard all duplicated values.
 
 ```js
 const unique = arr => [...new Set(arr)];
-// unique([1,2,2,3,4,4,5]) -> [1,2,3,4,5]
+// unique([1,2,2,3,4,4,5]) → [1,2,3,4,5]
 ```
 
 #### Sum of array of numbers

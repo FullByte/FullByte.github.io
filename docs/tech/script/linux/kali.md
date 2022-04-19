@@ -76,15 +76,15 @@ Use fdisk to enlargen```/dev/sda``` (e.g. when providing more disk space to the 
 ``` sh
 df -h # check current space
 sudo fdisk /dev/sda # run fdisk to resize the partition
--> u # change the units to sectors
--> p # list the partitions details
--> d # delete the partition
--> n # create a new partition
--> p # create a primary partition
--> 1 # create first partition
--> (default) # starting sector  
--> (default) # ending sector
--> w # Write the partition
+→ u # change the units to sectors
+→ p # list the partitions details
+→ d # delete the partition
+→ n # create a new partition
+→ p # create a primary partition
+→ 1 # create first partition
+→ (default) # starting sector  
+→ (default) # ending sector
+→ w # Write the partition
 sudo resize2fs /dev/sda1
 sudo reboot
 df -h # verfiy space has increased

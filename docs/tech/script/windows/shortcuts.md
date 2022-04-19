@@ -467,7 +467,7 @@ explorer shell:::{ED7BA470-8E54-465E-825C-99712043E01C}
 
 ## Systemverwaltung
 
-- appwiz.cpl	Startet “Add or Remove Programs”
+- appwiz.cpl	Startet "Add or Remove Programs"
 - certmgr.msc	Zertifikat - Manager (Certificate Store)
 - ciadv.msc	Indexdienst
 - cleanmgr.exe	Datenträgerbereinigung
@@ -534,7 +534,7 @@ explorer shell:::{ED7BA470-8E54-465E-825C-99712043E01C}
 - [Windows-Taste]+[L] - Windows 8 sperren
 - [Windows-Taste]+[F] – Suchen-App starten
 - [Windows-Taste]+[C] – Charms Bar (Metro-Startmenü) öffnen
-- [Windows-Taste]+[I] – Charm Bar (Metro-Sidebar) öffnen, um Windows 8 zum Beispiel herunterzufahren (Befehl “Power | Shut down”)
+- [Windows-Taste]+[I] – Charm Bar (Metro-Sidebar) öffnen, um Windows 8 zum Beispiel herunterzufahren (Befehl "Power | Shut down")
 - [Windows-Taste]+[K] – Connect Charm öffnen
 - [Windows-Taste]+[H] – Apps-Suche unter dem Metro-Startmenü öffnen
 - [Windows-Taste]+[Q]  - Apps-Übersicht einblenden
@@ -587,18 +587,18 @@ Linke ALT-Taste und linke UMSCHALTTASTE+DRUCK-Taste: Kontrast ein- und ausschalt
 
 ## Environment Variables
 
-- %ALLUSERSPROFILE% (%PROGRAMDATA%) --> C:\\ProgramData
-- %APPDATA% --> C:\\Users{username}\\AppData\\Roaming
-- %COMPUTERNAME% --> hostname
-- %COMMONPROGRAMFILES% --> C:\\Program Files\\Common Files
-- %COMMONPROGRAMFILES(x86)% --> C:\\Program Files (x86)\\Common Files
-- %COMSPEC% --> Pfad zum Kommandozeilen-Interpreter
-- %HOMEDRIVE%  --> C:\\
-- %HOMEPATH%  --> \\Users{username}
-- %LOCALAPPDATA%  --> C:\\Users{username}\\AppData\\Local
-- %PROGRAMFILES%  --> C:\\Program Files
-- %PROGRAMFILES(X86)%  --> C:\\Program Files (x86)
-- %USERPROFILE%  --> C:\\Users{username}
-- %WINDIR%  --> C:\\Windows
-- %PUBLIC%  --> C:\\Users\\Public
-- %PSModulePath%  --> %SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\Modules\\
+- %ALLUSERSPROFILE% (%PROGRAMDATA%) → C:\\ProgramData
+- %APPDATA% → C:\\Users{username}\\AppData\\Roaming
+- %COMPUTERNAME% → hostname
+- %COMMONPROGRAMFILES% → C:\\Program Files\\Common Files
+- %COMMONPROGRAMFILES(x86)% → C:\\Program Files (x86)\\Common Files
+- %COMSPEC% → Pfad zum Kommandozeilen-Interpreter
+- %HOMEDRIVE%  → C:\\
+- %HOMEPATH%  → \\Users{username}
+- %LOCALAPPDATA%  → C:\\Users{username}\\AppData\\Local
+- %PROGRAMFILES%  → C:\\Program Files
+- %PROGRAMFILES(X86)%  → C:\\Program Files (x86)
+- %USERPROFILE%  → C:\\Users{username}
+- %WINDIR%  → C:\\Windows
+- %PUBLIC%  → C:\\Users\\Public
+- %PSModulePath%  → %SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\Modules\\

@@ -6,7 +6,7 @@ The following examples are not mine but this is soooo cool :)
 
 Source: <https://blog.jooq.org/fun-with-postgis-mandelbrot-set-game-of-life-and-more/>
 
-With the code below, use different values for “dims” to zoom in, e.g.
+With the code below, use different values for "dims" to zoom in, e.g.
 
 ``` sql
 dims (r1, r2, i1, i2, s, it, p) as (values (

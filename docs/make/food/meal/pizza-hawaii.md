@@ -1,6 +1,6 @@
 # Pizza Hawaii
 
-Jeder kann Pizzabäcker sein, aber manche gehen in die Geschichte ein. Beispielsweise hat der Kanadier Sam Panopoulos vor einem halben Jahrhundert die "Pizza Hawaii" erfunden. Für Bekanntheit in Deutschland sorgte wohl Ananasfreund und Vater von „Toast Hawaii“, Clemens Wilmenrod. Trotzdem sind die weltweit meisten Fans in Australien anzutreffen. Alle Zutaten der Pizza Hawaii sind außerordentlich gesund und der regelmäßige Verzehr wird empfohlen.
+Jeder kann Pizzabäcker sein, aber manche gehen in die Geschichte ein. Beispielsweise hat der Kanadier Sam Panopoulos vor einem halben Jahrhundert die "Pizza Hawaii" erfunden. Für Bekanntheit in Deutschland sorgte wohl Ananasfreund und Vater von „Toast Hawaii", Clemens Wilmenrod. Trotzdem sind die weltweit meisten Fans in Australien anzutreffen. Alle Zutaten der Pizza Hawaii sind außerordentlich gesund und der regelmäßige Verzehr wird empfohlen.
 
 ## Stats
 
@@ -49,7 +49,7 @@ Jeder kann Pizzabäcker sein, aber manche gehen in die Geschichte ein. Beispiels
     Einkaufen:
 
     - [ ] 20g frische Hefe (halbe Packung)
-    - [ ] 500g „Tipo 00“ Mehl (bzw. speziell gekennzeichnetes Pizzamehl)
+    - [ ] 500g „Tipo 00" Mehl (bzw. speziell gekennzeichnetes Pizzamehl)
 
     Ggf. schon vorhanden:
 
@@ -69,13 +69,13 @@ Jeder kann Pizzabäcker sein, aber manche gehen in die Geschichte ein. Beispiels
 
     Teig herstellen
 
-    Pizza stammt vermutlich aus Neapel, ist weiblich und steht seit 1967 im Rechtschreibduden. Gleich nach der Pizza kommt im Duden der Pizzabäcker. Das bist heute du! Bei der Herstellung des Pizzateigs ist die korrekte Einhaltung der vorgegebenen Maßeinheiten essentiell. Da „Esslöffel“, „Prisen“, „genügend“, usw. beschissene Maßeinheiten sind verwenden wir hier ausschließlich Gramm. Alle Zutaten für den Teig können nacheinander in eine Rührschale (z.B. für ein Küchengerät) hinzugefügt werden. Wenn die Schale vor dem Dazutun neuer Zutaten auf einer Waage steht und genullt wird, ist nicht nur die dazugegebene Menge korrekt, sondern auch weniger abzuwaschen.
+    Pizza stammt vermutlich aus Neapel, ist weiblich und steht seit 1967 im Rechtschreibduden. Gleich nach der Pizza kommt im Duden der Pizzabäcker. Das bist heute du! Bei der Herstellung des Pizzateigs ist die korrekte Einhaltung der vorgegebenen Maßeinheiten essentiell. Da „Esslöffel", „Prisen", „genügend", usw. beschissene Maßeinheiten sind verwenden wir hier ausschließlich Gramm. Alle Zutaten für den Teig können nacheinander in eine Rührschale (z.B. für ein Küchengerät) hinzugefügt werden. Wenn die Schale vor dem Dazutun neuer Zutaten auf einer Waage steht und genullt wird, ist nicht nur die dazugegebene Menge korrekt, sondern auch weniger abzuwaschen.
 
     Der Teig
 
     Die Teigherstellung lässt sich in 4 wesentliche Schritte unterteilen:
     a) Hefe: Besser bekannt als Saccharomyces cerevisiae, ist Hefe ein einzelliger Pilz der für seinen Energiestoffwechsel als Ausgangsstoffe fast ausschließlich Zucker und Sauerstoff benötigt. Zur Vermehrung der Hefe sind ungefähr 28 °C optimal. Bei Temperaturen über 45°C beginnt Backhefe zu sterben. Durch das Zutun von Hefe werden leider die Aromen der übrigen Zutaten gemindert. Daher gilt die Regel: je weniger Hefe im Teig ist, desto besser schmeckt er. Da Hefe aber unabdingbar für einen richtigen Teig ist, ist die optimale Menge genau 20g auf 500g Mehl. Wir vermischen also 230g Wasser (bei ca. 35-40°C, da Schale, Hefe und Zucker das Wasser abkühlen werden), 20g frische Hefe (ein halber Block) und fügen 10g Zucker (zwei Röhrchen) in eine Rührschale und vermengen das Ganze. Weiches, also wenig kalkhaltiges, Wasser ist zu bevorzugen.
-    b) Teig: Nachdem die Hefe sich im Zuckerwasser aufgelöst hat, fügen wir diese zu 500g Mehl hinzu, sowie 3g Salz hinzu. Es ist wichtig das richtige Mehl zu wählen: Ideal ist es ein Mehl nach „Tipo 00“, bzw. speziell gekennzeichnetes Pizzamehl zu verwenden. „Type 405“ wird häufig mit Stärkemehl gestreckt und ist damit zu meiden. Um den Teig geschmeidig zu machen, kommen zusätzlich 20g kaltgepresstes und „Extra Vergine“ (in Deutschland bekannt als „Nativen Olivenöl Extra“) Olivenöl dazu. Das entspricht der Güteklasse A für Olivenöl und besagt, dass das Öl direkt aus Oliven ausschließlich mit mechanischen Verfahren ohne Wärmeeinwirkung (&lt;40 °C) gewonnen wurde.
+    b) Teig: Nachdem die Hefe sich im Zuckerwasser aufgelöst hat, fügen wir diese zu 500g Mehl hinzu, sowie 3g Salz hinzu. Es ist wichtig das richtige Mehl zu wählen: Ideal ist es ein Mehl nach „Tipo 00", bzw. speziell gekennzeichnetes Pizzamehl zu verwenden. „Type 405" wird häufig mit Stärkemehl gestreckt und ist damit zu meiden. Um den Teig geschmeidig zu machen, kommen zusätzlich 20g kaltgepresstes und „Extra Vergine" (in Deutschland bekannt als „Nativen Olivenöl Extra") Olivenöl dazu. Das entspricht der Güteklasse A für Olivenöl und besagt, dass das Öl direkt aus Oliven ausschließlich mit mechanischen Verfahren ohne Wärmeeinwirkung (&lt;40 °C) gewonnen wurde.
     c) Kneten: Der Teig muss nun geknetet werden. Bei genauer Befolgung der Mengenangaben dürfte der Teig ohne weitere Anpassungen zu einem Kluppen zusammengeknetet werden und weder bröselig noch kleberig sein. Ist dies dennoch der Fall, empfiehlt es sich während des Knetens in sehr kleinen Mengen Wasser bzw. Mehl hinzuzufügen, bis die Teigkonsistenz perfekt ist. Bei einem bröseligen Teig etwas mehr Wasser hinzufügen und weiter kneten. Bei einem zu klebrigen Teig mehr Mehl dazugeben und kneten.
     d) Warten: Den Boden der Rührschale (in dem der Teig sich befindet) leicht mit Mehl bestreuen, damit der Teig später besser zu entnehmen ist. Anschließend die Rührschale mit einem Küchentuch bedecken und an einen warmen Ort im Raum/Haus stellen. Ideal wären 28 °C. Hierfür eignet sich z.B. im Winter die Heizung und im Sommer ein Fenster der Südseite. Lass die Schale dort 2 Stunden stehen. Wenn du zu diesem Zeitpunkt keine Pizza machen willst sollte der Teig dann in den Kühlschrank; ansonsten kann es losgehen!
 

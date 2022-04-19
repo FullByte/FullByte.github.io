@@ -39,7 +39,7 @@ ntpd is supposed to make the replay happen after it sees the "leap bits" from up
 - The system clock can, and will, jump backwards and forwards in time due to things outside of your control. Your program should be designed to survive this.
 - The number of "clock" seconds per "real" second is both inaccurate and variable. It mostly varies with temperature.
 - Don't blindly use gettimeofday(). If you need a monotonic (always increasing) clock, have a look at clock_gettime().
-ntpd can change the system time in two ways: 1) Step: making the clock jump backwards or forwards to the correct time instantaneously. 2) Slew: changing the frequency of the clock so that it slowly drifts toward the correct time. --> Slew is preferred because it's less disruptive, but it's only useful for correcting small offsets.
+ntpd can change the system time in two ways: 1) Step: making the clock jump backwards or forwards to the correct time instantaneously. 2) Slew: changing the frequency of the clock so that it slowly drifts toward the correct time. → Slew is preferred because it's less disruptive, but it's only useful for correcting small offsets.
 - Time passes at a rate of one second per second for every observer. The frequency of a remote clock relative to an observer is affected by velocity and gravity. The clocks inside GPS satellites are adjusted for relativistic effects.
 - MySQL (at least 4.x and 5.x) stores DATETIME columns as a "YYYY-MM-DD HH:MM:SS" string. I'm not even kidding. If you care at all about storing timestamps, store them as integers and use the UNIX_TIMESTAMP() and FROM_UNIXTIME() functions.
 

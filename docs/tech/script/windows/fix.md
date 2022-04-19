@@ -6,7 +6,7 @@ Fixing Windows 10 issues
 
 ### Recovery Deaktivieren
 
-Problembehandlung -> Eingabeaufforderung -> command:
+Problembehandlung → Eingabeaufforderung → command:
 
 ```cmd
 bcdedit /set {current} recoveryenabled No
@@ -14,7 +14,7 @@ bcdedit /set {current} recoveryenabled No
 
 ### Fix MBR
 
-Problembehandlung -> Eingabeaufforderung -> commands:
+Problembehandlung → Eingabeaufforderung → commands:
 
 ```cmd
 bootrec.exe /fixmbr
@@ -23,7 +23,7 @@ bootrec.exe /rebuildbcd
 ```
 
 Sektor bzw. Festplatten reparieren
-Problembehandlung -> Eingabeaufforderung -> command:
+Problembehandlung → Eingabeaufforderung → command:
 
 ```cmd
 chkdsk /f /r
@@ -31,5 +31,5 @@ chkdsk /f /r
 
 ### Windows 10 abgesicherten Modus
 
-Problembehandlung“, dann „Erweiterte Optionen“, dann „Starteinstellungen“, dann „Neu starten“
-Drücke auf „F5-Taste“, um Abgesicherten Modus mit Netzwerktreibern zu aktivieren.
+Problembehandlung", dann „Erweiterte Optionen", dann „Starteinstellungen", dann „Neu starten"
+Drücke auf „F5-Taste", um Abgesicherten Modus mit Netzwerktreibern zu aktivieren.

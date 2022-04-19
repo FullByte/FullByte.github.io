@@ -232,7 +232,7 @@ Commands
 
 - ss (type)
 - L (choose WIFI+Channel)
-- i (Info -> copy BSSID)
+- i (Info → copy BSSID)
 
 ### Fluxion
 

@@ -236,8 +236,8 @@ Function writeEventLogEntry
 
 PowerShell supports two optional parameters that can provide information about the execution of the cmdlet:
 
-- "-Verbose" -> The -Verbose parameter displays any and all logging entries included by the cmdlet author, such as “Connecting to xyz”
-- "-Debug"  -> The -Debug parameter displays any trace code implemented with a Write-Debug statement in the cmdlet, such as dumping the content of a variable.
+- "-Verbose" → The -Verbose parameter displays any and all logging entries included by the cmdlet author, such as "Connecting to xyz"
+- "-Debug"  → The -Debug parameter displays any trace code implemented with a Write-Debug statement in the cmdlet, such as dumping the content of a variable.
 
 **Option 1)** With a value of 1 you get each line of code as it executes, e.g.:
 
