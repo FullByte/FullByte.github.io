@@ -25,7 +25,11 @@ I like to interprete this as beeing a terminal and GUI user :D I use the tool th
 
 I often use this avatar. More about how to create this with [Context Free Art is written here](https://0xfab1.net/tech/art/random/contextfreeart/).
 
-![avatar](_avatar_aboutme.png)
+![avatar](_about-0xfab1-qrcode.png)
+
+Use this QR-Code if you want to use a QR-Code to link to this site:
+
+![qrcode](0xfab1-qrcode.png)
 
 ## G33k C0d3
 

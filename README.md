@@ -86,3 +86,5 @@ Thank you for your contribution :)
 [![Chat on Gitter](https://badges.gitter.im/FullByte.github.io.svg)](https://gitter.im/FullByte/community/)
 
 [![Twitter](https://img.shields.io/badge/twitter-%40zerogdoubled-%231da1f2)](https://twitter.com/zerogdoubled)
+
+![qrcode](0xfab1-qrcode.png)

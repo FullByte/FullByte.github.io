@@ -4,38 +4,45 @@ Some note on installing, configuring and using Kali.
 
 ## Basic Config
 
-[Kali's Default Credentials](https://www.kali.org/docs/introduction/default-credentials/)
+## Kali user
+
+Here are the [Kali default credentials](https://www.kali.org/docs/introduction/default-credentials/). Change the credentials for default users `kali` and `root`.
+
+``` sh
+sudo passwd kali
+sudo passwd root
+```
+
+Feel free to add new user e.g. 0xfab1 with full privileges:
+
+``` sh
+sudo useradd -m 0xfab1
+sudo passwd 0xfab1
+sudo usermod -a -G sudo 0xfab1
+sudo chsh -s /bin/bash 0xfab1
+su 0xfab1
+whoami
+```
 
 ### Update OS
 
-Set the password for root and switch to root
+Run this once as root to add new keys (only required on old Kali Builds):
 
 ``` sh
-sudo passwd root
 su root
-```
-
-Run this once on old Kali versions and run this as root:
-
-``` sh
 sudo apt install gcc-8-base
 sudo wget -q -O - https://archive.kali.org/archive-key.asc | apt-key add
 sudo dpkg --configure -a
 ```
 
-Switch back to your user e.g. fab1
+Switch back to your user e.g. fab1 and run an update
 
 ``` sh
-su fab1
-```
-
-Run an update
-
-``` sh
+su 0xfab1
 sudo apt update && sudo apt -y full-upgrade && sudo apt -y autoremove && sudo apt -y autoclean
 ```
 
-Install more tools (alt install```kali-linux-default``` or```kali-linux-large```)
+Install more tools (alt install `kali-linux-default` or `kali-linux-large`)
 
 ``` sh
 sudo apt-get install kali-linux-everything
@@ -50,28 +57,24 @@ hostnamectl
 /proc/version
 ```
 
-## Add new user
+## Localization
 
-Add new user e.g. 0xfab1 with full privileges:
-
-``` sh
-sudo useradd -m 0xfab1
-sudo passwd 0xfab1
-sudo usermod -a -G sudo 0xfab1
-sudo chsh -s /bin/bash 0xfab1
-su 0xfab1
-whoami
-```
-
-## Set german keyboard
+Set german keyboard:
 
 ``` sh
 setxkbmap -layout de
 ```
 
+Set german timezone:
+
+``` sh
+sudo timedatectl set-timezone Europe/Berlin
+sudo timedatectl set-ntp on
+```
+
 ## Enlargen Disk
 
-Use fdisk to enlargen```/dev/sda``` (e.g. when providing more disk space to the VM)
+Use fdisk to enlargen `/dev/sda` (e.g. when providing more disk space to the VM)
 
 ``` sh
 df -h # check current space
