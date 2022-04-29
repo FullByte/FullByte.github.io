@@ -188,3 +188,24 @@ update-rc.d xrdp enable
 apt-get remove gnome-core
 apt-get install lxde-core lxde kali-defaults kali-root-login desktop-base
 ```
+
+## Troubleshooting
+
+### /dev/sda1 contains a file system with errors
+
+Error
+
+``` txt
+(Initramfs): /dev/sda1 contains a file system with errors, check forced.
+  Inodes that were a part of a corrupted orphan linked lost found.
+  /dev/sda1 : UNEXPECTED INCONSISTENCY; RUN fsck manually.(I.e .,
+  without -a or -p options). fsck exited with status code 4. The root
+  filesystem on /dev/sda1 requires a manual fsck
+```
+
+Solution
+
+``` sh
+fsck -yf /dev/sda1
+exit
+```

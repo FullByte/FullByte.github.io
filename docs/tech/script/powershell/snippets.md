@@ -11,20 +11,12 @@ Some handy code snippets for powershell :)
 - Decode: ```[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("dGVzdA=="))```
 - Encode: ```[Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("test"))```
 
-**Create files based on files**
-
-Create md file for each file found in current folder and remove first and last chars:
-
-``` ps1
-foreach ($file in (dir | select-object name)){New-Item ($file.name.Substring(3, $file.name.Length-7)+".md") -ItemType file}
-```
-
 **Create a password**
 
 Option 1
 
 ``` ps1
-Function New-Password([int] $length, $pw = "")
+Function New-Password([int]$length=20, $pw="")
 {    
     $rng = New-Object System.Random
     for($i=0;$i -lt $length;$i++) { $pw = $pw +[char]$rng.next(33,126) }
@@ -34,38 +26,6 @@ New-Password 15
 ```
 
 Option 2
-
-``` ps1
-$pwlength = 20 # Something between 8 and 32
-
-# Create a password
-Function New-RandomPassword{
-    Param([ValidateRange(8, 32)] [int] $Length = 16)
-    $AsciiCharsList = @()
-
-    foreach ($a in (33..126)){ $AsciiCharsList += , [char][byte]$a }
-
-    do {
-        $Password = ""
-        $loops = 1..$Length
-        Foreach ($loop in $loops) { $Password += $AsciiCharsList | Get-Random }
-    }
-    until ($Password -match "(?=^.{8,32}$)((?=.*\d)(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[^A-Za-z0-9])(?=.*[a-z])|(?=.*[^A-Za-z0-9])(?=.*[A-Z])(?=.*[a-z])|(?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9]))^.*")
-    return $Password
-}
-
-# Looks cool and why use the first best choice? lol
-for ($i = 0; $i -lt ($pwlength); $i++) {
-    $line = ""
-    for ($j = 0; $j -lt (5); $j++) { $line += "$(New-RandomPassword($pwlength)) " }
-    Write-Output($line) -ForegroundColor Green
-}
-
-# Result
-Write-Output("Password:") -ForegroundColor black -BackgroundColor yellow -NoNewline; Write-Output(" " + $(New-RandomPassword($pwlength))) -ForegroundColor Red
-```
-
-Option 3
 
 ``` ps1
 $buffer = New-Object byte[] 32;
@@ -78,7 +38,7 @@ return [BitConverter]::ToString($buffer).Replace("-", [string]::Empty);
 Programs that run on this system
 
 ``` ps1
-Get-ScheduledTask | Get-ScheduledTaskInfo
+Get-ScheduledTask | Get-ScheduledTaskInfo | FT
 Get-Service
 Get-Process
 ```
@@ -92,7 +52,7 @@ Write-Output "System boot:" (Get-CimInstance -ClassName win32_operatingsystem | 
 Last Installation Date
 
 ``` ps1
-Get-ChildItem -Path HKLM:\System\Setup\Source* | ForEach-Object {Get-ItemProperty -Path Registry::$_} | Select-Object ProductName, ReleaseID, CurrentBuild, @{n="Install Date"; e={([DateTime]'1/1/1970').AddSeconds($_.InstallDate)}} | Sort-Object "Install Date"
+Write-Output "System install:" (Get-CimInstance -Class Win32_OperatingSystem).InstallDate
 ```
 
 Get WiFi Passwords (add more cultures if needed):
@@ -143,24 +103,6 @@ Get-AppxPackage | Select-Object -Property Name, Status, Version, InstallLocation
 
 # List all programs installed on Windows (and ignore the ones from Microsoft)
 Get-WMIObject -Query "SELECT * FROM Win32_Product Where Not Vendor Like '%Microsoft%'" | Format-Table
-```
-
-List files in programs folder:
-
-``` ps1
-$Path = "$Env:ProgramData\Microsoft\Windows\Start Menu\Programs"
-$StartMenu = Get-ChildItem $Path -Recurse -Include *.lnk
-
-ForEach ($Item in $StartMenu) {
-   $Shell = New-Object -ComObject WScript.Shell
-   $Properties = @{
-        ShortcutName = $Item.Name
-        Target = $Shell.CreateShortcut($Item).targetpath
-        }
-    New-Object PSObject -Property $Properties
-}
-
-[Runtime.InteropServices.Marshal]::ReleaseComObject($Shell) | Out-Null
 ```
 
 List installed Windows Store Apps (and ignore some):
@@ -419,9 +361,9 @@ ForEach-Object {
 
 - Install Hyper V Feature: ```Install-WindowsFeature -Name Hyper-V -ComputerName localhost -IncludeManagementTools -Restart```
 - Check Hyper V Installation: ```Get-WindowsFeature -Name Hyper-V -ComputerName HOSTNAME```
-- Reconfigure the service```sc config vmms start=auto```
-- Stop and start the service```sc stop vmms; sc start vmms```
-- Remove```VM Remove-VM -Name "Linux" -Force```
+- Reconfigure the service ```sc config vmms start=auto```
+- Stop and start the service ```sc stop vmms; sc start vmms```
+- Remove ```VM Remove-VM -Name "Linux" -Force```
 
 **Get VHD owner**
 

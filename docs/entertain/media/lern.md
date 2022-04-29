@@ -1,4 +1,4 @@
-# Lern
+# Free Education
 
 ## Dev
 
@@ -29,5 +29,18 @@ Random knowledge and interesting stuff:
 ## Statistics
 
 - <http://www.labinthewild.org/>
-- What are reddit's favorite books? <https://redditfavorites.com/books>
 - <https://ourworldindata.org/>
+
+## Free Books
+
+What are reddit's favorite books? <https://redditfavorites.com/books>
+
+- <https://www.gutenberg.org/>
+- <https://librivox.org/>
+- <https://www.locserendipity.com/>
+- <https://www.pgdp.net/>
+- <https://www.fadedpage.com/>
+- <https://www.harvard.com/clubs_services/books_on_demand/>
+- <http://classics.mit.edu/>
+- <https://standardebooks.org/>
+- <https://manybooks.net/>
