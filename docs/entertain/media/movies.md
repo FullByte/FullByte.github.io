@@ -103,6 +103,7 @@ This is a list of movies I enjoyed watching.
 - Mad Max: Fury Road: Black & Chrome
 - Sin City
 - Valhalla Rising
+- [Mandy](https://www.imdb.com/title/tt6998518/)
 
 ## Comedy movies
 

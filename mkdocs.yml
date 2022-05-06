@@ -1,7 +1,9 @@
 site_name: "0xfab1"
 site_url: https://0xfab1.net
 repo_url: https://github.com/FullByte/FullByte.github.io
-site_description: "0xfab1 wiki"
+site_description: >-
+  Publishing my projects and notes has been great exercise for me. As longs as this works well for me I will continue doing so :)
+  The content may appear random as it deals with basically anything I find interesting and noteworthy
 site_author: "0xfab1"
 
 theme:
@@ -43,42 +45,20 @@ plugins:
           remove_comments: true
 
 extra:
-  social:
-    - icon: fontawesome/brands/twitter
-      link: https://twitter.com/zerogdoubled
-    - icon: fontawesome/brands/github
-      link: https://github.com/FullByte
-    - icon: fontawesome/brands/spotify
-      link: https://open.spotify.com/user/1132374314/playlists
-    - icon: fontawesome/brands/docker
-      link: https://hub.docker.com/r/0xfab1/0xfab1.net
-    - icon: fontawesome/brands/itch-io
-      link: https://0xfab1.itch.io/
-    - icon: fontawesome/brands/fort-awesome
-      link: https://www.instructables.com/member/FullByte/
-    - icon: fontawesome/brands/leanpub
-      link: https://www.librarycat.org/lib/0xfab1
-    - icon: fontawesome/brands/laravel
-      link: https://boardgamegeek.com/collection/user/zerogdoubled
-    - icon: fontawesome/brands/patreon
-      link: https://www.patreon.com/0xfab1
   generator: false
 
 markdown_extensions:
   - attr_list
   - pymdownx.inlinehilite
   - pymdownx.highlight
-  - pymdownx.superfences
   - pymdownx.keys
   - pymdownx.mark
   - pymdownx.tabbed:
       alternate_style: true 
   - pymdownx.tilde
   - pymdownx.caret
-  - pymdownx.tasklist
   - pymdownx.arithmatex
   - pymdownx.details
   - pymdownx.tasklist:
       custom_checkbox: true
-  - pymdownx.tasklist:
       clickable_checkbox: true

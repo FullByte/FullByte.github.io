@@ -38,7 +38,7 @@
 - doodle <https://doodle.com/>
 - dr-plano <https://www.dr-plano.com/>
 
-## website analytics
+## Site analyiser
 
 - umami <https://github.com/mikecao/umami>
 - goatcounter <https://github.com/zgoat/goatcounter>
@@ -55,22 +55,33 @@ There are many [Static Website Generators](https://jamstack.org/generators/) whi
 
 ## Services
 
-- Waitlist with built in referral <https://getwaitlist.com/>
+Web Analytics
+
 - Matomo Web analytics <https://matomo.org/>
 - Plausible Web analytics <https://plausible.io/self-hosted-web-analytics>
+- uxwizz <https://www.uxwizz.com/>
+
+Maps
+
+- MapHub <https://maphub.net/explore>
+- Leaflet <https://leafletjs.com/>
+
+Payment
+
+- Stripe Payment <https://stripe.com>
+- Donations <https://donorbox.org/>
+- Gumroad Payment <https://gumroad.com/>
+
+Other
+
+- Waitlist with built in referral <https://getwaitlist.com/>
 - Comment plug-in <https://disqus.com/>
 - Sitemap builder <https://octopus.do/>
 - Static Website Generators <https://jamstack.org/generators/>
 - Uptime Stats <https://uptimerobot.com>
-- <https://www.usertrack.net/>
 - TLS Certs <https://letsencrypt.org/>
 - Update TLS Certs <https://certbot.eff.org/>
 - Twilio <https://www.twilio.com/>
-- Stripe Payment <https://stripe.com>
-- Donations <https://donorbox.org/>
-- Gumroad Payment <https://gumroad.com/>
-- MapHub <https://maphub.net/explore>
-- Leaflet <https://leafletjs.com/>
 - ImageBot <https://imgbot.net/>
 - URL Shortener <https://github.com/YOURLS/awesome-yourls>
 

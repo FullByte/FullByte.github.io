@@ -46,6 +46,7 @@ Learning platforms
 - <https://thonny.org/>
 - <https://www.ilsb.tuwien.ac.at/lva/317.530_2019/index.html>
 - <https://open.hpi.de/>
+- blockly <https://developers.google.com/blockly>
 
 Youtube
 

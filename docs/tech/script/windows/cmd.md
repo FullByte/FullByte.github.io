@@ -88,21 +88,21 @@ ren %1 temp000 & copy /y %windir%\regedit.exe temp000 & del temp000
 
 Option 1
 
-```bat
+``` bat
 net view machinename
 nbtstat -a machinename
 ```
 
 Option 2
 
-```bat
+``` bat
 Ping <IP/machinename>
 Arp –a
 ```
 
 Option 3
 
-```bat
+``` bat
 getmac
 ```
 
@@ -110,7 +110,7 @@ getmac
 
 Requests to 10.11.12.13 will be routed via 8.8.8.8:
 
-```bat
+``` bat
 route add 8.8.8.8 MASK 255.255.255.255 10.11.12.13
 route print
 ```

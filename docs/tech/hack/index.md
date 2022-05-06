@@ -11,7 +11,16 @@ Reasons why systems are in insecure:
 
 - [Bear Security](https://www.schneier.com/blog/archives/2006/08/security_is_a_t.html): "There is considerable overlap between the intelligence of the smartest bears and the dumbest tourists."
 
-Just a bunch of links for further tools, tips and lists on messing with the network, servers and clients. Does anybody still remember Back Orifice, Sub7 and NetBus?
+Just a bunch of links for further tools, tips and lists on messing with the network, servers and clients.
+
+## Free Cryptography Education
+
+Standards
+
+- Safe curves for elliptic-curve cryptography: <https://safecurves.cr.yp.to/>
+- Benchmarking of Cryptographic Systems: <https://bench.cr.yp.to/>
+- NaCl: Networking and Cryptography library: <https://nacl.cr.yp.to/>
+- popularity of various implementations actually used in practice <https://tlsfingerprint.io/>
 
 ## Hack CTF Overview
 

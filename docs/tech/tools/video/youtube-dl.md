@@ -55,7 +55,7 @@ Get Source formats available:
 youtube-dl --list-formats '<youtube-link>'
 ```
 
-## Script to download audio of playlist
+## Download audio of a playlist
 
 Run ytdlpl (youtube downloader playlist) and add the playlist you want to download.
 This script will download the latest youtube-dl version for windows to the current folder if not available.
@@ -84,5 +84,25 @@ Function ytdlpl
 Alternatively use this script
 
 ``` ps1
-iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/scripts/main/tools/youtubedl/youtube-dl.ps1'))
+iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/scripts/main/powershell/youtubedl/youtube-dl.ps1'))
+```
+
+## Download all videos of a list
+
+To download all videos mentioned on a given website use the following regex to find youtube links:
+
+Regex for videos: `youtube\.com\/watch\?v=[A-Za-z0-9-_]{11}`
+Regex for playlists: `youtube\.com\/playlist\?list=[A-Za-z0-9_-]{34}`
+
+We can now curl the given page (example here is <https://cs1000.vercel.app>) and append all found links to `download.txt`
+
+``` sh
+curl -s https://cs1000.vercel.app | grep -ioE "youtube\.com\/watch\?v=[A-Za-z0-9]{11}" > download.txt
+curl -s https://cs1000.vercel.app | grep -ioE "youtube\.com\/playlist\?list=[A-Za-z0-9_-]{34}" >> download.txt
+```
+
+To donwload all videos and playlists listed in `download.txt` we can now run the follwing command. This will also put all playlist videos in an own subfolder:
+
+``` sh
+ytdl --batch-file download.txt -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' "${line}"
 ```

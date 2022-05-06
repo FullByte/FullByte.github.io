@@ -11,6 +11,8 @@ Solving Helper
 - <http://www.chessandpoker.com/rubiks-cube-solution.html>
 - <https://ruwix.com/the-rubiks-cube/different-rubiks-cube-solving-methods/>
 - <https://ruwix.com/the-rubiks-cube/how-to-solve-the-rubiks-cube-beginners-method/>
+- <https://www.cubedesk.io>
+- <https://www.speedsolving.com>
 
 Online Cubes
 
