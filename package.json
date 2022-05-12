@@ -1,0 +1,19 @@
+{
+  "name": "mkdocs",
+  "version": "1.0.0",
+  "scripts": {
+    "build": "python3 -m mkdocs build",
+    "server": "python3 -m mkdocs serve",
+    "layer0:dev": "layer0 dev",
+    "postinstall": "pip3 install mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin mkdocs-video",
+    "layer0:build": "npm run build && layer0 build",
+    "layer0:deploy": "npm run build && layer0 deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@layer0/cli": "^4.8.5",
+    "@layer0/core": "^4.8.5",
+    "@layer0/devtools": "^4.8.5",
+    "@layer0/prefetch": "^4.8.5"
+  }
+}
