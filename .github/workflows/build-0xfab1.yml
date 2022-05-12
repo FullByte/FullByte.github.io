@@ -31,10 +31,6 @@ jobs:
           git pull
           mkdocs gh-deploy
 
-      - name: Update me on this event
-        run: |
-          curl "https://gotify.0xfab1.net/message?token=${{ secrets.GOTIFY_TOKEN }}" -F "title=0xfab1.net updated" -F "message=" -F "priority=5"
-
       - name: Build 0xfab1.net for Azure
         run: |          
           mkdocs build
@@ -47,6 +43,10 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }} 
           action: "upload"
           app_location: "site/"
+
+      - name: Update me on this event
+        run: |
+          curl "https://gotify.0xfab1.net/message?token=${{ secrets.GOTIFY_TOKEN }}" -F "title=0xfab1.net updated" -F "message=${{ github.event.head_commit.message }}" -F "priority=5"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
