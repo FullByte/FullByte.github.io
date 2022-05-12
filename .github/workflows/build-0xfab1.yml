@@ -30,8 +30,11 @@ jobs:
         run: |
           git pull
           mkdocs gh-deploy
-          mkdocs gh-deploy -b heroku
-      
+
+      - name: Update me on this event
+        run: |
+          curl "https://gotify.0xfab1.net/message?token=${{ secrets.GOTIFY_TOKEN }}" -F "title=0xfab1.net updated" -F "message=" -F "priority=5"
+
       - name: Build 0xfab1.net for Azure
         run: |          
           mkdocs build
