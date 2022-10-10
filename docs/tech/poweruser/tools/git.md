@@ -80,6 +80,47 @@ git tag -d {tag-name}
 git push origin :refs/tags/{tag-name}
 ```
 
+## Remove git history
+
+Run this to remove the history of main:
+
+``` sh
+git checkout --orphan latest_branch
+git add -A
+git commit -am "fresh start"
+git branch -D main
+git branch -m main
+git push -f origin main
+```
+
+In any other cloned repositories, to do a "forceful" pull:
+
+``` sh
+git fetch --all
+git reset --hard origin/master
+```
+
+## Rename master to main
+
+Run this to rename the repo from master to main:
+
+``` sh
+git branch -m master main
+git checkout main
+git push -u origin main
+git push origin --delete master
+```
+
+other in the projekt need to do this:
+
+``` sh
+git checkout master
+git branch -m master main
+git fetch
+git branch --unset-upstream
+git branch -u origin/main
+```
+
 ## .gitignore
 
 Git ignores .gitignore with .gitignore in .gitignore
