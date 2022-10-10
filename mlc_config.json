@@ -1,0 +1,15 @@
+{
+    "ignorePatterns": [
+        {
+            "pattern": "^(http|https)://10.0.4.*."
+        },
+        {
+            "pattern": "^(http|https)://localhost"
+        }
+    ],
+    "timeout": "20s",
+    "retryOn429": true,
+    "retryCount": 2,
+    "fallbackRetryDelay": "30s",
+    "aliveStatusCodes": [200, 206]
+}

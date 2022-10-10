@@ -1,0 +1,1789 @@
+{
+  "changeNumber": 193,
+  "cloud": "AzureGermany",
+  "values": [
+    {
+      "name": "ApiManagement",
+      "id": "ApiManagement",
+      "properties": {
+        "changeNumber": 2,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureApiManagement",
+        "addressPrefixes": [
+          "51.8.226.224/31",
+          "51.8.227.160/28",
+          "51.8.234.232/31",
+          "51.8.235.160/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AppConfiguration",
+      "id": "AppConfiguration",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureAppConfiguration",
+        "addressPrefixes": [
+          "51.8.227.232/29",
+          "51.8.227.240/29",
+          "51.8.236.8/29",
+          "51.8.236.24/29",
+          "51.8.236.64/28",
+          "51.8.242.64/29",
+          "51.8.242.88/29",
+          "51.8.242.128/28",
+          "51.8.250.96/29",
+          "51.8.250.120/29",
+          "51.8.250.128/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AppService",
+      "id": "AppService",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureAppService",
+        "addressPrefixes": [
+          "51.8.226.128/27",
+          "51.8.234.96/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW",
+          "VSE"
+        ]
+      }
+    },
+    {
+      "name": "AppServiceManagement",
+      "id": "AppServiceManagement",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureAppServiceManagement",
+        "addressPrefixes": [
+          "51.8.226.64/26",
+          "51.8.234.128/26"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureBackup",
+      "id": "AzureBackup",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureBackup",
+        "addressPrefixes": [
+          "51.8.227.0/26",
+          "51.8.227.64/27",
+          "51.8.235.0/26",
+          "51.8.235.64/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureBotService",
+      "id": "AzureBotService",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureBotService",
+        "addressPrefixes": [
+          "51.18.32.64/30",
+          "51.18.40.64/30"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureCognitiveSearch",
+      "id": "AzureCognitiveSearch",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureCognitiveSearch",
+        "addressPrefixes": [
+          "51.18.32.96/28",
+          "51.18.40.96/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureConnectors",
+      "id": "AzureConnectors",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureConnectors",
+        "addressPrefixes": [
+          "51.8.226.192/28",
+          "51.8.234.80/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureContainerRegistry",
+      "id": "AzureContainerRegistry",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureContainerRegistry",
+        "addressPrefixes": [
+          "51.8.226.56/29",
+          "51.8.234.64/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW",
+          "VSE"
+        ]
+      }
+    },
+    {
+      "name": "AzureCosmosDB",
+      "id": "AzureCosmosDB",
+      "properties": {
+        "changeNumber": 2,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureCosmosDB",
+        "addressPrefixes": [
+          "51.4.145.23/32",
+          "51.5.144.198/32",
+          "51.8.234.0/27",
+          "51.8.242.80/29",
+          "51.8.250.112/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW",
+          "VSE"
+        ]
+      }
+    },
+    {
+      "name": "EventHub",
+      "id": "EventHub",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureEventHub",
+        "addressPrefixes": [
+          "51.4.145.246/32",
+          "51.4.146.41/32",
+          "51.4.147.190/32",
+          "51.5.144.173/32",
+          "51.5.145.89/32",
+          "51.5.146.33/32",
+          "51.8.226.0/27",
+          "51.8.234.32/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW",
+          "VSE"
+        ]
+      }
+    },
+    {
+      "name": "AzureActiveDirectory",
+      "id": "AzureActiveDirectory",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureIdentity",
+        "addressPrefixes": [
+          "51.8.227.96/27",
+          "51.8.235.96/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW",
+          "VSE"
+        ]
+      }
+    },
+    {
+      "name": "AzureIoTHub",
+      "id": "AzureIoTHub",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureIoTHub",
+        "addressPrefixes": [
+          "51.4.146.77/32",
+          "51.5.145.130/32",
+          "51.8.229.0/27",
+          "51.8.236.32/27",
+          "51.8.242.96/27",
+          "51.8.250.64/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureKeyVault",
+      "id": "AzureKeyVault",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureKeyVault",
+        "addressPrefixes": [
+          "51.4.145.57/32",
+          "51.4.145.82/32",
+          "51.5.144.216/32",
+          "51.5.144.237/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW",
+          "VSE"
+        ]
+      }
+    },
+    {
+      "name": "AzureMachineLearning",
+      "id": "AzureMachineLearning",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureMachineLearning",
+        "addressPrefixes": [
+          "51.8.235.240/28",
+          "51.8.242.16/28",
+          "51.8.250.16/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureMonitor",
+      "id": "AzureMonitor",
+      "properties": {
+        "changeNumber": 2,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureMonitor",
+        "addressPrefixes": [
+          "51.8.226.240/28",
+          "51.8.227.224/29",
+          "51.8.234.240/29",
+          "51.8.236.0/29",
+          "51.8.242.0/30",
+          "51.8.242.8/29",
+          "51.8.250.0/30",
+          "51.8.250.8/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureResourceManager",
+      "id": "AzureResourceManager",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureResourceManager",
+        "addressPrefixes": [
+          "51.8.227.176/28",
+          "51.8.230.0/23",
+          "51.8.235.224/28",
+          "51.8.238.0/23"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "Sql",
+      "id": "Sql",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureSQL",
+        "addressPrefixes": [
+          "51.4.144.100/31",
+          "51.4.224.239/32",
+          "51.4.226.98/32",
+          "51.4.231.202/32",
+          "51.5.144.179/32",
+          "51.5.144.185/32",
+          "51.5.240.174/32",
+          "51.5.246.239/32",
+          "51.8.224.0/27",
+          "51.8.225.0/27",
+          "51.8.232.0/27",
+          "51.8.233.0/27",
+          "51.8.240.0/27",
+          "51.8.241.0/27",
+          "51.8.248.0/27",
+          "51.8.249.0/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW",
+          "VSE"
+        ]
+      }
+    },
+    {
+      "name": "ServiceBus",
+      "id": "ServiceBus",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureServiceBus",
+        "addressPrefixes": [
+          "51.4.224.37/32",
+          "51.5.243.5/32",
+          "51.8.226.32/28",
+          "51.8.234.48/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW",
+          "VSE"
+        ]
+      }
+    },
+    {
+      "name": "AzureSiteRecovery",
+      "id": "AzureSiteRecovery",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureSiteRecovery",
+        "addressPrefixes": [
+          "51.4.225.99/32",
+          "51.5.242.106/32",
+          "51.18.32.80/28",
+          "51.18.40.80/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "Storage",
+      "id": "Storage",
+      "properties": {
+        "changeNumber": 3,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureStorage",
+        "addressPrefixes": [
+          "51.4.168.16/28",
+          "51.4.168.48/28",
+          "51.4.168.128/27",
+          "51.4.208.16/28",
+          "51.4.208.32/28",
+          "51.4.232.32/27",
+          "51.5.168.64/28",
+          "51.5.168.96/28",
+          "51.5.168.128/27",
+          "51.5.248.64/27",
+          "51.5.248.112/28",
+          "51.5.248.128/28",
+          "51.5.248.160/27",
+          "51.8.144.64/26",
+          "51.8.144.128/25",
+          "51.8.147.0/25",
+          "51.8.150.0/23"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW",
+          "VSE"
+        ]
+      }
+    },
+    {
+      "name": "AzureTrafficManager",
+      "id": "AzureTrafficManager",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureTrafficManager",
+        "addressPrefixes": [
+          "51.4.200.133/32",
+          "51.5.247.109/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "BatchNodeManagement",
+      "id": "BatchNodeManagement",
+      "properties": {
+        "changeNumber": 2,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "BatchNodeManagement",
+        "addressPrefixes": [
+          "51.4.144.221/32",
+          "51.4.144.222/32",
+          "51.5.144.140/31",
+          "51.8.236.16/29",
+          "51.8.242.72/29",
+          "51.8.250.104/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "EOPExternalPublishedIPs",
+      "id": "EOPExternalPublishedIPs",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "EOPExtPublished",
+        "addressPrefixes": [
+          "51.4.72.0/24",
+          "51.4.80.0/27",
+          "51.5.72.0/24",
+          "51.5.80.0/27",
+          "2a01:4180:4050:400::/64",
+          "2a01:4180:4050:800::/64",
+          "2a01:4180:4051:400::/64",
+          "2a01:4180:4051:800::/64"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "GatewayManager",
+      "id": "GatewayManager",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "GatewayManager",
+        "addressPrefixes": [
+          "51.4.145.39/32",
+          "51.4.145.55/32",
+          "51.4.147.130/32",
+          "51.4.150.40/32",
+          "51.5.144.201/32",
+          "51.5.144.236/32",
+          "51.5.146.29/32",
+          "51.5.147.182/32",
+          "51.8.226.208/29",
+          "51.8.234.72/29",
+          "51.18.32.72/29",
+          "51.18.40.72/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "HDInsight",
+      "id": "HDInsight",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "HDInsight",
+        "addressPrefixes": [
+          "51.4.146.68/32",
+          "51.4.146.80/32",
+          "51.5.144.101/32",
+          "51.5.150.132/32",
+          "51.8.226.232/29",
+          "51.8.234.248/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "MicrosoftContainerRegistry",
+      "id": "MicrosoftContainerRegistry",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "MicrosoftContainerRegistry",
+        "addressPrefixes": [
+          "51.8.226.48/29",
+          "51.8.234.56/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "ServiceFabric",
+      "id": "ServiceFabric",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "ServiceFabric",
+        "addressPrefixes": [
+          "51.4.144.99/32",
+          "51.5.144.120/32",
+          "51.8.226.216/29",
+          "51.8.234.224/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "SqlManagement",
+      "id": "SqlManagement",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "SqlManagement",
+        "addressPrefixes": [
+          "51.4.136.19/32",
+          "51.5.136.21/32",
+          "51.8.226.160/27",
+          "51.8.227.192/27",
+          "51.8.234.192/27",
+          "51.8.235.192/27",
+          "51.8.242.32/27",
+          "51.8.250.32/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "ApiManagement.GermanyCentral",
+      "id": "ApiManagement.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureApiManagement",
+        "addressPrefixes": [
+          "51.8.234.232/31",
+          "51.8.235.160/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "ApiManagement.GermanyNorthEast",
+      "id": "ApiManagement.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureApiManagement",
+        "addressPrefixes": [
+          "51.8.226.224/31",
+          "51.8.227.160/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AppService.GermanyCentral",
+      "id": "AppService.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureAppService",
+        "addressPrefixes": [
+          "51.8.234.96/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AppService.GermanyNorthEast",
+      "id": "AppService.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureAppService",
+        "addressPrefixes": [
+          "51.8.226.128/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AppServiceManagement.GermanyCentral",
+      "id": "AppServiceManagement.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureAppServiceManagement",
+        "addressPrefixes": [
+          "51.8.234.128/26"
+        ],
+        "networkFeatures": [
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "AppServiceManagement.GermanyNorthEast",
+      "id": "AppServiceManagement.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureAppServiceManagement",
+        "addressPrefixes": [
+          "51.8.226.64/26"
+        ],
+        "networkFeatures": [
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "AzureBackup.GermanyCentral",
+      "id": "AzureBackup.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureBackup",
+        "addressPrefixes": [
+          "51.8.235.0/26",
+          "51.8.235.64/27"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureBackup.GermanyNorthEast",
+      "id": "AzureBackup.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureBackup",
+        "addressPrefixes": [
+          "51.8.227.0/26",
+          "51.8.227.64/27"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureBotService.GermanyCentral",
+      "id": "AzureBotService.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureBotService",
+        "addressPrefixes": [
+          "51.18.32.64/30"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureBotService.GermanyNorthEast",
+      "id": "AzureBotService.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureBotService",
+        "addressPrefixes": [
+          "51.18.40.64/30"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureCognitiveSearch.GermanyCentral",
+      "id": "AzureCognitiveSearch.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureCognitiveSearch",
+        "addressPrefixes": [
+          "51.18.32.96/28"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureCognitiveSearch.GermanyNorthEast",
+      "id": "AzureCognitiveSearch.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureCognitiveSearch",
+        "addressPrefixes": [
+          "51.18.40.96/28"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureConnectors.GermanyCentral",
+      "id": "AzureConnectors.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureConnectors",
+        "addressPrefixes": [
+          "51.8.234.80/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureConnectors.GermanyNorthEast",
+      "id": "AzureConnectors.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureConnectors",
+        "addressPrefixes": [
+          "51.8.226.192/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureContainerRegistry.GermanyCentral",
+      "id": "AzureContainerRegistry.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureContainerRegistry",
+        "addressPrefixes": [
+          "51.8.234.64/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureContainerRegistry.GermanyNorthEast",
+      "id": "AzureContainerRegistry.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureContainerRegistry",
+        "addressPrefixes": [
+          "51.8.226.56/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureCosmosDB.GermanyCentral",
+      "id": "AzureCosmosDB.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureCosmosDB",
+        "addressPrefixes": [
+          "51.4.145.23/32",
+          "51.8.234.0/27",
+          "51.8.242.80/29",
+          "51.8.250.112/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureCosmosDB.GermanyNorthEast",
+      "id": "AzureCosmosDB.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureCosmosDB",
+        "addressPrefixes": [
+          "51.5.144.198/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "EventHub.GermanyCentral",
+      "id": "EventHub.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureEventHub",
+        "addressPrefixes": [
+          "51.4.145.246/32",
+          "51.4.146.41/32",
+          "51.4.147.190/32",
+          "51.8.234.32/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "EventHub.GermanyNorthEast",
+      "id": "EventHub.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureEventHub",
+        "addressPrefixes": [
+          "51.5.144.173/32",
+          "51.5.145.89/32",
+          "51.5.146.33/32",
+          "51.8.226.0/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureIoTHub.GermanyCentral",
+      "id": "AzureIoTHub.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureIoTHub",
+        "addressPrefixes": [
+          "51.4.146.77/32",
+          "51.8.236.32/27",
+          "51.8.242.96/27",
+          "51.8.250.64/27"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureIoTHub.GermanyNorthEast",
+      "id": "AzureIoTHub.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureIoTHub",
+        "addressPrefixes": [
+          "51.5.145.130/32",
+          "51.8.229.0/27"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureKeyVault.GermanyCentral",
+      "id": "AzureKeyVault.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureKeyVault",
+        "addressPrefixes": [
+          "51.4.145.57/32",
+          "51.4.145.82/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureKeyVault.GermanyNorthEast",
+      "id": "AzureKeyVault.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureKeyVault",
+        "addressPrefixes": [
+          "51.5.144.216/32",
+          "51.5.144.237/32"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureMachineLearning.GermanyCentral",
+      "id": "AzureMachineLearning.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureMachineLearning",
+        "addressPrefixes": [
+          "51.8.235.240/28",
+          "51.8.242.16/28",
+          "51.8.250.16/28"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureMonitor.GermanyCentral",
+      "id": "AzureMonitor.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureMonitor",
+        "addressPrefixes": [
+          "51.8.234.240/29",
+          "51.8.236.0/29",
+          "51.8.242.0/30",
+          "51.8.242.8/29",
+          "51.8.250.0/30",
+          "51.8.250.8/29"
+        ],
+        "networkFeatures": [
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "AzureMonitor.GermanyNorthEast",
+      "id": "AzureMonitor.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureMonitor",
+        "addressPrefixes": [
+          "51.8.226.240/28",
+          "51.8.227.224/29"
+        ],
+        "networkFeatures": [
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "AzureResourceManager.GermanyCentral",
+      "id": "AzureResourceManager.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureResourceManager",
+        "addressPrefixes": [
+          "51.8.235.224/28",
+          "51.8.238.0/23"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureResourceManager.GermanyNorthEast",
+      "id": "AzureResourceManager.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureResourceManager",
+        "addressPrefixes": [
+          "51.8.227.176/28",
+          "51.8.230.0/23"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "Sql.GermanyCentral",
+      "id": "Sql.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureSQL",
+        "addressPrefixes": [
+          "51.4.144.100/31",
+          "51.4.224.239/32",
+          "51.4.226.98/32",
+          "51.4.231.202/32",
+          "51.8.232.0/27",
+          "51.8.233.0/27",
+          "51.8.240.0/27",
+          "51.8.241.0/27",
+          "51.8.248.0/27",
+          "51.8.249.0/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "Sql.GermanyNorthEast",
+      "id": "Sql.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureSQL",
+        "addressPrefixes": [
+          "51.5.144.179/32",
+          "51.5.144.185/32",
+          "51.5.240.174/32",
+          "51.5.246.239/32",
+          "51.8.224.0/27",
+          "51.8.225.0/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "ServiceBus.GermanyCentral",
+      "id": "ServiceBus.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureServiceBus",
+        "addressPrefixes": [
+          "51.4.224.37/32",
+          "51.8.234.48/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "ServiceBus.GermanyNorthEast",
+      "id": "ServiceBus.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureServiceBus",
+        "addressPrefixes": [
+          "51.5.243.5/32",
+          "51.8.226.32/28"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "Storage.GermanyCentral",
+      "id": "Storage.GermanyCentral",
+      "properties": {
+        "changeNumber": 2,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "AzureStorage",
+        "addressPrefixes": [
+          "51.4.168.16/28",
+          "51.4.168.48/28",
+          "51.4.168.128/27",
+          "51.4.208.16/28",
+          "51.4.208.32/28",
+          "51.4.232.32/27",
+          "51.8.144.128/25",
+          "51.8.150.0/24"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "Storage.GermanyNorthEast",
+      "id": "Storage.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "AzureStorage",
+        "addressPrefixes": [
+          "51.5.168.64/28",
+          "51.5.168.96/28",
+          "51.5.168.128/27",
+          "51.5.248.64/27",
+          "51.5.248.112/28",
+          "51.5.248.128/28",
+          "51.5.248.160/27",
+          "51.8.144.64/26",
+          "51.8.147.0/25",
+          "51.8.151.0/24"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "BatchNodeManagement.GermanyCentral",
+      "id": "BatchNodeManagement.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "BatchNodeManagement",
+        "addressPrefixes": [
+          "51.4.144.221/32",
+          "51.4.144.222/32",
+          "51.8.236.16/29",
+          "51.8.242.72/29",
+          "51.8.250.104/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "BatchNodeManagement.GermanyNorthEast",
+      "id": "BatchNodeManagement.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "BatchNodeManagement",
+        "addressPrefixes": [
+          "51.5.144.140/31"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "GatewayManager.GermanyCentral",
+      "id": "GatewayManager.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "GatewayManager",
+        "addressPrefixes": [
+          "51.4.145.39/32",
+          "51.4.145.55/32",
+          "51.4.147.130/32",
+          "51.4.150.40/32",
+          "51.8.234.72/29",
+          "51.18.32.72/29"
+        ],
+        "networkFeatures": [
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "GatewayManager.GermanyNorthEast",
+      "id": "GatewayManager.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "GatewayManager",
+        "addressPrefixes": [
+          "51.5.144.201/32",
+          "51.5.144.236/32",
+          "51.5.146.29/32",
+          "51.5.147.182/32",
+          "51.8.226.208/29",
+          "51.18.40.72/29"
+        ],
+        "networkFeatures": [
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "HDInsight.GermanyCentral",
+      "id": "HDInsight.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "HDInsight",
+        "addressPrefixes": [
+          "51.4.146.68/32",
+          "51.4.146.80/32",
+          "51.8.234.248/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "HDInsight.GermanyNorthEast",
+      "id": "HDInsight.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "HDInsight",
+        "addressPrefixes": [
+          "51.5.144.101/32",
+          "51.5.150.132/32",
+          "51.8.226.232/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "MicrosoftContainerRegistry.GermanyCentral",
+      "id": "MicrosoftContainerRegistry.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "MicrosoftContainerRegistry",
+        "addressPrefixes": [
+          "51.8.234.56/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "MicrosoftContainerRegistry.GermanyNorthEast",
+      "id": "MicrosoftContainerRegistry.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "MicrosoftContainerRegistry",
+        "addressPrefixes": [
+          "51.8.226.48/29"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "ServiceFabric.GermanyCentral",
+      "id": "ServiceFabric.GermanyCentral",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "ServiceFabric",
+        "addressPrefixes": [
+          "51.4.144.99/32",
+          "51.8.234.224/29"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "ServiceFabric.GermanyNorthEast",
+      "id": "ServiceFabric.GermanyNorthEast",
+      "properties": {
+        "changeNumber": 1,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "ServiceFabric",
+        "addressPrefixes": [
+          "51.5.144.120/32",
+          "51.8.226.216/29"
+        ],
+        "networkFeatures": null
+      }
+    },
+    {
+      "name": "AzureFrontDoor.Backend",
+      "id": "AzureFrontDoor.Backend",
+      "properties": {
+        "changeNumber": 2,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureFrontDoor",
+        "addressPrefixes": [
+          "51.4.86.64/26",
+          "51.5.87.0/25",
+          "2a01:4180:c001:8::/61",
+          "2a01:4180:c003:8::/61"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureActiveDirectoryDomainServices",
+      "id": "AzureActiveDirectoryDomainServices",
+      "properties": {
+        "changeNumber": 1,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "AzureIdentity",
+        "addressPrefixes": [
+          "51.8.227.96/27",
+          "51.8.235.96/27"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG",
+          "UDR",
+          "FW"
+        ]
+      }
+    },
+    {
+      "name": "AzureCloud.germanycentral",
+      "id": "AzureCloud.germanycentral",
+      "properties": {
+        "changeNumber": 9,
+        "region": "germanycentral",
+        "regionId": 5,
+        "platform": "Azure",
+        "systemService": "",
+        "addressPrefixes": [
+          "51.4.32.0/19",
+          "51.4.84.0/24",
+          "51.4.128.0/17",
+          "51.8.32.0/19",
+          "51.8.128.0/20",
+          "51.8.144.128/25",
+          "51.8.145.0/24",
+          "51.8.148.0/24",
+          "51.8.150.0/24",
+          "51.8.152.0/22",
+          "51.8.160.0/19",
+          "51.8.192.0/19",
+          "51.8.232.0/21",
+          "51.8.240.0/20",
+          "51.18.0.0/22",
+          "51.18.12.0/22",
+          "51.18.17.0/24",
+          "51.18.19.0/24",
+          "51.18.24.0/21",
+          "51.18.32.0/21",
+          "52.108.119.0/24",
+          "2a01:4180:2000::/40"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "AzureCloud.germanynortheast",
+      "id": "AzureCloud.germanynortheast",
+      "properties": {
+        "changeNumber": 8,
+        "region": "germanynortheast",
+        "regionId": 6,
+        "platform": "Azure",
+        "systemService": "",
+        "addressPrefixes": [
+          "51.5.84.0/24",
+          "51.5.128.0/17",
+          "51.8.0.0/19",
+          "51.8.64.0/18",
+          "51.8.144.64/26",
+          "51.8.146.0/24",
+          "51.8.147.0/25",
+          "51.8.149.0/24",
+          "51.8.151.0/24",
+          "51.8.156.0/22",
+          "51.8.224.0/21",
+          "51.18.4.0/22",
+          "51.18.8.0/22",
+          "51.18.16.0/24",
+          "51.18.18.0/24",
+          "51.18.40.0/21",
+          "52.108.120.0/24",
+          "2a01:4180:2400::/40"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    },
+    {
+      "name": "AzureCloud",
+      "id": "AzureCloud",
+      "properties": {
+        "changeNumber": 10,
+        "region": "",
+        "regionId": 0,
+        "platform": "Azure",
+        "systemService": "",
+        "addressPrefixes": [
+          "51.4.32.0/19",
+          "51.4.84.0/24",
+          "51.4.128.0/17",
+          "51.5.84.0/24",
+          "51.5.128.0/17",
+          "51.8.0.0/19",
+          "51.8.32.0/19",
+          "51.8.64.0/18",
+          "51.8.128.0/20",
+          "51.8.144.64/26",
+          "51.8.144.128/25",
+          "51.8.145.0/24",
+          "51.8.146.0/24",
+          "51.8.147.0/25",
+          "51.8.148.0/24",
+          "51.8.149.0/24",
+          "51.8.150.0/24",
+          "51.8.151.0/24",
+          "51.8.152.0/22",
+          "51.8.156.0/22",
+          "51.8.160.0/19",
+          "51.8.192.0/19",
+          "51.8.224.0/21",
+          "51.8.232.0/21",
+          "51.8.240.0/20",
+          "51.18.0.0/22",
+          "51.18.4.0/22",
+          "51.18.8.0/22",
+          "51.18.12.0/22",
+          "51.18.16.0/24",
+          "51.18.17.0/24",
+          "51.18.18.0/24",
+          "51.18.19.0/24",
+          "51.18.24.0/21",
+          "51.18.32.0/21",
+          "51.18.40.0/21",
+          "52.108.119.0/24",
+          "52.108.120.0/24",
+          "2a01:4180:2000::/40",
+          "2a01:4180:2400::/40"
+        ],
+        "networkFeatures": [
+          "API",
+          "NSG"
+        ]
+      }
+    }
+  ]
+}

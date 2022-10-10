@@ -1,0 +1,3 @@
+# ODROID-GO
+
+WIP

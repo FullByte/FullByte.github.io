@@ -1,0 +1,6 @@
+Contact: https://gitter.im/FullByte/community/
+Expires: 2222-02-22T21:22:00.000Z
+Encryption: https://0xfab1.net/0xfab1.net.pub.gpg.asc
+Acknowledgments: https://github.com/FullByte/FullByte.github.io/
+Preferred-Languages: en
+Policy: https://github.com/FullByte/FullByte.github.io/blob/master/.github/ISSUE_TEMPLATE/bug_report.md

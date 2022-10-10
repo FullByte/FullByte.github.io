@@ -1,0 +1,10 @@
+{
+    "name": "0xfab1.net",
+    "short_name": "0xfab1.net",
+    "theme_color": "#42A5F5",
+    "background_color": "#FDA343",
+    "display": "browser",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/"
+}
