@@ -165,10 +165,11 @@ chmod u+x script.sh
 ./script.sh
 ```
 
-??? details "script.sh"
-    ``` sh
-    for Y in {2018..2020}
-    do
+Run this script to add a commit every day from 2018 to 2022
+
+``` sh
+for Y in {2018..2022}
+do
     mkdir $Y
     cd $Y
     for M in {01..12}
@@ -192,11 +193,14 @@ chmod u+x script.sh
         cd ../
     done
     cd ../
-    done
-    git push
-    #optional: delete stuff
-    #git rm -rf 20**
-    #git rm -rf 19**
-    #git commit -am "cleanup"
-    #git push
-    ```
+done
+git push
+```
+
+To delete the entries run this:
+
+``` sh
+git rm -rf 20**
+git commit -am "cleanup"
+git push
+```
