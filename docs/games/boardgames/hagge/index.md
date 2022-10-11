@@ -56,14 +56,14 @@ Jede Karte wird so gegeben, dass die Rückseite dem Geber beim Drehen sichtbar i
     - b. Gewonnene Karten werden unter den eigenen Kartenstapel gelegt.
     - c. Wer einen Spieldurchlauf gewinnt, beginnt die nächste Runde.
     - d. Wenn ein Fehler gemacht wird, führt der vom Fehlermachenden ausgehend im Uhrzeigersinn nächste Spieler die aktuelle Runde fort.
-        - Wer einen Fehler macht, muss Karten von seinem Stapel an alle Mitspieler verteilen: Bei 6 und mehr Spielern eine Karte, bei 5 Spielern 2 Karten, spielen (noch) 4 Spieler gibt man an alle 3 Karten und bei 3 Spielern sind es 4 Karten. 
+        - Wer einen Fehler macht, muss Karten von seinem Stapel an alle Mitspieler verteilen: Bei 6 und mehr Spielern eine Karte, bei 5 Spielern 2 Karten, spielen (noch) 4 Spieler gibt man an alle 3 Karten und bei 3 Spielern sind es 4 Karten.
         - Alle im Spiel befindlichen Karten bleiben liegen und es wird nach dem Austeilen der Karten regulär weitergespielt wie in §3 Absatz 1d) beschrieben.
 
 2. Gültige Kartenkombinationen / Paar
 
     oder wann man auf die Glocke schlägt:
 
-    - a. Bei 5 Früchten einer Sorte (10 einer Sorte ist kein gültiges „Doppelpaar" – siehe §4 Absatz 1) 
+    - a. Bei 5 Früchten einer Sorte (10 einer Sorte ist kein gültiges „Doppelpaar" – siehe §4 Absatz 1)
     - b. Beim Affen UND mindestens einer Fruchtkarte, ABER keinen Limetten. Limetten setzen den Affen außer Kraft, aber nicht umgekehrt (siehe §3, Absatz 2e). Dies lässt sich leicht durch die limettengrüne Hintergrundfarbe der Affenkarte merken.
     - c. Beim Elefanten UND mindestens einer Fruchtkarte, ABER keinen Erdbeeren. Erdbeeren setzen den Elefanten außer Kraft, aber nicht umgekehrt (siehe §3, Absatz 2e). Dies lässt sich leicht durch die erdbeerrote Hintergrundfarbe der Elefantenkarte merken.
     - d. Ein Schwein ist immer gültig; auch bei Doppelpaaren (siehe §4 Absatz 1) und anderen vermeintlich ungültigen Situationen.
@@ -89,7 +89,7 @@ Jede Karte wird so gegeben, dass die Rückseite dem Geber beim Drehen sichtbar i
 
     Versehentliche Zwischenwürfe und Legen mehrerer Karten werden nicht korrigiert. Alles was gespielt wurde bleibt und gilt. Es gilt allerdings folgendes hierbei zu beachten:
 
-    - a. Die korrekte Reihenfolge ist trotz falscher Zwischenwürfe einzuhalten und fortzuführen. 
+    - a. Die korrekte Reihenfolge ist trotz falscher Zwischenwürfe einzuhalten und fortzuführen.
     - b. Kommt es hierbei zu einem gültigen Paar, gilt es (es sei denn, der Zwischenwerfer selbst profitiert – dann gilt sein Schlag als Fehler und es greift §3 Absatz 1d).
     - c. Kommt es durch ein Fehlspiel dazu, dass ein vermeintlich gültiges Paar ungültig wird und ein Spieler zeitgleich mit dem Fehlwurf auf die Glocke gehauen hat, gilt der Schlag dennoch und der Spieler erhält alle Karten.
 
@@ -109,4 +109,3 @@ Jede Karte wird so gegeben, dass die Rückseite dem Geber beim Drehen sichtbar i
 5. Finale
 
     Verfügen nur noch zwei Spieler über Karten, wird der Sieger durch ein „Stein-Schere-Papier"-Poker ermittelt. Der Spieler mit dem kleineren Stapel beginnt und legt den ersten Einsatz fest. Ein Einsatz besteht aus belieb vielen eigenen Karten. Der andere Spieler zieht nach und legt denselben Einsatz. Mittels „Stein-Schere-Papier" wird dann ermittelt, welcher Spieler den Einsatz gewinnt. Dies wird wiederholt, bis ein Spieler alle Karten besitzt. Dieser wird als Sieger gekürt und beginnt die Karten gemäß §1 Absatz 2 an alle teilnehmenden Spieler (unter Beachtung von §1 Absatz 1 und §1 Absatz 2a) auszuteilen.
-
