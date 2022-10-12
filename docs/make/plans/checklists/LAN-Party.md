@@ -4,15 +4,31 @@ Playing games locally in a network requires some preparation and some tools help
 
 Preparing:
 
-- Make a list of all games that will be played and make sure all have downloaded, updated and started the game atleast once prior to the LAN party
+- Make a list of all games that will be played and make sure all have downloaded, updated and started the game atleast once prior to the LAN party (see [games](#games) for example)
+- Send a list of things to think about e.g. Equipment, Snaks, Sleeping bag
+- Make sure everyone is clear on when it starts and ends and where to show up
+- Make sure everyone helps setup and clean up
 
-Games Equipment
+Gamers Equipment
 
+- Power supply
 - Headphones
+- Mouse
+- Keyboard
+- Screen
+- PC
+- Cables for PC
+
+Gamers Equipment
+
+- Snacks and drinks
+- Sleeping bag
 
 On Site:
 
-- Make sure there is enough Poweradapters, Cables, Charis, Tables
+- Use power from different rooms and check for enough poweradapters
+- Check for enough chairs and tables
+- The LAN cables are long enough and you have enough free LAN ports
 
 ## Scan and Test Network
 
