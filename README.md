@@ -33,7 +33,7 @@ Clone this repository with [git](https://git-scm.com/downloads). To create the p
 
 ``` sh
 pip install --upgrade pip
-pip install mkdocs mkdocs-material mkdocs-minify-plugin
+pip install -r requirements.txt --upgrade
 git clone https://github.com/FullByte/FullByte.github.io.git 0xfab1.net
 cd 0xfab1.net
 mkdocs serve -a localhost:8080 --dirtyreload --watch-theme -v
