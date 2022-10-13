@@ -7,6 +7,7 @@
 | Download      |       |
 | Install       |       |
 
+## Push your secret key
 
 Push your secret/privat key file "privkey.asc" to keybase so you can then use it on other linked devices:
 

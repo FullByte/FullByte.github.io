@@ -1,14 +1,11 @@
 # Draw.io
 
-Info
-
-| What          | Where                        |
-|---------------|------------------------------|
-| Official Page |                              |
-| Source        |                              |
-| Download      |                              |
-| Install       |                              |
-| Online        | <https://app.diagrams.net/>> |
+| What     | Where                                       |
+| -------- | ------------------------------------------- |
+| Source   | <https://github.com/jgraph/drawio>          |
+| Download | <https://github.com/jgraph/drawio/releases> |
+| Install  | choco install drawio                        |
+| Online   | <https://app.diagrams.net/>                 |
 
 ## Create and edit SVG in vscode
 
@@ -39,3 +36,7 @@ Create your first page. Use that design as a template for further pages.
 Create a link to other pages for specific buttons.
 
 Export as HTML to demo the mockup online/offline.
+
+## Drawio in VScode
+
+Install using choco: ```choco install vscode-drawio```

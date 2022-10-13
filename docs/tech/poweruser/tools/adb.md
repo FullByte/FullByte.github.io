@@ -2,12 +2,11 @@
 
 Info
 
-| What          | Where |
-|---------------|-------|
-| Official Page |       |
-| Source        |       |
-| Download      |       |
-| Install       |       |
+| What     | Where                                                          |
+| -------- | -------------------------------------------------------------- |
+| Download | <https://developer.android.com/studio/releases/platform-tools> |
+| Install  | choco install adb                                              |
+| Docs     | <https://developer.android.com/studio/command-line/adb>        |
 
 Prerequisite
 
@@ -22,9 +21,9 @@ Recovery Mode
 3. Select Recovery Mode and press the Power button
 4. If you are trying to get into recovery mode, and see an android on his back with No Command, then press and hold Power, then tap Volume Up once, then release Power. This will display the Recovery Mode Menu
 
-Delete an app on your android phone
+## Delete an app on your android phone
 
-Run these commands to delete the app <package name>.
+Run these commands to delete a specific app <package name>.
 
 ``` sh
 adb devices # check if your device is visible
@@ -33,7 +32,7 @@ pm list packages -3 # list hidden system apps
 pm uninstall --user 0 <package name>
 ```
 
-Pushing CyanogenMod 12 on device
+## Install CyanogenMod 12
 
 <https://cyanogenmodroms.com> (successor is <https://lineageos.org/>)
 

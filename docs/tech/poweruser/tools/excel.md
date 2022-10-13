@@ -2,19 +2,21 @@
 
 Info
 
-| What          | Where |
-|---------------|-------|
-| Official Page |       |
-| Source        |       |
-| Download      |       |
-| Install       |       |
+| What      | Where                                                                                                          |
+| --------- | -------------------------------------------------------------------------------------------------------------- |
+| Online    | <https://www.office.com/launch/excel>                                                                          |
+| Docs      | <https://support.microsoft.com/de-de/excel>                                                                    |
+| Functions | <https://support.microsoft.com/en-us/office/excel-functions-alphabetical-b3944572-255d-4efb-bb96-c6d90033e188> |
+
+[Translate Excel Formaulas](https://en.excel-translator.de/translator/) form one language to another.
 
 ## Random
 
 Find double entries
 
 ``` xlsx
-=IF(MATCH(A2;A:A;0)=ROW();"";"Double")
+=WENN(VERGLEICH(A1;A:A;0)=ZEILE();"Einfacher Eintrag";"Mehrere Einträge")
+=IF(MATCH(A1;A:A;0)=ROW();"Single entry";"Multiple entries")
 ```
 
 Create a Sierpinski triangle
@@ -23,6 +25,28 @@ Add "1" in field "V1" and copy the formula down and to the sides:
 
 ``` xlsx
 =WENN(SUMME(U1:W1)=1;1;"")
+=IF(SUM(U1:W1)=1,1,"")
+```
+
+Extract first name from email:
+
+``` xlsx
+=LINKS(LINKS(A1;FINDEN(".";A1)-1);FINDEN("@";A1)-1)
+=LEFT(LEFT(A1,FIND(".",A1)-1),FIND("@",A1)-1)
+```
+
+Extract last name from email:
+
+``` xlsx
+=LINKS(RECHTS(A1;LÄNGE(A1)-FINDEN(".";A1));FINDEN("@";RECHTS(A1;LÄNGE(A1)-FINDEN(".";A1)))-1)
+=LEFT(RIGHT(A1,LEN(A1)-FIND(".",A1)),FIND("@",RIGHT(A1,LEN(A1)-FIND(".",A1)))-1)
+```
+
+Extract full name from email:
+
+``` xlsx
+=WECHSELN((LINKS(A1;FINDEN("@";A1)-1));".";" ")
+=SUBSTITUTE((LEFT(A1,FIND("@",A1)-1)),"."," ")
 ```
 
 ## Settings

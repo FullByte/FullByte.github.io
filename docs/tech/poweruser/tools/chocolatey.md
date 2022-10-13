@@ -1,5 +1,12 @@
 # Chocolatey
 
+| What          | Where                                       |
+| ------------- | ------------------------------------------- |
+| Official Page | <https://chocolatey.org/>                   |
+| Packages      | <https://community.chocolatey.org/packages> |
+| Source        | <https://github.com/chocolatey/choco>       |
+| Docs          | <https://docs.chocolatey.org/en-us/>        |
+
 Get Chocolatey
 
 - Install Chocolatey: ```Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))```

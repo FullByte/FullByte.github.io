@@ -1,5 +1,10 @@
 # IRC
 
+| What          | Where                                                                                                 |
+| ------------- | ----------------------------------------------------------------------------------------------------- |
+| Documentation | <https://ircdocs.horse/> and <https://ircv3.net/irc/>                                                 |
+| Download      | [mirc](https://www.mirc.com/), [hexchat](https://hexchat.github.io/), [weechat](https://weechat.org/) |
+
 ## IRC clients
 
 - mIRC (GUI) <https://www.mirc.com/>
@@ -60,7 +65,7 @@ Join a channel and make yourself operator, then register the channel
 You can now make the channel private, secret, add a password etc:
 
 | Channel Command        | Description                                                                                                                                                |
-|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `/mode #2team +m`      | Only opped and voiced users can send to the channel. This mode does not prevent users from changing nicks.                                                 |
 | `/mode #2team +i`      | Users are unable to join invite-only channels unless they are invited or match a +I entry.                                                                 |
 | `/mode #2team +I fab1` | Users are unable to join invite-only channels unless they are invited or match a +I entry.                                                                 |

@@ -9,7 +9,7 @@ Info
 | Download      |       |
 | Install       |       |
 
-### Port Forwarding
+## Port Forwarding
 
 If you are connected to a machine via some kind of jump host it may be handy to forward ports to your work machine.
 

@@ -53,14 +53,15 @@ Deploy Kubernetes Dashboard: ```kubectl apply -f https://raw.githubusercontent.c
 Verify that it's running: ```kubectl get -f .\recommended.yaml.txt```
 
 Get token:
-- Run powershell ``` ((kubectl -n kube-system describe secret default | Select-String "token:") -split " +")[1]```
-- Or on linux: ```kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | awk '/^deployment-controller-token-/{print $1}') | awk '$1=="token:"{print $2}'```
 
-- Run ```kubectl proxy``` and open: http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/ then select Token & paste the generated token and sign in
+- Powershell: ``` ((kubectl -n kube-system describe secret default | Select-String "token:") -split " +")[1]```
+- Linux: ```kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | awk '/^deployment-controller-token-/{print $1}') | awk '$1=="token:"{print $2}'```
+
+- Run ```kubectl proxy``` and open: <http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/> then select Token & paste the generated token and sign in
 
 Create a user:
 
-https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md
+<https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md>
 
 - Create a Cluster Admin service account: ```kubectl create serviceaccount dashboard -n default```
 - Add the cluster binding rules to your dashboard account: ```kubectl create clusterrolebinding dashboard-admin -n default --clusterrole=cluster-admin --serviceaccount=default:dashboard```
