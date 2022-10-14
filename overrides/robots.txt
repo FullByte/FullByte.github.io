@@ -5,12 +5,6 @@ Disallow: /harming/humans
 Disallow: /ignoring/human/orders
 Disallow: /harm/to/self
 
-Disallow: /phpmyadmin
-Disallow: /cgi-bin
-Disallow: /admin
-Disallow: /temp
-Disallow: /wp-admin
-
 Sitemap: https://www.0xfab1.net/sitemap.xml
 
 #              ________
