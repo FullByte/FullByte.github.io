@@ -51,7 +51,7 @@ Further plugins:
 This website is hosted/built using the following services:
 
 | Service                                                  | Direct Link                                                           | 0xfab1 CNAME                      |
-|----------------------------------------------------------|-----------------------------------------------------------------------|-----------------------------------|
+| -------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------- |
 | [GitHub Pages](https://pages.github.com/)                | [0xfab1@github](https://fullbyte.github.io)                           | <https://www.0xfab1.net/>         |
 | [IPFS](https://ipfs.io/) with [fleek](https://fleek.co/) | [0xfab1@IFPS](http://fb62c5359b88d00d5924.b-cdn.net)                  | <https://ipfs.0xfab1.net/>        |
 | [Netlify](https://www.netlify.com/)                      | [0xfab1@netlify](https://0xfab1.netlify.app/)                         | <https://netlify.0xfab1.net>      |
@@ -61,13 +61,14 @@ This website is hosted/built using the following services:
 | [cloudflare](https://www.cloudflare.com/)                | [0xfab1@cloudflare](https://fullbyte-github-io.pages.dev)             | <https://cloudflare.0xfab1.net/>  |
 | [Render](https://render.com/)                            | [0xfab1@render](https://zeroxfab1.onrender.com)                       | <https://render.0xfab1.net>       |
 | [Railway](https://railway.app)                           | [0xfab1@railway](https://fullbytegithubio-production.up.railway.app/) | <https://railway.0xfab1.net>      |
-| [AWS S3](https://aws.amazon.com/s3/)                     |                                                                       |                                   |
-| [Gitlab Pages](https://about.gitlab.com)                 |                                                                       |                                   |
+| [koyeb](https://app.koyeb.com)                           | [0xfab1@koyeb](https://0xfab1-fullbyte.koyeb.app/)                    | <https://koyeb.0xfab1.net>        |
+| [AWS S3](https://aws.amazon.com/s3/)                     | TODO                                                                  | TODO                              |
+| [Gitlab Pages](https://about.gitlab.com)                 | TODO                                                                  | TODO                              |
 
 I tried these services but they didn't suit me for my deployment at the time tested*:
 
 - [Heroku](https://www.heroku.com) - php workaround breaks other builds
-- [Layer0](https://www.layer0.co/) - annoying DNS and build setup
+- [edg.io](https://edg.io/) - annoying DNS and build setup
 - [Fly.io](https://fly.io/) - complicated build/requires extra files and github action changes
 - [Surge](https://surge.sh/) - complicated build/requires extra files and github action changes
 - [Firebase](https://console.firebase.google.com/) - complicated build/requires extra files and github action changes
