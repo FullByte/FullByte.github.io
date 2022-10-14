@@ -1,24 +1,18 @@
 # Rules
 
+Players: 3-5, Time: 20-30 min, Age: 4+
+
+[Download the rule book here](_einhorn.pdf)
+
 | Einhorn                      | is a simple, fast paced dice rolling game in which luck is the main factor to win the game.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an `Einhorn` and receive the unicorn figure to take stones from your opponents. Once a player loses all stones the current game ends. All other players keep their stones. Bet on the unicorn figure for an advantage in the next game. Be better at predicting your roll outcome than the other players. After ten games, the player with the most stones wins. Enjoy the drama of the unexpected integer, master predicting randomness and dominate your oponents in the only game that matters. |
-
-This is how a self-made version of the game looks like:
-
-![unicorn-game](_einhorn-game.jpg)
+| ![einhorn.png](_einhorn.png) | Each player starts with six stones. Bet on your roll outcome and receive or pay stones. Roll an `Einhorn` and receive the unicorn figure to take stones from your opponents. Once a player loses all stones the current game ends. All other players keep their stones. Bet on the unicorn figure for an advantage in the next game. Be better at predicting your roll outcome than the other players. After ten games, the player with the most stones wins. Enjoy the drama of the unexpected integer, master predicting randomness and dominate your opponents in the only game that matters. |
 
 Below is an overview of main steps in the game:
 
 ![einhorn](_einhorn.drawio.svg)
 
 ## Prepare the game
-
-|          |        |
-|----------|--------|
-| Players: | 3-5    |
-| Time:    | 30 min |
-| Age:     | 6+     |
 
 **Setup the game**
 
