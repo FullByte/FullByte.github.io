@@ -46,6 +46,10 @@ Cursor
 
 ## Script Snippets
 
+Encoding
+
+- Base64: ```echo -n '12345678:abcdefg' | base64```
+
 Gzip
 
 - Backup: ```tar -cf archive-1.tar "dir-with-content"```
