@@ -89,7 +89,7 @@ This is how it should look like: <https://www.youtube.com/watch?v=YEi9AmA-07s>
 ## Read News
 
 - Wikipedia: <https://github.com/yashsinghcodes/fetch>
-- Hacker News: <https://github.com/donnemartin/haxor-news>
+- Hacker News: [haxor-news](https://github.com/donnemartin/haxor-news) or [circumflex](https://github.com/bensadeh/circumflex)
 
 ## Office Tools
 
@@ -102,6 +102,10 @@ This is how it should look like: <https://www.youtube.com/watch?v=YEi9AmA-07s>
 - CSV pretty printer: <https://github.com/alexhallam/tv>
 - Bits, bytes and address calculator: <https://github.com/jarun/bcal>
 - Code Editor: <https://micro-editor.github.io/>
+
+## Learn
+
+- flashcards: <https://github.com/TBS1996/speki>
 
 ## Pictures
 
