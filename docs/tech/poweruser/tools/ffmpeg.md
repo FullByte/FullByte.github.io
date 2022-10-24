@@ -11,7 +11,7 @@ Info
 | Download      | <https://ffmpeg.org/download.html>      |
 | Docs          | <https://ffmpeg.org/documentation.html> |
 | Windows       | ```choco install ffmpeg```              |
-| Linux         | ```apt install ffmpeg```                |
+| Ubuntu         | ```sudo apt -y install ffmpeg```                |
 
 Helper:
 

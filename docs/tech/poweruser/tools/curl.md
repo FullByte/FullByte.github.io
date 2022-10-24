@@ -7,8 +7,8 @@
 | Download      | <https://github.com/curl/curl/releases>                              |
 | Docs          | <https://everything.curl.dev> or <https://curl.se/docs/manpage.html> |
 | Book          | <https://curl.se/docs/>                                              |
-| Windows       |```scoop install curl```                                             |
-| Ubuntu        |```apt install curl```                                               |
+| Windows       | `scoop install curl`                                                 |
+| Ubuntu        | `sudo apt -y install curl`                                           |
 
 ## Random Examples
 

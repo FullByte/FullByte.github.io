@@ -1,11 +1,12 @@
 # Draw.io
 
 | What     | Where                                       |
-| -------- | ------------------------------------------- |
+|----------|---------------------------------------------|
 | Source   | <https://github.com/jgraph/drawio>          |
 | Download | <https://github.com/jgraph/drawio/releases> |
-| Install  | choco install drawio                        |
 | Online   | <https://app.diagrams.net/>                 |
+| Windows  | choco install drawio                        |
+| Ubuntu   | ``                                          |
 
 ## Create and edit SVG in vscode
 

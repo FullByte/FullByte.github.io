@@ -7,7 +7,8 @@ Info
 | Official Page | <https://exiftool.org>                 |
 | Source        | <https://github.com/exiftool/exiftool> |
 | Download      | <https://exiftool.org/#running>        |
-| Install       | choco install exiftool                 |
+| Windows       | choco install exiftool                 |
+| Ubuntu   |``                        |
 
 ## Examples
 

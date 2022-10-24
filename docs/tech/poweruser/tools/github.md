@@ -8,7 +8,7 @@ Info
 | Service Status | <https://www.githubstatus.com/> |
 | Docs           | <https://docs.github.com>       |
 | Download       | <https://desktop.github.com/>   |
-| Install        | choco install github-desktop    |
+| Windows        | choco install github-desktop    |
 
 ## RSS Feed for Commits
 

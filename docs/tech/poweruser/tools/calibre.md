@@ -1,11 +1,12 @@
 # Calibre
 
-| What     | Where                                       |
-| -------- | ------------------------------------------- |
-| Official Page   | <https://www.calibre.de/>          |
-| Download | <https://calibre-ebook.com/download> |
-| Source   | <https://github.com/kovidgoyal/calibre>                 |
-| Install  | choco install calibre                        |
+| What          | Where                                   |
+|---------------|-----------------------------------------|
+| Official Page | <https://www.calibre.de/>               |
+| Download      | <https://calibre-ebook.com/download>    |
+| Source        | <https://github.com/kovidgoyal/calibre> |
+| Windows       | `choco install calibre`                 |
+| Ubuntu         | `sudo apt -y install calibre`              |
 
 ## Plugins
 

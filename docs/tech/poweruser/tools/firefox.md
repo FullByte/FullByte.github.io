@@ -1,5 +1,14 @@
 # Firefox
 
+| What          | Where                                                      |
+|---------------|------------------------------------------------------------|
+| Official Page | <https://www.mozilla.org/en-US/firefox/browsers>)          |
+| Source        | <https://hg.mozilla.org/mozilla-central/>                  |
+| Download      | <https://www.mozilla.org/en-US/firefox/download>)          |
+| Docs          | <https://developer.mozilla.org/en-US/docs/Mozilla/Firefox> |
+| Windows       | ```choco install firefox```                                |
+| Ubuntu        | ```sudo apt -y install firefox```                          |
+
 ## Firefox remote debugging
 
 - Enable Developer options on your phone

@@ -3,10 +3,11 @@
 Info
 
 | What     | Where                                                          |
-| -------- | -------------------------------------------------------------- |
+|----------|----------------------------------------------------------------|
 | Download | <https://developer.android.com/studio/releases/platform-tools> |
-| Install  | choco install adb                                              |
 | Docs     | <https://developer.android.com/studio/command-line/adb>        |
+| Windows  | `choco install adb`                                            |
+| Ubuntu   | `sudo apt -y install adb`                                  |
 
 Prerequisite
 
