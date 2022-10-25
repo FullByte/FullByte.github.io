@@ -1,31 +1,33 @@
 # Rules
 
-Chessault is a chess variant in which figures have abilities and new figures can be recruited for credits earned during the game. Each turn a player has 3 actions and can recruit or move figures. To move figures the player must roll three dice to determine which figures can be moved, then select one of the available options. Recruited figures start at the end of each board and come into play when first moved. Killing an enemy enables the protect ability. The explosion and convert abilities are picked up on the marked places on the board. credits are earned for various actions that can be used to recruit new figures. Killing the enemy king ends the game.
+Chessault is a chess variant in which figures may gain abilities and new figures can be recruited for credits. Credits are earned during the game for various actions. Each turn a player has 3 actions to recruit or move figures. In order to move a figure the player must first roll three dice to determine which figures can be moved and can then move one figure of the available options according to regluar chess rules. Spend credits to recruit new figures and place them at the end of the board. Figures come into play when first moved. New figures can only move into their quarter. Killing an enemy enables the protect ability. The explosion and convert abilities are picked up on the marked places on the board. Killing the enemy king ends the game.
 
 ## Chess board
 
-The chess board is that of a regular chess board (8x8) extend by a 1x8 field on each side for recruiting new figures.
+This chess variant requires a 10x8 board and has special zones and fields as follows:
 
-There are additional zones:
+Zones:
 
 - Recruitment zone
 - Setup zone
 - Spawn quarter
 - Middle line
 
-Addtionally there are spcial fields accross the board:
+Fields:
 
 - Explode
 - Convert
 
-Figures are either active on the board, in the recruitment area, recuitable or dead:
+![chessault_overview](_overview.drawio.svg)
 
-- **Active figures** can move freely across the board acording to their abilities
+There are 4 states a figure can be in: active, recruited, recuitable or dead:
+
+- **Active figures** can move freely across the board acording to their abilities.
 - Figures in the **recruitment area** must move on the board within their board quarter.
-- **Recuitable figures** can be recruited as an action if you have enough credits
+- **Recuitable figures** can be recruited as an action if you have enough credits.
 - **Dead figures** can be resurected as an action. Otherwise these figures can no longer be used.
 
-![chessault_overview](_overview.drawio.svg)
+Make sure to seperate killed figures and recruitable figures when playing.
 
 ## Setup
 
@@ -38,7 +40,7 @@ To start the game, each player receives:
 
 White starts the game and places a figure on the board in the setup zone.
 
-Players then go turn by turn and can either place a figure or purchase a figure.
+Players then go turn by turn and can either place or purchase a figure.
 
 - In this phase all figures are placed directly in the setup zone (first 2 lines of the playing field).
 - Once placed, the king receives a protect ability.
@@ -60,10 +62,10 @@ Once all three actions are done the player earns credits from certain actions:
 
 | Action                | credits  | Comment                                                                                                                                                                                   |
 |-----------------------|---------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Figure moved          | +1      | For each figure moved 1 credit is awareded. If a figure moves to attack another figure but this figure has a protection ability this counts as move (but not as kill)                      |
-| Converted figure      | +1      | A converted ememy is awarded with 1 credit. credits are rewareded after the turn in which the enemy was converted; not in the turn the conversion started.                                  |
+| Figure moved          | +1      | For each figure moved 1 credit is awarded. If a figure moves to attack another figure but this figure has a protection ability this counts as move (but not as kill)                      |
+| Converted figure      | +1      | A converted enemy is awarded with 1 credit. credits are rewareded after the turn in which the enemy was converted; not in the turn the conversion started.                                  |
 | Conversion failed     | -1 / +1 | If the enemy successfully escapes from the conversion the enmy gains 1 credit and the player initiating the conversino looses 1 credit.                                                     |
-| Enemy killed          | +2      | Each enemy killed is rewarded with 2 credits. If a figure with a protect ability is successfully attacked this does not account for `enemy killed` and is not awareded with credits |
+| Enemy killed          | +2      | Each enemy killed is rewarded with 2 credits. If a figure with a protect ability is successfully attacked this does not account for `enemy killed` and is not awarded with credits |
 | Reached enemy endzone | -1 / +1 | Steal 1 from your enemy. If your enemy has no credits left you get nothing.                                                                                                                |
 
 credits earned at the end of turn can be spent in the next turn.
@@ -92,18 +94,20 @@ The king can not be recruited. Any other figure can be recruited as described be
 
 | Figure   | Cost           | Comments                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |----------|----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Queen    | 7 + sacrifice* | The queen can be purchased like any other figure but requires a sacrifice. The sacrifice can be any own figure already in the game, except the king (duh!) and the pawn. The queen can also be purchased by bringing a pawn to the enemy end line. The pawn then converts into a queen (if still available). A player can have a maximum of 2 qeens in the game. If a queen (or any other figure) is killed and is no longer available for purchase/recruitment it can be resurected (see purchase actions). |
+| Queen    | 7 + sacrifice | The queen can be purchased like any other figure but requires a sacrifice. The sacrifice can be any own figure already in the game, except the king (duh!) and the pawn. The queen can also be purchased by bringing a pawn to the enemy end line. The pawn then converts into a queen (if still available). A player can have a maximum of 2 queens in the game. If a queen (or any other figure) is killed and is no longer available for purchase/recruitment it can be resurected (see purchase actions). |
 | Rook     | 5              | When leaving the recruitment line must stay within their spawn quarter. The figure may attack enemy figures within this range directly.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Bishop   | 3              | When leaving the recruitment line must stay within their spawn quarter. The figure may attack enemy figures within this range directly.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Knight   | 3              | When leaving the recruitment line must stay within their spawn quarter. The figure may attack enemy figures within this range directly.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | Pawn     | 1              | Pawns can move 2 fields once when leaving the recruitment line.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
-| Resurect | 2              | Any figure killed can be resurected. Once resurected this figure can be purchased again (additional action). Resurecting figures doesn't revive them on the battle field nor does this directly put them in the requiruitment area. This is only to make them available for purchase. Resurecting a figure is an action by itself. To recruit a killed figure 2 actions are required. |
+| Resurect | 2              | Any figure killed can be resurected. Once resurected this figure moves from the dead figures to the recruitable figures. Recruiting a figure is an addtional action. To recruit a killed figure 2 actions are required. |
 
-Recruiting a figure as an action includes:
+Recruiting any figure as an action includes:
 
 - Choosing a figure
 - Spending the credits
 - Placing the figure at any free space on the recruitment line
+
+If a pawn reaches the enemy line the pawn converts to any recruitable figure. If e.g. no queen is available resurecting this figure is no longer an option and another figure must be chosen. If no figures other than pawns are availble the pawn dies with no replacement.
 
 ## Abilities
 
@@ -143,7 +147,7 @@ TODO
 
 Once activated this will kill all figures (own and enemy) within the radius.
 
-Exception are figures with the protect ability. These figures will simply loose their protect ability.
+Exception are figures with the protect ability. These figures will loose their protect ability.
 
 Examples:
 
@@ -159,9 +163,9 @@ Although figures can not attack the recruitment area, an explosion will kill all
 
 Once activated an enemy figure within the radius must be chosen. This figure will recieve the convert ability.
 
-- If this figure does not move out of the radius in the next turn this figure is converted. The figure is removed (just like killed) and replaced by the same typ of figure of the other color. In case this figure is no longer the player may choose to resurect the figure at this credit in time or else the figure simply is killed.
+- If this figure does not move out of the radius in the next turn this figure is converted. The figure is killed and replaced by the same typ of figure of the other color from the recruitment area. In case this figure is not available the figure is killed without replacement.
 - If the figure manages to escape it may keep the convert ability,
-- Every figure can be converted. If the king is converted the game is over.
+- Every figure can be converted. If the king is converted the game is over. If the king is attacked with conversion the king is in check and the special moving rules apply.
 
 Examples:
 
