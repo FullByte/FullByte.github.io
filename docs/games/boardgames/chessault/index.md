@@ -124,6 +124,7 @@ Each abilities exists 3 times and each figure can only have one additional abili
 Obtain abilities:
 
 - The abilities `explode` and `convert` are picked up when accessing a given field on the board.
+- Figures can only pick up abilities on the other half of the board (never on their side!).
 - The `protect` ability is rewarded when killing an enemy.
 - If a player with an ability (`explode` or `convert`) is killed the ability is passed on to the killer figure.
 - If a player already has an ability they may choose which one to keep.
