@@ -66,7 +66,7 @@ Once all three actions are done the player earns credits from certain actions:
 | Enemy killed          | +2      | Each enemy killed is rewarded with 2 credits. If a figure with a protect ability is successfully attacked this does not account for enemy killed and is not awarded with credits. |
 | Reached enemy endzone | -1 / +1 | Steal 1 credit from your enemy. If your enemy has no credits left you get nothing. This is rewarded once; not every round a figure stands at the end zone |
 
-Credits earned at the end of turn can be spent in the next turn.
+The credits earned in this turn can be spent in the next turn.
 
 ### Move
 
@@ -116,7 +116,7 @@ The following abilities are availble:
 |---------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Protect | 5         | If a figure kills another figure it earns the protect ability. This figure now requires 2 hits to get killed. 2 protect abilities are assigned during setup to the kings of each side. Once the king is attacked and the protect ability is lost this protect ability can be re-used. |
 | Explode | 3         | Once activated this will kill all figures (own and enemy) within the radius. Exception are figures with the protect ability. These figures will loose their protect ability.                                                                                                                                                                       |
-| Convert | 3         | Once activated an enemy figure within the radius must be chosen. This figure will recieve the convert ability. If this figure does not move out of the radius in the next turn this figure is converted. The figure is then killed and replaced by the same typ of figure of the other color from the recruitment area. In case this figure is not available the figure is killed without replacement. If the figure manages to escape it may keep the convert ability. Enemys with the protect ability can not be converted. If the king has no protection and is converted the game is over. If the king is attacked with conversion the king is in check and the special moving rules apply.                                                                                                                                                                       |
+| Convert | 3         | Once activated an enemy figure within the radius must be chosen. This figure will recieve the convert ability. If this figure does not move out of the radius in the next turn this figure is converted. The figure is then killed and replaced by the same typ of figure of the other color from the recruitment zone. In case this figure is not available the figure is killed without replacement. If the figure manages to escape it may keep the convert ability. Enemys with the protect ability can not be converted. If the king has no protection and is converted the game is over. If the king is attacked with conversion the king is in check and the special moving rules apply.                                                                                                                                                                       |
 
 ### Recruit
 
@@ -130,7 +130,7 @@ Any other figure can be recruited as described below:
 | Bishop   | ![Bishop](_Chess_blt45.svg) | 3             | 4                  |                                                                                                                                                                                                                         |
 | Knight   | ![Knight](_Chess_nlt45.svg) | 3             | 4                  |                                                                                                                                                                                                                         |
 | Pawn     | ![Pawn](_Chess_plt45.svg)   | 1             | 16                 | Pawns can move 2 fields once when leaving the recruitment line.                                                                                                                                                         |
-| Resurect |                             | 2             | All killed figures | Any figure killed can be resurected. Once resurected this figure moves from the dead figures to the recruitable figures. Recruiting a figure is an addtional action. To recruit a killed figure 2 actions are required. |
+| Resurect |                             | 2             | All killed figures | Any figure killed can be resurected. Once resurected this figure moves from the killed figures to the recruitable figures. Recruiting a figure is an addtional action; so recruiting a killed figure requires 2 actions. |
 
 Recruiting a figure as an action includes:
 
