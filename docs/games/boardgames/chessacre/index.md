@@ -2,7 +2,7 @@
 
 Chessacre is a chess variant in which figures may gain abilities and new figures can be recruited for credits.
 Credits are earned during the game for various actions. Each turn a player has 3 actions to recruit or move figures.
-Roll three dice to determine which figures can be moved, select one and move this figure acording to regluar chess rules.
+Roll three dice to determine which figures can be moved, select one and move this figure according to regluar chess rules.
 Spend credits to recruit new figures and place them at the end of the board in the recruitment zone.
 New figures can only move into their quarter.
 Killing an enemy enables the protect ability.
@@ -15,14 +15,14 @@ This chess variant requires a 10x8 board and has special zones and fields as fol
 
 ![board-overview](_board-overview.drawio.svg)
 
-There are 4 states a figure can be in: active, recruited, recuitable or killed:
+There are 4 states a figure can be in: active, recruited, recruitable or killed:
 
-- **Active figures** can move freely across the board acording to their abilities.
-- Figures in the **recruitment area** must move on the board within their board quarter.
-- **Recuitable figures** can be recruited as an action if you have enough credits.
-- **Killed figures** can be resurected as an action. Otherwise these figures can no longer be used.
+- **Active figures** can move freely across the board according to standard chess rules and their abilities.
+- Figures in the **recruitment area** must move on the board within their spawn quarter.
+- **Recruitable figures** can be recruited as an action if you have enough credits.
+- **Killed figures** can be resurrected as an action. Otherwise these figures can no longer be used.
 
-All figures start as recuitable figures. Seperate killed figures and recruitable figures during the game as follows:
+All figures start as recruitable figures. Separate killed figures and recruitable figures during the game as follows:
 
 ![chessacre-overview](_chessacre-overview.drawio.svg)
 
@@ -51,7 +51,7 @@ Once the setup is done white starts with the first regular turn.
 ## Actions
 
 On every turn a player has 3 actions.
-There are 2 types of actions possible:
+There are 2 types of actions available:
 
 - [Move](#move)
 - [Recruit](#recruit)
@@ -81,14 +81,14 @@ A figure can only move once per turn.
 - If you move a figure that has an ability (explode or convert) you may use this ability within this action after moving.
 - If you initially move a figure from the recruitment line the figure must stay within the red-lined spawn quarter.
 
-Recruited figures must stay within their spawn quarter when initialy moving.
+Recruited figures must stay within their spawn quarter when initially moving.
 
 - Figures in the recruitment zone may attack enemy figures as a first move if in range (spawn quarter).
 
 A pawn that reaches the enemy line converts into any recruitable figure.
 
-- If e.g. no queen is available resurecting a queen is no longer an option at this time and another figure must be chosen.
-- If no figures other than pawns are availble the pawn dies with no replacement.
+- If e.g. no queen is available resurrecting a queen is no longer an option at this time and another figure must be chosen.
+- If no figures other than pawns are available the pawn dies with no replacement.
 
 In case the king is in check you can optionally move the king as an action once.
 
@@ -101,18 +101,18 @@ The abilities explode and convert are gained when moving onto a marked field (no
 - All figures, except pawns, may gain abilities to enhance their attack.
 - Figures can only have one ability at a time.
 - If a player already has an ability they may choose which one to keep.
-- Each ability is availble 3 times + 2 protect for each king. If there are no abilities left, the figure does not gain the ability.
-- The ability is gained by equiping the figure with the ability marker.
+- Each ability is available 3 times + 2 protect for each king. If there are no abilities left, the figure does not gain the ability.
+- The ability is gained by equipping the figure with the ability marker.
 - If the ability was gained in this move it can not directly be used.
 
 Moving to a field on which the enemy stands attacks the enemy.
 
-- If the enemy has an protect abiltiy, the attacker stays where it started and the attacked figure looses the protect abiltiy.
-- If the enemy doesn't have the protect abiltiy, the enemy is killed and the attacker gains an protect ability.
-- Killing an enemy with explosion or convert the attacker does not recieve the protect ability, however this credits for the kill are still recieved.
-- If the enemy has an explode or convert ability the enemy is killed and the attacker may choose to gain the protect abiltiy or the explode or convert ability from the enemy.
+- If the enemy has an protect ability, the attacker stays where it started and the attacked figure looses the protect ability.
+- If the enemy doesn't have the protect ability, the enemy is killed and the attacker gains an protect ability.
+- Killing an enemy with explosion or convert the attacker does not recieve the protect ability, however this credits for the kill are still received.
+- If the enemy has an explode or convert ability the enemy is killed and the attacker may choose to gain the protect ability or the explode or convert ability from the enemy.
 
-The following abilities are availble:
+The following abilities are available:
 
 | Ability | Available | Comment                                                                                                                                                                 |
 |---------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -122,7 +122,7 @@ The following abilities are availble:
 
 ### Recruit
 
-The king can not be recruited, nor resurected.
+The king can not be recruited, nor resurrected.
 Any other figure can be recruited as described below:
 
 | Figure   | Symbol                      | Cost          | Available          | Comments                                                                                                                                                                                                                |
@@ -132,7 +132,7 @@ Any other figure can be recruited as described below:
 | Bishop   | ![Bishop](_Chess_blt45.svg) | 3             | 4                  |                                                                                                                                                                                                                         |
 | Knight   | ![Knight](_Chess_nlt45.svg) | 3             | 4                  |                                                                                                                                                                                                                         |
 | Pawn     | ![Pawn](_Chess_plt45.svg)   | 1             | 16                 | Pawns can move 2 fields once when leaving the recruitment line.                                                                                                                                                         |
-| Resurect |                             | 2             | All killed figures | Any figure killed can be resurected. Once resurected this figure moves from the killed figures to the recruitable figures. Recruiting a figure is an addtional action; so recruiting a killed figure requires 2 actions. |
+| Resurect |                             | 2             | All killed figures | Any figure killed can be resurrected. Once resurrected this figure moves from the killed figures to the recruitable figures. Recruiting a figure is an addtional action; so recruiting a killed figure requires 2 actions. |
 
 Recruiting a figure as an action includes:
 
