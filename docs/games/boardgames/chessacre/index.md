@@ -1,6 +1,6 @@
 # Rules
 
-Chessault is a chess variant in which figures may gain abilities and new figures can be recruited for credits.
+Chessacre is a chess variant in which figures may gain abilities and new figures can be recruited for credits.
 Credits are earned during the game for various actions. Each turn a player has 3 actions to recruit or move figures.
 Roll three dice to determine which figures can be moved, select one and move this figure acording to regluar chess rules.
 Spend credits to recruit new figures and place them at the end of the board in the recruitment zone.
@@ -11,7 +11,7 @@ Killing the enemy king ends the game.
 
 ## Chess board
 
-This chess variant requires a 10x8 board and has special `zones` and `fields` as follows:
+This chess variant requires a 10x8 board and has special zones and fields as follows:
 
 ![board-overview](_board-overview.drawio.svg)
 
@@ -22,9 +22,9 @@ There are 4 states a figure can be in: active, recruited, recuitable or killed:
 - **Recuitable figures** can be recruited as an action if you have enough credits.
 - **Killed figures** can be resurected as an action. Otherwise these figures can no longer be used.
 
-All figures start as `recuitable figures`. Seperate killed figures and recruitable figures during the game as follows:
+All figures start as recuitable figures. Seperate killed figures and recruitable figures during the game as follows:
 
-![chessault-overview](_chessault-overview.drawio.svg)
+![chessacre-overview](_chessacre-overview.drawio.svg)
 
 ## Setup
 
@@ -46,7 +46,7 @@ The setup ends once both players have placed all figures and do not want recruit
 It not required to spend all credits.
 If one player is done early the other player can finish all remaining actions at once.
 
-Once the setup is done white starts with the first regular turn:
+Once the setup is done white starts with the first regular turn.
 
 ## Actions
 
@@ -60,17 +60,17 @@ Once all three actions are done the player earns credits from certain actions:
 
 | Action                | credits | Comment                                                                                                                                                                            |
 |-----------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Figure moved          | +1      | For each figure moved 1 credit is awarded. If a figure moves to attack another figure but this figure has a protection ability this counts as move (but not as kill)               |
-| Converted figure      | +1      | A converted enemy is awarded with 1 credit. credits are rewareded after the turn in which the enemy was converted; not in the turn the conversion started.                         |
-| Conversion failed     | -1 / +1 | If the enemy successfully escapes from the conversion the enmy gains 1 credit and the player initiating the conversino looses 1 credit.                                            |
-| Enemy killed          | +2      | Each enemy killed is rewarded with 2 credits. If a figure with a protect ability is successfully attacked this does not account for `enemy killed` and is not awarded with credits |
-| Reached enemy endzone | -1 / +1 | Steal 1 from your enemy. If your enemy has no credits left you get nothing.                                                                                                        |
+| Figure moved          | +1      | For each figure moved 1 credit is awarded. If a figure moves to attack another figure but this figure has a protection ability this counts as move (but not as kill).               |
+| Converted figure      | +1      | A converted enemy is awarded with 1 credit. Credits are rewarded after the turn in which the enemy was converted; not in the turn the conversion started.                         |
+| Conversion failed     | -1 / +1 | If the enemy successfully escapes from the conversion, he gains 1 credit and the player initiating the conversion looses 1 credit.                                            |
+| Enemy killed          | +2      | Each enemy killed is rewarded with 2 credits. If a figure with a protect ability is successfully attacked this does not account for enemy killed and is not awarded with credits. |
+| Reached enemy endzone | -1 / +1 | Steal 1 credit from your enemy. If your enemy has no credits left you get nothing. This is rewarded once; not every round a figure stands at the end zone |
 
-credits earned at the end of turn can be spent in the next turn.
+Credits earned at the end of turn can be spent in the next turn.
 
 ### Move
 
-Roll all 3 dice to determine which figures can be moved in this turn.
+Roll all 3 dice to determine which figures can be moved in this action.
 
 - If you can move a figure you must move it.
 - If non of the rolled dice show a figure you can move this action is over.
@@ -78,10 +78,10 @@ Roll all 3 dice to determine which figures can be moved in this turn.
 A figure can only move once per turn.
 
 - Figures move just like in [regular chess](https://en.wikipedia.org/wiki/Chess#Movement) across the 8x8 board.
-- If you move a figure that has an ability (explode or convert) you may use this ability after moving.
+- If you move a figure that has an ability (explode or convert) you may use this ability within this action after moving.
 - If you initially move a figure from the recruitment line the figure must stay within the red-lined spawn quarter.
 
-Recruited figures must stay within their spawn quarter.
+Recruited figures must stay within their spawn quarter when initialy moving.
 
 - Figures in the recruitment zone may attack enemy figures as a first move if in range (spawn quarter).
 
@@ -95,21 +95,20 @@ In case the king is in check you can optionally move the king as an action once.
 - In this case there is no need to roll the dice.
 - If you moved the king in a prior action through a dice roll you may move the king again.
 
-Moving to a field on which the enemy stands attacks the enemy.
-
-- If the enemy has an `protect` abiltiy, the attacker stays where it started and the attacked figure looses the `protect` abiltiy.
-- If the enemy has no `protect` abiltiy, the enemy is killed and the attacker gains an `protect` ability.
-- If the enemy has an `explode` or `convert` ability the enemy is killed and the attacker may choose to gain the `protect` abiltiy or the ability of the enemy.
-- If a player already has an ability they may choose which one to keep.
-
-The abilities `explode` and `convert` are gained when moving onto a marked field.
+The abilities explode and convert are gained when moving onto a marked field.
 
 - Figures can only pick up abilities on the other half of the board (never on their side!).
-- Abilities can be added to figures (except pawns) to enhance their attack.
-- If a player already has an ability they may choose which one to keep.
-- If there are no abilities left, the figure does not gain the ability (there are 3 available per type + 2 `protect`, one for each king).
-- Abilities can be activated if the figure was moved. Activating an ability is not an extra action.
+- All figures, except pawns, may gain abilities to enhance their attack.
+- If a player already has an ability they may choose which one to keep. Figures can only have one ability at a time.
+- Each ability is availble 3 times + 2 protect for each king. If there are no abilities left, the figure does not gain the ability.
 - If the ability was gained in this move it can not directly be used.
+
+Moving to a field on which the enemy stands attacks the enemy.
+
+- If the enemy has an protect abiltiy, the attacker stays where it started and the attacked figure looses the protect abiltiy.
+- If the enemy doesn't have the protect abiltiy, the enemy is killed and the attacker gains an protect ability.
+- Killing an enemy with explosion or convert the attacker does not recieve the protect ability, however this credits for the kill are still recieved.
+- If the enemy has an explode or convert ability the enemy is killed and the attacker may choose to gain the protect abiltiy or the explode or convert ability from the enemy.
 
 The following abilities are availble:
 
@@ -117,7 +116,7 @@ The following abilities are availble:
 |---------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Protect | 5         | If a figure kills another figure it earns the protect ability. This figure now requires 2 hits to get killed. 2 protect abilities are assigned during setup to the kings of each side. Once the king is attacked and the protect ability is lost this protect ability can be re-used. |
 | Explode | 3         | Once activated this will kill all figures (own and enemy) within the radius. Exception are figures with the protect ability. These figures will loose their protect ability.                                                                                                                                                                       |
-| Convert | 3         | Once activated an enemy figure within the radius must be chosen. This figure will recieve the convert ability. If this figure does not move out of the radius in the next turn this figure is converted. The figure is then killed and replaced by the same typ of figure of the other color from the recruitment area. In case this figure is not available the figure is killed without replacement. If the figure manages to escape it may keep the convert ability. Every figure can be converted. If the king is converted the game is over. If the king is attacked with conversion the king is in check and the special moving rules apply.                                                                                                                                                                       |
+| Convert | 3         | Once activated an enemy figure within the radius must be chosen. This figure will recieve the convert ability. If this figure does not move out of the radius in the next turn this figure is converted. The figure is then killed and replaced by the same typ of figure of the other color from the recruitment area. In case this figure is not available the figure is killed without replacement. If the figure manages to escape it may keep the convert ability. Enemys with the protect ability can not be converted. If the king has no protection and is converted the game is over. If the king is attacked with conversion the king is in check and the special moving rules apply.                                                                                                                                                                       |
 
 ### Recruit
 
