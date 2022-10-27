@@ -95,12 +95,14 @@ In case the king is in check you can optionally move the king as an action once.
 - In this case there is no need to roll the dice.
 - If you moved the king in a prior action through a dice roll you may move the king again.
 
-The abilities explode and convert are gained when moving onto a marked field.
+The abilities explode and convert are gained when moving onto a marked field (not just passing it).
 
 - Figures can only pick up abilities on the other half of the board (never on their side!).
 - All figures, except pawns, may gain abilities to enhance their attack.
-- If a player already has an ability they may choose which one to keep. Figures can only have one ability at a time.
+- Figures can only have one ability at a time.
+- If a player already has an ability they may choose which one to keep.
 - Each ability is availble 3 times + 2 protect for each king. If there are no abilities left, the figure does not gain the ability.
+- The ability is gained by equiping the figure with the ability marker.
 - If the ability was gained in this move it can not directly be used.
 
 Moving to a field on which the enemy stands attacks the enemy.
