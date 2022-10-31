@@ -1,4 +1,4 @@
-# Example Game
+# Examples
 
 The following is an example game play with three players. Read the rules first.
 
