@@ -57,34 +57,7 @@
 - Musikcube (Spotify): <https://github.com/clangen/musikcube>
 - Background Noise: <https://github.com/JaDogg/noisebox>
 - Spotify: [spotify-tui](https://github.com/Rigellute/spotify-tui) or [ncspot](https://github.com/hrkfdn/ncspot)
-
-Example running ncspot:
-
-![ncspot](_ncspot.png)
-
-Visualize audio in the terminal
-
-paura_lite.py takes no arguments and just records sounds, while visualizing each segment's spectrogram in the console.
-
-Install required tools
-
-``` sh
-sudo apt update
-sudo apt-get install libasound-dev portaudio19-dev libportaudio2 libportaudiocpp0
-sudo apt-get install python3-opencv gnuplot
-pip3 install numpy pyaudio termplotlib
-cd ~
-git clone https://github.com/tyiannak/pyAudioAnalysis.git
-cd pyAudioAnalysis
-pip3 install -r ./requirements.txt
-pip3 install -e .
-cd ..
-git clone https://github.com/tyiannak/paura
-cd paura
-python3 paura_lite.py
-```
-
-This is how it should look like: <https://www.youtube.com/watch?v=YEi9AmA-07s>
+- Visualize audio in the terminal with [paura](https://github.com/tyiannak/paura) ([Example video](https://www.youtube.com/watch?v=YEi9AmA-07s))
 
 ## Read News
 
@@ -105,7 +78,7 @@ This is how it should look like: <https://www.youtube.com/watch?v=YEi9AmA-07s>
 
 ## Learn
 
-- flashcards: <https://github.com/TBS1996/speki>
+- Flashcards: <https://github.com/TBS1996/speki>
 
 ## Pictures
 
@@ -113,49 +86,9 @@ This is how it should look like: <https://www.youtube.com/watch?v=YEi9AmA-07s>
 
 ## Video
 
-### Watch Movies in ASCII
-
-``` sh
-sudo apt-get install mplayer
-wget https://download.blender.org/peach/bigbuckbunny_movies/big_buck_bunny_480p_stereo.ogg
-mplayer -vo caca big_buck_bunny_480p_stereo.ogg
-```
-
-Using [mpv](https://mpv.io/) with [libcaca](http://caca.zoy.org/wiki/libcaca)
-
-``` sh
-mpv --quiet -vo=caca 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-```
-
-Using [mpv](https://mpv.io/) with tct:
-
-``` sh
-mpv --quiet -vo=tct 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-```
-
-### asciinema
-
-Install
-
-``` sh
-sudo apt-get install python3 pip
-sudo pip3 install asciinema
-```
-
-Record a session
-
-``` sh
-asciinema rec
-echo "hello world"
-exit
-```
-
-Play existing recordings (local/online):
-
-``` sh
-asciinema play /path/to/asciicast.cast
-asciinema play https://asciinema.org/a/237459
-```
+- Record the terminal with [asciinema](https://asciinema.org) or [vhs](https://github.com/charmbracelet/vhs)
+- Watch a movie with [mplayer](https://mplayerhq.hu/design7/dload.html) e.g. ```mplayer -vo caca big_buck_bunny_480p_stereo.ogg```
+- Watch youtube video with [mpv](https://mpv.io/) + [libcaca](http://caca.zoy.org/wiki/libcaca) (alt: -vo=tct): ```mpv --quiet -vo=caca 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'```
 
 ## Other
 
