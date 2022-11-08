@@ -40,6 +40,24 @@ Great Browser Plugin to automatically redirect to some of these services: <https
 | Maps       | [OSM](https://www.openstreetmap.org), [qwant](https://www.qwant.com/maps)                                                                                                                                                                      |
 | Music | [libre.fm](https://libre.fm/)|
 
+## Fediverse
+
+More info about the [Fediverse](https://fediverse.party/en/fediverse/).
+
+Alternatives to:
+
+- Facebook: [Friendica](https://friendi.ca)
+- GoodReads: [BookWyrm](https://joinbookwyrm.com)
+- Instagram: [Pixelfed](https://pixelfed.org)
+- MeetUp: [Mobilizon](https://joinmobilizon.org)
+- Podcasting: [Castopod](https://castopod.org)
+- Reddit: [Lemmy](https://join-lemmy.org)
+- Social Media: [Mastodon](https://joinmastodon.org)
+- Soundcloud: [Reel2Bits](https://reel2bits.org)
+- Spotify: [Funkwhale](https://funkwhale.audio)
+- Twitter: [Pleroma](https://pleroma.social/) and [Misskey](https://join.misskey.page/en-US/)
+- YouTube: [PeerTube](https://joinpeertube.org)
+
 ## Android Apps
 
 ### Open board
