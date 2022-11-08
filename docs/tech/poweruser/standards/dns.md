@@ -29,6 +29,11 @@ A list of public DNS Servers
 | [Yandex.DNS Safe](https://dns.yandex.com/)                                   | 77.88.8.88 / 77.88.8.2            | N/A                                                     | N/A                                                                                                        |
 | [Yandex.DNS Family](https://dns.yandex.com/)                                 | 77.88.8.7 / 77.88.8.3             | N/A                                                     | N/A                                                                                                        |
 
+## DDNS service
+
+- [DuckDNS](https://www.duckdns.org/)
+- [Cloudflare Tunnels](https://www.cloudflare.com/products/tunnel/)
+
 ## DNS root zones
 
 A list of [DNS root zones](https://www.iana.org/domains/root/servers):
