@@ -2,13 +2,14 @@
 
 ![xkdc-git](_xkdc-git.png)
 
-## Tools
+## Tools and Helper
 
 - Github quick stats: <https://github.com/arzzen/git-quick-stats>
 - [tig](https://github.com/jonas/tig) helps to colorize the git output
 - [grv](https://github.com/rgburke/) is nice to view repos
 - [lazygit](https://github.com/jesseduffield/lazygit) is a simple terminal UI for git commands
 - A collection of [.gitignore](https://github.com/github/gitignore) templates
+- Game to learn git: [ohmygit](https://ohmygit.org/)
 
 ## Setup
 
