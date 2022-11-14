@@ -1,5 +1,30 @@
 # Python
 
+``` txt
+               =========
+            ===============
+           =================
+          ===  ==============
+          ===================
+                   ==========
+   ========================== =======
+ ============================ ========
+============================= =========
+============================ ==========
+========================== ============
+============ ==========================
+========== ============================
+========= =============================
+ ======== ============================
+  ======= ==========================
+          ==========
+          ===================
+          ==============  ===
+           =================
+            ===============
+               =========
+```
+
 ![python_environment](https://imgs.xkcd.com/comics/python_environment.png)
 
 ## Links and Tools
@@ -344,6 +369,32 @@ Update all packages
 ## Jupyter Notebooks
 
 [Jupyter Notebooks](https://jupyter.org/install) are a great way to teach python and demonstrate exampes. You can view `ipynb` files online e.g. with [nextjournal](https://github.nextjournal.com) and [deepnote](https://deepnote.com/viewer) or install locally: ```pip install notebook```. To launch jupyter locally run```jupyter notebook```. There is a great extension for [vscode](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter).
+
+``` txt
+                                 +%%%+
+                                $$$$$$$
+  +%+                           $$$$$$$
+ $$$$$           ******          *%%%*
+  *%*       ****************
+        ************************
+     ********              ********
+   ***                            ***
+  *                       _          *
+  _  _   _  _ __   _   _ | |_  ___  _ _
+ | || | | || '_ \ | | | || __|/ _ \| '_|
+ | || |_| || |_) || |_| || |_ | __/| |
+ | | \__,_|| .__/  \__, | \__|\___||_|
+/_/        |_|     |___/
+  *                                  *
+   ***                            ***
+     ********              ********
+        ************************
+            ****************
+    +%%%+        ******
+   $$$$$$$
+   $$$$$$$
+    *%%%*
+```
 
 It is possible to create a jupyter notebook using python ([source](https://gist.github.com/fperez/9716279))
 
