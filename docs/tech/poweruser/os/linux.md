@@ -184,6 +184,26 @@ On January 1st at Midnight    0 0 1 1 *
 
 ## Bash
 
+``` txt
+             _._
+         _.-'   '-._
+     _.-'           '-._
+ _.-'                   '-._
+|                        _,-|
+|                    _,-'+++|
+|                _,-'+++++++|
+|             ,-'+++++++++++|
+|             |++++ ++++++++|
+|             |+++   +++++++|
+|             |++  +++++++++|
+|             |++++  +++**++|
+|             |++   ++**++++|
+'-,_          |+++ ++++++_,-'
+    '-,_      |++++++_,-'
+        '-,_  |++_,-'
+            '-|-'
+```
+
 Most commands listed here will work on any linux distributions but if in doubt it will most likely run on the latest Ubuntu.
 
 Some great helpers:

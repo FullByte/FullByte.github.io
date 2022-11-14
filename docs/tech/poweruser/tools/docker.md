@@ -16,6 +16,17 @@ Links:
 
 ## Basics
 
+``` txt
+                  ##         .
+            ## ## ##        ==
+         ## ## ## ## ##    ===
+     /"""""""""""""""""\___/ ===
+~~~ {~~ ~~~~ ~~~ ~~~~ ~~~ ~ /  ===- ~~~
+     \______ o           __/
+       \    \         __/
+        \____\_______/
+```
+
 ### Network issues on Windows
 
 Network issues on Windows with Docker for Windows:
@@ -71,6 +82,12 @@ Run docker on startup
 
 ``` sh
 wsl.exe -u root service docker status || wsl.exe -u root service docker start
+```
+
+Start docker service
+
+``` sh
+sudo service docker start
 ```
 
 To limit the resources of your WSL:

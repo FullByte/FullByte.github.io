@@ -28,6 +28,30 @@ Other:
 
 ## HTML
 
+``` txt
+  ##  ##  ######  ##   ##  ##
+  ##  ##    ##    ### ###  ##
+  ######    ##    ## # ##  ##
+  ##  ##    ##    ##   ##  ##
+  ##  ##    ##    ##   ##  ######
+(((((((((((((((((((((((((((((((((((
+(((((((((((((((((/////////////(((((
+(((((((((((((((((/////////////(((((
+(((((((                     //(((((
+ ((((((                     //((((
+ ((((((    ((((((/////////////((((
+ ((((((     (((((/////////////((((
+ ((((((                    ///((((
+  (((((                    ///(((
+  (((((((((((((((//////    ///(((
+  ((((((    (((((/////     ///(((
+  ((((((                   ///(((
+   (((((((               /////((
+   ((((((((((((((/////////////((
+   ((((((((((((((//////(((((((((
+          (((((((((((((((
+```
+
 ### Show Base64 Images
 
 ``` html
@@ -120,6 +144,30 @@ We asked some leading economists.
 
 ## CSS
 
+``` txt
+        ####    ####    ####
+       ##  ##  ##      ##
+       ##       ####    ####
+       ##  ##      ##      ##
+        ####    ####    ####
+(((((((((((((((((((((((((((((((((((
+(((((((((((((((((/////////////(((((
+(((((((((((((((((/////////////(((((
+(((((((                    ///(((((
+ ((((((                    ///((((
+ ((((((((((((((((        /////((((
+ (((((((((((        //////////((((
+ (((((((                   ///((((
+  ((((((                   ///(((
+  (((((((((((((((//////    ///(((
+  (((((((    ((((//////    ///(((
+  (((((((                  ///(((
+   (((((((               /////((
+   ((((((((((((((/////////////((
+   ((((((((((((((//////(((((((((
+          (((((((((((((((
+```
+
 ### Links
 
 Lern CSS
@@ -208,6 +256,27 @@ p, h1, h2, h3, h4, h5, h6 {
 ```
 
 ## JavaScript
+
+``` txt
+JSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJS
+JSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJS
+JSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJS
+JSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJS
+JSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJS
+JSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJS
+JSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJS
+JSJSJSJSJSJSJSJSJ    SJSJS      JSJSJS
+JSJSJSJSJSJSJSJSJ    SJS          JSJS
+JSJSJSJSJSJSJSJSJ    SJS     JSJSJSJSJ
+JSJSJSJSJSJSJSJSJ    SJSJ     SJSJSJSJ
+JSJSJSJSJSJSJSJSJ    SJSJSJ     SJSJSJ
+JSJSJSJSJSJSJSJSJ    SJSJSJSJ     JSJS
+JSJSJSJSJSJSJSJSJ    SJSJSJSJS     JSJ
+JSJSJSJSJS     JS    JSJS          JSJ
+JSJSJSJSJSJ          SJSJSJ      SJSJS
+JSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJS
+JSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJSJS
+```
 
 ### Keylogger
 
