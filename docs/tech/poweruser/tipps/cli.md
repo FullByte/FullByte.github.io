@@ -89,6 +89,7 @@
 - Record the terminal with [asciinema](https://asciinema.org) or [vhs](https://github.com/charmbracelet/vhs)
 - Watch a movie with [mplayer](https://mplayerhq.hu/design7/dload.html) e.g. ```mplayer -vo caca big_buck_bunny_480p_stereo.ogg```
 - Watch youtube video with [mpv](https://mpv.io/) + [libcaca](http://caca.zoy.org/wiki/libcaca) (alt: -vo=tct): ```mpv --quiet -vo=caca 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'```
+- Cast DLNA over CLI with [dlna-cast](https://github.com/link89/dlna-cast)
 
 ## Other
 
