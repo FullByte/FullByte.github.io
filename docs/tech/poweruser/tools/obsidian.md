@@ -59,4 +59,3 @@ In Obsidian settings:
 To build the web site you need Hugo with “extended” Sass/SCSS version.
 
 Run ```make serve``` to locally test the website.
-
