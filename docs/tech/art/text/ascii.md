@@ -1,4 +1,4 @@
-# Programs
+# ASCII
 
 Programs creating ASCII art.
 
