@@ -1,4 +1,4 @@
-# Links
+# Overview
 
 Eat whatever you want... idk, lol.
 
@@ -10,7 +10,47 @@ Eat whatever you want... idk, lol.
 - Joghurt: ja. Käse: auch okay. Milch: lala
 - Zucker minimieren, industrielle Transfette meiden
 
-## Other
+## Links
 
 - Food timeline: <https://foodtimeline.org/>
 - Identifying Food by Qube Rule: <http://cuberule.com/>
+
+## Recipies
+
+### Meals
+
+[![bratkartoffeln](meal/_bratkartoffeln.jpg)](meal/bratkartoffeln)
+
+[![brokkoli-kartoffel-gratin](meal/_brokkoli-kartoffel-gratin.jpg)](meal/brokkoli-kartoffel-gratin)
+
+[![chicken-curry](meal/_chicken-curry.jpg)](meal/chicken-curry)
+
+[![chicken-wrap](meal/_chicken-wrap.jpg)](meal/chicken-wrap)
+
+[![hackfleisch-kichererbsen-pfanne](meal/_hackfleisch-kichererbsen-pfanne.jpg)](meal/hackfleisch-kichererbsen-pfanne)
+
+[![huehnerfrikassee](meal/_huehnerfrikassee.jpg)](meal/huehnerfrikassee)
+
+[![lasagne](meal/_lasagne.jpg)](meal/lasagne)
+
+[![pizza](meal/_pizza.jpg)](meal/pizza)
+
+[![sandwich](meal/_sandwich.jpg)](meal/sandwich)
+
+### Desert
+
+[![cupcakes](desert/_cupcakes.jpg)](desert/cupcakes)
+
+### Salad
+
+TODO
+
+### Soup
+
+[![kuerbnissuppe](soup/_kuerbissuppe.jpg)](soup/kuerbnissuppe)
+
+[![mango-kokus-curry](soup/_mango-kokus-curry.jpg)](soup/mango-kokus-curry)
+
+### Other
+
+TODO
