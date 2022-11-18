@@ -77,3 +77,15 @@ Process {
     }
 }
 ```
+
+## Dashboard
+
+### Queries
+
+Show all open tasks assinged to a user across all projects:
+
+![OpenTasksAssinged](_AzureDevOpsOpenTasksAssinged.jpg)
+
+Show all open tasks in which a user is mentioned:
+
+![OpenTasksMentioned](_AzureDevOpsOpenTasksMentioned.jpg)
