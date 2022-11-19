@@ -37,6 +37,8 @@ Eat whatever you want... idk, lol.
 
 [![sandwich](meal/_sandwich.jpg)](meal/sandwich)
 
+[![paprika-hack-pfanne](meal/_paprika-hack-pfanne.jpg)](meal/paprika-hack-pfanne)
+
 ### Desert
 
 [![cupcakes](desert/_cupcakes.jpg)](desert/cupcakes)
