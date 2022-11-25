@@ -50,9 +50,19 @@ olc,..',:cccccccccccc:;;;;;;;;:ccccccccc,.'c,
 Ol;......................................;l'
 ```
 
-## Run Forrest Run
+## asciiquarium
 
-- Link: https://github.com/hugomd/ascii-live
+View asciiquarium using curl with [asciiquarium.live](https://github.com/kilimnik/asciiquarium.live)
+
+``` sh
+curl asciiquarium.live
+```
+
+## ascii.live
+
+### Run Forrest Run
+
+- Link: <https://github.com/hugomd/ascii-live>
 - Use: ```curl ascii.live/forrest```
 
 ```txt
@@ -83,9 +93,9 @@ Ol;......................................;l'
                             .,,,;;;;,
 ```
 
-## Run Forrest Run
+### rick roll
 
-- Link: https://github.com/hugomd/ascii-live
+- Link: <https://github.com/hugomd/ascii-live>
 - Use: ```curl ascii.live/rick```
 
 ```txt

@@ -564,7 +564,13 @@ Another cool idea is to use this fo successful tests or builds e.g.:
 
 ## asciiquarium
 
-To run asciiquarium you need Term-Animation and Perl.
+View asciiquarium using curl with [asciiquarium.live](https://github.com/kilimnik/asciiquarium.live)
+
+``` sh
+curl asciiquarium.live
+```
+
+To run asciiquarium locally you need Term-Animation and Perl.
 
 First install Perl:
 

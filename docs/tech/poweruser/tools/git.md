@@ -142,6 +142,8 @@ No commits yet
 nothing to commit (create/copy files and use "git add" to track)
 ```
 
+A list of gitignore files based on prgramming language is [available here](https://github.com/github/gitignore).
+
 ## Pretend to be busy
 
 Do this on a clean machine
