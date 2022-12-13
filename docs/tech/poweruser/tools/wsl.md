@@ -12,8 +12,6 @@ Some helpful [commands](https://docs.microsoft.com/en-us/windows/wsl/basic-comma
 - Restart WSL: ```Get-Service LxssManager | Restart-Service``` or```wsl --shutdown```
 - Change distro to version 2: ```wsl --set-version kali-linux 2```*
 
-wsl --distribution Ubuntu-20.04 --user fab1
-
 Note that the root password is set random and needs to be updated using ```sudo passwd```
 
 *This may require installing the following
