@@ -36,7 +36,7 @@ To configure WSL there are [2 main config files](https://docs.microsoft.com/en-u
 - `.wslconfig` located in the Windows %UserProfile% directory to configure settings globally across all installed distributions.
 - `wsl.conf` located in the /etc directory of the WSL distro to configure settings per-distribution.
 
-In this `wsl.conf` example, the distribution is `Ubuntu-20.04` and the file path is `\\wsl.localhost\Ubuntu-20.04\etc\wsl.conf`.
+In this `wsl.conf` example, the distribution is `Ubuntu-22.10` and the file path is `\\wsl.localhost\Ubuntu-22.10\etc\wsl.conf`.
 
 ``` ps1
 # Automatically mount Windows drive when the distribution is launched
