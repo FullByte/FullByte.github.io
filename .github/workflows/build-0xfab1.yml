@@ -33,7 +33,7 @@ jobs:
       - name: Deploy Github Pages
         run: |
           git pull
-          mkdocs gh-deploy
+          mkdocs gh-deploy --no-history
 
       - name: Build 0xfab1.net for Azure
         run: |          
