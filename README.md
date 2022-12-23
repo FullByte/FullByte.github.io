@@ -56,7 +56,7 @@ I appreciate your pull-request for typos/errors in existing pages. If you think 
 
 - Fork the current version (e.g. with [github cli](https://cli.github.com/)): ```gh repo fork https://github.com/FullByte/FullByte.github.io.git```)
 - Do the changes you want to make and commit the updates to your fork.
-- Test the reuslt by [building](#build-and-run) the site with your update(s).
+- Test the result by [building](#build-and-run) the site with your update(s).
 - If there are no errors and you are happy to share the change, open a pull request and briefly tell what you updated and why.
 
 Thank you for your contribution :)
