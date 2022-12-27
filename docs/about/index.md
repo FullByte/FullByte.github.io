@@ -20,7 +20,7 @@ and you will receive this result:
 
 My Unicode Hexadecimal (0xFAB1) is &#xFAB1;
 
-I like to interprete this as beeing a terminal and GUI user :D I use the tool that works best for me and gets the job done. I have not subscribed to any IT religion, do not simp any technology evangelist and try to be as open as possible about knowledge and sharing information.
+I like to interpret this as being a terminal and GUI user :D I use the tool that works best for me and gets the job done. I have not subscribed to any IT religion, do not simp any technology evangelist and try to be as open as possible about knowledge and sharing information.
 
 ## Avatar
 

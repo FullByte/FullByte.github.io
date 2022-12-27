@@ -5,14 +5,12 @@ Some helpful [commands](https://docs.microsoft.com/en-us/windows/wsl/basic-comma
 - Check for updates: ```wsl --update```
 - List all available WSL distributions: ```wsl --list --online```
 - List locally installed distros: ```wsl --list --verbose```
-- Install a distribution: ```wsl --install -d Ubuntu-20.04```
-- Delete Distro: ```wsl --unregister Ubuntu-18.04```
-- Set default distro: ```wsl --set-default Ubuntu-20.04```
-- Open WSL in pwsh: ```wsl --distribution Ubuntu-20.04 --user fab1```
+- Install a distribution: ```wsl --install -d Ubuntu-22.10```
+- Delete Distro: ```wsl --unregister Ubuntu-22.10```
+- Set default distro: ```wsl --set-default Ubuntu-22.10```
+- Open WSL in pwsh: ```wsl --distribution Ubuntu-22.10 --user fab1```
 - Restart WSL: ```Get-Service LxssManager | Restart-Service``` or```wsl --shutdown```
 - Change distro to version 2: ```wsl --set-version kali-linux 2```*
-
-wsl --distribution Ubuntu-20.04 --user fab1
 
 Note that the root password is set random and needs to be updated using ```sudo passwd```
 
@@ -38,7 +36,7 @@ To configure WSL there are [2 main config files](https://docs.microsoft.com/en-u
 - `.wslconfig` located in the Windows %UserProfile% directory to configure settings globally across all installed distributions.
 - `wsl.conf` located in the /etc directory of the WSL distro to configure settings per-distribution.
 
-In this `wsl.conf` example, the distribution is `Ubuntu-20.04` and the file path is `\\wsl.localhost\Ubuntu-20.04\etc\wsl.conf`.
+In this `wsl.conf` example, the distribution is `Ubuntu-22.10` and the file path is `\\wsl.localhost\Ubuntu-22.10\etc\wsl.conf`.
 
 ``` ps1
 # Automatically mount Windows drive when the distribution is launched
