@@ -103,3 +103,38 @@ To limit the resources of your WSL:
     ```
 
 - Save and restart the *LxssManager* service
+
+## Maintainance
+
+Search through all images to find and delete the ones without active references.
+The -a tag will keep images that are tagged but not in use. (see [Docs](https://docs.docker.com/engine/reference/commandline/image_prune/) for more)
+
+``` sh
+docker image prune -a
+```
+
+Images available locally:
+
+``` sh
+docker image ls
+```
+
+Remove a specific image:
+
+``` sh
+docker image rm IMAGEID
+```
+
+Storage used by images locally:
+
+``` sh
+sudo du -sh /var/lib/docker/
+```
+
+To also remove all stopped containers run:
+
+``` sh
+docker container prune
+```
+
+And run ```docker image prune -a``` if you want to remove all images linked to stopped containers.
