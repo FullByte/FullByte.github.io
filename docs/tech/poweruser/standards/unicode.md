@@ -1,5 +1,161 @@
 # Unicode
 
+## Simular
+
+| Original Char | Look-Alikes                                                                            |
+|---------------|----------------------------------------------------------------------------------------|
+| a             | ạ ą ä à á ą α à á â ã ä å ɑ а aａ                                                       |
+| b             | ḃ ḅ ḇ Ь b                                                                              |
+| c             | ç ć ĉ ċ č c ⅽ с ϲ ḉ                                                                    |
+| d             | ɗ ď ḋ ḍ ḏ ḑ  ḓ                                                                         |
+| e             | e, é, ê, ë, ē, ĕ, ė, ę, ě, ȅ, ȇ, ȩ, ḕ, ḗ, ḙ, ḛ, ḝ, ẹ, ẻ, ẽ, ế, ề, ể, ễ, ệ, e̳          |
+| f             | f ḟ                                                                                    |
+| g             | ġ                                                                                      |
+| h             | һ                                                                                      |
+| i             | і í ï                                                                                  |
+| j             | ј ʝ                                                                                    |
+| k             | κ                                                                                      |
+| l             | ӏ ḷ                                                                                    |
+| m             |                                                                                        |
+| n             | ո                                                                                      |
+| o             | о ο օ ȯ ọ ỏ ơ ó ò ö                                                                    |
+| p             | р                                                                                      |
+| q             | զ                                                                                      |
+| r             |                                                                                        |
+| s             | ʂ, s, ś, ŝ, ş, š, ș, ṡ, ṣ, ṥ, ṧ, ṩ                                                     |
+| t             |                                                                                        |
+| u             | υ ս ü ú ù                                                                              |
+| v             | ν ѵ                                                                                    |
+| W             |                                                                                        |
+| x             | х ҳ                                                                                    |
+| y             | у ý                                                                                    |
+| z             | ʐ ż                                                                                    |
+| A             | A  À Á Â Ã Ä Å  Α  Ꭺ Ａ                                                                 |
+| B             | B  ß ʙ Β β В  Ᏼ ᛒ Ｂ ｂ                                                                  |
+| C             | C  Ϲ С  Ꮯ Ⅽ  Ｃ ｃ                                                                       |
+| D             | D d Ď ď Đ đ ԁ ժ Ꭰ ḍ Ⅾ ⅾ Ｄ ｄ                                                            |
+| E             | E e È É Ê Ë é ê ë Ē ē Ĕ ĕ Ė ė Ę Ě ě Ε Е е Ꭼ Ｅ ｅ                                        |
+| F             | F f Ϝ Ｆ ｆ                                                                              |
+| G             | G g ɡ ɢ Ԍ ն Ꮐ Ｇ ｇ                                                                      |
+| H             | H h ʜ Η Н һ Ꮋ Ｈ ｈ                                                                      |
+| I             | I i l ɩ Ι І і ا Ꭵ ᛁ Ⅰ ⅰ Ｉ ｉ                                                            |
+| J             | J j ϳ Ј ј յ Ꭻ Ｊ ｊ                                                                      |
+| K             | K k Κ κ К Ꮶ ᛕ K Ｋ ｋ                                                                    |
+| L             | L l ʟ ι ا Ꮮ Ⅼ ⅼ Ｌ ｌ                                                                    |
+| M             | M m Μ Ϻ М Ꮇ ᛖ Ⅿ ⅿ Ｍ ｍ                                                                  |
+| N             | N n ɴ Ν Ｎ ｎ                                                                            |
+| O             | 0 O o Ο ο О о Օ Ｏ ｏ                                                                    |
+| P             | P p Ρ ρ Р р Ꮲ Ｐ ｐ                                                                      |
+| Q             | Q q Ⴍ Ⴓ Ｑ ｑ                                                                            |
+| R             | R r ʀ Ի Ꮢ ᚱ Ｒ ｒ                                                                        |
+| S             | S s Ѕ ѕ Տ Ⴝ Ꮪ 𐐠 Ｓ ｓ                                                                   |
+| T             | T t Τ τ Т Ꭲ Ｔ ｔ                                                                        |
+| U             | Ù, Ú, Û, Ü, Ũ, Ū, Ŭ, Ů, Ű, Ų, Ư, Ǔ, Ǖ, Ǘ, Ǚ, Ǜ, Ụ, Ủ, Ứ, Ừ, Ử, Ữ, Ự, U u μ υ Ա Ս ⋃ Ｕ ｕ |
+| V             | V v ν Ѵ ѵ Ꮩ Ⅴ ⅴ Ｖ ｖ                                                                    |
+| W             | W w ѡ Ꮃ Ｗ ｗ                                                                            |
+| X             | X x Χ χ Х х Ⅹ ⅹ Ｘ ｘ                                                                    |
+| Y             | Y y ʏ Υ γ у Ү Ｙ ｙ                                                                      |
+| Z             | Z z Ζ Ꮓ Ｚ ｚ                                                                            |
+| 0             | 0 O o Ο ο О о Օ Ｏ ｏ                                                                    |
+| 1             | 1 I ا １                                                                                |
+| 2             | 2 ２                                                                                    |
+| 3             | 3 ３                                                                                    |
+| 4             | 4 ４                                                                                    |
+| 5             | 5 ５                                                                                    |
+| 6             | 6 ６                                                                                    |
+| 7             | 7                                                                                      |
+| 8             | 8 Ց ８                                                                                  |
+| 9             | 9 ９                                                                                    |
+
+To get "normalize" or rid of most accents the following can be done:
+
+```py
+import unicodedata
+s=u'U, Ù, Ú, Û, Ü, Ũ, Ū, Ŭ, Ů, Ű, Ų, Ư, Ǔ, Ǖ, Ǘ, Ǚ, Ǜ, Ụ, Ủ, Ứ, Ừ, Ử, Ữ, Ự'
+print(unicodedata.normalize('NFD',s).encode('ascii','ignore'))
+```
+
+ | Short | Long                                           | Description                                                                                                             |
+ |-------|------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+ | NFD   | Normalization Form Canonical Decomposition     | Characters are decomposed by canonical equivalence, and multiple combining characters are arranged in a specific order. |
+ | NFC   | Normalization Form Canonical Composition       | Characters are decomposed and then recomposed by canonical equivalence.                                                 |
+ | NFKD  | Normalization Form Compatibility Decomposition | Characters are decomposed by compatibility, and multiple combining characters are arranged in a specific order.         |
+ | NFKC  | Normalization Form Compatibility Composition   | Characters are decomposed by compatibility, then recomposed by canonical equivalence.                                   |
+
+Links:
+
+- [IDN homograph attack](https://en.wikipedia.org/wiki/IDN_homograph_attack)
+- <https://www.punycoder.com/>
+- <http://www.unicode.org/reports/tr46/>
+
+## Invisible Unicode characters
+
+Tool to view invisible unicode characters: <https://invisible-characters.com/view.html>
+
+| Character | Name                         |
+|-----------|------------------------------|
+| U+0009    | CHARACTER TABULATION         |
+| U+0020    | SPACE                        |
+| U+00A0    | NO-BREAK SPACE               |
+| U+00AD    | SOFT HYPHEN                  |
+| U+034F    | COMBINING GRAPHEME JOINER    |
+| U+061C    | ARABIC LETTER MARK           |
+| U+115F    | HANGUL CHOSEONG FILLER       |
+| U+1160    | HANGUL JUNGSEONG FILLER      |
+| U+17B4    | KHMER VOWEL INHERENT AQ      |
+| U+17B5    | KHMER VOWEL INHERENT AA      |
+| U+180E    | MONGOLIAN VOWEL SEPARATOR    |
+| U+2000    | EN QUAD                      |
+| U+2001    | EM QUAD                      |
+| U+2002    | EN SPACE                     |
+| U+2003    | EM SPACE                     |
+| U+2004    | THREE-PER-EM SPACE           |
+| U+2005    | FOUR-PER-EM SPACE            |
+| U+2006    | SIX-PER-EM SPACE             |
+| U+2007    | FIGURE SPACE                 |
+| U+2008    | PUNCTUATION SPACE            |
+| U+2009    | THIN SPACE                   |
+| U+200A    | HAIR SPACE                   |
+| U+200B    | ZERO WIDTH SPACE             |
+| U+200C    | ZERO WIDTH NON-JOINER        |
+| U+200D    | ZERO WIDTH JOINER            |
+| U+200E    | LEFT-TO-RIGHT MARK           |
+| U+200F    | RIGHT-TO-LEFT MARK           |
+| U+202F    | NARROW NO-BREAK SPACE        |
+| U+205F    | MEDIUM MATHEMATICAL SPACE    |
+| U+2060    | WORD JOINER                  |
+| U+2061    | FUNCTION APPLICATION         |
+| U+2062    | INVISIBLE TIMES              |
+| U+2063    | INVISIBLE SEPARATOR          |
+| U+2064    | INVISIBLE PLUS               |
+| U+206A    | INHIBIT SYMMETRIC SWAPPING   |
+| U+206B    | ACTIVATE SYMMETRIC SWAPPING  |
+| U+206C    | INHIBIT ARABIC FORM SHAPING  |
+| U+206D    | ACTIVATE ARABIC FORM SHAPING |
+| U+206E    | NATIONAL DIGIT SHAPES        |
+| U+206F    | NOMINAL DIGIT SHAPES         |
+| U+3000    | IDEOGRAPHIC SPACE            |
+| U+2800    | BRAILLE PATTERN BLANK        |
+| U+3164    | HANGUL FILLER                |
+| U+FEFF    | ZERO WIDTH NO-BREAK SPACE    |
+| U+FFA0    | HALFWIDTH HANGUL FILLER      |
+| U+1D159   | MUSICAL SYMBOL NULL NOTEHEAD |
+| U+1D173   | MUSICAL SYMBOL BEGIN BEAM    |
+| U+1D174   | MUSICAL SYMBOL END BEAM      |
+| U+1D175   | MUSICAL SYMBOL BEGIN TIE     |
+| U+1D176   | MUSICAL SYMBOL END TIE       |
+| U+1D177   | MUSICAL SYMBOL BEGIN SLUR    |
+| U+1D178   | MUSICAL SYMBOL END SLUR      |
+| U+1D179   | MUSICAL SYMBOL BEGIN PHRASE  |
+| U+1D17A   | MUSICAL SYMBOL END PHRASE    |
+
+## List of Unicode characters
+
+Links:
+
+- <https://en.wikipedia.org/wiki/List_of_Unicode_characters>
+- <https://www.compart.com/en/unicode/>
+
 |    Block Range    |        Block Name (+Link to Unicode PDF)       |
 |:-----------------:|:----------------------------------------------:|
 | U0000 - U007F     | Basic Latin                                    |

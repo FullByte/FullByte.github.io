@@ -198,6 +198,12 @@ Windows Base Install (depending on the release you are using) comes with more or
 
 Be careful with these tools and scripts; ideally copy those parts of the script you want and create your own.
 
+Delete all App Packages on Windows 10 (add "-WhatIf" before running this to see if you really want to do this):
+
+```ps1
+Get-AppxPackage | Remove-AppxPackage
+```
+
 ### Commands that help
 
 - Export current drivers: ```pnputil /export-driver * e:\treiber```
