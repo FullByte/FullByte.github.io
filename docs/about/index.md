@@ -32,22 +32,6 @@ Use [this](_about-0xfab1-qrcode.png) QR-Code if you want to use a QR-Code to lin
 
 ![qrcode](_about-0xfab1-qrcode.png)
 
-## G33k C0d3
-
-My geek codes:
-
-```GEEKCODE
------BEGIN GEEK CODE BLOCK-----
-AutCode 3.0: TODO
-Cat Code: TODO
-Furry Code 1.3: TODO
-Geek Code 3.1: GCS d- s+ a C++$ L+++ P+ L++ E---- W+++$ N+++ o+ K++ w++$ O M V-- PS+++ PE Y+ PGP++ t+@ 5+@ X++ R+++>$ !tv b+>++ DI++ D++>+++ G- e+++ h++/h--- r+++ y?
-Goth Code 2.5A: GoCS7$ TYinYdmYyu cNRZ3 PPeSlG M3p1wD ZMehMezTeiTezPutGoi C9o a30- b65T H183 g6T w6AT r3s s10 k5 Rm SmNn Lde
-Knitty Code 1.1: TODO
-Ranger Code: TODO
-------END GEEK CODE BLOCK------
-```
-
 ## Links
 
 - [twitter](https://twitter.0xfab1.net)
