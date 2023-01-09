@@ -1,6 +1,14 @@
 # Unicode
 
+My Unicode Symbol (Hexadecimal "0xFAB1") is ```&#xFAB1;```
+
+If your font supports this it should look like this: &#xFAB1;
+
+![0xfab1unicode](_0xfab1unicode.jpg)
+
 ## Simular
+
+Unicode look-alikes to "normal" chars :D
 
 | Original Char | Look-Alikes                                                                            |
 |---------------|----------------------------------------------------------------------------------------|

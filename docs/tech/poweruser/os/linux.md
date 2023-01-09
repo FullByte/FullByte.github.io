@@ -383,10 +383,15 @@ Alias
     alias ls='exa --color=auto'
     ```
 
-More:
+- Finding out which linux you are using: ```uname -m && cat /etc/*release```
+- Bulk renaming of files: ```rename 's/ch0/ch/gi' *.tiff```
+- Read markdown in terminal (Example: ```markdown README.md```)
 
-- Finding out which linux you are using: uname -m && cat /etc/*release
-- Bulk renaming of files: rename 's/ch0/ch/gi' *.tiff
+    ``` sh
+    markdown () {
+       pandoc "$1" | lynx -stdin
+    }
+    ```
 
 #### last 10 commands that ran in the current directory
 
