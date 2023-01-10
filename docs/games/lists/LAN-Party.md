@@ -4,31 +4,31 @@ Playing games locally in a network requires some preparation and some tools help
 
 Preparing:
 
-- Make a list of all games that will be played and make sure all have downloaded, updated and started the game atleast once prior to the LAN party (see [games](#games) for example)
-- Send a list of things to think about e.g. Equipment, Snaks, Sleeping bag
-- Make sure everyone is clear on when it starts and ends and where to show up
-- Make sure everyone helps setup and clean up
+- [ ] Make a list of all games that will be played and make sure all have downloaded, updated and started the game atleast once prior to the LAN party (see [games](#games) for example)
+- [ ] Send a list of things to think about e.g. Equipment, Snaks, Sleeping bag
+- [ ] Make sure everyone is clear on when it starts and ends and where to show up
+- [ ] Make sure everyone helps setup and clean up
 
 Gamers Equipment
 
-- Power supply
-- Headphones
-- Mouse
-- Keyboard
-- Screen
-- PC
-- Cables for PC
+- [ ] Power supply
+- [ ] Headphones
+- [ ] Mouse
+- [ ] Keyboard
+- [ ] Screen
+- [ ] PC
+- [ ] Cables for PC
 
 Gamers Equipment
 
-- Snacks and drinks
-- Sleeping bag
+- [ ] Snacks and drinks
+- [ ] Sleeping bag
 
 On Site:
 
-- Use power from different rooms and check for enough poweradapters
-- Check for enough chairs and tables
-- The LAN cables are long enough and you have enough free LAN ports
+- [ ] Use power from different rooms and check for enough poweradapters
+- [ ] Check for enough chairs and tables
+- [ ] The LAN cables are long enough and you have enough free LAN ports
 
 ## Scan and Test Network
 
@@ -72,7 +72,7 @@ Nice old games
 
 Easiest way to share files ist by ziping whatever you want to share first.
 
-You can run a simple webserver using python: ``` python -m http.server 8080```
+You can run a simple webserver using python: ```python -m http.server 8080```
 
 ## Windows Firewall
 
