@@ -1,8 +1,2 @@
-_temp/
 .vs/
 site/
-.layer0/
-layer0.config.js
-routes.js
-package.json
-package-lock.json
