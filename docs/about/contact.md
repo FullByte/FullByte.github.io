@@ -2,7 +2,13 @@
 
 ## Mail
 
-Send a mail, use [PGP](https://de.wikipedia.org/wiki/Pretty_Good_Privacy)
+Send a mail, use [PGP](https://de.wikipedia.org/wiki/Pretty_Good_Privacy).
+
+Email address in brainfuck:
+
+``` Brainfuck
+--[----->+<]>---.++++++++++++.-.++++++.+[->+++<]>++.++.-[--->+<]>--.-[->+++++<]>+.[---->+++<]>.[-->+++++<]>.[->+++<]>--.-----.+.[-->+<]>.---.--[-->+++++<]>.---------.[--->+<]>---.
+```
 
 Download public key:
 
@@ -66,32 +72,3 @@ zQ==
 =dFbQ
 -----END PGP PUBLIC KEY BLOCK-----
 ```
-
-## Chat
-
-Use [ConsoleChat.io](https://www.consolechat.io/) with the functions below in your browser's console for chatting:
-
-- Press `F12` and navigate to the console input
-- Launch the chat by typing `cc.start()`
-- Set your username `cc.username('Your username')`
-- Say something `cc.say('Hi!')`
-
-That's it :) However, there are further features e.g.:
-
-- Talk only to the users on the site you are currently browsing (current tab) `cc.onsite()`
-- Go back to public channel `cc.public()`
-- Send a private message to a user `cc.msg('username', 'Your hush hush message')`
-- List all available public channels `cc.list()`
-- Join a channel. Or create one of the channel does not exist yet. `cc.join('channel name')`
-- Create/Join a private channel that will not be visible. `consolechat.list()`
-- Join a secret channel `cc.join('channel name', 'private')`
-- List all users currently online on the channel `cc.who()`
-- Leave a channel `cc.leave()`
-- Get insturctions `cc.help()`
-- Close ConsoleChat.io `cc.close()`
-
-Example how ConsoleChat looks like:
-
-![chat-example](_chat-example.png)
-
-<script src="https://cdn.consolechat.io/console-chat-min.js"></script>
