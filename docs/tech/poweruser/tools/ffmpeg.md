@@ -234,6 +234,20 @@ ffmpeg -i input.mp4 -c:v libaom-av1 -b:v 200k -filter:v scale=720:-1 -strict exp
 ffmpeg -i input.mp4 -pix_fmt yuv420p -movflags faststart -c:v libaom-av1 -b:v 200k -filter:v scale=720:-1 -strict experimental -cpu-used 1 -tile-columns 2 -row-mt 1 -threads 8 -pass 2 output.mp4
 ```
 
+Script to convert a video into gif
+
+``` sh
+function video_to_gif {
+  local input="$1"
+  local output="$2"
+  local fps="${3:-10}"
+  local scale="${4:-1080}"
+  local loop="${5:-0}"
+
+  ffmpeg -i "${input}" -vf "setpts=PTS/1,fps=${fps},scale=${scale}:-2:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop $loop "${output}"
+}
+```
+
 ### VOB preparation
 
 To merge multiple VOB files simple run:

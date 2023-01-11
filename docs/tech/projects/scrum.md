@@ -9,9 +9,18 @@ Wording:
 - Scrum is founded on empirical process control theory, or empiricism.
 - Empiricism asserts that knowledge comes from experience and making decisions based on what is known.
 - The Three Pillars of Empiricism: transparency, inspection, and adaptation.
+- The team model in Scrum is designed to optimize flexibility, creativity, and productivity.
 
 Max Times:
 
 - Review : Max 4h meeting for one-month Sprints.
 - Retrospective: Max 3h meeting for one-month Sprints.
 - Planning = Max 8 hours
+
+Scrum Events
+
+Sprint Review:
+
+- Result: A revised Product Backlog that defines the probable Product Backlog items for the next Sprint
+- Members: Scrum Team (Prodcut Owner, Scrum Master Engineers) and Stakeholders
+
