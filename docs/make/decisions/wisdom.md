@@ -34,6 +34,72 @@ Random
 - In der Menge liegt das Gift.
 - Alles was man besitzt muss man auch pflegen.
 
+## Reflection
+
+### What went well?
+
+- What was I most proud of?
+- When was I most happy? Why?
+- What was my biggest win?
+- What went better than expected?
+- What did I spend the most time on?
+- How did I spend my time best?
+- What was my area of highest contribution?
+- Who impacted me the most? Thank them.
+
+Answer these three questions questions ...
+
+- What went well? Why?
+- Where did I make the most progress? What Steps did I take?
+- What did I learn?
+
+... for each of these three categories:
+
+- Health (mental, physical)
+- Wealth (career, investments)
+- Relationships (love, friendships, interactions)
+
+### What went poorly?
+
+- What action am I least proud of? Why?
+- What was my biggest loss?
+- What made me miserable? How?
+- What makes me most anxious? How?
+- What went worse than expected?
+- What held me back from doing what I want?
+- What are the three worst things that happend?
+
+Answer these three questions questions for each answer of the last question:
+
+- What didn't go well and how could it have been avoided?
+- Where did I make negative progress? What happened to cause it?
+- What did I learn?
+
+### Vision
+
+With these three topics in mind what does the ideal near future look like?
+
+- Health (mental, physical)
+- Wealth (career, investments)
+- Relationships (love, friendships, interactions)
+
+Answer the following questions about the ideal near future:
+
+- What of type of Person am I? Who do I want to become?
+- What do I value the most? What are my top priorities?
+- What drives me? What gets me motivated?
+- What is my area of highest contribution?
+- What do I say no to? What is essential to me? How can I stay focused on that?
+- What do I spend the most time with? Who/what will I avoid from now?
+- What is the one big thing I will achieve?
+
+### Execute goals
+
+Based on the last question, break down your big goal:
+
+- To the next quarterly goal (review every 3 months)
+- Define habits and actions to achieve the quarterly goal
+
 ## Fun Stuff
 
 ### Be like nature
