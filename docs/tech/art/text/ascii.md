@@ -125,6 +125,14 @@ This is how it looks like:
 
 ![donut](_donut.gif)
 
+## awk-raycaster
+
+[AWK-raycaster](https://github.com/TheMozg/awk-raycaster) is a pseudo-3D shooter written completely in gawk using raycasting technique.
+
+Clone a copy and run it with gawk using this command: ```gawk-f awkaster.awk```
+
+![awk-raycaster](_awk-raycaster.webp)
+
 ## Befunge
 
 [Befunge](https://esolangs.org/wiki/Befunge) by [Chris Pressey](https://catseye.tc/article/General_Information#chris-pressey) is an esoteric programming languages. Here is a pseudo-quine which uses some Befunge-97 commands:
