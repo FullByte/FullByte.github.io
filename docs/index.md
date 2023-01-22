@@ -11,7 +11,7 @@ Y88b  d88P .d8""8b. 888  d8888888888 888   d88P  888
  "Y8888P"  888  888 888 d88P     888 8888888P" 8888888 
 ```
 
-Publishing my projects and notes has been great exercise for <a rel="me" href="https://social.lol/@yolo">Mastodon</a>. As longs as this works well for me I will continue doing so :)
+Publishing my projects and notes has been great exercise for <a rel="me" href="https://social.lol/@yolo">me</a>. As longs as this works well for me I will continue doing so :)
 
 The content of [this site](/about/0xfab1.net) may appear random as it deals with whatever I find interesting and noteworthy ```¯\_(ツ)_/¯```.
 
