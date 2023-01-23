@@ -1,8 +1,6 @@
 # Clockwork Gameshell
 
-Wiki: <https://wiki.clockworkpi.com>
-
-I am using ClockworkOS version 0.5.
+I am using ClockworkOS version 0.5 on my [clockworkpi](https://www.clockworkpi.com/).
 
 - Default user: cpi
 - Default password: cpi

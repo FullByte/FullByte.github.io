@@ -2,7 +2,7 @@
 
 ## Keyboard
 
-Base keyboard is an [EPOMAKER](https://epomaker.com/) [SKYLOONG SK64](https://epomaker.com/products/sk64abs)
+Base keyboard is an [EPOMAKER](https://epomaker.com/) SKYLOONG SK64.
 
 ![epomaker-skyloong-sk64](_epomaker-skyloong-sk64.png)
 
