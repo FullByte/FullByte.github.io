@@ -105,14 +105,14 @@ router.match('/:path*', ({ serveStatic, cache }) => {
 export default router
 ```
 
-Init (run once) using Node.js [npx](https://nodejs.dev/learn/the-npx-nodejs-package-runner) and [nvm](https://github.com/nvm-sh/nvm):
+Init (run once) using Node.js [npx](https://docs.npmjs.com/cli/v7/commands/npx) and [nvm](https://github.com/nvm-sh/nvm):
 
 ``` sh
 nvm use 14
 npx @layer0/cli@latest init --name layer0.0xfab1.net --environment production --origin layer0.0xfab1.net --deploy
 ```
 
-Deploy page (run for every update) using Node.js [npx](https://nodejs.dev/learn/the-npx-nodejs-package-runner) and [nvm](https://github.com/nvm-sh/nvm):
+Deploy page (run for every update) using Node.js npx and [nvm](https://github.com/nvm-sh/nvm):
 
 ``` sh
 nvm use 14

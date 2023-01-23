@@ -50,7 +50,7 @@ thumbsup --input ./source --output ./gallery
 
 ## MkDocs
 
-[MkDocs](https://github.com/MkDocs/MkDocs/) is a great way to host a simple, static website. This website uses [Material for MkDocs](https://github.com/squidfunk/MkDocs-material). Material for MkDocs is a theme for MkDocs, a static site generator geared towards (technical) project documentation.
+[MkDocs](https://github.com/MkDocs/MkDocs/) is a great way to host a simple, static website. This website uses [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/). Material for MkDocs is a theme for MkDocs, a static site generator geared towards (technical) project documentation.
 
 Use docker or python to quickly create and host a static website:
 
@@ -85,7 +85,7 @@ Overriding template blocks: <https://www.mkdocs.org/user-guide/customizing-your-
 
 ### Extensions
 
-[MkDocs-material](https://squidfunk.github.io/MkDocs-material/) is a [great theme](https://squidfunk.github.io/MkDocs-material/setup/changing-the-colors/) and comes [integrated](https://squidfunk.github.io/MkDocs-material/reference/abbreviations/) with the [pymkdown extensions](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/), which lets you add tabbed code blocks, progress bars, task lists, keyboard symbols and more.
+[MkDocs](https://github.com/MkDocs/MkDocs/) is a great way to host a simple, static website. This website uses [Material for MkDocs](https://github.com/squidfunk/MkDocs-material). Material for MkDocs is a theme for MkDocs, a static site generator geared towards (technical) project documentation.
 
 Further plugins:
 

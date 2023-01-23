@@ -1,7 +1,5 @@
 # USB Armory
 
-Source Image: <https://dev.inversepath.com/download/usbarmory/>
-
 ## Windows 10 Driver Issue
 
 Driver is installed but found as "Serial" "USB device(COM3)" in the device manager

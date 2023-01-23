@@ -16,8 +16,8 @@ Add ".atom" to a given commit link to get an RSS Reader update on a given file/f
 
 For example:
 
-- Link: <https://github.com/FullByte/FullByte.github.io/commits/master>
-- RSS Feed: <https://github.com/FullByte/FullByte.github.io/commits/master.atom>
+- Link: <https://github.com/FullByte/FullByte.github.io/commits/main>
+- RSS Feed: <https://github.com/FullByte/FullByte.github.io/commits/main.atom>
 
 Add the atom link to your rss feed reader to get notified on updates.
 
