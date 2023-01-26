@@ -124,3 +124,13 @@ It all start with the first chick
 This process diagram vizulizes the steps involved:
 
 ![image](_chicks-respect-money.drawio.svg)
+
+## Protest
+
+It is not easy to protest in a smart and effectiv way.
+
+Here are some examples I like to create awareness to given Problem:
+
+- [Ugly Gerry](https://fontsarena.com/ugly-gerry/) is a [free font](_gerry.otf.zip) created with real US congressional districts. The name comes from gerrymandering, the process that made possible such weird shapes.
+
+- [Volkswagen](https://github.com/auchenberg/volkswagen) can be integrated in your CI process. It detects when your tests are being run in a CI server, and makes them pass. Volkswagen uses a defeat device to detect when it's being tested in a CI server and will automatically reduce errors to an acceptable level for the tests to pass. This will allow you to spend less time worrying about testing and more time enjoying the good life as a trustful software developer.
