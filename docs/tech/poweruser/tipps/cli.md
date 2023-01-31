@@ -63,6 +63,7 @@
 
 - Wikipedia: <https://github.com/yashsinghcodes/fetch>
 - Hacker News: [haxor-news](https://github.com/donnemartin/haxor-news) or [circumflex](https://github.com/bensadeh/circumflex)
+- RSS Reader: [Newsboat](https://github.com/newsboat/newsboat)
 
 ## Office Tools
 
