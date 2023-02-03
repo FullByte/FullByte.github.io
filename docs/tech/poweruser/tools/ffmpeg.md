@@ -224,8 +224,8 @@ ffmpeg -f concat -i input.txt -vsync vfr -pix_fmt yuv420p output.mp4
 - GIF to MP4 alt: ```ffmpeg -i input.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" output.mp4```
 - MP4 to GIF: ```ffmpeg -i input.mp4 -vf "fps=12,scale=480:-1:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop 0 output.gif```
 - VOB to MKV: ```ffmpeg -analyzeduration 100M -probesize 100M -i input.vob -map 0:1 -map 0:2 -codec:v libx264 -crf 21 -codec:a libmp3lame -qscale:a 2 -threads 10 output.mkv```
-- MP$ to webp: ```ffmpeg -i input.mp4 -vf "fps=30,scale=720:-1:flags=lanczos" -vcodec libwebp -lossless 0 -compression_level 6 -q:v 50 -loop 0 -preset picture -an -vsync 0 output.webp```
-- MP4 to AV1:
+- MP4 to webp: ```ffmpeg -i input.mp4 -vf "fps=30,scale=720:-1:flags=lanczos" -vcodec libwebp -lossless 0 -compression_level 6 -q:v 50 -loop 0 -preset picture -an -vsync 0 output.webp```
+- MOV to MP4: ```ffmpeg -i input.mov -vcodec h264 -acodec mp2 output.mp4```
 
 ``` sh
 # Pass 1
