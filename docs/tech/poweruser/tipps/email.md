@@ -161,7 +161,7 @@ Host : _dmarc
 Value: v=STSv1; id=20220202T000000;
 ```
 
-File name `mta-sts.txt` reachable over https://mta-sts.0xfab1.net/.well-known/mta-sts.txt
+File name `mta-sts.txt` reachable over <https://mta-sts.0xfab1.net/mta-sts.txt>
 
 ``` txt
 version: STSv1

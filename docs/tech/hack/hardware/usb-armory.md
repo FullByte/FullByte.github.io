@@ -1,10 +1,13 @@
 # USB Armory
 
+<https://inversepath.com/usbarmory>
+<https://github.com/usbarmory/armory-boot>
+<https://groups.google.com/g/usbarmory?pli=1>
+
 ## Windows 10 Driver Issue
 
 Driver is installed but found as "Serial" "USB device(COM3)" in the device manager
 "Update" the driver an use this instead: <http://web1.moddevices.com/shared/mod-duo-rndis.zip>
-Alternative Guide: <https://github.com/ev3dev/ev3dev/wiki/Setting-Up-Windows-USB-Ethernet-Networking>
 
 ## Connect to USB armory
 

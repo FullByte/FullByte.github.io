@@ -61,7 +61,6 @@ This website is hosted/built using the following services:
 | [cloudflare](https://www.cloudflare.com/)                | [0xfab1@cloudflare](https://fullbyte-github-io.pages.dev)             | <https://cloudflare.0xfab1.net/>  |
 | [Render](https://render.com/)                            | [0xfab1@render](https://zeroxfab1.onrender.com)                       | <https://render.0xfab1.net>       |
 | [Railway](https://railway.app)                           | [0xfab1@railway](https://fullbytegithubio-production.up.railway.app/) | <https://railway.0xfab1.net>      |
-| [koyeb](https://app.koyeb.com)                           | [0xfab1@koyeb](https://0xfab1-fullbyte.koyeb.app/)                    | <https://koyeb.0xfab1.net>        |
 | [AWS S3](https://aws.amazon.com/s3/)                     | TODO                                                                  | TODO                              |
 | [Gitlab Pages](https://about.gitlab.com)                 | TODO                                                                  | TODO                              |
 
@@ -77,6 +76,7 @@ I tried these services but they didn't suit me for my deployment at the time tes
 - [Qovery](https://console.qovery.com) - looks great but didn't get it to work for simple static websites
 - [Statically](https://statically.io) - great for one-pagers, not suitable for 0xfab1.net
 - [Linode](https://www.linode.com) - no free option
+- [koyeb](https://app.koyeb.com) - account closed for unknown reason
 
 *happy to learn from you how I can use them using a simple, automated deployment method for my static website :)
 
