@@ -4,22 +4,31 @@ First recorded ZoMo event happened in 30.11.2015.
 
 ## ZoMo Games
 
-Action
+Next Big Game
+
+- Civilization (done)
+- Stellaris
+- Europa Universalis 4
+
+If not everyone can make it
+
+- Gloomhaven
+- Northgard
+- AoE II
+- Asches
+- Dungeons 3
+- Terraforming Mars
+
+Other games
 
 - Alien Swarm - Reactive Drop
 - Verdun
 - Vermintide II
-
-Strategy
-
 - Age of Empires II Definitive Edition
 - Ashes of the Singularity: Escalation
 - Dungeons 3
 - Offworld Trading Company
 - Planetary Annihilation: TITANS
-
-Heavy Strategy
-
 - Europa Universalis IV
 - Stellaris
 
