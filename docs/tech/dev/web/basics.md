@@ -177,7 +177,6 @@ Lern CSS
 CSS Tools
 
 - <http://www.patternify.com/>
-- <http://layerstyles.org/builder.html>
 - <http://css3generator.com/>
 - <https://3dbook.xyz/>
 - <https://spritegen.website-performance.org/>

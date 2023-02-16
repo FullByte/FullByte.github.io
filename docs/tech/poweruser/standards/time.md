@@ -128,12 +128,6 @@ The Lunar year consists of twelve days, named after the first men who walked on 
 
 On the moon you have about 15 days of continuous daylight and then 15 days of total darkness. So, a "day" on the Moon, would correspond to about a month or 29.5 Earth-days. Once, about every 29 days, you have a full moon, which is "noon" on the center of the disk. This is also called the synodic month. So a day on the moon, counting from noon to noon, lasts about 29.27 to 29.83 Earth days. Neil Armstrong set foot on the Moon surface on July 21th 1969 at 02:56:15 UT, and this is the obvious choice for a point in time for the calendar to start. So, this is Year 1, day 1 cycle 1, 00:00:00.
 
-You can use this tool to convert a time to lunar time: <http://lunarclock.org/convert-to-lunar-standard-time.php>
-
-Sources:
-
-- <http://lunarclock.org/>
-
 ## Metric Time
 
 | Measure | Time as we Know it                          | Metric Time Usage                            |

@@ -22,7 +22,6 @@ DevOps:
 - Microsoft Teams Portal <https://teams.microsoft.com>
 - Azure Actice Directory: <https://aad.portal.azure.com>
 
-
 ## Architecture
 
 - Getting started overview: <https://github.com/ricmmartins/AzureGovernance>
@@ -125,7 +124,7 @@ Overview of links to regularly check to stay up-to-date on Azure.
 - Azure Blog Brent Stineman: [Link](https://brentdacodemonkey.wordpress.com/) + [Feed](https://brentdacodemonkey.wordpress.com/feed/)
 - Azure Blog "we do azure": [Link](https://wedoazure.ie/) + [Feed](https://wedoazure.ie/feed)
 - Last week in Azure: [Link](https://azure.microsoft.com/en-us/blog/topics/last-week-in-azure/) + [Feed](https://azurecomcdn.azureedge.net/en-us/blog/topics/last-week-in-azure/feed/)
-- Azure Friday: [Link](https://azure.microsoft.com/en-us/resources/videos/azure-friday) + [Feed](https://s.ch9.ms/Shows/Azure-Friday/feed/mp4high)
+- Azure Friday: [Link](https://azure.microsoft.com/en-us/resources/videos/azure-friday)
 - Cloud Expert: [Link](http://azurecloud.expert/category/news/) + [Feed](http://azurecloud.expert/feed/)
 - Microsoft Open Source: [Link](https://cloudblogs.microsoft.com/opensource/) + [Feed](https://cloudblogs.microsoft.com/opensource/feed)
 - Microsoft .NET Blog: [Link](https://devblogs.microsoft.com/dotnet/) + [Feed](https://devblogs.microsoft.com/dotnet/feed)

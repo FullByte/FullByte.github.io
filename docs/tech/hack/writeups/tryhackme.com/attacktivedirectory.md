@@ -75,7 +75,7 @@ Enumerate port 139/445 with```enum4linux -U -o 10.10.12.33```
 
 ??? output "enum4linux output"  
     ``` txt
-    Starting enum4linux v0.8.9 ( http://labs.portcullis.co.uk/application/enum4linux/ ) on Thu Aug 19 15:24:22 2021
+    Starting enum4linux v0.8.9 ( labs.portcullis.co.uk/application/enum4linux/ ) on Thu Aug 19 15:24:22 2021
 
     ==========================
     |    Target Information    |
