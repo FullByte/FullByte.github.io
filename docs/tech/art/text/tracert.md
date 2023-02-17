@@ -23,7 +23,7 @@ output "Tetris-traceroute"
 
 ## Star Wars
 
-- Link: <https://beaglenetworks.net/post/42707829171/star-wars-traceroute>
+- Old link: beaglenetworks.net/post/42707829171/star-wars-traceroute
 - Use: ```traceroute -m 100 216.81.59.173 | awk '{print $2}'```
 
 output "star-wars-traceroute"
