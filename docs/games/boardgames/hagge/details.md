@@ -1,6 +1,8 @@
-# Statistics
+# Details
 
-## Spielkarten
+## Statistics
+
+### Spielkarten
 
 Fortgeschritte Halli-Galli-Spieler errechnen parallel zum Spielgeschehen blitzschnell die Wahrscheinlichkeiten für ein gültiges Paar beim nächsten Zug. Dies steigert die Reaktionsfähigkeit in brenzligen Situationen. Kenner beziehen hierbei auch die unterschiedlichen Kartenrückseiten der beiden Spiele mit ein. Als Einstieg in die Welt der Stochastik dient diese Übersicht:
 

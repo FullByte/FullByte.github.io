@@ -1,5 +1,13 @@
 # Examples
 
+## Notation
+
+The standard [algebraic notation for chess](https://en.wikipedia.org/wiki/Algebraic_notation_(chess)) also works for chessacre.
+
+Addtional chessacre fields are referred to as line 0 and 9 as illustrated below:
+
+![algebraic-notation](_algebraic-notation.drawio.svg)
+
 ## Explode
 
 Once activated, the explosion will kill all figures (own and enemy) within the radius. Exception are figures with the protect ability. These figures will loose their protect ability.

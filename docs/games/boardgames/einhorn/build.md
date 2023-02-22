@@ -1,4 +1,6 @@
-# Making the Game
+# Build
+
+Building the game
 
 ## Self-made version
 
