@@ -2,10 +2,10 @@
 
 | What          | Where |
 |---------------|-------|
-| Official Page |       |
-| Source        |       |
-| Download      |       |
-| Install       |       |
+| Official Page | <https://steampowered.com/|>
+| Download      |   <https://store.steampowered.com/about/>    |
+| Install (Win)      |choco install steam|
+| Install (Deb)      |sudo apt install steam|
 
 ## CLI
 
