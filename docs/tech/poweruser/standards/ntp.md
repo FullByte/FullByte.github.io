@@ -7,7 +7,7 @@
 |  :9   @   3:  |
 |  :8       4;  |
 '. '..7 6 5..' .'
- ~-------------~  ldb
+ ~-------------~ 
 ```
 
 List of NTP Servers:
@@ -53,6 +53,7 @@ List of NTP Servers:
 | fu-berlin                   | zeit.fu-berlin.de              |     |
 | gatech                      | navobs1.gatech.edu             |     |
 | Georgia State University    | ntp.gsu.edu                    |     |
+| google                      | time.google.com               |     |
 | google                      | time1.google.com               |     |
 | google                      | time2.google.com               |     |
 | google                      | time3.google.com               |     |
