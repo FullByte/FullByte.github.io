@@ -22,6 +22,13 @@ Recovery Mode
 3. Select Recovery Mode and press the Power button
 4. If you are trying to get into recovery mode, and see an android on his back with No Command, then press and hold Power, then tap Volume Up once, then release Power. This will display the Recovery Mode Menu
 
+## Unlock bootloader
+
+``` sh
+adb -d reboot bootloader
+fastboot oem unlock
+```
+
 ## Delete an app on your android phone
 
 Run these commands to delete a specific app <package name>.
@@ -42,4 +49,13 @@ adb push cm12.zip /sdcard/
 adb reboot bootloader
 fastboot oem unlock
 fastboot flash recovery twrp.img
+```
+
+## Troubleshooting
+
+On Windows, if the drivers you have are not signed run this to accept unsigned drivers. Not recommended but possibly the only option. Requires a reboot.
+
+``` sh
+bcdedit.exe -set TESTSIGNING OFF
+bcdedit.exe -set loadoptions ENABLE_INTEGRITY_CHECKS
 ```
