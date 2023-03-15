@@ -1,5 +1,13 @@
 # Laser cutter
 
+My work environment:
+
+![LaserCutter](_LaserCutter.jpg)
+
+Some example results:
+
+![LaserCutterResults](_LaserCutterResults.jpg)
+
 ## EpilogZing 6040
 
 The Lasercutter [EpilogZing](https://www.epiloglaser.de/) 6040 is a 40 Watt CO2-Laser.
@@ -73,13 +81,15 @@ This script installs all requirements using chocolatey, python-pip and downloads
 # Install/Update tools
 if (!(Test-Path "$($env:ProgramData)\chocolatey\choco.exe")) { Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1')) }
 choco install -y python git
-python -m pip install --upgrade pip 
-pip install Markdown lxml affine
 
 # Install/Update boxes
 $boxes = "${PSScriptRoot}\boxes" 
 if (Test-Path $boxes) { git --work-tree=$boxes --git-dir=$boxes\.git pull }
 else { git clone https://github.com/florianfesti/boxes.git $boxes } 
+
+# Install dependencies
+python -m pip install --upgrade pip 
+pip install -r $boxes\requirements.txt
 
 # Run Boxes
 Start-Process python $boxes\scripts\boxesserver
@@ -90,6 +100,23 @@ One-liner executing the code above:
 
 ``` ps1
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/scripts/main/powershell/boxes.py/start_boxes.ps1'))
+```
+
+If you have everything you need in place and just want to start boxes.py run this command from the main folder of boxey.py, then  open <http://localhost:8000>
+
+Windows
+
+``` py
+pip install -r "boxes\requirements.txt"
+python "boxes\scripts\boxesserver"
+```
+
+Linux
+
+``` py
+apt-get update
+pip install -r "boxes/requirements.txt"
+python3 "boxes/scripts/boxesserver"
 ```
 
 ## Project Ideas
