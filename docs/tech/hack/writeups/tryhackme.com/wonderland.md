@@ -6,46 +6,48 @@ These notes are from a challenge I did @[tryhackme](https://tryhackme.com) calle
 
 Let's scan for open ports first: ```nmap -sC -sV 10.10.28.31```
 
-??? output "Nmap output"
-    ``` txt
-    Nmap scan report for 10.10.28.31
-    Host is up (0.075s latency).
-    Not shown: 998 closed ports
-    PORT   STATE SERVICE VERSION
-    22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-    | ssh-hostkey:
-    |   2048 8e:ee:fb:96:ce:ad:70:dd:05:a9:3b:0d:b0:71:b8:63 (RSA)
-    |   256 7a:92:79:44:16:4f:20:43:50:a9:a8:47:e2:c2:be:84 (ECDSA)
-    |_  256 00:0b:80:44:e6:3d:4b:69:47:92:2c:55:14:7e:2a:c9 (ED25519)
-    80/tcp open  http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
-    |_http-title: Follow the white rabbit.
-    Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+Nmap output
 
-    Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-    Nmap done: 1 IP address (1 host up) scanned in 19.20 seconds
-    ```
+``` txt
+Nmap scan report for 10.10.28.31
+Host is up (0.075s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey:
+|   2048 8e:ee:fb:96:ce:ad:70:dd:05:a9:3b:0d:b0:71:b8:63 (RSA)
+|   256 7a:92:79:44:16:4f:20:43:50:a9:a8:47:e2:c2:be:84 (ECDSA)
+|_  256 00:0b:80:44:e6:3d:4b:69:47:92:2c:55:14:7e:2a:c9 (ED25519)
+80/tcp open  http    Golang net/http server (Go-IPFS json-rpc or InfluxDB API)
+|_http-title: Follow the white rabbit.
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 19.20 seconds
+```
 
 Let's search for paths on the webpage on port 80: ```gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.28.31:80```
 
-??? output "Gobuster output"
-    ``` txt
-    Gobuster v3.1.0
-    by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
-    ===============================================================
-    [+] Url:                     http://10.10.28.31:80
-    [+] Method:                  GET
-    [+] Threads:                 10
-    [+] Wordlist:                /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
-    [+] Negative Status codes:   404
-    [+] User Agent:              gobuster/3.1.0
-    [+] Timeout:                 10s
-    ===============================================================
-    2021/10/21 16:46:38 Starting gobuster in directory enumeration mode
-    ===============================================================
-    /img                  (Status: 301) [Size: 0] [--> img/]
-    /r                    (Status: 301) [Size: 0] [--> r/]
-    /poem                 (Status: 301) [Size: 0] [--> poem/]
-    ```
+Gobuster output
+
+``` txt
+Gobuster v3.1.0
+by OJ Reeves (@TheColonial) & Christian Mehlmauer (@firefart)
+===============================================================
+[+] Url:                     http://10.10.28.31:80
+[+] Method:                  GET
+[+] Threads:                 10
+[+] Wordlist:                /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt
+[+] Negative Status codes:   404
+[+] User Agent:              gobuster/3.1.0
+[+] Timeout:                 10s
+===============================================================
+2021/10/21 16:46:38 Starting gobuster in directory enumeration mode
+===============================================================
+/img                  (Status: 301) [Size: 0] [--> img/]
+/r                    (Status: 301) [Size: 0] [--> r/]
+/poem                 (Status: 301) [Size: 0] [--> poem/]
+```
 
 ## Steganography
 
@@ -88,26 +90,27 @@ Viewing the HTML code we see:
 
 Let's try to login using those credentials: `ssh alice@10.10.28.31`
 
-??? output "ssh login"
-    ``` txt
-    Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-101-generic x86_64)
+SSH login output
 
-    * Documentation:  https://help.ubuntu.com
-    * Management:     https://landscape.canonical.com
-    * Support:        https://ubuntu.com/advantage
+``` txt
+Welcome to Ubuntu 18.04.4 LTS (GNU/Linux 4.15.0-101-generic x86_64)
 
-    System information as of Thu Oct 21 19:14:20 UTC 2021
+* Documentation:  https://help.ubuntu.com
+* Management:     https://landscape.canonical.com
+* Support:        https://ubuntu.com/advantage
 
-    System load:  0.0                Processes:           85
-    Usage of /:   18.9% of 19.56GB   Users logged in:     0
-    Memory usage: 31%                IP address for eth0: 10.10.28.31
-    Swap usage:   0%
+System information as of Thu Oct 21 19:14:20 UTC 2021
 
-    0 packages can be updated.
-    0 updates are security updates.
+System load:  0.0                Processes:           85
+Usage of /:   18.9% of 19.56GB   Users logged in:     0
+Memory usage: 31%                IP address for eth0: 10.10.28.31
+Swap usage:   0%
 
-    Last login: Mon May 25 16:37:21 2020 from 192.168.170.1
-    ```
+0 packages can be updated.
+0 updates are security updates.
+
+Last login: Mon May 25 16:37:21 2020 from 192.168.170.1
+```
 
 It is strange to see root.txt in the folder of alice.```find ./ -type f -iname "user.txt"``` doesn't reveal anything. The hint "Everything is upside down here." means if root.txt is here, maybe user.txt is under /root. We can directly read user.txt by running```cat /root/user.txt```. lol...
 
@@ -125,15 +128,16 @@ for i in range(10):
 
 Running `sudo -l` shows we can run `walrus_and_the_carpenter.py` as rabbit:
 
-??? output "ssh login"
-    ``` txt
-    Matching Defaults entries for alice on wonderland:
-        env_reset, mail_badpass,
-        secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+SSH login output
 
-    User alice may run the following commands on wonderland:
-        (rabbit) /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
-    ```
+``` txt
+Matching Defaults entries for alice on wonderland:
+    env_reset, mail_badpass,
+    secure_path=/usr/local/sbin\:/usr/local/bin\:/usr/sbin\:/usr/bin\:/sbin\:/bin\:/snap/bin
+
+User alice may run the following commands on wonderland:
+    (rabbit) /usr/bin/python3.6 /home/alice/walrus_and_the_carpenter.py
+```
 
 To escalate privileges we can misuse the fact that we can run `walrus_and_the_carpenter.py` by creating our own `random.py` with the following content to overwrite the random function imported and called in `walrus_and_the_carpenter.py`
 
@@ -176,117 +180,116 @@ Ask very nicely, and I will give you some tea while you wait for him
 
 Let's copy `teaParty` to the kali machine and view it in detail with `strings teaParty`:
 
-??? output "strings teaParty"
-    Serving teaParty to my kali machine
+Serving teaParty to my kali machine
 
-    ``` txt
-    python3 -m http.server
-    Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
-    10.9.193.173 - - [21/Oct/2021 19:59:25] "GET /teaParty HTTP/1.1" 200 -
-    ```
+``` txt
+python3 -m http.server
+Serving HTTP on 0.0.0.0 port 8000 (http://0.0.0.0:8000/) ...
+10.9.193.173 - - [21/Oct/2021 19:59:25] "GET /teaParty HTTP/1.1" 200 -
+```
 
-    Downloading teaParty file
+Downloading teaParty file
 
-    ``` txt
-    wget 10.10.28.31:8000/teaParty
-    --2021-10-21 15:59:24--  http://10.10.28.31:8000/teaParty
-    Connecting to 10.10.28.31:8000... connected.
-    HTTP request sent, awaiting response... 200 OK
-    Length: 16816 (16K) [application/octet-stream]
-    Saving to: ‘teaParty’
+``` txt
+wget 10.10.28.31:8000/teaParty
+--2021-10-21 15:59:24--  http://10.10.28.31:8000/teaParty
+Connecting to 10.10.28.31:8000... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 16816 (16K) [application/octet-stream]
+Saving to: ‘teaParty’
 
-    teaParty                   100%[========================================>]  16.42K  --.-KB/s    in 0.02s
+teaParty                   100%[========================================>]  16.42K  --.-KB/s    in 0.02s
 
-    2021-10-21 15:59:24 (895 KB/s) - ‘teaParty’ saved [16816/16816]
-    ```
+2021-10-21 15:59:24 (895 KB/s) - ‘teaParty’ saved [16816/16816]
+```
 
-    Run```strings teaParty```
+Run```strings teaParty```
 
-    ``` txt
-    /lib64/ld-linux-x86-64.so.2
-    2U~4
-    libc.so.6
-    setuid
-    puts
-    getchar
-    system
-    __cxa_finalize
-    setgid
-    __libc_start_main
-    GLIBC_2.2.5
-    _ITM_deregisterTMCloneTable
-    __gmon_start__
-    _ITM_registerTMCloneTable
-    u/UH
-    []A\A]A^A_
-    Welcome to the tea party!
-    The Mad Hatter will be here soon.
-    /bin/echo -n 'Probably by ' && date --date='next hour' -R
-    Ask very nicely, and I will give you some tea while you wait for him
-    Segmentation fault (core dumped)
-    ;*3$"
-    GCC: (Debian 8.3.0-6) 8.3.0
-    crtstuff.c
-    deregister_tm_clones
-    __do_global_dtors_aux
-    completed.7325
-    __do_global_dtors_aux_fini_array_entry
-    frame_dummy
-    __frame_dummy_init_array_entry
-    teaParty.c
-    __FRAME_END__
-    __init_array_end
-    _DYNAMIC
-    __init_array_start
-    __GNU_EH_FRAME_HDR
-    _GLOBAL_OFFSET_TABLE_
-    __libc_csu_fini
-    _ITM_deregisterTMCloneTable
-    puts@@GLIBC_2.2.5
-    _edata
-    system@@GLIBC_2.2.5
-    __libc_start_main@@GLIBC_2.2.5
-    __data_start
-    getchar@@GLIBC_2.2.5
-    __gmon_start__
-    __dso_handle
-    _IO_stdin_used
-    __libc_csu_init
-    __bss_start
-    main
-    setgid@@GLIBC_2.2.5
-    __TMC_END__
-    _ITM_registerTMCloneTable
-    setuid@@GLIBC_2.2.5
-    __cxa_finalize@@GLIBC_2.2.5
-    .symtab
-    .strtab
-    .shstrtab
-    .interp
-    .note.ABI-tag
-    .note.gnu.build-id
-    .gnu.hash
-    .dynsym
-    .dynstr
-    .gnu.version
-    .gnu.version_r
-    .rela.dyn
-    .rela.plt
-    .init
-    .plt.got
-    .text
-    .fini
-    .rodata
-    .eh_frame_hdr
-    .eh_frame
-    .init_array
-    .fini_array
-    .dynamic
-    .got.plt
-    .data
-    .bss
-    .comment
-    ```
+``` txt
+/lib64/ld-linux-x86-64.so.2
+2U~4
+libc.so.6
+setuid
+puts
+getchar
+system
+__cxa_finalize
+setgid
+__libc_start_main
+GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+__gmon_start__
+_ITM_registerTMCloneTable
+u/UH
+[]A\A]A^A_
+Welcome to the tea party!
+The Mad Hatter will be here soon.
+/bin/echo -n 'Probably by ' && date --date='next hour' -R
+Ask very nicely, and I will give you some tea while you wait for him
+Segmentation fault (core dumped)
+;*3$"
+GCC: (Debian 8.3.0-6) 8.3.0
+crtstuff.c
+deregister_tm_clones
+__do_global_dtors_aux
+completed.7325
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+teaParty.c
+__FRAME_END__
+__init_array_end
+_DYNAMIC
+__init_array_start
+__GNU_EH_FRAME_HDR
+_GLOBAL_OFFSET_TABLE_
+__libc_csu_fini
+_ITM_deregisterTMCloneTable
+puts@@GLIBC_2.2.5
+_edata
+system@@GLIBC_2.2.5
+__libc_start_main@@GLIBC_2.2.5
+__data_start
+getchar@@GLIBC_2.2.5
+__gmon_start__
+__dso_handle
+_IO_stdin_used
+__libc_csu_init
+__bss_start
+main
+setgid@@GLIBC_2.2.5
+__TMC_END__
+_ITM_registerTMCloneTable
+setuid@@GLIBC_2.2.5
+__cxa_finalize@@GLIBC_2.2.5
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.ABI-tag
+.note.gnu.build-id
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.plt.got
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.dynamic
+.got.plt
+.data
+.bss
+.comment
+```
 
 We see the program calls `date` in this line: ```/bin/echo -n 'Probably by ' && date --date='next hour' -R```. Just like with "random" from above, let's create our own `date` file e.g.:
 

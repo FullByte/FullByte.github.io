@@ -67,7 +67,7 @@ While tenkeyless gets its name from 10 number keys on the Numpad, tenkeyless key
 
 Wireless Keyboard
 
-Bluetooth vs ???
+Bluetooth vs ?
 
 ### Backlit keyboard
 

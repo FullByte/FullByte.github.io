@@ -10,23 +10,22 @@ We know there is a website hosting dog and cat pictures. Let's have a look...
 
 Running nmap to search for available services and versions: ```nmap -sC -sV 10.10.46.238```
 
-??? output "Nmap output"
-    Result: two ports open SSH on 22 and HTTP on 80
+``` txt
+Host is up (0.021s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey:
+|   2048 24:31:19:2a:b1:97:1a:04:4e:2c:36:ac:84:0a:75:87 (RSA)
+|   256 21:3d:46:18:93:aa:f9:e7:c9:b5:4c:0f:16:0b:71:e1 (ECDSA)
+|_  256 c1:fb:7d:73:2b:57:4a:8b:dc:d7:6f:49:bb:3b:d0:20 (ED25519)
+80/tcp open  http    Apache httpd 2.4.38 ((Debian))
+|_http-server-header: Apache/2.4.38 (Debian)
+|_http-title: dogcat
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+```
 
-    ``` txt
-    Host is up (0.021s latency).
-    Not shown: 998 closed ports
-    PORT   STATE SERVICE VERSION
-    22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-    | ssh-hostkey:
-    |   2048 24:31:19:2a:b1:97:1a:04:4e:2c:36:ac:84:0a:75:87 (RSA)
-    |   256 21:3d:46:18:93:aa:f9:e7:c9:b5:4c:0f:16:0b:71:e1 (ECDSA)
-    |_  256 c1:fb:7d:73:2b:57:4a:8b:dc:d7:6f:49:bb:3b:d0:20 (ED25519)
-    80/tcp open  http    Apache httpd 2.4.38 ((Debian))
-    |_http-server-header: Apache/2.4.38 (Debian)
-    |_http-title: dogcat
-    Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
-    ```
+Result: two ports open SSH on 22 and HTTP on 80
 
 ### gobuster
 
@@ -59,29 +58,28 @@ Apache/2.4.38 (Debian)
 
 Running nikto confirms the apache web server and shows PHP is used: ```nikto -h 10.10.46.238```
 
-??? output "nikto output"
-    ``` sh
-    nikto -h 10.10.46.238
-    - Nikto v2.1.6
-    ---------------------------------------------------------------------------
-    + Target IP:          10.10.46.238
-    + Target Hostname:    10.10.46.238
-    + Target Port:        80
-    + Start Time:         2021-00-00 00:00:00 (GMT-4)
-    ---------------------------------------------------------------------------
-    + Server: Apache/2.4.38 (Debian)
-    + Retrieved x-powered-by header: PHP/7.4.3
-    + The anti-clickjacking X-Frame-Options header is not present.
-    + The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
-    + The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
-    + No CGI Directories found (use '-C all' to force check all possible dirs)
-    + Web Server returns a valid response with junk HTTP methods, this may cause false positives.
-    + OSVDB-3233: /icons/README: Apache default file found.
-    + 7890 requests: 0 error(s) and 6 item(s) reported on remote host
-    + End Time:           2021-00-00 00:00:00 (GMT-4) (326 seconds)
-    ---------------------------------------------------------------------------
-    + 1 host(s) tested
-    ```
+``` sh
+nikto -h 10.10.46.238
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.46.238
++ Target Hostname:    10.10.46.238
++ Target Port:        80
++ Start Time:         2021-00-00 00:00:00 (GMT-4)
+---------------------------------------------------------------------------
++ Server: Apache/2.4.38 (Debian)
++ Retrieved x-powered-by header: PHP/7.4.3
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Web Server returns a valid response with junk HTTP methods, this may cause false positives.
++ OSVDB-3233: /icons/README: Apache default file found.
++ 7890 requests: 0 error(s) and 6 item(s) reported on remote host
++ End Time:           2021-00-00 00:00:00 (GMT-4) (326 seconds)
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
 
 ## Visit website
 

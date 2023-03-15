@@ -58,10 +58,11 @@
 - Background Noise: <https://github.com/JaDogg/noisebox>
 - Spotify: [spotify-tui](https://github.com/Rigellute/spotify-tui) or [ncspot](https://github.com/hrkfdn/ncspot)
 - Visualize audio in the terminal with [paura](https://github.com/tyiannak/paura) ([Example video](https://www.youtube.com/watch?v=YEi9AmA-07s))
+- [Coltrane](https://github.com/pedrozath/coltrane) is a music theory library with a command-line interface
 
 ## Read News
 
-- Wikipedia: <https://github.com/yashsinghcodes/fetch>
+- Wikipedia: [fetch](https://github.com/yashsinghcodes/fetch) or [wik](https://github.com/yashsinghcodes/wik)
 - Hacker News: [haxor-news](https://github.com/donnemartin/haxor-news) or [circumflex](https://github.com/bensadeh/circumflex)
 - RSS Reader: [Newsboat](https://github.com/newsboat/newsboat)
 
@@ -76,10 +77,12 @@
 - CSV pretty printer: <https://github.com/alexhallam/tv>
 - Bits, bytes and address calculator: <https://github.com/jarun/bcal>
 - Code Editor: <https://micro-editor.github.io/>
+- [DOOIT](https://github.com/kraanzu/dooit) is a TUI todo manager
 
 ## Learn
 
 - Flashcards: <https://github.com/TBS1996/speki>
+- [TermTyper](https://github.com/kraanzu/termtyper) is a typing application to level up your fingers!
 
 ## Pictures
 

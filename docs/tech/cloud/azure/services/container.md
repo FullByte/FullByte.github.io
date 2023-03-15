@@ -31,9 +31,9 @@ az acr login --name fab1container --expose-token
 docker login fab1container.azurecr.io
 az acr update -n fab1container --admin-enabled true
 
-docker pull schollz/croc # ???
-docker push fab1container.azurecr.io/croc schollz/croc # ???
-docker tag schollz/croc fab1container.azurecr.io/croc # ???
+docker pull schollz/croc
+docker push fab1container.azurecr.io/croc schollz/croc
+docker tag schollz/croc fab1container.azurecr.io/croc
 
 az acr repository list --name fab1container --output table
 ```
