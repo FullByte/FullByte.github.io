@@ -1,4 +1,9 @@
+
 # Computer
+
+Remember: Don't over-analyze unless you have fun doing so...
+
+![cost-of-analysis](_cost-of-analysis.png)
 
 ## Buy Hardware Helper
 
