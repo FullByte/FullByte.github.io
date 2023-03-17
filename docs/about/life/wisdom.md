@@ -34,6 +34,14 @@ Random
 - In der Menge liegt das Gift.
 - Alles was man besitzt muss man auch pflegen.
 
+### Investment
+
+1. Don't buy, HODL
+
+2. [Ferengi](https://memory-beta.fandom.com/wiki/Ferengi_Rules_of_Acquisition) (Star Trek) [Rules of Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition)
+
+3. [Bogleheads investment philosophy](https://www.bogleheads.org/wiki/Video:Bogleheads%c2%ae_investment_philosophy)
+
 ## Reflection
 
 ### What went well?
