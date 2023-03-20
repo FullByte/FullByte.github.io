@@ -76,3 +76,30 @@ gpg --keyserver hkp://keyserver.ubuntu.com --search-key 'fabian@fromm.rocks'
 ```
 
 Alternativly use the webinterface e.g. <https://keys.mailvelope.com/pks/lookup?op=get&search=email@example.com>
+
+## Empty file and no PW
+
+It is possible to use GPG without password and even for an empty file:
+
+```sh
+touch test.txt
+gpg --store --armor test.txt
+```
+
+This creates a file called "test.txt.asc" that looked like this:
+
+```sh
+-----BEGIN PGP MESSAGE-----
+
+owE7zZfEUZJaXKJXUlGSItEdCwA=
+=LlM4
+-----END PGP MESSAGE-----
+```
+
+Decrypting works too :)
+
+```sh
+gpg -d test.txt.asc
+```
+
+... and cat test.txt shows an empty file again :)
