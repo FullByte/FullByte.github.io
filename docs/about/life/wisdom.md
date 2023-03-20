@@ -29,6 +29,10 @@ Goals
 - It's better to finish something than to start something
 - Make goals that you have control over. Accept what you can not control or choose to be unhappy.
 
+Speech
+
+- Never interrupt your enemy when he is making a mistake
+
 Random
 
 - In der Menge liegt das Gift.

@@ -1,10 +1,73 @@
-# QR-Code
+# Lego Builds
+
+## Star Wars
+
+My collection of official Lego Star Wars builds.
+
+TODO
+
+## Rubik's Cube
+
+I built the [LEGO Rubik's Cube Lego](https://rebrickable.com/mocs/MOC-91837/puzzLEGO/working-lego-rubiks-cube-new-revised/#details) MOC Designed by [puzzLEGO](https://rebrickable.com/users/puzzLEGO/mocs/). This is a [video](https://www.youtube.com/watch?v=tolQCt76LBk) on the design. I purchased all parts from one vendor at [bricklink](https://www.bricklink.com).
+
+![lego-rubiks-cube](_lego-rubiks-cube1.jpg)
+
+![lego-rubiks-cube](_lego-rubiks-cube2.jpg)
+
+![lego-rubiks-cube](_lego-rubiks-cube3.jpg)
+
+## Flowers
+
+![_lego-flowers.jpg](_lego-flowers.jpg)
+
+## Pixel-Art
+
+### Creating Pixel Art
+
+[Legofy](https://github.com/JuanPotato/Legofy) makes images look as if they are made out of 1x1 LEGO blocks.
+
+I tested some settings and after 128px the image looks better dither set to "on".
+
+Install legofy with pip:
+
+``` py
+pip install legofy
+```
+
+I tried the following 4 options:
+
+``` sh
+legofy --size 32 --no-dither --palette all 0xfab1.png 0xfab1_lego32.png
+legofy --size 64 --no-dither --palette all 0xfab1.png 0xfab1_lego64.png
+legofy --size 128 --dither --palette all 0xfab1.png 0xfab1_lego128.png
+legofy --size 256 --dither --palette all 0xfab1.png 0xfab1_lego256.png
+```
+
+This gets big and expensive quickly; so lets check when the chosen picture looks good enough:
+
+32x32
+![0xfab1_lego](_0xfab1_lego32.png)
+
+64x64
+![0xfab1_lego](_0xfab1_lego64.png)
+
+128x128
+![0xfab1_lego](_0xfab1_lego128.png)
+
+256x256
+![0xfab1_lego](_0xfab1_lego256.png)
+
+### Building this for real
+
+TODO
+
+## Lego QR-Code
 
 I created a Lego QR Code linking to [0xfab1.net](https://0xfab1.net/ "https://0xfab1.net/") with [Bricklink Studio](https://www.bricklink.com/v3/studio/download.page "https://www.bricklink.com/v3/studio/download.page").
 
 I used [qrious](https://github.com/neocotic/qrious "https://github.com/neocotic/qrious") by [neocotic](https://neocotic.dev/ "https://neocotic.dev/") to create the QR-Code.
 
-## QR Code creation
+### QR Code creation
 
 To match the QR-Code pixels with a valid lego base plate size I tried a few options to find a match.
 
@@ -45,7 +108,7 @@ The next attempt would to go for "https://0xfab1.net". The results are:
 
 The value "https://0xfab1.net" as QR-Code.
 
-## Bricklink Studio
+### Bricklink Studio
 
 I didn't find a cool way to automatically build the QR-Code in Bricklink Studio so I just opened the image of the QR-Codes shared above and rebuilt it using different flat tiles. Classic QR-Codes have black and white pixels so i went with that look and chose a white 50x50 baseplate and used different sized black tiles for the pixels.
 
@@ -60,7 +123,7 @@ as well as this cool video:
 
 [![bricklink studio](_qrcode.webp)](_qrcode.mp4 "download me")
 
-## Bricklink Order
+### Bricklink Order
 
 Fortunately you can import *.io files in Bricklink directly. It will search for sellers based on your preference (e.g. currency, location). The outcome initially was this list since i used as little amount of plates as possible:
 
@@ -86,7 +149,7 @@ Since i didn't re-do the build in Bricklink Studio based on 2x2 tiles I added a 
 | 3068b    | 306801    | 3068b   | Tile 2 x 2 with Groove | 1         | 15           | White     | Solid Colors  | 350 | 48     |
 | 3068b    | 306826    | 3068b   | Tile 2 x 2 with Groove | 11        | 0            | Black     | Solid Colors  | 350 | 48     |
 
-## Delivery and building lego qr-code
+### Delivery and building lego qr-code
 
 All pieces finally arrived and putting it all together was easier and faster than expected.
 I hope i didn't mess up any pixel - well at least scanning the lego works ¯\_(ツ)_/¯
@@ -94,3 +157,28 @@ I hope i didn't mess up any pixel - well at least scanning the lego works ¯\_(�
 This is the final result :)
 
 ![QR-Code for https://0xfab1.net](_lego-qrcode-final.jpg)
+
+## Lego PC
+
+### Keyboard
+
+Base keyboard is an [EPOMAKER](https://epomaker.com/) SKYLOONG SK64.
+
+![epomaker-skyloong-sk64](_epomaker-skyloong-sk64.png)
+
+I purchased lego key caps from [shapeways](https://www.shapeways.com/):
+
+- [2x2 Cherry MX Key Caps](https://www.shapeways.com/product/PQBFDE5ZA/2x2-set-of-20-building-block-cherry-mx-key-caps?optionId=64245335)
+- [Large Building Block Cherry MX Key C](https://www.shapeways.com/product/EAAWYPRN5/0003-set-of-large-building-block-cherry-mx-key-c?optionId=64588160)
+
+I found a small [lego alphabet](https://rebrickable.com/mocs/MOC-48980/nathansonic/smallest-lego-alphabet) template on rebrickable and [tested it for the QWERTZ layout](_lego-dots-alphabet.io). Unfortunantly "W" and "M" are 2x3 spaces and the key caps are only 2x2.
+
+![lego-dots-alphabet.png](_lego-dots-alphabet.png)
+
+### PC
+
+TODO
+
+### Screen
+
+TODO
