@@ -69,3 +69,11 @@ rm -f /etc/teleport.yaml
 rm -f /usr/local/bin/teleport /usr/local/bin/tctl /usr/local/bin/tsh
 rm -rf /usr/local/bin/tctl
 ```
+
+## Update Teleport
+
+Run this to upgrade to the latest version:
+
+``` sh
+sudo apt-get update && sudo apt-get install teleport
+```

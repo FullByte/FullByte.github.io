@@ -1,6 +1,6 @@
 # SCP
 
-### File-Transfer with SCP
+## File-Transfer with SCP
 
 Copying file to host:
 
@@ -21,7 +21,7 @@ Note that if the remote host uses a port other than the default of 22, it can be
 scp -P 666 user@host:directory/SourceFile TargetFile
 ```
 
-### WinSCP
+## WinSCP
 
 | What          | Where |
 |---------------|-------|
@@ -30,7 +30,7 @@ scp -P 666 user@host:directory/SourceFile TargetFile
 | Download      |       |
 | Install       |       |
 
-#### Connect OneDrive over WebDAV
+### Connect OneDrive over WebDAV
 
 - After you log in to your OneDrive account, your URL should be like: <https://onedrive.live.com/?id=root&cid=ABCDEFGHIJKLMNOP>. The ABCDEFGHIJKLMNOP part is your "customer ID". Select it and copy it to the clipboard.
 - Start WinSCP and create a new Login/New site node
@@ -40,11 +40,11 @@ scp -P 666 user@host:directory/SourceFile TargetFile
 - Press the Advanced button to open Advanced site settings dialog and go to Environment > Directories page.
 - Paste your "OneDrive customer ID" into the Remote directory box and add a slash in front of it, i.e. like /ABCDEFGHIJKLMNOP.
 
-#### Script
+### Script
 
 In a commmand prompt run `winscp.com` and login to a session. It is also possible to pass on all commands directly or attach a script with all commands.
 
-**Basic Example:**
+#### Basic Examples
 
 Save this [script](https://winscp.net/eng/docs/scripting) to a file (e.g. WinSCPWebDAVExample.txt)
 
@@ -66,7 +66,7 @@ You can also run this example as a one-liner as follows:
 winscp.com /command "open https://username@webdav.domain.com/" "put copythisfile.txt /path/destination/" "exit"
 ```
 
-**My settings**
+#### My settings
 
 I trigger winscp.com in a batch file as follows:
 
