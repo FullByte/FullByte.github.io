@@ -24,7 +24,7 @@ Add "slub_debug=FP" to the code at the end of the first line (same line)
 Configure bfgminer
 
 ``` sh
-sudo ./bfgminer -S antminer:all -o stratum.bitcoin.cz:3333 -u FullByte.worker1 -p xZ7du2qE --set-device antminer:freq=4F02
+sudo ./bfgminer -S antminer:all -o stratum.bitcoin.cz:3333 -u 0xfab1.worker1 -p xyzdu2ee --set-device antminer:freq=4F02
 ```
 
 Add to autostart
