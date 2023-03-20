@@ -23,7 +23,15 @@ Generally there are few things to say:
 
 ### "ISO vs ANSI"
 
-TODO
+![ANSI-vs-ISO](_keyboard_ANSI-vs-ISO-Keyboard-Layout.jpg)
+
+### Bottom Row
+
+![keyboard-bottom-row-standard](_keyboard-bottom-row-standard.png)
+
+### Profile
+
+![](_keyboard-profile2.png)
 
 ### 100-40% Keyboards
 
@@ -75,15 +83,31 @@ LED, RGB
 
 On/off vs controlled LED per key
 
-## Components
+## Switches
 
-### Key Caps
+### Gateron
 
-**Printing**
+![gateron-switches](_keyboard-gateron-switches.webp)
+
+
+
+## Key Caps
+
+### Form
+
+Rember that depending on the profile the key caps need to be formed differently, depending in which row they are.
+
+![keycap-profile](_keyboard-keycap-profile.png)
+
+Depending on the brand, the key caps may not be standard. In this example there is a logitech cap (left) next to a regular cap (right):
+
+![logitech-vs-standard](_keyboard-logitech-vs-standard-keycaps.jpg)
+
+### Printing
 
 Double-Shot vs Laser Engraved
 
-**Material**
+### Material
 
 ABS vs PBT Keycaps
 
@@ -97,7 +121,7 @@ ABS vs PBT Keycaps
 | Flexible        | Brittle        |
 | Wears Over Time | More Durable   |
 
-**Keycap Profile**
+### Keycap Profile
 
 | Keycap Profile | Description                                                                                       |
 |----------------|---------------------------------------------------------------------------------------------------|
