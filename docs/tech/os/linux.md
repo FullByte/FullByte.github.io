@@ -374,6 +374,7 @@ Alias
 - Disable "Save workspace" promt when closing R: ```alias R='R --no-save'```
 - Tweak df: ```alias df='df -h'```
 - Tweak du: ```alias du='du -h'```
+- Weather: ```alias wetter='curl wttr.in/${1:-hannover}'```
 - Using Exa instead of ls
 
     ``` sh
@@ -455,8 +456,8 @@ More...
 - List open file descriptors (-i flag for network interfaces): ```lsof -i :8080```
 - Stream current disk, network, CPU activity, etc: ```dstat -a```
 - Trace system calls of a program: ```strace -f -e <syscall> <cmd>```
-- Print currently active processes: ``` ps1 aux | head -n20```
-- Visualize process forks: ``` ps1tree```
+- Print currently active processes: ```ps1 aux | head -n20```
+- Visualize process forks: ```ps1tree```
 - Show size on disk for directories and their contents: ```du -ha```
 - List currently open Internet/UNIX sockets and related information```netstat | head -n20```
 - Find hostname for a remote IP address: ```nslookup <IP address>```
@@ -576,7 +577,7 @@ tmux kill-session
 - Display contents of a zipped text file: ```zcat <file.gz>```
 - Copy a file from remote to local server, or vice versa: ```scp <user@remote_host> <local_path>```
 - List Stats For A File: ```stat -x README.md```
-- Securely Remove Files```srm -vz README.md``` or ``` shred -uvz -n 5 README.md```
+- Securely Remove Files```srm -vz README.md``` or ```shred -uvz -n 5 README.md```
 - Securely Remove Files after rm was used: ```sfill -lvz /home```
 - Copying File Contents To System Paste Buffer: ```cat some-file.txt | pbcopy```
 - Exclude A Directory With Find: ```find . -type f -not -path './.git/*' -ctime -10```

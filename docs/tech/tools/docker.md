@@ -52,11 +52,75 @@ Make sure WSL is installed and ready:
 ``` ps1
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+
 wsl --install
 wsl --set-default-version 2
+
 wsl --install Ubuntu
 wsl --set-version Ubuntu 2
 ```
+
+run this in Ubuntu WSL
+
+``` sh
+sudo apt-get update
+sudo apt-get install -y apt-transport-https ca-certificates curl software-properties-common libssl-dev libffi-dev git wget nano
+
+sudo groupadd docker
+sudo usermod -aG docker ${USER}
+
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+sudo apt-get update
+
+sudo apt-get install -y docker-ce containerd.io docker-compose
+sudo update-alternatives --config iptables
+```
+
+Add this to your `~/.profile`
+
+```sh
+if grep -q "microsoft" /proc/version > /dev/null 2>&1; then
+    if service docker status 2>&1 | grep -q "is not running"; then
+        wsl.exe --distribution "${WSL_DISTRO_NAME}" --user root \
+            --exec /usr/sbin/service docker start > /dev/null 2>&1
+    fi
+fi
+```
+
+Test Docker in your Ubuntu WSL:
+
+```sh
+docker run hello-world
+```
+
+In case this didn't work try to restart wsl and try again
+
+```sh
+wsl --shutdown
+```
+
+To communicate containers don't use localhost, point to: [ubuntu terminal]. This is usually the first IP that appears when running this command:
+
+```sh
+ip addr | grep eth0 | grep inet
+```
+
+To ensure docker service is running on startup to workaround having to deal with sudo
+
+```sh
+wsl.exe -u root service docker status || wsl.exe -u root service docker start
+```
+
+To limit ressources create a file in the user's folder `C:\Users\<User>\.wslconfig` and add the following information.
+
+```txt
+[wsl2]
+memory = 4GB # Limits memory
+processors = 2 # Limits virtual processors
+```
+
+Save and restart the `LxssManager` service.
 
 ### Install Docker & Docker-compose on Ubuntu
 
@@ -138,3 +202,39 @@ docker container prune
 ```
 
 And run ```docker image prune -a``` if you want to remove all images linked to stopped containers.
+
+## Create Docker Compose Container
+
+Example docker compose file
+
+```sh
+FROM nginx
+COPY . /usr/share/nginx/html
+
+Build: docker build -t img-static-site-example .
+Run: docker run -it -d -p 80:80 img-static-site-example
+
+docker-compose.yml
+
+version: '3'
+services:
+  web:
+    image: img-static-site-example
+    build: .
+    container_name: my-static-site
+    restart: always
+    ports:
+      - "8080:80"
+```
+
+Build Container(s)
+
+```sh
+docker-compose build
+```
+
+Run Container(s)
+
+```sh
+docker-compose up -d
+```

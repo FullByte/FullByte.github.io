@@ -122,3 +122,19 @@ sudo apt-get install ./name.deb
 ```
 
 [^1]: <https://www.urbandictionary.com/define.php?term=ubuntu>
+
+### Regolith
+
+[Regolith](https://regolith-desktop.com/) runs i3: a popular, fast, and configurable tiling window manager which is great for fast keyboard-driven workflows. Regolith integrates i3 with other desktop components such as i3bar, rofication, gnome-flashback, and ilia to provide a complete desktop interface.
+
+``` sh
+wget -qO - https://regolith-desktop.org/regolith.key | \
+gpg --dearmor | sudo tee /usr/share/keyrings/regolith-archive-keyring.gpg > /dev/null
+echo deb "[arch=amd64 signed-by=/usr/share/keyrings/regolith-archive-keyring.gpg] \
+https://regolith-desktop.org/release-ubuntu-jammy-amd64 jammy main" | \
+sudo tee /etc/apt/sources.list.d/regolith.list
+sudo apt update
+sudo apt install regolith-desktop
+sudo apt upgrade
+sudo shutdown -r now
+```
