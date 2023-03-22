@@ -1,5 +1,9 @@
 # DNS
 
+Rule 53: If you can think of it, someone's done it in the DNS
+
+![google_announcement](_google_announcement.png)
+
 ## Public DNS
 
 A list of public DNS Servers
@@ -73,3 +77,5 @@ Other Lists
 - ISPs per country <https://www.nirsoft.net/countryip/>
 - Root zones: <https://www.internic.net/domain/root.zone>
 - Root Servers: <https://root-servers.org/>
+- <https://www.numprotocol.com/>
+- Rule 53: <https://github.com/pgl/rule53>

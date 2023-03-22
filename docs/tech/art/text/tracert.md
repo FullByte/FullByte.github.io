@@ -1,23 +1,26 @@
 # Tracert
 
-Try this online tool for IPv6 tracert:
+## Tools
+
+Online tools for IPv6 tracert:
 
 - <http://www.berkom.blazing.de/tools/traceroute.cgi>
 - <https://network-tools.com/>
 - <http://www.traceroute6.net/>
 - <http://ipv6.my-addr.com/ipv6-traceroute.php>
 
-Try these tools to create your own tracert art:
+Tools to create your own tracert art:
 
 - <https://github.com/blechschmidt/fakeroute>
 - <https://github.com/antifork/hopfake>
+- <https://github.com/sehaas/fakert>
 
 ## Tetris
 
 Link: trh.milek7.pl (Service no longer available)
 Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
 
-output "Tetris-traceroute"
+Output:
 
 ![tetris.png](_tetris.png)
 
@@ -26,7 +29,7 @@ output "Tetris-traceroute"
 - Old link: beaglenetworks.net/post/42707829171/star-wars-traceroute
 - Use: ```traceroute -m 100 216.81.59.173 | awk '{print $2}'```
 
-output "star-wars-traceroute"
+Output:
 
 ``` txt
 *
@@ -85,7 +88,7 @@ FIN
 - Link: tng.prolixium.com
 - Use: ```traceroute6 -m 120 tng.prolixium.com```
 
-output "traceroute6 -m 120 tng.prolixium.com"
+Output:
 
 ``` txt
 traceroute to tng.prolixium.com (2001:48c8:1:137::32), 120 hops max, 24 byte packets
@@ -117,7 +120,7 @@ EOF (2001:48c8:1:137::32)  309.623 ms  311.074 ms  313.958 ms
 - Link: hand.bb0.nl
 - Use: ```traceroute -6 -m 50 hand.bb0.nl```
 
-output "traceroute -6 -m 50 hand.bb0.nl"
+Output:
 
 ``` txt
 traceroute to hand.bb0.nl (2a0e:fd45:2a0a:2::cafe), 50 hops max, 80 byte packets
@@ -172,7 +175,7 @@ traceroute to hand.bb0.nl (2a0e:fd45:2a0a:2::cafe), 50 hops max, 80 byte packets
 - Link: bad.horse
 - Use: ```traceroute bad.horse```
 
-output "traceroute bad.horse"
+Output:
 
 ``` txt
 13 bad.horse (162.252.205.130) 163.913 ms 163.985 ms 164.169 ms
@@ -205,3 +208,129 @@ output "traceroute bad.horse"
 42 it-s.hi-ho.silver (162.252.205.156) 150.319 ms 145.497 ms 149.632 ms
 43 signed.bad.horse (162.252.205.157) 147.734 ms 151.973 ms 167.310 ms
 ```
+
+## Soccer Scores
+
+- Link: <https://austrian.soccer/>
+- Use: ```traceroute6 euro2020.austrian.soccer```
+
+Output:
+
+![tracert-austrian-soccer](_tracert-austrian-soccer.jpg)
+
+## XMAS
+
+- Link: <https://xmas.futile.net>
+- Use: ```traceroute -Mil -m128 xmas.futile.net```
+
+``` txt
+traceroute to xmas.futile.net (77.75.106.106), 128 hops max, 52 byte packets                               
+11  xoxoxoxoxoxo.ho.ho.ho.xoxoxoxoxoxo (93.89.84.75)  28.217 ms  26.863 ms  29.068 ms                      
+12  ooooxooooooxooo.v.ooooooxooooxoooo (82.133.91.37)  32.520 ms  85.029 ms  84.417 ms                     
+13  ooxoooooxooooo.mmm.ooooooooxxoooxo (82.133.91.18)  28.508 ms  29.413 ms  159.747 ms                    
+14  oooxoooooxooo.eeeee.oooxoooooxoooo (82.133.91.63)  30.813 ms  27.738 ms  28.727 ms                     
+15  ooooxooxooox.rrrrrrr.ooooooxooooox (82.133.91.56)  98.966 ms  26.433 ms  26.304 ms                     
+16  oxooooooxoo.rrrrrrrrr.oooxooooooxo (82.133.91.55)  25.990 ms  25.856 ms  175.046 ms                    
+17  xoooxooooo.yyyyyyyyyyy.oooxooooxoo (82.133.91.58)  35.091 ms  28.833 ms  27.252 ms                     
+18  ooxoooooxooooo.ccc.ooooooooxoooxoo (82.133.91.96)  33.924 ms  27.624 ms  28.044 ms                     
+19  oooooxooo.hhhhhhhhhhhhh.oxoooxoooo (82.133.91.23)  26.037 ms  27.727 ms  27.233 ms                     
+20  ooxooxoo.rrrrrrrrrrrrrrr.ooxoooxoo (82.133.91.49)  27.114 ms  26.809 ms  27.727 ms                     
+21  oxoooxo.iiiiiiiiiiiiiiiii.oooxooxo (82.133.91.60)  27.393 ms  79.425 ms  35.691 ms                     
+22  oooxoo.sssssssssssssssssss.ooxoooo (82.133.91.42)  38.394 ms  26.477 ms  27.073 ms                     
+23  oooxoooxoooooo.ttt.ooooooooooooxoo (82.133.91.61)  26.567 ms  27.164 ms  27.260 ms                     
+24  ooxoo.mmmmmmmmmmmmmmmmmmmmmm.oooxo (82.133.91.34)  26.268 ms  26.292 ms  27.335 ms                     
+25  xxoo.aaaaaaaaaaaaaaaaaaaaaaaa.oxoo (82.133.91.80)  27.087 ms  26.545 ms  25.758 ms                     
+26  oxo.ssssssssssssssssssssssssss.ooo (82.133.91.40)  28.201 ms  26.604 ms  31.071 ms                     
+27  ooxooooooooooo.xxx.oooooooooooooxo (82.133.91.35)  27.685 ms  34.823 ms  27.358 ms                     
+28  oxoooooooooooo.xxx.ooooooooooooxxo (82.133.91.10)  26.663 ms  30.052 ms  28.420 ms                     
+29  oh.the.weather.outside.is.frightful (82.133.91.41)  28.655 ms  27.795 ms  28.863 ms                    
+30  but.the.fire.is.so.delightful (82.133.91.19)  26.172 ms  26.577 ms  26.777 ms                          
+31  and.since.weve.no.place.to.go (82.133.91.77)  26.537 ms  28.931 ms  35.163 ms                          
+32  let.it.snow.let.it.snow.let.it.snow (82.133.91.43)  28.258 ms  30.653 ms  43.191 ms                    
+33  xxx (82.133.91.24)  30.019 ms  30.663 ms  31.834 ms                                                    
+34  it.doesnt.show.signs.of.stopping (82.133.91.36)  26.373 ms  29.913 ms  25.671 ms   
+35  and.ive.bought.some.corn.for.popping (82.133.91.73)  27.470 ms  26.959 ms  26.904 ms                   
+36  the.lights.are.turned.way.down.low (82.133.91.76)  26.997 ms  28.610 ms  32.095 ms                     
+37  let.it.snow.let.it.snow.let.it.snow (82.133.91.67)  27.307 ms  30.789 ms  27.416 ms                    
+38  xxx (82.133.91.38)  26.952 ms  30.147 ms  36.314 ms                                                    
+39  when.we.finally.kiss.good.night (82.133.91.62)  27.668 ms  26.648 ms  29.534 ms                        
+40  how.ill.hate.going.out.in.the.storm (82.133.91.45)  32.121 ms  26.947 ms  27.316 ms                    
+41  but.if.youll.really.hold.me.tight (82.133.91.78)  30.627 ms  27.475 ms  27.042 ms                      
+42  all.the.way.home.ill.be.warm (82.133.91.17)  27.192 ms  28.589 ms  26.737 ms                           
+43  xxx (82.133.91.70)  28.294 ms  23.131 ms  32.349 ms                                                    
+44  the.fire.is.slowly.dying (82.133.91.95)  85.946 ms  26.752 ms  26.423 ms                               
+45  and.my.dear.were.still.goodbying (82.133.91.57)  27.532 ms  27.294 ms  26.963 ms                       
+46  but.as.long.as.you.love.me.so (82.133.91.31)  27.795 ms  32.741 ms  27.507 ms                          
+47  let.it.snow.let.it.snow.let.it.snow (82.133.91.53)  30.495 ms  28.559 ms  29.827 ms                    
+48  ooo (82.133.91.94)  26.729 ms  27.750 ms  29.489 ms                                                    
+49  ho.ho.ho.are.we.having.fun.yet (82.133.91.64)  26.953 ms  33.688 ms  28.336 ms     
+50  m.e.r.r.y.c.h.r.i.s.t.m.a.s (82.133.91.86)  26.223 ms  26.537 ms  26.000 ms                            
+51  ooo (82.133.91.15)  29.105 ms  27.439 ms  26.671 ms                                                    
+52  dashing.through.the.snow (82.133.91.14)  26.206 ms  28.259 ms  26.404 ms                               
+53  in.a.one-horse.open.sleigh (82.133.91.83)  27.678 ms  26.767 ms  30.898 ms                             
+54  over.the.fields.we.go (82.133.91.27)  30.598 ms  24.778 ms  28.216 ms                                  
+55  laughing.all.the.way (82.133.91.71)  27.948 ms  27.078 ms  30.960 ms                                   
+56  bells.on.bobtail.ring (82.133.91.79)  30.960 ms  26.951 ms  26.911 ms                                  
+57  making.spirits.bright (82.133.91.75)  31.464 ms  35.006 ms  25.653 ms                                  
+58  what.fun.it.is.to.ride.and.sing (82.133.91.82)  18.389 ms  28.401 ms  26.408 ms                        
+59  a.sleighing.song.tonight (82.133.91.98)  28.837 ms  28.528 ms  27.813 ms                               
+60  ooo (82.133.91.29)  27.075 ms  27.174 ms  36.786 ms                                                    
+61  jingle.bells.jingle.bells (82.133.91.91)  25.621 ms  26.540 ms  28.744 ms                              
+62  jingle.all.the.way (82.133.91.81)  26.783 ms  31.709 ms  28.478 ms                                     
+63  oh.what.fun.it.is.to.ride (82.133.91.21)  26.256 ms  43.007 ms  26.497 ms                              
+64  in.a.one-horse.open.sleigh (82.133.91.30)  27.362 ms  26.841 ms  36.803 ms                             
+65  jingle.bells.jingle.bells (82.133.91.59)  27.108 ms  36.984 ms  28.996 ms                              
+66  jingle.all.the.way (82.133.91.32)  34.041 ms  28.892 ms  28.107 ms                                     
+67  oh.what.fun.it.is.to.ride (82.133.91.74)  28.268 ms  27.125 ms  29.263 ms                              
+68  in.a.one-horse.open.sleigh (82.133.91.87)  26.599 ms  30.933 ms  26.964 ms                             
+69  m-e-r-r-y--c-h-r-i-s-t-m-a-s (82.133.91.72)  27.170 ms  27.218 ms  26.985 ms                           
+70  have.yourself.a.merry.little.christmas (82.133.91.90)  27.656 ms  27.879 ms  30.087 ms                 
+71  let.your.heart.be.light (82.133.91.47)  31.182 ms  28.436 ms  27.273 ms  
+50  m.e.r.r.y.c.h.r.i.s.t.m.a.s (82.133.91.86)  26.223 ms  26.537 ms  26.000 ms                            
+51  ooo (82.133.91.15)  29.105 ms  27.439 ms  26.671 ms                                                    
+52  dashing.through.the.snow (82.133.91.14)  26.206 ms  28.259 ms  26.404 ms                               
+53  in.a.one-horse.open.sleigh (82.133.91.83)  27.678 ms  26.767 ms  30.898 ms                             
+54  over.the.fields.we.go (82.133.91.27)  30.598 ms  24.778 ms  28.216 ms                                  
+55  laughing.all.the.way (82.133.91.71)  27.948 ms  27.078 ms  30.960 ms                                   
+56  bells.on.bobtail.ring (82.133.91.79)  30.960 ms  26.951 ms  26.911 ms                                  
+57  making.spirits.bright (82.133.91.75)  31.464 ms  35.006 ms  25.653 ms                                  
+58  what.fun.it.is.to.ride.and.sing (82.133.91.82)  18.389 ms  28.401 ms  26.408 ms                        
+59  a.sleighing.song.tonight (82.133.91.98)  28.837 ms  28.528 ms  27.813 ms                               
+60  ooo (82.133.91.29)  27.075 ms  27.174 ms  36.786 ms                                                    
+61  jingle.bells.jingle.bells (82.133.91.91)  25.621 ms  26.540 ms  28.744 ms                              
+62  jingle.all.the.way (82.133.91.81)  26.783 ms  31.709 ms  28.478 ms                                     
+63  oh.what.fun.it.is.to.ride (82.133.91.21)  26.256 ms  43.007 ms  26.497 ms                              
+64  in.a.one-horse.open.sleigh (82.133.91.30)  27.362 ms  26.841 ms  36.803 ms                             
+65  jingle.bells.jingle.bells (82.133.91.59)  27.108 ms  36.984 ms  28.996 ms                              
+66  jingle.all.the.way (82.133.91.32)  34.041 ms  28.892 ms  28.107 ms                                     
+67  oh.what.fun.it.is.to.ride (82.133.91.74)  28.268 ms  27.125 ms  29.263 ms                              
+68  in.a.one-horse.open.sleigh (82.133.91.87)  26.599 ms  30.933 ms  26.964 ms                             
+69  m-e-r-r-y--c-h-r-i-s-t-m-a-s (82.133.91.72)  27.170 ms  27.218 ms  26.985 ms                           
+70  have.yourself.a.merry.little.christmas (82.133.91.90)  27.656 ms  27.879 ms  30.087 ms                 
+71  let.your.heart.be.light (82.133.91.47)  31.182 ms  28.436 ms  27.273 ms  27.273 ms                                
+72  from.now.on (82.133.91.12)  27.500 ms  31.647 ms  28.323 ms                                            
+73  our.troubles.will.be.out.of.sight (82.133.91.99)  26.377 ms  27.472 ms  26.910 ms                      
+74  ooo (82.133.91.22)  27.478 ms  164.460 ms  26.068 ms                                                   
+75  have.yourself.a.merry.little.christmas (82.133.91.68)  26.228 ms  26.186 ms  27.270 ms                 
+76  make.the.yule-tide.gay (82.133.91.52)  63.139 ms  61.441 ms  26.317 ms                                 
+77  from.now.on (82.133.91.66)  31.926 ms  28.122 ms  26.905 ms                                            
+78  our.troubles.will.be.miles.away (82.133.91.54)  148.668 ms  27.207 ms  26.286 ms                       
+79  ooo (82.133.91.93)  28.672 ms  33.939 ms  27.036 ms                                                    
+80  here.we.are.as.in.olden.days (82.133.91.25)  32.706 ms  26.079 ms  26.587 ms                           
+81  happy.golden.days.of.yore (82.133.91.89)  50.062 ms  26.390 ms  30.187 ms                              
+82  faithful.friends.who.are.dear.to.us (82.133.91.46)  27.485 ms  30.765 ms  93.946 ms                    
+83  gather.near.to.us.once.more (82.133.91.69)  27.378 ms  26.881 ms  27.034 ms                            
+84  ooo (82.133.91.85)  27.817 ms  26.144 ms  16.604 ms                                                    
+85  through.the.years (82.133.91.39)  74.115 ms  54.589 ms  26.828 ms                                      
+86  we.all.will.be.together (82.133.91.33)  26.759 ms  26.103 ms  26.689 ms                                
+87  if.the.fates.allow (82.133.91.44)  26.491 ms  27.828 ms *                                              
+88  hang.a.shining.star.upon.the.highest.bough (82.133.91.97)  32.609 ms  27.139 ms  27.529 ms             
+89  and.have.yourself.a.merry.little.christmas.now (82.133.91.88)  28.920 ms  31.280 ms  27.679 ms         
+90  o.o (82.133.91.11)  26.670 ms  27.996 ms  27.238 ms                                                    
+91  48.61.70.70.79.20.48.6f.6c.69.64.61.79.73.20.46.72.65.65.6e.6f.64.65.20.23.63.69.73.63.6f (82.133.91.51)  26.987 ms  34.554 ms  28.649 ms                                                                         
+92  ooooooooooooooooooooooo.mysst.ooooooooooooooooooooooo (77.75.106.106)  28.272 ms  26.661 ms  26.218 ms 
+```
+
+## American Pie
+
+![makerforce-american-pie](_tracert-makerforce-american-pie.jpg)
