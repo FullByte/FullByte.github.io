@@ -22,6 +22,12 @@ Never give 110%, that's just selling out... just divide your 100% in:
 - The key is recognizing that the urge to avoid hard things is human, and should be expected. It’s part of the process. Figure out what combination of motivation, and circumstances, and accountability work best for your particular personality.
 - Break large goals down into manageable pieces. Creating an accurate roadmaps toward this goal. Find out what is important. Differenciate between activities you want to be important and what actually makes a difference.
 
+### Health
+
+1. Establish good sleep habits. Sleep is how the body recovers from stress.
+2. Exercise daily. Movement is how the body puts the stress hormones to work.
+4. Eat well. The gut-brain connection drives how we feel as we digest.
+
 ### One sentance
 
 Goals
@@ -46,9 +52,7 @@ Random
 ### Investment
 
 1. Don't buy, HODL
-
 2. [Ferengi](https://memory-beta.fandom.com/wiki/Ferengi_Rules_of_Acquisition) (Star Trek) [Rules of Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition)
-
 3. [Bogleheads investment philosophy](https://www.bogleheads.org/wiki/Video:Bogleheads%c2%ae_investment_philosophy)
 
 ## Reflection
