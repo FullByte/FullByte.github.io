@@ -1,5 +1,11 @@
 # Navi
 
+| What          | Where |
+|---------------|-------|
+| Official Page |       |
+| Source        |       |
+| Documentation |       |
+
 This is my [navi](https://github.com/denisidoro/navi) cheatsheet collection.
 
 Once you ran the install script below you should find a subfolder named `FullByte__navi-cheatsheet` in your navi config-path. Run ```navi info config-path``` to get your local navi path e.g. `~/.local/share/navi/cheats`. Navi should now be ready to use.
