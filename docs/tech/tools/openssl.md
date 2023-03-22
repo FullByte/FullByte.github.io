@@ -9,6 +9,8 @@ Examples using OpenSSL
 | Download      |       |
 | Install       |       |
 
+Another great tool to check SSL stuff is <https://testssl.sh/>
+
 ## Create certificates and keys
 
 Generate a new private key and Certificate Signing Request

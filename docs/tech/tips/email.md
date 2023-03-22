@@ -2,17 +2,27 @@
 
 ## Services
 
+Services I use and like are listed here.
+
 ### Fastmail
 
-[Fastmail](https://www.fastmail.com/) is a great email service. This page deals with helpful settings.
+[Fastmail](https://www.fastmail.com/) is a great email service.
+
+Links to relevant Fastmail help pages:
+
+- [Custom Domains with Fastmail](https://www.fastmail.help/hc/en-us/articles/360058753394)
+- [Manual DNS settings](https://www.fastmail.help/hc/en-us/articles/360060591113-Manual-DNS-settings)
+- [Setting up your domain: NS/MX](https://www.fastmail.help/hc/en-us/articles/1500000278002-Setting-up-your-domain-NS-MX)
+- [Domain set up: MX only](https://www.fastmail.help/hc/en-us/articles/1500000280261-Domain-set-up-MX-only)
+- [Domains: Advanced configuration](https://www.fastmail.help/hc/en-us/articles/360060591153-Domains-Advanced-configuration)
 
 ### Sendgrid
 
-[Sendgrid](https://sendgrid.com/) is an email Email API service.
+[Sendgrid](https://sendgrid.com/) is an email API service.
 
-#### powershell
+Powershell example on how to use the sendgrid API to send an email:
 
-``` ps1
+```ps1
 $From = "email@address"
 $To = "email@address"
 $Cc = ""
@@ -26,16 +36,16 @@ $headers.Add("Authorization","Bearer $apiKey")
 $headers.Add("Content-Type", "application/json")
 
 $jsonRequest = [ordered]@{
-	personalizations= @(@{ to = @(@{email = "$To"}) subject = "$SubJect" })
-	from = @{email = "$From"}
-	content = @( @{ type = "text/plain"
-	value = "$Body" })
+    personalizations= @(@{ to = @(@{email = "$To"}) subject = "$SubJect" })
+    from = @{email = "$From"}
+    content = @( @{ type = "text/plain"
+    value = "$Body" })
 } | ConvertTo-Json -Depth 10
 
 Invoke-RestMethod -Uri "https://api.sendgrid.com/v3/mail/send" -Method Post -Headers $headers -Body $jsonRequest 
 ```
 
-#### curl
+Curl example on how to use the sendgrid API to send an email:
 
 ``` sh
 export SENDGRID_API_KEY='something'
@@ -45,24 +55,16 @@ curl --request POST --url https://api.sendgrid.com/v3/mail/send --header "Author
 
 ## DNS
 
-### Mail
-
-Nobody want to hear that the mail they sent landed in SPAM folder. Here are some things that can be done to prevent that from happening.
-
-Links to relevant Fastmail help pages:
-
-- [Custom Domains with Fastmail](https://www.fastmail.help/hc/en-us/articles/360058753394)
-- [Manual DNS settings](https://www.fastmail.help/hc/en-us/articles/360060591113-Manual-DNS-settings)
-- [Setting up your domain: NS/MX](https://www.fastmail.help/hc/en-us/articles/1500000278002-Setting-up-your-domain-NS-MX)
-- [Domain set up: MX only](https://www.fastmail.help/hc/en-us/articles/1500000280261-Domain-set-up-MX-only)
-- [Domains: Advanced configuration](https://www.fastmail.help/hc/en-us/articles/360060591153-Domains-Advanced-configuration)
-
 Further helpful tools to check DNS settings
 
 - [mxtoolbox](https://mxtoolbox.com)
 - [straight2spam](https://straight2spam.xyz/)
 - [mailhardener](https://www.mailhardener.com)
 - [mail-tester](https://www.mail-tester.com)
+
+### Mail
+
+Nobody wants to find out their email got sent to the addressed persons SPAM folder. Here are some DNS configurations that can be done to prevent that from happening.
 
 #### Basic Settings
 

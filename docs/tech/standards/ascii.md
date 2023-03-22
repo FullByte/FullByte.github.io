@@ -1,5 +1,16 @@
 # ASCII
 
+Fix this
+
+| Nah | ok |
+|-----|----|
+| Ã¼  | ü  |
+| Ã¶  | ö  |
+| Ã©  | é  |
+| ÃŸ  | ß  |
+| Ã¤  | ä  |
+| Ã–  | Ö  |
+
 ## ASCII Table
 
 | Dec | Hex | Oct |  Binary  | HTML Code | HTML Name | Character |                                Description                                |

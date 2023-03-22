@@ -56,20 +56,20 @@ A list of [DNS root zones](https://www.iana.org/domains/root/servers):
 
 ## More Services
 
+DNS Services
+
 - <https://www.rethinkdns.com/>
 - [DNS toys](https://www.dns.toys) offers some handy utilites (time, conversions, weather)
 - [NextDNS API](https://nextdns.github.io/api/)
 
-## Other DNS lists
+DNS Provider
 
 - <https://www.publicdns.xyz/>
 - <https://public-dns.info/>
 - <https://dns.google/>
 
-## IP Lists
+Other Lists
 
 - ISPs per country <https://www.nirsoft.net/countryip/>
-
-## Maps
-
+- Root zones: <https://www.internic.net/domain/root.zone>
 - Root Servers: <https://root-servers.org/>
