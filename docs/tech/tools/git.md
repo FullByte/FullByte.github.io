@@ -64,6 +64,7 @@ git push
 
 - Get all authors: ```git log | Where { $_ -match "Author" } | Select-Object -unique```
 - Download a specific branch: ```git clone -b dependabot/npm_and_yarn/pug-3.0.1 https://github.com/microsoft/project-nodejs-express-webapp/```
+- List all files in a folder by last commit date: ```git ls-tree --name-only HEAD foldername/ | while read filename; do echo "$(git log -1 --format="%ci " -- $filename) $filename"; done | sort -r```
 
 Clean up
 

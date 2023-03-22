@@ -461,6 +461,7 @@ Get Binding Info
 - NTFS folder permissions for all files below D:\Temp: ```Get-ChildItem "D:\Temp" -recurse | Get-Acl```
 - Get SHA1 hash sum of all files of the current folder: ```ForEach ($Item in Get-ChildItem $PWD -Include *.*) {Write-Host((Get-FileHash $Item.Name -Algorithm "SHA1").hash) $Item.Name }```
 - Find largest files in a given Folder (and subfolders): ```Get-ChildItem . -r | sort Length -desc | Select-Object fullname, length -f 20 | Format-Table```
+- List files and folders with attributes: ```gci -rec | Select-Object Mode, Name, CreationTime, LastAccessTime, LastWriteTime | ft -autosize```
 
 Add WebDAV to local path
 

@@ -16,13 +16,13 @@ Never give 110%, that's just selling out... just divide your 100% in:
 - 10% luck
 - 5% pleasure
 
-### One sentance
-
-Hard problems
+### Hard problems
 
 - Say: "I can do hard things". Doing hard things has intrinsic value, and they will make me a better person, even if I end up failing.
 - The key is recognizing that the urge to avoid hard things is human, and should be expected. It’s part of the process. Figure out what combination of motivation, and circumstances, and accountability work best for your particular personality.
 - Break large goals down into manageable pieces. Creating an accurate roadmaps toward this goal. Find out what is important. Differenciate between activities you want to be important and what actually makes a difference.
+
+### One sentance
 
 Goals
 
@@ -32,6 +32,11 @@ Goals
 Speech
 
 - Never interrupt your enemy when he is making a mistake
+
+Words
+
+- Shoshikantetsu: "Complete what was originally intended."
+- Ichigoichie: "Treasure every encounter, for it will never recur."
 
 Random
 

@@ -24,8 +24,16 @@ convert -layers Optimize input.gif output.gif
 
 ## Resize
 
+Resize image to given dimensions
+
 ``` sh
 convert file.jpg -resize 1024 × 768 "folder\file.jpg"
+```
+
+Create a square thumbnail or favicon using ImageMagick
+
+``` sh
+convert file.png -background transparent -gravity Center -extent 1:1# -scale 32 file-32px.png
 ```
 
 ## Diff Images
