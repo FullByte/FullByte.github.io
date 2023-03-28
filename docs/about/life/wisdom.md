@@ -22,11 +22,23 @@ Never give 110%, that's just selling out... just divide your 100% in:
 - The key is recognizing that the urge to avoid hard things is human, and should be expected. It’s part of the process. Figure out what combination of motivation, and circumstances, and accountability work best for your particular personality.
 - Break large goals down into manageable pieces. Creating an accurate roadmaps toward this goal. Find out what is important. Differenciate between activities you want to be important and what actually makes a difference.
 
+### About productivity, purpose and passion
+
+- You need to be efficient to have money and time to enjoy life.
+- The parts of life that bring joy are often things we do for their own sake without caring about efficiency.
+- The fear of the irrelevancy and losing out in the endless treadmill race impacts universally.
+- To escape the productivity treadmill is to actively choose what matters to you.
+
+- There are infinite things to do in your finite life so life is a set of choices.
+- If you’re constantly craving more, you wont appreciate what you already have.
+- If we believe the future will be better we devalue the present moment.
+- Liberation of this burdon happens when you are at peace with and bask at merely existing.
+
 ### Health
 
 1. Establish good sleep habits. Sleep is how the body recovers from stress.
 2. Exercise daily. Movement is how the body puts the stress hormones to work.
-4. Eat well. The gut-brain connection drives how we feel as we digest.
+3. Eat well. The gut-brain connection drives how we feel as we digest.
 
 ### One sentance
 
