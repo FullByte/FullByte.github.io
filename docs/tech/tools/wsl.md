@@ -31,6 +31,46 @@ wsl
 cd /mnt/wsl/PHYSICALDRIVE3p1/
 ```
 
+## Reclaim storage space
+
+Get the name of your WSL distribution. In this example the chosen distribution will be "Ubuntu-22.04".
+
+``` ps1
+wsl -l
+```
+
+Stop the distribution
+
+``` ps1
+wsl -t Ubuntu-22.04
+```
+
+Find out how much space this distribution is currently using this command:
+
+``` ps1
+wsl.exe --system -d Ubuntu-22.04 df -h /mnt/wslg/distro
+```
+
+Get the location of the vhdx file of Ubuntu-22.04:
+
+``` ps1
+(Get-ChildItem -Path HKCU:\Software\Microsoft\Windows\CurrentVersion\Lxss | Where-Object { $_.GetValue("DistributionName") -eq 'Ubuntu-22.04' }).GetValue("BasePath") + "\ext4.vhdx"
+```
+
+Open diskpart with ```diskpart``` and select the vhdx file in diskpart using the path provided and run the following commands:
+
+``` cmd
+select vdisk file="C:\Users\user\AppData\Local\Packages\CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp2fndgsc\LocalState\ext4.vhdx"
+attach vdisk readonly
+compact vdisk
+detach vdisk
+exit
+```
+
+Check the path of the vhdx or run the wsl command to check for used space again to see the changes made.
+
+## Configurations
+
 To configure WSL there are [2 main config files](https://docs.microsoft.com/en-us/windows/wsl/wsl-config): `.wslconfig` and `wsl.conf`
 
 - `.wslconfig` located in the Windows %UserProfile% directory to configure settings globally across all installed distributions.
