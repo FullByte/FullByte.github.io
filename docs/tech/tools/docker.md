@@ -174,7 +174,7 @@ Search through all images to find and delete the ones without active references.
 The -a tag will keep images that are tagged but not in use. (see [Docs](https://docs.docker.com/engine/reference/commandline/image_prune/) for more)
 
 ``` sh
-docker image prune -a
+docker image prune -a --volumes
 ```
 
 Images available locally:
