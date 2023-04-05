@@ -31,7 +31,7 @@ Generally there are few things to say:
 
 ### Profile
 
-![](_keyboard-profile2.png)
+![keyboard-keycap-profile](_keyboard-keycap-profile2.png)
 
 ### 100-40% Keyboards
 
