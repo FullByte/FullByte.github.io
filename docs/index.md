@@ -11,7 +11,7 @@ Y88b  d88P .d8""8b. 888  d8888888888 888   d88P  888
  "Y8888P"  888  888 888 d88P     888 8888888P" 8888888 
 ```
 
-Publishing my projects and notes has been great exercise for <a rel="me" href="https://social.lol/@yolo">me</a>. As longs as this works well for me I will continue doing so :)
+Publishing my projects and notes has been great exercise for <a rel="me" href="https://social.lol/@yolo">me</a>. As longs as this works well for me [I](https://proven.lol/d72627) will continue doing so :)
 
 The content of [this site](/about/0xfab1.net) may appear random as it deals with whatever I find interesting and noteworthy ```¯\_(ツ)_/¯```.
 
@@ -30,7 +30,3 @@ Regards,
 ![GitHub last commit](https://img.shields.io/github/last-commit/FullByte/FullByte.github.io?color=4cae4f&label=last%20update&style=plastic)
 
 ![not-by-AI](_not-by-AI-bb.svg)
-
-<proven.lol/d72627>
-
-<https://proven.lol/d72627>
