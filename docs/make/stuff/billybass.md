@@ -24,11 +24,11 @@ The chosen Stepper Module unfortunantly makes some sounds... possibly consider u
 
 Here are some pictures of Billy Bass in the making:
 
-![billybass](billybass1.jpg)
+![billybass](_billybass1.jpg)
 
-![billybass](billybass2.jpg)
+![billybass](_billybass2.jpg)
 
-![billybass](billybass3.jpg)
+![billybass](_billybass3.jpg)
 
 This is the final result:
 
@@ -36,4 +36,4 @@ This is the final result:
 
 Demo Video:
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=0aSd-JRkPvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0aSd-JRkPvE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
