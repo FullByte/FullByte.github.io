@@ -30,3 +30,7 @@ Regards,
 ![GitHub last commit](https://img.shields.io/github/last-commit/FullByte/FullByte.github.io?color=4cae4f&label=last%20update&style=plastic)
 
 ![not-by-AI](_not-by-AI-bb.svg)
+
+<proven.lol/d72627>
+
+<https://proven.lol/d72627>
