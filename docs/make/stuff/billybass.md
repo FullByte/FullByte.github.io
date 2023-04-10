@@ -12,15 +12,15 @@ Shopping List:
 - Speakers (Gikfun 4Ohm 40mm Diameter 3W Full Range Audio Speaker Stereo Woofer Loudspeaker for Arduino)
 - Micro-USB board (Female Micro USB to DIP 5-Pin Pinboard 2.54mm Micro USB )
 
-Basically remove buy a billy bass and remove all electronics except the motors. Then cable the following components as illustrated here:
+Basically, remove buy a Billy Bass and remove all electronics except the motors, then cable the following components as illustrated here and try to make them all fit inside:
 
 ![billybass-wire](_billybass.webp)
 
-Flash the arduino with this [code](_BTBillyBassCode.zip).
+Flash the Arduino with this [code](_BTBillyBassCode.zip).
 
-I tweeked the original code a little bit so that there is a faster pause whenever there is silence. This works great for spoken works. For music it doenst't really matter.
+I tweaked the original code a little bit so that there is a faster pause whenever there is silence. This works great for spoken works. For music it doesn’t really matter.
 
-The chosen Stepper Module unfortunantly makes some sounds... possibly consider upgrading to something nicer and quiter.
+The chosen Stepper Module unfortunately makes some sounds... possibly consider upgrading to something nice and quiet.
 
 Here are some pictures of Billy Bass in the making:
 
