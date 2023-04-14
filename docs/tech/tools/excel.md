@@ -10,6 +10,8 @@ Info
 
 [Translate Excel Formaulas](https://en.excel-translator.de/translator/) form one language to another.
 
+![clippy](_clippy.svg)
+
 ## Random
 
 Find double entries

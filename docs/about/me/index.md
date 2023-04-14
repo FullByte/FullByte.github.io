@@ -6,7 +6,7 @@ Thanks for your interest!
 
 ## Last Update
 
-Lastest important news
+Lastest update on my feed:
 
 <script src="https://status.lol/yolo.js?no-emoji"></script>
 

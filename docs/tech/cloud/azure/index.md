@@ -1,4 +1,6 @@
-# Links
+# Azure
+
+![OldManYellsAtCloud](_OldManYellsAtCloud.svg)
 
 ![_bing-azure.jpg](_bing-azure.jpg) vs ![_google-azure.jpg](_google-azure.jpg)
 

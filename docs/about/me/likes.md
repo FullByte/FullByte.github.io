@@ -13,30 +13,6 @@ Things I like or find entertaining/interessting.
     - The Big Lebowski
     - Trainspotting
 
-=== "Fight Movies"
-
-    - Creed
-    - Million Dollar Baby
-
-=== "Science Fiction"
-
-    - Inception
-    - Interstellar
-    - The Zero Theorem
-    - Turbo Kid
-
-=== "Animated movies"
-
-    - Coraline
-    - Ghost in the Shell
-    - Mary and Max
-    - Mutafukaz
-    - Spirited Away
-    - Totoro
-    - Up
-    - Werner - gekotzt wird später
-    - Winnie the Pooh
-
 === "Action"
 
     - Apocalypto
@@ -49,6 +25,54 @@ Things I like or find entertaining/interessting.
     - Rambo 4
     - Robocop
     - The Expendables 1+3
+
+    Science Fiction
+
+    - Inception
+    - Interstellar
+    - The Zero Theorem
+    - Turbo Kid
+
+    Fight Movies
+
+    - Creed
+    - Million Dollar Baby
+
+    Cinematic
+
+    - Blade Runner 2048
+    - Dead Man
+    - Ghost in the Shell
+    - Kill Bill Vol 1+2
+    - Mad Max: Fury Road: Black & Chrome
+    - Sin City
+    - Valhalla Rising
+    - Mandy
+
+    Trilogies
+
+    - Alien 1-2 + 4
+    - Der Hobbit 1-3
+    - Der Pate 1-3
+    - Herr der Ringe 1-3
+    - John Wick 1-3
+    - Matrix 1-3
+    - Pirates of the Caribbean 1-3
+    - Planet der Affen 1-3
+    - Star Wars 4-6
+    - The Dark Night 1-3
+
+=== "Animated"
+
+    - Coraline
+    - Ghost in the Shell
+    - Mary and Max
+    - Mutafukaz
+    - Spirited Away
+    - Totoro
+    - Up
+    - Werner - gekotzt wird später
+    - Winnie the Pooh
 
 === "Interesting Story"
 
@@ -96,18 +120,7 @@ Things I like or find entertaining/interessting.
     - The Lobster
     - Whiplash
 
-=== "Cinematic"
-
-    - Blade Runner 2048
-    - Dead Man
-    - Ghost in the Shell
-    - Kill Bill Vol 1+2
-    - Mad Max: Fury Road: Black & Chrome
-    - Sin City
-    - Valhalla Rising
-    - Mandy
-
-=== "Comedy movies"
+=== "Comedy"
 
     - Anchorman
     - Bad Santa
@@ -122,26 +135,7 @@ Things I like or find entertaining/interessting.
     - Zoolander
     - The Ballad of Buster Scruggs
 
-=== "Trilogies"
-
-    - Alien 1-2 + 4
-    - Der Hobbit 1-3
-    - Der Pate 1-3
-    - Herr der Ringe 1-3
-    - John Wick 1-3
-    - Matrix 1-3
-    - Pirates of the Caribbean 1-3
-    - Planet der Affen 1-3
-    - Star Wars 4-6
-    - The Dark Night 1-3
-
-=== "Romantic"
-
-    - Her
-    - I love you Philipp Morris
-    - Match Point
-
-=== "Trash Movies"
+    Trash Movies
 
     - Black Dynamite
     - Chillerama
@@ -157,6 +151,12 @@ Things I like or find entertaining/interessting.
     - Sharknado 3
     - Turbo Kid
     - Death Race 2050
+
+=== "Romantic"
+
+    - Her
+    - I love you Philipp Morris
+    - Match Point
 
 ## Series
 

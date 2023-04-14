@@ -1,10 +1,14 @@
 # Final wisdom
 
-A collection of hand picked wisdom accumulated for the worthy.
-
+This is a collection of hand picked wisdom accumulated for the worthy.
 Advice is difficult to take in properly... no idea how you should do it; but do something.
+First of all: Don't get serious advice from some random website, but hey, you are here, so enjoy my input :)
 
-## Smart Stuff
+## Get stuff done
+
+- It's better to finish something than to start something
+- Make goals that you have control over. Accept what you can not control or choose to be unhappy.
+- Practice "Shoshikantetsu", japanese for "Complete what was originally intended."
 
 ### 110%
 
@@ -18,56 +22,52 @@ Never give 110%, that's just selling out... just divide your 100% in:
 
 ### Hard problems
 
+Hard problems are hard - here is some advice:
+
 - Say: "I can do hard things". Doing hard things has intrinsic value, and they will make me a better person, even if I end up failing.
 - The key is recognizing that the urge to avoid hard things is human, and should be expected. It’s part of the process. Figure out what combination of motivation, and circumstances, and accountability work best for your particular personality.
 - Break large goals down into manageable pieces. Creating an accurate roadmaps toward this goal. Find out what is important. Differenciate between activities you want to be important and what actually makes a difference.
 
-### About productivity, purpose and passion
+### Productivity, purpose and passion
+
+Some wisdom about productivity, purpose and passion:
 
 - You need to be efficient to have money and time to enjoy life.
 - The parts of life that bring joy are often things we do for their own sake without caring about efficiency.
 - The fear of the irrelevancy and losing out in the endless treadmill race impacts universally.
 - To escape the productivity treadmill is to actively choose what matters to you.
-
 - There are infinite things to do in your finite life so life is a set of choices.
 - If you’re constantly craving more, you wont appreciate what you already have.
 - If we believe the future will be better we devalue the present moment.
 - Liberation of this burdon happens when you are at peace with and bask at merely existing.
 
-### Health
+## Health
+
+Nobody will care more about your health than you. Treat yourself well and your body will treat you well. Take care of your physical health first, then keep doing that and take care of your mental health.
+
+### Physical health
 
 1. Establish good sleep habits. Sleep is how the body recovers from stress.
 2. Exercise daily. Movement is how the body puts the stress hormones to work.
 3. Eat well. The gut-brain connection drives how we feel as we digest.
 
-### One sentance
+### Mental health
 
-Goals
+1. Self-care: Make time for self-reflection and self-awareness, and cultivate a positive self-image.
+2. Social support: Communicate openly and honestly with the people you trust and like. Social connections are essential for emotional well-being and provide a support network when you need help or someone to talk to.
+3. Stress management: Develop healthy coping mechanisms for dealing with stress and difficult emotions. Learn to recognize the signs of stress in your body and mind, and work on developing a proactive approach to managing stressors in your life.
 
-- It's better to finish something than to start something
-- Make goals that you have control over. Accept what you can not control or choose to be unhappy.
+## Investment
 
-Speech
-
-- Never interrupt your enemy when he is making a mistake
-
-Words
-
-- Shoshikantetsu: "Complete what was originally intended."
-- Ichigoichie: "Treasure every encounter, for it will never recur."
-
-Random
-
-- In der Menge liegt das Gift.
-- Alles was man besitzt muss man auch pflegen.
-
-### Investment
-
-1. Don't buy, HODL
-2. [Ferengi](https://memory-beta.fandom.com/wiki/Ferengi_Rules_of_Acquisition) (Star Trek) [Rules of Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition)
-3. [Bogleheads investment philosophy](https://www.bogleheads.org/wiki/Video:Bogleheads%c2%ae_investment_philosophy)
+- Only invest what you can spare. Establish an emergency fund to define what you can spare.
+- Start early, diversify (but only the stuff you know and are convinced of) and set clear goals for yourself (investment objectives, time horizon, and risk tolerance) and stay true to those values for any investment.
+- Regularly contribute, periodically review your portfolio and make adjustments for new investments.
+- Be patient and HODL and never look back. Don't day trade, bet short term or simluar actions that require to check your balance and the current events frquently. This will simply be exausting.
+- Read the [Ferengi](https://memory-beta.fandom.com/wiki/Ferengi_Rules_of_Acquisition) (Star Trek) [Rules of Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition) and [Bogleheads investment philosophy](https://www.bogleheads.org/wiki/Video:Bogleheads%c2%ae_investment_philosophy)
 
 ## Reflection
+
+Practice "Ichigoichie", japanese for "Treasure every encounter, for it will never recure."
 
 ### What went well?
 
@@ -133,37 +133,18 @@ Based on the last question, break down your big goal:
 - To the next quarterly goal (review every 3 months)
 - Define habits and actions to achieve the quarterly goal
 
-## Fun Stuff
-
-### Be like nature
-
-Why fight the rules of nature?
-
-1. Dislike squander: dW = 0 (Action W=∫L dt is minimized in every motion. Locally, L = Ekin-Epot)
-2. Dislike hurrying: v ≤ c (Energy speed v is limited by the speed of light c.)
-3. Dislike excessive force: F ≤ c^4/4G (Force F is limited by c and the gravitational constant G.)
-4. Dislike sloth: W ≥ ℏ (action W is never smaller than the quantum of action ℏ.)
-5. Dislike perfect order: S ≥ k (Entropy S is never smaller than the Boltzmann constant k.)
-
-Source: [All of physics in 9 lines](https://www.motionmountain.net/9lines.html)
-
-### The theory of the first chick
-
-It all start with the first chick
-
-- Transcript: ```It's like: We need to get a cool looking chick; maybe then people will start to respect us and stuff. It's like then we'll start getting respect, and then we'll get more chicks and then like: with more chicks I go get more respect and after that we'll get like more money. It'll be like more money, more chicks, more respect... and just like keep on going. It all takes is getting that first chick.```
-- Listen to the [audio version](_chicks-respect-money.mp3) (Source: [Beavis and Butthead](https://en.wikipedia.org/wiki/Beavis_and_Butt-Head))
-
-This process diagram vizulizes the steps involved:
-
-![image](_chicks-respect-money.drawio.svg)
-
 ## Protest
 
-It is not easy to protest in a smart and effectiv way.
-
-Here are some examples I like to create awareness to given Problem:
+It is not easy to protest in a smart and effectiv way. In my opinion strikes, demonstrations, letter-writing campaigns, petitions, sit-ins and occupation are not very effective nor creative. Of course on can passivly boycott whatever thing to not support and tell friends about what and why not to support but this is boring and small minded as well. Here are some examples and ideas how to protest on a given matter in an interesting, not annoying and creative way while being effective and successful:
 
 - [Ugly Gerry](https://fontsarena.com/ugly-gerry/) is a [free font](_gerry.otf.zip) created with real US congressional districts. The name comes from gerrymandering, the process that made possible such weird shapes.
 
 - [Volkswagen](https://github.com/auchenberg/volkswagen) can be integrated in your CI process. It detects when your tests are being run in a CI server, and makes them pass. Volkswagen uses a defeat device to detect when it's being tested in a CI server and will automatically reduce errors to an acceptable level for the tests to pass. This will allow you to spend less time worrying about testing and more time enjoying the good life as a trustful software developer.
+
+- Adress your issues to the correct people. If you work in an social or public based service make sure to create awareness but don't let uninvolved suffer from your problems. For example if drive a bus, let passengers ride for free and let them know you are protesting instead of not driving and letting people down.
+
+- Make art (music, pictures, games) that help people understand the problem. Make things that are understandable as well as entertaining, interesting, provocative and/or beautiful. This will address the problem in an entertaining but critical way that is no annoying an will be much more likly be shared, discussed and addressed.
+
+- Find ways to educate the public about the core issue of your protest any what needs to be done. Reflect on your issue and make sure this is not just an opinion but actual facts that can be educated.
+
+- Never interrupt your enemy when he/she is making a mistake.
