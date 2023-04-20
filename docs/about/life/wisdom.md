@@ -65,6 +65,16 @@ Nobody will care more about your health than you. Treat yourself well and your b
 - Be patient and HODL and never look back. Don't day trade, bet short term or simluar actions that require to check your balance and the current events frquently. This will simply be exausting.
 - Read the [Ferengi](https://memory-beta.fandom.com/wiki/Ferengi_Rules_of_Acquisition) (Star Trek) [Rules of Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition) and [Bogleheads investment philosophy](https://www.bogleheads.org/wiki/Video:Bogleheads%c2%ae_investment_philosophy)
 
+## Emotions
+
+- Feel and understand your emotions but don't let them control you. E.g. don't let fear guide your descisions.
+- Don't take things to personally. Stay objective and don't be offended.
+- Don't dwell on the past. Learn from it an focus on the present.
+- Don't make hasty (emotional) decisions. Take time to think about your decisions.
+- Don't avoid difficult conversations. Be open for dialogue and confront problems. Constructive disagreement is healthy for progress.
+- Don't engage in gossip. Show respect and be positive.
+- Don't blame others. You will loose credibility and authority. Acknowledge your own mistakes and rather discuss solutions and next steps with others.
+
 ## Reflection
 
 Practice "Ichigoichie", japanese for "Treasure every encounter, for it will never recure."
