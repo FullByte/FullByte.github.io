@@ -37,15 +37,15 @@ share enrypted files
 
 ``` sh
 ipfs init
-gpg --encrypt --recipient "Cory Heath" myriad.pdf
-ipfs add myriad.pdf.gpg
+gpg --encrypt --recipient "Mr Universum" 0xfab1.pdf
+ipfs add 0xfab1.pdf.gpg
 ```
 
 get encrypted files
 
 ``` sh
 ipfs get QmYqSCWuzG8cYo4MFQzqKcC14ct4ybAWyrAc9qzdJaFYTL
-gpg --decrypt QmYqSCWUZg8Cyo4MFQzqKcC14ct4ybAWyrAc9qzdJaFYTL > myriad.pdf
+gpg --decrypt QmYqSCWUZg8Cyo4MFQzqKcC14ct4ybAWyrAc9qzdJaFYTL > 0xfab1.pdf
 ```
 
 ## Fleek
