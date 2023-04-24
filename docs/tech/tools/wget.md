@@ -14,7 +14,7 @@ Download a list of files ```wget -i urls.txt -N -e robots=off --user-agent="Mozi
 
 ## Download all files from website
 
-Generally, this can be blocked but works in most cases. To avoid a few things:
+Generally, the following can be blocked but works in most cases. There are a few things that can be done to avoid getting blocked:
 
 - Ignore **robots.txt** blocking the download by using```-e robots=off```
 - Add **user-agent**; either one that guarantees a math e.g.```--user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"``` or just the one you are using atm e.g.```--user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0"``` (Firefox: about:config → devtools.responsive.userAgent)
