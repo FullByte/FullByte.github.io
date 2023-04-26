@@ -1,14 +1,16 @@
 # Overview
 
-Eat whatever you want... idk, lol.
+Eat whatever you want... idk, lol... and take your time ;)
 
-## Gesunde Ernährung
+![recipe_relativity](_recipe_relativity.png)
 
-- Essen Sie echtes Essen
-- Machen Sie Pflanzen zu Ihrer Hauptspeise
-- Lieber Fisch als Fleisch
-- Joghurt: ja. Käse: auch okay. Milch: lala
-- Zucker minimieren, industrielle Transfette meiden
+## Healthy eating
+
+- Eat real food
+- Make plants your main course
+- Better fish than meat
+- Yoghurt: yes. Cheese: okay too. Milk: lala
+- Minimize sugar, avoid industrial trans fats
 
 ## Links
 
