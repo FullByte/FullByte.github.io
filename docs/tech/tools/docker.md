@@ -203,6 +203,19 @@ docker container prune
 
 And run ```docker image prune -a``` if you want to remove all images linked to stopped containers.
 
+
+Stop all the containers
+
+``` sh
+docker stop $(docker ps -a -q)
+```
+
+Remove all the containers
+
+``` sh
+docker rm $(docker ps -a -q)
+```
+
 ## Create Docker Compose Container
 
 Example docker compose file

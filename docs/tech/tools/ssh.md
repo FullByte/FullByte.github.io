@@ -234,3 +234,24 @@ Add `-v`, `-vv` or `-vvv` for more output details.
 - Get specific SSHFP entries: ```ssh-keyscan -t ecdsa,ed25519 -f sshtest.0xfab1.net```
 - Read SSHFP DNS entries: ```dig @localhost sshtest.0xfab1.net sshfp +noall +answer +dnssec```
 - Login and check SSHFP (requires DNSSEC): ```ssh -i sshtest_key.pem -o VerifyHostKeyDNS=yes fabian@sshtest.0xfab1.net```
+
+## Restart SSHD
+
+Different options to restart the SSH daemon for various OS:
+
+| OS         | native/old                         | using service            | using systemd                       |
+|------------|------------------------------------|--------------------------|-------------------------------------|
+| CentOS     |                                    | service sshd restart     | sudo systemctl restart sshd         |
+| RHEL       |                                    | service sshd restart     | sudo systemctl restart sshd         |
+| Fedora     |                                    | service sshd restart     | sudo systemctl restart sshd         |
+| Redhat     | /etc/init.d/sshd restart           | service sshd restart     | sudo systemctl restart sshd         |
+| Alma       |                                    | service sshd restart     | sudo systemctl restart sshd         |
+| Rocky      |                                    | service sshd restart     | sudo systemctl restart sshd         |
+| Debian     | /etc/init.d/ssh restart            | sudo service ssh restart | sudo systemctl restart ssh          |
+| Ubuntu     | /etc/init.d/ssh restart            | sudo service ssh restart | sudo systemctl restart ssh          |
+| Mint       | /etc/init.d/ssh restart            | sudo service ssh restart |                                     |
+| FreeBSD    | doas /etc/rc.d/sshd restart        |                          |                                     |
+| UNIX       | kill -HUP $(cat /var/run/sshd.pid) |                          |                                     |
+| OpenSUSE   |                                    |                          | sudo systemctl restart sshd         |
+| SUSE       |                                    |                          | sudo systemctl restart sshd         |
+| Arch Linux |                                    |                          | sudo systemctl restart sshd.service |

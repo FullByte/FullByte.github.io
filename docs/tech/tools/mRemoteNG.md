@@ -12,3 +12,5 @@ Create a new external programm with the following parameters:
 - Working directory: $env:USERPROFILE
 
 Then select "external Programm" for your connection and choose "OpenSSH".
+
+![mRemoteNG](_mRemoteNG.png)
