@@ -1,5 +1,7 @@
 # Keyboards
 
+![xkcd_keyboard](_xkcd_keyboard.png)
+
 ## DZ60 Bambus/Wood Keyboard
 
 Components
