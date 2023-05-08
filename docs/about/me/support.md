@@ -7,7 +7,9 @@ Thanks for all the fish!
 ## Wiki
 
 Support this website by [reporting an issue](https://github.com/FullByte/FullByte.github.io/issues/new/choose).
+
 Let me know if something is wrong, could be improved, is a problem in any way (please explain why).
+
 I'm am happy for any input/feedback but may take a while to respond.
 
 ## Me
@@ -25,10 +27,11 @@ Support me via [liberapay](https://liberapay.com/Fullbyte), [patreon](https://ww
 Support others, which I support:
 
 - Correctiv <https://correctiv.org/unterstuetzen/>
+- EFF <https://supporters.eff.org/donate>
+- Internet Archive <https://archive.org/donate>
+- Ocean Cleanup <https://www.theoceancleanup.com/>
+- OpenBSD foundation <https://www.openbsdfoundation.org/donations.html>
+- OpenStreetMap <https://donate.openstreetmap.org/>
+- Tor <https://donate.torproject.org/>
 - Wauland <https://www.wauland.de/de/donate/>
 - Wikimedia <https://spenden.wikimedia.de/>
-- EFF <https://supporters.eff.org/donate>
-- Tor <https://donate.torproject.org/>
-- Ocean Cleanup <https://www.theoceancleanup.com/>
-- Internet Archive <https://archive.org/donate>
-- OpenBSD foundation <https://www.openbsdfoundation.org/donations.html>

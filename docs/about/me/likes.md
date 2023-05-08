@@ -203,6 +203,7 @@ Things I like or find entertaining/interessting.
     - LOVE DEATH + ROBOTS
     - Masters of the Universe: Revelation
     - Metalocalypse
+    - Primal
     - Ren and Stimpy
     - Rick and Morty
     - Rock's Modern Life
