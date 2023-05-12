@@ -1,5 +1,22 @@
 # Projects
 
+Choosing the correct project management process depends on the specific requirements of your project, team, and organization. To make the best decision, consider the following factors:
+
+- Project complexity and scope: Assess the overall complexity and scope of your project. Waterfall works well for simpler projects with well-defined requirements, while Scrum and Kanban are better suited for more complex projects with changing requirements.
+- Flexibility: Determine how flexible your project needs to be. Scrum and Kanban allow for adaptability and continuous improvement, while Waterfall follows a more rigid structure.
+- Team size and skillset: Consider the size of your team and their individual skills. Scrum works well for small to medium-sized teams with cross-functional skillsets, while Kanban can be more suitable for larger teams or those with specialized roles.
+- Time constraints: Evaluate the timeline of your project. If you have tight deadlines or need a faster time to market, Scrum or Kanban might be more suitable due to their iterative nature. Waterfall can take longer to complete due to its sequential structure.
+- Stakeholder involvement: Determine the level of stakeholder involvement required for your project. Scrum encourages frequent communication and collaboration between team members and stakeholders, while Waterfall and Kanban can be more focused on individual tasks and progress.
+- Communication and collaboration: Assess your team's communication and collaboration capabilities. Scrum and Kanban emphasize frequent communication, while Waterfall relies more on documentation.
+- Risk management: Consider the level of risk associated with your project. Agile methods like Scrum and Kanban allow for better risk management due to their iterative approach, while Waterfall may not handle unexpected changes as effectively.
+- Organizational culture: Analyze your organization's culture and its openness to change. Agile methodologies like Scrum and Kanban require a collaborative and adaptive mindset, while Waterfall might be more suitable for traditional, hierarchical organizations.
+
+By weighing these factors, you can make a more informed decision on which project management process to adopt for your project. Keep in mind that you can also customize or combine methodologies to create a hybrid approach that best suits your needs.
+
+More simply put, choose two of the three constraints shown below and choose the best framework that seems to fit best:
+
+![projects_overview](_projects_overview.drawio.svg)
+
 ## Scrum
 
 Scrum is an agile project management and product development framework that aims to improve collaboration, flexibility, and iterative progress in software development and other complex projects. Scrum provides a flexible, adaptive approach to project management and product development, allowing teams to respond to changing requirements, deliver value continuously, and improve their processes over time.

@@ -41,6 +41,26 @@ Some wisdom about productivity, purpose and passion:
 - If we believe the future will be better we devalue the present moment.
 - Liberation of this burdon happens when you are at peace with and bask at merely existing.
 
+### Luck and Success
+
+To be successful is to some extent luck. You can not control luck, but you can increase your chances by enlargind your success surface.
+
+Enlarging the success surface with work:
+
+- Level 1 - Do Nothing: You did nothing and just won randomly
+- Level 2 - Hard work: Eventually there will be a payoff because you’ve hustled your way to it.
+- Level 3 - Master: Discover things others dont see through work and knowledge.
+- Level 4 - Attract: Others want to work with you; you can choose and select best opportunities.
+
+Enlargen the success surface with networking:
+
+- Level 1 - Do & Tell: Make something and tell others (Making and Marketing).
+- Level 2 - Curiosity: Stay curious and try out new stuff.
+- Level 3 - Talk to new people: Each new person you meet expands your surface area.
+- Level 4 - Be known: Create value for people. Become known with something. Build a reputation.
+
+Relect what topics are important to you, what level you are on at this moment and what you can do to Enlarging the success surface with work and networking.
+
 ## Health
 
 Nobody will care more about your health than you. Treat yourself well and your body will treat you well. Take care of your physical health first, then keep doing that and take care of your mental health.

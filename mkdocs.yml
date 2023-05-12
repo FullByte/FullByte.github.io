@@ -2,8 +2,7 @@ site_name: "0xfab1"
 site_url: https://0xfab1.net
 repo_url: https://github.com/FullByte/FullByte.github.io
 site_description: >-
-  Publishing my projects and notes has been great exercise for me. As longs as this works well for me I will continue doing so :)
-  The content may appear random as it deals with basically anything I find interesting and noteworthy
+  This is the personal website of 0xfab1. It mainly contains blog entries on IT tech stuff, games, making things and art.
 site_author: "0xfab1"
 
 theme:
