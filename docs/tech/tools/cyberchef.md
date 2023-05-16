@@ -20,3 +20,7 @@ Find_/_Replace({'option':'Regex','string':'[ \' ( ) + " ` ]'},'',true,false,true
 Find_/_Replace({'option':'Regex','string':'b2H_'},'http',true,false,true,false)
 Extract_URLs(false,false,false/disabled)
 ```
+
+## Eastereggs
+
+Open CyberChef and type the Konami Code: "UUDDLRLRBA"

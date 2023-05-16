@@ -1,5 +1,9 @@
 # Projects
 
+Most of the time, there are projects that need to be done by a data and projects that need to be done to a spec. Figure out what project you are working on. Choose two of the three constraints shown below and choose the best framework that seems to fit best:
+
+![projects_overview](_projects_overview.drawio.svg)
+
 Choosing the correct project management process depends on the specific requirements of your project, team, and organization. To make the best decision, consider the following factors:
 
 - Project complexity and scope: Assess the overall complexity and scope of your project. Waterfall works well for simpler projects with well-defined requirements, while Scrum and Kanban are better suited for more complex projects with changing requirements.
@@ -12,10 +16,6 @@ Choosing the correct project management process depends on the specific requirem
 - Organizational culture: Analyze your organization's culture and its openness to change. Agile methodologies like Scrum and Kanban require a collaborative and adaptive mindset, while Waterfall might be more suitable for traditional, hierarchical organizations.
 
 By weighing these factors, you can make a more informed decision on which project management process to adopt for your project. Keep in mind that you can also customize or combine methodologies to create a hybrid approach that best suits your needs.
-
-More simply put, choose two of the three constraints shown below and choose the best framework that seems to fit best:
-
-![projects_overview](_projects_overview.drawio.svg)
 
 ## Scrum
 

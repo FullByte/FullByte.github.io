@@ -229,7 +229,6 @@ Things I like or find entertaining/interessting.
     - heise developer: <https://www.heise.de/developer/rss/news-atom.xml>
     - t3n RSS Feed - News: <http://t3n.de/rss.xml>
     - Golem.de: <https://rss.golem.de/rss.php?feed=RSS2.0>
-    - DataGenetics: <http://datagenetics.com/feed/rss.xml>
     - Hackaday: <https://hackaday.com/blog/feed/>
     - iX news: <https://www.heise.de/ix/news/news-atom.xml>
     - TechCrunch: <https://techcrunch.com/feed/>
