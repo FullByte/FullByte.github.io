@@ -4,6 +4,10 @@ In search of the perfect date...
 
 ![xkcd_iso_8601](https://imgs.xkcd.com/comics/iso_8601.png) ![perfect-date](_perfect-date.jpg)
 
+Nice post about time:
+
+- <https://ourworldindata.org/time-use>
+
 ## Time zone
 
 Some links to time zone standards:
