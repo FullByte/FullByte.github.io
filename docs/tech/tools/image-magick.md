@@ -12,7 +12,17 @@ Info
 
 ## Simple Convert
 
-- PNG to PDF: ```convert prefix-*.png FINAL.pdf```
+Convert some PNGs into a PDF:
+
+``` sh
+convert prefix-*.png FINAL.pdf
+```
+
+Convert all images in a folder from heic to jpg
+
+``` sh
+magick mogrify -format jpg *.heic
+```
 
 ## GIF
 
