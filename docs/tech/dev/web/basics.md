@@ -26,6 +26,14 @@ Other:
 - Security.txt <https://securitytxt.org/>
 - Web Manifest <https://www.pwabuilder.com/generate>
 
+## Encypt Static Page
+
+How to encypt a static page with [staticrypt](https://github.com/robinmoisson/staticrypt)
+
+``` sh
+npx staticrypt index.html password
+```
+
 ## HTML
 
 ``` txt

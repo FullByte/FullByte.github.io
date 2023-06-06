@@ -123,6 +123,12 @@ sudo apt-get install ./name.deb
 
 [^1]: <https://www.urbandictionary.com/define.php?term=ubuntu>
 
+## Firefox
+
+Some services like Disneyplus do not support linux. Change the useragent string and make sure to be in "desktop mode" when browsing sites like this. A valid useragent is e.g.:
+
+`Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/106.0`
+
 ### Regolith
 
 [Regolith](https://regolith-desktop.com/) runs i3: a popular, fast, and configurable tiling window manager which is great for fast keyboard-driven workflows. Regolith integrates i3 with other desktop components such as i3bar, rofication, gnome-flashback, and ilia to provide a complete desktop interface.

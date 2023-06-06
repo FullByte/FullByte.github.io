@@ -38,6 +38,10 @@ schtasks /query /FO List /V | findstr /b /n /c:"Repeat: Every:" 2>&1
 
 For are more detailed system info dump run [winPEAS](https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/winPEAS/winPEASbat/winPEAS.bat).
 
+### User Info
+
+- Get last logon of user "john": ```net user john | findstr /B /C:"Last logon"```
+
 ### Robocopy
 
 - Exclude files: ```Robocopy /xd excludethis```

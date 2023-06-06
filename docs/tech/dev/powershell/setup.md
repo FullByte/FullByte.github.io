@@ -1,5 +1,9 @@
 # Powershell Setup
 
+Is there anything that doesn’t work?
+
+To quote Hamlet, Act 3, Scene 3, Line 87: “No.”
+
 ## Windows
 
 Admin Rights required

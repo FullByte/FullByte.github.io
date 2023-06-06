@@ -835,3 +835,17 @@ Things I like or find entertaining/interessting.
     - DALLMYD (Treasure Hunter): <https://www.youtube.com/c/DALLMYD/>
     - Gangerl: <https://www.youtube.com/c/Gangerl-Clemens/>
     - The Tim Traveller: <https://www.youtube.com/c/TheTimTraveller>
+
+## Quotes
+
+"The Universe is immaterial — mental and spiritual. Live, and enjoy." Richard Conn Henry
+
+"You know you're in love when you can't fall asleep because reality is finally better than your dreams." - Dr. Seuss
+
+"Happiness is doing it rotten your own way." Isaac Asimov
+
+“Love? What is it? Most natural painkiller what there is.” William S. Burroughs
+
+“When two people dream the same dream, it ceases to be an illusion.” Philip K. Dick
+
+"Entweder es klappt oder es klappt zusammen" Karnevalssitzung 1998
