@@ -29,5 +29,5 @@ Template:
 
 Example:
 
-- Login: https://proud-meadow-0468a7403.1.azurestaticapps.net/.auth/login/aad/callback
-- Logout: https://proud-meadow-0468a7403.1.azurestaticapps.net/.auth/logout/aad/callback
+- Login: `https://YOUR_SITE.1.azurestaticapps.net/.auth/login/aad/callback`
+- Logout: `https://YOUR_SITE.1.azurestaticapps.net/.auth/logout/aad/callback`

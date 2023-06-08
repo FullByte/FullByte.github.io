@@ -25,7 +25,7 @@ I am using the [boxes.py TwoPiece](https://festi.info/boxes.py/TwoPiece) templat
 
 ![einhorn-boxes-py](_einhorn-boxes-py.jpg)
 
-This is the print process creating dice and unicorn figure using [PA 12 Smooth (SLS)](https://www.sinterit.com/pa12-smooth/) with a [Sinterit Lisa Rev.B printer](https://www.sinterit.com/sinterit-lisa/lisa-de/#):
+This is the print process creating dice and unicorn figure using [PA 12 Smooth (SLS)](https://www.sinterit.com/pa12-smooth/) with a [Sinterit Lisa Rev.B printer](https://www.sinterit.com):
 
 [![einhorn-print](_einhorn-print.webp)](_einhorn-print.mp4)
 

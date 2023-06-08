@@ -7,7 +7,7 @@
 ## Windows 10 Driver Issue
 
 Driver is installed but found as "Serial" "USB device(COM3)" in the device manager
-"Update" the driver an use this instead: <http://web1.moddevices.com/shared/mod-duo-rndis.zip>
+"Update" the driver an use this instead: "mod-duo-rndis.zip".
 
 ## Connect to USB armory
 

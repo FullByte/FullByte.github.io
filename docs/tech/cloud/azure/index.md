@@ -137,7 +137,6 @@ Overview of links to regularly check to stay up-to-date on Azure.
 
 - Microsoft Ignite: <https://www.youtube.com/channel/UCrhJmfAGQ5K81XQ8_od1iTg>
 - Microsoft Mechanics: <https://www.youtube.com/channel/UCJ9905MRHxwLZ2jeNQGIWxA>
-- Microsoft Azure: <https://www.youtube.com/user/windowsazure>
 - Microsoft Cloud: <https://www.youtube.com/user/MSCloudOS>
 - Microsoft Developer: <https://www.youtube.com/channel/UCsMica-v34Irf9KVTh6xx-g>
 - Azure Academy: <https://www.youtube.com/channel/UC-MXgaFhsYU8PkqgKBdnusQ>

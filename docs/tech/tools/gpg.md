@@ -75,7 +75,7 @@ Search entry on Key Server
 gpg --keyserver hkp://keyserver.ubuntu.com --search-key 'fabian@fromm.rocks'
 ```
 
-Alternativly use the webinterface e.g. <https://keys.mailvelope.com/pks/lookup?op=get&search=email@example.com>
+Alternativly use the webinterface e.g. `https://keys.mailvelope.com/pks/lookup?op=get&search=email@example.com`
 
 ## Empty file and no PW
 

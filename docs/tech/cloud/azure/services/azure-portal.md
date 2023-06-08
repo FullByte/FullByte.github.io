@@ -21,5 +21,4 @@
 
 ### Azure Service Links (Placeholder)
 
-- Websites: <https://yourwebsite.scm.azurewebsites.net/>
-- [...]
+- Websites: `https://yourwebsite.scm.azurewebsites.net`

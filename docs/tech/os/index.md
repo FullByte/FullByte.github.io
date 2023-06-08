@@ -35,18 +35,18 @@ This is a list of interesting operating systems
 
 ## Interesting Raspberry Pi Images
 
-- https://www.openmediavault.org/
-- https://kodi.tv/
-- https://q4os.org/
-- https://openwrt.org/
-- https://www.zeroshell.org/
-- https://ubos.net/
-- https://magicmirror.builders/
-- https://octoprint.org/
-- https://retropie.org.uk/
-- https://blog.hypriot.com/
-- https://www.kali.org/
-- https://volumio.com
+- <https://www.openmediavault.org/>
+- <https://kodi.tv/>
+- <https://q4os.org/>
+- <https://openwrt.org/>
+- <https://www.zeroshell.org/>
+- <https://ubos.net/>
+- <https://magicmirror.builders/>
+- <https://octoprint.org/>
+- <https://retropie.org.uk/>
+- <https://blog.hypriot.com/>
+- <https://www.kali.org/>
+- <https://volumio.com>
 
 ## Plan 9
 
@@ -57,8 +57,3 @@ This is a list of interesting operating systems
 - wiki: <https://en.wikipedia.org/wiki/Plan_9_from_Bell_Labs>
 - 9front: <http://9front.org/>
 - SDF Plan9 Boot Camp: <https://sdf.org/plan9/>
-
-Blog posts:
-
-- <https://blog.tsr-podcast.com/index.php/2021/05/13/episode-76-oberon-plan-9-inferno/>
-- <https://pspodcasting.net/dan/blog/2019/plan9_desktop.html#intro>

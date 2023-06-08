@@ -70,26 +70,98 @@ Enter VMs commandline:
 Enter-AzVM -Name MyVM1 -ResourceGroupName MyResourceGroup -Credential (Get-Credential)
 ```
 
+## Basic Settings
+
+Set default context for Azure PowerShell
+
+``` ps1
+Update-AzConfig -DefaultSubscriptionForLogin abcdef-1111-...
+```
+
+Disable the survey message
+
+``` ps1
+Update-AzConfig -DisplaySurveyMessage $false
+```
+
+Enable the breaking change warning message
+
+``` ps1
+Update-AzConfig -DisplayBreakingChangeWarning $true
+```
+
+Disable region recommendation message
+
+``` ps1
+Update-AzConfig -DisplayRegionIdentified $false
+```
+
+Disable sending telemetry data to Microsoft
+
+``` ps1
+Update-AzConfig -EnableDataCollection $false
+```
+
+Disable Web Account Manager as default default interactive login
+
+``` ps1
+Update-AzConfig -EnableLoginByWam $false
+```
+
+Export Settings
+
+``` ps1
+Export-AzConfig -Path $HOME\AzConfig.json
+```
+
+The exported settings look like this:
+
+``` json
+{
+    "Az": {
+        "EnableDataCollection": false,
+        "DisplaySurveyMessage": false,
+        "DisplayBreakingChangeWarning": true,
+        "DisplayRegionIdentified": false,
+        "EnableLoginByWam": false,
+        "DefaultSubscriptionForLogin": "abcdef-1111-..."
+    }
+}
+```
+
+To import the settings run this:
+
+``` ps1
+Import-AzConfig -Path $HOME\AzConfig.json
+```
+
 ## Enhance CloudShell Bash
 
-**Posh-Git** provides us with information at the command line about the state of the current repository we are in. It also provides tab completion for Git commands.
-<https://github.com/dahlbyk/posh-git>
+[Az Predictor](https://www.powershellgallery.com/packages/Az.Tools.Predictor/0.2.0) is a PowerShell module that helps you navigate the cmdlets and parameters of the Az PowerShell module. It provides intelligent context-aware suggestions for command completion when using Azure PowerShell.
+
+``` ps1
+Install-Module -Name PSReadline
+Install-Module -Name Az.Tools.Predictor
+Enable-AzPredictor -AllSession
+Set-PSReadLineOption -PredictionViewStyle ListView
+```
+
+[Posh-Git](https://github.com/dahlbyk/posh-git) provides us with information at the command line about the state of the current repository we are in. It also provides tab completion for Git commands.
 
 ``` ps1
 install-module posh-git
 import-module posh-git
 ```
 
-**Oh-My-Posh** allows you to theme your prompt with various color schemes, Git status indicators, Admin status and many other things.
-<https://github.com/JanDeDobbeleer/oh-my-posh>
+[Oh-My-Posh](https://github.com/JanDeDobbeleer/oh-my-posh) allows you to theme your prompt with various color schemes, Git status indicators, Admin status and many other things.
+<>
 
 ``` ps1
 Install-Module oh-my-posh
 Import-module oh-my-posh
 ```
 
-**Get-ChildItemColor** is a simple tool which adds color coding to the get-childitem command. When you run this command, you get different colors used for folders vs. files and different file types.
-<https://github.com/joonro/Get-ChildItemColor>
+[Get-ChildItemColor](https://github.com/joonro/Get-ChildItemColor) is a simple tool which adds color coding to the get-childitem command. When you run this command, you get different colors used for folders vs. files and different file types.
 
 ``` ps1
 Install-Module Get-ChildItemColor

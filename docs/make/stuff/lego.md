@@ -8,7 +8,9 @@ TODO
 
 ## Rubik's Cube
 
-I built the [LEGO Rubik's Cube Lego](https://rebrickable.com/mocs/MOC-91837/puzzLEGO/working-lego-rubiks-cube-new-revised/#details) MOC Designed by [puzzLEGO](https://rebrickable.com/users/puzzLEGO/mocs/). This is a [video](https://www.youtube.com/watch?v=tolQCt76LBk) on the design. I purchased all parts from one vendor at [bricklink](https://www.bricklink.com).
+I built the [LEGO Rubik's Cube Lego](https://rebrickable.com/mocs/MOC-91837/puzzLEGO/working-lego-rubiks-cube-new-revised/#details) MOC Designed by [puzzLEGO](https://rebrickable.com/users/puzzLEGO/mocs/). 
+This is a [video](https://www.youtube.com/watch?v=tolQCt76LBk) on the design. 
+I purchased all parts from one vendor at [bricklink](https://www.bricklink.com).
 
 ![lego-rubiks-cube](_lego-rubiks-cube1.jpg)
 
@@ -84,7 +86,7 @@ Possible lego base plates
 
 Since a QR-Code has the same length as hight any of the above values would fit perfectly on a given lego base plate.
 
-Unfortunately the initial idea of using the value "https://0xfab1.net/make/lego/qr-code/" and therewith referencing to this page doesn't result in a perfect match despite trying different paddings:
+The initial idea of using the value `https://0xfab1.net/make/lego/qr-code` and therewith referencing to this page doesn't result in a perfect match despite trying different paddings:
 
 ``` txt
 7% padding:  29x29 or *2 for double width = 58x58
@@ -93,7 +95,8 @@ Unfortunately the initial idea of using the value "https://0xfab1.net/make/lego/
 30% padding: 37x37 or *2 for double width = 74x74
 ```
 
-The next attempt would to go for "https://0xfab1.net". The results are:  
+Luckily it didn't work out as the link has now changed an would have been invalid as i refuse to take care of redirects. 
+The next attempt would to go for <https://0xfab1.net>. The results are:  
 
 ``` txt
 7% padding: 25x25 or *2 for double width = 50x50
@@ -102,7 +105,8 @@ The next attempt would to go for "https://0xfab1.net". The results are:
 30% padding: 29x29 or *2 for double width = 58x58
 ```
 
-50x50 is a valid lego base plate and a possible result for the QR-Code. I will go with the 25% padding option as this will lead to better scanning results without any downsides.
+50x50 is a valid lego base plate and a possible result for the QR-Code. 
+I will go with the 25% padding option as this will lead to better scanning results without any downsides.
 
 ![QR-Code for https://0xfab1.net](_qrcode0xfab1.png)
 
@@ -110,7 +114,7 @@ The value "https://0xfab1.net" as QR-Code.
 
 ### Bricklink Studio
 
-I didn't find a cool way to automatically build the QR-Code in Bricklink Studio so I just opened the image of the QR-Codes shared above and rebuilt it using different flat tiles. Classic QR-Codes have black and white pixels so i went with that look and chose a white 50x50 baseplate and used different sized black tiles for the pixels.
+I didn't find a cool way to automatically build the QR-Code in Bricklink Studio so I just opened the image of the QR-Codes shared above and rebuilt it using different flat tiles. Classic QR-Codes have black and white pixels so I went with that look and chose a white 50x50 baseplate and used different sized black tiles for the pixels.
 
 ![bricklink studio](_qrcodestudiobricklink.jpg)
 

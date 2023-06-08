@@ -220,7 +220,7 @@ Output:
 
 ## XMAS
 
-- Link: <https://xmas.futile.net>
+- Link: `https://xmas.futile.net`
 - Use: ```traceroute -Mil -m128 xmas.futile.net```
 
 ``` txt
