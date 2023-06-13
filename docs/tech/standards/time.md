@@ -8,6 +8,112 @@ Nice post about time:
 
 - <https://ourworldindata.org/time-use>
 
+## Calculate the day of the week
+
+Calculate a number for each of the day, month, and year by adding the digits together as follows:
+
+In this example todays date is 15. June 2023:
+
+Day = just todays day e.g. 15 of June
+
+Month = the number of below table e.g. for June = 3
+
+| Value | Month |
+|-------|-------|
+| 6     | Jan   |
+| 2     | Feb   |
+| 2     | Mar   |
+| 5     | Apr   |
+| 0     | May   |
+| 3     | Jun   |
+| 5     | Jul   |
+| 1     | Aug   |
+| 4     | Sep   |
+| 6     | Oct   |
+| 2     | Nov   |
+| 4     | Dec   |
+
+Years = the number of below table e.g. for 2023 = 0
+
+| Value | Year           |
+|-------|----------------|
+| 0     | 00, 06, 17, 23 |
+| 1     | 01, 07, 12, 18 |
+| 2     | 02, 13, 19, 24 |
+| 3     | 03, 08, 14, 25 |
+| 4     | 09, 15, 20, 26 |
+| 5     | 04, 10, 21, 27 |
+| 6     | 05, 11, 16, 22 |
+
+When calculating the year, either memorize the table or calculate the value using the last two digits e.g. for 2023 = 23.
+Take 23, divide it by 4, and round down, then add it back to itself. Eg. 23/4 = 5 (rounded down). Adding this to itself we get 28 (23+5).
+Now, we get the remainder after dividing by 7. In our case of 28, the remainder after division by 7 is 0.
+
+If the year is in the 20th century (1900-1999), add +1. The algorithm will not work for dates before 1582. In our example we add 0. For other centuries use this overview:
+
+| Century | add this |
+|---------|----------|
+| 1500s   | 1        |
+| 1600s   | 0        |
+| 1700s   | 5        |
+| 1800s   | 3        |
+| 1900s   | 1        |
+| 2000s   | 0        |
+| 2100s   | 5        |
+| 2200s   | 3        |
+| 2300s   | 1        |
+| 2400s   | 0        |
+| 2500s   | 5        |
+| 2600s   | 3        |
+
+If the date is January or February of a leap year, then subtract 1 to the final answer. Here is a list of leap years from 1804-2400:
+
+| Years | Years | Years | Years | Years | Years |
+|-------|-------|-------|-------|-------|-------|
+| 1804  | 1904  | 2004  | 2104  | 2204  | 2304  |
+| 1808  | 1908  | 2008  | 2108  | 2208  | 2308  |
+| 1812  | 1912  | 2012  | 2112  | 2212  | 2312  |
+| 1816  | 1916  | 2016  | 2116  | 2216  | 2316  |
+| 1820  | 1920  | 2020  | 2120  | 2220  | 2320  |
+| 1824  | 1924  | 2024  | 2124  | 2224  | 2324  |
+| 1828  | 1928  | 2028  | 2128  | 2228  | 2328  |
+| 1832  | 1932  | 2032  | 2132  | 2232  | 2332  |
+| 1836  | 1936  | 2036  | 2136  | 2236  | 2336  |
+| 1840  | 1940  | 2040  | 2140  | 2240  | 2340  |
+| 1844  | 1944  | 2044  | 2144  | 2244  | 2344  |
+| 1848  | 1948  | 2048  | 2148  | 2248  | 2348  |
+| 1852  | 1952  | 2052  | 2152  | 2252  | 2352  |
+| 1856  | 1956  | 2056  | 2156  | 2256  | 2356  |
+| 1860  | 1960  | 2060  | 2160  | 2260  | 2360  |
+| 1864  | 1964  | 2064  | 2164  | 2264  | 2364  |
+| 1868  | 1968  | 2068  | 2168  | 2268  | 2368  |
+| 1872  | 1972  | 2072  | 2172  | 2272  | 2372  |
+| 1876  | 1976  | 2076  | 2176  | 2276  | 2376  |
+| 1880  | 1980  | 2080  | 2180  | 2280  | 2380  |
+| 1884  | 1984  | 2084  | 2184  | 2284  | 2384  |
+| 1888  | 1988  | 2088  | 2188  | 2288  | 2388  |
+| 1892  | 1992  | 2092  | 2192  | 2292  | 2392  |
+| 1896  | 1996  | 2096  | 2196  | 2296  | 2396  |
+|       | 2000  |       |       |       | 2400  |
+
+So finally, in our example we add 15+3+0+0+0 = 18 and get the remainder when dividing the result by 7 = 4.
+
+According to the table below 4 = Thursday so 15. June 2023 was a Thursday :)
+
+| Value | Day of the week |
+|-------|-----------------|
+| 0     | Sunday          |
+| 1     | Monday          |
+| 2     | Tuesday         |
+| 3     | Wednesday       |
+| 4     | Thursday        |
+| 5     | Friday          |
+| 6     | Saturday        |
+
+The full formula looks like this:
+
+Remainder of (Day + Month(Table) + Year(Table) + Century + (if leap year + 1))/7 = value to look up in day of the week table.
+
 ## Time zone
 
 Some links to time zone standards:
