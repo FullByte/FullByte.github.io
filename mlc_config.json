@@ -4,7 +4,13 @@
             "pattern": "^(http|https)://10.0.4.*."
         },
         {
-            "pattern": "^(http|https)://localhost"
+            "pattern": "^(http|https)://localhost*"
+        },
+        {
+            "pattern": "^(http|https)://127.0.0.1*"
+        },
+        {
+            "pattern": "^(http|https)://localhost*"
         }
     ],
     "timeout": "20s",
