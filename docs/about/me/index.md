@@ -1,14 +1,15 @@
 # Me
 
-This is a one-person operation.
+Some facts about me:
 
-Thanks for your interest!
-
-## Last Update
-
-Lastest update on my feed:
-
-<script src="https://status.lol/yolo.js?no-emoji"></script>
+- I found my great white buffalo 🧡
+- I climb, ski, ride and run with passion 🔥
+- I spend most of my time with tech, games and music 🤖
+- I make stuff (mainly board games and stuff with the laser cutter) 🎲
+- I believe pineapple pizza is not a crime 🍕
+- I think the best time of the day is 22:22 🕰
+- I say "Entweder es klappt oder es klappt zusammen." 😤
+- Last link i visited which I would like to share: <script src="https://status.lol/yolo.js?no-emoji"></script>
 
 ## Avatar
 
