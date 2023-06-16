@@ -42,7 +42,7 @@ and you will receive this result:
 ## Q&A
 
 ??? question "What was your most interesting online purchase?"
-    In 2014 [I spent](https://www.blockchain.com/btc/tx/9e97ec563980c884b530faa2455013e947c26314e2e8a446456e1641a84471c0) [0.04911049 BTC](https://duckduckgo.com/?q=0.04911049+btc+in+euro&ia=cryptocurrency) for digital copy of the [50 Cent](https://de.wikipedia.org/wiki/50_Cent) Album [Animal Ambition](https://de.wikipedia.org/wiki/Animal_Ambition). Curtis and I both forgot about it until suddenly BTC was worth a lot of money. As of today, this is my most expensive album purchase yet. No Ragrets :)
+    In 2014 [I spent](https://www.blockchain.com/btc/tx/9e97ec563980c884b530faa2455013e947c26314e2e8a446456e1641a84471c0) [0.04911049 BTC](https://duckduckgo.com/?q=0.04911049+btc+in+euro&ia=cryptocurrency) for digital copy of the [50 Cent](https://de.wikipedia.org/wiki/50_Cent) Album [Animal Ambition](https://en.wikipedia.org/wiki/Animal_Ambition). Curtis and I both forgot about it until suddenly BTC was worth a lot of money. As of today, this is my most expensive album purchase yet. No Ragrets :)
 
     ![](_50cent_bitcoin3.jpg)
 
