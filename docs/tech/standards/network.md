@@ -85,7 +85,36 @@
 
 ## IP addresses
 
-Some useful lists
+The IETF has reserved the address block of 192.0.0.0/24 for use for special purposes relating to protocol assignments. This registry contains the current assignments made by the IETF from this address block. Address prefixes listed in the Special-Purpose Address Registry are not guaranteed routability in any particular local or global context. Source: <https://www.iana.org/assignments/iana-ipv4-special-registry/iana-ipv4-special-registry.xhtml>
+
+|        Address Block #         |                  Name #                   |                 RFC #                 | Allocation Date # | Termination Date # |
+|:------------------------------:|:-----------------------------------------:|:-------------------------------------:|:-----------------:|:------------------:|
+|           0.0.0.0/8            |              "This network"               |         [RFC791], Section 3.2         |      1981-09      |        N/A         |
+|           0.0.0.0/32           |        "This host on this network"        |      [RFC1122], Section 3.2.1.3       |      1981-09      |        N/A         |
+|           10.0.0.0/8           |                Private-Use                |               [RFC1918]               |      1996-02      |        N/A         |
+|         100.64.0.0/10          |           Shared Address Space            |               [RFC6598]               |      2012-04      |        N/A         |
+|          127.0.0.0/8           |                 Loopback                  |      [RFC1122], Section 3.2.1.3       |      1981-09      |        N/A         |
+|         169.254.0.0/16         |                Link Local                 |               [RFC3927]               |      2005-05      |        N/A         |
+|         172.16.0.0/12          |                Private-Use                |               [RFC1918]               |      1996-02      |        N/A         |
+|        192.0.0.0/24 [2]        |         IETF Protocol Assignments         |        [RFC6890], Section 2.1         |      2010-01      |        N/A         |
+|          192.0.0.0/29          |      IPv4 Service Continuity Prefix       |               [RFC7335]               |      2011-06      |        N/A         |
+|          192.0.0.8/32          |            IPv4 dummy address             |               [RFC7600]               |      2015-03      |        N/A         |
+|          192.0.0.9/32          |       Port Control Protocol Anycast       |               [RFC7723]               |      2015-10      |        N/A         |
+|         192.0.0.10/32          | Traversal Using Relays around NAT Anycast |               [RFC8155]               |      2017-02      |        N/A         |
+| 192.0.0.170/32, 192.0.0.171/32 |           NAT64/DNS64 Discovery           |    [RFC8880][RFC7050], Section 2.2    |      2013-02      |        N/A         |
+|          192.0.2.0/24          |        Documentation (TEST-NET-1)         |               [RFC5737]               |      2010-01      |        N/A         |
+|        192.31.196.0/24         |                 AS112-v4                  |               [RFC7535]               |      2014-12      |        N/A         |
+|        192.52.193.0/24         |                    AMT                    |               [RFC7450]               |      2014-12      |        N/A         |
+|         192.88.99.0/24         |      Deprecated (6to4 Relay Anycast)      |               [RFC7526]               |      2001-06      |      2015-03       |
+|         192.168.0.0/16         |                Private-Use                |               [RFC1918]               |      1996-02      |        N/A         |
+|        192.175.48.0/24         |      Direct Delegation AS112 Service      |               [RFC7534]               |      1996-01      |        N/A         |
+|         198.18.0.0/15          |               Benchmarking                |               [RFC2544]               |      1999-03      |        N/A         |
+|        198.51.100.0/24         |        Documentation (TEST-NET-2)         |               [RFC5737]               |      2010-01      |        N/A         |
+|         203.0.113.0/24         |        Documentation (TEST-NET-3)         |               [RFC5737]               |      2010-01      |        N/A         |
+|          240.0.0.0/4           |                 Reserved                  |         [RFC1112], Section 4          |      1989-08      |        N/A         |
+|       255.255.255.255/32       |             Limited Broadcast             | [RFC8190]         [RFC919], Section 7 |      1984-10      |        N/A         |
+
+Further, useful lists:
 
 - [IPv4 Blocks](https://en.wikipedia.org/wiki/List_of_assigned_/8_IPv4_address_blocks)
 - [Reserved IP Addresses](https://en.wikipedia.org/wiki/Reserved_IP_addresses)
