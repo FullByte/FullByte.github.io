@@ -1,5 +1,9 @@
 # Res
 
+These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [res](https://tryhackme.com/room/res).
+
+## Flag 1
+
 Scanning the environment we find an apache webserver and a redis database...
 
 ``` sh
@@ -33,6 +37,8 @@ Once we are succesfully connected we can stabilize the shell and view the first 
 python3 -c 'import pty;pty.spawn("/bin/bash")'
 cat /home/vianka/user.txt
 ```
+
+## Flag 2
 
 Lets have a look at the passwd
 
