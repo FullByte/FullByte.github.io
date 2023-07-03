@@ -1,6 +1,6 @@
 # Pencil Box
 
-TODO
+![Pencil Box](_pencil-case.jpg)
 
 Files
 

@@ -4,10 +4,18 @@
 
 It was really satisfying to sort the batteries I had. Looks great, works as intended - perfect :)
 
-![Battery Crate](_battery.jpg)
+![Battery Crate](_3d-battery1.jpg)
+
+![Battery Crate](_3d-battery2.jpg)
+
+![Battery Crate](_3d-battery3.jpg)
 
 ## Ultimate Tic-Tac-Toe
 
-![Ultimate Tic-Tac-Toe](_ultimate-tic-tac-toe1.jpg)
+![Ultimate Tic-Tac-Toe](_3d-ultimate-tic-tac-toe1.jpg)
 
-![Ultimate Tic-Tac-Toe](_ultimate-tic-tac-toe2.jpg)
+![Ultimate Tic-Tac-Toe](_3d-ultimate-tic-tac-toe2.jpg)
+
+## Dragon
+
+![Dragon](_3d-dragon.jpg)
