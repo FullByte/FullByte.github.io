@@ -95,20 +95,20 @@ Places that are worth a look if you are attempting to privilege escalate / perfo
 ### Examples
 
 ``` sh
-Every Minute    * * * * *
-Every Five Minutes    */5 * * * *
-Every 10 Minutes    */10 * * * *
-Every 15 Minutes    */15 * * * *
-Every 30 Minutes    */30 * * * *
-Every Hour    0 * * * *
-Every Two Hours    0 */2 * * *
-Every Six Hours    0 */6 * * *
-Every 12 Hours    0 */12 * * *
-During the Work Day    */5 9-17 * * *
-Every day at Midnight    0 0 * * *
-Every Two Weeks    0 0 * * Sun [ $(expr $(date +%W) % 2) -eq 1 ] && /path/to/command
-At the Start of Every Month    0 0 1 * *
-On January 1st at Midnight    0 0 1 1 *
+Every Minute            * * * * *
+Every Five Minutes      */5 * * * *
+Every 10 Minutes        */10 * * * *
+Every 15 Minutes        */15 * * * *
+Every 30 Minutes        */30 * * * *
+Every Hour              0 * * * *
+Every Two Hours         0 */2 * * *
+Every Six Hours         0 */6 * * *
+Every 12 Hours          0 */12 * * *
+During the Work Day     */5 9-17 * * *
+Every day at Midnight   0 0 * * *
+Every Two Weeks         0 0 * * Sun [ $(expr $(date +%W) % 2) -eq 1 ] && /path/to/command
+First day, every Month  0 0 1 * *
+January 1st at Midnight 0 0 1 1 *
 ```
 
 ## Linux Tools
@@ -152,6 +152,7 @@ On January 1st at Midnight    0 0 1 1 *
 | top          | [btop](https://github.com/aristocratos/btop), [gtop](https://github.com/aksakalli/gtop), [htop](https://github.com/htop-dev/htop/), [tiptop](https://github.com/nschloe/tiptop), [bottom](https://github.com/ClementTsang/bottom), [glances](https://github.com/nicolargo/glances), [bpytop](https://github.com/aristocratos/bpytop) |
 | tree         | [broot](https://github.com/Canop/broot)                                                                                                                                                                                                                                                                                              |
 | sort \| uniq | [huniq](https://github.com/koraa/huniq)                                                                                                                                                                                                                                                                                              |
+| ping         | [gping](https://github.com/orf/gping)                                                                                                                                                                                                                                                                                                |
 
 ### JSON
 
