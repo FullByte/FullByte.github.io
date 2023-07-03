@@ -57,7 +57,7 @@ docker run -it --rm -p 8000:8000 yourbuild serve -a 0.0.0.0:8000
 
 ## Contribute
 
-I appreciate your pull-request for typos/errors in existing pages. If you think something is generally wrong or I missed to link you/someone where appropiate, please let me know!
+I appreciate your pull-request for typos/errors in existing pages. If you think something is generally wrong or I missed to link you/someone where appropriate, please let me know!
 
 - Fork the current version (e.g. with [github cli](https://cli.github.com/)): ```gh repo fork https://github.com/FullByte/FullByte.github.io.git```)
 - Do the changes you want to make and commit the updates to your fork.

@@ -21,7 +21,7 @@ I hope you appreciate the lack of ads and pop-ups. Use the navigation menu on th
 Toggle between light and dark mode, depending on what your prefer.
 
 I appreciate your [pull-request on GitHub](https://github.com/FullByte/FullByte.github.io#contribute) for typos/errors in existing pages.
-If you think something is generally wrong or I missed to link you where appropiate, please [let me know](about/me/contact)!
+If you think something is generally wrong or I missed to link you where appropriate, please [let me know](about/me/contact)!
 
 Enjoy the [content](https://0xfab1.net/sitemap) and find your visit worthwhile :)
 
