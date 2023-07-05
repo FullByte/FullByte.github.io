@@ -1,6 +1,6 @@
-# Screen standarads
+# Screen standards
 
-## Resoltion
+## Resolution
 
 ### Pixels
 

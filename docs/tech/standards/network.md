@@ -1,5 +1,378 @@
 # Network
 
+## Services
+
+### DNS
+
+Rule 53: If you can think of it, someone's done it in the DNS
+
+![google_announcement](_google_announcement.png)
+
+#### Public DNS
+
+A list of public DNS Servers
+
+| Provider                                                                     | IPv4                              | IPv6                                                    | DNS over HTTPS & TLS                                                                                       |
+|------------------------------------------------------------------------------|-----------------------------------|---------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [AliDNS](https://alidns.com/)                                                | 223.5.5.5 / 223.6.6.6             |                                                         | [HTTPS](https://dns.alidns.com/dns-query), [TLS](tls://9999.alidns.com):                                   |
+| [Alternate DNS](https://alternate-dns.com/)                                  | 198.101.242.72 / 23.253.163.53    | 2602:fcbc::ad / 2001:4800:780e:510:a8cf:392e:ff04:8982  | [HTTPS](https://dns.alternate-dns.com/dns-query), [TLS](tls://dns.alternate-dns.com)                       |
+| [Cisco OpenDNS FamilyShield](https://www.opendns.com/cisco-opendns/)         | 208.67.222.123 / 208.67.220.123   | 2620:119:35::123 / 2620:119:53::123                     | [HTTPS](https://doh.familyshield.opendns.com/dns-query)                                                    |
+| [Cisco OpenDNS Standards](https://www.opendns.com/cisco-opendns/)            | 208.67.222.222 / 208.67.220.220   | 2620:119:35::35 / 2620:119:53::53                       | [HTTPS](https://doh.opendns.com/dns-query)                                                                 |
+| [CleanBrowsing Adult](https://cleanbrowsing.org/guides/)                     | 185.228.168.10 / 185.228.169.11   | 2a0d:2a00:1::1 / 2a0d:2a00:2::1                         | [HTTPS](https://adult-filter-dns.cleanbrowsing.org)                                                        |
+| [CleanBrowsing Family](https://cleanbrowsing.org/guides/)                    | 185.228.168.168 / 185.228.169.168 | 2a0d:2a00:1:: / 2a0d:2a00:2::                           | [HTTPS](https://family-filter-dns.cleanbrowsing.org)                                                       |
+| [CleanBrowsing Security](https://cleanbrowsing.org/guides/)                  | 185.228.168.9 / 185.228.169.9     | 2a0d:2a00:1::2 / 2a0d:2a00:2::2                         | [HTTPS](https://security-filter-dns.cleanbrowsing.org)                                                     |
+| [Cloudflare](https://developers.cloudflare.com/1.1.1.1/)                     | 1.1.1.1 / 1.0.0.1                 | 2606:4700:4700::1111 / 2606:4700:4700::1001             | [HTTPS](https://1dot1dot1dot1.cloudflare-dns.com)                                                          |
+| [Comodo DNS](https://securedns.dnsbycomodo.com/support/)                     | 8.26.56.26 / 8.20.247.20          | N/A                                                     | N/A                                                                                                        |
+| [Comodo Secure Internet Gateway](https://securedns.dnsbycomodo.com/support/) | 8.26.56.10 / 8.20.247.10          | N/A                                                     | N/A                                                                                                        |
+| [ControlD](https://controld.com) Uncensored                                  | 76.76.2.5 / 76.76.10.5            | 2606:1a40::5 / 2606:1a40:1::5                           | [HTTPS](https://freedns.controld.com/uncensored), [TLS](uncensored.freedns.controld.com)                   |
+| [ControlD](https://controld.com) Filter                                      | 76.76.2.4 / 76.76.10.4            | 2606:1a40::4 / 2606:1a40:1::4                           | [HTTPS](https://freedns.controld.com/family), [TLS](family.freedns.controld.com)                           |
+| [Digital Courage](https://digitalcourage.de/support/zensurfreier-dns-server) | 5.9.164.112 / 46.182.19.48        | 2a02:2970:1002::18                                      | [HTTPS](https://dns3.digitalcourage.de)                                                                    |
+| [dns.watch](https://dns.watch/)                                              | 84.200.69.80 / 84.200.70.40       | 2001:1608:10:25::1c04:b12f / 2001:1608:10:25::9249:d69b | [HTTPS](https://resolver2.dns.watch/dns-query)                                                             |
+| [Dyn DNS](https://help.dyn.com/internet-guide-setup/)                        | 216.146.35.35 / 216.146.36.36     | N/A                                                     | N/A                                                                                                        |
+| [FreeDNS](https://freedns.zone)                                              | 172.104.237.57 / 37.235.1.177     | N/A                                                     | N/A                                                                                                        |
+| [Google](https://developers.google.com/speed/public-dns/docs/using)          | 8.8.8.8 / 8.8.4.4                 | 2001:4860:4860::8888 / 2001:4860:4860::8844             | [HTTPS](https://dns.google), [TLS](tls://dns.google)                                                       |
+| [Hurricane Electric](https://dns.he.net/)                                    | 74.82.42.42                       | 2001:470:20::2                                          | N/A                                                                                                        |
+| [OpenNIC](https://servers.opennic.org/)                                      | 69.195.152.204 / 23.94.60.240     | N/A                                                     | N/A                                                                                                        |
+| [Quad9](https://www.quad9.net/service/service-addresses-and-features/)       | 9.9.9.9 /  149.112.112.112        | 2620:fe::fe / 2620:fe::9                                | [HTTPS](https://dns11.quad9.net/dns-query), [TLS](tls://dns11.quad9.net)                                   |
+| [UncensoredDNS](https://blog.uncensoreddns.org/dns-servers/)                 | 91.239.100.100 / 89.233.43.71     | 2001:67c:28a4:: / 2a01:3a0:53:53::                      | [HTTPS](https://anycast.uncensoreddns.org/dns-query), [HTTPS](https://unicast.uncensoreddns.org/dns-query) |
+| [Yandex.DNS Standard](https://dns.yandex.com/)                               | 77.88.8.8 / 77.88.8.1             | N/A                                                     | N/A                                                                                                        |
+| [Yandex.DNS Safe](https://dns.yandex.com/)                                   | 77.88.8.88 / 77.88.8.2            | N/A                                                     | N/A                                                                                                        |
+| [Yandex.DNS Family](https://dns.yandex.com/)                                 | 77.88.8.7 / 77.88.8.3             | N/A                                                     | N/A                                                                                                        |
+
+#### DDNS service
+
+- [DuckDNS](https://www.duckdns.org/)
+- [Cloudflare Tunnels](https://www.cloudflare.com/products/tunnel/)
+
+#### DNS root zones
+
+A list of [DNS root zones](https://www.iana.org/domains/root/servers):
+
+| Hostname           | IPv4           | IPv6                | Operator                                                         |
+|--------------------|----------------|---------------------|------------------------------------------------------------------|
+| a.root-servers.net | 198.41.0.4     | 2001:503:ba3e::2:30 | Verisign Inc.                                                    |
+| b.root-servers.net | 199.9.14.201   | 2001:500:200::b     | University of Southern California Information Sciences Institute |
+| c.root-servers.net | 192.33.4.12    | 2001:500:2::c       | Cogent Communications                                            |
+| d.root-servers.net | 199.7.91.13    | 2001:500:2d::d      | University of Maryland                                           |
+| e.root-servers.net | 192.203.230.10 | 2001:500:a8::e      | NASA (Ames Research Center)                                      |
+| f.root-servers.net | 192.5.5.241    | 2001:500:2f::f      | Internet Systems Consortium Inc.                                 |
+| g.root-servers.net | 192.112.36.4   | 2001:500:12::d0d    | US Department of Defense (NIC)                                   |
+| h.root-servers.net | 198.97.190.53  | 2001:500:1::53      | US Army (Research Lab)                                           |
+| i.root-servers.net | 192.36.148.17  | 2001:7fe::53        | Netnod                                                           |
+| j.root-servers.net | 192.58.128.30  | 2001:503:c27::2:30  | Verisign Inc.                                                    |
+| k.root-servers.net | 193.0.14.129   | 2001:7fd::1         | RIPE NCC                                                         |
+| l.root-servers.net | 199.7.83.42    | 2001:500:9f::42     | ICANN                                                            |
+| m.root-servers.net | 202.12.27.33   | 2001:dc3::35        | WIDE Project                                                     |
+
+#### More Services
+
+DNS Services
+
+- <https://www.rethinkdns.com/>
+- [DNS toys](https://www.dns.toys) offers some handy utilites (time, conversions, weather)
+- [NextDNS API](https://nextdns.github.io/api/)
+
+DNS Provider
+
+- <https://www.publicdns.xyz/>
+- <https://public-dns.info/>
+- <https://dns.google/>
+
+Other Lists
+
+- ISPs per country <https://www.nirsoft.net/countryip/>
+- Root zones: <https://www.internic.net/domain/root.zone>
+- Root Servers: <https://root-servers.org/>
+- <https://www.numprotocol.com/>
+- Rule 53: <https://github.com/pgl/rule53>
+
+
+### NTP
+
+```txt
+.'`~~~~~~~~~~~`'.
+(  .'11 12 1'.  )
+|  :10 \|   2:  |
+|  :9   @   3:  |
+|  :8       4;  |
+'. '..7 6 5..' .'
+ ~-------------~ 
+```
+
+List of NTP Servers:
+
+| Service                     | URL                            |     |
+|-----------------------------|--------------------------------|-----|
+| apple                       | time.apple.com                 |     |
+| apple                       | time.euro.apple.com            |     |
+| apple                       | time1.apple.com                |     |
+| apple                       | time2.apple.com                |     |
+| apple                       | time3.apple.com                |     |
+| apple                       | time4.apple.com                |     |
+| apple                       | time5.apple.com                |     |
+| apple                       | time6.apple.com                |     |
+| apple                       | time7.apple.com                |     |
+| AWS                         | time.aws.com                   |     |
+| berkeley                    | ntp1.net.berkeley.edu          |     |
+| berkeley                    | ntp2.net.berkeley.edu          |     |
+| cenam                       | cronos.cenam.mx                |     |
+| Chinese Academy of Sciences | ntp.ntsc.ac.cn                 |     |
+| cloudflare                  | time.cloudflare.com            |     |
+| colby                       | ntp.colby.edu                  |     |
+| colorado                    | utcnist2.colorado.edu          |     |
+| columbia                    | gnomon.cc.columbia.edu         |     |
+| dianacht                    | ntp.dianacht.de                |     |
+| edu.cn                      | ntp.neu.edu.cn                 |     |
+| ehu                         | ntp.i2t.ehu.eus                |     |
+| esa                         | time.esa.int                   |     |
+| esa                         | time1.esa.int                  |     |
+| EWETel                      | ntp0.ewetel.de                 |     |
+| EWETel                      | ntp1.ewetel.de                 |     |
+| facebook                    | time.facebook.com              |     |
+| facebook                    | time1.facebook.com             |     |
+| facebook                    | time2.facebook.com             |     |
+| facebook                    | time3.facebook.com             |     |
+| facebook                    | time4.facebook.com             |     |
+| facebook                    | time5.facebook.com             |     |
+| fau                         | ntp1.fau.de                    |     |
+| fau                         | ntp2.fau.de                    |     |
+| Freenet                     | ntp0.freenet.de                |     |
+| Freenet                     | ntp1.freenet.de                |     |
+| fu-berlin                   | time.fu-berlin.de              |     |
+| fu-berlin                   | zeit.fu-berlin.de              |     |
+| gatech                      | navobs1.gatech.edu             |     |
+| Georgia State University    | ntp.gsu.edu                    |     |
+| google                      | time.google.com               |     |
+| google                      | time1.google.com               |     |
+| google                      | time2.google.com               |     |
+| google                      | time3.google.com               |     |
+| google                      | time4.google.com               |     |
+| gum                         | tempus1.gum.gov.pl             |     |
+| gum                         | tempus2.gum.gov.pl             |     |
+| he                          | clock.nyc.he.net               |     |
+| he                          | clock.sjc.he.net               |     |
+| hea                         | ntp-galway.hea.net             |     |
+| Hetzner                     | ntp1.hetzner.de                |     |
+| Hetzner                     | ntp2.hetzner.de                |     |
+| Hetzner                     | ntp3.hetzner.de                |     |
+| iiss                        | asynchronos.iiss.at            |     |
+| in.ua                       | ntp.time.in.ua                 |     |
+| in.ua                       | ntp2.time.in.ua                |     |
+| in.ua                       | ntp3.time.in.ua                |     |
+| inrim                       | ntp1.inrim.it                  |     |
+| inrim                       | ntp2.inrim.it                  |     |
+| INTERNET MULTIFEED CO.      | ntp1.jst.mfeed.ad.jp           |     |
+| INTERNET MULTIFEED CO.      | ntp2.jst.mfeed.ad.jp           |     |
+| INTERNET MULTIFEED CO.      | ntp3.jst.mfeed.ad.jp           |     |
+| isc                         | clock.isc.org (prev ntp.isc.o  | rg) |
+| isi                         | timekeeper.isi.edu             |     |
+| Kantonsschule Zug           | ntp0.as34288.net               |     |
+| Kantonsschule Zug           | ntp1.as34288.net               |     |
+| layer42                     | gps.layer42.net                |     |
+| lcf                         | ntp.lcf.mx                     |     |
+| liu                         | timehost.lysator.liu.se        |     |
+| microsoft                   | time.windows.com               |     |
+| mobatime                    | ntp.mobatime.ru                |     |
+| MSK-IX                      | ntp.ix.ru                      |     |
+| mta                         | ntp.atomki.mta.hu              |     |
+| Nat Morris                  | ntp.nat.ms                     |     |
+| neel                        | ntp.neel.ch                    |     |
+| netbone-digital             | ntpstm.netbone-digital.com     |     |
+| Netnod                      | ntp.se                         |     |
+| Netnod Göteborg             | gbg1.ntp.se                    |     |
+| Netnod Göteborg             | gbg2.ntp.se                    |     |
+| Netnod Malmö                | mmo1.ntp.se                    |     |
+| Netnod Malmö                | mmo2.ntp.se                    |     |
+| nic                         | ntp.nic.cz                     |     |
+| nict                        | ntp.nict.jp                    |     |
+| nict                        | ntp.nict.jp                    |     |
+| nist                        | time-a-b.nist.gov              |     |
+| nist                        | time-a-g.nist.gov              |     |
+| nist                        | time-a-wwv.nist.gov            |     |
+| nist                        | time-b-b.nist.gov              |     |
+| nist                        | time-b-g.nist.gov              |     |
+| nist                        | time-b-wwv.nist.gov            |     |
+| nist                        | time-c-b.nist.gov              |     |
+| nist                        | time-c-g.nist.gov              |     |
+| nist                        | time-c-wwv.nist.gov            |     |
+| nist                        | time-d-b.nist.gov              |     |
+| nist                        | time-d-g.nist.gov              |     |
+| nist                        | time-d-wwv.nist.gov            |     |
+| nist                        | time.nist.gov                  |     |
+| nist                        | utcnist.colorado.edu           |     |
+| nist                        | utcnist2.colorado.edu          |     |
+| nrc                         | time.nrc.ca                    |     |
+| NSU                         | ntp.nsu.ru                     |     |
+| NTP Pool                    | 0.amazon.pool.ntp.org          |     |
+| NTP Pool                    | 0.android.pool.ntp.org         |     |
+| NTP Pool                    | 0.arch.pool.ntp.org            |     |
+| NTP Pool                    | 0.asia.pool.ntp.org            |     |
+| NTP Pool                    | 0.askozia.pool.ntp.org         |     |
+| NTP Pool                    | 0.centos.pool.ntp.org          |     |
+| NTP Pool                    | 0.debian.pool.ntp.org          |     |
+| NTP Pool                    | 0.dragonfly.pool.ntp.org       |     |
+| NTP Pool                    | 0.europe.pool.ntp.org          |     |
+| NTP Pool                    | 0.fedora.pool.ntp.org          |     |
+| NTP Pool                    | 0.freebsd.pool.ntp.org         |     |
+| NTP Pool                    | 0.gentoo.pool.ntp.org          |     |
+| NTP Pool                    | 0.netbsd.pool.ntp.org          |     |
+| NTP Pool                    | 0.openbsd.pool.ntp.org         |     |
+| NTP Pool                    | 0.opensuse.pool.ntp.org        |     |
+| NTP Pool                    | 0.opnsense.pool.ntp.org        |     |
+| NTP Pool                    | 0.pfsense.pool.ntp.org         |     |
+| NTP Pool                    | 0.pool.ntp.org                 |     |
+| NTP Pool                    | 0.ru.pool.ntp.org              |     |
+| NTP Pool                    | 0.smartos.pool.ntp.org         |     |
+| NTP Pool                    | 1.amazon.pool.ntp.org          |     |
+| NTP Pool                    | 1.android.pool.ntp.org         |     |
+| NTP Pool                    | 1.arch.pool.ntp.org            |     |
+| NTP Pool                    | 1.asia.pool.ntp.org            |     |
+| NTP Pool                    | 1.askozia.pool.ntp.org         |     |
+| NTP Pool                    | 1.centos.pool.ntp.org          |     |
+| NTP Pool                    | 1.debian.pool.ntp.org          |     |
+| NTP Pool                    | 1.dragonfly.pool.ntp.org       |     |
+| NTP Pool                    | 1.europe.pool.ntp.org          |     |
+| NTP Pool                    | 1.fedora.pool.ntp.org          |     |
+| NTP Pool                    | 1.freebsd.pool.ntp.org         |     |
+| NTP Pool                    | 1.gentoo.pool.ntp.org          |     |
+| NTP Pool                    | 1.netbsd.pool.ntp.org          |     |
+| NTP Pool                    | 1.openbsd.pool.ntp.org         |     |
+| NTP Pool                    | 1.opensuse.pool.ntp.org        |     |
+| NTP Pool                    | 1.opnsense.pool.ntp.org        |     |
+| NTP Pool                    | 1.pfsense.pool.ntp.org         |     |
+| NTP Pool                    | 1.pool.ntp.org                 |     |
+| NTP Pool                    | 1.ru.pool.ntp.org              |     |
+| NTP Pool                    | 1.smartos.pool.ntp.org         |     |
+| NTP Pool                    | 2.amazon.pool.ntp.org          |     |
+| NTP Pool                    | 2.android.pool.ntp.org         |     |
+| NTP Pool                    | 2.arch.pool.ntp.org            |     |
+| NTP Pool                    | 2.asia.pool.ntp.org            |     |
+| NTP Pool                    | 2.askozia.pool.ntp.org         |     |
+| NTP Pool                    | 2.centos.pool.ntp.org          |     |
+| NTP Pool                    | 2.debian.pool.ntp.org          |     |
+| NTP Pool                    | 2.dragonfly.pool.ntp.org       |     |
+| NTP Pool                    | 2.europe.pool.ntp.org          |     |
+| NTP Pool                    | 2.fedora.pool.ntp.org          |     |
+| NTP Pool                    | 2.freebsd.pool.ntp.org         |     |
+| NTP Pool                    | 2.gentoo.pool.ntp.org          |     |
+| NTP Pool                    | 2.netbsd.pool.ntp.org          |     |
+| NTP Pool                    | 2.openbsd.pool.ntp.org         |     |
+| NTP Pool                    | 2.opensuse.pool.ntp.org        |     |
+| NTP Pool                    | 2.opnsense.pool.ntp.org        |     |
+| NTP Pool                    | 2.pfsense.pool.ntp.org         |     |
+| NTP Pool                    | 2.pool.ntp.org                 |     |
+| NTP Pool                    | 2.ru.pool.ntp.org              |     |
+| NTP Pool                    | 2.smartos.pool.ntp.org         |     |
+| NTP Pool                    | 3.amazon.pool.ntp.org          |     |
+| NTP Pool                    | 3.android.pool.ntp.org         |     |
+| NTP Pool                    | 3.arch.pool.ntp.org            |     |
+| NTP Pool                    | 3.asia.pool.ntp.org            |     |
+| NTP Pool                    | 3.askozia.pool.ntp.org         |     |
+| NTP Pool                    | 3.centos.pool.ntp.org          |     |
+| NTP Pool                    | 3.debian.pool.ntp.org          |     |
+| NTP Pool                    | 3.dragonfly.pool.ntp.org       |     |
+| NTP Pool                    | 3.europe.pool.ntp.org          |     |
+| NTP Pool                    | 3.fedora.pool.ntp.org          |     |
+| NTP Pool                    | 3.freebsd.pool.ntp.org         |     |
+| NTP Pool                    | 3.gentoo.pool.ntp.org          |     |
+| NTP Pool                    | 3.netbsd.pool.ntp.org          |     |
+| NTP Pool                    | 3.openbsd.pool.ntp.org         |     |
+| NTP Pool                    | 3.opensuse.pool.ntp.org        |     |
+| NTP Pool                    | 3.opnsense.pool.ntp.org        |     |
+| NTP Pool                    | 3.pfsense.pool.ntp.org         |     |
+| NTP Pool                    | 3.pool.ntp.org                 |     |
+| NTP Pool                    | 3.ru.pool.ntp.org              |     |
+| NTP Pool                    | 3.smartos.pool.ntp.org         |     |
+| NTP Pool                    | asia.pool.ntp.org              |     |
+| NTP Pool                    | europe.pool.ntp.org            |     |
+| NTP Pool                    | pool.ntp.org                   |     |
+| NTP Pool                    | ru.pool.ntp.org                |     |
+| NTT                         | x.ns.gin.ntt.net               |     |
+| NTT                         | y.ns.gin.ntt.net               |     |
+| oar                         | navobs1.oar.net                |     |
+| okstate                     | now.okstate.edu                |     |
+| oma                         | ntp1.oma.be                    |     |
+| oma                         | ntp2.oma.be                    |     |
+| ona                         | ntp1.ona.org                   |     |
+| planeacion                  | sesku.planeacion.net           |     |
+| psu                         | otc1.psu.edu                   |     |
+| ptb                         | ptbtime1.ptb.de                |     |
+| ptb                         | ptbtime1.ptb.de                |     |
+| ptb                         | ptbtime2.ptb.de                |     |
+| ptb                         | ptbtime2.ptb.de                |     |
+| ptb                         | ptbtime3.ptb.de                |     |
+| QiX NTP                     | ntp.qix.ca                     |     |
+| QiX NTP                     | ntp1.qix.ca                    |     |
+| QiX NTP                     | ntp2.qix.ca                    |     |
+| RIPE                        | ntp.ripe.net                   |     |
+| roa                         | hora.roa.es                    |     |
+| roa                         | minuto.roa.es                  |     |
+| RSU                         | ntp.rsu.edu.ru                 |     |
+| shoa                        | ntp.shoa.cl                    |     |
+| Stockholm                   | sth1.ntp.se                    |     |
+| Stockholm                   | sth2.ntp.se                    |     |
+| stratum                     | ntp1.stratum1.ru               |     |
+| stratum                     | ntp2.stratum1.ru               |     |
+| stratum                     | ntp2.stratum2.ru               |     |
+| stratum                     | ntp3.stratum1.ru               |     |
+| stratum                     | ntp3.stratum2.ru               |     |
+| stratum                     | ntp4.stratum1.ru               |     |
+| stratum                     | ntp4.stratum2.ru               |     |
+| stratum                     | ntp5.stratum1.ru               |     |
+| stratum                     | ntp5.stratum2.ru               |     |
+| stupi                       | time1.stupi.se                 |     |
+| stygium                     | ntp-ca.stygium.net             |     |
+| Sundsvall                   | svl1.ntp.se                    |     |
+| Sundsvall                   | svl2.ntp.se                    |     |
+| surfnet                     | chime1.surfnet.nl              |     |
+| symmetricom                 | nist1.symmetricom.com          |     |
+| T-Online                    | ntp1.t-online.de               |     |
+| timegps                     | t2.timegps.net                 |     |
+| TimeNL/SIDN Labs            | ntp.time.nl (ntp1.time.nl)     |     |
+| Trabia                      | time-a.as43289.net             |     |
+| Trabia                      | time-b.as43289.net             |     |
+| Trabia                      | time-c.as43289.net             |     |
+| TRC Fiord                   | ntp.fiord.ru                   |     |
+| tu-berlin                   | ntps1-0.cs.tu-berlin.de        |     |
+| tu-berlin                   | ntps1-1.cs.tu-berlin.de        |     |
+| udel                        | mizbeaver.udel.edu             |     |
+| udel                        | rackety.udel.edu               |     |
+| ufe                         | time.ufe.cz                    |     |
+| ufl                         | ntp-s1.cise.ufl.edu            |     |
+| ufrj                        | ntps1.pads.ufrj.br             |     |
+| umk                         | ntp.fizyka.umk.pl              |     |
+| uni-erlangen                | ntps1-0.uni-erlangen.de        |     |
+| uni-erlangen                | ntps1-1.uni-erlangen.de        |     |
+| uni-stuttgart               | rustime01.rus.uni-stuttgart.de |     |
+| uni-stuttgart               | rustime02.rus.uni-stuttgart.de |     |
+| University of Saskatchewan  | tick.usask.ca                  |     |
+| University of Saskatchewan  | tock.usask.ca                  |     |
+| uregina                     | clock.uregina.ca               |     |
+| US Navy                     | ntp2.usno.navy.mil             |     |
+| US Navy                     | tick.usno.navy.mil             |     |
+| US Navy                     | tock.usno.navy.mil             |     |
+| usv                         | ntp1.usv.ro                    |     |
+| usv                         | ntp3.usv.ro                    |     |
+| uu                          | ntp0.nl.uu.net                 |     |
+| uu                          | ntp1.nl.uu.net                 |     |
+| Versatel                    | ntp1.versatel.net              |     |
+| Versatel                    | ntp2.versatel.net              |     |
+| Versatel                    | time.versatel.de               |     |
+| VNIIFTRI                    | ntp1.niiftri.irkutsk.ru        |     |
+| VNIIFTRI                    | ntp1.vniiftri.ru               |     |
+| VNIIFTRI                    | ntp2.niiftri.irkutsk.ru        |     |
+| VNIIFTRI                    | ntp2.vniiftri.ru               |     |
+| VNIIFTRI                    | ntp21.vniiftri.ru              |     |
+| VNIIFTRI                    | ntp3.vniiftri.ru               |     |
+| VNIIFTRI                    | ntp4.vniiftri.ru               |     |
+| VNIIFTRI                    | vniiftri.khv.ru                |     |
+| VNIIFTRI                    | vniiftri2.khv.ru               |     |
+| vsl                         | ntp.vsl.nl                     |     |
+| Web.de                      | ntp.web.de                     |     |
+| wustl                       | navobs1.wustl.edu              |     |
+| YYCIX                       | ntp.yycix.ca                   |     |
+
+
 ## Ports
 
 <http://www.iana.org/assignments/service-names-port-numbers/service-names-port-numbers.xhtml>
