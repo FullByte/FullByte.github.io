@@ -4,8 +4,8 @@
 
 | Was   | Wert        |
 |-------|-------------|
-| Zeit  | xx Min      |
-| Menge | xx Personen |
+| Zeit  | 30 Min      |
+| Menge | 4 Personen |
 
 ## Rezept
 
