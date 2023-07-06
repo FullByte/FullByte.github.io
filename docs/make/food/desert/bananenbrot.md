@@ -35,4 +35,4 @@
 
 ## Foto
 
-TODO
+![bananenbrot](_bananenbrot.jpg)
