@@ -15,7 +15,7 @@ To play "Super Mario World" on SNES in Widescreen (16:9) do the following:
   - Select the "Super Mario World (USA)" ROM and give the new ROM a name e.g. "smw-widescreen.sfc".
   - Note that .bso and .smc must have the same name and are in the same folder!
 - Run [bsnes-hd](https://github.com/DerKoun/bsnes-hd) and open the pathed ROM.
-  - Use settings menu to optimze image quality.
+  - Use settings menu to optimize image quality.
 
 ## ROM Hacks
 

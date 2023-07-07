@@ -1,6 +1,6 @@
 # Support
 
-Here are some possiblities to support me.
+Here are some possibilities to support me.
 
 Thanks for all the fish!
 

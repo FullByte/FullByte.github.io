@@ -16,7 +16,7 @@ These are all components created for the game. They fit nicely in the box.
 
 ## Bell
 
-The bell is exatly in the middle and holds everything together. This is the main part and most complicated to create of all the components. Here are few detailed shots.
+The bell is exactly in the middle and holds everything together. This is the main part and most complicated to create of all the components. Here are few detailed shots.
 
 ### Close Up
 

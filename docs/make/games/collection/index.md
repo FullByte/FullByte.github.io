@@ -2,9 +2,9 @@
 
 This is a list of board games I own and play. Additionally I have a list available at [Board Game Geek](https://boardgamegeek.com/collection/user/zerogdoubled) and [geekGroup](https://geekgroup.app/users/zerogdoubled/collection).
 
-Aside from the list below, there are browser based boardgame platforms such as [Board game arena](https://boardgamearena.com), [Free Board Games](https://www.freeboardgames.org/), [Games room](https://gamesroom.io/), [Tabletopia](https://tabletopia.com/) and[Virtual Tabletop](https://virtualtabletop.io) which usaully cost a monthly fee to use as well as platforms dedicated to card games such as [Play Cards](https://playcards.club/), [Cardtables Online](https://cardtables.online/), [Deck of Cards](https://deck.of.cards/) and [Playing cards](https://playingcards.io/).
+Aside from the list below, there are browser based board game platforms such as [Board game arena](https://boardgamearena.com), [Free Board Games](https://www.freeboardgames.org/), [Games room](https://gamesroom.io/), [Tabletopia](https://tabletopia.com/) and[Virtual Tabletop](https://virtualtabletop.io) which usually cost a monthly fee to use as well as platforms dedicated to card games such as [Play Cards](https://playcards.club/), [Cardtables Online](https://cardtables.online/), [Deck of Cards](https://deck.of.cards/) and [Playing cards](https://playingcards.io/).
 
-There are not only browser based platforms but also installable board game simluators like these which are available on Steam: [Tabletop Playground](https://store.steampowered.com/app/838410/Tabletop_Playground/), [Tabletop Simulator](https://store.steampowered.com/app/286160/Tabletop_Simulator/)
+There are not only browser based platforms but also installable board game simulators like these which are available on Steam: [Tabletop Playground](https://store.steampowered.com/app/838410/Tabletop_Playground/), [Tabletop Simulator](https://store.steampowered.com/app/286160/Tabletop_Simulator/)
 and [Tabletopia](https://store.steampowered.com/app/402560/Tabletopia/).
 
 Sometimes a board game is easier or/and nicer to play with a few tweaks and helpers such as [this tool to setup a tournament](https://www.toornament.com) or various [counters](https://scorecount.com) and this [dice roller](https://www.dnddiceroller.com/).

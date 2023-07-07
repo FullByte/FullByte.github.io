@@ -1,6 +1,6 @@
 # Likes
 
-Things I like or find entertaining/interessting.
+Things I like or find entertaining/interesting.
 
 ## Movies
 

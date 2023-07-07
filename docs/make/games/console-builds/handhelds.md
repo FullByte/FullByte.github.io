@@ -28,7 +28,7 @@ I am using ClockworkOS version 0.5 on my [clockworkpi](https://www.clockworkpi.c
 
 ![gameshell-connect-shh](_gameshell-connect-shh.png)
 
-Alternativly connect using FTP.
+Alternatively connect using FTP.
 
 #### Connect via USB
 

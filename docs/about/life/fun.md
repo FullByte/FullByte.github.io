@@ -19,7 +19,7 @@ It all start with the first chick
 - Transcript: ```It's like: We need to get a cool looking chick; maybe then people will start to respect us and stuff. It's like then we'll start getting respect, and then we'll get more chicks and then like: with more chicks I go get more respect and after that we'll get like more money. It'll be like more money, more chicks, more respect... and just like keep on going. It all takes is getting that first chick.```
 - Listen to the [audio version](_chicks-respect-money.mp3) (Source: [Beavis and Butthead](https://en.wikipedia.org/wiki/Beavis_and_Butt-Head))
 
-This process diagram vizulizes the steps involved:
+This process diagram visualizes the steps involved:
 
 ![image](_chicks-respect-money.drawio.svg)
 

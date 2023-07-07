@@ -26,7 +26,7 @@ Hard problems are hard - here is some advice:
 
 - Say: "I can do hard things". Doing hard things has intrinsic value, and they will make me a better person, even if I end up failing.
 - The key is recognizing that the urge to avoid hard things is human, and should be expected. It’s part of the process. Figure out what combination of motivation, and circumstances, and accountability work best for your particular personality.
-- Break large goals down into manageable pieces. Creating an accurate roadmaps toward this goal. Find out what is important. Differenciate between activities you want to be important and what actually makes a difference.
+- Break large goals down into manageable pieces. Creating an accurate road maps toward this goal. Find out what is important. Differentiate between activities you want to be important and what actually makes a difference.
 
 ### Productivity, purpose and passion
 
@@ -39,27 +39,27 @@ Some wisdom about productivity, purpose and passion:
 - There are infinite things to do in your finite life so life is a set of choices.
 - If you’re constantly craving more, you wont appreciate what you already have.
 - If we believe the future will be better we devalue the present moment.
-- Liberation of this burdon happens when you are at peace with and bask at merely existing.
+- Liberation of this burden happens when you are at peace with and bask at merely existing.
 
 ### Luck and Success
 
-To be successful is to some extent luck. You can not control luck, but you can increase your chances by enlargind your success surface.
+To be successful is to some extent luck. You can not control luck, but you can increase your chances by enlarging your success surface.
 
 Enlarging the success surface with work:
 
 - Level 1 - Do Nothing: You did nothing and just won randomly
 - Level 2 - Hard work: Eventually there will be a payoff because you’ve hustled your way to it.
-- Level 3 - Master: Discover things others dont see through work and knowledge.
+- Level 3 - Master: Discover things others don't see through work and knowledge.
 - Level 4 - Attract: Others want to work with you; you can choose and select best opportunities.
 
-Enlargen the success surface with networking:
+Enlarging the success surface through networking:
 
 - Level 1 - Do & Tell: Make something and tell others (Making and Marketing).
 - Level 2 - Curiosity: Stay curious and try out new stuff.
 - Level 3 - Talk to new people: Each new person you meet expands your surface area.
 - Level 4 - Be known: Create value for people. Become known with something. Build a reputation.
 
-Relect what topics are important to you, what level you are on at this moment and what you can do to Enlarging the success surface with work and networking.
+Reflect what topics are important to you, what level you are on at this moment and what you can do to Enlarging the success surface with work and networking.
 
 ## Health
 
@@ -82,12 +82,12 @@ Nobody will care more about your health than you. Treat yourself well and your b
 - Only invest what you can spare. Establish an emergency fund to define what you can spare.
 - Start early, diversify (but only the stuff you know and are convinced of) and set clear goals for yourself (investment objectives, time horizon, and risk tolerance) and stay true to those values for any investment.
 - Regularly contribute, periodically review your portfolio and make adjustments for new investments.
-- Be patient and HODL and never look back. Don't day trade, bet short term or simluar actions that require to check your balance and the current events frquently. This will simply be exausting.
+- Be patient and HODL and never look back. Don't day trade, bet short term or similar actions that require to check your balance and the current events frequently. This will simply be exhausting.
 - Read the [Ferengi](https://memory-beta.fandom.com/wiki/Ferengi_Rules_of_Acquisition) (Star Trek) [Rules of Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition) and [Bogleheads investment philosophy](https://www.bogleheads.org/wiki/Video:Bogleheads%c2%ae_investment_philosophy)
 
 ## Emotions
 
-- Feel and understand your emotions but don't let them control you. E.g. don't let fear guide your descisions.
+- Feel and understand your emotions but don't let them control you. E.g. don't let fear guide your decisions.
 - Don't take things to personally. Stay objective and don't be offended.
 - Don't dwell on the past. Learn from it an focus on the present.
 - Don't make hasty (emotional) decisions. Take time to think about your decisions.
@@ -97,7 +97,7 @@ Nobody will care more about your health than you. Treat yourself well and your b
 
 ## Reflection
 
-Practice "Ichigoichie", japanese for "Treasure every encounter, for it will never recure."
+Practice "Ichigoichie", japanese for "Treasure every encounter, for it will never reoccur."
 
 ### What went well?
 
@@ -130,7 +130,7 @@ Answer these three questions questions ...
 - What makes me most anxious? How?
 - What went worse than expected?
 - What held me back from doing what I want?
-- What are the three worst things that happend?
+- What are the three worst things that happened?
 
 Answer these three questions questions for each answer of the last question:
 
@@ -165,15 +165,15 @@ Based on the last question, break down your big goal:
 
 ## Protest
 
-It is not easy to protest in a smart and effectiv way. In my opinion strikes, demonstrations, letter-writing campaigns, petitions, sit-ins and occupation are not very effective nor creative. Of course on can passivly boycott whatever thing to not support and tell friends about what and why not to support but this is boring and small minded as well. Here are some examples and ideas how to protest on a given matter in an interesting, not annoying and creative way while being effective and successful:
+It is not easy to protest in a smart and effective way. In my opinion strikes, demonstrations, letter-writing campaigns, petitions, sit-ins and occupation are not very effective nor creative. Of course on can passively boycott whatever thing to not support and tell friends about what and why not to support but this is boring and small minded as well. Here are some examples and ideas how to protest on a given matter in an interesting, not annoying and creative way while being effective and successful:
 
 - [Ugly Gerry](https://fontsarena.com/ugly-gerry/) is a [free font](_gerry.otf.zip) created with real US congressional districts. The name comes from gerrymandering, the process that made possible such weird shapes.
 
 - [Volkswagen](https://github.com/auchenberg/volkswagen) can be integrated in your CI process. It detects when your tests are being run in a CI server, and makes them pass. Volkswagen uses a defeat device to detect when it's being tested in a CI server and will automatically reduce errors to an acceptable level for the tests to pass. This will allow you to spend less time worrying about testing and more time enjoying the good life as a trustful software developer.
 
-- Adress your issues to the correct people. If you work in an social or public based service make sure to create awareness but don't let uninvolved suffer from your problems. For example if drive a bus, let passengers ride for free and let them know you are protesting instead of not driving and letting people down.
+- Address your issues to the correct people. If you work in an social or public based service make sure to create awareness but don't let uninvolved suffer from your problems. For example if drive a bus, let passengers ride for free and let them know you are protesting instead of not driving and letting people down.
 
-- Make art (music, pictures, games) that help people understand the problem. Make things that are understandable as well as entertaining, interesting, provocative and/or beautiful. This will address the problem in an entertaining but critical way that is no annoying an will be much more likly be shared, discussed and addressed.
+- Make art (music, pictures, games) that help people understand the problem. Make things that are understandable as well as entertaining, interesting, provocative and/or beautiful. This will address the problem in an entertaining but critical way that is no annoying an will be much more likely be shared, discussed and addressed.
 
 - Find ways to educate the public about the core issue of your protest any what needs to be done. Reflect on your issue and make sure this is not just an opinion but actual facts that can be educated.
 
