@@ -140,3 +140,15 @@ The script removes the quoted blocks, creates a line return every 33 chars and r
     ▀▀▀▀▀▀▀ ▀  ▀▀▀  ▀ ▀  ▀  ▀
 
 ```
+
+I can't get it to work in PowerShell... here are 2 approaches. Mainly the line break doesn't work:
+
+```ps1
+(Resolve-DnsName qr.0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text -replace '[\" ]', '' -replace '(.{33})', '$1`n' -replace 'A', '█' -replace 'B', '▀' -replace 'C', '▄' -replace 'D', ' '
+```
+
+```ps1
+$output = (Resolve-DnsName qr.0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | ConvertTo-Json -Compress | ConvertFrom-Json | %{ $_.PSObject.Properties } | ForEach-Object { "$($_.Name): $($_.Value)" } 
+$syncRootLine = ($output -split "`n" | Select-String "SyncRoot:").ToString().Replace("SyncRoot: ", "")
+$syncRootLine -replace '[\" ]', '' -replace '(.{33})', '$1`n' -replace 'A', '█' -replace 'B', '▀' -replace 'C', '▄' -replace 'D', ' '
+```
