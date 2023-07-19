@@ -2,6 +2,8 @@
 
 Some handy code snippets for powershell :)
 
+![_is_it_worth_the_time.png](_is_it_worth_the_time.png)
+
 ## String manipulation
 
 - Overwrite JPEG files with MD5 hashsum: ```Get-ChildItem -Recurse -Include "*.jpg" | Get-FileHash -Algorithm MD5 | Rename-Item -NewName { $_.hash + ".jpg"} -Force```

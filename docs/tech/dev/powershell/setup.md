@@ -87,3 +87,8 @@ Install the module "Az.Tools.Installer" to be able to delete an older Az Module 
 Install-Module -Name Az.Tools.Installer
 Uninstall-AzModule -Name Az
 ```
+
+# Tools
+
+- [Pester](https://github.com/pester/pester) is the ubiquitous test and mock framework for PowerShell.
+- [EPS](https://github.com/straightdave/eps) is a templating engine for PowerShell.

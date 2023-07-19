@@ -43,6 +43,8 @@ Other IDE
 
 ## Code Snippets
 
+![_is_it_worth_the_time.png](_is_it_worth_the_time.png)
+
 ### Requirements
 
 Install requirements of a project: ```pip install -r requirements.txt```
