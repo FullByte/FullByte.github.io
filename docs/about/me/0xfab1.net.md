@@ -4,11 +4,18 @@
 
 ## MkDocs
 
-[MkDocs](https://github.com/MkDocs/MkDocs/) is a great way to host a simple, static website. This website uses [Material for MkDocs](https://github.com/squidfunk/MkDocs-material). Material for MkDocs is a theme for MkDocs, a static site generator geared towards (technical) project documentation.
+To honor [this post](https://rakhim.org/images/honestly-undefined/blogging.jpg) (and ensure the message remains true) I will use my own website as an example and show how I configured the static web app and make it to work the way it does.
 
-Use docker or python to quickly create and host a static website:
+I am using [Github Pages](https://pages.github.com/) to host the content, [Mkdocs](https://www.mkdocs.org/) to create the website from markdown files as input and have own [domain](https://0xfab1.net/) for a nicer URL.
 
-### Host MkDocs locally with docker
+[MkDocs](https://github.com/MkDocs/MkDocs/) is a great way to host a simple, static website. This website uses [Material for MkDocs](https://github.com/squidfunk/MkDocs-material) which is a theme for MkDocs.
+
+To quickly create and host a static website (or rebuild this website), you have two choices:
+
+- Docker
+- Python
+
+### Docker
 
 ``` sh
 git clone https://github.com/FullByte/FullByte.github.io.git # clone repo
@@ -16,7 +23,7 @@ cd FullByte.github.io # Go to main folder
 docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/MkDocs-material # run the container
 ```
 
-### Serve MkDocs locally with python
+### Python
 
 Run this once to install all requirements:
 
@@ -30,18 +37,20 @@ pip install MkDocs-material
 Run this in the folder of the MkDocs.yml file to host the MkDocs page:
 
 ``` sh
-MkDocs serve
+mkdocs serve
 ```
 
 ### Create page
 
-Overriding template blocks: <https://www.mkdocs.org/user-guide/customizing-your-theme/#using-the-theme-custom_dir>
+If you do not like the default design of a theme or something is missing or extra that needs to be removed it is possible to overwrite template blocks: <https://www.mkdocs.org/user-guide/customizing-your-theme/#using-the-theme-custom_dir>.
+
+I use method to add some files as well as overwrite a few things. It is generally more work as sometimes there are changes in mkdocs or material that force you to update your overrides as well. To see what I added to my "overrides" folder look here: <https://github.com/FullByte/FullByte.github.io/tree/main/overrides>
 
 ### Extensions
 
 [MkDocs-material](https://squidfunk.github.io/mkdocs-material/) is a great theme and comes integrated with the pymkdown extensions, which lets you add tabbed code blocks, progress bars, task lists, keyboard symbols and more.
 
-Further plugins:
+Further useful plugins:
 
 - [MkDocs-minify-plugin](https://github.com/byrnereese/MkDocs-minify-plugin): `pip install MkDocs-minify-plugin`
 - [MkDocs-redirects](https://github.com/datarobot/MkDocs-redirects): `pip install MkDocs-redirects`
@@ -50,19 +59,18 @@ Further plugins:
 
 This website is hosted/built using the following services:
 
-| Service                                                  | Direct Link                                                           | 0xfab1 CNAME                      |
-| -------------------------------------------------------- | --------------------------------------------------------------------- | --------------------------------- |
-| [GitHub Pages](https://pages.github.com/)                | [0xfab1@github](https://fullbyte.github.io)                           | <https://www.0xfab1.net/>         |
-| [IPFS](https://ipfs.io/) with [fleek](https://fleek.co/) | [0xfab1@IFPS](http://fb62c5359b88d00d5924.b-cdn.net)                  | <https://ipfs.0xfab1.net/>        |
-| [Netlify](https://www.netlify.com/)                      | [0xfab1@netlify](https://0xfab1.netlify.app/)                         | <https://netlify.0xfab1.net>      |
-| [Azure](https://azure.microsoft.com)                     | [0xfab1@azure](https://black-flower-0adbf0903.azurestaticapps.net)    | <https://azure.0xfab1.net>        |
-| [Digital Ocean](https://m.do.co/c/0ef5c6b3f680)          | [0xfab1@digitalocean](https://oxfab1-3l4ou.ondigitalocean.app/)       | <https://digitalocean.0xfab1.net> |
-| [Vercel](https://vercel.com/)                            | [0xfab1@vercel](https://0xfab1.vercel.app/)                           | <https://vercel.0xfab1.net/>      |
-| [cloudflare](https://www.cloudflare.com/)                | [0xfab1@cloudflare](https://fullbyte-github-io.pages.dev)             | <https://cloudflare.0xfab1.net/>  |
-| [Render](https://render.com/)                            | [0xfab1@render](https://zeroxfab1.onrender.com)                       | <https://render.0xfab1.net>       |
-| [Railway](https://railway.app)                           | [0xfab1@railway](https://fullbytegithubio-production.up.railway.app/) | <https://railway.0xfab1.net>      |
-| [AWS S3](https://aws.amazon.com/s3/)                     | TODO                                                                  | TODO                              |
-| [Gitlab Pages](https://about.gitlab.com)                 | TODO                                                                  | TODO                              |
+| Service                                                  | Direct Link                                                     | 0xfab1 CNAME                      |
+|----------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------|
+| [GitHub Pages](https://pages.github.com/)                | [0xfab1@github](https://fullbyte.github.io)                     | <https://www.0xfab1.net/>         |
+| [IPFS](https://ipfs.io/) with [fleek](https://fleek.co/) | [0xfab1@IFPS](http://fb62c5359b88d00d5924.b-cdn.net)            | <https://ipfs.0xfab1.net/>        |
+| [Netlify](https://www.netlify.com/)                      | [0xfab1@netlify](https://0xfab1.netlify.app/)                   | <https://netlify.0xfab1.net>      |
+| [Azure](https://azure.microsoft.com)                     | Broke (my fault)... need to re-create this                      | <https://azure.0xfab1.net>        |
+| [Digital Ocean](https://m.do.co/c/0ef5c6b3f680)          | [0xfab1@digitalocean](https://oxfab1-3l4ou.ondigitalocean.app/) | <https://digitalocean.0xfab1.net> |
+| [Vercel](https://vercel.com/)                            | [0xfab1@vercel](https://0xfab1.vercel.app/)                     | <https://vercel.0xfab1.net/>      |
+| [cloudflare](https://www.cloudflare.com/)                | [0xfab1@cloudflare](https://fullbyte-github-io.pages.dev)       | <https://cloudflare.0xfab1.net/>  |
+| [Render](https://render.com/)                            | [0xfab1@render](https://zeroxfab1.onrender.com)                 | <https://render.0xfab1.net>       |
+| [AWS S3](https://aws.amazon.com/s3/)                     | TODO                                                            | TODO                              |
+| [Gitlab Pages](https://about.gitlab.com)                 | TODO                                                            | TODO                              |
 
 I tried these services but they didn't suit me for my deployment at the time tested*:
 
@@ -77,16 +85,11 @@ I tried these services but they didn't suit me for my deployment at the time tes
 - [Statically](https://statically.io) - great for one-pagers, not suitable for 0xfab1.net
 - [Linode](https://www.linode.com) - no free option
 - [koyeb](https://app.koyeb.com) - account closed for unknown reason
+- [Railway](https://railway.app) - worked fine until beginning of 2023 when the pricing model changed and the basic service was no longer free
 
 *happy to learn from you how I can use them using a simple, automated deployment method for my static website :)
 
 ## Github Pages
-
-To honor [this post](https://rakhim.org/images/honestly-undefined/blogging.jpg) (and ensure the message remains true) I will use my own website as an example and show how I configured the static web app and make it to work the way it does.
-
-I am using [Github Pages](https://pages.github.com/) to host the content, [Mkdocs](https://www.mkdocs.org/) to create the website from markdown files as input and have own [domain](https://0xfab1.net/) for a nicer URL.
-
-### Github Pages Repo
 
 I created a repo named `FullByte.github.io` (Replace "FullByte" with your github username). Enable github pages for this repo in settings page of the repo. You will by default have a page available at [FullByte.github.io](https://FullByte.github.io).
 
