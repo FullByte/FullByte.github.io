@@ -89,3 +89,66 @@ Example output
 █ ▀▀▀ █ ▄██ ▄█▀▀▄ ▄▄▄▀▀ █
 ▀▀▀▀▀▀▀ ▀  ▀▀▀  ▀ ▀  ▀  ▀
 ```
+
+## QR Code as DNS TXT records
+
+Why save a QR code as TXT record in your DNS and call it whenever instead of generating it?
+
+TXT records can contain any printable ASCII character and should be enclosed in quotes. Each quoted string in a DNS TXT record can be up to 255 characters. So we need to translate the UTF encoding into ASCII and chop the TXT into quoted chunks.
+
+In the first step this generates the Text for the TXT record:
+
+```sh
+qrencode -t UTF8i 'https://0xfab1.net' | tr -d '\n' | sed 's/█/A/g; s/▀/B/g; s/▄/C/g; s/ /D/g'
+```
+
+This outputs:
+
+```txt
+DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDABBBBBADDBBACBCDCDABBBBBADDDDDDDDADAAADADCBAADDCBADADAAADADDDDDDDDADBBBDADBCADBACDBDADBBBDADDDDDDDDBBBBBBBDBCBDACBCADBBBBBBBDDDDDDDDAADDDABBCBADBDACDCDCAACCDDDDDDDDDDBACCDBBDBCABDCACDCDDADBADDDDDDDDADCCCBBBCBADCAACBDBDDDDCBDDDDDDDDADCDBCBABCCDCAABABBABACBADDDDDDDDBDDBBBBBADADBDBAABBBADBDDDDDDDDDDABBBBBADACDCBBADADBDADDDBDDDDDDDDADAAADADDBBBCCDBBAABBDBCADDDDDDDDADBBBDADCAADCABBCDCCCBBDADDDDDDDDBBBBBBBDBDDBBBDDBDBDDBDDBDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD
+```
+
+Adding the QR Code to DNS (in this example "qr.0xfab1.net") looks like this:
+
+```txt
+qr 10800 IN TXT "DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDABBBBBADDBBACBCDCDABBBBBADDDDDDDDADAAADADCBAADDCBADADAAADADDDDDDDDADBBBDADBCADBA" "CDBDADBBBDADDDDDDDDBBBBBBBDBCBDACBCADBBBBBBBDDDDDDDDAADDDABBCBADBDACDCDCAACCDDDDDDDDDDBACCDBBDBCABDCACDCDDADBADDDDDDDDADCCCBBBCBADCAACBDBDDDDCBDDDDDDD" "DADCDBCBABCCDCAABABBABACBADDDDDDDDBDDBBBBBADADBDBAABBBADBDDDDDDDDDDABBBBBADACDCBBADADBDADDDBDDDDDDDDADAAADADDBBBCCDBBAABBDBCADDDDDDDDADBBBDADCAADCABBC" "DCCCBBDADDDDDDDDBBBBBBBDBDDBBBDDBDBDDBDDBDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD"
+```
+
+To read the TXT record and show it as a QR code in the console run this:
+
+```sh
+dig +short TXT qr.0xfab1.net | tr -d '\" ' | fold -w 33 | sed 's/A/█/g; s/B/▀/g; s/C/▄/g; s/D/ /g'
+```
+
+The script removes the quoted blocks, creates a line return every 33 chars and replaces the chars A-D with the original UTF chars. The output looks like this:
+
+```txt
+
+
+    █▀▀▀▀▀█  ▀▀█▄▀▄ ▄ █▀▀▀▀▀█
+    █ ███ █ ▄▀██  ▄▀█ █ ███ █
+    █ ▀▀▀ █ ▀▄█ ▀█▄ ▀ █ ▀▀▀ █
+    ▀▀▀▀▀▀▀ ▀▄▀ █▄▀▄█ ▀▀▀▀▀▀▀
+    ██   █▀▀▄▀█ ▀ █▄ ▄ ▄██▄▄
+     ▀█▄▄ ▀▀ ▀▄█▀ ▄█▄ ▄  █ ▀█
+    █ ▄▄▄▀▀▀▄▀█ ▄██▄▀ ▀    ▄▀
+    █ ▄ ▀▄▀█▀▄▄ ▄██▀█▀▀█▀█▄▀█
+    ▀  ▀▀▀▀▀█ █ ▀ ▀██▀▀▀█ ▀
+    █▀▀▀▀▀█ █▄ ▄▀▀█ █ ▀ █   ▀
+    █ ███ █  ▀▀▀▄▄ ▀▀██▀▀ ▀▄█
+    █ ▀▀▀ █ ▄██ ▄█▀▀▄ ▄▄▄▀▀ █
+    ▀▀▀▀▀▀▀ ▀  ▀▀▀  ▀ ▀  ▀  ▀
+
+```
+
+I can't get it to work in PowerShell... here are 2 approaches. Mainly the line break doesn't work:
+
+```ps1
+(Resolve-DnsName qr.0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text -replace '[\" ]', '' -replace '(.{33})', '$1`n' -replace 'A', '█' -replace 'B', '▀' -replace 'C', '▄' -replace 'D', ' '
+```
+
+```ps1
+$output = (Resolve-DnsName qr.0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | ConvertTo-Json -Compress | ConvertFrom-Json | %{ $_.PSObject.Properties } | ForEach-Object { "$($_.Name): $($_.Value)" } 
+$syncRootLine = ($output -split "`n" | Select-String "SyncRoot:").ToString().Replace("SyncRoot: ", "")
+$syncRootLine -replace '[\" ]', '' -replace '(.{33})', '$1`n' -replace 'A', '█' -replace 'B', '▀' -replace 'C', '▄' -replace 'D', ' '
+```
