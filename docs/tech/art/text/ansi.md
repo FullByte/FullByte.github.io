@@ -38,6 +38,16 @@
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓ ▒▒░░░░░░░░▒▒▒▒▓▒▒▒▒▒▒▒▒▒░░▒▒▒▒▒░░░▒▒▒░▓▓▒▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ```
 
+## Textual Paint
+
+[Textual Paint](https://github.com/1j01/textual-paint) is MS Paint in your terminal.
+
+## sed Super Mario
+
+[sed Super Mario](https://github.com/chebykinn/sedmario) is the NES Super Mario Bros level 1 written in pure sed.
+
+![sed-mario](_sed-mario.webp)
+
 ## Links
 
 **Art:**

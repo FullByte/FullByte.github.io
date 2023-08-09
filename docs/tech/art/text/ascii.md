@@ -22,7 +22,11 @@ Example
 
 ## Terminal Dungeon
 
-[terminal_dungeon](https://github.com/salt-die/terminal_dungeon) is a doom-like raycasting engine that renders to ascii for playing in terminal.
+[Terminal Dungeon](https://github.com/salt-die/terminal_dungeon) is a doom-like raycasting engine that renders to ascii for playing in terminal.
+
+## The Command Line Murders
+
+There's been a murder in Terminal City, and TCPD needs your help... [The Command Line Murders](https://github.com/veltman/clmystery) is a game with ASCII art and played in the CLI.
 
 ## awk-raycaster
 
