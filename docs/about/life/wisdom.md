@@ -171,6 +171,8 @@ It is not easy to protest in a smart and effective way. In my opinion strikes, d
 
 - [Volkswagen](https://github.com/auchenberg/volkswagen) can be integrated in your CI process. It detects when your tests are being run in a CI server, and makes them pass. Volkswagen uses a defeat device to detect when it's being tested in a CI server and will automatically reduce errors to an acceptable level for the tests to pass. This will allow you to spend less time worrying about testing and more time enjoying the good life as a trustful software developer.
 
+- The creative ways the [DeCSS](https://en.wikipedia.org/wiki/DeCSS) crack was distribted (e.g. [t-shirt](_decss_tshirt.jpg), [haiku](_decss-haiku.txt) or [midi](_decss-auth.mid), [audio](_decss_descramble.mp3), [html dvd logo](_decss-dvdlogo.html.txt) and [many more](https://www.cs.cmu.edu/~dst/DeCSS/Gallery/)...). Later works by "removing all the white space, then transforming each ASCII character into a single 32nd note of its midi equivalent (midi notes, like ASCII characters, are coded into values ranging from 1 to 127.)".
+
 - Address your issues to the correct people. If you work in an social or public based service make sure to create awareness but don't let uninvolved suffer from your problems. For example if drive a bus, let passengers ride for free and let them know you are protesting instead of not driving and letting people down.
 
 - Make art (music, pictures, games) that help people understand the problem. Make things that are understandable as well as entertaining, interesting, provocative and/or beautiful. This will address the problem in an entertaining but critical way that is no annoying an will be much more likely be shared, discussed and addressed.
