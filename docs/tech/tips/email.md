@@ -95,9 +95,9 @@ SRV _caldavs._tcp.0xfab1.net 0 1 443 caldav.fastmail.com
 
 #### Authentic sender
 
-##### BIMI
+##### BIMI (logo)
 
-A BIMI Record is a type of DNS Record that is used to display a company logo inside an email inbox if the email is legitimate. Using BIMI requires ensuring DMARC authentication is set up on the domain. In fact, the BIMI concept is viewed as an extension of DMARC. Both protocols are highly beneficial to ensuring a domain’s messages are delivered and to help crack down on phishing and spoofing attempts.
+A BIMI (Brand Indicators for Message Identification) Record is a type of DNS Record that is used to display a company logo inside an email inbox if the email is legitimate. Using BIMI requires ensuring DMARC authentication is set up on the domain. In fact, the BIMI concept is viewed as an extension of DMARC. Both protocols are highly beneficial to ensuring a domain’s messages are delivered and to help crack down on phishing and spoofing attempts.
 
 DNS Settings:
 
@@ -107,7 +107,7 @@ Host : default._bimi
 Value: v=BIMI1;l=https://0xfab1.net/logo.svg;
 ```
 
-##### DMARC
+##### DMARC (validate email)
 
 Domain-based Message Authentication, Reporting and Conformance ([DMARC](https://datatracker.ietf.org/doc/html/rfc7489)) extends SPF and DKIM validation by adding a third validation known as alignment. Besides alignment validation, DMARC can also be used to request reporting from receiving email systems, mainly Aggregate Report (RUA) address and Forensic Report (RUF) address.
 
@@ -151,7 +151,7 @@ Determines in which case you want to receive forensic reports:
 - Report failures if DKIM fails (fo=d)
 - Report failures if SPF fails (fo=s)
 
-##### MTA-STS
+##### MTA-STS (mitigates MitM Attacks)
 
 Mail Transfer Agent Strict Transport Security is an email security standard which lets senders know that your email server accepts secure email delivery using SMTP over TLS (STARTTLS), and that email should not be delivered over an insecure SMTP connection. MTA-STS mitigates Man-In-The-Middle DNS and SMTP downgrade attacks that would allow an attacker to read or manipulate email in transit.
 
@@ -173,7 +173,7 @@ mx: in2-smtp.messagingengine.com
 max_age: 604800
 ```
 
-##### TLS-RPT
+##### TLS-RPT (secure email delivery)
 
 [SMTP TLS Reporting](https://datatracker.ietf.org/doc/html/rfc8460) (sometimes abbreviated as TLS-RPT) is a reporting standard for secure email delivery. SMTP TLS reporting is especially valuable in combination with MTA-STS, as enforced mode in MTA-STS will result in undeliverable email if there is a problem with TLS.
 
@@ -183,7 +183,7 @@ Host : _smtp._tls
 Value: v=TLSRPTv1; rua=mailto:tlsrpt@0xfab1.net,https://tlsrpt.0xfab1.net/v1;
 ```
 
-##### SPF
+##### SPF (prevent spoofing)
 
 The Sender Policy Framework (SPF) allows domain owners to publish a policy about which senders are allowed to send email for that domain. Receivers use SPF as one of the methods for spam detection.
 
@@ -193,6 +193,12 @@ Host : @
 Value: v=spf1 mx a ip4:66.111.4.54 mx:in1-smtp.messagingengine.com -all
 ```
 
-##### DKIM
+##### DKIM (validate email)
 
-With DomainKeys Identified Mail ([DKIM](https://datatracker.ietf.org/doc/html/rfc6376)) the sending email system adds a cryptographic signature to the email headers using its private key. This signature is used by the receiving system to determine if the sender, and the email content, are to be trusted.
+[DKIM](https://datatracker.ietf.org/doc/html/rfc6376) ([DomainKeys Identified Mail](https://dkim.org/)) helps confirm the legitimacy of the message by adding a signature on each message that verifies the email sender is who they say they are.
+
+DKIM is set with a private/public key pairing.
+
+- You set a public key in your DNS records (usually a CNAME or TXT record)
+- Each email you send includes a DKIM signature
+- When an inbox receives your message, it compares the signature with the public record to confirm a pair
