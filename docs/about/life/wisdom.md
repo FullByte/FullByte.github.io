@@ -180,3 +180,10 @@ It is not easy to protest in a smart and effective way. In my opinion strikes, d
 - Find ways to educate the public about the core issue of your protest any what needs to be done. Reflect on your issue and make sure this is not just an opinion but actual facts that can be educated.
 
 - Never interrupt your enemy when he/she is making a mistake.
+
+## Random Quotes
+
+- A society grows great when old men plant trees in whose shade they shall never sit.
+- Its okay to go through awful places, just don't stop and unpack.
+- If you choose not to find joy in the snow, you will have less joy in your life, but the same amount of snow.
+- You know, it's funny... when you look at someone through rose-colored glasses, all the red flags just look like flags.
