@@ -50,7 +50,7 @@ Aktive Spezialzüge müssen vor Rundenbeginn vom Spieler angekündigt und anschl
 Abgesehen vom Doppellörer in Runde 7 ist kein Spieler verpflichtet Spezialzüge zu spielen.
 Pro Spiel kann jeder Spezialzug nur ein Mal pro Spieler gespielt werden.
 
-## Aktive Spezialzüge
+### Aktive Spezialzüge
 
 | Spezialzug      | Spielbar               | Anküdigung                                                                                                                         | Ziel                                                                                                                                                                                                                                                              | Pro                                                                                                    | Con                             |
 |-----------------|------------------------|------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------|---------------------------------|
