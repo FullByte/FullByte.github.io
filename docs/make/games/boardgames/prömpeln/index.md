@@ -1,6 +1,8 @@
 # Rules
 
-Prömpeln wird mit 0,33l Bügelverschlussflaschen gespielt. Ursprünglich diente das Spiel zur Ermittlung des nächsten Regenten und Königs über die gegenwärtige Gesellschaft. Prömpeln kann allerdings auch als Zeitvertreib und frei von politisch motivierten Hintergründen gespielt werden.
+Prömpeln wird mit 0,33l Bügelverschlussflaschen gespielt.
+Ursprünglich diente das Spiel zur Ermittlung des nächsten Regenten und Königs über die gegenwärtige Gesellschaft.
+Prömpeln kann allerdings auch als Zeitvertreib und frei von politisch motivierten Hintergründen gespielt werden.
 
 ## Grundregeln
 
