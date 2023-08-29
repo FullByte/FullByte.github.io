@@ -19,3 +19,13 @@ It was really satisfying to sort the batteries I had. Looks great, works as inte
 ## Dragon
 
 ![Dragon](_3d-dragon.jpg)
+
+## Beer Bike
+
+I got inspired by this beer holder:
+
+![_beer-bike.jpg](_beer-bike.jpg)
+
+So I decided to pimp an old bike into a beer bike :)
+
+TODO
