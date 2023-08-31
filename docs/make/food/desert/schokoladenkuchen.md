@@ -40,6 +40,3 @@
     - [ ] Teig in Form Giesen
     - [ ] Backform in Backofen schieben und 60min backen
 
-## Foto
-
-TODO

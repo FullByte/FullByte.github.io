@@ -40,7 +40,3 @@
     - [ ] Zutaten aus Mixer in einen Topf (Rest mit ein wenig Wasser aus dem Mixer ausspülen und dazugeben)
     - [ ] Restliche Zutaten in den Topf und umrühren und 30 min Kochen
     - [ ] In Schale servieren und Petersilie oben drauf legen.
-
-## Foto
-
-TODO

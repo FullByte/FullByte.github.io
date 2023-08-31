@@ -36,6 +36,3 @@
     - [ ] Zwiebeln und Knoblauch in etwas Olivenöl weich dünsten und zur Paste geben
     - [ ] Paste würzen und aufs Brot streichen
 
-## Foto
-
-TODO

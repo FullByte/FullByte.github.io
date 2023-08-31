@@ -43,6 +43,3 @@ Pasta mit gebackener Feta-Tomatensauce.
     - [ ] Ergebnis aus dem Ofen mixen und ggf mit Nudelwasser strecken
     - [ ] Pesto mit Nudeln vermengen und kleingehacktes Basilikum darüber geben
 
-## Foto
-
-TODO

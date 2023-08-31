@@ -32,6 +32,3 @@ Für trockene Müsliriegel das Backobst weglassen.
     - [ ] Die Masse auf ein Kuchenblech geben und mit einer Teigrolle fest zusammendrücken.
     - [ ] Bei 150° C im Backofen ca. 10 Min. backen. Erst nach dem Erkalten schneiden.
 
-## Foto
-
-TODO

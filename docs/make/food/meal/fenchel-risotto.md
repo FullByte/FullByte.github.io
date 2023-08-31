@@ -42,6 +42,3 @@
     - [ ] Inzwischen 1 EL Butter in einer Pfanne erhitzen und die Fenchelspalten darin ca. 7 Min. bei mittlerer Hitze hellbraun braten, mit Salz und Pfeffer würzen.
     - [ ] 75 g ital. Hartkäse reiben. 2/3 davon am Ende der Garzeit mit 1⁄2 El Butter unter den Risotto rühren, pfeffern. Risotto mit Fenchelspalten, Fenchelgrün und restlichem Käse anrichten.
 
-## Foto
-
-TODO

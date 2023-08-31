@@ -28,4 +28,3 @@ I got inspired by this beer holder:
 
 So I decided to pimp an old bike into a beer bike :)
 
-TODO

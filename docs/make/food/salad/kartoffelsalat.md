@@ -27,6 +27,3 @@
     - [ ] Mit Salz und Balsamico-Essig abschmecken.
     - [ ] Der Salat kann warm oder kalt gegessen werden und passt gut zu allem Gegrillten.
 
-## Foto
-
-TODO

@@ -30,3 +30,9 @@ Not only usage leads to maintenance, repairs and placement: Your purchase will a
 The principle of valuing files above applications underscores the importance of producing lasting digital assets. These assets should be both manipulatable and stored in universally readable formats. Opt for tools that provide such adaptability.
 
 To guarantee that your documents remain legible for generations to come, even on computers from the years 2050 or 2525, they should also be understandable on a system from the 1960s. The lasting impact of your digital work depends more on the files themselves than on the software tools with which they were made. While applications might become obsolete, files have the potential to persist. Consider the ancient hieroglyphs in the Egyptian pyramids - the messages they convey are more significant than the instruments used to etch them.
+
+## Understand your incentive
+
+If you set goals be clear on why you want to achieve this goal. Usually this comes with downsides and setting the right priorities is essential for choosing the right path. However, be clear that the path usually is unknown to some extent and things will change. This is where your incentive kicks in and make a logical re-evaluation of the path chosen possible. Be true to yourself and understand your incentive when pursuing goals. Are you doing it for the right reasons? Is the reason you are doing something even achievable/still worth it or just a motivation to continue?
+
+![path_minimization](_path_minimization.png)

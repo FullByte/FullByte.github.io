@@ -17,7 +17,7 @@ Eat whatever you want... idk, lol... and take your time ;)
 - Food timeline: <https://foodtimeline.org/>
 - Identifying Food by Qube Rule: <http://cuberule.com/>
 
-## Recipies
+## Recipes
 
 ### Meals
 
@@ -45,16 +45,9 @@ Eat whatever you want... idk, lol... and take your time ;)
 
 [![cupcakes](/make/food/desert/_cupcakes.jpg)](/make/food/desert/cupcakes)
 
-### Salad
-
-TODO
-
 ### Soup
 
 [![kuerbissuppe](/make/food/soup/_kuerbissuppe.jpg)](/make/food/soup/kuerbissuppe)
 
 [![mango-kokus-curry](/make/food/soup/_mango-kokus-curry.jpg)](/make/food/soup/mango-kokus-curry)
 
-### Other
-
-TODO

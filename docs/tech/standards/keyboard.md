@@ -37,27 +37,15 @@ Generally there are few things to say:
 
 === "100% Keyboards"
 
-    TODO
-
 === "80% Keyboards"
-
-    TODO
 
 === "75% Keyboards"
 
-    TODO
-
 === "65% Keyboards"
-
-    TODO
 
 === "60% Keyboards"
 
-    TODO
-
 === "40% Keyboards"
-
-    TODO
 
 ### Winkeyless (WKS)
 
@@ -88,8 +76,6 @@ On/off vs controlled LED per key
 ### Gateron
 
 ![gateron-switches](_keyboard-gateron-switches.webp)
-
-
 
 ## Key Caps
 

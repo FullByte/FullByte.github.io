@@ -32,16 +32,7 @@ iPhone
 GSM Codes
 
 - Auslesen der Handy- Seriennummer IMEI: `*#06#`
-- Rufumleitung: `todo`
-- Mailbox aktivieren: `todo`
-- Gerätename anzeigen: `todo`
-- Gerätedetails anzeigen: `todo`
-- Firmware- Version anzeigen: `todo`
-- detaillierte System- Informationen anzeigen: `todo`
-- detaillierte Akku- Informationen: `todo`
-- Menü zur Überprüfung der Gerätefunktionen: `todo`
 - PIN ändern: `**04*(alter PIN)*(neuer PIN)*(neuer PIN)#`
 - SIM- Karte mit PUK entsperren: `**05*(PUK)*(neuer PIN)*(neuer PIN)#`
 - PIN2 ändern: `**042*(alter PIN2)*(neuer PIN2)*(neuer PIN2)#`
 - PIN2 mit PUK entsperren: `**052*(PUK)*(neuer PIN2)*(neuer PIN2)#`
-- PIN ändern und PIN mit PUK entsperren: `todo`

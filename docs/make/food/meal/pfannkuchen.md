@@ -33,6 +33,3 @@
     - [ ] Eine beschichtete Pfanne mit etwas Speiseöl erhitzen.
     - [ ] Mit einer Schöpfkelle eine Kelle Teig in die Pfanne geben und die Pfanne kurz in jede Richtung schwenken um den Teig zu verteilen. Den Pfannkuchen von beiden Seiten etwa 1-2 Minuten bräunlich ausbacken.
 
-## Foto
-
-TODO

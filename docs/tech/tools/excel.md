@@ -12,6 +12,23 @@ Info
 
 ![clippy](_clippy.svg)
 
+## File Formats
+
+| Extension | Short Name                          | Description                                                                                                     |
+|-----------|-------------------------------------|-----------------------------------------------------------------------------------------------------------------|
+| .xlsx     | Default Excel workbook format       | Supports advanced formatting, formulas, and charts. Widely compatible.                                          |
+| .xlsm     | Excel with Marco                    | Supports macros in addition to features of XLSX. Allows creating and running VBA macros within the workbook.    |
+| .xlsb     | Excel Binary format                 | Binary format that's faster to open and save. Suitable for large datasets due to its efficient storage.         |
+| .csv      | Comma-Separated Values              | CSV format for easy data exchange between applications. Each line represents a row, values are comma-separated. |
+| .xml      | Extensible Markup Language          | XML format for sharing structured data between systems. Excel can export/import data in XML.                    |
+| .ods      | OpenDocument Spreadsheet            | Used by various spreadsheet applications like LibreOffice.                                                      |
+| .xltx     | Excel Template                      | Used as templates for new workbooks with predefined formatting, styles, and layouts.                            |
+| .xltm     | Template format with macros support | Can contain macros along with predefined workbook settings.                                                     |
+| .xlw      | Excel Workspace format              | Used to save multiple sheets and settings as a workspace to be opened together.                                 |
+| .xlk      | Excel Backup File format            | Temporary file created when Excel crashes; can sometimes help recover unsaved data.                             |
+| .xlam     | Excel Add-In format                 | Contains macros and custom functions to extend Excel's capabilities.                                            |
+| .xla      | Excel Add-In format                 | Used in older versions of Excel for custom functions and automation.                                            |
+
 ## Random
 
 Find double entries

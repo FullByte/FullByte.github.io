@@ -41,7 +41,3 @@
     - [ ] Mit frisch gehackten Kräutern und den Gewürzen abschmecken und etwas ziehen lassen.
     - [ ] Für die Spaghetti das Wasser kochen lassen, das Salz hinzufügen und die Nudeln hineingeben.
     - [ ] Wenn die Spaghetti fast gar sind, das Wasser abgießen und in ein wenig Olivenöl schwenken und servieren.
-
-## Foto
-
-TODO

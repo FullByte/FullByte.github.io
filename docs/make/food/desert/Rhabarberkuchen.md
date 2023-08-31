@@ -30,7 +30,3 @@
     - [ ]  Den Rührteig in eine gefettete und mit Mehl ausgestäubte Fettpfanne geben und gleichmäßig glatt streichen.
     - [ ]  Rhabarber darauf verteilen.
     - [ ]  Kuchen im vorgeheizten Backofen bei 200 °C ca 35 Minuten goldbraun backen.
-
-## Foto
-
-TODO

@@ -51,7 +51,3 @@
     - [ ] Dann gehackte Petersilie und Schnittlauch hinzugeben und unterrühren.
     - [ ] Restliche Zutaten hinzugeben und umrühren.
     - [ ] Insgesamt sollte es ca. 40-50min kochen.
-
-## Foto
-
-TODO

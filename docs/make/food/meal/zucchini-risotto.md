@@ -56,7 +56,3 @@
 
     - [ ] Chilli und Basilikumblätter kleinhacken (Stängel in Topf 1 geben) und zusammen mit dem Resst Pecorino auf das Essen streuen.
 
-
-## Foto
-
-TODO

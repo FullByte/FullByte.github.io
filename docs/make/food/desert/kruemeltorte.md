@@ -32,6 +32,3 @@
     - [ ] Mandelstifte, Eigelb, Zucker und Wasser verrühren und oben drauf verteilen.
     - [ ] Bei 160° C ca. 50-60 Min. backen.
 
-## Foto
-
-TODO

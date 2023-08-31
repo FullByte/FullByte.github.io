@@ -26,6 +26,3 @@
     - [ ] In der Zwischenzeit aus Olivenöl, gepresstem Knoblauch, Essig, Salz, Pfeffer und Zucker eine Salatsoße herstellen.
     - [ ] Tomaten und Basilikum waschen, kleinschneiden und zu den Nudeln geben. Alles miteinander vermengen und etwas ziehen lassen.
 
-## Foto
-
-TODO

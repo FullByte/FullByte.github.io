@@ -69,8 +69,11 @@ This website is hosted/built using the following services:
 | [Vercel](https://vercel.com/)                            | [0xfab1@vercel](https://0xfab1.vercel.app/)                     | <https://vercel.0xfab1.net/>      |
 | [cloudflare](https://www.cloudflare.com/)                | [0xfab1@cloudflare](https://fullbyte-github-io.pages.dev)       | <https://cloudflare.0xfab1.net/>  |
 | [Render](https://render.com/)                            | [0xfab1@render](https://zeroxfab1.onrender.com)                 | <https://render.0xfab1.net>       |
-| [AWS S3](https://aws.amazon.com/s3/)                     | TODO                                                            | TODO                              |
-| [Gitlab Pages](https://about.gitlab.com)                 | TODO                                                            | TODO                              |
+
+Services to try:
+
+- [AWS S3](https://aws.amazon.com/s3/)
+- [Gitlab Pages](https://about.gitlab.com)
 
 I tried these services but they didn't suit me for my deployment at the time tested*:
 

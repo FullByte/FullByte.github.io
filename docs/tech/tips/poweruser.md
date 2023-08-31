@@ -1,4 +1,4 @@
-# Poweruser
+# Power user
 
 ## Windows
 

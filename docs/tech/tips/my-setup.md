@@ -1,17 +1,11 @@
 # My Setup
 
-## Development
-
-TODO
-
 ## Backup
 
 Good Backup Rules:
 
 - 3-2-1: There should be 3 copies of data on 2 different media with 1 copy being off site
 - LOCKSS: Lots of Copies Keep Stuff Safe
-
-Setup: TODO
 
 ## Music
 
@@ -26,11 +20,9 @@ These are the relevant Windows Settings pages:
 
 ### VB Audio
 
-[VB Audio](https://vb-audio.com) offers some great tools to mix your audio for different purposes/szenarios. I use VB-CABLE and Voice Meeter.
+[VB Audio](https://vb-audio.com) offers some great tools to mix your audio for different purposes/scenarios. I use VB-CABLE and Voice Meeter.
 
 ### VB-CABLE Virtual Audio Device
-
-TODO
 
 ### Voice Meeter Potato
 
@@ -43,7 +35,7 @@ You can export your device footprint on a activated licensed version of Voice Me
 - Backup footprint
 - Do changes to your system (new hardware/re-install)
 - Install Voice Meeter Potato
-- Enter e-mail address your used for Voice Meeter licence and registration.
+- Enter e-mail address your used for Voice Meeter license and registration.
 - Import the footprint
 - Enter your previous Response code.
 
@@ -56,8 +48,6 @@ You can export your device footprint on a activated licensed version of Voice Me
 ### Tools
 
 #### Cubase
-
-TODO
 
 ## Video
 
@@ -73,8 +63,6 @@ I am using a cheap capture card called "Amozo 4K HDMI Video Capture Card, USB 3.
 
 The folloing GoPro settings are setup:
 
-**TODO**
-
 To make this work no drivers need to be installed. The following OBS settings work for me:
 
 - Add a new source, select "video capture device" → "audio and video input capture"
@@ -89,5 +77,3 @@ To make this work no drivers need to be installed. The following OBS settings wo
 ![_gopro-usb-capturecard](_gopro-usb-capturecard.png)
 
 There is some delay which needs to be adjusted to all input is synced properly:
-
-**TODO**

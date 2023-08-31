@@ -39,7 +39,3 @@
     - [ ] Mangoldstiele in 5 mm breite Stücke geschnitten, Blätter in mundgerechte Stücke hacken
     - [ ] Den Mangold, die Linsen, die Kokosmilch und die Gemüsebrühe dazugeben und alles etwa 15 Minuten bei mittlerer Temperatur köcheln lassen.
     - [ ] Das Mangold-Linsen-Curry mit Salz abschmecken und die Petersilie unterheben.
-
-## Foto
-
-TODO

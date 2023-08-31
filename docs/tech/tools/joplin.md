@@ -8,10 +8,6 @@
 | Download      | <https://github.com/laurent22/joplin/releases> |
 | Install       | choco install joplin                           |
 
-## Connect to FileRun
-
-TODO
-
 ## Plugins
 
 How to install plugins:

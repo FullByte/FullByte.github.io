@@ -40,6 +40,3 @@
     - [ ] Zuchinni in Scheiben schneiden, in Öl anbraten und mit Pfeffer und Salz würzen.
     - [ ] Zuchinni ebenfalls in den Ofen geben, Käse drüber streuen und 5min überbacken.
 
-## Foto
-
-TODO

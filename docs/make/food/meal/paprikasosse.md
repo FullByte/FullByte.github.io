@@ -43,6 +43,3 @@
     - [ ] Nun die gegarte Paprikasoße je nach Geschmack mit Paprikapulver und evtl. etwas Zucker und Salz abschmecken.
     - [ ] Kartoffelmehl mit etwas kaltem Wasser in einer Tasse verrühren, unter die Soße geben und nochmals aufkochen lassen. Den fertigen Reis dazu servieren.
 
-## Foto
-
-TODO

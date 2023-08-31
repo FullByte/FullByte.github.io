@@ -36,10 +36,6 @@
     - [ ] Sofort nach dem backen in Dreiecke schneiden.
     - [ ] Nach dem Erkalten die Ecken in die geschmolzene Kuvertüre tauchen oder nach Belieben mit Schokoguss überziehen.
 
-## Foto
-
-TODO
-
 ## Wiener Nusskuchen
 
 === "Zutaten"
@@ -61,6 +57,3 @@ TODO
     - [ ] Den Teig in eine gut gefettete Form geben und 60-65 Min. bei 175° C backen.
     - [ ] Nach dem Abkühlen mit Puderzucker bestreuen oder mit Schokoladenglasur bestreichen.
 
-## Foto
-
-    TODO

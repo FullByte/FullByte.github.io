@@ -33,6 +33,3 @@ Eignet sich besonders gut für unterwegs weil es einfach ist und alle Zutaten un
     - [ ] Nudeln abgießen
     - [ ] Tunfisch-Pesto mit Nudeln vermengen und Parmesan hinzugeben
 
-## Foto
-
-TODO

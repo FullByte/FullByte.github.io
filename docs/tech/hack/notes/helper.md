@@ -30,13 +30,9 @@ seclists ```sudo apt -y install seclists```
 
 <https://github.com/xmendez/wfuzz>
 
-TODO
-
 ## Spiderfoot
 
 <https://github.com/smicallef/spiderfoot>
-
-TODO
 
 ## Hash-identifier
 
@@ -46,8 +42,6 @@ Identification of various hashes
 
 <https://github.com/s0md3v/Decodify>
 
-TODO
-
 ## MacChanger
 
 MacChanger
@@ -55,8 +49,6 @@ MacChanger
 ## Sleuthkit
 
 <http://www.sleuthkit.org/>
-
-TODO
 
 ## pwdumpstats
 

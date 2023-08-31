@@ -1,11 +1,5 @@
 # Lego Builds
 
-## Star Wars
-
-My collection of official Lego Star Wars builds.
-
-TODO
-
 ## Rubik's Cube
 
 I built the [LEGO Rubik's Cube Lego](https://rebrickable.com/mocs/MOC-91837/puzzLEGO/working-lego-rubiks-cube-new-revised/#details) MOC Designed by [puzzLEGO](https://rebrickable.com/users/puzzLEGO/mocs/). 
@@ -58,10 +52,6 @@ This gets big and expensive quickly; so lets check when the chosen picture looks
 
 256x256
 ![0xfab1_lego](_0xfab1_lego256.png)
-
-### Building this for real
-
-TODO
 
 ## Lego QR-Code
 

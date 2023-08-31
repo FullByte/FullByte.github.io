@@ -43,10 +43,6 @@
     - [ ] Alles ca. 20-30 Minuten köcheln lassen.
     - [ ] Würstchen oder Kasseler in mundgerechte Stücke schneiden, zufügen und im Eintopf nachziehen lassen. Mit Salz, Pfeffer, Muskat und Zucker abschmecken und fein geschnittene Petersilie zufügen.
 
-## Foto
-
-TODO
-
 ## Rezept 2
 
 === "Zutaten"
@@ -76,10 +72,6 @@ TODO
     - [ ] Zwiebeln, Knoblauch und Möhren schälen und mit den Tomaten pürieren.
     - [ ] In einem Topf zum Kochen bringen und etwas köcheln lassen.
     - [ ] Mit den gehackten Kräutern und Gewürzen abschmecken und am Besten noch warmes Brot dazu reichen.
-
-## Foto
-
-TODO
 
 ## Rezept 3
 
@@ -111,7 +103,3 @@ TODO
     - [ ] Die Zwiebeln schälen, kleinschneiden und in heißem Öl anbraten.
     - [ ] Die geschälten Tomaten werden klein geschnitten, zu den Zwiebeln gegeben und zum Köcheln gebracht. Mit Kräutern pikant abschmecken.
     - [ ] Soja-Creme fresh mit Basilikum vermengen und bei Tisch je 1 Eßlöffel auf der Suppe verteilen.
-
-## Foto
-
-    TODO

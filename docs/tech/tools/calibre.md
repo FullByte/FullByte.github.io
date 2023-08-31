@@ -8,10 +8,6 @@
 | Windows       | `choco install calibre`                 |
 | Ubuntu         | `sudo apt -y install calibre`              |
 
-## Plugins
-
-- TODO
-
 ## Tools
 
 - Use [calibre web](https://github.com/janeczku/calibre-web) to host website with library

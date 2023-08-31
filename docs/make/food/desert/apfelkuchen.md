@@ -34,7 +34,3 @@
     - [ ] Den restlichen Teig zu einem Deckel ausrollen und den Kuchen damit bedecken.
     - [ ] Bei 200º C Heißluft ca. 35-45 Min. backen.
     - [ ] Vor dem Servieren mit dem Puderzucker bestäuben.
-
-## Foto
-
-TODO

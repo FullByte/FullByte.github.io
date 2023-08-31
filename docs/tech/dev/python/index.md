@@ -31,11 +31,7 @@
 
 Some nice tools to use for python
 
-VSCode + Extensions
-
-- TODO
-
-Other IDE
+IDE
 
 - pydev <https://www.pydev.org>
 - pycharm <https://www.jetbrains.com/pycharm/>

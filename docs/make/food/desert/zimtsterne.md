@@ -24,7 +24,3 @@
     - [ ] Mandeln und Zimt dazugeben, den Teig zwischen Backpapier ausrollen und Sterne ausstechen.
     - [ ] Auf ein mit Backpapier belegtes Backblech legen und bei 150° C Heißluft 20-25 Min. backen.
     - [ ] Puderzucker und Zitronensaft mischen und auf die Sterne pinseln.
-
-## Foto
-
-TODO

@@ -40,7 +40,3 @@ Hähnchen aus dem Ofen mit Zitronenkartoffeln.
     - [ ] Dann gewürfelte Paprika, kleingeschnittenen Ingwer und Zitronensaft dazugeben 
     - [ ] Kartoffeln, Hähnchenbrust sowie Olivenöl, Pfeffer und Salz dazugeben
     - [ ] Auflaufschale im Ofen ca. 30min garen
-
-## Foto
-
-TODO

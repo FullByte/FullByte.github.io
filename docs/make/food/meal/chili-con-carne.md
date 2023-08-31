@@ -35,7 +35,3 @@
     - [ ] Tomaten mit Salz im Mixer zerkleinern und in den Topf geben
     - [ ] Dann alles andere in den Topf geben und mit Pfeffer, Salz und ggf Chilipulver würzen.
     - [ ] 20min kochen lassen; kann aber länger warmgehalten werden / durchgezogen werden.
-
-## Foto
-
-    TODO

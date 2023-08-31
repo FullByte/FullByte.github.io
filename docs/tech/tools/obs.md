@@ -21,10 +21,6 @@ OBS+Restream=free multi-platform streaming
 - Inpput overlay <https://github.com/univrsal/input-overlay>
 - OBS-virtual-cam: <https://github.com/CatxFish/obs-virtual-cam>
 
-## General Settings
-
-TODO
-
 ## OBS-virtual-cam
 
 To put them together you have to:

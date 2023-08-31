@@ -54,7 +54,7 @@ A list of my nintendo switch games:
 | ------------------------------------------------ | ------------ | --------------- |
 | 10 Second Run RETURNS                            | 4            | zocki?          |
 | 20XX                                             | 2            |                 |
-| 9 Monkeys of Shaolin                             | 2            | coop todo       |
+| 9 Monkeys of Shaolin                             | 2            |        |
 | Akuto: Showdown                                  | 4            |                 |
 | Almost There: The Platformer                     | 1            |                 |
 | Alteric                                          | 1            |                 |
@@ -102,7 +102,7 @@ A list of my nintendo switch games:
 | Exit the Gungeon                                 | 1            |                 |
 | FAST RMX                                         | 4            | 10 Fight Game   |
 | Fe                                               | 1            |                 |
-| Feudal Alloy                                     | 1            | todo            |
+| Feudal Alloy                                     | 1            |             |
 | Flat Heroes                                      | 4            | 10 Fight Game   |
 | FLATLAND Vol. 2                                  | 1            |                 |
 | Freedom Finger                                   | 1            |                 |
@@ -183,7 +183,7 @@ A list of my nintendo switch games:
 | Roof Rage                                        | 4            | 10 Fight Game   |
 | RunGunJumpGun                                    | 1            |                 |
 | Runner3                                          | 1            |                 |
-| Sayonara Wild Hearts                             | 1            | todo            |
+| Sayonara Wild Hearts                             | 1            |             |
 | ScourgeBringer                                   | 1            |                 |
 | Semblance                                        | 1            |                 |
 | Shovel Knight Showdown                           | 4            |                 |
@@ -260,7 +260,30 @@ A list of my nintendo switch games:
 
 ### VR Team
 
-TODO
+- After the Fall
+- Arizona Sunshine
+- Audica
+- Audio Trip
+- Beat Saber
+- Breachers
+- Half Life Alyx
+- Hyper Dash
+- Karnage Chronicles
+- Paradiddle
+- Pavlov VR
+- QuiVr
+- Racket: Nx
+- Ragnarock
+- Rush
+- Sprint Vector
+- Star Wars Squadrons
+- Superhot VR
+- Synth Riders
+- To the Top
+- Ultimechs
+- Virtual Fighting Championship
+- VRNOID
+- Walkabout Mini Golf VR
 
 ### Point-And-Click Dates
 
@@ -694,10 +717,6 @@ Minecraft as Admin Tool
 ### Overwatch
 
 - Tier list and most played heroes: <https://www.esportstales.com/overwatch/tier-list-and-most-played-heroes>
-
-Settings
-
-TODO
 
 ### Quake
 

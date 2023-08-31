@@ -33,6 +33,3 @@
     - [ ] Mit Zimt abschmecken und die kleingeschnittenen Äpfel zugeben. Im heißen, gefetteten Waffeleisen nacheinander goldbraun backen.
     - [ ] Mit Puderzucker bestreuen und noch warm genießen.
 
-## Foto
-
-TODO

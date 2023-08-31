@@ -1,5 +1,0 @@
-# Hosting
-
-## PikaPods
-
-TODO
