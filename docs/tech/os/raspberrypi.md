@@ -1,5 +1,7 @@
 # Raspberry Pi
 
+Alternative OS: <https://dietpi.com/>
+
 ## Config
 
 ### Display Rotation

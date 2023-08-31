@@ -16,6 +16,7 @@ Info
 Helper:
 
 - FFmpeg Command Generator <https://www.mrfdev.com/ffmpeg-command-generator>
+- Python bindings for FFmpeg: <https://github.com/kkroening/ffmpeg-python>
 
 Links:
 
@@ -133,6 +134,18 @@ To replace all audio with silence between 30 sec and 1min and 30 sec (=90 sec):
 ffmpeg -i input.mp4 -vcodec copy -af "volume=enable='between(t,30,90)':volume=0" output.mp4
 ```
 
+**Replace Audio with music**
+
+``` sh
+ffmpeg -y -stream_loop -1 -i "input_music.mp3" -i "input_video.mp4" -map 0:a:0 -map 1:v:0 -c:v copy -c:a aac -ac 2 -shortest output.mp4
+```
+
+**Add Music to loop through the whole video**
+
+``` sh
+ffmpeg -i input_video.mp4 -filter_complex "amovie=input_music.mp3:loop=0,asetpts=N/SR/TB[input_music];[0][input_music]amix=duration=shortest,volume=2.0" output.mp4
+```
+
 **Add audio file to video**
 
 Mux video.mp4 and audio.mp4 to output.mp4. The -shortest option will cause the output duration to match the duration of the shortest input stream.
@@ -216,6 +229,7 @@ ffmpeg -f concat -i input.txt -vsync vfr -pix_fmt yuv420p output.mp4
 
 - Smaller MP4 (with sound) e.g. for Messenger: ```ffmpeg -i input.mp4 -vf "scale=-2:480" -c:v libx264 -preset slow -crf 21 -profile:v baseline -level 3.0 -pix_fmt yuv420p -r 25 -g 50 -c:a aac -b:a 160k -r:a 44100 -f mp4 output.mp4```
 - Smaller MP4 (no sound) e.g. for Messenger: ```ffmpeg -i input.mp4 -an -vf "scale=vga" messenger.mp4```
+- Video scaling for upload limitations: ```ffmpeg -i input.mp4 -vf "scale=iw/2:ih/2" output.mp4```
 
 ## Convert Video
 
@@ -246,6 +260,12 @@ function video_to_gif {
 
   ffmpeg -i "${input}" -vf "setpts=PTS/1,fps=${fps},scale=${scale}:-2:flags=lanczos,split[s0][s1];[s0]palettegen[p];[s1][p]paletteuse" -loop $loop "${output}"
 }
+```
+
+Export all video frames as images
+
+``` sh
+ffmpeg -i "%1" frames/out-%03d.jpg
 ```
 
 ### VOB preparation
@@ -295,3 +315,6 @@ This uses `libmp3lame` with default settings. The script will convert all media 
 ``` ps1
 Get-ChildItem -file -exclude *.mp3 | Foreach-Object { ffmpeg -i ('"' + $_.Name + '"') -map_metadata -1 -acodec libmp3lame ('"' + $_.BaseName + '.mp3"') }
 ```
+
+## Sort this
+

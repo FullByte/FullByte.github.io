@@ -4,6 +4,12 @@ This is a collection of cool programs running/creating ASCII art.
 
 A great source for CLI/TUI ASCII demos is <https://asciinema.org>.
 
+## Sneakers decryption no-more-secrets
+
+[No-more-secrets](https://github.com/bartobri/no-more-secrets) is a command line tool that recreates the famous data decryption effect seen in the 1992 movie Sneakers.
+
+![no-more-secrets](_no-more-secrets.gif)
+
 ## jp2a
 
 Convert images to ASCII art with jp2a.

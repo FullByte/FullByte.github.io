@@ -125,11 +125,11 @@ sudo apt-get install ./name.deb
 
 ## Firefox
 
-Some services like Disneyplus do not support linux. Change the useragent string and make sure to be in "desktop mode" when browsing sites like this. A valid useragent is e.g.:
+Some services like Disney+ do not support linux. Change the useragent string and make sure to be in "desktop mode" when browsing sites like this. A valid useragent is e.g.:
 
 `Mozilla/5.0 (Windows NT 10.0; Win64; x64) Firefox/106.0`
 
-### Regolith
+## Regolith
 
 [Regolith](https://regolith-desktop.com/) runs i3: a popular, fast, and configurable tiling window manager which is great for fast keyboard-driven workflows. Regolith integrates i3 with other desktop components such as i3bar, rofication, gnome-flashback, and ilia to provide a complete desktop interface.
 
@@ -143,4 +143,84 @@ sudo apt update
 sudo apt install regolith-desktop
 sudo apt upgrade
 sudo shutdown -r now
+```
+
+## Errors when updating
+
+Restore the default repositories
+
+Create a directory where we can run our commands:
+
+``` sh
+sudo mkdir ~/answer
+```
+
+Download the sources.list for Ubuntu 20.04 focal.
+
+``` sh
+cd ~/answer/
+```
+
+Create a `sources.list` with this content:
+
+```txt
+deb http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ focal main restricted universe multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ focal-updates main restricted universe multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ focal-security main restricted universe multiverse
+
+deb http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse
+deb-src http://archive.ubuntu.com/ubuntu/ focal-backports main restricted universe multiverse
+
+deb http://archive.canonical.com/ubuntu focal partner
+deb-src http://archive.canonical.com/ubuntu focal partner
+```
+
+Optionally, change the sources.list to match your version:
+
+``` sh
+sudo sed -i "s/focal/$(lsb_release -c -s)/" ~/answer/sources.list
+```
+
+Backup your current sources.list and replace the sources.list:
+
+``` sh
+sudo mv /etc/apt/sources.list /etc/apt/sources.list.bak
+sudo mv ~/answer/sources.list /etc/apt/
+```
+
+Run apt update:
+
+``` sh
+sudo apt update
+```
+
+By default, the directory which contains all the PPA files is empty. If after restoring the repositories, you're still facing errors then you need to remove all the PPA files too.
+
+Move the directory containing the PPA files to the ~/answer directory:
+
+``` sh
+sudo mv /etc/apt/sources.list.d/ ~/answer 
+```
+
+Recreate the directory:
+
+``` sh
+sudo mkdir /etc/apt/sources.list.d
+```
+
+Run apt update:
+
+``` sh
+sudo apt update 
+```
+
+Remove the ~/answer directory:
+
+``` sh
+sudo rm -r ~/answer
 ```
