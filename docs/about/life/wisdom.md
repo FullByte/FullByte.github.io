@@ -1,14 +1,21 @@
 # Final wisdom
 
-This is a collection of hand picked wisdom accumulated for the worthy.
-Advice is difficult to take in properly... no idea how you should do it; but do something.
-First of all: Don't get serious advice from some random website, but hey, you are here, so enjoy my input :)
+Don't get serious advice from some random website, but hey, you are here, so enjoy my input :)
+
+This is a collection of hand picked wisdom accumulated for the worthy. Hopefully there is something helpful in it for you. Most of this stuff is not mine, I just like to collect some of the stuff that helped me.
+
+Let's start with some random quotes:
+
+- A society grows great when old men plant trees in whose shade they shall never sit.
+- Its okay to go through awful places, just don't stop and unpack.
+- If you choose not to find joy in the snow, you will have less joy in your life, but the same amount of snow.
 
 ## Get stuff done
 
 - It's better to finish something than to start something
 - Make goals that you have control over. Accept what you can not control or choose to be unhappy.
 - Practice "Shoshikantetsu", japanese for "Complete what was originally intended."
+- Practice "Ichigoichie", japanese for "Treasure every encounter, for it will never reoccur."
 
 ### 110%
 
@@ -29,8 +36,6 @@ Hard problems are hard - here is some advice:
 - Break large goals down into manageable pieces. Creating an accurate road maps toward this goal. Find out what is important. Differentiate between activities you want to be important and what actually makes a difference.
 
 ### Productivity, purpose and passion
-
-Some wisdom about productivity, purpose and passion:
 
 - You need to be efficient to have money and time to enjoy life.
 - The parts of life that bring joy are often things we do for their own sake without caring about efficiency.
@@ -77,15 +82,7 @@ Nobody will care more about your health than you. Treat yourself well and your b
 2. Social support: Communicate openly and honestly with the people you trust and like. Social connections are essential for emotional well-being and provide a support network when you need help or someone to talk to.
 3. Stress management: Develop healthy coping mechanisms for dealing with stress and difficult emotions. Learn to recognize the signs of stress in your body and mind, and work on developing a proactive approach to managing stressors in your life.
 
-## Investment
-
-- Only invest what you can spare. Establish an emergency fund to define what you can spare.
-- Start early, diversify (but only the stuff you know and are convinced of) and set clear goals for yourself (investment objectives, time horizon, and risk tolerance) and stay true to those values for any investment.
-- Regularly contribute, periodically review your portfolio and make adjustments for new investments.
-- Be patient and HODL and never look back. Don't day trade, bet short term or similar actions that require to check your balance and the current events frequently. This will simply be exhausting.
-- Read the [Ferengi](https://memory-beta.fandom.com/wiki/Ferengi_Rules_of_Acquisition) (Star Trek) [Rules of Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition) and [Bogleheads investment philosophy](https://www.bogleheads.org/wiki/Video:Bogleheads%c2%ae_investment_philosophy)
-
-## Emotions
+### Emotions
 
 - Feel and understand your emotions but don't let them control you. E.g. don't let fear guide your decisions.
 - Don't take things to personally. Stay objective and don't be offended.
@@ -95,73 +92,13 @@ Nobody will care more about your health than you. Treat yourself well and your b
 - Don't engage in gossip. Show respect and be positive.
 - Don't blame others. You will loose credibility and authority. Acknowledge your own mistakes and rather discuss solutions and next steps with others.
 
-## Reflection
+## Investment
 
-Practice "Ichigoichie", japanese for "Treasure every encounter, for it will never reoccur."
-
-### What went well?
-
-- What was I most proud of?
-- When was I most happy? Why?
-- What was my biggest win?
-- What went better than expected?
-- What did I spend the most time on?
-- How did I spend my time best?
-- What was my area of highest contribution?
-- Who impacted me the most? Thank them.
-
-Answer these three questions questions ...
-
-- What went well? Why?
-- Where did I make the most progress? What Steps did I take?
-- What did I learn?
-
-... for each of these three categories:
-
-- Health (mental, physical)
-- Wealth (career, investments)
-- Relationships (love, friendships, interactions)
-
-### What went poorly?
-
-- What action am I least proud of? Why?
-- What was my biggest loss?
-- What made me miserable? How?
-- What makes me most anxious? How?
-- What went worse than expected?
-- What held me back from doing what I want?
-- What are the three worst things that happened?
-
-Answer these three questions questions for each answer of the last question:
-
-- What didn't go well and how could it have been avoided?
-- Where did I make negative progress? What happened to cause it?
-- What did I learn?
-
-### Vision
-
-With these three topics in mind what does the ideal near future look like?
-
-- Health (mental, physical)
-- Wealth (career, investments)
-- Relationships (love, friendships, interactions)
-
-Answer the following questions about the ideal near future:
-
-- What of type of Person am I? Who do I want to become?
-- What do I value the most? What are my top priorities?
-- What drives me? What gets me motivated?
-- What is my area of highest contribution?
-- What do I say no to? What is essential to me? How can I stay focused on that?
-- What do I spend the most time with? Who/what will I avoid from now?
-- What is the one big thing I will achieve?
-
-### Execute goals
-
-Based on the last question, break down your big goal:
-
-- To the next quarterly goal (review every 3 months)
-- Define habits and actions to achieve the quarterly goal
+- Only invest what you can spare. Establish an emergency fund to define what you can spare.
+- Start early, diversify (but only the stuff you know and are convinced of) and set clear goals for yourself (investment objectives, time horizon, and risk tolerance) and stay true to those values for any investment.
+- Regularly contribute, periodically review your portfolio and make adjustments for new investments.
+- Be patient and HODL and never look back. Don't day trade, bet short term or similar actions that require to check your balance and the current events frequently. This will simply be exhausting.
+- Read the [Ferengi](https://memory-beta.fandom.com/wiki/Ferengi_Rules_of_Acquisition) (Star Trek) [Rules of Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition) and [Bogleheads investment philosophy](https://www.bogleheads.org/wiki/Video:Bogleheads%c2%ae_investment_philosophy)
 
 ## Protest
 
@@ -180,10 +117,3 @@ It is not easy to protest in a smart and effective way. In my opinion strikes, d
 - Find ways to educate the public about the core issue of your protest any what needs to be done. Reflect on your issue and make sure this is not just an opinion but actual facts that can be educated.
 
 - Never interrupt your enemy when he/she is making a mistake.
-
-## Random Quotes
-
-- A society grows great when old men plant trees in whose shade they shall never sit.
-- Its okay to go through awful places, just don't stop and unpack.
-- If you choose not to find joy in the snow, you will have less joy in your life, but the same amount of snow.
-- You know, it's funny... when you look at someone through rose-colored glasses, all the red flags just look like flags.
