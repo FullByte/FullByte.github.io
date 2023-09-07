@@ -11,9 +11,10 @@ If friends alter their plans or back out at the last moment, don't be deterred. 
 Don't limit yourself in undesired ways but rather optimize how to consume information.
 
 - Mute sounds that annoy and distract.
+- Block users, unsubscribe oder block mails - whatever is undesired should not reach your attention more than once.
 - Disable popups and redirect/move messages that are just informational.
 - Limit the number of services you use and actually use them.
-- Be active, not passive: Don't behave based on triggers like notifications, sounds, new mails. Read whenever you make yourself time for it.
+- Be active, not passive: Don't behave based on triggers like notifications, sounds, new mails. Read whenever you make yourself time for it. (This works for work as well)
 - Choose what to consume instead of consuming whatever is brought to you.
 
 ## No free shower

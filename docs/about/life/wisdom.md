@@ -17,6 +17,14 @@ Let's start with some random quotes:
 - Practice "Shoshikantetsu", japanese for "Complete what was originally intended."
 - Practice "Ichigoichie", japanese for "Treasure every encounter, for it will never reoccur."
 
+Follow this to get stuff done:
+
+- Identify the problem
+- Generate a list of potential solutions
+- Evaluate the strengths and weaknesses of each potential solution
+- Choose a solution to implement
+- Implement the solution
+
 ### 110%
 
 Never give 110%, that's just selling out... just divide your 100% in:
