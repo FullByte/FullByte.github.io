@@ -16,3 +16,10 @@ More Links:
 
 - Pico CAD: picoCAD is a program to build and texture lowpoly 3D models <https://johanpeitz.itch.io/picocad>
 - z-machine interpreter <https://christopherdrum.itch.io/statusline>
+
+## Pico on Clockwork Gameshell
+
+- Once purchased, visit the downloads page and download the Raspberry Pi version. This file has a filename similar to: pico-8_0.1.12c_raspi.zip
+- Select TinyCloud on the Gameshell and copy the files using SCP. IP, username and password are displayed in TinyCloud.
+- Make sure the file is named pico-8_0.1.11g_raspi.zip even if you downloaded a newer version and copy the zip file to ~/games/PICO-8/.
+- Be careful not to select "Exit to Console" from the shutdown menu. This puts PICO-8 in its game developer mode. Hold down the GameShell's power button to reset if you get stuck here.
