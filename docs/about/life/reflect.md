@@ -2,69 +2,67 @@
 
 ## Goals
 
-### What went well?
+=== "EN"
 
-- What was I most proud of?
-- When was I most happy? Why?
-- What was my biggest win?
-- What went better than expected?
-- What did I spend the most time on?
-- How did I spend my time best?
-- What was my area of highest contribution?
-- Who impacted me the most? Thank them.
+    Answer the following questions about the ideal near future:
 
-Answer these three questions questions ...
+    - What of type of Person am I? Who do I want to become?
+    - What do I value the most? What are my top priorities?
+    - What drives me? What gets me motivated?
+    - What is my area of highest contribution?
+    - What do I say no to? What is essential to me? How can I stay focused on that?
+    - What do I spend the most time with? Who/what will I avoid from now?
+    - What is the one big thing I will achieve?
 
-- What went well? Why?
-- Where did I make the most progress? What Steps did I take?
-- What did I learn?
+    Based on what you answered in the questions above, break down your big goal:
 
-... for each of these three categories:
+    - To what goal you want to achieve in the next three months.
+    - Define habits and actions to achieve that goal in three months.
 
-- Health (mental, physical)
-- Wealth (career, investments)
-- Relationships (love, friendships, interactions)
+    Every three months, reflect on your goals:
 
-### What went poorly?
+    - What was I most proud of? / What action am I least proud of? Why?
+    - When was I most happy? Why? / What was my biggest loss?
+    - What was my biggest win? / What made me miserable? How?  What makes me most anxious? How?
+    - What went better than expected? / What are the three worst things that happened?
+    - What did I spend the most time on? / What went worse than expected?
+    - How did I spend my time best? / What held me back from doing what I want?
+    - What was my area of highest contribution?
+    - Who impacted me the most? Thank them.
 
-- What action am I least proud of? Why?
-- What was my biggest loss?
-- What made me miserable? How?
-- What makes me most anxious? How?
-- What went worse than expected?
-- What held me back from doing what I want?
-- What are the three worst things that happened?
+    Then set a new goal for the next three months.
 
-Answer these three questions questions for each answer of the last question:
+=== "DE"
 
-- What didn't go well and how could it have been avoided?
-- Where did I make negative progress? What happened to cause it?
-- What did I learn?
+    Beantworte die folgenden Fragen über deine ideale Zukunft:
 
-### Vision
+    - Was für ein Mensch bin ich? Wer möchte ich werden?
+    - Worauf lege ich am meisten Wert? Was sind meine obersten Prioritäten?
+    - Was treibt mich an? Wodurch werde ich motiviert?
+    - Was ist der Bereich, in dem ich den größten Beitrag leiste?
+    - Wozu sage ich Nein? Was ist für mich wesentlich? Wie kann ich mich darauf konzentrieren?
+    - Womit verbringe ich die meiste Zeit? Wen/was werde ich von nun an meiden?
+    - Was ist die eine große Sache, die ich erreichen will?
 
-With these three topics in mind what does the ideal near future look like?
+    Basierend auf den Antworten der obigen Fragen, formuliere ein großes Ziel bzw. das wichtigste Ziel:
 
-- Health (mental, physical)
-- Wealth (career, investments)
-- Relationships (love, friendships, interactions)
+    - Welches Ziel willst du in den nächsten drei Monaten erreichen?
+    - Definiere Gewohnheiten und Maßnahmen, um dieses Ziel in drei Monaten zu erreichen.
 
-Answer the following questions about the ideal near future:
+    Reflektiere alle drei Monate über deine Ziele:
 
-- What of type of Person am I? Who do I want to become?
-- What do I value the most? What are my top priorities?
-- What drives me? What gets me motivated?
-- What is my area of highest contribution?
-- What do I say no to? What is essential to me? How can I stay focused on that?
-- What do I spend the most time with? Who/what will I avoid from now?
-- What is the one big thing I will achieve?
+    - Worauf war ich am meisten stolz? / Auf welche Aktion bin ich am wenigsten stolz? Und warum?
+    - Wann war ich am glücklichsten? Und warum? / Was war mein größter Verlust?
+    - Was war mein größter Gewinn? / Was hat mich unglücklich gemacht? Wie?  Was macht mich am meisten ängstlich? Inwiefern?
+    - Was lief besser als erwartet? / Was sind die drei schlimmsten Dinge, die passiert sind?
+    - Wofür habe ich die meiste Zeit aufgewendet? / Was lief schlechter als erwartet?
+    - Wie habe ich meine Zeit am besten verbracht? / Was hat mich davon abgehalten, das zu tun, was ich wollte?
+    - Was war der Bereich, in dem ich den größten Beitrag geleistet habe?
+    - Wer hat mich am meisten beeinflusst? Bedanke dich bei dieser Person.
 
-Based on the questions, break down your big goal:
+    Dann stecke dir ein neues Ziel für die nächsten drei Monate.
 
-- To the next quarterly goal (review every 3 months)
-- Define habits and actions to achieve the quarterly goal
-
-## Yearly
+## Yearly Review
 
 Questions are from [40-questions by kepano](https://github.com/kepano/40-questions)
 
@@ -154,7 +152,7 @@ Questions are from [40-questions by kepano](https://github.com/kepano/40-questio
     - Welche neue Lektion fürs Leben hast du dieses Jahr gelernt?
     - Welches Zitat fasst dein Jahr zusammen?
 
-## Decade
+## Decade Review
 
 === "EN"
 

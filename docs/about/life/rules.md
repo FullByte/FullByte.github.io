@@ -6,6 +6,16 @@ Rules can be broken.
 
 If friends alter their plans or back out at the last moment, don't be deterred. Continue with your plans, and you might encounter new faces along the journey. Reconnect with the initial reason you wanted to participate and go for it. If socializing was the primary goal, communicate your feelings to those who cancelled. It's smart to plan events that aren't overly dependent on others, guaranteeing you can see them through. This strategy not only simplifies the planning process but also reduces the risk of letdowns. Additionally, embarking on a journey alone or with a different group frequently leads to unexpected experiences and the formation of new friendships.
 
+## Mute stuff
+
+Don't limit yourself in undesired ways but rather optimize how to consume information.
+
+- Mute sounds that annoy and distract.
+- Disable popups and redirect/move messages that are just informational.
+- Limit the number of services you use and actually use them.
+- Be active, not passive: Don't behave based on triggers like notifications, sounds, new mails. Read whenever you make yourself time for it.
+- Choose what to consume instead of consuming whatever is brought to you.
+
 ## No free shower
 
 Before stepping into the shower, ensure you've worked up a sweat. If your day mainly involves desk work, engage in activities like running to break a sweat before you bathe. Commit to exercising first so every shower feels truly deserved.
