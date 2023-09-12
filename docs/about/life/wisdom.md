@@ -17,6 +17,14 @@ Let's start with some random quotes:
 - Practice "Shoshikantetsu", japanese for "Complete what was originally intended."
 - Practice "Ichigoichie", japanese for "Treasure every encounter, for it will never reoccur."
 
+Follow this to get stuff done:
+
+- Identify the problem
+- Generate a list of potential solutions
+- Evaluate the strengths and weaknesses of each potential solution
+- Choose a solution to implement
+- Implement the solution
+
 ### 110%
 
 Never give 110%, that's just selling out... just divide your 100% in:
@@ -91,6 +99,24 @@ Nobody will care more about your health than you. Treat yourself well and your b
 - Don't avoid difficult conversations. Be open for dialogue and confront problems. Constructive disagreement is healthy for progress.
 - Don't engage in gossip. Show respect and be positive.
 - Don't blame others. You will loose credibility and authority. Acknowledge your own mistakes and rather discuss solutions and next steps with others.
+
+### Mindfulness
+
+Mindfulness is a skill that takes time to develop. Be patient with yourself and avoid self-criticism if your mind wanders or if you find it challenging at times. The goal of mindfulness is to bring present-moment awareness into your daily life. You can practice mindfulness while eating, walking, working, or interacting with others by staying fully engaged in the moment.
+
+Prepare:
+
+- Choose a quiet and comfortable place where you won't be disturbed. Sit, lie down or stand – whatever feels most comfortable for you.
+- Start with a manageable amount of time, like 10 minutes and commit to it. Gradually increase time if desired.
+- You can also use guided mindfulness meditation recordings or apps to help you get started. These often provide instructions and gentle reminders to stay present.
+
+Practice:
+
+- Close your eyes and take a few deep breaths to center yourself. Then, allow your breath to return to its natural rhythm. Focus your attention on the sensation of your breath as it enters and leaves your nostrils or the rise and fall of your chest.
+- Your mind will likely start to wander. When it does, bring your focus back to your breath. You can use a mental cue like "inhale" and "exhale" to anchor your attention to the breath.
+- Pay attention to the physical sensations associated with breathing. Notice how the air feels as it enters and exits your body, the temperature of the breath, and any other sensations that arise.
+
+Consistency is key to developing mindfulness. Try to incorporate mindfulness into your daily routine, even if it's just for a few minutes each day.
 
 ## Investment
 
