@@ -39,6 +39,14 @@ return [BitConverter]::ToString($buffer).Replace("-", [string]::Empty);
 
 ## System information
 
+get all the binaries in the path variable
+
+``` ps1
+$env:Path.split(";") | ForEach-Object {
+    Get-ChildItem -Path $_ -ErrorAction SilentlyContinue
+} | Where-Object { $env:PATHEXT.ToLower() -match $_.Extension.ToLower() } | Select-Object FullName
+```
+
 Programs that run on this system
 
 ``` ps1
