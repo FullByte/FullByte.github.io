@@ -21,6 +21,12 @@ For example:
 
 Add the atom link to your rss feed reader to get notified on updates.
 
+## All starred projects
+
+To get all starred projects of a user go to: ```https://github.com/stars/<user>```
+
+e.g. my starred projects are here: <https://github.com/stars/FullByte>
+
 ## VScode online
 
 Press "." in any github repo to open the editor.

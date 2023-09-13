@@ -82,3 +82,9 @@ Local Tools
 Online Tools
 
 - <https://glyphdrawing.club/>
+
+## taoup
+
+Ruby-powered ANSI colored fortunes
+
+- Source: <https://github.com/globalcitizen/taoup>
