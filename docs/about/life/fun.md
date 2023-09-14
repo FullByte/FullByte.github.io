@@ -23,56 +23,20 @@ This process diagram visualizes the steps involved:
 
 ![image](_chicks-respect-money.drawio.svg)
 
-## Rules of Acquisition
+## Protest
 
-My favorite Ferengi Rules of Acquisition
+It is not easy to protest in a smart and effective way. In my opinion strikes, demonstrations, letter-writing campaigns, petitions, sit-ins and occupation are not very effective nor creative. Of course on can passively boycott whatever thing to not support and tell friends about what and why not to support but this is boring and small minded as well. Here are some examples and ideas how to protest on a given matter in an interesting, not annoying and creative way while being effective and successful:
 
-| Rule                                                                                                             | Source                                                                                    |
-|------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| Once you have their money, you never give it back.                                                               | The Nagus (DS9 episode)                                                                   |
-| The best deal is the one that brings the most profit.                                                            | The 34th Rule (DS9 novel)                                                                 |
-| Never allow family to stand in the way of opportunity.                                                           | The Nagus (DS9 episode)                                                                   |
-| Small print leads to large risk.                                                                                 | The Ferengi Rules of Acquisition (DS9 reference book)                                     |
-| Opportunity plus instinct equals profit.                                                                         | The Storyteller (DS9 episode)                                                             |
-| Anything worth doing is worth doing for money.                                                                   | Legends of the Ferengi (DS9 novel)                                                        |
-| Dead men close no deals.                                                                                         | Demons of Air and Darkness (DS9 novel)                                                    |
-| A deal is a deal - until a better one comes along.                                                               | Melora (DS9 episode), The Ferengi Rules of Acquisition (DS9 reference book)               |
-| Satisfaction is not guaranteed.                                                                                  | Legends of the Ferengi (DS9 novel), The Ferengi Rules of Acquisition (DS9 reference book) |
-| Never place friendship above profit.                                                                             | Rules of Acquisition (DS9 episode)                                                        |
-| Nothing is more important than your health - except for your money.                                              | Acquisition (ENT episode)                                                                 |
-| There's nothing more dangerous than an honest businessman.                                                       | Legends of the Ferengi (DS9 novel)                                                        |
-| What's in it for me?                                                                                             | Highest Score (DS9 novel)                                                                 |
-| War is good for business.                                                                                        | Destiny (DS9 episode), The 34th Rule (DS9 novel)                                          |
-| Peace is good for business.                                                                                      | Destiny (DS9 episode), The 34th Rule (DS9 novel)                                          |
-| Don't tell customers more than they need to know.                                                                | Ascendance (DS9 novel)                                                                    |
-| Never confuse wisdom with luck.                                                                                  | The Ferengi Rules of Acquisition (DS9 reference book)                                     |
-| There is no substitute for success.                                                                              | The Ferengi Rules of Acquisition (DS9 reference book)                                     |
-| Free advice is seldom cheap.                                                                                     | Rules of Acquisition (DS9 episode)                                                        |
-| Keep your lies consistent.                                                                                       | The Ferengi Rules of Acquisition (DS9 reference book)                                     |
-| Every once in a while, declare peace. It confuses the hell out of your enemies.                                  | The Homecoming (DS9 episode)                                                              |
-| Vengeance will cost you everything.                                                                              | The Poisoned Chalice (DS9 novel)                                                          |
-| It is better to lose some profit and live than lose all profit and die.                                          | Strange New Worlds VI: Best Tools Available (DS9 short story)                             |
-| Every man has his price.                                                                                         | In the Pale Moonlight (DS9 episode)                                                       |
-| When it's good for business, tell the truth.                                                                     | Ascendance (DS9 novel)                                                                    |
-| Sleep can interfere with opportunity.                                                                            | Rules of Acquisition (DS9 episode)                                                        |
-| Treat people in your debt like family - exploit them.                                                            | Past Tense, Part I (DS9 episode)                                                          |
-| You can't make a deal if you're dead.                                                                            | The Siege of AR-558 (DS9 episode)                                                         |
-| Listen to secrets, but never repeat them.                                                                        | Ascendance (DS9 novel)                                                                    |
-| Only fools pay retail.                                                                                           | The Ferengi Rules of Acquisition (DS9 reference book)                                     |
-| There's nothing wrong with charity - as long as it winds up in your pocket.                                      | The Ferengi Rules of Acquisition (DS9 reference book)                                     |
-| Sell the sizzle, not the steak.                                                                                  | Deep Space Mine (DS9 comic)                                                               |
-| Even in the worst of times, someone turns a profit.                                                              | The Ferengi Rules of Acquisition (DS9 reference book), Harbinger (DS9 video game)         |
-| Hear all, trust nothing.                                                                                         | Call to Arms (DS9 episode)                                                                |
-| Sometimes the only thing more dangerous than a question is an answer.                                            | Ferengi Love Songs (DS9 episode)                                                          |
-| A good lie is easier to believe than the truth.                                                                  | Shattered (VOY episode), Star Trek Online (video game)                                    |
-| Sometimes what you get free costs entirely too much.                                                             | Baby on Board (DS9 comic)                                                                 |
-| You can't buy fate.                                                                                              | The Ferengi Rules of Acquisition (DS9 reference book)                                     |
-| Never be afraid to mislabel a product.                                                                           | Body Parts (DS9 episode)                                                                  |
-| More is good, all is better.                                                                                     | The Ferengi Rules of Acquisition (DS9 reference book)                                     |
-| A wealthy man can afford anything except a conscience.                                                           | The Ferengi Rules of Acquisition (DS9 reference book)                                     |
-| When in doubt, lie.                                                                                              | The Ferengi Rules of Acquisition (DS9 reference book)                                     |
-| If you believe it, they believe it.                                                                              | Taking Wing (DS9 novel)                                                                   |
-| If it ain't broke, don't fix it.                                                                                 | Ferenginar: Satisfaction is Not Guaranteed (DS9 novella)                                  |
-| Always get somebody else to do the lifting.                                                                      | N-Vector (DS9 comic)                                                                      |
-| Never get into anything that you can't get out of.                                                               | N-Vector (DS9 comic)                                                                      |
-| Whenever you exploit someone, it never hurts to thank them. That way, it's easier to exploit them the next time. | False Profits (VOY episode)                                                               |
+- [Ugly Gerry](https://fontsarena.com/ugly-gerry/) is a [free font](_gerry.otf.zip) created with real US congressional districts. The name comes from gerrymandering, the process that made possible such weird shapes.
+
+- [Volkswagen](https://github.com/auchenberg/volkswagen) can be integrated in your CI process. It detects when your tests are being run in a CI server, and makes them pass. Volkswagen uses a defeat device to detect when it's being tested in a CI server and will automatically reduce errors to an acceptable level for the tests to pass. This will allow you to spend less time worrying about testing and more time enjoying the good life as a trustful software developer.
+
+- The creative ways the [DeCSS](https://en.wikipedia.org/wiki/DeCSS) crack was distribted (e.g. [t-shirt](_decss_tshirt.jpg), [haiku](_decss-haiku.txt) or [midi](_decss-auth.mid), [audio](_decss_descramble.mp3), [html dvd logo](_decss-dvdlogo.html.txt) and [many more](https://www.cs.cmu.edu/~dst/DeCSS/Gallery/)...). Later works by "removing all the white space, then transforming each ASCII character into a single 32nd note of its midi equivalent (midi notes, like ASCII characters, are coded into values ranging from 1 to 127.)".
+
+- Address your issues to the correct people. If you work in an social or public based service make sure to create awareness but don't let uninvolved suffer from your problems. For example if drive a bus, let passengers ride for free and let them know you are protesting instead of not driving and letting people down.
+
+- Make art (music, pictures, games) that help people understand the problem. Make things that are understandable as well as entertaining, interesting, provocative and/or beautiful. This will address the problem in an entertaining but critical way that is no annoying an will be much more likely be shared, discussed and addressed.
+
+- Find ways to educate the public about the core issue of your protest any what needs to be done. Reflect on your issue and make sure this is not just an opinion but actual facts that can be educated.
+
+- Never interrupt your enemy when he/she is making a mistake.

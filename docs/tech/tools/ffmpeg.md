@@ -201,6 +201,14 @@ For a 90 degrees rotation use one of the following options:
 - Example: ```ffmpeg -i input.mp4 -vf "transpose=1" output.mp4```
 - 180 degrees run this command: ```ffmpeg -i input.mp4 -vf "transpose=2,transpose=2 output.mp4"```
 
+## Video Stabilization
+
+Requires `libvidstab` additionally to ffmpeg
+
+- Generate stabilization data `transforms.trf`: ```ffmpeg -i input.mkv -vf vidstabdetect -f null -```
+- Use `transforms.trf` and create a new stabilized video: ```ffmpeg -i input.mkv -vf vidstabtransform input-stabilized.mkv```
+- Compare old and new video side by side: ```ffmpeg -i input.mkv -i input-stabilized.mkv  -filter_complex hstack input-compared.mkv```
+
 ## Slideshow
 
 Create a file e.g. `input.txt` with the following content:
