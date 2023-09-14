@@ -45,6 +45,7 @@
 - Photo Search Tool: <https://github.com/yurijmikhalevich/rclip>
 - Terminal UI for SQLite: <https://github.com/mathaou/termdbms>
 - Search in PDFs: <https://pdfgrep.org/>
+- Plot Stats in Terminal: <https://github.com/red-data-tools/YouPlot>
 
 ## Money
 
