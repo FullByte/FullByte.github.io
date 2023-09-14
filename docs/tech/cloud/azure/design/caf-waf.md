@@ -46,7 +46,7 @@ CAF 3 Stage: Implement → migrate & innovate
 13. Migrate
 
     - First Migration
-    - Migration Szenarios (OS, App, Data, Other)
+    - Migration Scenarios (OS, App, Data, Other)
     - best practices → tool check/design check/process check
     - migration process improvement → eval current migration steps and improve where possible
 
@@ -62,7 +62,7 @@ CAF 3 Stage: Implement → migrate & innovate
 Governance (overall process)
 
     - comply, control and secure
-    - Define gouvernance solutions → Business needs, agility, control risks
+    - Define governance solutions → Business needs, agility, control risks
 
 Management (overall process)
 
@@ -71,7 +71,7 @@ Management (overall process)
 
 Organize
 
-    - Roles and Responsiblites (RACI)
+    - Roles and Responsibilities (RACI)
 
 ### Links
 
