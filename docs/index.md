@@ -13,22 +13,14 @@ Y88b  d88P .d8""8b. 888  d8888888888 888   d88P  888
  "Y8888P"  888  888 888 d88P     888 8888888P" 8888888 
 ```
 
-Publishing [my](https://proven.lol/d72627) projects and notes has been great exercise for <a rel="me" href="https://social.lol/@yolo">me</a>. As longs as this works well for me I will continue doing so :)
+[Publishing](https://proven.lol/d72627) my [projects](/make/) and [tech notes](/tech/) has been great exercise for <a rel="me" href="https://social.lol/@yolo">me</a>. The [content](https://0xfab1.net/sitemap) of [this site](/about/me/0xfab1.net) may appear random as it deals with whatever I find interesting and noteworthy ```¯\_(ツ)_/¯```
 
-The content of [this site](/about/me/0xfab1.net) may appear random as it deals with whatever I find interesting and noteworthy ```¯\_(ツ)_/¯```.
+Use the navigation menu on the left (hidden as hamburger menu if screen size is small) or the search bar on the top right to find topics of interest. Toggle between light and dark  with the switch next to the search bar. I hope you appreciate the lack of ads and pop-ups.
 
-I hope you appreciate the lack of ads and pop-ups. Use the navigation menu on the left or the search bar on the top right to find topics of interest.
-Toggle between light and dark mode, depending on what your prefer.
-
-I appreciate your [pull-request on GitHub](https://github.com/FullByte/FullByte.github.io#contribute) for typos/errors in existing pages.
-If you think something is generally wrong or I missed to link you where appropriate, please [let me know](about/me/contact)!
-
-Enjoy the [content](https://0xfab1.net/sitemap) and find your visit worthwhile :)
+I appreciate your [pull request](https://github.com/FullByte/FullByte.github.io#contribute) for any errors in existing pages. If you think something is generally wrong, I missed to link you where appropriate or just want to reach out, please [contact me](about/me/contact)!
 
 Regards,
 
 [0xFAB1](/about/me/)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/FullByte/FullByte.github.io?color=4cae4f&label=last%20update&style=plastic)
-
-![not-by-AI](_not-by-AI-bb.svg)

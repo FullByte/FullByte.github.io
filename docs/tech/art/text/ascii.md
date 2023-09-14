@@ -4,13 +4,214 @@ This is a collection of cool programs running/creating ASCII art.
 
 A great source for CLI/TUI ASCII demos is <https://asciinema.org>.
 
-## Sneakers decryption no-more-secrets
+## Games
+
+### DWARF FORTRESS
+
+<http://www.bay12games.com/dwarves/>
+
+### Cataclysm: Dark Days Ahead
+
+<https://cataclysmdda.org/>
+
+### Ascii Sector
+
+<https://www.asciisector.net/>
+
+### Ascii Patrol
+
+<http://ascii-patrol.com/>
+
+### Terminal Dungeon
+
+[Terminal Dungeon](https://github.com/salt-die/terminal_dungeon) is a doom-like raycasting engine that renders to ascii for playing in terminal.
+
+### The Command Line Murders
+
+There's been a murder in Terminal City, and TCPD needs your help... [The Command Line Murders](https://github.com/veltman/clmystery) is a game with ASCII art and played in the CLI.
+
+### awk-raycaster
+
+[AWK-raycaster](https://github.com/TheMozg/awk-raycaster) is a pseudo-3D shooter written completely in gawk using raycasting technique.
+
+Clone a copy and run it with gawk using this command: ```gawk-f awkaster.awk```
+
+![awk-raycaster](_awk-raycaster.webp)
+
+## Fun
+
+## asciiquarium
+
+View asciiquarium using curl with [asciiquarium.live](https://github.com/kilimnik/asciiquarium.live)
+
+``` sh
+curl asciiquarium.live
+```
+
+To run asciiquarium locally you need Term-Animation and Perl.
+
+First install Perl:
+
+``` sh
+sudo apt-get install libcurses-perl
+```
+
+Download and install [Term-Animation](_term-animation-2.6.tar.gz) to /tmp
+
+``` sh
+cd /tmp
+wget https://cpan.metacpan.org/authors/id/K/KB/KBAUCOM/Term-Animation-2.6.tar.gz
+tar -zxvf Term-Animation-2.6.tar.gz
+cd Term-Animation-2.6/
+perl Makefile.PL && make && make test
+sudo make install
+```
+
+Download [asciiquarium](_asciiquarium.tar.gz) to /tmp
+
+``` sh
+cd /tmp
+wget https://robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
+tar -zxvf asciiquarium.tar.gz
+cd asciiquarium_1.1/
+sudo cp asciiquarium /usr/local/bin
+sudo chmod 0755 /usr/local/bin/asciiquarium
+```
+
+Run asciiquarium
+
+``` sh
+perl /usr/local/bin/asciiquarium
+```
+
+[![asciiquarium.webp](_asciiquarium.webp)](_asciiquarium.mkv)
+
+### Matrix
+
+There are many Matrix screensavers; some work in the console.
+
+The one I use is cmatrix:
+
+- Install: ```sudo apt install cmatrix```
+- Usage: ```cmatrix```
+
+But  there are plenty more:
+
+- [fakesteak](https://github.com/domsson/fakesteak): ```fakesteak -d 15```
+- [cmatrix](https://github.com/abishekvashok/cmatrix) ```cmatrix -b -u 10```
+- [tmatrix](https://github.com/M4444/TMatrix) ```tmatrix -g 30,70 -f 1,1 -c default```
+- [cxxmatrix](https://github.com/akinomyoga/cxxmatrix) ```cxxmatrix -s rain-forever --frame-rate=10 --error-rate=0.1```
+- [unimatrix](https://github.com/will8211/unimatrix) ```unimatrix -s 90 -l=o -f```
+
+Fakesteak example:
+
+![matrix](_matrix.webp)
+
+### cBonsai
+
+- Source: <https://gitlab.com/jallbrit/cbonsai>
+- Install: ```sudo apt install cbonsai```
+- Usage: ```cbonsai -l -i -L 64 -m 0xfab1.net```
+
+cBonsai example:
+
+![cbonsai](_cbonsai.webp)
+
+### a Fire
+
+- Install ```sudo apt install libaa-bin```
+- Use aafire ```aafire```
+
+### BB
+
+- Install ```sudo apt install bb```
+- Use BB ```bb```
+
+Watch this video to see what it does without running it: <https://www.youtube.com/watch?v=9ukhOAUseKY>
+
+### lolcat
+
+To make any of the ASCII output more colorful use lolcat. Note: doesn't work with animations e.g. ```aafire | lolcat```
+
+- Link: <https://github.com/busyloop/lolcat>
+- Install: ```sudo apt install lolcat```
+- Use lolcat: ```fortune | cowthink | lolcat```
+
+![lolcat-fortune-cow.png](_lolcat-fortune-cow.png)
+
+Another cool idea is to use this fo successful tests or builds e.g.:
+
+- Store ASCII art ([pikachu.tp](_pikachu.tp)) in a folder (~/important/)
+- Set alias: ```alias success-message='if [ "$?" -eq "0" ]; then lolcat ~/important/pikachu.tp -a -s 40 -d 2; fi;'```
+- Usage: ```do_tests && success-message```
+
+![pikachu.png](_pikachu.png)
+
+It is also possible to combine lolcat with neofetch and pv e.g.: ```neofetch | pv -qL 666 | lolcat```
+
+### Sneakers decryption no-more-secrets
 
 [No-more-secrets](https://github.com/bartobri/no-more-secrets) is a command line tool that recreates the famous data decryption effect seen in the 1992 movie Sneakers.
 
 ![no-more-secrets](_no-more-secrets.gif)
 
-## jp2a
+### nyancat
+
+- Link: <https://github.com/klange/nyancat>
+- Install: ```git clone https://github.com/klange/nyancat && cd nyancat && make && cd src && ./nyancat```
+- Host telnet server: ```nyancat -t```
+
+Download [nyancat.json](_nyancat.json) or view below:
+
+<script id="asciicast-23012" src="https://asciinema.org/a/23012.js" async></script>
+
+### Steam Locomotive (sl)
+
+- Install ```sudo apt install sl```
+- Use ```sl```
+- Download [sl.cast](_sl.cast) or view below:
+
+<script id="asciicast-234381" src="https://asciinema.org/a/234381.js" async></script>
+
+### Cowsay and Cowthink
+
+- Install ```sudo apt install cowsay```
+- Use cowsay ```cowsay 0xfab1.net```
+
+output "cowsay 0xfab1.net"
+
+``` txt
+____________
+< 0xfab1.net >
+------------
+        \   ^__^
+        \  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+- Use cowthink (e.g. pipe it a fortune cookie) ```fortune | cowthink```
+
+output "fortune | cowthink"
+
+``` txt
+________________________________________
+( You will attract cultured and artistic )
+( people to your home.                   )
+----------------------------------------
+        o   ^__^
+        o  (oo)\_______
+            (__)\       )\/\
+                ||----w |
+                ||     ||
+```
+
+A new implementation of cowsay written in go: [Neo-cowsay](https://github.com/Code-Hex/Neo-cowsay)
+
+## Tools
+
+### jp2a
 
 Convert images to ASCII art with jp2a.
 
@@ -22,27 +223,11 @@ Example
 
 ![ascii-0xfab1net](_ascii-0xfab1net.jpg)
 
-## Nurses 2
+### Nurses 2
 
 [nurses_2](https://github.com/salt-die/nurses_2) is a widget and async-centric terminal graphics library. View some [examples as video here](https://www.youtube.com/watch?v=LLI6ANQ6MH4).
 
-## Terminal Dungeon
-
-[Terminal Dungeon](https://github.com/salt-die/terminal_dungeon) is a doom-like raycasting engine that renders to ascii for playing in terminal.
-
-## The Command Line Murders
-
-There's been a murder in Terminal City, and TCPD needs your help... [The Command Line Murders](https://github.com/veltman/clmystery) is a game with ASCII art and played in the CLI.
-
-## awk-raycaster
-
-[AWK-raycaster](https://github.com/TheMozg/awk-raycaster) is a pseudo-3D shooter written completely in gawk using raycasting technique.
-
-Clone a copy and run it with gawk using this command: ```gawk-f awkaster.awk```
-
-![awk-raycaster](_awk-raycaster.webp)
-
-## Befunge
+### Befunge
 
 [Befunge](https://esolangs.org/wiki/Befunge) by [Chris Pressey](https://catseye.tc/article/General_Information#chris-pressey) is an esoteric programming languages. Here is a pseudo-quine which uses some Befunge-97 commands:
 
@@ -98,7 +283,7 @@ NOPQRSTU   YZABCDEF HIJKLM     STUVWX ZABCDEF  IJKLMNO QRSTU     ABCDEF HIJKLM
                                                        YZABC
 ```
 
-## Image2ascii
+### Image2ascii
 
 Make own ASCII animations with [image2ascii](https://github.com/michaelkofron/image2ascii).
 
@@ -190,61 +375,7 @@ Be sure to change `fetch("animation.json")` to the correct output file in case y
 
 To test this locally, run a webserver e.g. with python ```python -m http.server 8008 --bind 127.0.0.1``` to test this locally and open <http://127.0.0.1:8008/> in your browser.
 
-## nyancat
-
-- Link: <https://github.com/klange/nyancat>
-- Install: ```git clone https://github.com/klange/nyancat && cd nyancat && make && cd src && ./nyancat```
-- Host telnet server: ```nyancat -t```
-
-Download [nyancat.json](_nyancat.json) or view below:
-
-<script id="asciicast-23012" src="https://asciinema.org/a/23012.js" async></script>
-
-## Steam Locomotive (sl)
-
-- Install ```sudo apt install sl```
-- Use ```sl```
-- Download [sl.cast](_sl.cast) or view below:
-
-<script id="asciicast-234381" src="https://asciinema.org/a/234381.js" async></script>
-
-## Cowsay and Cowthink
-
-- Install ```sudo apt install cowsay```
-- Use cowsay ```cowsay 0xfab1.net```
-
-output "cowsay 0xfab1.net"
-
-``` txt
-____________
-< 0xfab1.net >
-------------
-        \   ^__^
-        \  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
-
-- Use cowthink (e.g. pipe it a fortune cookie) ```fortune | cowthink```
-
-output "fortune | cowthink"
-
-``` txt
-________________________________________
-( You will attract cultured and artistic )
-( people to your home.                   )
-----------------------------------------
-        o   ^__^
-        o  (oo)\_______
-            (__)\       )\/\
-                ||----w |
-                ||     ||
-```
-
-A new implementation of cowsay written in go: [Neo-cowsay](https://github.com/Code-Hex/Neo-cowsay)
-
-## Toilet
+### Toilet
 
 - Install ```sudo apt install toilet```
 - Use Toilet ```toilet 0xfab1.net```
@@ -281,7 +412,7 @@ while true; do clear; echo "$(date '+%D %T' | toilet -f term -F border --gay)"; 
 
 ![toilet-time](_toilet-time.png)
 
-## Figlet
+### Figlet
 
 - Install ```sudo apt install figlet```
 - Use Figlet ```figlet 0xfab1.net```
@@ -436,70 +567,7 @@ bd .`\  ]  'mT ]bP .dm  ]  ] ] 'b/  'm
 ０ｘｆａｂ１．ｎｅｔ
 ```
 
-## Matrix
-
-There are many Matrix screensavers; some work in the console.
-
-The one I use is cmatrix:
-
-- Install: ```sudo apt install cmatrix```
-- Usage: ```cmatrix```
-
-But  there are plenty more:
-
-- [fakesteak](https://github.com/domsson/fakesteak): ```fakesteak -d 15```
-- [cmatrix](https://github.com/abishekvashok/cmatrix) ```cmatrix -b -u 10```
-- [tmatrix](https://github.com/M4444/TMatrix) ```tmatrix -g 30,70 -f 1,1 -c default```
-- [cxxmatrix](https://github.com/akinomyoga/cxxmatrix) ```cxxmatrix -s rain-forever --frame-rate=10 --error-rate=0.1```
-- [unimatrix](https://github.com/will8211/unimatrix) ```unimatrix -s 90 -l=o -f```
-
-Fakesteak example:
-
-![matrix](_matrix.webp)
-
-## cBonsai
-
-- Source: <https://gitlab.com/jallbrit/cbonsai>
-- Install: ```sudo apt install cbonsai```
-- Usage: ```cbonsai -l -i -L 64 -m 0xfab1.net```
-
-cBonsai example:
-
-![cbonsai](_cbonsai.webp)
-
-## a Fire
-
-- Install ```sudo apt install libaa-bin```
-- Use aafire ```aafire```
-
-## BB
-
-- Install ```sudo apt install bb```
-- Use BB ```bb```
-
-Watch this video to see what it does without running it: <https://www.youtube.com/watch?v=9ukhOAUseKY>
-
-## lolcat
-
-To make any of the ASCII output more colorful use lolcat. Note: doesn't work with animations e.g. ```aafire | lolcat```
-
-- Link: <https://github.com/busyloop/lolcat>
-- Install: ```sudo apt install lolcat```
-- Use lolcat: ```fortune | cowthink | lolcat```
-
-![lolcat-fortune-cow.png](_lolcat-fortune-cow.png)
-
-Another cool idea is to use this fo successful tests or builds e.g.:
-
-- Store ASCII art ([pikachu.tp](_pikachu.tp)) in a folder (~/important/)
-- Set alias: ```alias success-message='if [ "$?" -eq "0" ]; then lolcat ~/important/pikachu.tp -a -s 40 -d 2; fi;'```
-- Usage: ```do_tests && success-message```
-
-![pikachu.png](_pikachu.png)
-
-It is also possible to combine lolcat with neofetch and pv e.g.: ```neofetch | pv -qL 666 | lolcat```
-
-## asciimatics
+### asciimatics
 
 [Asciimatics](https://github.com/peterbrittain/asciimatics) is a package to help people create full-screen text UIs on any platform. It comes with some very cool samples!
 
@@ -507,59 +575,7 @@ It is also possible to combine lolcat with neofetch and pv e.g.: ```neofetch | p
 - Documentation: <https://asciimatics.readthedocs.io>
 - Samples: <https://github.com/peterbrittain/asciimatics/tree/master/samples>
 
-## asciiquarium
-
-View asciiquarium using curl with [asciiquarium.live](https://github.com/kilimnik/asciiquarium.live)
-
-``` sh
-curl asciiquarium.live
-```
-
-To run asciiquarium locally you need Term-Animation and Perl.
-
-First install Perl:
-
-``` sh
-sudo apt-get install libcurses-perl
-```
-
-Download and install [Term-Animation](_term-animation-2.6.tar.gz) to /tmp
-
-``` sh
-cd /tmp
-wget https://cpan.metacpan.org/authors/id/K/KB/KBAUCOM/Term-Animation-2.6.tar.gz
-tar -zxvf Term-Animation-2.6.tar.gz
-cd Term-Animation-2.6/
-perl Makefile.PL && make && make test
-sudo make install
-```
-
-Download [asciiquarium](_asciiquarium.tar.gz) to /tmp
-
-``` sh
-cd /tmp
-wget https://robobunny.com/projects/asciiquarium/asciiquarium.tar.gz
-tar -zxvf asciiquarium.tar.gz
-cd asciiquarium_1.1/
-sudo cp asciiquarium /usr/local/bin
-sudo chmod 0755 /usr/local/bin/asciiquarium
-```
-
-Run asciiquarium
-
-``` sh
-perl /usr/local/bin/asciiquarium
-```
-
-[![asciiquarium.webp](_asciiquarium.webp)](_asciiquarium.mkv)
-
-## taoup
-
-Ruby-powered ANSI colored fortunes
-
-- Source: <https://github.com/globalcitizen/taoup>
-
-## ART
+### ART
 
 ART is a Python lib for text converting to ASCII art fancy.
 
