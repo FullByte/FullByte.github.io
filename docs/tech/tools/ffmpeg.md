@@ -248,6 +248,7 @@ ffmpeg -f concat -i input.txt -vsync vfr -pix_fmt yuv420p output.mp4
 - VOB to MKV: ```ffmpeg -analyzeduration 100M -probesize 100M -i input.vob -map 0:1 -map 0:2 -codec:v libx264 -crf 21 -codec:a libmp3lame -qscale:a 2 -threads 10 output.mkv```
 - MP4 to webp: ```ffmpeg -i input.mp4 -vf "fps=30,scale=720:-1:flags=lanczos" -vcodec libwebp -lossless 0 -compression_level 6 -q:v 50 -loop 0 -preset picture -an -vsync 0 output.webp```
 - MOV to MP4: ```ffmpeg -i input.mov -vcodec h264 -acodec mp2 output.mp4```
+- MKV to MP4: ```ffmpeg -y -i 'input.mkv' -c copy -c:a aac 'output.mp4'```
 
 ``` sh
 # Pass 1
