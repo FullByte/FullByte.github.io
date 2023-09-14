@@ -121,7 +121,7 @@ January 1st at Midnight 0 0 1 1 *
 - NeXTSTEP-like desktop environment for Linux: <https://github.com/trunkmaster/nextspace>
 - 1995 Microsoft OS GUI for Linux: <https://github.com/grassmunk/Chicago95>
 
-#### Virtulize, Emnulate and Port
+#### Virtualize, Emulate and Port
 
 - DOS for Linux: <https://github.com/dosemu2/dosemu2>
 - Wine for Windows applications on Linux: <https://www.winehq.org/>
@@ -153,6 +153,8 @@ January 1st at Midnight 0 0 1 1 *
 | tree         | [broot](https://github.com/Canop/broot)                                                                                                                                                                                                                                                                                              |
 | sort \| uniq | [huniq](https://github.com/koraa/huniq)                                                                                                                                                                                                                                                                                              |
 | ping         | [gping](https://github.com/orf/gping)                                                                                                                                                                                                                                                                                                |
+
+https://github.com/Xfennec/progress
 
 ### JSON
 

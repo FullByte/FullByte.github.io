@@ -1,9 +1,33 @@
 # Helper
 
+## First steps
+
+- add IP as var = $IP="10.10.27.150"
+- scan all ports: ```nmap -p0-65535 $IP```
+- if port 80/443 open check dirbuster: ```dirbuster```
+- if SMB port open, list all folders: ```smbclient -L $IP```
+
 ## Chat between two users with netcat
 
 - User 1 (with IP 10.9.182.239) runs this command: ```nc -l -p 3303```
 - Other chat user then runs this command: ```nc 10.9.182.239 3303```
+
+## Reverse proxy
+
+ON Kali:
+
+``` sh
+install tinyproxy:
+change etc/tinyproxy/tinyproxy.conf
+Allow
+```
+
+ON Target:
+
+``` sh
+export http_proxy=http://proxy-machine:8888
+export https_proxy=http://proxy-machine:8888
+```
 
 ## guake
 
