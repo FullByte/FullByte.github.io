@@ -138,3 +138,58 @@ else
 This is how it looks like:
 
 ![donut](_donut.gif)
+
+## Stuff by Martin Kleppe aka @aemkei
+
+This guy is amazing. Check out the [cool stuff he made](https://aem1k.com/)!
+
+### Spinning globe
+
+For example a [spinning globe in JS](https://aem1k.com/world/) that looks like a spinning globe (in JS) :)
+
+```txt
+eval(z='p="<"+"pre>"/* ,.oq#+     ,._, */;for(y in n="zw24l6k\
+4e3t4jnt4qj24xh2 x/* =<,m#F^    A W###q. */42kty24wrt413n243n\
+9h243pdxt41csb yz/* #K       q##H######Am */43iyb6k43pk7243nm\
+r24".split(4)){/* dP      cpq#q##########b, */for(a in t=pars\
+eInt(n[y],36)+/*         p##@###YG=[#######y */(e=x=r=[]))for\
+(r=!r,i=0;t[a/*         d#qg `*PWo##q#######D */]>i;i+=.05)wi\
+th(Math)x-= /*        aem1k.com Q###KWR#### W[ */.05,0>cos(o=\
+new Date/1e3/*      .Q#########Md#.###OP  A@ , */+x/PI)&&(e[~\
+~(32*sin(o)*/* ,    (W#####Xx######.P^     T % */sin(.5+y/7))\
++60] =-~ r);/* #y    `^TqW####P###BP           */for(x=0;122>\
+x;)p+="   *#"/* b.        OQ####x#K           */[e[x++]+e[x++\
+]]||(S=("eval"/* l         `X#####D  ,       */+"(z=\'"+z.spl\
+it(B = "\\\\")./*           G####B" #       */join(B+B).split\
+(Q="\'").join(B+Q/*          VQBP`        */)+Q+")//m1k")[x/2\
++61*y-1]).fontcolor/*         TP         */(/\\w/.test(S)&&"#\
+03B");document.body.innerHTML=p+=B+"\\n"}setTimeout(z)')//
+```
+
+Here is [a video how it was created](https://www.youtube.com/watch?v=RTxtiLp1C8Y&t=1080s).
+
+### JS mandelbrot
+
+This is a [JS mandelbrot](https://aem1k.com/mandelcode/) code that looks like the zoomed out mandelbrot
+
+```txt
+                                  E
+                                 =  1
+                              ,   z=1.07 ;
+                             function s(       a)
+                       {  for(a&&(E=!E),H="",z *=
+                        .9,T*=.8,Y=0;2>Y;Y+=.1)  {
+              for      (X=0;2>X;X+=.04){for(x=y=i
+            =0;99>i   &&99>=x*x+y*y;i++)t=2*x*y,x
+      =   x*x-y*y+z*X -z-Z/(1-T),y=t+z*Y-z-U;(/*
+   MANDELCODE=A-QUINE-BY-AEMKEI=CLICK-TO-ZOOM*/
+      H   )+="  .+#"[ i%5]}H+=n}!E&&setTimeout(s
+            ,99),P[   I]=H}Z=1.74909351846789013,
+              U  =     3.40220976e-7,onclick=s;n
+                        ="\n";P.textContent="<"  +
+                          "pre id=P>\n"+P[I= "i"+
+                             "nnerHTML"       ]
+                              T  /*aem1k*/
+                                 =  -
+                                  2
+```
