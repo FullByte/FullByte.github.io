@@ -6,3 +6,6 @@ The following is an example with my face as pixel art embedded into the QR-Code 
 
 ![me_on-a-qrcode.png](_me_on-a-qrcode.png)
 
+Here is another QR code with the avatar I use:
+
+![0xfab1](_0xfab1-qrcode.png)

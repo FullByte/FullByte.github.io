@@ -1,5 +1,7 @@
 # Fun Advice
 
+![fun advice](_fun.jpg)
+
 ## Be like nature
 
 Why fight the rules of nature?

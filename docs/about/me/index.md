@@ -11,16 +11,6 @@ Some facts about me:
 - I say "Entweder es klappt oder es klappt zusammen." 😤
 - Last link i visited which I would like to share: <script src="https://status.lol/yolo.js?no-emoji"></script>
 
-## Avatar
-
-I often use this avatar online. More about how to create this with [Context Free Art is written here](https://0xfab1.net/tech/art/random/contextfreeart/).
-
-![avatar](_avatar_aboutme.png)
-
-Use [this](_about-0xfab1-qrcode.png) QR-Code if you want to use a QR-Code to link to this site:
-
-![qrcode](_about-0xfab1-qrcode.png)
-
 ## Links
 
 Query a DNS for TXT records of [0xfab1.net](https://0xfab1.net) to get some contact details:
@@ -28,7 +18,7 @@ Query a DNS for TXT records of [0xfab1.net](https://0xfab1.net) to get some cont
 - Linux: ```curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'  | jq -r .Answer[].data```
 - Windows: ```(Resolve-DnsName 0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | Format-Table```
 
-and you will receive this result:
+and you will receive the currently relevant pages I add content to.
 
 ``` sh
 "v=me; github=https://github.0xfab1.net"
@@ -50,3 +40,19 @@ and you will receive this result:
     ![](_50cent_bitcoin4.png)
 
     ![](_50cent_bitcoin2.jpg) ![](_50cent_bitcoin5.jpg)
+
+??? question "Do you have a WinRAR licence?"
+    Yes
+
+    ![WinRAR](_winRAR1.jpg)
+
+    ![WinRAR](_winRAR2.jpg)
+
+    ![WinRAR](_winRAR3.jpg)
+
+    ![WinRAR](_winRAR4.jpg)
+
+??? question "Do you have an avatar you use?"
+    I often use this avatar online. More about how to create this with [Context Free Art is written here](https://0xfab1.net/tech/art/random/contextfreeart/).
+
+    ![avatar](_avatar_aboutme.png)

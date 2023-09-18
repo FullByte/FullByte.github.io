@@ -1,8 +1,12 @@
 # Goals
 
+![_goals](_goals.jpg)
+
 ## Set Goals
 
 Define SMART goals (Specific, Measurable, Attainable, Rewarding, Timely).
+
+![_path_minimization](_path_minimization.png)
 
 ## Get stuff done
 
