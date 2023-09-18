@@ -13,22 +13,10 @@ Some facts about me:
 
 ## Links
 
-Query a DNS for TXT records of [0xfab1.net](https://0xfab1.net) to get some contact details:
+Query a DNS for TXT records of [0xfab1.net](https://0xfab1.net) to get some contact details and currently relevant pages I add content to:
 
 - Linux: ```curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'  | jq -r .Answer[].data```
 - Windows: ```(Resolve-DnsName 0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | Format-Table```
-
-and you will receive the currently relevant pages I add content to.
-
-``` sh
-"v=me; github=https://github.0xfab1.net"
-"v=me; twitter=https://twitter.0xfab1.net"
-"v=me; about=https://yolo.omg.lol"
-"v=me; gravatar=https://de.gravatar.com/0xfab1"
-"v=me; pastes=https://yolo.paste.lol"
-"v=me; status=https://yolo.status.lol"
-"v=me; status=https://youtube.0xfab1.net"
-```
 
 ## Q&A
 
