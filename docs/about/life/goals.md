@@ -27,7 +27,7 @@ Follow this to get stuff done:
 - Choose a solution to implement
 - Implement the solution
 
-### 110%
+### Give 100%
 
 Never give 110%, that's just selling out... just divide your 100% in:
 
