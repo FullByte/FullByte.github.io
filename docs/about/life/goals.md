@@ -4,9 +4,13 @@
 
 ## Set Goals
 
-Define SMART goals (Specific, Measurable, Attainable, Rewarding, Timely).
+Define SMART goals:
 
-![_path_minimization](_path_minimization.png)
+- Specific
+- Measurable
+- Attainable
+- Rewarding
+- Timely
 
 ## Get stuff done
 
