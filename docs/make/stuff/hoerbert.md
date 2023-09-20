@@ -1,6 +1,8 @@
 # Hörbert
 
-There are some great creations of which most are listed on the official Höbert webpage: <https://www.hoerbert.com/kreationen/>
+I was looking for a simple music player for children and although there a million devices, most of them have a display, menu and buttons with multiple purposes. This is not suitable for small children and after researching for the best options I went with [Hörbert](https://www.hoerbert.com). My 2nd favorite option is the [phoniebox](http://phoniebox.de/).
+
+What is nice about Hörbert is that you can buy the product itself or just the parts and build your own box. There are some great [creations](https://www.hoerbert.com/kreationen/) which inspired my to build my own Hörbert as well.
 
 Most creations are similar to the original with buttons and speaker in the front. Another popular choice seems to be a cube. After some thoughts on what material to use and what shape to create I went with a similar approach as the original.
 
@@ -10,8 +12,6 @@ Purchases I made:
 - Hörbert Bluetooth Module
 - Speaker Cover
 - Bluetooth Headset
-
-When checking for the best option I my 2nd favorite option was the [phoniebox](http://phoniebox.de/). Maybe this is an interesting alternative.
 
 ## Electronics
 
