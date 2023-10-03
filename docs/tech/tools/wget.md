@@ -1,11 +1,9 @@
 # Wget
 
-| What          | Where |
-|---------------|-------|
-| Official Page |       |
-| Source        |       |
-| Download      |       |
-| Install       |       |
+| What            | Where                                |
+|-----------------|--------------------------------------|
+| Official Page   | <https://www.gnu.org/software/wget/> |
+| Install Windows | `choco install wget`                 |
 
 ## Download a file
 

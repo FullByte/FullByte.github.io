@@ -17,9 +17,9 @@ insert into user (user_id, username, password, role)
 values ('11688f5e-5af6-11ed-8d3f-d30dc6ba5371', 'admin', '$2b$10$BUli0c.muyCW1ErNJc3jL.vFRFtFJWrT8/GcR4A.sUdCznaXiqFXa', 'admin');
 ```
 
-This will create a user with the default credentails
+This will create a user with the default credentials
 
 - username: `admin`
 - password: `umami`
 
-Use the admin user to reset the password of your user(s) and remember to delete the admin user once successfull.
+Use the admin user to reset the password of your user(s) and remember to delete the admin user once successful.
