@@ -6,7 +6,7 @@ Make images smaller using best-in-class codecs, right in the browser.
 |---------------|-----------------------------------------------|
 | Official Page | <https://squoosh.app/>                        |
 | Source        | <https://github.com/GoogleChromeLabs/squoosh> |
-| Install       | npm i -g @squoosh/cli                         |
+| Install       | `npm i -g @squoosh/cli`                         |
 
 ## JPEG Example
 
