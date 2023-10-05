@@ -1,10 +1,10 @@
 # WinGet
 
-| What          | Where |
-|---------------|-------|
-| Official Page |<https://docs.microsoft.com/en-us/windows/package-manager/>|
-| Source        |<https://github.com/microsoft/winget-cli>|
-| Download      |<https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1>|
+| What          | Where                                                          |
+|---------------|----------------------------------------------------------------|
+| Official Page | <https://docs.microsoft.com/en-us/windows/package-manager/>    |
+| Source        | <https://github.com/microsoft/winget-cli>                      |
+| Download      | <https://www.microsoft.com/en-us/p/app-installer/9nblggh4nns1> |
 
 ## Install
 

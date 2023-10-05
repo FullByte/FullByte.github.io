@@ -5,7 +5,7 @@
 | Official Page | <https://code.visualstudio.com/>       |
 | Source        | <https://github.com/Microsoft/vscode>  |
 | Download      | <https://aka.ms/win32-x64-user-stable> |
-| Install       | choco install vscode                   |
+| Install       | `choco install vscode`                   |
 
 ## Shortcuts
 

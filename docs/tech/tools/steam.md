@@ -1,11 +1,11 @@
 # Steam
 
-| What          | Where |
-|---------------|-------|
-| Official Page | <https://steampowered.com/|>
-| Download      |   <https://store.steampowered.com/about/>    |
-| Install (Win)      |choco install steam|
-| Install (Deb)      |sudo apt install steam|
+| What          | Where                                   |
+|---------------|-----------------------------------------|
+| Official Page | <https://steampowered.com>              |
+| Download      | <https://store.steampowered.com/about/> |
+| Install (Win) | `choco install steam`                   |
+| Install (Deb) | `sudo apt install steam`                |
 
 ## CLI
 
@@ -17,12 +17,5 @@ SteamCMD: <https://developer.valvesoftware.com/wiki/SteamCMD>
 
 ### SteamCLI
 
-**Open Console**
-
-steam://open/console
-
-run this command to force to run updates:
-
-``` steam-cli
-app_info_update
-```
+- Open Console: ```steam://open/console```
+- Force to run updates: ```app_info_update```

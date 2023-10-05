@@ -2,23 +2,19 @@
 
 Info
 
-| What          | Where |
-|---------------|-------|
-| Official Page |       |
-| Source        |       |
-| Download      |       |
-| Windows       |       |
-| Linux       |sudo apt install obs-studio|
+| What          | Where                                      |
+|---------------|--------------------------------------------|
+| Official Page | <https://obsproject.com/>                  |
+| Source        | <https://github.com/obsproject/obs-studio> |
+| Windows       | `choco install obs-studio`                   |
+| Linux         | `sudo apt install obs-studio`                |
 
 ## Links
 
-OBS+Restream=free multi-platform streaming
-
-- OBS: <https://obsproject.com/>
-- Restream: <https://restream.io>
+- OBS+[Restream](https://restream.io)=free multi-platform streaming
 - VR Streaming <https://github.com/baffler/OBS-OpenVR-Input-Plugin>
 - StreamFX: <https://github.com/Xaymar/obs-StreamFX/releases>
-- Inpput overlay <https://github.com/univrsal/input-overlay>
+- Input overlay <https://github.com/univrsal/input-overlay>
 - OBS-virtual-cam: <https://github.com/CatxFish/obs-virtual-cam>
 
 ## OBS-virtual-cam
