@@ -11,13 +11,6 @@ Some facts about me:
 - I say "Entweder es klappt oder es klappt zusammen." 😤
 - Last link i visited which I would like to share: <script src="https://status.lol/yolo.js?no-emoji"></script>
 
-## Links
-
-Query a DNS for TXT records of [0xfab1.net](https://0xfab1.net) to get some contact details and currently relevant pages I add content to:
-
-- Linux: ```curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'  | jq -r .Answer[].data```
-- Windows: ```(Resolve-DnsName 0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | Format-Table```
-
 ## Q&A
 
 ??? question "What was your most interesting online purchase?"

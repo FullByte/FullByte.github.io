@@ -1,5 +1,10 @@
 # Contact
 
+Query a DNS for TXT records of [0xfab1.net](https://0xfab1.net) to get some contact details and currently relevant pages I add content to:
+
+- Linux: ```curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'  | jq -r .Answer[].data```
+- Windows: ```(Resolve-DnsName 0xfab1.net -Type TXT | Select-Object -ExcludeProperty Strings).Text | Format-Table```
+
 ## Mail
 
 Send a mail, use [PGP](https://de.wikipedia.org/wiki/Pretty_Good_Privacy).
