@@ -5,8 +5,9 @@
 ## Interesting RFCs
 
 - First RFC (7 April 1969): <https://tools.ietf.org/html/rfc1>
-- RFC Key word ("MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL"): <https://tools.ietf.org/html/rfc
+- RFC Key word ("MUST", "REQUIRED", "SHALL", "SHOULD", "RECOMMENDED", "MAY", "OPTIONAL",..): <https://tools.ietf.org/html/rfc>
 - Choosing a Name for Your Computer: <https://www.rfc-editor.org/rfc/rfc1178>
+- The Twelve Networking Truths <https://www.rfc-editor.org/rfc/rfc1925>
 
 ## SSH
 
