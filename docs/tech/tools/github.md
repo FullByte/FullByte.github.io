@@ -1,7 +1,5 @@
 # Github
 
-Info
-
 | What           | Where                           |
 |----------------|---------------------------------|
 | Official Page  | <https://github.com>            |

@@ -42,11 +42,6 @@ For are more detailed system info dump run [winPEAS](https://raw.githubuserconte
 
 - Get last logon of user "john": ```net user john | findstr /B /C:"Last logon"```
 
-### Robocopy
-
-- Exclude files: ```Robocopy /xd excludethis```
-- Ignore hidden files```Robocopy -s -h```
-
 ### Format and Image stuff
 
 #### Format FAT32 on >32GB
