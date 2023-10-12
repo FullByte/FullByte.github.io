@@ -21,8 +21,8 @@ The best tools to copy files, depending on source and destination:
 | Cloud           | [rclone](rclone.md)       | [rclone](https://rclone.org/)                                                                        | Encryption possible, no client needed, many vendors supported                                      |
 | Local drive/NAS | [RoboCopy](robocopy.md)   | [RoboCopy](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy) | Already installed, has sync option, works.                                                         |
 | SFTP/WebDAV     | [WinSCP](WinSCP.md)       | [WinSCP](https://winscp.net)                                                                         | Scripting possible using winscp.com                                                                |
-| Sync            | [Syncthing](syncthing.md) | [Syncthing](https://syncthing.net/)                                                                  | Use [SyncTrayzor](https://github.com/canton7/SyncTrayzor) for GUI and sync files via peer-to-peer. |
-| Backup          | [Restic](restic.md)       | [Restic](https://restic.net/)                                                                        | Good for regular backups. Uses rclone in the backend.                                              |
+| Sync P2P           | [Syncthing](syncthing.md) | [Syncthing](https://syncthing.net/)                                                                  | Use [SyncTrayzor](https://github.com/canton7/SyncTrayzor) for GUI and sync files via peer-to-peer. |
+| Backup Server          | [Restic](restic.md)       | [Restic](https://restic.net/)                                                                        | Good for regular backups. Uses rclone in the backend.                                              |
 
 ## Convert Files
 
