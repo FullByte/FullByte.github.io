@@ -4,15 +4,9 @@ For printing and scanning I personally prefer a laser printer with LAN support. 
 
 ## Windows
 
-### Print
-
-Usually there is no need to install specific drivers to print.
-
-### Scan
-
 For scanning on windows I prefer [NAPS2](https://www.naps2.com).
 
-Alternativally try [VueScan](https://www.hamrick.com/).
+Alternatively try [VueScan](https://www.hamrick.com/).
 
 ## Linux
 

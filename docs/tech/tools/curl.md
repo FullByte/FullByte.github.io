@@ -12,7 +12,7 @@
 
 ## Random Examples
 
-Example to check /24 range in abuseipdb.com for the last 3 days
+Example to check /24 range in "abuseipdb.com" for the last 3 days
 
 ``` sh
 curl -s -G https://api.abuseipdb.com/api/v2/check-block --data-urlencode "network=123.123.123.1/24" -d maxAgeInDays=$DAYS -H "Key: apikeyfromabuseipdb.com" -H "Accept: application/json" |jq '.data.reportedAddress'

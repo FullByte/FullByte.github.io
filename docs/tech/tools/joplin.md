@@ -6,7 +6,7 @@
 | Source        | <https://github.com/laurent22/joplin/>         |
 | Documentation | <https://joplinapp.org/help/>                  |
 | Download      | <https://github.com/laurent22/joplin/releases> |
-| Install       | choco install joplin                           |
+| Install       | `choco install joplin`                           |
 
 ## Plugins
 

@@ -1,7 +1,5 @@
 # OpenSSL
 
-Examples using OpenSSL
-
 | What          | Where |
 |---------------|-------|
 | Official Page |       |

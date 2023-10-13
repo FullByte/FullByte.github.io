@@ -1,10 +1,10 @@
 # CyberChef
 
-| What          | Where                                                                |
-|---------------|----------------------------------------------------------------------|
-| Official Page | <https://gchq.github.io/CyberChef/>                                                   |
-| Source        | <https://github.com/gchq/CyberChef>                                       |
-| Download      | <https://github.com/gchq/CyberChef/releases>                              |
+| What          | Where                                        |
+|---------------|----------------------------------------------|
+| Official Page | <https://gchq.github.io/CyberChef/>          |
+| Source        | <https://github.com/gchq/CyberChef>          |
+| Download      | <https://github.com/gchq/CyberChef/releases> |
 
 ## Recipes
 

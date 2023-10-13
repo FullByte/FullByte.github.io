@@ -1,5 +1,14 @@
 # Tailscale
 
+| What          | Where |
+|---------------|-------|
+| Official Page |       |
+| Source        |       |
+| Download      |       |
+| Install       |       |
+
+## Setup
+
 You need to have tailscale running on the same version on all systems. Run this command to update on linux:
 
 ```sh

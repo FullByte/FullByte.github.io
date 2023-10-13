@@ -1,3 +1,8 @@
 # Syncthing
 
-todo
+| What          | Where |
+|---------------|-------|
+| Official Page |       |
+| Source        |       |
+| Download      |       |
+| Install       |       |

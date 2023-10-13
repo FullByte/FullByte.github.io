@@ -2,12 +2,12 @@
 
 | What          | Where                                                      |
 |---------------|------------------------------------------------------------|
-| Official Page | <https://www.mozilla.org/en-US/firefox/browsers>)          |
+| Official Page | <https://www.mozilla.org/en-US/firefox/browsers>          |
 | Source        | <https://hg.mozilla.org/mozilla-central/>                  |
-| Download      | <https://www.mozilla.org/en-US/firefox/download>)          |
+| Download      | <https://www.mozilla.org/en-US/firefox/download>          |
 | Docs          | <https://developer.mozilla.org/en-US/docs/Mozilla/Firefox> |
-| Windows       | ```choco install firefox```                                |
-| Ubuntu        | ```sudo apt -y install firefox```                          |
+| Windows       | `choco install firefox`                                |
+| Ubuntu        | `sudo apt -y install firefox`                          |
 
 ## Firefox remote debugging
 
@@ -21,7 +21,7 @@
 ## Bookmarks
 
 - Toggle Bookmarks: Ctrl + Shift + B
-- Add all open tabs to booksmark folder: Right clock on a tab, mark all tabs, save tabs as bookmark, provide folder name
+- Add all open tabs to bookmark folder: Right clock on a tab, mark all tabs, save tabs as bookmark, provide folder name
 
 ## Addons
 

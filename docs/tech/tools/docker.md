@@ -6,7 +6,6 @@
 | Docs          | <https://docs.docker.com/get-started/>                                   |
 | Download      | <https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe> |
 | Windows       | `choco install docker-desktop`                                           |
-| Ubuntu        | ``                                                                       |
 
 Links:
 

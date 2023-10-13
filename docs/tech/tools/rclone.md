@@ -2,13 +2,13 @@
 
 rclone is a great tool to backup, copy, sync files to the cloud encrypted and without the client installed on the local machine.
 
-| What          | Where                                                |
-|---------------|------------------------------------------------------|
-| Official Page | <https://rclone.org/>                                |
-| Docs          | <https://rclone.org/commands/>                       |
-| Source        | <https://github.com/rclone/rclone>                   |
-| Download      | <https://rclone.org/downloads/>                      |
-| Install Linux | ```curl https://rclone.org/install.sh | sudo bash``` |
+| What          | Where                                            |
+|---------------|--------------------------------------------------|
+| Official Page | <https://rclone.org/>                            |
+| Docs          | <https://rclone.org/commands/>                   |
+| Source        | <https://github.com/rclone/rclone>               |
+| Download      | <https://rclone.org/downloads/>                  |
+| Install Linux | `curl https://rclone.org/install.sh | sudo bash` |
 
 ## Restore rclone.conf
 

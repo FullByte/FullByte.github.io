@@ -1,9 +1,9 @@
 # screego
 
-| What          | Where |
-|---------------|-------|
-| Official Page | <https://screego.net/>|
-| Source        | <https://github.com/screego/server>|
+| What          | Where                               |
+|---------------|-------------------------------------|
+| Official Page | <https://screego.net/>              |
+| Source        | <https://github.com/screego/server> |
 
 ## Docker
 

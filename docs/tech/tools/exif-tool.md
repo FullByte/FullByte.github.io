@@ -1,14 +1,11 @@
 # EXIFtool
 
-Info
-
 | What          | Where                                  |
 | ------------- | -------------------------------------- |
 | Official Page | <https://exiftool.org>                 |
 | Source        | <https://github.com/exiftool/exiftool> |
 | Download      | <https://exiftool.org/#running>        |
-| Windows       | choco install exiftool                 |
-| Ubuntu   |``                        |
+| Windows       | `choco install exiftool`                 |
 
 ## Examples
 

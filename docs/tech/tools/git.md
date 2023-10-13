@@ -1,5 +1,13 @@
 # Git
 
+| What          | Where                           |
+|---------------|---------------------------------|
+| Official Page | <https://git-scm.com/>          |
+| Download      | <https://git-scm.com/downloads> |
+| Docs          | <https://git-scm.com/doc>       |
+| Windows       | `choco install git`             |
+| Ubuntu        | `sudo apt-get install git`      |
+
 ![xkdc-git](_xkdc-git.png)
 
 ## Tools and Helper

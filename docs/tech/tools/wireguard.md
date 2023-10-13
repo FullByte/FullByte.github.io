@@ -1,5 +1,12 @@
 # Wireguard
 
+| What          | Where                        |
+|---------------|------------------------------|
+| Official Site | <https://www.wireguard.com/> |
+| Ubuntu        | `sudo apt install wireguard` |
+
+## Links
+
 Helpful script: <https://raw.githubusercontent.com/angristan/wireguard-install/master/wireguard-install.sh>
 
 ## Debian: Install and Configure

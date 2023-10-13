@@ -2,6 +2,13 @@
 
 Tor, short for The Onion Router, is a free, open-source software designed to enable anonymous communication on the internet. The main goal of Tor is to protect users' privacy and provide them with the ability to browse the internet without being tracked or monitored. It does this by routing internet traffic through a series of volunteer-operated servers called nodes, which are distributed worldwide.
 
+| What          | Where |
+|---------------|-------|
+| Official Page |       |
+| Source        |       |
+| Download      |       |
+| Install       |       |
+
 ## snowflake-proxy
 
 Run snowflake-proxy as container

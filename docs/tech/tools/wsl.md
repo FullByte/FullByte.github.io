@@ -1,5 +1,11 @@
 # WSL
 
+| What | Where                                            |
+|------|--------------------------------------------------|
+| Docs | <https://learn.microsoft.com/en-us/windows/wsl/> |
+
+## Commands
+
 Some helpful [commands](https://docs.microsoft.com/en-us/windows/wsl/basic-commands):
 
 - Check for updates: ```wsl --update```

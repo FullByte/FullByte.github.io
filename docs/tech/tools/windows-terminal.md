@@ -1,7 +1,11 @@
 # Windows Terminal
 
-- Store: <https://www.microsoft.com/de-de/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab>
-- Doc: <https://docs.microsoft.com/en-us/windows/terminal/>
+| What  | Where                                                                                         |
+|-------|-----------------------------------------------------------------------------------------------|
+| Store | <https://www.microsoft.com/de-de/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab> |
+| Docs  | <https://docs.microsoft.com/en-us/windows/terminal/>                                          |
+
+## Tips
 
 Open a new Terminal Window with powershell 7, cmd and WSL (in my case ubuntu)
 
@@ -9,7 +13,7 @@ Open a new Terminal Window with powershell 7, cmd and WSL (in my case ubuntu)
 wt -p "PowerShell 7" `; split-pane -p "cmd" `; split-pane -H wsl.exe
 ```
 
-### Customized command prompt
+## Customized command prompt
 
 Install the required modules
 
@@ -39,7 +43,7 @@ Add the Theme you like as well e.g. paradox:
 echo "Set-PoshPrompt -Theme paradox" >> $PROFILE
 ```
 
-### settings.json
+## settings.json
 
 Edit the "settings.json" and add under "profiles", "defaults" a line for a font you like e.g.:
 

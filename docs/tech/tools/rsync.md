@@ -1,9 +1,9 @@
 # rsync
 
-| What          | Where |
-|---------------|-------|
-| Official Page | <https://rsync.samba.org/>|
-| Documentation        |<https://rsync.samba.org/documentation.html>|
+| What          | Where                                        |
+|---------------|----------------------------------------------|
+| Official Page | <https://rsync.samba.org/>                   |
+| Documentation | <https://rsync.samba.org/documentation.html> |
 
 Remove each source file after creating a successful copy (Basically "Move"):
 

@@ -1,7 +1,5 @@
 # adb
 
-Info
-
 | What     | Where                                                          |
 |----------|----------------------------------------------------------------|
 | Download | <https://developer.android.com/studio/releases/platform-tools> |

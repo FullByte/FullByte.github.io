@@ -5,8 +5,7 @@
 | Source   | <https://github.com/jgraph/drawio>          |
 | Download | <https://github.com/jgraph/drawio/releases> |
 | Online   | <https://app.diagrams.net/>                 |
-| Windows  | choco install drawio                        |
-| Ubuntu   | ``                                          |
+| Windows  | `choco install drawio`                        |
 
 ## Create and edit SVG in vscode
 

@@ -1,10 +1,11 @@
 # asciinema
 
-Install
+| What    | Where                                     |
+|---------|-------------------------------------------|
+| Docs    | <https://asciinema.org/docs/how-it-works> |
+| Install | `sudo pip3 install asciinema`             |
 
-``` sh
-sudo pip3 install asciinema
-```
+## Examples
 
 Record a session
 

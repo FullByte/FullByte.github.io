@@ -2,8 +2,8 @@
 
 The simplest way to run backups and copy jobs on Windows.
 
-| What   | Where                                |
-|--------|--------------------------------------|
+| What | Where                                                                                      |
+|------|--------------------------------------------------------------------------------------------|
 | Docs | <https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/robocopy> |
 
 ## Example

@@ -1,9 +1,9 @@
 # Obsidian
 
-| What          | Where                                       |
-| ------------- | ------------------------------------------- |
-| Official Page | <https://obsidian.md/>                   |
-| Docs          | <https://help.obsidian.md>        |
+| What          | Where                      |
+|---------------|----------------------------|
+| Official Page | <https://obsidian.md/>     |
+| Docs          | <https://help.obsidian.md> |
 
 ## Community Plugins
 

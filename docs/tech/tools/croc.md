@@ -1,5 +1,12 @@
 # Croc
 
+| What          | Where                                     |
+|---------------|-------------------------------------------|
+| Source        | <https://github.com/schollz/croc>         |
+| Official Page | <https://schollz.com/tinker/croc6/>       |
+| Windows       | `choco install croc`                      |
+| Ubuntu        | `curl https://getcroc.schollz.com | bash` |
+
 ``` sh
 croc --pass YOURPASSWORD --relay "localhost:9009" send file.txt
 ```

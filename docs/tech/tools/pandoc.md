@@ -1,7 +1,5 @@
 # Pandoc
 
-Info
-
 | What          | Where                 |
 |---------------|-----------------------|
 | Official Page | <https://pandoc.org/> |

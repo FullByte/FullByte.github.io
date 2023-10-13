@@ -2,16 +2,14 @@
 
 FFmpeg is a great tool and here are some examples.
 
-Info
-
 | What          | Where                                   |
 |---------------|-----------------------------------------|
 | Official Page | <https://ffmpeg.org/>                   |
 | Source        | <https://github.com/FFmpeg/FFmpeg>      |
 | Download      | <https://ffmpeg.org/download.html>      |
 | Docs          | <https://ffmpeg.org/documentation.html> |
-| Windows       | ```choco install ffmpeg```              |
-| Ubuntu         | ```sudo apt -y install ffmpeg```                |
+| Windows       | `choco install ffmpeg`              |
+| Ubuntu         | `sudo apt -y install ffmpeg`                |
 
 Helper:
 
