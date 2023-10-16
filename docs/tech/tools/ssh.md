@@ -1,9 +1,10 @@
 # SSH
 
-| What          | Where |
-|---------------|-------|
-| Official Page |       |
-| Source        |       |
+| What    | Where                                                                                      |
+|---------|--------------------------------------------------------------------------------------------|
+| Docs    | <https://man.openbsd.org/ssh.1>                                                            |
+| OpenSSH | <https://www.openssh.com>                                                                  |
+| Windows | <https://learn.microsoft.com/de-de/windows-server/administration/openssh/openssh_overview> |
 
 ## Install and Configure
 
@@ -92,7 +93,45 @@ ssh-copy-id -i ~/.ssh/id_ed25519.pub username@remote
 
 ## Security
 
-## Client Config
+### Server Hardening
+
+Hardening for Ubuntu 22.04 LTS Server.
+All commands need to be executed as root.
+
+Re-generate the RSA and ED25519 keys
+
+```sh
+rm /etc/ssh/ssh_host_*
+ssh-keygen -t rsa -b 4096 -f /etc/ssh/ssh_host_rsa_key -N ""
+ssh-keygen -t ed25519 -f /etc/ssh/ssh_host_ed25519_key -N ""
+```
+
+Remove small Diffie-Hellman moduli
+
+```sh
+awk '$5 >= 3071' /etc/ssh/moduli > /etc/ssh/moduli.safe
+mv /etc/ssh/moduli.safe /etc/ssh/moduli
+```
+
+Enable the RSA and ED25519 HostKey directives in the /etc/ssh/sshd_config file:
+
+```sh
+sed -i 's/^\#HostKey \/etc\/ssh\/ssh_host_\(rsa\|ed25519\)_key$/HostKey \/etc\/ssh\/ssh_host_\1_key/g' /etc/ssh/sshd_config
+```
+
+Restrict supported key exchange, cipher, and MAC algorithms
+
+```sh
+echo -e "\n# Restrict key exchange, cipher, and MAC algorithms, as per sshaudit.com\n# hardening guide.\nKexAlgorithms sntrup761x25519-sha512@openssh.com,curve25519-sha256,curve25519-sha256@libssh.org,gss-curve25519-sha256-,diffie-hellman-group16-sha512,gss-group16-sha512-,diffie-hellman-group18-sha512,diffie-hellman-group-exchange-sha256\nCiphers chacha20-poly1305@openssh.com,aes256-gcm@openssh.com,aes128-gcm@openssh.com,aes256-ctr,aes192-ctr,aes128-ctr\nMACs hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,umac-128-etm@openssh.com\nHostKeyAlgorithms ssh-ed25519,ssh-ed25519-cert-v01@openssh.com,sk-ssh-ed25519@openssh.com,sk-ssh-ed25519-cert-v01@openssh.com,rsa-sha2-512,rsa-sha2-512-cert-v01@openssh.com,rsa-sha2-256,rsa-sha2-256-cert-v01@openssh.com" > /etc/ssh/sshd_config.d/ssh-audit_hardening.conf
+```
+
+Restart OpenSSH server
+
+```sh
+service ssh restart
+```
+
+### Client Config
 
 When SSH tries to authenticate via public key, it sends the server all your public keys, one by one, until the server accepts one. One can take advantage of this to enumerate all the client's installed public keys.
 
