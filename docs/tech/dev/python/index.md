@@ -37,6 +37,20 @@ IDE
 - pycharm <https://www.jetbrains.com/pycharm/>
 - spyder <https://github.com/spyder-ide/spyder>
 
+## PIP
+
+This command activates PIP:
+
+```py
+py -m ensurepip --upgrade
+```
+
+Upgrade PIP
+
+```py
+python -m pip install --upgrade pip
+```
+
 ## Code Snippets
 
 ![_is_it_worth_the_time.png](_is_it_worth_the_time.png)
