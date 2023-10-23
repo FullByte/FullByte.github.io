@@ -214,6 +214,7 @@ Note really required and may just waste laptop battery life and/or desktop CPU b
 - Animated Background and Screen Saver: <https://github.com/rocksdanister/lively>
 - Microsoft PowerToys: <https://docs.microsoft.com/en-us/windows/powertoys/>
 - Ear Trumpet: <https://github.com/File-New-Project/EarTrumpet>
+- I like and recommend [dracula theme](https://draculatheme.com/) if available for applications.
 
 ### Useful shortcuts
 

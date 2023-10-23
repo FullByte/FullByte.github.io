@@ -8,6 +8,7 @@
 - RFC Key word ("MUST", "REQUIRED", "SHALL", "SHOULD", "RECOMMENDED", "MAY", "OPTIONAL",..): <https://tools.ietf.org/html/rfc>
 - Choosing a Name for Your Computer: <https://www.rfc-editor.org/rfc/rfc1178>
 - The Twelve Networking Truths <https://www.rfc-editor.org/rfc/rfc1925>
+- The Hyper Text Coffee Pot Control Protocol for Tea Efflux Appliances <https://www.rfc-editor.org/rfc/rfc7168> (Updates [RFC 2324](https://www.rfc-editor.org/rfc/rfc2324))
 
 ## SSH
 

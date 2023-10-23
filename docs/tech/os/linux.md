@@ -120,6 +120,7 @@ January 1st at Midnight 0 0 1 1 *
 - gnome extension: <https://github.com/Schneegans/Burn-My-Windows> or <https://extensions.gnome.org/extension/4679/burn-my-windows/>
 - NeXTSTEP-like desktop environment for Linux: <https://github.com/trunkmaster/nextspace>
 - 1995 Microsoft OS GUI for Linux: <https://github.com/grassmunk/Chicago95>
+- I like and recommend [dracula theme](https://draculatheme.com/) if available for applications.
 
 #### Virtualize, Emulate and Port
 
