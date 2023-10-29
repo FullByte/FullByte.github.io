@@ -44,7 +44,7 @@ Clone a copy and run it with gawk using this command: ```gawk-f awkaster.awk```
 
 ## Fun
 
-## asciiquarium
+### asciiquarium
 
 View asciiquarium using curl with [asciiquarium.live](https://github.com/kilimnik/asciiquarium.live)
 
@@ -110,6 +110,12 @@ But  there are plenty more:
 Fakesteak example:
 
 ![matrix](_matrix.webp)
+
+### paclear
+
+paclear is a clear command with PAC-MAN animation
+
+![paclear](_paclear-demo-color.gif)
 
 ### cBonsai
 
