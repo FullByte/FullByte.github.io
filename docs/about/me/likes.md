@@ -4,37 +4,52 @@ Things I like or find entertaining/interesting.
 
 ## Movies
 
+=== "Classics"
+
+    - 28 Days Later
+    - Fear and Loathing in Las Vegas
+    - Natural Born Killers
+    - Pulp Fiction
+    - The Big Lebowski
+    - Trainspotting
+
 === "Action"
 
     - Apocalypto
     - Crank 1+2
-    - Creed
     - Death Race
     - Faster
     - Hardcore
-    - Inception
-    - Interstellar
     - John Wick 1+2+3
     - Mad Max: Fury Road
-    - Million Dollar Baby
     - Rambo 4
     - Robocop
     - The Expendables 1+3
+
+    Science Fiction
+
+    - Inception
+    - Interstellar
     - The Zero Theorem
     - Turbo Kid
 
-=== "Cinematic"
+    Fight Movies
+
+    - Creed
+    - Million Dollar Baby
+
+    Cinematic
 
     - Blade Runner 2048
     - Dead Man
     - Ghost in the Shell
     - Kill Bill Vol 1+2
     - Mad Max: Fury Road: Black & Chrome
-    - Mandy
     - Sin City
     - Valhalla Rising
+    - Mandy
 
-=== "Trilogies"
+    Trilogies
 
     - Alien 1-2 + 4
     - Der Hobbit 1-3
@@ -62,7 +77,6 @@ Things I like or find entertaining/interesting.
 === "Interesting Story"
 
     - 12 Monkeys
-    - 28 Days Later
     - Amélie
     - Angel-A
     - Being John Malcovich
@@ -79,7 +93,6 @@ Things I like or find entertaining/interesting.
     - Donnie Darko
     - Ex Machina
     - Falling Down
-    - Fear and Loathing in Las Vegas
     - Fight Club
     - Frank
     - Horns
@@ -92,54 +105,52 @@ Things I like or find entertaining/interesting.
     - Moon
     - Naked Lunch
     - Natural Born Killers
-    - Natural Born Killers
     - Nightcrawler
     - Oldboy
     - Pan's Labyrinth
     - Pi
     - Predestination
-    - Pulp Fiction
     - Rampage (2009)
     - Run Lola Run
     - Southland Tales
     - Super - shut up crime
     - Swiss Army Man
-    - The Big Lebowski
     - The Curious Case of Benjamin Button
     - The Fountain
     - The Lobster
-    - Trainspotting
     - Whiplash
 
 === "Comedy"
 
     - Anchorman
     - Bad Santa
-    - Black Dynamite
-    - Chillerama
-    - Date movie
-    - Dead Snow 2: Red vs Dead
-    - Death Race 2050
-    - Demoliution Man
     - Dodgeball - Voll auf die Nüsse
-    - Drive Angry
     - Ey Mann - wo is mein Auto
     - George - der aus dem Dschungel kam
     - Happy Gilmore
     - Hot Tub Time Machine 2
-    - Machete
-    - Movie 43
-    - New Kids
     - New Kids Turbo
+    - Sausage Party
+    - Vacation Friends
+    - Zoolander
+    - The Ballad of Buster Scruggs
+
+    Trash Movies
+
+    - Black Dynamite
+    - Chillerama
+    - Dead Snow 2: Red vs Dead
+    - Demoliution Man
+    - Drive Angry
+    - Hot Tub Time Machine 2
+    - Machete
+    - New Kids
     - Piranha 2 3D
     - Planet Terror
     - Rubber
-    - Sausage Party
     - Sharknado 3
-    - The Ballad of Buster Scruggs
     - Turbo Kid
-    - Vacation Friends
-    - Zoolander
+    - Death Race 2050
 
 === "Romantic"
 
@@ -827,16 +838,30 @@ Things I like or find entertaining/interesting.
 
 ## Quotes
 
-"The Universe is immaterial — mental and spiritual. Live, and enjoy." Richard Conn Henry
+Richard Conn Henry
 
-"You know you're in love when you can't fall asleep because reality is finally better than your dreams." - Dr. Seuss
+> "The Universe is immaterial — mental and spiritual. Live, and enjoy." 
 
-"Happiness is doing it rotten your own way." Isaac Asimov
+Dr. Seuss
 
-“Love? What is it? Most natural painkiller what there is.” William S. Burroughs
+> "You know you're in love when you can't fall asleep because reality is finally better than your dreams."
 
-“When two people dream the same dream, it ceases to be an illusion.” Philip K. Dick
+Isaac Asimov
 
-"Entweder es klappt oder es klappt zusammen" Karnevalssitzung 1998
+> "Happiness is doing it rotten your own way."
 
-„Gegen die Langeweile kämpfen Götter selbst vergebens.“ — Friedrich Nietzsche
+William S. Burroughs
+
+> “Love? What is it? Most natural painkiller what there is.”
+
+Philip K. Dick
+
+> “When two people dream the same dream, it ceases to be an illusion.”
+
+Karnevalssitzung 1998
+
+> "Entweder es klappt oder es klappt zusammen"
+
+Arthur Schopenhauer
+
+> "Die wohlfeilste Art des Stolzes ist der Nationalstolz. Denn er verrät in dem Behafteten den Mangel an individuellen Eigenschaften, auf die er stolz sein könnte, indem er sonst nicht zu dem greifen würde, was er mit so vielen Millionen teilt."
