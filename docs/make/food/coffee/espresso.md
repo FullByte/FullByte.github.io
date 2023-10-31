@@ -16,6 +16,10 @@ Coffee preference is subjective, so take the time to explore different beans, ro
 
 - **Coffee Origin**: Different coffee-growing regions produce beans with distinct flavors. Research the regions you enjoy and experiment with their offerings. Single-origin coffee beans come from a specific region or farm, allowing you to experience the unique flavors of that area. Blends are also popular and can offer a balanced taste.
 
+I like these:
+
+![good_coffee](_good_coffee.jpg)
+
 ## Coffee bean storage
 
 Behave correctly:

@@ -1,6 +1,6 @@
-# Vegas Baby
+# Vegas
 
-originally "[Vegas](https://boardgamegeek.com/boardgame/117959/las-vegas)"
+Details on the original game can be found here: "[Vegas](https://boardgamegeek.com/boardgame/117959/las-vegas)"
 
 ## Making the game
 
@@ -26,8 +26,22 @@ The following cards are available:
 
 ## First Version
 
-![vegas_baby](_vegas_baby1.jpg)
+This is the first version I made:
+
+![vegas version 1](_vegas_baby1.jpg)
+
+## Secound Version
+
+This is the secound version I made:
+
+![vegas version 2](_vegas2.jpg)
+
+![vegas version 2](_vegas1.jpg)
+
+![vegas version 2](_vegas3.jpg)
+
+[Download the files here](_vegasAllFiles.7z) to make your own.
 
 ## Additional Rules
 
-Jeder kriegt 1 Pokerchip und dieser kann für einen re-roll einer Zahlengruppe genutzt werden. Pro Spiel wird bevor die Karten gelegt werden zufällig (durch würfeln) auf ein Casino ein Chip gesetzt. Nicht eingesetzte chips zählen am Ende 1 Punkt.
+Everyone gets 1 poker chip and this can be used for a re-roll of a number group. Before the cards are dealt, one chip is placed randomly (by rolling the dice) on each casino. Not used chips count 1 point at the end.
