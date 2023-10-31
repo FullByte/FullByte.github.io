@@ -4,15 +4,6 @@ Things I like or find entertaining/interesting.
 
 ## Movies
 
-=== "Classics"
-
-    - 28 Days Later
-    - Fear and Loathing in Las Vegas
-    - Natural Born Killers
-    - Pulp Fiction
-    - The Big Lebowski
-    - Trainspotting
-
 === "Action"
 
     - Apocalypto
@@ -25,20 +16,14 @@ Things I like or find entertaining/interesting.
     - Rambo 4
     - Robocop
     - The Expendables 1+3
-
-    Science Fiction
-
     - Inception
     - Interstellar
     - The Zero Theorem
     - Turbo Kid
-
-    Fight Movies
-
     - Creed
     - Million Dollar Baby
 
-    Cinematic
+=== "Cinematic"
 
     - Blade Runner 2048
     - Dead Man
@@ -49,7 +34,7 @@ Things I like or find entertaining/interesting.
     - Valhalla Rising
     - Mandy
 
-    Trilogies
+=== "Trilogies"
 
     - Alien 1-2 + 4
     - Der Hobbit 1-3
@@ -77,6 +62,7 @@ Things I like or find entertaining/interesting.
 === "Interesting Story"
 
     - 12 Monkeys
+    - 28 Days Later
     - Amélie
     - Angel-A
     - Being John Malcovich
@@ -93,6 +79,7 @@ Things I like or find entertaining/interesting.
     - Donnie Darko
     - Ex Machina
     - Falling Down
+    - Fear and Loathing in Las Vegas
     - Fight Club
     - Frank
     - Horns
@@ -105,52 +92,55 @@ Things I like or find entertaining/interesting.
     - Moon
     - Naked Lunch
     - Natural Born Killers
+    - Natural Born Killers
     - Nightcrawler
     - Oldboy
     - Pan's Labyrinth
     - Pi
     - Predestination
+    - Pulp Fiction
     - Rampage (2009)
     - Run Lola Run
     - Southland Tales
     - Super - shut up crime
     - Swiss Army Man
+    - The Big Lebowski
     - The Curious Case of Benjamin Button
     - The Fountain
     - The Lobster
+    - Trainspotting
     - Whiplash
 
 === "Comedy"
 
     - Anchorman
     - Bad Santa
+    - Black Dynamite
+    - Chillerama
+    - Date Movie
+    - Dead Snow 2: Red vs Dead
+    - Death Race 2050
+    - Demoliution Man
     - Dodgeball - Voll auf die Nüsse
+    - Drive Angry
     - Ey Mann - wo is mein Auto
     - George - der aus dem Dschungel kam
     - Happy Gilmore
     - Hot Tub Time Machine 2
-    - New Kids Turbo
-    - Sausage Party
-    - Vacation Friends
-    - Zoolander
-    - The Ballad of Buster Scruggs
-
-    Trash Movies
-
-    - Black Dynamite
-    - Chillerama
-    - Dead Snow 2: Red vs Dead
-    - Demoliution Man
-    - Drive Angry
     - Hot Tub Time Machine 2
     - Machete
+    - Movie 43
     - New Kids
+    - New Kids Turbo
     - Piranha 2 3D
     - Planet Terror
     - Rubber
+    - Sausage Party
     - Sharknado 3
+    - The Ballad of Buster Scruggs
     - Turbo Kid
-    - Death Race 2050
+    - Vacation Friends
+    - Zoolander
 
 === "Romantic"
 
