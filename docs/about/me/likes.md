@@ -6,46 +6,38 @@ Things I like or find entertaining/interesting.
 
 === "Action"
 
-    - Apocalypto
+    - Alien 1-2 + 4
     - Crank 1+2
+    - Creed
     - Death Race
     - Faster
     - Hardcore
-    - John Wick 1+2+3
-    - Mad Max: Fury Road
-    - Rambo 4
-    - Robocop
-    - The Expendables 1+3
+    - Herr der Ringe 1-3
     - Inception
     - Interstellar
+    - John Wick 1-3
+    - John Wick 1+2+3
+    - Mad Max: Fury Road
+    - Matrix 1-3
+    - Million Dollar Baby
+    - Rambo 4
+    - Robocop
+    - The Dark Night 1-3
+    - The Expendables 1+3
     - The Zero Theorem
     - Turbo Kid
-    - Creed
-    - Million Dollar Baby
 
 === "Cinematic"
 
+    - Apocalypto
     - Blade Runner 2048
     - Dead Man
     - Ghost in the Shell
     - Kill Bill Vol 1+2
-    - Mad Max: Fury Road: Black & Chrome
+    - Mad Max: Fury Road
     - Sin City
     - Valhalla Rising
     - Mandy
-
-=== "Trilogies"
-
-    - Alien 1-2 + 4
-    - Der Hobbit 1-3
-    - Der Pate 1-3
-    - Herr der Ringe 1-3
-    - John Wick 1-3
-    - Matrix 1-3
-    - Pirates of the Caribbean 1-3
-    - Planet der Affen 1-3
-    - Star Wars 4-6
-    - The Dark Night 1-3
 
 === "Animated"
 
@@ -91,7 +83,6 @@ Things I like or find entertaining/interesting.
     - Man on the moon
     - Moon
     - Naked Lunch
-    - Natural Born Killers
     - Natural Born Killers
     - Nightcrawler
     - Oldboy
