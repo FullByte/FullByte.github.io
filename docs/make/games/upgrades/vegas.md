@@ -44,4 +44,14 @@ This is the secound version I made:
 
 ## Additional Rules
 
-Everyone gets 1 poker chip and this can be used for a re-roll of a number group. Before the cards are dealt, one chip is placed randomly (by rolling the dice) on each casino. Not used chips count 1 point at the end.
+### Extra Role
+
+Everyone gets 1 poker chip and this can be used for a re-roll of a number group.
+Before the cards are dealt, one chip is placed randomly (by rolling the dice) on each casino.
+Not used chips count 1 point at the end.
+
+### Predict Wins
+
+Lay an additional dice of your color, hidden to each bay and predict your place (1-4 or not involved = 6).
+Other players will do the same and no one should see what was predicted.
+For each correct predictiction you earn 3 additional points.
