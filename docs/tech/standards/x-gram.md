@@ -30,4 +30,4 @@ German
 
 An ambigram is a calligraphic composition of glyphs (letters, numbers, symbols or other shapes) that can yield different meanings depending on the orientation of observation.
 
-![](_fertig-ambigram.jpg)
+![fertig-ambigram](_fertig-ambigram.jpg)

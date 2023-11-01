@@ -1,5 +1,7 @@
 # Games
 
+A list of games I have, like and played.
+
 ## List of Games
 
 ### Playstation Games
