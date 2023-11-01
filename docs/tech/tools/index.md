@@ -197,7 +197,7 @@ Buy DRM free products (Media, Software,..)
 
 Ways to create a CV/resume.
 
-### Links
+### Templates
 
 Inspiring tools/templates:
 

@@ -17,7 +17,17 @@ Choosing the correct project management process depends on the specific requirem
 
 By weighing these factors, you can make a more informed decision on which project management process to adopt for your project. Keep in mind that you can also customize or combine methodologies to create a hybrid approach that best suits your needs.
 
-![actual_progress](_actual_progress.png)
+![actual_progress](_projects_actual_progress.png)
+
+## Goals and Focus
+
+You can't have it all. Know what to focus on and be aware what you decide to make less important.
+
+![time_cost_quality](_projects_time_cost_quality.drawio.svg)
+
+![goals_and_focus](_projects_goals_and_focus1.jpg)
+
+![goals_and_focus](_projects_goals_and_focus2.jpg)
 
 ## Scrum
 
