@@ -821,7 +821,7 @@ Things I like or find entertaining/interesting.
 
 Richard Conn Henry
 
-> "The Universe is immaterial — mental and spiritual. Live, and enjoy." 
+> "The Universe is immaterial — mental and spiritual. Live, and enjoy."
 
 Dr. Seuss
 
@@ -846,3 +846,11 @@ Karnevalssitzung 1998
 Arthur Schopenhauer
 
 > "Die wohlfeilste Art des Stolzes ist der Nationalstolz. Denn er verrät in dem Behafteten den Mangel an individuellen Eigenschaften, auf die er stolz sein könnte, indem er sonst nicht zu dem greifen würde, was er mit so vielen Millionen teilt."
+
+Friedrich Nietzsche
+
+> "Gegen die Langeweile kämpfen Götter selbst vergebens."
+
+Leo Tolstoi
+
+> "Jeder denkt daran, die Welt zu verändern, aber niemand denkt daran, sich selbst zu verändern."
