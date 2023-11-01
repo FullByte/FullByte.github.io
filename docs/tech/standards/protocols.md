@@ -1,6 +1,8 @@
-# Protocol Return Codes
+# Protocols
 
 ## HTTP
+
+### Return Codes
 
 HTTP return codes
 
@@ -75,10 +77,10 @@ HTTP return codes
 
 ## SMTP
 
-https://www.iana.org/assignments/smtp-enhanced-status-codes/smtp-enhanced-status-codes.xhtml
+<https://www.iana.org/assignments/smtp-enhanced-status-codes/smtp-enhanced-status-codes.xhtml>
 
-https://en.wikipedia.org/wiki/List_of_SMTP_server_return_codes
+<https://en.wikipedia.org/wiki/List_of_SMTP_server_return_codes>
 
 ## SMB
 
-https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-cifs/8f11e0f3-d545-46cc-97e6-f00569e3e1bc
+<https://learn.microsoft.com/en-us/openspecs/windows_protocols/ms-cifs/8f11e0f3-d545-46cc-97e6-f00569e3e1bc>

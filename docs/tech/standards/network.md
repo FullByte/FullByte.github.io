@@ -86,7 +86,6 @@ Other Lists
 - <https://www.numprotocol.com/>
 - Rule 53: <https://github.com/pgl/rule53>
 
-
 ### NTP
 
 ```txt
@@ -371,7 +370,6 @@ List of NTP Servers:
 | Web.de                      | ntp.web.de                     |     |
 | wustl                       | navobs1.wustl.edu              |     |
 | YYCIX                       | ntp.yycix.ca                   |     |
-
 
 ## Ports
 

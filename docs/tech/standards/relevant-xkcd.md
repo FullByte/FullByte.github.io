@@ -1,6 +1,6 @@
 # XKCD
 
-In many ocasions there is a [relevant](https://www.explainxkcd.com) [XKCD](https://xkcd.com) to refer to the situation/topic. This list contains some of them.
+In many occasions there is a [relevant](https://www.explainxkcd.com) [XKCD](https://xkcd.com) to refer to the situation/topic. This list contains some of them.
 
 ## Security
 
