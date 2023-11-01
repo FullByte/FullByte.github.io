@@ -312,6 +312,39 @@ Representation in various calendars of the year 2021
 | French Republican Calendar | 10 days     |
 | Aztecs                     | 13 days     |
 
+## Age
+
+### Korean Age vs. International Age
+
+In South Korea, the method of calculating age diverges from the norm observed in most countries. Grasping the distinction between Korean and international age is vital for those engaging with Korean culture. Upon birth, Koreans are already considered a year old, reflecting the time in the womb. Furthermore, every individual's age advances by a year on New Year's Day, irrespective of their actual birth date. Consequently, a Korean's age is consistently one to two years greater than their international counterpart.
+
+The international age system, adopted by the majority of countries, increments a person's age annually on their birthday. By June 2023, to mitigate confusion, the Korean government resolved to exclusively use the international age system for official and legal documentation. This shift means Koreans' official age will now be one to two years less than what's calculated using the traditional Korean method.
+
+In Korean culture, age profoundly influences social dynamics, language nuances, and societal expectations. For example, it's customary for younger individuals to pour drinks, while their elders often cover meal expenses. Inquiring about age in Korea varies based on the individual's age and one's relationship with them, with distinct formal, standard, and informal phrasings. Legal age thresholds, such as for alcohol consumption, align with the international age system. To illustrate, while the Korean age for legal drinking is 20, it translates to 19 in international terms. Though Koreans universally age up on January 1st, personal birthday celebrations occur on the actual date of birth. When two Koreans are of the same age, they refer to their peer relationship as "동갑 (donggap)." This age parity often eases interactions, eliminating the usual age-related social protocols.
+
+Calculating Korean Age:
+
+Calculating Korean age is relatively straightforward. Here's how you can determine someone's Korean age:
+
+- Start with the Current Year: Begin by taking the current year. For example, if it's 2023, start with that number.
+- Subtract the Birth Year: Deduct the person's birth year from the current year.
+- Add One Year: Since in Korea, a baby is considered one year old at birth (accounting for the time spent in the womb), you add one year to the result from step 2.
+
+For example, if someone was born in 2000 and the current year is 2023:
+
+2023 (current year) - 2000 (birth year) = 23
+23 + 1 = 24
+
+So, the person's Korean age in 2023 would be 24.
+
+However, there's one more thing to consider: New Year's Adjustment: Everyone's age in Korea increases by one year on New Year's Day, regardless of their actual birth date. This means if someone's birthday hasn't occurred yet in the current year, their Korean age will be two years more than their international age. Using the example above, if the person's birthday is in July and it's currently February 2023, they would still be 23 in international age but 24 in Korean age.
+
+In summary, the formula is:
+
+Korean Age = (Current Year - Birth Year) + 1
+
+Remember the New Year's adjustment when considering birthdays later in the year.
+
 ## Fun facts
 
 A **moment** was a medieval unit of time. The movement of a shadow on a sundial covered 40 moments in a solar hour. An hour in this case meant one twelfth of the period between sunrise and sunset. The length of a solar hour depended on the length of the day, which in turn varied with the season, so the length of a moment in modern seconds was not fixed, but on average, a moment corresponded to 90 seconds.
