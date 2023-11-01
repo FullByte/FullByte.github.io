@@ -50,4 +50,3 @@ Eat whatever you want... idk, lol... and take your time ;)
 [![kuerbissuppe](/make/food/soup/_kuerbissuppe.jpg)](/make/food/soup/kuerbissuppe)
 
 [![mango-kokus-curry](/make/food/soup/_mango-kokus-curry.jpg)](/make/food/soup/mango-kokus-curry)
-
