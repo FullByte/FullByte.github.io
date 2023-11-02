@@ -1,7 +1,5 @@
 # Hanamikoji
 
-Size
-
-83 * 123 *  23 (LBH innen)
+Size: 83x123x23 mm (LBH inside)
 
 [File](_Organizer_Hanamikoji.svg)

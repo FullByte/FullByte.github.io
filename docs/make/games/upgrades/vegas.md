@@ -6,13 +6,13 @@ Details on the original game can be found here: "[Vegas](https://boardgamegeek.c
 
 ## Dice
 
-You need 5 colors and 8 dice in each color. The cheapest option is usually to purchase 100 dice in 10 colors as a set. Choose smaller dice as they are cheaper and work better for the game.
+For the game, you'll require a set of 40 dice, with eight dice in each of five distinct colors. Economically, it's often more sensible to buy a bulk set of 100 dice that come in 10 different colors. Opt for smaller-sized dice; not only are they more cost-effective, but they also enhance gameplay.
 
 ## Cards instead of dollars
 
-I use cards instead of money. You need 2 packs of cards for this game. Each number 2-10 represents 2000-10000 dollars. There is no 1000 dollar so the limit per casino is not 5000 but 6000.
+In this variation of the original game, playing cards substitute for currency. Two decks of cards are required to play. Cards numbered 2 through 10 represent increments of $2000, starting at $2000 for the 2 card and reaching $10000 for the 10 card. As there are no cards to represent $1000, and the ace is not used, the minimum stake for each casino is raised from $5000 to $6000.
 
-The following cards are available:
+This also changes the distribution of cards as follows:
 
 - 6x number 2
 - 8x number 3
@@ -24,15 +24,19 @@ The following cards are available:
 - 5x number 9
 - 5x number 10
 
-## First Version
+## Builds
+
+[Download the files here](_vegasAllFiles.7z) to make your own.
+
+### First Version
 
 This is the first version I made:
 
 ![vegas version 1](_vegas_baby1.jpg)
 
-## Secound Version
+### Second Version
 
-This is the secound version I made:
+This is the second version I made:
 
 ![vegas version 2](_vegas2.jpg)
 
@@ -40,18 +44,12 @@ This is the secound version I made:
 
 ![vegas version 2](_vegas3.jpg)
 
-[Download the files here](_vegasAllFiles.7z) to make your own.
-
 ## Additional Rules
 
 ### Extra Role
 
-Everyone gets 1 poker chip and this can be used for a re-roll of a number group.
-Before the cards are dealt, one chip is placed randomly (by rolling the dice) on each casino.
-Not used chips count 1 point at the end.
+Each player receives one poker chip, which can be utilized to re-roll an entire group of numbers. Prior to dealing the cards, a single chip is assigned to each casino through a random dice roll to determine its placement. Any chips that remain unused by the game's end will each contribute one point to the player's final score.
 
 ### Predict Wins
 
-Lay an additional dice of your color, hidden to each bay and predict your place (1-4 or not involved = 6).
-Other players will do the same and no one should see what was predicted.
-For each correct predictiction you earn 3 additional points.
+Place an extra die of your color, concealed, beside each bay to secretly forecast your finishing position, ranging from first (1) to fourth (4), with a prediction of non-involvement marked as six (6). Other players will simultaneously make their hidden predictions. For every prediction you make accurately, you will be awarded three bonus points.
