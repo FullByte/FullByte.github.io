@@ -49,3 +49,48 @@ The OKR (Objectives and Key Results) model is a goal-setting and performance-tra
 The OKR model encourages regular check-ins and updates to ensure that teams and individuals are focused on the right priorities and making progress towards their objectives. It promotes transparency, collaboration, and agility, enabling organizations to adapt and respond quickly to changes in their environment.
 
 ![okr-modell](_projects_okr-model.jpg)
+
+## Team communication
+
+As team size increases, so does the frequency of communication, which is essential for information exchange. However, if information can be accessed without direct interaction, this method may be favored for its simplicity over engaging in conversations, phone calls, or organizing meetings.
+
+Not every exchange of information can or should be circumvented. Effective teamwork hinges on the ability to deliberate on views, issues, objectives, and tactics. Moreover, communication fosters team cohesion and collaborative efficiency. On the flip side, superfluous communication can overshadow necessary interactions, rendering all forms of communication monotonous and uninteresting, leading team members to view meetings as unproductive.
+
+The challenge of managing communication becomes increasingly complex as team sizes expand and the number of communication avenues grows. To address this, the adoption of control measures, the strategic use of tools and workflows, and a focus on maintaining clear and thorough documentation can serve as effective methods to alleviate these issues. Moreover, this topic is pertinent to project organization, where the formation of smaller groups, the establishment of hierarchies, and the assignment of specific roles can contribute to efficiency. While hierarchies and defined roles can make communication more direct, they also carry the risk of obstructing essential dialogue. Effective project management, clarity in roles and responsibilities, and the appropriate use of tools can assist, though no system is flawless. It is crucial to regularly evaluate communication practices and tailor solutions to the unique needs of the team, the nature of the problem, and the context of the situation.
+
+### Possible communication connections
+
+This formula can be used to count the number of possible communication connections among a group of people in a team:
+
+![projects_combination_possibilities](_projects_combination_possibilities1.jpg)
+
+- C(n,k) is the number of combinations,
+- n is the total number of items,
+- k is the number of items to choose,
+- n! denotes the factorial of n, which is the product of all positive integers up to n.
+
+For single communications (pairs of people) k=2 because each connection involves two people. For group communications, k can range from 2 to n−1 (since a group can range from a pair to all but one of the people, with the last person being the one they are communicating with).
+
+To calculate the sum of all possible group communications for n=15, we would sum the combinations for k from 2 to 14:
+
+![projects_combination_possibilities](_projects_combination_possibilities2.jpg)
+
+The number of all possible group sizes, from pairs to groups of 14 results in n = 15 = 2^15 − 2 = 32768−2 = 32766
+
+Here's the completed table with the actual calculations for single communications and the formula for all possible group communications in a group of 3 to 15 people:
+
+| People | Single Communications | All Possible Group Communications |
+|--------|-----------------------|-----------------------------------|
+| 3      | C(3, 2) = 3           | 2^3 - 2 = 6                       |
+| 4      | C(4, 2) = 6           | 2^4 - 2 = 14                      |
+| 5      | C(5, 2) = 10          | 2^5 - 2 = 30                      |
+| 6      | C(6, 2) = 15          | 2^6 - 2 = 62                      |
+| 7      | C(7, 2) = 21          | 2^7 - 2 = 126                     |
+| 8      | C(8, 2) = 28          | 2^8 - 2 = 254                     |
+| 9      | C(9, 2) = 36          | 2^9 - 2 = 510                     |
+| 10     | C(10, 2) = 45         | 2^10 - 2 = 1022                   |
+| 11     | C(11, 2) = 55         | 2^11 - 2 = 2046                   |
+| 12     | C(12, 2) = 66         | 2^12 - 2 = 4094                   |
+| 13     | C(13, 2) = 78         | 2^13 - 2 = 8190                   |
+| 14     | C(14, 2) = 91         | 2^14 - 2 = 16382                  |
+| 15     | C(15, 2) = 105        | 2^15 - 2 = 32766                  |
