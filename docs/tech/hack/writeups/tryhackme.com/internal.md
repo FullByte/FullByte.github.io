@@ -151,7 +151,7 @@ Trying admin / lizzy Time: 00:01:19 <                                           
 
 So now we can login to wordpress as admin and look around.
 
-The wordpress page reveals a private note on credentals of william being william:arnold147 sofar this doesnt seem usable
+The wordpress page reveals a private note on credentials of william being william:arnold147 sofar this doesn't seem usable
 
 ## Wordpress php reverse shell
 

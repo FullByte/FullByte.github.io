@@ -4,7 +4,7 @@ These notes are from a challenge I did @[tryhackme](https://tryhackme.com) calle
 
 ## Flag 1
 
-Scanning the environment we find an apache webserver and a redis database...
+Scanning the environment we find an apache web server and a redis database...
 
 ``` sh
 sudo nmap -sC -sV -sS 10.10.103.145 -p-
@@ -62,7 +62,7 @@ unshadow passwd.txt shadow.txt > hash.txt
 john hash.txt
 ```
 
-Once we have the password we can escalate our priviledges to vianka which somehow also has root access.
+Once we have the password we can escalate our privileges to vianka which somehow also has root access.
 
 ``` sh
 su vianka
