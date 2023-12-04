@@ -1,4 +1,3 @@
-
 # Dice Mosaic
 
 Creating a dice mosaic picture
