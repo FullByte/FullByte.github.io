@@ -83,7 +83,7 @@ nikto -h 10.10.46.238
 
 ## Visit website
 
-So now we know machine 10.10.46.238 is running a Debian based Apache (2.4.38 ) webserver with PHP (7.4.3) serving a website with dogs and cats (probably stored under "/dogs" and "/cats").
+So now we know machine 10.10.46.238 is running a Debian based Apache (2.4.38 ) web server with PHP (7.4.3) serving a website with dogs and cats (probably stored under "/dogs" and "/cats").
 
 Let's visit the page on port 80 and click on dog or cat:
 

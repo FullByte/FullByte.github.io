@@ -9,22 +9,28 @@ Youtube-dl is a command-line program to download videos from YouTube and other v
 
 ## Download Video
 
+Download as MP4
+
+``` sh
+yt-dlp.exe -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best" 'link'
+```
+
 Download to a specific location in best quality:
 
 ``` sh
-yt-dlp.exe -f 22 -o 'path' '<youtube-link>'
+yt-dlp.exe -f 22 -o 'path' 'link'
 ```
 
 Download with details:
 
 ``` sh
-yt-dlp.exe -f best --write-description --write-info-json --write-annotations --write-sub --write-thumbnail '<youtube-link>'
+yt-dlp.exe -f best --write-description --write-info-json --write-annotations --write-sub --write-thumbnail 'link'
 ```
 
 ## Audio only
 
 ``` sh
-yt-dlp.exe -i --extract-audio --audio-format mp3 --audio-quality 0 '<youtube-link>'
+yt-dlp.exe -i --extract-audio --audio-format mp3 --audio-quality 0 'link'
 ```
 
 ## YouTube Playlists
@@ -32,13 +38,13 @@ yt-dlp.exe -i --extract-audio --audio-format mp3 --audio-quality 0 '<youtube-lin
 Download a playlist:
 
 ``` sh
-yt-dlp.exe -best 22 --yes-playlist '<playlist-link'
+yt-dlp.exe -best 22 --yes-playlist 'link'
 ```
 
 Download a playlist with audio only:
 
 ``` sh
-yt-dlp.exe -f 22 --yes-playlist '<playlist-link'
+yt-dlp.exe -f 22 --yes-playlist 'link'
 ```
 
 ## Get Video Source Information
@@ -46,7 +52,7 @@ yt-dlp.exe -f 22 --yes-playlist '<playlist-link'
 Get Source formats available:
 
 ``` sh
-yt-dlp.exe --list-formats '<youtube-link>'
+yt-dlp.exe --list-formats 'link'
 ```
 
 ## Download audio of a playlist

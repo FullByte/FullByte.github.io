@@ -4,7 +4,7 @@ This is a guest post by HiSch with notes from a challenge we did @[tryhackme](ht
 
 ## 0. Preparation
 
-The IP Adress of the victim machine is put into the /etc/hosts file, so you dont have to bother remembering its ip adress:
+The IP Address of the victim machine is put into the /etc/hosts file, so you don't have to bother remembering its ip address:
 
 ```sh
 ~# vi /etc/hosts
@@ -28,7 +28,7 @@ PORT    STATE SERVICE     VERSION
 445/tcp open  netbios-ssn Samba smbd 4.7.6-Ubuntu (workgroup: WORKGROUP)
 ```
 
-We can see the SMB / SAMBA port 445 is open. The hint says that the RID range 1000-1003 is of special intrest. It also mentions, that the longest username has a weak password - propably for bruteforcing.
+We can see the SMB / SAMBA port 445 is open. The hint says that the RID range 1000-1003 is of special interest. It also mentions, that the longest username has a weak password - probably for bruteforcing.
 enum4linux fortunately has an option for that:
 
 ```sh
@@ -83,6 +83,6 @@ password: <password>
 
 ## 3. Task 3: Buffer Overflow :: Binary 2
 
-This is where it gets intresting. There is an excecutable file with suid bit set in the home directory of des called ~./bof. When you execute bof you are asked to enter a string and this string is echoed back to the stdout. Conveniently the source code is in the same directory (~./bof64.c).
+This is where it gets intreating. There is an executable file with suid bit set in the home directory of des called ~./bof. When you execute bof you are asked to enter a string and this string is echoed back to the stdout. Conveniently the source code is in the same directory (~./bof64.c).
 
 ## ...to be continued
