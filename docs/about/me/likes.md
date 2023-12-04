@@ -906,3 +906,7 @@ Friedrich Nietzsche
 Leo Tolstoi
 
 > "Jeder denkt daran, die Welt zu verändern, aber niemand denkt daran, sich selbst zu verändern."
+
+## Music
+
+![music](_music-taste.png)
