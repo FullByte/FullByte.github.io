@@ -9,6 +9,14 @@
 
 - <https://github.com/supermerill/SuperSlicer>
 
-## Any Cubic Vyper
+## Anycubic Vyper
 
-![Any Cubic Vyper](_anycubic-vyper-fw-upgrade1.jpg)
+[Cura profile](_vyper.curaprofile) for the Anycubic Vyper.
+
+Firmware Upgrade: Don't forget the display :)
+
+![Anycubic Vyper](_anycubic-vyper-fw-upgrade1.jpg)
+
+## Anycubic Kobra 2
+
+[Cura profile](_kobra2.curaprofile) for the Anycubic Kobra 2.
