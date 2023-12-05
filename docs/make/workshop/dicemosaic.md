@@ -4,7 +4,7 @@ Creating a dice mosaic picture
 
 ## Preparation
 
-- Add a picture and convert it to grayscale
+- Add a picture and convert it to gray scale
 - Increase local contrast if necessary/possible
 - Crop picture and reduce resolution to reduce amount of required dices
 
