@@ -23,6 +23,10 @@
 - Kanban boards: [kanban.bash](https://github.com/coderofsalvation/kanban.bash), [taskell](https://github.com/smallhadroncollider/taskell)
 - JSON Tools: [jless](https://github.com/PaulJuliusMartinez/jless), [ijq](https://sr.ht/~gpanders/ijq), [fx](https://github.com/antonmedv/fx)
 
+## Network
+
+- [termshark](https://github.com/gcla/termshark)
+
 ## File Transfer
 
 - Sync <https://www.etebase.com/> → <https://www.etesync.com/>
@@ -36,7 +40,7 @@
 ## Games
 
 - nudoku is a ncurses based sudoku game. <https://bronevichok.ru/ttygames/#nudoku>
-- Chess: <https://github.com/vinc/littlewing>
+- Chess: [littlewing](https://github.com/vinc/littlewing) and [chess-tui](https://github.com/thomas-mauran/chess-tui)
 - Solitaire: <https://github.com/mpereira/tty-solitaire>
 
 ## Work with files
