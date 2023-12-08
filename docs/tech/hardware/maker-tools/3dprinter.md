@@ -20,3 +20,11 @@ Firmware Upgrade: Don't forget the display :)
 ## Anycubic Kobra 2
 
 [Cura profile](_kobra2.curaprofile) for the Anycubic Kobra 2.
+
+Set up Anycubic Kobra 2 in Cura:
+
+![Kobra2Cura](_kobra_cura_setting1.jpg)
+
+![Kobra2Cura](_kobra_cura_setting2.jpg)
+
+![Kobra2Cura](_kobra_cura_setting3.jpg)
