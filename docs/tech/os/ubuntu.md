@@ -2,7 +2,16 @@
 
 Ubuntu is an ancient african word, meaning "I can't configure Debian".[^1]
 
-The following is tested and used on Ubunutu 22.04.
+The following is tested and used on Ubuntu 22.04.
+
+| Ubuntu    | Based on  |
+|-----------|-----------|
+| 22.04 LTS | Debian 11 |
+| 20.04 LTS | Debian 10 |
+| 18.04 LTS | Debian 9  |
+| 16.04 LTS | Debian 8  |
+| 14.04 LTS | Debian 7  |
+| 12.04 LTS | Debian 6  |
 
 ## Config System
 
