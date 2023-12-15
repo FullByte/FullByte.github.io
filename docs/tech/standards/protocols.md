@@ -72,7 +72,7 @@ HTTP return codes
 | 510  | Not Extended                           | RFC2774                        |
 | 511  | Network Authentication Required        | RFC6585                        |
 
-- <https://httpstatusdogs.com/>
+- <https://http.dog/>
 - <https://http.cat/>
 
 ## SMTP
