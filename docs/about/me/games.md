@@ -2,7 +2,19 @@
 
 A list of games I have, like and played.
 
-## List of Games
+## Board Games
+
+### 2 Player Board Games
+
+- Onitama
+- Tides of Madness
+- Patchwork
+- Hanamikoji
+- Royal Visit
+- Tatsu
+- Back Gammon
+
+## Digital Games
 
 ### Playstation Games
 

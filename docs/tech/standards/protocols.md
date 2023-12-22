@@ -72,6 +72,8 @@ HTTP return codes
 | 510  | Not Extended                           | RFC2774                        |
 | 511  | Network Authentication Required        | RFC6585                        |
 
+Animal friendly status code responses:
+
 - <https://httpstatusdogs.com/>
 - <https://http.cat/>
 
