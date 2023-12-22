@@ -1,0 +1,912 @@
+# Likes
+
+Things I like or find entertaining/interesting.
+
+## Books
+
+=== "Knowledge"
+
+    - How to Tell a Story: The Essential Guide to Memorable Storytelling from The Moth 
+    - Humble Pi: A Comedy of Maths Errors
+    - Eine kurze Geschichte des menschlichen Körpers 
+    - Cult of the Dead Cow: How the Original Hacking Supergroup Might Just Save the World 
+    - Künstliche Intelligenz und der Sinn des Lebens: Ein Essay 
+    - What if? Was wäre wenn? Wirklich wissenschaftliche Antworten auf absurde hypothetische Fragen 
+    - Permanent Record: Meine Geschichte
+    - 21 Lektionen für das 21. Jahrhundert 
+    - Data and Goliath: The Hidden Battles to Capture Your Data and Control Your World 
+    - Countdown to Zero Day: Stuxnet and the Launch of the World's First Digital Weapon 
+    - Spam Nation: The Inside Story of Organized Cybercrime - from Global Epidemic to Your Front Door 
+    - Eine kurze Geschichte der Zeit
+    - Big Data: A Revolution That Will Transform How We Live, Work, and Think
+    - This Explains Everything: Deep, Beautiful, and Elegant Theories of How the World Works 
+    - Eine kurze Geschichte der Menschheit
+    - Panama Papers: Die Geschichte einer weltweiten Enthüllung 
+    - Zeit: Was sie mit uns macht und was wir aus ihr machen 
+    - The Checklist Manifesto: How to Get Things Right 
+    - Wer bin ich - und wenn ja, wie viele?
+    - Eine kurze Geschichte der alltäglichen Dinge 
+    - Ohne Heute gäbe es morgen kein Gestern: Philosophische Gedankenspiele 
+    - Die Entdeckung des Higgs-Teilchens: Oder wie das Universum seine Masse bekam 
+    - Homo Deus: Eine Geschichte von Morgen 
+
+=== "Health"
+
+    - Flow: Das Geheimnis des Glücks
+    - 12 Rules for Life: An Antidote to Chaos
+    - Der Ernährungskompass: Das Fazit aller wissenschaftlichen Studien zum Thema Ernährung 
+    - Sorge dich nicht - lebe!: Die Kunst, zu einem von Ängsten und Aufregungen befreiten Leben zu finden 
+
+=== "Story"
+
+    - Achtsam morden
+    - Die Känguru-Chroniken
+    - QualityLand + QualityLand 2.0
+    - Momo
+    - Der Neurochirurg, der sein Herz vergessen hatte: Eine wahre Geschichte 
+    - Der Patient
+    - Alles außer irdisch
+    - Lullaby 
+    - Flug 2039
+    - Satan Loco 
+    - Aprikose, Banane, Erdbeer
+    - Am Ende aller Zeiten
+    - Zeroes: A Novel
+    - Das Rosie-Projekt
+
+## Movies
+
+=== "Action"
+
+    - Alien 1-2 + 4
+    - Crank 1+2
+    - Creed
+    - Death Race
+    - Faster
+    - Hardcore
+    - Herr der Ringe 1-3
+    - Inception
+    - Interstellar
+    - John Wick 1-3
+    - John Wick 1+2+3
+    - Mad Max: Fury Road
+    - Matrix 1-3
+    - Million Dollar Baby
+    - Rambo 4
+    - Robocop
+    - The Dark Night 1-3
+    - The Expendables 1+3
+    - The Zero Theorem
+    - Turbo Kid
+
+=== "Cinematic"
+
+    - Apocalypto
+    - Blade Runner 2048
+    - Dead Man
+    - Ghost in the Shell
+    - Kill Bill Vol 1+2
+    - Mad Max: Fury Road
+    - Sin City
+    - Valhalla Rising
+    - Mandy
+
+=== "Animated"
+
+    - Coraline
+    - Ghost in the Shell
+    - Mary and Max
+    - Mutafukaz
+    - Spirited Away
+    - Totoro
+    - Up
+    - Werner - gekotzt wird später
+    - Winnie the Pooh
+
+=== "Interesting Story"
+
+    - 12 Monkeys
+    - 28 Days Later
+    - Amélie
+    - Angel-A
+    - Being John Malcovich
+    - Ben X
+    - Big Fish
+    - Border
+    - Bug (2006)
+    - Burnt
+    - Cheyenne
+    - Cube
+    - Dead Man
+    - Defendor
+    - Django Unchained
+    - Donnie Darko
+    - Ex Machina
+    - Falling Down
+    - Fear and Loathing in Las Vegas
+    - Fight Club
+    - Frank
+    - Horns
+    - I Origins
+    - Inglorious Basterds
+    - Into the Wild
+    - Kiss Kiss Bang Bang
+    - Life of Pi
+    - Man on the moon
+    - Moon
+    - Naked Lunch
+    - Natural Born Killers
+    - Nightcrawler
+    - Oldboy
+    - Pan's Labyrinth
+    - Pi
+    - Predestination
+    - Pulp Fiction
+    - Rampage (2009)
+    - Run Lola Run
+    - Southland Tales
+    - Super - shut up crime
+    - Swiss Army Man
+    - The Big Lebowski
+    - The Curious Case of Benjamin Button
+    - The Fountain
+    - The Lobster
+    - Trainspotting
+    - Whiplash
+
+=== "Comedy"
+
+    - Anchorman
+    - Bad Santa
+    - Black Dynamite
+    - Chillerama
+    - Date Movie
+    - Dead Snow 2: Red vs Dead
+    - Death Race 2050
+    - Demoliution Man
+    - Dodgeball - Voll auf die Nüsse
+    - Drive Angry
+    - Ey Mann - wo is mein Auto
+    - George - der aus dem Dschungel kam
+    - Happy Gilmore
+    - Hot Tub Time Machine 2
+    - Hot Tub Time Machine 2
+    - Machete
+    - Movie 43
+    - New Kids
+    - New Kids Turbo
+    - Piranha 2 3D
+    - Planet Terror
+    - Rubber
+    - Sausage Party
+    - Sharknado 3
+    - The Ballad of Buster Scruggs
+    - Turbo Kid
+    - Vacation Friends
+    - Zoolander
+
+=== "Romantic"
+
+    - Her
+    - I love you Philipp Morris
+    - Match Point
+
+## Series
+
+=== "Series"
+
+    - American gods
+    - Better Call Saul
+    - Black Mirror
+    - Breaking Bad
+    - Death Note
+    - Game of Thrones
+    - Happy
+    - Mr. Robot
+    - New Girl
+    - Preacher
+    - Scrubs
+    - Shameless
+    - Squid Game
+    - Star Trek: Discovery
+    - Stranger Things
+    - The Blacklist
+    - The Boys
+    - The expanse
+    - The Mandalorian
+    - The Walking Dead
+    - Westworld
+    - X-Files
+
+=== "Animated Series"
+
+    - Adventure Time
+    - Aqua Teen Hunger Force
+    - Archer
+    - Beavis and Butthead
+    - Bobs Burgers
+    - Brickleberry
+    - Celebrity Deathmatch
+    - Courage the cowardly dog
+    - Dorohedoro
+    - Duckman
+    - Final Space
+    - Frisky Dingo
+    - Futurama
+    - LOVE DEATH + ROBOTS
+    - Masters of the Universe: Revelation
+    - Metalocalypse
+    - Primal
+    - Ren and Stimpy
+    - Rick and Morty
+    - Rock's Modern Life
+    - South Park
+    - Squidbillies
+    - Superjail!
+    - Teenage Mutant Hero Turtles
+    - The Amazing World of Gumball
+    - The Head
+    - The Maxx
+    - The Simpsons
+    - The Venture Bros Brothers
+    - Tiny Toon Adventures
+    - Ugly Americans
+    - Wonder Showzen
+
+## News
+
+=== "IT News"
+
+    - Heise IT News <https://www.heise.de>
+    - WIRED: <https://www.wired.com/category/threatlevel/feed/>
+    - heise developer: <https://www.heise.de/developer/rss/news-atom.xml>
+    - t3n RSS Feed - News: <http://t3n.de/rss.xml>
+    - Golem.de: <https://rss.golem.de/rss.php?feed=RSS2.0>
+    - Hackaday: <https://hackaday.com/blog/feed/>
+    - iX news: <https://www.heise.de/ix/news/news-atom.xml>
+    - TechCrunch: <https://techcrunch.com/feed/>
+    - c't: <https://www.heise.de/ct/rss/artikel-atom.xml>
+    - heise Video: <https://www.heise.de/video/heise-atom.xml>
+    - The Old New Thing: <https://blogs.msdn.microsoft.com/oldnewthing/feed>
+    - Reddit Technology: <https://old.reddit.com/r/technology/.rss>
+    - Graphics Programming <https://www.jendrikillner.com/tags/weekly/>
+    - Free software community news <https://lwn.net/Archives/>
+    - Y Combinator News: <https://hckrnews.com/>
+    - Space News <https://orbitalindex.com/archive/>
+
+=== "IT Security"
+
+    - Schneier on Security: <https://www.schneier.com/blog/atom.xml>
+    - Troy Hunt's Blog: <http://feeds.feedburner.com/TroyHunt>
+    - IT Security Expert Blog: <http://blog.itsecurityexpert.co.uk/feeds/posts/default>
+    - Golem.de - Security: <https://rss.golem.de/rss.php?tp=sec&amp;feed=RSS2.0>
+    - heise Security: <https://www.heise.de/security/news/news-atom.xml>
+    - Krebs on Security: <http://krebsonsecurity.com/feed/>
+    - A Few Thoughts on Cryptographic Engineering: <https://blog.cryptographyengineering.com/feed/>
+    - Matt Suiche: <http://feeds.feedburner.com/msuicheblog>
+    - TaoSecurity: <https://taosecurity.blogspot.com/feeds/posts/default>
+    - cryptome: <https://www.freelists.org/feed/cryptome>
+    - Deeplinks: <https://www.eff.org/rss/updates.xml>
+    - Paul's Security Weekly <http://podcast.securityweekly.com/rss>
+    - Threatpost: <http://threatpost.com/feed/>
+    - Graham Cluley: <https://www.grahamcluley.com/feed/>
+    - Naked Security: <https://nakedsecurity.sophos.com/feed/>
+
+=== "Other"
+
+    - World News: <https://old.reddit.com/r/worldnews/.rss>
+    - Today I Learned (TIL): <https://old.reddit.com/r/todayilearned/.rss>
+    - Google News: <https://news.google.com/?output=rss>
+    - Reddit: xmlUrl=<https://old.reddit.com/.rss>
+    - law blog: <http://www.lawblog.de/index.php/feed/>
+    - vice: <https://www.vice.com/de/rss>
+    - Brandeins economy magazine <https://www.brandeins.de/magazine/brand-eins-wirtschaftsmagazin>
+
+## YouTube
+
+=== "Music"
+
+    - Doom Metal: <https://www.youtube.com/c/666MrDoom>
+    - Arte Concert: <https://www.youtube.com/c/ARTEConcert>
+    - Drumeo: <https://www.youtube.com/c/freedrumlessons>
+    - Ed Banger Records: <https://www.youtube.com/c/edbanger>
+    - ElectronicMu$ic: <https://www.youtube.com/c/ElectronicMuic>
+    - HÖR BERLIN: <https://www.youtube.com/c/H%C3%96RBERLIN>
+    - Musical Streams: <https://www.youtube.com/channel/UCqeYOThebLKYlvVeozxeR1Q/>
+    - Off The Road Studios: <https://www.youtube.com/channel/UCqtDASM-R6yZUvlQKtWj6Dg>
+    - Oneboredjeu Mashup: <https://www.youtube.com/c/oneboredjeuMashups>
+    - v1battle: <https://www.youtube.com/channel/UCJJOPBQ9KITlzGyxwWxgswg>
+    - AI death metal band: <https://www.youtube.com/c/DADABOTS_official>
+    - Broccaloo: <https://www.youtube.com/c/Broccaloo>
+
+    Musicians
+
+    - 2SICH (guitar): <https://www.youtube.com/channel/UC6w88SeJXw0JhmvXxDVRYrA/>
+    - A-YEON (drums): <https://www.youtube.com/c/AYEON>
+    - Andre Antunes (guitar): <https://www.youtube.com/c/AndreAntunesofficial>
+    - Andrea Boma Boccarusso (guitar): <https://www.youtube.com/c/AndreaBoccarusso>
+    - Andrew Huang (electronics/synth) <https://www.youtube.com/channel/UCdcemy56JtVTrsFIOoqvV8g>
+    - Anthony Vincent (singer, voice) <https://www.youtube.com/c/TenSecondSongs>
+    - Bernth (guitar): <https://www.youtube.com/user/Bernthguitar>
+    - Corey Hunter(guitar): <https://www.youtube.com/channel/UCru6U5iD61PgosWdGx-v3jA>
+    - Davie504 (Bass): <https://www.youtube.com/c/Davie504>
+    - Herman Li (guitar): <https://www.youtube.com/c/dragonforce>
+    - DØVYDAS: (Street performer) <https://www.youtube.com/c/DovydasMusic>
+    - Ghosthack: <https://www.youtube.com/c/Ghosthack>
+    - Jimmy Sax (saxophone): <https://www.youtube.com/c/JimmySax>
+    - Jonathan Sugarfoot Moffett (Drums): <https://www.youtube.com/c/JonathanSugarfootMoffett>
+    - Leonardo Lux (guitar): <https://www.youtube.com/c/LeonardoLux96>
+    - LOOK MUM NO COMPUTER (electronics/synth): <https://www.youtube.com/c/LOOKMUMNOCOMPUTER>
+    - Marc Rebillet: <https://www.youtube.com/c/MarcRebillet>
+    - Ocean (Producer): <https://www.youtube.com/channel/UCXrDJIpt-3giDMdwiBJvPvg>
+    - Opal Ocean (guitar): <https://www.youtube.com/c/OpalOcean>
+    - Patrick Souza (guitar): <https://www.youtube.com/c/PatrickSouza>
+    - Rob Landes (Violin): <https://www.youtube.com/c/RobLandes>
+    - SethEverman (Keys): <https://www.youtube.com/user/SethEverman>
+    - SUATISM (DJ): <https://www.youtube.com/c/SUATISM>
+    - Taj Farrant (guitar): <https://www.youtube.com/c/TajFarrant_Official>
+    - The Dooo (guitar): <https://www.youtube.com/c/TheDooo>
+    - Wintergatan: <https://www.youtube.com/c/Wintergatan>
+    - TankTheTech: <https://www.youtube.com/c/TankTheTech>
+
+    Make Music
+
+    - Native Instruments: <https://www.youtube.com/c/NativeInstruments>
+    - SolStateMusic: <https://www.youtube.com/c/SolStateMusic>
+    - SpectreSoundStudios: <https://www.youtube.com/c/SpectreSoundStudios>
+    - Steinberg: <https://www.youtube.com/c/steinberg>
+    - The Producer Network: <https://www.youtube.com/c/TheProducerNetwork>
+
+    Retro Nerd Music
+
+    - acrouzet (oscilloscope bit music): <https://www.youtube.com/c/acrouzet>
+    - Data Airlines: <https://www.youtube.com/c/DataAirlinesRecords>
+    - deater78: <https://www.youtube.com/user/deater78>
+    - Master Boot Record: <https://www.youtube.com/c/MasterBootRecord>
+    - Tronimal: <https://www.youtube.com/user/tronimalmusic>
+
+=== "Tech"
+
+    - Alexi Bexi: <https://www.youtube.com/c/AlexiBexi>
+    - AlsGeekLab: <https://www.youtube.com/c/AlsGeekLab/>
+    - Applied Science: <https://www.youtube.com/c/AppliedScience>
+    - AWS Events: <https://www.youtube.com/c/AWSEventsChannel>
+    - Azure Acadamy: <https://www.youtube.com/channel/UC-MXgaFhsYU8PkqgKBdnusQ>
+    - Carter Hurd: <https://www.youtube.com/c/AltasProjects>
+    - CCC: <https://www.youtube.com/c/mediacccde>
+    - Computer History Archives: <https://www.youtube.com/channel/UCOyJD0RHtF_77_oAf5tT1nQ>
+    - Computerphile: <https://www.youtube.com/user/Computerphile>
+    - ct 3003: <https://www.youtube.com/c/ct3003>
+    - Curious Marc: <https://www.youtube.com/c/CuriousMarc>
+    - Databases A2Z: <https://www.youtube.com/channel/UCxcOPU5S9MiVkvbb_5jlS4g>
+    - Daves Garage: <https://www.youtube.com/c/DavesGarage>
+    - DeepMind (AI) <https://www.youtube.com/c/DeepMind>
+    - DEFCON Conference <https://www.youtube.com/user/DEFCONConference>
+    - Derek Banas: <https://www.youtube.com/c/derekbanas>
+    - Garry Tan: <https://www.youtube.com/c/GarryTan>
+    - Gaurav Sen: <https://www.youtube.com/c/GauravSensei>
+    - heise online: <https://www.youtube.com/c/heiseonline>
+    - Hussein Nasser: <https://www.youtube.com/c/HusseinNasser-software-engineering>
+    - IBM Research: <https://www.youtube.com/c/ibmresearch>
+    - IEEE Spectrum: <https://www.youtube.com/c/ieeespectrum>
+    - John Savills Technical Training: <https://www.youtube.com/c/NTFAQGuy>
+    - Joma Tech: <https://www.youtube.com/c/JomaOppa>
+    - Linux Foundation: <https://www.youtube.com/c/LinuxfoundationOrg>
+    - Microsoft Azure: <https://www.youtube.com/c/MicrosoftAzure>
+    - MIT OpenCourseWare: <https://www.youtube.com/c/mitocw>
+    - NullByteWHT: <https://www.youtube.com/c/NullByteWHT>
+    - OnePageZen: <https://www.youtube.com/c/OnePageZen>
+    - OWASP Foundation: <https://www.youtube.com/c/OWASPGLOBAL>
+    - PentesterAcademyTV: <https://www.youtube.com/c/PentesterAcademyTV>
+    - Reducible: <https://www.youtube.com/c/Reducible>
+    - Scott Hanselman: <https://www.youtube.com/c/shanselman>
+    - The new Boston: <https://www.youtube.com/user/thenewboston>
+    - The Relaxing End: <https://www.youtube.com/c/TheRelaxingEnd>
+    - Travis Roberts: <https://www.youtube.com/c/TravisRoberts>
+    - Two Minute Papers: <https://www.youtube.com/c/K%C3%A1rolyZsolnai>
+    - UBC Computer Science: <https://www.youtube.com/c/UBCCPSC>
+    - Zero Day Initiative: <https://www.youtube.com/c/TippingPointZeroDayInitiative>
+
+    Programming
+
+    - Academind (Programming JS, NodeJS, Angular,...) <https://www.youtube.com/c/Academind>
+    - Andreas Kling (SerenityOS): <https://www.youtube.com/c/AndreasKling>
+    - Ben Awad: <https://www.youtube.com/c/BenAwad97>
+    - Bisqwit: <https://www.youtube.com/c/Bisqwit>
+    - Brackeys (Game Dev): <https://www.youtube.com/c/Brackeys>
+    - Coding Explained: <https://www.youtube.com/c/Codingexplained>
+    - Coding Math: <https://www.youtube.com/user/codingmath>
+    - DevEd: <https://www.youtube.com/c/DevEd>
+    - AzureDevOps: <https://www.youtube.com/c/AzureDevOps>
+    - dist67: <https://www.youtube.com/user/dist67>
+    - DonaldFeury: <https://www.youtube.com/c/DonaldFeury>
+    - Engineer Man: <https://www.youtube.com/c/EngineerMan>
+    - Erik Dubois (ArcoLinux) <https://www.youtube.com/c/ErikDubois>
+    - Errichto: <https://www.youtube.com/c/Errichto>
+    - Financial Modeling World Cup: <https://www.youtube.com/c/FinancialModelingWorldCup>
+    - Fun Fun Function <https://www.youtube.com/c/funfunfunction>
+    - Github: <https://www.youtube.com/c/GitHub>
+    - Graham Hutton Notts: <https://www.youtube.com/c/GrahamHuttonNotts>
+    - InfoQ: <https://www.youtube.com/nctv>
+    - Jon Gjengset (Rust) <https://www.youtube.com/c/JonGjengset>
+    - JupyterCon: <https://www.youtube.com/c/JupyterCon>
+    - Kalle Hallden: <https://www.youtube.com/c/KalleHallden>
+    - LevelUpTuts: <https://www.youtube.com/c/LevelUpTuts>
+    - Learn code academy: <https://www.youtube.com/c/learncodeacademy>
+    - LeadDev: <https://www.youtube.com/c/LeadDev>
+    - Live Coder: <https://www.youtube.com/channel/UCxv8jMd-ABJboKo1a_LtuNA>
+    - Microsoft Developer: <https://www.youtube.com/c/MicrosoftDeveloper>
+    - Microsoft IoT Developers: <https://www.youtube.com/c/MicrosoftIoTDevelopers>
+    - Nick Chapsas: <https://www.youtube.com/c/Elfocrash>
+    - PowerShellConferenceEU: <https://www.youtube.com/c/PowerShellConferenceEU>
+    - StrangeLoopConf: <https://www.youtube.com/c/StrangeLoopConf>
+    - The Coding Train: <https://www.youtube.com/c/TheCodingTrain>
+    - The Morpheus Tutorials: <https://www.youtube.com/c/TheMorpheus407>
+    - The Net Ninja: <https://www.youtube.com/c/TheNetNinja>
+    - The Primeagen: <https://www.youtube.com/c/ThePrimeagen>
+    - Traversy Media: <https://www.youtube.com/c/TraversyMedia>
+    - Wes Bos: <https://www.youtube.com/c/WesBos>
+
+    3D/Game Dev
+
+    - Blender Foundation: <https://www.youtube.com/c/BlenderFoundation>
+    - Blender Guru: <https://www.youtube.com/c/BlenderGuruOfficial>
+    - CG Matter: <https://www.youtube.com/c/CGMatter>
+    - Default Cube <https://www.youtube.com/channel/UCdpWKLNfbROyoGPV46-zaUQ>
+    - DigiDigger: <https://www.youtube.com/c/DigiDigger>
+    - Mark Brown GMT: <https://www.youtube.com/c/MarkBrownGMT>
+    - Game from scratch: <https://www.youtube.com/c/gamefromscratch>
+    - GDC: <https://www.youtube.com/c/Gdconf>
+    - Inigo Quilez: <https://www.youtube.com/c/InigoQuilez>
+    - NDC Conferences: <https://www.youtube.com/c/NDCConferences>
+    - NVIDIA Developer: <https://www.youtube.com/user/NVIDIADeveloper>
+    - People Make Games: <https://www.youtube.com/c/PeopleMakeGames>
+    - pwnisher: <https://www.youtube.com/c/pwnisher>
+    - Sebastian Lague: <https://www.youtube.com/c/SebastianLague>
+    - The Cherno Project: <https://www.youtube.com/c/TheChernoProject>
+    - Thomas Brush: <https://www.youtube.com/c/AtmosGames>
+    - Unreal Engine: <https://www.youtube.com/c/UnrealEngine>
+
+    Math
+
+    - 3Blue1Brown (math and entertainment): <https://www.youtube.com/c/3blue1brown>
+    - MathemaTrick: <https://www.youtube.com/c/MathemaTrick>
+    - Mathologer: <https://www.youtube.com/c/Mathologer>
+    - Maths Town: <https://www.youtube.com/c/MathsTown>
+    - Matt Parker: <https://www.youtube.com/c/mattparker2>
+    - Numberphile: <https://www.youtube.com/c/numberphile>
+    - Numberphile2: <https://www.youtube.com/c/numberphile2>
+    - Patrick JMT: <https://www.youtube.com/c/patrickjmt>
+    - Stand-up Maths: <https://www.youtube.com/user/standupmaths>
+
+    Electronics
+
+    - Ben Eater: <https://www.youtube.com/c/BenEater>
+    - Core Electronics: <https://www.youtube.com/c/Core-electronicsAu>
+    - Dronebot workshop: <https://www.youtube.com/c/Dronebotworkshop1>
+    - EevblogDave: <https://www.youtube.com/c/EevblogDave/>
+    - Element 14 presents: <https://www.youtube.com/c/element14presents>
+    - Elevated Systems: <https://www.youtube.com/c/ElevatedSystems>
+    - EmulaThor: <https://www.youtube.com/channel/UCApxaKhZB726r2Qkso9ARYQ>
+    - hackaday: <https://www.youtube.com/c/hackaday>
+    - hjalfi: <https://www.youtube.com/user/hjalfi>
+    - Neutrino: <https://www.youtube.com/c/Neutrino1>
+    - next-hack: <https://www.youtube.com/c/nexthack>
+    - Samy Kamkar: <https://www.youtube.com/c/SamyKamkar>
+    - Serve The Home: <https://www.youtube.com/c/ServeTheHomeVideo>
+    - spacehuhn: <https://www.youtube.com/c/spacehuhn>
+    - Switch and Click (keyboards): <https://www.youtube.com/c/SwitchandClickOfficial>
+    - tinymakesthings (keyboards): <https://www.youtube.com/c/tinymakesthings>
+    - Tobias Mädel: <https://www.youtube.com/c/TobiasM%C3%A4del>
+    - Zack Freedman: <https://www.youtube.com/c/ZackFreedman>
+
+    Hack CTFs
+
+    - Alh4zr3d: <https://www.youtube.com/channel/UCz-Z-d2VPQXHGkch0-_KovA>
+    - DarkSec: <https://www.youtube.com/c/DarkSec>
+    - IppSec: <https://www.youtube.com/c/ippsec>
+    - John Hammond: <https://www.youtube.com/c/JohnHammond010>
+    - LiveOverflow: <https://www.youtube.com/c/LiveOverflow>
+    - PwnFunction: <https://www.youtube.com/c/PwnFunction>
+    - Tech Mafia: <https://www.youtube.com/c/TechMafia7>
+
+    Space
+
+    - Chuck's Astrophotography: <https://www.youtube.com/c/ChucksAstrophotography>
+    - NASA: <https://www.youtube.com/c/NASA>
+    - Cosmic Perspective: <https://www.youtube.com/c/CosmicPerspective>
+    - European Space Agency: <https://www.youtube.com/c/EuropeanSpaceAgency>
+    - Sixty Symbols: <https://www.youtube.com/user/sixtysymbols/>
+    - SpaceX: <https://www.youtube.com/c/SpaceX>
+
+    Maker
+
+    - Adam Savage: <https://www.youtube.com/c/tested>
+    - Allsmartrepair: <https://www.youtube.com/channel/UClst1pau3TWAKSfZLituz4w>
+    - Atomic Frontier: <https://www.youtube.com/c/AtomicFrontier>
+    - Clickspring: <https://www.youtube.com/c/Clickspring>
+    - Colin Furze: <https://www.youtube.com/c/colinfurze>
+    - Craft Station Weapons: <https://www.youtube.com/c/CraftStationWeapons>
+    - DIY Perks: <https://www.youtube.com/c/DIYPerks>
+    - I did a thing: <https://www.youtube.com/c/Ididathing>
+    - Instructables: <https://www.youtube.com/c/instructables>
+    - Jeff Geerling: <https://www.youtube.com/c/JeffGeerling>
+    - King Minhvuong: <https://www.youtube.com/c/KingMinhvuong>
+    - Maker Melissas Lab: <https://www.youtube.com/c/MakerMelissasLab>
+    - Malt Whiskey: <https://www.youtube.com/c/MaltWhiskey>
+    - Marco Reps: <https://www.youtube.com/c/MarcoReps>
+    - Mark Rober: <https://www.youtube.com/c/MarkRober>
+    - Michael Cthulhu: <https://www.youtube.com/c/michaelcthulhu>
+    - Scott Bez1: <https://www.youtube.com/user/scottbez1/>
+    - Simone Giertz: <https://www.youtube.com/c/simonegiertz/>
+    - Stuff Made Here:<https://www.youtube.com/c/StuffMadeHere>
+    - The Post Apocalyptic Inventor: <https://www.youtube.com/c/ThePostApocalypticInventor>
+    - This Old Tony: <https://www.youtube.com/c/ThisOldTony>
+    - Tronics fix (Fix stuff): <https://www.youtube.com/c/Tronicsfix>
+    - Wesley Kagan: <https://www.youtube.com/c/WesleyKagan>
+    - Wintergatan: <https://www.youtube.com/c/Wintergatan>
+
+=== "Make and Fix Stuff"
+
+    Bikes
+
+    - Build a Better Bike: <https://www.youtube.com/c/BuildaBetterBike>
+    - GCN Tech: <https://www.youtube.com/c/gcntech>
+    - Gee Milner: <https://www.youtube.com/c/GeeMilner>
+    - Raphson: <https://www.youtube.com/c/Raphson>
+
+    Wood Work
+
+    - Blacktail Studio: <https://www.youtube.com/c/BlacktailStudio>
+    - crafted workshop: <https://www.youtube.com/c/craftedworkshop>
+    - Dashner Design Restoration: <https://www.youtube.com/c/DashnerDesignRestoration>
+    - J-woodworking: <https://www.youtube.com/c/Jwoodworking%EB%AA%A9%EA%B3%B5%EC%9D%BC%EA%B8%B0>
+    - Sven Yrvind: <https://www.youtube.com/channel/UCptM0nqGDJLz14oP6ROdKRw>
+
+    3D Printing
+
+    - 3DprintedLife: <https://www.youtube.com/c/3DprintedLife>
+    - Dombi3D: <https://www.youtube.com/c/Dombi3D>
+    - HexiBase: <https://www.youtube.com/c/HexiBase>
+    - Prusa 3D by Josef Prusa: <https://www.youtube.com/c/Prusa3D>
+
+    Lego
+
+    - Brick Bending: <https://www.youtube.com/c/BrickBending>
+    - Brick Builder: <https://www.youtube.com/c/Brickshow23>
+    - Brick Experiment: <https://www.youtube.com/c/BrickExperimentChannel>
+    - Brick Vault: <https://www.youtube.com/c/BrickVault>
+    - IAssemble: <https://www.youtube.com/c/IAssemble>
+    - JK Brickworks: <https://www.youtube.com/c/JKBrickworksVideo>
+    - JK Extras: <https://www.youtube.com/c/JKExtras>
+    - Kevin183: <https://www.youtube.com/c/Kevin183>
+    - Nico71s Lego Technic Creations: <https://www.youtube.com/c/Nico71Fr>
+    - PuzzLEGO: <https://www.youtube.com/c/puzzLEGO>
+
+=== "Games"
+
+    - greymatter: <https://www.youtube.com/greymatter>
+    - MattKC: <https://www.youtube.com/c/MattKC>
+    - Niftski: <https://www.youtube.com/c/Niftski>
+    - Stern Pinball: <https://www.youtube.com/c/sternpinballinc>
+
+    PC
+
+    - ct zockt: <https://www.youtube.com/c/ctzockt>
+    - GameTwo: <https://www.youtube.com/c/GameTwo>
+    - Gamestar: <https://www.youtube.com/c/gamestar>
+    - IGN <https://www.youtube.com/c/IGN>
+    - World of Longplays: <https://www.youtube.com/recordedamigagames>
+    - Ith.io Games: <https://www.youtube.com/c/itchiogames>
+
+    SpeedRuns
+
+    - Games Done Quick: <https://www.youtube.com/c/gamesdonequick>
+    - Lowest Percent: <https://www.youtube.com/c/LowestPercent>
+
+    Gaming Hardware
+
+    - Gamers Nexus: <https://www.youtube.com/c/GamersNexus>
+    - Linus Tech Tips: <https://www.youtube.com/c/LinusTechTips>
+    - Sim Racing Garage: <https://www.youtube.com/channel/UCT_50ZiRFWSm7oziV1OZloQ/>
+
+    Gamers
+
+    - a Game Scout: <https://www.youtube.com/c/aGameScout>
+    - fireb0rn: <https://www.youtube.com/c/fireb0rngg>
+    - Hand Of Blood: <https://www.youtube.com/c/HandOfBlood>
+    - Hand Of Uncut: <https://www.youtube.com/c/HandOfLive>
+    - Katherine Of Sky: <https://www.youtube.com/c/KatherineOfSkyGaming>
+    - Lets Game It Out: <https://www.youtube.com/c/LetsGameItOut>
+    - McQueeb: <https://www.youtube.com/c/mcqueeb>
+    - Riolutm: <https://www.youtube.com/c/riolutm>
+    - Ryukahr: <https://www.youtube.com/c/ryukahr>
+    - Some Ordinary Gamers: <https://www.youtube.com/c/SomeOrdinaryGamers>
+    - Tech Rules: <https://www.youtube.com/c/TechRules>
+    - Video game Dunkey: <https://www.youtube.com/user/videogamedunkey>
+    - Wirtual: <https://www.youtube.com/c/Wirtual>
+    - ZekeF: <https://www.youtube.com/c/ZekeF>
+    - The Spiffing Brit: <https://www.youtube.com/c/thespiffingbrit>
+
+    Retro Gaming
+
+    - Displaced Gamers: <https://www.youtube.com/c/DisplacedGamers>
+    - Lazy game reviews: <https://www.youtube.com/c/Lazygamereviews>
+    - Liam Triforce: <https://www.youtube.com/c/LiamTriforce>
+    - Modern Vintage Gamer: <https://www.youtube.com/c/ModernVintageGamer>
+    - NesHacker: <https://www.youtube.com/c/NesHacker>
+    - Nostalgia Nerd: <https://www.youtube.com/c/Nostalgianerd>
+    - ShankMods: <https://www.youtube.com/c/ShankMods>
+    - sinc LAIR: <https://www.youtube.com/c/sincLAIRchannel>
+    - Summoning Salt: <https://www.youtube.com/c/SummoningSalt>
+    - The 8 Bit Guy: <https://www.youtube.com/c/The8BitGuy>
+
+    Board Games
+
+    - 3 Minute Board Games: <https://www.youtube.com/c/3MinuteBoardGames>
+    - Geek & Sundry: <https://www.youtube.com/c/GeekandSundry>
+    - Jon Gets Games: <https://www.youtube.com/c/JonGetsGames>
+    - Man Vs Meeple: <https://www.youtube.com/c/ManvsMeeple2>
+    - No Rolls Barred: <https://www.youtube.com/c/NoRollsBarred>
+    - The dice tower: <https://www.youtube.com/user/thedicetower>
+    - The King of Average: <https://www.youtube.com/c/TheKingofAverage>
+    - The Rules Girl: <https://www.youtube.com/c/TheRulesGirl>
+    - The Rasteri: <https://www.youtube.com/c/TheRasteri>
+    - Watch It Played: <https://www.youtube.com/c/WatchItPlayed>
+
+    Chess
+
+    - BotezLive: <https://www.youtube.com/channel/UCAn8NrZ-J4CRfwodajqFYoQ>
+
+=== "Sports"
+
+    Leagues/Mags:
+
+    - Drone Champions League: <https://www.youtube.com/c/DroneChampionsLeague>
+    - PoleSportOrg: <https://www.youtube.com/user/PoleSportOrg>
+    - Gosports (paintball): <https://www.youtube.com/c/Gosportslive>
+    - TheHoonigans: <https://www.youtube.com/c/TheHoonigans>
+    - LFL Lingerie Football League: <https://www.youtube.com/channel/UCiFk5jruDqiR0X1jRd2Jn0A>
+    - Nitro Circus: <https://www.youtube.com/c/nitrocircus>
+    - Red Bull: <https://www.youtube.com/c/redbullgivesyouwings>
+    - Red Bull Surfing: <https://www.youtube.com/c/RedBullSurfing>
+    - Thrasher Magazine: <https://www.youtube.com/c/thrasher>
+    - TOP BREAK: <https://www.youtube.com/c/TOPBREAK>
+    - XGames: <https://www.youtube.com/c/XGames>
+
+    People:
+
+    - Eddie Hall: <https://www.youtube.com/user/TheUkstrongest>
+    - Eddie Bauer: <https://www.youtube.com/user/EddieBauerNW>
+    - Stoltman Brothers: <https://www.youtube.com/c/StoltmanBrothers>
+
+    Brands with cool videos:
+
+    - Monster Energy: <https://www.youtube.com/c/MonsterEnergy>
+    - Red Bull: <https://www.youtube.com/c/redbullgivesyouwings>
+
+    Climbing
+
+    - ClimbingTV: <https://www.youtube.com/c/ClimbingTV>
+    - IFSC: <https://www.youtube.com/c/sportclimbing>
+    - PSYCHED BOULDERING: <https://www.youtube.com/c/PSYCHEDBOULDERING>
+    - REELROCK1: <https://www.youtube.com/c/REELROCK1>
+    - ClimbersCrag: <https://www.youtube.com/c/ClimbersCrag>
+
+    Climbers:
+
+    - Adam Ondra: <https://www.youtube.com/c/AdamOndra>
+    - Alain Robert: <https://www.youtube.com/c/alainrobert>
+    - Magnus Midtbø: <https://www.youtube.com/c/magmidt88>
+    - Stefano Ghisolfi: <https://www.youtube.com/c/StefanoGhisolfiTV>
+
+    Brands with cool videos:
+
+    - Black Diamond: <https://www.youtube.com/blackdiamond>
+    - La sportiva: <https://www.youtube.com/c/LasportivaIta>, <https://www.youtube.com/c/LaSportivaNA>
+    - Patagonia: <https://www.youtube.com/c/patagonia>
+    - Petzl: <https://www.youtube.com/petzl>
+
+    Bike
+
+    - ApanzaBmx: <https://www.youtube.com/user/ApanzaBmx>
+    - Brendan Fairclough: <https://www.youtube.com/c/BrendanFairclough>
+    - ddangerous dave: <https://www.youtube.com/c/ddangerousddave>
+    - Godziek Brothers: <https://www.youtube.com/c/GodziekBrothers>
+    - Jordan Boostmaster: <https://www.youtube.com/c/JordanBoostmaster>
+    - Kilian Bron: <https://www.youtube.com/c/KilianBron>
+    - Ryan Williams: <https://www.youtube.com/c/RyanWilliamsofficial>
+    - Sam Pilgrim: <https://www.youtube.com/c/SamPilgrim>
+    - Sam Reynolds: <https://www.youtube.com/c/SamReynolds26>
+    - Tom Isted: <https://www.youtube.com/c/TomIsted>
+
+    Ski and Snowboard
+
+    - Candide Thovex: <https://www.youtube.com/c/CandideThovexChannel>
+    - Red Bull Snow: <https://www.youtube.com/c/RedBullSnow>
+    - The Nines: <https://www.youtube.com/c/TheNines3>
+    - The North Face: <https://www.youtube.com/c/TheNorthFace>
+
+    Workout
+
+    - Hybrid Calisthenics: <https://www.youtube.com/c/HybridCalisthenics>
+    - Pamela Reif: <https://www.youtube.com/c/PamelaRf1>
+    - Yoga With Adriene: <https://www.youtube.com/c/yogawithadriene>
+
+=== "Random"
+
+    - ASMR Janina NO TALKING: <https://www.youtube.com/channel/UCeRYd-cHw3_Ua_pDB_cHooQ>
+    - Brady Brandwood (Lean the Lobster): <https://www.youtube.com/c/Bradybrandwood>
+    - Captain Disillusion: <https://www.youtube.com/c/CaptainDisillusion>
+    - Chiropractic Medicine: <https://www.youtube.com/channel/UCzgyo1MvMJwmsr3T0mblNZg>
+    - Chubbyemu (Medical Stories): <https://www.youtube.com/c/ChubbyemuGames>
+    - David Firth (Salad Fingers) <https://www.youtube.com/c/davidfirth>
+    - Doug DeMuro: <https://www.youtube.com/c/DougDeMuro>
+    - Dust (Scifi Short Films): <https://www.youtube.com/c/watchdust>
+    - GeoWizard: <https://www.youtube.com/c/GeoWizard>
+    - Grand Illusions: <https://www.youtube.com/c/grandillusions>
+    - HeronsBonsaiUK: <https://www.youtube.com/c/HeronsBonsaiUK>
+    - JCS - Criminal Psychology: <https://www.youtube.com/c/JCSCriminalPsychology>
+    - Jelles Marble Runs: <https://www.youtube.com/c/JellesMarbleRuns>
+    - Jim Browning: <https://www.youtube.com/c/JimBrowning>
+    - Kitboga: <https://www.youtube.com/c/KitbogaShow>
+    - Meat Canyon: <https://www.youtube.com/c/MeatCanyon>
+    - Mr. Puzzle: <https://www.youtube.com/c/MrPuzzle>
+    - Omeleto (short Films): <https://www.youtube.com/c/Omeleto>
+    - Poetry Slam TV: <https://www.youtube.com/c/PoetrySlamTV>
+    - Ratarossa: <https://www.youtube.com/c/Ratarossa>
+    - royal society for arts, manufactures and commerce (RSA): <https://www.youtube.com/c/rsaorg>
+    - Samcrac: <https://www.youtube.com/c/Samcrac>
+    - Squidmar Miniatures: <https://www.youtube.com/c/SquidmarMiniatures>
+    - SWIM: <https://www.youtube.com/channel/UCOWGNAei4hIjOna_JgWGCOA>
+    - Technology Connections: <https://www.youtube.com/c/TechnologyConnections/>
+    - TED: <https://www.youtube.com/c/TED>
+    - The Lore Master: <https://www.youtube.com/c/TheLoreMasterYT>
+    - Townsends: <https://www.youtube.com/user/jastownsendandson>
+    - Xiaomanyc: <https://www.youtube.com/c/%E5%B0%8F%E9%A9%AC%E5%9C%A8%E7%BA%BD%E7%BA%A6>
+
+    Interviews
+
+    - All Gas No Brakes: <https://www.youtube.com/channel/UCtqxG9IrHFU_ID1khGvx9sA>
+    - Channel5: <https://www.youtube.com/c/Channel5YouTube>
+    - Cut: <https://www.youtube.com/c/cut>
+    - LAD bible: <https://www.youtube.com/c/LADbible>
+    - Lex Fridman: <https://www.youtube.com/c/lexfridman>
+    - MISS-VERSTEHEN SIE MICH RICHTIG: <https://www.youtube.com/channel/UCBWSgdr27NcLig0XzWLq2gQ>
+    - PowerfulJRE (Joe Rogan): <https://www.youtube.com/c/joerogan>
+    - Psyched Substance: <https://www.youtube.com/channel/UCn8V3KNSgDr1Dai77_y8JrQ>
+    - Soft White Underbelly: <https://www.youtube.com/c/SoftWhiteUnderbelly>
+    - VICE: <https://www.youtube.com/c/VICE>
+    - VICE Asia: <https://www.youtube.com/c/VICEAsia>
+    - Y-Kollektiv: <https://www.youtube.com/c/ykollektiv>
+
+    Comics
+
+    - The Hardcover Comic: <https://www.youtube.com/c/TheHardcoverComic>
+
+    Art
+
+    - Adult Swim: <https://www.youtube.com/adultswim1> (german version: <https://www.youtube.com/c/adultswimde>)
+    - beeple (3D Stuff): <https://www.youtube.com/c/beeple>
+    - Blocktronics (ANSi Art): <https://www.youtube.com/c/BlocktronicsOrg/>
+    - Bob Ross <https://www.youtube.com/c/BobRossIncVideos>
+    - Computerscene: <https://www.youtube.com/user/Computerscene/>
+    - Daniel Baker: <https://www.youtube.com/c/DanielBaker/>
+    - Annikras (Demoscene Videos): <https://www.youtube.com/user/Annikras>
+    - Felix Colgrave <https://www.youtube.com/c/FelixColgrave>
+    - IanHubert: <https://www.youtube.com/c/mrdodobird/>
+    - Jerobeam Fenderson: <https://www.youtube.com/c/jerobeamfenderson1>
+    - Neural Synesthesia: <https://www.youtube.com/c/NeuralSynesthesia>
+    - RetroDemoScene: <https://www.youtube.com/c/RetroDemoScene>
+    - Revision Demoparty: <https://www.youtube.com/c/RevisionDemoparty>
+    - SockPuppetParody: <https://www.youtube.com/c/SockPuppetParody>
+    - Made yew look: <https://www.youtube.com/user/MadeYewLook>
+    - DeeKayKwon: <https://www.youtube.com/c/DeeKayKwon>
+
+    Alternative Living
+
+    - 123Homefree: <https://www.youtube.com/user/123Homefree>
+    - Kirsten Dirksen: <https://www.youtube.com/user/kirstendirksen>
+
+    Lock Picking
+
+    - Bosnian Bill: <https://www.youtube.com/c/bosnianbill>
+    - Lock Picking Lawyer: <https://www.youtube.com/c/lockpickinglawyer>
+
+    Infotainment
+
+    - Economics Explained: <https://www.youtube.com/c/EconomicsExplained>
+    - Explainity: <https://www.youtube.com/c/explainity-erklaert>
+    - Crash Course: <https://www.youtube.com/c/crashcourse>
+    - Fascinating Horror: <https://www.youtube.com/c/FascinatingHorror/>
+    - DW Documentary: <https://www.youtube.com/c/DWDocumentary>
+    - GeographyNow: <https://www.youtube.com/c/GeographyNow>
+    - Geographics: <https://www.youtube.com/channel/UCHKRfxkMTqiiv4pF99qGKIw>
+    - Half as interesting: <https://www.youtube.com/c/halfasinteresting>
+    - History in 3D: <https://www.youtube.com/c/DanikLoginov>
+    - Invisible People: <https://www.youtube.com/c/InvisiblePeople>
+    - Jordan B Peterson: <https://www.youtube.com/c/JordanPetersonVideos>
+    - In a nut shell: <https://www.youtube.com/c/inanutshell>
+    - London City Girl Mag: <https://www.youtube.com/user/LondonCityGirlMag>
+    - Megaprojects: <https://www.youtube.com/channel/UC0woBco6Dgcxt0h8SwyyOmw>
+    - MrWissen2go Geschichte: <https://www.youtube.com/c/MrWissen2goGeschichte>
+    - National Geographic: <https://www.youtube.com/c/NatGeo>
+    - Nature Video: <https://www.youtube.com/user/NatureVideoChannel>
+    - OpenLearn from The Open University: <https://www.youtube.com/c/OUlearn>
+    - PBS Eons: <https://www.youtube.com/c/eons>
+    - PBS Space Time: <https://www.youtube.com/c/pbsspacetime>
+    - Plainly Difficult: <https://www.youtube.com/c/PlainlyDifficult/>
+    - Practical Engineering: <https://www.youtube.com/c/PracticalEngineeringChannel>
+    - Primitive Technology: <https://www.youtube.com/channel/UCAL3JXZSzSm8AlZyD3nQdBA>
+    - Crime Pays But Botany Doesn't (Plant Ecology & Evolution): <https://www.youtube.com/c/CrimePaysButBotanyDoesnt>
+    - STRG-F: <https://www.youtube.com/c/STRGF>
+    - TED-ed: <https://www.youtube.com/teded>
+    - The Action Lab: <https://www.youtube.com/c/TheActionLab>
+    - The Royal Institution: <https://www.youtube.com/c/TheRoyalInstitution>
+    - The school of life: <https://www.youtube.com/c/theschooloflifetv>
+    - Today I Found Out: <https://www.youtube.com/c/Todayifoundout-official>
+    - Tom Scott: <https://www.youtube.com/c/TomScottGo>
+    - Veritasium: <https://www.youtube.com/c/veritasium>
+    - Irgendwas mit ARTE und Kultur: <https://www.youtube.com/c/IrgendwasmitARTEundKultur>
+
+    Funny
+
+    - Bad Lip Reading: <https://www.youtube.com/c/BadLipReading>
+    - Browser Ballett: <https://www.youtube.com/c/BrowserBallett>
+    - College Humor: <https://www.youtube.com/c/collegehumor>
+    - Funny Or Die: <https://www.youtube.com/c/FunnyOrDie>
+    - Last Week Tonight: <https://www.youtube.com/user/LastWeekTonight>
+    - Netflix is a joke: <https://www.youtube.com/c/netflixisajoke>
+    - Der Postillon 24: <https://www.youtube.com/c/Derpostillon24>
+    - The Andrew Schulz: <https://www.youtube.com/c/TheAndrewSchulz>
+    - ZDF MAGAZIN ROYALE: <https://www.youtube.com/c/ZDFMAGAZINROYALE>
+    - Frankie Lapenna: <https://www.youtube.com/c/FrankieLapenna>
+
+    Adventurer
+
+    - AdventureBuddy (Lost Places): <https://www.youtube.com/c/AdventureBuddy>
+    - DALLMYD (Treasure Hunter): <https://www.youtube.com/c/DALLMYD/>
+    - Gangerl: <https://www.youtube.com/c/Gangerl-Clemens/>
+    - The Tim Traveller: <https://www.youtube.com/c/TheTimTraveller>
+
+## Quotes
+
+Richard Conn Henry
+
+> "The Universe is immaterial — mental and spiritual. Live, and enjoy."
+
+Dr. Seuss
+
+> "You know you're in love when you can't fall asleep because reality is finally better than your dreams."
+
+Isaac Asimov
+
+> "Happiness is doing it rotten your own way."
+
+William S. Burroughs
+
+> “Love? What is it? Most natural painkiller what there is.”
+
+Philip K. Dick
+
+> “When two people dream the same dream, it ceases to be an illusion.”
+
+Karnevalssitzung 1998
+
+> "Entweder es klappt oder es klappt zusammen"
+
+Arthur Schopenhauer
+
+> "Die wohlfeilste Art des Stolzes ist der Nationalstolz. Denn er verrät in dem Behafteten den Mangel an individuellen Eigenschaften, auf die er stolz sein könnte, indem er sonst nicht zu dem greifen würde, was er mit so vielen Millionen teilt."
+
+Friedrich Nietzsche
+
+> "Gegen die Langeweile kämpfen Götter selbst vergebens."
+
+Leo Tolstoi
+
+> "Jeder denkt daran, die Welt zu verändern, aber niemand denkt daran, sich selbst zu verändern."
+
+## Music
+
+![music](_music-taste.png)

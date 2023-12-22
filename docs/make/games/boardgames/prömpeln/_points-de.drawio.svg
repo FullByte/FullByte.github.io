@@ -1,0 +1,114 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="411px" height="231px" viewBox="-0.5 -0.5 411 231" content="&lt;mxfile&gt;&lt;diagram id=&quot;aJoeFYA948PCYQVppqV-&quot; name=&quot;Page-1&quot;&gt;7VhRb9owEP41SN0DkeNAoI/ASvuwSpV42ONkEiexcOLMMQX663eObUgKLVSDTuogEra/O+d8993ZSTrBJF/fS1JmjyKmvINRvO4E3zsY+wEeQKORjUHCPjZAKllslXbAjL1QCyKLLllMq5aiEoIrVrbBSBQFjVQLI1KKVVstEbxttSQp3QNmEeH76E8Wq8ygQ+eWxh8oSzNn2Q9vjSQnTtl6UmUkFqsGFNx1gokUQplevp5QroPn4mLmTd+QbhcmaaFOmmDX8Uz40jpnF6Y2zlsplkVM9QTUCcarjCk6K0mkpSvgF7BM5RxGPnQJZ2kBfU4TWMA4EYWa2Vvp2c9UKgaBHFk1JfT8hHE+EVzI2mCQ9PVlZzdw8wO8UlIsaEMS1j+Q7PtvQ6IN03UDsvG4pyKnSm5AxUpvbUg2jjw7Xu2Y7jksa7CMAwsSm13p9tY7AqBjOTjMR3CcDkiZUndZXmfpNqQ/yJzyJ1ExxYQO7VwoJXJQ4FowJtEirZl0YYtpQpZcvUkKqUpTOwlba/bHtcGRQ5FDoJ8pBTNG2ks89fHAQ3BBNoyGCCHtMllQaFKSQ9Xi6VwQGbtBKTu4PwG/++MwLykvAPtVSkHrAfbKIj0Prz7CLWK3fDWI9ZHv3eJ9bn10Bm57V25b3Abn4zZAr4oWfzK3/Su3LW57l+P2YN0e2pCBWC8c/D234QFuw5qAOXRS3QHr6GlZLBR1Ih0uJ92qy+NIVZKilTfh76V+GBhHhn4gC8l0Tm7AJKwcvWq84eBbfTekz85uQnLGN2bWL6PSJWXJabfaVIrmBhpzViweSTSrsSlMNPgD5c9UZ5gZjiQj3HQrUlTdikqWNIxV9XOaNuVjb1iujWi+TeBu24Ub3O+buzU7ZvXOaRedJ9mBVDOJBnqcUYAxKliU6ZYsE68ReBNDF9dPf5o5Q85jFGz3qne2tGHooeGFdrTB8az3XdZfk/7UpH/TBeR/KPNzpv9jKvU6OIkyqgM4o0zvQKgAAJploWr4fyiPQ6fCJctjeLw88PVQOGN9oN6HCqSKslow6qXa3svK0yDUB2d1bXy5mug1Hm/fOzKGl6uJ2+M1EVxr4l88KJ10XIj51zwtDlTGwdPigpWBr6+HrddD/5yfdU559Q/O9uoPw93n2VrW+Mgd3P0B&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="0" width="410" height="230" fill="#f5f5f5" stroke="#666666" pointer-events="all"/>
+        <image x="11.5" y="119.5" width="101.92" height="100" xlink:href="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjEwcHgiIHZlcnNpb249IjEuMSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PHBhdGggZD0ibSAwIDAgTCAxMCAxMCBMIDAgMTAgTCAxMCAwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PC9zdmc+" preserveAspectRatio="none"/>
+        <image x="209.5" y="9.5" width="101.92" height="100" xlink:href="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjEwcHgiIHZlcnNpb249IjEuMSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PHBhdGggZD0ibSAwIDAgTCAxMCAxMCBMIDAgMTAgTCAxMCAwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PC9zdmc+" preserveAspectRatio="none"/>
+        <image x="209.5" y="119.5" width="110" height="100.67" xlink:href="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjEwcHgiIHZlcnNpb249IjEuMSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PHBhdGggZD0ibSAwIDAgTCAxMCAxMCBMIDAgMTAgTCAxMCAwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PC9zdmc+" preserveAspectRatio="none"/>
+        <rect x="113.92" y="10" width="86.08" height="100" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 84px; height: 1px; padding-top: 17px; margin-left: 116px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <b>
+                                    0 Punkte
+                                </b>
+                                <br/>
+                                <br/>
+                                <span style="color: rgba(0, 0, 0, 0.87); font-family: _, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; font-size: 12.8px; background-color: rgb(255, 255, 255);">
+                                    Prömpel liegt nicht auf.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="116" y="29" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
+                    0 Punkte...
+                </text>
+            </switch>
+        </g>
+        <rect x="113.92" y="120" width="86.08" height="100" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 84px; height: 1px; padding-top: 127px; margin-left: 116px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <b>
+                                    1 Punkt
+                                </b>
+                                <br/>
+                                <br/>
+                                <span style="color: rgba(0, 0, 0, 0.87); font-family: _, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; font-size: 12.8px; background-color: rgba(0, 0, 0, 0.01);">
+                                    Prömpel liegt mit der flachen Seite nach unten auf.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="116" y="139" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
+                    1 Punkt...
+                </text>
+            </switch>
+        </g>
+        <rect x="311.92" y="10" width="88.08" height="100" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 86px; height: 1px; padding-top: 17px; margin-left: 314px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <b>
+                                    2 Punkte
+                                </b>
+                                <br/>
+                                <br/>
+                                <span style="color: rgba(0, 0, 0, 0.87); font-family: _, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; font-size: 12.8px; background-color: rgba(0, 0, 0, 0.004);">
+                                    Prömpel liegt schräg bzw. seitlich auf.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="314" y="29" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
+                    2 Punkte...
+                </text>
+            </switch>
+        </g>
+        <rect x="311.92" y="120" width="88.08" height="100" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 86px; height: 1px; padding-top: 127px; margin-left: 314px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <b>
+                                    3 Punkte
+                                </b>
+                                <br/>
+                                <br/>
+                                <span style="color: rgba(0, 0, 0, 0.87); font-family: _, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; font-size: 12.8px; background-color: rgb(255, 255, 255);">
+                                    Prömpel liegt mit der flachen Seite nach oben auf.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="314" y="139" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
+                    3 Punkte...
+                </text>
+            </switch>
+        </g>
+        <image x="9.5" y="9.5" width="103.92" height="100" xlink:href="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjEwcHgiIHZlcnNpb249IjEuMSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PHBhdGggZD0ibSAwIDAgTCAxMCAxMCBMIDAgMTAgTCAxMCAwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PC9zdmc+" preserveAspectRatio="none"/>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>

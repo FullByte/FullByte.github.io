@@ -1,0 +1,64 @@
+site_name: "0xfab1"
+site_url: https://0xfab1.net
+repo_url: https://github.com/FullByte/FullByte.github.io
+site_description: >-
+  This is the personal website of 0xfab1. It mainly contains blog entries on IT tech stuff, games, making things and art.
+site_author: "0xfab1"
+
+theme:
+  name: material
+  custom_dir: overrides
+  static_templates:
+    - 404.html
+  language: en
+  palette:
+    - scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+  highlightjs: true
+  favicon: assets/images/0xfab1.png
+  logo: assets/images/0xfab1.png
+  font: false
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - header.autohide
+    - announce.dismiss
+
+plugins:
+  - search
+  - minify:
+      minify_html: true
+      minify_js: true
+      htmlmin_opts:
+          remove_comments: true
+
+extra:
+  generator: false
+
+markdown_extensions:
+  - attr_list
+  - footnotes
+  - pymdownx.inlinehilite
+  - pymdownx.highlight
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - pymdownx.tilde
+  - pymdownx.caret
+  - pymdownx.arithmatex
+  - pymdownx.details
+  - pymdownx.tasklist:
+      custom_checkbox: true
+      clickable_checkbox: true
