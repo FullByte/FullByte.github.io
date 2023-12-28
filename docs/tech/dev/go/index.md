@@ -1,4 +1,6 @@
-# Dependencies
+# Go
+
+## Dependencies
 
 If there is no go.mod file create one:
 
@@ -6,13 +8,13 @@ If there is no go.mod file create one:
 go mod init project
 ```
 
-now run the following command to install all dependancies
+now run the following command to install all dependencies
 
 ``` go
 go mod tidy
 ```
 
-The programm should now run:
+The program should now run:
 
 ``` go
 go run main.go
