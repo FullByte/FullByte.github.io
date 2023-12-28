@@ -138,3 +138,20 @@ SELECT HOST_NAME() -- GET Local System Name
 SELECT GETUTCDATE() -- GET Local Time (UTC - Zone)
 SELECT SUSER_NAME() -- GET SuperUser Name of DB
 ```
+
+## UPSERT
+
+UPSERT is an operation that inserts new records into the database and updates existing ones. This operation is particularly useful for maintaining data integrity and ensuring efficient data manipulation.
+
+- Check for Existence: The operation first checks if a record with a specified key (usually a primary key or a unique key) already exists in the table.
+- Update or Insert:
+  - If the record exists: The operation updates the existing record. Typically, this involves modifying one or more fields with new values.
+  - If the record does not exist: The operation inserts a new record into the table with the given values.
+
+The specific behavior and implementation of an UPSERT operation can vary between different SQL database systems, but the core concept remains the same. Here are some databases and when they introduced UPSERT, if at all:
+
+- PostgreSQL: Uses the ON CONFLICT clause as part of an INSERT statement. The UPSERT functionality was introduced in PostgreSQL 9.5, which was released in January 2016. It uses the ON CONFLICT clause.
+- MySQL: Offers the INSERT ON DUPLICATE KEY UPDATE statement. MySQL has had a form of UPSERT since version 4.1 through the INSERT ON DUPLICATE KEY UPDATE syntax.
+- SQLite: SQLite supports UPSERT as of version 3.24.0, released in June 2018.
+- SQL Server: Microsoft SQL Server doesn't have a specific UPSERT command but uses the MERGE statement to achieve similar functionality. The MERGE statement was introduced in SQL Server 2008.
+- Oracle: Oracle Database uses the MERGE statement, like SQL Server, to perform UPSERT operations.
