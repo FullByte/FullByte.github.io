@@ -22,6 +22,7 @@
 - System resource monitor: <https://github.com/aristocratos/btop>
 - Kanban boards: [kanban.bash](https://github.com/coderofsalvation/kanban.bash), [taskell](https://github.com/smallhadroncollider/taskell)
 - JSON Tools: [jless](https://github.com/PaulJuliusMartinez/jless), [ijq](https://sr.ht/~gpanders/ijq), [fx](https://github.com/antonmedv/fx)
+- SQL IDE for the terminal: <https://github.com/tconbeer/harlequin>
 
 ## Network
 
