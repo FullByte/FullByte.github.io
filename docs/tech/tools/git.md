@@ -107,7 +107,7 @@ In any other cloned repositories, to do a "forceful" pull:
 
 ``` sh
 git fetch --all
-git reset --hard origin/master
+git reset --hard origin/main
 ```
 
 ## Rename master to main

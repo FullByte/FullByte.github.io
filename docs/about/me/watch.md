@@ -14,7 +14,6 @@
     - Inception
     - Interstellar
     - John Wick 1-3
-    - John Wick 1+2+3
     - Mad Max: Fury Road
     - Matrix 1-3
     - Million Dollar Baby
@@ -24,6 +23,9 @@
     - The Expendables 1+3
     - The Zero Theorem
     - Turbo Kid
+    - Mission: Impossible - Dead Reckoning Teil Eins
+    - Plane
+    - Bullet Train
 
 === "Cinematic"
 
@@ -36,6 +38,7 @@
     - Sin City
     - Valhalla Rising
     - Mandy
+    - Lola rennt
 
 === "Animated"
 
@@ -47,9 +50,9 @@
     - Totoro
     - Up
     - Werner - gekotzt wird später
-    - Winnie the Pooh
+    - Deep Sea
 
-=== "Interesting Story"
+=== "Good Story"
 
     - 12 Monkeys
     - 28 Days Later
@@ -76,13 +79,16 @@
     - I Origins
     - Inglorious Basterds
     - Into the Wild
+    - Jackie Brown
     - Kiss Kiss Bang Bang
     - Life of Pi
     - Man on the moon
     - Moon
+    - Mullholland Drive
     - Naked Lunch
     - Natural Born Killers
     - Nightcrawler
+    - Old Henry
     - Oldboy
     - Pan's Labyrinth
     - Pi
@@ -90,6 +96,7 @@
     - Pulp Fiction
     - Rampage (2009)
     - Run Lola Run
+    - Sie Leben
     - Southland Tales
     - Super - shut up crime
     - Swiss Army Man
@@ -100,8 +107,9 @@
     - Trainspotting
     - Whiplash
 
-=== "Comedy"
+=== "Entertaining"
 
+    - A million ways to die in the west
     - Anchorman
     - Bad Santa
     - Black Dynamite
@@ -110,6 +118,7 @@
     - Dead Snow 2: Red vs Dead
     - Death Race 2050
     - Demoliution Man
+    - Die City Cobra
     - Dodgeball - Voll auf die Nüsse
     - Drive Angry
     - Ey Mann - wo is mein Auto
@@ -123,12 +132,14 @@
     - New Kids Turbo
     - Piranha 2 3D
     - Planet Terror
+    - Psych goreman
     - Rubber
     - Sausage Party
     - Sharknado 3
     - The Ballad of Buster Scruggs
     - Turbo Kid
     - Vacation Friends
+    - X
     - Zoolander
 
 === "Romantic"

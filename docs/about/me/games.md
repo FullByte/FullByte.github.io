@@ -21,7 +21,7 @@ A list of games I have, like and played.
 A list of playstation games I own:
 
 | Game                               | Local Players | Comment |
-| ---------------------------------- | ------------- | ------- |
+|------------------------------------|---------------|---------|
 | ABZU                               | 1             |         |
 | Brawlhalla                         | 4             |         |
 | Crash Bandicoot 4: It's About Time |               |         |
@@ -65,14 +65,15 @@ A list of playstation games I own:
 A list of my nintendo switch games:
 
 | Game                                             | Local Player | Comment         |
-| ------------------------------------------------ | ------------ | --------------- |
+|--------------------------------------------------|--------------|-----------------|
 | 10 Second Run RETURNS                            | 4            | zocki?          |
 | 20XX                                             | 2            |                 |
-| 9 Monkeys of Shaolin                             | 2            |        |
+| 9 Monkeys of Shaolin                             | 2            |                 |
 | Akuto: Showdown                                  | 4            |                 |
 | Almost There: The Platformer                     | 1            |                 |
 | Alteric                                          | 1            |                 |
 | Ape Out                                          | 1            |                 |
+| Assault Android Cactus+                          | 4            |                 |
 | Astro Bears                                      | 4            | 10 Fight Game   |
 | Axiom Verge                                      | 1            |                 |
 | Bad North                                        | 1            |                 |
@@ -86,6 +87,7 @@ A list of my nintendo switch games:
 | Boomerang Fu                                     | 4            |                 |
 | Brick Breaker                                    | 4            | zocki?          |
 | Broforce                                         | 4            | best alone      |
+| BurgerTime Party!                                | 4            |                 |
 | CARRION                                          | 1            |                 |
 | Caveblazers                                      | 2            |                 |
 | Celeste                                          | 1            |                 |
@@ -104,22 +106,26 @@ A list of my nintendo switch games:
 | Diablo III: Eternal Collection                   | 4            | coop            |
 | Ding Dong XL                                     | 1            |                 |
 | Disc Room                                        | 1            |                 |
+| Disney Illusion Island                           | 4            |                 |
 | DOOM 64                                          | 1            |                 |
 | Double Kick Heroes                               | 1            |                 |
 | Down to Hell                                     | 1            |                 |
 | Dream Alone                                      | 1            |                 |
 | Duke Nukem 3D                                    | 1            |                 |
+| Edna & Harvey: Harveys neue Augen                |              |                 |
 | Electronic Super Joy                             | 1            |                 |
 | Enter Digiton                                    | 1            |                 |
 | Enter the Gungeon                                | 2            |                 |
 | Exception                                        | 1            |                 |
 | Exit the Gungeon                                 | 1            |                 |
+| Fall Guys                                        | 1            |                 |
 | FAST RMX                                         | 4            | 10 Fight Game   |
 | Fe                                               | 1            |                 |
-| Feudal Alloy                                     | 1            |             |
+| Feudal Alloy                                     | 1            |                 |
 | Flat Heroes                                      | 4            | 10 Fight Game   |
 | FLATLAND Vol. 2                                  | 1            |                 |
 | Freedom Finger                                   | 1            |                 |
+| Gang Beasts                                      |              |                 |
 | Giana Sisters: Twisted Dreams                    | 1            |                 |
 | Golf Peaks                                       | 1            |                 |
 | GoNNER                                           | 1            |                 |
@@ -131,7 +137,9 @@ A list of my nintendo switch games:
 | Gunman Clive HD Collection                       | 1            |                 |
 | Heave Ho                                         | 4            | coop            |
 | Hive Jump                                        | 4            | coop            |
+| Hole io                                          | 4            |                 |
 | Hollow Knight                                    | 1            |                 |
+| Horizon Chase Turbo - Summer Vibes               | 4            |                 |
 | Huntdown                                         | 2            |                 |
 | Hyper Light Drifter – Special Edition            | 2            |                 |
 | HyperBrawl Tournament                            | 4            |                 |
@@ -145,16 +153,19 @@ A list of my nintendo switch games:
 | Katana ZERO                                      | 1            |                 |
 | Killer Queen Black                               | 4            |                 |
 | Kirby Star Allies                                | 4            | coop            |
+| Leisure Suit Larry - Wet Dreams Saga             | 1            |                 |
 | Lichtspeer: Double Speer Edition                 | 2            |                 |
 | Light Fall                                       | 1            |                 |
 | LIMBO                                            | 1            |                 |
 | Little Nightmares                                | 1            |                 |
 | Little Racer                                     | 4            | zocki?          |
+| Lost in Play                                     | 1            |                 |
 | LOVE                                             | 1            |                 |
 | Lovers in a Dangerous Spacetime                  | 4            | coop            |
 | LUMINES REMASTERED                               | 2            |                 |
 | Mario + Rabbids Kingdom Battle                   | 2            |                 |
 | Mario Kart 8 Deluxe                              | 4            | 10 Fight Game   |
+| Mario Party Superstars                           | 4            |                 |
 | Mark of the Ninja: Remastered                    | 1            |                 |
 | Max: The Curse of Brotherhood                    | 1            |                 |
 | Mechstermination Force                           | 2            | Epic Bossfights |
@@ -170,6 +181,7 @@ A list of my nintendo switch games:
 | Never Give Up                                    | 1            |                 |
 | New Super Mario Bros. U Deluxe                   | 4            | coop            |
 | Nidhogg 2                                        | 2            |                 |
+| Nintendo Switch Sports                           |              |                 |
 | Not Not - A Brain Buster                         | 2            |                 |
 | Oddworld: New 'n' Tasty                          | 1            |                 |
 | Odium to the Core                                | 1            |                 |
@@ -186,6 +198,7 @@ A list of my nintendo switch games:
 | Pikuniku                                         | 1            |                 |
 | Pinball FX3                                      | 1            |                 |
 | Pinkman+                                         | 1            |                 |
+| Pixel Cup Soccer                                 | 4            |                 |
 | Pixel Gladiator                                  | 1            |                 |
 | Puyo Puyo Tetris                                 | 4            | 10 Fight Game   |
 | Q-YO Blaster                                     | 2            |                 |
@@ -195,9 +208,11 @@ A list of my nintendo switch games:
 | RAYMAN LEGENDS                                   | 4            | zocki?          |
 | Robonauts                                        | 2            | coop            |
 | Roof Rage                                        | 4            | 10 Fight Game   |
+| Rubber Bandits                                   | 4            |                 |
 | RunGunJumpGun                                    | 1            |                 |
 | Runner3                                          | 1            |                 |
-| Sayonara Wild Hearts                             | 1            |             |
+| Samba de Amigo: Party Central                    | 2            |                 |
+| Sayonara Wild Hearts                             | 1            |                 |
 | ScourgeBringer                                   | 1            |                 |
 | Semblance                                        | 1            |                 |
 | Shovel Knight Showdown                           | 4            |                 |
@@ -207,6 +222,8 @@ A list of my nintendo switch games:
 | Skul: The Hero Slayer                            | 1            |                 |
 | Slain: Back From Hell                            | 1            |                 |
 | Slay the Spire                                   | 1            |                 |
+| Snipperclips                                     | 4            |                 |
+| SOL CRESTA                                       |              |                 |
 | Space Pioneer                                    | 4            | coop            |
 | SpeedRunners                                     | 4            | 10 Fight Game   |
 | Spinch                                           | 1            |                 |
@@ -221,6 +238,7 @@ A list of my nintendo switch games:
 | Super Blood Hockey                               | 4            | 2 Teams         |
 | Super Bomberman R                                | 4            |                 |
 | Super Mario 3D World + Bowser's Fury             | 4            |                 |
+| Super Mario Bros. Wonder                         | 4            |                 |
 | Super Mario Maker 2                              | 4            |                 |
 | Super Mario Odyssey                              | 2            |                 |
 | Super Mario Party                                | 4            |                 |
@@ -251,6 +269,8 @@ A list of my nintendo switch games:
 | Trine 2: Complete Story                          | 3            | coop            |
 | Trine 3: Artifacts of Power                      | 3            | coop            |
 | Trine 4: The Nightmare Prince                    | 4            | coop            |
+| Trombone Champ                                   |              |                 |
+| Ultra Space Battle Brawl                         | 4            |                 |
 | Unit 4                                           | 4            | coop            |
 | Unravel Two                                      | 2            | coop            |
 | Unruly Heroes                                    | 4            |                 |
@@ -259,6 +279,7 @@ A list of my nintendo switch games:
 | Urban Trial Playground                           | 2            |                 |
 | Valfaris                                         | 1            |                 |
 | Völgarr the Viking                               | 1            |                 |
+| Voodoo Detective                                 |              |                 |
 | VVVVVV                                           | 1            |                 |
 | Wand Wars                                        | 4            |                 |
 | Warp Shift                                       | 1            |                 |
@@ -268,6 +289,7 @@ A list of my nintendo switch games:
 | X-Morph: Defense                                 | 1            |                 |
 | Xeodrifter                                       | 1            |                 |
 | Yoku's Island Express                            | 1            |                 |
+| Yoshi's Crafted World                            | 2            |                 |
 | Zen Pinball                                      | 1            |                 |
 
 ## Game Sessions
@@ -399,7 +421,7 @@ The **Zocki-Ten-Fight** is an epic battle over 10 games in local mulitplayer mod
 To determin the winner we use the following scoring per game:
 
 | Place | Score |
-| ----- | ----- |
+|-------|-------|
 | 1     | 4     |
 | 2     | 2     |
 | 3     | 1     |
@@ -416,7 +438,7 @@ Should there be a tie for first place between:
 This is the currently offical 10 fight game list and settings/modes:
 
 | Game             | Settings                                                                                                                                             |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Akuto Showdown   | Multiplayer → Survival, 3 Rounds, 5 Lives, Start Weapon = Staff, No Ranged Weapon → no bots → All Random Maps                                        |
 | Boomerang fu     | Free for all → Modifiers: Match length=standard, victory=kills, auto balance=off, powerups=no bombs, fire, multi boomerang, telekinese and bamboozle |
 | Flat Heros       | Versus → 2x3 games: zones, battle, runner                                                                                                            |
@@ -433,7 +455,7 @@ This is the currently offical 10 fight game list and settings/modes:
 This is the currently offical 5 fight game list and settings/modes:
 
 | Game             | Settings                                                                                                                                             |
-| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+|------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Boomerang fu     | Free for all → Modifiers: Match length=standard, victory=kills, auto balance=off, powerups=no bombs, fire, multi boomerang, telekinese and bamboozle |
 | SpeedRunners     | Versus → Offline → Create Game → normal random Map (3 games, count wins)                                                                             |
 | Roof Rage        | Local Rooftops → Stock Match → Stock: 5 → HP: 200                                                                                                    |
@@ -445,7 +467,7 @@ This is the currently offical 5 fight game list and settings/modes:
 These are the games currently not in the Ten-Fight-Table but are generally suitable:
 
 | Game                           | Settings                                                                                                               | Reason why not in Top 10                                   |
-| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------- |
+|--------------------------------|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
 | Mario Party                    | 4 Player → Minigames → Square Off                                                                                      | Replaced in favor of Tricky Towers                         |
 | Bomberman                      | Standard → Battle → Local Battle → Create Room → Battle Royal (4P, 3 Sets, 3min, Fixed Start, everything else on)      | Disliked by Team                                           |
 | Worms Armageddon               | Multiplayer → local → Full Wormage Scheme                                                                              | Slow Pace                                                  |
@@ -673,8 +695,8 @@ Watch:
 
 ##### Bloodpack example
 
-| Before                                          | After                                          |
-|-------------------------------------------------|------------------------------------------------|
+| Before                                                | After                                                |
+|-------------------------------------------------------|------------------------------------------------------|
 | ![AOE2DEBeforeBlood](_games-aoe2de_bloodexample1.jpg) | ![AOE2DEafterblood](_games-aoe2de_bloodexample2.jpg) |
 
 ### Call of Duty
