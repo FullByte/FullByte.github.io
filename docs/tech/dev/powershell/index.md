@@ -67,6 +67,12 @@ Last Installation Date
 Write-Output "System install:" (Get-CimInstance -Class Win32_OperatingSystem).InstallDate
 ```
 
+Installed OCR Packages
+
+``` ps1
+Get-WindowsCapability -Online | Where-Object { $_.Name -Like 'Language.OCR*' } | Sort-Object -Property State -Descending | Format-Table -AutoSize
+```
+
 Get WiFi Passwords (add more cultures if needed):
 
 ``` ps1
