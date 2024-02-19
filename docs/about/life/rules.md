@@ -6,6 +6,12 @@
 
 If friends alter their plans or back out at the last moment, don't be deterred. Continue with your plans, and you might encounter new faces along the journey. Reconnect with the initial reason you wanted to participate and go for it. If socializing was the primary goal, communicate your feelings to those who cancelled. It's smart to plan events that aren't overly dependent on others, guaranteeing you can see them through. This strategy not only simplifies the planning process but also reduces the risk of letdowns. Additionally, embarking on a journey alone or with a different group frequently leads to unexpected experiences and the formation of new friendships.
 
+## Do nothing
+
+Be able to do nothing. Allow yourself to unwind, releasing both the tension and the need for your actions to serve a specific purpose, even momentarily. Ultimately, action is inevitable, even if it manifests as mere stillness. The key to "Niksen", the dutch verb meaning "doing nothing", is to do nothing, without a purpose. As Olga Mecking puts it: "We always have in mind some kind of outcome. When we prepare meals, we think, ‘This meal will help me lose weight or will make me healthier.’ If we go for a walk, it has to be part of our 10,000 steps. So we lose that fun of just eating or just walking. So it’s about letting go of the outcome."
+
+Consider this a mental exercise, akin to the mental equivalent of progressive muscle relaxation. While planning to engage in Niksen might seem contradictory, it's a valid approach. The more one practices Niksen, the more natural and spontaneous it becomes, transcending the need for deliberate planning.
+
 ## Mute stuff
 
 Don't limit yourself in undesired ways but rather optimize how to consume information.

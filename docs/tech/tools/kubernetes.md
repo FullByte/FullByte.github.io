@@ -45,6 +45,37 @@ Simple example:
 kubectl port-forward mycontainer 8080:3000
 ```
 
+Retrieve information about resources in the cluster
+
+- List all pods: ```kubectl get pods```
+- ist all deployments ```kubectl get deployments```
+- List all services ```kubectl get services```
+- List all nodes in the cluster ```kubectl get nodes```
+
+Provide detailed information about a specific resource
+
+- Get pod details ```kubectl describe pod <pod-name>```
+- Get deployment details ```kubectl describe deployment <deployment-name>```
+- Get service details ```kubectl describe service <service-name>```
+
+Create a resource from a YAML or JSON file
+
+- Create a resource from a YAML file ```kubectl create -f <filename.yaml>```
+- Create a deployment using a specified image ```kubectl create deployment <deployment-name> --image=<image-name>```
+
+Delete a resource
+
+- Delete a pod ```kubectl delete pod <pod-name>```
+- Delete a deployment ```kubectl delete deployment <deployment-name>```
+- Delete a service ```kubectl delete service <service-name>```
+
+Other
+
+- Scale deployment replicas ```kubectl scale deployment <deployment-name> --replicas=<number>```
+- Print pod logs ```kubectl logs <pod-name>```
+- Execute a command on a pod ```kubectl exec -it <pod-name> -- <command>```
+- Apply changes to a resource using a YAML file ```kubectl apply -f <filename.yaml>```
+
 ## Kubernetes Dashboard
 
 Running Docker for Windows with enabled Kubernetes Cluster

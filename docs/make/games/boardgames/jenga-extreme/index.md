@@ -45,3 +45,11 @@ Each block has one of the following rules engraved:
 - 3 farben nehmen (schwarz rot gold), am rand bemalen. oben müssen immer alle drei farben pro reihe sein
 - Zeitlimit: Jeder Spieler hat ein bestimmtes Zeitlimit (z.B. 10 Sekunden), um einen Block zu ziehen. Wenn er es nicht schafft, verliert er das Spiel oder muss eine Strafe erfüllen.
 - One Hand Rule: In der klassischen Version von Jenga ist es erlaubt, beide Hände zu benutzen. Um das Spiel schwieriger zu machen, könntest du eine Regel einführen, dass nur eine Hand benutzt werden darf.
+
+more:
+
+t-rex, andere hand, zwingend mitte, zwingend rand, augen zu oben drauf, nur daumen und kleiner finger, nur ungerade oder gerade reihe, einmal ausetzten, zweiten stein ziehen, von oben nehmen und wieder unten reinstecken, richtungswechsel, den nächsten wählen der dran ist,
+
+würfel diesen stein und ziehe soviele steine in der nächsten runde 0-2, würfel den stein und setzte so oft aus, veto recht bei einem spieler der einen stein, blind oben drauf legen, im stehen, im sitzen, auf einem bein
+
+3 farben nehmen, am rand bemalen. oben müssen immer alle drei farben pro reihe sein
