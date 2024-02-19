@@ -29,53 +29,6 @@ Download with details:
 yt-dlp.exe -f best --write-description --write-info-json --write-annotations --write-sub --write-thumbnail 'link'
 ```
 
-## Audio only
-
-``` sh
-yt-dlp.exe -i --extract-audio --audio-format mp3 --audio-quality 0 'link'
-```
-
-## YouTube Playlists
-
-Download a playlist:
-
-``` sh
-yt-dlp.exe -best 22 --yes-playlist 'link'
-```
-
-Download a playlist with audio only:
-
-``` sh
-yt-dlp.exe -f 22 --yes-playlist 'link'
-```
-
-## Get Video Source Information
-
-Get Source formats available:
-
-``` sh
-yt-dlp.exe --list-formats 'link'
-```
-
-## Download audio of a playlist
-
-This script will download the latest yt-dlp.exe version for windows to the current folder if not available.
-
-``` ps1
-Function ytdlpl
-{
-    Param ($playlist)
-    # Download and rename playlist
-    yt-dlp.exe -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' -i --extract-audio --audio-format mp3 --audio-quality 2 --yes-playlist "$playlist"
-    Set-Location -Path ((Get-Location).Path + "\" + (Get-ChildItem | Sort-Object LastWriteTime | Select-Object -last 1).Name)
-    Get-ChildItem | Rename-Item -NewName { ($_.BaseName -replace '[^a-zA-Z]', ' ') + '.mp3' }
-    Get-ChildItem | Rename-Item -NewName { ($_.BaseName -replace '\s+', ' ') + '.mp3' }
-    Get-ChildItem | Rename-Item -NewName { ($_.Name -replace ' .mp3', '.mp3')}
-}
-```
-
-## Download all videos of a list
-
 To download all videos mentioned on a given website use the following regex to find youtube links:
 
 Regex for videos: `youtube\.com\/watch\?v=[A-Za-z0-9-_]{11}`
@@ -92,4 +45,53 @@ To download all videos and playlists listed in `download.txt` we can now run the
 
 ``` sh
 yt-dlp.exe --batch-file download.txt -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' "${line}"
+```
+
+## Audio only
+
+``` sh
+yt-dlp.exe -i --extract-audio --audio-format mp3 --audio-quality 0 'link'
+```
+
+This script will download the latest yt-dlp.exe version for windows to the current folder if not available.
+
+``` ps1
+Function ytdlpl
+{
+    Param ($playlist)
+    # Download and rename playlist
+    yt-dlp.exe -o '%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' -i --extract-audio --audio-format mp3 --audio-quality 2 --yes-playlist "$playlist"
+    Set-Location -Path ((Get-Location).Path + "\" + (Get-ChildItem | Sort-Object LastWriteTime | Select-Object -last 1).Name)
+    Get-ChildItem | Rename-Item -NewName { ($_.BaseName -replace '[^a-zA-Z]', ' ') + '.mp3' }
+    Get-ChildItem | Rename-Item -NewName { ($_.BaseName -replace '\s+', ' ') + '.mp3' }
+    Get-ChildItem | Rename-Item -NewName { ($_.Name -replace ' .mp3', '.mp3')}
+}
+```
+
+## YouTube Playlists
+
+Download a playlist:
+
+``` sh
+yt-dlp.exe -best 22 --yes-playlist 'link'
+```
+
+Download a playlist with audio only:
+
+``` sh
+yt-dlp.exe -f 22 --yes-playlist 'link'
+```
+
+## Get additional Video Information
+
+Get Source formats available:
+
+``` sh
+yt-dlp.exe --list-formats 'link'
+```
+
+Download subtitles:
+
+``` sh
+yt-dlp --write-sub --sub-lang "en.*" --write-auto-sub --skip-download "link"
 ```
