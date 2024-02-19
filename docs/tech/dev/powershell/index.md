@@ -74,6 +74,24 @@ $keyword = @{"de-DE" = 'Schlüsselinhalt'; "en-US" = 'Key Content'}
 Invoke-Expression -Command '(netsh wlan show profiles) | Select-String "\:(.+)$" | %{$name=$_.Matches.Groups[1].Value.Trim(); $_} | %{(netsh wlan show profile name="$name" key=clear)} | Select-String ($keyword[(get-culture).Name]+"\W+\:(.+)$") | %{$pass=$_.Matches.Groups[1].Value.Trim(); $_} | %{[PSCustomObject]@{ WiFi=$name;PASSWORD=$pass }} | Format-Table -AutoSize'
 ```
 
+CPU Temperature
+
+``` ps1
+Get-WmiObject -Query "SELECT * FROM Win32_PerfFormattedData_Counters_ThermalZoneInformation" | Select-Object Name, @{Name='TemperatureInCelsius';Expression={$_.Temperature / 10}}
+```
+
+Run this to log the CPU Temp over time:
+
+``` ps1
+while ($true) {
+    $date = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $tempInfo = Get-WmiObject -Query "SELECT * FROM Win32_PerfFormattedData_Counters_ThermalZoneInformation" | 
+    Select-Object @{Name='Timestamp';Expression={$date}}, Name, @{Name='TemperatureInCelsius';Expression={"{0:N2}" -f ($_.Temperature / 10)}}
+    $tempInfo | Out-String | Out-File -FilePath "TemperatureLog.txt" -Append
+    Start-Sleep -Seconds 5
+}
+```
+
 WinSAT information
 
 ``` ps1
