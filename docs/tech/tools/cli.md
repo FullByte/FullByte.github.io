@@ -92,7 +92,11 @@
 
 ## Pictures
 
-- Catimg: <https://github.com/posva/catimg>
+- [Catimg](https://github.com/posva/catimg)
+
+## 3D
+
+- [Consol3](https://github.com/Victormeriqui/Consol3)  is a software renderer that executes entirely on the CPU and uses the console as the display for output.
 
 ## Video
 
