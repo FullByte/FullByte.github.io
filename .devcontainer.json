@@ -1,0 +1,20 @@
+{
+    "name": "0xfab1.netr",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.8",
+    "extensions": [
+        "davidanson.vscode-markdownlint",
+        "esbenp.prettier-vscode",
+        "github.codespaces",
+        "github.github-vscode-theme",
+        "github.vscode-pull-request-github",
+        "ms-python.debugpy",
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "yzhang.markdown-all-in-one"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "forwardPorts": [5000],
+    "settings": {
+      "terminal.integrated.shell.linux": "/bin/bash"
+    }
+}
