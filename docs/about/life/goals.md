@@ -27,6 +27,19 @@ Follow this to get stuff done:
 - Choose a solution to implement
 - Implement the solution
 
+## The power necessary to live happily (Ikigai)
+
+The concept of Ikigai suggests living a life focused on personal satisfaction and societal contribution without a direct focus on financial gain or professional achievement.
+
+Trust that success will be a byproduct of the meaning you find in daily experiences.
+
+Follow these principles:
+
+- Derive meaning from daily experiences and interactions, and remain curious about the world and oneself. (Pursuing a singular passion will not bring purpose to life)
+- Embrace the journey of lifelong learning, appreciating the process of starting anew, making mistakes, and growing beyond comfort zones without the pressure of being an expert.
+- Financial goals should not overshadow the pursuit of a meaningful life, advocating for financial comfort but recognizing wealth as a secondary outcome of living purposefully.
+- Make a positive impact within your immediate circle and community, fostering meaningful connections and personal contributions to effect change.
+
 ### Give 100%
 
 Never give 110%, that's just selling out... just divide your 100% in:
