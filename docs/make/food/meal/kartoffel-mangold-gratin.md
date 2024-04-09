@@ -30,4 +30,3 @@
     - [ ] In eine Auflaufform ganz unten die Kartoffeln legen, darauf die Hälfte vom Schafkäse geben und darauf den Mangold schichten.
     - [ ] Auf den Mangold den restlichen Schafskäse geben und alles mit der Eier-Joghurt-Milch übergießen.
     - [ ] Bei 225°C 20 Minuten im Ofen backen.
-

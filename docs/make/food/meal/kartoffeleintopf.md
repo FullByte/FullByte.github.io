@@ -4,10 +4,10 @@
 
 | Was   | Wert        |
 |-------|-------------|
-| Zeit  | xx Min      |
-| Menge | x Personen |
+| Zeit  | 40 Min      |
+| Menge | 8 Personen |
 
-## Rezept
+## Standard
 
 === "Zutaten"
 
@@ -51,3 +51,41 @@
     - [ ] Dann gehackte Petersilie und Schnittlauch hinzugeben und unterrühren.
     - [ ] Restliche Zutaten hinzugeben und umrühren.
     - [ ] Insgesamt sollte es ca. 40-50min kochen.
+
+## mit Bacon und Süßkartoffeln
+
+=== "Zutaten"
+
+    Einkaufen:
+
+    - [ ] Wiener Würstchen
+    - [ ] Bacon streifen
+    - [ ] mehlige Kartoffeln
+    - [ ] Süßkartoffeln
+    - [ ] Poree
+    - [ ] Möhren
+    - [ ] Schnittlauch
+
+    Ggf. schon vorhanden:
+
+    - [ ] Hühnerbrühe
+    - [ ] Zwiebeln
+
+    Gewürze:
+    
+    - [ ] Salz
+    - [ ] Pfeffer
+
+=== "Zubereitung"
+
+    - [ ] Süßkartoffeln und Kartoffeln schälen und würfeln
+    - [ ] Zwiebln klein schneiden und mit Bacon in einem Topf anbraten
+    - [ ] 1,5 L Wasser kochen
+    - [ ] Porree längs halbieren und in Halbmonde schnieden
+    - [ ] Möhren schälen und in Scheiben schneiden
+    - [ ] Alles andere in den Topf geben und nach 3 min kochendes Wasser dazugeben
+    - [ ] Hühnerbrühe, Salz und Pfeffer dazugeben und 12min kochen lassen
+    - [ ] Wiener Würstchen in Scheiben schneiden und 3min Kochen
+    - [ ] Schnittlauch scheniden und beim servieren dazugeben
+
+![_kartoffeleintopf](_kartoffeleintopf.jpg)
