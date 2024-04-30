@@ -7,7 +7,7 @@ Tech stuff that interests me is listed here. I mainly note down things that help
 - [Dev](/tech/dev/) is filled with scripts and one-liners.
 - [Hack](/tech/hack/) section focuses on CTF write-ups.
 - [Hardware](/tech/hardware/) is a collection of things i purchased and used for something.
-- [OS](/tech/os/) 
+- [OS](/tech/os/)
 - [Standards](/tech/standards/)
 - [Tips](/tech/tips/)
 - [Tools](/tech/tools/)

@@ -1,5 +1,5 @@
-# Lego
+# Keyboards
 
 | Image                                                   | Link                                                                                          |
 |---------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| [![lego](_lego-rubiks-cube2.jpg)](lego.md)              | Things I built with Lego                                       |
+| [![billybass](_billybass-result.jpg)](billybass.md)     | This fish is my best friend.                                                                  |
