@@ -1,11 +1,48 @@
-# Crypto Currency
+# Currencies
 
-## Algorithms overview
+## In-Game Currencies
+
+|               Game                |       Currency       |
+|:---------------------------------:|:--------------------:|
+|             Fortnite              |        V-Buck        |
+|         League of Legends         |      Riot Point      |
+|              Roblox               |        Robux         |
+|              EA FC24              |      FC Points       |
+|            Candy Crush            |       Gold Bar       |
+|          Clash of Clans           |         Gem          |
+|             Valorant              |    Valorant Point    |
+|           Rocket League           | Rocket League Credit |
+|            Hearthstone            |      Runestone       |
+|             Minecraft             |       MineCoin       |
+|           Apex Legends            |      Apex Coin       |
+|          Genshin Impact           |   Genesis Crystal    |
+|       Call of Duty: Warzone       | Call of Duty Points  |
+|            Overwatch 2            |    Overwatch Coin    |
+|             Destiny 2             |        Silver        |
+|             Diablo IV             |       Platinum       |
+|       RAID: Shadow Legends        |         Gem          |
+|         Battlefield 2042          | Battlefield Currency |
+|            The Finals             |      Multibuck       |
+|             Fall Guys             |      Show-Buck       |
+|         Forge Of Empires          |      Diamanten       |
+|             Hero Wars             |       Emerald        |
+| Game of Thrones: Winter is Coming |    Black Diamond     |
+|              Elvenar              |       Diamond        |
+|        Zoo 2: Animal Park         |       Diamond        |
+|             Farmerama             |    Barnyard Bill     |
+|             Hero Zero             |        Donut         |
+|          Goodgame Empire          |         Ruby         |
+|             Big Farm              |         Gold         |
+|             Seafight              |        Pearl         |
+
+## Crypto Currency
+
+### Algorithms overview
 
 Overview of Signing and Curve algorithms used
 
 | Name             | Symbol | Signing Algorithm                                             | Curve                                 |
-| ---------------- | ------ | ------------------------------------------------------------- | ------------------------------------- |
+|------------------|--------|---------------------------------------------------------------|---------------------------------------|
 | Algorand         | ALGO   | EdDSA                                                         | curve25519                            |
 | Arweave          | AR     | 4096 bit RSA                                                  |                                       |
 | Avalanche        | AVAX   | ECDSA                                                         | secp256k1                             |
