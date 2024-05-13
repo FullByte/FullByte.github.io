@@ -46,7 +46,7 @@
 
 ## Work with files
 
-- File Explorer: <https://github.com/sayanarijit/xplr>
+- File Explorer: <https://github.com/sayanarijit/xplr> or <https://github.com/MHNightCat/superfile>
 - Photo Search Tool: <https://github.com/yurijmikhalevich/rclip>
 - Terminal UI for SQLite: <https://github.com/mathaou/termdbms>
 - Search in PDFs: <https://pdfgrep.org/>
