@@ -7,8 +7,6 @@
 
 ## Docker
 
-Simple deploy
-
 ``` ps1
 docker run --net=host -e SCREEGO\_EXTERNAL\_IP=YOUREXTERNALIP screego/server
 ```
