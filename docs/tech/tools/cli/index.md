@@ -110,6 +110,10 @@
 - Watch youtube video with [mpv](https://mpv.io/) + [libcaca](http://caca.zoy.org/wiki/libcaca) (alt: -vo=tct): ```mpv --quiet -vo=caca 'https://www.youtube.com/watch?v=dQw4w9WgXcQ'```
 - Cast DLNA over CLI with [dlna-cast](https://github.com/link89/dlna-cast)
 
+## Effects
+
+- terminal text effects: <https://github.com/ChrisBuilds/terminaltexteffects>
+
 ## Other
 
 - Weather: "curl wttr.in" (<https://github.com/chubin/wttr.in>)
