@@ -6,9 +6,10 @@ I used [qrious](https://github.com/neocotic/qrious "https://github.com/neocotic/
 
 ## QR Code creation
 
-To match the QR-Code pixels with a valid lego base plate size I tried a few options to find a match.
+Since a QR-Code is a square I need a board with the same length and width.
+I checked which based plates are available and considered using multiple of the smaller based plates if necessary.
 
-Possible lego base plates
+Here are the options I found:
 
 ``` txt
 14x14 → 14,28,42,56,70
@@ -19,9 +20,10 @@ Possible lego base plates
 50x50 → 50
 ```
 
-Since a QR-Code has the same length as hight any of the above values would fit perfectly on a given lego base plate.
+Now that I know my options for base plates, I need to know how many pixels I need for the QR Code.
 
-The initial idea of using the value `https://0xfab1.net/make/lego/qr-code` and therewith referencing to this page doesn't result in a perfect match despite trying different paddings:
+The initial idea was to use this URL as the QR Code value `https://0xfab1.net/make/lego/qr-code`. (and old link to this page)
+Because, despite trying different paddings, the result is too big for even the largest base plate, i luckily didn't proceed with this approach:
 
 ``` txt
 7% padding:  29x29 or *2 for double width = 58x58
@@ -30,8 +32,9 @@ The initial idea of using the value `https://0xfab1.net/make/lego/qr-code` and t
 30% padding: 37x37 or *2 for double width = 74x74
 ```
 
-Luckily it didn't work out as the link has now changed an would have been invalid as i refuse to take care of redirects. 
-The next attempt would to go for <https://0xfab1.net>. The results are:  
+The next attempt would to go for something simple and longer valid: <https://0xfab1.net>.
+
+The results are:  
 
 ``` txt
 7% padding: 25x25 or *2 for double width = 50x50
@@ -40,7 +43,7 @@ The next attempt would to go for <https://0xfab1.net>. The results are:
 30% padding: 29x29 or *2 for double width = 58x58
 ```
 
-50x50 is a valid lego base plate and a possible result for the QR-Code. 
+We have a match! 50x50 is a valid lego base plate and a possible result for the QR-Code.
 I will go with the 25% padding option as this will lead to better scanning results without any downsides.
 
 ![QR-Code for https://0xfab1.net](_qrcode0xfab1.png)
@@ -49,7 +52,8 @@ The value "https://0xfab1.net" as QR-Code.
 
 ## Bricklink Studio
 
-I didn't find a cool way to automatically build the QR-Code in Bricklink Studio so I just opened the image of the QR-Codes shared above and rebuilt it using different flat tiles. Classic QR-Codes have black and white pixels so I went with that look and chose a white 50x50 baseplate and used different sized black tiles for the pixels.
+I didn't find a cool way to automatically build the QR-Code in Bricklink Studio so I just opened the image of the QR-Codes shared above and rebuilt it using different flat tiles.
+Classic QR-Codes have black and white pixels so I went with that look.
 
 ![bricklink studio](_qrcodestudiobricklink.jpg)
 
@@ -64,7 +68,7 @@ as well as this cool video:
 
 ## Bricklink Order
 
-Fortunately you can import *.io files in Bricklink directly. It will search for sellers based on your preference (e.g. currency, location). The outcome initially was this list since i used as little amount of plates as possible:
+Bricklink has a cool feature where you can import *.io files directly. It will then search for sellers based on your preference (e.g. currency, location). The outcome initially was this list since i used as little amount of plates as possible:
 
 | BLItemNo | ElementId | LdrawId | PartName               | BLColorId | LDrawColorId | ColorName | ColorCategory | Qty | Weight |
 |----------|-----------|---------|------------------------|-----------|--------------|-----------|---------------|-----|--------|
@@ -76,12 +80,10 @@ Fortunately you can import *.io files in Bricklink directly. It will search for 
 | 4186a    |           | 4186a   | Baseplate 50 x 50      | 1         | 15           | White     | Solid Colors  | 1   | 235    |
 | 87079    | 4560178   | 87079   | Tile 2 x 4             | 1         | 15           | White     | Solid Colors  | 44  | 9      |
 
-Turns out the 50x50 plate is not available and that the non 2x2 tiles are way more expensive.
+It turns out that the 50x50 plate is hard to get and that the non 2x2 tiles are way more expensive.
+Luckily I found a place to order the 50x50 plate anyway and changed the order to 2x2 tiles only, which reduced the price significantly (40% cheaper).
 
-So i ordered a 50x50 plate online somewhere else and changed the order to 2x2 tiles only, which reduced the price significantly (roughly 40% cheaper).
-
-I went with 350 since 50x50/4 = 625 and I need roughly half black, half white tiles.
-Since i didn't re-do the build in Bricklink Studio based on 2x2 tiles I added a few safety tiles = 350 per color which was still cheaper than to original order.
+I went with 350 back and white tiles (50x50/4 = 625) since I need roughly half black, half white tiles and didn't want to re-do the build in Bricklink Studio. Therefore I added a few safety tiles ((350*2)-625=75 extra pieces) per color which was still cheaper than to original order.
 
 | BLItemNo | ElementId | LdrawId | PartName               | BLColorId | LDrawColorId | ColorName | ColorCategory | Qty | Weight |
 |----------|-----------|---------|------------------------|-----------|--------------|-----------|---------------|-----|--------|
@@ -91,7 +93,7 @@ Since i didn't re-do the build in Bricklink Studio based on 2x2 tiles I added a 
 ## Delivery and building lego qr-code
 
 All pieces finally arrived and putting it all together was easier and faster than expected.
-I hope i didn't mess up any pixel - well at least scanning the lego works ¯\_(ツ)_/¯
+I hope i didn't mess up any pixel - at least scanning the lego works ¯\_(ツ)_/¯
 
 This is the final result :)
 
