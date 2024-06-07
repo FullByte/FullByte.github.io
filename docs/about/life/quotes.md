@@ -1,5 +1,7 @@
 # Quotes
 
+This is a collection of quotes I like:
+
 Richard Conn Henry
 
 > "The Universe is immaterial — mental and spiritual. Live, and enjoy."
@@ -47,3 +49,7 @@ CGP Grey
 Thorsten Dirks
 
 > "Wenn Sie einen Scheissprozess digitalisieren, dann haben Sie einen scheiss digitalen Prozess"
+
+George Carlin
+
+> "Artist recognize limitations as a tool to use same as a brush or a pen."
