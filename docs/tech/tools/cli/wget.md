@@ -10,6 +10,10 @@
 Download a file: ```wget https://0xfab1.net/CNAME -O CNAME```
 Download a list of files ```wget -i urls.txt -N -e robots=off --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:86.0) Gecko/20100101 Firefox/86.0"```
 
+## Download a webpage
+
+```wget --mirror --convert-links --adjust-extension --page-requisites --no-parent --wait=1 --random-wait --restrict-file-names=windows --user-agent="Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36" --execute robots=off "https://www.0xfab1.net/"```
+
 ## Download all files from website
 
 Generally, the following can be blocked but works in most cases. There are a few things that can be done to avoid getting blocked:

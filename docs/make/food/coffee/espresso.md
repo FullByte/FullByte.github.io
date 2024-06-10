@@ -78,6 +78,8 @@ Here is a [tutorial](https://1zpresso.coffee/clean-tutorial-for-top-adjustment/)
 
 ### 9barista
 
+#### Replace safety valve
+
 The [9barista](https://9barista.com/) is a great stove top espresso machine.
 
 The safety valve is the one thing that will damage first if the 9barista overheats. Avoid this by not only turing of the heat once done brewing coffee but actually removing the 9barista from the heat source.
@@ -85,4 +87,19 @@ The safety valve is the one thing that will damage first if the 9barista overhea
 Replacing the safety valve is a simple process. With the right tools it shouldn’t take more than a minute. Use a 13mm wrench to loosen the valve.
 
 ![9barista-safetlyvalve](_9barista-safetlyvalve2.png)
+
 ![9barista-safetlyvalve](_9barista-safetlyvalve.png)
+
+#### Descaling the 9Barista
+
+Follow this detailed guide to effectively descale your 9Barista espresso machine and ensure it continues to perform at its best.
+
+- Mix a descaler in a jug with cold water and ensure that the solution is completely dissolved. Do not heat the descaler and avoid citric acid or lactic acid descaler.
+- Remove the O-ring from the boiler.
+- Fill the boiler with the descaling solution up to the 120 gr line.
+- Place the top on the boiler and screw both parts tightly together.
+- Let the "9Barista" stand for 15 minutes at room temperature.
+- Unscrew the top from the boiler and dispose of the descaling solution. Any lime residues can be removed by gently wiping with a non-abrasive cloth (do not scrub the "9Barista" after descaling, as this may damage the coating).
+- If significant lime deposits remain, repeat steps 3 to 5 with fresh descaling solution.
+- Thoroughly rinse the boiler and the top, reinstall the O-ring, fill the machine with clean water, and run a brewing cycle without coffee to flush the internal parts.
+- Dispose of the water and allow the device to dry.
