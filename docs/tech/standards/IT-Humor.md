@@ -1,5 +1,15 @@
 # IT Humor
 
+## Falsehoods about Falsehoods
+
+- An assumption you made that shows up on the list is a personal attack on your programming abilities
+- Every item based in historical fact is worth worrying about for all future implementations
+- Every item deserves explanation
+- Every item on the list applies to every situation
+- Every item on the list must be taken to heart and considered at all times
+- These lists are intended as guides for how to do things (or, conversely, guides for things not to do)
+- These lists are intended to be exhaustive
+
 ## IT Gender
 
 There have been several terms in IT and computing that have been reconsidered and changed due to their potentially offensive or non-inclusive connotations. Here are some examples:

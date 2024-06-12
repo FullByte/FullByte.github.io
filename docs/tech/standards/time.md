@@ -8,6 +8,177 @@ Nice post about time:
 
 - <https://ourworldindata.org/time-use>
 
+## Falsehoods
+
+### Falsehoods about Time
+
+Some facts about time
+
+- UTC: The time at zero degrees longitude (the Prime Meridian) is called Universal Coordinated Time (UTC).
+- GMT: UTC used to be called Greenwich Mean Time (GMT) because the Prime Meridian was (arbitrarily) chosen to pass through the Royal Observatory in Greenwich.
+- Other timezones can be written as an offset from UTC. Australian Eastern Standard Time is UTC+1000. e.g. 10:00 UTC is 20:00 EST on the same day.
+- Daylight saving does not affect UTC. It's just a polity deciding to change its timezone (offset from UTC). For example, GMT is still used: it's the British national timezone in winter. In summer it becomes BST.
+- Leap seconds: By international convention, UTC (which is an arbitrary human invention) is kept within 0.9 seconds of physical reality (UT1, which is a measure of solar time) by introducing a "leap second" in the last minute of the UTC year, or in the last minute of June.
+- Leap seconds don't have to be announced much more than six months before they happen. This is a problem if you need second-accurate planning beyond six months.
+- Unix time: Measured as the number of seconds since epoch (the beginning of 1970 in UTC). Unix time is not affected by time zones or daylight saving.
+- According to POSIX.1, Unix time is supposed to handle a leap second by replaying the previous second. e.g.:
+
+```POSIX
+59.00
+59.25
+59.50
+59.75
+59.00 ← replay
+59.25
+59.50
+59.75
+00.00 ← increment
+00.25
+```
+
+This is a trade-off: you can't represent a leap second, and your time is guaranteed to go backwards. On the other hand, every day is exactly 86,400 seconds long, and you don't need a table of all previous and future leap seconds in order to format Unix time as human-preferred hours-minutes-seconds.
+ntpd is supposed to make the replay happen after it sees the "leap bits" from upstream timeservers, but I've also seen it do nothing: the system goes one second into the future, then slowly slews back to the correct time.
+
+- Don't blindly use gettimeofday(). If you need a monotonic (always increasing) clock, have a look at clock_gettime().
+- If you want to store a humanly-readable time (e.g. logs), consider storing it along with Unix time, not instead of Unix time.
+- Most of your code shouldn't be dealing with timezones or local time, it should be passing Unix time around.
+- MySQL (at least 4.x and 5.x) stores DATETIME columns as a "YYYY-MM-DD HH:MM:SS" string. I'm not even kidding. If you care at all about storing timestamps, store them as integers and use the UNIX_TIMESTAMP() and FROM_UNIXTIME() functions.
+- The number of "clock" seconds per "real" second is both inaccurate and variable. It mostly varies with temperature.
+- The system clock can, and will, jump backwards and forwards in time due to things outside of your control. Your program should be designed to survive this.
+- The system clock is inaccurate.
+- Time passes at a rate of one second per second for every observer. The frequency of a remote clock relative to an observer is affected by velocity and gravity. The clocks inside GPS satellites are adjusted for relativistic effects.
+- Timezones are a presentation-layer problem!
+- When displaying time, always include the timezone offset. A time format without an offset is useless.
+- When measuring time, measure Unix time. It's UTC. It's easy to obtain. It doesn't have timezone offsets or daylight saving (or leap seconds).
+- When storing time, store Unix time. It's a single number.
+- You're on a network? Every other system's clock is differently inaccurate.
+ntpd can change the system time in two ways: 1) Step: making the clock jump backwards or forwards to the correct time instantaneously. 2) Slew: changing the frequency of the clock so that it slowly drifts toward the correct time. → Slew is preferred because it's less disruptive, but it's only useful for correcting small offsets.
+
+Sources:
+
+- <https://blog.wesleyac.com/posts/timezone-bullshit>
+
+### Falsehoods about Dates
+
+All of these assumptions are wrong:
+
+- 24:12:34 is an invalid time
+- A given date and/or time unambiguously identifies a unique moment.
+- A time stamp of sufficient precision can safely be considered unique.
+- A timestamp represents the time that an event actually occurred.
+- A week (or a month) always begins and ends in the same year.
+- A week always begins and ends in the same month.
+- All measurements of time on a given clock will occur within the same frame of reference.
+- Any 24-hour period will always begin and end in the same day (or week, or month).
+- Britain uses GMT.
+- But at least the numerical difference between the displayed and stored year will be less than 2
+- But if you print a date time, you can write the numbers character for character, without needing to backtrack
+- But it will work, if both years are leap years
+- But you can ignore the millisecond fraction, if it is less than 0.5
+- Changes in the offsets between time zones will occur with plenty of advance notice.
+- Contiguous timezones are no more than an hour apart. (aka we don’t need to test what happens to the avionics when you fly over the International Date Line)
+- Daylight Saving Time (DST) starts/ends on the same date everywhere
+- Daylight saving time always adjusts by an hour.
+- Daylight saving time happens at the same time every year.
+- Daylight saving time happens at the same time in every time zone.
+- Days begin in the morning.
+- DST is always an advancement by 1 hour
+- Each calendar date is followed by the next in sequence, without skipping.
+- Every integer is a theoretical possible year
+- February is always 28 days long.
+- GMT and UTC are the same timezone.
+- Holidays span an integer number of whole days.
+- Human-readable dates can be specified in universally understood formats such as 05/07/11.
+- I can easily maintain a timezone list myself
+- If a process runs for n seconds and then terminates, approximately n seconds will have elapsed on the system clock at the time of termination.
+- If the server clock and the client clock are not in synch, they will at least always be out of synch by a consistent number of seconds.
+- If the system clock is incorrect, it will at least always be off by a consistent number of seconds.
+- If you convert a timestamp with millisecond precision to a date time with second precision, you can safely ignore the millisecond fractions
+- If you create two date objects right beside each other, they’ll represent the same time. (a fantastic Heisenbug generator)
+- If you display a datetime, the displayed time has the same second part as the stored time
+- If you have a date in a correct YYYY-MM-DD format, the year consists of four characters
+- If you merge two dates, by taking the month from the first and the day/year from the second, you get a valid date
+- If you parse a date time, you can read the numbers character for character, without needing to backtrack
+- If you take a w3c published algorithm for adding durations to dates, it will work in all cases.
+- It will be easy to calculate the duration of x number of hours and minutes from a particular point in time.
+- It will never be necessary to set the system time to any value other than the correct local time.
+- It’s possible to establish a total ordering on timestamps that is useful outside your system.
+- Leap years occur every 4 years.
+- Months have either 28, 29, 30, or 31 days.
+- Months have either 30 or 31 days.
+- My software is only used internally/locally, so I don’t have to worry about timezones
+- My software stack will handle it without me needing to do anything special
+- Non leap years will never contain a leap day.
+- OK, historical oddities aside, the offsets between two time zones won’t change in the future.
+- Okay, quarter hours.
+- Okay, seconds, but it will be a consistent difference if we ignore DST.
+- One hour is as long as the next in all time systems.
+- One minute on the system clock has exactly the same duration as one minute on any other clock
+- Or the same year
+- Reading the client’s clock and comparing to UTC is a good way to determine their timezone
+- Testing might require setting the system time to a value other than the correct local time but it will never be necessary to do so in production.
+- The day before Saturday is always Friday.
+- The day of the month always advances contiguously from N to either N+1 or 1, with no discontinuities.
+- The difference between the current time and one week from the current time is always 7 \* 86400 seconds.
+- The difference between two timestamps is an accurate measure of the time that elapsed between them.
+- The duration of one minute on the system clock will be pretty close to the duration of one minute on most other clocks.
+- The duration of one minute on the system clock would never be more than an hour.
+- The fact that a date-based function works now means it will work on any date.
+- The local time offset (from UTC) will not change during office hours.
+- The machine that a program runs on will always be in the GMT time zone.
+- The offsets between two time zones will remain constant.
+- The precision of the data type returned by a getCurrentTime() function is the same as the precision of that function.
+- The same month has the same number of days in it everywhere!
+- The second of two subsequent calls to a getCurrentTime() function will return a larger result.
+- The server clock and the client clock will always be set to around the same time.
+- The server clock and the client clock will always be set to the same time.
+- The server clock and the client clock will use the same time zone.
+- The smallest unit of time is one second.
+- The software stack will/won’t try to automatically adjust for timezone/DST
+- The software will never run on a space ship that is orbiting a black hole.
+- The standard library supports negative years and years above 10000.
+- The system clock will always be set to a time that is not wildly different from the correct local time.
+- The system clock will always be set to the correct local time.
+- The system clock will never be set to a time that is in the distant past or the far future.
+- The time on the server clock and time on the client clock would never be different by a matter of decades.
+- The Time zone in which a program has to run will never change.
+- The weekend consists of Saturday and Sunday.
+- There are 60 seconds in every minute.
+- There are always 24 hours in a day.
+- There are only 24 time zones
+- There is a leap year every year divisible by 4.
+- There is only one calendar system in use at one time.
+- There will never be a change to the time zone in which a program hast to run in production.
+- Thread.sleep(1000) sleeps for >= 1000 milliseconds.
+- Thread.sleep(1000) sleeps for 1000 milliseconds.
+- Time always goes forwards.
+- Time has no beginning and no end.
+- Time passes at the same speed on top of a mountain and at the bottom of a valley.
+- Time stamps will always be specified in a commonly-understood format like 1339972628 or 133997262837.
+- Time stamps will always be specified in the same format.
+- Time stamps will always have the same level of precision.
+- Time zones always differ by a whole hour
+- Time zones are always whole hours away from UTC
+- Timestamps always advance monotonically.
+- Two subsequent calls to a getCurrentTime() function will return distinct results.
+- Two timezones that differ will differ by an integer number of half hours.
+- Two-digit years should be somewhere in the range 1900-2099
+- Unix time is completely ignorant about anything except seconds.
+- Unix time is the number of seconds since Jan 1st 1970.
+- Weeks start on Monday.
+- Years have 365 days.
+- Years have 365 or 366 days.
+- You can calculate when leap seconds will be added.
+- You can determine the time zone from the city/town.
+- You can determine the time zone from the state/province.
+- You can wait for the clock to reach exactly HH:MM:SS by sampling once a second.
+- You will never have to parse a format like ---12Z or P12Y34M56DT78H90M12.345S
+
+Sources:
+
+- <http://infiniteundo.com/post/25326999628/falsehoods-programmers-believe-about-time>
+- <https://gist.github.com/timvisee/fcda9bbdff88d45cc9061606b4b923ca>
+
 ## Calculate the day of the week
 
 Calculate a number for each of the day, month, and year by adding the digits together as follows:
@@ -114,7 +285,9 @@ The full formula looks like this:
 
 Remainder of (Day + Month(Table) + Year(Table) + Century + (if leap year + 1))/7 = value to look up in day of the week table.
 
-## Time zone
+## Standards
+
+### Time zone
 
 Some links to time zone standards:
 
@@ -207,7 +380,7 @@ A list of time zones:
 | 31    | Fiji Standard Time              | (GMT+12:00) | Fiji Islands, Kamchatka, Marshall Islands               | Pacific/Fiji                   |
 | 69    | Tonga Standard Time             | (GMT+13:00) | Nuku'alofa                                              | Pacific/Tongatapu              |
 
-## Lunar Standard Time (LST)
+#### Lunar Standard Time (LST)
 
 The Lunar year consists of twelve days, named after the first men who walked on the Moon. Each day is divided into 30 cycles of time, with each cycle being divided into 24 moon-hours. Each moon-hour then has 60 moon-minutes, which in turn of course are made up of 60 moon-seconds each. The inverted triangle ∇ is the LST symbol, and if used it suffixes date and prefixes time. The standard notation is: Year-Day-Cycle ∇ Hour:Minute:Second example: 55-11-14 ∇ 14:36:49
 
@@ -238,7 +411,7 @@ The Lunar year consists of twelve days, named after the first men who walked on 
 
 On the moon you have about 15 days of continuous daylight and then 15 days of total darkness. So, a "day" on the Moon, would correspond to about a month or 29.5 Earth-days. Once, about every 29 days, you have a full moon, which is "noon" on the center of the disk. This is also called the synodic month. So a day on the moon, counting from noon to noon, lasts about 29.27 to 29.83 Earth days. Neil Armstrong set foot on the Moon surface on July 21th 1969 at 02:56:15 UT, and this is the obvious choice for a point in time for the calendar to start. So, this is Year 1, day 1 cycle 1, 00:00:00.
 
-## Metric Time
+#### Metric Time
 
 | Measure | Time as we Know it                          | Metric Time Usage                            |
 |---------|---------------------------------------------|----------------------------------------------|
@@ -251,7 +424,7 @@ Sources:
 - <https://en.wikipedia.org/wiki/Metric_time>
 - <https://timeity.com/metric-time/>
 
-## Calendar
+### Calendar
 
 List of calendars: <https://en.wikipedia.org/wiki/List_of_calendars>
 
@@ -294,7 +467,7 @@ Representation in various calendars of the year 2021
 | Tibetan calendar             | 阳金鼠年 (male Iron-Rat) 2147 or 1766 or 994 — to — 阴金牛年 (female Iron-Ox) 2148 or 1767 or 995 |
 | Unix time                    | 1609459200 – 1640995199                                                                           |
 
-## Non 7-day weeks
+### Non 7-day weeks
 
 | Tradition                  | week length |
 |----------------------------|-------------|
