@@ -1,6 +1,6 @@
 # Books
 
-Books i liked:
+Books I like:
 
 === "Knowledge"
 

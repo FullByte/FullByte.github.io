@@ -1,5 +1,41 @@
 # Reflect
 
+Reflecting regularly on your goals and life choices is essential for personal and professional growth. It helps ensure that your actions align with your values, adapt to changing circumstances, and stay motivated. This practice not only fosters accountability and enhances decision-making but also identifies obstacles and promotes continuous learning. In essence, taking time to examine your progress and decisions is vital for thriving in an ever-evolving world.
+
+## Daily Review
+
+=== "EN"
+
+    - What am I doing today that energizes me or propels me forward?
+
+=== "DE"
+
+    - Was mache ich heute, dass mich begeistert oder voranbringt?
+
+## Quarter Review
+
+=== "EN"
+
+    - Am I on track with goals I have set for myself this year?
+    - What goals do I no longer want to pursue?
+    - Review your budget, spending habits, and savings to ensure they align with your financial goals.
+    - Reflect on job satisfaction and consider changes if necessary.
+    - Reflect on educational pursuits or professional training.
+    - Reflect on the quality of your key relationships with family, friends, and colleagues.
+    - Review the progress of your short-term and long-term goals.
+    - Set new objectives for the next quarter.
+
+=== "DE"
+
+    - Bin ich auf dem richtigen Weg, die Ziele zu erreichen, die ich mir für dieses Jahr gesetzt habe?
+    - Welche Ziele möchte ich nicht mehr verfolgen?
+    - Überprüfe dein Budget, deine Ausgabegewohnheiten und deine Ersparnisse, um sicherzustellen, dass sie mit deinen finanziellen Zielen übereinstimmen.
+    - Reflektiere über deine Arbeitszufriedenheit und erwäge Änderungen, falls nötig.
+    - Reflektiere über deine Bildungsbestrebungen oder berufliche Weiterbildung.
+    - Reflektiere über die Qualität deiner wichtigen Beziehungen zu Familie, Freunden und Kollegen.
+    - Überprüfe den Fortschritt deiner kurz- und langfristigen Ziele.
+    - Setze neue Ziele für das nächste Quartal.
+
 ## Yearly Review
 
 Questions are from [40-questions by kepano](https://github.com/kepano/40-questions)
