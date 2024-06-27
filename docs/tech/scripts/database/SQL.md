@@ -16,7 +16,23 @@
  "-..________..-"
 ```
 
-## JOIN
+## Admin
+
+### Create User
+
+This creates a new SQL Server login and a corresponding user in a specific database, and then grants that user full permissions on the database by adding them to the db_owner role:
+
+```SQL
+USE master;
+CREATE LOGIN YourLoginName WITH PASSWORD = 'YourStrongPassword';
+USE YourDatabaseName;
+CREATE USER YourLoginName FOR LOGIN YourLoginName;
+EXEC sp_addrolemember 'db_owner', 'YourLoginName';
+```
+
+## Commands
+
+### JOIN
 
 Assume table1 has the following columns and data:
 
@@ -44,7 +60,7 @@ And table2 has the following columns and data:
 
 ![db-joins](_db-joins.jpg)
 
-### INNER JOIN
+#### INNER JOIN
 
 This join returns rows when there is a match in both tables.
 
@@ -54,7 +70,7 @@ FROM dbo.table1
 INNER JOIN dbo.table2 ON table1.id = table2.table1_id;
 ```
 
-### LEFT JOIN (or LEFT OUTER JOIN)
+#### LEFT JOIN (or LEFT OUTER JOIN)
 
 This join returns all rows from the left table, and the matched rows from the right table. If there is no match, NULLs are returned for columns of the right table.
 
@@ -64,7 +80,7 @@ FROM dbo.table1
 LEFT JOIN dbo.table2 ON table1.id = table2.table1_id;
 ```
 
-### RIGHT JOIN (or RIGHT OUTER JOIN)
+#### RIGHT JOIN (or RIGHT OUTER JOIN)
 
 This join returns all rows from the right table, and the matched rows from the left table. If there is no match, NULLs are returned for columns of the left table.
 
@@ -74,7 +90,7 @@ FROM dbo.table1
 RIGHT JOIN dbo.table2 ON table1.id = table2.table1_id;
 ```
 
-### FULL OUTER JOIN
+#### FULL OUTER JOIN
 
 This join returns rows when there is a match in one of the tables. It combines the result of both LEFT and RIGHT joins.
 
@@ -84,7 +100,7 @@ FROM dbo.table1
 FULL OUTER JOIN dbo.table2 ON table1.id = table2.table1_id;
 ```
 
-### CROSS JOIN
+#### CROSS JOIN
 
 This join returns the Cartesian product of the two tables, meaning every combination of rows from the two tables.
 
@@ -94,7 +110,7 @@ FROM dbo.table1
 CROSS JOIN dbo.table2;
 ```
 
-## CASE
+### CASE
 
 This example translates```[table1].[statusID]``` into a given text value.
 
@@ -111,35 +127,13 @@ END
 FROM [dbo].[table1]
 ```
 
-## COALESCE
+### COALESCE
 
 ```SQL
 COALESCE((SELECT [...] option1), (SELECT [...] option2), (SELECT [...] option3))
 ```
 
-## Receive XML as query result
-
-```SQL
-FOR XML AUTO, TYPE, XMLSCHEMA, ELEMENTS XSINIL
-```
-
-## Enter Ids manually (bad!)
-
-```SQL
-SET IDENTITY_INSERT [dbo].[Table] ON
-\-- DO STUFF
-SET IDENTITY_INSERT [dbo].[Table] OFF
-```
-
-## Builtin functions
-
-```SQL
-SELECT HOST_NAME() -- GET Local System Name
-SELECT GETUTCDATE() -- GET Local Time (UTC - Zone)
-SELECT SUSER_NAME() -- GET SuperUser Name of DB
-```
-
-## UPSERT
+### UPSERT
 
 UPSERT is an operation that inserts new records into the database and updates existing ones. This operation is particularly useful for maintaining data integrity and ensuring efficient data manipulation.
 
@@ -155,3 +149,27 @@ The specific behavior and implementation of an UPSERT operation can vary between
 - SQLite: SQLite supports UPSERT as of version 3.24.0, released in June 2018.
 - SQL Server: Microsoft SQL Server doesn't have a specific UPSERT command but uses the MERGE statement to achieve similar functionality. The MERGE statement was introduced in SQL Server 2008.
 - Oracle: Oracle Database uses the MERGE statement, like SQL Server, to perform UPSERT operations.
+
+## Random stuff
+
+### Receive XML as query result
+
+```SQL
+FOR XML AUTO, TYPE, XMLSCHEMA, ELEMENTS XSINIL
+```
+
+### Enter Ids manually (bad!)
+
+```SQL
+SET IDENTITY_INSERT [dbo].[Table] ON
+\-- DO STUFF
+SET IDENTITY_INSERT [dbo].[Table] OFF
+```
+
+### Builtin functions
+
+```SQL
+SELECT HOST_NAME() -- GET Local System Name
+SELECT GETUTCDATE() -- GET Local Time (UTC - Zone)
+SELECT SUSER_NAME() -- GET SuperUser Name of DB
+```
