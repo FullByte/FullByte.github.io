@@ -14,6 +14,8 @@ The Lasercutter [EpilogZing](https://www.epiloglaser.de/) 6030 is a 40 Watt CO2-
 
 Dimensions: 609 x 304 x 197 mm
 
+Note: With floor-piece hight is only 130mm (required for cutting)
+
 ### 3mm HDF
 
 | Variable | Engrave (Raster) | Cut (Vektor) |
