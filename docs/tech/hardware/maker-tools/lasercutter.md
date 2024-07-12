@@ -10,9 +10,9 @@ Some example results:
 
 ## EpilogZing 6040
 
-The Lasercutter [EpilogZing](https://www.epiloglaser.de/) 6040 is a 40 Watt CO2-Laser.
+The Lasercutter [EpilogZing](https://www.epiloglaser.de/) 6030 is a 40 Watt CO2-Laser.
 
-Max size: 600mm x 300mm.
+Dimensions: 609 x 304 x 197 mm
 
 ### 3mm HDF
 
