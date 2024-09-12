@@ -17,3 +17,15 @@ Less than 48 hours later I received this message confirming that from now on my 
 ![ChatGPT_privacy](_ChatGPT_privacy3.jpg)
 
 Although the feature is rather hidden, the process itself works and the result is as expected and fine.
+
+## Subscription
+
+I don't think the service offerings are clear at the moment :D
+
+This is what a regulat user sees:
+
+![ChatGPT_kein_Abo](_ChatGPT_kein_Abo.jpg)
+
+And this the view of a user with a subscription:
+
+![ChatGPT_mit_Abo](_ChatGPT_mit_Abo.jpg)
