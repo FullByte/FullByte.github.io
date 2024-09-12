@@ -22,7 +22,7 @@ Although the feature is rather hidden, the process itself works and the result i
 
 I don't think the service offerings are clear at the moment :D
 
-This is what a regulat user sees:
+This is what a regular user sees:
 
 ![ChatGPT_kein_Abo](_ChatGPT_kein_Abo.jpg)
 
