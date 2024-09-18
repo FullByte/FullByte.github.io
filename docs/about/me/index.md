@@ -1,15 +1,5 @@
 # Me
 
-My first interaction with a PC was in 1991. At that time everything with a screen was interesting to me. I typed off my favorite dinosaur story from a book (on my dads work notebook) beacuse I thought it would be cool to have it digital.
-
-I later wrote my first programm in basic and was amazed by loop functions. New shareware games came on floppy disks through friends and fleemarkets. I loved gaming on the PC.
-
-I saved up money for a few years to buy my first own cheap pc which I built myself and got sick because my computer didn't work because of mismatching cheap "vendorless" RAM pieces. Eventually i fixed it, learned stuff on the way and gained freedom with my own pc and explored the internet and modded some games (nothign seriuos, just learning stuff).
-
-I read the "[Bastard Operator From Hell](https://bofh.bjash.com/)" and "[Bastard Assistant from Hell](https://de.wikipedia.org/wiki/Bastard_Assistant_from_Hell)", watched [Hackers](https://en.wikipedia.org/wiki/Hackers_(film)) and was hooked by the connection between "[Dreiundzwanzig - 23 - Die Geschichte des Hackers Karl Koch](https://de.wikipedia.org/wiki/23_%E2%80%93_Nichts_ist_so_wie_es_scheint)" and "[Kuckucksei](https://de.wikipedia.org/wiki/Kuckucksei_(Clifford_Stoll))".
-
-It was around that time that I knew I wanted to do stuff with computers my entire life.
-
 Some facts about me:
 
 - I found my great white buffalo 🧡
@@ -22,6 +12,18 @@ Some facts about me:
 
 Last link i visited which I would like to share:
 <script src="https://status.lol/yolo.js?no-emoji"></script>
+
+## IT background
+
+My first interaction with a PC was in 1991. At that time everything with a screen was interesting to me. I typed off my favorite dinosaur story from a book (on my dads work notebook) beacuse I thought it would be cool to have it digital.
+
+I later wrote my first programm in basic and was amazed by loop functions. New shareware games came on floppy disks through friends and fleemarkets. I loved gaming on the PC.
+
+I saved up money for a few years to buy my first own cheap pc which I built myself and got sick because my computer didn't work because of mismatching cheap "vendorless" RAM pieces. Eventually i fixed it, learned stuff on the way and gained freedom with my own pc and explored the internet and modded some games (nothign seriuos, just learning stuff).
+
+I read the "[Bastard Operator From Hell](https://bofh.bjash.com/)" and "[Bastard Assistant from Hell](https://de.wikipedia.org/wiki/Bastard_Assistant_from_Hell)", watched [Hackers](https://en.wikipedia.org/wiki/Hackers_(film)) and was hooked by the connection between "[Dreiundzwanzig - 23 - Die Geschichte des Hackers Karl Koch](https://de.wikipedia.org/wiki/23_%E2%80%93_Nichts_ist_so_wie_es_scheint)" and "[Kuckucksei](https://de.wikipedia.org/wiki/Kuckucksei_(Clifford_Stoll))".
+
+I drank Jolt Cola and even visited the german headquarters in Cologne. I did all kinds of experiments but mainly used the PC for gaming and internet in my teens. It was around that time that I knew I wanted to do stuff with computers my entire life.
 
 ## Q&A
 

@@ -114,6 +114,10 @@
 
 - terminal text effects: <https://github.com/ChrisBuilds/terminaltexteffects>
 
+## Database
+
+- Postgres TUI: <https://github.com/achristmascarl/rainfrog>
+
 ## Other
 
 - Weather: "curl wttr.in" (<https://github.com/chubin/wttr.in>)
