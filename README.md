@@ -51,8 +51,17 @@ Alternativly use [docker](https://www.docker.com/) to run a container with all r
 ``` sh
 git clone https://github.com/FullByte/FullByte.github.io.git 0xfab1.net
 cd 0xfab1.net
-docker build . -t yourbuild
-docker run -it --rm -p 8000:8000 yourbuild serve -a 0.0.0.0:8000
+docker build -f dockerfile -t 0xfab1 .
+docker run -d -p 8443:443 --name mkdocs-ssl 0xfab1
+```
+
+### Podman
+
+``` sh
+git clone https://github.com/FullByte/FullByte.github.io.git 0xfab1.net
+cd 0xfab1.net
+podman build -f dockerfile -t 0xfab1 .
+podman run --replace -d -p 8443:443 --name mkdocs-ssl 0xfab1
 ```
 
 ## Contribute
