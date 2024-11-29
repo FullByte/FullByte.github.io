@@ -1,4 +1,18 @@
-# Invest
+# Finances
+
+## Spend
+
+Spending money means that money is gone and you get something in return which is not money. Otherwise you [invest](#invest) money.
+Don't be think you are investing money in relations, easy life, ... that is spending money and you get a happy wife, happy life, etc.
+And don't get me wrong: spending money is not bad. Just be clear what you are doing. Spending or investing :)
+
+What to spend money on?
+
+TODO
+
+## Invest
+
+Some basic advice on investing money:
 
 - Only invest what you can spare. Establish an emergency fund to define what you can spare.
 - Start early, diversify (but only the stuff you know and are convinced of) and set clear goals for yourself (investment objectives, time horizon, and risk tolerance) and stay true to those values for any investment.

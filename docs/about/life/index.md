@@ -12,9 +12,21 @@ Let's start with some random quotes:
 
 ## Topics
 
-- [Fun](/about/life/fun)
-- [Goals](/about/life/goals)
-- [Health](/about/life/health)
-- [Invest](/about/life/invest)
+All topics in this "life" section deal with wealth and prosperity. Wealth can be broadly defined as the abundance of valuable resources, assets, or possessions that contribute to an individual's or a group's well-being and ability to meet their needs or desires. While it is often associated with material assets like money, property, or investments, wealth encompasses much more than just financial riches. Some of these are covered here:
+
+- [Financial Wealth](/about/life/finances)
+- [Social Wealth](/about/life/social)
+- [Fulfillment and Goals](/about/life/goals)
+- [Health and Joy](/about/life/health)
 - [Reflect](/about/life/reflect)
 - [Rules](/about/life/rules)
+
+Some topics i will eventually cover later:
+
+- Ideas (Intellectual Wealth)
+- Heritage (Cultural Wealth)
+- Freedom - (sTime Wealth)
+- Fulfillment (Spiritual Wealth)
+- Joy - (Emotional Wealth)
+
+I also collected and formulated some not so serious advice in the [fun](/about/life/fun) chapter.
