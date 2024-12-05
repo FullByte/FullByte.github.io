@@ -1,5 +1,15 @@
 # Splitkb Kyria
 
+![Splitkb Kyria](_splitboard_2_00.jpg)
+
+![Splitkb Kyria](_splitboard_2_0.jpg)
+
+![Splitkb Kyria](_splitboard_2_1.jpg)
+
+![Splitkb Kyria](_splitboard_2_2.jpg)
+
+![Splitkb Kyria](_splitboard_2_3.jpg)
+
 ## Components
 
 Kyria Acrylic Plate Case Clear
