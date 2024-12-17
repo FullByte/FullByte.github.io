@@ -17,6 +17,44 @@ Windows Registry Editor Version 5.00
 "{e2bf9676-5f8f-435c-97eb-11607a5bedf7}"=""
 ```
 
+## Features
+
+### HyperV
+
+```ps1
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All
+Get-WindowsOptionalFeature -Online | Findstr /i "Hyper-V"
+```
+
+### WSL
+
+```ps1
+wsl --install
+wsl --set-default-version 2
+wsl --list --online
+wsl --install -d Debian
+```
+
+### RSAT
+
+To see the RSAT tools available for installation:
+
+```ps1
+Get-WindowsCapability -Name RSAT* -Online | Select-Object -Property DisplayName, State
+```
+
+Install All RSAT Tools at Once:
+
+```ps1
+Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability -Online
+```
+
+Install Specific RSAT Tools:
+
+```ps1
+Add-WindowsCapability -Online -Name RSAT.ActiveDirectory.DS-LDS.Tools~~~~0.0.1.0
+```
+
 ## CMD
 
 More: <https://bytescout.com/blog/windows-command-prompt-commands.html>
