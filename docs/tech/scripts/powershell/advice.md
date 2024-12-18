@@ -1,4 +1,4 @@
-# Powershell Advice
+# Advice
 
 This section does not aim to teach powershell. Rather the scope is to teach proper scripting techniques, troubleshooting and collaboration when scripting.
 
