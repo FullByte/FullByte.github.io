@@ -53,3 +53,7 @@ Thorsten Dirks
 George Carlin
 
 > "Artist recognize limitations as a tool to use same as a brush or a pen."
+
+Seneca the Younger (slightly adapted interpretation)
+
+> "Luck is the opportunity when hard work and preparation meet."
