@@ -112,3 +112,74 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+
+## ESP32 Weather Report
+
+### Prepare ESP32
+
+For a BME280 Sensor (I2C Setup) use the following connections:
+
+- ESP32 3.3V to BME280 VIN
+- ESP32 GND to BME280 GND
+- ESP32 GPIO 21 (SDA) to BME280 SDA
+- ESP32 GPIO 22 (SCL) to BME280 SCL
+
+Pinout of my ESP32:
+
+![esp32-pinout](_esp32-pinout.jpg)
+
+Pinout of my BME280 Sensor:
+
+![BME280-Sensor-Pinou](_BME280-Sensor-Pinout.jpg)
+
+So the connection should look like this:
+
+![ESP32-BME280-Connection](_ESP32-BME280-Connection.jpg)
+
+### Prepare PC
+
+Install azure-iot:
+
+```ps1
+az extension add --name azure-iot
+```
+
+or
+
+```sh
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+az extension add --name azure-iot
+```
+
+Install Arduino IDE and make sure the following Additional Boards manger URLs are added (comma separated): 
+
+```txt
+https://dl.espressif.com/dl/package_esp32_index.json,https://espressif.github.io/arduino-esp32/package_esp32_index.json
+```
+
+Connect the ESP32 and check if you see the device on any COM port.
+On Windows, your attached ESP32 should appear in the device manager for example like this:
+
+![esp32_driver](_esp32_driver.png)
+
+### Arduino IDE
+
+Follow these steps
+
+- Install the Azure SDK for Embedded C library: Sketch, Include Library, Manage Libraries... and search for and install azure-sdk-for-c.
+- Then go to menu File, Examples, azure-sdk-for-c and click on az_esp32 to open the sample.
+- Enter your Azure IoT Hub and WIFI information into the sample's iot_configs.h.
+- Go to menu Tools, Board and select ESP32.
+- Go to menu Tools, Port and select the port to which the micro controller is connected.
+- Upload the sketch by navigating to Sketch and click on Upload.
+
+Optionally check the configure settings under the Tools menu, set the following:
+- Upload Speed: 115200 (default is also acceptable, but faster speeds like 921600 can be used).
+- CPU Frequency: 240 MHz (recommended for full performance).
+- Flash Frequency: 40 MHz.
+- Partition Scheme: Use "Default 4MB with spiffs" unless you have a specific reason to choose another.
+- Port: Select the COM port that appears when you connect the ESP32 to your computer.
+
+### Debug
+
+Go to menu Tools, Serial Monitor and the serial monitor will show an output 
