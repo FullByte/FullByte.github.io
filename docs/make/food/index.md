@@ -21,32 +21,32 @@ Eat whatever you want... idk, lol... and take your time ;)
 
 ### Meals
 
-[![bratkartoffeln](/make/food/meal/_bratkartoffeln.jpg)](/make/food/meal/bratkartoffeln)
+[![bratkartoffeln](meal/_bratkartoffeln.jpg)](meal/bratkartoffeln.md)
 
-[![brokkoli-kartoffel-gratin](/make/food/meal/_brokkoli-kartoffel-gratin.jpg)](/make/food/meal/brokkoli-kartoffel-gratin)
+[![brokkoli-kartoffel-gratin](meal/_brokkoli-kartoffel-gratin.jpg)](meal/brokkoli-kartoffel-gratin.md)
 
-[![chicken-curry](/make/food/meal/_chicken-curry.jpg)](/make/food/meal/chicken-curry)
+[![chicken-curry](meal/_chicken-curry.jpg)](meal/chicken-curry.md)
 
-[![chicken-wrap](/make/food/meal/_chicken-wrap.jpg)](/make/food/meal/chicken-wrap)
+[![chicken-wrap](meal/_chicken-wrap.jpg)](meal/chicken-wrap.md)
 
-[![hackfleisch-kichererbsen-pfanne](/make/food/meal/_hackfleisch-kichererbsen-pfanne.jpg)](/make/food/meal/hackfleisch-kichererbsen-pfanne)
+[![hackfleisch-kichererbsen-pfanne](meal/_hackfleisch-kichererbsen-pfanne.jpg)](meal/hackfleisch-kichererbsen-pfanne.md)
 
-[![huehnerfrikassee](/make/food/meal/_huehnerfrikassee.jpg)](/make/food/meal/huehnerfrikassee)
+[![huehnerfrikassee](meal/_huehnerfrikassee.jpg)](meal/huehnerfrikassee.md)
 
-[![lasagne](/make/food/meal/_lasagne.jpg)](/make/food/meal/lasagne)
+[![lasagne](meal/_lasagne.jpg)](meal/lasagne.md)
 
-[![pizza](/make/food/meal/_pizza.jpg)](/make/food/meal/pizza)
+[![pizza](meal/_pizza.jpg)](meal/pizza.md)
 
-[![sandwich](/make/food/meal/_sandwich.jpg)](/make/food/meal/sandwich)
+[![sandwich](meal/_sandwich.jpg)](meal/sandwich.md)
 
-[![paprika-hack-pfanne](/make/food/meal/_paprika-hack-pfanne.jpg)](/make/food/meal/paprika-hack-pfanne)
+[![paprika-hack-pfanne](meal/_paprika-hack-pfanne.jpg)](meal/paprika-hack-pfanne.md)
 
 ### Desert
 
-[![cupcakes](/make/food/desert/_cupcakes.jpg)](/make/food/desert/cupcakes)
+[![cupcakes](desert/_cupcakes.jpg)](desert/cupcakes.md)
 
 ### Soup
 
-[![kuerbissuppe](/make/food/soup/_kuerbissuppe.jpg)](/make/food/soup/kuerbissuppe)
+[![kuerbissuppe](soup/_kuerbissuppe.jpg)](soup/kuerbissuppe.md)
 
-[![mango-kokus-curry](/make/food/soup/_mango-kokus-curry.jpg)](/make/food/soup/mango-kokus-curry)
+[![mango-kokus-curry](soup/_mango-kokus-curry.jpg)](soup/mango-kokus-curry.md)

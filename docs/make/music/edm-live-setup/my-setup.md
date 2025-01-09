@@ -9,7 +9,7 @@ Good Backup Rules:
 
 ## Music
 
-![pc-setup-music](_pc-setup-music.drawio.svg)
+![pc-setup-music](_edm-setup.drawio.svg)
 
 ### Windows 10 Setup
 

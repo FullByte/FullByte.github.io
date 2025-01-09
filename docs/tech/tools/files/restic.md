@@ -1,6 +1,7 @@
 # Restic
 
-Restic is a fast and secure backup program that supports deduplication, encryption, and a variety of backends (like local storage, SFTP, and cloud providers). It uses [rclone](rclone.md) for cloud sync/copy jobs.
+Restic is a fast and secure backup program that supports deduplication, encryption, and a variety of backends (like local storage, SFTP, and cloud providers). 
+It uses [rclone](rclone.md) for cloud sync/copy jobs.
 
 | What          | Where                                                           |
 |---------------|-----------------------------------------------------------------|

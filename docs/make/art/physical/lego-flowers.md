@@ -19,5 +19,3 @@
 ![Bonsai](_lego_flower_bonzai7.jpg)
 
 ![Bonsai](_lego_flower_bonzai8.jpg)
-
-![Bonsai](_lego_flower_bonzai9.jpg)
