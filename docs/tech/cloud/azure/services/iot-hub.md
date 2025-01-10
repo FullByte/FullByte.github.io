@@ -57,6 +57,12 @@ Example message with multiple properties
   'Topic': '/devices/simDevice/messages/devicebound'}
 ```
 
+One you have devices it is possible to query the device data e.g.:
+
+```sql
+SELECT devices.jobs.deviceId, devices.jobs.status, devices.jobs.connectionState FROM devices
+```
+
 ## Ubuntu Demo
 
 Requirements
@@ -136,6 +142,10 @@ So the connection should look like this:
 
 ![ESP32-BME280-Connection](_ESP32-BME280-Connection.jpg)
 
+Once you are done, your IoT Device should look like this or better:
+
+![iot_irl_mess](_iot_irl_mess.jpg)
+
 ### Prepare PC
 
 Install azure-iot:
@@ -164,22 +174,39 @@ On Windows, your attached ESP32 should appear in the device manager for example 
 
 ### Arduino IDE
 
-Follow these steps
+Install the Azure SDK for Embedded C library:
 
-- Install the Azure SDK for Embedded C library: Sketch, Include Library, Manage Libraries... and search for and install azure-sdk-for-c.
+- Go to Sketch, Include Library, Manage Libraries... and search for and install azure-sdk-for-c.
+
+Here is the example code i used (other parts where not modified):
+
+- [Azure_IoT_Hub_ESP32.ino](_Azure_IoT_Hub_ESP32.ino)
+- [Variables in iot_config.h](_Variables in iot_config.h)
+
+You need to change the variables in "Variables in iot_config.h".
+
+Then install the following libraries:
+
+- Adafruit_BME280_Library
+- Azure SDK for C
+
+Installed libraries for reference should look like this (probably newer versions):
+
+![library_adafruit_collection](_library_adafruit_collection.png)
+
+![library_microsoft_c](_library_microsoft_c.png)
+
+Now follow these instructions
+
 - Then go to menu File, Examples, azure-sdk-for-c and click on az_esp32 to open the sample.
 - Enter your Azure IoT Hub and WIFI information into the sample's iot_configs.h.
 - Go to menu Tools, Board and select ESP32.
-- Go to menu Tools, Port and select the port to which the micro controller is connected.
 - Upload the sketch by navigating to Sketch and click on Upload.
 
 Optionally check the configure settings under the Tools menu, set the following:
+
 - Upload Speed: 115200 (default is also acceptable, but faster speeds like 921600 can be used).
 - CPU Frequency: 240 MHz (recommended for full performance).
 - Flash Frequency: 40 MHz.
 - Partition Scheme: Use "Default 4MB with spiffs" unless you have a specific reason to choose another.
 - Port: Select the COM port that appears when you connect the ESP32 to your computer.
-
-### Debug
-
-Go to menu Tools, Serial Monitor and the serial monitor will show an output 

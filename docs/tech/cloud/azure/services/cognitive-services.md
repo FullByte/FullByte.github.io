@@ -178,7 +178,7 @@ Here are the steps i took to make it work.
 
 Make sure the input is a wav file. You can use FFMPEG for this task e.g.
 
-``` sh
+```sh
 ffmpeg -i input.mp4 -vn -acodec pcm_s16le -ar 44100 -ac 2 output.wav
 ```
 
@@ -186,7 +186,7 @@ For more options view my [FFMPEG notes](../../../tools/cli/ffmpeg.md) or visit <
 
 **Install required tools**
 
-``` ps1
+```ps1
 Install-Package Microsoft.CognitiveServices.Speech # If not possible, run: Register-PackageSource -Name MyNuGet -Location https://www.nuget.org/api/v2 -ProviderName NuGet
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 choco install -y vscode # vscode
@@ -197,7 +197,7 @@ dotnet add package Microsoft.CognitiveServices.Speech # Speech Package
 
 **Create new Csharp Project**
 
-``` ps1
+```ps1
 New-Item -Path SpeechTest -Type Directory 
 cd SpeechTest
 dotnet new console
@@ -280,7 +280,7 @@ namespace SpeechTest
 
 Run the code with:
 
-``` ps1
+```ps1
 dotnet run
 ```
 
