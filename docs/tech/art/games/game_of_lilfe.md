@@ -4,6 +4,8 @@
 
 This FFmpeg filter generates a life-like grid pattern based on a generalization of John Conway’s Game of Life. Each pixel in the output video represents a cell, which can be either alive or dead, and cells evolve according to a user-defined rule. The rule determines how many alive neighbors a cell needs to survive or be born.
 
+[Details here](https://ffmpeg.org/ffmpeg-filters.html#life)
+
 By configuring these parameters, you can create visually dynamic patterns that evolve frame by frame, producing a captivating visualization within your video:
 
 - filename (-f): Specifies a file with the initial grid state, where any non-whitespace character marks an alive cell. If no file is provided, the grid is randomly generated.
