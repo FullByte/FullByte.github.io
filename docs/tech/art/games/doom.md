@@ -4,4 +4,10 @@ There are [plenty](https://doomwiki.org/wiki/Doom_on_legacy_systems) of [collect
 
 So this is just my list of favorite things that run doom or versions of doom.
 
-[Doom in a PDF](_doom.pdf)
+## PDF
+
+[Doom in a PDF](_doom.pdf) and the [Source](https://github.com/ading2210/doompdf)
+
+## Word
+
+[Doom in Word File](https://github.com/wojciech-graj/doom-docm)

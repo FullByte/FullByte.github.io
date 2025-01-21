@@ -38,6 +38,30 @@ Change the title of input.mp4 to "My Title"
 ffmpeg -i input.mp4 -map_metadata -1 -metadata title="My Title" -c:v copy -c:a copy output.mp4
 ```
 
+Get a list of audio/video/subtitle encoders
+
+``` sh
+ffmpeg -hide_banner -encoders
+```
+
+Get only audio encoders
+
+``` sh
+ffmpeg -hide_banner -encoders | grep "^ A"
+```
+
+Get only video encoders
+
+``` sh
+ffmpeg -hide_banner -encoders | grep "^ V"
+```
+
+Analyze video frames, timecode and metadata
+
+``` sh
+ffmpeg -i input.mp4 -vf showinfo -f null -
+```
+
 ## Download video streams
 
 Locate the playlist file, e.g. using Chrome > F12 > Network > Filter: m3u8
@@ -160,6 +184,20 @@ In this example by 3.14 seconds
 ffmpeg -i input.mp4 -itsoffset 3.14 -i in.mp4 -map 0:v -map 1:a -vcodec copy -acodec copy output.mp4
 ```
 
+## Stream Video
+
+### Stream local file to RTMP
+
+The command below takes an input.mp4 file and streams it over the [RTMP protocol](https://ffmpeg.org/ffmpeg-all.html#rtmp). The -listen 1 parameter instructs FFmpeg to wait for an incoming connection. Once a client, such as ffplay, VLC, or any RTMP-compatible video player, connects, FFmpeg begins transmitting the video frames over RTMP. The -c copy parameter ensures that FFmpeg streams the video without re-encoding, preserving the original size, bitrate, and encoding.
+
+``` sh
+# RTMP server
+ffmpeg -re -i input.mp4 -listen 1 -c copy -f flv rtmp://localhost/live
+
+# RTMP client
+ffplay rtmp://127.0.0.1/live
+```
+
 ## Manipulate Video
 
 ### Stack Videos in a Grid
@@ -199,6 +237,28 @@ For a 90 degrees rotation use one of the following options:
 - Example: ```ffmpeg -i input.mp4 -vf "transpose=1" output.mp4```
 - 180 degrees run this command: ```ffmpeg -i input.mp4 -vf "transpose=2,transpose=2 output.mp4"```
 
+## Draw with FFMPEG
+
+### Generate test video color pattern
+
+``` sh
+ffmpeg -f lavfi -i testsrc=duration=10:size=1280x720:rate=30 testsrc.mpg
+```
+
+### Generate Game of life
+
+Simple version:
+
+```sh
+ffmpeg -f lavfi -i life=size=640x480:rate=30 -frames:v 300 _ffmpeg_game_of_life1.mp4
+```
+
+Using colors:
+
+```sh
+ffmpeg -f lavfi -i "life=s=960x540:mold=10:r=60:ratio=0.1:death_color=#C83232:life_color=#00ff00,scale=960:540:flags=16" -c:v libx264 -crf 41 -frames:v 1800 -r 60 -t 30 _ffmpeg_game_of_life2.mp4
+```
+
 ## Video Stabilization
 
 Requires `libvidstab` additionally to ffmpeg
@@ -229,6 +289,18 @@ Then use [ffmpeg](https://trac.ffmpeg.org/wiki/Slideshow) [concat](https://ffmpe
 
 ``` sh
 ffmpeg -f concat -i input.txt -vsync vfr -pix_fmt yuv420p output.mp4
+```
+
+Alternatively create an animated WebP with numbered PNGs:
+
+``` sh
+ffmpeg -r 1 -i /%d.png -vcodec libwebp -pix_fmt yuv420p -loop 0 -r 1 output.webp
+```
+
+Or create a looping WebP animation with numbered PNGs:
+
+``` sh
+ffmpeg -i /%d.png -vcodec libwebp -pix_fmt yuv420p -loop 0 -s 720:720 -quality 50 output.webp
 ```
 
 ## Resize Video
@@ -273,6 +345,14 @@ Export all video frames as images
 
 ``` sh
 ffmpeg -i "%1" frames/out-%03d.jpg
+```
+
+Remove GoPro TimeCode from MP4
+
+The command `-write_tmcd 0` will ensure not to write the timecode to the output file
+
+``` sh
+ffmpeg -i input.mp4  -c:a copy -c:v copy -write_tmcd 0 output.mp4
 ```
 
 ### VOB preparation
@@ -322,6 +402,3 @@ This uses `libmp3lame` with default settings. The script will convert all media 
 ``` ps1
 Get-ChildItem -file -exclude *.mp3 | Foreach-Object { ffmpeg -i ('"' + $_.Name + '"') -map_metadata -1 -acodec libmp3lame ('"' + $_.BaseName + '.mp3"') }
 ```
-
-## Sort this
-
