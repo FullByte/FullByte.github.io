@@ -1,26 +1,66 @@
 # Finances
 
+Aside from spending or investing money, doing things without involving money can be very satisfying too... but this is page is not about that.
+
 ## Spend
 
-Spending money means that money is gone and you get something in return which is not money. Otherwise you [invest](#invest) money.
-Don't be think you are investing money in relations, easy life, ... that is spending money and you get a happy wife, happy life, etc.
-And don't get me wrong: spending money is not bad. Just be clear what you are doing. Spending or investing :)
+Spending money means that this money is gone and you get something in return which is not money.
+Don't think you are investing money in relations, easy life, efficient way to do XYZ... that is spending money and you get a happy wife, happy life, etc.
+And don't get me wrong here either: spending money is not bad. Just be clear what you are doing. Are you spending or investing?
 
-What to spend money on?
+Good things to spend money on:
 
-TODO
+- Health (sports, sport equipment, healthy food)
+- Hobbies and fun stuff (games, holidays, events)
+- Education (learn things and have a good time, not college, just fund your experiments. (Education can be an investment, but not under my definition above and I suggest to not look at it that way)
+- Things that make you feel good (a picture on the wall, nice cloths, replace that thing that bothered you)
+
+### What to buy
+
+Obviously it is not a good idea to buy things you don't need with money you don't have to impress people that don't care.
+Rather buy things that spark joy and you are willing to actually use and make you happy/life better.
+Get rid of those things that don't.
+Know when to gift friends, sell, through away or store it for later.
+
+Remember that you always pay twice for every purchase:
+
+- First you pay money have it
+- Then you pay time to use it
+
+Don't pay the first price if you won't pay the second price.
+This cycle leads to a feeling of insufficiency and self-defeat, as you accumulate an "unpaid" debt of second prices and end up feeling overwhelmed and time-poor.
+
+Eventually you pay with more money and time to fix it, have it fixed or buy it again.
+This is the part where quality and repair friendliness maters.
+As the saying goes: "You get what you pay for", "Buy cheap, buy twice", "It's only cheap on paper"...
+
+Not only usage leads to maintenance, repairs and placement: Your purchase will also age and become useless, old and broken over time.
+Find ways to re-purpose it or fix it and sell it.
+It may make sense to buy cheap first to learn what you actually need and appreciate the nice things.
+
+### This one sparks joy
+
+"This one sparks joy" is a phrase popularized by Marie Kondo, a tidying expert and author from Japan.
+It encapsulates the core idea of her KonMari Method, which is a system of simplifying and organizing your home by keeping only those items that "spark joy."
+According to Kondo, if something makes you feel happy or joyful when you hold it, you should keep it; otherwise, you should let it go.
+
+Regularly evaluate your possessions, retaining only those that bring joy and discarding the rest.
+Unnecessary items not only consume physical space and require upkeep but also occupy your mental landscape.
+Often, these superfluous belongings lack a proper place in your home and frequently obstruct your living areas.
 
 ## Invest
+
+Investing money means you use money to trade for other things of value (like money) with sole purpose on making more money and possibly transferring the investment back into money (e.g. selling, dividend, rent)
 
 Some basic advice on investing money:
 
 - Only invest what you can spare. Establish an emergency fund to define what you can spare.
-- Start early, diversify (but only the stuff you know and are convinced of) and set clear goals for yourself (investment objectives, time horizon, and risk tolerance) and stay true to those values for any investment.
+- Time in the market beats timing the market: Start early, diversify (but only the stuff you know and are convinced of) and set clear goals for yourself (investment objectives, time horizon, and risk tolerance) and stay true to those values for any investment.
 - Regularly contribute, periodically review your portfolio and make adjustments for new investments.
 - Be patient and HODL and never look back. Don't day trade, bet short term or similar actions that require to check your balance and the current events frequently. This will simply be exhausting.
 - Read the [Ferengi](https://memory-beta.fandom.com/wiki/Ferengi_Rules_of_Acquisition) (Star Trek) [Rules of Acquisition](https://memory-alpha.fandom.com/wiki/Rules_of_Acquisition) and [Bogleheads investment philosophy](https://www.bogleheads.org/wiki/Video:Bogleheads%c2%ae_investment_philosophy)
 
-## Rules of Acquisition
+### Rules of Acquisition
 
 My favorite Ferengi Rules of Acquisition
 
