@@ -10,14 +10,24 @@ COPY mkdocs.yml .
 
 RUN mkdocs build
 
-FROM docker.io/nginx:alpine
-RUN apk add --no-cache openssl && \
-    mkdir -p /etc/ssl/private && \
-    openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
-    -keyout /etc/ssl/private/nginx-selfsigned.key \
-    -out /etc/ssl/certs/nginx-selfsigned.crt \
-    -subj "/C=DE/ST=NS/L=Home/O=0xfab1/OU=website/CN=localhost"
+FROM nginx:alpine
+RUN apk add --no-cache certbot certbot-nginx
+
+# Create directories for Let's Encrypt
+RUN mkdir -p /etc/letsencrypt /var/lib/letsencrypt /var/www/certbot
+
 COPY --from=builder /site/site /usr/share/nginx/html
 COPY nginx.conf /etc/nginx/nginx.conf
-EXPOSE 8443
-CMD ["nginx", "-g", "daemon off;"]
+COPY entrypoint.sh /entrypoint.sh
+
+# Make entrypoint executable
+RUN chmod +x /entrypoint.sh
+
+EXPOSE 80
+EXPOSE 443
+
+VOLUME /etc/letsencrypt
+VOLUME /var/lib/letsencrypt
+VOLUME /var/www/certbot
+
+ENTRYPOINT ["/entrypoint.sh"]

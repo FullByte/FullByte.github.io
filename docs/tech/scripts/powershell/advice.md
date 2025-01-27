@@ -80,6 +80,12 @@ Check the current privileges:
 [bool](([System.Security.Principal.WindowsIdentity]::GetCurrent()).groups -match "S-1-5-32-544")
 ```
 
+or as one-liner:
+
+``` ps1
+if (([Security.Principal.WindowsPrincipal]::new([Security.Principal.WindowsIdentity]::GetCurrent())).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {"admin"} else {"not admin"}
+```
+
 ### Required Modules
 
 **Add a required tag for every script you create.**

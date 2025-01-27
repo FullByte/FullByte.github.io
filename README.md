@@ -46,13 +46,13 @@ mkdocs serve -a localhost:8080 --dirtyreload --watch-theme -v
 
 ### Docker
 
-Alternativly use [docker](https://www.docker.com/) to run a container with all required tools + website enabled. This repository contains a `dockerfile` in the main folder which can be used to build a new container with this command. View the result here: <http://127.0.0.1:8000/>
+Alternatively use [docker](https://www.docker.com/) to run a container with all required tools + website enabled. This repository contains a `dockerfile` in the main folder which can be used to build a new container with this command. View the result here: <http://127.0.0.1:8000/>
 
 ``` sh
 git clone https://github.com/FullByte/FullByte.github.io.git 0xfab1.net
 cd 0xfab1.net
 docker build -f dockerfile -t 0xfab1 .
-docker run -d -p 8443:443 --name mkdocs-ssl 0xfab1
+docker run -d -p 80:80 -p 443:443 -v ./letsencrypt:/etc/letsencrypt -v ./certbot:/var/www/certbot --name website 0xfab1
 ```
 
 ### Podman
@@ -61,7 +61,7 @@ docker run -d -p 8443:443 --name mkdocs-ssl 0xfab1
 git clone https://github.com/FullByte/FullByte.github.io.git 0xfab1.net
 cd 0xfab1.net
 podman build -f dockerfile -t 0xfab1 .
-podman run --replace -d -p 8443:443 --name mkdocs-ssl 0xfab1
+podman run -d -p 80:80 -p 443:443 -v ./letsencrypt:/etc/letsencrypt:Z -v ./certbot:/var/www/certbot:Z --name website 0xfab1
 ```
 
 ## Contribute
