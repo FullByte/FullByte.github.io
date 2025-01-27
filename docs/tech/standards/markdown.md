@@ -20,7 +20,6 @@
 ###       ###      #
 ```
 
-
 ## Basic Markdown Formatting
 
 ### Headings

@@ -6,43 +6,11 @@ Setup the Smart Pixel Clock e.g. WIFI password, IP of the MQTT broker (the syste
 
 For details on the MQTT API check [this documentation](https://blueforcer.github.io/awtrix3/#/api).
 
-Here are some examples with Mosquitto and curl:
-
-## Control device using Mosquitto
-
-Start mosquitto
-
-```sh
-mosquitto -v
-```
-
-Monitor MQTT topics:
-
-```sh
-mosquitto_sub -h localhost -t "awtrix/#"
-```
-
-Send a message:
-
-```sh
-mosquitto_pub -h localhost -t "awtrix/notify" -m '{"text":"Hello, Awtrix!","rainbow":true,"duration":10}'
-```
-
-Show a red arrow on the top right corner
-
-```sh
-mosquitto_pub -h localhost -t "awtrix/indicator1" -m '{"color":[255,0,0],"blink":1000}'
-```
-
-Remove the arrow again:
-
-```sh
-mosquitto_pub -h localhost -t "awtrix/indicator1" -m '{"color":[0,0,0]}'
-```
+Here are some examples with curl:
 
 ## Control device using Curl
 
-Same commands as above using curl:
+Some basic commands to get started:
 
 ```sh
 curl -X POST --data '{"color":[0,0,0]}' -H 'Content-Type: application/json' 'http://1.2.3.4/api/indicator1'
@@ -181,3 +149,100 @@ Switch to a Specific App
 ```sh
 curl -X POST --data '{"name":"Time"}' -H 'Content-Type: application/json' 'http://1.2.3.4/api/switch'
 ```
+
+## Message Tool
+
+I wrote a simple python script to write messages to a selected device:
+
+### Prepare
+
+Install these dependencies in your environment
+
+```sh
+pip install pyinstaller tkinter
+```
+
+### Script
+
+This is the script named "screenmessage.py":
+
+```sh
+import tkinter as tk
+import requests
+
+def send_notification():
+    message = message_entry.get()
+    selected_ip = ip_var.get()
+    url = f"http://{selected_ip}/api/notify"
+    headers = {"Content-Type": "application/json"}
+    data = {"text": message, "duration": 10}
+
+    try:
+        response = requests.post(url, json=data, headers=headers)
+        if response.status_code == 200:
+            output_label.config(text=f"Success: {response.text}")
+        else:
+            output_label.config(text=f"Error {response.status_code}: {response.text}")
+    except requests.RequestException as e:
+        output_label.config(text=f"Request failed: {e}")
+
+def clear_message():
+    # Clears the entry field and output label
+    message_entry.delete(0, tk.END)
+    output_label.config(text="")
+
+# Create the main window
+root = tk.Tk()
+root.title("Notification Sender")
+
+# Create a dropdown menu to select the IP address
+ip_var = tk.StringVar(value="1.1.1.1")  # Default IP
+ip_options = [
+    ("Device1", "1.1.1.1"),
+    ("Device2", "1.1.1.2")
+]
+ip_label = tk.Label(root, text="Select IP Address:")
+ip_label.pack(pady=5)
+
+# Dropdown with labeled options
+def update_dropdown():
+    menu = ip_dropdown['menu']
+    menu.delete(0, 'end')
+    for name, ip in ip_options:
+        menu.add_command(label=f"{name} ({ip})", command=lambda value=ip: ip_var.set(value))
+ip_dropdown = tk.OptionMenu(root, ip_var, "")
+ip_dropdown.pack(pady=5)
+update_dropdown()
+
+# Create a label and an entry field to input the message
+message_label = tk.Label(root, text="Enter your message:")
+message_label.pack(pady=5)
+
+message_entry = tk.Entry(root, width=40)
+message_entry.pack(pady=5)
+
+# Create a button to send the notification
+send_button = tk.Button(root, text="Send Notification", command=send_notification, padx=10, pady=5)
+send_button.pack(pady=10)
+
+# Create a second button to clear the message
+clear_button = tk.Button(root, text="Clear Message", command=clear_message, padx=10, pady=5)
+clear_button.pack(pady=10)
+
+# Create a label to display the output
+output_label = tk.Label(root, text="", wraplength=400, justify="left")
+output_label.pack(pady=10)
+
+# Start the main event loop
+root.mainloop()
+```
+
+### Build
+
+Run this command to build the executable for windows:
+
+```sh
+pyinstaller --onefile --noconsole screenmessage.py
+```
+
+The executable will be in the subfolder `dist` named `screenmessage.exe`.

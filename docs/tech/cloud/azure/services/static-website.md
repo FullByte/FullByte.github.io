@@ -2,7 +2,7 @@
 
 ## Create resources with terraform
 
-Create a repo and create a new, emtpy terraform script to create:
+Create a repo and create a new, empty terraform script to create:
 
 - Static Website
 - App Registration
@@ -15,7 +15,7 @@ Deploy terraform script to create the resources required.
 ## Create and deploy static website
 
 - Create Repo for static website
-- Create static websit in repo
+- Create static website in repo
 - Create file "staticwebapp.config.json"
 - Create azure-pipelines.yml and create pipeline
 - Run pipeline

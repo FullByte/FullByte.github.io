@@ -2,8 +2,6 @@
 
 Some handy code snippets for powershell :)
 
-![_is_it_worth_the_time.png](_is_it_worth_the_time.png)
-
 ## String manipulation
 
 - Overwrite JPEG files with MD5 hashsum: ```Get-ChildItem -Recurse -Include "*.jpg" | Get-FileHash -Algorithm MD5 | Rename-Item -NewName { $_.hash + ".jpg"} -Force```
@@ -479,6 +477,7 @@ Get Binding Info
 - View open connections for a given service: ```get-nettcpconnection | select local*,remote*,state,@{Name="Process";Expression={(Get-Process -Id $_.OwningProcess).ProcessName}} | Where-Object {$_.Process -eq "svchost"} | Format-Table```
 - Check for Windows Updates: ```(New-Object -ComObject Microsoft.Update.AutoUpdate).DetectNow()```
 - Export PowerShell command history to a file: ```Get-History | Export-CSV $env:USERPROFILE\Desktop\CommandHistory.CSV```
+- Show entire history: ```Get-Content (Get-PSReadLineOption).HistorySavePath```
 - Export all available powershell commands: ```Get-Command  | Export-CSV $env:USERPROFILE\Desktop\CommandsAvailable.CSV```
 - Get last 10 installations: ```get-wmiobject Win32_ReliabilityRecords -computername 127.0.0.1 | Select-Object -first 10 Message | format-list *```
 - Last 10 security event log entries: ```Get-EventLog Security -Newest 10```

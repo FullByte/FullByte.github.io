@@ -15,6 +15,25 @@ node -v
 v14.18.0
 ```
 
+## Install and Update
+
+Use [chocolatey](https://chocolatey.org/) to install [node.js](https://nodejs.org) which includes [NPM](https://www.npmjs.com/) and install [yarn](https://classic.yarnpkg.com/en/) using npm once node.js is installed:
+
+``` ps1
+choco -y install nodejs
+npm install --global yarn
+```
+
+Update node.js, NPM and yarn:
+
+``` ps1
+choco -y update nodejs
+npm cache clean -f
+npm install -g npm@latest
+npm audit fix
+yarn set version stable
+```
+
 ## NPM
 
 Use [list-scripts](https://www.npmjs.com/package/list-scripts) and [npm-list-scripts](https://www.npmjs.com/package/npm-list-scripts) to get a list of available npm script including what each script does.

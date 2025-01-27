@@ -4,14 +4,15 @@ Ubuntu is an ancient african word, meaning "I can't configure Debian".[^1]
 
 The following is tested and used on Ubuntu 22.04.
 
-| Ubuntu    | Based on  |
-|-----------|-----------|
-| 22.04 LTS | Debian 11 |
-| 20.04 LTS | Debian 10 |
-| 18.04 LTS | Debian 9  |
-| 16.04 LTS | Debian 8  |
-| 14.04 LTS | Debian 7  |
-| 12.04 LTS | Debian 6  |
+| Ubuntu Version | Code Name        | Debian Version | Code Name |
+|----------------|------------------|----------------|-----------|
+| 24.04 LTS      | Noble Numbat     | Debian 13      | Trixie    |
+| 22.04 LTS      | Jammy Jellyfish  | Debian 11      | Bullseye  |
+| 20.04 LTS      | Focal Fossa      | Debian 10      | Buster    |
+| 18.04 LTS      | Bionic Beaver    | Debian 9       | Stretch   |
+| 16.04 LTS      | Xenial Xerus     | Debian 8       | Jessie    |
+| 14.04 LTS      | Trusty Tahr      | Debian 7       | Wheezy    |
+| 12.04 LTS      | Precise Pangolin | Debian 6       | Squeeze   |
 
 ## Config System
 
