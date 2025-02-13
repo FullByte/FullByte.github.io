@@ -93,3 +93,9 @@ Seneca the Younger (slightly adapted interpretation)
 Berthold Brecht
 
 ------------------
+
+> "Don't waste your time always searching for those wasted years"
+
+Iron Maiden
+
+------------------
