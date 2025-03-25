@@ -17,3 +17,29 @@ If they want advice but it doesn't work, here are some possible reasons to refle
 | Perceived Patronization   | Advice may be perceived as patronizing, reducing its effectiveness.         | Ensure advice is delivered respectfully and considerately to foster a positive reception.          |
 | Irrelevance of Advice     | Sometimes advice is not applicable because it's based on incorrect assumptions.| Verify assumptions and gather accurate information about the situation before advising.           |
 | Unrealistic Expectations  | Expectations that advice alone will solve complex problems can lead to disappointment.| Set realistic expectations about what advice can achieve and emphasize effort and process.       |
+
+## Rules to live by (TODO)
+
+From <ADD SOURCE>
+
+1. Gehe im Zweifelsfall vom Guten aus (lieber 1x verarscht werden als 100x kein vertrauen gezeigt)
+2. Denke in Win-Win-Szenarien (Bei guten Deals gewinnen alle)
+3. Verbessere die Welt - Stelle eine Frage (XXXXXX)
+4. Zügle Deine Empathie (mitleiden), trainiere Dein Mitgefühl (Mitleid)
+5. Versuche den Anderen zu verstehen; auch wenn Du kein Verständnis aufbringen kannst
+6. Liebe Deinen Nächsten so wie auch andere ihre Nächsten lieben
+7. Meide die Nachrichten (Mainstream Media, Personenbezogene Nachrichten und sensationsgeile Quellen)
+8. Prügele Dich nicht mit Nazis (sei Schlau im Konter geben und demonstrieren)
+9. Oute Dich (XXXXXX)
+10. Sei realitisch (sei kein träumer und kein pessimist)
+
+
+### More Rules
+
+Stuff I collected from random places over time:
+
+Show up is better than not showing up.
+or
+"Anything worth doing is also worth doing half assed".
+
+Example: brushing ur teeth for 10 seconds is better than 0 seconds, etc. apply that to everything
