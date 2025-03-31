@@ -86,6 +86,7 @@
 - Text Editor: <https://micro-editor.github.io/>
 - plaintext accounting tool: <https://github.com/simonmichael/hledger>
 - CSV pretty printer: <https://github.com/alexhallam/tv>
+- CSV processing: <https://github.com/medialab/xan>
 - Bits, bytes and address calculator: <https://github.com/jarun/bcal>
 - Code Editor: <https://micro-editor.github.io/>
 - [DOOIT](https://github.com/kraanzu/dooit) is a TUI todo manager

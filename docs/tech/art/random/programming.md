@@ -280,3 +280,33 @@ output examples
   ################                                                 ###########
   ```
   
+## Rivulet
+
+[Rivulet](https://github.com/rottytooth/Rivulet) is a programming language composed of flowing strands, written using semigraphic characters. These strands are not pictographic; their flow does not visually simulate computation. There are four distinct types of strands, each with its own symbolism and grammatical structure. Combined, they form glyphs—compact blocks of code in which multiple strands execute in unison.
+
+Example (Fibonacci program)
+
+```riv
+   ╵──╮───╮╭─    ╵╵╭────────╮
+    ╰─╯╰──╯│       ╰─╶ ╶╮╶╮╶╯
+   ╰─────╮ │      ╭─────╯ ╰─────╮
+         ╰─╯ ╷    ╰───       ───╯╷
+
+   ╵╵─╮  ╭─╮     ╭──       ╵╵╰─╮  ──╮──╮
+      ╰─╮│ ╰─╯ ╵╵╰─╯╶╮       ╴─╯  ╭─╯╭─╯
+      ╰─╯╰─ ╰──╯╰────╯       ╭╴ ╵╶╯ ╶╯╶╮
+        ╭─╮ ╭╴               │  ╰──────╯
+        │ │ │                ╰─╮       ╭─╮ 
+      │ │ ╰─╯                  │     │   │
+      ╰─╯            ╷         ╰──── ╰───╯╷
+
+   ╵╵ ╭──  ──╮  ╭─╮         ╵╰─╮
+      ╰─╮  ╭─╯╭─╯ │          ╴─╯
+       ╶╯╵╶╯  │ ╷╶╯          ╭─╮
+     ╭─╮ ╰────╯ │   ╭─╮        │
+     │ ╰────╮ ╭─╯ ╭╴│ │      ╭─╯
+     ╰────╮ │ │ │ │ │ │      │
+     ╭────╯ │ │ ╰─╯ │ ╷      ╰─╷
+     ╰────╮ │ ╰─────╯ │  
+          │ ╰─────────╯╷
+```
