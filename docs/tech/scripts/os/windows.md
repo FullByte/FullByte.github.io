@@ -97,6 +97,7 @@ For are more detailed system info dump run [winPEAS](https://raw.githubuserconte
 
 - Get last logon of user "john": ```net user john | findstr /B /C:"Last logon"```
 - Change password: ```Set-ADAccountPassword -Identity "benutzername" -NewPassword (Read-Host -AsSecureString "New PW:") -Reset```
+- Change password: ```net user YourUsername * /domain```
 
 ### Format and Image stuff
 

@@ -83,6 +83,10 @@ Online Tools
 
 - <https://glyphdrawing.club/>
 
+Archive
+
+- <https://16colo.rs/>
+
 ## taoup
 
 Ruby-powered ANSI colored fortunes

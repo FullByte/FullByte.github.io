@@ -4,13 +4,13 @@
 
 - Link: [mapscii.me](https://github.com/rastapasta/mapscii)
 - Use: ```telnet mapscii.me```
-- Download: https://github.com/rastapasta/mapscii/releases
+- Download: <https://github.com/rastapasta/mapscii/releases>
 
 ## Star Wars
 
 - Link: http://www.asciimation.co.nz/ (Service no longer available)
 - Use: ```telnet towel.blinkenlights.nl```
-- Download [nyancat.cast](_nyancat.cast) or view below:
+- View: <https://asciinema.org/a/569727>
 
 <script id="asciicast-8" src="https://asciinema.org/a/8.js" async></script>
 

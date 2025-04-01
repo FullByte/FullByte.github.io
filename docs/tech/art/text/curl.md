@@ -2,8 +2,10 @@
 
 ## QR code
 
-- Link: http://qrenco.de/
+- Link: <https://qrenco.de/>
 - Use: ```curl qrenco.de/0xfab1.net```
+
+Example:
 
 ```txt
 █████████████████████████████
@@ -25,11 +27,12 @@
 
 ## Parrot
 
-- Link: https://github.com/hugomd/parrot.live
+- Link: <https://github.com/hugomd/parrot.live>
 - Use: ```curl parrot.live```
-- Download [parrot.cast](_parrot.cast) or view below:
+- Download [parrot.cast](_parrot.cast)
+- View: <https://asciinema.org/a/239367>
 
-<script id="asciicast-8" src="https://asciinema.org/a/239367.js" async></script>
+Example:
 
 ```txt
                             .ccccc.
@@ -52,11 +55,9 @@ Ol;......................................;l'
 
 ## asciiquarium
 
-View asciiquarium using curl with [asciiquarium.live](https://github.com/kilimnik/asciiquarium.live)
+- Link: <https://github.com/kilimnik/asciiquarium.live>
+- Use: ```asciiquarium.live```
 
-``` sh
-curl asciiquarium.live
-```
 
 ## ascii.live
 
@@ -64,6 +65,8 @@ curl asciiquarium.live
 
 - Link: <https://github.com/hugomd/ascii-live>
 - Use: ```curl ascii.live/forrest```
+
+Example:
 
 ```txt
                     .':xc.
@@ -97,6 +100,8 @@ curl asciiquarium.live
 
 - Link: <https://github.com/hugomd/ascii-live>
 - Use: ```curl ascii.live/rick```
+
+Example:
 
 ```txt
 ttttttffffttfLLftff1:,ii,,,,iiiiii1ffffftt11tttt1ttt111fffttfffttttfft
