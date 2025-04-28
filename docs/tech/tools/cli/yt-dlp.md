@@ -9,6 +9,11 @@ Youtube-dl is a command-line program to download videos from YouTube and other v
 | Linux   | `apt install yt-dlp`          |
 | Python  | `pip install yt-dlp`               |
 
+Update
+
+- native: ```yt-dlp -U```
+- pip: ```pip install yt-dlp --upgrade```
+
 ## Download Video
 
 Get Source formats available:
