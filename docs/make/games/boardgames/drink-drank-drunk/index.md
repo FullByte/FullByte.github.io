@@ -1,4 +1,4 @@
-# Drink Drank Drunk
+# Rules
 
 Das Spiel heißt "Drink Drank Drunk", weil es nicht „Shit Shat Shot“ heißen sollte.
 Im Prinzip ist es eine Kopie von Ultimate Tic Tac Toe mit Schanps-Theme.
