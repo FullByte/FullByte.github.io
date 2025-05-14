@@ -299,6 +299,7 @@ This Documentation shows how to [Allowed IP addresses and domain URLs](https://d
     | 2022-09-12 | [download](public-ip/ServiceTags_Public_20220912.json) | [download](public-ip/ServiceTags_AzureGovernment_20220912.json) | [download](public-ip/ServiceTags_AzureGermany_20220912.json) | [download](public-ip/ServiceTags_China_20220912.json)    |
     | 2024-06-24 | [download](public-ip/ServiceTags_Public_20240624.json) | [download](public-ip/ServiceTags_AzureGovernment_20240624.json) |                                                              | [download](public-ip/ServiceTags_China_20240624.json)    |
     | 2025-01-09 | [download](public-ip/ServiceTags_Public_20250106.json) | [download](public-ip/ServiceTags_AzureGovernment_20250106.json) | [download](public-ip/ServiceTags_AzureGermany_20220307.json) | [download](public-ip/ServiceTags_China_20250106.json)    |
+    | 2025-05-14 | [download](public-ip/ServiceTags_Public_20250505.json) | [download](public-ip/ServiceTags_AzureGovernment_20250512.json) | [download](public-ip/ServiceTags_AzureGermany_20220307.json) | [download](public-ip/ServiceTags_China_20250512.json)    |
 
     Further (deprecated) Files
 
