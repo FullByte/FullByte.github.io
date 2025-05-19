@@ -2,14 +2,38 @@
 
 ## Getting Started Hafven CNC
 
-1. **Alles anschalten** nach der Reihenfolge Beschriftung (Reminder: Karte besorgen [Schritt 5])
-2. Rechner starten und in LinuxCNC **Referenzfahrt** durchführen
-3. Werkstück einspannen
+1. Alles anschalten nach der Reihenfolge Beschriftung (Reminder: Karte besorgen [Schritt 5])
+
+![CNC_Step1](_CNC_Step1.jpg)
+
+2. Rechner starten und in LinuxCNC Referenzfahrt durchführen
+
+![CNC_Step2](_CNC_Step2.0.jpg)
+
+![CNC_Step2](_CNC_Step2.1.jpg)
+
+3. Opferplatte auflegen und Werkstück einspannen
+
+![CNC_Step3](_CNC_Step3.jpg)
+
 4. Tastplatte auflegen und Messwerkzeug einspannen (Werkzeug 99)
+
+![CNC_Step4](_CNC_Step4.jpg)
+
 5. Programm "XYZ Tastplatte" laufen lassen
+
+![CNC_Step5](_CNC_Step5.jpg)
+
 6. NGC Datei laden (auf M6 T1 achten und Anleitung folgen)
 
+Notaus im Blick behalten :D
+
+![](_CNC_Notaus.jpg)
+
+
 ## EstlCAM
+
+Link: <https://www.estlcam.de/>
 
 Hinweise:
 
