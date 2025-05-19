@@ -28,8 +28,7 @@
 
 Notaus im Blick behalten :D
 
-![](_CNC_Notaus.jpg)
-
+![Notaus](_CNC_Notaus.jpg)
 
 ## EstlCAM
 
