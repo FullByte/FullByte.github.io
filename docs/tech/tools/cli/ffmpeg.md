@@ -200,6 +200,34 @@ ffplay rtmp://127.0.0.1/live
 
 ## Manipulate Video
 
+### Optimize under water videos
+
+Underwater videos usually suffer from color loss, decreased contrast, and color shifts due to water absorption and scattering.
+
+Using color correction and other enhancements with ffmpeg can significantly improve visual quality:
+
+| **Problem**                   | **Solution**                      | **ffmpeg Command**                                                                                                                                             |
+| ----------------------------- | --------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Blue/Green Tint               | Boost Red Channel (Color Balance) | `ffmpeg -i input.mp4 -vf "colorbalance=rs=0.4:rm=0.4:rh=0.3" -c:a copy output.mp4`                                                                             |
+| Lack of Contrast and Vibrancy | Increase Contrast & Saturation    | `ffmpeg -i input.mp4 -vf "eq=contrast=1.3:saturation=1.2" -c:a copy output.mp4`                                                                                |
+| Video is Dark or Dull         | Brighten and Gamma Correction     | `ffmpeg -i input.mp4 -vf "eq=brightness=0.05:gamma=1.2" -c:a copy output.mp4`                                                                                  |
+| Incorrect White Balance       | Adjust Color Channels             | `ffmpeg -i input.mp4 -vf "colorchannelmixer=rr=1.5:gg=1.0:bb=0.8" -c:a copy output.mp4`                                                                        |
+| Blurred or Low Detail         | Sharpening                        | `ffmpeg -i input.mp4 -vf "unsharp=5:5:1.0:5:5:0.0" -c:a copy output.mp4`                                                                                       |
+| Noise or Grain                | Noise Reduction                   | `ffmpeg -i input.mp4 -vf "hqdn3d=1.5:1.5:6:6" -c:a copy output.mp4`                                                                                            |
+| Multiple Issues               | Combined Filters                  | `ffmpeg -i input.mp4 -vf "colorbalance=rs=0.4:rm=0.4:rh=0.3,eq=contrast=1.2:gamma=1.2:saturation=1.3,unsharp=5:5:0.8,hqdn3d=1.5:1.5:4:4" -c:a copy output.mp4` |
+
+All commands in a one-liner:
+
+``` sh
+ffmpeg -i input.mp4 -vf "colorbalance=rs=0.3:rm=0.3:rh=0.2,eq=contrast=1.2:saturation=1.05:brightness=0.05:gamma=1.1,colorchannelmixer=rr=1.3:gg=1.0:bb=0.9,unsharp=5:5:0.8,hqdn3d=1.2:1.2:5:5" -c:a copy balanced_output.mp4
+```
+
+If the result is no good, try adjusting
+
+- colorbalance e.g. range from (0.4, 0.4, 0.3) to (0.2, 0.2, 0.1)
+- colorchannelmixer red channel range from rr=1.6 to rr=1.1
+- contrast and gamma to maintain naturalness
+
 ### Stack Videos in a Grid
 
 - 2 Videos Horizontally: ```ffmpeg -i input0.mp4 -i input1.mp4 -filter_complex hstack=inputs=2 horizontal-stacked-output.mp4```

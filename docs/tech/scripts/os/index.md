@@ -1,6 +1,6 @@
 # Operating Systems
 
-This is a list of interesting operating systems
+This is a list of interesting operating systems... of course there is always [more](https://github.com/prathyvsh/os-catalog).
 
 [![xkcd](https://imgs.xkcd.com/comics/mac_pc.png)](https://xkcd.com)
 
