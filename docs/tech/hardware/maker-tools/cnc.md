@@ -2,37 +2,45 @@
 
 ## Getting Started Hafven CNC
 
-1. **Alles anschalten** nach der Reihenfolge Beschriftung (Reminder: Karte besorgen [Schritt 5])
+- [ ] **Alles anschalten** nach der Reihenfolge Beschriftung (Reminder: Karte besorgen [Schritt 5])
 
     ![CNC_Step1](_CNC_Step1.jpg)
 
-2. **Rechner starten** und in LinuxCNC **Referenzfahrt** durchführen
+- [ ] **Rechner starten** und in LinuxCNC **Referenzfahrt** durchführen
 
     ![CNC_Step2](_CNC_Step2.0.jpg)
 
     ![CNC_Step2](_CNC_Step2.1.jpg)
 
-3. **Opferplatte** auflegen und **Werkstück** einspannen
+- [ ] **Opferplatte** auflegen und **Werkstück** einspannen
 
     ![CNC_Step3](_CNC_Step3.jpg)
 
-4. **Tastplatte** auflegen und **Messwerkzeug** einspannen (Werkzeug 99)
+- [ ] **Tastplatte** auflegen und **Messwerkzeug** einspannen (Werkzeug 99)
 
     ![CNC_Step4](_CNC_Step4.jpg)
 
-5. Programm **XYZ Tastplatte** laufen lassen
+- [ ] Programm **XYZ Tastplatte** laufen lassen
 
     ![CNC_Step5](_CNC_Step5.jpg)
 
-6. NGC **Datei laden** (auf M6 T1 achten und Anleitung folgen)
+- [ ] NGC **Datei laden** (auf M6 T1 achten und Anleitung folgen)
 
-7. **Notaus** im Blick behalten :D
+- [ ] **Notaus** im Blick behalten :D
 
     ![Notaus](_CNC_Notaus.jpg)
 
 ## EstlCAM
 
 Link: <https://www.estlcam.de/>
+
+Vorbereitung für Hafven:
+
+- [ ] In Estlcam unter Einstellungen/Grundeinstellungen LinuxCNC als CNC Programm auswählen.
+- [ ] Unter Einstellungen/CNC Programme auf "Einstellungen öffnen" klicken.
+- [ ] CNC Programm Voreinstellungen bzw. Postprozessor [ohne Werkzeugwechsel](_estlcamV12_Hafven_ohneWerkzeugwechsel.pp) bzw. [mit Werkzeugwechsel](_estlcamV12_Hafven_Werkzeugwechsel.pp) für die CNC Fräse im Hafven laden.
+- [ ] Nun muss sichergestellt werden, dass der Postprozessor auch dauerhaft hinterlegt ist. Hierzu nun auf "Einstellungen speichern" klicken und die Datei unter dem dort vorgeschlagenen
+Verzeichnis speichern.
 
 Hinweise:
 
@@ -122,6 +130,10 @@ Wichtige G-Codes & HAL-Befehle
 | `M3` / `M4` / `M5` | Spindel ein (CW/CCW) / Stopp     | `M3 S12000`                           |
 | HAL-Scope start    | Live-Monitoring                  | `halrun —interactive`                 |
 | `halcmd show pin`  | HAL-Pin-Zustand anzeigen         | `halcmd show pin joint.0.motor-fault` |
+
+## Examples
+
+- [EstlCAM LinuxCNC Tic Tac Toe](_EstlCAM_LinuxCNC_Tic_Tac_Toe.zip)
 
 ## Buy stuff
 
