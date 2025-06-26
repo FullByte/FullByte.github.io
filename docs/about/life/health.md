@@ -16,6 +16,8 @@ Good physical health relies on quality sleep, daily exercise, and a healthy diet
 
 ### Exercise
 
+A good daily routine is 100 push-ups, 100 sit-ups, 100 squats and a 10-kilometer run.
+
 #### No free shower
 
 Before stepping into the shower, ensure you've worked up a sweat. If your day mainly involves desk work, engage in activities like running to break a sweat before you bathe. Commit to exercising first so every shower feels truly deserved.
