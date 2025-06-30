@@ -146,7 +146,7 @@ List of NTP Servers:
 | fu-berlin                   | zeit.fu-berlin.de              |     |
 | gatech                      | navobs1.gatech.edu             |     |
 | Georgia State University    | ntp.gsu.edu                    |     |
-| google                      | time.google.com               |     |
+| google                      | time.google.com                |     |
 | google                      | time1.google.com               |     |
 | google                      | time2.google.com               |     |
 | google                      | time3.google.com               |     |
@@ -704,3 +704,23 @@ Here is an overview:
 | Windows           | 10                    | ICMP/TCP/UDP | 128 |
 | Windows           |                       |              | 128 |
 | juniper           |                       | ICMP         | 64  |
+
+## TCP Fingerprints
+
+A TCP fingerprint is a set of low-level TCP option values and patterns that, when combined, can reveal what kind of system is connecting—even before any higher-level protocol (like HTTP or TLS) is exchanged. Here are some examples:
+
+| #  | Field/Option                     | Typical Values / Patterns                         | What It Usually Indicates                                                               |
+|----|----------------------------------|---------------------------------------------------|-----------------------------------------------------------------------------------------|
+| 1  | MSS (Maximum Segment Size)       | 1460, 1380, 1440, 536                             | 1460: Ethernet (Linux/Windows/Mac), 1380: VPNs, 536: legacy systems or special networks |
+| 2  | Window Scale                     | 2, 4, 8, 256, 512                                 | 8: Linux default, 2/4: Windows, other: rare/custom stacks                               |
+| 3  | SACK Permitted                   | Present/Absent                                    | Present: Modern OS, Absent: some old stacks or IoT devices                              |
+| 4  | Timestamps Option                | Present/Absent                                    | Present: Linux/Mac default, Absent: Windows, or sometimes due to NAT/routers            |
+| 5  | ECN (Explicit Congestion Notif.) | Enabled/Disabled                                  | Enabled: Modern Linux/Chrome, Disabled: many Windows/Mac                                |
+| 6  | Window Size                      | 65535, 5840, 64240, 29200                         | 65535: Windows, 5840: Linux, 29200: MacOS                                               |
+| 7  | TTL (Time To Live)               | 64, 128, 255                                      | 64: Linux/Mac, 128: Windows, 255: BSD/Networking appliances                             |
+| 8  | IP Version                       | 4, 6                                              | IPv4: Default everywhere, IPv6: Modern/advanced users                                   |
+| 9  | Source Port Range                | 49152-65535 (Linux), 1025-5000 (Windows pre-2008) | Linux/Unix: High ephemeral, Old Windows: Low ephemeral                                  |
+| 10 | TCP Option Ordering              | MSS, SACK, Timestamp, WS                          | The order is surprisingly unique per OS/stack                                           |
+| 11 | TLS Version (if HTTPS)           | 1.2, 1.3                                          | 1.3: Newer clients (Chrome/Firefox), 1.2: Still common, older clients                   |
+| 12 | Cipher Suites in TLS             | Varies by browser/app                             | Can often distinguish between Chrome, Firefox, curl, bots, etc.                         |
+| 13 | TLS Extensions                   | Supported Groups, ALPN, SNI                       | Presence/order helps identify browser/app/version                                       |
