@@ -182,3 +182,32 @@ curl -x http://proxyserver:port https://example.com
 ### More
 
 - [Use curl with ssl](https://curl.se/docs/sslcerts.html)
+
+Absolutely! Here’s the technical blog section in **Markdown**:
+
+## Is curl in PowerShell an Alias or the Real Deal?
+
+On Windows, running `curl` in PowerShell might not always do what you expect. That’s because older versions of PowerShell define `curl` as an alias for `Invoke-WebRequest`, while modern Windows also ships with the real cURL executable. To avoid confusion, here’s a simple PowerShell snippet to check exactly what `curl` points to in your session:
+
+```powershell
+$curlCmd = Get-Command curl -ErrorAction SilentlyContinue
+
+if ($null -eq $curlCmd) {
+    Write-Output "'curl' is not available in your PATH."
+}
+elseif ($curlCmd.CommandType -eq 'Alias') {
+    Write-Output "'curl' is a PowerShell alias for '$($curlCmd.Definition)'."
+}
+elseif ($curlCmd.CommandType -eq 'Application') {
+    Write-Output "'curl' is the real executable located at: $($curlCmd.Source)"
+}
+else {
+    Write-Output "Unexpected command type: $($curlCmd.CommandType)"
+}
+```
+
+Just run this script in your PowerShell window, and you’ll immediately know whether `curl` is an alias or the real command-line tool. If it’s an alias and you need the actual cURL, you can always remove the alias for your session with:
+
+```powershell
+Remove-Item alias:curl
+```
