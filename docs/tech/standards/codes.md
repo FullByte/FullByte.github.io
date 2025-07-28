@@ -25,8 +25,7 @@ A GTIN is a numeric code (8, 12, 13, or 14 digits long) with this general struct
 - Item Reference: Assigned by the company to identify a specific product.
 - Check Digit: A single digit at the end, used to verify that the number was correctly composed or scanned.
 
-=== "GTIN Prefixes"
-
+??? info "GTIN Prefixes"
         | Prefix        | Country / Use                      | Prefix       | Country / Use                          |
         |---------------|------------------------------------|--------------|----------------------------------------|
         | 00–13         | USA & Canada                       | 20–29        | Internal numbering                     |
@@ -83,7 +82,14 @@ A GTIN is a numeric code (8, 12, 13, or 14 digits long) with this general struct
 
 The check digit is calculated using the modulo 10 algorithm, also known as the Luhn algorithm variant for GTINs. Here is a python code example that uses the check digit to validate a GTIN-8, GTIN-12, GTIN-13, or GTIN-14 code:
 
-=== "GTIN code validation"
+??? info "GTIN code validation"
+        One-liner:
+
+        ```py
+        is_valid_gtin=lambda g:g.isdigit()and len(g)in[8,12,13,14]and(10-sum(int(d)*(3 if i%2 else 1)for i,d in enumerate(reversed(g[:-1])))%10)%10==int(g[-1])
+        ```
+
+        Readable and with example:
 
         ```py
         def is_valid_gtin(gtin):
