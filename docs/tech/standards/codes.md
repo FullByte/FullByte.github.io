@@ -2,6 +2,103 @@
 
 Yet another not complete list of random codes.
 
+## GTIN
+
+GTIN is the umbrella term for globally standardized product identifiers used to uniquely identify trade items. There are different types based on length:
+
+- GTIN-13 (13 digits) → same as EAN-13*
+- GTIN-12 (12 digits) → same as UPC-A**
+- GTIN-14 (14 digits) → used for packaging levels or logistics
+- GTIN-8 (8 digits) → for small products
+
+*EAN is an older term, originally used mainly in Europe. EAN-13 (or GTIN-13) is the most common EAN form. Although the term EAN is still commonly used, it has been officially replaced by GTIN in global standards.
+
+**UPC-A (Universal Product Code) or GTIN-12 is a 12-digit code widely used in the United States and Canada. There's also a shortened version called UPC-E (8 digits) used for small packages.
+
+### GTIN structure
+
+A GTIN is a numeric code (8, 12, 13, or 14 digits long) with this general structure:
+
+[Country Code] + [Company Prefix] + [Item Reference] + [Check Digit]
+
+- Company Prefix: Assigned by GS1 (the global standards organization). Identifies the brand owner.
+- Item Reference: Assigned by the company to identify a specific product.
+- Check Digit: A single digit at the end, used to verify that the number was correctly composed or scanned.
+
+=== "GTIN Prefixes"
+
+        | Prefix        | Country / Use                      | Prefix       | Country / Use                          |
+        |---------------|------------------------------------|--------------|----------------------------------------|
+        | 00–13         | USA & Canada                       | 20–29        | Internal numbering                     |
+        | 30–37         | France                             | 380          | Bulgaria                               |
+        | 383           | Slovenia                           | 385          | Croatia                                |
+        | 387           | Bosnia and Herzegovina             | 400–440      | Germany                                |
+        | 45, 49        | Japan                              | 460–469      | Russia                                 |
+        | 471           | Taiwan                             | 474          | Estonia                                |
+        | 475           | Latvia                             | 476          | Azerbaijan                             |
+        | 477           | Lithuania                          | 478          | Uzbekistan                             |
+        | 479           | Sri Lanka                          | 480          | Philippines                            |
+        | 481           | Belarus                            | 482          | Ukraine                                |
+        | 484           | Moldova                            | 485          | Armenia                                |
+        | 486           | Georgia                            | 487          | Kazakhstan                             |
+        | 489           | Hong Kong                          | 50           | United Kingdom                         |
+        | 520           | Greece                             | 528          | Lebanon                                |
+        | 529           | Cyprus                             | 531          | North Macedonia                        |
+        | 535           | Malta                              | 539          | Ireland                                |
+        | 54            | Belgium and Luxembourg             | 560          | Portugal                               |
+        | 569           | Iceland                            | 57           | Denmark                                |
+        | 590           | Poland                             | 594          | Romania                                |
+        | 599           | Hungary                            | 600, 601     | South Africa                           |
+        | 608           | Bahrain                            | 609          | Mauritius                              |
+        | 611           | Morocco                            | 613          | Algeria                                |
+        | 616           | Kenya                              | 619          | Tunisia                                |
+        | 621           | Syria                              | 622          | Egypt                                  |
+        | 624           | Libya                              | 625          | Jordan                                 |
+        | 626           | Iran                               | 627          | Kuwait                                 |
+        | 628           | Saudi Arabia                       | 629          | United Arab Emirates                   |
+        | 64            | Finland                            | 690–695      | China                                  |
+        | 70            | Norway                             | 729          | Israel                                 |
+        | 73            | Sweden                             | 740          | Guatemala                              |
+        | 741           | El Salvador                        | 742          | Honduras                               |
+        | 743           | Nicaragua                          | 744          | Costa Rica                             |
+        | 745           | Panama                             | 746          | Dominican Republic                     |
+        | 750           | Mexico                             | 76           | Switzerland and Liechtenstein          |
+        | 770           | Colombia                           | 773          | Uruguay                                |
+        | 775           | Peru                               | 777          | Bolivia                                |
+        | 779           | Argentina                          | 780          | Chile                                  |
+        | 784           | Paraguay                           | 786          | Ecuador                                |
+        | 789–790       | Brazil                             | 80–83        | Italy                                  |
+        | 84            | Spain                              | 850          | Cuba                                   |
+        | 858           | Slovakia                           | 859          | Czech Republic                         |
+        | 860           | Yugoslavia                         | 867          | North Korea                            |
+        | 869           | Turkey                             | 87           | Netherlands                            |
+        | 880           | South Korea                        | 885          | Thailand                               |
+        | 888           | Singapore                          | 890          | India                                  |
+        | 893           | Vietnam                            | 899          | Indonesia                              |
+        | 90, 91        | Austria                            | 93           | Australia                              |
+        | 94            | New Zealand                        | 955          | Malaysia                               |
+        | 958           | Macau                              | 977          | Magazines (ISSN)                       |
+        | 978–979       | Books (ISBN)                       | 980          | Refund receipts, voucher codes         |
+        | 981–983       | Common Currency Coupons            | 990–999      | Coupon codes                           |
+
+The check digit is calculated using the modulo 10 algorithm, also known as the Luhn algorithm variant for GTINs. Here is a python code example that uses the check digit to validate a GTIN-8, GTIN-12, GTIN-13, or GTIN-14 code:
+
+=== "GTIN code validation"
+
+        ```py
+        def is_valid_gtin(gtin):
+            if not gtin.isdigit() or len(gtin) not in [8, 12, 13, 14]:
+                return False
+            digits = list(map(int, gtin))
+            total = sum(d * (3 if i % 2 else 1) for i, d in enumerate(reversed(digits[:-1])))
+            check = (10 - total % 10) % 10
+            return check == digits[-1]
+
+        # Example
+        print(is_valid_gtin("4006381333931"))  # True
+        print(is_valid_gtin("1234567890128"))  # False
+        ```
+
 ## Morse code
 
 a: .-
