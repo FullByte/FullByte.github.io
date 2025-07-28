@@ -52,6 +52,6 @@ gpg --decrypt QmYqSCWUZg8Cyo4MFQzqKcC14ct4ybAWyrAc9qzdJaFYTL > 0xfab1.pdf
 
 I am using [fleek](https://fleek.co/) to host [0xfab1.net on IPFS](https://ipfs.0xfab1.net).
 
-With Fleek you get a fleek adress, the IPFS address and I added a CNAME to make it easy to reach:
+With Fleek you get a fleek address, the IPFS address and I added a CNAME to make it easy to reach:
 
 Here is a list of public gateways: <https://ipfs.github.io/public-gateway-checker/>

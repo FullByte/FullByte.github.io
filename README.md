@@ -5,7 +5,7 @@
 This is the source of my personal, public web page ```¯\_(ツ)_/¯```
 
 Publishing my projects and notes has been great exercise for me.
-As longs as this works well for me I will continue doing so :)
+As long as this works well for me I will continue doing so :)
 The content may appear random as it deals with basically anything I find interesting and noteworthy :)
 
 Visit <https://0xfab1.net> for online view.

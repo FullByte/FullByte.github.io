@@ -85,7 +85,7 @@ ffmpeg -i input.mp4 -vf "scale=vga,thumbnail=100,split[a][b],[b]palettegen=reser
 ffmpeg -i videoname.mp4 -vf fps=1/5 videoname%05d.jpg
 ```
 
-Change the value `fps=1/5` to whatever works best (fps=1/5 = every 5 secounds one picture)
+Change the value `fps=1/5` to whatever works best (fps=1/5 = every 5 seconds one picture)
 
 **Extract frames from a video as image file**
 

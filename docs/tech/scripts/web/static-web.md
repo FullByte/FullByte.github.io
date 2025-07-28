@@ -161,7 +161,7 @@ echo '{ "formation": { "web": { "size": "free" } } }' > app.json
 echo '<?php include_once("index.html"); ?>' > index.php
 ```
 
-Adding this breaks the build for other hosts as some assume this is a PHP site and interprete the build wrong. For this reason I create the files above in a seperate branch named "heroku" with this command `mkdocs gh-deploy -b heroku`. Below is the github action to deploy 0xfab1.net on github and also prepare a branch build for heroku:
+Adding this breaks the build for other hosts as some assume this is a PHP site and interpret the build wrong. For this reason I create the files above in a separate branch named "heroku" with this command `mkdocs gh-deploy -b heroku`. Below is the github action to deploy 0xfab1.net on github and also prepare a branch build for heroku:
 
 ``` yaml
 jobs:

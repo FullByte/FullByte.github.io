@@ -185,7 +185,7 @@ dc
 dc
 ```
 
-Read at secound loop
+Read at second loop
 
 ``` sh
 px @ rbp-0x8

@@ -8,5 +8,4 @@ Some real CAPTCHAs I have seen that are somehow entertaining and art :)
 
 ## Fake
 
-CAPTCHAs that are not used (as far as i know) in real life szenarios/applications but are omehow entertaining and art :)
-
+CAPTCHAs that are not used (as far as i know) in real life szenarios/applications but are somehow entertaining and art :)

@@ -62,7 +62,7 @@ Once all three actions are done the player earns credits from certain actions:
 |-----------------------|---------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Figure moved          | +1      | For each figure moved 1 credit is awarded. If a figure moves to attack another figure but this figure has a protection ability this counts as move (but not as kill).               |
 | Converted figure      | +1      | A converted enemy is awarded with 1 credit. Credits are rewarded after the turn in which the enemy was converted; not in the turn the conversion started.                         |
-| Conversion failed     | -1 / +1 | If the enemy successfully escapes from the conversion, he gains 1 credit and the player initiating the conversion looses 1 credit.                                            |
+| Conversion failed     | -1 / +1 | If the enemy successfully escapes from the conversion, he gains 1 credit and the player initiating the conversion loses 1 credit.                                            |
 | Enemy killed          | +2      | Each enemy killed is rewarded with 2 credits. If a figure with a protect ability is successfully attacked this does not account for enemy killed and is not awarded with credits. |
 | Reached enemy endzone | -1 / +1 | Steal 1 credit from your enemy. If your enemy has no credits left you get nothing. This is rewarded once; not every round a figure stands at the end zone |
 
@@ -107,9 +107,9 @@ The abilities explode and convert are gained when moving onto a marked field (no
 
 Moving to a field on which the enemy stands attacks the enemy.
 
-- If the enemy has an protect ability, the attacker stays where it started and the attacked figure looses the protect ability.
-- If the enemy doesn't have the protect ability, the enemy is killed and the attacker gains an protect ability.
-- Killing an enemy with explosion or convert the attacker does not recieve the protect ability, however this credits for the kill are still received.
+- If the enemy has a protect ability, the attacker stays where it started and the attacked figure loses the protect ability.
+- If the enemy doesn't have the protect ability, the enemy is killed and the attacker gains a protect ability.
+- Killing an enemy with explosion or convert the attacker does not receive the protect ability, however the credits for the kill are still received.
 - If the enemy has an explode or convert ability the enemy is killed and the attacker may choose to gain the protect ability or the explode or convert ability from the enemy.
 
 The following abilities are available:
@@ -117,8 +117,8 @@ The following abilities are available:
 | Ability | Available | Comment                                                                                                                                                                 |
 |---------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Protect | 5         | If a figure kills another figure it earns the protect ability. This figure now requires 2 hits to get killed. 2 protect abilities are assigned during setup to the kings of each side. Once the king is attacked and the protect ability is lost this protect ability can be re-used. |
-| Explode | 3         | Once activated this will kill all figures (own and enemy) within the radius. Exception are figures with the protect ability. These figures will loose their protect ability.                                                                                                                                                                       |
-| Convert | 3         | Once activated an enemy figure within the radius must be chosen. This figure will recieve the convert ability. If this figure does not move out of the radius in the next turn this figure is converted. The figure is then killed and replaced by the same typ of figure of the other color from the recruitment zone. In case this figure is not available the figure is killed without replacement. If the figure manages to escape it may keep the convert ability. Enemys with the protect ability can not be converted. If the king has no protection and is converted the game is over. If the king is attacked with conversion the king is in check and the special moving rules apply.                                                                                                                                                                       |
+| Explode | 3         | Once activated this will kill all figures (own and enemy) within the radius. Exception are figures with the protect ability. These figures will lose their protect ability.                                                                                                                                                                       |
+| Convert | 3         | Once activated an enemy figure within the radius must be chosen. This figure will receive the convert ability. If this figure does not move out of the radius in the next turn this figure is converted. The figure is then killed and replaced by the same type of figure of the other color from the recruitment zone. In case this figure is not available the figure is killed without replacement. If the figure manages to escape it may keep the convert ability. Enemies with the protect ability can not be converted. If the king has no protection and is converted the game is over. If the king is attacked with conversion the king is in check and the special moving rules apply.                                                                                                                                                                       |
 
 ### Recruit
 

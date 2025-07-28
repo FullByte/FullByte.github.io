@@ -208,7 +208,7 @@ Inspiring tools/templates:
 
 [JSON Resume](https://jsonresume.org) is an open source solution to create a JSON-based standard for resumes. Create a HTML or PDF output using the [CLI](https://github.com/jsonresume/resume-cli). Use a different theme without changing anything in the resume file.
 
-- Install: ```npm i resume-cli``` or use remotly with ```npx resume```
+- Install: ```npm i resume-cli``` or use remotely with ```npx resume```
 - Create initial json file: ```resume init```
 - Edit `resume.json` and validate with resume validate: ```resume validate```
 - Create a PDF: ```resume export resume.pdf```

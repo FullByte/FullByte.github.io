@@ -69,7 +69,7 @@ Process {
             Write-Host("Repository successfully deleted.") -ForegroundColor Green -BackgroundColor DarkGray
         }
         else {
-            Write-Host("Abort successfull.") -ForegroundColor Green -BackgroundColor DarkGray
+            Write-Host("Abort successful.") -ForegroundColor Green -BackgroundColor DarkGray
         }
     }
     else {
@@ -82,7 +82,7 @@ Process {
 
 ### Queries
 
-Show all open tasks assinged to a user across all projects:
+Show all open tasks assigned to a user across all projects:
 
 ![OpenTasksAssinged](_AzureDevOpsOpenTasksAssinged.jpg)
 

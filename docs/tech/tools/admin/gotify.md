@@ -11,7 +11,7 @@ Info
 
 ## Using gotify with github actions
 
-Example of how i update gotify whenever there is a github action that builds the docker container.
+Example of how I update gotify whenever there is a github action that builds the docker container.
 The sensible vars are stored in the github project secrets.
 
 ```yml

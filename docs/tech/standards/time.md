@@ -183,9 +183,9 @@ Sources:
 
 Calculate a number for each of the day, month, and year by adding the digits together as follows:
 
-In this example todays date is 15. June 2023:
+In this example today's date is 15. June 2023:
 
-Day = just todays day e.g. 15 of June
+Day = just today's day e.g. 15 of June
 
 Month = the number of below table e.g. for June = 3
 

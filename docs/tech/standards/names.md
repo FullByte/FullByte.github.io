@@ -259,7 +259,7 @@ Tibor Schütz points out people often have a different home and work address.
 - Places have only one official address. There is a dam in Geneva than span the Rhône and therefore the border. The dam has two street addresses, one in Switzerland, one in France.
 - Places have only one official name per language. That might be true in an ultra-centralized state which never changes its mind. The hill behind my flat has two different names, depending on the maps. On the topographic maps (used by the army) the name is "Äntlisberg", while on the city map, the name is "Entlisberg", both are official. In Taipei, the romanized street names used to use different romanisation rules depending on the quarter, so the official street name changes.
 - Some places have multiple languages, so multiple names, which can be quite different: Genève, Genf, Ginevra.
-- Street adresses contain street names. In many remote places in Europe, the hamlet name is considered a sufficient address.
+- Street addresses contain street names. In many remote places in Europe, the hamlet name is considered a sufficient address.
 Place names follow the character rules of the language
 
 ### Names

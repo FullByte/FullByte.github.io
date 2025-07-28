@@ -70,7 +70,7 @@ Basics
 - Firewall settings: ```netsh advfirewall show currentprofile```
 - Power Config: ```powercfg /l```
 - Get tasks running: ```tasklist```
-- Current user and groups + priviledges: ```whoami /all```
+- Current user and groups + privileges: ```whoami /all```
 
 ### Systeminfo
 

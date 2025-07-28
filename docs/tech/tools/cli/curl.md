@@ -113,7 +113,7 @@ curl -s -G "https://api.abuseipdb.com/api/v2/check-block" \
   | jq '.data.reportedAddress'
 ```
 
-If you dont have jq installed:
+If you don't have jq installed:
 
 - ubuntu: ```sudo apt install jq```
 - windows: ```scoop install jq```

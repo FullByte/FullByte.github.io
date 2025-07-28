@@ -18,7 +18,7 @@ Explaination of the Codes: .      ...                 ...                 ...
 ```
 
 The first item can be `d` (a directory), `-` (a regular file) or `l` (a symbolic link).  
-The following three triplets specify permissons for the `user`, `group` and `world` in that order.  
+The following three triplets specify permissions for the `user`, `group` and `world` in that order.  
 In each tripplet, permissions can be `r` (read), `w` (write), `x` (execute) or `-` (not assigned).  
 Setting permissions can be done via numbers: `r=4`, `w=2`, `x=1` and `-=0`.  
 
