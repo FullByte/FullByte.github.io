@@ -29,7 +29,7 @@ If they want advice but it doesn't work, here are some possible reasons to refle
 7. Meide die Nachrichten (Mainstream Media, Personenbezogene Nachrichten und sensationsgeile Quellen)
 8. Prügele Dich nicht mit Nazis (sei Schlau im Konter geben und demonstrieren)
 9. Oute Dich (XXXXXX)
-10. Sei realitisch (sei kein träumer und kein pessimist)
+10. Sei realistisch (sei kein Träumer und kein Pessimist)
 
 ### More Rules
 
@@ -38,4 +38,4 @@ More good advice I collected from random places over time:
 Showing sometimes is 50%:
 
 - Quote: "Show up is better than not showing up" or "Anything worth doing is also worth doing half assed".
-- Example: brushing ur teeth for 10 seconds is better than 0 seconds, etc. apply that to everything..
+- Example: brushing your teeth for 10 seconds is better than 0 seconds, etc. apply that to everything..

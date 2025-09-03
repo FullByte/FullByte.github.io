@@ -7,7 +7,7 @@ This is a collection of hand picked wisdom accumulated for the worthy. Hopefully
 Let's start with some random quotes:
 
 - A society grows great when old men plant trees in whose shade they shall never sit.
-- Its okay to go through awful places, just don't stop and unpack.
+- It's okay to go through awful places, just don't stop and unpack.
 - If you choose not to find joy in the snow, you will have less joy in your life, but the same amount of snow.
 
 ## Topics
@@ -21,12 +21,12 @@ All topics in this "life" section deal with wealth and prosperity. Wealth can be
 - [Digital lifestyle](digital.md)
 - [Social Wealth](social.md)
 
-Some topics i will eventually cover later:
+Some topics I will eventually cover later:
 
 - Ideas (Intellectual Wealth)
 - Heritage (Cultural Wealth)
-- Freedom - (sTime Wealth)
+- Freedom (Time Wealth)
 - Fulfillment (Spiritual Wealth)
-- Joy - (Emotional Wealth)
+- Joy (Emotional Wealth)
 
 I also collected and formulated some not so serious advice in the [fun](fun.md) chapter.

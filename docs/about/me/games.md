@@ -16,9 +16,9 @@ A list of games I have, like and played.
 
 ## Digital Games
 
-### Playstation Games
+### PlayStation Games
 
-A list of playstation games I own:
+A list of PlayStation games I own:
 
 | Game                               | Local Players | Comment |
 |------------------------------------|---------------|---------|
@@ -62,9 +62,9 @@ A list of playstation games I own:
 
 ### Switch Games
 
-A list of my nintendo switch games:
+A list of my Nintendo Switch games:
 
-| Game                                             | Local Player | Comment         |
+| Game                                             | Local Players | Comment         |
 |--------------------------------------------------|--------------|-----------------|
 | 10 Second Run RETURNS                            | 4            | zocki?          |
 | 20XX                                             | 2            |                 |

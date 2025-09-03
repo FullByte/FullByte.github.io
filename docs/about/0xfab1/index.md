@@ -4,13 +4,13 @@
 
 ## MkDocs
 
-To honor [this post](https://rakhim.org/images/honestly-undefined/blogging.jpg) (and ensure the message remains true) I will use my own website as an example and show how I configured the static web app and make it to work the way it does.
+To honor [this post](https://rakhim.org/images/honestly-undefined/blogging.jpg) (and ensure the message remains true) I will use my own website as an example and show how I configured the static web app and make it work the way it does.
 
-I am using [Github Pages](https://pages.github.com/) to host the content, [Mkdocs](https://www.mkdocs.org/) to create the website from markdown files as input and have own [domain](https://0xfab1.net/) for a nicer URL.
+I am using [Github Pages](https://pages.github.com/) to host the content, [Mkdocs](https://www.mkdocs.org/) to create the website from markdown files as input and have my own [domain](https://0xfab1.net/) for a nicer URL.
 
 [MkDocs](https://github.com/MkDocs/MkDocs/) is a great way to host a simple, static website. This website uses [Material for MkDocs](https://github.com/squidfunk/MkDocs-material) which is a theme for MkDocs.
 
-To quickly create and host a static website (or rebuild this website), you have two choices:
+To quickly create and host a static website (or rebuild this website), you have two options:
 
 - Docker
 - Python
@@ -23,7 +23,7 @@ cd FullByte.github.io # Go to main folder
 docker run --rm -it -p 8000:8000 -v ${PWD}:/docs squidfunk/MkDocs-material # run the container
 ```
 
-Old docker file
+Old Dockerfile
 
 ``` dockerfile
 FROM python:3
@@ -38,7 +38,7 @@ ENTRYPOINT ["mkdocs"]
 CMD ["serve", "-a", "0.0.0.0:8000"]
 ```
 
-Current dockerfile
+Current Dockerfile
 
 ``` dockerfile
 FROM python:3-slim AS builder

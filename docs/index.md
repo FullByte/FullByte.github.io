@@ -17,7 +17,7 @@ Y88b  d88P .d8""8b. 888  d8888888888 888   d88P  888
 
 Use the navigation menu on the left (hidden as hamburger menu if screen size is small) or the search bar on the top right to find topics of interest. Toggle between light and dark with the switch next to the search bar. I hope you appreciate the lack of ads and pop-ups.
 
-I appreciate your [pull request](https://github.com/FullByte/FullByte.github.io#contribute) for any errors in existing pages. If you think something is generally wrong, I missed to link you where appropriate or just want to reach out, please [contact me](about/me/contact.md)!
+I appreciate your [pull request](https://github.com/FullByte/FullByte.github.io#contribute) for any errors in existing pages. If you think something is generally wrong, I missed linking you where appropriate or just want to reach out, please [contact me](about/me/contact.md)!
 
 Regards,
 

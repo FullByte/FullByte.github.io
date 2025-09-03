@@ -3,7 +3,7 @@
 What ever you do, what ever you want to achieve, approach it as a project.
 
 Most of the time, the project you are doing either mainly needs to be done by a due-date or done according to specs/requirements.
-Figure out what project you are working on (what is the main fokus?).
+Figure out what project you are working on (what is the main focus?).
 Choose two of the three constraints shown below and choose the best framework that seems to fit best:
 
 ![projects_overview](_projects_overview.drawio.svg)

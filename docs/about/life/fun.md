@@ -27,18 +27,18 @@ This process diagram visualizes the steps involved:
 
 ## Protest
 
-It is not easy to protest in a smart and effective way. In my opinion strikes, demonstrations, letter-writing campaigns, petitions, sit-ins and occupation are not very effective nor creative. Of course on can passively boycott whatever thing to not support and tell friends about what and why not to support but this is boring and small minded as well. Here are some examples and ideas how to protest on a given matter in an interesting, not annoying and creative way while being effective and successful:
+It is not easy to protest in a smart and effective way. In my opinion strikes, demonstrations, letter-writing campaigns, petitions, sit-ins and occupation are not very effective nor creative. Of course one can passively boycott whatever thing to not support and tell friends about what and why not to support but this is boring and small minded as well. Here are some examples and ideas how to protest on a given matter in an interesting, not annoying and creative way while being effective and successful:
 
 - [Ugly Gerry](https://fontsarena.com/ugly-gerry/) is a [free font](_gerry.otf.zip) created with real US congressional districts. The name comes from gerrymandering, the process that made possible such weird shapes.
 
 - [Volkswagen](https://github.com/auchenberg/volkswagen) can be integrated in your CI process. It detects when your tests are being run in a CI server, and makes them pass. Volkswagen uses a defeat device to detect when it's being tested in a CI server and will automatically reduce errors to an acceptable level for the tests to pass. This will allow you to spend less time worrying about testing and more time enjoying the good life as a trustful software developer.
 
-- The creative ways the [DeCSS](https://en.wikipedia.org/wiki/DeCSS) crack was distribted (e.g. [t-shirt](_decss_tshirt.jpg), [haiku](_decss-haiku.txt) or [midi](_decss-auth.mid), [audio](_decss_descramble.mp3), [html dvd logo](_decss-dvdlogo.html.txt) and [many more](https://www.cs.cmu.edu/~dst/DeCSS/Gallery/)...). Later works by "removing all the white space, then transforming each ASCII character into a single 32nd note of its midi equivalent (midi notes, like ASCII characters, are coded into values ranging from 1 to 127.)".
+- The creative ways the [DeCSS](https://en.wikipedia.org/wiki/DeCSS) crack was distributed (e.g. [t-shirt](_decss_tshirt.jpg), [haiku](_decss-haiku.txt) or [midi](_decss-auth.mid), [audio](_decss_descramble.mp3), [html dvd logo](_decss-dvdlogo.html.txt) and [many more](https://www.cs.cmu.edu/~dst/DeCSS/Gallery/)...). Later works by "removing all the white space, then transforming each ASCII character into a single 32nd note of its midi equivalent (midi notes, like ASCII characters, are coded into values ranging from 1 to 127.)".
 
-- Address your issues to the correct people. If you work in an social or public based service make sure to create awareness but don't let uninvolved suffer from your problems. For example if drive a bus, let passengers ride for free and let them know you are protesting instead of not driving and letting people down.
+- Address your issues to the correct people. If you work in a social or public based service make sure to create awareness but don't let uninvolved suffer from your problems. For example if you drive a bus, let passengers ride for free and let them know you are protesting instead of not driving and letting people down.
 
-- Make art (music, pictures, games) that help people understand the problem. Make things that are understandable as well as entertaining, interesting, provocative and/or beautiful. This will address the problem in an entertaining but critical way that is no annoying an will be much more likely be shared, discussed and addressed.
+- Make art (music, pictures, games) that help people understand the problem. Make things that are understandable as well as entertaining, interesting, provocative and/or beautiful. This will address the problem in an entertaining but critical way that is not annoying and will be much more likely be shared, discussed and addressed.
 
-- Find ways to educate the public about the core issue of your protest any what needs to be done. Reflect on your issue and make sure this is not just an opinion but actual facts that can be educated.
+- Find ways to educate the public about the core issue of your protest and what needs to be done. Reflect on your issue and make sure this is not just an opinion but actual facts that can be educated.
 
 - Never interrupt your enemy when he/she is making a mistake.

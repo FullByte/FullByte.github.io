@@ -113,7 +113,7 @@ Be patient and consistent when forming a new habit: start small, track your prog
 
 ### Getting Rid of Bad Habits
 
-To effectively break bad habits identify triggers and replace them with positive behaviors and reward yourself.
+To effectively break bad habits, identify triggers and replace them with positive behaviors and reward yourself.
 
 - **Identify Triggers**: Recognize what triggers your bad habit. It could be stress, boredom, or specific situations.
 - **Replace with Positive Behavior**: Substitute the bad habit with a positive one. For example, if you bite your nails when stressed, try squeezing a stress ball instead.
