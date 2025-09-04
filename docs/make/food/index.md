@@ -41,7 +41,7 @@ Eat whatever you want... idk, lol... and take your time ;)
 
 [![paprika-hack-pfanne](meal/_paprika-hack-pfanne.jpg)](meal/paprika-hack-pfanne.md)
 
-### Desert
+### Dessert
 
 [![cupcakes](desert/_cupcakes.jpg)](desert/cupcakes.md)
 

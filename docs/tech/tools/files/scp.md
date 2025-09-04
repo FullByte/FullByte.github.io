@@ -42,7 +42,7 @@ scp -P 666 user@host:directory/SourceFile TargetFile
 
 ### Script
 
-In a commmand prompt run `winscp.com` and login to a session. It is also possible to pass on all commands directly or attach a script with all commands.
+In a command prompt run `winscp.com` and login to a session. It is also possible to pass on all commands directly or attach a script with all commands.
 
 #### Basic Examples
 

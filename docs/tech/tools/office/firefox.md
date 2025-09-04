@@ -21,7 +21,7 @@
 ## Bookmarks
 
 - Toggle Bookmarks: Ctrl + Shift + B
-- Add all open tabs to bookmark folder: Right clock on a tab, mark all tabs, save tabs as bookmark, provide folder name
+- Add all open tabs to bookmark folder: Right click on a tab, mark all tabs, save tabs as bookmark, provide folder name
 
 ## Addons
 

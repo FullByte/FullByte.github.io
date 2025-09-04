@@ -36,9 +36,9 @@ Link: <https://www.estlcam.de/>
 
 Vorbereitung für Hafven:
 
-- [ ] In Estlcam unter Einstellungen/Grundeinstellungen LinuxCNC als CNC Programm auswählen.
+- [ ] In Estlcam unter Einstellungen/Grundeinstellungen LinuxCNC als CNC-Programm auswählen.
 - [ ] Unter Einstellungen/CNC Programme auf "Einstellungen öffnen" klicken.
-- [ ] CNC Programm Voreinstellungen bzw. Postprozessor [ohne Werkzeugwechsel](_estlcamV12_Hafven_ohneWerkzeugwechsel.pp) bzw. [mit Werkzeugwechsel](_estlcamV12_Hafven_Werkzeugwechsel.pp) für die CNC Fräse im Hafven laden.
+- [ ] CNC-Programm Voreinstellungen bzw. Postprozessor [ohne Werkzeugwechsel](_estlcamV12_Hafven_ohneWerkzeugwechsel.pp) bzw. [mit Werkzeugwechsel](_estlcamV12_Hafven_Werkzeugwechsel.pp) für die CNC-Fräse im Hafven laden.
 - [ ] Nun muss sichergestellt werden, dass der Postprozessor auch dauerhaft hinterlegt ist. Hierzu nun auf "Einstellungen speichern" klicken und die Datei unter dem dort vorgeschlagenen
 Verzeichnis speichern.
 
@@ -49,7 +49,7 @@ Hinweise:
 - Vorschub (mm/min) und Spindel (U/min) pro Werkzeug in der Tabelle festlegen; maximal 80 % des Herstellerwerts als Startwert.
 - Tauchtiefe pro Durchgang konservativ wählen (0,5–1× Werkzeug-Ø) und bei harten Materialien reduzieren.
 - Immer vor dem Export mit Vorschau und 3D-Darstellung prüfen – verdeckte Bereiche kontrollieren, Kollisionen erkennen.
-- Zum Schluss "als CNC Programm speichern"
+- Zum Schluss "als CNC-Programm speichern"
 
 Tastenkürzel:
 

@@ -4,7 +4,7 @@
 
 ## Basics
 
-In einer gesunden Beziheung sollte folgendes möglich sein und idealerweise auch passieren:
+In einer gesunden Beziehung sollte folgendes möglich sein und idealerweise auch passieren:
 
 | **Titel**                    | **Erklärung**                                                                 | **Beispiel**                                                          |
 | ---------------------------- | ----------------------------------------------------------------------------- | --------------------------------------------------------------------- |

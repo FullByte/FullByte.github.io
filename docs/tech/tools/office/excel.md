@@ -15,7 +15,7 @@
 | Extension | Short Name                          | Description                                                                                                     |
 |-----------|-------------------------------------|-----------------------------------------------------------------------------------------------------------------|
 | .xlsx     | Default Excel workbook format       | Supports advanced formatting, formulas, and charts. Widely compatible.                                          |
-| .xlsm     | Excel with Marco                    | Supports macros in addition to features of XLSX. Allows creating and running VBA macros within the workbook.    |
+| .xlsm     | Excel with Macro                    | Supports macros in addition to features of XLSX. Allows creating and running VBA macros within the workbook.    |
 | .xlsb     | Excel Binary format                 | Binary format that's faster to open and save. Suitable for large datasets due to its efficient storage.         |
 | .csv      | Comma-Separated Values              | CSV format for easy data exchange between applications. Each line represents a row, values are comma-separated. |
 | .xml      | Extensible Markup Language          | XML format for sharing structured data between systems. Excel can export/import data in XML.                    |
@@ -74,7 +74,7 @@ Define number format
 Selection.NumberFormat = "#,##0_ ;-#,##0 "
 ```
 
-Turn off aAlerts
+Turn off Alerts
 
 ``` xlsx
 Application.DisplayAlerts = False

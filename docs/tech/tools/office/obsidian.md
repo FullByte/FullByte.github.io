@@ -7,9 +7,9 @@
 
 ## Community Plugins
 
-### Obisidan Git
+### Obsidian Git
 
-Open the Obisidan settings, enable comminity plugins and search for [Obisidan Git](https://github.com/denolehov/obsidian-git) to install it.
+Open the Obsidian settings, enable community plugins and search for [Obsidian Git](https://github.com/denolehov/obsidian-git) to install it.
 
 ![obsidian_git](_obsidian_git_install.jpg)
 
@@ -17,7 +17,7 @@ I use shortcuts for commit and push as follows:
 
 ![obsidian_git](_obsidian_git_shortcuts.jpg)
 
-These are my Obisidan Git settings:
+These are my Obsidian Git settings:
 
 Automatic settings:
 
@@ -47,7 +47,7 @@ Create obsidian template files with [Templater](https://github.com/SilentVoid13/
 
 There are plenty of solutions to generate a static website from markdown files. [Quartz](https://quartz.jzhao.xyz/) is based on [Hugo](https://gohugo.io/) and supports Obsidian Vault Integration. In fact Obsidian is the preferred way to use Quartz.
 
-Clone or fork quartz and open it with obsidian.
+Clone or fork quartz and open it with Obsidian.
 
 In Obsidian settings:
 

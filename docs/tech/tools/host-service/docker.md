@@ -105,13 +105,13 @@ To communicate containers don't use localhost, point to: [ubuntu terminal]. This
 ip addr | grep eth0 | grep inet
 ```
 
-To ensure docker service is running on startup to workaround having to deal with sudo
+To ensure docker service is running on startup to work around having to deal with sudo
 
 ```sh
 wsl.exe -u root service docker status || wsl.exe -u root service docker start
 ```
 
-To limit ressources create a file in the user's folder `C:\Users\<User>\.wslconfig` and add the following information.
+To limit resources create a file in the user's folder `C:\Users\<User>\.wslconfig` and add the following information.
 
 ```txt
 [wsl2]

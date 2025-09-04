@@ -17,7 +17,7 @@ az artifacts universal download --organization "https://dev.azure.com/$devopsorg
 
 ## Wiki
 
-This script **deletes unwanted internal wiki** in DevOps that cant be deleted via GUI.
+This script **deletes unwanted internal wiki** in DevOps that can't be deleted via GUI.
 
 Requires Azure CLI and Powershell and the DevOps PAT requires right to delete wiki repo.
 

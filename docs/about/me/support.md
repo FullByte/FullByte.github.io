@@ -6,7 +6,7 @@ Thanks for all the fish!
 
 ## This website
 
-I'm am happy for any input/feedback but may take a while to respond.
+I am happy for any input/feedback but may take a while to respond.
 
 Support this website by [reporting an issue](https://github.com/FullByte/FullByte.github.io/issues/new/choose). Let me know if something is wrong, could be improved, is a problem in any way (please explain why).
 

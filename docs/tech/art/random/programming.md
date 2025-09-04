@@ -6,7 +6,7 @@ Hello World in [Piet](https://www.dangermouse.net/esoteric/piet/samples.html) wi
 
 ![piet-hello-world](_piet-hello-world.png)
 
-Another great work of art is [Matthias Ernst](https://lutter.cc) [piet programm](https://lutter.cc/piet/) which inteprets [brainfuck](https://en.wikipedia.org/wiki/Brainfuck).
+Another great work of art is [Matthias Ernst](https://lutter.cc) [piet program](https://lutter.cc/piet/) which interprets [brainfuck](https://en.wikipedia.org/wiki/Brainfuck).
 
 ![piet-brainfuck](_piet-brainfuck.gif)
 
@@ -20,7 +20,7 @@ One last great example for a piet program which I like a lot is by Richard Mitto
 
 The objective of [allRGB](https://allrgb.com/) is simple: To create images with one pixel for every RGB color (16,777,216); not one color missing, and not one color twice.
 
-[This picture](https://allrgb.com/recursive) from [yashe](https://allrgb.com/yashe) includes it's own code.
+[This picture](https://allrgb.com/recursive) from [yashe](https://allrgb.com/yashe) includes its own code.
 
 ![allrgb-recursive](_allrgb-recursive.png)
 

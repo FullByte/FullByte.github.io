@@ -251,7 +251,7 @@ Use the previous technique to include the access log again:
 
 You should not see our injected agent string because the injected php code is interpreted and executed and has no output. But you can see if this worked by checking the status of the python HTTP server.
 
-We can now start the shell.php located in the the main web folder:
+We can now start the shell.php located in the main web folder:
 
 ``` html
 ?view=./cat/../shell

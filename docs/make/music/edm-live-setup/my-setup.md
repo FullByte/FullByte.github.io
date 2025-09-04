@@ -30,12 +30,12 @@ These are the relevant Windows Settings pages:
 
 #### License
 
-You can export your device footprint on a activated licensed version of Voice Meeter. Backup this file and import it after re-installing your PC (first install all drivers, then install Voicemeeter Potato. This will ensure the license works even if the challenge code is different.
+You can export your device footprint on an activated licensed version of Voice Meeter. Backup this file and import it after re-installing your PC (first install all drivers, then install Voicemeeter Potato). This will ensure the license works even if the challenge code is different.
 
 - Backup footprint
 - Do changes to your system (new hardware/re-install)
 - Install Voice Meeter Potato
-- Enter e-mail address your used for Voice Meeter license and registration.
+- Enter e-mail address you used for Voice Meeter license and registration.
 - Import the footprint
 - Enter your previous Response code.
 
@@ -76,4 +76,4 @@ To make this work no drivers need to be installed. The following OBS settings wo
 
 ![_gopro-usb-capturecard](_gopro-usb-capturecard.png)
 
-There is some delay which needs to be adjusted to all input is synced properly:
+There is some delay which needs to be adjusted so that all input is synced properly:
