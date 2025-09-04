@@ -9,7 +9,7 @@ More details on the REST API:
 - Set BLOB Properties: <https://docs.microsoft.com/en-us/rest/api/storageservices/set-blob-properties>
 - Call REST API Auth: <https://docs.microsoft.com/en-us/azure/storage/common/storage-rest-api-auth>
 
-### Powershell
+### PowerShell
 
 Example how to upload a file to a BLOB storage container using SAS token authentication:
 

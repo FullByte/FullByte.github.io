@@ -14,8 +14,8 @@ Use [OpenSSH](https://github.com/PowerShell/Win32-OpenSSH/releases) instead of [
 Create a new external program with the following parameters:
 
 - Name: OpenSSH
-- Path: c:\program files\powershell\7\pwsh.exe
-- Paramter: -c "ssh %USERNAME%@%HOSTNAME%"
+- Path: c:\program files\PowerShell\7\pwsh.exe
+- Parameter: -c "ssh %USERNAME%@%HOSTNAME%"
 - Working directory: $env:USERPROFILE
 
 Then select "external Program" for your connection and choose "OpenSSH".

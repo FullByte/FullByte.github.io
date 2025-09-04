@@ -91,7 +91,7 @@ wmic os get Caption /value | more 2>&1
 schtasks /query /FO List /V | findstr /b /n /c:"Repeat: Every:" 2>&1
 ```
 
-For are more detailed system info dump run [winPEAS](https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/winPEAS/winPEASbat/winPEAS.bat).
+For a more detailed system info dump, run [winPEAS](https://raw.githubusercontent.com/carlospolop/privilege-escalation-awesome-scripts-suite/master/winPEAS/winPEASbat/winPEAS.bat).
 
 ### User Stuff
 

@@ -117,31 +117,38 @@ markdown_extensions:
 
 === "Markdown"
 
-    ``` md
-    * [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
-    * [ ] Vestibulum convallis sit amet nisi a tincidunt
-        * [x] In hac habitasse platea dictumst
-        * [x] In scelerisque nibh non dolor mollis congue sed et metus
-        * [ ] Praesent sed risus massa
-    * [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
-    ```
+  ```md
+  * [x] Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  * [ ] Vestibulum convallis sit amet nisi a tincidunt
+    * [x] In scelerisque nibh non dolor mollis congue sed et metus
+    * [ ] Praesent sed risus massa
+  * [ ] Aenean pretium efficitur erat, donec pharetra, ligula non scelerisque
+  ```
 
-Lazy load a picutre:
+Lazy load a picture:
 
 ![Placeholder](https://dummyimage.com/600x400/eee/aaa){ loading=lazy }
 
-### PHP based static page
-
+```sh
+pip install mkdocs
+pip install mkdocs-material
+```
 Use PHP to create a static HTML website with [this code](https://github.com/cadars/portable-php/).
 
 Clone the repo and add content to `content/`, then run ```php portable.php > index.html```
 
 ## Deploy
 
+Run this in the folder of the mkdocs.yml file to host the MkDocs page:
+
 ### Surge
 
 [Surge.sh](https://surge.sh/) is a simple, single-command web publishing service to publish HTML, CSS, and JS for free, without leaving the command line.
 
+```sh
+mkdocs serve
+```
+ 
 These are the steps I took to host my site mkdocs based site on [surge.sh](https://surge.sh/).
 
 Install: ```npm install --global surge``` (requires Node.js)
@@ -196,7 +203,7 @@ Now run the deploy on the correct branch and it should work :)
 
 ### Layer0
 
-These are the steps I took to host my site mkdocs based site on layer0. [Here is the offical guide](https://docs.layer0.co/guides/mkdocs).
+These are the steps I took to host my site mkdocs based site on layer0. [Here is the official guide](https://docs.layer0.co/guides/mkdocs).
 
 Add package.json and routes.js to you main mkdocs folder:
 

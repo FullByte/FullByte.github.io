@@ -1,6 +1,6 @@
 # Projects
 
-What ever you do, what ever you want to achieve, approach it as a project- If you're constantly craving more, you won't appreciate what you already have. If you're constantly craving more, you won't appreciate what you already have.
+What ever you do, what ever you want to achieve, approach it as a project- If you're constantly craving more, you won't appreciate what you already have.
 
 Most of the time, the project you are doing either mainly needs to be done by a due-date or done according to specs/requirements.
 Figure out what project you are working on (what is the main focus?).

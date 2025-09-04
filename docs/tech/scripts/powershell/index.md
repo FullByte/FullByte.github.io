@@ -1,6 +1,6 @@
-# Powershell Snippets
+# PowerShell Snippets
 
-Some handy code snippets for powershell :)
+Some handy code snippets for PowerShell :)
 
 ## String manipulation
 
@@ -8,12 +8,12 @@ Some handy code snippets for powershell :)
 - Rename all files of a folder with MD5 Hashsum: ```Get-ChildItem . *.* | where { ! $_.PSIsContainer } | select FullName, Extension, @{name='md5'; expression={(Get-FileHash $_ -Algorithm md5).Hash}} | foreach {Rename-Item $_.FullName -NewName "$($_.md5)$($_.extension)"}```
 - Get only file names of a folder: ```Get-ChildItem . *.* -File | select Name```
 
-**Base64 Decode/Encode**
+### Base64 Decode/Encode
 
 - Decode: ```[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String("dGVzdA=="))```
 - Encode: ```[Convert]::ToBase64String([System.Text.Encoding]::UTF8.GetBytes("test"))```
 
-**Create a password**
+### Create a password
 
 Option 1
 
@@ -209,7 +209,7 @@ $bitmap.Save([Environment]::GetFolderPath("Desktop") + "\Screenshot.bmp")
 
 ## Encryption
 
-Encrypt or Decrypt a File with Powershell and PFX Cert
+Encrypt or Decrypt a File with PowerShell and PFX Cert
 
 ``` ps1
 $path = "D:\test.txt"
@@ -252,7 +252,7 @@ Tune the guitar
 
 ## Speech
 
-Here are two examples using System.Speech.Synthesis.SpeechSynthesizer to read out some given text with powershell (doesn't work with powershell 7):
+Here are two examples using System.Speech.Synthesis.SpeechSynthesizer to read out some given text with PowerShell (doesn't work with PowerShell 7):
 
 ``` ps1
 [Reflection.Assembly]::LoadWithPartialName('System.Speech') | Out-Null
@@ -280,7 +280,7 @@ $Phrase = '
 $tts.SpeakSsml($Phrase)
 ```
 
-This version uses the SAPI.SpVoice COM object and works with powershell 5 and 7:
+This version uses the SAPI.SpVoice COM object and works with PowerShell 5 and 7:
 
 ``` ps1
 $sp = New-Object -ComObject SAPI.SpVoice
@@ -478,7 +478,7 @@ Get Binding Info
 - Check for Windows Updates: ```(New-Object -ComObject Microsoft.Update.AutoUpdate).DetectNow()```
 - Export PowerShell command history to a file: ```Get-History | Export-CSV $env:USERPROFILE\Desktop\CommandHistory.CSV```
 - Show entire history: ```Get-Content (Get-PSReadLineOption).HistorySavePath```
-- Export all available powershell commands: ```Get-Command  | Export-CSV $env:USERPROFILE\Desktop\CommandsAvailable.CSV```
+- Export all available PowerShell commands: ```Get-Command  | Export-CSV $env:USERPROFILE\Desktop\CommandsAvailable.CSV```
 - Get last 10 installations: ```get-wmiobject Win32_ReliabilityRecords -computername 127.0.0.1 | Select-Object -first 10 Message | format-list *```
 - Last 10 security event log entries: ```Get-EventLog Security -Newest 10```
 - Get all help examples: ```Get-Command -CommandType cmdlet | % { (get-help $\_.name).examples }```

@@ -30,7 +30,7 @@ Now that I had all pieces and was sure it all works it is time to build a case f
 
 ### Schematics
 
-The most challenging part is to get the holes for the 11 buttons perfectly aligned to they fit through the wood without too much extra space. I printed out the schematics below and used them as a stencil.
+The most challenging part is to get the holes for the 11 buttons perfectly aligned to they fit through the wood without too much extra space. I printed out the the schematics below and used them as a stencil.
 
 ![hoerbert_schematics](_hoerbert_bohrschablone.png)
 

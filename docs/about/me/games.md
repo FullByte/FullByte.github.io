@@ -435,32 +435,32 @@ Should there be a tie for first place between:
 
 #### Ten-Fight-Table
 
-This is the currently offical 10 fight game list and settings/modes:
+This is the currently official 10 fight game list and settings/modes:
 
 | Game             | Settings                                                                                                                                             |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Akuto Showdown   | Multiplayer → Survival, 3 Rounds, 5 Lives, Start Weapon = Staff, No Ranged Weapon → no bots → All Random Maps                                        |
-| Boomerang fu     | Free for all → Modifiers: Match length=standard, victory=kills, auto balance=off, powerups=no bombs, fire, multi boomerang, telekinese and bamboozle |
-| Flat Heros       | Versus → 2x3 games: zones, battle, runner                                                                                                            |
+| Boomerang fu     | Free for all → Modifiers: Match length=standard, victory=kills, auto balance=off, powerups=no bombs, fire, multi boomerang, telekinesis and bamboozle |
+| Flat Heroes      | Versus → 2x3 games: zones, battle, runner                                                                                                            |
 | SpeedRunners     | Versus → Offline → Create Game → normal random Map (3 games, count wins)                                                                             |
 | Roof Rage        | Local Rooftops → Stock Match → Stock: 5 → HP: 200                                                                                                    |
-| Brawlhalla       | Custum → Create Room → Private Room → Custom Online: Stock: Teams=off, Lives=6, Match=10, Damage=100%                                                |
+| Brawlhalla       | Custom → Create Room → Private Room → Custom Online: Stock: Teams=off, Lives=6, Match=10, Damage=100%                                                |
 | Astro Bears      | Party → 4 Player → 40 Points → Big Planet → Finite Ribbon                                                                                            |
 | Puyo Puyo Tetris | Multiplayer Arcade → Single Screen → Versus → 4 Player → Win Count = 2, Harddrop = ON, Hold = ON                                                      |
-| Mario Kart 8     | 4P → vs race → 150cc → No Teams, Normal Items, No CPU, all Verhicles, Random -> random map, 4 Races                                                  |
-| Fast RMX         | Multiplayer → Splitscreen → CPU Drivers disabled, League: Subsonic, Mode: Cup, Laps: 3                                                               |
+| Mario Kart 8     | 4P → vs race → 150cc → No Teams, Normal Items, No CPU, all Vehicles, Random → random map, 4 Races                                                  |
+| Fast RMX         | Multiplayer → Split Screen → CPU Drivers disabled, League: Subsonic, Mode: Cup, Laps: 3                                                               |
 
 #### Five-Fight-Table
 
-This is the currently offical 5 fight game list and settings/modes:
+This is the currently official 5 fight game list and settings/modes:
 
 | Game             | Settings                                                                                                                                             |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Boomerang fu     | Free for all → Modifiers: Match length=standard, victory=kills, auto balance=off, powerups=no bombs, fire, multi boomerang, telekinese and bamboozle |
+| Boomerang fu     | Free for all → Modifiers: Match length=standard, victory=kills, auto balance=off, powerups=no bombs, fire, multi boomerang, telekinesis and bamboozle |
 | SpeedRunners     | Versus → Offline → Create Game → normal random Map (3 games, count wins)                                                                             |
 | Roof Rage        | Local Rooftops → Stock Match → Stock: 5 → HP: 200                                                                                                    |
 | Puyo Puyo Tetris | Multiplayer Arcade → Single Screen → Versus → 4 Player → Win Count = 2, Harddrop = ON, Hold = ON                                                      |
-| Fast RMX         | Multiplayer → Splitscreen → CPU Drivers disabled, League: Subsonic, Mode: Cup, Laps: 3                                                               |
+| Fast RMX         | Multiplayer → Split Screen → CPU Drivers disabled, League: Subsonic, Mode: Cup, Laps: 3                                                               |
 
 #### Other Games
 

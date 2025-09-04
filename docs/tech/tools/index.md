@@ -8,7 +8,7 @@ My tooling and methods have changed over time and I expect them to change in fut
 
 Here is an overview of different clear-text information and where I store it:
 
-- Blog/Doku: Mkdocs -> Repo
+- Blog/Doku: MkDocs -> Repo
 - Notes: Logseq, Joplin, Obsidian -> DAV Sync
 - Code Examples: Jupyter Notebooks -> Repo
 - Code: Repo / Gist -> Repo
@@ -41,7 +41,7 @@ The best tools to copy files, depending on source and destination:
 
 ## Convert Files
 
-Depending of the file typ, use the following tools to convert the original file into something else:
+Depending on the file type, use the following tools to convert the original file into something else:
 
 | File type     | 0xfab1                         | Tool                                   |
 |---------------|--------------------------------|----------------------------------------|
@@ -56,7 +56,7 @@ For printing and scanning I personally prefer a laser printer with LAN support. 
 
 ### Windows
 
-For scanning on windows I prefer [NAPS2](https://www.naps2.com).
+For scanning on Windows I prefer [NAPS2](https://www.naps2.com).
 
 Alternatively try [VueScan](https://www.hamrick.com/).
 
@@ -68,11 +68,11 @@ Usually there is no need to install specific drivers to print. Use the [HP print
 
 Steps to get HP Printers running on Ubuntu 20.04:
 
-- Download the latest [dhplip rivers](https://sourceforge.net/projects/hplip/files/). Check this [overview](https://developers.hp.com/hp-linux-imaging-and-printing/gethplip) if link is not working.
-- Run the script with ```sh hplip-<version>.run``` and go throgh the steps.
+- Download the latest [hplip drivers](https://sourceforge.net/projects/hplip/files/). Check this [overview](https://developers.hp.com/hp-linux-imaging-and-printing/gethplip) if the link is not working.
+- Run the script with ```sh hplip-<version>.run``` and go through the steps.
 - Download the latest [hplip plugin](https://developers.hp.com/hp-linux-imaging-and-printing/plugins)
 - Run the script with ```sh hplip-<version>.run```
-- Now run the HO Device Manger or your scan tool of choice e.g. SimpleScan or gscan2pdf.
+- Now run the HP Device Manager or your scan tool of choice, e.g., SimpleScan or gscan2pdf.
 
 #### Scan
 
@@ -112,7 +112,7 @@ Add ".atom" to a given commit link to get an RSS Reader update on a given file/f
 For example:
 
 - Link: <https://github.com/FullByte/FullByte.github.io/commits/main>
-- RSS Feed: <https://github.com/FullByte/FullByte.github.io/commits/main.atom>
+- RSS feed: <https://github.com/FullByte/FullByte.github.io/commits/main.atom>
 
 Add the atom link to your rss feed reader to get notified on updates.
 
@@ -148,10 +148,10 @@ Great Browser Plugin to automatically redirect to some of these services: <https
 |------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Video      | [newpipe](https://newpipe.net/) and [Piped](https://piped.video) and [Invidious](https://docs.invidious.io/instances/)                                                                                                                         |
 | Social     | [Twitter](https://nitter.net), [Instagram](https://bibliogram.art/), [Reddit](https://teddit.net/) or [old Reddit](https://old.reddit.com/), [Tumblr](https://www.tumbex.com/)                                                                 |
-| World News | [NPR](https://text.npr.org/), [Google News](http://68k.news/), [CNN](https://lite.cnn.com/en),  [CBC](https://www.cbc.ca/lite/trending-news), [The Guadian](https://guardian.gyford.com/), [New York Times](https://www.nytimes.com/timeswire) |
+| World News | [NPR](https://text.npr.org/), [Google News](http://68k.news/), [CNN](https://lite.cnn.com/en),  [CBC](https://www.cbc.ca/lite/trending-news), [The Guardian](https://guardian.gyford.com/), [New York Times](https://www.nytimes.com/timeswire) |
 | Tech News  | [skimfeed](https://skimfeed.com/), [Hacker News](https://hackerweb.app/)                                                                                                                                                                       |
 | Search     | [SearXNG](https://github.com/searxng/searxng), [instances](https://searx.space/), [startpage](https://www.startpage.com), [DuckDuckGo](https://duckduckgo.com/), [millionshort](https://millionshort.com/)                                     |
-| Maps       | [OSM](https://www.openstreetmap.org), [qwant](https://www.qwant.com/maps)                                                                                                                                                                      |
+| Maps       | [OSM](https://www.openstreetmap.org), [Qwant](https://www.qwant.com/maps)                                                                                                                                                                      |
 | Music      | [libre.fm](https://libre.fm/)                                                                                                                                                                                                                  |
 
 ### Fediverse

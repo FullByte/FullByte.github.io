@@ -30,7 +30,7 @@ In order to Connect via USB do the following:
 
 ![gameshell-update-driver](_gameshell-update-driver.png)
 
-- Now it is possible to connect to the Gameshell via SSH or FTP using the IP provided on the Gameshell screen.
+- Now it is possible to connect to the the Gameshell via SSH or FTP using the IP provided on the Gameshell screen.
 
 ### Linux
 

@@ -1,6 +1,6 @@
 # Obsidian
 
-| What          | Where                      |
+| What          | Where                     To build the website you need Hugo with "extended" Sass/SCSS version.o build the website you need Hugo with "extended" Sass/SCSS version.|
 |---------------|----------------------------|
 | Official Page | <https://obsidian.md/>     |
 | Docs          | <https://help.obsidian.md> |

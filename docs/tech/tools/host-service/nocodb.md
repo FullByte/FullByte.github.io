@@ -32,13 +32,13 @@ WINDOWS with CURL
 curl.exe --request POST --url "https://domain.tld/api/v2/tables/mytableid/records?offset=0&limit=25&where=&viewId=myviewid" --header "xc-token: mytextismypassword" --header "Content-Type: application/json" --data "{\"Title\":\"TitleValue\", \"GamePage\":\"InputValue\"}"
 ```
 
-WINDOWS with POWERSHELL using Invoke-RestMethod
+WINDOWS with PowerShell using Invoke-RestMethod
 
 ```ps1
 Invoke-RestMethod -Uri "https://domain.tld/api/v2/tables/mytableid/records?offset=0&limit=25&where=&viewId=myviewid" -Method POST -Headers @{"xc-token" = "mytextismypassword"; "Content-Type" = "application/json"} -Body '{"Title":"TitleValue","GamePage":"InputValue"}'
 ```
 
-WINDOWS with CMD with triggering POWERSHELL
+WINDOWS with CMD triggering PowerShell
 
 ```ps1
 powershell -Command "Invoke-RestMethod -Uri 'https://domain.tld/api/v2/tables/mytableid/records?offset=0&limit=25&where=&viewId=myviewid' -Method POST -Headers @{ 'xc-token' = 'mytextismypassword'; 'Content-Type' = 'application/json' } -Body '{\"Title\":\"TitleValue\",\"GamePage\":\"InputValue\"}'"

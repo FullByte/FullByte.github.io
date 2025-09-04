@@ -85,7 +85,7 @@ Verify that it's running: ```kubectl get -f .\recommended.yaml.txt```
 
 Get token:
 
-- Powershell: ``` ((kubectl -n kube-system describe secret default | Select-String "token:") -split " +")[1]```
+- PowerShell: ``` ((kubectl -n kube-system describe secret default | Select-String "token:") -split " +")[1]```
 - Linux: ```kubectl -n kube-system describe secret $(kubectl -n kube-system get secret | awk '/^deployment-controller-token-/{print $1}') | awk '$1=="token:"{print $2}'```
 
 - Run ```kubectl proxy``` and open: <http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/> then select Token & paste the generated token and sign in

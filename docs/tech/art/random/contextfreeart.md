@@ -1,4 +1,5 @@
 # Context Free Art
+<!-- markdownlint-disable MD010 -->
 
 Context Free is a program that generates images from written instructions called a grammar. The program follows the instructions in a few seconds to create images that can contain millions of shapes.
 
@@ -52,9 +53,9 @@ shape SPOT
 	rule 2 {SPOT[] CIRCLE[a -.5 b 1 s .5 sat -1]}
 ```
 
-To create many images simply loop the image creation step. The following powershell script assumes the cfdg file and the ps1 script are placed in the Context Free program folder which contains the required `ContextFreeCLI.exe`.
+To create many images simply loop the image creation step. The following PowerShell script assumes the cfdg file and the ps1 script are placed in the Context Free program folder which contains the required `ContextFreeCLI.exe`.
 
-``` cfdg
+``` ps1
 function GenerateAvatars ([string] $InputFile, [string] $OutputPrefix, [int] $Amount) {
     $ContextFreeCLI = $PSScriptRoot + '\ContextFreeCLI.exe'
     $InputFile = $PSScriptRoot + "\" + $InputFile

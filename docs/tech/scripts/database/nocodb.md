@@ -16,13 +16,13 @@ WINDOWS with CURL
 curl --request POST --url "https://data.0xfab1.net/api/v2/tables/yourtable/records?offset=0&limit=25&where=&viewId=abcdefg" --header "xc-token: yourtoken" --header "Content-Type: application/json" --data "{\"Column1\":\"value1\", \"Column2\":\"value2\"}"
 ```
 
-WINDOWS with POWERSHELL using Invoke-RestMethod
+WINDOWS with PowerShell using Invoke-RestMethod
 
 ```ps1
 Invoke-RestMethod -Uri "https://data.0xfab1.net/api/v2/tables/yourtable/records?offset=0&limit=25&where=&viewId=abcdefg" -Method POST -Headers @{"xc-token" = "yourtoken"; "Content-Type" = "application/json"} -Body '{"Column1":"value1","Column2":"value2"}'
 ```
 
-WINDOWS with CMD with triggering POWERSHELL
+WINDOWS with CMD triggering PowerShell
 
 ```ps1
 powershell -Command "Invoke-RestMethod -Uri 'https://data.0xfab1.net/api/v2/tables/yourtable/records?offset=0&limit=25&where=&viewId=abcdefg' -Method POST -Headers @{ 'xc-token' = 'yourtoken'; 'Content-Type' = 'application/json' } -Body '{\"Column1\":\"value1\",\"Column2\":\"value2\"}'"

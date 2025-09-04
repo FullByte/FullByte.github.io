@@ -1,4 +1,4 @@
-# Powershell Setup
+# PowerShell Setup
 
 Is there anything that doesn’t work?
 
@@ -8,7 +8,7 @@ To quote Hamlet, Act 3, Scene 3, Line 87: “No.”
 
 Admin Rights required
 
-**1. Install [Powershell 7](https://github.com/PowerShell/powershell/releases)**
+### 1. Install [PowerShell 7](https://github.com/PowerShell/powershell/releases)
 
 Run this command
 
@@ -19,7 +19,7 @@ msiexec.exe /package PowerShell-7.1.2-win-x64.msi /quiet ADD_EXPLORER_CONTEXT_ME
 - Latest Version: <https://aka.ms/powershell-release?tag=stable>
 - Details: <https://docs.microsoft.com/en-us/powershell/scripting/install/installing-powershell-core-on-windows?view=powershell-7>
 
-**2. Update [PowerShellGet](https://github.com/Azure/azure-powershell)**
+### 2. Update [PowerShellGet](https://github.com/Azure/azure-powershell)
 
 ``` ps1
 Register-PackageSource -Name MyNuGet -Location https://www.nuget.org/api/v2 -ProviderName NuGet
@@ -29,9 +29,9 @@ Update-Module -Name PowerShellGet
 Get-PackageSource
 ```
 
-**3. Install [Module for Azure](https://docs.microsoft.com/en-us/powershell/azure)**
+### 3. Install [Module for Azure](https://docs.microsoft.com/en-us/powershell/azure)
 
-Install the Powershell Modules you would like to use e.g.:
+Install the PowerShell modules you would like to use, e.g.:
 
 ``` ps1
 Install-Module -Name Az -AllowClobber -Force -scope AllUsers
@@ -47,7 +47,7 @@ Update-Module -scope AllUsers -Force
 
 ## Linux
 
-Install powershell on Ubuntu 20.04
+Install PowerShell on Ubuntu 20.04
 
 ``` sh
 sudo apt update # Update the list of packages

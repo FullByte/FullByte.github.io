@@ -7,7 +7,7 @@
 
 ## Tips
 
-Open a new Terminal Window with powershell 7, cmd and WSL (in my case ubuntu)
+Open a new Terminal Window with PowerShell 7, cmd and WSL (in my case Ubuntu)
 
 ``` ps1
 wt -p "PowerShell 7" `; split-pane -p "cmd" `; split-pane -H wsl.exe

@@ -1,6 +1,6 @@
 # Advice
 
-This section does not aim to teach powershell. Rather the scope is to teach proper scripting techniques, troubleshooting and collaboration when scripting.
+This section does not aim to teach PowerShell. Rather, the scope is to teach proper scripting techniques, troubleshooting, and collaboration when scripting.
 
 ## Languages
 
@@ -22,7 +22,7 @@ echo something | Select-String ($keyword[(get-culture).Name])
 
 **Path variables**
 
-Powershell defaults paths:
+PowerShell default paths:
 
 - Script location: ```$PSScriptRoot```
 - Current location when the script is running: ```$PWD```
@@ -116,12 +116,12 @@ Import-Module -Name Az
 
 ### Code Documentation
 
-Follow the Microsoft best-practice guidelines for code documentation in powershell scripts:
+Follow the Microsoft best-practice guidelines for code documentation in PowerShell scripts:
 <https://docs.microsoft.com/de-de/powershell/scripting/gallery/concepts/publishing-guidelines?view=powershell-7.1>
 
 ## Signing Script
 
-Enabling to only run trusted, signed scripts is a good security measurement. This chapter will describe how to sign powershell scripts.
+Enabling only trusted, signed scripts is a good security measure. This chapter describes how to sign PowerShell scripts.
 
 **Getting started**
 
@@ -165,7 +165,7 @@ $Thumbprint = Get-AuthenticodeSignature "script.ps1" | Select-Object -First 1 -E
 Get-ChildItem Cert:\LocalMachine\TrustedPublisher\ | Where-object { $_.thumbprint -eq $Thumbprint}
 ```
 
-## Encrypt Files with Powershell and Certificates
+## Encrypt Files with PowerShell and Certificates
 
 The following variables are required. Additionally you need a cert name and password but this will be queried in this example.
 
