@@ -1,13 +1,12 @@
-# Factorio Headless Server on Proxmox (LXC)
+# Factorio
+
+## Headless Server on Proxmox (LXC)
 
 *Guest contribution by [HiSch](https://github.com/HiSch)*
 
 This guide will walk you through creating a Proxmox LXC container and setting up a **Factorio headless server** inside it.
 
-
-***
-
-## 1. Create a New Proxmox LXC Container
+### 1. Create a New Proxmox LXC Container
 
 1. **Download a CT template**
     - In Proxmox, select your **host** → go to **local (hostname)** → click **CT Templates**.
@@ -36,9 +35,7 @@ This guide will walk you through creating a Proxmox LXC container and setting up
 9. **Finish**
     - Click **Finish** → wait for container creation.
 
-***
-
-## 2. Initial Container Setup
+### 2. Initial Container Setup
 
 1. Click your new **LXC container** → **Console/Shell**.
 2. Log in as `root` (default).
@@ -57,9 +54,7 @@ adduser factorio
 
 Set a password when prompted.
 
-***
-
-## 3. Install Factorio Headless
+### 3. Install Factorio Headless
 
 1. Log in as the new user:
 
@@ -102,10 +97,7 @@ nano ~/server/data/server-settings.json
 exit
 ```
 
-
-***
-
-## 4. Setup Systemd Service
+### 4. Setup Systemd Service
 
 As **root**, create a new `systemd` service:
 
@@ -135,10 +127,7 @@ systemctl start factorio
 systemctl enable factorio
 ```
 
-
-***
-
-## 5. Done
+### 5. Done
 
 Your Factorio headless server should now be running automatically on boot.
 
@@ -154,9 +143,6 @@ systemctl status factorio
 systemctl stop factorio
 systemctl start factorio
 ```
-
-
-***
 
 You now have a dedicated **Factorio server** running inside a Proxmox LXC container!
 
@@ -179,18 +165,14 @@ On your home router/firewall:
 
 Save and restart your router if necessary.
 
-***
-
-## Test External Connectivity
+### Test External Connectivity
 
 1. From outside your network (ask a friend, or use mobile hotspot):
     - Open Factorio → Multiplayer → Connect to your **public IP**.
     - Public IP can be found by searching *“what is my IP”* on Google.
 2. Make sure your local firewall (Proxmox host or container) is not blocking UDP traffic on port `34197`.
 
-***
-
-## Optional: Register with the Official Server List
+### Optional: Register with the Official Server List
 
 Inside your `~/server/data/server-settings.json`, you can configure:
 
@@ -201,18 +183,13 @@ Inside your `~/server/data/server-settings.json`, you can configure:
 This will let your server appear in the official Factorio multiplayer browser.
 (Requires that port forwarding is working correctly.)
 
-***
-
 After completing this, you should be able to join by entering your **public IP (and port 34197)** in Factorio multiplayer.
 
-
-# Updating Factorio Server Automatically
+### Updating Factorio Server Automatically
 
 Factorio releases updates often, so it’s a good idea to automate the update process. Below are steps to create a simple script that updates your server daily at 4 AM.
 
-***
-
-## Create the Update Script
+### Create the Update Script
 
 Log in as **root** in your Proxmox LXC container and create the script:
 
@@ -247,18 +224,13 @@ rm -R /home/factorio/factorio/
 
 Save and exit (`CTRL+O`, then `CTRL+X`).
 
-***
-
 ## Make the Script Executable
 
 ```bash
 chmod +x /root/update.sh
 ```
 
-
-***
-
-## Schedule Daily Automatic Updates
+### Schedule Daily Automatic Updates
 
 Edit root’s **crontab**:
 
@@ -276,8 +248,6 @@ Add this line at the bottom to run the update daily at 4:00 AM:
 - `> /dev/null 2>&1` → silences script output
 
 Save and exit the crontab editor.
-
-***
 
 ## Verify Cron Setup
 
