@@ -66,14 +66,14 @@ Once this works, run ```webui.sh``` for the next start.
 
 Open [locahost port 7860](http://127.0.0.1:7860/) to get the web-ui.
 
-![stable-diffusion](_stable-diffusion-interface.png)
+![stable-diffusion](_stable-diffusion-interface.webp)
 
 ## Example results
 
-![stable-diffusion](_stable-diffusion0.png)
+![stable-diffusion](_stable-diffusion0.webp)
 
-![stable-diffusion](_stable-diffusion1.png)
+![stable-diffusion](_stable-diffusion1.webp)
 
-![stable-diffusion](_stable-diffusion2.png)
+![stable-diffusion](_stable-diffusion2.webp)
 
-![stable-diffusion](_stable-diffusion3.png)
+![stable-diffusion](_stable-diffusion3.webp)

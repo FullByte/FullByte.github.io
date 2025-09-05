@@ -4,6 +4,7 @@ repo_url: https://github.com/FullByte/FullByte.github.io
 site_description: >-
   This is the personal website of 0xfab1. It mainly contains blog entries on IT tech stuff, games, making things and art.
 site_author: "0xfab1"
+use_directory_urls: false
 
 theme:
   name: material
@@ -32,24 +33,84 @@ theme:
   features:
     - navigation.instant
     - navigation.instant.prefetch
+    - navigation.instant.progress
     - navigation.tracking
     - navigation.top
+    - navigation.path
+    - navigation.indexes
     - header.autohide
     - announce.dismiss
     - content.code.copy
+    - content.action.edit
+    - content.action.view
     - search.highlight
+    - search.suggest
+    - search.share
 
 plugins:
-  - search
+  - search:
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+      lang: en
   - minify:
       minify_html: true
       minify_js: true
       minify_css: true
       htmlmin_opts:
           remove_comments: true
+  - rss:
+      match_path: "index.md|tech/index.md|make/index.md|about/index.md|tech/.*|make/.*"
+      date_from_meta:
+        as_creation: "date"
+        as_update: "modified"
+      categories:
+        - tags
+      abstract_chars_count: 160
+      feed_ttl: 1440
+      pretty_print: false
+      length: 20
+  # RSS plugin disabled - was causing extreme build times by processing all 449+ files
+  # - rss:
+  #     match_path: ".*"
+  #     date_from_meta:
+  #       as_creation: "date"
+  #       as_update: "modified"
+  #     categories:
+  #       - tags
+  #     abstract_chars_count: 160
+  #     feed_ttl: 1440
+  #     pretty_print: true
+  
+  # Git revision plugin disabled - was causing extreme build times on large repos  
+  # - git-revision-date-localized:
+  #     enable_creation_date: true
+  #     enable_git_follow: false
+  #     enable_parallel_processing: false
+  #     type: timeago
+  #     fallback_to_build_date: true
+  #     exclude:
+  #       - index.md
+  #     strict: false
+  # HTML proofer disabled for faster development builds
+  # - htmlproofer:
+  #     enabled: true
+  #     validate_external_urls: false
+  #     raise_error: false
 
 extra:
   generator: false
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/FullByte
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/0xfab1
+
+# Include media files in the build
+extra_css: []
+extra_javascript: []
+
+# Copy additional files to site
+docs_dir: docs
+site_dir: site
 
 markdown_extensions:
   - attr_list
@@ -67,3 +128,4 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
       clickable_checkbox: true
+  - pymdownx.superfences

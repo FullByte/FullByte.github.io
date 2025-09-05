@@ -668,21 +668,21 @@ You can reset your firewall settings as follows. Windows will then ask you whene
 
 Settings
 
-![AOE2DESettings](_games-aoe2de_settings.jpg)
+![AOE2DESettings](_games-aoe2de_settings.webp)
 
 The mods I use:
 
-![AOE2DEMods](_games-aoe2de_mods.jpg)
+![AOE2DEMods](_games-aoe2de_mods.webp)
 
 ##### Notes
 
-![aoeIIDE-codes](_games-aoeIIDE-codes1.jpg)
+![aoeIIDE-codes](_games-aoeIIDE-codes1.webp)
 
-![aoeIIDE-codes](_games-aoeIIDE-codes2.jpg)
+![aoeIIDE-codes](_games-aoeIIDE-codes2.webp)
 
-![aoeIIDE-codes](_games-aoeIIDE-codes3.jpg)
+![aoeIIDE-codes](_games-aoeIIDE-codes3.webp)
 
-![aoeIIDE-codes](_games-aoeIIDE-codes4.jpg)
+![aoeIIDE-codes](_games-aoeIIDE-codes4.webp)
 
 ##### AoE Tetris
 
@@ -697,7 +697,7 @@ Watch:
 
 | Before                                                | After                                                |
 |-------------------------------------------------------|------------------------------------------------------|
-| ![AOE2DEBeforeBlood](_games-aoe2de_bloodexample1.jpg) | ![AOE2DEafterblood](_games-aoe2de_bloodexample2.jpg) |
+| ![AOE2DEBeforeBlood](_games-aoe2de_bloodexample1.webp) | ![AOE2DEafterblood](_games-aoe2de_bloodexample2.webp) |
 
 ### Call of Duty
 
@@ -705,11 +705,11 @@ Watch:
 
 Notes
 
-![warzone-movement-notes](_games-warzone-movement-notes.jpg)
+![warzone-movement-notes](_games-warzone-movement-notes.webp)
 
 How to win
 
-![COD warzone win](_games-CODwarzonewin.jpg)
+![COD warzone win](_games-CODwarzonewin.webp)
 
 ### Doom
 
@@ -780,8 +780,8 @@ Settings
 
 Cookie Clicker
 
-![cookieclicker](_games-cookieclicker.png)
+![cookieclicker](_games-cookieclicker.webp)
 
 ### Member Berries
 
-![ps5_Genshin_Impact](_games-ps5_Genshin_Impact.jpg)
+![ps5_Genshin_Impact](_games-ps5_Genshin_Impact.webp)

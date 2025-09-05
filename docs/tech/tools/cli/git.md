@@ -8,7 +8,7 @@
 | Windows       | `choco install git`             |
 | Ubuntu        | `sudo apt-get install git`      |
 
-![xkdc-git](_xkdc-git.png)
+![xkdc-git](_xkdc-git.webp)
 
 ```txt
 +---------------------------------------------------------------+

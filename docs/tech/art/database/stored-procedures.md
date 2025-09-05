@@ -132,4 +132,4 @@ EXEC dbo.SierpinskiTriangle 512;
 
 Result:
 
-![sp_sierpinski](_sp_sierpinski.png)
+![sp_sierpinski](_sp_sierpinski.webp)

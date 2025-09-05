@@ -1,3 +1,3 @@
 # Bialetti
 
-![Bialetti](_coffee_bialetti.jpg)
+![Bialetti](_coffee_bialetti.webp)

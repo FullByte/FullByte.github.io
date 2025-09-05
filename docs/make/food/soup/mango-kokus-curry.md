@@ -45,4 +45,4 @@
 
 ## Foto
 
-![mango-kokus-curry](_mango-kokus-curry.jpg)
+![mango-kokus-curry](_mango-kokus-curry.webp)

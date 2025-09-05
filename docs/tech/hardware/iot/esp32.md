@@ -16,6 +16,6 @@ esptool.py -p COM4 flash_id
 
 Example output:
 
-![esptool](_esptool1.jpg)
+![esptool](_esptool1.webp)
 
 More information [here](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/establish-serial-connection.html) and [here](https://docs.espressif.com/projects/esptool/en/latest/esp32/)

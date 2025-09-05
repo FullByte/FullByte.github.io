@@ -10,7 +10,7 @@ I am using ClockworkOS on my [clockworkpi](https://www.clockworkpi.com/).
 - Make sure you are connected to a 2.5Ghz WiFi. On the Gameshell you can use "Tiny Cloud" for the Gameshell IP, user and password information.
 - On your PC run e.g.: `ssh cpi@192.168.178.22`
 
-![gameshell-connect-shh](_gameshell-connect-shh.png)
+![gameshell-connect-shh](_gameshell-connect-shh.webp)
 
 Alternatively connect using FTP.
 
@@ -24,11 +24,11 @@ In order to Connect via USB do the following:
 - On your Gameshell, go to **Settings** -> **Network gateway switch** -> Choose USB Ethernet. You should see an IP address on the screen (e.g. 192.168.10.2).
 - The PC should recognize a new COM Device:
 
-![gameshell-com-device](_gameshell-com-device-found.png)
+![gameshell-com-device](_gameshell-com-device-found.webp)
 
 - In the Windows Device Manager, go to the correct COM Device and click update driver. Use this [RNDIS driver for WIN drivers](https://github.com/clockworkpi/USB-Ethernet/blob/master/RNDIS%20driver%20for%20WIN.zip) to install a new network device.
 
-![gameshell-update-driver](_gameshell-update-driver.png)
+![gameshell-update-driver](_gameshell-update-driver.webp)
 
 - Now it is possible to connect to the the Gameshell via SSH or FTP using the IP provided on the Gameshell screen.
 

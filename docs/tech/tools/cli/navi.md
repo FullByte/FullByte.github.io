@@ -12,7 +12,7 @@ Once you ran the install script below you should find a subfolder named `FullByt
 
 To use navi press `control`+`g` or type `navi`.
 
-![example](_navi-example.jpg)
+![example](_navi-example.webp)
 
 ## Install Navi + This cheatsheet
 

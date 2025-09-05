@@ -46,4 +46,4 @@ Optional Garnelen als Einlage hinzufügen.
 
 ## Foto
 
-![kuerbissuppe](_kuerbissuppe.jpg)
+![kuerbissuppe](_kuerbissuppe.webp)

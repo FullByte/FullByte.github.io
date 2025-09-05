@@ -22,7 +22,7 @@ Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
 
 Output:
 
-![tetris.png](_tetris.png)
+![tetris.png](_tetris.webp)
 
 ## Star Wars
 
@@ -216,7 +216,7 @@ Output:
 
 Output:
 
-![tracert-austrian-soccer](_tracert-austrian-soccer.jpg)
+![tracert-austrian-soccer](_tracert-austrian-soccer.webp)
 
 ## XMAS
 
@@ -333,4 +333,4 @@ traceroute to xmas.futile.net (77.75.106.106), 128 hops max, 52 byte packets
 
 ## American Pie
 
-![makerforce-american-pie](_tracert-makerforce-american-pie.jpg)
+![makerforce-american-pie](_tracert-makerforce-american-pie.webp)

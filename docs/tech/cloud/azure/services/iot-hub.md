@@ -132,19 +132,19 @@ For a BME280 Sensor (I2C Setup) use the following connections:
 
 Pinout of my ESP32:
 
-![esp32-pinout](_esp32-pinout.jpg)
+![esp32-pinout](_esp32-pinout.webp)
 
 Pinout of my BME280 Sensor:
 
-![BME280-Sensor-Pinou](_BME280-Sensor-Pinout.jpg)
+![BME280-Sensor-Pinou](_BME280-Sensor-Pinout.webp)
 
 So the connection should look like this:
 
-![ESP32-BME280-Connection](_ESP32-BME280-Connection.jpg)
+![ESP32-BME280-Connection](_ESP32-BME280-Connection.webp)
 
 Once you are done, your IoT Device should look like this or better:
 
-![iot_irl_mess](_iot_irl_mess.jpg)
+![iot_irl_mess](_iot_irl_mess.webp)
 
 ### Prepare PC
 
@@ -170,7 +170,7 @@ https://dl.espressif.com/dl/package_esp32_index.json,https://espressif.github.io
 Connect the ESP32 and check if you see the device on any COM port.
 On Windows, your attached ESP32 should appear in the device manager for example like this:
 
-![esp32_driver](_esp32_driver.png)
+![esp32_driver](_esp32_driver.webp)
 
 ### Arduino IDE
 
@@ -192,9 +192,9 @@ Then install the following libraries:
 
 Installed libraries for reference should look like this (probably newer versions):
 
-![library_adafruit_collection](_library_adafruit_collection.png)
+![library_adafruit_collection](_library_adafruit_collection.webp)
 
-![library_microsoft_c](_library_microsoft_c.png)
+![library_microsoft_c](_library_microsoft_c.webp)
 
 Now follow these instructions
 

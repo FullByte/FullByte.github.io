@@ -23,15 +23,15 @@ Generally there are few things to say:
 
 ### "ISO vs ANSI"
 
-![ANSI-vs-ISO](_keyboard_ANSI-vs-ISO-Keyboard-Layout.jpg)
+![ANSI-vs-ISO](_keyboard_ANSI-vs-ISO-Keyboard-Layout.webp)
 
 ### Bottom Row
 
-![keyboard-bottom-row-standard](_keyboard-bottom-row-standard.png)
+![keyboard-bottom-row-standard](_keyboard-bottom-row-standard.webp)
 
 ### Profile
 
-![keyboard-keycap-profile](_keyboard-keycap-profile2.png)
+![keyboard-keycap-profile](_keyboard-keycap-profile2.webp)
 
 ### 100-40% Keyboards
 
@@ -83,11 +83,11 @@ On/off vs controlled LED per key
 
 Rember that depending on the profile the key caps need to be formed differently, depending in which row they are.
 
-![keycap-profile](_keyboard-keycap-profile.png)
+![keycap-profile](_keyboard-keycap-profile.webp)
 
 Depending on the brand, the key caps may not be standard. In this example there is a logitech cap (left) next to a regular cap (right):
 
-![logitech-vs-standard](_keyboard-logitech-vs-standard-keycaps.jpg)
+![logitech-vs-standard](_keyboard-logitech-vs-standard-keycaps.webp)
 
 ### Printing
 

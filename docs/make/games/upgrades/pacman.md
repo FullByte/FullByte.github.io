@@ -2,11 +2,11 @@
 
 I used these files: [Source](https://www.thingiverse.com/thing:5396911) and built this:
 
-![Pac Man](_pacman1.jpeg)
+![Pac Man](_pacman1.webp)
 
-![Pac Man](_pacman2.jpeg)
+![Pac Man](_pacman2.webp)
 
-![Pac Man](_pacman3.jpeg)
+![Pac Man](_pacman3.webp)
 
 ## Rules
 

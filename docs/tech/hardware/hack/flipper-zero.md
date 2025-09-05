@@ -1,5 +1,5 @@
 # Flipper Zero
 
-![Flipper Zero](_flipper_gps.jpg)
+![Flipper Zero](_flipper_gps.webp)
 
-![Flipper Zero](_flipper_bluetooth_scan.jpg)
+![Flipper Zero](_flipper_bluetooth_scan.webp)

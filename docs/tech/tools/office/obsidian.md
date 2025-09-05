@@ -11,33 +11,33 @@
 
 Open the Obsidian settings, enable community plugins and search for [Obsidian Git](https://github.com/denolehov/obsidian-git) to install it.
 
-![obsidian_git](_obsidian_git_install.jpg)
+![obsidian_git](_obsidian_git_install.webp)
 
 I use shortcuts for commit and push as follows:
 
-![obsidian_git](_obsidian_git_shortcuts.jpg)
+![obsidian_git](_obsidian_git_shortcuts.webp)
 
 These are my Obsidian Git settings:
 
 Automatic settings:
 
-![obsidian_git_settings](_obsidian_git_settings1.jpg)
+![obsidian_git_settings](_obsidian_git_settings1.webp)
 
 Commit message settings:
 
-![obsidian_git_settings](_obsidian_git_settings2.jpg)
+![obsidian_git_settings](_obsidian_git_settings2.webp)
 
 Backup settings:
 
-![obsidian_git_settings](_obsidian_git_settings3.jpg)
+![obsidian_git_settings](_obsidian_git_settings3.webp)
 
 Miscellaneous settings
 
-![obsidian_git_settings](_obsidian_git_settings4.jpg)
+![obsidian_git_settings](_obsidian_git_settings4.webp)
 
 Advanced settings
 
-![obsidian_git_settings](_obsidian_git_settings5.jpg)
+![obsidian_git_settings](_obsidian_git_settings5.webp)
 
 ### Templater
 

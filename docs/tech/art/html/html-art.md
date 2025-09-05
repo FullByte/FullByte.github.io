@@ -6,4 +6,4 @@ HTML only art (no CSS or JS)
 
 [Example](_html-example.html)
 
-![html-art](_html-art-example.jpg)
+![html-art](_html-art-example.webp)

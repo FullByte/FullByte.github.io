@@ -77,6 +77,6 @@ Here are some examples of how the results vary:
 
 |                                           |                                           |                                           |
 |-------------------------------------------|-------------------------------------------|-------------------------------------------|
-| ![Example1](avatar_16130457751894587.png) | ![Example2](avatar_16130458343669508.png) | ![Example3](avatar_16130458978945522.png) |
-| ![Example4](avatar_16130459003464671.png) | ![Example5](avatar_16130459025078332.png) | ![Example6](avatar_16130459046500233.png) |
-| ![Example7](avatar_16130459068091189.png) | ![Example8](avatar_16130459090147486.png) | ![Example9](avatar_16130459112149794.png) |
+| ![Example1](avatar_16130457751894587.webp) | ![Example2](avatar_16130458343669508.webp) | ![Example3](avatar_16130458978945522.webp) |
+| ![Example4](avatar_16130459003464671.webp) | ![Example5](avatar_16130459025078332.webp) | ![Example6](avatar_16130459046500233.webp) |
+| ![Example7](avatar_16130459068091189.webp) | ![Example8](avatar_16130459090147486.webp) | ![Example9](avatar_16130459112149794.webp) |

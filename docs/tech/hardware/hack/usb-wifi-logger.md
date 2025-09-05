@@ -2,4 +2,4 @@
 
 Example web interface:
 
-![_USBwifilogger](_USBwifilogger.png)
+![_USBwifilogger](_USBwifilogger.webp)

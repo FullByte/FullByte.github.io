@@ -147,7 +147,7 @@ To make any of the ASCII output more colorful use lolcat. Note: doesn't work wit
 - Install: ```sudo apt install lolcat```
 - Use lolcat: ```fortune | cowthink | lolcat```
 
-![lolcat-fortune-cow.png](_lolcat-fortune-cow.png)
+![lolcat-fortune-cow.png](_lolcat-fortune-cow.webp)
 
 Another cool idea is to use this fo successful tests or builds e.g.:
 
@@ -155,7 +155,7 @@ Another cool idea is to use this fo successful tests or builds e.g.:
 - Set alias: ```alias success-message='if [ "$?" -eq "0" ]; then lolcat ~/important/pikachu.tp -a -s 40 -d 2; fi;'```
 - Usage: ```do_tests && success-message```
 
-![pikachu.png](_pikachu.png)
+![pikachu.png](_pikachu.webp)
 
 It is also possible to combine lolcat with neofetch and pv e.g.: ```neofetch | pv -qL 666 | lolcat```
 
@@ -227,11 +227,11 @@ Convert images to ASCII art with jp2a.
 
 - Install: ```sudo apt install jp2a```
 - Usage: ```jp2a --output=ascii.txt --colors avatar_16130457751894587.png```
-- Download Example [input](_ascii_jp2a_input.png) and [output](_ascii_jp2a_output.txt)
+- Download Example [input](_ascii_jp2a_input.webp) and [output](_ascii_jp2a_output.txt)
 
 Example
 
-![ascii-0xfab1net](_ascii-0xfab1net.jpg)
+![ascii-0xfab1net](_ascii-0xfab1net.webp)
 
 ### Nurses 2
 
@@ -412,7 +412,7 @@ Another example: ```toilet -kf mono12 0xfab1.net```
 
 Another example with color: ```toilet -f mono12 -F metal 0xfab1```
 
-![toilet-color](_toilet-color.png)
+![toilet-color](_toilet-color.webp)
 
 You can also use toilet to pipe stuff e.g. this example for the current time:
 
@@ -420,7 +420,7 @@ You can also use toilet to pipe stuff e.g. this example for the current time:
 while true; do clear; echo "$(date '+%D %T' | toilet -f term -F border --gay)"; sleep 1; done
 ```
 
-![toilet-time](_toilet-time.png)
+![toilet-time](_toilet-time.webp)
 
 ### Figlet
 

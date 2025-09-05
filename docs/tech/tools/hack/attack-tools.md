@@ -10,7 +10,7 @@ Start netcat listening on e.g. port 1234: ```nc -lvnp 1234```
 
 Once payload is triggered netcat will open a reverse shell:
 
-![netcat_injecttest](_netcat_injecttest.jpg)
+![netcat_injecttest](_netcat_injecttest.webp)
 
 ### Create service
 

@@ -1,3 +1,3 @@
 # FinOps
 
-![AWS Costs](_AWS-costs.jpg)
+![AWS Costs](_AWS-costs.webp)

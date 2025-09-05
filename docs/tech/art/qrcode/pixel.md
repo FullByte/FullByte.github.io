@@ -4,8 +4,8 @@ QR codes are encoded with [Reed-Solomon error-correcting codes](https://en.wikip
 
 The following is an example with my face as pixel art embedded into the QR-Code linking to this website. (I know, could be any face, lol)
 
-![me_on-a-qrcode.png](_me_on-a-qrcode.png)
+![me_on-a-qrcode.png](_me_on-a-qrcode.webp)
 
 Here is another QR code with the avatar I use:
 
-![0xfab1](_0xfab1-qrcode.png)
+![0xfab1](_0xfab1-qrcode.webp)

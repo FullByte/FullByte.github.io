@@ -6,13 +6,13 @@ When logging movement art can be created.
 
 Flight path of last 747 delivery flight:
 
-![flight](_flight1.png)
+![flight](_flight1.webp)
 
-![flight](_flight2.png)
+![flight](_flight2.webp)
 
-![flight](_flight3.png)
+![flight](_flight3.webp)
 
-![flight](_flight4.png)
+![flight](_flight4.webp)
 
 Links:
 
@@ -23,15 +23,15 @@ Links:
 
 Before getting stuck in the Suez Canal, ship "Ever Given" drew a penis.
 
-![_ship1](_ship1.png)
+![_ship1](_ship1.webp)
 
 ## GPS Doodles
 
 People run, drive, ride the bike and record their GPS tracks to create art.
 
-![gps_doodle](_gps_doodle1.png)
+![gps_doodle](_gps_doodle1.webp)
 
-![gps_doodle](_gps_doodle2.png)
+![gps_doodle](_gps_doodle2.webp)
 
 Links:
 

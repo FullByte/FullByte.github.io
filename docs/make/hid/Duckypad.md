@@ -1,3 +1,3 @@
 # Duckypad
 
-![duckyPad](_keyboards_duckyPad.jpg)
+![duckyPad](_keyboards_duckyPad.webp)

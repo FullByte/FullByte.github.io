@@ -1,6 +1,6 @@
 # Pencil Box
 
-![Pencil Box](_pencil-case.jpg)
+![Pencil Box](_pencil-case.webp)
 
 Files
 

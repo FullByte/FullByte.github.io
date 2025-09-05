@@ -20,4 +20,4 @@ Create a new external program with the following parameters:
 
 Then select "external Program" for your connection and choose "OpenSSH".
 
-![mRemoteNG](_mRemoteNG.png)
+![mRemoteNG](_mRemoteNG.webp)

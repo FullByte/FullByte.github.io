@@ -45,4 +45,4 @@
 
 ## Foto
 
-![bratkartoffeln](_bratkartoffeln.jpg)
+![bratkartoffeln](_bratkartoffeln.webp)

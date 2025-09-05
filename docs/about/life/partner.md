@@ -1,6 +1,6 @@
 # Partner
 
-![partner_meme](_partner_meme4.jpg)
+![partner_meme](_partner_meme4.webp)
 
 ## Basics
 
@@ -68,8 +68,8 @@ Wähle mindestens einen Punkt pro Kategorie und setze diesen gemeinsam um.
 
 ## More Memes
 
-![partner_meme](_partner_meme1.jpg)
+![partner_meme](_partner_meme1.webp)
 
-![partner_meme](_partner_meme2.jpg)
+![partner_meme](_partner_meme2.webp)
 
-![partner_meme](_partner_meme3.jpg)
+![partner_meme](_partner_meme3.webp)

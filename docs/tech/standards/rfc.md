@@ -1,6 +1,6 @@
 # RFCs
 
-![https://xkcd.com/927](_standards.png)
+![https://xkcd.com/927](_standards.webp)
 
 ## Interesting RFCs
 

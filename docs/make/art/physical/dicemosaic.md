@@ -23,7 +23,7 @@ metapixel-prepare --width=15 --height=15 --recurse "dice directory" "library dir
 metapixel --library="library directory" --width=15 --height=15 --distance=0 --metric=wavelet --metapixel "infile" "outfile"
 ```
 
-![dice faces](_dice.jpg)
+![dice faces](_dice.webp)
 
 **Option 2:** Using an already created Dice Converter
 
@@ -37,4 +37,4 @@ Lay out the picture line by line and frame it.
 You can glue the dices in place but this leaves no option for error.
 I built my own frame and used a plexiglas front to keep the dices in place.
 
-![My Dice Mosaic](_dicemosaic.jpg)
+![My Dice Mosaic](_dicemosaic.webp)

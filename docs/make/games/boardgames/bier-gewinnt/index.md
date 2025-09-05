@@ -8,8 +8,8 @@ The game is ideally played turn based with emptied cans as a team coop drinking 
 
 Winner gets the "Pfand" - looser gets to buy more beer.
 
-![Bier Gewinnt](_bier-gewinnt3.jpg)
+![Bier Gewinnt](_bier-gewinnt3.webp)
 
-![Bier Gewinnt](_bier-gewinnt4.jpg)
+![Bier Gewinnt](_bier-gewinnt4.webp)
 
-![Bier Gewinnt](_bier-gewinnt5.jpg)
+![Bier Gewinnt](_bier-gewinnt5.webp)

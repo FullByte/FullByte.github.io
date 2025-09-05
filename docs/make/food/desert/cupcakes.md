@@ -46,4 +46,4 @@
 
 ## Foto
 
-![cupcakes](_cupcakes.jpg)
+![cupcakes](_cupcakes.webp)

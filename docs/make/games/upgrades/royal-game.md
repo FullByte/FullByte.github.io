@@ -10,19 +10,19 @@ You can download the [svg](_royal-game.svg) as well as the [CDR-Cut](_royal-game
 
 Here are some pictures of the first print without paint:
 
-![royal-game-result](_royal-game-result1.jpg)
+![royal-game-result](_royal-game-result1.webp)
 
-![royal-game-result](_royal-game-result2.jpg)
+![royal-game-result](_royal-game-result2.webp)
 
-![royal-game-result](_royal-game-result3.jpg)
+![royal-game-result](_royal-game-result3.webp)
 
 And after painting using acrylic paint:
 
-![royal-game-painted](_royal-game-painted1.jpg)
+![royal-game-painted](_royal-game-painted1.webp)
 
-![royal-game-painted](_royal-game-painted2.jpg)
+![royal-game-painted](_royal-game-painted2.webp)
 
-![royal-game-painted](_royal-game-painted3.jpg)
+![royal-game-painted](_royal-game-painted3.webp)
 
 ## Play the game
 

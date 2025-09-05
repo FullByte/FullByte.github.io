@@ -36,11 +36,11 @@ Running GET with Postman for a given BLOB storage container using SAS token auth
 
 Create a SAS token for the Azure storage account you want to use:
 
-![generate-SAS-token](_sas-generate-SAS-token.jpg)
+![generate-SAS-token](_sas-generate-SAS-token.webp)
 
 Use this SAS token in the postman GET request and postman will automatically show you the parameters of the SAS token:
 
-![postman-GET-SAS-token-parameters](_sas-postman-GET-SAS-token-parameters.jpg)
+![postman-GET-SAS-token-parameters](_sas-postman-GET-SAS-token-parameters.webp)
 
 I modified the GET request a little bit to use [environment variables](https://learning.postman.com/docs/sending-requests/variables/) for storage account name, container name and file name:
 
@@ -50,13 +50,13 @@ https://{{accountName}}.blob.core.windows.net/{{containerName}}/{{fileName}}?sv=
 
 If you have a file available at `{{containerName}}`/`{{fileName}}` you should get a `200` response with the file content e.g.:
 
-![postman-GET-result](_sas-postman-GET-result.jpg)
+![postman-GET-result](_sas-postman-GET-result.webp)
 
 #### POST
 
 Running POST with Postman for a given BLOB storage container using SAS token authentication:
 
-![_postman-POST-header-data](_sas-postman-POST-header-data.jpg)
+![_postman-POST-header-data](_sas-postman-POST-header-data.webp)
 
 The values I used:
 
@@ -70,16 +70,16 @@ The values I used:
 
 I put some [example log data](https://www.ibm.com/docs/en/zos/2.1.0?topic=problems-example-log-file) in the body as raw input:
 
-![postman-POST-raw-body-content](_sas-postman-POST-raw-body-content.jpg)
+![postman-POST-raw-body-content](_sas-postman-POST-raw-body-content.webp)
 
 Running the POST command gives us the following result in Postman:
 
-![postman-POST-result-header](_sas-postman-POST-result-header.jpg)
+![postman-POST-result-header](_sas-postman-POST-result-header.webp)
 
 Viewing this file in Azure confirms the POST was successful. Here you can also see the optional header key `x-ms-meta-metadatakey` with value `metadatavalue` is set.
 
-![_azure-container-log-file](_sas-azure-container-log-file-overview.jpg)
+![_azure-container-log-file](_sas-azure-container-log-file-overview.webp)
 
 We can also view the file content and see it matches with what we added in the body of the POST command:
 
-![_azure-container-log-file](_sas-azure-container-log-file-content.jpg)
+![_azure-container-log-file](_sas-azure-container-log-file-content.webp)

@@ -173,7 +173,7 @@ openssl aes-128-cbc -K "55555555555555555555555555555555" -iv "83deccd3f93b37c70
 
 Example screenshot:
 
-![OpenSSL fle encyption and decryption demo](_openssl_file_encrpytion_decryption.png)
+![OpenSSL fle encyption and decryption demo](_openssl_file_encrpytion_decryption.webp)
 
 ## HTTPS webserver
 

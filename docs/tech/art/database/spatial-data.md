@@ -9,7 +9,7 @@ This is a collection of SQL queries that force SQL Server’s spatial results ta
 - Source: <https://michaeljswart.com/2010/02/more-images-from-the-spatial-results-tab/>
 - [Download](_sql-venus.sql)
 
-![db_venus](_db_venus.png)
+![db_venus](_db_venus.webp)
 
 Code "Venus in SQL"
 
@@ -541,7 +541,7 @@ LINESTRING(
 - Source: <https://www.purplefrogsystems.com/blog/2011/03/drawing-a-logo-or-diagram-using-sql-spatial-data/>
 - [Download](_sql-bits.sql)
 
-![sql-bits](_sql-bits.png)
+![sql-bits](_sql-bits.webp)
 
 Code "SQLbits"
 

@@ -100,7 +100,7 @@ WHERE zr*zr + zi*zi > p;
 
 Example output:
 
-![mandelbrot](_mandelbrot.png)
+![mandelbrot](_mandelbrot.webp)
 
 Another mandlebrot alternative
 
@@ -125,7 +125,7 @@ SELECT group_concat(rtrim(t),x'0a') as Mandelbrot FROM a;
 
 Example output:
 
-![mandelbrot](_mandelbrot2.png)
+![mandelbrot](_mandelbrot2.webp)
 
 ## Christmas Tree
 
@@ -242,4 +242,4 @@ SELECT
   AS chin;
 ```
 
-![sql-hat-guy](_sql-hat-guy.png)
+![sql-hat-guy](_sql-hat-guy.webp)

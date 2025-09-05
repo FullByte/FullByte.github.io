@@ -9,7 +9,7 @@ Remember:
 - Once the components you desire are cheaper, new components will be available which you will then desire.
 - If you buy a laptop, make sure things can be repaired/changed/upgraded easily.
 
-![cost-of-analysis](_cost-of-analysis.png)
+![cost-of-analysis](_cost-of-analysis.webp)
 
 ## Buy Hardware Helper
 

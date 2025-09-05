@@ -6,7 +6,7 @@
 
 Rule 53: If you can think of it, someone's done it in the DNS
 
-![google_announcement](_google_announcement.png)
+![google_announcement](_google_announcement.webp)
 
 #### Public DNS
 

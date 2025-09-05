@@ -32,17 +32,17 @@ This also changes the distribution of cards as follows:
 
 This is the first version I made:
 
-![vegas version 1](_vegas_baby1.jpg)
+![vegas version 1](_vegas_baby1.webp)
 
 ### Second Version
 
 This is the second version I made:
 
-![vegas version 2](_vegas2.jpg)
+![vegas version 2](_vegas2.webp)
 
-![vegas version 2](_vegas1.jpg)
+![vegas version 2](_vegas1.webp)
 
-![vegas version 2](_vegas3.jpg)
+![vegas version 2](_vegas3.webp)
 
 ## Additional Rules
 

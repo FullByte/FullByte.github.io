@@ -2,7 +2,7 @@
 
 This is an overview of the things I made :)
 
-![NoRegrats](_NoRegrats.jpg)
+![NoRegrats](_NoRegrats.webp)
 
 - [Art](art/index.md)
 - [Boxes](boxes/index.md)

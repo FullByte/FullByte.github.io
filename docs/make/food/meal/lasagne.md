@@ -61,4 +61,4 @@
 
 ## Foto
 
-![lasagne](_lasagne.jpg)
+![lasagne](_lasagne.webp)

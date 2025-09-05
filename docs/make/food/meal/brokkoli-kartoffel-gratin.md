@@ -44,4 +44,4 @@
 
 ## Foto
 
-![brokkoli-kartoffel-gratin](_brokkoli-kartoffel-gratin.jpg)
+![brokkoli-kartoffel-gratin](_brokkoli-kartoffel-gratin.webp)

@@ -11,4 +11,4 @@ Components
 - 50x Kailh Low Profile Choc Switches (Silver, linear)
 - 50x Kailh Choc Transparent Keycaps
 
-![kyria-split-keyboard](_keyboards_kyria-split-keyboard.png)
+![kyria-split-keyboard](_keyboards_kyria-split-keyboard.webp)

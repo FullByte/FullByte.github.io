@@ -11,21 +11,21 @@ I built a hardware case for the original [hori taiko drum controller](https://ho
 
 ## In Progress
 
-![switch-taiko](_switch-taiko1.jpg)
+![switch-taiko](_switch-taiko1.webp)
 
-![switch-taiko](_switch-taiko2.jpg)
+![switch-taiko](_switch-taiko2.webp)
 
 ## Finshed but without paint
 
-![switch-taiko](_switch-taiko3.jpg)
+![switch-taiko](_switch-taiko3.webp)
 
 ## Final build
 
-![switch-taiko](_switch-taiko4.jpg)
+![switch-taiko](_switch-taiko4.webp)
 
-![switch-taiko](_switch-taiko5.jpg)
+![switch-taiko](_switch-taiko5.webp)
 
-![switch-taiko](_switch-taiko6.jpg)
+![switch-taiko](_switch-taiko6.webp)
 
 ## Links
 

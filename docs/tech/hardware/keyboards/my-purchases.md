@@ -4,7 +4,7 @@
 
 The [Durgod](https://www.durgodkeyboard.com/) [Fusion Navigator](https://www.youtube.com/watch?v=i-ufQMgYPVI) is a wireless 65% keyboard. I use MX Brown switches in this one.
 
-![durgod-fusion-navigator](_durgod-fusion-navigator-wireless-65-mx-brown.jpg)
+![durgod-fusion-navigator](_durgod-fusion-navigator-wireless-65-mx-brown.webp)
 
 ## Ultimate Hacking Keyboard v2
 
@@ -12,7 +12,7 @@ The [Durgod](https://www.durgodkeyboard.com/) [Fusion Navigator](https://www.you
 
 I am considering adding a track-point module to the right and a key cluster module to the left...
 
-![uhk-60-v2](_uhk-60-v2-regular-blue.jpg)
+![uhk-60-v2](_uhk-60-v2-regular-blue.webp)
 
 ## Ducky One 2 Mini
 
@@ -21,22 +21,22 @@ I am considering adding a track-point module to the right and a key cluster modu
 - Dimensions: 302 x 108 x 40 mm
 - Weight: 590g
 
-![ducky-one-2-mini](_ducky-one-2-mini.png)
+![ducky-one-2-mini](_ducky-one-2-mini.webp)
 
 ## Logitech G910
 
 [Logitech](https://www.logitech.com/) G910
 
-![logitech-g910](_logitech-g910.jpg)
+![logitech-g910](_logitech-g910.webp)
 
 ## Steelseries 6G V2
 
 Steelseries 6G V2
 
-![steelseries-6gv2](_steelseries-6gv2.jpg)
+![steelseries-6gv2](_steelseries-6gv2.webp)
 
 ## Stack Overflow The Key Macropad
 
 Stack Overflow + Copy + Paste = +10 on Developer Skills
 
-![stack-overflow-macropad](_stack-overflow-macropad.png)
+![stack-overflow-macropad](_stack-overflow-macropad.webp)

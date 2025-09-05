@@ -12,10 +12,10 @@
 
 Mine serves butter and does this very well.
 
-![discord_butterbot](_discord_butterbot1.jpg)
+![discord_butterbot](_discord_butterbot1.webp)
 
 The chat is pleased with Clyde's service
 
-![discord_butterbot](_discord_butterbot2.jpg)
+![discord_butterbot](_discord_butterbot2.webp)
 
 I thought there may be a slim chance Clyde uses this question to reply "Butter time!" but fortunately the bot remembered it is only butter time if butter is requested. Nice!

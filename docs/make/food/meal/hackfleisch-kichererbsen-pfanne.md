@@ -49,4 +49,4 @@
 
 ## Foto
 
-![hackfleisch-kichererbsen-pfanne](_hackfleisch-kichererbsen-pfanne.jpg)
+![hackfleisch-kichererbsen-pfanne](_hackfleisch-kichererbsen-pfanne.webp)

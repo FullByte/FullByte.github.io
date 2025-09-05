@@ -84,8 +84,8 @@ Process {
 
 Show all open tasks assigned to a user across all projects:
 
-![OpenTasksAssigned](_AzureDevOpsOpenTasksAssinged.jpg)
+![OpenTasksAssigned](_AzureDevOpsOpenTasksAssinged.webp)
 
 Show all open tasks in which a user is mentioned:
 
-![OpenTasksMentioned](_AzureDevOpsOpenTasksMentioned.jpg)
+![OpenTasksMentioned](_AzureDevOpsOpenTasksMentioned.webp)

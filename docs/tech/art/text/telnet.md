@@ -21,6 +21,6 @@
 
 <script id="asciicast-3" src="https://asciinema.org/a/3.js" async></script>
 
-![nyancat-terminal](_nyancat-terminal.jpg)
+![nyancat-terminal](_nyancat-terminal.webp)
 
 ![nyancat-terminal](_nyancat-terminal.webp)

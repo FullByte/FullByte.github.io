@@ -8,7 +8,7 @@ Our turtle awakes out of hibernation roughly mid-April. The following is a time 
 
 And here he is in autumn digging his hole for the winter, choosing the same spot :)
 
-![_turtle-digging](_turtle-digging.jpg)
+![_turtle-digging](_turtle-digging.webp)
 
 Here is a video of my turtle eating a banana:
 
@@ -18,10 +18,10 @@ Here is a video of my turtle eating a banana:
 
 The following pictures show my rabbits:
 
-![bunny](_bunny1.jpg)
+![bunny](_bunny1.webp)
 
-![bunny](_bunny2.jpg) ![bunny](_bunny4.jpg)
+![bunny](_bunny2.webp) ![bunny](_bunny4.webp)
 
-![bunny](_bunny3.jpg)
+![bunny](_bunny3.webp)
 
-![bunny](_bunny5.jpg)
+![bunny](_bunny5.webp)

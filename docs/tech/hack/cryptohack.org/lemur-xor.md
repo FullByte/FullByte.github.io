@@ -19,4 +19,4 @@ PNGs used in this exercise:
 
 |Flag|Lemur|Result|
 |--|--|---|
-|![Flag](_flag_7ae18c704272532658c10b5faad06d74.png)|![Lemur](_lemur_ed66878c338e662d3473f0d98eedbd0d.png)|![result](_result.png)
+|![Flag](_flag_7ae18c704272532658c10b5faad06d74.webp)|![Lemur](_lemur_ed66878c338e662d3473f0d98eedbd0d.webp)|![result](_result.webp)
