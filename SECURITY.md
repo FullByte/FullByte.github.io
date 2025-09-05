@@ -12,7 +12,7 @@ These are the supported versions of the website:
 ## Reporting a Vulnerability
 
 Please report bugs/vulns by opening an issue in this repo.
-Response time may vary between 3 sec and 3 months.
+Response time may vary between 3 sec and 3 weeks.
 All reports are welcome and will be checked.
 There are no rewards paid; this is just a hobby project.
 

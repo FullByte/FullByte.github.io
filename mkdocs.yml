@@ -31,16 +31,20 @@ theme:
   font: false
   features:
     - navigation.instant
+    - navigation.instant.prefetch
     - navigation.tracking
     - navigation.top
     - header.autohide
     - announce.dismiss
+    - content.code.copy
+    - search.highlight
 
 plugins:
   - search
   - minify:
       minify_html: true
       minify_js: true
+      minify_css: true
       htmlmin_opts:
           remove_comments: true
 
