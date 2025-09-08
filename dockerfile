@@ -26,7 +26,7 @@ RUN python image_optimizer.py --mode build --quiet
 
 # Build with cache for MkDocs (with quiet logging)
 RUN --mount=type=cache,target=/site/.cache \
-    PYTHONWARNINGS=ignore mkdocs build 2>&1 | grep -v '\[git-revision-date-localized-plugin\]' | grep -v 'has no git logs' | grep -v 'First revision timestamp' | grep -v 'RSS-plugin.*Dates could not be retrieved' || true
+    PYTHONWARNINGS=ignore mkdocs build --quiet
 
 FROM nginx:alpine
 RUN apk add --no-cache certbot certbot-nginx
