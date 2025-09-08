@@ -31,7 +31,7 @@ RUN --mount=type=cache,target=/site/.cache \
     PYTHONWARNINGS=ignore mkdocs build --quiet
 
 FROM nginx:alpine
-RUN apk add --no-cache certbot certbot-nginx
+RUN apk add --no-cache certbot certbot-nginx openssl
 
 # Create directories for Let's Encrypt
 RUN mkdir -p /etc/letsencrypt /var/lib/letsencrypt /var/www/certbot

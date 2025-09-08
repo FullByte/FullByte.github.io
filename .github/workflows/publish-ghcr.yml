@@ -36,7 +36,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/0xfab1/0xfab1.net
+          images: ghcr.io/${{ github.repository_owner }}/0xfab1.net
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
