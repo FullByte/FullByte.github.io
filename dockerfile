@@ -40,6 +40,9 @@ RUN mkdir -p /etc/letsencrypt /var/lib/letsencrypt /var/www/certbot
 RUN apk add --no-cache nginx-mod-http-brotli
 
 COPY --from=builder /site/site /usr/share/nginx/html
+RUN chown -R nginx:nginx /usr/share/nginx/html && \
+    chown -R nginx:nginx /var/www/certbot
+
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY entrypoint.sh /entrypoint.sh
 
