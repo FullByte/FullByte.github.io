@@ -1,0 +1,15 @@
+---
+description: "Overview of the Python helper scripts used in this project for automation."
+globs:
+  - "*.py"
+alwaysApply: false
+---
+
+### Python Scripts Overview
+
+- `build.py`: Main script to build the entire site. It orchestrates other scripts like the image optimizer and stats generator.
+- `serve.py`: Starts a robust local development server with live reloading.
+- `image_optimizer.py`: Optimizes all images in the `docs` directory to reduce file size and improve website load times.
+- `generate_stats.py`: Creates various statistics about the site content.
+- `check_media_paths.py`: A utility script to validate that all media paths in Markdown files are correct.
+- `site_crawler.py` & `site_tester.py`: Scripts for testing the built site for broken links and other issues.

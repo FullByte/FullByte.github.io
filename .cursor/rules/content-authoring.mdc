@@ -1,0 +1,13 @@
+---
+description: "Rules and guidelines for creating and managing content (Markdown files) in the `docs/` directory."
+globs:
+  - "docs/**/*.md"
+alwaysApply: false
+---
+
+### Content Management (for `docs/**/*.md` files)
+
+- New articles are created as `.md` files within the appropriate subdirectories of `docs/`.
+- When adding images, place them in the same directory as the article or a subdirectory. Reference them with relative paths.
+- The `image_optimizer.py` script will automatically process and optimize any new images during the build process.
+- Before committing, it's good practice to run `python check_media_paths.py` to find broken image or media links.
