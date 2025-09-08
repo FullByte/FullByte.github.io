@@ -1,6 +1,7 @@
 site_name: "0xfab1"
 site_url: https://0xfab1.net
 repo_url: https://github.com/FullByte/FullByte.github.io
+edit_uri: edit/main/docs/
 site_description: >-
   This is the personal website of 0xfab1. It mainly contains blog entries on IT tech stuff, games, making things and art.
 site_author: "0xfab1"
