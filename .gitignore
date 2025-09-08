@@ -7,3 +7,11 @@ site/
 .venv/
 __pycache__/
 .cache/
+letsencrypt/
+certbot/
+*.log
+*.env
+*.pem
+*.crt
+*.key
+*.p12

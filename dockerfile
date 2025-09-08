@@ -3,19 +3,17 @@ FROM python:3-slim AS builder
 RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
 # Create non-root user
-RUN adduser --disabled-password mkdocs
+RUN adduser --disabled-password --gecos "" mkdocs
 
-# Install dependencies with cache mount
-RUN --mount=type=cache,target=/root/.cache/pip \
-    pip install --no-cache-dir --upgrade pip && \
+# Install dependencies
+RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin mkdocs-git-revision-date-localized-plugin mkdocs-htmlproofer-plugin pillow cairosvg
 
 WORKDIR /site
 
 # Copy files in order of change frequency (least to most)
 COPY requirements.txt .
-RUN --mount=type=cache,target=/root/.cache/pip \
-    pip install -r requirements.txt
+RUN pip install -r requirements.txt
 
 COPY mkdocs.yml .
 COPY overrides ./overrides
@@ -26,12 +24,11 @@ COPY docs ./docs
 # Run image optimization before build
 RUN python image_optimizer.py --mode build --quiet
 
-# Build with cache for MkDocs (with quiet logging)
-RUN --mount=type=cache,target=/site/.cache \
-    PYTHONWARNINGS=ignore mkdocs build --quiet
+# Build with quiet logging
+RUN PYTHONWARNINGS=ignore mkdocs build --quiet
 
 FROM nginx:alpine
-RUN apk add --no-cache nginx-mod-http-brotli certbot certbot-nginx openssl
+RUN apk add --no-cache certbot certbot-nginx openssl curl
 
 # Create directories for Let's Encrypt
 RUN mkdir -p /etc/letsencrypt /var/lib/letsencrypt /var/www/certbot
