@@ -4,7 +4,7 @@ This file provides instructions for AI coding agents working on the 0xfab1 MkDoc
 
 ## Project Overview
 
-This is a personal website built with MkDocs Material theme, containing 449+ markdown files across tech documentation, making guides, and personal content. The site features:
+This is a personal website built with MkDocs Material theme, containing 500+ markdown files across tech documentation, making guides, and personal content. The site features:
 
 - **Static Site Generator**: MkDocs with Material theme
 - **Content**: Tech documentation, tutorials, personal projects, and making guides
