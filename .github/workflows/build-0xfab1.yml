@@ -37,7 +37,7 @@ jobs:
 
       - name: Optimize images
         run: |
-          python image_optimizer.py --mode build
+          python site_manager.py optimize --mode all --quiet
 
       - name: Deploy Github Pages
         env:

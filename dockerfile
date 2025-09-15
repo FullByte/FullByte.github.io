@@ -17,15 +17,15 @@ RUN pip install -r requirements.txt
 
 COPY mkdocs.yml .
 COPY overrides ./overrides
-COPY image_optimizer.py .
+COPY pre_build_hook.py .
+COPY docs ./docs
+# Copy site manager which includes image optimization utilities
+COPY site_manager.py .
 COPY pre_build_hook.py .
 COPY docs ./docs
 
-# Run image optimization before build
-RUN python image_optimizer.py --mode build --quiet
-
-# Build with quiet logging
-RUN PYTHONWARNINGS=ignore mkdocs build --quiet
+# Build (site_manager handles image optimization then mkdocs build)
+RUN python site_manager.py build --quiet
 
 FROM nginx:alpine
 RUN apk add --no-cache certbot certbot-nginx openssl curl
