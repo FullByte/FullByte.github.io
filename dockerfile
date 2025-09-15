@@ -17,11 +17,8 @@ RUN pip install -r requirements.txt
 
 COPY mkdocs.yml .
 COPY overrides ./overrides
-COPY pre_build_hook.py .
-COPY docs ./docs
 # Copy site manager which includes image optimization utilities
 COPY site_manager.py .
-COPY pre_build_hook.py .
 COPY docs ./docs
 
 # Build (site_manager handles image optimization then mkdocs build)
