@@ -232,6 +232,34 @@ Process:
 4. Portal activates automatically when complete
 ```
 
+#### Portal between two coordinates
+
+Give yourself a command block
+
+```txt
+/give @p command_block
+```
+
+Place the command block (behind or under your portal frame).
+
+Enter this command
+
+```txt
+execute as @p[x=PORTALX,y=PORTALY,z=PORTALZ,distance=..2] run tp @s DESTX DESTY DESTZ
+```
+
+Adjust coordinates:
+
+- PORTALX/Y/Z = coordinates of the portal
+- DESTX/Y/Z = coordinates where you want to teleport
+
+Set the command block
+
+- Block Type: Repeat
+- Condition: Always Active
+
+Build a second portal the same way to teleport back
+
 ### Advanced Block Mechanics
 
 #### Redstone Components
