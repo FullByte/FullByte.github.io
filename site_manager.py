@@ -650,6 +650,7 @@ def main():
     opt_parser.add_argument('--mode', default='all', choices=['convert', 'update', 'cleanup', 'all'])
     opt_parser.add_argument('--quality', type=int, default=85, help='WebP quality (1-100)')
     opt_parser.add_argument('--lossless', action='store_true', help='Use lossless compression')
+    opt_parser.add_argument('--quiet', action='store_true', help='Quiet output')
     
     # Stats command
     stats_parser = subparsers.add_parser('stats', help='Generate statistics')
