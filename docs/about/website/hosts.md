@@ -6,25 +6,23 @@ I am trying out new services and if the host websites i try to run 0xfab1.net. H
 
 This website is hosted/built using the following services:
 
-| Service                                                  | Direct Link                                                     | 0xfab1 CNAME                      |
-|----------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------|
-| [GitHub Pages](https://pages.github.com/)                | [0xfab1@github](https://fullbyte.github.io)                     | <https://www.0xfab1.net/>         |
-| [IPFS](https://ipfs.io/) with [fleek](https://fleek.co/) | Broke (my fault)... need to re-create this           | Broke (my fault)... need to re-create this        |
-| [Netlify](https://www.netlify.com/)                      | [0xfab1@netlify](https://0xfab1.netlify.app/)                   | <https://netlify.0xfab1.net>      |
-| [Azure](https://azure.microsoft.com)                     | Broke (my fault)... need to re-create this                      | Broke (my fault)... need to re-create this        |
-| [Digital Ocean](https://m.do.co/c/0ef5c6b3f680)          | [0xfab1@digitalocean](https://oxfab1-3l4ou.ondigitalocean.app/) | <https://digitalocean.0xfab1.net> |
-| [Vercel](https://vercel.com/)                            | [0xfab1@vercel](https://0xfab1.vercel.app/)                     | <https://vercel.0xfab1.net/>      |
-| [cloudflare](https://www.cloudflare.com/)                | [0xfab1@cloudflare](https://fullbyte-github-io.pages.dev)       | <https://cloudflare.0xfab1.net/>  |
-| [Render](https://render.com/)                            | [0xfab1@render](https://fullbyte-github-io.onrender.com/)       | <https://render.0xfab1.net>       |
+| Service                                                  | Direct Link                                                     | 0xfab1 CNAME                               |
+|----------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------------|
+| [GitHub Pages](https://pages.github.com/)                | [0xfab1@github](https://fullbyte.github.io)                     | <https://www.0xfab1.net/>                  |
+| [IPFS](https://ipfs.io/) with [fleek](https://fleek.co/) | Broke (my fault)... need to re-create this                      | Broke (my fault)... need to re-create this |
+| [Netlify](https://www.netlify.com/)                      | [0xfab1@netlify](https://0xfab1.netlify.app/)                   | <https://netlify.0xfab1.net>               |
+| [Azure](https://azure.microsoft.com)                     | Broke (my fault)... need to re-create this                      | Broke (my fault)... need to re-create this |
+| [Digital Ocean](https://m.do.co/c/0ef5c6b3f680)          | [0xfab1@digitalocean](https://oxfab1-3l4ou.ondigitalocean.app/) | <https://digitalocean.0xfab1.net>          |
+| [Vercel](https://vercel.com/)                            | [0xfab1@vercel](https://0xfab1.vercel.app/)                     | <https://vercel.0xfab1.net/>               |
+| [cloudflare](https://www.cloudflare.com/)                | [0xfab1@cloudflare](https://fullbyte-github-io.pages.dev)       | <https://cloudflare.0xfab1.net/>           |
+| [Render](https://render.com/)                            | [0xfab1@render](https://fullbyte-github-io.onrender.com/)       | <https://render.0xfab1.net>                |
+| [Sevalla](https://app.sevalla.com/)                      | [0xfab1@kinsta](https://xfab1net-t93nk.kinsta.page/)            | <https://sevalla.0xfab1.net>               |
 
-Services to try:
+Services to try (again):
 
-- [AWS S3](https://aws.amazon.com/s3/)
-- [Gitlab Pages](https://about.gitlab.com)
-- [Surge](https://surge.sh/)
-
-I tried these services but they didn't suit me for my deployment at the time tested*:
-
+- [AWS S3](https://aws.amazon.com/s3/) - not tried yet
+- [Gitlab Pages](https://about.gitlab.com) - not tried yet, need to mirror repo first
+- [Surge](https://surge.sh/) - Automation broke at some point
 - [Heroku](https://www.heroku.com) - php workaround breaks other builds
 - [edg.io](https://edg.io/) - annoying DNS and build setup
 - [Fly.io](https://fly.io/) - complicated build/requires extra files and github action changes
