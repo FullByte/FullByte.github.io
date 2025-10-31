@@ -22,15 +22,11 @@ Links:
 
 ## File Information
 
-**Get codec details**
-
 Get codec details of a given video file e.g. "video.mp4":
 
 ``` sh
 ffprobe -v error -select_streams v:0 -show_entries stream=codec_name -of default=noprint_wrappers=1:nokey=1 video.mp4
 ```
-
-**Overwrite the video title**
 
 Change the title of input.mp4 to "My Title"
 
@@ -60,6 +56,12 @@ Analyze video frames, timecode and metadata
 
 ``` sh
 ffmpeg -i input.mp4 -vf showinfo -f null -
+```
+
+Check if all mp4s in a folder are fine
+
+``` ps1
+Get-ChildItem -Filter "*.mp4" | ForEach-Object { Write-Host "Checking: $($_.Name)"; ffmpeg -v error -i $_.FullName -f null - 2>&1 | Where-Object { $_ -ne '' } | ForEach-Object { Write-Host $_ } }
 ```
 
 ## Download video streams
