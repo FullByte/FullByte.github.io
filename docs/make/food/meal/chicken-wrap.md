@@ -47,4 +47,4 @@
 
 ## Foto
 
-![chicken-wrap](_chicken-wrap.jpg)
+![chicken-wrap](_chicken-wrap.webp)

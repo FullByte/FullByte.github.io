@@ -1,5 +1,5 @@
 # Cake decoration
 
-![Cake](_cake.jpg)
+![Cake](_cake.webp)
 
-![Cake](_cake2.jpg)
+![Cake](_cake2.webp)

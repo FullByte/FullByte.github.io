@@ -22,7 +22,7 @@ Use: ```traceroute -I -m 60 -q 1 trh.milek7.pl```
 
 Output:
 
-![tetris.png](_tetris.png)
+![tetris.png](_tetris.webp)
 
 ## Star Wars
 
@@ -216,7 +216,7 @@ Output:
 
 Output:
 
-![tracert-austrian-soccer](_tracert-austrian-soccer.jpg)
+![tracert-austrian-soccer](_tracert-austrian-soccer.webp)
 
 ## XMAS
 
@@ -248,7 +248,7 @@ traceroute to xmas.futile.net (77.75.106.106), 128 hops max, 52 byte packets
 31  and.since.weve.no.place.to.go (82.133.91.77)  26.537 ms  28.931 ms  35.163 ms                          
 32  let.it.snow.let.it.snow.let.it.snow (82.133.91.43)  28.258 ms  30.653 ms  43.191 ms                    
 33  xxx (82.133.91.24)  30.019 ms  30.663 ms  31.834 ms                                                    
-34  it.doesnt.show.signs.of.stopping (82.133.91.36)  26.373 ms  29.913 ms  25.671 ms   
+34  it.doesn't.show.signs.of.stopping (82.133.91.36)  26.373 ms  29.913 ms  25.671 ms   
 35  and.ive.bought.some.corn.for.popping (82.133.91.73)  27.470 ms  26.959 ms  26.904 ms                   
 36  the.lights.are.turned.way.down.low (82.133.91.76)  26.997 ms  28.610 ms  32.095 ms                     
 37  let.it.snow.let.it.snow.let.it.snow (82.133.91.67)  27.307 ms  30.789 ms  27.416 ms                    
@@ -333,4 +333,4 @@ traceroute to xmas.futile.net (77.75.106.106), 128 hops max, 52 byte packets
 
 ## American Pie
 
-![makerforce-american-pie](_tracert-makerforce-american-pie.jpg)
+![makerforce-american-pie](_tracert-makerforce-american-pie.webp)

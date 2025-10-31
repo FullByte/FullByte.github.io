@@ -1,4 +1,4 @@
-# Github
+# GitHub
 
 | What           | Where                           |
 |----------------|---------------------------------|
@@ -25,11 +25,11 @@ To get all starred projects of a user go to: ```https://github.com/stars/<user>`
 
 e.g. my starred projects are here: <https://github.com/stars/FullByte>
 
-## VScode online
+## VS Code online
 
-Press "." in any github repo to open the editor.
+Press "." in any GitHub repo to open the editor.
 
-Add "1s" to "github" to get the VScode GUI of the github repo you selected
+Add "1s" to "github" to open the VS Code-like view of the selected GitHub repo
 
 Example:
 
@@ -38,43 +38,43 @@ Example:
 
 ## SSH Keys
 
-Get a users SSH Key:
+Get a user's SSH key:
 
 <https://github.com/fullbyte.keys>
 
 ## Firewall
 
-Get all IPs to whitelist for Github (Actions) from here:
+Get all IPs to whitelist for GitHub (Actions) from here:
 
 <https://api.github.com/meta>
 
 ## Helper
 
 - [Smee](https://smee.io/) receives payloads then sends them to your locally running application
-- [Probot](https://probot.github.io/) automates and improves your github workflows with pre-built apps
+- [Probot](https://probot.github.io/) automates and improves your GitHub workflows with pre-built apps
 - Use [gowalker](https://gowalker.org/) to search for code
 - Look for popular projects by [number of stars](https://app.tooljet.io/applications/github-star-ranking)
 - Use [githistory.xyz](https://githistory.xyz/) e.g. if this is your url: `https://github.com/FullByte/FullByte.github.io/blob/master/mkdocs.yml` replace `com` of github.com with `githistory.xyz` e.g. `https://github.githistory.xyz/FullByte/FullByte.github.io/blob/master/mkdocs.yml` to get a [nice view](https://github.githistory.xyz/FullByte/FullByte.github.io/blob/master/mkdocs.yml).
 
-## Execute Gist/Github Script
+## Execute Gist/GitHub Script
 
-You can run remote scripts from e.g. Github (either gists or raw content):
+You can run remote scripts from e.g. GitHub (either gists or raw content):
 
-From powershell with github raw file:
+From PowerShell with GitHub raw file:
 
-**Windows**
+### Windows
 
 ``` ps1
 iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/FullByte/project/master/file.file'))
 ```
 
-From cmd with gist link:
+### From cmd with gist link
 
 ```cmd
 PowerShell -NoProfile -ExecutionPolicy Bypass -Command "iex ((New-Object System.Net.WebClient).DownloadString('https://gist.githubusercontent.com/FullByte/000000000000000000000000000000000000/raw'))"
 ```
 
-**Linux**
+### Linux
 
 From bash
 

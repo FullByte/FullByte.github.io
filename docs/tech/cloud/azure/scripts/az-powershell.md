@@ -1,4 +1,4 @@
-# Azure Powershell
+# Azure PowerShell
 
 | What          | Where |
 |---------------|-------|
@@ -9,7 +9,7 @@
 
 ## Login
 
-If on Linux, start Powershell in bash with `pwsh`.
+If on Linux, start PowerShell in bash with `pwsh`.
 
 Login to azure:
 
@@ -46,7 +46,7 @@ You can't rename a resource group but you can [move it](https://docs.microsoft.c
 Get-AzureRmResource -ResourceGroupName <sourceResourceGroupName> | Move-AzureRmResource -DestinationResourceGroupName <destResourceGroupName>
 ```
 
-Powershell GUI (GridView) to (in this example) have the user select the correct storag account:
+PowerShell GUI (GridView) to (in this example) have the user select the correct storage account:
 
 ``` ps1
 $storageAccount = Get-AzStorageAccount | Out-GridView -Title "Select StorrageAccount" -OutputMode Single
@@ -62,7 +62,7 @@ Source: <https://docs.microsoft.com/en-us/azure/azure-resource-manager/managemen
 Get-AzureRmResourceProvider -ListAvailable | where {$_.RegistrationState -eq "Registered"} | Select ProviderNamespace, RegistrationState
 ```
 
-To register a specific resource provider run the following Powershell command:
+To register a specific resource provider run the following PowerShell command:
 
 ``` ps1
 Register-AzureRmResourceProvider -ProviderNamespace ResourceProvider.Name

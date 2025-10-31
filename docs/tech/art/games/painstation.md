@@ -6,7 +6,7 @@ The "PainStation" is an interactive art piece and a unique twist on the classic 
 
 The idea behind PainStation is to explore the relationship between physical pain and virtual experiences. It challenges the conventional boundaries of video gaming by introducing real consequences to the virtual actions of the players. The piece has been both controversial and intriguing, sparking conversations about the nature of gaming, art, and the human experience of pain.
 
-![painstation](_painstation.jpg)
+![painstation](_painstation.webp)
 
 ## NerveGear
 

@@ -26,16 +26,16 @@ These are the relevant Windows Settings pages:
 
 ### Voice Meeter Potato
 
-![voice-meeeter-startup](_voice-meeeter-startup.png)
+![voice-meeeter-startup](_voice-meeeter-startup.webp)
 
 #### License
 
-You can export your device footprint on a activated licensed version of Voice Meeter. Backup this file and import it after re-installing your PC (first install all drivers, then install Voicemeeter Potato. This will ensure the license works even if the challenge code is different.
+You can export your device footprint on an activated licensed version of Voice Meeter. Backup this file and import it after re-installing your PC (first install all drivers, then install Voicemeeter Potato). This will ensure the license works even if the challenge code is different.
 
 - Backup footprint
 - Do changes to your system (new hardware/re-install)
 - Install Voice Meeter Potato
-- Enter e-mail address your used for Voice Meeter license and registration.
+- Enter e-mail address you used for Voice Meeter license and registration.
 - Import the footprint
 - Enter your previous Response code.
 
@@ -43,7 +43,7 @@ You can export your device footprint on a activated licensed version of Voice Me
 
 #### UR22C
 
-![ur22c-driver-settings](_ur22c-driver-settings.png)
+![ur22c-driver-settings](_ur22c-driver-settings.webp)
 
 ### Tools
 
@@ -53,7 +53,7 @@ You can export your device footprint on a activated licensed version of Voice Me
 
 ### Cams
 
-![gopro](_gopro-usb-capturecard.png)
+![gopro](_gopro-usb-capturecard.webp)
 
 ### OBS
 
@@ -74,6 +74,6 @@ To make this work no drivers need to be installed. The following OBS settings wo
   - FPS choose "60"
   - Video format select "MJPEG"
 
-![_gopro-usb-capturecard](_gopro-usb-capturecard.png)
+![_gopro-usb-capturecard](_gopro-usb-capturecard.webp)
 
-There is some delay which needs to be adjusted to all input is synced properly:
+There is some delay which needs to be adjusted so that all input is synced properly:

@@ -24,15 +24,15 @@ The chosen Stepper Module unfortunately makes some sounds... possibly consider u
 
 Here are some pictures of Billy Bass in the making:
 
-![billybass](_billybass1.jpg)
+![billybass](_billybass1.webp)
 
-![billybass](_billybass2.jpg)
+![billybass](_billybass2.webp)
 
-![billybass](_billybass3.jpg)
+![billybass](_billybass3.webp)
 
 This is the final result:
 
-![billybass-result](_billybass-result.jpg)
+![billybass-result](_billybass-result.webp)
 
 Demo Video:
 

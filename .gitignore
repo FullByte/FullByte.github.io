@@ -4,3 +4,14 @@ site/
 0xfab1/
 .DS_STORE
 .qodo
+.venv/
+__pycache__/
+.cache/
+letsencrypt/
+certbot/
+*.log
+*.env
+*.pem
+*.crt
+*.key
+*.p12

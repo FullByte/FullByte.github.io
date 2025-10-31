@@ -128,11 +128,11 @@ Computer Monitors:
 
 To calculate Pixels per Inch:
 
-![screen PPI formula](_screens_PPI_formula1.jpg)
+![screen PPI formula](_screens_PPI_formula1.webp)
 
 ​​For example, for a 5-inch screen with a resolution of 1920 x 1080:
 
-![screen PPI formula](_screens_PPI_formula2.jpg)
+![screen PPI formula](_screens_PPI_formula2.webp)
 
 So, the PPI would be approximately 440.58 for this screen.
 

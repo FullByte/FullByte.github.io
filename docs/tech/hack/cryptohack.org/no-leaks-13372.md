@@ -58,7 +58,7 @@ def xor_flag_with_otp():
 
     xored = bytearray([a ^ b for a, b in zip(flag_ord, otp)])
 
-    # make sure our OTP doesnt leak any bytes from the flag
+    # make sure our OTP doesn't leak any bytes from the flag
     for c, p in zip(xored, flag_ord):
         assert c != p
 

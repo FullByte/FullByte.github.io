@@ -2,4 +2,4 @@
 
 My steam deck :)
 
-![Steam Deck](_steamdeck1.jpg)
+![Steam Deck](_steamdeck1.webp)

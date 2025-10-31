@@ -35,11 +35,11 @@ This is a list of interesting operating systems... of course there is always [mo
 
 Hanna Montana OS
 
-![_hannamontanaOS](_hannamontanaOS.jpg)
+![_hannamontanaOS](_hannamontanaOS.webp)
 
 Temple OS
 
-![_templeOS](_templeOS.jpg)
+![_templeOS](_templeOS.webp)
 
 ## Interesting Raspberry Pi Images
 

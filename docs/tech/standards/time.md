@@ -2,7 +2,7 @@
 
 In search of the perfect date...
 
-![xkcd_iso_8601](https://imgs.xkcd.com/comics/iso_8601.png) ![perfect-date](_perfect-date.jpg)
+![xkcd_iso_8601](https://imgs.xkcd.com/comics/iso_8601.png) ![perfect-date](_perfect-date.webp)
 
 Nice post about time:
 

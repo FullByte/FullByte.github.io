@@ -4,7 +4,7 @@ Nobody will care more about your health than you.
 Treat yourself well and your body will treat you well.
 Take care of your physical health first, then keep doing that and take care of your mental health.
 
-![_health](_health.jpg)
+![_health](_health.webp)
 
 ## Physical health
 
@@ -77,13 +77,13 @@ Follow these principles:
 
 These are some more personal rules I have applied to keep focused on what I want, what makes me happy and helps me flourish; essentially helping me maintain a good mental health.
 
-![rules](_rules.jpg)
+![rules](_rules.webp)
 
 #### Understand your incentive
 
 If you set goals be clear on why you want to achieve this goal. Usually this comes with downsides and setting the right priorities is essential for choosing the right path. However, be clear that the path usually is unknown to some extent and things will change. This is where your incentive kicks in and make a logical re-evaluation of the path chosen possible. Be true to yourself and understand your incentive when pursuing goals. Are you doing it for the right reasons? Is the reason you are doing something even achievable/still worth it or just a motivation to continue?
 
-![path_minimization](_path_minimization.png)
+![path_minimization](_path_minimization.webp)
 
 #### Do it anyway
 
@@ -113,7 +113,7 @@ Be patient and consistent when forming a new habit: start small, track your prog
 
 ### Getting Rid of Bad Habits
 
-To effectively break bad habits identify triggers and replace them with positive behaviors and reward yourself.
+To effectively break bad habits, identify triggers and replace them with positive behaviors and reward yourself.
 
 - **Identify Triggers**: Recognize what triggers your bad habit. It could be stress, boredom, or specific situations.
 - **Replace with Positive Behavior**: Substitute the bad habit with a positive one. For example, if you bite your nails when stressed, try squeezing a stress ball instead.

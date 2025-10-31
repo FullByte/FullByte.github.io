@@ -10,7 +10,7 @@ Addtional chessacre fields are referred to as line 0 and 9 as illustrated below:
 
 ## Explode
 
-Once activated, the explosion will kill all figures (own and enemy) within the radius. Exception are figures with the protect ability. These figures will loose their protect ability.
+Once activated, the explosion will kill all figures (own and enemy) within the radius. Exception are figures with the protect ability. These figures will lose their protect ability.
 
 ![Explode_Killzone](_example_explode1.drawio.svg)
 

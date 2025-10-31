@@ -46,7 +46,7 @@ The results are:
 We have a match! 50x50 is a valid lego base plate and a possible result for the QR-Code.
 I will go with the 25% padding option as this will lead to better scanning results without any downsides.
 
-![QR-Code for https://0xfab1.net](_qrcode0xfab1.png)
+![QR-Code for https://0xfab1.net](_qrcode0xfab1.webp)
 
 The value "https://0xfab1.net" as QR-Code.
 
@@ -55,7 +55,7 @@ The value "https://0xfab1.net" as QR-Code.
 I didn't find a cool way to automatically build the QR-Code in Bricklink Studio so I just opened the image of the QR-Codes shared above and rebuilt it using different flat tiles.
 Classic QR-Codes have black and white pixels so I went with that look.
 
-![bricklink studio](_qrcodestudiobricklink.jpg)
+![bricklink studio](_qrcodestudiobricklink.webp)
 
 The result is:
 
@@ -97,4 +97,4 @@ I hope i didn't mess up any pixel - at least scanning the lego works ¯\_(ツ)_/
 
 This is the final result :)
 
-![QR-Code for https://0xfab1.net](_lego-qrcode-final.jpg)
+![QR-Code for https://0xfab1.net](_lego-qrcode-final.webp)

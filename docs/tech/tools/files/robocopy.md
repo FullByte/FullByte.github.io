@@ -36,7 +36,7 @@ If you want to copy to an USB device, it is a good idea to rename the volume e.g
 
 Otherwise, if you connect the USB drive the next time an you have other devices connected, the path may be different and the backup script will refer to an invalid location or backup files to the wrong storage device.
 
-![robocopy_usb](_robocopy_usb.jpg)
+![robocopy_usb](_robocopy_usb.webp)
 
 ### Windows Task Scheduler
 
@@ -44,16 +44,16 @@ Use the Windows Task Scheduler to run the script regularly e.g.:
 
 Set a trigger e.g. a regular time to run the backup:
 
-![robocopy_schedule](_robocopy_schedule1.jpg)
+![robocopy_schedule](_robocopy_schedule1.webp)
 
 Link the bat file created earlier:
 
-![robocopy_schedule](_robocopy_schedule2.jpg)
+![robocopy_schedule](_robocopy_schedule2.webp)
 
 Set requirements e.g. only run if connected to power and WiFi "IEEE 802.11" can be found. This can come in handy if you are on the go (not plugged in) or at the office (no home wifi found).
 
-![robocopy_schedule](_robocopy_schedule3.jpg)
+![robocopy_schedule](_robocopy_schedule3.webp)
 
 Finally, make sure the script doesn't time out and will be terminated if necessary:
 
-![robocopy_schedule](_robocopy_schedule4.jpg)
+![robocopy_schedule](_robocopy_schedule4.webp)

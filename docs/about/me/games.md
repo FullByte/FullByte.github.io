@@ -16,9 +16,9 @@ A list of games I have, like and played.
 
 ## Digital Games
 
-### Playstation Games
+### PlayStation Games
 
-A list of playstation games I own:
+A list of PlayStation games I own:
 
 | Game                               | Local Players | Comment |
 |------------------------------------|---------------|---------|
@@ -62,9 +62,9 @@ A list of playstation games I own:
 
 ### Switch Games
 
-A list of my nintendo switch games:
+A list of my Nintendo Switch games:
 
-| Game                                             | Local Player | Comment         |
+| Game                                             | Local Players | Comment         |
 |--------------------------------------------------|--------------|-----------------|
 | 10 Second Run RETURNS                            | 4            | zocki?          |
 | 20XX                                             | 2            |                 |
@@ -435,32 +435,32 @@ Should there be a tie for first place between:
 
 #### Ten-Fight-Table
 
-This is the currently offical 10 fight game list and settings/modes:
+This is the currently official 10 fight game list and settings/modes:
 
 | Game             | Settings                                                                                                                                             |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Akuto Showdown   | Multiplayer → Survival, 3 Rounds, 5 Lives, Start Weapon = Staff, No Ranged Weapon → no bots → All Random Maps                                        |
-| Boomerang fu     | Free for all → Modifiers: Match length=standard, victory=kills, auto balance=off, powerups=no bombs, fire, multi boomerang, telekinese and bamboozle |
-| Flat Heros       | Versus → 2x3 games: zones, battle, runner                                                                                                            |
+| Boomerang fu     | Free for all → Modifiers: Match length=standard, victory=kills, auto balance=off, powerups=no bombs, fire, multi boomerang, telekinesis and bamboozle |
+| Flat Heroes      | Versus → 2x3 games: zones, battle, runner                                                                                                            |
 | SpeedRunners     | Versus → Offline → Create Game → normal random Map (3 games, count wins)                                                                             |
 | Roof Rage        | Local Rooftops → Stock Match → Stock: 5 → HP: 200                                                                                                    |
-| Brawlhalla       | Custum → Create Room → Private Room → Custom Online: Stock: Teams=off, Lives=6, Match=10, Damage=100%                                                |
+| Brawlhalla       | Custom → Create Room → Private Room → Custom Online: Stock: Teams=off, Lives=6, Match=10, Damage=100%                                                |
 | Astro Bears      | Party → 4 Player → 40 Points → Big Planet → Finite Ribbon                                                                                            |
-| Puyo Puyo Tetris | Muliplayer Arcade → Single Screen → Versus → 4 Player → Win Count = 2, Harddrop = ON, Hold = ON                                                      |
-| Mario Kart 8     | 4P → vs race → 150cc → No Teams, Normal Items, No CPU, all Verhicles, Random -> random map, 4 Races                                                  |
-| Fast RMX         | Multiplayer → Splitscreen → CPU Drivers disabled, League: Subsonic, Mode: Cup, Laps: 3                                                               |
+| Puyo Puyo Tetris | Multiplayer Arcade → Single Screen → Versus → 4 Player → Win Count = 2, Harddrop = ON, Hold = ON                                                      |
+| Mario Kart 8     | 4P → vs race → 150cc → No Teams, Normal Items, No CPU, all Vehicles, Random → random map, 4 Races                                                  |
+| Fast RMX         | Multiplayer → Split Screen → CPU Drivers disabled, League: Subsonic, Mode: Cup, Laps: 3                                                               |
 
 #### Five-Fight-Table
 
-This is the currently offical 5 fight game list and settings/modes:
+This is the currently official 5 fight game list and settings/modes:
 
 | Game             | Settings                                                                                                                                             |
 |------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Boomerang fu     | Free for all → Modifiers: Match length=standard, victory=kills, auto balance=off, powerups=no bombs, fire, multi boomerang, telekinese and bamboozle |
+| Boomerang fu     | Free for all → Modifiers: Match length=standard, victory=kills, auto balance=off, powerups=no bombs, fire, multi boomerang, telekinesis and bamboozle |
 | SpeedRunners     | Versus → Offline → Create Game → normal random Map (3 games, count wins)                                                                             |
 | Roof Rage        | Local Rooftops → Stock Match → Stock: 5 → HP: 200                                                                                                    |
-| Puyo Puyo Tetris | Muliplayer Arcade → Single Screen → Versus → 4 Player → Win Count = 2, Harddrop = ON, Hold = ON                                                      |
-| Fast RMX         | Multiplayer → Splitscreen → CPU Drivers disabled, League: Subsonic, Mode: Cup, Laps: 3                                                               |
+| Puyo Puyo Tetris | Multiplayer Arcade → Single Screen → Versus → 4 Player → Win Count = 2, Harddrop = ON, Hold = ON                                                      |
+| Fast RMX         | Multiplayer → Split Screen → CPU Drivers disabled, League: Subsonic, Mode: Cup, Laps: 3                                                               |
 
 #### Other Games
 
@@ -555,10 +555,10 @@ Playing games locally in a network requires some preparation and some tools help
 
 Preparing:
 
-- [ ] Make a list of all games that will be played and make sure all have downloaded, updated and started the game atleast once prior to the LAN party (see [games](#games) for example)
+- [ ] Make a list of all games that will be played and make sure all have downloaded, updated and started the game at least once prior to the LAN party (see [games](#games) for example)
 - [ ] Send a list of things to think about e.g. Equipment, Snaks, Sleeping bag
 - [ ] Make sure everyone is clear on when it starts and ends and where to show up
-- [ ] Make sure everyone helps setup and clean up
+- [ ] Make sure everyone helps set up and clean up
 
 Gamers Equipment
 
@@ -597,7 +597,7 @@ A list of games that are free and fun:
 |---------------------------------------------------------------------------------|---------------------------------------------------------|
 | [Trackmania](https://www.trackmania.com/)                                       | Host requires standard membership and maps              |
 | [CS GO](https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/) |                                                         |
-| [Blobby Volleyball](http://blobbyvolley.de/)                                    | Setup a tournament and distribute the zipped game prior |
+| [Blobby Volleyball](http://blobbyvolley.de/)                                    | Set up a tournament and distribute the zipped game prior |
 | [Rocket League](https://www.rocketleague.com/)                                  |                                                         |
 | [StarCraft II](https://starcraft2.com)                                          |                                                         |
 | [Warzone 2100](https://wz2100.net/)                                             |                                                         |
@@ -627,7 +627,7 @@ You can run a simple webserver using python: ```python -m http.server 8080```
 
 ### Windows Firewall
 
-Check your inbound rules and possibly add a rule/remove a restricition:
+Check your inbound rules and possibly add a rule/remove a restriction:
 
 ``` ps1
 Get-NetFirewallRule | Where { $_.Enabled -eq 'True' -and $_.Direction -eq 'Inbound' } | Select-Object DisplayName, Direction, Action, Profile | FT
@@ -668,21 +668,21 @@ You can reset your firewall settings as follows. Windows will then ask you whene
 
 Settings
 
-![AOE2DESettings](_games-aoe2de_settings.jpg)
+![AOE2DESettings](_games-aoe2de_settings.webp)
 
 The mods I use:
 
-![AOE2DEMods](_games-aoe2de_mods.jpg)
+![AOE2DEMods](_games-aoe2de_mods.webp)
 
 ##### Notes
 
-![aoeIIDE-codes](_games-aoeIIDE-codes1.jpg)
+![aoeIIDE-codes](_games-aoeIIDE-codes1.webp)
 
-![aoeIIDE-codes](_games-aoeIIDE-codes2.jpg)
+![aoeIIDE-codes](_games-aoeIIDE-codes2.webp)
 
-![aoeIIDE-codes](_games-aoeIIDE-codes3.jpg)
+![aoeIIDE-codes](_games-aoeIIDE-codes3.webp)
 
-![aoeIIDE-codes](_games-aoeIIDE-codes4.jpg)
+![aoeIIDE-codes](_games-aoeIIDE-codes4.webp)
 
 ##### AoE Tetris
 
@@ -697,7 +697,7 @@ Watch:
 
 | Before                                                | After                                                |
 |-------------------------------------------------------|------------------------------------------------------|
-| ![AOE2DEBeforeBlood](_games-aoe2de_bloodexample1.jpg) | ![AOE2DEafterblood](_games-aoe2de_bloodexample2.jpg) |
+| ![AOE2DEBeforeBlood](_games-aoe2de_bloodexample1.webp) | ![AOE2DEafterblood](_games-aoe2de_bloodexample2.webp) |
 
 ### Call of Duty
 
@@ -705,11 +705,11 @@ Watch:
 
 Notes
 
-![warzone-movement-notes](_games-warzone-movement-notes.jpg)
+![warzone-movement-notes](_games-warzone-movement-notes.webp)
 
 How to win
 
-![COD warzone win](_games-CODwarzonewin.jpg)
+![COD warzone win](_games-CODwarzonewin.webp)
 
 ### Doom
 
@@ -780,8 +780,8 @@ Settings
 
 Cookie Clicker
 
-![cookieclicker](_games-cookieclicker.png)
+![cookieclicker](_games-cookieclicker.webp)
 
 ### Member Berries
 
-![ps5_Genshin_Impact](_games-ps5_Genshin_Impact.jpg)
+![ps5_Genshin_Impact](_games-ps5_Genshin_Impact.webp)

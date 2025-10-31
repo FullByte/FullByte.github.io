@@ -22,7 +22,7 @@ I additionally ordered a fitting front cover for the speaker.
 
 These are all the electronic parts of the Hörbert:
 
-![hoerbert_electronic_parts](_hoerbert_electronic_parts.jpg)
+![hoerbert_electronic_parts](_hoerbert_electronic_parts.webp)
 
 ## Build Case
 
@@ -32,11 +32,11 @@ Now that I had all pieces and was sure it all works it is time to build a case f
 
 The most challenging part is to get the holes for the 11 buttons perfectly aligned to they fit through the wood without too much extra space. I printed out the the schematics below and used them as a stencil.
 
-![hoerbert_schematics](_hoerbert_bohrschablone.png)
+![hoerbert_schematics](_hoerbert_bohrschablone.webp)
 
 If you want to build one yourself, these files may be helpful to you:
 
-- [Schematics PNG](_hoerbert_bohrschablone.png)
+- [Schematics PNG](_hoerbert_bohrschablone.webp)
 - [Schematics SVG](_hoerbert.svg)
 - [Schematics PDF Part 1](_HoerbertFrontVorlage.pdf)
 - [Schematics PDF Part 2](_HoerbertTastenVorlage1.pdf)
@@ -45,11 +45,11 @@ If you want to build one yourself, these files may be helpful to you:
 
 These are all wooden parts i made. The grip is the only piece i purchased. All box pieces have 45 degree corners so i can use wood glue to put them all together and have a clean corner line.
 
-![hoerbert wood parts](_hoerbert_wood_parts.jpg)
+![hoerbert wood parts](_hoerbert_wood_parts.webp)
 
 After all parts where as desired and everything fits I added a layer of wood oil to the outside.
 
-![hoerbert wood oil](_hoerbert_wood_oil.jpg)
+![hoerbert wood oil](_hoerbert_wood_oil.webp)
 
 ### Laser cutter
 
@@ -57,7 +57,7 @@ I wanted a picture on the back and used a laser cutter to engrave an image on th
 
 The Epilog Zing 6040 settings I used are as follows:
 
-![hoerbert laser cutter settings](_hoerbert_lasercutter_settings.jpg)
+![hoerbert laser cutter settings](_hoerbert_lasercutter_settings.webp)
 
 This is a time lapse video of the laser cutter engraving the image:
 
@@ -65,13 +65,13 @@ This is a time lapse video of the laser cutter engraving the image:
 
 I had to put the electronics in the case while glueing it all together as it would not fit in afterwards. This is the view of the electronics inside mounted to the box:
 
-![_hoerbet inside](_hoerbet_inside1.jpg)
+![_hoerbet inside](_hoerbet_inside1.webp)
 
 ## Configuration
 
 With the bluetooth module the Hörbert comes with some optional configurations.
 
-![hoerbert bluetooth](_hoerbert_bluetooth.jpg)
+![hoerbert bluetooth](_hoerbert_bluetooth.webp)
 
 Switches
 
@@ -93,12 +93,12 @@ Switches
 
 This is the setup I went with:
 
-![hoerbet_in.jpg](_hoerbet_inside2.jpg)
+![hoerbet_in.jpg](_hoerbet_inside2.webp)
 
 ## Final result
 
 This is the final result of my Hörbert :)
 
-![_hoerbert_first_version_front](_hoerbert_first_version_front.jpg)
+![_hoerbert_first_version_front](_hoerbert_first_version_front.webp)
 
-![_hoerbert_first_version_back](_hoerbert_first_version_back.jpg)
+![_hoerbert_first_version_back](_hoerbert_first_version_back.webp)

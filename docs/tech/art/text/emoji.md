@@ -40,7 +40,7 @@ Using DECDHL (DEC Double-Height Line) escapes to change the "style" of the line.
 printf '\e#3Hello world 👋\n\e#4Hello world 👋\n'
 ```
 
-![emoji-console-large-text](_emoji-console-large-text.png)
+![emoji-console-large-text](_emoji-console-large-text.webp)
 
 Using this technique to combine two emojis e.g.:
 
@@ -54,7 +54,7 @@ printf '\e#3😑\n\e#4😶\n'
 
 Example Output:
 
-![emoji-console-mix](_emoji-console-mix.png)
+![emoji-console-mix](_emoji-console-mix.webp)
 
 ### Checking DECDHL Support
 

@@ -42,4 +42,4 @@
 
 ## Foto
 
-![paprika-hack-pfanne](_paprika-hack-pfanne.jpg)
+![paprika-hack-pfanne](_paprika-hack-pfanne.webp)

@@ -2,7 +2,7 @@
 
 Eat whatever you want... idk, lol... and take your time ;)
 
-![recipe_relativity](_recipe_relativity.png)
+![recipe_relativity](_recipe_relativity.webp)
 
 ## Healthy eating
 
@@ -21,32 +21,32 @@ Eat whatever you want... idk, lol... and take your time ;)
 
 ### Meals
 
-[![bratkartoffeln](meal/_bratkartoffeln.jpg)](meal/bratkartoffeln.md)
+[![bratkartoffeln](meal/_bratkartoffeln.webp)](meal/bratkartoffeln.md)
 
-[![brokkoli-kartoffel-gratin](meal/_brokkoli-kartoffel-gratin.jpg)](meal/brokkoli-kartoffel-gratin.md)
+[![brokkoli-kartoffel-gratin](meal/_brokkoli-kartoffel-gratin.webp)](meal/brokkoli-kartoffel-gratin.md)
 
-[![chicken-curry](meal/_chicken-curry.jpg)](meal/chicken-curry.md)
+[![chicken-curry](meal/_chicken-curry.webp)](meal/chicken-curry.md)
 
-[![chicken-wrap](meal/_chicken-wrap.jpg)](meal/chicken-wrap.md)
+[![chicken-wrap](meal/_chicken-wrap.webp)](meal/chicken-wrap.md)
 
-[![hackfleisch-kichererbsen-pfanne](meal/_hackfleisch-kichererbsen-pfanne.jpg)](meal/hackfleisch-kichererbsen-pfanne.md)
+[![hackfleisch-kichererbsen-pfanne](meal/_hackfleisch-kichererbsen-pfanne.webp)](meal/hackfleisch-kichererbsen-pfanne.md)
 
-[![huehnerfrikassee](meal/_huehnerfrikassee.jpg)](meal/huehnerfrikassee.md)
+[![huehnerfrikassee](meal/_huehnerfrikassee.webp)](meal/huehnerfrikassee.md)
 
-[![lasagne](meal/_lasagne.jpg)](meal/lasagne.md)
+[![lasagne](meal/_lasagne.webp)](meal/lasagne.md)
 
-[![pizza](meal/_pizza.jpg)](meal/pizza.md)
+[![pizza](meal/_pizza.webp)](meal/pizza.md)
 
-[![sandwich](meal/_sandwich.jpg)](meal/sandwich.md)
+[![sandwich](meal/_sandwich.webp)](meal/sandwich.md)
 
-[![paprika-hack-pfanne](meal/_paprika-hack-pfanne.jpg)](meal/paprika-hack-pfanne.md)
+[![paprika-hack-pfanne](meal/_paprika-hack-pfanne.webp)](meal/paprika-hack-pfanne.md)
 
-### Desert
+### Dessert
 
-[![cupcakes](desert/_cupcakes.jpg)](desert/cupcakes.md)
+[![cupcakes](desert/_cupcakes.webp)](desert/cupcakes.md)
 
 ### Soup
 
-[![kuerbissuppe](soup/_kuerbissuppe.jpg)](soup/kuerbissuppe.md)
+[![kuerbissuppe](soup/_kuerbissuppe.webp)](soup/kuerbissuppe.md)
 
-[![mango-kokus-curry](soup/_mango-kokus-curry.jpg)](soup/mango-kokus-curry.md)
+[![mango-kokus-curry](soup/_mango-kokus-curry.webp)](soup/mango-kokus-curry.md)

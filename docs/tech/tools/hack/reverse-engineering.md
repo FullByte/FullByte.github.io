@@ -143,7 +143,7 @@ afl
 
 Output:
 
-![_radare2_part1](_radare2_part1.jpg)
+![_radare2_part1](_radare2_part1.webp)
 
 Set breakpoint at popq %rbp
 
@@ -154,7 +154,7 @@ db 0x561d78dd863c
 
 Output:
 
-![_radare2_part2](_radare2_part2.jpg)
+![_radare2_part2](_radare2_part2.webp)
 
 Start execution of the program:
 
@@ -167,7 +167,7 @@ px @ rbp-0xc
 
 Output:
 
-![_radare2_part3](_radare2_part3.jpg)
+![_radare2_part3](_radare2_part3.webp)
 
 Read value of var_ch, var_8h, var_4h before popq/retq as requested.
 

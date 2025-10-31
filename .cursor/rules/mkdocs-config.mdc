@@ -1,0 +1,12 @@
+---
+description: "Instructions for editing the main `mkdocs.yml` configuration file."
+globs:
+  - "mkdocs.yml"
+alwaysApply: false
+---
+
+### MkDocs Configuration (`mkdocs.yml`)
+
+- This is the central configuration file for the MkDocs site.
+- It defines the site name, theme, navigation, plugins, and markdown extensions.
+- When adding new plugins or changing the site structure, this file must be edited.

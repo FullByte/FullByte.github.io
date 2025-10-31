@@ -29,8 +29,19 @@ jobs:
           pip install --upgrade pip          
           pip install mkdocs-material
           pip install mkdocs-minify-plugin
+          pip install mkdocs-rss-plugin
+          pip install mkdocs-git-revision-date-localized-plugin
+          pip install mkdocs-htmlproofer-plugin
+          pip install pillow
+          pip install cairosvg
+
+      - name: Optimize images
+        run: |
+          python site_manager.py optimize --mode all --quiet
 
       - name: Deploy Github Pages
+        env:
+          PYTHONWARNINGS: ignore
         run: |
           git pull
-          mkdocs gh-deploy --no-history
+          mkdocs gh-deploy --no-history 2>&1 | grep -v '\[git-revision-date-localized-plugin\]' | grep -v 'has no git logs' | grep -v 'First revision timestamp' | grep -v 'RSS-plugin.*Dates could not be retrieved' || true

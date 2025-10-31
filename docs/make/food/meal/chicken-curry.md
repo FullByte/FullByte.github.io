@@ -44,4 +44,4 @@
 
 ## Foto
 
-![chicken-curry](_chicken-curry.jpg)
+![chicken-curry](_chicken-curry.webp)

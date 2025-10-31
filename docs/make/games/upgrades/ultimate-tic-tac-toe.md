@@ -13,6 +13,6 @@
 
 I used these files: [Source](https://www.thingiverse.com/thing:5790641) to build this:
 
-![Ultimate Tic-Tac-Toe](_3d-ultimate-tic-tac-toe1.jpg)
+![Ultimate Tic-Tac-Toe](_3d-ultimate-tic-tac-toe1.webp)
 
-![Ultimate Tic-Tac-Toe](_3d-ultimate-tic-tac-toe2.jpg)
+![Ultimate Tic-Tac-Toe](_3d-ultimate-tic-tac-toe2.webp)

@@ -2,7 +2,7 @@
 
 ![OldManYellsAtCloud](_OldManYellsAtCloud.svg)
 
-![_bing-azure.jpg](_bing-azure.jpg) vs ![_google-azure.jpg](_google-azure.jpg)
+![_bing-azure.jpg](_bing-azure.webp) vs ![_google-azure.jpg](_google-azure.webp)
 
 ## Accounts
 
@@ -22,7 +22,7 @@ DevOps:
 - Security Only Azure Portal <https://security.microsoft.com>
 - Compliance Only Azure Portal <https://compliance.microsoft.com>
 - Microsoft Teams Portal <https://teams.microsoft.com>
-- Azure Actice Directory: <https://aad.portal.azure.com>
+- Azure Active Directory: <https://aad.portal.azure.com>
 
 ## Architecture
 
@@ -66,7 +66,7 @@ Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimizat
 ### Azure Code Templates
 
 - Azure PowerShell cmdlets: <https://github.com/Azure/azure-powershell/tree/master>
-- Powershell scripts <https://github.com/Azure/azure-powershell>
+- PowerShell scripts: <https://github.com/Azure/azure-powershell>
 - ARM-Template Resources (1): <https://github.com/Azure/azure-quickstart-templates>
 - ARM-Template Resources (2): <https://azure.microsoft.com/en-us/resources/templates/>
 - Runbooks: <https://docs.microsoft.com/de-de/azure/automation/manage-runbooks>
@@ -76,7 +76,7 @@ Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimizat
 ### Microsoft Learning Material
 
 - Microsoft Learning: <https://docs.microsoft.com/en-us/learn/azure/>
-- Azure Online-Training <https://www.microsoft.com/de-de/learning/azure-skills-training.aspx>
+- Azure Online Training <https://www.microsoft.com/de-de/learning/azure-skills-training.aspx>
 - Certification Overview: <https://docs.microsoft.com/de-de/learn/certifications/browse/>
 - Azure Online Events: <https://events.microsoft.com/?timeperiod=all&isSharedInLocalViewMode=false&category=Online&product=Cloud%20Platform&product=Developer%20Tools&product=Microsoft%20Azure&language=English>
 - Microsoft OpenHack: <https://openhack.microsoft.com>
@@ -86,13 +86,13 @@ Augmenting Azure Advisor Cost Recommendations for Automated Continuous Optimizat
 
 ### Other Learning Material
 
-- AzureAcadamy: <https://www.youtube.com/c/AzureAcademy/videos>
+- AzureAcademy: <https://www.youtube.com/c/AzureAcademy/videos>
 - Pluralsight: <https://app.pluralsight.com>
 - Certbase <https://www.certbase.de/>
 - Fastlane: <https://www.fastlane.live/de_en>
 - Skillpipe: <https://www.Skillpipe.com>
 - Whizlabs: <https://www.whizlabs.com/>
-- Midhub: <https://www.mindhub.com/>
+- Mindhub: <https://www.mindhub.com/>
 - Udemy Azure Courses: <https://www.udemy.com/topic/microsoft-azure/>
 - Cloud Security based training: <http://flaws.cloud/> and <http://flaws2.cloud/>
 - CS349D: Cloud Computing Technology: <https://web.stanford.edu/class/cs349d/>
@@ -119,19 +119,19 @@ Overview of links to regularly check to stay up-to-date on Azure.
 
 ### Blogs and Feeds
 
-- Azure Updates News: [Link](https://azure.microsoft.com/en-in/updates/) + [Feed](https://azurecomcdn.azureedge.net/en-in/updates/feed/)
-- Azure Blog by James Randall: [Link](https://www.azurefromthetrenches.com/) + [Feed](https://www.azurefromthetrenches.com/feed)
-- Azure Official Blog: [Link](https://azure.microsoft.com/en-us/blog/#popular) + [Feed](https://azure.microsoft.com/en-us/blog/feed)
-- Azure Blog Michael Collier: [Link](https://michaelcollier.wordpress.com/) + [Feed](https://michaelcollier.wordpress.com/feed)
-- Azure Blog Brent Stineman: [Link](https://brentdacodemonkey.wordpress.com/) + [Feed](https://brentdacodemonkey.wordpress.com/feed/)
-- Azure Blog "we do azure": [Link](https://wedoazure.ie/) + [Feed](https://wedoazure.ie/feed)
-- Last week in Azure: [Link](https://azure.microsoft.com/en-us/blog/topics/last-week-in-azure/) + [Feed](https://azurecomcdn.azureedge.net/en-us/blog/topics/last-week-in-azure/feed/)
-- Azure Friday: [Link](https://azure.microsoft.com/en-us/resources/videos/azure-friday)
-- Cloud Expert: [Link](http://azurecloud.expert/category/news/) + [Feed](http://azurecloud.expert/feed/)
-- Microsoft Open Source: [Link](https://cloudblogs.microsoft.com/opensource/) + [Feed](https://cloudblogs.microsoft.com/opensource/feed)
-- Microsoft .NET Blog: [Link](https://devblogs.microsoft.com/dotnet/) + [Feed](https://devblogs.microsoft.com/dotnet/feed)
-- Heise on Azure: [Link](https://www.heise.de/thema/Microsoft-Azure) + [Feed](https://www.heise.de/thema/Microsoft-Azure?view=atom)
-- Azure Weekly: [Link](https://azureweekly.info/) + [Feed](https://azureweekly.info/rss.xml)
+- Azure Updates News: [Website](https://azure.microsoft.com/en-in/updates/) + [RSS Feed](https://azurecomcdn.azureedge.net/en-in/updates/feed/)
+- Azure Blog by James Randall: [Website](https://www.azurefromthetrenches.com/) + [RSS Feed](https://www.azurefromthetrenches.com/feed)
+- Azure Official Blog: [Website](https://azure.microsoft.com/en-us/blog/#popular) + [RSS Feed](https://azure.microsoft.com/en-us/blog/feed)
+- Azure Blog Michael Collier: [Website](https://michaelcollier.wordpress.com/) + [RSS Feed](https://michaelcollier.wordpress.com/feed)
+- Azure Blog Brent Stineman: [Website](https://brentdacodemonkey.wordpress.com/) + [RSS Feed](https://brentdacodemonkey.wordpress.com/feed/)
+- Azure Blog "we do azure": [Website](https://wedoazure.ie/) + [RSS Feed](https://wedoazure.ie/feed)
+- Last week in Azure: [Website](https://azure.microsoft.com/en-us/blog/topics/last-week-in-azure/) + [RSS Feed](https://azurecomcdn.azureedge.net/en-us/blog/topics/last-week-in-azure/feed/)
+- Azure Friday: [Video Series](https://azure.microsoft.com/en-us/resources/videos/azure-friday)
+- Cloud Expert: [News](http://azurecloud.expert/category/news/) + [RSS Feed](http://azurecloud.expert/feed/)
+- Microsoft Open Source: [Blog](https://cloudblogs.microsoft.com/opensource/) + [RSS Feed](https://cloudblogs.microsoft.com/opensource/feed)
+- Microsoft .NET Blog: [Blog](https://devblogs.microsoft.com/dotnet/) + [RSS Feed](https://devblogs.microsoft.com/dotnet/feed)
+- Heise on Azure: [Topic Page](https://www.heise.de/thema/Microsoft-Azure) + [Atom Feed](https://www.heise.de/thema/Microsoft-Azure?view=atom)
+- Azure Weekly: [Newsletter](https://azureweekly.info/) + [RSS Feed](https://azureweekly.info/rss.xml)
 
 ### YouTube Channels and Lists
 
@@ -155,7 +155,7 @@ Overview of links to regularly check to stay up-to-date on Azure.
 
 | Term                    | Explanation                                                                                                                                                                                                                                                          |
 |-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Azure IR                | The Integration Runtime (IR) is the compute infrastructure used by Azure Data Factory and Azure Synapse pipelines to provide data integration capabilities (Data Flow, Data movement, Activity dispach, SSIS package execution) across different network environments |
+| Azure IR                | The Integration Runtime (IR) is the compute infrastructure used by Azure Data Factory and Azure Synapse pipelines to provide data integration capabilities (Data Flow, Data movement, Activity dispatch, SSIS package execution) across different network environments |
 | Blobs                   | Binary large Object: Blobs are files for the cloud                                                                                                                                                                                                                    |
 | Azure Data Lake Storage |                                                                                                                                                                                                                                                                       |
 | Azure Cosmos DB         |                                                                                                                                                                                                                                                                       |

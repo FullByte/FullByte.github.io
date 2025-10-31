@@ -14,7 +14,7 @@ There are three key imperatives for an IT/OT architecture, underscoring the impe
 
 ## MQTT Broker
 
-A few MQTT Broker
+Some MQTT brokers
 
 - [Apache Kafka](https://kafka.apache.org/)
 - [EMQx](https://github.com/emqx/emqx)

@@ -4,4 +4,4 @@
 
 The following picture shows two Strandbeest designs as smaller reproduction to build at home.
 
-![Strandbeest](_strandbeest.jpg)
+![Strandbeest](_strandbeest.webp)

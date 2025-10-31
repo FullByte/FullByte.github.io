@@ -1,0 +1,50 @@
+name: Check Links
+
+# Run everyday Sunday
+on: 
+  schedule:
+  - cron: "0 0 * * 0"
+  workflow_dispatch:
+
+jobs:
+  markdown-link-check:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - uses: gaurav-nelson/github-action-markdown-link-check@v1
+      with:        
+        use-quiet-mode: 'yes'
+        use-verbose-mode: 'no'
+        config-file: 'mlc_config.json'
+        folder-path: 'docs'
+  
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v2.0.2
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Create Issue From File
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: report, automated issue
+
+  urlstechie:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check URLs
+      uses: urlstechie/urlchecker-action@master
+      with:
+        subfolder: docs
+        file_types: .md
+        print_all: false
+        timeout: 4
+        retry_count: 1
+        force_pass : true

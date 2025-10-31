@@ -4,7 +4,7 @@ Naming things is hard.
 
 ## Zooko's Triangle
 
-Zooko's Triangle is a theory proposed by Zooko Wilcox-O'Hearn that suggests a namespace in a computer network can only simultaneously satisfy two out of the three properties of being decentralized, secure, and meaningful. These properties are desirable in large, public namespaces and are defined as follows:
+Zooko's Triangle is a theory proposed by Zooko Wilcox-O'Hearn that suggests a namespace in a computer network can only simultaneously saAs you can learn from wikipedia's page on postal counties, even when the Royal Mail used postal counties, they didn't always line up with administrative counties. And of course administrative regions come and go with changes to local government structures - for example, the county I was born in no longer exists.isfy two out of the three properties of being decentralized, secure, and me- All right, but surely people's names are diverse enough such that no million people share the same name.ningful. These properties are desirable in large, public namespaces and are defined as follows:
 
 - Decentralized: There is no central authority issuing names or deciding their validity. Instead, the namespace is managed by multiple authorities who do not fully trust each other. The key criterion is the absence of a hierarchical trust relationship, allowing for arbitrarily constructed trust networks.
 - Secure: The integrity of name mappings is maintained, meaning that an attacker cannot manipulate a mapping without the attempt being detected. Security ensures that the connections between names and addresses or other values remain unaltered and trustworthy.
@@ -90,7 +90,7 @@ Here’s a map of the following addresses:
         ○ High Street North, London, E6 2HJ
 - But street names don’t recurr in close proximity
 Julian Fleischer provides an example from Bocholt in Germany showing several roads in close proximity all called Up de Welle.
-- An address will be comprised of road names
+- An address will be composed of road names
 Kirk Kerekes spent several years using an address of the form "2 mi N then 3 mi W of Jennings, OK 74038" which regularly got successful deliveries. Mike Riley used to mail the Very Large Array radio telescope at "50 miles (80 km) West of Socorro, New Mexico, USA"
 Sam pointed me to Menomonee Falls where houses are addressed using Milwaukee County’s grid system instead of house numbers - giving addresses like N88 W16541 Foobar St.
 Andy Monat sent the following address example, from a semester abroad program at Tulane University: CIAPA, 50 meters north of the Hypermas/Walmart of Curridabat, San Jose, Costa Rica. Adrien Piérard and Luke Allardyce point out street names are seldom used in Japan - instead, districts and blocks numbers are used. A 2002 World Press Review report gave this sample address: From where the Chinese restaurant used to be, two blocks down, half a block toward the lake, next door to the house where the yellow car is parked, Managua, Nicaragua. Stig Brautaset pointed out a BBC article about post in Kabul gives this example: "Hamid Jaan, behind Darul-Aman palace". Nathan Fellman reports similar addressing is used in Nicaragua and Costa Rica.
@@ -209,7 +209,7 @@ Monty points out that uncommon political hierarchies can lead to uncommon postal
 David Kuder pointed me to a 1990 article: Risks Digest correspondent Tim Kay had problems getting mail sent to his university campus pigeon hole: Timothy L. Kay, Box 256-80, Pasadena, CA 91125. Reportedly automatic systems changed his zip code to 91102. David Kuder identified this was because all Pasadena PO Boxes were in box 91102.
 - Addresses will be written in ASCII or at least Latin characters
 Alastair Houghton reminds us the Greek tax office’s address is Χανδρή 1 & Θεσσαλονίκης, Τ.Κ. 18346, Αθήνα
-Wikipedia has a photo of a parcel where a Russian/Cyrillic address was displayed on a computer with the wrong character encoding, and transcribed from that. Reportedly a russian postal worker was able to reverse the mapping and deliver the parcel.
+Wikipedia has a photo of a parcel where a Russian/Cyrillic address was displayed on a computer with the wrong character encoding, and transcribed from that. Reportedly a Russian postal worker was able to reverse the mapping and deliver the parcel.
 @shyhoof wrote an poem about an address label with ó converted, via latin1 and two rounds of HTML entities, into &ATILDE;&SUP3;
 - Addresses will be written in the character set of the destination country
 Alastair Houghton points out addresses may be written in the character set of the source country.
@@ -234,7 +234,7 @@ And if there are no set number of lines, like on an envelope, it’s a bit diffe
 - Building numbers appear before street names
 In some countries this is reversed - such as in the Netherlands. For example, Plein 1944 85 D (where Plein 1944 identifies the street, 85 the building and D the flat/apartment).
 - Flat names/numbers names appear before building numbers
-Toni Cornelissen points out addresses in the The Netherlands, such as: Vroomstraat 1a Rood, 2021HL Haarlem where Vroomstaat is the street, 1a is the building number, and Rood (literally translated as Red) indicates the upper part of the building.
+Toni Cornelissen points out addresses in the Netherlands, such as: Vroomstraat 1a Rood, 2021HL Haarlem where Vroomstaat is the street, 1a is the building number, and Rood (literally translated as Red) indicates the upper part of the building.
 - A building will be within a few hundred meters of a public road
 Buildings like farms and country houses can be at the end of a private road or driveway several hundred meters long.
 - An address with a street name is always closer to that street than any other
@@ -254,9 +254,9 @@ Tibor Schütz points out people often have a different home and work address.
 - Countries have capitals. Switzerland does not. The government is currently in Bern, but the city is not the capital.
 - Language codes will match the country code of the country they are associated with. The country code for Japan is jp, the language code is ja.
 - Place names are usually old, often created before the language and their rules have been stabilised, so this does not hold. For instance, the rule says in german the sequence "ue" is equivalent to "ü". This rule works because the "üe" sound has died out in german. The hill over Zürich is named "Üetliberg" (and pronounced as such).
-- Place names can be written with the exhaustive character set of a country. That would be true if street where never named after foreigners with strange accents in their names. There is a Béla Bartók square in Paris. The "ó" is not valid in French.
+- Place names can be written with the exhaustive character set of a country. That would be true if streets were never named after foreigners with strange accents in their names. There is a Béla Bartók square in Paris. The "ó" is not valid in French.
 - Place names can be written with the usual character set of a country. One of the Kergelen islands (part of France) is called Île de Croÿ, most french persons have no clue how to type the "ÿ" character.
-- Places have only one official address. There is a dam in Geneva than span the Rhône and therefore the border. The dam has two street addresses, one in Switzerland, one in France.
+- Places have only one official address. There is a dam in Geneva that spans the Rhône and therefore the border. The dam has two street addresses, one in Switzerland, one in France.
 - Places have only one official name per language. That might be true in an ultra-centralized state which never changes its mind. The hill behind my flat has two different names, depending on the maps. On the topographic maps (used by the army) the name is "Äntlisberg", while on the city map, the name is "Entlisberg", both are official. In Taipei, the romanized street names used to use different romanisation rules depending on the quarter, so the official street name changes.
 - Some places have multiple languages, so multiple names, which can be quite different: Genève, Genf, Ginevra.
 - Street addresses contain street names. In many remote places in Europe, the hamlet name is considered a sufficient address.
@@ -353,7 +353,7 @@ Here are some common falsehoods about email:
 - If you receive email at address X, you are capable of sending email whose From header is X.
 - If you send a url in an email, the user will be the first to click it
 - It is valid to remove +suffixes from email addresses (e.g. john+doe@example.com → john@example.com)
-- Nobody uses email anymore
+- Nobody uses email any more
 - Only the owner of an address can send mail from that address
 - Students and faculty will use their .edu address to sign up for all of their Internet accounts
 - The Date: header on a message is legitimate

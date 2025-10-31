@@ -1,43 +1,43 @@
 # Obsidian
 
-| What          | Where                      |
+| What          | Where                     To build the website you need Hugo with "extended" Sass/SCSS version.o build the website you need Hugo with "extended" Sass/SCSS version.|
 |---------------|----------------------------|
 | Official Page | <https://obsidian.md/>     |
 | Docs          | <https://help.obsidian.md> |
 
 ## Community Plugins
 
-### Obisidan Git
+### Obsidian Git
 
-Open the Obisidan settings, enable comminity plugins and search for [Obisidan Git](https://github.com/denolehov/obsidian-git) to install it.
+Open the Obsidian settings, enable community plugins and search for [Obsidian Git](https://github.com/denolehov/obsidian-git) to install it.
 
-![obsidian_git](_obsidian_git_install.jpg)
+![obsidian_git](_obsidian_git_install.webp)
 
 I use shortcuts for commit and push as follows:
 
-![obsidian_git](_obsidian_git_shortcuts.jpg)
+![obsidian_git](_obsidian_git_shortcuts.webp)
 
-These are my Obisidan Git settings:
+These are my Obsidian Git settings:
 
 Automatic settings:
 
-![obsidian_git_settings](_obsidian_git_settings1.jpg)
+![obsidian_git_settings](_obsidian_git_settings1.webp)
 
 Commit message settings:
 
-![obsidian_git_settings](_obsidian_git_settings2.jpg)
+![obsidian_git_settings](_obsidian_git_settings2.webp)
 
 Backup settings:
 
-![obsidian_git_settings](_obsidian_git_settings3.jpg)
+![obsidian_git_settings](_obsidian_git_settings3.webp)
 
 Miscellaneous settings
 
-![obsidian_git_settings](_obsidian_git_settings4.jpg)
+![obsidian_git_settings](_obsidian_git_settings4.webp)
 
 Advanced settings
 
-![obsidian_git_settings](_obsidian_git_settings5.jpg)
+![obsidian_git_settings](_obsidian_git_settings5.webp)
 
 ### Templater
 
@@ -47,7 +47,7 @@ Create obsidian template files with [Templater](https://github.com/SilentVoid13/
 
 There are plenty of solutions to generate a static website from markdown files. [Quartz](https://quartz.jzhao.xyz/) is based on [Hugo](https://gohugo.io/) and supports Obsidian Vault Integration. In fact Obsidian is the preferred way to use Quartz.
 
-Clone or fork quartz and open it with obsidian.
+Clone or fork quartz and open it with Obsidian.
 
 In Obsidian settings:
 

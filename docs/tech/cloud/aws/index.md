@@ -4,9 +4,9 @@
 
 Terraform Generator: <https://terragen.dev/>
 
-## AWS Powershell Module
+## AWS PowerShell Module
 
-[AWS Tools for Powershell](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-welcome.html)
+[AWS Tools for PowerShell](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-welcome.html)
 
 Windows
 
@@ -42,7 +42,7 @@ Example Output
 }
 ```
 
-If is also possible to query the public IP ranges with AWS powershell module:
+It is also possible to query the public IP ranges with the AWS PowerShell module:
 
 ``` ps1
 Get-AWSPublicIpAddressRange -ServiceKey ec2 -Region  eu-west-1,eu-central-1

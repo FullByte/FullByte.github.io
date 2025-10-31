@@ -77,7 +77,7 @@ openssl x509 -in certificate.crt -text -noout
 
 Check CSR of Certificate
 
-Decode your Certificate Signing Request (CSR) and and verify that it contains the correct information:
+Decode your Certificate Signing Request (CSR) and verify that it contains the correct information:
 
 ``` sh
 openssl req -in mycsr.csr -noout -text
@@ -173,7 +173,7 @@ openssl aes-128-cbc -K "55555555555555555555555555555555" -iv "83deccd3f93b37c70
 
 Example screenshot:
 
-![OpenSSL fle encyption and decryption demo](_openssl_file_encrpytion_decryption.png)
+![OpenSSL fle encyption and decryption demo](_openssl_file_encrpytion_decryption.webp)
 
 ## HTTPS webserver
 

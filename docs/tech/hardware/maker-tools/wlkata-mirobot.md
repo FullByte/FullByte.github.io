@@ -25,8 +25,8 @@ ctrl-x (reset Grbl)
 
 Drivers successfully installed:
 
-![_WLKATA-Mirobot_DriverWindows](_WLKATA-Mirobot_DriverWindows.jpg)
+![_WLKATA-Mirobot_DriverWindows](_WLKATA-Mirobot_DriverWindows.webp)
 
 If this happens simply retry the connect:
 
-![_WLKATA-Mirobot_ConnectError](_WLKATA-Mirobot_ConnectError.jpg)
+![_WLKATA-Mirobot_ConnectError](_WLKATA-Mirobot_ConnectError.webp)

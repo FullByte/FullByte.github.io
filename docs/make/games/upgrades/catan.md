@@ -8,12 +8,12 @@ Here are the files as [cdr](_catan_box.cdr), [dxf](_catan_box.dxf) and [svg](_ca
 
 And this is how the result looks like if you glue it all together:
 
-![catan](_catan_box.jpg)
+![catan](_catan_box.webp)
 
 ## My own version of Catan
 
 WIP...
 
-![catan](_catan-laser-test.jpg)
+![catan](_catan-laser-test.webp)
 
-![catan](_catan-draw-test.jpg)
+![catan](_catan-draw-test.webp)

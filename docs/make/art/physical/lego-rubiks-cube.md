@@ -5,8 +5,8 @@ I built the [LEGO Rubik's Cube Lego](https://rebrickable.com/mocs/MOC-91837/puzz
 This is a [video](https://www.youtube.com/watch?v=tolQCt76LBk) on the design. 
 I purchased all parts from one vendor at [bricklink](https://www.bricklink.com).
 
-![lego-rubiks-cube](_lego-rubiks-cube1.jpg)
+![lego-rubiks-cube](_lego-rubiks-cube1.webp)
 
-![lego-rubiks-cube](_lego-rubiks-cube2.jpg)
+![lego-rubiks-cube](_lego-rubiks-cube2.webp)
 
-![lego-rubiks-cube](_lego-rubiks-cube3.jpg)
+![lego-rubiks-cube](_lego-rubiks-cube3.webp)

@@ -4,7 +4,7 @@
 
 Some real CAPTCHAs I have seen that are somehow entertaining and art :)
 
-![_realCAPTHCA01](_realCAPTHCA01.jpg)
+![_realCAPTHCA01](_realCAPTHCA01.webp)
 
 ## Fake
 

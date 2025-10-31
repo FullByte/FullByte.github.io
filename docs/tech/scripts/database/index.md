@@ -1,6 +1,6 @@
 # Databases
 
-![files](_files.jpg)
+![files](_files.webp)
 
 ## Learning SQL through Gamification
 

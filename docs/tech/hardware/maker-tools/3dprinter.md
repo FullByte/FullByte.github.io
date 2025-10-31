@@ -15,7 +15,7 @@
 
 Firmware Upgrade: Don't forget the display :)
 
-![Anycubic Vyper](_anycubic-vyper-fw-upgrade1.jpg)
+![Anycubic Vyper](_anycubic-vyper-fw-upgrade1.webp)
 
 ## Anycubic Kobra 2
 
@@ -23,11 +23,11 @@ Firmware Upgrade: Don't forget the display :)
 
 Set up Anycubic Kobra 2 in Cura:
 
-![Kobra2Cura](_kobra_cura_setting1.jpg)
+![Kobra2Cura](_kobra_cura_setting1.webp)
 
-![Kobra2Cura](_kobra_cura_setting2.jpg)
+![Kobra2Cura](_kobra_cura_setting2.webp)
 
-![Kobra2Cura](_kobra_cura_setting3.jpg)
+![Kobra2Cura](_kobra_cura_setting3.webp)
 
 ## Skirt Brim and Raft
 
@@ -41,8 +41,8 @@ When 3D printing, the process of printing some lines around the object before st
 
 Setting in Cura:
 
-![skirt_brim](_skirt_brim_setting.jpg)
+![skirt_brim](_skirt_brim_setting.webp)
 
 Different Setting options:
 
-![skirt_brim](_skirt_brim_example.jpg)
+![skirt_brim](_skirt_brim_example.webp)

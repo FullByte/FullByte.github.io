@@ -17,9 +17,9 @@ az artifacts universal download --organization "https://dev.azure.com/$devopsorg
 
 ## Wiki
 
-This script **deletes unwanted internal wiki** in DevOps that cant be deleted via GUI.
+This script **deletes unwanted internal wiki** in DevOps that can't be deleted via GUI.
 
-Requires Azure CLI and Powershell and the DevOps PAT requires right to delete wiki repo.
+Requires Azure CLI and PowerShell and the DevOps PAT requires right to delete wiki repo.
 
 ```ps1
 Param(
@@ -41,7 +41,7 @@ Param(
 
 Begin {
     # get authentication header for REST
-    $AzureDevOpsAuthenicationHeader = @{Authorization = 'Basic ' + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$($AzureDevOpsPAT)")) }
+    $AzureDevOpsAuthenticationHeader = @{Authorization = 'Basic ' + [Convert]::ToBase64String([Text.Encoding]::ASCII.GetBytes(":$($AzureDevOpsPAT)")) }
 }
 
 Process {
@@ -52,10 +52,10 @@ Process {
     $ProjectID = (az devops project list --query "value[].{name:name, id:id}[?name=='$ProjectName']" -o tsv) | ForEach-Object { $_.Split("`t")[1] }
     
     # show wiki repo info
-    (Invoke-RestMethod -Uri "https://dev.azure.com/$($OrganizationName)/$($ProjectID)/_apis/wiki/wikis?api-version=6.0" -Method get -Headers $AzureDevOpsAuthenicationHeader).value
+    (Invoke-RestMethod -Uri "https://dev.azure.com/$($OrganizationName)/$($ProjectID)/_apis/wiki/wikis?api-version=6.0" -Method get -Headers $AzureDevOpsAuthenticationHeader).value
     
     # get repositoryId
-    $RepositoryId = (Invoke-RestMethod -Uri "https://dev.azure.com/$($OrganizationName)/$($ProjectID)/_apis/wiki/wikis?api-version=6.0" -Method get -Headers $AzureDevOpsAuthenicationHeader).value | Where-Object type -eq 'projectWiki' | Select-Object -ExpandProperty repositoryId
+    $RepositoryId = (Invoke-RestMethod -Uri "https://dev.azure.com/$($OrganizationName)/$($ProjectID)/_apis/wiki/wikis?api-version=6.0" -Method get -Headers $AzureDevOpsAuthenticationHeader).value | Where-Object type -eq 'projectWiki' | Select-Object -ExpandProperty repositoryId
 
     # Check if wiki exists and delete it
     if (-not ([string]::IsNullOrEmpty($RepositoryId)))
@@ -65,7 +65,7 @@ Process {
 
         if ($DeleteConfirmation -eq 'y'){
             # delete internal wiki repo
-            Invoke-RestMethod -Uri "https://dev.azure.com/$($OrganizationName)/$($ProjectID)/_apis/git/repositories/$($RepositoryId)?api-version=6.0" -Method delete -Headers $AzureDevOpsAuthenicationHeader
+            Invoke-RestMethod -Uri "https://dev.azure.com/$($OrganizationName)/$($ProjectID)/_apis/git/repositories/$($RepositoryId)?api-version=6.0" -Method delete -Headers $AzureDevOpsAuthenticationHeader
             Write-Host("Repository successfully deleted.") -ForegroundColor Green -BackgroundColor DarkGray
         }
         else {
@@ -84,8 +84,8 @@ Process {
 
 Show all open tasks assigned to a user across all projects:
 
-![OpenTasksAssinged](_AzureDevOpsOpenTasksAssinged.jpg)
+![OpenTasksAssigned](_AzureDevOpsOpenTasksAssinged.webp)
 
 Show all open tasks in which a user is mentioned:
 
-![OpenTasksMentioned](_AzureDevOpsOpenTasksMentioned.jpg)
+![OpenTasksMentioned](_AzureDevOpsOpenTasksMentioned.webp)

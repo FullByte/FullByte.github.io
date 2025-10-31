@@ -35,4 +35,4 @@
 
 ## Foto
 
-![bananenbrot](_bananenbrot.jpg)
+![bananenbrot](_bananenbrot.webp)

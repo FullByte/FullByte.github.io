@@ -190,4 +190,4 @@ Running this looks like this:
 
 ![​PETSCII_stormtrooper](_​PETSCII_stormtrooper.gif)
 
-![_​PETSCII_stormtrooper](_​PETSCII_stormtrooper.png)
+![_​PETSCII_stormtrooper](_​PETSCII_stormtrooper.webp)

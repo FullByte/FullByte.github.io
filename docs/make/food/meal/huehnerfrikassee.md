@@ -50,4 +50,4 @@ Hühnerfrikassee mit Möhren und Reis.
 
 ## Foto
 
-![huehnerfrikassee](_huehnerfrikassee.jpg)
+![huehnerfrikassee](_huehnerfrikassee.webp)

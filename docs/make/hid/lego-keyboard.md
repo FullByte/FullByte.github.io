@@ -2,7 +2,7 @@
 
 The base keyboard is an [EPOMAKER](https://epomaker.com/) SKYLOONG SK64.
 
-![epomaker-skyloong-sk64](_lego_epomaker-skyloong-sk64.png)
+![epomaker-skyloong-sk64](_lego_epomaker-skyloong-sk64.webp)
 
 I purchased lego key caps from [shapeways](https://www.shapeways.com/):
 
@@ -11,10 +11,10 @@ I purchased lego key caps from [shapeways](https://www.shapeways.com/):
 
 I found a small [lego alphabet](https://rebrickable.com/mocs/MOC-48980/nathansonic/smallest-lego-alphabet) template on rebrickable and [tested it for the QWERTZ layout](_lego-dots-alphabet.io). Unfortunately "W" and "M" are 2x3 spaces and the key caps are only 2x2.
 
-![lego-dots-alphabet.png](_lego-dots-alphabet.png)
+![lego-dots-alphabet.png](_lego-dots-alphabet.webp)
 
 I ended up with this useable setup:
 
-![Lego Keyboard](_lego-keyboard4.jpg)
+![Lego Keyboard](_lego-keyboard4.webp)
 
-![Lego Keyboard](_lego-keyboard5.jpg)
+![Lego Keyboard](_lego-keyboard5.webp)

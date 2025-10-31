@@ -36,7 +36,7 @@ print(torch.cuda.is_available()) # CUDA Test
 
 Expected output:
 
-![test pytorch](_pytorch-test.jpg)
+![test pytorch](_pytorch-test.webp)
 
 ## deep-daze
 

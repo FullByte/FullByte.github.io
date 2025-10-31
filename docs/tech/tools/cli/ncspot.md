@@ -8,4 +8,4 @@
 
 Example running ncspot:
 
-![ncspot](_ncspot.png)
+![ncspot](_ncspot.webp)

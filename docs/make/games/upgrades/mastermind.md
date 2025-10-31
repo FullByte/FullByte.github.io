@@ -4,7 +4,7 @@ Boxes.py link: <https://www.festi.info/boxes.py/TwoPiece?FingerJoint_angle=90.0&
 
 Settings:
 
-![_mastermind](_mastermind.jpg)
+![_mastermind](_mastermind.webp)
 
 Laser cutter file:
 

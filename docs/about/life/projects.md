@@ -1,9 +1,9 @@
 # Projects
 
-What ever you do, what ever you want to achieve, approach it as a project.
+What ever you do, what ever you want to achieve, approach it as a project- If you're constantly craving more, you won't appreciate what you already have.
 
 Most of the time, the project you are doing either mainly needs to be done by a due-date or done according to specs/requirements.
-Figure out what project you are working on (what is the main fokus?).
+Figure out what project you are working on (what is the main focus?).
 Choose two of the three constraints shown below and choose the best framework that seems to fit best:
 
 ![projects_overview](_projects_overview.drawio.svg)
@@ -21,7 +21,7 @@ Choosing the correct project management process depends on the specific requirem
 
 By weighing these factors, you can make a more informed decision on which project management process to adopt for your project. Keep in mind that you can also customize or combine methodologies to create a hybrid approach that best suits your needs.
 
-![actual_progress](_projects_actual_progress.png)
+![actual_progress](_projects_actual_progress.webp)
 
 ## Goals and Focus
 
@@ -29,13 +29,13 @@ You can't have it all. Know what to focus on and be aware what you decide to mak
 
 ![time_cost_quality](_projects_time_cost_quality.drawio.svg)
 
-![goals_and_focus](_projects_goals_and_focus1.jpg)
+![goals_and_focus](_projects_goals_and_focus1.webp)
 
-![goals_and_focus](_projects_goals_and_focus2.jpg)
+![goals_and_focus](_projects_goals_and_focus2.webp)
 
 ### Set Goals
 
-![_goals](_goals.jpg)
+![_goals](_goals.webp)
 
 Define SMART goals:
 
@@ -126,11 +126,11 @@ The OKR (Objectives and Key Results) model is a goal-setting and performance-tra
 - Objectives: These are high-level, qualitative statements that outline the desired outcome or vision. Objectives should be ambitious, inspiring, and clear, serving as a guide for what the organization or individual is trying to achieve.
 - Key Results: Key results are specific, measurable, and time-bound indicators that help track progress towards achieving the objective. These are usually quantitative in nature, allowing for easy assessment of whether they have been met or not. Key results should be realistic, achievable, and directly linked to the objective they support.
 
-![okr-modell](_projects_OKR.jpg)
+![okr-modell](_projects_OKR.webp)
 
 The OKR model encourages regular check-ins and updates to ensure that teams and individuals are focused on the right priorities and making progress towards their objectives. It promotes transparency, collaboration, and agility, enabling organizations to adapt and respond quickly to changes in their environment.
 
-![okr-modell](_projects_okr-model.jpg)
+![okr-modell](_projects_okr-model.webp)
 
 ## Team communication
 
@@ -144,7 +144,7 @@ The challenge of managing communication becomes increasingly complex as team siz
 
 This formula can be used to count the number of possible communication connections among a group of people in a team:
 
-![projects_combination_possibilities](_projects_combination_possibilities1.jpg)
+![projects_combination_possibilities](_projects_combination_possibilities1.webp)
 
 - C(n,k) is the number of combinations,
 - n is the total number of items,
@@ -155,7 +155,7 @@ For single communications (pairs of people) k=2 because each connection involves
 
 To calculate the sum of all possible group communications for n=15, we would sum the combinations for k from 2 to 14:
 
-![projects_combination_possibilities](_projects_combination_possibilities2.jpg)
+![projects_combination_possibilities](_projects_combination_possibilities2.webp)
 
 The number of all possible group sizes, from pairs to groups of 14 results in n = 15 = 2^15 − 2 = 32768−2 = 32766
 

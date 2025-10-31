@@ -58,7 +58,7 @@ And table2 has the following columns and data:
 | 3  | 3         | Painting |
 | 4  | 3         | Dancing  |
 
-![db-joins](_db-joins.jpg)
+![db-joins](_db-joins.webp)
 
 #### INNER JOIN
 

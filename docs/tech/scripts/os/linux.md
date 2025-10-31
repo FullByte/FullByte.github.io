@@ -447,7 +447,7 @@ Press `Ctrl+R` to search through your history using auto-complete. Press `Ctrl+R
 - Clear the history of current shell: ```history -c```
 - Overwrite the history file with the current shell's history: ```history -c | history -w | exit```
 - Delete first 15 entries: ```for i in {1..15}; do history -d 1; done```
-- Clear history completly: ```ln -sf /dev/null ~/.bash_history && history -c && exit```
+- Clear history completely: ```ln -sf /dev/null ~/.bash_history && history -c && exit```
 - Disable history: ```sudo echo "unset HISTFILE" >> /etc/profile```
 - Disable history for user "0xfab1": ```echo "unset HISTFILE" >> /home/0xfab1/.bash_profile```
 - Change number of lines stored in an ongoing history list session: ```echo "HISTFILESIZE=10 >> ~/.bashrc```
@@ -521,7 +521,7 @@ set hls ic is nu noswf
 | Command               | Description                                                                               |
 |-----------------------|-------------------------------------------------------------------------------------------|
 | screen                | Create a new session.                                                                     |
-| Ctrl+A,D              | Detach from current screen session.                                                       |
+| Ctrl+A, D             | Detach from current screen session.                                                       |
 | Ctrl+D                | End current session. Similart to `exit`.                                                  |
 | screen -r             | Reattach to session.                                                                      |
 | screen -ls            | List all sessions.                                                                        |

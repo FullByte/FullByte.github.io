@@ -1,6 +1,6 @@
 # Deserts
 
-![butterschmalz](_butterschmalz.jpg)
+![butterschmalz](_butterschmalz.webp)
 
 | Desert                                    | Picture |
 |-------------------------------------------|---------|

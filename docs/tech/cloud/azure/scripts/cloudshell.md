@@ -21,12 +21,12 @@ You get a [CloudShell](https://github.com/Azure/CloudShell) container as follows
 
 ``` ps1
 docker run -it mcr.microsoft.com/azure-cloudshell /bin/bash # for bash
-docker run -it mcr.microsoft.com/azure-cloudshell /usr/bin/pwsh # for powershell
+docker run -it mcr.microsoft.com/azure-cloudshell /usr/bin/pwsh # for PowerShell
 ```
 
 ### Windows Terminal
 
-The [Windows terminal](https://docs.microsoft.com/de-de/windows/terminal/) has the cloud shell integrated. Aside from other features this is a good way to interact with azure on command line.
+The [Windows Terminal](https://docs.microsoft.com/de-de/windows/terminal/) has the Cloud Shell integrated. Aside from other features this is a good way to interact with Azure on the command line.
 
 Install the windows terminal with```choco install microsoft-windows-terminal```.
 You need to login to azure first to use the terminal.

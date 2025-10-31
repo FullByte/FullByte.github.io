@@ -290,7 +290,7 @@ ssh -g -L31340:127.0.0.1:8080 -l aubreanna victim.thm
 
 We can the open jenkins from your kali machine e.g. <http://localhost:31340> and analyse the login prompt with burpsuite:
 
-![_internal_burpsuite](_internal_burpsuite.jpg)
+![_internal_burpsuite](_internal_burpsuite.webp)
 
 Using the information from the intercepted post command of a failed login attempt we can build the hdyra brute-force attack:
 

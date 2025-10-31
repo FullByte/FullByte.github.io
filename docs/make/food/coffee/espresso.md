@@ -18,7 +18,7 @@ Coffee preference is subjective, so take the time to explore different beans, ro
 
 I like these:
 
-![good_coffee](_good_coffee.jpg)
+![good_coffee](_good_coffee.webp)
 
 ## Coffee bean storage
 
@@ -86,9 +86,9 @@ The safety valve is the one thing that will damage first if the 9barista overhea
 
 Replacing the safety valve is a simple process. With the right tools it shouldn’t take more than a minute. Use a 13mm wrench to loosen the valve.
 
-![9barista-safetlyvalve](_9barista-safetlyvalve2.png)
+![9barista-safetlyvalve](_9barista-safetlyvalve2.webp)
 
-![9barista-safetlyvalve](_9barista-safetlyvalve.png)
+![9barista-safetlyvalve](_9barista-safetlyvalve.webp)
 
 #### Descaling the 9Barista
 

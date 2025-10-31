@@ -1,14 +1,14 @@
 # Splitkb Kyria
 
-![Splitkb Kyria](_splitboard_2_00.jpg)
+![Splitkb Kyria](_splitboard_2_00.webp)
 
-![Splitkb Kyria](_splitboard_2_0.jpg)
+![Splitkb Kyria](_splitboard_2_0.webp)
 
-![Splitkb Kyria](_splitboard_2_1.jpg)
+![Splitkb Kyria](_splitboard_2_1.webp)
 
-![Splitkb Kyria](_splitboard_2_2.jpg)
+![Splitkb Kyria](_splitboard_2_2.webp)
 
-![Splitkb Kyria](_splitboard_2_3.jpg)
+![Splitkb Kyria](_splitboard_2_3.webp)
 
 ## Components
 

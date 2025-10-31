@@ -2,11 +2,11 @@
 
 My work environment:
 
-![LaserCutter](_LaserCutter.jpg)
+![LaserCutter](_LaserCutter.webp)
 
 Some example results:
 
-![LaserCutterResults](_LaserCutterResults.jpg)
+![LaserCutterResults](_LaserCutterResults.webp)
 
 ## EpilogZing 6040
 
@@ -24,11 +24,11 @@ Note: With floor-piece hight is only 130mm (required for cutting)
 | Power    | 50%              | 100%         |
 | Freq     | 2500 Hz          | 2500 Hz      |
 
-[Example EpilogZing Printer Settings](_epilog-zing-printer-settings.png)
+[Example EpilogZing Printer Settings](_epilog-zing-printer-settings.webp)
 
 ### 4mm fleece
 
-([example cut](_fleece_example_cut.png))
+([example cut](_fleece_example_cut.webp))
 
 | Variable | Engrave (Raster) | Cut (Vektor) |
 |----------|------------------|--------------|
@@ -54,7 +54,7 @@ Note: With floor-piece hight is only 130mm (required for cutting)
 
 Change "Rastermuster" to "Stucki"!
 
-[Example EpilogZing Printer Settings](_epilog-zing-printer-settings-alu-engrave.jpg)
+[Example EpilogZing Printer Settings](_epilog-zing-printer-settings-alu-engrave.webp)
 
 ## Trotec Speedy 360
 

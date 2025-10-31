@@ -278,7 +278,7 @@ ASCII Boarder
 
 ## JavaScript
 
-![javascript](_javascript.jpg)
+![javascript](_javascript.webp)
 
 ## Cool JS libraries
 

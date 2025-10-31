@@ -7,7 +7,7 @@ The inspiration comes from this product: <https://blazepod.eu/collections>
 
 GUI
 
-![creative-coder](_creative-coder.jpg)
+![creative-coder](_creative-coder.webp)
 
 Code
 

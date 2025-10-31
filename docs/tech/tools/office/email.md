@@ -16,11 +16,11 @@ Links to relevant Fastmail help pages:
 - [Domain set up: MX only](https://www.fastmail.help/hc/en-us/articles/1500000280261-Domain-set-up-MX-only)
 - [Domains: Advanced configuration](https://www.fastmail.help/hc/en-us/articles/360060591153-Domains-Advanced-configuration)
 
-### Sendgrid
+### SendGrid
 
-[Sendgrid](https://sendgrid.com/) is an email API service.
+[SendGrid](https://sendgrid.com/) is an email API service.
 
-Powershell example on how to use the sendgrid API to send an email:
+PowerShell example showing how to use the SendGrid API to send an email:
 
 ```ps1
 $From = "email@address"
@@ -45,7 +45,7 @@ $jsonRequest = [ordered]@{
 Invoke-RestMethod -Uri "https://api.sendgrid.com/v3/mail/send" -Method Post -Headers $headers -Body $jsonRequest 
 ```
 
-Curl example on how to use the sendgrid API to send an email:
+Curl example on how to use the SendGrid API to send an email:
 
 ``` sh
 export SENDGRID_API_KEY='something'

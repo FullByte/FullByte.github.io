@@ -137,7 +137,7 @@ Pizza stammt vermutlich aus Neapel, ist weiblich und steht seit 1967 im Rechtsch
 
 ## Foto
 
-![pizza](_pizza.jpg)
+![pizza](_pizza.webp)
 
 ## Pizza History
 

@@ -99,7 +99,7 @@ cd local_folder_to_upload && find . -type f -exec curl -T {} 'http://your.server
 
 ## Random Examples
 
-### check netowrk range
+### Check network range
 
 Example to check /24 range in "abuseipdb.com" for the last 3 days
 
@@ -115,8 +115,8 @@ curl -s -G "https://api.abuseipdb.com/api/v2/check-block" \
 
 If you don't have jq installed:
 
-- ubuntu: ```sudo apt install jq```
-- windows: ```scoop install jq```
+- Ubuntu: `sudo apt install jq`
+- Windows: `scoop install jq`
 
 ### Inspect headers
 
@@ -134,7 +134,7 @@ curl -v localhost:3000/posts
 
 ### Request JSON
 
-Query a website e.g. request a json response from cloudflare-dns.com on TXT records of the domain 0xfab1.net
+Query a website e.g. request a JSON response from cloudflare-dns.com on TXT records of the domain 0xfab1.net
 
 ``` sh
 curl -s -H 'accept: application/dns-json' 'https://cloudflare-dns.com/dns-query?name=0xfab1.net&type=TXT'
@@ -172,7 +172,7 @@ EOF
 
 ### Using a proxy
 
-Route the request through a proxy server (http://proxyserver:port).
+Route the request through a proxy server (`http://proxyserver:port`).
 This is useful for debugging, bypassing restrictions, or accessing internal networks.
 
 ``` sh
@@ -185,11 +185,11 @@ curl -x http://proxyserver:port https://example.com
 
 Absolutely! Here’s the technical blog section in **Markdown**:
 
-## Is curl in PowerShell an Alias or the Real Deal?
+## Is cURL in PowerShell an alias or the real deal?
 
 On Windows, running `curl` in PowerShell might not always do what you expect. That’s because older versions of PowerShell define `curl` as an alias for `Invoke-WebRequest`, while modern Windows also ships with the real cURL executable. To avoid confusion, here’s a simple PowerShell snippet to check exactly what `curl` points to in your session:
 
-```powershell
+```ps1
 $curlCmd = Get-Command curl -ErrorAction SilentlyContinue
 
 if ($null -eq $curlCmd) {
@@ -208,6 +208,6 @@ else {
 
 Just run this script in your PowerShell window, and you’ll immediately know whether `curl` is an alias or the real command-line tool. If it’s an alias and you need the actual cURL, you can always remove the alias for your session with:
 
-```powershell
+```ps1
 Remove-Item alias:curl
 ```

@@ -42,7 +42,7 @@ FLAG = (xor(bytes.fromhex(KEY1), KEY2, KEY3, bytes.fromhex(FLAGx))) # XOR for FL
 print(FLAG)
 ```
 
-## XOR you dont
+## XOR you don't
 
 ``` python
 from pwn import xor

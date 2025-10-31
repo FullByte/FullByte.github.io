@@ -1,6 +1,6 @@
 # Finances
 
-Aside from spending or investing money, doing things without involving money can be very satisfying too... but this is page is not about that.
+Aside from spending or investing money, doing things without involving money can be very satisfying too... but this page is not about that.
 
 ## Spend
 
@@ -13,18 +13,18 @@ Good things to spend money on:
 - Health (sports, sport equipment, healthy food)
 - Hobbies and fun stuff (games, holidays, events)
 - Education (learn things and have a good time, not college, just fund your experiments. (Education can be an investment, but not under my definition above and I suggest to not look at it that way)
-- Things that make you feel good (a picture on the wall, nice cloths, replace that thing that bothered you)
+- Things that make you feel good (a picture on the wall, nice clothes, replace that thing that bothered you)
 
 ### What to buy
 
 Obviously it is not a good idea to buy things you don't need with money you don't have to impress people that don't care.
 Rather buy things that spark joy and you are willing to actually use and make you happy/life better.
 Get rid of those things that don't.
-Know when to gift friends, sell, through away or store it for later.
+Know when to gift to friends, sell, throw away or store it for later.
 
 Remember that you always pay twice for every purchase:
 
-- First you pay money have it
+- First you pay money to have it
 - Then you pay time to use it
 
 Don't pay the first price if you won't pay the second price.

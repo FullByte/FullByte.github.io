@@ -34,4 +34,4 @@
 
 ## Foto
 
-![sandwich](_sandwich.jpg)
+![sandwich](_sandwich.webp)

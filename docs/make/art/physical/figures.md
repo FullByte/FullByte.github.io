@@ -2,4 +2,4 @@
 
 ## Dragon
 
-![Dragon](_3d-dragon.jpg)
+![Dragon](_3d-dragon.webp)

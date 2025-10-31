@@ -1,0 +1,18 @@
+---
+description: "General context about this MkDocs project, including technology stack and local development commands."
+alwaysApply: true
+---
+
+### General Project Context (MkDocs Blog)
+
+- This is a personal blog built with the static site generator [MkDocs](https://www.mkdocs.org/) and the [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) theme.
+- The main configuration is in `mkdocs.yml`.
+- All content is located in the `docs/` directory as Markdown files.
+- Custom theme overrides are in the `overrides/` directory.
+- The project uses several Python scripts in the root for automation (building, image optimization, stats).
+
+### Local Development Commands
+
+- **To build the site:** Run `python build.py`. This script also optimizes images and generates stats.
+- **To serve the site locally:** Run `python serve.py`. The site will be available at `http://127.0.0.1:8000`. A quicker alternative is `python build.py --serve`.
+- **To do a quick build without optimization:** Run `python build.py --no-optimize`.

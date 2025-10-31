@@ -24,13 +24,13 @@ legofy --size 256 --dither --palette all 0xfab1.png 0xfab1_lego256.png
 This gets big and expensive quickly; so lets check when the chosen picture looks good enough:
 
 32x32
-![0xfab1_lego](_0xfab1_lego32.png)
+![0xfab1_lego](_0xfab1_lego32.webp)
 
 64x64
-![0xfab1_lego](_0xfab1_lego64.png)
+![0xfab1_lego](_0xfab1_lego64.webp)
 
 128x128
-![0xfab1_lego](_0xfab1_lego128.png)
+![0xfab1_lego](_0xfab1_lego128.webp)
 
 256x256
-![0xfab1_lego](_0xfab1_lego256.png)
+![0xfab1_lego](_0xfab1_lego256.webp)

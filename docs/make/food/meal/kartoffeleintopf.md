@@ -88,4 +88,4 @@
     - [ ] Wiener Würstchen in Scheiben schneiden und 3min Kochen
     - [ ] Schnittlauch scheniden und beim servieren dazugeben
 
-![_kartoffeleintopf](_kartoffeleintopf.jpg)
+![_kartoffeleintopf](_kartoffeleintopf.webp)
