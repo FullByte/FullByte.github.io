@@ -848,79 +848,83 @@ explorer shell:::{ED7BA470-8E54-465E-825C-99712043E01C}
 
 ### Systemverwaltung
 
-- appwiz.cpl	Startet "Add or Remove Programs"
-- certmgr.msc	Zertifikat - Manager (Certificate Store)
-- ciadv.msc	Indexdienst
-- cleanmgr.exe	Datenträgerbereinigung
-- Clipbrd	Zwischenablage
-- cmd.exe	Eingabeaufforderung
-- comexp.msc	Komponentendienste
-- compmgmt.msc	Computerverwaltung
-- control userpasswords2	Benutzerkonten
-- devmgmt.msc	Geräte-Manager 
-- dfrg.msc	Defragmentierung
-- diskmgmt.msc	Datenträgerverwaltung
-- Driverquery	Lister aller aktiven Treiber
-- drwtsn32.exe	Dr. Watson
-- eventvwr.msc	Ereignisanzeige
-- fsmgmt.msc	Freigegebene Ordner
-- gpedit.msc	Gruppenrichtlinien - Editor
-- ias.msc	Internetauthentifizierungsdienst
-- lusrmgr.msc	Benutzer und Gruppen
-- msconfig.exe	Systemkonfigurationsprogramm
-- mstsc.exe	Remotedesktopverbindung
-- narrator.exe	Sprachausgabe
-- ntbackup.exe	Sicherungs - Wiederherstellungs - Assistent
-- ntmsmgr.msc	Wechselmedienverwaltung
-- ntmsoprq.msc	Übersicht über Wechselmedien
-- odbcad32.exe	ODBC-Datenquellen-Administrator
-- Osk	Bildschirmtastatur
-- perfmon.msc	Systemmonitor
-- regedit.exe	Registrierungs - Editor  
-- secpol.msc	Sicherheitseinstellungen
-- services.msc	Diensteverwaltung
-- shrpubw.exe	Freigabe erstellen
-- sigverif.exe	Dateisignaturverifizierung
-- Sysedit	Systemkonfigurationseditor
-- syskey.exe	Sichern der XP Kontodatenbank
-- taskmgr.exe	Task - Manager
-- winchat.exe	Windows Chat
-- Windbver.exe	SQL-Server
-- wmimgmt.msc	WMI-Steuerung
-- adsiedit.msc	Microsoft Management Console (MMC)-SnapIn
-- dfsgui.msc	DFS (verteiltes Dateisystem)
-- dhcpmgmt.msc	DHCP Admin
-- dnsmgmt.msc	DNS Manager
-- dsa.msc	Active Directory  
-- iis.msc bzw. inetmgr	IIS Verwaltung nur bei installiertem IIS
-- Mmc	leere Management-Konsole
-- mscorfcg.msc	mmc snapin
-- rrasmgmt.msc	Routing und RAS
-- winsmgmt.msc	WINS
+| Befehl                 | Beschreibung                                |
+| ---------------------- | ------------------------------------------- |
+| appwiz.cpl             | Startet "Add or Remove Programs"            |
+| certmgr.msc            | Zertifikat - Manager (Certificate Store)    |
+| ciadv.msc              | Indexdienst                                 |
+| cleanmgr.exe           | Datenträgerbereinigung                      |
+| Clipbrd                | Zwischenablage                              |
+| cmd.exe                | Eingabeaufforderung                         |
+| comexp.msc             | Komponentendienste                          |
+| compmgmt.msc           | Computerverwaltung                          |
+| control userpasswords2 | Benutzerkonten                              |
+| devmgmt.msc            | Geräte-Manager                              |
+| dfrg.msc               | Defragmentierung                            |
+| diskmgmt.msc           | Datenträgerverwaltung                       |
+| Driverquery            | Lister aller aktiven Treiber                |
+| drwtsn32.exe           | Dr. Watson                                  |
+| eventvwr.msc           | Ereignisanzeige                             |
+| fsmgmt.msc             | Freigegebene Ordner                         |
+| gpedit.msc             | Gruppenrichtlinien - Editor                 |
+| ias.msc                | Internetauthentifizierungsdienst            |
+| lusrmgr.msc            | Benutzer und Gruppen                        |
+| msconfig.exe           | Systemkonfigurationsprogramm                |
+| mstsc.exe              | Remotedesktopverbindung                     |
+| narrator.exe           | Sprachausgabe                               |
+| ntbackup.exe           | Sicherungs - Wiederherstellungs - Assistent |
+| ntmsmgr.msc            | Wechselmedienverwaltung                     |
+| ntmsoprq.msc           | Übersicht über Wechselmedien                |
+| odbcad32.exe           | ODBC-Datenquellen-Administrator             |
+| Osk                    | Bildschirmtastatur                          |
+| perfmon.msc            | Systemmonitor                               |
+| regedit.exe            | Registrierungs - Editor                     |
+| secpol.msc             | Sicherheitseinstellungen                    |
+| services.msc           | Diensteverwaltung                           |
+| shrpubw.exe            | Freigabe erstellen                          |
+| sigverif.exe           | Dateisignaturverifizierung                  |
+| Sysedit                | Systemkonfigurationseditor                  |
+| syskey.exe             | Sichern der XP Kontodatenbank               |
+| taskmgr.exe            | Task - Manager                              |
+| winchat.exe            | Windows Chat                                |
+| Windbver.exe           | SQL-Server                                  |
+| wmimgmt.msc            | WMI-Steuerung                               |
+| adsiedit.msc           | Microsoft Management Console (MMC)-SnapIn   |
+| dfsgui.msc             | DFS (verteiltes Dateisystem)                |
+| dhcpmgmt.msc           | DHCP Admin                                  |
+| dnsmgmt.msc            | DNS Manager                                 |
+| dsa.msc                | Active Directory                            |
+| iis.msc bzw. inetmgr   | IIS Verwaltung nur bei installiertem IIS    |
+| Mmc                    | leere Management-Konsole                    |
+| mscorfcg.msc           | mmc snapin                                  |
+| rrasmgmt.msc           | Routing und RAS                             |
+| winsmgmt.msc           | WINS                                        |
 
 ### Windows Shortcuts
 
-- [Windows-Taste] – Zwischen Metro-Programm und dem Metro-Startmenü wechseln
-- [Windows-Taste]+[Leertaste] -  Eingabesprache und Tastaturlayout ändern
-- [Windows-Taste]+[Y] – Windows-Desktop kurzzeitig anzeigen
-- [Windows-Taste]+[D] - Desktop anzeigen
-- [Windows-Taste]+[O] – Bildschirmorientierung/-ausrichtung arretieren (Kippsensor deaktivieren)
-- [Windows-Taste]+[V] – Vorwärts durch Toasts blättern
-- [Windows-Taste]+[Shift/Umschalten]+[V] – Rückwärts durch Toasts blättern
-- [Windows-Taste]+[Return/Enter] - Narrator starten
-- [Windows-Taste]+[Bild rauf] – Kachel nach links schieben
-- [Windows-Taste]+[Bild runter] – Kachel nach rechts schieben
-- [Windows-Taste]+[Shift/Umschalten]+[.] – Aufteilung nach links schieben
-- [Windows-Taste]+[.] – Aufteilung nach rechts schieben
-- [Windows-Taste]+[L] - Windows 8 sperren
-- [Windows-Taste]+[F] – Suchen-App starten
-- [Windows-Taste]+[C] – Charms Bar (Metro-Startmenü) öffnen
-- [Windows-Taste]+[I] – Charm Bar (Metro-Sidebar) öffnen, um Windows 8 zum Beispiel herunterzufahren (Befehl "Power | Shut down")
-- [Windows-Taste]+[K] – Connect Charm öffnen
-- [Windows-Taste]+[H] – Apps-Suche unter dem Metro-Startmenü öffnen
-- [Windows-Taste]+[Q]  - Apps-Übersicht einblenden
-- [Windows-Taste]+[W] – Einstellungen für Such-App öffnen
-- [Windows-Taste]+[Z] - App Bar öffnen
+| Tastenkombination                      | Beschreibung                                                                                 |
+| -------------------------------------- | -------------------------------------------------------------------------------------------- |
+| [Windows-Taste]                        | Zwischen Metro-Programm und dem Metro-Startmenü wechseln                                     |
+| [Windows-Taste+[Leertaste]]            | Eingabesprache und Tastaturlayout ändern                                                     |
+| [Windows-Taste+[Y]]                    | Windows-Desktop kurzzeitig anzeigen                                                          |
+| [Windows-Taste+[D]]                    | Desktop anzeigen                                                                             |
+| [Windows-Taste+[O]]                    | Bildschirmorientierung/-ausrichtung arretieren (Kippsensor deaktivieren)                     |
+| [Windows-Taste+[V]]                    | Vorwärts durch Toasts blättern                                                               |
+| [Windows-Taste+[Shift/Umschalten]+[V]] | Rückwärts durch Toasts blättern                                                              |
+| [Windows-Taste+[Return/Enter]]         | Narrator starten                                                                             |
+| [Windows-Taste+[Bild rauf]]            | Kachel nach links schieben                                                                   |
+| [Windows-Taste+[Bild runter]]          | Kachel nach rechts schieben                                                                  |
+| [Windows-Taste+[Shift/Umschalten]+[.]] | Aufteilung nach links schieben                                                               |
+| [Windows-Taste+[.]]                    | Aufteilung nach rechts schieben                                                              |
+| [Windows-Taste+[L]]                    | Windows 8 sperren                                                                            |
+| [Windows-Taste+[F]]                    | Suchen-App starten                                                                           |
+| [Windows-Taste+[C]]                    | Charms Bar (Metro-Startmenü) öffnen                                                          |
+| [Windows-Taste+[I]]                    | [Charm Bar (Metro-Sidebar) öffnen, um Windows 8 zum Beispiel herunterzufahren (Befehl "Power |
+| [Windows-Taste+[K]]                    | Connect Charm öffnen                                                                         |
+| [Windows-Taste+[H]]                    | Apps-Suche unter dem Metro-Startmenü öffnen                                                  |
+| [Windows-Taste+[Q]]                    | Apps-Übersicht einblenden                                                                    |
+| [Windows-Taste+[W]]                    | Einstellungen für Such-App öffnen                                                            |
+| [Windows-Taste+[Z]]                    | App Bar öffnen                                                                               |
 
 Kombination aus Maus- und Tastaturtaste für Desktopobjekte
 
