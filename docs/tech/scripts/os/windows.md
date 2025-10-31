@@ -2,13 +2,54 @@
 
 ## Windows 11
 
-Old Contect Menu
+Install without account:
+
+On the first setup screen press Shift + F10 (CMD will open)
+
+```cmd
+net user yourusername/add
+net localgroup administrators yourusername /add
+net user yourusername/active:yes
+net user yourusername/expires:never
+net user administrator /active:no
+net user defaultUser0 /delete
+```
+
+Next opens registry editor
+
+```cmd
+regedit
+```
+
+and navigate to
+
+```reg
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\OOBE
+```
+
+an delete:
+
+```txt
+DefaultAccountAction
+DefaultAccountSAMName
+DefaultAccountSID
+```
+
+Right click on `LaunchUserOOBE` and rename it to `SkipMachineOOBE` and the value is set to 1.
+
+Close registry editor and reboot computer:
+
+```cmd
+shutdown /r /t 0
+```
+
+Get old contect menu
 
 ```cmd
 reg.exe add "HKCU\Software\Classes\CLSID\{86ca1aa0-34aa-4e8b-a509-50c905bae2a2}\InprocServer32" /f /ve
 ```
 
-Old Explorer View
+Get old explorer view
 
 ```reg
 Windows Registry Editor Version 5.00
