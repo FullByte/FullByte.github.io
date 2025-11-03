@@ -14,6 +14,197 @@ The following is tested and used on Ubuntu 22.04.
 | 14.04 LTS      | Trusty Tahr      | Debian 7       | Wheezy    |
 | 12.04 LTS      | Precise Pangolin | Debian 6       | Squeeze   |
 
+## New VPS
+
+Some basics config for any new machine for a new virtual private server (e.g. from Azure, AWS, GCP, Hetzner, ...)
+
+### Tools
+
+This is an overview of all tools used:
+
+| Category        | Tool                    | Type        | License / Source |
+| --------------- | ----------------------- | ----------- | ---------------- |
+| OS & Packages   | apt, systemctl          | Built-in    | Debian/Ubuntu    |
+| Firewall        | UFW                     | Open-source | Canonical        |
+| SSH             | OpenSSH                 | Open-source | BSD-style        |
+| Web Server      | Nginx                   | Open-source | 2-clause BSD     |
+| SSL             | Certbot / Let’s Encrypt | Open-source | EFF / ISRG       |
+| Runtime         | Node.js / npm           | Open-source | MIT              |
+| Process Manager | PM2                     | Open-source | AGPL             |
+| Monitoring      | htop / iotop            | Open-source | GPL              |
+| Backups         | tar / cron              | Built-in    | GNU              |
+| Updates         | unattended-upgrades     | Open-source | Debian           |
+| Auditing        | Lynis                   | Open-source | GPLv3            |
+
+### Steps
+
+Read this as a basic setup and security checklist (there is always more that can be done :D ):
+
+Connect to your new server and apply updates:
+
+``` sh
+ssh root@vps-ip
+apt update && apt upgrade -y
+uname -a
+cat /etc/os-release
+```
+
+Change the root password
+
+``` sh
+passwd
+```
+
+Create a secondary (unprivileged) user, give it sudo access:
+
+``` sh
+adduser myusername
+usermod -aG sudo myusername
+groups myusername       # myusername : myusername sudo
+su - myusername
+sudo whoami             # root
+```
+
+#### SSH
+
+On your local machine generate SSH keys:
+
+``` sh
+ssh-keygen -t ed25519 -C "email@ddress.com"
+cat ~/.ssh/id_ed25519.pub
+```
+
+On the server (as your new user, not root):
+
+``` sh
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+nano ~/.ssh/authorized_keys   # paste your public key here
+chmod 600 ~/.ssh/authorized_keys
+```
+
+Test login:
+
+``` sh
+ssh myusername@vps-ip
+```
+
+Edit SSH configuration: `sudo nano /etc/ssh/sshd_config` and add/edit these lines:
+
+``` txt
+PasswordAuthentication no
+PubkeyAuthentication yes
+```
+
+Check if `/etc/ssh/sshd_config.d/50-cloud-init.conf` exists with `sudo nano /etc/ssh/sshd_config.d/50-cloud-init.conf` and add/edit this line:
+
+``` txt
+PasswordAuthentication no
+```
+
+Test and restart sshd:
+
+``` sh
+sudo sshd -t
+sudo systemctl restart ssh
+sudo systemctl status ssh
+```
+
+Disable root login by editing `sudo nano /etc/ssh/sshd_config` and add/edit this line:
+
+``` txt
+PermitRootLogin no
+```
+
+restart sshd:
+
+``` sh
+sudo systemctl restart ssh
+```
+
+Test ssh login from a different terminal (result should be "Permission denied"):
+
+``` sh
+ssh root@vps-ip
+```
+
+#### Firewall
+
+Using UFW (Uncomplicated Firewall):
+
+``` sh
+sudo ufw status
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+sudo ufw allow ssh # Allow SSH before enabling firewall
+sudo ufw allow 80/tcp # Allow HTTP
+sudo ufw allow 443/tcp # Allow HTTPS
+```
+
+Enable firewall and type 'y' when prompted:
+
+``` sh
+sudo ufw enable
+sudo ufw status verbose
+```
+
+Change default SSH port:
+
+``` sh
+sudo nano /etc/ssh/sshd_config
+```
+
+``` sh
+sudo ufw allow 666/tcp         # changed Port 22 to Port 666
+sudo ufw delete allow 22/tcp
+sudo systemctl restart ssh
+```
+
+#### Updates
+
+Activating unattended upgrades to ensure the server stays up-to-date:
+
+``` sh
+sudo apt install unattended-upgrades apt-listchanges
+```
+
+Run this and select "yes"
+
+``` sh
+sudo dpkg-reconfigure unattended-upgrades
+```
+
+Edit this file `sudo nano /etc/apt/apt.conf.d/50unattended-upgrades` and uncomment line:
+
+``` txt
+"${distro_id}:${distro_codename}-security";
+```
+
+As well as consider a reboot window e.g.:
+
+```txt
+Unattended-Upgrade::Automatic-Reboot "true";
+Unattended-Upgrade::Automatic-Reboot-Time "04:00";
+```
+
+Test the unattended upgrades:
+
+``` sh
+sudo unattended-upgrades --dry-run
+sudo systemctl status unattended-upgrades
+```
+
+## Checks
+
+- [ ] SSH key authentication works
+- [ ] Password authentication is disabled
+- [ ] Root login is blocked
+- [ ] Firewall is active and configured
+- [ ] Automatic updates working
+- [ ] Application runs in production mode
+- [ ] SSL certificate valid
+- [ ] Backups are being created
+
 ## Config System
 
 Update and clean up:

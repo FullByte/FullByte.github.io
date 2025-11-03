@@ -1,12 +1,18 @@
+# IDEs
 .vs/
 .vscode/
+.idea/
+
+# MkDocs
 site/
-0xfab1/
-.DS_STORE
-.qodo
+
+# Python
 .venv/
 __pycache__/
+*.py[cod]
 .cache/
+
+# Security
 letsencrypt/
 certbot/
 *.log
@@ -15,3 +21,11 @@ certbot/
 *.crt
 *.key
 *.p12
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Other
+.qodo
+0xfab1/
