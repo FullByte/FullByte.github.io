@@ -65,16 +65,33 @@ su - myusername
 sudo whoami             # root
 ```
 
-#### SSH
-
-On your local machine generate SSH keys:
+Configure time synchronization:
 
 ``` sh
-ssh-keygen -t ed25519 -C "email@ddress.com"
+sudo apt install ntp
+sudo timedatectl set-timezone Europe/Berlin   # adjust accordingly
+sudo timedatectl set-ntp true
+timedatectl status
+```
+
+Enforce journald limits by editing `/etc/systemd/journald.conf` and set:
+
+```txt
+SystemMaxUse=500M
+SystemMaxFileSize=100M
+MaxRetentionSec=30day
+```
+
+#### SSH
+
+Generate SSH Keys (on your local machine):
+
+``` sh
+ssh-keygen -t ed25519 -C "email@address.com"
 cat ~/.ssh/id_ed25519.pub
 ```
 
-On the server (as your new user, not root):
+Add Your Public Key to the Server (as your new user, not root)
 
 ``` sh
 mkdir -p ~/.ssh
@@ -83,46 +100,48 @@ nano ~/.ssh/authorized_keys   # paste your public key here
 chmod 600 ~/.ssh/authorized_keys
 ```
 
-Test login:
+Test SSH login:
 
 ``` sh
 ssh myusername@vps-ip
 ```
 
-Edit SSH configuration: `sudo nano /etc/ssh/sshd_config` and add/edit these lines:
+Edit SSH settings: `sudo nano /etc/ssh/sshd_config` and ensure the following lines are set (uncomment or add if needed):
 
 ``` txt
 PasswordAuthentication no
 PubkeyAuthentication yes
 ```
 
-Check if `/etc/ssh/sshd_config.d/50-cloud-init.conf` exists with `sudo nano /etc/ssh/sshd_config.d/50-cloud-init.conf` and add/edit this line:
+Also check if `/etc/ssh/sshd_config.d/50-cloud-init.conf` exists and add:
 
 ``` txt
 PasswordAuthentication no
 ```
 
-Test and restart sshd:
+Test and restart the SSH daemon:
 
-``` sh
+```sh
 sudo sshd -t
 sudo systemctl restart ssh
 sudo systemctl status ssh
 ```
 
-Disable root login by editing `sudo nano /etc/ssh/sshd_config` and add/edit this line:
+Disable Root Login
+
+Edit `/etc/ssh/sshd_config` again and add or edit this line:
 
 ``` txt
 PermitRootLogin no
 ```
 
-restart sshd:
+Restart SSH:
 
 ``` sh
 sudo systemctl restart ssh
 ```
 
-Test ssh login from a different terminal (result should be "Permission denied"):
+Test in a new terminal (should fail):
 
 ``` sh
 ssh root@vps-ip
@@ -130,34 +149,100 @@ ssh root@vps-ip
 
 #### Firewall
 
-Using UFW (Uncomplicated Firewall):
+Initial Setup
 
-``` sh
+```sh
 sudo ufw status
 sudo ufw default deny incoming
 sudo ufw default allow outgoing
-sudo ufw allow ssh # Allow SSH before enabling firewall
-sudo ufw allow 80/tcp # Allow HTTP
-sudo ufw allow 443/tcp # Allow HTTPS
+sudo ufw allow 22/tcp      # Allow SSH (default)
+sudo ufw allow 80/tcp      # Allow HTTP
+sudo ufw allow 443/tcp     # Allow HTTPS
 ```
 
-Enable firewall and type 'y' when prompted:
+Enable UFW and verify:
 
 ``` sh
 sudo ufw enable
 sudo ufw status verbose
 ```
 
-Change default SSH port:
+Change SSH Port:
 
 ``` sh
-sudo nano /etc/ssh/sshd_config
+sudo ufw allow 666/tcp
 ```
 
+Edit SSH configuration `/etc/ssh/sshd_config` and find or add:
+
+``` txt
+Port 666
+```
+
+Test and restart SSH:
+
 ``` sh
-sudo ufw allow 666/tcp         # changed Port 22 to Port 666
+sudo sshd -t
+sudo systemctl restart ssh
+```
+
+From a new terminal, test the new connection:
+
+``` sh
+ssh -p 666 myusername@vps-ip
+```
+
+Do not close your old SSH session until this test works.
+
+Once confirmed, remove the old SSH port rule:
+
+``` sh
 sudo ufw delete allow 22/tcp
 sudo systemctl restart ssh
+```
+
+Verify the final rules:
+
+``` sh
+sudo ufw status numbered
+```
+
+Result should look like this:
+
+| Port    | Service      | Purpose               |
+| ------- | ------------ | --------------------- |
+| 666/tcp | SSH (custom) | Secure shell access   |
+| 80/tcp  | HTTP         | Web traffic           |
+| 443/tcp | HTTPS        | Encrypted web traffic |
+
+#### Security
+
+Install and configure fail2ban:
+
+``` sh
+sudo apt install fail2ban
+sudo systemctl enable fail2ban
+sudo systemctl start fail2ban
+sudo systemctl status fail2ban
+```
+
+Add SSH-specific protection by editing `/etc/fail2ban/jail.local` and set:
+
+``` txt
+[sshd]
+enabled = true
+port = 666   # or your custom SSH port
+maxretry = 3
+bantime = 1h
+```
+
+#### Hostname
+
+Help identify machines in SSH sessions and logs:
+
+``` sh
+sudo hostnamectl set-hostname my-vps
+echo "127.0.1.1 my-vps" | sudo tee -a /etc/hosts
 ```
 
 #### Updates
@@ -192,6 +277,31 @@ Test the unattended upgrades:
 ``` sh
 sudo unattended-upgrades --dry-run
 sudo systemctl status unattended-upgrades
+```
+
+#### Backups
+
+Schedule automatic backups and maintenance tasks.
+
+backup.sh script:
+
+``` sh
+tar -czf ~/backups/backup_$(date +%F).tar.gz /home/myusername
+```
+
+Open `crontab -e`  and run backup daily at 4 AM
+
+``` txt
+0 4 * * * /home/myusername/backup.sh
+```
+
+#### Audit
+
+Automated system security audit with [lynis](https://github.com/CISOfy/lynis/):
+
+``` sh
+sudo apt install lynis
+sudo lynis audit system
 ```
 
 ## Checks
