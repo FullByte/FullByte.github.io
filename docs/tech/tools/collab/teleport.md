@@ -27,23 +27,20 @@ docker exec teleport tctl users add testuser --roles=editor,access --logins=root
 ### Local
 
 ``` sh
-sudo curl https://apt.releases.teleport.dev/gpg \
--o /usr/share/keyrings/teleport-archive-keyring.asc
-source /etc/os-release
-echo "deb [signed-by=/usr/share/keyrings/teleport-archive-keyring.asc] \
-https://apt.releases.teleport.dev/${ID?} ${VERSION_CODENAME?} stable/v12" \
-| sudo tee /etc/apt/sources.list.d/teleport.list > /dev/null
+sudo apt update  
+sudo apt install -y curl wget apt-transport-https gnupg2  
 
-sudo apt-get update
-sudo apt-get install teleport
+curl https://cdn.teleport.dev/install.sh | bash -s 18.5.0
 
-teleport configure --acme --acme-email=<user>@<domain> --cluster-name=<FQDN> | \
-sudo tee /etc/teleport.yaml > /dev/null
+sudo teleport configure -o file --acme --acme-email=mail@me.ok --cluster-name=ssh.domain.lol
+
+sudo systemctl enable teleport
+sudo systemctl start teleport
 ```
 
 ## Add a server
 
-To add a device your get a new command each time that looks like this:
+To add a device run this command:
 
 ``` sh
 sudo bash -c "$(curl -fsSL https://<teleport-url>/scripts/<random-number>/install-node.sh)"

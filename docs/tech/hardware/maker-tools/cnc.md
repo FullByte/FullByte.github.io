@@ -122,14 +122,9 @@ Wichtige G-Codes & HAL-Befehle
 
 | Befehl             | Beschreibung                     | Beispiel                              |
 |--------------------|----------------------------------|---------------------------------------|
-| `G0` / `G1`        | Eil-/Arbeitsfahrt                | `G1 X100 Y50 F3000`                   |
-| `G17`/`G18`/`G19`  | Arbeitsfläche auswählen          | `G17` XY-Ebene                        |
-| `G90` / `G91`      | Absolut / Inkremental            | `G91 G0 Z-5`                          |
 | `M6 Txx`           | Werkzeugwechsel (mit Tool-Table) | `M6 T03`                              |
 | `G28` / `G30`      | Heimkehr-Positionen              | `G28 X0 Y0`                           |
-| `M3` / `M4` / `M5` | Spindel ein (CW/CCW) / Stopp     | `M3 S12000`                           |
-| HAL-Scope start    | Live-Monitoring                  | `halrun —interactive`                 |
-| `halcmd show pin`  | HAL-Pin-Zustand anzeigen         | `halcmd show pin joint.0.motor-fault` |
+| `M3`  | Spindel ein / Stopp     | `M3 S12000`                           |
 
 ## Examples
 

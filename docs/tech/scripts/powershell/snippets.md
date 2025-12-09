@@ -9,6 +9,14 @@ Get-ChildItem -Path "HKCU:\Software\Microsoft\Office\Outlook\Addins"
 Get-ChildItem -Path "HKLM:\Software\Microsoft\Office\Outlook\Addins"
 ```
 
+## Add PATH
+
+Add current working folder as PATH variable:
+
+``` ps1
+[Environment]::SetEnvironmentVariable("Path", (Get-Location).Path + ";" + [Environment]::GetEnvironmentVariable("Path","Machine"), "Machine")
+```
+
 ## Media
 
 One-liner to convert all PNG Images of a folder to JPG images:
@@ -18,6 +26,14 @@ Get-ChildItem -Path (Get-Location) -Filter *.png | ForEach-Object { $img=[System
 ```
 
 ## Netzwerk
+
+Simple Webserver
+
+Install Polaris (`Install-Module -Name Polaris -Scope CurrentUser`) and run this one-liner:
+
+``` ps1
+Import-Module Polaris; New-PolarisStaticRoute -RoutePath '' -FolderPath (Get-Location).Path -Force; Start-Polaris -Port 8888
+```
 
 ### UDP
 
