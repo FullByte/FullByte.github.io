@@ -33,4 +33,4 @@
     - [ ] Champignonsuppe mit Wasser anrühren und zur Suppe geben.
     - [ ] Sahne und Schmelzkäse dazu und 10 Minuten kochen lassen.
 
-![Käse-Porree-Suppe](_kaese-porree-suppe.jpg)
+![Käse-Porree-Suppe](_kaese-porree-suppe.webp)

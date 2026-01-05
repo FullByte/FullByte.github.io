@@ -17,6 +17,8 @@ docker run -it --rm -p 8000:8000 0xfab1/0xfab1.net serve -a 0.0.0.0:8000
 ```bash
 git clone https://github.com/FullByte/FullByte.github.io.git
 cd FullByte.github.io
+python -m venv .venv
+.venv\\Scripts\\activate
 pip install -r requirements.txt
 python site_manager.py serve
 ```

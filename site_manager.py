@@ -321,18 +321,14 @@ class SiteManager:
                 print(f"❌ Image optimization failed: {e}")
             return False
 
-    def generate_stats(self, export_format: Optional[str] = None, quiet: bool = False) -> bool:
-        """Generate site statistics."""
+    def generate_stats(self, quiet: bool = False) -> bool:
+        """Generate site statistics (always exports JSON)."""
         try:
             stats_generator = SiteStatsGenerator(str(self.docs_dir))
-            stats = stats_generator.generate_all_stats()
-            
-            if export_format == "json":
-                output_file = self.project_root / "site_stats.json"
-                with open(output_file, 'w', encoding='utf-8') as f:
-                    json.dump(stats, f, indent=2, default=str)
+            stats_generator.generate_all_stats()
+            output_file = stats_generator.last_json
+            if output_file:
                 print(f"📊 Statistics exported to {output_file}")
-            
             if not quiet:
                 print("📊 Site statistics generated successfully!")
             return True
@@ -427,18 +423,24 @@ class SiteStatsGenerator:
     
     def __init__(self, docs_dir):
         self.docs_dir = Path(docs_dir)
-        self.stats_file = self.docs_dir / "about" / "0xfab1" / "stats.md"
+        self.stats_file = self.docs_dir / "about" / "website" / "stats.md"
+        self.stats_dir = self.stats_file.parent
+        self.last_json = None
     
-    def generate_all_stats(self):
-        """Generate all site statistics."""
-        stats = {
+    def build_stats(self):
+        """Collect stats without writing outputs."""
+        return {
             'generated_at': datetime.now().isoformat(),
             'content_stats': self.analyze_content(),
             'file_stats': self.analyze_files(),
             'image_stats': self.analyze_images()
         }
-        
-        # Write to stats file
+    
+    def generate_all_stats(self):
+        """Generate all site statistics, export JSON, and write markdown."""
+        stats = self.build_stats()
+        json_path = self.write_json_export(stats)
+        self.last_json = json_path
         self.write_stats_file(stats)
         return stats
     
@@ -487,10 +489,43 @@ class SiteStatsGenerator:
             'by_type': dict(Counter(f.suffix.lower() for f in images))
         }
     
+    def write_json_export(self, stats):
+        """Write stats JSON with dated filename in the stats directory."""
+        if not self.stats_dir.exists():
+            self.stats_dir.mkdir(parents=True, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y-%m-%d-%H%M%S")
+        output_file = self.stats_dir / f"_site_stats-{timestamp}.json"
+        output_file.write_text(json.dumps(stats, indent=2, default=str), encoding="utf-8")
+        return output_file
+    
+    def format_history_table(self):
+        """Build a markdown table linking available JSON stats exports."""
+        files = sorted(self.stats_dir.glob("_site_stats-*.json"), key=lambda p: p.name, reverse=True)
+
+        if not files:
+            return "_No JSON history available yet._"
+
+        rows = ["| Date | JSON |", "| --- | --- |"]
+        for path in files:
+            rows.append(f"| {self._pretty_date_from_filename(path)} | [{path.name}]({path.name}) |")
+        return "\n".join(rows)
+    
+    def _pretty_date_from_filename(self, path: Path) -> str:
+        """Extract a readable timestamp from a stats filename."""
+        match = re.match(r"_site_stats-(\d{4}-\d{2}-\d{2})(?:-(\d{6}))?", path.name)
+        if match:
+            date_part = match.group(1)
+            time_part = match.group(2)
+            if time_part:
+                return f"{date_part} {time_part[:2]}:{time_part[2:4]}:{time_part[4:]}"
+            return date_part
+        return datetime.fromtimestamp(path.stat().st_mtime).isoformat(timespec="seconds")
+    
     def write_stats_file(self, stats):
         """Write statistics to markdown file."""
-        if not self.stats_file.parent.exists():
-            self.stats_file.parent.mkdir(parents=True, exist_ok=True)
+        if not self.stats_dir.exists():
+            self.stats_dir.mkdir(parents=True, exist_ok=True)
+        history_table = self.format_history_table()
         
         content = f"""# Site Statistics
 
@@ -518,6 +553,10 @@ class SiteStatsGenerator:
 
 ### Image Types
 {self.format_image_types(stats['image_stats']['by_type'])}
+
+## JSON History
+
+{history_table}
 """
         
         self.stats_file.write_text(content, encoding='utf-8')
@@ -653,8 +692,7 @@ def main():
     opt_parser.add_argument('--quiet', action='store_true', help='Quiet output')
     
     # Stats command
-    stats_parser = subparsers.add_parser('stats', help='Generate statistics')
-    stats_parser.add_argument('--export', choices=['json'], help='Export format')
+    subparsers.add_parser('stats', help='Generate statistics')
     
     # Test command
     test_parser = subparsers.add_parser('test', help='Test the site')
@@ -695,7 +733,7 @@ def main():
                 quiet=args.quiet
             )
         elif args.command == 'stats':
-            success = manager.generate_stats(export_format=args.export)
+            success = manager.generate_stats()
         elif args.command == 'test':
             success = manager.test_site(output_format=args.format)
         elif args.command == 'check':
