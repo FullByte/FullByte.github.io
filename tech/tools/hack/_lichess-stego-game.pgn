@@ -1,0 +1,20 @@
+[Event "Import"]
+[Site "https://lichess.org/NeGERJbn"]
+[Date "2022.03.03"]
+[White "?"]
+[Black "?"]
+[Result "*"]
+[UTCDate "2022.03.03"]
+[UTCTime "11:06:39"]
+[WhiteElo "?"]
+[BlackElo "?"]
+[Variant "Standard"]
+[TimeControl "-"]
+[ECO "A00"]
+[Opening "Van Geet Opening: Laroche Gambit"]
+[Termination "Unterminated"]
+[Annotator "lichess.org"]
+
+1. Nc3 b5 { A00 Van Geet Opening: Laroche Gambit } 2. a3 g5 3. d4 Nc6 4. Qd2 Bg7 5. Kd1 d6 6. Qe3 b4 7. Rb1 Nf6 8. Nb5 Be6 9. Qh3 Nxd4 10. f3 O-O 11. Nxa7 Ne4 12. fxe4 Rxa7 13. Qxh7+ Kxh7 14. axb4 Kg8 15. e5 Ra2 16. Bd2 Nxe2 17. b3 Bh6 18. Bc3 Nxg1 19. h4 Ra3 20. b5 gxh4 21. Bd4 Bg4+ 22. Ke1 e6 23. c3 Ne2 24. c4 Qc8 25. Bc5 Kg7 26. Rh3 Qb7 27. b4 Qb8 28. b6 Bh5 29. Be3 f6 30. Rc1 Rb3 31. Kd2 cxb6 32. Rf3 Rxe3 33. Kd1 Bf7 34. Rc2 Bh5 *
+
+
