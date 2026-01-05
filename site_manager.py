@@ -425,16 +425,27 @@ class SiteStatsGenerator:
         self.docs_dir = Path(docs_dir)
         self.stats_file = self.docs_dir / "about" / "website" / "stats.md"
         self.stats_dir = self.stats_file.parent
+        self.history_file = self.stats_dir / ".stats_history.json"
         self.last_json = None
     
     def build_stats(self):
-        """Collect stats without writing outputs."""
-        return {
+        """Collect stats, compute deltas, and update history."""
+        stats = {
             'generated_at': datetime.now().isoformat(),
             'content_stats': self.analyze_content(),
             'file_stats': self.analyze_files(),
-            'image_stats': self.analyze_images()
+            'image_stats': self.analyze_images(),
+            'content_by_topic': self.analyze_by_topic(),
+            'largest_files': self.get_largest_files(),
+            'recently_modified': self.get_recently_modified()
         }
+
+        previous_stats = self.load_previous_stats()
+        if previous_stats:
+            stats['changes'] = self.calculate_changes(previous_stats, stats)
+
+        self.save_to_history(stats)
+        return stats
     
     def generate_all_stats(self):
         """Generate all site statistics, export JSON, and write markdown."""
@@ -443,26 +454,95 @@ class SiteStatsGenerator:
         self.last_json = json_path
         self.write_stats_file(stats)
         return stats
+
+    def load_previous_stats(self):
+        """Load the most recent stats from history."""
+        if not self.history_file.exists():
+            return None
+        try:
+            history = json.loads(self.history_file.read_text(encoding="utf-8"))
+            if history:
+                entry = history[-1]
+                return {
+                    'content_stats': {
+                        'markdown_files': entry.get('md_files', 0),
+                        'total_words': entry.get('total_words', 0)
+                    },
+                    'file_stats': {'total_files': entry.get('total_files', 0)},
+                    'image_stats': {
+                        'total_images': entry.get('total_images', 0),
+                        'total_size_mb': entry.get('image_size_mb', 0)
+                    }
+                }
+        except Exception:
+            return None
+        return None
+
+    def save_to_history(self, stats):
+        """Persist a compact history entry for delta tracking."""
+        history = []
+        if self.history_file.exists():
+            try:
+                history = json.loads(self.history_file.read_text(encoding="utf-8"))
+            except Exception:
+                history = []
+
+        history_entry = {
+            'timestamp': stats['generated_at'],
+            'md_files': stats['content_stats']['markdown_files'],
+            'total_words': stats['content_stats']['total_words'],
+            'total_files': stats['file_stats']['total_files'],
+            'total_images': stats['image_stats']['total_images'],
+            'image_size_mb': stats['image_stats']['total_size_mb']
+        }
+
+        history.append(history_entry)
+        if len(history) > 100:
+            history = history[-100:]
+
+        if not self.stats_dir.exists():
+            self.stats_dir.mkdir(parents=True, exist_ok=True)
+        self.history_file.write_text(json.dumps(history, indent=2), encoding="utf-8")
+
+    def calculate_changes(self, previous, current):
+        """Calculate changes between two stat snapshots."""
+        return {
+            'md_files': current['content_stats']['markdown_files'] - previous['content_stats']['markdown_files'],
+            'words': current['content_stats']['total_words'] - previous['content_stats']['total_words'],
+            'total_files': current['file_stats']['total_files'] - previous['file_stats']['total_files'],
+            'images': current['image_stats']['total_images'] - previous['image_stats']['total_images'],
+            'image_size_mb': round(current['image_stats']['total_size_mb'] - previous['image_stats']['total_size_mb'], 2)
+        }
     
     def analyze_content(self):
         """Analyze content statistics."""
         md_files = list(self.docs_dir.rglob("*.md"))
         total_words = 0
         total_lines = 0
-        
+        code_blocks = 0
+        links = 0
+
         for file_path in md_files:
             try:
                 content = file_path.read_text(encoding='utf-8')
                 total_words += len(content.split())
                 total_lines += len(content.splitlines())
+                code_blocks += content.count('```')
+                links += content.count('](') + content.count('href=')
             except Exception:
                 continue
-        
+
+        reading_time = round(total_words / 200)  # ~200 wpm
+
         return {
             'markdown_files': len(md_files),
             'total_words': total_words,
             'total_lines': total_lines,
-            'avg_words_per_file': total_words // len(md_files) if md_files else 0
+            'avg_words_per_file': total_words // len(md_files) if md_files else 0,
+            'code_blocks': code_blocks // 2,  # ``` appears twice per block
+            'total_links': links,
+            'reading_time_hours': reading_time // 60,
+            'reading_time_minutes': reading_time % 60
         }
     
     def analyze_files(self):
@@ -488,19 +568,72 @@ class SiteStatsGenerator:
             'total_size_mb': round(total_size / (1024 * 1024), 2),
             'by_type': dict(Counter(f.suffix.lower() for f in images))
         }
+
+    def analyze_by_topic(self):
+        """Analyze content by directory/topic."""
+        topics = {}
+        md_files = list(self.docs_dir.rglob("*.md"))
+
+        for file_path in md_files:
+            try:
+                rel_path = file_path.relative_to(self.docs_dir)
+                topic = str(Path(*rel_path.parts[:-1])) if len(rel_path.parts) > 1 else "root"
+                words = len(file_path.read_text(encoding='utf-8').split())
+
+                if topic not in topics:
+                    topics[topic] = {'files': 0, 'words': 0}
+                topics[topic]['files'] += 1
+                topics[topic]['words'] += words
+            except Exception:
+                continue
+
+        return sorted(topics.items(), key=lambda x: x[1]['words'], reverse=True)[:20]
+
+    def get_largest_files(self, limit: int = 10):
+        """Return largest markdown files by word count."""
+        md_files = list(self.docs_dir.rglob("*.md"))
+        file_sizes = []
+
+        for file_path in md_files:
+            try:
+                words = len(file_path.read_text(encoding='utf-8').split())
+                rel_path = file_path.relative_to(self.docs_dir)
+                file_sizes.append((str(rel_path), words))
+            except Exception:
+                continue
+
+        file_sizes.sort(key=lambda x: x[1], reverse=True)
+        return file_sizes[:limit]
+
+    def get_recently_modified(self, limit: int = 10):
+        """Return recently modified markdown files."""
+        md_files = list(self.docs_dir.rglob("*.md"))
+        file_times = []
+
+        for file_path in md_files:
+            try:
+                mtime = file_path.stat().st_mtime
+                words = len(file_path.read_text(encoding='utf-8').split())
+                rel_path = file_path.relative_to(self.docs_dir)
+                file_times.append((str(rel_path), words, mtime))
+            except Exception:
+                continue
+
+        file_times.sort(key=lambda x: x[2], reverse=True)
+        return [(path, words, datetime.fromtimestamp(mtime)) for path, words, mtime in file_times[:limit]]
     
     def write_json_export(self, stats):
         """Write stats JSON with dated filename in the stats directory."""
         if not self.stats_dir.exists():
             self.stats_dir.mkdir(parents=True, exist_ok=True)
         timestamp = datetime.now().strftime("%Y-%m-%d-%H%M%S")
-        output_file = self.stats_dir / f"_site_stats-{timestamp}.json"
+        output_file = self.stats_dir / f"site_stats-{timestamp}.json"
         output_file.write_text(json.dumps(stats, indent=2, default=str), encoding="utf-8")
         return output_file
     
-    def format_history_table(self):
+    def format_json_history_table(self):
         """Build a markdown table linking available JSON stats exports."""
-        files = sorted(self.stats_dir.glob("_site_stats-*.json"), key=lambda p: p.name, reverse=True)
+        files = sorted(self.stats_dir.glob("site_stats-*.json"), key=lambda p: p.name, reverse=True)
 
         if not files:
             return "_No JSON history available yet._"
@@ -512,7 +645,7 @@ class SiteStatsGenerator:
     
     def _pretty_date_from_filename(self, path: Path) -> str:
         """Extract a readable timestamp from a stats filename."""
-        match = re.match(r"_site_stats-(\d{4}-\d{2}-\d{2})(?:-(\d{6}))?", path.name)
+        match = re.match(r"site_stats-(\d{4}-\d{2}-\d{2})(?:-(\d{6}))?", path.name)
         if match:
             date_part = match.group(1)
             time_part = match.group(2)
@@ -520,46 +653,114 @@ class SiteStatsGenerator:
                 return f"{date_part} {time_part[:2]}:{time_part[2:4]}:{time_part[4:]}"
             return date_part
         return datetime.fromtimestamp(path.stat().st_mtime).isoformat(timespec="seconds")
+
+    def format_stats_history_table(self):
+        """Format historical statistics from compact history file."""
+        if not self.history_file.exists():
+            return "*No historical data available yet.*"
+
+        try:
+            history = json.loads(self.history_file.read_text(encoding="utf-8"))
+        except Exception:
+            return "*Error loading historical data.*"
+
+        if not history:
+            return "*No historical data available yet.*"
+
+        table = "| Date | MD Files | Total Words | Total Files | Images | Image Size (MB) |\n"
+        table += "|------|----------|-------------|-------------|--------|------------------|\n"
+
+        for entry in reversed(history[-20:]):
+            timestamp = datetime.fromisoformat(entry['timestamp']).strftime('%Y-%m-%d %H:%M')
+            table += f"| {timestamp} | {entry['md_files']} | {entry['total_words']:,} | {entry['total_files']} | {entry['total_images']} | {entry['image_size_mb']} |\n"
+        return table
     
     def write_stats_file(self, stats):
         """Write statistics to markdown file."""
         if not self.stats_dir.exists():
             self.stats_dir.mkdir(parents=True, exist_ok=True)
-        history_table = self.format_history_table()
-        
+
+        timestamp = datetime.fromisoformat(stats['generated_at']).strftime('%Y-%m-%d %H:%M')
+        cs = stats['content_stats']
+        fs = stats['file_stats']
+        imgs = stats['image_stats']
+
         content = f"""# Site Statistics
 
-*Generated on {stats['generated_at']}*
+This is an automatically created page with insights on the content of this website.
+
+*Generated on {timestamp}*
 
 ## Content Overview
 
-- **Markdown Files**: {stats['content_stats']['markdown_files']}
-- **Total Words**: {stats['content_stats']['total_words']:,}
-- **Total Lines**: {stats['content_stats']['total_lines']:,}
-- **Average Words per File**: {stats['content_stats']['avg_words_per_file']}
+- **Markdown Files**: {cs['markdown_files']}
+- **Total Words**: {cs['total_words']:,}
+- **Total Lines**: {cs['total_lines']:,}
+- **Average Words per File**: {cs['avg_words_per_file']}
+- **Code Blocks**: {cs.get('code_blocks', 0):,}
+- **Total Links**: {cs.get('total_links', 0):,}
+- **Estimated Reading Time**: {cs.get('reading_time_hours', 0)}h {cs.get('reading_time_minutes', 0)}m
 
 ## File Statistics
 
-- **Total Files**: {stats['file_stats']['total_files']}
-- **Directories**: {stats['file_stats']['directories']}
+- **Total Files**: {fs['total_files']}
+- **Directories**: {fs['directories']}
 
 ### File Types
-{self.format_file_types(stats['file_stats']['file_types'])}
+{self.format_file_types(fs['file_types'])}
 
 ## Image Statistics
 
-- **Total Images**: {stats['image_stats']['total_images']}
-- **Total Size**: {stats['image_stats']['total_size_mb']} MB
+- **Total Images**: {imgs['total_images']}
+- **Total Size**: {imgs['total_size_mb']} MB
+- **Average Size**: {round(imgs['total_size_mb'] / imgs['total_images'], 2) if imgs['total_images'] > 0 else 0} MB per image
 
 ### Image Types
-{self.format_image_types(stats['image_stats']['by_type'])}
-
-## JSON History
-
-{history_table}
+{self.format_image_types(imgs['by_type'])}
 """
-        
+
+        if 'changes' in stats:
+            changes = stats['changes']
+            content += f"""
+## Changes Since Last Update
+
+- **Markdown Files**: {self.format_change(changes['md_files'])}
+- **Words**: {self.format_change(changes['words'])}
+- **Total Files**: {self.format_change(changes['total_files'])}
+- **Images**: {self.format_change(changes['images'])}
+- **Image Size**: {self.format_change(changes['image_size_mb'])} MB
+"""
+
+        content += "\n## Top Content by Topic\n\n"
+        for topic, data in stats['content_by_topic'][:10]:
+            reading_min = round(data['words'] / 200)
+            content += f"- **{topic}**: {data['files']} files, {data['words']:,} words ({reading_min} min)\n"
+
+        content += "\n## Largest Files\n\n"
+        for path, words in stats['largest_files'][:5]:
+            reading_min = round(words / 200)
+            content += f"- **{path}**: {words:,} words ({reading_min} min)\n"
+
+        content += "\n## Recently Modified\n\n"
+        for path, words, mtime in stats['recently_modified'][:5]:
+            modified_str = mtime.strftime('%Y-%m-%d %H:%M')
+            content += f"- **{path}**: {words:,} words (modified {modified_str})\n"
+
+        content += "\n## Historical Statistics\n\n"
+        content += self.format_stats_history_table()
+
+        content += "\n\n## JSON Exports\n\n"
+        content += self.format_json_history_table()
+
         self.stats_file.write_text(content, encoding='utf-8')
+
+    def format_change(self, value):
+        """Format a change value with sign."""
+        if value > 0:
+            return f"+{value:,}"
+        if value < 0:
+            return f"{value:,}"
+        return "0"
     
     def format_file_types(self, file_types):
         """Format file types for markdown."""
