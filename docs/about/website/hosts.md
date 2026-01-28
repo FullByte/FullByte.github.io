@@ -6,7 +6,7 @@ I am trying out new services and if the host websites i try to run 0xfab1.net. H
 
 This website is hosted/built using the following services:
 
-| Service                                                  | Direct Link                                                     | 0xfab1 CNAME                               |
+| Service                                                  | Direct Link                                                     | 0xfab1 Link                                |
 |----------------------------------------------------------|-----------------------------------------------------------------|--------------------------------------------|
 | [GitHub Pages](https://pages.github.com/)                | [0xfab1@github](https://fullbyte.github.io)                     | <https://www.0xfab1.net/>                  |
 | [IPFS](https://ipfs.io/) with [fleek](https://fleek.co/) | Broke (my fault)... need to re-create this                      | Broke (my fault)... need to re-create this |
@@ -16,7 +16,7 @@ This website is hosted/built using the following services:
 | [Vercel](https://vercel.com/)                            | [0xfab1@vercel](https://0xfab1.vercel.app/)                     | <https://vercel.0xfab1.net/>               |
 | [cloudflare](https://www.cloudflare.com/)                | [0xfab1@cloudflare](https://fullbyte-github-io.pages.dev)       | <https://cloudflare.0xfab1.net/>           |
 | [Render](https://render.com/)                            | [0xfab1@render](https://fullbyte-github-io.onrender.com/)       | <https://render.0xfab1.net>                |
-| [Sevalla](https://app.sevalla.com/)                      | [0xfab1@kinsta](https://xfab1net-t93nk.kinsta.page/)            | <https://sevalla.0xfab1.net>               |
+| [Sevalla](https://app.sevalla.com/)                      | [0xfab1@kinsta](https://xfab1net-t93nk.kinsta.page/)            | <https://kinsta.0xfab1.net>                |
 
 Services to try (again):
 
