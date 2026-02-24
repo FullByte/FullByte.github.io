@@ -1101,7 +1101,7 @@
     **Branch strategy**: Tie environments to a simple branch model so the path from commit to production is auditable (e.g. trunk-based: `main` -> Staging, release tag -> Production; or GitFlow with a protected `release/*` path).
     
     **Branch security best practices**
-    
+
     - Protect `main` and release branches: required PR reviews, required status checks, no direct pushes, no force pushes, and no branch deletion.
     - Require green checks for tests, SAST, SCA, and secret scanning before merge.
     - Use CODEOWNERS for critical paths (security, infra, deployment workflows) so the right reviewers are always included.
@@ -2225,6 +2225,7 @@
     - **Importance**: `Nice-to-have` | `Important` | `Essential`
 
     **General**
+    
     | Item | Effort | Cost | Importance |
     | :--- | :--- | :--- | :--- |
     | CIA, Least Privilege, Defense in Depth, and **Keep it simple** reflected in design and operations | Medium | Low | Essential |
@@ -2256,6 +2257,7 @@
     | Compliance: Shared-responsibility matrix documented; inherited controls mapped | Low | Low | Important |
 
     **Azure**
+
     | Item | Effort | Cost | Importance |
     | :--- | :--- | :--- | :--- |
     | Entra ID and MFA; least-privilege roles and managed identities; user/group/tenant model documented | Medium | Medium | Essential |
@@ -2274,6 +2276,7 @@
     | Docs: resource layout, networking, identity, runbooks documented | Low | Low | Important |
 
     **GitHub**
+
     | Item | Effort | Cost | Importance |
     | :--- | :--- | :--- | :--- |
     | Branch protection, required reviews and status checks; 2FA for org members | Low | Low | Essential |
@@ -2300,6 +2303,7 @@
     - **Wichtigkeit**: `Nice-to-have` | `Wichtig` | `Essentiell`
 
     **Allgemein**
+
     | Punkt | Aufwand | Kosten | Wichtigkeit |
     | :--- | :--- | :--- | :--- |
     | CIA, Least Privilege, Defense in Depth und **Einfachheit** in Design und Betrieb reflektiert | Mittel | Niedrig | Essentiell |
@@ -2331,6 +2335,7 @@
     | Compliance: Shared-Responsibility-Matrix dokumentiert; geerbte Kontrollen gemappt | Niedrig | Niedrig | Wichtig |
 
     **Azure**
+
     | Punkt | Aufwand | Kosten | Wichtigkeit |
     | :--- | :--- | :--- | :--- |
     | Entra ID und MFA; Least-Privilege-Rollen; Managed Identities; Tenant-Modell dokumentiert | Mittel | Mittel | Essentiell |
@@ -2349,6 +2354,7 @@
     | Doku: Ressourcenlayout, Netzwerk, Identität, Runbooks | Niedrig | Niedrig | Wichtig |
 
     **GitHub**
+
     | Punkt | Aufwand | Kosten | Wichtigkeit |
     | :--- | :--- | :--- | :--- |
     | Branch Protection, Reviews, Statuschecks; 2FA für Org | Niedrig | Niedrig | Essentiell |
