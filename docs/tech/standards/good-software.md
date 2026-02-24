@@ -12,7 +12,8 @@
 
     Es reicht nicht aus, dass Code einfach nur „funktioniert“. Gute Software verdient das Vertrauen der Nutzer durch Zuverlässigkeit, Datensicherheit und vorhersehbares Verhalten. Wir erreichen dies durch transparente Entwicklungspraktiken, rigoroses Testen und Ehrlichkeit über die Fähigkeiten unseres Systems.
 
-## Transparency & Trust
+**Transparency & Trust**
+
 === "EN"
 
     We believe that trust is built through transparency. We clearly define **how** we secure data, **how** we ensure availability, and **how** we handle failures. We do not hide behind obscurity; we rely on proven standards and defensible architecture.
@@ -21,7 +22,8 @@
 
     Wir glauben, dass Vertrauen durch Transparenz entsteht. Wir definieren klar, **wie** wir Daten sichern, **wie** wir Verfügbarkeit gewährleisten und **wie** wir mit Ausfällen umgehen. Wir verstecken uns nicht hinter Unklarheiten; wir setzen auf bewährte Standards und eine verteidigungsfähige Architektur.
 
-## Limits & Scope
+**Limits & Scope**
+
 === "EN"
 
     Every piece of software has limits. We are explicit about what our systems are **not** designed to do. Misusing a system outside its intended scope—such as using a standard web app for high-frequency trading or life-critical control systems—leads to failure and unhappy customers. We define these operational boundaries clearly so that we deliver excellence within them.
@@ -30,15 +32,16 @@
 
     Jede Software hat Grenzen. Wir machen explizit deutlich, wofür unsere Systeme **nicht** ausgelegt sind. Die missbräuchliche Nutzung eines Systems außerhalb seines vorgesehenen Bereichs – wie z. B. die Nutzung einer Standard-Web-App für Hochfrequenzhandel oder lebenswichtige Steuerungssysteme – führt zu Ausfällen und unzufriedenen Kunden. Wir definieren diese operativen Grenzen klar, um innerhalb dieser Grenzen Exzellenz zu liefern.
 
-## How to use this document
+**How to use this document**
+
 === "EN"
 
     This guide serves as our engineering standard. It is organised by topic, with a specific focus on **General Engineering Principles**, **Web Applications on Azure**, and **GitHub-based Deployment**.
 
     Each chapter contains:
-    *   **General**: Universal principles that apply regardless of the technology stack. **Start here.**
-    *   **Azure**: Concrete implementation guidance for our primary cloud platform.
-    *   **GitHub**: Operational details for our deployment and security automation pipelines.
+    - **General**: Universal principles that apply regardless of the technology stack. **Start here.**
+    - **Azure**: Concrete implementation guidance for our primary cloud platform.
+    - **GitHub**: Operational details for our deployment and security automation pipelines.
 
     Use the **General** sections as your baseline for every project. Use the **Azure** and **GitHub** sections as the mandatory standard when working with our default stack.
 
@@ -47,9 +50,9 @@
     Dieser Leitfaden dient als unser technischer Standard. Er ist nach Themen gegliedert, mit besonderem Fokus auf **Allgemeine Entwicklungsprinzipien**, **Webanwendungen auf Azure** und **Deployment mit GitHub**.
 
     Jedes Kapitel enthält:
-    *   **Allgemein**: Universelle Prinzipien, die unabhängig vom Technologie-Stack gelten. **Hier beginnen.**
-    *   **Azure**: Konkrete Implementierungsrichtlinien für unsere primäre Cloud-Plattform.
-    *   **GitHub**: Operative Details für unsere Deployment- und Sicherheitsautomatisierung.
+    - **Allgemein**: Universelle Prinzipien, die unabhängig vom Technologie-Stack gelten. **Hier beginnen.**
+    - **Azure**: Konkrete Implementierungsrichtlinien für unsere primäre Cloud-Plattform.
+    - **GitHub**: Operative Details für unsere Deployment- und Sicherheitsautomatisierung.
 
     Nutze die **Allgemeinen** Abschnitte als Basis für jedes Projekt. Nutze die **Azure**- und **GitHub**-Abschnitte als verbindlichen Standard, wenn du mit unserem Standard-Stack arbeitest.
 
@@ -58,13 +61,6 @@
 === "EN"
 
     Principles that apply regardless of technology.
-
-=== "DE"
-
-    Prinzipien, die unabhängig von der Technologie gelten.
-
-**General**
-=== "EN"
 
     - **CIA Triad**
       - **Confidentiality**: Only authorised parties access data (access control, encryption).
@@ -76,6 +72,8 @@
 
 === "DE"
 
+    Prinzipien, die unabhängig von der Technologie gelten.
+
     - **CIA-Triade (Schutzziele)**
       - **Vertraulichkeit (Confidentiality)**: Nur autorisierte Parteien haben Zugriff auf Daten (Zugriffskontrolle, Verschlüsselung).
       - **Integrität (Integrity)**: Daten und Systeme bleiben korrekt und unverändert (Prüfsummen, Signaturen, Audit-Logs).
@@ -84,74 +82,66 @@
     - **Defense in Depth (Verteidigung in der Tiefe)**: Kombination mehrerer Schutzschichten (Netzwerk, Identität, Anwendung, Daten), damit ein einzelner Fehler nicht das gesamte System kompromittiert.
     - **Keep it simple (Einfachheit)**: Bevorzuge einfache, verständliche Designs und Prozesse gegenüber komplexen. Einfachere Systeme sind leichter zu sichern, zu betreiben und zu prüfen. Vermeide unnötige Abstraktion, Duplizierung von Konzepten oder Tools, die ihren Aufwand nicht rechtfertigen.
 
-#### Principles -> example minimum requirements to define
-
-=== "EN"
-
-    - **Confidentiality**
-      - All internet-facing endpoints use TLS 1.3.
-      - Secrets are only stored in a vault, never in source control.
-      - Access to production data is role-based and logged.
-    - **Integrity**
-      - Pull requests require review before merge to protected branches.
-      - CI verifies tests and static checks before deployment.
-      - Critical configuration changes are tracked in version control.
-    - **Availability**
-      - Define target uptime and alerting thresholds per critical service.
-      - Define backup cadence and recovery objectives (RPO/RTO).
-      - Perform restore tests on a fixed schedule.
-    - **Least Privilege**
-      - No shared admin accounts for normal operations.
-      - Admin access is limited, time-bound where possible, and auditable.
-      - Permissions are reviewed periodically.
-    - **Defense in Depth**
-      - Use at least identity controls, network controls, and application controls.
-      - Exposed services are protected by WAF and monitoring.
-      - Logging and alerting are enabled for security-relevant events.
-    - **Keep it simple**
-      - Minimise number of environments, tools, and custom role variants.
-      - Prefer one standard deployment path and one standard rollback path.
-      - Remove controls/processes that add complexity without measurable value.
+        **Example minimum requirements**
+        - **Confidentiality**
+            - All internet-facing endpoints use TLS 1.3.
+            - Secrets are only stored in a vault, never in source control.
+            - Access to production data is role-based and logged.
+        - **Integrity**
+            - Pull requests require review before merge to protected branches.
+            - CI verifies tests and static checks before deployment.
+            - Critical configuration changes are tracked in version control.
+        - **Availability**
+            - Define target uptime and alerting thresholds per critical service.
+            - Define backup cadence and recovery objectives (RPO/RTO).
+            - Perform restore tests on a fixed schedule.
+        - **Least Privilege**
+            - No shared admin accounts for normal operations.
+            - Admin access is limited, time-bound where possible, and auditable.
+            - Permissions are reviewed periodically.
+        - **Defense in Depth**
+            - Use at least identity controls, network controls, and application controls.
+            - Exposed services are protected by WAF and monitoring.
+            - Logging and alerting are enabled for security-relevant events.
+        - **Keep it simple**
+            - Minimise number of environments, tools, and custom role variants.
+            - Prefer one standard deployment path and one standard rollback path.
+            - Remove controls/processes that add complexity without measurable value.
 
 === "DE"
 
-    - **Vertraulichkeit**
-      - Alle öffentlich zugänglichen Endpunkte nutzen TLS 1.3.
-      - Geheimnisse (Secrets) werden nur in einem Vault gespeichert, niemals in der Versionsverwaltung.
-      - Der Zugriff auf Produktionsdaten ist rollenbasiert und protokolliert.
-    - **Integrität**
-      - Pull Requests erfordern ein Review vor dem Merge in geschützte Branches.
-      - CI verifiziert Tests und statische Prüfungen vor dem Deployment.
-      - Kritische Konfigurationsänderungen werden in der Versionsverwaltung nachverfolgt.
-    - **Verfügbarkeit**
-      - Ziel-Uptime und Alarmierungsschwellen pro kritischem Service definieren.
-      - Backup-Turnus und Wiederherstellungsziele (RPO/RTO) definieren.
-      - Restore-Tests nach festem Zeitplan durchführen.
-    - **Least Privilege**
-      - Keine geteilten Admin-Accounts für den normalen Betrieb.
-      - Admin-Zugriff ist begrenzt, zeitlich beschränkt (wo möglich) und auditierbar.
-      - Berechtigungen werden regelmäßig überprüft.
-    - **Defense in Depth**
-      - Nutzung von mindestens Identitätskontrollen, Netzwerkkontrollen und Anwendungskontrollen.
-      - Exponierte Dienste sind durch WAF und Monitoring geschützt.
-      - Logging und Alerting sind für sicherheitsrelevante Ereignisse aktiviert.
-    - **Keep it simple**
-      - Anzahl der Umgebungen, Tools und benutzerdefinierten Rollenvarianten minimieren.
-      - Einen Standard-Deployment-Pfad und einen Standard-Rollback-Pfad bevorzugen.
-      - Kontrollen/Prozesse entfernen, die Komplexität ohne messbaren Mehrwert hinzufügen.
+        **Beispielhafte Mindestanforderungen**
+        - **Vertraulichkeit**
+            - Alle öffentlich zugänglichen Endpunkte nutzen TLS 1.3.
+            - Geheimnisse (Secrets) werden nur in einem Vault gespeichert, niemals in der Versionsverwaltung.
+            - Der Zugriff auf Produktionsdaten ist rollenbasiert und protokolliert.
+        - **Integrität**
+            - Pull Requests erfordern ein Review vor dem Merge in geschützte Branches.
+            - CI verifiziert Tests und statische Prüfungen vor dem Deployment.
+            - Kritische Konfigurationsänderungen werden in der Versionsverwaltung nachverfolgt.
+        - **Verfügbarkeit**
+            - Ziel-Uptime und Alarmierungsschwellen pro kritischem Service definieren.
+            - Backup-Turnus und Wiederherstellungsziele (RPO/RTO) definieren.
+            - Restore-Tests nach festem Zeitplan durchführen.
+        - **Least Privilege**
+            - Keine geteilten Admin-Accounts für den normalen Betrieb.
+            - Admin-Zugriff ist begrenzt, zeitlich beschränkt (wo möglich) und auditierbar.
+            - Berechtigungen werden regelmäßig überprüft.
+        - **Defense in Depth**
+            - Nutzung von mindestens Identitätskontrollen, Netzwerkkontrollen und Anwendungskontrollen.
+            - Exponierte Dienste sind durch WAF und Monitoring geschützt.
+            - Logging und Alerting sind für sicherheitsrelevante Ereignisse aktiviert.
+        - **Keep it simple**
+            - Anzahl der Umgebungen, Tools und benutzerdefinierten Rollenvarianten minimieren.
+            - Einen Standard-Deployment-Pfad und einen Standard-Rollback-Pfad bevorzugen.
+            - Kontrollen/Prozesse entfernen, die Komplexität ohne messbaren Mehrwert hinzufügen.
 
 ## Identity & Access
 
+**General**
 === "EN"
 
     Secure identity management is the foundation of access control.
-
-=== "DE"
-
-    Sicheres Identitätsmanagement ist das Fundament der Zugriffskontrolle.
-
-**General**
-=== "EN"
 
     - Use a central identity provider for users and service accounts; avoid local accounts for application access.
     - Enforce **Multi-Factor Authentication (MFA)** for human users.
@@ -159,6 +149,8 @@
     - Prefer **managed identities** or short-lived tokens for applications so credentials are not stored in config.
 
 === "DE"
+
+    Sicheres Identitätsmanagement ist das Fundament der Zugriffskontrolle.
 
     - Nutze einen zentralen Identitätsanbieter (IdP) für Nutzer und Service-Konten; vermeide lokale Accounts für den Zugriff.
     - Erzwinge **Multi-Faktor-Authentifizierung (MFA)** für alle menschlichen Benutzer.
@@ -191,16 +183,10 @@
 
 ## User Management
 
+**General**
 === "EN"
 
     Effective user and role modeling ensures secure isolation and maintainability.
-
-=== "DE"
-
-    Effektive Nutzer- und Rollenmodellierung gewährleistet sichere Isolierung und Wartbarkeit.
-
-**General**
-=== "EN"
 
     - **Users**: Represent human or system actors. Identify them via a single source of truth (e.g. IdP); avoid duplicate or local user stores that can get out of sync.
     - **Roles**: Define permissions by role (e.g. Viewer, Editor, Admin) rather than per-user. Assign users to roles; keep the set of roles small and well-defined so that access reviews and audits are straightforward.
@@ -210,6 +196,8 @@
     - **Lifecycle**: Define how users are created, updated, disabled, and removed; how role and group membership changes; and how tenant onboarding/offboarding works. Document and automate where possible.
 
 === "DE"
+
+    Effektive Nutzer- und Rollenmodellierung gewährleistet sichere Isolierung und Wartbarkeit.
 
     - **Nutzer**: Repräsentieren menschliche oder System-Akteure. Identifizieren Sie diese über eine einzige Quelle der Wahrheit (z. B. IdP); vermeiden Sie doppelte oder lokale Nutzerspeicher, die asynchron werden können.
     - **Rollen**: Definieren Sie Berechtigungen pro Rolle (z. B. Betrachter, Bearbeiter, Admin) statt pro Nutzer. Weisen Sie Nutzer Rollen zu; halten Sie die Menge an Rollen klein und klar definiert, damit Audits einfach bleiben.
@@ -246,20 +234,12 @@
 
 ## Frontend vs. Backend
 
+**General**
 === "EN"
 
     Clear trust boundaries between client and server prevent security bypasses.
 
     Keep the trust boundary clear: frontend is user-controlled, backend is policy-enforced.
-
-=== "DE"
-
-    Klare Vertrauensgrenzen zwischen Client und Server verhindern Sicherheitsumgehungen.
-
-    Die Vertrauensgrenze muss klar sein: Das Frontend wird vom Benutzer kontrolliert, das Backend setzt die Richtlinien durch.
-
-**General**
-=== "EN"
 
     - **Frontend responsibilities**
       - Enforce safe rendering (XSS prevention), strict input validation on UI level, and secure session/token handling.
@@ -275,6 +255,10 @@
       - Returning excessive data fields to frontend “just in case”.
 
 === "DE"
+
+    Klare Vertrauensgrenzen zwischen Client und Server verhindern Sicherheitsumgehungen.
+
+    Die Vertrauensgrenze muss klar sein: Das Frontend wird vom Benutzer kontrolliert, das Backend setzt die Richtlinien durch.
 
     - **Frontend-Verantwortlichkeiten**
       - Sicheres Rendering erzwingen (XSS-Prävention), strenge Eingabevalidierung auf UI-Ebene und sicheres Session/Token-Handling.
@@ -315,20 +299,12 @@
 
 ## Interfaces
 
+**General**
 === "EN"
 
     Well-defined interfaces enable automation and secure interaction across all clients.
 
     Good software is built on strong, well-defined interfaces. The **API** (Application Programming Interface) is the core of the application, enforcing all logic and security. The **UI** (User Interface) is just one of many possible clients. This approach enables automation, deep linking, and headless usage, but requires strict backend validation.
-
-=== "DE"
-
-    Klar definierte Schnittstellen ermöglichen Automatisierung und sichere Interaktion über alle Clients hinweg.
-
-    Gute Software basiert auf starken, klar definierten Schnittstellen. Die **API** (Application Programming Interface) ist der Kern der Anwendung und setzt alle Logik und Sicherheit durch. Die **UI** (Benutzeroberfläche) ist nur einer von vielen möglichen Clients. Dieser Ansatz ermöglicht Automatisierung, Deep Linking und Headless-Nutzung, erfordert aber strikte Backend-Validierung.
-
-**General**
-=== "EN"
 
     - **API First**: Design the API before the UI. The API must be complete, secure, and documented (e.g., OpenAPI/Swagger).
     - **UI as a Client**: Treat your own UI as an untrusted client. It should not contain business rules that are not also enforced by the API.
@@ -341,6 +317,10 @@
 
 === "DE"
 
+    Klar definierte Schnittstellen ermöglichen Automatisierung und sichere Interaktion über alle Clients hinweg.
+
+    Gute Software basiert auf starken, klar definierten Schnittstellen. Die **API** (Application Programming Interface) ist der Kern der Anwendung und setzt alle Logik und Sicherheit durch. Die **UI** (Benutzeroberfläche) ist nur einer von vielen möglichen Clients. Dieser Ansatz ermöglicht Automatisierung, Deep Linking und Headless-Nutzung, erfordert aber strikte Backend-Validierung.
+
     - **API First**: Designe die API vor der UI. Die API muss vollständig, sicher und dokumentiert sein (z. B. OpenAPI/Swagger).
     - **UI als Client**: Behandle deine eigene UI als nicht vertrauenswürdigen Client. Sie sollte keine Geschäftsregeln enthalten, die nicht auch von der API durchgesetzt werden.
     - **Headless-Nutzung**: Ermögliche die Nutzung ohne GUI über CLI-Argumente oder URL-Parameter. Dies unterstützt Automatisierung und Power-User.
@@ -352,20 +332,12 @@
 
 ## Role Matrix
 
+**General**
 === "EN"
 
     A clear definition of roles and permissions enforces the principle of least privilege.
 
     Use least privilege by default and keep role scopes explicit.
-
-=== "DE"
-
-    Eine klare Definition von Rollen und Rechten setzt das Prinzip der geringsten Rechte durch.
-
-    Nutze standardmäßig das Prinzip der geringsten Rechte und halte Rollengrenzen explizit.
-
-**General**
-=== "EN"
 
     | Role | Minimum rights | Typical No-Gos |
     | :--- | :--- | :--- |
@@ -375,13 +347,18 @@
     | **Support** | View limited customer context, run approved support actions, escalate incidents. | Unrestricted data exports, changing security policy, accessing secrets or payment internals without approval. |
     | **Service Account** | Machine-to-machine scoped permissions for one workload; short-lived credentials/managed identity. | Reusing one service account across many systems; interactive login; wildcard permissions. |
 
-    - **Operational rules**
-      - Separate human and machine identities.
-      - Time-bound elevated access where possible.
-      - Access review on fixed cadence and after role changes.
-      - Break-glass access is audited, rare, and post-reviewed.
+    **Operational rules**
+
+    - Separate human and machine identities.
+    - Time-bound elevated access where possible.
+    - Access review on fixed cadence and after role changes.
+    - Break-glass access is audited, rare, and post-reviewed.
 
 === "DE"
+
+    Eine klare Definition von Rollen und Rechten setzt das Prinzip der geringsten Rechte durch.
+
+    Nutze standardmäßig das Prinzip der geringsten Rechte und halte Rollengrenzen explizit.
 
     | Rolle | Minimale Rechte | Typische No-Gos |
     | :--- | :--- | :--- |
@@ -391,11 +368,11 @@
     | **Support** | Begrenzter Kundenkontext, genehmigte Support-Aktionen, Eskalation von Vorfällen. | Uneingeschränkte Datenexporte, Ändern von Sicherheitsrichtlinien, Zugriff auf Secrets/Zahlungsdaten ohne Freigabe. |
     | **Service Account** | Maschinen-zu-Maschinen-Zugriff für einen Workload; kurzlebige Credentials/Managed Identity. | Wiederverwendung eines Kontos für viele Systeme; interaktives Login; Wildcard-Berechtigungen. |
 
-    - **Operative Regeln**
-      - Trennung von menschlichen und maschinellen Identitäten.
-      - Zeitlich begrenzter erhöhter Zugriff, wo möglich.
-      - Zugriffsüberprüfung in festem Rhythmus und nach Rollenwechseln.
-      - Notfallzugriff (Break-Glass) wird auditiert, ist selten und wird nachbereitet.
+    **Operative Regeln**
+    - Trennung von menschlichen und maschinellen Identitäten.
+    - Zeitlich begrenzter erhöhter Zugriff, wo möglich.
+    - Zugriffsüberprüfung in festem Rhythmus und nach Rollenwechseln.
+    - Notfallzugriff (Break-Glass) wird auditiert, ist selten und wird nachbereitet.
 
 **Azure**
 === "EN"
@@ -425,41 +402,33 @@
 
 ## Data Design
 
+**General**
 === "EN"
 
     Secure data architecture prevents leaks and ensures strict tenant isolation.
 
     Data design is security design. If data boundaries are weak, tenant isolation and compliance usually fail later in production.
 
-=== "DE"
-
-    Sichere Datenarchitektur verhindert Lecks und gewährleistet strikte Mandantentrennung.
-
-    Datendesign ist Sicherheitsdesign. Wenn Datengrenzen schwach sind, scheitern Mandantenisolierung und Compliance meist später in der Produktion.
-
-**General**
-=== "EN"
-
-    - **Define data classes early**: Classify data before implementation and store the classification in architecture/docs.
-    - **Brisante Daten (sensitive/high-impact data)**
+    **Define data classes early**: Classify data before implementation and store the classification in architecture/docs.
+    **Brisante Daten (sensitive/high-impact data)**
       - **Definition**: Data that can cause legal, financial, security, or reputational harm if leaked, modified, or unavailable.
       - **Typical examples**: Personal data (PII), authentication data, API keys/secrets, payment data, health data, internal security logs, customer contracts.
       - **Why this matters**: Brisante data requires stricter access, stronger encryption, tighter logging, shorter exposure windows, and clearer ownership.
-    - **Data minimisation**: Only collect/store data that is required for product and legal obligations.
-    - **Tenant/customer separation by design**:
+    **Data minimisation**: Only collect/store data that is required for product and legal obligations.
+    **Tenant/customer separation by design**:
       - Every write/read path must be tenant-scoped.
       - Enforce tenant isolation on more than one layer (application + database policy/index/partition).
       - Prevent cross-tenant analytics/export by default; allow only via explicit audited flows.
-    - **Database security basics**:
+    **Database security basics**:
       - Encryption in transit and at rest.
       - Least-privilege database accounts (no shared superuser in runtime).
       - Backup/restore tested and aligned with data classification.
       - Data retention and deletion rules implemented, not only documented.
-    - **Marking data sensitivity**:
+    **Marking data sensitivity**:
       - Mark fields/tables/events with labels like `public`, `internal`, `confidential`, `brisant`.
       - Use labels in code, schemas, logs, and export pipelines to enforce handling rules.
       - Define owner/team for each critical data domain.
-    - **Typical mistakes to avoid**:
+    **Typical mistakes to avoid**:
       - Missing tenant filter in one endpoint/query.
       - Storing secrets in business tables or logs.
       - Overly broad DB permissions for app services.
@@ -468,27 +437,30 @@
       - Keeping personal data forever because retention/deletion jobs were not implemented.
 
 === "DE"
+    Sichere Datenarchitektur verhindert Lecks und gewährleistet strikte Mandantentrennung.
 
-    - **Datenklassen früh definieren**: Klassifizieren Sie Daten vor der Implementierung und dokumentieren Sie dies.
-    - **Brisante Daten**
+    Datendesign ist Sicherheitsdesign. Wenn Datengrenzen schwach sind, scheitern Mandantenisolierung und Compliance meist später in der Produktion.
+
+    **Datenklassen früh definieren**: Klassifizieren Sie Daten vor der Implementierung und dokumentieren Sie dies.
+    **Brisante Daten**
       - **Definition**: Daten, deren Leck, Änderung oder Unverfügbarkeit rechtlichen, finanziellen oder rufschädigenden Schaden verursachen kann.
       - **Beispiele**: Personenbezogene Daten (PII), Auth-Daten, API-Keys, Zahlungsdaten, Gesundheitsdaten, Sicherheitslogs, Verträge.
       - **Warum das wichtig ist**: Brisante Daten erfordern strengeren Zugriff, stärkere Verschlüsselung, genaueres Logging und kürzere Aufbewahrung.
-    - **Datenminimierung**: Sammeln/Speichern Sie nur Daten, die für Produkt- und rechtliche Zwecke notwendig sind.
-    - **Mandantentrennung (Tenant Isolation) per Design**:
+    **Datenminimierung**: Sammeln/Speichern Sie nur Daten, die für Produkt- und rechtliche Zwecke notwendig sind.
+    **Mandantentrennung (Tenant Isolation) per Design**:
       - Jeder Schreib-/Lesezugriff muss auf den Mandanten beschränkt sein.
       - Setzen Sie Isolierung auf mehreren Ebenen durch (Anwendung + Datenbank-Policy/Index/Partition).
       - Verhindern Sie mandantenübergreifende Exporte standardmäßig; erlauben Sie sie nur über explizit auditierte Wege.
-    - **Datenbank-Sicherheitsbasics**:
+    **Datenbank-Sicherheitsbasics**:
       - Verschlüsselung bei Übertragung und im Ruhezustand.
       - Least-Privilege-Datenbankkonten (kein geteilter Superuser zur Laufzeit).
       - Backup/Restore getestet und auf Datenklassifizierung abgestimmt.
       - Löschregeln implementiert, nicht nur dokumentiert.
-    - **Markierung der Sensitivität**:
+    **Markierung der Sensitivität**:
       - Kennzeichnen Sie Felder/Tabellen mit Labels wie `public`, `internal`, `confidential`, `brisant`.
       - Nutzen Sie diese Labels in Code, Schemata und Logs zur Durchsetzung von Regeln.
       - Definieren Sie Verantwortliche (Owner) für jede kritische Datendomäne.
-    - **Typische Fehler**:
+    **Typische Fehler**:
       - Fehlender Mandantenfilter in einem Endpunkt.
       - Speicherung von Secrets in Geschäftsdaten oder Logs.
       - Zu weitreichende DB-Berechtigungen für App-Dienste.
@@ -496,44 +468,71 @@
       - Unbeschränkte mandantenübergreifende Reports.
       - Endlose Speicherung personenbezogener Daten mangels Löschjobs.
 
-##### Practical implementation examples (General)
+### Practical implementation examples
 
 === "EN"
 
-    - **Define data classes early**
+    **Define data classes early**
       - Example: add a `data_classification.md` with required labels for every entity (`public`, `internal`, `confidential`, `brisant`) and an owner.
       - What to check: every table/event in architecture docs has a classification + owner + retention rule.
-    - **Brisante data handling**
+    **Brisante data handling**
       - Example: fields like `email`, `phone`, `address`, `payment_ref`, `auth_token_hash` are marked as `brisant` and get stricter policies (access logging, masked exports, shorter retention).
       - What to check: access to brisante fields is role-scoped, audited, and blocked in default exports.
-    - **Data minimisation**
+    **Data minimisation**
       - Example: do not store full birth date when age band is enough; do not store plaintext IP forever if hashed/truncated fulfills the use case.
       - What to check: every stored field has a documented purpose and retention period.
-    - **Tenant separation by design**
+    **Tenant separation by design**
       - Example: every query includes tenant scope (`WHERE tenant_id = :tenant_id`), backed by DB-level row-level security (where supported) and unique indexes including `tenant_id`.
       - What to check: automated tests for cross-tenant access attempts fail by default.
-    - **Encryption in transit and at rest**
+    **Encryption in transit and at rest**
       - In transit (TLS): enforce TLS for app-to-DB connections; reject non-TLS connections.
       - At rest: enable provider encryption/TDE and, if needed, customer-managed keys (CMK).
       - What to check: TLS-required parameter is active, certificates are valid/rotated, encryption status is enabled in DB settings.
-      - DB technologies that support this (examples):
-        - PostgreSQL (TLS in transit; storage/TDE via managed service or platform controls)
-        - MySQL/MariaDB (TLS in transit; storage encryption/TDE depending on edition/service)
-        - Microsoft SQL Server / Azure SQL (TLS + TDE)
-        - MongoDB (TLS + encryption at rest in managed/self-hosted setups)
-        - Redis (TLS + at-rest options depending on provider/edition)
-    - **Least-privilege DB accounts**
+      - DB technologies that support this (examples): PostgreSQL (TLS in transit; storage/TDE via managed service or platform controls), MySQL/MariaDB (TLS in transit; storage encryption/TDE depending on edition/service), Microsoft SQL Server / Azure SQL (TLS + TDE), MongoDB (TLS + encryption at rest in managed/self-hosted setups), Redis (TLS + at-rest options depending on provider/edition)
+    **Least-privilege DB accounts**
       - Example: separate runtime account (read/write scoped), migration account (schema change only), and break-glass admin account.
       - What to check: app runtime credentials cannot create users, drop databases, or read unrelated tenant data.
-    - **Backup/restore and retention**
+    **Backup/restore and retention**
       - Example: daily backups + PITR enabled, quarterly restore drill, automated deletion job for expired personal data.
       - What to check: latest successful restore test date, retention job status, and deletion evidence.
-    - **Marking data sensitivity**
+    **Marking data sensitivity**
       - Example: schema comments/metadata tags (`classification=brisant`) and code annotations on DTO fields.
       - What to check: logs/exports automatically mask fields tagged as `confidential` or `brisant`.
-    - **Typical mistakes and prevention**
+    **Typical mistakes and prevention**
       - Example control: static code checks + integration tests detect missing tenant filters in repository/query layer.
       - What to check: PR checklist includes tenant-scope review for data access changes.
+
+=== "DE"
+
+    **Datenklassen frueh definieren**
+        - Beispiel: Fuege eine `data_classification.md` mit erforderlichen Labels fuer jede Entitaet hinzu (`public`, `internal`, `confidential`, `brisant`) und einem Owner.
+        - Was pruefen: Jede Tabelle/jedes Event in Architektur-Docs hat Klassifizierung + Owner + Retention-Regel.
+    **Brisante Daten handhaben**
+        - Beispiel: Felder wie `email`, `phone`, `address`, `payment_ref`, `auth_token_hash` sind als `brisant` markiert und erhalten strengere Policies (Access-Logging, maskierte Exporte, kuerzere Retention).
+        - Was pruefen: Zugriff auf brisante Felder ist rollenbasiert, auditiert und in Standard-Exports blockiert.
+    **Datenminimierung**
+        - Beispiel: Kein volles Geburtsdatum speichern, wenn Altersband reicht; keine Klartext-IP dauerhaft speichern, wenn Hash/Trunkierung reicht.
+        - Was pruefen: Jedes gespeicherte Feld hat Zweck und Retention-Periode dokumentiert.
+    **Mandantentrennung per Design**
+        - Beispiel: Jede Query enthaelt Tenant-Scopes (`WHERE tenant_id = :tenant_id`), gestuetzt durch DB-Row-Level-Security (wo verfuegbar) und eindeutige Indizes inkl. `tenant_id`.
+        - Was pruefen: Automatisierte Tests fuer Cross-Tenant-Zugriffsversuche scheitern standardmaessig.
+    **Verschluesselung in Transit und at rest**
+        - In Transit (TLS): TLS fuer App-zu-DB-Verbindungen erzwingen; Non-TLS ablehnen.
+        - At Rest: Provider-Verschluesselung/TDE aktivieren und bei Bedarf Customer-Managed Keys (CMK).
+        - Was pruefen: TLS-Required-Parameter aktiv, Zertifikate gueltig/rotiert, Encryption-Status in DB-Settings aktiv.
+        - DB-Technologien, die das unterstuetzen (Beispiele): PostgreSQL (TLS in Transit; Storage/TDE ueber Managed Service oder Plattformkontrollen), MySQL/MariaDB (TLS in Transit; Storage-Verschluesselung/TDE je nach Edition/Service), Microsoft SQL Server / Azure SQL (TLS + TDE), MongoDB (TLS + Verschluesselung at rest in Managed/Self-Hosted), Redis (TLS + at-rest Optionen je nach Provider/Edition)
+    **Least-Privilege DB-Accounts**
+        - Beispiel: Separater Runtime-Account (read/write scoped), Migrations-Account (nur Schemaaenderungen), und Break-Glass-Admin.
+        - Was pruefen: Runtime-Credentials koennen keine User anlegen, DBs droppen oder fremde Tenant-Daten lesen.
+    **Backup/Restore und Retention**
+        - Beispiel: Taegliche Backups + PITR aktiv, quartalsweiser Restore-Drill, automatischer Loeschjob fuer abgelaufene personenbezogene Daten.
+        - Was pruefen: Datum des letzten erfolgreichen Restore-Tests, Status des Retention-Jobs, Loesch-Nachweise.
+    **Sensitivitaet markieren**
+        - Beispiel: Schema-Kommentare/Metadata-Tags (`classification=brisant`) und Code-Annotationen auf DTO-Feldern.
+        - Was pruefen: Logs/Exporte maskieren Felder mit `confidential` oder `brisant` automatisch.
+    **Typische Fehler und Praevention**
+        - Beispielkontrolle: Statische Code-Checks + Integrationstests erkennen fehlende Tenant-Filter in Repository/Query-Layer.
+        - Was pruefen: PR-Checkliste enthaelt Tenant-Scope-Review fuer Data-Access-Aenderungen.
 
 **Azure**
 === "EN"
