@@ -1697,131 +1697,137 @@
 **General**
 === "EN"
 
-        Relevant frameworks for legal compliance and customer trust requirements (especially for the German/EU market):
+    Relevant frameworks for legal compliance and customer trust requirements (especially for the German/EU market):
 
-        | Standard | Scope | When it matters |
-        | :--- | :--- | :--- |
-        | **ISO/IEC 27001** | Information Security Management System (ISMS): processes, risk analysis, organisational security. | Handling sensitive or regulated data; customer and partner expectations. |
-        | **GDPR (DSGVO)** | EU data protection: minimisation, transparency, consent, rights of data subjects. | Any processing of personal data in the EU; mandatory, not optional. |
-        | **TISAX** | Assessment and exchange of security information (e.g. automotive). | Customers in automotive or similar regulated supply chains. |
-        | **BSI IT-Grundschutz** | German BSI standard for baseline information security (modular). | German public sector or customers requiring BSI alignment. |
+    | Standard | Scope | When it matters |
+    | :--- | :--- | :--- |
+    | **ISO/IEC 27001** | Information Security Management System (ISMS): processes, risk analysis, organisational security. | Handling sensitive or regulated data; customer and partner expectations. |
+    | **GDPR (DSGVO)** | EU data protection: minimisation, transparency, consent, rights of data subjects. | Any processing of personal data in the EU; mandatory, not optional. |
+    | **TISAX** | Assessment and exchange of security information (e.g. automotive). | Customers in automotive or similar regulated supply chains. |
+    | **BSI IT-Grundschutz** | German BSI standard for baseline information security (modular). | German public sector or customers requiring BSI alignment. |
 
-        Compliance must be documented and auditable. GDPR is a legal obligation you fulfil and document. For other frameworks, align with what your customers and contracts actually require.
+    Compliance must be documented and auditable. GDPR is a legal obligation you fulfil and document. For other frameworks, align with what your customers and contracts actually require.
 
-        **Important: platform assurance is not your automatic certification**
-        - If you use certified platforms, you can inherit parts of their control environment (sometimes called indirect/inherited assurance).
-        - This does **not** mean your application is automatically certified or compliant.
-        - You still need your own controls, evidence, and customer-facing transparency for what you operate (configuration, identities, code, data processing, incident handling).
+    **Important: platform assurance is not your automatic certification**
+    - If you use certified platforms, you can inherit parts of their control environment (sometimes called indirect/inherited assurance).
+    - This does **not** mean your application is automatically certified or compliant.
+    - You still need your own controls, evidence, and customer-facing transparency for what you operate (configuration, identities, code, data processing, incident handling).
 
-        **What is typically inherited vs. what remains your responsibility**
+    **What is typically inherited vs. what remains your responsibility**
 
-        | Area | Mostly inherited from platform/provider | Your responsibility |
-        | :--- | :--- | :--- |
-        | Physical datacenter security | Building access control, hardware lifecycle, environmental controls | Select region/provider, verify scope, keep contracts/evidence |
-        | Core cloud infrastructure | Hypervisor/platform hardening, base network backbone controls | Secure service configuration, tenant isolation, key/secret handling |
-        | Managed service baseline controls | Service-level controls as audited by provider | App-layer controls, least privilege, logging/alerting setup |
-        | Compliance reports and attestations | Provider certificates/reports (in scope) | Map provider controls to your system and close remaining gaps |
-        | Privacy/compliance tooling | Built-in platform features | Lawful basis, retention, deletion, DSAR process, customer commitments |
+    | Area | Mostly inherited from platform/provider | Your responsibility |
+    | :--- | :--- | :--- |
+    | Physical datacenter security | Building access control, hardware lifecycle, environmental controls | Select region/provider, verify scope, keep contracts/evidence |
+    | Core cloud infrastructure | Hypervisor/platform hardening, base network backbone controls | Secure service configuration, tenant isolation, key/secret handling |
+    | Managed service baseline controls | Service-level controls as audited by provider | App-layer controls, least privilege, logging/alerting setup |
+    | Compliance reports and attestations | Provider certificates/reports (in scope) | Map provider controls to your system and close remaining gaps |
+    | Privacy/compliance tooling | Built-in platform features | Lawful basis, retention, deletion, DSAR process, customer commitments |
 
-        **How to present this to customers (trust + transparency)**
-        - Share a short responsibility matrix: `Provider control` / `Your control` / `Evidence`.
-        - Share only scope-valid claims (e.g. “hosted on Azure, which maintains ISO 27001 for in-scope services”).
-        - Avoid ambiguous statements like “our app is ISO-certified” unless your own org/app scope was audited accordingly.
-        - Keep customer-ready evidence package updated (architecture, runbooks, scan reports, incident process, platform attestations).
+    **How to present this to customers (trust + transparency)**
+    - Share a short responsibility matrix: `Provider control` / `Your control` / `Evidence`.
+    - Share only scope-valid claims (e.g. “hosted on Azure, which maintains ISO 27001 for in-scope services”).
+    - Avoid ambiguous statements like “our app is ISO-certified” unless your own org/app scope was audited accordingly.
+    - Keep customer-ready evidence package updated (architecture, runbooks, scan reports, incident process, platform attestations).
 
 === "DE"
 
-        Relevante Frameworks für rechtliche Compliance und Kundenvertrauensanforderungen (besonders für den DE/EU-Markt):
+    Relevante Frameworks für rechtliche Compliance und Kundenvertrauensanforderungen (besonders für den DE/EU-Markt):
 
-        | Standard | Scope | Wann relevant |
-        | :--- | :--- | :--- |
-        | **ISO/IEC 27001** | ISMS (Information Security Management System): Prozesse, Risikoanalyse, organisatorische Sicherheit. | Umgang mit sensiblen oder regulierten Daten; Kunden- und Partnererwartungen. |
-        | **DSGVO (GDPR)** | EU-Datenschutz: Minimierung, Transparenz, Einwilligung, Betroffenenrechte. | Jede Verarbeitung personenbezogener Daten in der EU; gesetzlich verpflichtend, nicht optional. |
-        | **TISAX** | Austausch von Prüfergebnissen zur Informationssicherheit (z. B. Automotive). | Kunden in der Automobilindustrie oder ähnlichen regulierten Lieferketten. |
-        | **BSI IT-Grundschutz** | Standard des BSI für Basissicherheit (modular). | Öffentlicher Sektor in Deutschland oder Kunden, die BSI-Ausrichtung fordern. |
+    | Standard | Scope | Wann relevant |
+    | :--- | :--- | :--- |
+    | **ISO/IEC 27001** | ISMS (Information Security Management System): Prozesse, Risikoanalyse, organisatorische Sicherheit. | Umgang mit sensiblen oder regulierten Daten; Kunden- und Partnererwartungen. |
+    | **DSGVO (GDPR)** | EU-Datenschutz: Minimierung, Transparenz, Einwilligung, Betroffenenrechte. | Jede Verarbeitung personenbezogener Daten in der EU; gesetzlich verpflichtend, nicht optional. |
+    | **TISAX** | Austausch von Prüfergebnissen zur Informationssicherheit (z. B. Automotive). | Kunden in der Automobilindustrie oder ähnlichen regulierten Lieferketten. |
+    | **BSI IT-Grundschutz** | Standard des BSI für Basissicherheit (modular). | Öffentlicher Sektor in Deutschland oder Kunden, die BSI-Ausrichtung fordern. |
 
-        Compliance muss dokumentiert und auditierbar sein. DSGVO ist eine gesetzliche Pflicht, die du erfüllst und dokumentierst. Bei anderen Frameworks: Richte dich danach, was deine Kunden und Verträge tatsächlich verlangen.
+    Compliance muss dokumentiert und auditierbar sein. DSGVO ist eine gesetzliche Pflicht, die du erfüllst und dokumentierst. Bei anderen Frameworks: Richte dich danach, was deine Kunden und Verträge tatsächlich verlangen.
 
-        **Wichtig: Plattformsicherheit ist nicht deine automatische Zertifizierung**
-        - Wenn du zertifizierte Plattformen nutzt, kannst du Teile ihres Kontrollumfelds erben (sog. indirekte/geerbte Assurance).
-        - Das bedeutet **nicht**, dass deine Anwendung automatisch zertifiziert oder compliant ist.
-        - Du benötigst weiterhin eigene Kontrollen, Nachweise und Transparenz für das, was du betreibst (Konfiguration, Identitäten, Code, Datenverarbeitung, Incident Handling).
+    **Wichtig: Plattformsicherheit ist nicht deine automatische Zertifizierung**
+    - Wenn du zertifizierte Plattformen nutzt, kannst du Teile ihres Kontrollumfelds erben (sog. indirekte/geerbte Assurance).
+    - Das bedeutet **nicht**, dass deine Anwendung automatisch zertifiziert oder compliant ist.
+    - Du benötigst weiterhin eigene Kontrollen, Nachweise und Transparenz für das, was du betreibst (Konfiguration, Identitäten, Code, Datenverarbeitung, Incident Handling).
 
-        **Was typischerweise geerbt wird vs. was deine Verantwortung bleibt**
+    **Was typischerweise geerbt wird vs. was deine Verantwortung bleibt**
 
-        | Bereich | Meist geerbt von Plattform/Provider | Deine Verantwortung |
-        | :--- | :--- | :--- |
-        | Physische Rechenzentrumssicherheit | Gebäudezutritt, Hardware-Lifecycle, Umweltkontrollen | Regionswahl, Scope-Verifikation, Verträge/Nachweise vorhalten |
-        | Cloud-Basisinfrastruktur | Hypervisor-/Plattformhärtung, Basis-Netzwerkkontrollen | Sichere Servicekonfiguration, Mandantenisolierung, Key/Secret-Handling |
-        | Managed Service Basiskontrollen | Service-Level-Kontrollen (vom Provider auditiert) | App-Layer-Kontrollen, Least Privilege, Logging/Alerting-Setup |
-        | Compliance-Berichte & Attestate | Provider-Zertifikate (im Scope) | Mapping der Provider-Kontrollen auf dein System & Schließen von Lücken |
-        | Datenschutz-/Compliance-Tools | Eingebaute Plattformfeatures | Rechtsgrundlage, Löschung, Betroffenenanfragen, Kundenverpflichtungen |
+    | Bereich | Meist geerbt von Plattform/Provider | Deine Verantwortung |
+    | :--- | :--- | :--- |
+    | Physische Rechenzentrumssicherheit | Gebäudezutritt, Hardware-Lifecycle, Umweltkontrollen | Regionswahl, Scope-Verifikation, Verträge/Nachweise vorhalten |
+    | Cloud-Basisinfrastruktur | Hypervisor-/Plattformhärtung, Basis-Netzwerkkontrollen | Sichere Servicekonfiguration, Mandantenisolierung, Key/Secret-Handling |
+    | Managed Service Basiskontrollen | Service-Level-Kontrollen (vom Provider auditiert) | App-Layer-Kontrollen, Least Privilege, Logging/Alerting-Setup |
+    | Compliance-Berichte & Attestate | Provider-Zertifikate (im Scope) | Mapping der Provider-Kontrollen auf dein System & Schließen von Lücken |
+    | Datenschutz-/Compliance-Tools | Eingebaute Plattformfeatures | Rechtsgrundlage, Löschung, Betroffenenanfragen, Kundenverpflichtungen |
 
-        **Wie man dies Kunden präsentiert (Vertrauen + Transparenz)**
-        - Teile eine kurze Verantwortungsmatrix: `Provider-Kontrolle` / `Deine Kontrolle` / `Nachweis`.
-        - Mache nur scope-valide Aussagen (z. B. „gehostet auf Azure, das ISO 27001 für die genutzten Dienste unterhält“).
-        - Vermeide mehrdeutige Aussagen wie „unsere App ist ISO-zertifiziert“, es sei denn, dein eigener Org/App-Scope wurde auditiert.
-        - Halte ein kundenfertiges Nachweispaket aktuell (Architektur, Runbooks, Scan-Berichte, Incident-Prozess, Plattform-Attestate).
+    **Wie man dies Kunden präsentiert (Vertrauen + Transparenz)**
+    - Teile eine kurze Verantwortungsmatrix: `Provider-Kontrolle` / `Deine Kontrolle` / `Nachweis`.
+    - Mache nur scope-valide Aussagen (z. B. „gehostet auf Azure, das ISO 27001 für die genutzten Dienste unterhält“).
+    - Vermeide mehrdeutige Aussagen wie „unsere App ist ISO-zertifiziert“, es sei denn, dein eigener Org/App-Scope wurde auditiert.
+    - Halte ein kundenfertiges Nachweispaket aktuell (Architektur, Runbooks, Scan-Berichte, Incident-Prozess, Plattform-Attestate).
 
 **Azure**
 === "EN"
 
-        - Azure maintains broad compliance programs and attestations (for in-scope services), commonly including: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS**, and **CSA STAR**.
-        - What you can legitimately claim in customer conversations:
-            - Your solution runs on Azure services that are covered by specific provider attestations.
-            - You apply Azure security features (e.g. Entra ID, Key Vault, private networking, Defender controls) as part of your own control set.
-            - You can provide provider evidence references plus your own implementation evidence.
-        - What you still must prove yourself:
-            - Correct service configuration, RBAC model, tenant isolation, secure CI/CD, data lifecycle, and incident response.
-            - Contractual and legal controls around customer data processing and retention.
-        - Practical trust artifacts from Azure side:
-            - Service scope check (is each used Azure service covered by required standard).
-            - Shared-responsibility mapping per control.
-            - References to official Microsoft compliance documentation/report availability.
+      - Azure maintains broad compliance programs and attestations (for in-scope services), commonly including: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS**, and **CSA STAR**.
+      - What you can legitimately claim in customer conversations:
+          - Your solution runs on Azure services that are covered by specific provider attestations.
+          - You apply Azure security features (e.g. Entra ID, Key Vault, private networking, Defender controls) as part of your own control set.
+          - You can provide provider evidence references plus your own implementation evidence.
+      - What you still must prove yourself:
+          - Correct service configuration, RBAC model, tenant isolation, secure CI/CD, data lifecycle, and incident response.
+          - Contractual and legal controls around customer data processing and retention.
+      - Practical trust artifacts from Azure side:
+          - Service scope check (is each used Azure service covered by required standard).
+          - Shared-responsibility mapping per control.
+          - References to official Microsoft compliance documentation/report availability.
 
 === "DE"
 
-        - Azure unterhält umfassende Compliance-Programme (für Dienste im Scope), häufig inkl.: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS** und **CSA STAR**.
-        - Was du legitim behaupten kannst:
-            - Deine Lösung läuft auf Azure-Diensten, die durch spezifische Provider-Attestate abgedeckt sind.
-            - Du wendest Azure-Sicherheitsfeatures (z. B. Entra ID, Key Vault, Private Networking) als Teil deines Kontrollsets an.
-            - Du kannst Provider-Nachweise plus deine eigenen Implementierungsnachweise bereitstellen.
-        - Was du selbst beweisen musst:
-            - Korrekte Servicekonfiguration, RBAC-Modell, Mandantenisolierung, sichere CI/CD, Datenlebenszyklus und Incident Response.
-            - Vertragliche und rechtliche Kontrollen rund um Kundendatenverarbeitung.
-        - Praktische Vertrauens-Artefakte (Azure-Seite):
-            - Service-Scope-Check (ist jeder genutzte Dienst abgedeckt?).
-            - Shared-Responsibility-Mapping.
-            - Verweise auf offizielle Microsoft-Compliance-Doku.
+      - Azure unterhält umfassende Compliance-Programme (für Dienste im Scope), häufig inkl.: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS** und **CSA STAR**.
+      - Was du legitim behaupten kannst:
+          - Deine Lösung läuft auf Azure-Diensten, die durch spezifische Provider-Attestate abgedeckt sind.
+          - Du wendest Azure-Sicherheitsfeatures (z. B. Entra ID, Key Vault, Private Networking) als Teil deines Kontrollsets an.
+          - Du kannst Provider-Nachweise plus deine eigenen Implementierungsnachweise bereitstellen.
+      - Was du selbst beweisen musst:
+          - Korrekte Servicekonfiguration, RBAC-Modell, Mandantenisolierung, sichere CI/CD, Datenlebenszyklus und Incident Response.
+          - Vertragliche und rechtliche Kontrollen rund um Kundendatenverarbeitung.
+      - Praktische Vertrauens-Artefakte (Azure-Seite):
+          - Service-Scope-Check (ist jeder genutzte Dienst abgedeckt?).
+          - Shared-Responsibility-Mapping.
+          - Verweise auf offizielle Microsoft-Compliance-Doku.
 
 **GitHub**
 === "EN"
 
-        - GitHub also provides audited compliance programs/attestations for its platform scope, commonly including: **SOC 1 Type 2**, **SOC 2 Type 2**, **SOC 3**, **ISO/IEC 27001**, **ISO/IEC 27701**, **ISO/IEC 27018**, and **CSA STAR** (scope depends on product/features/plan).
-        - What you can claim:
-            - Your source control and CI/CD process runs on GitHub services with defined compliance attestations.
-            - You enforce repository-level security controls (branch protection, reviews, Dependabot, code scanning, secret scanning).
-        - What remains yours:
-            - Secure workflow design, permissions model, secrets governance, release approvals, and response process for findings.
-            - Correct use of GitHub features and evidence retention for your own audits/customer reviews.
-        - Practical trust artifacts from GitHub side:
-            - Repository/org security settings export or documented baseline.
-            - Evidence of enabled controls (e.g. CodeQL/Dependabot/secret scanning status, branch rules).
-            - References to GitHub compliance reports available for your plan.
+      GitHub also provides audited compliance programs/attestations for its platform scope, commonly including: **SOC 1 Type 2**, **SOC 2 Type 2**, **SOC 3**, **ISO/IEC 27001**, **ISO/IEC 27701**, **ISO/IEC 27018**, and **CSA STAR** (scope depends on product/features/plan).
+      
+      What you can claim:
+      - Your source control and CI/CD process runs on GitHub services with defined compliance attestations.
+      - You enforce repository-level security controls (branch protection, reviews, Dependabot, code scanning, secret scanning).
+      
+      What remains yours:
+      - Secure workflow design, permissions model, secrets governance, release approvals, and response process for findings.
+      - Correct use of GitHub features and evidence retention for your own audits/customer reviews.
+      
+      Practical trust artifacts from GitHub side:
+      - Repository/org security settings export or documented baseline.
+      - Evidence of enabled controls (e.g. CodeQL/Dependabot/secret scanning status, branch rules).
+      - References to GitHub compliance reports available for your plan.
 
 === "DE"
 
-        - GitHub bietet ebenfalls auditierte Compliance-Programme (je nach Plan/Scope), z. B.: **SOC 1/2/3**, **ISO 27001**, **ISO 27701** und **CSA STAR**.
-        - Was du behaupten kannst:
-            - Dein Versionskontroll- und CI/CD-Prozess läuft auf GitHub-Diensten mit definierten Attestaten.
-            - Du erzwingst Repository-Sicherheitskontrollen (Branch Protection, Reviews, Dependabot, Scanning).
-        - Was deins bleibt:
-            - Sicheres Workflow-Design, Berechtigungsmodell, Secrets-Governance, Release-Freigaben und Reaktion auf Findings.
-            - Korrekte Nutzung von GitHub-Features und Nachweisführung für eigene Audits.
-        - Praktische Vertrauens-Artefakte (GitHub-Seite):
-            - Export der Repo/Org-Sicherheitseinstellungen.
-            - Nachweis aktivierter Kontrollen (CodeQL/Dependabot-Status).
-            - Verweise auf GitHub-Compliance-Berichte.
+      GitHub bietet ebenfalls auditierte Compliance-Programme (je nach Plan/Scope), z. B.: **SOC 1/2/3**, **ISO 27001**, **ISO 27701** und **CSA STAR**.
+      
+      Was du behaupten kannst:
+      - Dein Versionskontroll- und CI/CD-Prozess läuft auf GitHub-Diensten mit definierten Attestaten.
+      - Du erzwingst Repository-Sicherheitskontrollen (Branch Protection, Reviews, Dependabot, Scanning).
+      
+      Was deins bleibt:
+      - Sicheres Workflow-Design, Berechtigungsmodell, Secrets-Governance, Release-Freigaben und Reaktion auf Findings.
+      - Korrekte Nutzung von GitHub-Features und Nachweisführung für eigene Audits.
+      
+      Praktische Vertrauens-Artefakte (GitHub-Seite):
+      - Export der Repo/Org-Sicherheitseinstellungen.
+      - Nachweis aktivierter Kontrollen (CodeQL/Dependabot-Status).
+      - Verweise auf GitHub-Compliance-Berichte.
 
 ## German Market
 
@@ -1905,53 +1911,61 @@
 **General**
 === "EN"
 
-    - **Identity & access**
-      - MFA required for all human access to production-related systems.
-      - RBAC is enforced; no broad admin role for day-to-day work.
-      - Access reviews are performed on a fixed cadence (e.g. quarterly).
-    - **Secrets & data protection**
-      - Secrets are stored only in approved secret stores.
-      - TLS 1.2+ is enforced externally; encryption at rest is enabled.
-      - Production data is never used in staging without anonymisation and approval.
-      - Domain/email trust controls are configured: valid cert lifecycle, SPF, DKIM, and DMARC.
-    - **Secure delivery**
-      - Protected branches require PR review and passing checks.
-      - CI runs test + security checks (SAST/SCA at minimum).
-      - High-risk input surfaces (e.g. file upload/parsing endpoints) are covered by fuzzing or equivalent robustness tests.
-      - Critical findings block release until addressed or explicitly risk-accepted.
-    - **Operations & resilience**
-      - Central logging and alerting are enabled for auth failures, deployment failures, and major anomalies.
-      - Backup/restore process is defined, with RPO/RTO targets and restore test cadence.
-      - Incident response roles, escalation path, and communication templates are documented.
-    - **Transparency & documentation**
-      - Changelog and release notes are maintained.
-      - Security contact/reporting path is public (e.g. SECURITY.md).
-      - Core architecture, runbooks, and key decisions are documented and current.
+    **Identity & access**
+    - MFA required for all human access to production-related systems.
+    - RBAC is enforced; no broad admin role for day-to-day work.
+    - Access reviews are performed on a fixed cadence (e.g. quarterly).
+    
+    **Secrets & data protection**
+    - Secrets are stored only in approved secret stores.
+    - TLS 1.2+ is enforced externally; encryption at rest is enabled.
+    - Production data is never used in staging without anonymisation and approval.
+    - Domain/email trust controls are configured: valid cert lifecycle, SPF, DKIM, and DMARC.
+    
+    **Secure delivery**
+    - Protected branches require PR review and passing checks.
+    - CI runs test + security checks (SAST/SCA at minimum).
+    - High-risk input surfaces (e.g. file upload/parsing endpoints) are covered by fuzzing or equivalent robustness tests.
+    - Critical findings block release until addressed or explicitly risk-accepted.
+    
+    **Operations & resilience**
+    - Central logging and alerting are enabled for auth failures, deployment failures, and major anomalies.
+    - Backup/restore process is defined, with RPO/RTO targets and restore test cadence.
+    - Incident response roles, escalation path, and communication templates are documented.
+    
+    **Transparency & documentation**
+    - Changelog and release notes are maintained.
+    - Security contact/reporting path is public (e.g. SECURITY.md).
+    - Core architecture, runbooks, and key decisions are documented and current.
 
 === "DE"
 
-    - **Identität & Zugriff**
-      - MFA für jeden menschlichen Zugriff auf produktionsrelevante Systeme.
-      - RBAC erzwungen; keine breite Admin-Rolle für tägliche Arbeit.
-      - Zugriffsreviews in festem Rhythmus (z. B. vierteljährlich).
-    - **Secrets & Datenschutz**
-      - Secrets nur in zugelassenen Stores gespeichert.
-      - TLS 1.2+ extern erzwungen; Verschlüsselung im Ruhezustand aktiv.
-      - Produktionsdaten nie im Staging ohne Anonymisierung und Freigabe.
-      - Domain-/E-Mail-Vertrauenskontrollen: Zertifikatslifecycle, SPF, DKIM, DMARC.
-    - **Sichere Auslieferung**
-      - Geschützte Branches erfordern PR-Review und Checks.
-      - CI führt Test + Security-Checks (min. SAST/SCA) aus.
-      - Kritische Eingabeoberflächen (z. B. File Upload) durch Fuzzing/Robustheitstests abgedeckt.
-      - Kritische Funde blockieren Release bis zur Behebung oder Risikoakzeptanz.
-    - **Betrieb & Resilienz**
-      - Zentrales Logging/Alerting für Auth-Fehler, Deploy-Fehler und Anomalien.
-      - Backup/Restore definiert mit RPO/RTO und Test-Turnus.
-      - Incident-Rollen, Eskalationspfad und Kommunikationstemplates dokumentiert.
-    - **Transparenz & Doku**
-      - Changelog und Release Notes gepflegt.
-      - Security Contact/Meldeweg öffentlich (z. B. SECURITY.md).
-      - Kernarchitektur, Runbooks und Entscheidungen dokumentiert/aktuell.
+    **Identität & Zugriff**
+    - MFA für jeden menschlichen Zugriff auf produktionsrelevante Systeme.
+    - RBAC erzwungen; keine breite Admin-Rolle für tägliche Arbeit.
+    - Zugriffsreviews in festem Rhythmus (z. B. vierteljährlich).
+    
+    **Secrets & Datenschutz**
+    - Secrets nur in zugelassenen Stores gespeichert.
+    - TLS 1.2+ extern erzwungen; Verschlüsselung im Ruhezustand aktiv.
+    - Produktionsdaten nie im Staging ohne Anonymisierung und Freigabe.
+    - Domain-/E-Mail-Vertrauenskontrollen: Zertifikatslifecycle, SPF, DKIM, DMARC.
+    
+    **Sichere Auslieferung**
+    - Geschützte Branches erfordern PR-Review und Checks.
+    - CI führt Test + Security-Checks (min. SAST/SCA) aus.
+    - Kritische Eingabeoberflächen (z. B. File Upload) durch Fuzzing/Robustheitstests abgedeckt.
+    - Kritische Funde blockieren Release bis zur Behebung oder Risikoakzeptanz.
+    
+    **Betrieb & Resilienz**
+    - Zentrales Logging/Alerting für Auth-Fehler, Deploy-Fehler und Anomalien.
+    - Backup/Restore definiert mit RPO/RTO und Test-Turnus.
+    - Incident-Rollen, Eskalationspfad und Kommunikationstemplates dokumentiert.
+    
+    **Transparenz & Doku**
+    - Changelog und Release Notes gepflegt.
+    - Security Contact/Meldeweg öffentlich (z. B. SECURITY.md).
+    - Kernarchitektur, Runbooks und Entscheidungen dokumentiert/aktuell.
 
 **Azure**
 === "EN"
