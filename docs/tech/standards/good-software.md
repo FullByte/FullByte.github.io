@@ -1,4 +1,4 @@
-# Creating Good and Secure Software
+# Good Software
 
 === "EN"
 
@@ -6,13 +6,36 @@
 
     It is not enough for code to just "work". Good software earns the user's trust by being reliable, protecting their data, and behaving predictably. We achieve this by being transparent about our engineering practices, rigorous in our testing, and honest about our system's capabilities.
 
-    ### Transparency & Trust
+=== "DE"
+
+    **Gute Software ist vertrauenswürdig, stabil und sicher.**
+
+    Es reicht nicht aus, dass Code einfach nur „funktioniert“. Gute Software verdient das Vertrauen der Nutzer durch Zuverlässigkeit, Datensicherheit und vorhersehbares Verhalten. Wir erreichen dies durch transparente Entwicklungspraktiken, rigoroses Testen und Ehrlichkeit über die Fähigkeiten unseres Systems.
+
+### Transparency & Trust
+
+=== "EN"
+
     We believe that trust is built through transparency. We clearly define **how** we secure data, **how** we ensure availability, and **how** we handle failures. We do not hide behind obscurity; we rely on proven standards and defensible architecture.
 
-    ### Limits & Scope
+=== "DE"
+
+    Wir glauben, dass Vertrauen durch Transparenz entsteht. Wir definieren klar, **wie** wir Daten sichern, **wie** wir Verfügbarkeit gewährleisten und **wie** wir mit Ausfällen umgehen. Wir verstecken uns nicht hinter Unklarheiten; wir setzen auf bewährte Standards und eine verteidigungsfähige Architektur.
+
+### Limits & Scope
+
+=== "EN"
+
     Every piece of software has limits. We are explicit about what our systems are **not** designed to do. Misusing a system outside its intended scope—such as using a standard web app for high-frequency trading or life-critical control systems—leads to failure and unhappy customers. We define these operational boundaries clearly so that we deliver excellence within them.
 
-    ### How to use this document
+=== "DE"
+
+    Jede Software hat Grenzen. Wir machen explizit deutlich, wofür unsere Systeme **nicht** ausgelegt sind. Die missbräuchliche Nutzung eines Systems außerhalb seines vorgesehenen Bereichs – wie z. B. die Nutzung einer Standard-Web-App für Hochfrequenzhandel oder lebenswichtige Steuerungssysteme – führt zu Ausfällen und unzufriedenen Kunden. Wir definieren diese operativen Grenzen klar, um innerhalb dieser Grenzen Exzellenz zu liefern.
+
+### How to use this document
+
+=== "EN"
+
     This guide serves as our engineering standard. It is organised by topic, with a specific focus on **General Engineering Principles**, **Web Applications on Azure**, and **GitHub-based Deployment**.
 
     Each chapter contains:
@@ -24,17 +47,6 @@
 
 === "DE"
 
-    **Gute Software ist vertrauenswürdig, stabil und sicher.**
-
-    Es reicht nicht aus, dass Code einfach nur „funktioniert“. Gute Software verdient das Vertrauen der Nutzer durch Zuverlässigkeit, Datensicherheit und vorhersehbares Verhalten. Wir erreichen dies durch transparente Entwicklungspraktiken, rigoroses Testen und Ehrlichkeit über die Fähigkeiten unseres Systems.
-
-    ### Transparenz & Vertrauen
-    Wir glauben, dass Vertrauen durch Transparenz entsteht. Wir definieren klar, **wie** wir Daten sichern, **wie** wir Verfügbarkeit gewährleisten und **wie** wir mit Ausfällen umgehen. Wir verstecken uns nicht hinter Unklarheiten; wir setzen auf bewährte Standards und eine verteidigungsfähige Architektur.
-
-    ### Grenzen & Anwendungsbereich
-    Jede Software hat Grenzen. Wir machen explizit deutlich, wofür unsere Systeme **nicht** ausgelegt sind. Die missbräuchliche Nutzung eines Systems außerhalb seines vorgesehenen Bereichs – wie z. B. die Nutzung einer Standard-Web-App für Hochfrequenzhandel oder lebenswichtige Steuerungssysteme – führt zu Ausfällen und unzufriedenen Kunden. Wir definieren diese operativen Grenzen klar, um innerhalb dieser Grenzen Exzellenz zu liefern.
-
-    ### Wie dieses Dokument zu nutzen ist
     Dieser Leitfaden dient als unser technischer Standard. Er ist nach Themen gegliedert, mit besonderem Fokus auf **Allgemeine Entwicklungsprinzipien**, **Webanwendungen auf Azure** und **Deployment mit GitHub**.
 
     Jedes Kapitel enthält:
@@ -50,7 +62,13 @@
 
     Principles that apply regardless of technology.
 
-    #### General
+=== "DE"
+
+    Prinzipien, die unabhängig von der Technologie gelten.
+
+#### General
+
+=== "EN"
 
     - **CIA Triad**
       - **Confidentiality**: Only authorised parties access data (access control, encryption).
@@ -60,7 +78,19 @@
     - **Defense in Depth**: Combine multiple layers (network, identity, application, data) so a single failure does not compromise the whole system.
     - **Keep it simple**: Prefer simple, understandable designs and processes over complex ones. Simpler systems are easier to secure, operate, and audit. Avoid unnecessary abstraction, duplication of concepts, or tooling that does not pull its weight.
 
-    #### Principles -> example minimum requirements to define
+=== "DE"
+
+    - **CIA-Triade (Schutzziele)**
+      - **Vertraulichkeit (Confidentiality)**: Nur autorisierte Parteien haben Zugriff auf Daten (Zugriffskontrolle, Verschlüsselung).
+      - **Integrität (Integrity)**: Daten und Systeme bleiben korrekt und unverändert (Prüfsummen, Signaturen, Audit-Logs).
+      - **Verfügbarkeit (Availability)**: Systeme und Daten sind verfügbar, wenn sie benötigt werden (Redundanz, Resilienz, DDoS-Schutz).
+    - **Least Privilege (Geringstes Privileg)**: Nutzer und Dienste erhalten nur die minimalen Berechtigungen, die für ihre Rolle oder Aufgabe erforderlich sind.
+    - **Defense in Depth (Verteidigung in der Tiefe)**: Kombination mehrerer Schutzschichten (Netzwerk, Identität, Anwendung, Daten), damit ein einzelner Fehler nicht das gesamte System kompromittiert.
+    - **Keep it simple (Einfachheit)**: Bevorzuge einfache, verständliche Designs und Prozesse gegenüber komplexen. Einfachere Systeme sind leichter zu sichern, zu betreiben und zu prüfen. Vermeide unnötige Abstraktion, Duplizierung von Konzepten oder Tools, die ihren Aufwand nicht rechtfertigen.
+
+#### Principles -> example minimum requirements to define
+
+=== "EN"
 
     - **Confidentiality**
       - All internet-facing endpoints use TLS 1.3.
@@ -88,20 +118,6 @@
       - Remove controls/processes that add complexity without measurable value.
 
 === "DE"
-
-    Prinzipien, die unabhängig von der Technologie gelten.
-
-    #### Allgemein
-
-    - **CIA-Triade (Schutzziele)**
-      - **Vertraulichkeit (Confidentiality)**: Nur autorisierte Parteien haben Zugriff auf Daten (Zugriffskontrolle, Verschlüsselung).
-      - **Integrität (Integrity)**: Daten und Systeme bleiben korrekt und unverändert (Prüfsummen, Signaturen, Audit-Logs).
-      - **Verfügbarkeit (Availability)**: Systeme und Daten sind verfügbar, wenn sie benötigt werden (Redundanz, Resilienz, DDoS-Schutz).
-    - **Least Privilege (Geringstes Privileg)**: Nutzer und Dienste erhalten nur die minimalen Berechtigungen, die für ihre Rolle oder Aufgabe erforderlich sind.
-    - **Defense in Depth (Verteidigung in der Tiefe)**: Kombination mehrerer Schutzschichten (Netzwerk, Identität, Anwendung, Daten), damit ein einzelner Fehler nicht das gesamte System kompromittiert.
-    - **Keep it simple (Einfachheit)**: Bevorzuge einfache, verständliche Designs und Prozesse gegenüber komplexen. Einfachere Systeme sind leichter zu sichern, zu betreiben und zu prüfen. Vermeide unnötige Abstraktion, Duplizierung von Konzepten oder Tools, die ihren Aufwand nicht rechtfertigen.
-
-    #### Prinzipien -> Beispielhafte Mindestanforderungen
 
     - **Vertraulichkeit**
       - Alle öffentlich zugänglichen Endpunkte nutzen TLS 1.3.
@@ -132,51 +148,67 @@
 
 === "EN"
 
-    #### General
+    Secure identity management is the foundation of access control.
+
+=== "DE"
+
+    Sicheres Identitätsmanagement ist das Fundament der Zugriffskontrolle.
+
+#### General
+
+=== "EN"
 
     - Use a central identity provider for users and service accounts; avoid local accounts for application access.
     - Enforce **Multi-Factor Authentication (MFA)** for human users.
     - Apply **Least Privilege**: grant only the roles and permissions needed for each identity.
     - Prefer **managed identities** or short-lived tokens for applications so credentials are not stored in config.
 
-    #### Azure
-
-    - **Microsoft Entra ID (Azure AD)**: Use for user and service identities. Enforce MFA via Conditional Access.
-    - Assign only required **Azure roles** (e.g. Contributor, Reader) and scope them to resource groups or resources. Prefer **managed identities** for apps (e.g. App Service, Functions) so no passwords are stored.
-    - Use **Conditional Access** for location, device, or risk-based access where appropriate.
-
-    #### GitHub
-
-    - Use **GitHub** as the identity for CI/CD: authenticate Actions with OIDC or fine-grained tokens where possible instead of long-lived secrets.
-    - Restrict repository and organisation access with teams and least-privilege permissions; require 2FA for organisation members.
-
 === "DE"
-
-    #### Allgemein
 
     - Nutze einen zentralen Identitätsanbieter (IdP) für Nutzer und Service-Konten; vermeide lokale Accounts für den Zugriff.
     - Erzwinge **Multi-Faktor-Authentifizierung (MFA)** für alle menschlichen Benutzer.
     - Wende das Prinzip des **geringsten Privilegs** an: Vergib nur die Rollen und Berechtigungen, die für die jeweilige Identität erforderlich sind.
     - Bevorzuge **Managed Identities** oder kurzlebige Tokens für Anwendungen, damit keine Zugangsdaten in der Konfiguration gespeichert werden müssen.
 
-    #### Azure
+#### Azure
+
+=== "EN"
+
+    - **Microsoft Entra ID (Azure AD)**: Use for user and service identities. Enforce MFA via Conditional Access.
+    - Assign only required **Azure roles** (e.g. Contributor, Reader) and scope them to resource groups or resources. Prefer **managed identities** for apps (e.g. App Service, Functions) so no passwords are stored.
+    - Use **Conditional Access** for location, device, or risk-based access where appropriate.
+
+=== "DE"
 
     - **Microsoft Entra ID (Azure AD)**: Verwende es für Benutzer- und Dienstidentitäten. Erzwinge MFA über Conditional Access.
     - Weise nur erforderliche **Azure-Rollen** (z. B. Contributor, Reader) zu und beschränke ihren Geltungsbereich auf Ressourcengruppen oder Ressourcen. Bevorzuge **Managed Identities** für Apps (z. B. App Service, Functions), um das Speichern von Passwörtern zu vermeiden.
     - Nutze **Conditional Access** für standort-, geräte- oder risikobasierten Zugriff, wo dies sinnvoll ist.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - Use **GitHub** as the identity for CI/CD: authenticate Actions with OIDC or fine-grained tokens where possible instead of long-lived secrets.
+    - Restrict repository and organisation access with teams and least-privilege permissions; require 2FA for organisation members.
+
+=== "DE"
 
     - Nutze **GitHub** als Identität für CI/CD: Authentifiziere Actions über OIDC oder fein granulare Tokens anstelle von langlebigen Secrets.
     - Beschränke den Zugriff auf Repositories und Organisationen durch Teams und Least-Privilege-Berechtigungen; fordere 2FA für Organisationsmitglieder.
 
-## User Management, Roles, Groups & Tenants
+## User Management
 
 === "EN"
 
-    How you model users, roles, groups, and tenant (customer) isolation has a direct impact on security and maintainability. Keep the model as simple as the product allows.
+    Effective user and role modeling ensures secure isolation and maintainability.
 
-    #### General
+=== "DE"
+
+    Effektive Nutzer- und Rollenmodellierung gewährleistet sichere Isolierung und Wartbarkeit.
+
+#### General
+
+=== "EN"
 
     - **Users**: Represent human or system actors. Identify them via a single source of truth (e.g. IdP); avoid duplicate or local user stores that can get out of sync.
     - **Roles**: Define permissions by role (e.g. Viewer, Editor, Admin) rather than per-user. Assign users to roles; keep the set of roles small and well-defined so that access reviews and audits are straightforward.
@@ -185,23 +217,7 @@
     - **Principle of least privilege**: Each role should have the minimum permissions needed; limit cross-tenant or global admin capabilities to a small, audited set of identities.
     - **Lifecycle**: Define how users are created, updated, disabled, and removed; how role and group membership changes; and how tenant onboarding/offboarding works. Document and automate where possible.
 
-    #### Azure
-
-    - **Entra ID (Azure AD)**: Use **users** and **groups** for human access; use **app roles** or **groups** for application-level authorisation (e.g. “Admin”, “Reader” in your app). For multi-tenant SaaS, use **Entra ID tenants** per customer or **B2B** guest users in a single tenant; document whether you use single-tenant (one directory per customer) or multi-tenant (one directory, tenant ID in app data).
-    - **Azure RBAC**: Use **custom roles** only when built-in roles are insufficient; scope assignments to resource groups or resources so one customer’s Azure resources are not visible to another. For “tenant = customer”, use separate resource groups or subscriptions per tenant and assign Azure roles accordingly.
-    - **Managed identities**: Prefer managed identities for app-to-Azure access; avoid service accounts with long-lived secrets. Use **user-assigned** identities when the same identity is shared across components.
-
-    #### GitHub
-
-    - **Organisations and repos**: Use **teams** to group people and assign repository and org permissions (Read, Write, Admin). Prefer team-based access so adding/removing someone is one change.
-    - **Roles**: Use the built-in roles (Member, Admin, etc.) and repository roles; avoid over-customising unless necessary. For “tenant = customer”, you may use separate organisations or repos per customer and grant access via teams; document the chosen model.
-    - **Fine-grained permissions**: Prefer **fine-grained** personal access tokens and **OIDC** for Actions so each integration has minimal scope.
-
 === "DE"
-
-    Wie Sie Nutzer, Rollen, Gruppen und Mandanten (Kunden) modellieren, hat direkte Auswirkungen auf Sicherheit und Wartbarkeit. Halten Sie das Modell so einfach, wie es das Produkt erlaubt.
-
-    #### Allgemein
 
     - **Nutzer**: Repräsentieren menschliche oder System-Akteure. Identifizieren Sie diese über eine einzige Quelle der Wahrheit (z. B. IdP); vermeiden Sie doppelte oder lokale Nutzerspeicher, die asynchron werden können.
     - **Rollen**: Definieren Sie Berechtigungen pro Rolle (z. B. Betrachter, Bearbeiter, Admin) statt pro Nutzer. Weisen Sie Nutzer Rollen zu; halten Sie die Menge an Rollen klein und klar definiert, damit Audits einfach bleiben.
@@ -210,25 +226,51 @@
     - **Prinzip des geringsten Privilegs**: Jede Rolle sollte nur die minimal notwendigen Berechtigungen haben; beschränken Sie mandantenübergreifende oder globale Admin-Rechte auf wenige, auditierte Identitäten.
     - **Lebenszyklus**: Definieren Sie, wie Nutzer erstellt, aktualisiert, deaktiviert und entfernt werden; wie sich Rollen- und Gruppenmitgliedschaften ändern; und wie das Onboarding/Offboarding von Mandanten funktioniert. Dokumentieren und automatisieren Sie, wo möglich.
 
-    #### Azure
+#### Azure
+
+=== "EN"
+
+    - **Entra ID (Azure AD)**: Use **users** and **groups** for human access; use **app roles** or **groups** for application-level authorisation (e.g. “Admin”, “Reader” in your app). For multi-tenant SaaS, use **Entra ID tenants** per customer or **B2B** guest users in a single tenant; document whether you use single-tenant (one directory per customer) or multi-tenant (one directory, tenant ID in app data).
+    - **Azure RBAC**: Use **custom roles** only when built-in roles are insufficient; scope assignments to resource groups or resources so one customer’s Azure resources are not visible to another. For “tenant = customer”, use separate resource groups or subscriptions per tenant and assign Azure roles accordingly.
+    - **Managed identities**: Prefer managed identities for app-to-Azure access; avoid service accounts with long-lived secrets. Use **user-assigned** identities when the same identity is shared across components.
+
+=== "DE"
 
     - **Entra ID (Azure AD)**: Nutzen Sie **Nutzer** und **Gruppen** für menschlichen Zugriff; nutzen Sie **App Roles** oder **Gruppen** für Autorisierung auf Anwendungsebene. Für SaaS nutzen Sie **Entra ID Tenants** pro Kunde oder **B2B**-Gastnutzer in einem einzelnen Tenant; dokumentieren Sie, ob Sie Single-Tenant (ein Verzeichnis pro Kunde) oder Multi-Tenant (ein Verzeichnis, Tenant-ID in App-Daten) nutzen.
     - **Azure RBAC**: Nutzen Sie **Custom Roles** nur, wenn integrierte Rollen nicht ausreichen; beschränken Sie Zuweisungen auf Ressourcengruppen, damit die Ressourcen eines Kunden für andere nicht sichtbar sind.
     - **Managed Identities**: Bevorzugen Sie Managed Identities für den Zugriff von Apps auf Azure-Ressourcen; vermeiden Sie Service Accounts mit langlebigen Secrets. Nutzen Sie **User-Assigned Identities**, wenn dieselbe Identität von mehreren Komponenten geteilt wird.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - **Organisations and repos**: Use **teams** to group people and assign repository and org permissions (Read, Write, Admin). Prefer team-based access so adding/removing someone is one change.
+    - **Roles**: Use the built-in roles (Member, Admin, etc.) and repository roles; avoid over-customising unless necessary. For “tenant = customer”, you may use separate organisations or repos per customer and grant access via teams; document the chosen model.
+    - **Fine-grained permissions**: Prefer **fine-grained** personal access tokens and **OIDC** for Actions so each integration has minimal scope.
+
+=== "DE"
 
     - **Organisationen und Repos**: Nutzen Sie **Teams**, um Personen zu gruppieren und Berechtigungen zuzuweisen. Bevorzuge teambasierten Zugriff, damit das Hinzufügen/Entfernen einer Person nur eine Änderung erfordert.
     - **Rollen**: Nutzen Sie die integrierten Rollen (Member, Admin etc.); vermeiden Sie Überanpassung, wenn nicht notwendig.
     - **Fine-grained Permissions**: Bevorzuge **feingranulare** Personal Access Tokens und **OIDC** für Actions, damit jede Integration nur minimalen Zugriff hat.
 
-## Frontend vs. Backend Security Responsibilities
+## Frontend vs. Backend
 
 === "EN"
 
+    Clear trust boundaries between client and server prevent security bypasses.
+
     Keep the trust boundary clear: frontend is user-controlled, backend is policy-enforced.
 
-    #### General
+=== "DE"
+
+    Klare Vertrauensgrenzen zwischen Client und Server verhindern Sicherheitsumgehungen.
+
+    Die Vertrauensgrenze muss klar sein: Das Frontend wird vom Benutzer kontrolliert, das Backend setzt die Richtlinien durch.
+
+#### General
+
+=== "EN"
 
     - **Frontend responsibilities**
       - Enforce safe rendering (XSS prevention), strict input validation on UI level, and secure session/token handling.
@@ -243,22 +285,7 @@
       - Trusting tenant/user IDs from client without server-side checks.
       - Returning excessive data fields to frontend “just in case”.
 
-    #### Azure
-
-    - Put frontend and backend behind appropriate edge controls (WAF, TLS, DDoS controls).
-    - Keep backend/private APIs in private networking where possible (Private Endpoints/VNet).
-    - Enforce identity and role checks in backend APIs via Entra-integrated auth patterns.
-
-    #### GitHub
-
-    - Separate frontend/backend CI jobs and required checks (e.g. frontend lint/e2e, backend SAST/integration/security tests).
-    - Require CODEOWNERS review for backend auth/authorization and security-sensitive frontend changes.
-
 === "DE"
-
-    Die Vertrauensgrenze muss klar sein: Das Frontend wird vom Benutzer kontrolliert, das Backend setzt die Richtlinien durch.
-
-    #### Allgemein
 
     - **Frontend-Verantwortlichkeiten**
       - Sicheres Rendering erzwingen (XSS-Prävention), strenge Eingabevalidierung auf UI-Ebene und sicheres Session/Token-Handling.
@@ -273,24 +300,87 @@
       - Vertrauen auf Mandanten-/Nutzer-IDs vom Client ohne serverseitige Prüfung.
       - Rückgabe übermäßiger Datenfelder an das Frontend „nur für den Fall“.
 
-    #### Azure
+#### Azure
+
+=== "EN"
+
+    - Put frontend and backend behind appropriate edge controls (WAF, TLS, DDoS controls).
+    - Keep backend/private APIs in private networking where possible (Private Endpoints/VNet).
+    - Enforce identity and role checks in backend APIs via Entra-integrated auth patterns.
+
+=== "DE"
 
     - Frontend und Backend hinter geeignete Edge-Kontrollen (WAF, TLS, DDoS-Schutz) stellen.
     - Backend/Private APIs in private Netzwerke legen, wo möglich (Private Endpoints/VNet).
     - Identitäts- und Rollenprüfungen in Backend-APIs über Entra-integrierte Auth-Muster durchsetzen.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - Separate frontend/backend CI jobs and required checks (e.g. frontend lint/e2e, backend SAST/integration/security tests).
+    - Require CODEOWNERS review for backend auth/authorization and security-sensitive frontend changes.
+
+=== "DE"
 
     - Frontend- und Backend-CI-Jobs sowie erforderliche Prüfungen trennen (z. B. Frontend-Lint/E2E, Backend-SAST/Integration/Security-Tests).
     - CODEOWNERS-Review für Backend-Auth/Autorisierung und sicherheitskritische Frontend-Änderungen anfordern.
 
-## Rollenmatrix (Admin / Developer / User / Support / Service Account)
+## Interfaces
 
 === "EN"
 
+    Well-defined interfaces enable automation and secure interaction across all clients.
+
+    Good software is built on strong, well-defined interfaces. The **API** (Application Programming Interface) is the core of the application, enforcing all logic and security. The **UI** (User Interface) is just one of many possible clients. This approach enables automation, deep linking, and headless usage, but requires strict backend validation.
+
+=== "DE"
+
+    Klar definierte Schnittstellen ermöglichen Automatisierung und sichere Interaktion über alle Clients hinweg.
+
+    Gute Software basiert auf starken, klar definierten Schnittstellen. Die **API** (Application Programming Interface) ist der Kern der Anwendung und setzt alle Logik und Sicherheit durch. Die **UI** (Benutzeroberfläche) ist nur einer von vielen möglichen Clients. Dieser Ansatz ermöglicht Automatisierung, Deep Linking und Headless-Nutzung, erfordert aber strikte Backend-Validierung.
+
+#### General
+
+=== "EN"
+
+    - **API First**: Design the API before the UI. The API must be complete, secure, and documented (e.g., OpenAPI/Swagger).
+    - **UI as a Client**: Treat your own UI as an untrusted client. It should not contain business rules that are not also enforced by the API.
+    - **Headless Usage**: Enable usage without a GUI via CLI arguments or URL parameters. This supports automation and power users.
+    - **Deep Linking**: Allow users to bookmark or share specific states (e.g., filters, search queries) via URL parameters.
+    - **UI Hints**: The UI should guide the user (e.g., input masks, validation feedback) but never be the only line of defense.
+    - **Risk - Manipulation**: Users can modify URL parameters or API calls to bypass UI restrictions. The backend must validate every input.
+    - **Risk - Data Leakage**: Never put secrets (passwords, tokens, PII) in URL parameters, as they are logged in browser history and proxies.
+    - **Mitigation**: Validate all inputs on the backend. Use headers/body for secrets. Ensure GET requests are idempotent (read-only).
+
+=== "DE"
+
+    - **API First**: Designe die API vor der UI. Die API muss vollständig, sicher und dokumentiert sein (z. B. OpenAPI/Swagger).
+    - **UI als Client**: Behandle deine eigene UI als nicht vertrauenswürdigen Client. Sie sollte keine Geschäftsregeln enthalten, die nicht auch von der API durchgesetzt werden.
+    - **Headless-Nutzung**: Ermögliche die Nutzung ohne GUI über CLI-Argumente oder URL-Parameter. Dies unterstützt Automatisierung und Power-User.
+    - **Deep Linking**: Erlaube Nutzern, spezifische Zustände (z. B. Filter, Suchanfragen) per URL-Parameter zu bookmarken oder zu teilen.
+    - **UI-Hinweise**: Die UI sollte den Nutzer führen (z. B. Eingabemasken, Validierungsfeedback), darf aber nie die einzige Verteidigungslinie sein.
+    - **Risiko - Manipulation**: Nutzer können URL-Parameter oder API-Aufrufe ändern, um UI-Beschränkungen zu umgehen. Das Backend muss jede Eingabe prüfen.
+    - **Risiko - Datenlecks**: Niemals Geheimnisse (Passwörter, Tokens, PII) in URL-Parameter packen, da diese in Browserverlauf und Proxies protokolliert werden.
+    - **Mitigation**: Validiere alle Eingaben im Backend. Nutze Header/Body für Secrets. Stelle sicher, dass GET-Requests idempotent (nur lesend) sind.
+
+## Role Matrix
+
+=== "EN"
+
+    A clear definition of roles and permissions enforces the principle of least privilege.
+
     Use least privilege by default and keep role scopes explicit.
 
-    #### General
+=== "DE"
+
+    Eine klare Definition von Rollen und Rechten setzt das Prinzip der geringsten Rechte durch.
+
+    Nutze standardmäßig das Prinzip der geringsten Rechte und halte Rollengrenzen explizit.
+
+#### General
+
+=== "EN"
 
     | Role | Minimum rights | Typical No-Gos |
     | :--- | :--- | :--- |
@@ -306,23 +396,7 @@
       - Access review on fixed cadence and after role changes.
       - Break-glass access is audited, rare, and post-reviewed.
 
-    #### Azure
-
-    - Map roles to Entra groups + Azure RBAC scopes (subscription/resource group/resource).
-    - Prefer managed identities for services instead of client secrets.
-    - Use Privileged Identity Management (PIM) or equivalent for just-in-time elevation.
-
-    #### GitHub
-
-    - Map roles to GitHub teams and repository permissions (`Read`, `Triage`, `Write`, `Maintain`, `Admin`).
-    - Protect critical paths (security, infra, deployment workflows) via CODEOWNERS + required reviews.
-    - Restrict who can approve production deployments in protected environments.
-
 === "DE"
-
-    Nutze standardmäßig das Prinzip der geringsten Rechte und halte Rollengrenzen explizit.
-
-    #### Allgemein
 
     | Rolle | Minimale Rechte | Typische No-Gos |
     | :--- | :--- | :--- |
@@ -338,25 +412,51 @@
       - Zugriffsüberprüfung in festem Rhythmus und nach Rollenwechseln.
       - Notfallzugriff (Break-Glass) wird auditiert, ist selten und wird nachbereitet.
 
-    #### Azure
+#### Azure
+
+=== "EN"
+
+    - Map roles to Entra groups + Azure RBAC scopes (subscription/resource group/resource).
+    - Prefer managed identities for services instead of client secrets.
+    - Use Privileged Identity Management (PIM) or equivalent for just-in-time elevation.
+
+=== "DE"
 
     - Rollen auf Entra-Gruppen + Azure RBAC Scopes (Subscription/Ressourcengruppe/Ressource) abbilden.
     - Bevorzuge Managed Identities für Dienste anstelle von Client Secrets.
     - Nutze Privileged Identity Management (PIM) für Just-in-Time-Rechteerweiterung.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - Map roles to GitHub teams and repository permissions (`Read`, `Triage`, `Write`, `Maintain`, `Admin`).
+    - Protect critical paths (security, infra, deployment workflows) via CODEOWNERS + required reviews.
+    - Restrict who can approve production deployments in protected environments.
+
+=== "DE"
 
     - Rollen auf GitHub-Teams und Repository-Berechtigungen (`Read`, `Triage`, `Write`, `Maintain`, `Admin`) abbilden.
     - Schütze kritische Pfade (Sicherheit, Infra, Deployment-Workflows) durch CODEOWNERS und erforderliche Reviews.
     - Beschränke, wer Produktions-Deployments in geschützten Umgebungen genehmigen darf.
 
-## Data, Databases & Secure Design
+## Data Design
 
 === "EN"
 
+    Secure data architecture prevents leaks and ensures strict tenant isolation.
+
     Data design is security design. If data boundaries are weak, tenant isolation and compliance usually fail later in production.
 
-    #### General
+=== "DE"
+
+    Sichere Datenarchitektur verhindert Lecks und gewährleistet strikte Mandantentrennung.
+
+    Datendesign ist Sicherheitsdesign. Wenn Datengrenzen schwach sind, scheitern Mandantenisolierung und Compliance meist später in der Produktion.
+
+#### General
+
+=== "EN"
 
     - **Define data classes early**: Classify data before implementation and store the classification in architecture/docs.
     - **Brisante Daten (sensitive/high-impact data)**
@@ -385,7 +485,38 @@
       - Joining multi-tenant data for reports without access guardrails.
       - Keeping personal data forever because retention/deletion jobs were not implemented.
 
-    ##### Practical implementation examples (General)
+=== "DE"
+
+    - **Datenklassen früh definieren**: Klassifizieren Sie Daten vor der Implementierung und dokumentieren Sie dies.
+    - **Brisante Daten**
+      - **Definition**: Daten, deren Leck, Änderung oder Unverfügbarkeit rechtlichen, finanziellen oder rufschädigenden Schaden verursachen kann.
+      - **Beispiele**: Personenbezogene Daten (PII), Auth-Daten, API-Keys, Zahlungsdaten, Gesundheitsdaten, Sicherheitslogs, Verträge.
+      - **Warum das wichtig ist**: Brisante Daten erfordern strengeren Zugriff, stärkere Verschlüsselung, genaueres Logging und kürzere Aufbewahrung.
+    - **Datenminimierung**: Sammeln/Speichern Sie nur Daten, die für Produkt- und rechtliche Zwecke notwendig sind.
+    - **Mandantentrennung (Tenant Isolation) per Design**:
+      - Jeder Schreib-/Lesezugriff muss auf den Mandanten beschränkt sein.
+      - Setzen Sie Isolierung auf mehreren Ebenen durch (Anwendung + Datenbank-Policy/Index/Partition).
+      - Verhindern Sie mandantenübergreifende Exporte standardmäßig; erlauben Sie sie nur über explizit auditierte Wege.
+    - **Datenbank-Sicherheitsbasics**:
+      - Verschlüsselung bei Übertragung und im Ruhezustand.
+      - Least-Privilege-Datenbankkonten (kein geteilter Superuser zur Laufzeit).
+      - Backup/Restore getestet und auf Datenklassifizierung abgestimmt.
+      - Löschregeln implementiert, nicht nur dokumentiert.
+    - **Markierung der Sensitivität**:
+      - Kennzeichnen Sie Felder/Tabellen mit Labels wie `public`, `internal`, `confidential`, `brisant`.
+      - Nutzen Sie diese Labels in Code, Schemata und Logs zur Durchsetzung von Regeln.
+      - Definieren Sie Verantwortliche (Owner) für jede kritische Datendomäne.
+    - **Typische Fehler**:
+      - Fehlender Mandantenfilter in einem Endpunkt.
+      - Speicherung von Secrets in Geschäftsdaten oder Logs.
+      - Zu weitreichende DB-Berechtigungen für App-Dienste.
+      - Nutzung von Produktionsdaten im Staging ohne Anonymisierung.
+      - Unbeschränkte mandantenübergreifende Reports.
+      - Endlose Speicherung personenbezogener Daten mangels Löschjobs.
+
+##### Practical implementation examples (General)
+
+=== "EN"
 
     - **Define data classes early**
       - Example: add a `data_classification.md` with required labels for every entity (`public`, `internal`, `confidential`, `brisant`) and an owner.
@@ -422,7 +553,9 @@
       - Example control: static code checks + integration tests detect missing tenant filters in repository/query layer.
       - What to check: PR checklist includes tenant-scope review for data access changes.
 
-    #### Azure
+#### Azure
+
+=== "EN"
 
     - Prefer managed data services with built-in security features and enable encryption defaults.
     - Use separate databases/schemas/partitions per tenant where risk/regulatory needs require stronger isolation.
@@ -431,47 +564,7 @@
     - Enable auditing/diagnostics for database access and security events; send to Log Analytics for retention and investigation.
     - Apply **Azure Policy** and Defender recommendations to detect misconfiguration (public endpoints, weak TLS, missing diagnostic settings).
 
-    #### GitHub
-
-    - Treat database schemas and migrations as code (`/db`, `/migrations`) with PR review and rollback strategy.
-    - Add checks in CI for migration safety (backward compatibility, lock/timeout risk, destructive changes).
-    - Never commit dumps with real customer data; use synthetic/anonymised fixtures for tests.
-    - Store data model/classification docs in repo and require updates when schema changes.
-
 === "DE"
-
-    Datendesign ist Sicherheitsdesign. Wenn Datengrenzen schwach sind, scheitern Mandantenisolierung und Compliance meist später in der Produktion.
-
-    #### Allgemein
-
-    - **Datenklassen früh definieren**: Klassifizieren Sie Daten vor der Implementierung und dokumentieren Sie dies.
-    - **Brisante Daten**
-      - **Definition**: Daten, deren Leck, Änderung oder Unverfügbarkeit rechtlichen, finanziellen oder rufschädigenden Schaden verursachen kann.
-      - **Beispiele**: Personenbezogene Daten (PII), Auth-Daten, API-Keys, Zahlungsdaten, Gesundheitsdaten, Sicherheitslogs, Verträge.
-      - **Warum das wichtig ist**: Brisante Daten erfordern strengeren Zugriff, stärkere Verschlüsselung, genaueres Logging und kürzere Aufbewahrung.
-    - **Datenminimierung**: Sammeln/Speichern Sie nur Daten, die für Produkt- und rechtliche Zwecke notwendig sind.
-    - **Mandantentrennung (Tenant Isolation) per Design**:
-      - Jeder Schreib-/Lesezugriff muss auf den Mandanten beschränkt sein.
-      - Setzen Sie Isolierung auf mehreren Ebenen durch (Anwendung + Datenbank-Policy/Index/Partition).
-      - Verhindern Sie mandantenübergreifende Exporte standardmäßig; erlauben Sie sie nur über explizit auditierte Wege.
-    - **Datenbank-Sicherheitsbasics**:
-      - Verschlüsselung bei Übertragung und im Ruhezustand.
-      - Least-Privilege-Datenbankkonten (kein geteilter Superuser zur Laufzeit).
-      - Backup/Restore getestet und auf Datenklassifizierung abgestimmt.
-      - Löschregeln implementiert, nicht nur dokumentiert.
-    - **Markierung der Sensitivität**:
-      - Kennzeichnen Sie Felder/Tabellen mit Labels wie `public`, `internal`, `confidential`, `brisant`.
-      - Nutzen Sie diese Labels in Code, Schemata und Logs zur Durchsetzung von Regeln.
-      - Definieren Sie Verantwortliche (Owner) für jede kritische Datendomäne.
-    - **Typische Fehler**:
-      - Fehlender Mandantenfilter in einem Endpunkt.
-      - Speicherung von Secrets in Geschäftsdaten oder Logs.
-      - Zu weitreichende DB-Berechtigungen für App-Dienste.
-      - Nutzung von Produktionsdaten im Staging ohne Anonymisierung.
-      - Unbeschränkte mandantenübergreifende Reports.
-      - Endlose Speicherung personenbezogener Daten mangels Löschjobs.
-
-    #### Azure
 
     - Bevorzuge Managed Data Services mit eingebauten Sicherheitsfeatures und aktiviere Standardverschlüsselung.
     - Nutze separate Datenbanken/Schemata/Partitionen pro Mandant, wenn Risiken dies erfordern.
@@ -480,63 +573,99 @@
     - Aktiviere Auditing/Diagnose für Datenbankzugriffe und Sicherheitsereignisse (Log Analytics).
     - Wende **Azure Policy** und Defender-Empfehlungen an, um Fehlkonfigurationen zu erkennen.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - Treat database schemas and migrations as code (`/db`, `/migrations`) with PR review and rollback strategy.
+    - Add checks in CI for migration safety (backward compatibility, lock/timeout risk, destructive changes).
+    - Never commit dumps with real customer data; use synthetic/anonymised fixtures for tests.
+    - Store data model/classification docs in repo and require updates when schema changes.
+
+=== "DE"
 
     - Behandle Datenbankschemata und Migrationen als Code (`/db`, `/migrations`) mit PR-Review und Rollback-Strategie.
     - Füge CI-Prüfungen für Migrationssicherheit hinzu (Abwärtskompatibilität, Lock-Risiken, destruktive Änderungen).
     - Committe niemals Dumps mit echten Kundendaten; nutze synthetische Fixtures für Tests.
     - Speichere Datenmodell-/Klassifizierungsdokumentation im Repo und fordere Updates bei Schemaänderungen.
 
-## Data & Secrets
+## Secrets
 
 === "EN"
 
-    #### General
+    Proper handling of credentials and encryption keys protects sensitive information.
+
+=== "DE"
+
+    Der korrekte Umgang mit Zugangsdaten und Schlüsseln schützt sensible Informationen.
+
+#### General
+
+=== "EN"
 
     - Never store secrets (API keys, connection strings, certificates) in source code or version control.
     - Use a dedicated secrets store or vault; reference secrets at runtime or in the pipeline, never commit them.
     - Encrypt sensitive data at rest and in transit; enforce **TLS 1.2+** for all external endpoints.
 
-    #### Azure
+=== "DE"
+
+    - Speichere niemals Geheimnisse (API-Schlüssel, Verbindungszeichenfolgen, Zertifikate) im Quellcode oder in der Versionsverwaltung.
+    - Nutze einen dedizierten Secrets-Store oder Vault; referenziere Secrets zur Laufzeit oder in der Pipeline, committe sie nie.
+    - Verschlüssele sensible Daten im Ruhezustand und bei der Übertragung; erzwinge **TLS 1.2+** für alle externen Endpunkte.
+
+#### Azure
+
+=== "EN"
 
     - **Azure Key Vault**: Store API keys, database credentials, and certificates. Grant access via managed identities or Entra ID with minimal permissions. Reference Key Vault from App Service, Functions, or pipelines.
     - Rely on Azure’s default encryption at rest and in transit; configure apps to use TLS 1.2+ only.
 
-    #### GitHub
+=== "DE"
+
+    - **Azure Key Vault**: Speichere API-Schlüssel, Datenbank-Credentials und Zertifikate. Gewähre Zugriff über Managed Identities oder Entra ID mit minimalen Rechten. Referenziere Key Vault aus App Service, Functions oder Pipelines.
+    - Verlasse dich auf die Standardverschlüsselung von Azure (Ruhezustand/Übertragung); konfiguriere Apps so, dass sie nur TLS 1.2+ nutzen.
+
+#### GitHub
+
+=== "EN"
 
     - Use **GitHub Secrets** (and optionally **Environments** with secrets) for deployment credentials and API keys. Never log or echo secrets in workflow output.
     - Ensure **Dependabot** and **Code Scanning** are enabled so dependency and code issues are caught; avoid committing even example or test credentials.
 
 === "DE"
 
-    #### Allgemein
-
-    - Speichere niemals Geheimnisse (API-Schlüssel, Verbindungszeichenfolgen, Zertifikate) im Quellcode oder in der Versionsverwaltung.
-    - Nutze einen dedizierten Secrets-Store oder Vault; referenziere Secrets zur Laufzeit oder in der Pipeline, committe sie nie.
-    - Verschlüssele sensible Daten im Ruhezustand und bei der Übertragung; erzwinge **TLS 1.2+** für alle externen Endpunkte.
-
-    #### Azure
-
-    - **Azure Key Vault**: Speichere API-Schlüssel, Datenbank-Credentials und Zertifikate. Gewähre Zugriff über Managed Identities oder Entra ID mit minimalen Rechten. Referenziere Key Vault aus App Service, Functions oder Pipelines.
-    - Verlasse dich auf die Standardverschlüsselung von Azure (Ruhezustand/Übertragung); konfiguriere Apps so, dass sie nur TLS 1.2+ nutzen.
-
-    #### GitHub
-
     - Nutze **GitHub Secrets** (und optional **Environments** mit Secrets) für Deployment-Credentials und API-Keys. Logge oder gib niemals Secrets in der Workflow-Ausgabe aus.
     - Stelle sicher, dass **Dependabot** und **Code Scanning** aktiviert sind, um Abhängigkeits- und Codeprobleme zu finden; vermeide das Einchecken von Beispiel-Credentials.
 
-## Network & Infrastructure
+## Network
 
 === "EN"
 
-    #### General
+    Network segmentation and defense layers limit the blast radius of attacks.
+
+=== "DE"
+
+    Netzwerksegmentierung und Verteidigungsschichten begrenzen den Schaden bei Angriffen.
+
+#### General
+
+=== "EN"
 
     - Segment networks and restrict access to backend services; avoid exposing databases or internal APIs directly to the internet.
     - Put a **Web Application Firewall (WAF)** in front of web applications to mitigate common attacks (e.g. OWASP Top 10).
     - Use **HTTPS** everywhere; prefer TLS 1.2+ and automatic certificate management where possible.
     - Consider DDoS mitigation for public-facing production systems.
 
-    #### Azure
+=== "DE"
+
+    - Segmentiere Netzwerke und beschränke den Zugriff auf Backend-Dienste; vermeide die direkte Exponierung von Datenbanken oder internen APIs ins Internet.
+    - Setze eine **Web Application Firewall (WAF)** vor Webanwendungen, um gängige Angriffe (z. B. OWASP Top 10) abzuwehren.
+    - Nutze überall **HTTPS**; bevorzuge TLS 1.2+ und automatisches Zertifikatsmanagement.
+    - Ziehe DDoS-Schutz für öffentliche Produktionssysteme in Betracht.
+
+#### Azure
+
+=== "EN"
 
     - Use **Private Endpoints** or **VNet Integration** for Azure Web Apps and backend services (databases, storage) to reduce public internet exposure.
     - Put **Azure Application Gateway** or **Front Door** with **WAF** in front of web apps.
@@ -547,20 +676,7 @@
     - Enable **Azure DDoS Protection Standard** for production workloads where appropriate.
     - Azure Web Apps support HTTPS and managed certificates by default; enforce minimum TLS version in configuration.
 
-    #### GitHub
-
-    - GitHub hosts the repository and runners; ensure you do not rely on public runner IPs for allowlisting in Azure. Prefer **GitHub Actions OIDC** with Azure so no long-lived secrets are needed for deployment.
-
 === "DE"
-
-    #### Allgemein
-
-    - Segmentiere Netzwerke und beschränke den Zugriff auf Backend-Dienste; vermeide die direkte Exponierung von Datenbanken oder internen APIs ins Internet.
-    - Setze eine **Web Application Firewall (WAF)** vor Webanwendungen, um gängige Angriffe (z. B. OWASP Top 10) abzuwehren.
-    - Nutze überall **HTTPS**; bevorzuge TLS 1.2+ und automatisches Zertifikatsmanagement.
-    - Ziehe DDoS-Schutz für öffentliche Produktionssysteme in Betracht.
-
-    #### Azure
 
     - Nutze **Private Endpoints** oder **VNet-Integration** für Azure Web Apps und Backend-Dienste (Datenbanken, Storage), um die öffentliche Exponierung zu minimieren.
     - Setze **Azure Application Gateway** oder **Front Door** mit **WAF** vor Web Apps.
@@ -571,17 +687,33 @@
     - Aktiviere **Azure DDoS Protection Standard** für Produktionsworkloads, wo angemessen.
     - Azure Web Apps unterstützen standardmäßig HTTPS und Managed Certificates; erzwinge die minimale TLS-Version in der Konfiguration.
 
-    #### GitHub
-
-    - GitHub hostet das Repository und die Runner; verlasse dich nicht auf öffentliche Runner-IPs für Allowlists in Azure. Bevorzuge **GitHub Actions OIDC** mit Azure, damit keine langlebigen Secrets für Deployments nötig sind.
-
-## Domain & Email Trust Setup
+#### GitHub
 
 === "EN"
 
+    - GitHub hosts the repository and runners; ensure you do not rely on public runner IPs for allowlisting in Azure. Prefer **GitHub Actions OIDC** with Azure so no long-lived secrets are needed for deployment.
+
+=== "DE"
+
+    - GitHub hostet das Repository und die Runner; verlasse dich nicht auf öffentliche Runner-IPs für Allowlists in Azure. Bevorzuge **GitHub Actions OIDC** mit Azure, damit keine langlebigen Secrets für Deployments nötig sind.
+
+## Domain Trust
+
+=== "EN"
+
+    Correct DNS and email configuration establishes external trust and prevents spoofing.
+
     Trust is also built through a clean domain and email setup. Customers, spam filters, and security teams check these basics quickly.
 
-    #### General
+=== "DE"
+
+    Korrekte DNS- und E-Mail-Konfiguration schafft externes Vertrauen und verhindert Spoofing.
+
+    Vertrauen wird auch durch ein sauberes Domain- und E-Mail-Setup aufgebaut. Kunden, Spamfilter und Sicherheitsteams prüfen diese Grundlagen schnell.
+
+#### General
+
+=== "EN"
 
     - **Domain ownership and DNS hygiene**
       - Keep registrar, DNS provider, and domain contacts up to date.
@@ -602,21 +734,62 @@
       - Monitor certificate expiry, DNS changes, and suspicious record changes.
       - Keep an incident playbook for domain hijack, certificate failure, or email spoofing.
 
-    #### Azure
+=== "DE"
+
+    - **Domainbesitz und DNS-Hygiene**
+      - Halten Sie Registrar-, DNS-Provider- und Domainkontakte aktuell.
+      - Schützen Sie Domainkonten mit MFA und striktem rollenbasiertem Zugriff.
+      - Dokumentieren Sie alle kritischen DNS-Einträge und deren Besitzer.
+    - **Web-Domain-Checks**
+      - HTTPS wird auf allen öffentlichen Endpunkten erzwungen; Zertifikate sind gültig und auto-erneuert.
+      - Leite HTTP auf HTTPS um und deaktiviere schwache TLS-Ciphers.
+      - Nutze eine kanonische Domain-Strategie (z. B. `www` oder Apex) und permanente Weiterleitungen.
+      - Setze relevante Security-Header (HSTS, X-Content-Type-Options, CSP).
+    - **E-Mail-Domain-Checks**
+      - Konfiguriere und validiere **SPF**, **DKIM** und **DMARC** für alle sendenden Domains.
+      - Starte DMARC im Monitoring (`p=none`), prüfe Berichte und wechsle dann zu strengerer Richtlinie (`quarantine`/`reject`), wenn stabil.
+      - Stelle die Absender-Ausrichtung (Alignment) sicher (`From`-Domain stimmt mit SPF/DKIM überein).
+      - Nutze dedizierte Subdomains für Transaktions-/Massen-Mails (z. B. `mail.beispiel.de`).
+    - **Operative Checks**
+      - Teste Zustellbarkeit und Spam-Platzierung regelmäßig (Seed-Tests, DMARC-Reports, Bounce/Complaint-Raten).
+      - Überwache Zertifikatsablauf, DNS-Änderungen und verdächtige Record-Änderungen.
+      - Halte ein Incident-Playbook für Domain-Hijacking, Zertifikatsfehler oder E-Mail-Spoofing bereit.
+
+#### Azure
+
+=== "EN"
 
     - Use **Azure DNS** (or equivalent) with RBAC and MFA-protected admin access.
     - For web apps, bind custom domains in **Azure App Service** and use managed certificates or automated renewal.
     - If using **Azure Front Door/Application Gateway**, ensure the custom domain and certificate chain are correctly configured end-to-end.
     - For email providers integrated with Azure workloads, verify required DNS records (SPF/DKIM/DMARC, MX, CNAME/TXT) and monitor DMARC reports.
 
-    #### GitHub
+=== "DE"
+
+    - Nutze **Azure DNS** (oder gleichwertig) mit RBAC und MFA-geschütztem Admin-Zugriff.
+    - Binde für Web Apps Custom Domains in **Azure App Service** und nutze Managed Certificates.
+    - Wenn **Azure Front Door/Application Gateway** genutzt wird, stelle sicher, dass die Custom Domain und Zertifikatskette End-to-End korrekt sind.
+    - Für in Azure integrierte E-Mail-Provider: Überprüfe DNS-Records (SPF/DKIM/DMARC, MX) und überwache DMARC-Reports.
+
+#### GitHub
+
+=== "EN"
 
     - If using **GitHub Pages** or GitHub-managed domains, verify custom domain ownership and required DNS records.
     - Protect repository and organization settings that can affect domains, environments, or deployment destinations.
     - Keep DNS and domain configuration changes auditable via pull requests/IaC where possible.
     - For CI/CD-generated notifications or release emails, use verified sender domains and avoid untrusted noreply patterns for customer communication.
 
-    ### DNS+Mail Baseline v1 (operational template)
+=== "DE"
+
+    - Bei **GitHub Pages** oder GitHub-managed Domains: Verifiziere den Domainbesitz und erforderliche DNS-Records.
+    - Schütze Repository- und Organisationseinstellungen, die Domains oder Deployments betreffen.
+    - Halte DNS- und Domainkonfigurationsänderungen über PRs/IaC auditierbar.
+    - Nutze für CI/CD-generierte Benachrichtigungen verifizierte Absenderdomains und vermeide untrusted Noreply-Muster.
+
+### DNS+Mail Baseline v1 (operational template)
+
+=== "EN"
 
     Use this as a starting point and adapt values to your provider and domain model.
 
@@ -645,45 +818,6 @@
 
 === "DE"
 
-    Vertrauen wird auch durch ein sauberes Domain- und E-Mail-Setup aufgebaut. Kunden, Spamfilter und Sicherheitsteams prüfen diese Grundlagen schnell.
-
-    #### Allgemein
-
-    - **Domainbesitz und DNS-Hygiene**
-      - Halten Sie Registrar-, DNS-Provider- und Domainkontakte aktuell.
-      - Schützen Sie Domainkonten mit MFA und striktem rollenbasiertem Zugriff.
-      - Dokumentieren Sie alle kritischen DNS-Einträge und deren Besitzer.
-    - **Web-Domain-Checks**
-      - HTTPS wird auf allen öffentlichen Endpunkten erzwungen; Zertifikate sind gültig und auto-erneuert.
-      - Leite HTTP auf HTTPS um und deaktiviere schwache TLS-Ciphers.
-      - Nutze eine kanonische Domain-Strategie (z. B. `www` oder Apex) und permanente Weiterleitungen.
-      - Setze relevante Security-Header (HSTS, X-Content-Type-Options, CSP).
-    - **E-Mail-Domain-Checks**
-      - Konfiguriere und validiere **SPF**, **DKIM** und **DMARC** für alle sendenden Domains.
-      - Starte DMARC im Monitoring (`p=none`), prüfe Berichte und wechsle dann zu strengerer Richtlinie (`quarantine`/`reject`), wenn stabil.
-      - Stelle die Absender-Ausrichtung (Alignment) sicher (`From`-Domain stimmt mit SPF/DKIM überein).
-      - Nutze dedizierte Subdomains für Transaktions-/Massen-Mails (z. B. `mail.beispiel.de`).
-    - **Operative Checks**
-      - Teste Zustellbarkeit und Spam-Platzierung regelmäßig (Seed-Tests, DMARC-Reports, Bounce/Complaint-Raten).
-      - Überwache Zertifikatsablauf, DNS-Änderungen und verdächtige Record-Änderungen.
-      - Halte ein Incident-Playbook für Domain-Hijacking, Zertifikatsfehler oder E-Mail-Spoofing bereit.
-
-    #### Azure
-
-    - Nutze **Azure DNS** (oder gleichwertig) mit RBAC und MFA-geschütztem Admin-Zugriff.
-    - Binde für Web Apps Custom Domains in **Azure App Service** und nutze Managed Certificates.
-    - Wenn **Azure Front Door/Application Gateway** genutzt wird, stelle sicher, dass die Custom Domain und Zertifikatskette End-to-End korrekt sind.
-    - Für in Azure integrierte E-Mail-Provider: Überprüfe DNS-Records (SPF/DKIM/DMARC, MX) und überwache DMARC-Reports.
-
-    #### GitHub
-
-    - Bei **GitHub Pages** oder GitHub-managed Domains: Verifiziere den Domainbesitz und erforderliche DNS-Records.
-    - Schütze Repository- und Organisationseinstellungen, die Domains oder Deployments betreffen.
-    - Halte DNS- und Domainkonfigurationsänderungen über PRs/IaC auditierbar.
-    - Nutze für CI/CD-generierte Benachrichtigungen verifizierte Absenderdomains und vermeide untrusted Noreply-Muster.
-
-    ### DNS+Mail Baseline v1 (operative Vorlage)
-
     Nutze dies als Startpunkt und passe Werte an deinen Provider an.
 
     | Eintrag | Beispielwert | Prüfintervall | Besitzer |
@@ -709,11 +843,19 @@
     - Test-E-Mails bestehen SPF/DKIM/DMARC und landen im Posteingang großer Provider.
     - Domain- und DNS-Admin-Konten sind MFA-geschützt und zugriffsgeprüft.
 
-## Secure Development Lifecycle (SDLC)
+## SDLC
 
 === "EN"
 
-    #### General
+    Security must be integrated into every stage of the software development process.
+
+=== "DE"
+
+    Sicherheit muss in jede Phase des Softwareentwicklungsprozesses integriert werden.
+
+#### General
+
+=== "EN"
 
     - **Shift Left**: Integrate security early (requirements, design, code, pull requests), not only at release or in production.
     - **SAST (Static Application Security Testing)**: Analyse source or bytecode for vulnerabilities (injection, hardcoded secrets).
@@ -722,11 +864,28 @@
     - **Secure CI/CD**: No secrets in repos; use pipeline secrets and environment protection (e.g. approvals for production). Run security scans in the pipeline and block deployment on critical findings when policy requires it.
     - **Branch & commit hygiene**: Branch protection, required reviews, and optionally signed commits for main/production branches.
 
-    #### Azure
+=== "DE"
+
+    - **Shift Left**: Integriere Sicherheit frühzeitig (Anforderungen, Design, Code, PRs), nicht erst beim Release oder in der Produktion.
+    - **SAST (Static Application Security Testing)**: Analysiere Quellcode auf Schwachstellen (Injection, hardcodierte Secrets).
+    - **DAST (Dynamic Application Security Testing)**: Teste laufende Anwendungen auf ausnutzbare Probleme.
+    - **SCA (Software Composition Analysis)**: Scanne Abhängigkeiten auf bekannte CVEs und Lizenzrisiken; halte Abhängigkeiten aktuell.
+    - **Sichere CI/CD**: Keine Secrets in Repos; nutze Pipeline-Secrets und Umgebungsschutz (z. B. Genehmigungen für Produktion). Führe Sicherheitsscans in der Pipeline aus und blockiere das Deployment bei kritischen Funden.
+    - **Branch- & Commit-Hygiene**: Branch Protection, erforderliche Reviews und optional signierte Commits für Main-/Produktions-Branches.
+
+#### Azure
+
+=== "EN"
 
     - Use **Microsoft Defender for Cloud** and **Defender for DevOps** (where available) for posture and pipeline integration; act on recommendations for Azure resources and repos.
 
-    #### GitHub
+=== "DE"
+
+    - Nutze **Microsoft Defender for Cloud** und **Defender for DevOps** (wo verfügbar) für Sicherheitslage und Pipeline-Integration; reagiere auf Empfehlungen für Azure-Ressourcen und Repos.
+
+#### GitHub
+
+=== "EN"
 
     - **Branch protection rules**: Require pull request reviews, status checks, and optionally signed commits before merging to default/protected branches.
     - **CodeQL** (GitHub Advanced Security): Enable for SAST. Run in Actions and fail or warn on policy-defined findings.
@@ -743,21 +902,6 @@
 
 === "DE"
 
-    #### Allgemein
-
-    - **Shift Left**: Integriere Sicherheit frühzeitig (Anforderungen, Design, Code, PRs), nicht erst beim Release oder in der Produktion.
-    - **SAST (Static Application Security Testing)**: Analysiere Quellcode auf Schwachstellen (Injection, hardcodierte Secrets).
-    - **DAST (Dynamic Application Security Testing)**: Teste laufende Anwendungen auf ausnutzbare Probleme.
-    - **SCA (Software Composition Analysis)**: Scanne Abhängigkeiten auf bekannte CVEs und Lizenzrisiken; halte Abhängigkeiten aktuell.
-    - **Sichere CI/CD**: Keine Secrets in Repos; nutze Pipeline-Secrets und Umgebungsschutz (z. B. Genehmigungen für Produktion). Führe Sicherheitsscans in der Pipeline aus und blockiere das Deployment bei kritischen Funden.
-    - **Branch- & Commit-Hygiene**: Branch Protection, erforderliche Reviews und optional signierte Commits für Main-/Produktions-Branches.
-
-    #### Azure
-
-    - Nutze **Microsoft Defender for Cloud** und **Defender for DevOps** (wo verfügbar) für Sicherheitslage und Pipeline-Integration; reagiere auf Empfehlungen für Azure-Ressourcen und Repos.
-
-    #### GitHub
-
     - **Branch Protection Rules**: Fordere PR-Reviews, Statusprüfungen und optional signierte Commits vor dem Merge an.
     - **CodeQL** (GitHub Advanced Security): Aktiviere für SAST. Führe in Actions aus und warne oder blockiere bei richtlinienrelevanten Funden.
     - **Dependabot**: Aktiviere Versions- und Sicherheitsupdates; aktiviere **Dependency Graph** und **Dependabot Alerts**.
@@ -769,13 +913,21 @@
       - **SonarCloud**: Codequalität und Sicherheits-Hotspots integriert in PR-Checks.
       - **Snyk**: SCA und Container-Scanning integriert in GitHub-PR-Feedback.
       - **Checkov**: IaC-Sicherheitsscanning für Terraform/Bicep/CloudFormation in Actions.
-    - **Umgebungen (Environments)**: Nutze sie für Staging/Produktion mit Schutzregeln und erforderlichen Reviewern, damit nur genehmigte Workflows deployen.
+      - **Umgebungen (Environments)**: Nutze sie für Staging/Produktion mit Schutzregeln und erforderlichen Reviewern, damit nur genehmigte Workflows deployen.
 
 ## Testing
 
 === "EN"
 
-    #### General
+    Comprehensive testing ensures reliability and prevents regressions before release.
+
+=== "DE"
+
+    Umfassendes Testen sichert Zuverlässigkeit und verhindert Regressionen vor dem Release.
+
+#### General
+
+=== "EN"
 
     - **Unit tests**: Cover critical business logic, edge cases, and error handling; run on every change.
     - **Integration tests**: Verify components and external services (APIs, databases, queues) work together; use test doubles where appropriate.
@@ -790,21 +942,7 @@
       - Define minimum expectations per layer (unit/integration/e2e) and review gaps regularly.
     - Define a clear test strategy (what runs when, who maintains tests) and require passing tests before merge or release.
 
-    #### Azure
-
-    - Run tests in **CI** before deployment. Use **staging slots** (e.g. App Service deployment slots) to validate releases before swapping to production; run smoke or e2e tests against the staging slot.
-    - Use **Azure Monitor** and **Application Insights** to observe test and production behaviour and catch regressions.
-
-    #### GitHub
-
-    - **GitHub Actions**: Run unit, integration, and e2e tests in workflows; attach test results (e.g. JUnit XML) for visibility.
-    - Use **branch protection** to require that status checks (including test jobs) pass before merging. Use **matrix builds** to test across relevant runtimes or environments.
-    - Add dedicated jobs for **fuzzing** and longer-running security/integration tests on schedule (e.g. nightly) if they are too heavy for every PR.
-    - Publish test artifacts and reports (coverage, flaky-test report, fuzzing findings) so trends are visible over time.
-
 === "DE"
-
-    #### Allgemein
 
     - **Unit-Tests**: Abdeckung von kritischer Geschäftslogik, Randfällen und Fehlerbehandlung; Ausführung bei jeder Änderung.
     - **Integrationstests**: Verifizierung, dass Komponenten und externe Dienste (APIs, DBs, Queues) zusammenarbeiten.
@@ -819,25 +957,51 @@
       - Definiere Mindesterwartungen pro Ebene (Unit/Integration/E2E) und überprüfe Lücken regelmäßig.
     - Definiere eine klare Teststrategie (was läuft wann, wer wartet Tests) und fordere bestandene Tests vor Merge oder Release.
 
-    #### Azure
+#### Azure
+
+=== "EN"
+
+    - Run tests in **CI** before deployment. Use **staging slots** (e.g. App Service deployment slots) to validate releases before swapping to production; run smoke or e2e tests against the staging slot.
+    - Use **Azure Monitor** and **Application Insights** to observe test and production behaviour and catch regressions.
+
+=== "DE"
 
     - Führe Tests in **CI** vor dem Deployment aus. Nutze **Staging Slots** (z. B. App Service Deployment Slots), um Releases zu validieren, bevor auf Produktion gewechselt wird (Swap); führe Smoke- oder E2E-Tests gegen den Slot aus.
     - Nutze **Azure Monitor** und **Application Insights**, um Test- und Produktionsverhalten zu beobachten und Regressionen zu finden.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - **GitHub Actions**: Run unit, integration, and e2e tests in workflows; attach test results (e.g. JUnit XML) for visibility.
+    - Use **branch protection** to require that status checks (including test jobs) pass before merging. Use **matrix builds** to test across relevant runtimes or environments.
+    - Add dedicated jobs for **fuzzing** and longer-running security/integration tests on schedule (e.g. nightly) if they are too heavy for every PR.
+    - Publish test artifacts and reports (coverage, flaky-test report, fuzzing findings) so trends are visible over time.
+
+=== "DE"
 
     - **GitHub Actions**: Führe Unit-, Integrations- und E2E-Tests in Workflows aus; hänge Testergebnisse (z. B. JUnit XML) für Sichtbarkeit an.
     - Nutze **Branch Protection**, um das Bestehen von Statusprüfungen (inkl. Test-Jobs) vor dem Merge zu erzwingen.
     - Füge dedizierte Jobs für **Fuzzing** und länger laufende Security/Integration-Tests per Zeitplan (z. B. nächtlich) hinzu, wenn sie für jeden PR zu schwergewichtig sind.
     - Veröffentliche Testartefakte und Berichte (Coverage, Flaky-Test-Report), um Trends sichtbar zu machen.
 
-## Staging Concept
+## Staging
 
 === "EN"
 
+    A production-like environment validates releases and reduces deployment risks.
+
     A **staging** environment is a copy of (or as close as possible to) production used to validate releases before they reach users. Keep the promotion path simple: build → deploy to staging → validate → promote to production.
 
-    #### General
+=== "DE"
+
+    Eine produktionsnahe Umgebung validiert Releases und reduziert Deployment-Risiken.
+
+    Eine **Staging**-Umgebung ist eine Kopie (oder so nah wie möglich an) der Produktion, um Releases zu validieren, bevor sie die Nutzer erreichen. Halte den Promotion-Pfad einfach: Build → Deploy auf Staging → Validieren → Promote auf Produktion.
+
+#### General
+
+=== "EN"
 
     - **Purpose**: Staging is where you run smoke tests, e2e tests, and manual checks against a production-like setup. It reduces the risk of broken or insecure releases reaching production.
     - **Promotion flow**: Deploy the same artifact (or same commit) to staging first; only after validation (automated and/or manual) promote to production. Avoid “building twice” or different code paths for staging vs production.
@@ -845,13 +1009,31 @@
     - **Configuration**: Staging should mirror production in structure (same services, same topology) but use separate config (URLs, keys, feature flags) so staging never affects production resources or users.
     - **Keep it simple**: One staging environment is often enough. Add more (e.g. dev, QA, preprod) only if the team and release cadence justify it; each extra environment adds cost and drift risk.
 
-    #### Azure
+=== "DE"
+
+    - **Zweck**: Im Staging laufen Smoke-Tests, E2E-Tests und manuelle Checks gegen ein produktionsnahes Setup. Es reduziert das Risiko, kaputte oder unsichere Releases in die Produktion zu bringen.
+    - **Promotion-Flow**: Deploye dasselbe Artefakt (oder denselben Commit) zuerst auf Staging; erst nach Validierung (automatisiert und/oder manuell) promote es auf Produktion. Vermeide „zweimal bauen“ oder unterschiedliche Codepfade für Staging vs. Produktion.
+    - **Daten**: Nutze keine Produktionsdaten im Staging. Verwende anonymisierte oder synthetische Daten; wenn du Produktionsdaten kopierst, befolge einen strikten Prozess und sorge dafür, dass sie nicht exponiert sind (z. B. andere URLs, Zugriffskontrolle). Dokumentiere, wie Staging-Daten erstellt und aktualisiert werden.
+    - **Konfiguration**: Staging sollte die Produktionsstruktur spiegeln (gleiche Dienste, gleiche Topologie), aber separate Konfigurationen nutzen (URLs, Keys, Feature Flags), damit Staging niemals Produktionsressourcen oder -nutzer beeinflusst.
+    - **Keep it simple**: Eine Staging-Umgebung reicht oft aus. Füge mehr hinzu (z. B. Dev, QA, Preprod), nur wenn das Team und der Release-Takt es rechtfertigen; jede extra Umgebung erhöht Kosten und Drift-Risiko.
+
+#### Azure
+
+=== "EN"
 
     - **Deployment slots**: For **Azure Web Apps**, use **deployment slots** (e.g. “staging”) for blue-green or staged rollout. Deploy to the staging slot, run smoke/e2e tests, then **swap** to production. Slots share the same app but can have different app settings (e.g. connection strings to a staging database).
     - **Separate staging app**: For more isolation or when slots are not enough, use a separate **App Service** (or resource group) for staging with its own config and data stores. Use the same IaC and pipeline so staging and production stay aligned.
     - **Environments**: Treat “Staging” and “Production” as distinct in your pipeline (e.g. different Azure targets, different approval gates).
 
-    #### GitHub
+=== "DE"
+
+    - **Deployment Slots**: Für **Azure Web Apps** nutze **Deployment Slots** (z. B. „Staging“) für Blue-Green- oder gestaffelte Rollouts. Deploye auf den Staging-Slot, führe Smoke/E2E-Tests aus, dann **Swap** auf Produktion. Slots teilen dieselbe App, können aber unterschiedliche Einstellungen haben (z. B. Connection Strings zu einer Staging-DB).
+    - **Separate Staging-App**: Für mehr Isolation oder wenn Slots nicht reichen, nutze einen separaten **App Service** (oder Ressourcengruppe) mit eigener Config und Datenspeichern. Nutze dasselbe IaC und Pipeline, damit Staging und Produktion synchron bleiben.
+    - **Umgebungen**: Behandle „Staging“ und „Produktion“ als getrennt in deiner Pipeline (z. B. unterschiedliche Azure-Ziele, unterschiedliche Approval-Gates).
+
+#### GitHub
+
+=== "EN"
 
     - **Environments**: Use GitHub **Environments** (e.g. “Staging”, “Production”) so deployments are tracked and protection rules (e.g. required reviewers for Production) apply. Deploy to Staging first; require manual approval or automated checks before deploying to Production.
     - **Branch strategy**: Tie environments to a simple branch model so the path from commit to production is auditable (e.g. trunk-based: `main` -> Staging, release tag -> Production; or GitFlow with a protected `release/*` path).
@@ -862,24 +1044,6 @@
       - Restrict who can trigger production deployments and require environment approvals.
 
 === "DE"
-
-    Eine **Staging**-Umgebung ist eine Kopie (oder so nah wie möglich an) der Produktion, um Releases zu validieren, bevor sie die Nutzer erreichen. Halte den Promotion-Pfad einfach: Build → Deploy auf Staging → Validieren → Promote auf Produktion.
-
-    #### Allgemein
-
-    - **Zweck**: Im Staging laufen Smoke-Tests, E2E-Tests und manuelle Checks gegen ein produktionsnahes Setup. Es reduziert das Risiko, kaputte oder unsichere Releases in die Produktion zu bringen.
-    - **Promotion-Flow**: Deploye dasselbe Artefakt (oder denselben Commit) zuerst auf Staging; erst nach Validierung (automatisiert und/oder manuell) promote es auf Produktion. Vermeide „zweimal bauen“ oder unterschiedliche Codepfade für Staging vs. Produktion.
-    - **Daten**: Nutze keine Produktionsdaten im Staging. Verwende anonymisierte oder synthetische Daten; wenn du Produktionsdaten kopierst, befolge einen strikten Prozess und sorge dafür, dass sie nicht exponiert sind (z. B. andere URLs, Zugriffskontrolle). Dokumentiere, wie Staging-Daten erstellt und aktualisiert werden.
-    - **Konfiguration**: Staging sollte die Produktionsstruktur spiegeln (gleiche Dienste, gleiche Topologie), aber separate Konfigurationen nutzen (URLs, Keys, Feature Flags), damit Staging niemals Produktionsressourcen oder -nutzer beeinflusst.
-    - **Keep it simple**: Eine Staging-Umgebung reicht oft aus. Füge mehr hinzu (z. B. Dev, QA, Preprod), nur wenn das Team und der Release-Takt es rechtfertigen; jede extra Umgebung erhöht Kosten und Drift-Risiko.
-
-    #### Azure
-
-    - **Deployment Slots**: Für **Azure Web Apps** nutze **Deployment Slots** (z. B. „Staging“) für Blue-Green- oder gestaffelte Rollouts. Deploye auf den Staging-Slot, führe Smoke/E2E-Tests aus, dann **Swap** auf Produktion. Slots teilen dieselbe App, können aber unterschiedliche Einstellungen haben (z. B. Connection Strings zu einer Staging-DB).
-    - **Separate Staging-App**: Für mehr Isolation oder wenn Slots nicht reichen, nutze einen separaten **App Service** (oder Ressourcengruppe) mit eigener Config und Datenspeichern. Nutze dasselbe IaC und Pipeline, damit Staging und Produktion synchron bleiben.
-    - **Umgebungen**: Behandle „Staging“ und „Produktion“ als getrennt in deiner Pipeline (z. B. unterschiedliche Azure-Ziele, unterschiedliche Approval-Gates).
-
-    #### GitHub
 
     - **Environments**: Nutze GitHub **Environments** (z. B. „Staging“, „Production“), damit Deployments getrackt werden und Schutzregeln (z. B. erforderliche Reviewer für Produktion) greifen. Deploye zuerst auf Staging; fordere manuelle Genehmigung oder automatisierte Checks vor dem Deployment auf Produktion.
     - **Branch-Strategie**: Verknüpfe Umgebungen mit einem einfachen Branch-Modell, damit der Pfad vom Commit zur Produktion auditierbar ist (z. B. Trunk-Based: `main` -> Staging, Release-Tag -> Produktion; oder GitFlow mit geschütztem `release/*`-Pfad).
@@ -893,18 +1057,41 @@
 
 === "EN"
 
-    #### General
+    Safe usage of open source requires license compliance and vulnerability management.
+
+=== "DE"
+
+    Die sichere Nutzung von Open Source erfordert Lizenz-Compliance und Schwachstellenmanagement.
+
+#### General
+
+=== "EN"
 
     - **License compliance**: Know the licenses of all dependencies (including transitive); ensure they are compatible with your use and distribution (e.g. GPL, MIT, Apache).
     - **Software Bill of Materials (SBOM)**: Generate and maintain an SBOM for audit and vulnerability management; align with SCA and dependency scanning.
     - **Vulnerability handling**: Track and patch known vulnerabilities in dependencies; have a process for evaluating and disclosing issues in your own code (e.g. security advisories).
     - **Contributing**: If you use or contribute to open source, follow the project’s contribution guidelines and license terms; document your own policy for accepting or releasing OSS.
 
-    #### Azure
+=== "DE"
+
+    - **Lizenz-Compliance**: Kenne die Lizenzen aller Abhängigkeiten (inkl. transitiver); stelle sicher, dass sie mit deiner Nutzung und Distribution kompatibel sind (z. B. GPL, MIT, Apache).
+    - **Software Bill of Materials (SBOM)**: Generiere und pflege eine Stückliste (SBOM) für Audits und Schwachstellenmanagement; stimme dies mit SCA und Dependency Scanning ab.
+    - **Schwachstellen-Management**: Tracke und patche bekannte Sicherheitslücken in Abhängigkeiten; habe einen Prozess für die Bewertung und Offenlegung eigener Code-Probleme (z. B. Security Advisories).
+    - **Beitragen**: Wenn du Open Source nutzt oder dazu beiträgst, befolge die Richtlinien und Lizenzbedingungen des Projekts; dokumentiere deine eigene Policy für die Freigabe von OSS.
+
+#### Azure
+
+=== "EN"
 
     - Azure services and SDKs have their own licenses; when you ship software that depends on them, document and comply with those terms. Use **Defender for Cloud** and dependency scanning to stay aware of issues in OSS you use.
 
-    #### GitHub
+=== "DE"
+
+    - Azure-Dienste und SDKs haben eigene Lizenzen; wenn du Software auslieferst, die davon abhängt, dokumentiere und befolge diese Bedingungen. Nutze **Defender for Cloud** und Dependency Scanning, um über Probleme in genutztem OSS informiert zu bleiben.
+
+#### GitHub
+
+=== "EN"
 
     - Add a **LICENSE** file to your repository so others know the terms. Use **Dependabot** and **Dependency graph** for visibility and alerts on dependencies.
     - Document **contributing guidelines** (e.g. CONTRIBUTING.md) and, if you accept contributions, use a **Contributor License Agreement (CLA)** or equivalent if required by your organisation.
@@ -912,38 +1099,47 @@
 
 === "DE"
 
-    #### Allgemein
-
-    - **Lizenz-Compliance**: Kenne die Lizenzen aller Abhängigkeiten (inkl. transitiver); stelle sicher, dass sie mit deiner Nutzung und Distribution kompatibel sind (z. B. GPL, MIT, Apache).
-    - **Software Bill of Materials (SBOM)**: Generiere und pflege eine Stückliste (SBOM) für Audits und Schwachstellenmanagement; stimme dies mit SCA und Dependency Scanning ab.
-    - **Schwachstellen-Management**: Tracke und patche bekannte Sicherheitslücken in Abhängigkeiten; habe einen Prozess für die Bewertung und Offenlegung eigener Code-Probleme (z. B. Security Advisories).
-    - **Beitragen**: Wenn du Open Source nutzt oder dazu beiträgst, befolge die Richtlinien und Lizenzbedingungen des Projekts; dokumentiere deine eigene Policy für die Freigabe von OSS.
-
-    #### Azure
-
-    - Azure-Dienste und SDKs haben eigene Lizenzen; wenn du Software auslieferst, die davon abhängt, dokumentiere und befolge diese Bedingungen. Nutze **Defender for Cloud** und Dependency Scanning, um über Probleme in genutztem OSS informiert zu bleiben.
-
-    #### GitHub
-
     - Füge eine **LICENSE**-Datei zu deinem Repository hinzu. Nutze **Dependabot** und **Dependency Graph** für Sichtbarkeit und Warnungen zu Abhängigkeiten.
     - Dokumentiere **Richtlinien für Mitwirkende** (z. B. CONTRIBUTING.md) und nutze ggf. ein **Contributor License Agreement (CLA)**.
     - Nutze **GitHub Security Advisories**, um Sicherheitslücken in eigenen Projekten offenzulegen und zu verwalten; verlinke auf deine Security-Policy (z. B. SECURITY.md).
 
-## Changelogs & Communication
+## Communication
 
 === "EN"
 
-    #### General
+    Transparent communication builds trust with users and stakeholders.
+
+=== "DE"
+
+    Transparente Kommunikation baut Vertrauen bei Nutzern und Stakeholdern auf.
+
+#### General
+
+=== "EN"
 
     - **Changelogs**: Maintain a machine- or human-readable changelog (e.g. CHANGELOG.md) with notable changes per version. Use a consistent format (e.g. Keep a Changelog) and **semantic versioning** where it fits (major.minor.patch).
     - **Release notes**: Publish clear release notes for users or stakeholders: what changed, what to do (e.g. upgrade steps, breaking changes), and where to get help.
     - **Clear communication**: Communicate proactively about security updates, incidents, and maintenance: what happened, impact, and what you are doing. Document processes for incident communication and user/stakeholder updates.
 
-    #### Azure
+=== "DE"
+
+    - **Changelogs**: Pflege ein maschinen- oder menschenlesbares Änderungsprotokoll (z. B. CHANGELOG.md) mit nennenswerten Änderungen pro Version. Nutze ein konsistentes Format (z. B. „Keep a Changelog“) und **Semantic Versioning** (Major.Minor.Patch).
+    - **Release Notes**: Veröffentliche klare Release-Notizen für Nutzer: was sich geändert hat, was zu tun ist (z. B. Upgrade-Schritte, Breaking Changes) und wo es Hilfe gibt.
+    - **Klare Kommunikation**: Kommuniziere proaktiv über Sicherheitsupdates, Vorfälle und Wartung: was passiert ist, die Auswirkungen und was unternommen wird.
+
+#### Azure
+
+=== "EN"
 
     - Document infrastructure and configuration changes (e.g. in runbooks or ADR); when you change Azure resources that affect users, include that in release or operations communication.
 
-    #### GitHub
+=== "DE"
+
+    - Dokumentiere Infrastruktur- und Konfigurationsänderungen (z. B. in Runbooks oder ADRs); wenn du Azure-Ressourcen änderst, die Nutzer betreffen, kommuniziere dies.
+
+#### GitHub
+
+=== "EN"
 
     - Use **Releases** to publish versioned artifacts and attach release notes; link or paste changelog content there.
     - Keep **CHANGELOG.md** (or equivalent) in the repo and update it as part of the release process.
@@ -951,33 +1147,37 @@
 
 === "DE"
 
-    #### Allgemein
-
-    - **Changelogs**: Pflege ein maschinen- oder menschenlesbares Änderungsprotokoll (z. B. CHANGELOG.md) mit nennenswerten Änderungen pro Version. Nutze ein konsistentes Format (z. B. „Keep a Changelog“) und **Semantic Versioning** (Major.Minor.Patch).
-    - **Release Notes**: Veröffentliche klare Release-Notizen für Nutzer: was sich geändert hat, was zu tun ist (z. B. Upgrade-Schritte, Breaking Changes) und wo es Hilfe gibt.
-    - **Klare Kommunikation**: Kommuniziere proaktiv über Sicherheitsupdates, Vorfälle und Wartung: was passiert ist, die Auswirkungen und was unternommen wird.
-
-    #### Azure
-
-    - Dokumentiere Infrastruktur- und Konfigurationsänderungen (z. B. in Runbooks oder ADRs); wenn du Azure-Ressourcen änderst, die Nutzer betreffen, kommuniziere dies.
-
-    #### GitHub
-
     - Nutze **Releases**, um versionierte Artefakte zu veröffentlichen und Release Notes anzuhängen.
     - Halte **CHANGELOG.md** im Repo aktuell und aktualisiere es als Teil des Release-Prozesses.
     - Nutze **GitHub Security Advisories** und eine **SECURITY.md**-Policy, um zu kommunizieren, wie man Schwachstellen meldet und wie reagiert wird.
 
-## Monitoring & Operations
+## Operations
 
 === "EN"
 
-    #### General
+    Observability and defined incident processes ensure system availability and rapid recovery.
+
+=== "DE"
+
+    Beobachtbarkeit und definierte Vorfallprozesse sichern Systemverfügbarkeit und schnelle Wiederherstellung.
+
+#### General
+
+=== "EN"
 
     - **Observability**: Collect metrics, logs, and traces so you can detect failures, performance issues, and security events.
     - **Alerting**: Define alerts for availability, errors, authentication failures, and anomalies; route them to the right people and runbooks.
     - **Incident response**: Document how to respond to incidents (who does what, escalation); retain logs and evidence for post-incident review and compliance.
 
-    #### Azure
+=== "DE"
+
+    - **Observability**: Sammle Metriken, Logs und Traces, um Ausfälle, Performance-Probleme und Sicherheitsvorfälle zu erkennen.
+    - **Alerting**: Definiere Alarme für Verfügbarkeit, Fehler, Authentifizierungsfehler und Anomalien; route sie zu den richtigen Personen und Runbooks.
+    - **Incident Response**: Dokumentiere, wie auf Vorfälle reagiert wird (wer macht was, Eskalation); bewahre Logs und Beweise für Post-Incident-Review und Compliance auf.
+
+#### Azure
+
+=== "EN"
 
     - **Azure Monitor**: Central place for metrics and logs; set up alerts for availability, errors, and security-relevant events.
     - **Application Insights**: Use for application performance and dependency tracking; correlate with security events where useful.
@@ -988,20 +1188,7 @@
     - **Audit trail**: keep Azure Activity Log, resource diagnostic logs, and access logs retained according to policy; ensure logs are tamper-resistant and searchable.
     - **Policy and audit checks**: use Azure Policy + initiatives to continuously audit standards (e.g. no public storage, required tags, private endpoints, TLS minimums), and review drift regularly.
 
-    #### GitHub
-
-    - Use **Actions** status and **Deployments** to see pipeline and deployment outcomes; configure notifications (e.g. Slack, email) for failures.
-    - **GitHub Advanced Security** (CodeQL, Dependabot, secret scanning): Review and act on alerts; integrate with your incident or security process where needed.
-
 === "DE"
-
-    #### Allgemein
-
-    - **Observability**: Sammle Metriken, Logs und Traces, um Ausfälle, Performance-Probleme und Sicherheitsvorfälle zu erkennen.
-    - **Alerting**: Definiere Alarme für Verfügbarkeit, Fehler, Authentifizierungsfehler und Anomalien; route sie zu den richtigen Personen und Runbooks.
-    - **Incident Response**: Dokumentiere, wie auf Vorfälle reagiert wird (wer macht was, Eskalation); bewahre Logs und Beweise für Post-Incident-Review und Compliance auf.
-
-    #### Azure
 
     - **Azure Monitor**: Zentraler Ort für Metriken und Logs; richte Alerts für Verfügbarkeit, Fehler und Sicherheitsereignisse ein.
     - **Application Insights**: Für Anwendungsperformance und Dependency-Tracking; korreliere mit Sicherheitsereignissen, wo sinnvoll.
@@ -1012,27 +1199,57 @@
     - **Audit Trail**: Bewahre Azure Activity Log, Ressourcen-Diagnoselogs und Access Logs richtlinienkonform auf; stelle sicher, dass sie manipulationssicher und durchsuchbar sind.
     - **Policy & Audit Checks**: Nutze Azure Policy + Initiativen, um Standards kontinuierlich zu prüfen (z. B. kein öffentlicher Storage, erforderliche Tags, private Endpoints), und überprüfe Drift regelmäßig.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - Use **Actions** status and **Deployments** to see pipeline and deployment outcomes; configure notifications (e.g. Slack, email) for failures.
+    - **GitHub Advanced Security** (CodeQL, Dependabot, secret scanning): Review and act on alerts; integrate with your incident or security process where needed.
+
+=== "DE"
 
     - Nutze **Actions**-Status und **Deployments**, um Pipeline- und Deployment-Ergebnisse zu sehen; konfiguriere Benachrichtigungen (z. B. Slack, E-Mail) für Fehler.
     - **GitHub Advanced Security** (CodeQL, Dependabot, Secret Scanning): Überprüfe und reagiere auf Warnungen; integriere sie bei Bedarf in deinen Incident- oder Sicherheitsprozess.
 
-## Deployment (CI/CD)
+## Deployment
 
 === "EN"
 
-    #### General
+    Automated, secure pipelines ensure consistent and reliable software delivery.
+
+=== "DE"
+
+    Automatisierte, sichere Pipelines gewährleisten konsistente und zuverlässige Softwareauslieferung.
+
+#### General
+
+=== "EN"
 
     - Never store deployment credentials in the repository; use a secrets store or pipeline secrets.
     - Protect production: use environment restrictions, required approvals, and only deploy after tests and security checks pass.
     - Run SAST, SCA, and (where applicable) container or DAST checks in the pipeline; block or gate deployment on policy-defined findings.
     - Document deployment steps and rollback procedures.
 
-    #### Azure
+=== "DE"
+
+    - Speichere niemals Deployment-Credentials im Repository; nutze einen Secrets-Store oder Pipeline-Secrets.
+    - Schütze die Produktion: Nutze Umgebungseinschränkungen, erforderliche Genehmigungen und deploye nur nach bestandenen Tests und Sicherheitschecks.
+    - Führe SAST, SCA und (wo anwendbar) Container- oder DAST-Checks in der Pipeline aus; blockiere Deployments bei kritischen Funden.
+    - Dokumentiere Deployment-Schritte und Rollback-Prozeduren.
+
+#### Azure
+
+=== "EN"
 
     - Deploy to **Azure Web Apps**, **Functions**, or other targets via CI/CD; use **deployment slots** for blue-green or staged rollouts. Use **managed identities** and **Key Vault** so the pipeline and app do not rely on stored passwords.
 
-    #### GitHub
+=== "DE"
+
+    - Deploye auf **Azure Web Apps**, **Functions** oder andere Ziele via CI/CD; nutze **Deployment Slots** für Blue-Green- oder gestaffelte Rollouts. Nutze **Managed Identities** und **Key Vault**, damit Pipeline und App keine gespeicherten Passwörter benötigen.
+
+#### GitHub
+
+=== "EN"
 
     - **GitHub Secrets**: Store Azure credentials (e.g. service principal) or use **OIDC** with Azure AD so Actions assume a role without long-lived secrets. Use secrets only in workflows, never in repo content.
     - **Environments**: Use (e.g. “Staging”, “Production”) with protection rules and required reviewers before deployment.
@@ -1045,19 +1262,6 @@
 
 === "DE"
 
-    #### Allgemein
-
-    - Speichere niemals Deployment-Credentials im Repository; nutze einen Secrets-Store oder Pipeline-Secrets.
-    - Schütze die Produktion: Nutze Umgebungseinschränkungen, erforderliche Genehmigungen und deploye nur nach bestandenen Tests und Sicherheitschecks.
-    - Führe SAST, SCA und (wo anwendbar) Container- oder DAST-Checks in der Pipeline aus; blockiere Deployments bei kritischen Funden.
-    - Dokumentiere Deployment-Schritte und Rollback-Prozeduren.
-
-    #### Azure
-
-    - Deploye auf **Azure Web Apps**, **Functions** oder andere Ziele via CI/CD; nutze **Deployment Slots** für Blue-Green- oder gestaffelte Rollouts. Nutze **Managed Identities** und **Key Vault**, damit Pipeline und App keine gespeicherten Passwörter benötigen.
-
-    #### GitHub
-
     - **GitHub Secrets**: Speichere Azure-Credentials (z. B. Service Principal) oder nutze **OIDC** mit Azure AD, damit Actions eine Rolle ohne langlebige Secrets annehmen. Nutze Secrets nur in Workflows, nie im Repo-Inhalt.
     - **Environments**: Nutze sie (z. B. „Staging“, „Production“) mit Schutzregeln und erforderlichen Reviewern vor dem Deployment.
     - **Pipeline Security Gates**: Führe Tests, **CodeQL**, **Dependabot**-Checks, Secret Scanning und optionale Container/IaC-Scans in Actions aus; nutze erforderliche Statuschecks, damit nur genehmigte, bestandene Builds deployen.
@@ -1067,13 +1271,23 @@
       - Halte Rollbacks einfach: definierter Rollback-Workflow, bekanntes funktionierendes Artefakt und klare Verantwortung.
       - Halte Produktions-Deployment-Rechte minimal und auditierbar.
 
-## Infrastructure as Code & System Configuration
+## IaC & Config
 
 === "EN"
 
+    Infrastructure defined as code ensures reproducibility and auditability.
+
     Define infrastructure and server configuration in version-controlled, reviewable code so changes are repeatable, auditable, and consistent. Keep it simple: use a small set of tools and patterns that the team can maintain.
 
-    #### General
+=== "DE"
+
+    Als Code definierte Infrastruktur sichert Wiederholbarkeit und Auditierbarkeit.
+
+    Definiere Infrastruktur und Serverkonfiguration in versioniertem, reviewbarem Code, damit Änderungen wiederholbar, auditierbar und konsistent sind. Halte es einfach: Nutze ein kleines Set an Tools und Mustern, die das Team warten kann.
+
+#### General
+
+=== "EN"
 
     - **Infrastructure as Code (IaC)**: Describe servers, networks, databases, and other infrastructure in declarative or scripted definitions (e.g. Terraform, Pulumi, CloudFormation, ARM, Bicep). Store them in version control; run them via CI/CD so every change is reviewed and logged. Avoid one-off manual changes; treat “clicking in the portal” as the exception, not the rule.
     - **System configuration (cookbooks / config management)**: For OS and application configuration on VMs or containers (e.g. installed packages, config files, users), use **configuration as code**: scripts, playbooks, or cookbooks (e.g. Ansible, Chef, Puppet, or versioned scripts). Idempotency and clear ordering reduce drift and make rollbacks predictable. Document the relationship between IaC (what is provisioned) and config management (how it is configured).
@@ -1081,23 +1295,7 @@
     - **Review and test**: Apply the same quality bar as application code: peer review, linting, and where possible automated checks (e.g. plan/diff before apply). Use separate staging or sandbox subscriptions/folders to test IaC changes before production.
     - **Secrets and parameters**: Never hardcode secrets in IaC or cookbooks. Use parameters, environment variables, or a secrets store (e.g. Key Vault) and reference them at apply/runtime.
 
-    #### Azure
-
-    - **IaC**: Use **Bicep** or **ARM** (Azure native) or **Terraform** (multi-cloud or team preference) to define resource groups, Web Apps, databases, networking, and RBAC. Store definitions in version control; run `bicep build` / `terraform plan` and `apply` from the pipeline with a secure state backend (e.g. Azure Storage with locking).
-    - **Configuration**: For VMs, use **Azure Desired State Configuration (DSC)**, **Custom Script Extension**, or Ansible/Chef/Puppet from a pipeline. For PaaS (App Service, Functions), keep config in **App Configuration** or **Key Vault** and set app settings via IaC or pipeline so changes are traceable.
-    - **Policies**: Use **Azure Policy** (defined as code) to enforce organisational rules (e.g. allowed regions, required tags, no public storage). Keep policy definitions in the same repo as other IaC.
-
-    #### GitHub
-
-    - **Store IaC and config in the repo**: Keep Bicep, Terraform, or Ansible playbooks in the repository (e.g. `/infra`, `/terraform`, `/ansible`). Use **branch protection** and required reviews so infrastructure changes go through the same process as code.
-    - **Run from Actions**: Use GitHub Actions to run `terraform plan` on PR and `apply` on merge (or to a specific environment). Store **remote state** in Azure Storage or another backend; use OIDC or stored credentials in GitHub Secrets with minimal scope. Never commit state files or secrets.
-    - **Documentation**: Document how to run IaC and config locally or in CI (e.g. README in the infra folder, required env vars, and how to request access to state).
-
 === "DE"
-
-    Definiere Infrastruktur und Serverkonfiguration in versioniertem, reviewbarem Code, damit Änderungen wiederholbar, auditierbar und konsistent sind. Halte es einfach: Nutze ein kleines Set an Tools und Mustern, die das Team warten kann.
-
-    #### Allgemein
 
     - **Infrastructure as Code (IaC)**: Beschreibe Server, Netzwerke, Datenbanken und andere Infrastruktur deklarativ (z. B. Terraform, Pulumi, Bicep). Speichere sie in der Versionsverwaltung; führe sie über CI/CD aus, damit jede Änderung geprüft und protokolliert wird. Vermeide manuelle Änderungen; betrachte „Klicken im Portal“ als Ausnahme, nicht die Regel.
     - **Systemkonfiguration**: Für OS- und Anwendungskonfiguration auf VMs oder Containern nutze **Configuration as Code**: Skripte, Playbooks oder Cookbooks (z. B. Ansible, Chef, Puppet). Idempotenz und klare Reihenfolge reduzieren Drift und machen Rollbacks vorhersehbar.
@@ -1105,25 +1303,51 @@
     - **Review und Test**: Wende denselben Qualitätsstandard an wie bei Anwendungscode: Peer Review, Linting und automatisierte Checks (Plan/Diff vor Apply). Nutze separate Staging- oder Sandbox-Subscriptions, um IaC-Änderungen zu testen.
     - **Secrets und Parameter**: Hardcode niemals Secrets in IaC. Nutze Parameter, Umgebungsvariablen oder einen Secrets-Store (z. B. Key Vault) und referenziere sie zur Laufzeit.
 
-    #### Azure
+#### Azure
+
+=== "EN"
+
+    - **IaC**: Use **Bicep** or **ARM** (Azure native) or **Terraform** (multi-cloud or team preference) to define resource groups, Web Apps, databases, networking, and RBAC. Store definitions in version control; run `bicep build` / `terraform plan` and `apply` from the pipeline with a secure state backend (e.g. Azure Storage with locking).
+    - **Configuration**: For VMs, use **Azure Desired State Configuration (DSC)**, **Custom Script Extension**, or Ansible/Chef/Puppet from a pipeline. For PaaS (App Service, Functions), keep config in **App Configuration** or **Key Vault** and set app settings via IaC or pipeline so changes are traceable.
+    - **Policies**: Use **Azure Policy** (defined as code) to enforce organisational rules (e.g. allowed regions, required tags, no public storage). Keep policy definitions in the same repo as other IaC.
+
+=== "DE"
 
     - **IaC**: Nutze **Bicep** oder **ARM** (Azure Native) oder **Terraform** (Multi-Cloud), um Ressourcengruppen, Web Apps, Datenbanken, Networking und RBAC zu definieren. Speichere Definitionen in Versionsverwaltung; führe `build`/`plan`/`apply` aus der Pipeline mit sicherem State-Backend (z. B. Azure Storage mit Locking) aus.
     - **Konfiguration**: Für VMs nutze **Azure DSC**, **Custom Script Extension** oder Ansible/Chef aus einer Pipeline. Für PaaS (App Service, Functions) halte Config in **App Configuration** oder **Key Vault** und setze App Settings via IaC, damit Änderungen nachvollziehbar sind.
     - **Policies**: Nutze **Azure Policy** (als Code definiert), um Organisationsregeln durchzusetzen (z. B. erlaubte Regionen, erforderliche Tags). Halte Policy-Definitionen im selben Repo wie andere IaC.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - **Store IaC and config in the repo**: Keep Bicep, Terraform, or Ansible playbooks in the repository (e.g. `/infra`, `/terraform`, `/ansible`). Use **branch protection** and required reviews so infrastructure changes go through the same process as code.
+    - **Run from Actions**: Use GitHub Actions to run `terraform plan` on PR and `apply` on merge (or to a specific environment). Store **remote state** in Azure Storage or another backend; use OIDC or stored credentials in GitHub Secrets with minimal scope. Never commit state files or secrets.
+    - **Documentation**: Document how to run IaC and config locally or in CI (e.g. README in the infra folder, required env vars, and how to request access to state).
+
+=== "DE"
 
     - **IaC und Config im Repo speichern**: Halte Bicep, Terraform oder Ansible-Playbooks im Repository (z. B. `/infra`). Nutze **Branch Protection** und erforderliche Reviews, damit Infrastrukturänderungen denselben Prozess durchlaufen wie Code.
     - **Ausführung über Actions**: Nutze GitHub Actions, um `terraform plan` bei PR und `apply` bei Merge auszuführen. Speichere **Remote State** sicher; nutze OIDC für Zugriff. Committe niemals State-Files oder Secrets.
     - **Dokumentation**: Dokumentiere, wie IaC lokal oder in CI ausgeführt wird (z. B. README im Infra-Ordner).
 
-## Good Documentation
+## Documentation
 
 === "EN"
 
+    Clear documentation reduces risk and speeds up onboarding and compliance.
+
     Good documentation reduces risk, speeds onboarding, and supports compliance. Document what matters for operating, securing, and changing the system; keep it up to date and in one place.
 
-    #### General
+=== "DE"
+
+    Klare Dokumentation reduziert Risiken und beschleunigt Onboarding sowie Compliance.
+
+    Gute Dokumentation reduziert Risiken, beschleunigt das Onboarding und unterstützt Compliance. Dokumentiere, was für Betrieb, Sicherheit und Änderung des Systems wichtig ist.
+
+#### General
+
+=== "EN"
 
     - **What to document**: **Architecture** (components, data flow, boundaries); **APIs** (contracts, auth, examples); **Operations** (deployment, rollback, scaling, backups); **Runbooks** (incident response, common tasks); **Decisions** (ADRs — why we chose X); **Security** (threat model, secrets handling, compliance). Prioritise what the team and auditors actually use.
     - **Single source of truth**: Prefer one canonical place (e.g. docs in the repo, or a linked docs site) so information does not scatter across wikis, slides, and chat. Link from code or config to docs where it helps (e.g. README in each service).
@@ -1131,22 +1355,7 @@
     - **Format and structure**: Use a consistent format (e.g. Markdown) and a simple structure (README, docs folder, or docs-as-code with a static generator). Use clear headings, lists, and code snippets; avoid long prose where a table or diagram is clearer. Keep it simple so contributors know where to add or change content.
     - **Onboarding**: New team members (and auditors) should find how to get access, run the app locally, run tests, and understand the high-level architecture without hunting. A single “Getting started” or “README” that stays accurate is valuable.
 
-    #### Azure
-
-    - Document **resource layout** (subscriptions, resource groups, naming), **networking** (VNet, subnets, private endpoints), and **identity** (who has what role, which managed identities exist). Keep this in the repo next to IaC or in a dedicated architecture doc. Reference Azure compliance and shared responsibility where relevant for audits.
-    - **Runbooks**: Document how to scale, restart, fail over, or recover key Azure resources; how to rotate secrets in Key Vault; and how to respond to Defender for Cloud alerts. Link runbooks from your incident or alerting tool.
-
-    #### GitHub
-
-    - **README**: Every repo should have a README with purpose, how to build/run/test, and where to find more (docs, CONTRIBUTING, SECURITY). Keep it short and accurate.
-    - **CONTRIBUTING.md / SECURITY.md**: Describe how to contribute and how to report vulnerabilities; link from README. Update when your process changes.
-    - **Docs in repo**: Use a `/docs` folder (or similar) for architecture, ADRs, and runbooks so they are versioned with the code. Optionally use **GitHub Pages** or an external site for rendered docs; ensure the source remains the single source of truth and is linked from the repo.
-
 === "DE"
-
-    Gute Dokumentation reduziert Risiken, beschleunigt das Onboarding und unterstützt Compliance. Dokumentiere, was für Betrieb, Sicherheit und Änderung des Systems wichtig ist.
-
-    #### Allgemein
 
     - **Was zu dokumentieren ist**: **Architektur** (Komponenten, Datenfluss, Grenzen); **APIs** (Verträge, Auth, Beispiele); **Betrieb** (Deployment, Rollback, Skalierung, Backups); **Runbooks** (Incident Response, häufige Aufgaben); **Entscheidungen** (ADRs — warum wir X gewählt haben); **Sicherheit** (Bedrohungsmodell, Secrets-Handling, Compliance). Priorisiere, was das Team und Prüfer tatsächlich nutzen.
     - **Single Source of Truth**: Bevorzuge einen kanonischen Ort (z. B. Docs im Repo oder eine verlinkte Doku-Site), damit Informationen nicht über Wikis, Folien und Chats verstreut sind.
@@ -1154,24 +1363,49 @@
     - **Format und Struktur**: Nutze ein konsistentes Format (z. B. Markdown) und eine einfache Struktur (README, Docs-Ordner oder Docs-as-Code). Nutze klare Überschriften, Listen und Code-Snippets; vermeide lange Prosa, wo eine Tabelle oder ein Diagramm klarer ist.
     - **Onboarding**: Neue Teammitglieder (und Auditoren) sollten finden, wie sie Zugriff erhalten, die App lokal ausführen und die High-Level-Architektur verstehen können, ohne zu suchen. Ein einziges „Getting Started“ oder „README“, das korrekt ist, ist wertvoll.
 
-    #### Azure
+#### Azure
+
+=== "EN"
+
+    - Document **resource layout** (subscriptions, resource groups, naming), **networking** (VNet, subnets, private endpoints), and **identity** (who has what role, which managed identities exist). Keep this in the repo next to IaC or in a dedicated architecture doc. Reference Azure compliance and shared responsibility where relevant for audits.
+    - **Runbooks**: Document how to scale, restart, fail over, or recover key Azure resources; how to rotate secrets in Key Vault; and how to respond to Defender for Cloud alerts. Link runbooks from your incident or alerting tool.
+
+=== "DE"
 
     - Dokumentiere **Ressourcen-Layout** (Subscriptions, Ressourcengruppen, Naming), **Networking** (VNet, Subnets, Private Endpoints) und **Identität** (wer hat welche Rolle, welche Managed Identities existieren). Halte dies im Repo neben IaC oder in einem dedizierten Architektur-Dokument.
     - **Runbooks**: Dokumentiere, wie man skaliert, neustartet, Failover durchführt oder wichtige Azure-Ressourcen wiederherstellt; wie man Secrets im Key Vault rotiert; und wie man auf Defender for Cloud Alerts reagiert.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - **README**: Every repo should have a README with purpose, how to build/run/test, and where to find more (docs, CONTRIBUTING, SECURITY). Keep it short and accurate.
+    - **CONTRIBUTING.md / SECURITY.md**: Describe how to contribute and how to report vulnerabilities; link from README. Update when your process changes.
+    - **Docs in repo**: Use a `/docs` folder (or similar) for architecture, ADRs, and runbooks so they are versioned with the code. Optionally use **GitHub Pages** or an external site for rendered docs; ensure the source remains the single source of truth and is linked from the repo.
+
+=== "DE"
 
     - **README**: Jedes Repo sollte eine README haben mit Zweck, Bau-/Run-/Test-Anleitung und weiterführenden Links (Docs, CONTRIBUTING, SECURITY). Halte sie kurz und präzise.
     - **CONTRIBUTING.md / SECURITY.md**: Beschreibe, wie man beiträgt und Schwachstellen meldet. Aktualisiere bei Prozessänderungen.
     - **Docs im Repo**: Nutze einen `/docs`-Ordner (oder ähnlich) für Architektur, ADRs und Runbooks, damit sie mit dem Code versioniert sind. Optional **GitHub Pages** für gerenderte Docs nutzen; Quelle bleibt Single Source of Truth.
 
-## AI-Assisted Coding
+## AI Coding
 
 === "EN"
 
+    AI tools increase speed but require human verification and strict security boundaries.
+
     AI tools can improve speed, but they also introduce new quality, security, and compliance risks. Treat AI output like external code: useful, but never trusted by default.
 
-    #### General
+=== "DE"
+
+    KI-Tools erhöhen die Geschwindigkeit, erfordern aber menschliche Überprüfung und strikte Sicherheitsgrenzen.
+
+    KI-Tools können die Geschwindigkeit erhöhen, führen aber auch neue Qualitäts-, Sicherheits- und Compliance-Risiken ein. Behandle KI-Output wie externen Code: nützlich, aber standardmäßig nie vertrauenswürdig.
+
+#### General
+
+=== "EN"
 
     - **Human accountability**: Engineers remain responsible for correctness, security, and compliance of all AI-generated code.
     - **No sensitive input in prompts**: Do not paste production secrets, personal data, internal credentials, or confidential customer details into AI prompts.
@@ -1181,24 +1415,7 @@
     - **Dependency discipline**: AI suggestions for new packages must pass license/security checks and be justified.
     - **Traceability**: Document substantial AI-assisted decisions in PR description and link to resulting tests/docs.
 
-    #### Azure
-
-    - Keep AI-generated infrastructure changes under IaC + review (Bicep/Terraform), never direct portal-only changes.
-    - Verify Azure-specific security settings proposed by AI (RBAC scope, Key Vault access model, private endpoints, Defender recommendations) before rollout.
-    - For AI features hosted in Azure, define data handling rules (retention, logging minimisation, tenant isolation, PII handling) and validate against customer requirements.
-
-    #### GitHub
-
-    - Use branch protection and required checks so AI-generated code cannot bypass review.
-    - Run CodeQL, secret scanning, Dependabot, and tests on every PR containing AI-assisted changes.
-    - Use CODEOWNERS for sensitive paths (auth, infra, CI/CD workflows, security config) to enforce expert review.
-    - Keep PR templates explicit: include a checkbox for AI-assisted contribution and required validation steps completed.
-
 === "DE"
-
-    KI-Tools können die Geschwindigkeit erhöhen, führen aber auch neue Qualitäts-, Sicherheits- und Compliance-Risiken ein. Behandle KI-Output wie externen Code: nützlich, aber standardmäßig nie vertrauenswürdig.
-
-    #### Allgemein
 
     - **Menschliche Verantwortung**: Ingenieure bleiben verantwortlich für Korrektheit, Sicherheit und Compliance allen KI-generierten Codes.
     - **Kein sensitiver Input in Prompts**: Füge keine Produktions-Secrets, personenbezogene Daten, internen Credentials oder vertrauliche Kundendetails in KI-Prompts ein.
@@ -1208,26 +1425,53 @@
     - **Abhängigkeits-Disziplin**: KI-Vorschläge für neue Pakete müssen Lizenz-/Sicherheitschecks bestehen und begründet sein.
     - **Rückverfolgbarkeit**: Dokumentiere substanzielle KI-assistierte Entscheidungen in der PR-Beschreibung und verlinke auf resultierende Tests/Docs.
 
-    #### Azure
+#### Azure
+
+=== "EN"
+
+    - Keep AI-generated infrastructure changes under IaC + review (Bicep/Terraform), never direct portal-only changes.
+    - Verify Azure-specific security settings proposed by AI (RBAC scope, Key Vault access model, private endpoints, Defender recommendations) before rollout.
+    - For AI features hosted in Azure, define data handling rules (retention, logging minimisation, tenant isolation, PII handling) and validate against customer requirements.
+
+=== "DE"
 
     - Halte KI-generierte Infrastrukturänderungen unter IaC + Review (Bicep/Terraform), niemals direkte Portal-only Änderungen.
     - Verifiziere Azure-spezifische Sicherheitseinstellungen, die von KI vorgeschlagen wurden (RBAC-Scope, Key-Vault-Zugriffsmodell, Private Endpoints), vor dem Rollout.
     - Für KI-Features, die in Azure gehostet werden, definiere Datenhandhabungsregeln (Retention, Logging-Minimierung, Mandantenisolierung, PII) und validiere gegen Kundenanforderungen.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - Use branch protection and required checks so AI-generated code cannot bypass review.
+    - Run CodeQL, secret scanning, Dependabot, and tests on every PR containing AI-assisted changes.
+    - Use CODEOWNERS for sensitive paths (auth, infra, CI/CD workflows, security config) to enforce expert review.
+    - Keep PR templates explicit: include a checkbox for AI-assisted contribution and required validation steps completed.
+
+=== "DE"
 
     - Nutze Branch Protection und erforderliche Checks, damit KI-generierter Code kein Review umgehen kann.
     - Führe CodeQL, Secret Scanning, Dependabot und Tests bei jedem PR aus, der KI-assistierte Änderungen enthält.
     - Nutze CODEOWNERS für sensitive Pfade (Auth, Infra, CI/CD, Security Config), um Experten-Review zu erzwingen.
     - Halte PR-Templates explizit: Füge eine Checkbox für KI-assistierten Beitrag und abgeschlossene Validierungsschritte hinzu.
 
-## Code Quality & Architecture
+## Code Quality
 
 === "EN"
 
+    Maintainable and readable code ensures long-term software health.
+
     Good software is maintainable, readable, and adaptable. Code quality is not just about "it works," but "it can be changed safely."
 
-    #### General
+=== "DE"
+
+    Wartbarer und lesbarer Code sichert die langfristige Gesundheit der Software.
+
+    Gute Software ist wartbar, lesbar und anpassbar. Code-Qualität bedeutet nicht nur „es funktioniert“, sondern „es kann sicher geändert werden“.
+
+#### General
+
+=== "EN"
 
     - **Clean Code Principles**:
       - **Naming**: Use descriptive, consistent naming conventions. Code should read like a sentence.
@@ -1245,22 +1489,7 @@
       - Use **Linters** (e.g., ESLint, Pylint) and **Formatters** (e.g., Prettier, Black) to enforce style automatically.
       - Configuration for these tools must be part of the repository.
 
-    #### Azure
-
-    - **SDK usage**: Prefer official Azure SDKs over raw HTTP calls for better resilience, retry logic, and authentication support.
-    - **Managed Services**: Prefer leveraging platform capabilities (e.g., Event Grid for decoupled messaging) over building custom "glue" code.
-
-    #### GitHub
-
-    - **Enforce consistency**: Run linters and formatters in **GitHub Actions**; fail the build on violations.
-    - **Code Review**: Use **PR Templates** to remind reviewers to check for readability and architecture, not just functionality.
-    - **Tech Debt**: Use issues or specific tags to track technical debt visibility.
-
 === "DE"
-
-    Gute Software ist wartbar, lesbar und anpassbar. Code-Qualität bedeutet nicht nur „es funktioniert“, sondern „es kann sicher geändert werden“.
-
-    #### Allgemein
 
     - **Clean Code Prinzipien**:
       - **Benennung**: Nutze deskriptive, konsistente Namenskonventionen. Code sollte sich wie ein Satz lesen.
@@ -1278,24 +1507,49 @@
       - Nutze **Linter** (z. B. ESLint, Pylint) und **Formatter** (z. B. Prettier, Black), um Stil automatisch durchzusetzen.
       - Konfiguration für diese Tools muss Teil des Repositories sein.
 
-    #### Azure
+#### Azure
+
+=== "EN"
+
+    - **SDK usage**: Prefer official Azure SDKs over raw HTTP calls for better resilience, retry logic, and authentication support.
+    - **Managed Services**: Prefer leveraging platform capabilities (e.g., Event Grid for decoupled messaging) over building custom "glue" code.
+
+=== "DE"
 
     - **SDK-Nutzung**: Bevorzuge offizielle Azure SDKs gegenüber rohen HTTP-Calls für bessere Resilienz, Retry-Logik und Auth-Support.
     - **Managed Services**: Bevorzuge Plattformfähigkeiten (z. B. Event Grid für entkoppeltes Messaging) gegenüber dem Bau von eigenem „Glue“-Code.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - **Enforce consistency**: Run linters and formatters in **GitHub Actions**; fail the build on violations.
+    - **Code Review**: Use **PR Templates** to remind reviewers to check for readability and architecture, not just functionality.
+    - **Tech Debt**: Use issues or specific tags to track technical debt visibility.
+
+=== "DE"
 
     - **Konsistenz erzwingen**: Führe Linter und Formatter in **GitHub Actions** aus; lasse den Build bei Verstößen fehlschlagen.
     - **Code Review**: Nutze **PR-Templates**, um Reviewer an Lesbarkeit und Architektur zu erinnern, nicht nur an Funktionalität.
     - **Tech Debt**: Nutze Issues oder spezifische Tags, um technische Schulden sichtbar zu machen.
 
-## Accessibility (A11y) & UX
+## Accessibility
 
 === "EN"
 
+    Inclusive design ensures software is usable by everyone and meets legal standards.
+
     Software must be usable by everyone, including people with disabilities. This is not optional; it is a legal requirement (e.g., BFSG 2025 in Germany) and a quality mark.
 
-    #### General
+=== "DE"
+
+    Inklusives Design stellt sicher, dass Software für alle nutzbar ist und rechtliche Standards erfüllt.
+
+    Software muss für jeden nutzbar sein, auch für Menschen mit Einschränkungen. Dies ist keine Option, sondern eine rechtliche Anforderung (z. B. BFSG 2025 in Deutschland) und ein Qualitätsmerkmal.
+
+#### General
+
+=== "EN"
 
     - **Standards**: Target **WCAG 2.1 Level AA** (or higher) compliance.
     - **Semantics**: Use proper HTML5 semantic elements (`<nav>`, `<main>`, `<button>` vs. `<div>`) to ensure screen reader compatibility.
@@ -1307,21 +1561,7 @@
       - Design for multiple languages and locales from the start (RTL support, date/number formatting).
       - Externalize all user-facing strings into resource files.
 
-    #### Azure
-
-    - **AI Services**: Use **Azure AI Services** (e.g., Computer Vision for image alt text, Speech-to-Text) to enhance accessibility features in your app.
-    - **Content Delivery**: Use Azure CDN/Front Door to deliver localized content with low latency.
-
-    #### GitHub
-
-    - **Automated Testing**: Integrate accessibility testing tools (e.g., **axe-core**, **pa11y**) into your CI/CD pipeline to catch basic errors (missing alt text, bad contrast).
-    - **Manual Review**: Include accessibility checks in PR templates and release reviews.
-
 === "DE"
-
-    Software muss für jeden nutzbar sein, auch für Menschen mit Einschränkungen. Dies ist keine Option, sondern eine rechtliche Anforderung (z. B. BFSG 2025 in Deutschland) und ein Qualitätsmerkmal.
-
-    #### Allgemein
 
     - **Standards**: Ziele auf **WCAG 2.1 Level AA** (oder höher).
     - **Semantik**: Nutze korrekte semantische HTML5-Elemente (`<nav>`, `<main>`, `<button>` vs. `<div>`) für Screenreader-Kompatibilität.
@@ -1333,23 +1573,45 @@
       - Plane von Anfang an für mehrere Sprachen und Regionen (RTL-Support, Datums-/Zahlenformate).
       - Lagere alle sichtbaren Texte in Ressourcendateien aus.
 
-    #### Azure
+#### Azure
+
+=== "EN"
+
+    - **AI Services**: Use **Azure AI Services** (e.g., Computer Vision for image alt text, Speech-to-Text) to enhance accessibility features in your app.
+    - **Content Delivery**: Use Azure CDN/Front Door to deliver localized content with low latency.
+
+=== "DE"
 
     - **AI Services**: Nutze **Azure AI Services** (z. B. Computer Vision für Bildbeschreibungen, Speech-to-Text), um Barrierefreiheitsfunktionen in deiner App zu verbessern.
     - **Content Delivery**: Nutze Azure CDN/Front Door, um lokalisierte Inhalte mit niedriger Latenz auszuliefern.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - **Automated Testing**: Integrate accessibility testing tools (e.g., **axe-core**, **pa11y**) into your CI/CD pipeline to catch basic errors (missing alt text, bad contrast).
+    - **Manual Review**: Include accessibility checks in PR templates and release reviews.
+
+=== "DE"
 
     - **Automatisiertes Testen**: Integriere A11y-Testing-Tools (z. B. **axe-core**, **pa11y**) in deine CI/CD-Pipeline, um Basisfehler zu finden (fehlende Alt-Texte, schlechter Kontrast).
     - **Manuelles Review**: Füge Barrierefreiheits-Checks zu PR-Templates und Release-Reviews hinzu.
 
-## Performance & Efficiency
+## Performance
 
 === "EN"
 
+    Efficient software respects user resources and reduces operational costs.
+
     Performance is a feature. Efficient software respects user time and resources (battery, bandwidth) and reduces operational costs/carbon footprint.
 
-    #### General
+=== "DE"
+
+    Effiziente Software respektiert Nutzerressourcen und senkt Betriebskosten.
+
+    Performance ist ein Feature. Effiziente Software respektiert die Zeit und Ressourcen der Nutzer (Batterie, Bandbreite) und reduziert Betriebskosten sowie den CO₂-Fußabdruck.
+
+#### General
 
     - **Frontend Performance**:
       - Monitor **Core Web Vitals** (LCP, CLS, INP).
@@ -1399,15 +1661,23 @@
     - **Performance Budgets**: Nutze Tools (z. B. **Lighthouse CI**) in GitHub Actions, um Builds bei Überschreitung von Größen- oder Performance-Grenzen fehlschlagen zu lassen.
     - **Lasttests**: Plane regelmäßige Lasttests (z. B. via k6), um das Systemverhalten unter Stress zu verifizieren.
 
-## FinOps & Cost Efficiency
+## FinOps
 
 === "EN"
 
+    Cost awareness and optimization align technical decisions with business value.
+
     Cost efficiency is a key quality metric. Good software delivers value without waste. In the cloud, every architectural decision has a direct price tag. FinOps is not just about saving money; it is about **understanding** where money goes (unit economics) and making conscious trade-offs.
 
-    Efficient software is also **greener software**. Reducing compute cycles and storage waste directly lowers carbon emissions, which is a trust and sales factor for many customers.
+=== "DE"
 
-    #### General
+    Kostenbewusstsein und Optimierung richten technische Entscheidungen am Geschäftswert aus.
+
+    Kosteneffizienz ist ein zentrales Qualitätsmerkmal. Gute Software liefert Wert ohne Verschwendung. In der Cloud hat jede Architekturentscheidung ein Preisschild. FinOps bedeutet nicht nur Geld sparen, sondern zu **verstehen**, wohin das Geld fließt (Unit Economics) und bewusste Abwägungen zu treffen.
+
+#### General
+
+=== "EN"
 
     - **Unit Economics**:
       - Understand the cost per user, per tenant, or per transaction.
@@ -1422,34 +1692,7 @@
       - Optimize for **carbon intensity**: Run heavy batch jobs when the grid is green (if possible).
       - Reduce data transfer: Sending less data over the network saves energy and cost.
 
-    #### Azure
-
-    - **Cost Analysis & Budgets**:
-      - Use **Azure Cost Management** to set budgets and alerts at the subscription and resource group level.
-      - Tag every resource with `Owner`, `Environment`, `CostCenter`, and `Application`.
-    - **Architectural Fit**:
-      - Use **Consumption Plans** (Functions, Logic Apps) for sporadic workloads to pay only for execution.
-      - Use **Reserved Instances** or **Savings Plans** for predictable, steady-state workloads (databases, VMs).
-      - Use **Spot Instances** for interruptible batch jobs or stateless nodes in AKS.
-    - **Cleanup**:
-      - Use **Azure Policy** to deny creation of expensive SKUs in non-production environments.
-      - Implement automated scripts (e.g., Azure Automation runbooks) to shut down dev/test VMs at night.
-
-    #### GitHub
-
-    - **CI/CD Costs**:
-      - Monitor **GitHub Actions** minutes; use caching to speed up builds and reduce billable time.
-      - Use self-hosted runners for heavy workloads if they are cheaper than GitHub-hosted runners.
-    - **Reporting**:
-      - Integrate cost reports into the development dashboard. Engineers should see the cost impact of their changes.
-
 === "DE"
-
-    Kosteneffizienz ist ein zentrales Qualitätsmerkmal. Gute Software liefert Wert ohne Verschwendung. In der Cloud hat jede Architekturentscheidung ein Preisschild. FinOps bedeutet nicht nur Geld sparen, sondern zu **verstehen**, wohin das Geld fließt (Unit Economics) und bewusste Abwägungen zu treffen.
-
-    Effiziente Software ist auch **grünere Software**. Weniger Rechenzyklen und Speicherverschwendung senken direkt CO₂-Emissionen, was für viele Kunden ein Vertrauens- und Verkaufsfaktor ist.
-
-    #### Allgemein
 
     - **Unit Economics**:
       - Verstehe die Kosten pro Nutzer, Mandant oder Transaktion.
@@ -1464,7 +1707,22 @@
       - Optimiere auf **Kohlenstoffintensität**: Führe schwere Batch-Jobs aus, wenn das Stromnetz grün ist (wo möglich).
       - Reduziere Datentransfer: Weniger Daten über das Netzwerk zu senden, spart Energie und Kosten.
 
-    #### Azure
+#### Azure
+
+=== "EN"
+
+    - **Cost Analysis & Budgets**:
+      - Use **Azure Cost Management** to set budgets and alerts at the subscription and resource group level.
+      - Tag every resource with `Owner`, `Environment`, `CostCenter`, and `Application`.
+    - **Architectural Fit**:
+      - Use **Consumption Plans** (Functions, Logic Apps) for sporadic workloads to pay only for execution.
+      - Use **Reserved Instances** or **Savings Plans** for predictable, steady-state workloads (databases, VMs).
+      - Use **Spot Instances** for interruptible batch jobs or stateless nodes in AKS.
+    - **Cleanup**:
+      - Use **Azure Policy** to deny creation of expensive SKUs in non-production environments.
+      - Implement automated scripts (e.g., Azure Automation runbooks) to shut down dev/test VMs at night.
+
+=== "DE"
 
     - **Kostenanalyse & Budgets**:
       - Nutze **Azure Cost Management**, um Budgets und Alarme auf Subscription- und Ressourcengruppen-Ebene zu setzen.
@@ -1477,7 +1735,17 @@
       - Nutze **Azure Policy**, um teure SKUs in Nicht-Produktionsumgebungen zu verbieten.
       - Implementiere automatisierte Skripte (z. B. Azure Automation Runbooks), um Dev/Test-VMs nachts herunterzufahren.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - **CI/CD Costs**:
+      - Monitor **GitHub Actions** minutes; use caching to speed up builds and reduce billable time.
+      - Use self-hosted runners for heavy workloads if they are cheaper than GitHub-hosted runners.
+    - **Reporting**:
+      - Integrate cost reports into the development dashboard. Engineers should see the cost impact of their changes.
+
+=== "DE"
 
     - **CI/CD-Kosten**:
       - Überwache **GitHub Actions**-Minuten; nutze Caching, um Builds zu beschleunigen und billable time zu reduzieren.
@@ -1485,11 +1753,17 @@
     - **Reporting**:
       - Integriere Kostenberichte in das Entwicklungs-Dashboard. Ingenieure sollten den Kosteneinfluss ihrer Änderungen sehen.
 
-## Compliance & Standards
+## Compliance
 
 === "EN"
 
-    #### General
+    Adhering to standards ensures legal conformity and builds customer trust.
+
+=== "DE"
+
+    Die Einhaltung von Standards sichert Rechtskonformität und baut Kundenvertrauen auf.
+
+#### General
 
     Relevant frameworks for legal compliance and customer trust requirements (especially for the German/EU market):
 
@@ -1617,9 +1891,11 @@
       - Nachweis aktivierter Kontrollen (CodeQL/Dependabot-Status).
       - Verweise auf GitHub-Compliance-Berichte.
 
-## German Market Requirements
+## German Market
 
 === "EN"
+
+    Specific requirements for data privacy and location are critical for German customers.
 
     What often matters to customers in Germany:
 
@@ -1636,6 +1912,8 @@
 
 === "DE"
 
+    Spezifische Anforderungen an Datenschutz und -ort sind für deutsche Kunden entscheidend.
+
     Was für Kunden in Deutschland oft zählt:
 
     | Thema | Warum es wichtig ist |
@@ -1649,7 +1927,17 @@
 
     Nutze **Azure-Regionen in der EU/EWR** (z. B. Germany West Central, West Europe) und GitHubs Data Residency Optionen, wo nötig; dokumentiere Entscheidungen und Compliance-Status.
 
-## Practical Plan for Trust & Transparency (Customer-Driven)
+## Trust Plan
+
+=== "EN"
+
+    A structured approach to transparency builds lasting customer relationships.
+
+=== "DE"
+
+    Ein strukturierter Ansatz für Transparenz baut dauerhafte Kundenbeziehungen auf.
+
+#### General
 
 === "EN"
 
@@ -1669,13 +1957,23 @@
     5. **Sammle Nachweise kontinuierlich**: Halte Policies, Runbooks, Access Reviews, Scan-Berichte, Deployment-Logs, Restore-Tests und Incident-Post-Mortems bereit.
     6. **Regelmäßiges Kunden-Review**: Prüfe Vertrauensanforderungen in vierteljährlichen oder release-basierten Reviews und passe Kontrollen bei Bedarf an.
 
-## Minimum Security Baseline (Example)
+## Security Baseline
 
 === "EN"
 
+    A defined baseline ensures a consistent minimum security standard across projects.
+
     Use this as a practical template; tailor the thresholds to your product and customer expectations.
 
-    #### General
+=== "DE"
+
+    Eine definierte Baseline sichert einen konsistenten Mindestsicherheitsstandard über Projekte hinweg.
+
+    Nutze dies als Vorlage; passe die Schwellenwerte an dein Produkt und Kundenerwartungen an.
+
+#### General
+
+=== "EN"
 
     - **Identity & access**
       - MFA required for all human access to production-related systems.
@@ -1700,28 +1998,7 @@
       - Security contact/reporting path is public (e.g. SECURITY.md).
       - Core architecture, runbooks, and key decisions are documented and current.
 
-    #### Azure
-
-    - Entra ID + Conditional Access + MFA for administrative access.
-    - Key Vault for secrets; managed identities preferred over static credentials.
-    - Private networking where required, WAF for internet-facing apps, and Defender for Cloud recommendations tracked.
-    - Staging slot or separate staging environment is required before production promotion.
-    - Custom domain + certificate setup is documented and monitored (expiry/renewal).
-
-    #### GitHub
-
-    - Branch protection, required reviews, and required status checks are enabled.
-    - GitHub Secrets or OIDC is used for cloud access; no cloud credentials in repository.
-    - Dependabot and CodeQL (or equivalent) are enabled; alert ownership is defined.
-    - Secret leak controls are enabled (GitHub Secret Scanning/Push Protection and/or CI scanner such as Gitleaks).
-    - Environments (Staging/Production) include protection rules for production releases.
-    - Domain-related deployment/config changes are reviewed via PR and tracked.
-
 === "DE"
-
-    Nutze dies als Vorlage; passe die Schwellenwerte an dein Produkt und Kundenerwartungen an.
-
-    #### Allgemein
 
     - **Identität & Zugriff**
       - MFA für jeden menschlichen Zugriff auf produktionsrelevante Systeme.
@@ -1746,7 +2023,17 @@
       - Security Contact/Meldeweg öffentlich (z. B. SECURITY.md).
       - Kernarchitektur, Runbooks und Entscheidungen dokumentiert/aktuell.
 
-    #### Azure
+#### Azure
+
+=== "EN"
+
+    - Entra ID + Conditional Access + MFA for administrative access.
+    - Key Vault for secrets; managed identities preferred over static credentials.
+    - Private networking where required, WAF for internet-facing apps, and Defender for Cloud recommendations tracked.
+    - Staging slot or separate staging environment is required before production promotion.
+    - Custom domain + certificate setup is documented and monitored (expiry/renewal).
+
+=== "DE"
 
     - Entra ID + Conditional Access + MFA für administrativen Zugriff.
     - Key Vault für Secrets; Managed Identities bevorzugt.
@@ -1754,7 +2041,18 @@
     - Staging-Slot oder separate Umgebung vor Produktion erforderlich.
     - Custom Domain + Zertifikats-Setup dokumentiert und überwacht.
 
-    #### GitHub
+#### GitHub
+
+=== "EN"
+
+    - Branch protection, required reviews, and required status checks are enabled.
+    - GitHub Secrets or OIDC is used for cloud access; no cloud credentials in repository.
+    - Dependabot and CodeQL (or equivalent) are enabled; alert ownership is defined.
+    - Secret leak controls are enabled (GitHub Secret Scanning/Push Protection and/or CI scanner such as Gitleaks).
+    - Environments (Staging/Production) include protection rules for production releases.
+    - Domain-related deployment/config changes are reviewed via PR and tracked.
+
+=== "DE"
 
     - Branch Protection, erforderliche Reviews und Statuschecks aktiviert.
     - GitHub Secrets oder OIDC für Cloud-Zugriff; keine Cloud-Credentials im Repo.
@@ -1763,9 +2061,11 @@
     - Environments (Staging/Production) mit Schutzregeln für Produktions-Releases.
     - Domain-bezogene Deployment/Config-Änderungen via PR reviewt und getrackt.
 
-## Implementation examples by chapter (quick reference)
+## Implementation Examples
 
 === "EN"
+
+    Concrete examples and search terms to help implement these standards.
 
     Use this as a practical layer on top of the chapter text. For each chapter, you get: a concrete example, implementation advice, and search terms.
 
@@ -1775,6 +2075,7 @@
     | **Identity & Access** | MFA + conditional access for admins. | Central IdP, no shared admin accounts, periodic access review. | `Azure Entra Conditional Access MFA`, `least privilege access review` |
     | **User Management, Roles, Groups & Tenants** | Roles `User/Support/Developer/Admin` defined. | Enforce tenant boundary in authz + data access layer; test cross-tenant denial. | `multi-tenant authorization patterns`, `tenant isolation best practices` |
     | **Frontend vs. Backend Security Responsibilities** | Frontend validates UX, backend enforces policy. | Never trust client-provided role/tenant IDs; server-side authz mandatory. | `frontend backend security responsibilities`, `server-side authorization` |
+| **Interfaces: API, UI & Headless** | API-First design with OpenAPI docs. | UI is just a client; support deep linking but validate all params on backend. | `api first design`, `headless automation security`, `deep linking security` |
     | **Rollenmatrix** | Role table with minimum rights + no-gos. | Add owner for each role, approval path for privilege changes, JIT admin where possible. | `RBAC role matrix template`, `JIT privileged access` |
     | **Data, Databases & Secure Design** | Fields tagged as `brisant` + masking rules. | Apply classification in schema/code/logging/export; enforce tenant-scoped queries. | `data classification model`, `row level security tenant isolation` |
     | **Data & Secrets** | Secrets only in Key Vault/GitHub Secrets. | Runtime secret retrieval, no plaintext secrets in repo/logs, rotate periodically. | `secret management best practices`, `GitHub secret scanning push protection` |
@@ -1801,6 +2102,8 @@
 
 === "DE"
 
+    Konkrete Beispiele und Suchbegriffe zur Umsetzung dieser Standards.
+
     Nutze dies als praktische Ebene über dem Kapiteltext. Für jedes Kapitel erhältst du: ein konkretes Beispiel, Implementierungshinweise und Suchbegriffe.
 
     | Kapitel | Beispiel | Implementierung / Zu beachten | Suchbegriffe |
@@ -1809,6 +2112,7 @@
     | **Identity & Access** | MFA + Conditional Access für Admins. | Zentraler IdP, keine geteilten Admin-Accounts, periodisches Access-Review. | `Azure Entra Conditional Access MFA`, `least privilege access review` |
     | **User Management, Roles...** | Rollen `User/Support/Developer/Admin` definiert. | Setze Mandantengrenze in Authz + Datenzugriffsschicht durch; teste Cross-Tenant-Verweigerung. | `multi-tenant authorization patterns`, `tenant isolation best practices` |
     | **Frontend vs. Backend...** | Frontend validiert UX, Backend erzwingt Policy. | Vertraue nie Client-seitigen Rollen/Tenant-IDs; serverseitige Authz obligatorisch. | `frontend backend security responsibilities`, `server-side authorization` |
+| **Interfaces: API, UI & Headless** | API-First-Design mit OpenAPI-Doku. | UI ist nur ein Client; unterstütze Deep Linking, aber validiere alle Parameter im Backend. | `api first design`, `headless automation security`, `deep linking security` |
     | **Rollenmatrix** | Rollentabelle mit Minimalrechten + No-Gos. | Füge Owner für jede Rolle hinzu, Genehmigungspfad für Rechteänderungen, JIT-Admin wo möglich. | `RBAC role matrix template`, `JIT privileged access` |
     | **Data, Databases...** | Felder getaggt als `brisant` + Maskierungsregeln. | Wende Klassifizierung in Schema/Code/Logging/Export an; erzwinge mandantenbezogene Abfragen. | `data classification model`, `row level security tenant isolation` |
     | **Data & Secrets** | Secrets nur in Key Vault/GitHub Secrets. | Runtime-Secret-Abruf, keine Klartext-Secrets in Repo/Logs, periodische Rotation. | `secret management best practices`, `GitHub secret scanning push protection` |
@@ -1833,9 +2137,11 @@
     | **Practical Plan for Trust...** | Vierteljährliches Kundenvertrauens-Review. | Tracke Aktionen mit Owner/Datum/Beweislink; veröffentliche Fortschritt. | `customer trust program`, `security governance review cadence` |
     | **Minimum Security Baseline** | Basis-Kontrollen haben Owner/Fälligkeit/Beweis. | Prüfe Basis-Status in festem Turnus; eskaliere überfällige Essentials. | `security baseline template`, `control ownership model` |
 
-## Checklist (Summary)
+## Checklist
 
 === "EN"
+
+    A summary checklist to track compliance with these standards.
 
     Rating scale used below:
     - **Effort**: `Low` | `Medium` | `High`
@@ -1846,6 +2152,7 @@
     - [ ] CIA, Least Privilege, Defense in Depth, and **Keep it simple** reflected in design and operations `[Effort: Medium | Cost: Low | Importance: Essential]`
     - [ ] Identity: central IdP, MFA, least privilege, no secrets in config `[Effort: Medium | Cost: Medium | Importance: Essential]`
     - [ ] User management: roles and groups defined; tenant (customer) isolation designed and enforced where multi-tenant `[Effort: High | Cost: Medium | Importance: Essential]`
+- [ ] Interfaces: API-First approach; API documented; Headless usage supported; Deep linking enabled but validated `[Effort: Medium | Cost: Low | Importance: Important]`
     - [ ] Data model and database design enforce tenant isolation; brisante data is classified, owned, and handled by policy `[Effort: High | Cost: Medium | Importance: Essential]`
     - [ ] Data & secrets: vault or secret store, TLS 1.2+ `[Effort: Medium | Cost: Medium | Importance: Essential]`
     - [ ] Domain & email trust: valid certificates, SPF, DKIM, DMARC, and monitoring for expiry/spoofing `[Effort: Medium | Cost: Low | Importance: Important]`
@@ -1903,6 +2210,8 @@
 
 === "DE"
 
+    Eine zusammenfassende Checkliste zur Verfolgung der Einhaltung dieser Standards.
+
     Bewertungsskala:
     - **Aufwand**: `Niedrig` | `Mittel` | `Hoch`
     - **Kosten**: `Niedrig` | `Mittel` | `Hoch`
@@ -1912,6 +2221,7 @@
     - [ ] CIA, Least Privilege, Defense in Depth und **Einfachheit** in Design und Betrieb reflektiert `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Essentiell]`
     - [ ] Identität: Zentraler IdP, MFA, Least Privilege, keine Secrets in Config `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
     - [ ] Nutzermanagement: Rollen/Gruppen definiert; Mandantentrennung (Tenant Isolation) durchgesetzt `[Aufwand: Hoch | Kosten: Mittel | Wichtigkeit: Essentiell]`
+- [ ] Schnittstellen: API-First-Ansatz; API dokumentiert; Headless-Nutzung unterstützt; Deep Linking aktiviert aber validiert `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
     - [ ] Datenmodell und DB-Design erzwingen Mandantentrennung; brisante Daten klassifiziert und geschützt `[Aufwand: Hoch | Kosten: Mittel | Wichtigkeit: Essentiell]`
     - [ ] Daten & Secrets: Vault/Secret Store genutzt, TLS 1.2+ `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
     - [ ] Domain & E-Mail-Vertrauen: Gültige Zertifikate, SPF, DKIM, DMARC, Monitoring `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
