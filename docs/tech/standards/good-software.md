@@ -13,7 +13,6 @@
     Es reicht nicht aus, dass Code einfach nur „funktioniert“. Gute Software verdient das Vertrauen der Nutzer durch Zuverlässigkeit, Datensicherheit und vorhersehbares Verhalten. Wir erreichen dies durch transparente Entwicklungspraktiken, rigoroses Testen und Ehrlichkeit über die Fähigkeiten unseres Systems.
 
 **Transparency & Trust**
-
 === "EN"
 
     We believe that trust is built through transparency. We clearly define **how** we secure data, **how** we ensure availability, and **how** we handle failures. We do not hide behind obscurity; we rely on proven standards and defensible architecture.
@@ -23,7 +22,6 @@
     Wir glauben, dass Vertrauen durch Transparenz entsteht. Wir definieren klar, **wie** wir Daten sichern, **wie** wir Verfügbarkeit gewährleisten und **wie** wir mit Ausfällen umgehen. Wir verstecken uns nicht hinter Unklarheiten; wir setzen auf bewährte Standards und eine verteidigungsfähige Architektur.
 
 **Limits & Scope**
-
 === "EN"
 
     Every piece of software has limits. We are explicit about what our systems are **not** designed to do. Misusing a system outside its intended scope—such as using a standard web app for high-frequency trading or life-critical control systems—leads to failure and unhappy customers. We define these operational boundaries clearly so that we deliver excellence within them.
@@ -33,12 +31,12 @@
     Jede Software hat Grenzen. Wir machen explizit deutlich, wofür unsere Systeme **nicht** ausgelegt sind. Die missbräuchliche Nutzung eines Systems außerhalb seines vorgesehenen Bereichs – wie z. B. die Nutzung einer Standard-Web-App für Hochfrequenzhandel oder lebenswichtige Steuerungssysteme – führt zu Ausfällen und unzufriedenen Kunden. Wir definieren diese operativen Grenzen klar, um innerhalb dieser Grenzen Exzellenz zu liefern.
 
 **How to use this document**
-
 === "EN"
 
     This guide serves as our engineering standard. It is organised by topic, with a specific focus on **General Engineering Principles**, **Web Applications on Azure**, and **GitHub-based Deployment**.
 
     Each chapter contains:
+
     - **General**: Universal principles that apply regardless of the technology stack. **Start here.**
     - **Azure**: Concrete implementation guidance for our primary cloud platform.
     - **GitHub**: Operational details for our deployment and security automation pipelines.
@@ -50,6 +48,7 @@
     Dieser Leitfaden dient als unser technischer Standard. Er ist nach Themen gegliedert, mit besonderem Fokus auf **Allgemeine Entwicklungsprinzipien**, **Webanwendungen auf Azure** und **Deployment mit GitHub**.
 
     Jedes Kapitel enthält:
+
     - **Allgemein**: Universelle Prinzipien, die unabhängig vom Technologie-Stack gelten. **Hier beginnen.**
     - **Azure**: Konkrete Implementierungsrichtlinien für unsere primäre Cloud-Plattform.
     - **GitHub**: Operative Details für unsere Deployment- und Sicherheitsautomatisierung.
@@ -60,81 +59,97 @@
 
 === "EN"
 
-    Principles that apply regardless of technology.
+    Principles that apply regardless of technology:
 
-    - **CIA Triad**
+    **CIA Triad**
       - **Confidentiality**: Only authorised parties access data (access control, encryption).
       - **Integrity**: Data and systems remain accurate and unaltered (checksums, signing, audit logs).
       - **Availability**: Systems and data are available when needed (redundancy, resilience, DDoS mitigation).
-    - **Least Privilege**: Users and services get only the minimum permissions required for their role or task.
-    - **Defense in Depth**: Combine multiple layers (network, identity, application, data) so a single failure does not compromise the whole system.
-    - **Keep it simple**: Prefer simple, understandable designs and processes over complex ones. Simpler systems are easier to secure, operate, and audit. Avoid unnecessary abstraction, duplication of concepts, or tooling that does not pull its weight.
+    
+    **Least Privilege**: Users and services get only the minimum permissions required for their role or task.
+    
+    **Defense in Depth**: Combine multiple layers (network, identity, application, data) so a single failure does not compromise the whole system.
+    
+    **Keep it simple**: Prefer simple, understandable designs and processes over complex ones. Simpler systems are easier to secure, operate, and audit. Avoid unnecessary abstraction, duplication of concepts, or tooling that does not pull its weight.
+
+    **Example minimum requirements**
+    
+    **Confidentiality**
+        - All internet-facing endpoints use TLS 1.3.
+        - Secrets are only stored in a vault, never in source control.
+        - Access to production data is role-based and logged.
+
+    **Integrity**
+        - Pull requests require review before merge to protected branches.
+        - CI verifies tests and static checks before deployment.
+        - Critical configuration changes are tracked in version control.
+    
+    **Availability**
+        - Define target uptime and alerting thresholds per critical service.
+        - Define backup cadence and recovery objectives (RPO/RTO).
+        - Perform restore tests on a fixed schedule.
+    
+    **Least Privilege**
+        - No shared admin accounts for normal operations.
+        - Admin access is limited, time-bound where possible, and auditable.
+        - Permissions are reviewed periodically.
+    
+    **Defense in Depth**
+        - Use at least identity controls, network controls, and application controls.
+        - Exposed services are protected by WAF and monitoring.
+        - Logging and alerting are enabled for security-relevant events.
+    
+    **Keep it simple**
+        - Minimise number of environments, tools, and custom role variants.
+        - Prefer one standard deployment path and one standard rollback path.
+        - Remove controls/processes that add complexity without measurable value.
 
 === "DE"
 
-    Prinzipien, die unabhängig von der Technologie gelten.
+    Prinzipien, die unabhängig von der Technologie gelten:
 
-    - **CIA-Triade (Schutzziele)**
+    **CIA-Triade (Schutzziele)**
       - **Vertraulichkeit (Confidentiality)**: Nur autorisierte Parteien haben Zugriff auf Daten (Zugriffskontrolle, Verschlüsselung).
       - **Integrität (Integrity)**: Daten und Systeme bleiben korrekt und unverändert (Prüfsummen, Signaturen, Audit-Logs).
       - **Verfügbarkeit (Availability)**: Systeme und Daten sind verfügbar, wenn sie benötigt werden (Redundanz, Resilienz, DDoS-Schutz).
-    - **Least Privilege (Geringstes Privileg)**: Nutzer und Dienste erhalten nur die minimalen Berechtigungen, die für ihre Rolle oder Aufgabe erforderlich sind.
-    - **Defense in Depth (Verteidigung in der Tiefe)**: Kombination mehrerer Schutzschichten (Netzwerk, Identität, Anwendung, Daten), damit ein einzelner Fehler nicht das gesamte System kompromittiert.
-    - **Keep it simple (Einfachheit)**: Bevorzuge einfache, verständliche Designs und Prozesse gegenüber komplexen. Einfachere Systeme sind leichter zu sichern, zu betreiben und zu prüfen. Vermeide unnötige Abstraktion, Duplizierung von Konzepten oder Tools, die ihren Aufwand nicht rechtfertigen.
+    
+    **Least Privilege (Geringstes Privileg)**: Nutzer und Dienste erhalten nur die minimalen Berechtigungen, die für ihre Rolle oder Aufgabe erforderlich sind.
+    
+    **Defense in Depth (Verteidigung in der Tiefe)**: Kombination mehrerer Schutzschichten (Netzwerk, Identität, Anwendung, Daten), damit ein einzelner Fehler nicht das gesamte System kompromittiert.
+    
+    **Keep it simple (Einfachheit)**: Bevorzuge einfache, verständliche Designs und Prozesse gegenüber komplexen. Einfachere Systeme sind leichter zu sichern, zu betreiben und zu prüfen. Vermeide unnötige Abstraktion, Duplizierung von Konzepten oder Tools, die ihren Aufwand nicht rechtfertigen.
 
-        **Example minimum requirements**
-        - **Confidentiality**
-            - All internet-facing endpoints use TLS 1.3.
-            - Secrets are only stored in a vault, never in source control.
-            - Access to production data is role-based and logged.
-        - **Integrity**
-            - Pull requests require review before merge to protected branches.
-            - CI verifies tests and static checks before deployment.
-            - Critical configuration changes are tracked in version control.
-        - **Availability**
-            - Define target uptime and alerting thresholds per critical service.
-            - Define backup cadence and recovery objectives (RPO/RTO).
-            - Perform restore tests on a fixed schedule.
-        - **Least Privilege**
-            - No shared admin accounts for normal operations.
-            - Admin access is limited, time-bound where possible, and auditable.
-            - Permissions are reviewed periodically.
-        - **Defense in Depth**
-            - Use at least identity controls, network controls, and application controls.
-            - Exposed services are protected by WAF and monitoring.
-            - Logging and alerting are enabled for security-relevant events.
-        - **Keep it simple**
-            - Minimise number of environments, tools, and custom role variants.
-            - Prefer one standard deployment path and one standard rollback path.
-            - Remove controls/processes that add complexity without measurable value.
-
-=== "DE"
-
-        **Beispielhafte Mindestanforderungen**
-        - **Vertraulichkeit**
-            - Alle öffentlich zugänglichen Endpunkte nutzen TLS 1.3.
-            - Geheimnisse (Secrets) werden nur in einem Vault gespeichert, niemals in der Versionsverwaltung.
-            - Der Zugriff auf Produktionsdaten ist rollenbasiert und protokolliert.
-        - **Integrität**
-            - Pull Requests erfordern ein Review vor dem Merge in geschützte Branches.
-            - CI verifiziert Tests und statische Prüfungen vor dem Deployment.
-            - Kritische Konfigurationsänderungen werden in der Versionsverwaltung nachverfolgt.
-        - **Verfügbarkeit**
-            - Ziel-Uptime und Alarmierungsschwellen pro kritischem Service definieren.
-            - Backup-Turnus und Wiederherstellungsziele (RPO/RTO) definieren.
-            - Restore-Tests nach festem Zeitplan durchführen.
-        - **Least Privilege**
-            - Keine geteilten Admin-Accounts für den normalen Betrieb.
-            - Admin-Zugriff ist begrenzt, zeitlich beschränkt (wo möglich) und auditierbar.
-            - Berechtigungen werden regelmäßig überprüft.
-        - **Defense in Depth**
-            - Nutzung von mindestens Identitätskontrollen, Netzwerkkontrollen und Anwendungskontrollen.
-            - Exponierte Dienste sind durch WAF und Monitoring geschützt.
-            - Logging und Alerting sind für sicherheitsrelevante Ereignisse aktiviert.
-        - **Keep it simple**
-            - Anzahl der Umgebungen, Tools und benutzerdefinierten Rollenvarianten minimieren.
-            - Einen Standard-Deployment-Pfad und einen Standard-Rollback-Pfad bevorzugen.
-            - Kontrollen/Prozesse entfernen, die Komplexität ohne messbaren Mehrwert hinzufügen.
+    **Beispielhafte Mindestanforderungen**
+    
+    **Vertraulichkeit**
+        - Alle öffentlich zugänglichen Endpunkte nutzen TLS 1.3.
+        - Geheimnisse (Secrets) werden nur in einem Vault gespeichert, niemals in der Versionsverwaltung.
+        - Der Zugriff auf Produktionsdaten ist rollenbasiert und protokolliert.
+    
+    **Integrität**
+        - Pull Requests erfordern ein Review vor dem Merge in geschützte Branches.
+        - CI verifiziert Tests und statische Prüfungen vor dem Deployment.
+        - Kritische Konfigurationsänderungen werden in der Versionsverwaltung nachverfolgt.
+    
+    **Verfügbarkeit**
+        - Ziel-Uptime und Alarmierungsschwellen pro kritischem Service definieren.
+        - Backup-Turnus und Wiederherstellungsziele (RPO/RTO) definieren.
+        - Restore-Tests nach festem Zeitplan durchführen.
+    
+    **Least Privilege**
+        - Keine geteilten Admin-Accounts für den normalen Betrieb.
+        - Admin-Zugriff ist begrenzt, zeitlich beschränkt (wo möglich) und auditierbar.
+        - Berechtigungen werden regelmäßig überprüft.
+    
+    **Defense in Depth**
+        - Nutzung von mindestens Identitätskontrollen, Netzwerkkontrollen und Anwendungskontrollen.
+        - Exponierte Dienste sind durch WAF und Monitoring geschützt.
+        - Logging und Alerting sind für sicherheitsrelevante Ereignisse aktiviert.
+    
+    **Keep it simple**
+        - Anzahl der Umgebungen, Tools und benutzerdefinierten Rollenvarianten minimieren.
+        - Einen Standard-Deployment-Pfad und einen Standard-Rollback-Pfad bevorzugen.
+        - Kontrollen/Prozesse entfernen, die Komplexität ohne messbaren Mehrwert hinzufügen.
 
 ## Identity & Access
 
@@ -1203,7 +1218,9 @@
     - **GitHub Secrets**: Store Azure credentials (e.g. service principal) or use **OIDC** with Azure AD so Actions assume a role without long-lived secrets. Use secrets only in workflows, never in repo content.
     - **Environments**: Use (e.g. “Staging”, “Production”) with protection rules and required reviewers before deployment.
     - **Pipeline security gates**: Run tests, **CodeQL**, **Dependabot** checks, secret scanning, and optional container/IaC scans in GitHub Actions; use required status checks so only reviewed, passing builds deploy.
-    - **Deployment best practices**
+
+    **Deployment best practices**
+
       - Build once, deploy the same artifact to Staging and then Production (avoid rebuilding between environments).
       - Use immutable versioning (commit SHA/tag) and keep release notes linked to that version.
       - Keep rollback simple: defined rollback workflow, known previous-good artifact, and clear ownership.
@@ -1214,7 +1231,9 @@
     - **GitHub Secrets**: Speichere Azure-Credentials (z. B. Service Principal) oder nutze **OIDC** mit Azure AD, damit Actions eine Rolle ohne langlebige Secrets annehmen. Nutze Secrets nur in Workflows, nie im Repo-Inhalt.
     - **Environments**: Nutze sie (z. B. „Staging“, „Production“) mit Schutzregeln und erforderlichen Reviewern vor dem Deployment.
     - **Pipeline Security Gates**: Führe Tests, **CodeQL**, **Dependabot**-Checks, Secret Scanning und optionale Container/IaC-Scans in Actions aus; nutze erforderliche Statuschecks, damit nur genehmigte, bestandene Builds deployen.
-    - **Deployment Best Practices**
+
+    **Deployment Best Practices**
+
       - Einmal bauen, dasselbe Artefakt auf Staging und dann Produktion deployen (vermeide Rebuilds zwischen Umgebungen).
       - Nutze unveränderliche Versionierung (Commit SHA/Tag) und verlinke Release Notes damit.
       - Halte Rollbacks einfach: definierter Rollback-Workflow, bekanntes funktionierendes Artefakt und klare Verantwortung.
@@ -1279,20 +1298,12 @@
 
 ## Documentation
 
+**General**
 === "EN"
 
     Clear documentation reduces risk and speeds up onboarding and compliance.
 
     Good documentation reduces risk, speeds onboarding, and supports compliance. Document what matters for operating, securing, and changing the system; keep it up to date and in one place.
-
-=== "DE"
-
-    Klare Dokumentation reduziert Risiken und beschleunigt Onboarding sowie Compliance.
-
-    Gute Dokumentation reduziert Risiken, beschleunigt das Onboarding und unterstützt Compliance. Dokumentiere, was für Betrieb, Sicherheit und Änderung des Systems wichtig ist.
-
-**General**
-=== "EN"
 
     - **What to document**: **Architecture** (components, data flow, boundaries); **APIs** (contracts, auth, examples); **Operations** (deployment, rollback, scaling, backups); **Runbooks** (incident response, common tasks); **Decisions** (ADRs — why we chose X); **Security** (threat model, secrets handling, compliance). Prioritise what the team and auditors actually use.
     - **Single source of truth**: Prefer one canonical place (e.g. docs in the repo, or a linked docs site) so information does not scatter across wikis, slides, and chat. Link from code or config to docs where it helps (e.g. README in each service).
@@ -1301,6 +1312,10 @@
     - **Onboarding**: New team members (and auditors) should find how to get access, run the app locally, run tests, and understand the high-level architecture without hunting. A single “Getting started” or “README” that stays accurate is valuable.
 
 === "DE"
+
+    Klare Dokumentation reduziert Risiken und beschleunigt Onboarding sowie Compliance.
+
+    Gute Dokumentation reduziert Risiken, beschleunigt das Onboarding und unterstützt Compliance. Dokumentiere, was für Betrieb, Sicherheit und Änderung des Systems wichtig ist.
 
     - **Was zu dokumentieren ist**: **Architektur** (Komponenten, Datenfluss, Grenzen); **APIs** (Verträge, Auth, Beispiele); **Betrieb** (Deployment, Rollback, Skalierung, Backups); **Runbooks** (Incident Response, häufige Aufgaben); **Entscheidungen** (ADRs — warum wir X gewählt haben); **Sicherheit** (Bedrohungsmodell, Secrets-Handling, Compliance). Priorisiere, was das Team und Prüfer tatsächlich nutzen.
     - **Single Source of Truth**: Bevorzuge einen kanonischen Ort (z. B. Docs im Repo oder eine verlinkte Doku-Site), damit Informationen nicht über Wikis, Folien und Chats verstreut sind.
@@ -1334,20 +1349,12 @@
 
 ## AI Coding
 
+**General**
 === "EN"
 
     AI tools increase speed but require human verification and strict security boundaries.
 
     AI tools can improve speed, but they also introduce new quality, security, and compliance risks. Treat AI output like external code: useful, but never trusted by default.
-
-=== "DE"
-
-    KI-Tools erhöhen die Geschwindigkeit, erfordern aber menschliche Überprüfung und strikte Sicherheitsgrenzen.
-
-    KI-Tools können die Geschwindigkeit erhöhen, führen aber auch neue Qualitäts-, Sicherheits- und Compliance-Risiken ein. Behandle KI-Output wie externen Code: nützlich, aber standardmäßig nie vertrauenswürdig.
-
-**General**
-=== "EN"
 
     - **Human accountability**: Engineers remain responsible for correctness, security, and compliance of all AI-generated code.
     - **No sensitive input in prompts**: Do not paste production secrets, personal data, internal credentials, or confidential customer details into AI prompts.
@@ -1358,6 +1365,10 @@
     - **Traceability**: Document substantial AI-assisted decisions in PR description and link to resulting tests/docs.
 
 === "DE"
+
+    KI-Tools erhöhen die Geschwindigkeit, erfordern aber menschliche Überprüfung und strikte Sicherheitsgrenzen.
+
+    KI-Tools können die Geschwindigkeit erhöhen, führen aber auch neue Qualitäts-, Sicherheits- und Compliance-Risiken ein. Behandle KI-Output wie externen Code: nützlich, aber standardmäßig nie vertrauenswürdig.
 
     - **Menschliche Verantwortung**: Ingenieure bleiben verantwortlich für Korrektheit, Sicherheit und Compliance allen KI-generierten Codes.
     - **Kein sensitiver Input in Prompts**: Füge keine Produktions-Secrets, personenbezogene Daten, internen Credentials oder vertrauliche Kundendetails in KI-Prompts ein.
@@ -1397,20 +1408,12 @@
 
 ## Code Quality
 
+**General**
 === "EN"
 
     Maintainable and readable code ensures long-term software health.
 
     Good software is maintainable, readable, and adaptable. Code quality is not just about "it works," but "it can be changed safely."
-
-=== "DE"
-
-    Wartbarer und lesbarer Code sichert die langfristige Gesundheit der Software.
-
-    Gute Software ist wartbar, lesbar und anpassbar. Code-Qualität bedeutet nicht nur „es funktioniert“, sondern „es kann sicher geändert werden“.
-
-**General**
-=== "EN"
 
     - **Clean Code Principles**:
       - **Naming**: Use descriptive, consistent naming conventions. Code should read like a sentence.
@@ -1429,6 +1432,10 @@
       - Configuration for these tools must be part of the repository.
 
 === "DE"
+
+    Wartbarer und lesbarer Code sichert die langfristige Gesundheit der Software.
+
+    Gute Software ist wartbar, lesbar und anpassbar. Code-Qualität bedeutet nicht nur „es funktioniert“, sondern „es kann sicher geändert werden“.
 
     - **Clean Code Prinzipien**:
       - **Benennung**: Nutze deskriptive, konsistente Namenskonventionen. Code sollte sich wie ein Satz lesen.
@@ -1472,20 +1479,12 @@
 
 ## Accessibility
 
+**General**
 === "EN"
 
     Inclusive design ensures software is usable by everyone and meets legal standards.
 
     Software must be usable by everyone, including people with disabilities. This is not optional; it is a legal requirement (e.g., BFSG 2025 in Germany) and a quality mark.
-
-=== "DE"
-
-    Inklusives Design stellt sicher, dass Software für alle nutzbar ist und rechtliche Standards erfüllt.
-
-    Software muss für jeden nutzbar sein, auch für Menschen mit Einschränkungen. Dies ist keine Option, sondern eine rechtliche Anforderung (z. B. BFSG 2025 in Deutschland) und ein Qualitätsmerkmal.
-
-**General**
-=== "EN"
 
     - **Standards**: Target **WCAG 2.1 Level AA** (or higher) compliance.
     - **Semantics**: Use proper HTML5 semantic elements (`<nav>`, `<main>`, `<button>` vs. `<div>`) to ensure screen reader compatibility.
@@ -1498,6 +1497,10 @@
       - Externalize all user-facing strings into resource files.
 
 === "DE"
+
+    Inklusives Design stellt sicher, dass Software für alle nutzbar ist und rechtliche Standards erfüllt.
+
+    Software muss für jeden nutzbar sein, auch für Menschen mit Einschränkungen. Dies ist keine Option, sondern eine rechtliche Anforderung (z. B. BFSG 2025 in Deutschland) und ein Qualitätsmerkmal.
 
     - **Standards**: Ziele auf **WCAG 2.1 Level AA** (oder höher).
     - **Semantik**: Nutze korrekte semantische HTML5-Elemente (`<nav>`, `<main>`, `<button>` vs. `<div>`) für Screenreader-Kompatibilität.
@@ -1535,18 +1538,14 @@
 
 === "EN"
 
-    Efficient software respects user resources and reduces operational costs.
-
-    Performance is a feature. Efficient software respects user time and resources (battery, bandwidth) and reduces operational costs/carbon footprint.
-
 === "DE"
-
-    Effiziente Software respektiert Nutzerressourcen und senkt Betriebskosten.
-
-    Performance ist ein Feature. Effiziente Software respektiert die Zeit und Ressourcen der Nutzer (Batterie, Bandbreite) und reduziert Betriebskosten sowie den CO₂-Fußabdruck.
 
 **General**
 === "EN"
+
+    Efficient software respects user resources and reduces operational costs.
+
+    Performance is a feature. Efficient software respects user time and resources (battery, bandwidth) and reduces operational costs/carbon footprint.
 
     - **Frontend Performance**:
       - Monitor **Core Web Vitals** (LCP, CLS, INP).
@@ -1559,6 +1558,10 @@
       - Scale down resources when not in use (auto-scaling).
 
 === "DE"
+
+    Effiziente Software respektiert Nutzerressourcen und senkt Betriebskosten.
+
+    Performance ist ein Feature. Effiziente Software respektiert die Zeit und Ressourcen der Nutzer (Batterie, Bandbreite) und reduziert Betriebskosten sowie den CO₂-Fußabdruck.
 
     - **Frontend-Performance**:
       - Überwache **Core Web Vitals** (LCP, CLS, INP).
@@ -1596,20 +1599,12 @@
 
 ## FinOps
 
+**General**
 === "EN"
 
     Cost awareness and optimization align technical decisions with business value.
 
     Cost efficiency is a key quality metric. Good software delivers value without waste. In the cloud, every architectural decision has a direct price tag. FinOps is not just about saving money; it is about **understanding** where money goes (unit economics) and making conscious trade-offs.
-
-=== "DE"
-
-    Kostenbewusstsein und Optimierung richten technische Entscheidungen am Geschäftswert aus.
-
-    Kosteneffizienz ist ein zentrales Qualitätsmerkmal. Gute Software liefert Wert ohne Verschwendung. In der Cloud hat jede Architekturentscheidung ein Preisschild. FinOps bedeutet nicht nur Geld sparen, sondern zu **verstehen**, wohin das Geld fließt (Unit Economics) und bewusste Abwägungen zu treffen.
-
-**General**
-=== "EN"
 
     - **Unit Economics**:
       - Understand the cost per user, per tenant, or per transaction.
@@ -1625,6 +1620,10 @@
       - Reduce data transfer: Sending less data over the network saves energy and cost.
 
 === "DE"
+
+    Kostenbewusstsein und Optimierung richten technische Entscheidungen am Geschäftswert aus.
+
+    Kosteneffizienz ist ein zentrales Qualitätsmerkmal. Gute Software liefert Wert ohne Verschwendung. In der Cloud hat jede Architekturentscheidung ein Preisschild. FinOps bedeutet nicht nur Geld sparen, sondern zu **verstehen**, wohin das Geld fließt (Unit Economics) und bewusste Abwägungen zu treffen.
 
     - **Unit Economics**:
       - Verstehe die Kosten pro Nutzer, Mandant oder Transaktion.
@@ -1685,16 +1684,10 @@
 
 ## Compliance
 
+**General**
 === "EN"
 
     Adhering to standards ensures legal conformity and builds customer trust.
-
-=== "DE"
-
-    Die Einhaltung von Standards sichert Rechtskonformität und baut Kundenvertrauen auf.
-
-**General**
-=== "EN"
 
     Relevant frameworks for legal compliance and customer trust requirements (especially for the German/EU market):
 
@@ -1708,6 +1701,7 @@
     Compliance must be documented and auditable. GDPR is a legal obligation you fulfil and document. For other frameworks, align with what your customers and contracts actually require.
 
     **Important: platform assurance is not your automatic certification**
+
     - If you use certified platforms, you can inherit parts of their control environment (sometimes called indirect/inherited assurance).
     - This does **not** mean your application is automatically certified or compliant.
     - You still need your own controls, evidence, and customer-facing transparency for what you operate (configuration, identities, code, data processing, incident handling).
@@ -1723,12 +1717,15 @@
     | Privacy/compliance tooling | Built-in platform features | Lawful basis, retention, deletion, DSAR process, customer commitments |
 
     **How to present this to customers (trust + transparency)**
+
     - Share a short responsibility matrix: `Provider control` / `Your control` / `Evidence`.
     - Share only scope-valid claims (e.g. “hosted on Azure, which maintains ISO 27001 for in-scope services”).
     - Avoid ambiguous statements like “our app is ISO-certified” unless your own org/app scope was audited accordingly.
     - Keep customer-ready evidence package updated (architecture, runbooks, scan reports, incident process, platform attestations).
 
 === "DE"
+
+    Die Einhaltung von Standards sichert Rechtskonformität und baut Kundenvertrauen auf.
 
     Relevante Frameworks für rechtliche Compliance und Kundenvertrauensanforderungen (besonders für den DE/EU-Markt):
 
@@ -1742,6 +1739,7 @@
     Compliance muss dokumentiert und auditierbar sein. DSGVO ist eine gesetzliche Pflicht, die du erfüllst und dokumentierst. Bei anderen Frameworks: Richte dich danach, was deine Kunden und Verträge tatsächlich verlangen.
 
     **Wichtig: Plattformsicherheit ist nicht deine automatische Zertifizierung**
+
     - Wenn du zertifizierte Plattformen nutzt, kannst du Teile ihres Kontrollumfelds erben (sog. indirekte/geerbte Assurance).
     - Das bedeutet **nicht**, dass deine Anwendung automatisch zertifiziert oder compliant ist.
     - Du benötigst weiterhin eigene Kontrollen, Nachweise und Transparenz für das, was du betreibst (Konfiguration, Identitäten, Code, Datenverarbeitung, Incident Handling).
@@ -1757,6 +1755,7 @@
     | Datenschutz-/Compliance-Tools | Eingebaute Plattformfeatures | Rechtsgrundlage, Löschung, Betroffenenanfragen, Kundenverpflichtungen |
 
     **Wie man dies Kunden präsentiert (Vertrauen + Transparenz)**
+
     - Teile eine kurze Verantwortungsmatrix: `Provider-Kontrolle` / `Deine Kontrolle` / `Nachweis`.
     - Mache nur scope-valide Aussagen (z. B. „gehostet auf Azure, das ISO 27001 für die genutzten Dienste unterhält“).
     - Vermeide mehrdeutige Aussagen wie „unsere App ist ISO-zertifiziert“, es sei denn, dein eigener Org/App-Scope wurde auditiert.
@@ -1765,30 +1764,36 @@
 **Azure**
 === "EN"
 
-      - Azure maintains broad compliance programs and attestations (for in-scope services), commonly including: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS**, and **CSA STAR**.
-      - What you can legitimately claim in customer conversations:
-          - Your solution runs on Azure services that are covered by specific provider attestations.
-          - You apply Azure security features (e.g. Entra ID, Key Vault, private networking, Defender controls) as part of your own control set.
-          - You can provide provider evidence references plus your own implementation evidence.
-      - What you still must prove yourself:
-          - Correct service configuration, RBAC model, tenant isolation, secure CI/CD, data lifecycle, and incident response.
-          - Contractual and legal controls around customer data processing and retention.
-      - Practical trust artifacts from Azure side:
-          - Service scope check (is each used Azure service covered by required standard).
-          - Shared-responsibility mapping per control.
-          - References to official Microsoft compliance documentation/report availability.
+    Azure maintains broad compliance programs and attestations (for in-scope services), commonly including: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS**, and **CSA STAR**.
+    
+    What you can legitimately claim in customer conversations:
+        - Your solution runs on Azure services that are covered by specific provider attestations.
+        - You apply Azure security features (e.g. Entra ID, Key Vault, private networking, Defender controls) as part of your own control set.
+        - You can provide provider evidence references plus your own implementation evidence.
+    
+    What you still must prove yourself:
+        - Correct service configuration, RBAC model, tenant isolation, secure CI/CD, data lifecycle, and incident response.
+        - Contractual and legal controls around customer data processing and retention.
+    
+    Practical trust artifacts from Azure side:
+        - Service scope check (is each used Azure service covered by required standard).
+        - Shared-responsibility mapping per control.
+        - References to official Microsoft compliance documentation/report availability.
 
 === "DE"
 
-      - Azure unterhält umfassende Compliance-Programme (für Dienste im Scope), häufig inkl.: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS** und **CSA STAR**.
-      - Was du legitim behaupten kannst:
+      Azure unterhält umfassende Compliance-Programme (für Dienste im Scope), häufig inkl.: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS** und **CSA STAR**.
+      
+      Was du legitim behaupten kannst:
           - Deine Lösung läuft auf Azure-Diensten, die durch spezifische Provider-Attestate abgedeckt sind.
           - Du wendest Azure-Sicherheitsfeatures (z. B. Entra ID, Key Vault, Private Networking) als Teil deines Kontrollsets an.
           - Du kannst Provider-Nachweise plus deine eigenen Implementierungsnachweise bereitstellen.
-      - Was du selbst beweisen musst:
+      
+      Was du selbst beweisen musst:
           - Korrekte Servicekonfiguration, RBAC-Modell, Mandantenisolierung, sichere CI/CD, Datenlebenszyklus und Incident Response.
           - Vertragliche und rechtliche Kontrollen rund um Kundendatenverarbeitung.
-      - Praktische Vertrauens-Artefakte (Azure-Seite):
+      
+      Praktische Vertrauens-Artefakte (Azure-Seite):
           - Service-Scope-Check (ist jeder genutzte Dienst abgedeckt?).
           - Shared-Responsibility-Mapping.
           - Verweise auf offizielle Microsoft-Compliance-Doku.
