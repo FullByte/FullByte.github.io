@@ -4,56 +4,41 @@
 
     **Good software is trustable, stable, and secure.**
 
-    It is not enough for code to just "work". Good software earns the user's trust by being reliable, protecting their data, and behaving predictably. We achieve this by being transparent about our engineering practices, rigorous in our testing, and honest about our system's capabilities.
+    It is not enough for code to just "work". Good software earns the user's trust by being reliable, protecting their data, and behaving predictably. This is achieved through transparent engineering practices, rigorous testing, and honesty about system capabilities.
+
+    Trust is built through transparency. Data protection, availability, and failure handling are defined explicitly. Security does not rely on obscurity; it relies on proven standards and defensible architecture.
+
+    Every piece of software has limits. System scope is explicit about what systems are **not** designed to do. Misusing a system outside its intended scope—such as using a standard web app for high-frequency trading or life-critical control systems—leads to failure and unhappy customers. Operational boundaries are defined clearly to deliver excellence within them.
+
+    This guide serves as an engineering standard. It is organised by topic, with a specific focus on **General Engineering Principles**, **Web Applications on Azure**, and **GitHub-based Deployment**.
+
+    Each chapter contains:
+
+    - **General**: Universal principles that apply regardless of the technology stack. **Start here.**
+    - **Azure**: Concrete implementation guidance for the primary cloud platform.
+    - **GitHub**: Operational details for deployment and security automation pipelines.
+
+    Use the **General** sections as a baseline for every project. Use the **Azure** and **GitHub** sections as the mandatory standard when working with the default stack.
 
 === "DE"
 
     **Gute Software ist vertrauenswürdig, stabil und sicher.**
 
-    Es reicht nicht aus, dass Code einfach nur „funktioniert“. Gute Software verdient das Vertrauen der Nutzer durch Zuverlässigkeit, Datensicherheit und vorhersehbares Verhalten. Wir erreichen dies durch transparente Entwicklungspraktiken, rigoroses Testen und Ehrlichkeit über die Fähigkeiten unseres Systems.
+    Es reicht nicht aus, dass Code einfach nur „funktioniert“. Gute Software verdient das Vertrauen der Nutzer durch Zuverlässigkeit, Datensicherheit und vorhersehbares Verhalten. Dies wird durch transparente Entwicklungspraktiken, rigoroses Testen und Ehrlichkeit über Systemfähigkeiten erreicht.
 
-**Transparency & Trust**
-=== "EN"
+    Vertrauen entsteht durch Transparenz. Datenabsicherung, Verfügbarkeit und Umgang mit Ausfällen sind klar definiert. Sicherheit beruht nicht auf Unklarheit; sie stützt sich auf bewährte Standards und eine verteidigungsfähige Architektur.
 
-    We believe that trust is built through transparency. We clearly define **how** we secure data, **how** we ensure availability, and **how** we handle failures. We do not hide behind obscurity; we rely on proven standards and defensible architecture.
+    Jede Software hat Grenzen. Der Systemumfang ist explizit: wofür Systeme **nicht** ausgelegt sind. Die missbräuchliche Nutzung eines Systems außerhalb seines vorgesehenen Bereichs – wie z. B. die Nutzung einer Standard-Web-App für Hochfrequenzhandel oder lebenswichtige Steuerungssysteme – führt zu Ausfällen und unzufriedenen Kunden. Operative Grenzen sind klar definiert, damit innerhalb dieser Grenzen Exzellenz erreicht wird.
 
-=== "DE"
-
-    Wir glauben, dass Vertrauen durch Transparenz entsteht. Wir definieren klar, **wie** wir Daten sichern, **wie** wir Verfügbarkeit gewährleisten und **wie** wir mit Ausfällen umgehen. Wir verstecken uns nicht hinter Unklarheiten; wir setzen auf bewährte Standards und eine verteidigungsfähige Architektur.
-
-**Limits & Scope**
-=== "EN"
-
-    Every piece of software has limits. We are explicit about what our systems are **not** designed to do. Misusing a system outside its intended scope—such as using a standard web app for high-frequency trading or life-critical control systems—leads to failure and unhappy customers. We define these operational boundaries clearly so that we deliver excellence within them.
-
-=== "DE"
-
-    Jede Software hat Grenzen. Wir machen explizit deutlich, wofür unsere Systeme **nicht** ausgelegt sind. Die missbräuchliche Nutzung eines Systems außerhalb seines vorgesehenen Bereichs – wie z. B. die Nutzung einer Standard-Web-App für Hochfrequenzhandel oder lebenswichtige Steuerungssysteme – führt zu Ausfällen und unzufriedenen Kunden. Wir definieren diese operativen Grenzen klar, um innerhalb dieser Grenzen Exzellenz zu liefern.
-
-**How to use this document**
-=== "EN"
-
-    This guide serves as our engineering standard. It is organised by topic, with a specific focus on **General Engineering Principles**, **Web Applications on Azure**, and **GitHub-based Deployment**.
-
-    Each chapter contains:
-
-    - **General**: Universal principles that apply regardless of the technology stack. **Start here.**
-    - **Azure**: Concrete implementation guidance for our primary cloud platform.
-    - **GitHub**: Operational details for our deployment and security automation pipelines.
-
-    Use the **General** sections as your baseline for every project. Use the **Azure** and **GitHub** sections as the mandatory standard when working with our default stack.
-
-=== "DE"
-
-    Dieser Leitfaden dient als unser technischer Standard. Er ist nach Themen gegliedert, mit besonderem Fokus auf **Allgemeine Entwicklungsprinzipien**, **Webanwendungen auf Azure** und **Deployment mit GitHub**.
+    Dieser Leitfaden dient als technischer Standard. Er ist nach Themen gegliedert, mit besonderem Fokus auf **Allgemeine Entwicklungsprinzipien**, **Webanwendungen auf Azure** und **Deployment mit GitHub**.
 
     Jedes Kapitel enthält:
 
     - **Allgemein**: Universelle Prinzipien, die unabhängig vom Technologie-Stack gelten. **Hier beginnen.**
-    - **Azure**: Konkrete Implementierungsrichtlinien für unsere primäre Cloud-Plattform.
-    - **GitHub**: Operative Details für unsere Deployment- und Sicherheitsautomatisierung.
+    - **Azure**: Konkrete Implementierungsrichtlinien für die primäre Cloud-Plattform.
+    - **GitHub**: Operative Details für Deployment- und Sicherheitsautomatisierung.
 
-    Nutze die **Allgemeinen** Abschnitte als Basis für jedes Projekt. Nutze die **Azure**- und **GitHub**-Abschnitte als verbindlichen Standard, wenn du mit unserem Standard-Stack arbeitest.
+    Nutze die **Allgemeinen** Abschnitte als Basis für jedes Projekt. Nutze die **Azure**- und **GitHub**-Abschnitte als verbindlichen Standard, wenn der Standard-Stack eingesetzt wird.
 
 ## Core Principles
 
@@ -62,9 +47,10 @@
     Principles that apply regardless of technology:
 
     **CIA Triad**
-      - **Confidentiality**: Only authorised parties access data (access control, encryption).
-      - **Integrity**: Data and systems remain accurate and unaltered (checksums, signing, audit logs).
-      - **Availability**: Systems and data are available when needed (redundancy, resilience, DDoS mitigation).
+
+    - **Confidentiality**: Only authorised parties access data (access control, encryption).
+    - **Integrity**: Data and systems remain accurate and unaltered (checksums, signing, audit logs).    
+    - **Availability**: Systems and data are available when needed (redundancy, resilience, DDoS mitigation).
     
     **Least Privilege**: Users and services get only the minimum permissions required for their role or task.
     
@@ -75,43 +61,44 @@
     **Example minimum requirements**
     
     **Confidentiality**
-        - All internet-facing endpoints use TLS 1.3.
-        - Secrets are only stored in a vault, never in source control.
-        - Access to production data is role-based and logged.
-
+    - All internet-facing endpoints use TLS 1.3.
+    - Secrets are only stored in a vault, never in source control.
+    - Access to production data is role-based and logged.
+    
     **Integrity**
-        - Pull requests require review before merge to protected branches.
-        - CI verifies tests and static checks before deployment.
-        - Critical configuration changes are tracked in version control.
+    - Pull requests require review before merge to protected branches.
+    - CI verifies tests and static checks before deployment.
+    - Critical configuration changes are tracked in version control.
     
     **Availability**
-        - Define target uptime and alerting thresholds per critical service.
-        - Define backup cadence and recovery objectives (RPO/RTO).
-        - Perform restore tests on a fixed schedule.
+    - Define target uptime and alerting thresholds per critical service.
+    - Define backup cadence and recovery objectives (RPO/RTO).
+    - Perform restore tests on a fixed schedule.
     
     **Least Privilege**
-        - No shared admin accounts for normal operations.
-        - Admin access is limited, time-bound where possible, and auditable.
-        - Permissions are reviewed periodically.
+    - No shared admin accounts for normal operations.
+    - Admin access is limited, time-bound where possible, and auditable.
+    - Permissions are reviewed periodically.
     
     **Defense in Depth**
-        - Use at least identity controls, network controls, and application controls.
-        - Exposed services are protected by WAF and monitoring.
-        - Logging and alerting are enabled for security-relevant events.
+    - Use at least identity controls, network controls, and application controls.
+    - Exposed services are protected by WAF and monitoring.
+    - Logging and alerting are enabled for security-relevant events.
     
     **Keep it simple**
-        - Minimise number of environments, tools, and custom role variants.
-        - Prefer one standard deployment path and one standard rollback path.
-        - Remove controls/processes that add complexity without measurable value.
+    - Minimise number of environments, tools, and custom role variants.
+    - Prefer one standard deployment path and one standard rollback path.
+    - Remove controls/processes that add complexity without measurable value.
 
 === "DE"
 
     Prinzipien, die unabhängig von der Technologie gelten:
 
     **CIA-Triade (Schutzziele)**
-      - **Vertraulichkeit (Confidentiality)**: Nur autorisierte Parteien haben Zugriff auf Daten (Zugriffskontrolle, Verschlüsselung).
-      - **Integrität (Integrity)**: Daten und Systeme bleiben korrekt und unverändert (Prüfsummen, Signaturen, Audit-Logs).
-      - **Verfügbarkeit (Availability)**: Systeme und Daten sind verfügbar, wenn sie benötigt werden (Redundanz, Resilienz, DDoS-Schutz).
+
+    - **Vertraulichkeit (Confidentiality)**: Nur autorisierte Parteien haben Zugriff auf Daten (Zugriffskontrolle, Verschlüsselung).
+    - **Integrität (Integrity)**: Daten und Systeme bleiben korrekt und unverändert (Prüfsummen, Signaturen, Audit-Logs).
+    - **Verfügbarkeit (Availability)**: Systeme und Daten sind verfügbar, wenn sie benötigt werden (Redundanz, Resilienz, DDoS-Schutz).
     
     **Least Privilege (Geringstes Privileg)**: Nutzer und Dienste erhalten nur die minimalen Berechtigungen, die für ihre Rolle oder Aufgabe erforderlich sind.
     
@@ -122,9 +109,9 @@
     **Beispielhafte Mindestanforderungen**
     
     **Vertraulichkeit**
-        - Alle öffentlich zugänglichen Endpunkte nutzen TLS 1.3.
-        - Geheimnisse (Secrets) werden nur in einem Vault gespeichert, niemals in der Versionsverwaltung.
-        - Der Zugriff auf Produktionsdaten ist rollenbasiert und protokolliert.
+    - Alle öffentlich zugänglichen Endpunkte nutzen TLS 1.3.
+    - Geheimnisse (Secrets) werden nur in einem Vault gespeichert, niemals in der Versionsverwaltung.
+    - Der Zugriff auf Produktionsdaten ist rollenbasiert und protokolliert.
     
     **Integrität**
         - Pull Requests erfordern ein Review vor dem Merge in geschützte Branches.
@@ -207,7 +194,7 @@
     - **Roles**: Define permissions by role (e.g. Viewer, Editor, Admin) rather than per-user. Assign users to roles; keep the set of roles small and well-defined so that access reviews and audits are straightforward.
     - **Groups**: Use groups to assign roles to many users at once and to reflect organisational structure (e.g. “Developers”, “Support”). Prefer group-based role assignment over individual grants so onboarding/offboarding is consistent.
     - **Tenants (customers)**: In multi-tenant systems, **tenant isolation** is critical. Every data access and configuration must be scoped by tenant (e.g. tenant ID in queries, row-level or resource-level isolation). Never allow cross-tenant data access unless explicitly designed (e.g. admin view with audit). Design tenant boundaries early; retrofitting isolation is error-prone and risky.
-    - **Principle of least privilege**: Each role should have the minimum permissions needed; limit cross-tenant or global admin capabilities to a small, audited set of identities.
+    - **Principle of least privilege**: Each role must have the minimum permissions needed; limit cross-tenant or global admin capabilities to a small, audited set of identities.
     - **Lifecycle**: Define how users are created, updated, disabled, and removed; how role and group membership changes; and how tenant onboarding/offboarding works. Document and automate where possible.
 
 === "DE"
@@ -218,7 +205,7 @@
     - **Rollen**: Definieren Sie Berechtigungen pro Rolle (z. B. Betrachter, Bearbeiter, Admin) statt pro Nutzer. Weisen Sie Nutzer Rollen zu; halten Sie die Menge an Rollen klein und klar definiert, damit Audits einfach bleiben.
     - **Gruppen**: Nutzen Sie Gruppen, um Rollen vielen Nutzern gleichzeitig zuzuweisen und die Organisationsstruktur abzubilden (z. B. „Entwickler“, „Support“). Bevorzuge gruppenbasierte Zuweisungen gegenüber individuellen Rechten, um On- und Offboarding konsistent zu halten.
     - **Mandanten (Kunden)**: In Multi-Tenant-Systemen ist die **Mandantenisolierung** kritisch. Jeder Datenzugriff muss auf den Mandanten beschränkt sein (z. B. Tenant-ID in Abfragen, Row-Level-Security). Erlauben Sie niemals mandantenübergreifenden Zugriff, es sei denn, dies ist explizit vorgesehen (z. B. Admin-Ansicht mit Audit). Planen Sie Mandantengrenzen frühzeitig ein; nachträgliche Isolierung ist fehleranfällig und riskant.
-    - **Prinzip des geringsten Privilegs**: Jede Rolle sollte nur die minimal notwendigen Berechtigungen haben; beschränken Sie mandantenübergreifende oder globale Admin-Rechte auf wenige, auditierte Identitäten.
+    - **Prinzip des geringsten Privilegs**: Jede Rolle muss nur die minimal notwendigen Berechtigungen haben; beschränken Sie mandantenübergreifende oder globale Admin-Rechte auf wenige, auditierte Identitäten.
     - **Lebenszyklus**: Definieren Sie, wie Nutzer erstellt, aktualisiert, deaktiviert und entfernt werden; wie sich Rollen- und Gruppenmitgliedschaften ändern; und wie das Onboarding/Offboarding von Mandanten funktioniert. Dokumentieren und automatisieren Sie, wo möglich.
 
 **Azure**
@@ -322,10 +309,10 @@
     Good software is built on strong, well-defined interfaces. The **API** (Application Programming Interface) is the core of the application, enforcing all logic and security. The **UI** (User Interface) is just one of many possible clients. This approach enables automation, deep linking, and headless usage, but requires strict backend validation.
 
     - **API First**: Design the API before the UI. The API must be complete, secure, and documented (e.g., OpenAPI/Swagger).
-    - **UI as a Client**: Treat your own UI as an untrusted client. It should not contain business rules that are not also enforced by the API.
+    - **UI as a Client**: Treat your own UI as an untrusted client. It must not contain business rules that are not also enforced by the API.
     - **Headless Usage**: Enable usage without a GUI via CLI arguments or URL parameters. This supports automation and power users.
     - **Deep Linking**: Allow users to bookmark or share specific states (e.g., filters, search queries) via URL parameters.
-    - **UI Hints**: The UI should guide the user (e.g., input masks, validation feedback) but never be the only line of defense.
+    - **UI Hints**: The UI guides the user (e.g., input masks, validation feedback) but is never the only line of defense.
     - **Risk - Manipulation**: Users can modify URL parameters or API calls to bypass UI restrictions. The backend must validate every input.
     - **Risk - Data Leakage**: Never put secrets (passwords, tokens, PII) in URL parameters, as they are logged in browser history and proxies.
     - **Mitigation**: Validate all inputs on the backend. Use headers/body for secrets. Ensure GET requests are idempotent (read-only).
@@ -337,10 +324,10 @@
     Gute Software basiert auf starken, klar definierten Schnittstellen. Die **API** (Application Programming Interface) ist der Kern der Anwendung und setzt alle Logik und Sicherheit durch. Die **UI** (Benutzeroberfläche) ist nur einer von vielen möglichen Clients. Dieser Ansatz ermöglicht Automatisierung, Deep Linking und Headless-Nutzung, erfordert aber strikte Backend-Validierung.
 
     - **API First**: Designe die API vor der UI. Die API muss vollständig, sicher und dokumentiert sein (z. B. OpenAPI/Swagger).
-    - **UI als Client**: Behandle deine eigene UI als nicht vertrauenswürdigen Client. Sie sollte keine Geschäftsregeln enthalten, die nicht auch von der API durchgesetzt werden.
+    - **UI als Client**: Behandle deine eigene UI als nicht vertrauenswürdigen Client. Sie darf keine Geschäftsregeln enthalten, die nicht auch von der API durchgesetzt werden.
     - **Headless-Nutzung**: Ermögliche die Nutzung ohne GUI über CLI-Argumente oder URL-Parameter. Dies unterstützt Automatisierung und Power-User.
     - **Deep Linking**: Erlaube Nutzern, spezifische Zustände (z. B. Filter, Suchanfragen) per URL-Parameter zu bookmarken oder zu teilen.
-    - **UI-Hinweise**: Die UI sollte den Nutzer führen (z. B. Eingabemasken, Validierungsfeedback), darf aber nie die einzige Verteidigungslinie sein.
+    - **UI-Hinweise**: Die UI führt den Nutzer (z. B. Eingabemasken, Validierungsfeedback), darf aber nie die einzige Verteidigungslinie sein.
     - **Risiko - Manipulation**: Nutzer können URL-Parameter oder API-Aufrufe ändern, um UI-Beschränkungen zu umgehen. Das Backend muss jede Eingabe prüfen.
     - **Risiko - Datenlecks**: Niemals Geheimnisse (Passwörter, Tokens, PII) in URL-Parameter packen, da diese in Browserverlauf und Proxies protokolliert werden.
     - **Mitigation**: Validiere alle Eingaben im Backend. Nutze Header/Body für Secrets. Stelle sicher, dass GET-Requests idempotent (nur lesend) sind.
@@ -519,35 +506,35 @@
 
 === "DE"
 
-    **Datenklassen frueh definieren**
-        - Beispiel: Fuege eine `data_classification.md` mit erforderlichen Labels fuer jede Entitaet hinzu (`public`, `internal`, `confidential`, `brisant`) und einem Owner.
-        - Was pruefen: Jede Tabelle/jedes Event in Architektur-Docs hat Klassifizierung + Owner + Retention-Regel.
+    **Datenklassen früh definieren**
+        - Beispiel: Füge eine `data_classification.md` mit erforderlichen Labels für jede Entität hinzu (`public`, `internal`, `confidential`, `brisant`) und einem Owner.
+        - Was prüfen: Jede Tabelle/jedes Event in Architektur-Docs hat Klassifizierung + Owner + Retention-Regel.
     **Brisante Daten handhaben**
-        - Beispiel: Felder wie `email`, `phone`, `address`, `payment_ref`, `auth_token_hash` sind als `brisant` markiert und erhalten strengere Policies (Access-Logging, maskierte Exporte, kuerzere Retention).
-        - Was pruefen: Zugriff auf brisante Felder ist rollenbasiert, auditiert und in Standard-Exports blockiert.
+        - Beispiel: Felder wie `email`, `phone`, `address`, `payment_ref`, `auth_token_hash` sind als `brisant` markiert und erhalten strengere Policies (Access-Logging, maskierte Exporte, kürzere Retention).
+        - Was prüfen: Zugriff auf brisante Felder ist rollenbasiert, auditiert und in Standard-Exports blockiert.
     **Datenminimierung**
         - Beispiel: Kein volles Geburtsdatum speichern, wenn Altersband reicht; keine Klartext-IP dauerhaft speichern, wenn Hash/Trunkierung reicht.
-        - Was pruefen: Jedes gespeicherte Feld hat Zweck und Retention-Periode dokumentiert.
+        - Was prüfen: Jedes gespeicherte Feld hat Zweck und Retention-Periode dokumentiert.
     **Mandantentrennung per Design**
-        - Beispiel: Jede Query enthaelt Tenant-Scopes (`WHERE tenant_id = :tenant_id`), gestuetzt durch DB-Row-Level-Security (wo verfuegbar) und eindeutige Indizes inkl. `tenant_id`.
-        - Was pruefen: Automatisierte Tests fuer Cross-Tenant-Zugriffsversuche scheitern standardmaessig.
-    **Verschluesselung in Transit und at rest**
-        - In Transit (TLS): TLS fuer App-zu-DB-Verbindungen erzwingen; Non-TLS ablehnen.
-        - At Rest: Provider-Verschluesselung/TDE aktivieren und bei Bedarf Customer-Managed Keys (CMK).
-        - Was pruefen: TLS-Required-Parameter aktiv, Zertifikate gueltig/rotiert, Encryption-Status in DB-Settings aktiv.
-        - DB-Technologien, die das unterstuetzen (Beispiele): PostgreSQL (TLS in Transit; Storage/TDE ueber Managed Service oder Plattformkontrollen), MySQL/MariaDB (TLS in Transit; Storage-Verschluesselung/TDE je nach Edition/Service), Microsoft SQL Server / Azure SQL (TLS + TDE), MongoDB (TLS + Verschluesselung at rest in Managed/Self-Hosted), Redis (TLS + at-rest Optionen je nach Provider/Edition)
+        - Beispiel: Jede Query enthält Tenant-Scopes (`WHERE tenant_id = :tenant_id`), gestützt durch DB-Row-Level-Security (wo verfügbar) und eindeutige Indizes inkl. `tenant_id`.
+        - Was prüfen: Automatisierte Tests für Cross-Tenant-Zugriffsversuche scheitern standardmäßig.
+    **Verschlüsselung in Transit und at rest**
+        - In Transit (TLS): TLS für App-zu-DB-Verbindungen erzwingen; Non-TLS ablehnen.
+        - At Rest: Provider-Verschlüsselung/TDE aktivieren und bei Bedarf Customer-Managed Keys (CMK).
+        - Was prüfen: TLS-Required-Parameter aktiv, Zertifikate gültig/rotiert, Encryption-Status in DB-Settings aktiv.
+        - DB-Technologien, die das unterstützen (Beispiele): PostgreSQL (TLS in Transit; Storage/TDE über Managed Service oder Plattformkontrollen), MySQL/MariaDB (TLS in Transit; Storage-Verschlüsselung/TDE je nach Edition/Service), Microsoft SQL Server / Azure SQL (TLS + TDE), MongoDB (TLS + Verschlüsselung at rest in Managed/Self-Hosted), Redis (TLS + at-rest Optionen je nach Provider/Edition)
     **Least-Privilege DB-Accounts**
-        - Beispiel: Separater Runtime-Account (read/write scoped), Migrations-Account (nur Schemaaenderungen), und Break-Glass-Admin.
-        - Was pruefen: Runtime-Credentials koennen keine User anlegen, DBs droppen oder fremde Tenant-Daten lesen.
+        - Beispiel: Separater Runtime-Account (read/write scoped), Migrations-Account (nur Schemaänderungen), und Break-Glass-Admin.
+        - Was prüfen: Runtime-Credentials können keine User anlegen, DBs droppen oder fremde Tenant-Daten lesen.
     **Backup/Restore und Retention**
-        - Beispiel: Taegliche Backups + PITR aktiv, quartalsweiser Restore-Drill, automatischer Loeschjob fuer abgelaufene personenbezogene Daten.
-        - Was pruefen: Datum des letzten erfolgreichen Restore-Tests, Status des Retention-Jobs, Loesch-Nachweise.
-    **Sensitivitaet markieren**
+        - Beispiel: Tägliche Backups + PITR aktiv, quartalsweiser Restore-Drill, automatischer Löschjob für abgelaufene personenbezogene Daten.
+        - Was prüfen: Datum des letzten erfolgreichen Restore-Tests, Status des Retention-Jobs, Lösch-Nachweise.
+    **Sensitivität markieren**
         - Beispiel: Schema-Kommentare/Metadata-Tags (`classification=brisant`) und Code-Annotationen auf DTO-Feldern.
-        - Was pruefen: Logs/Exporte maskieren Felder mit `confidential` oder `brisant` automatisch.
-    **Typische Fehler und Praevention**
+        - Was prüfen: Logs/Exporte maskieren Felder mit `confidential` oder `brisant` automatisch.
+    **Typische Fehler und Prävention**
         - Beispielkontrolle: Statische Code-Checks + Integrationstests erkennen fehlende Tenant-Filter in Repository/Query-Layer.
-        - Was pruefen: PR-Checkliste enthaelt Tenant-Scope-Review fuer Data-Access-Aenderungen.
+        - Was prüfen: PR-Checkliste enthält Tenant-Scope-Review für Data-Access-Änderungen.
 
 **Azure**
 === "EN"
@@ -687,11 +674,34 @@
 
 ## Domain Trust
 
+**General**
 === "EN"
 
     Correct DNS and email configuration establishes external trust and prevents spoofing.
 
     Trust is also built through a clean domain and email setup. Customers, spam filters, and security teams check these basics quickly.
+
+    **Domain ownership and DNS hygiene**
+      - Keep registrar, DNS provider, and domain contacts up to date.
+      - Protect domain accounts with MFA and strict role-based access.
+      - Document all critical DNS records and who owns them.
+    
+    **Web domain checks**
+      - HTTPS is enforced on all public endpoints; certificates are valid and auto-renewed.
+      - Redirect HTTP to HTTPS and disable weak TLS/ciphers.
+      - Use a canonical domain strategy (e.g. `www` or apex) and permanent redirects.
+      - Ensure security headers are set where relevant (e.g. HSTS, X-Content-Type-Options, CSP as applicable).
+    
+    **Email domain checks**
+      - Configure and validate **SPF**, **DKIM**, and **DMARC** for all sending domains.
+      - Start DMARC with monitoring (`p=none`), review reports, then move to stricter policy (`quarantine`/`reject`) when stable.
+      - Ensure sender alignment (`From` domain aligns with SPF/DKIM domains).
+      - Use dedicated subdomains for transactional/bulk mail if needed (e.g. `mail.example.com`).
+    
+    **Operational checks**
+      - Test deliverability and spam placement regularly (seed tests, DMARC aggregate reports, bounce/complaint rates).
+      - Monitor certificate expiry, DNS changes, and suspicious record changes.
+      - Keep an incident playbook for domain hijack, certificate failure, or email spoofing.
 
 === "DE"
 
@@ -699,45 +709,24 @@
 
     Vertrauen wird auch durch ein sauberes Domain- und E-Mail-Setup aufgebaut. Kunden, Spamfilter und Sicherheitsteams prüfen diese Grundlagen schnell.
 
-**General**
-=== "EN"
-
-    - **Domain ownership and DNS hygiene**
-      - Keep registrar, DNS provider, and domain contacts up to date.
-      - Protect domain accounts with MFA and strict role-based access.
-      - Document all critical DNS records and who owns them.
-    - **Web domain checks**
-      - HTTPS is enforced on all public endpoints; certificates are valid and auto-renewed.
-      - Redirect HTTP to HTTPS and disable weak TLS/ciphers.
-      - Use a canonical domain strategy (e.g. `www` or apex) and permanent redirects.
-      - Ensure security headers are set where relevant (e.g. HSTS, X-Content-Type-Options, CSP as applicable).
-    - **Email domain checks**
-      - Configure and validate **SPF**, **DKIM**, and **DMARC** for all sending domains.
-      - Start DMARC with monitoring (`p=none`), review reports, then move to stricter policy (`quarantine`/`reject`) when stable.
-      - Ensure sender alignment (`From` domain aligns with SPF/DKIM domains).
-      - Use dedicated subdomains for transactional/bulk mail if needed (e.g. `mail.example.com`).
-    - **Operational checks**
-      - Test deliverability and spam placement regularly (seed tests, DMARC aggregate reports, bounce/complaint rates).
-      - Monitor certificate expiry, DNS changes, and suspicious record changes.
-      - Keep an incident playbook for domain hijack, certificate failure, or email spoofing.
-
-=== "DE"
-
-    - **Domainbesitz und DNS-Hygiene**
+    **Domainbesitz und DNS-Hygiene**
       - Halten Sie Registrar-, DNS-Provider- und Domainkontakte aktuell.
       - Schützen Sie Domainkonten mit MFA und striktem rollenbasiertem Zugriff.
       - Dokumentieren Sie alle kritischen DNS-Einträge und deren Besitzer.
-    - **Web-Domain-Checks**
+    
+    **Web-Domain-Checks**
       - HTTPS wird auf allen öffentlichen Endpunkten erzwungen; Zertifikate sind gültig und auto-erneuert.
       - Leite HTTP auf HTTPS um und deaktiviere schwache TLS-Ciphers.
       - Nutze eine kanonische Domain-Strategie (z. B. `www` oder Apex) und permanente Weiterleitungen.
       - Setze relevante Security-Header (HSTS, X-Content-Type-Options, CSP).
-    - **E-Mail-Domain-Checks**
+    
+    **E-Mail-Domain-Checks**
       - Konfiguriere und validiere **SPF**, **DKIM** und **DMARC** für alle sendenden Domains.
       - Starte DMARC im Monitoring (`p=none`), prüfe Berichte und wechsle dann zu strengerer Richtlinie (`quarantine`/`reject`), wenn stabil.
       - Stelle die Absender-Ausrichtung (Alignment) sicher (`From`-Domain stimmt mit SPF/DKIM überein).
       - Nutze dedizierte Subdomains für Transaktions-/Massen-Mails (z. B. `mail.beispiel.de`).
-    - **Operative Checks**
+    
+    **Operative Checks**
       - Teste Zustellbarkeit und Spam-Platzierung regelmäßig (Seed-Tests, DMARC-Reports, Bounce/Complaint-Raten).
       - Überwache Zertifikatsablauf, DNS-Änderungen und verdächtige Record-Änderungen.
       - Halte ein Incident-Playbook für Domain-Hijacking, Zertifikatsfehler oder E-Mail-Spoofing bereit.
@@ -772,7 +761,7 @@
     - Halte DNS- und Domainkonfigurationsänderungen über PRs/IaC auditierbar.
     - Nutze für CI/CD-generierte Benachrichtigungen verifizierte Absenderdomains und vermeide untrusted Noreply-Muster.
 
-### DNS+Mail Baseline v1 (operational template)
+### DNS and Mail
 
 === "EN"
 
@@ -832,7 +821,7 @@
 
 === "EN"
 
-    Security must be integrated into every stage of the software development process.
+
 
 === "DE"
 
@@ -841,6 +830,8 @@
 **General**
 === "EN"
 
+    Security must be integrated into every stage of the software development process.
+    
     - **Shift Left**: Integrate security early (requirements, design, code, pull requests), not only at release or in production.
     - **SAST (Static Application Security Testing)**: Analyse source or bytecode for vulnerabilities (injection, hardcoded secrets).
     - **DAST (Dynamic Application Security Testing)**: Test running applications for exploitable issues.
@@ -913,7 +904,7 @@
     - **Unit tests**: Cover critical business logic, edge cases, and error handling; run on every change.
     - **Integration tests**: Verify components and external services (APIs, databases, queues) work together; use test doubles where appropriate.
     - **End-to-end (e2e) tests**: Validate critical user flows in an environment close to production.
-    - **Regression tests**: Every production bug should result in a test that prevents recurrence.
+    - **Regression tests**: Every production bug must result in a test that prevents recurrence.
     - **Property-based tests** (where useful): Validate invariants across many generated inputs (e.g. parser rules, data transformation invariants).
     - **Fuzzing**: Feed unexpected/random input to parsers, API endpoints, and protocol handlers to detect crashes, hangs, and unsafe behavior early.
     - **Security testing**: Include SAST/SCA in the pipeline; add DAST or penetration tests for high-risk or public-facing apps.
@@ -928,7 +919,7 @@
     - **Unit-Tests**: Abdeckung von kritischer Geschäftslogik, Randfällen und Fehlerbehandlung; Ausführung bei jeder Änderung.
     - **Integrationstests**: Verifizierung, dass Komponenten und externe Dienste (APIs, DBs, Queues) zusammenarbeiten.
     - **End-to-End (E2E) Tests**: Validierung kritischer Benutzerabläufe in einer produktionsnahen Umgebung.
-    - **Regressionstests**: Jeder Produktionsbug sollte zu einem Test führen, der das erneute Auftreten verhindert.
+    - **Regressionstests**: Jeder Produktionsbug muss zu einem Test führen, der das erneute Auftreten verhindert.
     - **Property-Based Tests** (wo sinnvoll): Validierung von Invarianten über viele generierte Eingaben (z. B. Parser-Regeln).
     - **Fuzzing**: Füttern von Parsern/APIs mit unerwarteten/zufälligen Eingaben, um Crashes oder unsicheres Verhalten früh zu erkennen.
     - **Sicherheitstests**: SAST/SCA in der Pipeline; DAST oder Penetrationstests für hochriskante/öffentliche Apps.
@@ -984,7 +975,7 @@
     - **Purpose**: Staging is where you run smoke tests, e2e tests, and manual checks against a production-like setup. It reduces the risk of broken or insecure releases reaching production.
     - **Promotion flow**: Deploy the same artifact (or same commit) to staging first; only after validation (automated and/or manual) promote to production. Avoid “building twice” or different code paths for staging vs production.
     - **Data**: Do not use production data in staging. Use anonymised or synthetic data; if you copy production data, follow a strict process and ensure it is not exposed (e.g. different URLs, access control). Document how staging data is created and refreshed.
-    - **Configuration**: Staging should mirror production in structure (same services, same topology) but use separate config (URLs, keys, feature flags) so staging never affects production resources or users.
+    - **Configuration**: Staging mirrors production in structure (same services, same topology) but uses separate config (URLs, keys, feature flags) so staging never affects production resources or users.
     - **Keep it simple**: One staging environment is often enough. Add more (e.g. dev, QA, preprod) only if the team and release cadence justify it; each extra environment adds cost and drift risk.
 
 === "DE"
@@ -992,7 +983,7 @@
     - **Zweck**: Im Staging laufen Smoke-Tests, E2E-Tests und manuelle Checks gegen ein produktionsnahes Setup. Es reduziert das Risiko, kaputte oder unsichere Releases in die Produktion zu bringen.
     - **Promotion-Flow**: Deploye dasselbe Artefakt (oder denselben Commit) zuerst auf Staging; erst nach Validierung (automatisiert und/oder manuell) promote es auf Produktion. Vermeide „zweimal bauen“ oder unterschiedliche Codepfade für Staging vs. Produktion.
     - **Daten**: Nutze keine Produktionsdaten im Staging. Verwende anonymisierte oder synthetische Daten; wenn du Produktionsdaten kopierst, befolge einen strikten Prozess und sorge dafür, dass sie nicht exponiert sind (z. B. andere URLs, Zugriffskontrolle). Dokumentiere, wie Staging-Daten erstellt und aktualisiert werden.
-    - **Konfiguration**: Staging sollte die Produktionsstruktur spiegeln (gleiche Dienste, gleiche Topologie), aber separate Konfigurationen nutzen (URLs, Keys, Feature Flags), damit Staging niemals Produktionsressourcen oder -nutzer beeinflusst.
+    - **Konfiguration**: Staging spiegelt die Produktionsstruktur (gleiche Dienste, gleiche Topologie), nutzt aber separate Konfigurationen (URLs, Keys, Feature Flags), damit Staging niemals Produktionsressourcen oder -nutzer beeinflusst.
     - **Keep it simple**: Eine Staging-Umgebung reicht oft aus. Füge mehr hinzu (z. B. Dev, QA, Preprod), nur wenn das Team und der Release-Takt es rechtfertigen; jede extra Umgebung erhöht Kosten und Drift-Risiko.
 
 **Azure**
@@ -1113,13 +1104,13 @@
 
     - Use **Releases** to publish versioned artifacts and attach release notes; link or paste changelog content there.
     - Keep **CHANGELOG.md** (or equivalent) in the repo and update it as part of the release process.
-    - Use **GitHub Security Advisories** and a **SECURITY.md** policy to communicate how to report vulnerabilities and how you respond.
+    - Use **GitHub Security Advisories** and a **SECURITY.md** policy to communicate vulnerability reporting paths and response expectations.
 
 === "DE"
 
     - Nutze **Releases**, um versionierte Artefakte zu veröffentlichen und Release Notes anzuhängen.
     - Halte **CHANGELOG.md** im Repo aktuell und aktualisiere es als Teil des Release-Prozesses.
-    - Nutze **GitHub Security Advisories** und eine **SECURITY.md**-Policy, um zu kommunizieren, wie man Schwachstellen meldet und wie reagiert wird.
+    - Nutze **GitHub Security Advisories** und eine **SECURITY.md**-Policy, um Meldewege für Schwachstellen und den Reaktionsablauf zu kommunizieren.
 
 ## Operations
 
@@ -1305,11 +1296,11 @@
 
     Good documentation reduces risk, speeds onboarding, and supports compliance. Document what matters for operating, securing, and changing the system; keep it up to date and in one place.
 
-    - **What to document**: **Architecture** (components, data flow, boundaries); **APIs** (contracts, auth, examples); **Operations** (deployment, rollback, scaling, backups); **Runbooks** (incident response, common tasks); **Decisions** (ADRs — why we chose X); **Security** (threat model, secrets handling, compliance). Prioritise what the team and auditors actually use.
+    - **What to document**: **Architecture** (components, data flow, boundaries); **APIs** (contracts, auth, examples); **Operations** (deployment, rollback, scaling, backups); **Runbooks** (incident response, common tasks); **Decisions** (ADRs — rationale for choosing X); **Security** (threat model, secrets handling, compliance). Prioritise what the team and auditors actually use.
     - **Single source of truth**: Prefer one canonical place (e.g. docs in the repo, or a linked docs site) so information does not scatter across wikis, slides, and chat. Link from code or config to docs where it helps (e.g. README in each service).
     - **Keep it current**: Outdated docs are worse than none. Treat documentation as part of the product: update it when you change behaviour, and add “update docs” to the definition of done for features and infra changes.
     - **Format and structure**: Use a consistent format (e.g. Markdown) and a simple structure (README, docs folder, or docs-as-code with a static generator). Use clear headings, lists, and code snippets; avoid long prose where a table or diagram is clearer. Keep it simple so contributors know where to add or change content.
-    - **Onboarding**: New team members (and auditors) should find how to get access, run the app locally, run tests, and understand the high-level architecture without hunting. A single “Getting started” or “README” that stays accurate is valuable.
+    - **Onboarding**: New team members (and auditors) must find how to get access, run the app locally, run tests, and understand the high-level architecture without hunting. A single “Getting started” or “README” that stays accurate is valuable.
 
 === "DE"
 
@@ -1317,34 +1308,34 @@
 
     Gute Dokumentation reduziert Risiken, beschleunigt das Onboarding und unterstützt Compliance. Dokumentiere, was für Betrieb, Sicherheit und Änderung des Systems wichtig ist.
 
-    - **Was zu dokumentieren ist**: **Architektur** (Komponenten, Datenfluss, Grenzen); **APIs** (Verträge, Auth, Beispiele); **Betrieb** (Deployment, Rollback, Skalierung, Backups); **Runbooks** (Incident Response, häufige Aufgaben); **Entscheidungen** (ADRs — warum wir X gewählt haben); **Sicherheit** (Bedrohungsmodell, Secrets-Handling, Compliance). Priorisiere, was das Team und Prüfer tatsächlich nutzen.
+    - **Was zu dokumentieren ist**: **Architektur** (Komponenten, Datenfluss, Grenzen); **APIs** (Verträge, Auth, Beispiele); **Betrieb** (Deployment, Rollback, Skalierung, Backups); **Runbooks** (Incident Response, häufige Aufgaben); **Entscheidungen** (ADRs — Begründung für X); **Sicherheit** (Bedrohungsmodell, Secrets-Handling, Compliance). Priorisiere, was das Team und Prüfer tatsächlich nutzen.
     - **Single Source of Truth**: Bevorzuge einen kanonischen Ort (z. B. Docs im Repo oder eine verlinkte Doku-Site), damit Informationen nicht über Wikis, Folien und Chats verstreut sind.
     - **Aktuell halten**: Veraltete Doku ist schlimmer als keine. Behandle Dokumentation als Teil des Produkts: Aktualisiere sie, wenn du Verhalten änderst, und füge „Update Docs“ zur Definition of Done hinzu.
     - **Format und Struktur**: Nutze ein konsistentes Format (z. B. Markdown) und eine einfache Struktur (README, Docs-Ordner oder Docs-as-Code). Nutze klare Überschriften, Listen und Code-Snippets; vermeide lange Prosa, wo eine Tabelle oder ein Diagramm klarer ist.
-    - **Onboarding**: Neue Teammitglieder (und Auditoren) sollten finden, wie sie Zugriff erhalten, die App lokal ausführen und die High-Level-Architektur verstehen können, ohne zu suchen. Ein einziges „Getting Started“ oder „README“, das korrekt ist, ist wertvoll.
+    - **Onboarding**: Neue Teammitglieder (und Auditoren) müssen finden, wie sie Zugriff erhalten, die App lokal ausführen und die High-Level-Architektur verstehen können, ohne zu suchen. Ein einziges „Getting Started“ oder „README“, das korrekt ist, ist wertvoll.
 
 **Azure**
 === "EN"
 
     - Document **resource layout** (subscriptions, resource groups, naming), **networking** (VNet, subnets, private endpoints), and **identity** (who has what role, which managed identities exist). Keep this in the repo next to IaC or in a dedicated architecture doc. Reference Azure compliance and shared responsibility where relevant for audits.
-    - **Runbooks**: Document how to scale, restart, fail over, or recover key Azure resources; how to rotate secrets in Key Vault; and how to respond to Defender for Cloud alerts. Link runbooks from your incident or alerting tool.
+    - **Runbooks**: Document scale, restart, failover, or recovery procedures for key Azure resources; secret rotation in Key Vault; and response steps for Defender for Cloud alerts. Link runbooks from the incident or alerting tool.
 
 === "DE"
 
     - Dokumentiere **Ressourcen-Layout** (Subscriptions, Ressourcengruppen, Naming), **Networking** (VNet, Subnets, Private Endpoints) und **Identität** (wer hat welche Rolle, welche Managed Identities existieren). Halte dies im Repo neben IaC oder in einem dedizierten Architektur-Dokument.
-    - **Runbooks**: Dokumentiere, wie man skaliert, neustartet, Failover durchführt oder wichtige Azure-Ressourcen wiederherstellt; wie man Secrets im Key Vault rotiert; und wie man auf Defender for Cloud Alerts reagiert.
+    - **Runbooks**: Dokumentiere Skalierung, Neustart, Failover oder Wiederherstellung wichtiger Azure-Ressourcen; Secret-Rotation in Key Vault; und Reaktionsschritte auf Defender for Cloud Alerts.
 
 **GitHub**
 === "EN"
 
-    - **README**: Every repo should have a README with purpose, how to build/run/test, and where to find more (docs, CONTRIBUTING, SECURITY). Keep it short and accurate.
-    - **CONTRIBUTING.md / SECURITY.md**: Describe how to contribute and how to report vulnerabilities; link from README. Update when your process changes.
+    - **README**: Every repo must have a README with purpose, how to build/run/test, and where to find more (docs, CONTRIBUTING, SECURITY). Keep it short and accurate.
+    - **CONTRIBUTING.md / SECURITY.md**: Describe contribution flow and vulnerability reporting; link from README. Update when the process changes.
     - **Docs in repo**: Use a `/docs` folder (or similar) for architecture, ADRs, and runbooks so they are versioned with the code. Optionally use **GitHub Pages** or an external site for rendered docs; ensure the source remains the single source of truth and is linked from the repo.
 
 === "DE"
 
-    - **README**: Jedes Repo sollte eine README haben mit Zweck, Bau-/Run-/Test-Anleitung und weiterführenden Links (Docs, CONTRIBUTING, SECURITY). Halte sie kurz und präzise.
-    - **CONTRIBUTING.md / SECURITY.md**: Beschreibe, wie man beiträgt und Schwachstellen meldet. Aktualisiere bei Prozessänderungen.
+    - **README**: Jedes Repo muss eine README haben mit Zweck, Bau-/Run-/Test-Anleitung und weiterführenden Links (Docs, CONTRIBUTING, SECURITY). Halte sie kurz und präzise.
+    - **CONTRIBUTING.md / SECURITY.md**: Beschreibe Beitragspfad und Schwachstellen-Meldung. Aktualisiere bei Prozessänderungen.
     - **Docs im Repo**: Nutze einen `/docs`-Ordner (oder ähnlich) für Architektur, ADRs und Runbooks, damit sie mit dem Code versioniert sind. Optional **GitHub Pages** für gerenderte Docs nutzen; Quelle bleibt Single Source of Truth.
 
 ## AI Coding
@@ -1415,21 +1406,28 @@
 
     Good software is maintainable, readable, and adaptable. Code quality is not just about "it works," but "it can be changed safely."
 
-    - **Clean Code Principles**:
-      - **Naming**: Use descriptive, consistent naming conventions. Code should read like a sentence.
-      - **Functions**: Keep functions small and focused on a single task (Single Responsibility Principle).
-      - **Comments**: Code should explain *what* and *how*; comments should explain *why*. Avoid redundant comments.
-    - **Architecture Patterns**:
-      - Adopt a clear architecture (e.g., Hexagonal, Clean Architecture, or MVC) to separate concerns (UI, Business Logic, Data Access).
-      - **DRY (Don't Repeat Yourself)**: Abstract common logic, but beware of premature abstraction.
-      - **KISS (Keep It Simple, Stupid)**: Simple solutions are easier to maintain and debug than complex ones.
-    - **API Design**:
-      - Follow standard conventions (e.g., RESTful status codes, standard headers).
-      - Use versioning for public APIs to avoid breaking changes.
-      - Return meaningful error messages (e.g., RFC 7807 Problem Details).
-    - **Tooling**:
-      - Use **Linters** (e.g., ESLint, Pylint) and **Formatters** (e.g., Prettier, Black) to enforce style automatically.
-      - Configuration for these tools must be part of the repository.
+    **Clean Code Principles**:
+
+    - **Naming**: Use descriptive, consistent naming conventions. Code reads like a sentence.
+    - **Functions**: Keep functions small and focused on a single task (Single Responsibility Principle).    
+    - **Comments**: Code explains *what* and *how*; comments explain *why*. Avoid redundant comments.
+    
+    **Architecture Patterns**:
+
+    - Adopt a clear architecture (e.g., Hexagonal, Clean Architecture, or MVC) to separate concerns (UI, Business Logic, Data Access).
+    - **DRY (Don't Repeat Yourself)**: Abstract common logic, but beware of premature abstraction.
+    - **KISS (Keep It Simple, Stupid)**: Simple solutions are easier to maintain and debug than complex ones.
+    
+    **API Design**:
+
+    - Follow standard conventions (e.g., RESTful status codes, standard headers).
+    - Use versioning for public APIs to avoid breaking changes.
+    - Return meaningful error messages (e.g., RFC 7807 Problem Details).
+    
+    **Tooling**:
+
+    - Use **Linters** (e.g., ESLint, Pylint) and **Formatters** (e.g., Prettier, Black) to enforce style automatically.
+    - Configuration for these tools must be part of the repository.
 
 === "DE"
 
@@ -1437,21 +1435,28 @@
 
     Gute Software ist wartbar, lesbar und anpassbar. Code-Qualität bedeutet nicht nur „es funktioniert“, sondern „es kann sicher geändert werden“.
 
-    - **Clean Code Prinzipien**:
-      - **Benennung**: Nutze deskriptive, konsistente Namenskonventionen. Code sollte sich wie ein Satz lesen.
-      - **Funktionen**: Halte Funktionen klein und fokussiert auf eine Aufgabe (Single Responsibility Principle).
-      - **Kommentare**: Code sollte *was* und *wie* erklären; Kommentare sollten *warum* erklären. Vermeide redundante Kommentare.
-    - **Architekturmuster**:
-      - Wähle eine klare Architektur (z. B. Hexagonal, Clean Architecture oder MVC), um Verantwortlichkeiten zu trennen (UI, Geschäftslogik, Datenzugriff).
-      - **DRY (Don't Repeat Yourself)**: Abstrahiere gemeinsame Logik, aber hüte dich vor voreiliger Abstraktion.
-      - **KISS (Keep It Simple, Stupid)**: Einfache Lösungen sind leichter zu warten und zu debuggen als komplexe.
-    - **API-Design**:
-      - Folge Standardkonventionen (z. B. RESTful Statuscodes, Standard-Header).
-      - Nutze Versionierung für öffentliche APIs, um Breaking Changes zu vermeiden.
-      - Gib aussagekräftige Fehlermeldungen zurück (z. B. RFC 7807 Problem Details).
-    - **Tooling**:
-      - Nutze **Linter** (z. B. ESLint, Pylint) und **Formatter** (z. B. Prettier, Black), um Stil automatisch durchzusetzen.
-      - Konfiguration für diese Tools muss Teil des Repositories sein.
+    **Clean Code Prinzipien**:
+    
+    - **Benennung**: Nutze deskriptive, konsistente Namenskonventionen. Code liest sich wie ein Satz.
+    - **Funktionen**: Halte Funktionen klein und fokussiert auf eine Aufgabe (Single Responsibility Principle).
+    - **Kommentare**: Code erklärt *was* und *wie*; Kommentare erklären *warum*. Vermeide redundante Kommentare.
+    
+    **Architekturmuster**:
+
+    - Wähle eine klare Architektur (z. B. Hexagonal, Clean Architecture oder MVC), um Verantwortlichkeiten zu trennen (UI, Geschäftslogik, Datenzugriff).
+    - **DRY (Don't Repeat Yourself)**: Abstrahiere gemeinsame Logik, aber hüte dich vor voreiliger Abstraktion.
+    - **KISS (Keep It Simple, Stupid)**: Einfache Lösungen sind leichter zu warten und zu debuggen als komplexe.
+    
+    **API-Design**:
+
+    - Folge Standardkonventionen (z. B. RESTful Statuscodes, Standard-Header).
+    - Nutze Versionierung für öffentliche APIs, um Breaking Changes zu vermeiden.
+    - Gib aussagekräftige Fehlermeldungen zurück (z. B. RFC 7807 Problem Details).
+    
+    **Tooling**:
+
+    - Nutze **Linter** (z. B. ESLint, Pylint) und **Formatter** (z. B. Prettier, Black), um Stil automatisch durchzusetzen.
+    - Konfiguration für diese Tools muss Teil des Repositories sein.
 
 **Azure**
 === "EN"
@@ -1489,12 +1494,16 @@
     - **Standards**: Target **WCAG 2.1 Level AA** (or higher) compliance.
     - **Semantics**: Use proper HTML5 semantic elements (`<nav>`, `<main>`, `<button>` vs. `<div>`) to ensure screen reader compatibility.
     - **Navigation**: Ensure the entire application is operable via **keyboard only** (visible focus indicators, logical tab order).
-    - **Visuals**:
-      - Ensure sufficient **color contrast** for text and UI elements.
-      - Do not use color alone to convey information (use icons/text labels too).
-    - **Internationalization (i18n)**:
-      - Design for multiple languages and locales from the start (RTL support, date/number formatting).
-      - Externalize all user-facing strings into resource files.
+
+    **Visuals**:
+
+    - Ensure sufficient **color contrast** for text and UI elements.
+    - Do not use color alone to convey information (use icons/text labels too).
+    
+    **Internationalization (i18n)**:
+
+    - Design for multiple languages and locales from the start (RTL support, date/number formatting).
+    - Externalize all user-facing strings into resource files.
 
 === "DE"
 
@@ -1505,12 +1514,16 @@
     - **Standards**: Ziele auf **WCAG 2.1 Level AA** (oder höher).
     - **Semantik**: Nutze korrekte semantische HTML5-Elemente (`<nav>`, `<main>`, `<button>` vs. `<div>`) für Screenreader-Kompatibilität.
     - **Navigation**: Stelle sicher, dass die gesamte Anwendung **nur per Tastatur** bedienbar ist (sichtbarer Fokus, logische Tab-Reihenfolge).
-    - **Visuelles**:
-      - Stelle ausreichenden **Farbkontrast** für Text und UI-Elemente sicher.
-      - Nutze Farbe nicht als alleinigen Informationsträger (verwende zusätzlich Icons/Text).
-    - **Internationalisierung (i18n)**:
-      - Plane von Anfang an für mehrere Sprachen und Regionen (RTL-Support, Datums-/Zahlenformate).
-      - Lagere alle sichtbaren Texte in Ressourcendateien aus.
+    
+    **Visuelles**:
+
+    - Stelle ausreichenden **Farbkontrast** für Text und UI-Elemente sicher.
+    - Nutze Farbe nicht als alleinigen Informationsträger (verwende zusätzlich Icons/Text).
+    
+    **Internationalisierung (i18n)**:
+
+    - Plane von Anfang an für mehrere Sprachen und Regionen (RTL-Support, Datums-/Zahlenformate).
+    - Lagere alle sichtbaren Texte in Ressourcendateien aus.
 
 **Azure**
 === "EN"
@@ -1536,10 +1549,6 @@
 
 ## Performance
 
-=== "EN"
-
-=== "DE"
-
 **General**
 === "EN"
 
@@ -1547,15 +1556,20 @@
 
     Performance is a feature. Efficient software respects user time and resources (battery, bandwidth) and reduces operational costs/carbon footprint.
 
-    - **Frontend Performance**:
-      - Monitor **Core Web Vitals** (LCP, CLS, INP).
-      - Optimize assets: Lazy load images/modules, minimize bundle sizes, use modern formats (WebP/AVIF).
-    - **Backend Efficiency**:
-      - **Caching**: Implement caching strategies at multiple layers (browser, CDN, application, database).
-      - **Database**: Optimize queries, use indexes effectively, and avoid N+1 query problems.
-    - **Green Coding**:
-      - Optimize for energy efficiency: reduce unnecessary data transfer and processing.
-      - Scale down resources when not in use (auto-scaling).
+    **Frontend Performance**:
+
+    - Monitor **Core Web Vitals** (LCP, CLS, INP).
+    - Optimize assets: Lazy load images/modules, minimize bundle sizes, use modern formats (WebP/AVIF).
+    
+    **Backend Efficiency**:
+
+    - **Caching**: Implement caching strategies at multiple layers (browser, CDN, application, database).
+    - **Database**: Optimize queries, use indexes effectively, and avoid N+1 query problems.
+    
+    **Green Coding**:
+
+    - Optimize for energy efficiency: reduce unnecessary data transfer and processing.
+    - Scale down resources when not in use (auto-scaling).
 
 === "DE"
 
@@ -1563,15 +1577,20 @@
 
     Performance ist ein Feature. Effiziente Software respektiert die Zeit und Ressourcen der Nutzer (Batterie, Bandbreite) und reduziert Betriebskosten sowie den CO₂-Fußabdruck.
 
-    - **Frontend-Performance**:
-      - Überwache **Core Web Vitals** (LCP, CLS, INP).
-      - Optimiere Assets: Lazy-Loading für Bilder/Module, Bundle-Größen minimieren, moderne Formate (WebP/AVIF).
-    - **Backend-Effizienz**:
-      - **Caching**: Implementiere Caching-Strategien auf mehreren Ebenen (Browser, CDN, App, Datenbank).
-      - **Datenbank**: Optimiere Abfragen, nutze Indizes effektiv, vermeide N+1-Abfrageprobleme.
-    - **Green Coding**:
-      - Optimiere auf Energieeffizienz: Reduziere unnötige Datenübertragung und -verarbeitung.
-      - Skaliere Ressourcen herunter, wenn sie nicht genutzt werden (Auto-Scaling).
+    **Frontend-Performance**:
+
+    - Überwache **Core Web Vitals** (LCP, CLS, INP).
+    - Optimiere Assets: Lazy-Loading für Bilder/Module, Bundle-Größen minimieren, moderne Formate (WebP/AVIF).
+    
+    **Backend-Effizienz**:
+
+    - **Caching**: Implementiere Caching-Strategien auf mehreren Ebenen (Browser, CDN, App, Datenbank).
+    - **Datenbank**: Optimiere Abfragen, nutze Indizes effektiv, vermeide N+1-Abfrageprobleme.
+    
+    **Green Coding**:
+
+    - Optimiere auf Energieeffizienz: Reduziere unnötige Datenübertragung und -verarbeitung.
+    - Skaliere Ressourcen herunter, wenn sie nicht genutzt werden (Auto-Scaling).
 
 **Azure**
 === "EN"
@@ -1606,18 +1625,25 @@
 
     Cost efficiency is a key quality metric. Good software delivers value without waste. In the cloud, every architectural decision has a direct price tag. FinOps is not just about saving money; it is about **understanding** where money goes (unit economics) and making conscious trade-offs.
 
-    - **Unit Economics**:
-      - Understand the cost per user, per tenant, or per transaction.
-      - Architecture must support cost attribution (e.g., via tagging or separate resources).
-    - **Cost Awareness in Design**:
-      - Choose the right service model (Serverless vs. Dedicated) based on load patterns.
-      - Avoid over-provisioning "just in case"; design for scaling instead.
-    - **Lifecycle Management**:
-      - Automate the deletion of temporary resources (e.g., ephemeral environments, old logs, backups beyond retention).
-      - Use storage tiering (Hot -> Cool -> Archive) for data that ages.
-    - **Green Software**:
-      - Optimize for **carbon intensity**: Run heavy batch jobs when the grid is green (if possible).
-      - Reduce data transfer: Sending less data over the network saves energy and cost.
+    **Unit Economics**:
+
+    - Understand the cost per user, per tenant, or per transaction.
+    - Architecture must support cost attribution (e.g., via tagging or separate resources).
+    
+    **Cost Awareness in Design**:
+
+    - Choose the right service model (Serverless vs. Dedicated) based on load patterns.
+    - Avoid over-provisioning "just in case"; design for scaling instead.
+    
+    **Lifecycle Management**:
+
+    - Automate the deletion of temporary resources (e.g., ephemeral environments, old logs, backups beyond retention).
+    - Use storage tiering (Hot -> Cool -> Archive) for data that ages.
+    
+    **Green Software**:
+
+    - Optimize for **carbon intensity**: Run heavy batch jobs when the grid is green (if possible).
+    - Reduce data transfer: Sending less data over the network saves energy and cost.
 
 === "DE"
 
@@ -1625,62 +1651,75 @@
 
     Kosteneffizienz ist ein zentrales Qualitätsmerkmal. Gute Software liefert Wert ohne Verschwendung. In der Cloud hat jede Architekturentscheidung ein Preisschild. FinOps bedeutet nicht nur Geld sparen, sondern zu **verstehen**, wohin das Geld fließt (Unit Economics) und bewusste Abwägungen zu treffen.
 
-    - **Unit Economics**:
-      - Verstehe die Kosten pro Nutzer, Mandant oder Transaktion.
-      - Die Architektur muss Kostenzuordnung unterstützen (z. B. via Tags oder separate Ressourcen).
-    - **Kostenbewusstsein im Design**:
-      - Wähle das richtige Servicemodell (Serverless vs. Dedicated) basierend auf Lastmustern.
-      - Vermeide Überprovisionierung „nur für den Fall“; designe stattdessen für Skalierung.
-    - **Lebenszyklus-Management**:
-      - Automatisiere das Löschen temporärer Ressourcen (ephemere Umgebungen, alte Logs, Backups über Retention hinaus).
-      - Nutze Storage Tiering (Hot -> Cool -> Archive) für alternde Daten.
-    - **Green Software**:
-      - Optimiere auf **Kohlenstoffintensität**: Führe schwere Batch-Jobs aus, wenn das Stromnetz grün ist (wo möglich).
-      - Reduziere Datentransfer: Weniger Daten über das Netzwerk zu senden, spart Energie und Kosten.
+    **Unit Economics**:
+
+    - Verstehe die Kosten pro Nutzer, Mandant oder Transaktion.
+    - Die Architektur muss Kostenzuordnung unterstützen (z. B. via Tags oder separate Ressourcen).
+
+    **Kostenbewusstsein im Design**:
+
+    - Wähle das richtige Servicemodell (Serverless vs. Dedicated) basierend auf Lastmustern.
+    - Vermeide Überprovisionierung „nur für den Fall“; designe stattdessen für Skalierung.
+    
+    **Lebenszyklus-Management**:
+
+    - Automatisiere das Löschen temporärer Ressourcen (ephemere Umgebungen, alte Logs, Backups über Retention hinaus).
+    - Nutze Storage Tiering (Hot -> Cool -> Archive) für alternde Daten.
+    
+    **Green Software**:
+
+    - Optimiere auf **Kohlenstoffintensität**: Führe schwere Batch-Jobs aus, wenn das Stromnetz grün ist (wo möglich).
+    - Reduziere Datentransfer: Weniger Daten über das Netzwerk zu senden, spart Energie und Kosten.
 
 **Azure**
 === "EN"
 
-    - **Cost Analysis & Budgets**:
-      - Use **Azure Cost Management** to set budgets and alerts at the subscription and resource group level.
-      - Tag every resource with `Owner`, `Environment`, `CostCenter`, and `Application`.
-    - **Architectural Fit**:
-      - Use **Consumption Plans** (Functions, Logic Apps) for sporadic workloads to pay only for execution.
-      - Use **Reserved Instances** or **Savings Plans** for predictable, steady-state workloads (databases, VMs).
-      - Use **Spot Instances** for interruptible batch jobs or stateless nodes in AKS.
-    - **Cleanup**:
-      - Use **Azure Policy** to deny creation of expensive SKUs in non-production environments.
-      - Implement automated scripts (e.g., Azure Automation runbooks) to shut down dev/test VMs at night.
+    **Cost Analysis & Budgets**:
+    - Use **Azure Cost Management** to set budgets and alerts at the subscription and resource group level.
+    - Tag every resource with `Owner`, `Environment`, `CostCenter`, and `Application`.
+    
+    **Architectural Fit**:
+    - Use **Consumption Plans** (Functions, Logic Apps) for sporadic workloads to pay only for execution.
+    - Use **Reserved Instances** or **Savings Plans** for predictable, steady-state workloads (databases, VMs).
+    - Use **Spot Instances** for interruptible batch jobs or stateless nodes in AKS.
+    
+    **Cleanup**:
+    - Use **Azure Policy** to deny creation of expensive SKUs in non-production environments.
+    - Implement automated scripts (e.g., Azure Automation runbooks) to shut down dev/test VMs at night.
 
 === "DE"
 
-    - **Kostenanalyse & Budgets**:
-      - Nutze **Azure Cost Management**, um Budgets und Alarme auf Subscription- und Ressourcengruppen-Ebene zu setzen.
-      - Tagge jede Ressource mit `Owner`, `Environment`, `CostCenter` und `Application`.
-    - **Architektonische Passgenauigkeit**:
-      - Nutze **Consumption Plans** (Functions, Logic Apps) für sporadische Workloads (Pay-per-Execution).
-      - Nutze **Reserved Instances** oder **Savings Plans** für vorhersagbare Dauerlast (Datenbanken, VMs).
-      - Nutze **Spot Instances** für unterbrechbare Batch-Jobs oder Stateless Nodes in AKS.
-    - **Aufräumen**:
-      - Nutze **Azure Policy**, um teure SKUs in Nicht-Produktionsumgebungen zu verbieten.
-      - Implementiere automatisierte Skripte (z. B. Azure Automation Runbooks), um Dev/Test-VMs nachts herunterzufahren.
+    **Kostenanalyse & Budgets**:
+    - Nutze **Azure Cost Management**, um Budgets und Alarme auf Subscription- und Ressourcengruppen-Ebene zu setzen.
+    - Tagge jede Ressource mit `Owner`, `Environment`, `CostCenter` und `Application`.
+    
+    **Architektonische Passgenauigkeit**:
+    - Nutze **Consumption Plans** (Functions, Logic Apps) für sporadische Workloads (Pay-per-Execution).
+    - Nutze **Reserved Instances** oder **Savings Plans** für vorhersagbare Dauerlast (Datenbanken, VMs).
+    - Nutze **Spot Instances** für unterbrechbare Batch-Jobs oder Stateless Nodes in AKS.
+    
+    **Aufräumen**:
+    - Nutze **Azure Policy**, um teure SKUs in Nicht-Produktionsumgebungen zu verbieten.
+    - Implementiere automatisierte Skripte (z. B. Azure Automation Runbooks), um Dev/Test-VMs nachts herunterzufahren.
 
 **GitHub**
 === "EN"
 
-    - **CI/CD Costs**:
-      - Monitor **GitHub Actions** minutes; use caching to speed up builds and reduce billable time.
-      - Use self-hosted runners for heavy workloads if they are cheaper than GitHub-hosted runners.
-    - **Reporting**:
-      - Integrate cost reports into the development dashboard. Engineers should see the cost impact of their changes.
+    **CI/CD Costs**:
+    - Monitor **GitHub Actions** minutes; use caching to speed up builds and reduce billable time.
+    - Use self-hosted runners for heavy workloads if they are cheaper than GitHub-hosted runners.
+    
+    **Reporting**:
+    - Integrate cost reports into the development dashboard. Engineers must see the cost impact of their changes.
 
 === "DE"
 
-    - **CI/CD-Kosten**:
-      - Überwache **GitHub Actions**-Minuten; nutze Caching, um Builds zu beschleunigen und billable time zu reduzieren.
-      - Nutze Self-Hosted Runner für schwere Workloads, wenn sie günstiger sind als GitHub-Hosted Runner.
-    - **Reporting**:
-      - Integriere Kostenberichte in das Entwicklungs-Dashboard. Ingenieure sollten den Kosteneinfluss ihrer Änderungen sehen.
+    **CI/CD-Kosten**:
+    - Überwache **GitHub Actions**-Minuten; nutze Caching, um Builds zu beschleunigen und billable time zu reduzieren.
+    - Nutze Self-Hosted Runner für schwere Workloads, wenn sie günstiger sind als GitHub-Hosted Runner.
+    
+    **Reporting**:
+    - Integriere Kostenberichte in das Entwicklungs-Dashboard. Ingenieure müssen den Kosteneinfluss ihrer Änderungen sehen.
 
 ## Compliance
 
@@ -1754,11 +1793,11 @@
     | Compliance-Berichte & Attestate | Provider-Zertifikate (im Scope) | Mapping der Provider-Kontrollen auf dein System & Schließen von Lücken |
     | Datenschutz-/Compliance-Tools | Eingebaute Plattformfeatures | Rechtsgrundlage, Löschung, Betroffenenanfragen, Kundenverpflichtungen |
 
-    **Wie man dies Kunden präsentiert (Vertrauen + Transparenz)**
+    **Präsentation für Kunden (Vertrauen + Transparenz)**
 
     - Teile eine kurze Verantwortungsmatrix: `Provider-Kontrolle` / `Deine Kontrolle` / `Nachweis`.
     - Mache nur scope-valide Aussagen (z. B. „gehostet auf Azure, das ISO 27001 für die genutzten Dienste unterhält“).
-    - Vermeide mehrdeutige Aussagen wie „unsere App ist ISO-zertifiziert“, es sei denn, dein eigener Org/App-Scope wurde auditiert.
+    - Vermeide mehrdeutige Aussagen wie „die App ist ISO-zertifiziert“, es sei denn, der Org/App-Scope wurde auditiert.
     - Halte ein kundenfertiges Nachweispaket aktuell (Architektur, Runbooks, Scan-Berichte, Incident-Prozess, Plattform-Attestate).
 
 **Azure**
@@ -1767,71 +1806,71 @@
     Azure maintains broad compliance programs and attestations (for in-scope services), commonly including: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS**, and **CSA STAR**.
     
     What you can legitimately claim in customer conversations:
-        - Your solution runs on Azure services that are covered by specific provider attestations.
-        - You apply Azure security features (e.g. Entra ID, Key Vault, private networking, Defender controls) as part of your own control set.
-        - You can provide provider evidence references plus your own implementation evidence.
-    
+    - Your solution runs on Azure services that are covered by specific provider attestations.
+    - You apply Azure security features (e.g. Entra ID, Key Vault, private networking, Defender controls) as part of your own control set.
+    - You can provide provider evidence references plus your own implementation evidence.
+
     What you still must prove yourself:
-        - Correct service configuration, RBAC model, tenant isolation, secure CI/CD, data lifecycle, and incident response.
-        - Contractual and legal controls around customer data processing and retention.
+    - Correct service configuration, RBAC model, tenant isolation, secure CI/CD, data lifecycle, and incident response.
+    - Contractual and legal controls around customer data processing and retention.
     
     Practical trust artifacts from Azure side:
-        - Service scope check (is each used Azure service covered by required standard).
-        - Shared-responsibility mapping per control.
-        - References to official Microsoft compliance documentation/report availability.
+    - Service scope check (is each used Azure service covered by required standard).
+    - Shared-responsibility mapping per control.
+    - References to official Microsoft compliance documentation/report availability.
 
 === "DE"
 
-      Azure unterhält umfassende Compliance-Programme (für Dienste im Scope), häufig inkl.: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS** und **CSA STAR**.
+    Azure unterhält umfassende Compliance-Programme (für Dienste im Scope), häufig inkl.: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS** und **CSA STAR**.
       
-      Was du legitim behaupten kannst:
-          - Deine Lösung läuft auf Azure-Diensten, die durch spezifische Provider-Attestate abgedeckt sind.
-          - Du wendest Azure-Sicherheitsfeatures (z. B. Entra ID, Key Vault, Private Networking) als Teil deines Kontrollsets an.
-          - Du kannst Provider-Nachweise plus deine eigenen Implementierungsnachweise bereitstellen.
-      
-      Was du selbst beweisen musst:
-          - Korrekte Servicekonfiguration, RBAC-Modell, Mandantenisolierung, sichere CI/CD, Datenlebenszyklus und Incident Response.
-          - Vertragliche und rechtliche Kontrollen rund um Kundendatenverarbeitung.
-      
-      Praktische Vertrauens-Artefakte (Azure-Seite):
-          - Service-Scope-Check (ist jeder genutzte Dienst abgedeckt?).
-          - Shared-Responsibility-Mapping.
-          - Verweise auf offizielle Microsoft-Compliance-Doku.
+    Was du legitim behaupten kannst:
+    - Deine Lösung läuft auf Azure-Diensten, die durch spezifische Provider-Attestate abgedeckt sind.
+    - Du wendest Azure-Sicherheitsfeatures (z. B. Entra ID, Key Vault, Private Networking) als Teil deines Kontrollsets an.
+    - Du kannst Provider-Nachweise plus deine eigenen Implementierungsnachweise bereitstellen.
+
+    Was du selbst beweisen musst:
+    - Korrekte Servicekonfiguration, RBAC-Modell, Mandantenisolierung, sichere CI/CD, Datenlebenszyklus und Incident Response.
+    - Vertragliche und rechtliche Kontrollen rund um Kundendatenverarbeitung.
+    
+    Praktische Vertrauens-Artefakte (Azure-Seite):
+    - Service-Scope-Check (ist jeder genutzte Dienst abgedeckt?).
+    - Shared-Responsibility-Mapping.
+    - Verweise auf offizielle Microsoft-Compliance-Doku.
 
 **GitHub**
 === "EN"
 
-      GitHub also provides audited compliance programs/attestations for its platform scope, commonly including: **SOC 1 Type 2**, **SOC 2 Type 2**, **SOC 3**, **ISO/IEC 27001**, **ISO/IEC 27701**, **ISO/IEC 27018**, and **CSA STAR** (scope depends on product/features/plan).
-      
-      What you can claim:
-      - Your source control and CI/CD process runs on GitHub services with defined compliance attestations.
-      - You enforce repository-level security controls (branch protection, reviews, Dependabot, code scanning, secret scanning).
-      
-      What remains yours:
-      - Secure workflow design, permissions model, secrets governance, release approvals, and response process for findings.
-      - Correct use of GitHub features and evidence retention for your own audits/customer reviews.
-      
-      Practical trust artifacts from GitHub side:
-      - Repository/org security settings export or documented baseline.
-      - Evidence of enabled controls (e.g. CodeQL/Dependabot/secret scanning status, branch rules).
-      - References to GitHub compliance reports available for your plan.
+    GitHub also provides audited compliance programs/attestations for its platform scope, commonly including: **SOC 1 Type 2**, **SOC 2 Type 2**, **SOC 3**, **ISO/IEC 27001**, **ISO/IEC 27701**, **ISO/IEC 27018**, and **CSA STAR** (scope depends on product/features/plan).
+    
+    What you can claim:
+    - Your source control and CI/CD process runs on GitHub services with defined compliance attestations.
+    - You enforce repository-level security controls (branch protection, reviews, Dependabot, code scanning, secret scanning).
+    
+    What remains yours:
+    - Secure workflow design, permissions model, secrets governance, release approvals, and response process for findings.
+    - Correct use of GitHub features and evidence retention for your own audits/customer reviews.
+    
+    Practical trust artifacts from GitHub side:
+    - Repository/org security settings export or documented baseline.
+    - Evidence of enabled controls (e.g. CodeQL/Dependabot/secret scanning status, branch rules).
+    - References to GitHub compliance reports available for your plan.
 
 === "DE"
 
-      GitHub bietet ebenfalls auditierte Compliance-Programme (je nach Plan/Scope), z. B.: **SOC 1/2/3**, **ISO 27001**, **ISO 27701** und **CSA STAR**.
-      
-      Was du behaupten kannst:
-      - Dein Versionskontroll- und CI/CD-Prozess läuft auf GitHub-Diensten mit definierten Attestaten.
-      - Du erzwingst Repository-Sicherheitskontrollen (Branch Protection, Reviews, Dependabot, Scanning).
-      
-      Was deins bleibt:
-      - Sicheres Workflow-Design, Berechtigungsmodell, Secrets-Governance, Release-Freigaben und Reaktion auf Findings.
-      - Korrekte Nutzung von GitHub-Features und Nachweisführung für eigene Audits.
-      
-      Praktische Vertrauens-Artefakte (GitHub-Seite):
-      - Export der Repo/Org-Sicherheitseinstellungen.
-      - Nachweis aktivierter Kontrollen (CodeQL/Dependabot-Status).
-      - Verweise auf GitHub-Compliance-Berichte.
+    GitHub bietet ebenfalls auditierte Compliance-Programme (je nach Plan/Scope), z. B.: **SOC 1/2/3**, **ISO 27001**, **ISO 27701** und **CSA STAR**.
+    
+    Was du behaupten kannst:
+    - Dein Versionskontroll- und CI/CD-Prozess läuft auf GitHub-Diensten mit definierten Attestaten.
+    - Du erzwingst Repository-Sicherheitskontrollen (Branch Protection, Reviews, Dependabot, Scanning).
+    
+    Was deins bleibt:
+    - Sicheres Workflow-Design, Berechtigungsmodell, Secrets-Governance, Release-Freigaben und Reaktion auf Findings.
+    - Korrekte Nutzung von GitHub-Features und Nachweisführung für eigene Audits.
+    
+    Praktische Vertrauens-Artefakte (GitHub-Seite):
+    - Export der Repo/Org-Sicherheitseinstellungen.
+    - Nachweis aktivierter Kontrollen (CodeQL/Dependabot-Status).
+    - Verweise auf GitHub-Compliance-Berichte.
 
 ## German Market
 
@@ -1871,16 +1910,10 @@
 
 ## Trust Plan
 
+**General**
 === "EN"
 
     A structured approach to transparency builds lasting customer relationships.
-
-=== "DE"
-
-    Ein strukturierter Ansatz für Transparenz baut dauerhafte Kundenbeziehungen auf.
-
-**General**
-=== "EN"
 
     1. **Ask customers what matters most**: Capture concrete trust requirements early (e.g. data residency, incident notification timelines, pentest frequency, evidence format, SLA targets).
     2. **Translate requirements into minimum controls**: Define baseline controls that map to those requirements (identity, secrets, logging, staging, backup/restore, change control).
@@ -1891,6 +1924,8 @@
 
 === "DE"
 
+    Ein strukturierter Ansatz für Transparenz baut dauerhafte Kundenbeziehungen auf.
+
     1. **Frage Kunden, was zählt**: Erfasse konkrete Vertrauensanforderungen früh (z. B. Datenstandort, Meldefristen, Pentest-Frequenz, SLA-Ziele).
     2. **Übersetze Anforderungen in minimale Kontrollen**: Definiere Basiskontrollen, die diese Anforderungen erfüllen (Identität, Secrets, Logging, Staging, Backup, Change Control).
     3. **Implementiere und dokumentiere**: Wende die allgemeinen und plattformspezifischen Kontrollen an und dokumentiere Ownership, Betrieb und Nachweise.
@@ -1900,20 +1935,12 @@
 
 ## Security Baseline
 
+**General**
 === "EN"
-
+    
     A defined baseline ensures a consistent minimum security standard across projects.
 
     Use this as a practical template; tailor the thresholds to your product and customer expectations.
-
-=== "DE"
-
-    Eine definierte Baseline sichert einen konsistenten Mindestsicherheitsstandard über Projekte hinweg.
-
-    Nutze dies als Vorlage; passe die Schwellenwerte an dein Produkt und Kundenerwartungen an.
-
-**General**
-=== "EN"
 
     **Identity & access**
     - MFA required for all human access to production-related systems.
@@ -1943,7 +1970,10 @@
     - Core architecture, runbooks, and key decisions are documented and current.
 
 === "DE"
+    Eine definierte Baseline sichert einen konsistenten Mindestsicherheitsstandard über Projekte hinweg.
 
+    Nutze dies als Vorlage; passe die Schwellenwerte an dein Produkt und Kundenerwartungen an.
+    
     **Identität & Zugriff**
     - MFA für jeden menschlichen Zugriff auf produktionsrelevante Systeme.
     - RBAC erzwungen; keine breite Admin-Rolle für tägliche Arbeit.
@@ -2095,64 +2125,70 @@
     - **Importance**: `Nice-to-have` | `Important` | `Essential`
 
     **General**
-    - [ ] CIA, Least Privilege, Defense in Depth, and **Keep it simple** reflected in design and operations `[Effort: Medium | Cost: Low | Importance: Essential]`
-    - [ ] Identity: central IdP, MFA, least privilege, no secrets in config `[Effort: Medium | Cost: Medium | Importance: Essential]`
-    - [ ] User management: roles and groups defined; tenant (customer) isolation designed and enforced where multi-tenant `[Effort: High | Cost: Medium | Importance: Essential]`
-    - [ ] Interfaces: API-First approach; API documented; Headless usage supported; Deep linking enabled but validated `[Effort: Medium | Cost: Low | Importance: Important]`
-    - [ ] Data model and database design enforce tenant isolation; brisante data is classified, owned, and handled by policy `[Effort: High | Cost: Medium | Importance: Essential]`
-    - [ ] Data & secrets: vault or secret store, TLS 1.2+ `[Effort: Medium | Cost: Medium | Importance: Essential]`
-    - [ ] Domain & email trust: valid certificates, SPF, DKIM, DMARC, and monitoring for expiry/spoofing `[Effort: Medium | Cost: Low | Importance: Important]`
-    - [ ] Network: segmentation, WAF, HTTPS `[Effort: Medium | Cost: Medium | Importance: Essential]`
-    - [ ] SDLC: Shift Left, SAST/SCA (and DAST where applicable), branch protection `[Effort: Medium | Cost: Medium | Importance: Essential]`
-    - [ ] Testing: unit/integration/e2e, regression tests, and security tests; fuzzing/property-based tests used where risk justifies it `[Effort: High | Cost: Medium | Importance: Essential]`
-    - [ ] Staging: promotion flow (build → staging → validate → production); no production data in staging; config documented `[Effort: Medium | Cost: Medium | Importance: Important]`
-    - [ ] IaC and system configuration: infra and config in version control; reviewed and applied via pipeline; no secrets in definitions `[Effort: High | Cost: Medium | Importance: Important]`
-    - [ ] Good documentation: architecture, APIs, runbooks, ADRs; single source of truth; kept up to date; onboarding path clear `[Effort: Medium | Cost: Low | Importance: Important]`
-    - [ ] Open source: license compliance, SBOM/dependency scanning, vulnerability handling, contribution policy `[Effort: Medium | Cost: Low | Importance: Important]`
-    - [ ] Changelogs & communication: changelog, release notes, clear security/incident communication `[Effort: Low | Cost: Low | Importance: Important]`
-    - [ ] Monitoring & alerting; incident response documented `[Effort: Medium | Cost: Medium | Importance: Essential]`
-    - [ ] CI/CD: no secrets in repo, approvals, scans in pipeline `[Effort: Medium | Cost: Low | Importance: Essential]`
-    - [ ] GDPR and data residency considered; German market requirements documented where relevant `[Effort: High | Cost: Medium | Importance: Essential]`
-    - [ ] AI-assisted coding policy defined (allowed use, forbidden input, required review/test gates) `[Effort: Low | Cost: Low | Importance: Important]`
-    - [ ] Code Quality: Linter/Formatter configured in CI; Architecture patterns (e.g. Hexagonal/Clean) respected `[Effort: Medium | Cost: Low | Importance: Essential]`
-    - [ ] Accessibility: WCAG 2.1 AA compliance target; automated a11y tests in pipeline; keyboard navigation verified `[Effort: Medium | Cost: Medium | Importance: Essential]`
-    - [ ] Performance: Core Web Vitals monitored; caching strategy defined; assets optimized `[Effort: Medium | Cost: Medium | Importance: Important]`
-    - [ ] Customer trust requirements captured and mapped to concrete minimum controls `[Effort: Medium | Cost: Low | Importance: Important]`
-    - [ ] Minimum security baseline defined, owned, and reviewed periodically `[Effort: Medium | Cost: Low | Importance: Essential]`
-    - [ ] Evidence collection process defined for transparency (not only for formal audits) `[Effort: Medium | Cost: Low | Importance: Important]`
-    - [ ] FinOps: Budgets/Alerts set; Resources tagged; Lifecycle policies active (e.g. storage tiering) `[Effort: Medium | Cost: Low | Importance: Important]`
-    - [ ] Compliance: Shared-responsibility matrix documented; inherited controls mapped `[Effort: Low | Cost: Low | Importance: Important]`
+    | Item | Effort | Cost | Importance |
+    | :--- | :--- | :--- | :--- |
+    | CIA, Least Privilege, Defense in Depth, and **Keep it simple** reflected in design and operations | Medium | Low | Essential |
+    | Identity: central IdP, MFA, least privilege, no secrets in config | Medium | Medium | Essential |
+    | User management: roles and groups defined; tenant (customer) isolation designed and enforced where multi-tenant | High | Medium | Essential |
+    | Interfaces: API-First approach; API documented; Headless usage supported; Deep linking enabled but validated | Medium | Low | Important |
+    | Data model and database design enforce tenant isolation; brisante data is classified, owned, and handled by policy | High | Medium | Essential |
+    | Data & secrets: vault or secret store, TLS 1.2+ | Medium | Medium | Essential |
+    | Domain & email trust: valid certificates, SPF, DKIM, DMARC, and monitoring for expiry/spoofing | Medium | Low | Important |
+    | Network: segmentation, WAF, HTTPS | Medium | Medium | Essential |
+    | SDLC: Shift Left, SAST/SCA (and DAST where applicable), branch protection | Medium | Medium | Essential |
+    | Testing: unit/integration/e2e, regression tests, and security tests; fuzzing/property-based tests used where risk justifies it | High | Medium | Essential |
+    | Staging: promotion flow (build → staging → validate → production); no production data in staging; config documented | Medium | Medium | Important |
+    | IaC and system configuration: infra and config in version control; reviewed and applied via pipeline; no secrets in definitions | High | Medium | Important |
+    | Good documentation: architecture, APIs, runbooks, ADRs; single source of truth; kept up to date; onboarding path clear | Medium | Low | Important |
+    | Open source: license compliance, SBOM/dependency scanning, vulnerability handling, contribution policy | Medium | Low | Important |
+    | Changelogs & communication: changelog, release notes, clear security/incident communication | Low | Low | Important |
+    | Monitoring & alerting; incident response documented | Medium | Medium | Essential |
+    | CI/CD: no secrets in repo, approvals, scans in pipeline | Medium | Low | Essential |
+    | GDPR and data residency considered; German market requirements documented where relevant | High | Medium | Essential |
+    | AI-assisted coding policy defined (allowed use, forbidden input, required review/test gates) | Low | Low | Important |
+    | Code Quality: Linter/Formatter configured in CI; Architecture patterns (e.g. Hexagonal/Clean) respected | Medium | Low | Essential |
+    | Accessibility: WCAG 2.1 AA compliance target; automated a11y tests in pipeline; keyboard navigation verified | Medium | Medium | Essential |
+    | Performance: Core Web Vitals monitored; caching strategy defined; assets optimized | Medium | Medium | Important |
+    | Customer trust requirements captured and mapped to concrete minimum controls | Medium | Low | Important |
+    | Minimum security baseline defined, owned, and reviewed periodically | Medium | Low | Essential |
+    | Evidence collection process defined for transparency (not only for formal audits) | Medium | Low | Important |
+    | FinOps: Budgets/Alerts set; Resources tagged; Lifecycle policies active (e.g. storage tiering) | Medium | Low | Important |
+    | Compliance: Shared-responsibility matrix documented; inherited controls mapped | Low | Low | Important |
 
     **Azure**
-    - [ ] Entra ID and MFA; least-privilege roles and managed identities; user/group/tenant model documented `[Effort: Medium | Cost: Medium | Importance: Essential]`
-    - [ ] Secrets in Azure Key Vault; TLS 1.2+ enforced `[Effort: Medium | Cost: Medium | Importance: Essential]`
-    - [ ] Database/network exposure reduced (private endpoints/firewalls), DB audit logs enabled, and Defender/Policy findings addressed `[Effort: Medium | Cost: Medium | Importance: Essential]`
-    - [ ] Custom domain, DNS records, and certificate renewal configured and monitored `[Effort: Low | Cost: Low | Importance: Important]`
-    - [ ] Private connectivity and/or WAF where appropriate; DDoS considered for production `[Effort: High | Cost: High | Importance: Essential]`
-    - [ ] WAF policy tuned (detect -> prevent), with false-positive review process `[Effort: Medium | Cost: Medium | Importance: Important]`
-    - [ ] IP/geo restrictions and firewall rules applied where business/security requires `[Effort: Medium | Cost: Medium | Importance: Important]`
-    - [ ] Staging: deployment slots or separate staging app; same IaC as production `[Effort: Medium | Cost: Medium | Importance: Important]`
-    - [ ] IaC: Bicep/ARM/Terraform in repo; state in secure backend; policies as code `[Effort: High | Cost: Medium | Importance: Important]`
-    - [ ] Azure Monitor, Application Insights, and Defender for Cloud in use; alerts configured `[Effort: Medium | Cost: Medium | Importance: Essential]`
-    - [ ] Defender for Cloud recommendations are triaged with owners, SLAs, and risk-acceptance process `[Effort: Medium | Cost: Low | Importance: Important]`
-    - [ ] Audit logging retained (Activity Log + diagnostics) and regularly reviewed `[Effort: Medium | Cost: Medium | Importance: Essential]`
-    - [ ] Deployment via CI/CD with slots and Key Vault references `[Effort: Medium | Cost: Low | Importance: Important]`
-    - [ ] Docs: resource layout, networking, identity, runbooks documented `[Effort: Low | Cost: Low | Importance: Important]`
+    | Item | Effort | Cost | Importance |
+    | :--- | :--- | :--- | :--- |
+    | Entra ID and MFA; least-privilege roles and managed identities; user/group/tenant model documented | Medium | Medium | Essential |
+    | Secrets in Azure Key Vault; TLS 1.2+ enforced | Medium | Medium | Essential |
+    | Database/network exposure reduced (private endpoints/firewalls), DB audit logs enabled, and Defender/Policy findings addressed | Medium | Medium | Essential |
+    | Custom domain, DNS records, and certificate renewal configured and monitored | Low | Low | Important |
+    | Private connectivity and/or WAF where appropriate; DDoS considered for production | High | High | Essential |
+    | WAF policy tuned (detect -> prevent), with false-positive review process | Medium | Medium | Important |
+    | IP/geo restrictions and firewall rules applied where business/security requires | Medium | Medium | Important |
+    | Staging: deployment slots or separate staging app; same IaC as production | Medium | Medium | Important |
+    | IaC: Bicep/ARM/Terraform in repo; state in secure backend; policies as code | High | Medium | Important |
+    | Azure Monitor, Application Insights, and Defender for Cloud in use; alerts configured | Medium | Medium | Essential |
+    | Defender for Cloud recommendations are triaged with owners, SLAs, and risk-acceptance process | Medium | Low | Important |
+    | Audit logging retained (Activity Log + diagnostics) and regularly reviewed | Medium | Medium | Essential |
+    | Deployment via CI/CD with slots and Key Vault references | Medium | Low | Important |
+    | Docs: resource layout, networking, identity, runbooks documented | Low | Low | Important |
 
     **GitHub**
-    - [ ] Branch protection, required reviews and status checks; 2FA for org members `[Effort: Low | Cost: Low | Importance: Essential]`
-    - [ ] Teams and roles used for access; tenant/customer model (if applicable) documented `[Effort: Low | Cost: Low | Importance: Important]`
-    - [ ] GitHub Secrets or OIDC for deployment; no secrets in repo `[Effort: Low | Cost: Low | Importance: Essential]`
-    - [ ] Schema/migration changes are reviewed and tested; no real customer DB dumps in repo `[Effort: Low | Cost: Low | Importance: Essential]`
-    - [ ] Domain/deployment destination changes are controlled via PR + reviews `[Effort: Low | Cost: Low | Importance: Important]`
-    - [ ] Environments (e.g. Staging, Production) with protection rules and required reviewers `[Effort: Low | Cost: Low | Importance: Important]`
-    - [ ] CodeQL and Dependabot enabled; security scans in pipeline `[Effort: Low | Cost: Low | Importance: Essential]`
-    - [ ] Secret scanning and push protection enabled; optional CI secret scanner (e.g. Gitleaks) integrated `[Effort: Low | Cost: Low | Importance: Essential]`
-    - [ ] Branch security: no direct push/force push on protected branches; CODEOWNERS for critical paths `[Effort: Low | Cost: Low | Importance: Essential]`
-    - [ ] AI-assisted PRs are flagged and pass the same required checks/reviews as all other changes `[Effort: Low | Cost: Low | Importance: Important]`
-    - [ ] Staging/production flow documented (build once, promote artifact, rollback path tested) `[Effort: Medium | Cost: Low | Importance: Important]`
-    - [ ] IaC and config stored in repo; Actions run plan/apply with secure state `[Effort: Medium | Cost: Low | Importance: Important]`
-    - [ ] LICENSE, CONTRIBUTING.md, SECURITY.md; README and docs up to date; Releases and CHANGELOG maintained `[Effort: Low | Cost: Low | Importance: Important]`
+    | Item | Effort | Cost | Importance |
+    | :--- | :--- | :--- | :--- |
+    | Branch protection, required reviews and status checks; 2FA for org members | Low | Low | Essential |
+    | Teams and roles used for access; tenant/customer model (if applicable) documented | Low | Low | Important |
+    | GitHub Secrets or OIDC for deployment; no secrets in repo | Low | Low | Essential |
+    | Schema/migration changes are reviewed and tested; no real customer DB dumps in repo | Low | Low | Essential |
+    | Domain/deployment destination changes are controlled via PR + reviews | Low | Low | Important |
+    | Environments (e.g. Staging, Production) with protection rules and required reviewers | Low | Low | Important |
+    | CodeQL and Dependabot enabled; security scans in pipeline | Low | Low | Essential |
+    | Secret scanning and push protection enabled; optional CI secret scanner (e.g. Gitleaks) integrated | Low | Low | Essential |
+    | Branch security: no direct push/force push on protected branches; CODEOWNERS for critical paths | Low | Low | Essential |
+    | AI-assisted PRs are flagged and pass the same required checks/reviews as all other changes | Low | Low | Important |
+    | Staging/production flow documented (build once, promote artifact, rollback path tested) | Medium | Low | Important |
+    | IaC and config stored in repo; Actions run plan/apply with secure state | Medium | Low | Important |
+    | LICENSE, CONTRIBUTING.md, SECURITY.md; README and docs up to date; Releases and CHANGELOG maintained | Low | Low | Important |
 
 === "DE"
 
@@ -2164,61 +2200,67 @@
     - **Wichtigkeit**: `Nice-to-have` | `Wichtig` | `Essentiell`
 
     **Allgemein**
-    - [ ] CIA, Least Privilege, Defense in Depth und **Einfachheit** in Design und Betrieb reflektiert `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Essentiell]`
-    - [ ] Identität: Zentraler IdP, MFA, Least Privilege, keine Secrets in Config `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] Nutzermanagement: Rollen/Gruppen definiert; Mandantentrennung (Tenant Isolation) durchgesetzt `[Aufwand: Hoch | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] Schnittstellen: API-First-Ansatz; API dokumentiert; Headless-Nutzung unterstützt; Deep Linking aktiviert aber validiert `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Datenmodell und DB-Design erzwingen Mandantentrennung; brisante Daten klassifiziert und geschützt `[Aufwand: Hoch | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] Daten & Secrets: Vault/Secret Store genutzt, TLS 1.2+ `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] Domain & E-Mail-Vertrauen: Gültige Zertifikate, SPF, DKIM, DMARC, Monitoring `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Netzwerk: Segmentierung, WAF, HTTPS `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] SDLC: Shift Left, SAST/SCA (ggf. DAST), Branch Protection `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] Testing: Unit/Integration/E2E, Regression, Security-Tests; Fuzzing wo nötig `[Aufwand: Hoch | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] Staging: Promotion-Flow (Build -> Staging -> Prod); keine Produktionsdaten; Config dokumentiert `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Wichtig]`
-    - [ ] IaC & Config: Infra/Config versioniert; via Pipeline reviewt/ausgeführt; keine Secrets im Code `[Aufwand: Hoch | Kosten: Mittel | Wichtigkeit: Wichtig]`
-    - [ ] Gute Doku: Architektur, APIs, Runbooks, ADRs; Single Source of Truth; aktuell; Onboarding klar `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Open Source: Lizenz-Compliance, SBOM, Schwachstellen-Handling, Contributing Policy `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Changelogs & Kommunikation: Changelog, Release Notes, klare Vorfallkommunikation `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Monitoring & Alerting; Incident Response dokumentiert `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] CI/CD: Keine Secrets im Repo, Approvals, Scans in Pipeline `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Essentiell]`
-    - [ ] DSGVO und Datenstandort berücksichtigt; deutsche Marktanforderungen dokumentiert `[Aufwand: Hoch | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] KI-Coding-Richtlinie definiert (erlaubte Nutzung, verbotener Input, Review-Pflicht) `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Code-Qualität: Linter/Formatter in CI; Architekturmuster respektiert `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Essentiell]`
-    - [ ] Barrierefreiheit: WCAG 2.1 AA Ziel; Auto-Tests in Pipeline; Tastaturnavigation verifiziert `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] Performance: Core Web Vitals überwacht; Caching definiert; Assets optimiert `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Wichtig]`
-    - [ ] Kundenvertrauensanforderungen erfasst und auf Mindestkontrollen gemappt `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Minimale Sicherheitsbaseline definiert, besessen und periodisch geprüft `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Essentiell]`
-    - [ ] Nachweissammlungsprozess für Transparenz definiert `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] FinOps: Budgets/Alerts gesetzt; Ressourcen getaggt; Lifecycle-Policies aktiv `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Compliance: Shared-Responsibility-Matrix dokumentiert; geerbte Kontrollen gemappt `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Wichtig]`
+    | Punkt | Aufwand | Kosten | Wichtigkeit |
+    | :--- | :--- | :--- | :--- |
+    | CIA, Least Privilege, Defense in Depth und **Einfachheit** in Design und Betrieb reflektiert | Mittel | Niedrig | Essentiell |
+    | Identität: Zentraler IdP, MFA, Least Privilege, keine Secrets in Config | Mittel | Mittel | Essentiell |
+    | Nutzermanagement: Rollen/Gruppen definiert; Mandantentrennung (Tenant Isolation) durchgesetzt | Hoch | Mittel | Essentiell |
+    | Schnittstellen: API-First-Ansatz; API dokumentiert; Headless-Nutzung unterstützt; Deep Linking aktiviert aber validiert | Mittel | Niedrig | Wichtig |
+    | Datenmodell und DB-Design erzwingen Mandantentrennung; brisante Daten klassifiziert und geschützt | Hoch | Mittel | Essentiell |
+    | Daten & Secrets: Vault/Secret Store genutzt, TLS 1.2+ | Mittel | Mittel | Essentiell |
+    | Domain & E-Mail-Vertrauen: Gültige Zertifikate, SPF, DKIM, DMARC, Monitoring | Mittel | Niedrig | Wichtig |
+    | Netzwerk: Segmentierung, WAF, HTTPS | Mittel | Mittel | Essentiell |
+    | SDLC: Shift Left, SAST/SCA (ggf. DAST), Branch Protection | Mittel | Mittel | Essentiell |
+    | Testing: Unit/Integration/E2E, Regression, Security-Tests; Fuzzing wo nötig | Hoch | Mittel | Essentiell |
+    | Staging: Promotion-Flow (Build -> Staging -> Prod); keine Produktionsdaten; Config dokumentiert | Mittel | Mittel | Wichtig |
+    | IaC & Config: Infra/Config versioniert; via Pipeline reviewt/ausgeführt; keine Secrets im Code | Hoch | Mittel | Wichtig |
+    | Gute Doku: Architektur, APIs, Runbooks, ADRs; Single Source of Truth; aktuell; Onboarding klar | Mittel | Niedrig | Wichtig |
+    | Open Source: Lizenz-Compliance, SBOM, Schwachstellen-Handling, Contributing Policy | Mittel | Niedrig | Wichtig |
+    | Changelogs & Kommunikation: Changelog, Release Notes, klare Vorfallkommunikation | Niedrig | Niedrig | Wichtig |
+    | Monitoring & Alerting; Incident Response dokumentiert | Mittel | Mittel | Essentiell |
+    | CI/CD: Keine Secrets im Repo, Approvals, Scans in Pipeline | Mittel | Niedrig | Essentiell |
+    | DSGVO und Datenstandort berücksichtigt; deutsche Marktanforderungen dokumentiert | Hoch | Mittel | Essentiell |
+    | KI-Coding-Richtlinie definiert (erlaubte Nutzung, verbotener Input, Review-Pflicht) | Niedrig | Niedrig | Wichtig |
+    | Code-Qualität: Linter/Formatter in CI; Architekturmuster respektiert | Mittel | Niedrig | Essentiell |
+    | Barrierefreiheit: WCAG 2.1 AA Ziel; Auto-Tests in Pipeline; Tastaturnavigation verifiziert | Mittel | Mittel | Essentiell |
+    | Performance: Core Web Vitals überwacht; Caching definiert; Assets optimiert | Mittel | Mittel | Wichtig |
+    | Kundenvertrauensanforderungen erfasst und auf Mindestkontrollen gemappt | Mittel | Niedrig | Wichtig |
+    | Minimale Sicherheitsbaseline definiert, besessen und periodisch geprüft | Mittel | Niedrig | Essentiell |
+    | Nachweissammlungsprozess für Transparenz definiert | Mittel | Niedrig | Wichtig |
+    | FinOps: Budgets/Alerts gesetzt; Ressourcen getaggt; Lifecycle-Policies aktiv | Mittel | Niedrig | Wichtig |
+    | Compliance: Shared-Responsibility-Matrix dokumentiert; geerbte Kontrollen gemappt | Niedrig | Niedrig | Wichtig |
 
     **Azure**
-    - [ ] Entra ID und MFA; Least-Privilege-Rollen; Managed Identities; Tenant-Modell dokumentiert `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] Secrets im Key Vault; TLS 1.2+ erzwungen `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] DB/Netzwerk-Exponierung reduziert (Private Endpoints), Audit-Logs an, Defender-Funde behoben `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] Custom Domain, DNS, Zertifikate konfiguriert und überwacht `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Private Connectivity / WAF wo nötig; DDoS für Produktion erwogen `[Aufwand: Hoch | Kosten: Hoch | Wichtigkeit: Essentiell]`
-    - [ ] WAF-Policy getunt (Detect -> Prevent); False-Positive-Prozess `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Wichtig]`
-    - [ ] IP/Geo-Beschränkungen angewandt wo nötig `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Wichtig]`
-    - [ ] Staging: Deployment Slots oder separate App; gleiches IaC wie Prod `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Wichtig]`
-    - [ ] IaC: Bicep/Terraform im Repo; sicheres State-Backend; Policy as Code `[Aufwand: Hoch | Kosten: Mittel | Wichtigkeit: Wichtig]`
-    - [ ] Monitor, App Insights, Defender genutzt; Alerts konfiguriert `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] Defender-Empfehlungen triagiert mit Owner/SLA `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Audit-Logging aufbewahrt und geprüft `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
-    - [ ] Deployment via CI/CD mit Slots und Key Vault Referenzen `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Doku: Ressourcenlayout, Netzwerk, Identität, Runbooks `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Wichtig]`
+    | Punkt | Aufwand | Kosten | Wichtigkeit |
+    | :--- | :--- | :--- | :--- |
+    | Entra ID und MFA; Least-Privilege-Rollen; Managed Identities; Tenant-Modell dokumentiert | Mittel | Mittel | Essentiell |
+    | Secrets im Key Vault; TLS 1.2+ erzwungen | Mittel | Mittel | Essentiell |
+    | DB/Netzwerk-Exponierung reduziert (Private Endpoints), Audit-Logs an, Defender-Funde behoben | Mittel | Mittel | Essentiell |
+    | Custom Domain, DNS, Zertifikate konfiguriert und überwacht | Niedrig | Niedrig | Wichtig |
+    | Private Connectivity / WAF wo nötig; DDoS für Produktion erwogen | Hoch | Hoch | Essentiell |
+    | WAF-Policy getunt (Detect -> Prevent); False-Positive-Prozess | Mittel | Mittel | Wichtig |
+    | IP/Geo-Beschränkungen angewandt wo nötig | Mittel | Mittel | Wichtig |
+    | Staging: Deployment Slots oder separate App; gleiches IaC wie Prod | Mittel | Mittel | Wichtig |
+    | IaC: Bicep/Terraform im Repo; sicheres State-Backend; Policy as Code | Hoch | Mittel | Wichtig |
+    | Monitor, App Insights, Defender genutzt; Alerts konfiguriert | Mittel | Mittel | Essentiell |
+    | Defender-Empfehlungen triagiert mit Owner/SLA | Mittel | Niedrig | Wichtig |
+    | Audit-Logging aufbewahrt und geprüft | Mittel | Mittel | Essentiell |
+    | Deployment via CI/CD mit Slots und Key Vault Referenzen | Mittel | Niedrig | Wichtig |
+    | Doku: Ressourcenlayout, Netzwerk, Identität, Runbooks | Niedrig | Niedrig | Wichtig |
 
     **GitHub**
-    - [ ] Branch Protection, Reviews, Statuschecks; 2FA für Org `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Essentiell]`
-    - [ ] Teams/Rollen genutzt; Tenant-Modell dokumentiert `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] GitHub Secrets oder OIDC; keine Secrets im Repo `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Essentiell]`
-    - [ ] Schema/Migrationsänderungen reviewt/getestet; keine Kundendumps im Repo `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Essentiell]`
-    - [ ] Domain/Deployment-Zieländerungen via PR kontrolliert `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Environments (Staging/Prod) mit Schutzregeln `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] CodeQL & Dependabot aktiv; Scans in Pipeline `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Essentiell]`
-    - [ ] Secret Scanning & Push Protection aktiv; CI-Scanner integriert `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Essentiell]`
-    - [ ] Branch-Sicherheit: kein direkter Push auf Protected Branches; CODEOWNERS für kritische Pfade `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Essentiell]`
-    - [ ] KI-PRs geflaggt und geprüft `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] Staging/Prod-Flow dokumentiert (Build Once) `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] IaC/Config im Repo; Actions führen Plan/Apply sicher aus `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
-    - [ ] LICENSE, CONTRIBUTING, SECURITY, README aktuell; Releases/Changelog gepflegt `[Aufwand: Niedrig | Kosten: Niedrig | Wichtigkeit: Wichtig]`
+    | Punkt | Aufwand | Kosten | Wichtigkeit |
+    | :--- | :--- | :--- | :--- |
+    | Branch Protection, Reviews, Statuschecks; 2FA für Org | Niedrig | Niedrig | Essentiell |
+    | Teams/Rollen genutzt; Tenant-Modell dokumentiert | Niedrig | Niedrig | Wichtig |
+    | GitHub Secrets oder OIDC; keine Secrets im Repo | Niedrig | Niedrig | Essentiell |
+    | Schema/Migrationsänderungen reviewt/getestet; keine Kundendumps im Repo | Niedrig | Niedrig | Essentiell |
+    | Domain/Deployment-Zieländerungen via PR kontrolliert | Niedrig | Niedrig | Wichtig |
+    | Environments (Staging/Prod) mit Schutzregeln | Niedrig | Niedrig | Wichtig |
+    | CodeQL & Dependabot aktiv; Scans in Pipeline | Niedrig | Niedrig | Essentiell |
+    | Secret Scanning & Push Protection aktiv; CI-Scanner integriert | Niedrig | Niedrig | Essentiell |
+    | Branch-Sicherheit: kein direkter Push auf Protected Branches; CODEOWNERS für kritische Pfade | Niedrig | Niedrig | Essentiell |
+    | KI-PRs geflaggt und geprüft | Niedrig | Niedrig | Wichtig |
+    | Staging/Prod-Flow dokumentiert (Build Once) | Mittel | Niedrig | Wichtig |
+    | IaC/Config im Repo; Actions führen Plan/Apply sicher aus | Mittel | Niedrig | Wichtig |
+    | LICENSE, CONTRIBUTING, SECURITY, README aktuell; Releases/Changelog gepflegt | Niedrig | Niedrig | Wichtig |
