@@ -862,6 +862,7 @@
     | External trust check | DMARC aggregate report health, bounce rate, complaint rate, domain reputation trend | Weekly | Security + Support |
 
     **Recommended acceptance checks before go-live**
+
     - No certificate expiry warning in the next 30 days.
     - SPF valid (single policy, no `+all`, below DNS lookup limits).
     - DKIM signing active for all production sender domains.
@@ -889,6 +890,7 @@
     | Externer Vertrauenscheck | DMARC-Report-Gesundheit, Reputation | Wöchentlich | Security + Support |
 
     **Empfohlene Abnahme-Checks vor Go-Live**
+    
     - Keine Zertifikatsablaufwarnung in den nächsten 30 Tagen.
     - SPF gültig (eine Policy, kein `+all`, unter DNS-Lookup-Limits).
     - DKIM-Signierung für alle Produktions-Sendedomains aktiv.
