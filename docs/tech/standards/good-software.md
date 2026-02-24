@@ -12,8 +12,7 @@
 
     Es reicht nicht aus, dass Code einfach nur „funktioniert“. Gute Software verdient das Vertrauen der Nutzer durch Zuverlässigkeit, Datensicherheit und vorhersehbares Verhalten. Wir erreichen dies durch transparente Entwicklungspraktiken, rigoroses Testen und Ehrlichkeit über die Fähigkeiten unseres Systems.
 
-### Transparency & Trust
-
+## Transparency & Trust
 === "EN"
 
     We believe that trust is built through transparency. We clearly define **how** we secure data, **how** we ensure availability, and **how** we handle failures. We do not hide behind obscurity; we rely on proven standards and defensible architecture.
@@ -22,8 +21,7 @@
 
     Wir glauben, dass Vertrauen durch Transparenz entsteht. Wir definieren klar, **wie** wir Daten sichern, **wie** wir Verfügbarkeit gewährleisten und **wie** wir mit Ausfällen umgehen. Wir verstecken uns nicht hinter Unklarheiten; wir setzen auf bewährte Standards und eine verteidigungsfähige Architektur.
 
-### Limits & Scope
-
+## Limits & Scope
 === "EN"
 
     Every piece of software has limits. We are explicit about what our systems are **not** designed to do. Misusing a system outside its intended scope—such as using a standard web app for high-frequency trading or life-critical control systems—leads to failure and unhappy customers. We define these operational boundaries clearly so that we deliver excellence within them.
@@ -32,8 +30,7 @@
 
     Jede Software hat Grenzen. Wir machen explizit deutlich, wofür unsere Systeme **nicht** ausgelegt sind. Die missbräuchliche Nutzung eines Systems außerhalb seines vorgesehenen Bereichs – wie z. B. die Nutzung einer Standard-Web-App für Hochfrequenzhandel oder lebenswichtige Steuerungssysteme – führt zu Ausfällen und unzufriedenen Kunden. Wir definieren diese operativen Grenzen klar, um innerhalb dieser Grenzen Exzellenz zu liefern.
 
-### How to use this document
-
+## How to use this document
 === "EN"
 
     This guide serves as our engineering standard. It is organised by topic, with a specific focus on **General Engineering Principles**, **Web Applications on Azure**, and **GitHub-based Deployment**.
@@ -66,8 +63,7 @@
 
     Prinzipien, die unabhängig von der Technologie gelten.
 
-#### General
-
+**General**
 === "EN"
 
     - **CIA Triad**
@@ -154,8 +150,7 @@
 
     Sicheres Identitätsmanagement ist das Fundament der Zugriffskontrolle.
 
-#### General
-
+**General**
 === "EN"
 
     - Use a central identity provider for users and service accounts; avoid local accounts for application access.
@@ -170,8 +165,7 @@
     - Wende das Prinzip des **geringsten Privilegs** an: Vergib nur die Rollen und Berechtigungen, die für die jeweilige Identität erforderlich sind.
     - Bevorzuge **Managed Identities** oder kurzlebige Tokens für Anwendungen, damit keine Zugangsdaten in der Konfiguration gespeichert werden müssen.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - **Microsoft Entra ID (Azure AD)**: Use for user and service identities. Enforce MFA via Conditional Access.
@@ -184,8 +178,7 @@
     - Weise nur erforderliche **Azure-Rollen** (z. B. Contributor, Reader) zu und beschränke ihren Geltungsbereich auf Ressourcengruppen oder Ressourcen. Bevorzuge **Managed Identities** für Apps (z. B. App Service, Functions), um das Speichern von Passwörtern zu vermeiden.
     - Nutze **Conditional Access** für standort-, geräte- oder risikobasierten Zugriff, wo dies sinnvoll ist.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - Use **GitHub** as the identity for CI/CD: authenticate Actions with OIDC or fine-grained tokens where possible instead of long-lived secrets.
@@ -206,8 +199,7 @@
 
     Effektive Nutzer- und Rollenmodellierung gewährleistet sichere Isolierung und Wartbarkeit.
 
-#### General
-
+**General**
 === "EN"
 
     - **Users**: Represent human or system actors. Identify them via a single source of truth (e.g. IdP); avoid duplicate or local user stores that can get out of sync.
@@ -226,8 +218,7 @@
     - **Prinzip des geringsten Privilegs**: Jede Rolle sollte nur die minimal notwendigen Berechtigungen haben; beschränken Sie mandantenübergreifende oder globale Admin-Rechte auf wenige, auditierte Identitäten.
     - **Lebenszyklus**: Definieren Sie, wie Nutzer erstellt, aktualisiert, deaktiviert und entfernt werden; wie sich Rollen- und Gruppenmitgliedschaften ändern; und wie das Onboarding/Offboarding von Mandanten funktioniert. Dokumentieren und automatisieren Sie, wo möglich.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - **Entra ID (Azure AD)**: Use **users** and **groups** for human access; use **app roles** or **groups** for application-level authorisation (e.g. “Admin”, “Reader” in your app). For multi-tenant SaaS, use **Entra ID tenants** per customer or **B2B** guest users in a single tenant; document whether you use single-tenant (one directory per customer) or multi-tenant (one directory, tenant ID in app data).
@@ -240,8 +231,7 @@
     - **Azure RBAC**: Nutzen Sie **Custom Roles** nur, wenn integrierte Rollen nicht ausreichen; beschränken Sie Zuweisungen auf Ressourcengruppen, damit die Ressourcen eines Kunden für andere nicht sichtbar sind.
     - **Managed Identities**: Bevorzugen Sie Managed Identities für den Zugriff von Apps auf Azure-Ressourcen; vermeiden Sie Service Accounts mit langlebigen Secrets. Nutzen Sie **User-Assigned Identities**, wenn dieselbe Identität von mehreren Komponenten geteilt wird.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - **Organisations and repos**: Use **teams** to group people and assign repository and org permissions (Read, Write, Admin). Prefer team-based access so adding/removing someone is one change.
@@ -268,8 +258,7 @@
 
     Die Vertrauensgrenze muss klar sein: Das Frontend wird vom Benutzer kontrolliert, das Backend setzt die Richtlinien durch.
 
-#### General
-
+**General**
 === "EN"
 
     - **Frontend responsibilities**
@@ -300,8 +289,7 @@
       - Vertrauen auf Mandanten-/Nutzer-IDs vom Client ohne serverseitige Prüfung.
       - Rückgabe übermäßiger Datenfelder an das Frontend „nur für den Fall“.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Put frontend and backend behind appropriate edge controls (WAF, TLS, DDoS controls).
@@ -314,8 +302,7 @@
     - Backend/Private APIs in private Netzwerke legen, wo möglich (Private Endpoints/VNet).
     - Identitäts- und Rollenprüfungen in Backend-APIs über Entra-integrierte Auth-Muster durchsetzen.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - Separate frontend/backend CI jobs and required checks (e.g. frontend lint/e2e, backend SAST/integration/security tests).
@@ -340,8 +327,7 @@
 
     Gute Software basiert auf starken, klar definierten Schnittstellen. Die **API** (Application Programming Interface) ist der Kern der Anwendung und setzt alle Logik und Sicherheit durch. Die **UI** (Benutzeroberfläche) ist nur einer von vielen möglichen Clients. Dieser Ansatz ermöglicht Automatisierung, Deep Linking und Headless-Nutzung, erfordert aber strikte Backend-Validierung.
 
-#### General
-
+**General**
 === "EN"
 
     - **API First**: Design the API before the UI. The API must be complete, secure, and documented (e.g., OpenAPI/Swagger).
@@ -378,8 +364,7 @@
 
     Nutze standardmäßig das Prinzip der geringsten Rechte und halte Rollengrenzen explizit.
 
-#### General
-
+**General**
 === "EN"
 
     | Role | Minimum rights | Typical No-Gos |
@@ -412,8 +397,7 @@
       - Zugriffsüberprüfung in festem Rhythmus und nach Rollenwechseln.
       - Notfallzugriff (Break-Glass) wird auditiert, ist selten und wird nachbereitet.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Map roles to Entra groups + Azure RBAC scopes (subscription/resource group/resource).
@@ -426,8 +410,7 @@
     - Bevorzuge Managed Identities für Dienste anstelle von Client Secrets.
     - Nutze Privileged Identity Management (PIM) für Just-in-Time-Rechteerweiterung.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - Map roles to GitHub teams and repository permissions (`Read`, `Triage`, `Write`, `Maintain`, `Admin`).
@@ -454,8 +437,7 @@
 
     Datendesign ist Sicherheitsdesign. Wenn Datengrenzen schwach sind, scheitern Mandantenisolierung und Compliance meist später in der Produktion.
 
-#### General
-
+**General**
 === "EN"
 
     - **Define data classes early**: Classify data before implementation and store the classification in architecture/docs.
@@ -553,8 +535,7 @@
       - Example control: static code checks + integration tests detect missing tenant filters in repository/query layer.
       - What to check: PR checklist includes tenant-scope review for data access changes.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Prefer managed data services with built-in security features and enable encryption defaults.
@@ -573,8 +554,7 @@
     - Aktiviere Auditing/Diagnose für Datenbankzugriffe und Sicherheitsereignisse (Log Analytics).
     - Wende **Azure Policy** und Defender-Empfehlungen an, um Fehlkonfigurationen zu erkennen.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - Treat database schemas and migrations as code (`/db`, `/migrations`) with PR review and rollback strategy.
@@ -599,8 +579,7 @@
 
     Der korrekte Umgang mit Zugangsdaten und Schlüsseln schützt sensible Informationen.
 
-#### General
-
+**General**
 === "EN"
 
     - Never store secrets (API keys, connection strings, certificates) in source code or version control.
@@ -613,8 +592,7 @@
     - Nutze einen dedizierten Secrets-Store oder Vault; referenziere Secrets zur Laufzeit oder in der Pipeline, committe sie nie.
     - Verschlüssele sensible Daten im Ruhezustand und bei der Übertragung; erzwinge **TLS 1.2+** für alle externen Endpunkte.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - **Azure Key Vault**: Store API keys, database credentials, and certificates. Grant access via managed identities or Entra ID with minimal permissions. Reference Key Vault from App Service, Functions, or pipelines.
@@ -625,8 +603,7 @@
     - **Azure Key Vault**: Speichere API-Schlüssel, Datenbank-Credentials und Zertifikate. Gewähre Zugriff über Managed Identities oder Entra ID mit minimalen Rechten. Referenziere Key Vault aus App Service, Functions oder Pipelines.
     - Verlasse dich auf die Standardverschlüsselung von Azure (Ruhezustand/Übertragung); konfiguriere Apps so, dass sie nur TLS 1.2+ nutzen.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - Use **GitHub Secrets** (and optionally **Environments** with secrets) for deployment credentials and API keys. Never log or echo secrets in workflow output.
@@ -647,8 +624,7 @@
 
     Netzwerksegmentierung und Verteidigungsschichten begrenzen den Schaden bei Angriffen.
 
-#### General
-
+**General**
 === "EN"
 
     - Segment networks and restrict access to backend services; avoid exposing databases or internal APIs directly to the internet.
@@ -663,8 +639,7 @@
     - Nutze überall **HTTPS**; bevorzuge TLS 1.2+ und automatisches Zertifikatsmanagement.
     - Ziehe DDoS-Schutz für öffentliche Produktionssysteme in Betracht.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Use **Private Endpoints** or **VNet Integration** for Azure Web Apps and backend services (databases, storage) to reduce public internet exposure.
@@ -687,8 +662,7 @@
     - Aktiviere **Azure DDoS Protection Standard** für Produktionsworkloads, wo angemessen.
     - Azure Web Apps unterstützen standardmäßig HTTPS und Managed Certificates; erzwinge die minimale TLS-Version in der Konfiguration.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - GitHub hosts the repository and runners; ensure you do not rely on public runner IPs for allowlisting in Azure. Prefer **GitHub Actions OIDC** with Azure so no long-lived secrets are needed for deployment.
@@ -711,8 +685,7 @@
 
     Vertrauen wird auch durch ein sauberes Domain- und E-Mail-Setup aufgebaut. Kunden, Spamfilter und Sicherheitsteams prüfen diese Grundlagen schnell.
 
-#### General
-
+**General**
 === "EN"
 
     - **Domain ownership and DNS hygiene**
@@ -755,8 +728,7 @@
       - Überwache Zertifikatsablauf, DNS-Änderungen und verdächtige Record-Änderungen.
       - Halte ein Incident-Playbook für Domain-Hijacking, Zertifikatsfehler oder E-Mail-Spoofing bereit.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Use **Azure DNS** (or equivalent) with RBAC and MFA-protected admin access.
@@ -771,8 +743,7 @@
     - Wenn **Azure Front Door/Application Gateway** genutzt wird, stelle sicher, dass die Custom Domain und Zertifikatskette End-to-End korrekt sind.
     - Für in Azure integrierte E-Mail-Provider: Überprüfe DNS-Records (SPF/DKIM/DMARC, MX) und überwache DMARC-Reports.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - If using **GitHub Pages** or GitHub-managed domains, verify custom domain ownership and required DNS records.
@@ -853,8 +824,7 @@
 
     Sicherheit muss in jede Phase des Softwareentwicklungsprozesses integriert werden.
 
-#### General
-
+**General**
 === "EN"
 
     - **Shift Left**: Integrate security early (requirements, design, code, pull requests), not only at release or in production.
@@ -873,8 +843,7 @@
     - **Sichere CI/CD**: Keine Secrets in Repos; nutze Pipeline-Secrets und Umgebungsschutz (z. B. Genehmigungen für Produktion). Führe Sicherheitsscans in der Pipeline aus und blockiere das Deployment bei kritischen Funden.
     - **Branch- & Commit-Hygiene**: Branch Protection, erforderliche Reviews und optional signierte Commits für Main-/Produktions-Branches.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Use **Microsoft Defender for Cloud** and **Defender for DevOps** (where available) for posture and pipeline integration; act on recommendations for Azure resources and repos.
@@ -883,8 +852,7 @@
 
     - Nutze **Microsoft Defender for Cloud** und **Defender for DevOps** (wo verfügbar) für Sicherheitslage und Pipeline-Integration; reagiere auf Empfehlungen für Azure-Ressourcen und Repos.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - **Branch protection rules**: Require pull request reviews, status checks, and optionally signed commits before merging to default/protected branches.
@@ -925,8 +893,7 @@
 
     Umfassendes Testen sichert Zuverlässigkeit und verhindert Regressionen vor dem Release.
 
-#### General
-
+**General**
 === "EN"
 
     - **Unit tests**: Cover critical business logic, edge cases, and error handling; run on every change.
@@ -957,8 +924,7 @@
       - Definiere Mindesterwartungen pro Ebene (Unit/Integration/E2E) und überprüfe Lücken regelmäßig.
     - Definiere eine klare Teststrategie (was läuft wann, wer wartet Tests) und fordere bestandene Tests vor Merge oder Release.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Run tests in **CI** before deployment. Use **staging slots** (e.g. App Service deployment slots) to validate releases before swapping to production; run smoke or e2e tests against the staging slot.
@@ -969,8 +935,7 @@
     - Führe Tests in **CI** vor dem Deployment aus. Nutze **Staging Slots** (z. B. App Service Deployment Slots), um Releases zu validieren, bevor auf Produktion gewechselt wird (Swap); führe Smoke- oder E2E-Tests gegen den Slot aus.
     - Nutze **Azure Monitor** und **Application Insights**, um Test- und Produktionsverhalten zu beobachten und Regressionen zu finden.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - **GitHub Actions**: Run unit, integration, and e2e tests in workflows; attach test results (e.g. JUnit XML) for visibility.
@@ -999,8 +964,7 @@
 
     Eine **Staging**-Umgebung ist eine Kopie (oder so nah wie möglich an) der Produktion, um Releases zu validieren, bevor sie die Nutzer erreichen. Halte den Promotion-Pfad einfach: Build → Deploy auf Staging → Validieren → Promote auf Produktion.
 
-#### General
-
+**General**
 === "EN"
 
     - **Purpose**: Staging is where you run smoke tests, e2e tests, and manual checks against a production-like setup. It reduces the risk of broken or insecure releases reaching production.
@@ -1017,8 +981,7 @@
     - **Konfiguration**: Staging sollte die Produktionsstruktur spiegeln (gleiche Dienste, gleiche Topologie), aber separate Konfigurationen nutzen (URLs, Keys, Feature Flags), damit Staging niemals Produktionsressourcen oder -nutzer beeinflusst.
     - **Keep it simple**: Eine Staging-Umgebung reicht oft aus. Füge mehr hinzu (z. B. Dev, QA, Preprod), nur wenn das Team und der Release-Takt es rechtfertigen; jede extra Umgebung erhöht Kosten und Drift-Risiko.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - **Deployment slots**: For **Azure Web Apps**, use **deployment slots** (e.g. “staging”) for blue-green or staged rollout. Deploy to the staging slot, run smoke/e2e tests, then **swap** to production. Slots share the same app but can have different app settings (e.g. connection strings to a staging database).
@@ -1031,8 +994,7 @@
     - **Separate Staging-App**: Für mehr Isolation oder wenn Slots nicht reichen, nutze einen separaten **App Service** (oder Ressourcengruppe) mit eigener Config und Datenspeichern. Nutze dasselbe IaC und Pipeline, damit Staging und Produktion synchron bleiben.
     - **Umgebungen**: Behandle „Staging“ und „Produktion“ als getrennt in deiner Pipeline (z. B. unterschiedliche Azure-Ziele, unterschiedliche Approval-Gates).
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - **Environments**: Use GitHub **Environments** (e.g. “Staging”, “Production”) so deployments are tracked and protection rules (e.g. required reviewers for Production) apply. Deploy to Staging first; require manual approval or automated checks before deploying to Production.
@@ -1063,8 +1025,7 @@
 
     Die sichere Nutzung von Open Source erfordert Lizenz-Compliance und Schwachstellenmanagement.
 
-#### General
-
+**General**
 === "EN"
 
     - **License compliance**: Know the licenses of all dependencies (including transitive); ensure they are compatible with your use and distribution (e.g. GPL, MIT, Apache).
@@ -1079,8 +1040,7 @@
     - **Schwachstellen-Management**: Tracke und patche bekannte Sicherheitslücken in Abhängigkeiten; habe einen Prozess für die Bewertung und Offenlegung eigener Code-Probleme (z. B. Security Advisories).
     - **Beitragen**: Wenn du Open Source nutzt oder dazu beiträgst, befolge die Richtlinien und Lizenzbedingungen des Projekts; dokumentiere deine eigene Policy für die Freigabe von OSS.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Azure services and SDKs have their own licenses; when you ship software that depends on them, document and comply with those terms. Use **Defender for Cloud** and dependency scanning to stay aware of issues in OSS you use.
@@ -1089,8 +1049,7 @@
 
     - Azure-Dienste und SDKs haben eigene Lizenzen; wenn du Software auslieferst, die davon abhängt, dokumentiere und befolge diese Bedingungen. Nutze **Defender for Cloud** und Dependency Scanning, um über Probleme in genutztem OSS informiert zu bleiben.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - Add a **LICENSE** file to your repository so others know the terms. Use **Dependabot** and **Dependency graph** for visibility and alerts on dependencies.
@@ -1113,8 +1072,7 @@
 
     Transparente Kommunikation baut Vertrauen bei Nutzern und Stakeholdern auf.
 
-#### General
-
+**General**
 === "EN"
 
     - **Changelogs**: Maintain a machine- or human-readable changelog (e.g. CHANGELOG.md) with notable changes per version. Use a consistent format (e.g. Keep a Changelog) and **semantic versioning** where it fits (major.minor.patch).
@@ -1127,8 +1085,7 @@
     - **Release Notes**: Veröffentliche klare Release-Notizen für Nutzer: was sich geändert hat, was zu tun ist (z. B. Upgrade-Schritte, Breaking Changes) und wo es Hilfe gibt.
     - **Klare Kommunikation**: Kommuniziere proaktiv über Sicherheitsupdates, Vorfälle und Wartung: was passiert ist, die Auswirkungen und was unternommen wird.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Document infrastructure and configuration changes (e.g. in runbooks or ADR); when you change Azure resources that affect users, include that in release or operations communication.
@@ -1137,8 +1094,7 @@
 
     - Dokumentiere Infrastruktur- und Konfigurationsänderungen (z. B. in Runbooks oder ADRs); wenn du Azure-Ressourcen änderst, die Nutzer betreffen, kommuniziere dies.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - Use **Releases** to publish versioned artifacts and attach release notes; link or paste changelog content there.
@@ -1161,8 +1117,7 @@
 
     Beobachtbarkeit und definierte Vorfallprozesse sichern Systemverfügbarkeit und schnelle Wiederherstellung.
 
-#### General
-
+**General**
 === "EN"
 
     - **Observability**: Collect metrics, logs, and traces so you can detect failures, performance issues, and security events.
@@ -1175,8 +1130,7 @@
     - **Alerting**: Definiere Alarme für Verfügbarkeit, Fehler, Authentifizierungsfehler und Anomalien; route sie zu den richtigen Personen und Runbooks.
     - **Incident Response**: Dokumentiere, wie auf Vorfälle reagiert wird (wer macht was, Eskalation); bewahre Logs und Beweise für Post-Incident-Review und Compliance auf.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - **Azure Monitor**: Central place for metrics and logs; set up alerts for availability, errors, and security-relevant events.
@@ -1199,8 +1153,7 @@
     - **Audit Trail**: Bewahre Azure Activity Log, Ressourcen-Diagnoselogs und Access Logs richtlinienkonform auf; stelle sicher, dass sie manipulationssicher und durchsuchbar sind.
     - **Policy & Audit Checks**: Nutze Azure Policy + Initiativen, um Standards kontinuierlich zu prüfen (z. B. kein öffentlicher Storage, erforderliche Tags, private Endpoints), und überprüfe Drift regelmäßig.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - Use **Actions** status and **Deployments** to see pipeline and deployment outcomes; configure notifications (e.g. Slack, email) for failures.
@@ -1221,8 +1174,7 @@
 
     Automatisierte, sichere Pipelines gewährleisten konsistente und zuverlässige Softwareauslieferung.
 
-#### General
-
+**General**
 === "EN"
 
     - Never store deployment credentials in the repository; use a secrets store or pipeline secrets.
@@ -1237,8 +1189,7 @@
     - Führe SAST, SCA und (wo anwendbar) Container- oder DAST-Checks in der Pipeline aus; blockiere Deployments bei kritischen Funden.
     - Dokumentiere Deployment-Schritte und Rollback-Prozeduren.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Deploy to **Azure Web Apps**, **Functions**, or other targets via CI/CD; use **deployment slots** for blue-green or staged rollouts. Use **managed identities** and **Key Vault** so the pipeline and app do not rely on stored passwords.
@@ -1247,8 +1198,7 @@
 
     - Deploye auf **Azure Web Apps**, **Functions** oder andere Ziele via CI/CD; nutze **Deployment Slots** für Blue-Green- oder gestaffelte Rollouts. Nutze **Managed Identities** und **Key Vault**, damit Pipeline und App keine gespeicherten Passwörter benötigen.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - **GitHub Secrets**: Store Azure credentials (e.g. service principal) or use **OIDC** with Azure AD so Actions assume a role without long-lived secrets. Use secrets only in workflows, never in repo content.
@@ -1285,8 +1235,7 @@
 
     Definiere Infrastruktur und Serverkonfiguration in versioniertem, reviewbarem Code, damit Änderungen wiederholbar, auditierbar und konsistent sind. Halte es einfach: Nutze ein kleines Set an Tools und Mustern, die das Team warten kann.
 
-#### General
-
+**General**
 === "EN"
 
     - **Infrastructure as Code (IaC)**: Describe servers, networks, databases, and other infrastructure in declarative or scripted definitions (e.g. Terraform, Pulumi, CloudFormation, ARM, Bicep). Store them in version control; run them via CI/CD so every change is reviewed and logged. Avoid one-off manual changes; treat “clicking in the portal” as the exception, not the rule.
@@ -1303,8 +1252,7 @@
     - **Review und Test**: Wende denselben Qualitätsstandard an wie bei Anwendungscode: Peer Review, Linting und automatisierte Checks (Plan/Diff vor Apply). Nutze separate Staging- oder Sandbox-Subscriptions, um IaC-Änderungen zu testen.
     - **Secrets und Parameter**: Hardcode niemals Secrets in IaC. Nutze Parameter, Umgebungsvariablen oder einen Secrets-Store (z. B. Key Vault) und referenziere sie zur Laufzeit.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - **IaC**: Use **Bicep** or **ARM** (Azure native) or **Terraform** (multi-cloud or team preference) to define resource groups, Web Apps, databases, networking, and RBAC. Store definitions in version control; run `bicep build` / `terraform plan` and `apply` from the pipeline with a secure state backend (e.g. Azure Storage with locking).
@@ -1317,8 +1265,7 @@
     - **Konfiguration**: Für VMs nutze **Azure DSC**, **Custom Script Extension** oder Ansible/Chef aus einer Pipeline. Für PaaS (App Service, Functions) halte Config in **App Configuration** oder **Key Vault** und setze App Settings via IaC, damit Änderungen nachvollziehbar sind.
     - **Policies**: Nutze **Azure Policy** (als Code definiert), um Organisationsregeln durchzusetzen (z. B. erlaubte Regionen, erforderliche Tags). Halte Policy-Definitionen im selben Repo wie andere IaC.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - **Store IaC and config in the repo**: Keep Bicep, Terraform, or Ansible playbooks in the repository (e.g. `/infra`, `/terraform`, `/ansible`). Use **branch protection** and required reviews so infrastructure changes go through the same process as code.
@@ -1345,8 +1292,7 @@
 
     Gute Dokumentation reduziert Risiken, beschleunigt das Onboarding und unterstützt Compliance. Dokumentiere, was für Betrieb, Sicherheit und Änderung des Systems wichtig ist.
 
-#### General
-
+**General**
 === "EN"
 
     - **What to document**: **Architecture** (components, data flow, boundaries); **APIs** (contracts, auth, examples); **Operations** (deployment, rollback, scaling, backups); **Runbooks** (incident response, common tasks); **Decisions** (ADRs — why we chose X); **Security** (threat model, secrets handling, compliance). Prioritise what the team and auditors actually use.
@@ -1363,8 +1309,7 @@
     - **Format und Struktur**: Nutze ein konsistentes Format (z. B. Markdown) und eine einfache Struktur (README, Docs-Ordner oder Docs-as-Code). Nutze klare Überschriften, Listen und Code-Snippets; vermeide lange Prosa, wo eine Tabelle oder ein Diagramm klarer ist.
     - **Onboarding**: Neue Teammitglieder (und Auditoren) sollten finden, wie sie Zugriff erhalten, die App lokal ausführen und die High-Level-Architektur verstehen können, ohne zu suchen. Ein einziges „Getting Started“ oder „README“, das korrekt ist, ist wertvoll.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Document **resource layout** (subscriptions, resource groups, naming), **networking** (VNet, subnets, private endpoints), and **identity** (who has what role, which managed identities exist). Keep this in the repo next to IaC or in a dedicated architecture doc. Reference Azure compliance and shared responsibility where relevant for audits.
@@ -1375,8 +1320,7 @@
     - Dokumentiere **Ressourcen-Layout** (Subscriptions, Ressourcengruppen, Naming), **Networking** (VNet, Subnets, Private Endpoints) und **Identität** (wer hat welche Rolle, welche Managed Identities existieren). Halte dies im Repo neben IaC oder in einem dedizierten Architektur-Dokument.
     - **Runbooks**: Dokumentiere, wie man skaliert, neustartet, Failover durchführt oder wichtige Azure-Ressourcen wiederherstellt; wie man Secrets im Key Vault rotiert; und wie man auf Defender for Cloud Alerts reagiert.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - **README**: Every repo should have a README with purpose, how to build/run/test, and where to find more (docs, CONTRIBUTING, SECURITY). Keep it short and accurate.
@@ -1403,8 +1347,7 @@
 
     KI-Tools können die Geschwindigkeit erhöhen, führen aber auch neue Qualitäts-, Sicherheits- und Compliance-Risiken ein. Behandle KI-Output wie externen Code: nützlich, aber standardmäßig nie vertrauenswürdig.
 
-#### General
-
+**General**
 === "EN"
 
     - **Human accountability**: Engineers remain responsible for correctness, security, and compliance of all AI-generated code.
@@ -1425,8 +1368,7 @@
     - **Abhängigkeits-Disziplin**: KI-Vorschläge für neue Pakete müssen Lizenz-/Sicherheitschecks bestehen und begründet sein.
     - **Rückverfolgbarkeit**: Dokumentiere substanzielle KI-assistierte Entscheidungen in der PR-Beschreibung und verlinke auf resultierende Tests/Docs.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Keep AI-generated infrastructure changes under IaC + review (Bicep/Terraform), never direct portal-only changes.
@@ -1439,8 +1381,7 @@
     - Verifiziere Azure-spezifische Sicherheitseinstellungen, die von KI vorgeschlagen wurden (RBAC-Scope, Key-Vault-Zugriffsmodell, Private Endpoints), vor dem Rollout.
     - Für KI-Features, die in Azure gehostet werden, definiere Datenhandhabungsregeln (Retention, Logging-Minimierung, Mandantenisolierung, PII) und validiere gegen Kundenanforderungen.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - Use branch protection and required checks so AI-generated code cannot bypass review.
@@ -1469,8 +1410,7 @@
 
     Gute Software ist wartbar, lesbar und anpassbar. Code-Qualität bedeutet nicht nur „es funktioniert“, sondern „es kann sicher geändert werden“.
 
-#### General
-
+**General**
 === "EN"
 
     - **Clean Code Principles**:
@@ -1507,8 +1447,7 @@
       - Nutze **Linter** (z. B. ESLint, Pylint) und **Formatter** (z. B. Prettier, Black), um Stil automatisch durchzusetzen.
       - Konfiguration für diese Tools muss Teil des Repositories sein.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - **SDK usage**: Prefer official Azure SDKs over raw HTTP calls for better resilience, retry logic, and authentication support.
@@ -1519,8 +1458,7 @@
     - **SDK-Nutzung**: Bevorzuge offizielle Azure SDKs gegenüber rohen HTTP-Calls für bessere Resilienz, Retry-Logik und Auth-Support.
     - **Managed Services**: Bevorzuge Plattformfähigkeiten (z. B. Event Grid für entkoppeltes Messaging) gegenüber dem Bau von eigenem „Glue“-Code.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - **Enforce consistency**: Run linters and formatters in **GitHub Actions**; fail the build on violations.
@@ -1547,8 +1485,7 @@
 
     Software muss für jeden nutzbar sein, auch für Menschen mit Einschränkungen. Dies ist keine Option, sondern eine rechtliche Anforderung (z. B. BFSG 2025 in Deutschland) und ein Qualitätsmerkmal.
 
-#### General
-
+**General**
 === "EN"
 
     - **Standards**: Target **WCAG 2.1 Level AA** (or higher) compliance.
@@ -1573,8 +1510,7 @@
       - Plane von Anfang an für mehrere Sprachen und Regionen (RTL-Support, Datums-/Zahlenformate).
       - Lagere alle sichtbaren Texte in Ressourcendateien aus.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - **AI Services**: Use **Azure AI Services** (e.g., Computer Vision for image alt text, Speech-to-Text) to enhance accessibility features in your app.
@@ -1585,8 +1521,7 @@
     - **AI Services**: Nutze **Azure AI Services** (z. B. Computer Vision für Bildbeschreibungen, Speech-to-Text), um Barrierefreiheitsfunktionen in deiner App zu verbessern.
     - **Content Delivery**: Nutze Azure CDN/Front Door, um lokalisierte Inhalte mit niedriger Latenz auszuliefern.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - **Automated Testing**: Integrate accessibility testing tools (e.g., **axe-core**, **pa11y**) into your CI/CD pipeline to catch basic errors (missing alt text, bad contrast).
@@ -1611,7 +1546,8 @@
 
     Performance ist ein Feature. Effiziente Software respektiert die Zeit und Ressourcen der Nutzer (Batterie, Bandbreite) und reduziert Betriebskosten sowie den CO₂-Fußabdruck.
 
-#### General
+**General**
+=== "EN"
 
     - **Frontend Performance**:
       - Monitor **Core Web Vitals** (LCP, CLS, INP).
@@ -1623,22 +1559,7 @@
       - Optimize for energy efficiency: reduce unnecessary data transfer and processing.
       - Scale down resources when not in use (auto-scaling).
 
-    #### Azure
-
-    - **Caching**: Use **Azure Cache for Redis** for high-speed data access; use **Azure Front Door** or **CDN** for static content caching.
-    - **Auto-scaling**: Configure auto-scaling rules for App Services and AKS to match demand and reduce waste.
-    - **Monitoring**: Use **Application Insights** to identify bottlenecks and slow dependencies.
-
-    #### GitHub
-
-    - **Performance Budgets**: Use tools (e.g., **Lighthouse CI**) in GitHub Actions to fail builds that exceed bundle size or performance thresholds.
-    - **Load Testing**: Schedule regular load tests (e.g., via k6) to verify system behavior under stress.
-
 === "DE"
-
-    Performance ist ein Feature. Effiziente Software respektiert die Zeit und Ressourcen der Nutzer (Batterie, Bandbreite) und reduziert Betriebskosten sowie den CO₂-Fußabdruck.
-
-    #### Allgemein
 
     - **Frontend-Performance**:
       - Überwache **Core Web Vitals** (LCP, CLS, INP).
@@ -1650,13 +1571,26 @@
       - Optimiere auf Energieeffizienz: Reduziere unnötige Datenübertragung und -verarbeitung.
       - Skaliere Ressourcen herunter, wenn sie nicht genutzt werden (Auto-Scaling).
 
-    #### Azure
+**Azure**
+=== "EN"
+
+    - **Caching**: Use **Azure Cache for Redis** for high-speed data access; use **Azure Front Door** or **CDN** for static content caching.
+    - **Auto-scaling**: Configure auto-scaling rules for App Services and AKS to match demand and reduce waste.
+    - **Monitoring**: Use **Application Insights** to identify bottlenecks and slow dependencies.
+
+=== "DE"
 
     - **Caching**: Nutze **Azure Cache for Redis** für schnellen Datenzugriff; nutze **Azure Front Door** oder **CDN** für statisches Content-Caching.
     - **Auto-Scaling**: Konfiguriere Auto-Scaling-Regeln für App Services und AKS, um Ressourcenbedarf anzupassen und Verschwendung zu vermeiden.
     - **Monitoring**: Nutze **Application Insights**, um Engpässe und langsame Abhängigkeiten zu identifizieren.
 
-    #### GitHub
+**GitHub**
+=== "EN"
+
+    - **Performance Budgets**: Use tools (e.g., **Lighthouse CI**) in GitHub Actions to fail builds that exceed bundle size or performance thresholds.
+    - **Load Testing**: Schedule regular load tests (e.g., via k6) to verify system behavior under stress.
+
+=== "DE"
 
     - **Performance Budgets**: Nutze Tools (z. B. **Lighthouse CI**) in GitHub Actions, um Builds bei Überschreitung von Größen- oder Performance-Grenzen fehlschlagen zu lassen.
     - **Lasttests**: Plane regelmäßige Lasttests (z. B. via k6), um das Systemverhalten unter Stress zu verifizieren.
@@ -1675,8 +1609,7 @@
 
     Kosteneffizienz ist ein zentrales Qualitätsmerkmal. Gute Software liefert Wert ohne Verschwendung. In der Cloud hat jede Architekturentscheidung ein Preisschild. FinOps bedeutet nicht nur Geld sparen, sondern zu **verstehen**, wohin das Geld fließt (Unit Economics) und bewusste Abwägungen zu treffen.
 
-#### General
-
+**General**
 === "EN"
 
     - **Unit Economics**:
@@ -1707,8 +1640,7 @@
       - Optimiere auf **Kohlenstoffintensität**: Führe schwere Batch-Jobs aus, wenn das Stromnetz grün ist (wo möglich).
       - Reduziere Datentransfer: Weniger Daten über das Netzwerk zu senden, spart Energie und Kosten.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - **Cost Analysis & Budgets**:
@@ -1735,8 +1667,7 @@
       - Nutze **Azure Policy**, um teure SKUs in Nicht-Produktionsumgebungen zu verbieten.
       - Implementiere automatisierte Skripte (z. B. Azure Automation Runbooks), um Dev/Test-VMs nachts herunterzufahren.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - **CI/CD Costs**:
@@ -1763,133 +1694,134 @@
 
     Die Einhaltung von Standards sichert Rechtskonformität und baut Kundenvertrauen auf.
 
-#### General
+**General**
+=== "EN"
 
-    Relevant frameworks for legal compliance and customer trust requirements (especially for the German/EU market):
+        Relevant frameworks for legal compliance and customer trust requirements (especially for the German/EU market):
 
-    | Standard | Scope | When it matters |
-    | :--- | :--- | :--- |
-    | **ISO/IEC 27001** | Information Security Management System (ISMS): processes, risk analysis, organisational security. | Handling sensitive or regulated data; customer and partner expectations. |
-    | **GDPR (DSGVO)** | EU data protection: minimisation, transparency, consent, rights of data subjects. | Any processing of personal data in the EU; mandatory, not optional. |
-    | **TISAX** | Assessment and exchange of security information (e.g. automotive). | Customers in automotive or similar regulated supply chains. |
-    | **BSI IT-Grundschutz** | German BSI standard for baseline information security (modular). | German public sector or customers requiring BSI alignment. |
+        | Standard | Scope | When it matters |
+        | :--- | :--- | :--- |
+        | **ISO/IEC 27001** | Information Security Management System (ISMS): processes, risk analysis, organisational security. | Handling sensitive or regulated data; customer and partner expectations. |
+        | **GDPR (DSGVO)** | EU data protection: minimisation, transparency, consent, rights of data subjects. | Any processing of personal data in the EU; mandatory, not optional. |
+        | **TISAX** | Assessment and exchange of security information (e.g. automotive). | Customers in automotive or similar regulated supply chains. |
+        | **BSI IT-Grundschutz** | German BSI standard for baseline information security (modular). | German public sector or customers requiring BSI alignment. |
 
-    Compliance must be documented and auditable. GDPR is a legal obligation you fulfil and document. For other frameworks, align with what your customers and contracts actually require.
+        Compliance must be documented and auditable. GDPR is a legal obligation you fulfil and document. For other frameworks, align with what your customers and contracts actually require.
 
-    **Important: platform assurance is not your automatic certification**
-    - If you use certified platforms, you can inherit parts of their control environment (sometimes called indirect/inherited assurance).
-    - This does **not** mean your application is automatically certified or compliant.
-    - You still need your own controls, evidence, and customer-facing transparency for what you operate (configuration, identities, code, data processing, incident handling).
+        **Important: platform assurance is not your automatic certification**
+        - If you use certified platforms, you can inherit parts of their control environment (sometimes called indirect/inherited assurance).
+        - This does **not** mean your application is automatically certified or compliant.
+        - You still need your own controls, evidence, and customer-facing transparency for what you operate (configuration, identities, code, data processing, incident handling).
 
-    **What is typically inherited vs. what remains your responsibility**
+        **What is typically inherited vs. what remains your responsibility**
 
-    | Area | Mostly inherited from platform/provider | Your responsibility |
-    | :--- | :--- | :--- |
-    | Physical datacenter security | Building access control, hardware lifecycle, environmental controls | Select region/provider, verify scope, keep contracts/evidence |
-    | Core cloud infrastructure | Hypervisor/platform hardening, base network backbone controls | Secure service configuration, tenant isolation, key/secret handling |
-    | Managed service baseline controls | Service-level controls as audited by provider | App-layer controls, least privilege, logging/alerting setup |
-    | Compliance reports and attestations | Provider certificates/reports (in scope) | Map provider controls to your system and close remaining gaps |
-    | Privacy/compliance tooling | Built-in platform features | Lawful basis, retention, deletion, DSAR process, customer commitments |
+        | Area | Mostly inherited from platform/provider | Your responsibility |
+        | :--- | :--- | :--- |
+        | Physical datacenter security | Building access control, hardware lifecycle, environmental controls | Select region/provider, verify scope, keep contracts/evidence |
+        | Core cloud infrastructure | Hypervisor/platform hardening, base network backbone controls | Secure service configuration, tenant isolation, key/secret handling |
+        | Managed service baseline controls | Service-level controls as audited by provider | App-layer controls, least privilege, logging/alerting setup |
+        | Compliance reports and attestations | Provider certificates/reports (in scope) | Map provider controls to your system and close remaining gaps |
+        | Privacy/compliance tooling | Built-in platform features | Lawful basis, retention, deletion, DSAR process, customer commitments |
 
-    **How to present this to customers (trust + transparency)**
-    - Share a short responsibility matrix: `Provider control` / `Your control` / `Evidence`.
-    - Share only scope-valid claims (e.g. “hosted on Azure, which maintains ISO 27001 for in-scope services”).
-    - Avoid ambiguous statements like “our app is ISO-certified” unless your own org/app scope was audited accordingly.
-    - Keep customer-ready evidence package updated (architecture, runbooks, scan reports, incident process, platform attestations).
-
-    #### Azure
-
-    - Azure maintains broad compliance programs and attestations (for in-scope services), commonly including: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS**, and **CSA STAR**.
-    - What you can legitimately claim in customer conversations:
-      - Your solution runs on Azure services that are covered by specific provider attestations.
-      - You apply Azure security features (e.g. Entra ID, Key Vault, private networking, Defender controls) as part of your own control set.
-      - You can provide provider evidence references plus your own implementation evidence.
-    - What you still must prove yourself:
-      - Correct service configuration, RBAC model, tenant isolation, secure CI/CD, data lifecycle, and incident response.
-      - Contractual and legal controls around customer data processing and retention.
-    - Practical trust artifacts from Azure side:
-      - Service scope check (is each used Azure service covered by required standard).
-      - Shared-responsibility mapping per control.
-      - References to official Microsoft compliance documentation/report availability.
-
-    #### GitHub
-
-    - GitHub also provides audited compliance programs/attestations for its platform scope, commonly including: **SOC 1 Type 2**, **SOC 2 Type 2**, **SOC 3**, **ISO/IEC 27001**, **ISO/IEC 27701**, **ISO/IEC 27018**, and **CSA STAR** (scope depends on product/features/plan).
-    - What you can claim:
-      - Your source control and CI/CD process runs on GitHub services with defined compliance attestations.
-      - You enforce repository-level security controls (branch protection, reviews, Dependabot, code scanning, secret scanning).
-    - What remains yours:
-      - Secure workflow design, permissions model, secrets governance, release approvals, and response process for findings.
-      - Correct use of GitHub features and evidence retention for your own audits/customer reviews.
-    - Practical trust artifacts from GitHub side:
-      - Repository/org security settings export or documented baseline.
-      - Evidence of enabled controls (e.g. CodeQL/Dependabot/secret scanning status, branch rules).
-      - References to GitHub compliance reports available for your plan.
+        **How to present this to customers (trust + transparency)**
+        - Share a short responsibility matrix: `Provider control` / `Your control` / `Evidence`.
+        - Share only scope-valid claims (e.g. “hosted on Azure, which maintains ISO 27001 for in-scope services”).
+        - Avoid ambiguous statements like “our app is ISO-certified” unless your own org/app scope was audited accordingly.
+        - Keep customer-ready evidence package updated (architecture, runbooks, scan reports, incident process, platform attestations).
 
 === "DE"
 
-    #### Allgemein
+        Relevante Frameworks für rechtliche Compliance und Kundenvertrauensanforderungen (besonders für den DE/EU-Markt):
 
-    Relevante Frameworks für rechtliche Compliance und Kundenvertrauensanforderungen (besonders für den DE/EU-Markt):
+        | Standard | Scope | Wann relevant |
+        | :--- | :--- | :--- |
+        | **ISO/IEC 27001** | ISMS (Information Security Management System): Prozesse, Risikoanalyse, organisatorische Sicherheit. | Umgang mit sensiblen oder regulierten Daten; Kunden- und Partnererwartungen. |
+        | **DSGVO (GDPR)** | EU-Datenschutz: Minimierung, Transparenz, Einwilligung, Betroffenenrechte. | Jede Verarbeitung personenbezogener Daten in der EU; gesetzlich verpflichtend, nicht optional. |
+        | **TISAX** | Austausch von Prüfergebnissen zur Informationssicherheit (z. B. Automotive). | Kunden in der Automobilindustrie oder ähnlichen regulierten Lieferketten. |
+        | **BSI IT-Grundschutz** | Standard des BSI für Basissicherheit (modular). | Öffentlicher Sektor in Deutschland oder Kunden, die BSI-Ausrichtung fordern. |
 
-    | Standard | Scope | Wann relevant |
-    | :--- | :--- | :--- |
-    | **ISO/IEC 27001** | ISMS (Information Security Management System): Prozesse, Risikoanalyse, organisatorische Sicherheit. | Umgang mit sensiblen oder regulierten Daten; Kunden- und Partnererwartungen. |
-    | **DSGVO (GDPR)** | EU-Datenschutz: Minimierung, Transparenz, Einwilligung, Betroffenenrechte. | Jede Verarbeitung personenbezogener Daten in der EU; gesetzlich verpflichtend, nicht optional. |
-    | **TISAX** | Austausch von Prüfergebnissen zur Informationssicherheit (z. B. Automotive). | Kunden in der Automobilindustrie oder ähnlichen regulierten Lieferketten. |
-    | **BSI IT-Grundschutz** | Standard des BSI für Basissicherheit (modular). | Öffentlicher Sektor in Deutschland oder Kunden, die BSI-Ausrichtung fordern. |
+        Compliance muss dokumentiert und auditierbar sein. DSGVO ist eine gesetzliche Pflicht, die du erfüllst und dokumentierst. Bei anderen Frameworks: Richte dich danach, was deine Kunden und Verträge tatsächlich verlangen.
 
-    Compliance muss dokumentiert und auditierbar sein. DSGVO ist eine gesetzliche Pflicht, die du erfüllst und dokumentierst. Bei anderen Frameworks: Richte dich danach, was deine Kunden und Verträge tatsächlich verlangen.
+        **Wichtig: Plattformsicherheit ist nicht deine automatische Zertifizierung**
+        - Wenn du zertifizierte Plattformen nutzt, kannst du Teile ihres Kontrollumfelds erben (sog. indirekte/geerbte Assurance).
+        - Das bedeutet **nicht**, dass deine Anwendung automatisch zertifiziert oder compliant ist.
+        - Du benötigst weiterhin eigene Kontrollen, Nachweise und Transparenz für das, was du betreibst (Konfiguration, Identitäten, Code, Datenverarbeitung, Incident Handling).
 
-    **Wichtig: Plattformsicherheit ist nicht deine automatische Zertifizierung**
-    - Wenn du zertifizierte Plattformen nutzt, kannst du Teile ihres Kontrollumfelds erben (sog. indirekte/geerbte Assurance).
-    - Das bedeutet **nicht**, dass deine Anwendung automatisch zertifiziert oder compliant ist.
-    - Du benötigst weiterhin eigene Kontrollen, Nachweise und Transparenz für das, was du betreibst (Konfiguration, Identitäten, Code, Datenverarbeitung, Incident Handling).
+        **Was typischerweise geerbt wird vs. was deine Verantwortung bleibt**
 
-    **Was typischerweise geerbt wird vs. was deine Verantwortung bleibt**
+        | Bereich | Meist geerbt von Plattform/Provider | Deine Verantwortung |
+        | :--- | :--- | :--- |
+        | Physische Rechenzentrumssicherheit | Gebäudezutritt, Hardware-Lifecycle, Umweltkontrollen | Regionswahl, Scope-Verifikation, Verträge/Nachweise vorhalten |
+        | Cloud-Basisinfrastruktur | Hypervisor-/Plattformhärtung, Basis-Netzwerkkontrollen | Sichere Servicekonfiguration, Mandantenisolierung, Key/Secret-Handling |
+        | Managed Service Basiskontrollen | Service-Level-Kontrollen (vom Provider auditiert) | App-Layer-Kontrollen, Least Privilege, Logging/Alerting-Setup |
+        | Compliance-Berichte & Attestate | Provider-Zertifikate (im Scope) | Mapping der Provider-Kontrollen auf dein System & Schließen von Lücken |
+        | Datenschutz-/Compliance-Tools | Eingebaute Plattformfeatures | Rechtsgrundlage, Löschung, Betroffenenanfragen, Kundenverpflichtungen |
 
-    | Bereich | Meist geerbt von Plattform/Provider | Deine Verantwortung |
-    | :--- | :--- | :--- |
-    | Physische Rechenzentrumssicherheit | Gebäudezutritt, Hardware-Lifecycle, Umweltkontrollen | Regionswahl, Scope-Verifikation, Verträge/Nachweise vorhalten |
-    | Cloud-Basisinfrastruktur | Hypervisor-/Plattformhärtung, Basis-Netzwerkkontrollen | Sichere Servicekonfiguration, Mandantenisolierung, Key/Secret-Handling |
-    | Managed Service Basiskontrollen | Service-Level-Kontrollen (vom Provider auditiert) | App-Layer-Kontrollen, Least Privilege, Logging/Alerting-Setup |
-    | Compliance-Berichte & Attestate | Provider-Zertifikate (im Scope) | Mapping der Provider-Kontrollen auf dein System & Schließen von Lücken |
-    | Datenschutz-/Compliance-Tools | Eingebaute Plattformfeatures | Rechtsgrundlage, Löschung, Betroffenenanfragen, Kundenverpflichtungen |
+        **Wie man dies Kunden präsentiert (Vertrauen + Transparenz)**
+        - Teile eine kurze Verantwortungsmatrix: `Provider-Kontrolle` / `Deine Kontrolle` / `Nachweis`.
+        - Mache nur scope-valide Aussagen (z. B. „gehostet auf Azure, das ISO 27001 für die genutzten Dienste unterhält“).
+        - Vermeide mehrdeutige Aussagen wie „unsere App ist ISO-zertifiziert“, es sei denn, dein eigener Org/App-Scope wurde auditiert.
+        - Halte ein kundenfertiges Nachweispaket aktuell (Architektur, Runbooks, Scan-Berichte, Incident-Prozess, Plattform-Attestate).
 
-    **Wie man dies Kunden präsentiert (Vertrauen + Transparenz)**
-    - Teile eine kurze Verantwortungsmatrix: `Provider-Kontrolle` / `Deine Kontrolle` / `Nachweis`.
-    - Mache nur scope-valide Aussagen (z. B. „gehostet auf Azure, das ISO 27001 für die genutzten Dienste unterhält“).
-    - Vermeide mehrdeutige Aussagen wie „unsere App ist ISO-zertifiziert“, es sei denn, dein eigener Org/App-Scope wurde auditiert.
-    - Halte ein kundenfertiges Nachweispaket aktuell (Architektur, Runbooks, Scan-Berichte, Incident-Prozess, Plattform-Attestate).
+**Azure**
+=== "EN"
 
-    #### Azure
+        - Azure maintains broad compliance programs and attestations (for in-scope services), commonly including: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS**, and **CSA STAR**.
+        - What you can legitimately claim in customer conversations:
+            - Your solution runs on Azure services that are covered by specific provider attestations.
+            - You apply Azure security features (e.g. Entra ID, Key Vault, private networking, Defender controls) as part of your own control set.
+            - You can provide provider evidence references plus your own implementation evidence.
+        - What you still must prove yourself:
+            - Correct service configuration, RBAC model, tenant isolation, secure CI/CD, data lifecycle, and incident response.
+            - Contractual and legal controls around customer data processing and retention.
+        - Practical trust artifacts from Azure side:
+            - Service scope check (is each used Azure service covered by required standard).
+            - Shared-responsibility mapping per control.
+            - References to official Microsoft compliance documentation/report availability.
 
-    - Azure unterhält umfassende Compliance-Programme (für Dienste im Scope), häufig inkl.: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS** und **CSA STAR**.
-    - Was du legitim behaupten kannst:
-      - Deine Lösung läuft auf Azure-Diensten, die durch spezifische Provider-Attestate abgedeckt sind.
-      - Du wendest Azure-Sicherheitsfeatures (z. B. Entra ID, Key Vault, Private Networking) als Teil deines Kontrollsets an.
-      - Du kannst Provider-Nachweise plus deine eigenen Implementierungsnachweise bereitstellen.
-    - Was du selbst beweisen musst:
-      - Korrekte Servicekonfiguration, RBAC-Modell, Mandantenisolierung, sichere CI/CD, Datenlebenszyklus und Incident Response.
-      - Vertragliche und rechtliche Kontrollen rund um Kundendatenverarbeitung.
-    - Praktische Vertrauens-Artefakte (Azure-Seite):
-      - Service-Scope-Check (ist jeder genutzte Dienst abgedeckt?).
-      - Shared-Responsibility-Mapping.
-      - Verweise auf offizielle Microsoft-Compliance-Doku.
+=== "DE"
 
-    #### GitHub
+        - Azure unterhält umfassende Compliance-Programme (für Dienste im Scope), häufig inkl.: **ISO/IEC 27001**, **ISO/IEC 27017**, **ISO/IEC 27018**, **SOC 1/2/3**, **PCI DSS** und **CSA STAR**.
+        - Was du legitim behaupten kannst:
+            - Deine Lösung läuft auf Azure-Diensten, die durch spezifische Provider-Attestate abgedeckt sind.
+            - Du wendest Azure-Sicherheitsfeatures (z. B. Entra ID, Key Vault, Private Networking) als Teil deines Kontrollsets an.
+            - Du kannst Provider-Nachweise plus deine eigenen Implementierungsnachweise bereitstellen.
+        - Was du selbst beweisen musst:
+            - Korrekte Servicekonfiguration, RBAC-Modell, Mandantenisolierung, sichere CI/CD, Datenlebenszyklus und Incident Response.
+            - Vertragliche und rechtliche Kontrollen rund um Kundendatenverarbeitung.
+        - Praktische Vertrauens-Artefakte (Azure-Seite):
+            - Service-Scope-Check (ist jeder genutzte Dienst abgedeckt?).
+            - Shared-Responsibility-Mapping.
+            - Verweise auf offizielle Microsoft-Compliance-Doku.
 
-    - GitHub bietet ebenfalls auditierte Compliance-Programme (je nach Plan/Scope), z. B.: **SOC 1/2/3**, **ISO 27001**, **ISO 27701** und **CSA STAR**.
-    - Was du behaupten kannst:
-      - Dein Versionskontroll- und CI/CD-Prozess läuft auf GitHub-Diensten mit definierten Attestaten.
-      - Du erzwingst Repository-Sicherheitskontrollen (Branch Protection, Reviews, Dependabot, Scanning).
-    - Was deins bleibt:
-      - Sicheres Workflow-Design, Berechtigungsmodell, Secrets-Governance, Release-Freigaben und Reaktion auf Findings.
-      - Korrekte Nutzung von GitHub-Features und Nachweisführung für eigene Audits.
-    - Praktische Vertrauens-Artefakte (GitHub-Seite):
-      - Export der Repo/Org-Sicherheitseinstellungen.
-      - Nachweis aktivierter Kontrollen (CodeQL/Dependabot-Status).
-      - Verweise auf GitHub-Compliance-Berichte.
+**GitHub**
+=== "EN"
+
+        - GitHub also provides audited compliance programs/attestations for its platform scope, commonly including: **SOC 1 Type 2**, **SOC 2 Type 2**, **SOC 3**, **ISO/IEC 27001**, **ISO/IEC 27701**, **ISO/IEC 27018**, and **CSA STAR** (scope depends on product/features/plan).
+        - What you can claim:
+            - Your source control and CI/CD process runs on GitHub services with defined compliance attestations.
+            - You enforce repository-level security controls (branch protection, reviews, Dependabot, code scanning, secret scanning).
+        - What remains yours:
+            - Secure workflow design, permissions model, secrets governance, release approvals, and response process for findings.
+            - Correct use of GitHub features and evidence retention for your own audits/customer reviews.
+        - Practical trust artifacts from GitHub side:
+            - Repository/org security settings export or documented baseline.
+            - Evidence of enabled controls (e.g. CodeQL/Dependabot/secret scanning status, branch rules).
+            - References to GitHub compliance reports available for your plan.
+
+=== "DE"
+
+        - GitHub bietet ebenfalls auditierte Compliance-Programme (je nach Plan/Scope), z. B.: **SOC 1/2/3**, **ISO 27001**, **ISO 27701** und **CSA STAR**.
+        - Was du behaupten kannst:
+            - Dein Versionskontroll- und CI/CD-Prozess läuft auf GitHub-Diensten mit definierten Attestaten.
+            - Du erzwingst Repository-Sicherheitskontrollen (Branch Protection, Reviews, Dependabot, Scanning).
+        - Was deins bleibt:
+            - Sicheres Workflow-Design, Berechtigungsmodell, Secrets-Governance, Release-Freigaben und Reaktion auf Findings.
+            - Korrekte Nutzung von GitHub-Features und Nachweisführung für eigene Audits.
+        - Praktische Vertrauens-Artefakte (GitHub-Seite):
+            - Export der Repo/Org-Sicherheitseinstellungen.
+            - Nachweis aktivierter Kontrollen (CodeQL/Dependabot-Status).
+            - Verweise auf GitHub-Compliance-Berichte.
 
 ## German Market
 
@@ -1937,8 +1869,7 @@
 
     Ein strukturierter Ansatz für Transparenz baut dauerhafte Kundenbeziehungen auf.
 
-#### General
-
+**General**
 === "EN"
 
     1. **Ask customers what matters most**: Capture concrete trust requirements early (e.g. data residency, incident notification timelines, pentest frequency, evidence format, SLA targets).
@@ -1971,8 +1902,7 @@
 
     Nutze dies als Vorlage; passe die Schwellenwerte an dein Produkt und Kundenerwartungen an.
 
-#### General
-
+**General**
 === "EN"
 
     - **Identity & access**
@@ -2023,8 +1953,7 @@
       - Security Contact/Meldeweg öffentlich (z. B. SECURITY.md).
       - Kernarchitektur, Runbooks und Entscheidungen dokumentiert/aktuell.
 
-#### Azure
-
+**Azure**
 === "EN"
 
     - Entra ID + Conditional Access + MFA for administrative access.
@@ -2041,8 +1970,7 @@
     - Staging-Slot oder separate Umgebung vor Produktion erforderlich.
     - Custom Domain + Zertifikats-Setup dokumentiert und überwacht.
 
-#### GitHub
-
+**GitHub**
 === "EN"
 
     - Branch protection, required reviews, and required status checks are enabled.
@@ -2075,7 +2003,7 @@
     | **Identity & Access** | MFA + conditional access for admins. | Central IdP, no shared admin accounts, periodic access review. | `Azure Entra Conditional Access MFA`, `least privilege access review` |
     | **User Management, Roles, Groups & Tenants** | Roles `User/Support/Developer/Admin` defined. | Enforce tenant boundary in authz + data access layer; test cross-tenant denial. | `multi-tenant authorization patterns`, `tenant isolation best practices` |
     | **Frontend vs. Backend Security Responsibilities** | Frontend validates UX, backend enforces policy. | Never trust client-provided role/tenant IDs; server-side authz mandatory. | `frontend backend security responsibilities`, `server-side authorization` |
-| **Interfaces: API, UI & Headless** | API-First design with OpenAPI docs. | UI is just a client; support deep linking but validate all params on backend. | `api first design`, `headless automation security`, `deep linking security` |
+    | **Interfaces: API, UI & Headless** | API-First design with OpenAPI docs. | UI is just a client; support deep linking but validate all params on backend. | `api first design`, `headless automation security`, `deep linking security` |
     | **Rollenmatrix** | Role table with minimum rights + no-gos. | Add owner for each role, approval path for privilege changes, JIT admin where possible. | `RBAC role matrix template`, `JIT privileged access` |
     | **Data, Databases & Secure Design** | Fields tagged as `brisant` + masking rules. | Apply classification in schema/code/logging/export; enforce tenant-scoped queries. | `data classification model`, `row level security tenant isolation` |
     | **Data & Secrets** | Secrets only in Key Vault/GitHub Secrets. | Runtime secret retrieval, no plaintext secrets in repo/logs, rotate periodically. | `secret management best practices`, `GitHub secret scanning push protection` |
@@ -2112,7 +2040,7 @@
     | **Identity & Access** | MFA + Conditional Access für Admins. | Zentraler IdP, keine geteilten Admin-Accounts, periodisches Access-Review. | `Azure Entra Conditional Access MFA`, `least privilege access review` |
     | **User Management, Roles...** | Rollen `User/Support/Developer/Admin` definiert. | Setze Mandantengrenze in Authz + Datenzugriffsschicht durch; teste Cross-Tenant-Verweigerung. | `multi-tenant authorization patterns`, `tenant isolation best practices` |
     | **Frontend vs. Backend...** | Frontend validiert UX, Backend erzwingt Policy. | Vertraue nie Client-seitigen Rollen/Tenant-IDs; serverseitige Authz obligatorisch. | `frontend backend security responsibilities`, `server-side authorization` |
-| **Interfaces: API, UI & Headless** | API-First-Design mit OpenAPI-Doku. | UI ist nur ein Client; unterstütze Deep Linking, aber validiere alle Parameter im Backend. | `api first design`, `headless automation security`, `deep linking security` |
+    | **Interfaces: API, UI & Headless** | API-First-Design mit OpenAPI-Doku. | UI ist nur ein Client; unterstütze Deep Linking, aber validiere alle Parameter im Backend. | `api first design`, `headless automation security`, `deep linking security` |
     | **Rollenmatrix** | Rollentabelle mit Minimalrechten + No-Gos. | Füge Owner für jede Rolle hinzu, Genehmigungspfad für Rechteänderungen, JIT-Admin wo möglich. | `RBAC role matrix template`, `JIT privileged access` |
     | **Data, Databases...** | Felder getaggt als `brisant` + Maskierungsregeln. | Wende Klassifizierung in Schema/Code/Logging/Export an; erzwinge mandantenbezogene Abfragen. | `data classification model`, `row level security tenant isolation` |
     | **Data & Secrets** | Secrets nur in Key Vault/GitHub Secrets. | Runtime-Secret-Abruf, keine Klartext-Secrets in Repo/Logs, periodische Rotation. | `secret management best practices`, `GitHub secret scanning push protection` |
@@ -2152,7 +2080,7 @@
     - [ ] CIA, Least Privilege, Defense in Depth, and **Keep it simple** reflected in design and operations `[Effort: Medium | Cost: Low | Importance: Essential]`
     - [ ] Identity: central IdP, MFA, least privilege, no secrets in config `[Effort: Medium | Cost: Medium | Importance: Essential]`
     - [ ] User management: roles and groups defined; tenant (customer) isolation designed and enforced where multi-tenant `[Effort: High | Cost: Medium | Importance: Essential]`
-- [ ] Interfaces: API-First approach; API documented; Headless usage supported; Deep linking enabled but validated `[Effort: Medium | Cost: Low | Importance: Important]`
+    - [ ] Interfaces: API-First approach; API documented; Headless usage supported; Deep linking enabled but validated `[Effort: Medium | Cost: Low | Importance: Important]`
     - [ ] Data model and database design enforce tenant isolation; brisante data is classified, owned, and handled by policy `[Effort: High | Cost: Medium | Importance: Essential]`
     - [ ] Data & secrets: vault or secret store, TLS 1.2+ `[Effort: Medium | Cost: Medium | Importance: Essential]`
     - [ ] Domain & email trust: valid certificates, SPF, DKIM, DMARC, and monitoring for expiry/spoofing `[Effort: Medium | Cost: Low | Importance: Important]`
@@ -2221,7 +2149,7 @@
     - [ ] CIA, Least Privilege, Defense in Depth und **Einfachheit** in Design und Betrieb reflektiert `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Essentiell]`
     - [ ] Identität: Zentraler IdP, MFA, Least Privilege, keine Secrets in Config `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
     - [ ] Nutzermanagement: Rollen/Gruppen definiert; Mandantentrennung (Tenant Isolation) durchgesetzt `[Aufwand: Hoch | Kosten: Mittel | Wichtigkeit: Essentiell]`
-- [ ] Schnittstellen: API-First-Ansatz; API dokumentiert; Headless-Nutzung unterstützt; Deep Linking aktiviert aber validiert `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
+    - [ ] Schnittstellen: API-First-Ansatz; API dokumentiert; Headless-Nutzung unterstützt; Deep Linking aktiviert aber validiert `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
     - [ ] Datenmodell und DB-Design erzwingen Mandantentrennung; brisante Daten klassifiziert und geschützt `[Aufwand: Hoch | Kosten: Mittel | Wichtigkeit: Essentiell]`
     - [ ] Daten & Secrets: Vault/Secret Store genutzt, TLS 1.2+ `[Aufwand: Mittel | Kosten: Mittel | Wichtigkeit: Essentiell]`
     - [ ] Domain & E-Mail-Vertrauen: Gültige Zertifikate, SPF, DKIM, DMARC, Monitoring `[Aufwand: Mittel | Kosten: Niedrig | Wichtigkeit: Wichtig]`
