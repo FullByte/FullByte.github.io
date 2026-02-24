@@ -21,7 +21,7 @@ Eat whatever you want... idk, lol... and take your time ;)
 
 ### Meals
 
-[![kaese-porree-suppe](meal/_kaese-porree-suppe.jpg)](meal/kaese-porree-suppe.md)
+[![kaese-porree-suppe](meal/_kaese-porree-suppe.webp)](meal/kaese-porree-suppe.md)
 
 [![bratkartoffeln](meal/_bratkartoffeln.webp)](meal/bratkartoffeln.md)
 

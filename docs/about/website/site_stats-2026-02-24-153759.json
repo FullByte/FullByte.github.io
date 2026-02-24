@@ -1,0 +1,306 @@
+{
+  "generated_at": "2026-02-24T15:37:50.166474",
+  "content_stats": {
+    "markdown_files": 460,
+    "total_words": 299737,
+    "total_lines": 44775,
+    "avg_words_per_file": 651,
+    "code_blocks": 2141,
+    "total_links": 2282,
+    "reading_time_hours": 24,
+    "reading_time_minutes": 59
+  },
+  "file_stats": {
+    "total_files": 1220,
+    "file_types": {
+      "": 1,
+      ".md": 460,
+      ".webp": 545,
+      ".mp3": 5,
+      ".gif": 8,
+      ".pgn": 1,
+      ".svg": 73,
+      ".7z": 4,
+      ".pp": 2,
+      ".zip": 3,
+      ".curaprofile": 2,
+      ".ino": 1,
+      ".json": 33,
+      ".h": 1,
+      ".xml": 8,
+      ".csv": 2,
+      ".sql": 3,
+      ".txt": 5,
+      ".pdf": 10,
+      ".grid": 6,
+      ".html": 1,
+      ".mkv": 2,
+      ".gz": 2,
+      ".cast": 4,
+      ".tp": 1,
+      ".sh": 1,
+      ".cdr": 21,
+      ".io": 2,
+      ".dxf": 1,
+      ".afdesign": 1,
+      ".docx": 5,
+      ".mp4": 3,
+      ".mid": 1,
+      ".c": 1,
+      ".asc": 1
+    },
+    "directories": 100
+  },
+  "image_stats": {
+    "total_images": 626,
+    "total_size_mb": 94.33,
+    "by_type": {
+      ".webp": 545,
+      ".gif": 8,
+      ".svg": 73
+    }
+  },
+  "content_by_topic": [
+    [
+      "tech\\standards",
+      {
+        "files": 18,
+        "words": 87384
+      }
+    ],
+    [
+      "fun",
+      {
+        "files": 6,
+        "words": 44411
+      }
+    ],
+    [
+      "tech\\art\\database",
+      {
+        "files": 4,
+        "words": 13393
+      }
+    ],
+    [
+      "tech\\tools\\cli",
+      {
+        "files": 33,
+        "words": 12435
+      }
+    ],
+    [
+      "tech\\scripts\\os",
+      {
+        "files": 7,
+        "words": 11902
+      }
+    ],
+    [
+      "tech\\hack\\tryhackme.com",
+      {
+        "files": 13,
+        "words": 11067
+      }
+    ],
+    [
+      "about\\life",
+      {
+        "files": 9,
+        "words": 10525
+      }
+    ],
+    [
+      "tech\\art\\text",
+      {
+        "files": 12,
+        "words": 7201
+      }
+    ],
+    [
+      "make\\food\\meal",
+      {
+        "files": 26,
+        "words": 6254
+      }
+    ],
+    [
+      "tech\\scripts\\web",
+      {
+        "files": 5,
+        "words": 5671
+      }
+    ],
+    [
+      "make\\games\\boardgames\\einhorn",
+      {
+        "files": 3,
+        "words": 5400
+      }
+    ],
+    [
+      "tech\\cloud\\azure\\design",
+      {
+        "files": 7,
+        "words": 4637
+      }
+    ],
+    [
+      "tech\\scripts\\powershell",
+      {
+        "files": 4,
+        "words": 4083
+      }
+    ],
+    [
+      "tech\\tools\\office",
+      {
+        "files": 11,
+        "words": 3672
+      }
+    ],
+    [
+      "tech\\cloud\\azure\\services",
+      {
+        "files": 10,
+        "words": 3163
+      }
+    ],
+    [
+      "tech\\tools\\hack",
+      {
+        "files": 7,
+        "words": 2808
+      }
+    ],
+    [
+      "tech\\scripts\\database",
+      {
+        "files": 5,
+        "words": 2710
+      }
+    ],
+    [
+      "make\\art\\literal",
+      {
+        "files": 6,
+        "words": 2708
+      }
+    ],
+    [
+      "tech\\tools\\host",
+      {
+        "files": 8,
+        "words": 2661
+      }
+    ],
+    [
+      "make\\games\\collection",
+      {
+        "files": 3,
+        "words": 2638
+      }
+    ]
+  ],
+  "largest_files": [
+    [
+      "fun\\movies.md",
+      36886
+    ],
+    [
+      "tech\\standards\\encoding.md",
+      29219
+    ],
+    [
+      "tech\\standards\\good-software.md",
+      21739
+    ],
+    [
+      "tech\\art\\database\\spatial-data.md",
+      11971
+    ],
+    [
+      "tech\\standards\\names.md",
+      8053
+    ],
+    [
+      "tech\\standards\\codes.md",
+      7509
+    ],
+    [
+      "tech\\standards\\time.md",
+      5731
+    ],
+    [
+      "tech\\standards\\network.md",
+      4900
+    ],
+    [
+      "tech\\scripts\\os\\windows.md",
+      4821
+    ],
+    [
+      "fun\\games.md",
+      4467
+    ]
+  ],
+  "recently_modified": [
+    [
+      "tech\\standards\\good-software.md",
+      21739,
+      "2026-02-24 15:36:11.478638"
+    ],
+    [
+      "tech\\standards\\conferences.md",
+      1167,
+      "2026-01-30 15:57:55.503490"
+    ],
+    [
+      "tech\\tools\\admin\\sysinternals.md",
+      282,
+      "2026-01-30 12:36:14.765567"
+    ],
+    [
+      "about\\website\\hosts.md",
+      320,
+      "2026-01-28 11:22:27.142572"
+    ],
+    [
+      "about\\website\\stats.md",
+      113,
+      "2026-01-05 21:08:21.310871"
+    ],
+    [
+      "tech\\art\\text\\unscii.md",
+      331,
+      "2026-01-05 18:08:16.639553"
+    ],
+    [
+      "make\\food\\meal\\kaese-porree-suppe.md",
+      141,
+      "2026-01-05 18:08:16.630553"
+    ],
+    [
+      "make\\food\\index.md",
+      82,
+      "2026-01-05 18:08:16.629552"
+    ],
+    [
+      "fun\\watch.md",
+      2527,
+      "2026-01-05 18:08:16.627553"
+    ],
+    [
+      "fun\\news.md",
+      174,
+      "2026-01-05 18:08:16.626548"
+    ]
+  ],
+  "changes": {
+    "md_files": 0,
+    "words": 22055,
+    "total_files": 1,
+    "images": 0,
+    "image_size_mb": 0.0
+  }
+}
