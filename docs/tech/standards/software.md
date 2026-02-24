@@ -61,31 +61,37 @@
     **Example minimum requirements**
     
     **Confidentiality**
+
     - All internet-facing endpoints use TLS 1.3.
     - Secrets are only stored in a vault, never in source control.
     - Access to production data is role-based and logged.
     
     **Integrity**
+
     - Pull requests require review before merge to protected branches.
     - CI verifies tests and static checks before deployment.
     - Critical configuration changes are tracked in version control.
     
     **Availability**
+
     - Define target uptime and alerting thresholds per critical service.
     - Define backup cadence and recovery objectives (RPO/RTO).
     - Perform restore tests on a fixed schedule.
     
     **Least Privilege**
+
     - No shared admin accounts for normal operations.
     - Admin access is limited, time-bound where possible, and auditable.
     - Permissions are reviewed periodically.
     
     **Defense in Depth**
+
     - Use at least identity controls, network controls, and application controls.
     - Exposed services are protected by WAF and monitoring.
     - Logging and alerting are enabled for security-relevant events.
     
     **Keep it simple**
+
     - Minimise number of environments, tools, and custom role variants.
     - Prefer one standard deployment path and one standard rollback path.
     - Remove controls/processes that add complexity without measurable value.
@@ -109,34 +115,40 @@
     **Beispielhafte Mindestanforderungen**
     
     **Vertraulichkeit**
+
     - Alle öffentlich zugänglichen Endpunkte nutzen TLS 1.3.
     - Geheimnisse (Secrets) werden nur in einem Vault gespeichert, niemals in der Versionsverwaltung.
     - Der Zugriff auf Produktionsdaten ist rollenbasiert und protokolliert.
     
     **Integrität**
-        - Pull Requests erfordern ein Review vor dem Merge in geschützte Branches.
-        - CI verifiziert Tests und statische Prüfungen vor dem Deployment.
-        - Kritische Konfigurationsänderungen werden in der Versionsverwaltung nachverfolgt.
+
+    - Pull Requests erfordern ein Review vor dem Merge in geschützte Branches.
+    - CI verifiziert Tests und statische Prüfungen vor dem Deployment.
+    - Kritische Konfigurationsänderungen werden in der Versionsverwaltung nachverfolgt.
     
     **Verfügbarkeit**
-        - Ziel-Uptime und Alarmierungsschwellen pro kritischem Service definieren.
-        - Backup-Turnus und Wiederherstellungsziele (RPO/RTO) definieren.
-        - Restore-Tests nach festem Zeitplan durchführen.
+
+    - Ziel-Uptime und Alarmierungsschwellen pro kritischem Service definieren.
+    - Backup-Turnus und Wiederherstellungsziele (RPO/RTO) definieren.
+    - Restore-Tests nach festem Zeitplan durchführen.
     
     **Least Privilege**
-        - Keine geteilten Admin-Accounts für den normalen Betrieb.
-        - Admin-Zugriff ist begrenzt, zeitlich beschränkt (wo möglich) und auditierbar.
-        - Berechtigungen werden regelmäßig überprüft.
+
+    - Keine geteilten Admin-Accounts für den normalen Betrieb.
+    - Admin-Zugriff ist begrenzt, zeitlich beschränkt (wo möglich) und auditierbar.
+    - Berechtigungen werden regelmäßig überprüft.
     
     **Defense in Depth**
-        - Nutzung von mindestens Identitätskontrollen, Netzwerkkontrollen und Anwendungskontrollen.
-        - Exponierte Dienste sind durch WAF und Monitoring geschützt.
-        - Logging und Alerting sind für sicherheitsrelevante Ereignisse aktiviert.
+
+    - Nutzung von mindestens Identitätskontrollen, Netzwerkkontrollen und Anwendungskontrollen.
+    - Exponierte Dienste sind durch WAF und Monitoring geschützt.
+    - Logging und Alerting sind für sicherheitsrelevante Ereignisse aktiviert.
     
     **Keep it simple**
-        - Anzahl der Umgebungen, Tools und benutzerdefinierten Rollenvarianten minimieren.
-        - Einen Standard-Deployment-Pfad und einen Standard-Rollback-Pfad bevorzugen.
-        - Kontrollen/Prozesse entfernen, die Komplexität ohne messbaren Mehrwert hinzufügen.
+
+    - Anzahl der Umgebungen, Tools und benutzerdefinierten Rollenvarianten minimieren.
+    - Einen Standard-Deployment-Pfad und einen Standard-Rollback-Pfad bevorzugen.
+    - Kontrollen/Prozesse entfernen, die Komplexität ohne messbaren Mehrwert hinzufügen.
 
 ## Identity & Access
 
@@ -243,18 +255,23 @@
 
     Keep the trust boundary clear: frontend is user-controlled, backend is policy-enforced.
 
-    - **Frontend responsibilities**
-      - Enforce safe rendering (XSS prevention), strict input validation on UI level, and secure session/token handling.
-      - Never embed secrets (API keys with privileged scope, signing keys, DB credentials) in frontend code.
-      - Use secure browser defaults where relevant (CSP, `HttpOnly`/`Secure` cookies, same-site strategy).
-    - **Backend responsibilities**
-      - Treat all client input as untrusted, even if frontend validates it.
-      - Enforce authentication, authorisation, tenant isolation, rate limits, and audit logging server-side.
-      - Centralise security-critical decisions in backend services, not in client logic.
-    - **Typical No-Gos**
-      - “Hidden UI button = access control” (it is not).
-      - Trusting tenant/user IDs from client without server-side checks.
-      - Returning excessive data fields to frontend “just in case”.
+    **Frontend responsibilities**
+
+    - Enforce safe rendering (XSS prevention), strict input validation on UI level, and secure session/token handling.
+    - Never embed secrets (API keys with privileged scope, signing keys, DB credentials) in frontend code.
+    - Use secure browser defaults where relevant (CSP, `HttpOnly`/`Secure` cookies, same-site strategy).
+    
+    **Backend responsibilities**
+
+    - Treat all client input as untrusted, even if frontend validates it.
+    - Enforce authentication, authorisation, tenant isolation, rate limits, and audit logging server-side.
+    - Centralise security-critical decisions in backend services, not in client logic.
+    
+    **Typical No-Gos**
+
+    - “Hidden UI button = access control” (it is not).
+    - Trusting tenant/user IDs from client without server-side checks.
+    - Returning excessive data fields to frontend “just in case”.
 
 === "DE"
 
@@ -262,18 +279,23 @@
 
     Die Vertrauensgrenze muss klar sein: Das Frontend wird vom Benutzer kontrolliert, das Backend setzt die Richtlinien durch.
 
-    - **Frontend-Verantwortlichkeiten**
-      - Sicheres Rendering erzwingen (XSS-Prävention), strenge Eingabevalidierung auf UI-Ebene und sicheres Session/Token-Handling.
-      - Niemals Geheimnisse (API-Keys mit erweiterten Rechten, Signaturschlüssel, DB-Zugangsdaten) im Frontend-Code einbetten.
-      - Sichere Browser-Standards nutzen (CSP, `HttpOnly`/`Secure` Cookies, Same-Site-Strategie).
-    - **Backend-Verantwortlichkeiten**
-      - Alle Client-Eingaben als nicht vertrauenswürdig behandeln, selbst wenn das Frontend validiert.
-      - Authentifizierung, Autorisierung, Mandantenisolierung, Ratenbegrenzung und Audit-Logging serverseitig durchsetzen.
-      - Sicherheitskritische Entscheidungen zentral im Backend treffen, nicht in der Client-Logik.
-    - **Typische No-Gos**
-      - „Versteckter Button = Zugriffskontrolle“ (das ist keine Sicherheit).
-      - Vertrauen auf Mandanten-/Nutzer-IDs vom Client ohne serverseitige Prüfung.
-      - Rückgabe übermäßiger Datenfelder an das Frontend „nur für den Fall“.
+    **Frontend-Verantwortlichkeiten**
+
+    - Sicheres Rendering erzwingen (XSS-Prävention), strenge Eingabevalidierung auf UI-Ebene und sicheres Session/Token-Handling.
+    - Niemals Geheimnisse (API-Keys mit erweiterten Rechten, Signaturschlüssel, DB-Zugangsdaten) im Frontend-Code einbetten.
+    - Sichere Browser-Standards nutzen (CSP, `HttpOnly`/`Secure` Cookies, Same-Site-Strategie).
+    
+    **Backend-Verantwortlichkeiten**
+
+    - Alle Client-Eingaben als nicht vertrauenswürdig behandeln, selbst wenn das Frontend validiert.
+    - Authentifizierung, Autorisierung, Mandantenisolierung, Ratenbegrenzung und Audit-Logging serverseitig durchsetzen.
+    - Sicherheitskritische Entscheidungen zentral im Backend treffen, nicht in der Client-Logik.
+    
+    **Typische No-Gos**
+
+    - „Versteckter Button = Zugriffskontrolle“ (das ist keine Sicherheit).
+    - Vertrauen auf Mandanten-/Nutzer-IDs vom Client ohne serverseitige Prüfung.
+    - Rückgabe übermäßiger Datenfelder an das Frontend „nur für den Fall“.
 
 **Azure**
 === "EN"
@@ -371,6 +393,7 @@
     | **Service Account** | Maschinen-zu-Maschinen-Zugriff für einen Workload; kurzlebige Credentials/Managed Identity. | Wiederverwendung eines Kontos für viele Systeme; interaktives Login; Wildcard-Berechtigungen. |
 
     **Operative Regeln**
+
     - Trennung von menschlichen und maschinellen Identitäten.
     - Zeitlich begrenzter erhöhter Zugriff, wo möglich.
     - Zugriffsüberprüfung in festem Rhythmus und nach Rollenwechseln.
@@ -412,31 +435,42 @@
     Data design is security design. If data boundaries are weak, tenant isolation and compliance usually fail later in production.
 
     **Define data classes early**: Classify data before implementation and store the classification in architecture/docs.
+    
     **Brisante Daten (sensitive/high-impact data)**
-      - **Definition**: Data that can cause legal, financial, security, or reputational harm if leaked, modified, or unavailable.
-      - **Typical examples**: Personal data (PII), authentication data, API keys/secrets, payment data, health data, internal security logs, customer contracts.
-      - **Why this matters**: Brisante data requires stricter access, stronger encryption, tighter logging, shorter exposure windows, and clearer ownership.
+
+    - **Definition**: Data that can cause legal, financial, security, or reputational harm if leaked, modified, or unavailable.
+    - **Typical examples**: Personal data (PII), authentication data, API keys/secrets, payment data, health data, internal security logs, customer contracts.
+    - **Why this matters**: Brisante data requires stricter access, stronger encryption, tighter logging, shorter exposure windows, and clearer ownership.
+    
     **Data minimisation**: Only collect/store data that is required for product and legal obligations.
+    
     **Tenant/customer separation by design**:
-      - Every write/read path must be tenant-scoped.
-      - Enforce tenant isolation on more than one layer (application + database policy/index/partition).
-      - Prevent cross-tenant analytics/export by default; allow only via explicit audited flows.
+
+    - Every write/read path must be tenant-scoped.
+    - Enforce tenant isolation on more than one layer (application + database policy/index/partition).
+    - Prevent cross-tenant analytics/export by default; allow only via explicit audited flows.
+    
     **Database security basics**:
-      - Encryption in transit and at rest.
-      - Least-privilege database accounts (no shared superuser in runtime).
-      - Backup/restore tested and aligned with data classification.
-      - Data retention and deletion rules implemented, not only documented.
+
+    - Encryption in transit and at rest.
+    - Least-privilege database accounts (no shared superuser in runtime).
+    - Backup/restore tested and aligned with data classification.
+    - Data retention and deletion rules implemented, not only documented.
+    
     **Marking data sensitivity**:
-      - Mark fields/tables/events with labels like `public`, `internal`, `confidential`, `brisant`.
-      - Use labels in code, schemas, logs, and export pipelines to enforce handling rules.
-      - Define owner/team for each critical data domain.
+
+    - Mark fields/tables/events with labels like `public`, `internal`, `confidential`, `brisant`.
+    - Use labels in code, schemas, logs, and export pipelines to enforce handling rules.
+    - Define owner/team for each critical data domain.
+    
     **Typical mistakes to avoid**:
-      - Missing tenant filter in one endpoint/query.
-      - Storing secrets in business tables or logs.
-      - Overly broad DB permissions for app services.
-      - Reusing production data in staging without anonymisation.
-      - Joining multi-tenant data for reports without access guardrails.
-      - Keeping personal data forever because retention/deletion jobs were not implemented.
+
+    - Missing tenant filter in one endpoint/query.
+    - Storing secrets in business tables or logs.
+    - Overly broad DB permissions for app services.
+    - Reusing production data in staging without anonymisation.
+    - Joining multi-tenant data for reports without access guardrails.
+    - Keeping personal data forever because retention/deletion jobs were not implemented.
 
 === "DE"
     Sichere Datenarchitektur verhindert Lecks und gewährleistet strikte Mandantentrennung.
@@ -444,97 +478,142 @@
     Datendesign ist Sicherheitsdesign. Wenn Datengrenzen schwach sind, scheitern Mandantenisolierung und Compliance meist später in der Produktion.
 
     **Datenklassen früh definieren**: Klassifizieren Sie Daten vor der Implementierung und dokumentieren Sie dies.
+    
     **Brisante Daten**
-      - **Definition**: Daten, deren Leck, Änderung oder Unverfügbarkeit rechtlichen, finanziellen oder rufschädigenden Schaden verursachen kann.
-      - **Beispiele**: Personenbezogene Daten (PII), Auth-Daten, API-Keys, Zahlungsdaten, Gesundheitsdaten, Sicherheitslogs, Verträge.
-      - **Warum das wichtig ist**: Brisante Daten erfordern strengeren Zugriff, stärkere Verschlüsselung, genaueres Logging und kürzere Aufbewahrung.
+
+    - **Definition**: Daten, deren Leck, Änderung oder Unverfügbarkeit rechtlichen, finanziellen oder rufschädigenden Schaden verursachen kann.
+    - **Beispiele**: Personenbezogene Daten (PII), Auth-Daten, API-Keys, Zahlungsdaten, Gesundheitsdaten, Sicherheitslogs, Verträge.
+    - **Warum das wichtig ist**: Brisante Daten erfordern strengeren Zugriff, stärkere Verschlüsselung, genaueres Logging und kürzere Aufbewahrung.
+    
     **Datenminimierung**: Sammeln/Speichern Sie nur Daten, die für Produkt- und rechtliche Zwecke notwendig sind.
+    
     **Mandantentrennung (Tenant Isolation) per Design**:
-      - Jeder Schreib-/Lesezugriff muss auf den Mandanten beschränkt sein.
-      - Setzen Sie Isolierung auf mehreren Ebenen durch (Anwendung + Datenbank-Policy/Index/Partition).
-      - Verhindern Sie mandantenübergreifende Exporte standardmäßig; erlauben Sie sie nur über explizit auditierte Wege.
+
+    - Jeder Schreib-/Lesezugriff muss auf den Mandanten beschränkt sein.
+    - Setzen Sie Isolierung auf mehreren Ebenen durch (Anwendung + Datenbank-Policy/Index/Partition).
+    - Verhindern Sie mandantenübergreifende Exporte standardmäßig; erlauben Sie sie nur über explizit auditierte Wege.
+  
     **Datenbank-Sicherheitsbasics**:
-      - Verschlüsselung bei Übertragung und im Ruhezustand.
-      - Least-Privilege-Datenbankkonten (kein geteilter Superuser zur Laufzeit).
-      - Backup/Restore getestet und auf Datenklassifizierung abgestimmt.
-      - Löschregeln implementiert, nicht nur dokumentiert.
+
+    - Verschlüsselung bei Übertragung und im Ruhezustand.
+    - Least-Privilege-Datenbankkonten (kein geteilter Superuser zur Laufzeit).
+    - Backup/Restore getestet und auf Datenklassifizierung abgestimmt.
+    - Löschregeln implementiert, nicht nur dokumentiert.
+    
     **Markierung der Sensitivität**:
-      - Kennzeichnen Sie Felder/Tabellen mit Labels wie `public`, `internal`, `confidential`, `brisant`.
-      - Nutzen Sie diese Labels in Code, Schemata und Logs zur Durchsetzung von Regeln.
-      - Definieren Sie Verantwortliche (Owner) für jede kritische Datendomäne.
+
+    - Kennzeichnen Sie Felder/Tabellen mit Labels wie `public`, `internal`, `confidential`, `brisant`.
+    - Nutzen Sie diese Labels in Code, Schemata und Logs zur Durchsetzung von Regeln.
+    - Definieren Sie Verantwortliche (Owner) für jede kritische Datendomäne.
+  
     **Typische Fehler**:
-      - Fehlender Mandantenfilter in einem Endpunkt.
-      - Speicherung von Secrets in Geschäftsdaten oder Logs.
-      - Zu weitreichende DB-Berechtigungen für App-Dienste.
-      - Nutzung von Produktionsdaten im Staging ohne Anonymisierung.
-      - Unbeschränkte mandantenübergreifende Reports.
-      - Endlose Speicherung personenbezogener Daten mangels Löschjobs.
+
+    - Fehlender Mandantenfilter in einem Endpunkt.
+    - Speicherung von Secrets in Geschäftsdaten oder Logs.
+    - Zu weitreichende DB-Berechtigungen für App-Dienste.
+    - Nutzung von Produktionsdaten im Staging ohne Anonymisierung.
+    - Unbeschränkte mandantenübergreifende Reports.
+    - Endlose Speicherung personenbezogener Daten mangels Löschjobs.
 
 ### Practical implementation examples
 
 === "EN"
 
     **Define data classes early**
-      - Example: add a `data_classification.md` with required labels for every entity (`public`, `internal`, `confidential`, `brisant`) and an owner.
-      - What to check: every table/event in architecture docs has a classification + owner + retention rule.
+
+    - Example: add a `data_classification.md` with required labels for every entity (`public`, `internal`, `confidential`, `brisant`) and an owner.
+    - What to check: every table/event in architecture docs has a classification + owner + retention rule.
+  
     **Brisante data handling**
-      - Example: fields like `email`, `phone`, `address`, `payment_ref`, `auth_token_hash` are marked as `brisant` and get stricter policies (access logging, masked exports, shorter retention).
-      - What to check: access to brisante fields is role-scoped, audited, and blocked in default exports.
+
+    - Example: fields like `email`, `phone`, `address`, `payment_ref`, `auth_token_hash` are marked as `brisant` and get stricter policies (access logging, masked exports, shorter retention).
+    - What to check: access to brisante fields is role-scoped, audited, and blocked in default exports.
+  
     **Data minimisation**
-      - Example: do not store full birth date when age band is enough; do not store plaintext IP forever if hashed/truncated fulfills the use case.
-      - What to check: every stored field has a documented purpose and retention period.
+
+    - Example: do not store full birth date when age band is enough; do not store plaintext IP forever if hashed/truncated fulfills the use case.
+    - What to check: every stored field has a documented purpose and retention period.
+  
     **Tenant separation by design**
-      - Example: every query includes tenant scope (`WHERE tenant_id = :tenant_id`), backed by DB-level row-level security (where supported) and unique indexes including `tenant_id`.
-      - What to check: automated tests for cross-tenant access attempts fail by default.
+
+    - Example: every query includes tenant scope (`WHERE tenant_id = :tenant_id`), backed by DB-level row-level security (where supported) and unique indexes including `tenant_id`.
+    - What to check: automated tests for cross-tenant access attempts fail by default.
+  
     **Encryption in transit and at rest**
-      - In transit (TLS): enforce TLS for app-to-DB connections; reject non-TLS connections.
-      - At rest: enable provider encryption/TDE and, if needed, customer-managed keys (CMK).
-      - What to check: TLS-required parameter is active, certificates are valid/rotated, encryption status is enabled in DB settings.
-      - DB technologies that support this (examples): PostgreSQL (TLS in transit; storage/TDE via managed service or platform controls), MySQL/MariaDB (TLS in transit; storage encryption/TDE depending on edition/service), Microsoft SQL Server / Azure SQL (TLS + TDE), MongoDB (TLS + encryption at rest in managed/self-hosted setups), Redis (TLS + at-rest options depending on provider/edition)
+
+    - In transit (TLS): enforce TLS for app-to-DB connections; reject non-TLS connections.
+    - At rest: enable provider encryption/TDE and, if needed, customer-managed keys (CMK).
+    - What to check: TLS-required parameter is active, certificates are valid/rotated, encryption status is enabled in DB settings.
+    - DB technologies that support this (examples): PostgreSQL (TLS in transit; storage/TDE via managed service or platform controls), MySQL/MariaDB (TLS in transit; storage encryption/TDE depending on edition/service), Microsoft SQL Server / Azure SQL (TLS + TDE), MongoDB (TLS + encryption at rest in managed/self-hosted setups), Redis (TLS + at-rest options depending on provider/edition)
+    
     **Least-privilege DB accounts**
-      - Example: separate runtime account (read/write scoped), migration account (schema change only), and break-glass admin account.
-      - What to check: app runtime credentials cannot create users, drop databases, or read unrelated tenant data.
+
+    - Example: separate runtime account (read/write scoped), migration account (schema change only), and break-glass admin account.
+    - What to check: app runtime credentials cannot create users, drop databases, or read unrelated tenant data.
+  
     **Backup/restore and retention**
-      - Example: daily backups + PITR enabled, quarterly restore drill, automated deletion job for expired personal data.
-      - What to check: latest successful restore test date, retention job status, and deletion evidence.
+
+    - Example: daily backups + PITR enabled, quarterly restore drill, automated deletion job for expired personal data.
+    - What to check: latest successful restore test date, retention job status, and deletion evidence.
+  
     **Marking data sensitivity**
-      - Example: schema comments/metadata tags (`classification=brisant`) and code annotations on DTO fields.
-      - What to check: logs/exports automatically mask fields tagged as `confidential` or `brisant`.
+
+    - Example: schema comments/metadata tags (`classification=brisant`) and code annotations on DTO fields.
+    - What to check: logs/exports automatically mask fields tagged as `confidential` or `brisant`.
+  
     **Typical mistakes and prevention**
-      - Example control: static code checks + integration tests detect missing tenant filters in repository/query layer.
-      - What to check: PR checklist includes tenant-scope review for data access changes.
+
+    - Example control: static code checks + integration tests detect missing tenant filters in repository/query layer.
+    - What to check: PR checklist includes tenant-scope review for data access changes.
 
 === "DE"
 
     **Datenklassen früh definieren**
-        - Beispiel: Füge eine `data_classification.md` mit erforderlichen Labels für jede Entität hinzu (`public`, `internal`, `confidential`, `brisant`) und einem Owner.
-        - Was prüfen: Jede Tabelle/jedes Event in Architektur-Docs hat Klassifizierung + Owner + Retention-Regel.
+
+    - Beispiel: Füge eine `data_classification.md` mit erforderlichen Labels für jede Entität hinzu (`public`, `internal`, `confidential`, `brisant`) und einem Owner.
+    - Was prüfen: Jede Tabelle/jedes Event in Architektur-Docs hat Klassifizierung + Owner + Retention-Regel.
+
     **Brisante Daten handhaben**
-        - Beispiel: Felder wie `email`, `phone`, `address`, `payment_ref`, `auth_token_hash` sind als `brisant` markiert und erhalten strengere Policies (Access-Logging, maskierte Exporte, kürzere Retention).
-        - Was prüfen: Zugriff auf brisante Felder ist rollenbasiert, auditiert und in Standard-Exports blockiert.
+
+    - Beispiel: Felder wie `email`, `phone`, `address`, `payment_ref`, `auth_token_hash` sind als `brisant` markiert und erhalten strengere Policies (Access-Logging, maskierte Exporte, kürzere Retention).
+    - Was prüfen: Zugriff auf brisante Felder ist rollenbasiert, auditiert und in Standard-Exports blockiert.
+
     **Datenminimierung**
-        - Beispiel: Kein volles Geburtsdatum speichern, wenn Altersband reicht; keine Klartext-IP dauerhaft speichern, wenn Hash/Trunkierung reicht.
-        - Was prüfen: Jedes gespeicherte Feld hat Zweck und Retention-Periode dokumentiert.
+
+    - Beispiel: Kein volles Geburtsdatum speichern, wenn Altersband reicht; keine Klartext-IP dauerhaft speichern, wenn Hash/Trunkierung reicht.
+    - Was prüfen: Jedes gespeicherte Feld hat Zweck und Retention-Periode dokumentiert.
+
     **Mandantentrennung per Design**
-        - Beispiel: Jede Query enthält Tenant-Scopes (`WHERE tenant_id = :tenant_id`), gestützt durch DB-Row-Level-Security (wo verfügbar) und eindeutige Indizes inkl. `tenant_id`.
-        - Was prüfen: Automatisierte Tests für Cross-Tenant-Zugriffsversuche scheitern standardmäßig.
+
+    - Beispiel: Jede Query enthält Tenant-Scopes (`WHERE tenant_id = :tenant_id`), gestützt durch DB-Row-Level-Security (wo verfügbar) und eindeutige Indizes inkl. `tenant_id`.
+    - Was prüfen: Automatisierte Tests für Cross-Tenant-Zugriffsversuche scheitern standardmäßig.
+
     **Verschlüsselung in Transit und at rest**
-        - In Transit (TLS): TLS für App-zu-DB-Verbindungen erzwingen; Non-TLS ablehnen.
-        - At Rest: Provider-Verschlüsselung/TDE aktivieren und bei Bedarf Customer-Managed Keys (CMK).
-        - Was prüfen: TLS-Required-Parameter aktiv, Zertifikate gültig/rotiert, Encryption-Status in DB-Settings aktiv.
-        - DB-Technologien, die das unterstützen (Beispiele): PostgreSQL (TLS in Transit; Storage/TDE über Managed Service oder Plattformkontrollen), MySQL/MariaDB (TLS in Transit; Storage-Verschlüsselung/TDE je nach Edition/Service), Microsoft SQL Server / Azure SQL (TLS + TDE), MongoDB (TLS + Verschlüsselung at rest in Managed/Self-Hosted), Redis (TLS + at-rest Optionen je nach Provider/Edition)
+
+    - In Transit (TLS): TLS für App-zu-DB-Verbindungen erzwingen; Non-TLS ablehnen.
+    - At Rest: Provider-Verschlüsselung/TDE aktivieren und bei Bedarf Customer-Managed Keys (CMK).
+    - Was prüfen: TLS-Required-Parameter aktiv, Zertifikate gültig/rotiert, Encryption-Status in DB-Settings aktiv.
+    - DB-Technologien, die das unterstützen (Beispiele): PostgreSQL (TLS in Transit; Storage/TDE über Managed Service oder Plattformkontrollen), MySQL/MariaDB (TLS in Transit; Storage-Verschlüsselung/TDE je nach Edition/Service), Microsoft SQL Server / Azure SQL (TLS + TDE), MongoDB (TLS + Verschlüsselung at rest in Managed/Self-Hosted), Redis (TLS + at-rest Optionen je nach Provider/Edition)
+
     **Least-Privilege DB-Accounts**
-        - Beispiel: Separater Runtime-Account (read/write scoped), Migrations-Account (nur Schemaänderungen), und Break-Glass-Admin.
-        - Was prüfen: Runtime-Credentials können keine User anlegen, DBs droppen oder fremde Tenant-Daten lesen.
+
+    - Beispiel: Separater Runtime-Account (read/write scoped), Migrations-Account (nur Schemaänderungen), und Break-Glass-Admin.
+    - Was prüfen: Runtime-Credentials können keine User anlegen, DBs droppen oder fremde Tenant-Daten lesen.
+
     **Backup/Restore und Retention**
-        - Beispiel: Tägliche Backups + PITR aktiv, quartalsweiser Restore-Drill, automatischer Löschjob für abgelaufene personenbezogene Daten.
-        - Was prüfen: Datum des letzten erfolgreichen Restore-Tests, Status des Retention-Jobs, Lösch-Nachweise.
+
+    - Beispiel: Tägliche Backups + PITR aktiv, quartalsweiser Restore-Drill, automatischer Löschjob für abgelaufene personenbezogene Daten.
+    - Was prüfen: Datum des letzten erfolgreichen Restore-Tests, Status des Retention-Jobs, Lösch-Nachweise.
+
     **Sensitivität markieren**
-        - Beispiel: Schema-Kommentare/Metadata-Tags (`classification=brisant`) und Code-Annotationen auf DTO-Feldern.
-        - Was prüfen: Logs/Exporte maskieren Felder mit `confidential` oder `brisant` automatisch.
+
+    - Beispiel: Schema-Kommentare/Metadata-Tags (`classification=brisant`) und Code-Annotationen auf DTO-Feldern.
+    - Was prüfen: Logs/Exporte maskieren Felder mit `confidential` oder `brisant` automatisch.
+
     **Typische Fehler und Prävention**
-        - Beispielkontrolle: Statische Code-Checks + Integrationstests erkennen fehlende Tenant-Filter in Repository/Query-Layer.
-        - Was prüfen: PR-Checkliste enthält Tenant-Scope-Review für Data-Access-Änderungen.
+
+    - Beispielkontrolle: Statische Code-Checks + Integrationstests erkennen fehlende Tenant-Filter in Repository/Query-Layer.
+    - Was prüfen: PR-Checkliste enthält Tenant-Scope-Review für Data-Access-Änderungen.
 
 **Azure**
 === "EN"
@@ -572,22 +651,18 @@
 
 ## Secrets
 
+**General**
 === "EN"
 
     Proper handling of credentials and encryption keys protects sensitive information.
-
-=== "DE"
-
-    Der korrekte Umgang mit Zugangsdaten und Schlüsseln schützt sensible Informationen.
-
-**General**
-=== "EN"
 
     - Never store secrets (API keys, connection strings, certificates) in source code or version control.
     - Use a dedicated secrets store or vault; reference secrets at runtime or in the pipeline, never commit them.
     - Encrypt sensitive data at rest and in transit; enforce **TLS 1.2+** for all external endpoints.
 
 === "DE"
+
+    Der korrekte Umgang mit Zugangsdaten und Schlüsseln schützt sensible Informationen.
 
     - Speichere niemals Geheimnisse (API-Schlüssel, Verbindungszeichenfolgen, Zertifikate) im Quellcode oder in der Versionsverwaltung.
     - Nutze einen dedizierten Secrets-Store oder Vault; referenziere Secrets zur Laufzeit oder in der Pipeline, committe sie nie.
@@ -617,16 +692,10 @@
 
 ## Network
 
+**General**
 === "EN"
 
     Network segmentation and defense layers limit the blast radius of attacks.
-
-=== "DE"
-
-    Netzwerksegmentierung und Verteidigungsschichten begrenzen den Schaden bei Angriffen.
-
-**General**
-=== "EN"
 
     - Segment networks and restrict access to backend services; avoid exposing databases or internal APIs directly to the internet.
     - Put a **Web Application Firewall (WAF)** in front of web applications to mitigate common attacks (e.g. OWASP Top 10).
@@ -634,6 +703,8 @@
     - Consider DDoS mitigation for public-facing production systems.
 
 === "DE"
+
+    Netzwerksegmentierung und Verteidigungsschichten begrenzen den Schaden bei Angriffen.
 
     - Segmentiere Netzwerke und beschränke den Zugriff auf Backend-Dienste; vermeide die direkte Exponierung von Datenbanken oder internen APIs ins Internet.
     - Setze eine **Web Application Firewall (WAF)** vor Webanwendungen, um gängige Angriffe (z. B. OWASP Top 10) abzuwehren.
@@ -682,26 +753,30 @@
     Trust is also built through a clean domain and email setup. Customers, spam filters, and security teams check these basics quickly.
 
     **Domain ownership and DNS hygiene**
-      - Keep registrar, DNS provider, and domain contacts up to date.
-      - Protect domain accounts with MFA and strict role-based access.
-      - Document all critical DNS records and who owns them.
-    
+
+    - Keep registrar, DNS provider, and domain contacts up to date.
+    - Protect domain accounts with MFA and strict role-based access.
+    - Document all critical DNS records and who owns them.
+
     **Web domain checks**
-      - HTTPS is enforced on all public endpoints; certificates are valid and auto-renewed.
-      - Redirect HTTP to HTTPS and disable weak TLS/ciphers.
-      - Use a canonical domain strategy (e.g. `www` or apex) and permanent redirects.
-      - Ensure security headers are set where relevant (e.g. HSTS, X-Content-Type-Options, CSP as applicable).
-    
+
+    - HTTPS is enforced on all public endpoints; certificates are valid and auto-renewed.
+    - Redirect HTTP to HTTPS and disable weak TLS/ciphers.
+    - Use a canonical domain strategy (e.g. `www` or apex) and permanent redirects.
+    - Ensure security headers are set where relevant (e.g. HSTS, X-Content-Type-Options, CSP as applicable).
+
     **Email domain checks**
-      - Configure and validate **SPF**, **DKIM**, and **DMARC** for all sending domains.
-      - Start DMARC with monitoring (`p=none`), review reports, then move to stricter policy (`quarantine`/`reject`) when stable.
-      - Ensure sender alignment (`From` domain aligns with SPF/DKIM domains).
-      - Use dedicated subdomains for transactional/bulk mail if needed (e.g. `mail.example.com`).
-    
+
+    - Configure and validate **SPF**, **DKIM**, and **DMARC** for all sending domains.
+    - Start DMARC with monitoring (`p=none`), review reports, then move to stricter policy (`quarantine`/`reject`) when stable.
+    - Ensure sender alignment (`From` domain aligns with SPF/DKIM domains).
+    - Use dedicated subdomains for transactional/bulk mail if needed (e.g. `mail.example.com`).
+
     **Operational checks**
-      - Test deliverability and spam placement regularly (seed tests, DMARC aggregate reports, bounce/complaint rates).
-      - Monitor certificate expiry, DNS changes, and suspicious record changes.
-      - Keep an incident playbook for domain hijack, certificate failure, or email spoofing.
+
+    - Test deliverability and spam placement regularly (seed tests, DMARC aggregate reports, bounce/complaint rates).
+    - Monitor certificate expiry, DNS changes, and suspicious record changes.
+    - Keep an incident playbook for domain hijack, certificate failure, or email spoofing.
 
 === "DE"
 
@@ -710,26 +785,30 @@
     Vertrauen wird auch durch ein sauberes Domain- und E-Mail-Setup aufgebaut. Kunden, Spamfilter und Sicherheitsteams prüfen diese Grundlagen schnell.
 
     **Domainbesitz und DNS-Hygiene**
-      - Halten Sie Registrar-, DNS-Provider- und Domainkontakte aktuell.
-      - Schützen Sie Domainkonten mit MFA und striktem rollenbasiertem Zugriff.
-      - Dokumentieren Sie alle kritischen DNS-Einträge und deren Besitzer.
-    
+
+    - Halten Sie Registrar-, DNS-Provider- und Domainkontakte aktuell.
+    - Schützen Sie Domainkonten mit MFA und striktem rollenbasiertem Zugriff.
+    - Dokumentieren Sie alle kritischen DNS-Einträge und deren Besitzer.
+
     **Web-Domain-Checks**
-      - HTTPS wird auf allen öffentlichen Endpunkten erzwungen; Zertifikate sind gültig und auto-erneuert.
-      - Leite HTTP auf HTTPS um und deaktiviere schwache TLS-Ciphers.
-      - Nutze eine kanonische Domain-Strategie (z. B. `www` oder Apex) und permanente Weiterleitungen.
-      - Setze relevante Security-Header (HSTS, X-Content-Type-Options, CSP).
-    
+
+    - HTTPS wird auf allen öffentlichen Endpunkten erzwungen; Zertifikate sind gültig und auto-erneuert.
+    - Leite HTTP auf HTTPS um und deaktiviere schwache TLS-Ciphers.
+    - Nutze eine kanonische Domain-Strategie (z. B. `www` oder Apex) und permanente Weiterleitungen.
+    - Setze relevante Security-Header (HSTS, X-Content-Type-Options, CSP).
+  
     **E-Mail-Domain-Checks**
-      - Konfiguriere und validiere **SPF**, **DKIM** und **DMARC** für alle sendenden Domains.
-      - Starte DMARC im Monitoring (`p=none`), prüfe Berichte und wechsle dann zu strengerer Richtlinie (`quarantine`/`reject`), wenn stabil.
-      - Stelle die Absender-Ausrichtung (Alignment) sicher (`From`-Domain stimmt mit SPF/DKIM überein).
-      - Nutze dedizierte Subdomains für Transaktions-/Massen-Mails (z. B. `mail.beispiel.de`).
-    
+
+    - Konfiguriere und validiere **SPF**, **DKIM** und **DMARC** für alle sendenden Domains.
+    - Starte DMARC im Monitoring (`p=none`), prüfe Berichte und wechsle dann zu strengerer Richtlinie (`quarantine`/`reject`), wenn stabil.
+    - Stelle die Absender-Ausrichtung (Alignment) sicher (`From`-Domain stimmt mit SPF/DKIM überein).
+    - Nutze dedizierte Subdomains für Transaktions-/Massen-Mails (z. B. `mail.beispiel.de`).
+
     **Operative Checks**
-      - Teste Zustellbarkeit und Spam-Platzierung regelmäßig (Seed-Tests, DMARC-Reports, Bounce/Complaint-Raten).
-      - Überwache Zertifikatsablauf, DNS-Änderungen und verdächtige Record-Änderungen.
-      - Halte ein Incident-Playbook für Domain-Hijacking, Zertifikatsfehler oder E-Mail-Spoofing bereit.
+
+    - Teste Zustellbarkeit und Spam-Platzierung regelmäßig (Seed-Tests, DMARC-Reports, Bounce/Complaint-Raten).
+    - Überwache Zertifikatsablauf, DNS-Änderungen und verdächtige Record-Änderungen.
+    - Halte ein Incident-Playbook für Domain-Hijacking, Zertifikatsfehler oder E-Mail-Spoofing bereit.
 
 **Azure**
 === "EN"
@@ -819,14 +898,6 @@
 
 ## SDLC
 
-=== "EN"
-
-
-
-=== "DE"
-
-    Sicherheit muss in jede Phase des Softwareentwicklungsprozesses integriert werden.
-
 **General**
 === "EN"
 
@@ -840,6 +911,8 @@
     - **Branch & commit hygiene**: Branch protection, required reviews, and optionally signed commits for main/production branches.
 
 === "DE"
+
+    Sicherheit muss in jede Phase des Softwareentwicklungsprozesses integriert werden.
 
     - **Shift Left**: Integriere Sicherheit frühzeitig (Anforderungen, Design, Code, PRs), nicht erst beim Release oder in der Produktion.
     - **SAST (Static Application Security Testing)**: Analysiere Quellcode auf Schwachstellen (Injection, hardcodierte Secrets).
@@ -860,73 +933,98 @@
 **GitHub**
 === "EN"
 
-    - **Branch protection rules**: Require pull request reviews, status checks, and optionally signed commits before merging to default/protected branches.
-    - **CodeQL** (GitHub Advanced Security): Enable for SAST. Run in Actions and fail or warn on policy-defined findings.
-    - **Dependabot**: Enable version updates and security updates; enable **Dependency graph** and **Dependabot alerts**.
-    - **Secret leak detection**
-      - Enable **GitHub Secret Scanning** and **Push Protection** (where available) to block leaked credentials before they land in the repository.
-      - Add one additional scanner in CI for defence in depth (e.g. **Gitleaks** or **TruffleHog**) and fail the build on verified secrets.
-    - **Additional GitHub-integrated analysis tools (examples)**
-      - **Semgrep**: rules-based SAST in GitHub Actions.
-      - **SonarCloud**: code quality and security hotspots integrated with PR checks.
-      - **Snyk**: SCA and container scanning integrated with GitHub PR feedback.
-      - **Checkov**: IaC security scanning for Terraform/Bicep/CloudFormation in Actions.
-    - **Environments**: Use for staging/production with protection rules and required reviewers so only approved workflows deploy.
+    **Branch protection rules**: Require pull request reviews, status checks, and optionally signed commits before merging to default/protected branches.
+    
+    **CodeQL** (GitHub Advanced Security): Enable for SAST. Run in Actions and fail or warn on policy-defined findings.
+    
+    **Dependabot**: Enable version updates and security updates; enable **Dependency graph** and **Dependabot alerts**.
+    
+    **Secret leak detection**
+
+    - Enable **GitHub Secret Scanning** and **Push Protection** (where available) to block leaked credentials before they land in the repository.
+    - Add one additional scanner in CI for defence in depth (e.g. **Gitleaks** or **TruffleHog**) and fail the build on verified secrets.
+    
+    **Additional GitHub-integrated analysis tools (examples)**
+
+    - **Semgrep**: rules-based SAST in GitHub Actions.
+    - **SonarCloud**: code quality and security hotspots integrated with PR checks.
+    - **Snyk**: SCA and container scanning integrated with GitHub PR feedback.
+    - **Checkov**: IaC security scanning for Terraform/Bicep/CloudFormation in Actions.
+
+    **Environments**: Use for staging/production with protection rules and required reviewers so only approved workflows deploy.
 
 === "DE"
 
-    - **Branch Protection Rules**: Fordere PR-Reviews, Statusprüfungen und optional signierte Commits vor dem Merge an.
-    - **CodeQL** (GitHub Advanced Security): Aktiviere für SAST. Führe in Actions aus und warne oder blockiere bei richtlinienrelevanten Funden.
-    - **Dependabot**: Aktiviere Versions- und Sicherheitsupdates; aktiviere **Dependency Graph** und **Dependabot Alerts**.
-    - **Secret Leak Detection**
-      - Aktiviere **GitHub Secret Scanning** und **Push Protection**, um geleakte Credentials zu blockieren, bevor sie im Repository landen.
-      - Füge einen zusätzlichen Scanner in CI für Defense in Depth hinzu (z. B. **Gitleaks** oder **TruffleHog**) und lasse den Build bei verifizierten Secrets fehlschlagen.
-    - **Zusätzliche GitHub-integrierte Analysetools (Beispiele)**
-      - **Semgrep**: Regelbasiertes SAST in GitHub Actions.
-      - **SonarCloud**: Codequalität und Sicherheits-Hotspots integriert in PR-Checks.
-      - **Snyk**: SCA und Container-Scanning integriert in GitHub-PR-Feedback.
-      - **Checkov**: IaC-Sicherheitsscanning für Terraform/Bicep/CloudFormation in Actions.
-      - **Umgebungen (Environments)**: Nutze sie für Staging/Produktion mit Schutzregeln und erforderlichen Reviewern, damit nur genehmigte Workflows deployen.
+    **Branch Protection Rules**: Fordere PR-Reviews, Statusprüfungen und optional signierte Commits vor dem Merge an.
+    
+    **CodeQL** (GitHub Advanced Security): Aktiviere für SAST. Führe in Actions aus und warne oder blockiere bei richtlinienrelevanten Funden.
+    
+    **Dependabot**: Aktiviere Versions- und Sicherheitsupdates; aktiviere **Dependency Graph** und **Dependabot Alerts**.
+    
+    **Secret Leak Detection**
+
+    - Aktiviere **GitHub Secret Scanning** und **Push Protection**, um geleakte Credentials zu blockieren, bevor sie im Repository landen.
+    - Füge einen zusätzlichen Scanner in CI für Defense in Depth hinzu (z. B. **Gitleaks** oder **TruffleHog**) und lasse den Build bei verifizierten Secrets fehlschlagen.
+
+    **Zusätzliche GitHub-integrierte Analysetools (Beispiele)**
+
+    - **Semgrep**: Regelbasiertes SAST in GitHub Actions.
+    - **SonarCloud**: Codequalität und Sicherheits-Hotspots integriert in PR-Checks.
+    - **Snyk**: SCA und Container-Scanning integriert in GitHub-PR-Feedback.
+    - **Checkov**: IaC-Sicherheitsscanning für Terraform/Bicep/CloudFormation in Actions.
+    - **Umgebungen (Environments)**: Nutze sie für Staging/Produktion mit Schutzregeln und erforderlichen Reviewern, damit nur genehmigte Workflows deployen.
 
 ## Testing
 
+**General**
 === "EN"
 
     Comprehensive testing ensures reliability and prevents regressions before release.
+
+    **Unit tests**: Cover critical business logic, edge cases, and error handling; run on every change.
+    
+    **Integration tests**: Verify components and external services (APIs, databases, queues) work together; use test doubles where appropriate.
+    
+    **End-to-end (e2e) tests**: Validate critical user flows in an environment close to production.
+    
+    **Regression tests**: Every production bug must result in a test that prevents recurrence.
+    
+    **Property-based tests** (where useful): Validate invariants across many generated inputs (e.g. parser rules, data transformation invariants).
+    
+    **Fuzzing**: Feed unexpected/random input to parsers, API endpoints, and protocol handlers to detect crashes, hangs, and unsafe behavior early.
+    
+    **Security testing**: Include SAST/SCA in the pipeline; add DAST or penetration tests for high-risk or public-facing apps.
+    
+    **Test quality practices**
+
+    - Keep tests deterministic and isolated (avoid flaky timing/network dependencies).
+    - Use meaningful assertions and test names that explain expected behavior.
+    - Define minimum expectations per layer (unit/integration/e2e) and review gaps regularly.
+    - Define a clear test strategy (what runs when, who maintains tests) and require passing tests before merge or release.
 
 === "DE"
 
     Umfassendes Testen sichert Zuverlässigkeit und verhindert Regressionen vor dem Release.
 
-**General**
-=== "EN"
+    **Unit-Tests**: Abdeckung von kritischer Geschäftslogik, Randfällen und Fehlerbehandlung; Ausführung bei jeder Änderung.
+    
+    **Integrationstests**: Verifizierung, dass Komponenten und externe Dienste (APIs, DBs, Queues) zusammenarbeiten.
+    
+    **End-to-End (E2E) Tests**: Validierung kritischer Benutzerabläufe in einer produktionsnahen Umgebung.
+    
+    **Regressionstests**: Jeder Produktionsbug muss zu einem Test führen, der das erneute Auftreten verhindert.
+    
+    **Property-Based Tests** (wo sinnvoll): Validierung von Invarianten über viele generierte Eingaben (z. B. Parser-Regeln).
+    
+    **Fuzzing**: Füttern von Parsern/APIs mit unerwarteten/zufälligen Eingaben, um Crashes oder unsicheres Verhalten früh zu erkennen.
+    
+    **Sicherheitstests**: SAST/SCA in der Pipeline; DAST oder Penetrationstests für hochriskante/öffentliche Apps.
+    
+    **Testqualitäts-Praktiken**
 
-    - **Unit tests**: Cover critical business logic, edge cases, and error handling; run on every change.
-    - **Integration tests**: Verify components and external services (APIs, databases, queues) work together; use test doubles where appropriate.
-    - **End-to-end (e2e) tests**: Validate critical user flows in an environment close to production.
-    - **Regression tests**: Every production bug must result in a test that prevents recurrence.
-    - **Property-based tests** (where useful): Validate invariants across many generated inputs (e.g. parser rules, data transformation invariants).
-    - **Fuzzing**: Feed unexpected/random input to parsers, API endpoints, and protocol handlers to detect crashes, hangs, and unsafe behavior early.
-    - **Security testing**: Include SAST/SCA in the pipeline; add DAST or penetration tests for high-risk or public-facing apps.
-    - **Test quality practices**
-      - Keep tests deterministic and isolated (avoid flaky timing/network dependencies).
-      - Use meaningful assertions and test names that explain expected behavior.
-      - Define minimum expectations per layer (unit/integration/e2e) and review gaps regularly.
-    - Define a clear test strategy (what runs when, who maintains tests) and require passing tests before merge or release.
-
-=== "DE"
-
-    - **Unit-Tests**: Abdeckung von kritischer Geschäftslogik, Randfällen und Fehlerbehandlung; Ausführung bei jeder Änderung.
-    - **Integrationstests**: Verifizierung, dass Komponenten und externe Dienste (APIs, DBs, Queues) zusammenarbeiten.
-    - **End-to-End (E2E) Tests**: Validierung kritischer Benutzerabläufe in einer produktionsnahen Umgebung.
-    - **Regressionstests**: Jeder Produktionsbug muss zu einem Test führen, der das erneute Auftreten verhindert.
-    - **Property-Based Tests** (wo sinnvoll): Validierung von Invarianten über viele generierte Eingaben (z. B. Parser-Regeln).
-    - **Fuzzing**: Füttern von Parsern/APIs mit unerwarteten/zufälligen Eingaben, um Crashes oder unsicheres Verhalten früh zu erkennen.
-    - **Sicherheitstests**: SAST/SCA in der Pipeline; DAST oder Penetrationstests für hochriskante/öffentliche Apps.
-    - **Testqualitäts-Praktiken**
-      - Halte Tests deterministisch und isoliert (vermeide instabile Timing/Netzwerk-Abhängigkeiten - „Flaky Tests“).
-      - Nutze aussagekräftige Assertions und Testnamen, die das erwartete Verhalten erklären.
-      - Definiere Mindesterwartungen pro Ebene (Unit/Integration/E2E) und überprüfe Lücken regelmäßig.
+    - Halte Tests deterministisch und isoliert (vermeide instabile Timing/Netzwerk-Abhängigkeiten - „Flaky Tests“).
+    - Nutze aussagekräftige Assertions und Testnamen, die das erwartete Verhalten erklären.
+    - Definiere Mindesterwartungen pro Ebene (Unit/Integration/E2E) und überprüfe Lücken regelmäßig.
     - Definiere eine klare Teststrategie (was läuft wann, wer wartet Tests) und fordere bestandene Tests vor Merge oder Release.
 
 **Azure**
@@ -957,20 +1055,12 @@
 
 ## Staging
 
+**General**
 === "EN"
 
     A production-like environment validates releases and reduces deployment risks.
 
     A **staging** environment is a copy of (or as close as possible to) production used to validate releases before they reach users. Keep the promotion path simple: build → deploy to staging → validate → promote to production.
-
-=== "DE"
-
-    Eine produktionsnahe Umgebung validiert Releases und reduziert Deployment-Risiken.
-
-    Eine **Staging**-Umgebung ist eine Kopie (oder so nah wie möglich an) der Produktion, um Releases zu validieren, bevor sie die Nutzer erreichen. Halte den Promotion-Pfad einfach: Build → Deploy auf Staging → Validieren → Promote auf Produktion.
-
-**General**
-=== "EN"
 
     - **Purpose**: Staging is where you run smoke tests, e2e tests, and manual checks against a production-like setup. It reduces the risk of broken or insecure releases reaching production.
     - **Promotion flow**: Deploy the same artifact (or same commit) to staging first; only after validation (automated and/or manual) promote to production. Avoid “building twice” or different code paths for staging vs production.
@@ -979,6 +1069,10 @@
     - **Keep it simple**: One staging environment is often enough. Add more (e.g. dev, QA, preprod) only if the team and release cadence justify it; each extra environment adds cost and drift risk.
 
 === "DE"
+
+    Eine produktionsnahe Umgebung validiert Releases und reduziert Deployment-Risiken.
+
+    Eine **Staging**-Umgebung ist eine Kopie (oder so nah wie möglich an) der Produktion, um Releases zu validieren, bevor sie die Nutzer erreichen. Halte den Promotion-Pfad einfach: Build → Deploy auf Staging → Validieren → Promote auf Produktion.
 
     - **Zweck**: Im Staging laufen Smoke-Tests, E2E-Tests und manuelle Checks gegen ein produktionsnahes Setup. Es reduziert das Risiko, kaputte oder unsichere Releases in die Produktion zu bringen.
     - **Promotion-Flow**: Deploye dasselbe Artefakt (oder denselben Commit) zuerst auf Staging; erst nach Validierung (automatisiert und/oder manuell) promote es auf Produktion. Vermeide „zweimal bauen“ oder unterschiedliche Codepfade für Staging vs. Produktion.
@@ -1002,36 +1096,36 @@
 **GitHub**
 === "EN"
 
-    - **Environments**: Use GitHub **Environments** (e.g. “Staging”, “Production”) so deployments are tracked and protection rules (e.g. required reviewers for Production) apply. Deploy to Staging first; require manual approval or automated checks before deploying to Production.
-    - **Branch strategy**: Tie environments to a simple branch model so the path from commit to production is auditable (e.g. trunk-based: `main` -> Staging, release tag -> Production; or GitFlow with a protected `release/*` path).
-    - **Branch security best practices**
-      - Protect `main` and release branches: required PR reviews, required status checks, no direct pushes, no force pushes, and no branch deletion.
-      - Require green checks for tests, SAST, SCA, and secret scanning before merge.
-      - Use CODEOWNERS for critical paths (security, infra, deployment workflows) so the right reviewers are always included.
-      - Restrict who can trigger production deployments and require environment approvals.
+    **Environments**: Use GitHub **Environments** (e.g. “Staging”, “Production”) so deployments are tracked and protection rules (e.g. required reviewers for Production) apply. Deploy to Staging first; require manual approval or automated checks before deploying to Production.
+    
+    **Branch strategy**: Tie environments to a simple branch model so the path from commit to production is auditable (e.g. trunk-based: `main` -> Staging, release tag -> Production; or GitFlow with a protected `release/*` path).
+    
+    **Branch security best practices**
+    
+    - Protect `main` and release branches: required PR reviews, required status checks, no direct pushes, no force pushes, and no branch deletion.
+    - Require green checks for tests, SAST, SCA, and secret scanning before merge.
+    - Use CODEOWNERS for critical paths (security, infra, deployment workflows) so the right reviewers are always included.
+    - Restrict who can trigger production deployments and require environment approvals.
 
 === "DE"
 
-    - **Environments**: Nutze GitHub **Environments** (z. B. „Staging“, „Production“), damit Deployments getrackt werden und Schutzregeln (z. B. erforderliche Reviewer für Produktion) greifen. Deploye zuerst auf Staging; fordere manuelle Genehmigung oder automatisierte Checks vor dem Deployment auf Produktion.
-    - **Branch-Strategie**: Verknüpfe Umgebungen mit einem einfachen Branch-Modell, damit der Pfad vom Commit zur Produktion auditierbar ist (z. B. Trunk-Based: `main` -> Staging, Release-Tag -> Produktion; oder GitFlow mit geschütztem `release/*`-Pfad).
-    - **Branch-Sicherheit Best Practices**
-      - Schütze `main`- und Release-Branches: erforderliche PR-Reviews, Statusprüfungen, keine direkten Pushes, keine Force Pushes, kein Löschen von Branches.
-      - Erfordere grüne Checks für Tests, SAST, SCA und Secret Scanning vor dem Merge.
-      - Nutze CODEOWNERS für kritische Pfade (Sicherheit, Infra, Deployment-Workflows), damit immer die richtigen Reviewer dabei sind.
-      - Beschränke, wer Produktions-Deployments auslösen kann, und fordere Environment-Approvals.
+    **Environments**: Nutze GitHub **Environments** (z. B. „Staging“, „Production“), damit Deployments getrackt werden und Schutzregeln (z. B. erforderliche Reviewer für Produktion) greifen. Deploye zuerst auf Staging; fordere manuelle Genehmigung oder automatisierte Checks vor dem Deployment auf Produktion.
+    
+    **Branch-Strategie**: Verknüpfe Umgebungen mit einem einfachen Branch-Modell, damit der Pfad vom Commit zur Produktion auditierbar ist (z. B. Trunk-Based: `main` -> Staging, Release-Tag -> Produktion; oder GitFlow mit geschütztem `release/*`-Pfad).
+    
+    **Branch-Sicherheit Best Practices**
+
+    - Schütze `main`- und Release-Branches: erforderliche PR-Reviews, Statusprüfungen, keine direkten Pushes, keine Force Pushes, kein Löschen von Branches.
+    - Erfordere grüne Checks für Tests, SAST, SCA und Secret Scanning vor dem Merge.
+    - Nutze CODEOWNERS für kritische Pfade (Sicherheit, Infra, Deployment-Workflows), damit immer die richtigen Reviewer dabei sind.
+    - Beschränke, wer Produktions-Deployments auslösen kann, und fordere Environment-Approvals.
 
 ## Open Source
 
+**General**
 === "EN"
 
     Safe usage of open source requires license compliance and vulnerability management.
-
-=== "DE"
-
-    Die sichere Nutzung von Open Source erfordert Lizenz-Compliance und Schwachstellenmanagement.
-
-**General**
-=== "EN"
 
     - **License compliance**: Know the licenses of all dependencies (including transitive); ensure they are compatible with your use and distribution (e.g. GPL, MIT, Apache).
     - **Software Bill of Materials (SBOM)**: Generate and maintain an SBOM for audit and vulnerability management; align with SCA and dependency scanning.
@@ -1039,6 +1133,8 @@
     - **Contributing**: If you use or contribute to open source, follow the project’s contribution guidelines and license terms; document your own policy for accepting or releasing OSS.
 
 === "DE"
+
+    Die sichere Nutzung von Open Source erfordert Lizenz-Compliance und Schwachstellenmanagement.
 
     - **Lizenz-Compliance**: Kenne die Lizenzen aller Abhängigkeiten (inkl. transitiver); stelle sicher, dass sie mit deiner Nutzung und Distribution kompatibel sind (z. B. GPL, MIT, Apache).
     - **Software Bill of Materials (SBOM)**: Generiere und pflege eine Stückliste (SBOM) für Audits und Schwachstellenmanagement; stimme dies mit SCA und Dependency Scanning ab.
@@ -1069,22 +1165,18 @@
 
 ## Communication
 
+**General**
 === "EN"
 
     Transparent communication builds trust with users and stakeholders.
-
-=== "DE"
-
-    Transparente Kommunikation baut Vertrauen bei Nutzern und Stakeholdern auf.
-
-**General**
-=== "EN"
 
     - **Changelogs**: Maintain a machine- or human-readable changelog (e.g. CHANGELOG.md) with notable changes per version. Use a consistent format (e.g. Keep a Changelog) and **semantic versioning** where it fits (major.minor.patch).
     - **Release notes**: Publish clear release notes for users or stakeholders: what changed, what to do (e.g. upgrade steps, breaking changes), and where to get help.
     - **Clear communication**: Communicate proactively about security updates, incidents, and maintenance: what happened, impact, and what you are doing. Document processes for incident communication and user/stakeholder updates.
 
 === "DE"
+
+    Transparente Kommunikation baut Vertrauen bei Nutzern und Stakeholdern auf.
 
     - **Changelogs**: Pflege ein maschinen- oder menschenlesbares Änderungsprotokoll (z. B. CHANGELOG.md) mit nennenswerten Änderungen pro Version. Nutze ein konsistentes Format (z. B. „Keep a Changelog“) und **Semantic Versioning** (Major.Minor.Patch).
     - **Release Notes**: Veröffentliche klare Release-Notizen für Nutzer: was sich geändert hat, was zu tun ist (z. B. Upgrade-Schritte, Breaking Changes) und wo es Hilfe gibt.
@@ -1114,22 +1206,18 @@
 
 ## Operations
 
+**General**
 === "EN"
 
     Observability and defined incident processes ensure system availability and rapid recovery.
-
-=== "DE"
-
-    Beobachtbarkeit und definierte Vorfallprozesse sichern Systemverfügbarkeit und schnelle Wiederherstellung.
-
-**General**
-=== "EN"
 
     - **Observability**: Collect metrics, logs, and traces so you can detect failures, performance issues, and security events.
     - **Alerting**: Define alerts for availability, errors, authentication failures, and anomalies; route them to the right people and runbooks.
     - **Incident response**: Document how to respond to incidents (who does what, escalation); retain logs and evidence for post-incident review and compliance.
 
 === "DE"
+
+    Beobachtbarkeit und definierte Vorfallprozesse sichern Systemverfügbarkeit und schnelle Wiederherstellung.
 
     - **Observability**: Sammle Metriken, Logs und Traces, um Ausfälle, Performance-Probleme und Sicherheitsvorfälle zu erkennen.
     - **Alerting**: Definiere Alarme für Verfügbarkeit, Fehler, Authentifizierungsfehler und Anomalien; route sie zu den richtigen Personen und Runbooks.
@@ -1171,16 +1259,10 @@
 
 ## Deployment
 
+**General**
 === "EN"
 
     Automated, secure pipelines ensure consistent and reliable software delivery.
-
-=== "DE"
-
-    Automatisierte, sichere Pipelines gewährleisten konsistente und zuverlässige Softwareauslieferung.
-
-**General**
-=== "EN"
 
     - Never store deployment credentials in the repository; use a secrets store or pipeline secrets.
     - Protect production: use environment restrictions, required approvals, and only deploy after tests and security checks pass.
@@ -1188,6 +1270,8 @@
     - Document deployment steps and rollback procedures.
 
 === "DE"
+
+    Automatisierte, sichere Pipelines gewährleisten konsistente und zuverlässige Softwareauslieferung.
 
     - Speichere niemals Deployment-Credentials im Repository; nutze einen Secrets-Store oder Pipeline-Secrets.
     - Schütze die Produktion: Nutze Umgebungseinschränkungen, erforderliche Genehmigungen und deploye nur nach bestandenen Tests und Sicherheitschecks.
@@ -1212,10 +1296,10 @@
 
     **Deployment best practices**
 
-      - Build once, deploy the same artifact to Staging and then Production (avoid rebuilding between environments).
-      - Use immutable versioning (commit SHA/tag) and keep release notes linked to that version.
-      - Keep rollback simple: defined rollback workflow, known previous-good artifact, and clear ownership.
-      - Keep production deployment rights minimal and auditable.
+    - Build once, deploy the same artifact to Staging and then Production (avoid rebuilding between environments).
+    - Use immutable versioning (commit SHA/tag) and keep release notes linked to that version.
+    - Keep rollback simple: defined rollback workflow, known previous-good artifact, and clear ownership.
+    - Keep production deployment rights minimal and auditable.
 
 === "DE"
 
@@ -1225,27 +1309,18 @@
 
     **Deployment Best Practices**
 
-      - Einmal bauen, dasselbe Artefakt auf Staging und dann Produktion deployen (vermeide Rebuilds zwischen Umgebungen).
-      - Nutze unveränderliche Versionierung (Commit SHA/Tag) und verlinke Release Notes damit.
-      - Halte Rollbacks einfach: definierter Rollback-Workflow, bekanntes funktionierendes Artefakt und klare Verantwortung.
-      - Halte Produktions-Deployment-Rechte minimal und auditierbar.
+    - Einmal bauen, dasselbe Artefakt auf Staging und dann Produktion deployen (vermeide Rebuilds zwischen Umgebungen).
+    - Nutze unveränderliche Versionierung (Commit SHA/Tag) und verlinke Release Notes damit.
+    - Halte Rollbacks einfach: definierter Rollback-Workflow, bekanntes funktionierendes Artefakt und klare Verantwortung.
+    - Halte Produktions-Deployment-Rechte minimal und auditierbar.
 
 ## IaC & Config
 
+**General**
 === "EN"
-
     Infrastructure defined as code ensures reproducibility and auditability.
 
     Define infrastructure and server configuration in version-controlled, reviewable code so changes are repeatable, auditable, and consistent. Keep it simple: use a small set of tools and patterns that the team can maintain.
-
-=== "DE"
-
-    Als Code definierte Infrastruktur sichert Wiederholbarkeit und Auditierbarkeit.
-
-    Definiere Infrastruktur und Serverkonfiguration in versioniertem, reviewbarem Code, damit Änderungen wiederholbar, auditierbar und konsistent sind. Halte es einfach: Nutze ein kleines Set an Tools und Mustern, die das Team warten kann.
-
-**General**
-=== "EN"
 
     - **Infrastructure as Code (IaC)**: Describe servers, networks, databases, and other infrastructure in declarative or scripted definitions (e.g. Terraform, Pulumi, CloudFormation, ARM, Bicep). Store them in version control; run them via CI/CD so every change is reviewed and logged. Avoid one-off manual changes; treat “clicking in the portal” as the exception, not the rule.
     - **System configuration (cookbooks / config management)**: For OS and application configuration on VMs or containers (e.g. installed packages, config files, users), use **configuration as code**: scripts, playbooks, or cookbooks (e.g. Ansible, Chef, Puppet, or versioned scripts). Idempotency and clear ordering reduce drift and make rollbacks predictable. Document the relationship between IaC (what is provisioned) and config management (how it is configured).
@@ -1254,6 +1329,10 @@
     - **Secrets and parameters**: Never hardcode secrets in IaC or cookbooks. Use parameters, environment variables, or a secrets store (e.g. Key Vault) and reference them at apply/runtime.
 
 === "DE"
+
+    Als Code definierte Infrastruktur sichert Wiederholbarkeit und Auditierbarkeit.
+
+    Definiere Infrastruktur und Serverkonfiguration in versioniertem, reviewbarem Code, damit Änderungen wiederholbar, auditierbar und konsistent sind. Halte es einfach: Nutze ein kleines Set an Tools und Mustern, die das Team warten kann.
 
     - **Infrastructure as Code (IaC)**: Beschreibe Server, Netzwerke, Datenbanken und andere Infrastruktur deklarativ (z. B. Terraform, Pulumi, Bicep). Speichere sie in der Versionsverwaltung; führe sie über CI/CD aus, damit jede Änderung geprüft und protokolliert wird. Vermeide manuelle Änderungen; betrachte „Klicken im Portal“ als Ausnahme, nicht die Regel.
     - **Systemkonfiguration**: Für OS- und Anwendungskonfiguration auf VMs oder Containern nutze **Configuration as Code**: Skripte, Playbooks oder Cookbooks (z. B. Ansible, Chef, Puppet). Idempotenz und klare Reihenfolge reduzieren Drift und machen Rollbacks vorhersehbar.
@@ -1675,30 +1754,36 @@
 === "EN"
 
     **Cost Analysis & Budgets**:
+
     - Use **Azure Cost Management** to set budgets and alerts at the subscription and resource group level.
     - Tag every resource with `Owner`, `Environment`, `CostCenter`, and `Application`.
     
     **Architectural Fit**:
+
     - Use **Consumption Plans** (Functions, Logic Apps) for sporadic workloads to pay only for execution.
     - Use **Reserved Instances** or **Savings Plans** for predictable, steady-state workloads (databases, VMs).
     - Use **Spot Instances** for interruptible batch jobs or stateless nodes in AKS.
     
     **Cleanup**:
+
     - Use **Azure Policy** to deny creation of expensive SKUs in non-production environments.
     - Implement automated scripts (e.g., Azure Automation runbooks) to shut down dev/test VMs at night.
 
 === "DE"
 
     **Kostenanalyse & Budgets**:
+
     - Nutze **Azure Cost Management**, um Budgets und Alarme auf Subscription- und Ressourcengruppen-Ebene zu setzen.
     - Tagge jede Ressource mit `Owner`, `Environment`, `CostCenter` und `Application`.
     
     **Architektonische Passgenauigkeit**:
+
     - Nutze **Consumption Plans** (Functions, Logic Apps) für sporadische Workloads (Pay-per-Execution).
     - Nutze **Reserved Instances** oder **Savings Plans** für vorhersagbare Dauerlast (Datenbanken, VMs).
     - Nutze **Spot Instances** für unterbrechbare Batch-Jobs oder Stateless Nodes in AKS.
     
     **Aufräumen**:
+
     - Nutze **Azure Policy**, um teure SKUs in Nicht-Produktionsumgebungen zu verbieten.
     - Implementiere automatisierte Skripte (z. B. Azure Automation Runbooks), um Dev/Test-VMs nachts herunterzufahren.
 
@@ -1706,19 +1791,23 @@
 === "EN"
 
     **CI/CD Costs**:
+
     - Monitor **GitHub Actions** minutes; use caching to speed up builds and reduce billable time.
     - Use self-hosted runners for heavy workloads if they are cheaper than GitHub-hosted runners.
     
     **Reporting**:
+
     - Integrate cost reports into the development dashboard. Engineers must see the cost impact of their changes.
 
 === "DE"
 
     **CI/CD-Kosten**:
+
     - Überwache **GitHub Actions**-Minuten; nutze Caching, um Builds zu beschleunigen und billable time zu reduzieren.
     - Nutze Self-Hosted Runner für schwere Workloads, wenn sie günstiger sind als GitHub-Hosted Runner.
     
     **Reporting**:
+
     - Integriere Kostenberichte in das Entwicklungs-Dashboard. Ingenieure müssen den Kosteneinfluss ihrer Änderungen sehen.
 
 ## Compliance
@@ -1811,10 +1900,12 @@
     - You can provide provider evidence references plus your own implementation evidence.
 
     What you still must prove yourself:
+
     - Correct service configuration, RBAC model, tenant isolation, secure CI/CD, data lifecycle, and incident response.
     - Contractual and legal controls around customer data processing and retention.
     
     Practical trust artifacts from Azure side:
+
     - Service scope check (is each used Azure service covered by required standard).
     - Shared-responsibility mapping per control.
     - References to official Microsoft compliance documentation/report availability.
@@ -1829,10 +1920,12 @@
     - Du kannst Provider-Nachweise plus deine eigenen Implementierungsnachweise bereitstellen.
 
     Was du selbst beweisen musst:
+
     - Korrekte Servicekonfiguration, RBAC-Modell, Mandantenisolierung, sichere CI/CD, Datenlebenszyklus und Incident Response.
     - Vertragliche und rechtliche Kontrollen rund um Kundendatenverarbeitung.
     
     Praktische Vertrauens-Artefakte (Azure-Seite):
+
     - Service-Scope-Check (ist jeder genutzte Dienst abgedeckt?).
     - Shared-Responsibility-Mapping.
     - Verweise auf offizielle Microsoft-Compliance-Doku.
@@ -1843,14 +1936,17 @@
     GitHub also provides audited compliance programs/attestations for its platform scope, commonly including: **SOC 1 Type 2**, **SOC 2 Type 2**, **SOC 3**, **ISO/IEC 27001**, **ISO/IEC 27701**, **ISO/IEC 27018**, and **CSA STAR** (scope depends on product/features/plan).
     
     What you can claim:
+
     - Your source control and CI/CD process runs on GitHub services with defined compliance attestations.
     - You enforce repository-level security controls (branch protection, reviews, Dependabot, code scanning, secret scanning).
     
     What remains yours:
+
     - Secure workflow design, permissions model, secrets governance, release approvals, and response process for findings.
     - Correct use of GitHub features and evidence retention for your own audits/customer reviews.
     
     Practical trust artifacts from GitHub side:
+
     - Repository/org security settings export or documented baseline.
     - Evidence of enabled controls (e.g. CodeQL/Dependabot/secret scanning status, branch rules).
     - References to GitHub compliance reports available for your plan.
@@ -1860,14 +1956,17 @@
     GitHub bietet ebenfalls auditierte Compliance-Programme (je nach Plan/Scope), z. B.: **SOC 1/2/3**, **ISO 27001**, **ISO 27701** und **CSA STAR**.
     
     Was du behaupten kannst:
+
     - Dein Versionskontroll- und CI/CD-Prozess läuft auf GitHub-Diensten mit definierten Attestaten.
     - Du erzwingst Repository-Sicherheitskontrollen (Branch Protection, Reviews, Dependabot, Scanning).
     
     Was deins bleibt:
+
     - Sicheres Workflow-Design, Berechtigungsmodell, Secrets-Governance, Release-Freigaben und Reaktion auf Findings.
     - Korrekte Nutzung von GitHub-Features und Nachweisführung für eigene Audits.
     
     Praktische Vertrauens-Artefakte (GitHub-Seite):
+
     - Export der Repo/Org-Sicherheitseinstellungen.
     - Nachweis aktivierter Kontrollen (CodeQL/Dependabot-Status).
     - Verweise auf GitHub-Compliance-Berichte.
@@ -1937,7 +2036,7 @@
 
 **General**
 === "EN"
-    
+
     A defined baseline ensures a consistent minimum security standard across projects.
 
     Use this as a practical template; tailor the thresholds to your product and customer expectations.
@@ -1970,6 +2069,7 @@
     - Core architecture, runbooks, and key decisions are documented and current.
 
 === "DE"
+
     Eine definierte Baseline sichert einen konsistenten Mindestsicherheitsstandard über Projekte hinweg.
 
     Nutze dies als Vorlage; passe die Schwellenwerte an dein Produkt und Kundenerwartungen an.
