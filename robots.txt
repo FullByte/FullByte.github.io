@@ -1,0 +1,22 @@
+User-Agent: *
+Allow: /
+
+Disallow: /harming/humans
+Disallow: /ignoring/human/orders
+Disallow: /harm/to/self
+
+Sitemap: https://www.0xfab1.net/sitemap.xml
+
+#              ________
+#   __,_,     |        |
+#  [_|_/      |   HI   |
+#   //        |________|
+# _//    __  /
+#(_|)   |@@|
+# \ \__ \--/ __
+#  \o__|----|  |   __
+#      \ }{ /\ )_ / _\
+#      /\__/\ \__O (__
+#     (--/\--)    \__/
+#     _)(  )(_
+#    `---''---`

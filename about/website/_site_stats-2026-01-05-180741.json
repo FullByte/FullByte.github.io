@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-01-05T18:07:33.205829",
+  "content_stats": {
+    "markdown_files": 458,
+    "total_words": 240071,
+    "total_lines": 41230,
+    "avg_words_per_file": 524
+  },
+  "file_stats": {
+    "total_files": 1215,
+    "file_types": {
+      "": 1,
+      ".md": 458,
+      ".webp": 545,
+      ".mp3": 5,
+      ".gif": 8,
+      ".pgn": 1,
+      ".svg": 73,
+      ".7z": 3,
+      ".pp": 2,
+      ".zip": 3,
+      ".curaprofile": 2,
+      ".ino": 1,
+      ".json": 31,
+      ".h": 1,
+      ".xml": 8,
+      ".csv": 2,
+      ".sql": 3,
+      ".txt": 5,
+      ".pdf": 10,
+      ".grid": 6,
+      ".html": 1,
+      ".mkv": 2,
+      ".gz": 2,
+      ".cast": 4,
+      ".tp": 1,
+      ".sh": 1,
+      ".cdr": 21,
+      ".io": 2,
+      ".dxf": 1,
+      ".afdesign": 1,
+      ".docx": 5,
+      ".mp4": 3,
+      ".mid": 1,
+      ".c": 1,
+      ".asc": 1
+    },
+    "directories": 100
+  },
+  "image_stats": {
+    "total_images": 626,
+    "total_size_mb": 94.33,
+    "by_type": {
+      ".webp": 545,
+      ".gif": 8,
+      ".svg": 73
+    }
+  }
+}
