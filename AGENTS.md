@@ -160,3 +160,12 @@ scripts/             # Build automation scripts
 - **Path References**: Use relative paths, maintain flat directory structure
 - **Build Testing**: Always test builds locally - broken builds break deployment
 - **Statistics**: Re-generate stats after significant content changes
+
+## Cursor Cloud specific instructions
+
+- **Virtual environment**: After the update script runs, activate with `source .venv/bin/activate` before running any Python or `mkdocs` commands.
+- **Unified CLI**: The AGENTS.md "Build Commands" section references legacy scripts (`build.py`, `serve.py`, `site_tester.py`, `check_media_paths.py`, etc.) that no longer exist. The actual tool is `python site_manager.py <command>`. Key subcommands: `build`, `serve`, `optimize`, `stats`, `test`, `check`, `clean`.
+- **Dev server binding**: Use `--host 0.0.0.0` when starting the dev server so it is reachable from the browser: `python site_manager.py serve --host 0.0.0.0`.
+- **Build time**: Initial build takes ~28 seconds for 460+ pages. Use `--no-optimize` to skip image conversion during development.
+- **Testing before commit**: Run `python site_manager.py build --no-optimize` and `python site_manager.py test` to validate the site. `python site_manager.py check` validates media paths.
+- **No external services required**: This is a pure static site generator; no databases, Docker, or Node.js needed for development.
