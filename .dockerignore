@@ -5,3 +5,8 @@ certbot/
 *.md
 .github/
 .dockerignore
+.venv/
+site/
+__pycache__/
+.cache/
+.cursor/
