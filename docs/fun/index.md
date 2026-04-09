@@ -11,8 +11,8 @@ Welcome to the fun section with collections for games, movies, series, music, bo
 - [Race Sim](games/race-sim.md) - Racing sim content and setups.
 - [LAN Party](games/lan-party.md) - LAN party ideas and game suggestions.
 - [Board Games](games/board-games.md) - Board games and recommendations.
-- [Movies](movies.md) - Movie list with year, genre, and short summary.
-- [Watch](watch.md) - Curated watchlists by category.
-- [Music](music.md) - Music section.
-- [Books](books.md) - Book list.
-- [News](news.md) - Short news collection.
+- [Movies](media/movies.md) - Movie list with year, genre, and short summary.
+- [Watch](media/watch.md) - Curated watchlists by category.
+- [Music](media/music.md) - Music section.
+- [Books](media/books.md) - Book list.
+- [News](media/news.md) - Short news collection.

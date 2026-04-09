@@ -13,10 +13,6 @@ The list below contains the songs I have:
 | Song                                | Artist                                          |
 | ----------------------------------- | ----------------------------------------------- |
 | Kryptonite                          | 3 Doors Down                                    |
-| Rock Band™ 4                        | 5th Anniversary Free DLC Pack                   |
-| Rock Band 4                         | 6th Anniversary Free DLC Pack                   |
-| Rock Band 4                         | 7th Anniversary Free DLC Pack                   |
-| Rock Band 4                         | 8th Anniversary Free DLC Pack                   |
 | If It Means a Lot to You            | A Day to Remember                               |
 | Resentment                          | A Day To Remember                               |
 | Shot In The Dark                    | AC/DC                                           |
