@@ -1,0 +1,216 @@
+/* Print Styles for 0xfab1.net */
+@media print {
+    /* Hide navigation and non-essential elements */
+    .md-header,
+    .md-tabs,
+    .md-footer,
+    .md-sidebar,
+    .md-nav,
+    .md-search,
+    .md-announce,
+    .pwa-install-button,
+    .md-content__button,
+    .md-top {
+        display: none !important;
+    }
+
+    /* Optimize layout for print */
+    .md-main {
+        display: block !important;
+    }
+
+    .md-main__inner {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .md-content {
+        max-width: none !important;
+        margin: 0 !important;
+    }
+
+    .md-content__inner {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Typography optimizations */
+    body {
+        font-size: 12pt !important;
+        line-height: 1.4 !important;
+        color: #000 !important;
+        background: #fff !important;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: #000 !important;
+        page-break-after: avoid;
+        margin-top: 1em !important;
+        margin-bottom: 0.5em !important;
+    }
+
+    h1 {
+        font-size: 18pt !important;
+        border-bottom: 2pt solid #000 !important;
+        padding-bottom: 0.2em !important;
+    }
+
+    h2 {
+        font-size: 16pt !important;
+        border-bottom: 1pt solid #666 !important;
+        padding-bottom: 0.1em !important;
+    }
+
+    h3 {
+        font-size: 14pt !important;
+    }
+
+    /* Paragraph and text optimizations */
+    p {
+        margin-bottom: 0.8em !important;
+        orphans: 3;
+        widows: 3;
+    }
+
+    /* Code blocks */
+    pre, code {
+        background: #f5f5f5 !important;
+        border: 1pt solid #ccc !important;
+        font-family: "Courier New", monospace !important;
+        font-size: 10pt !important;
+        overflow: visible !important;
+        word-wrap: break-word !important;
+    }
+
+    pre {
+        padding: 0.5em !important;
+        margin: 0.5em 0 !important;
+        page-break-inside: avoid;
+    }
+
+    code {
+        padding: 0.1em 0.2em !important;
+    }
+
+    /* Tables */
+    table {
+        border-collapse: collapse !important;
+        width: 100% !important;
+        margin: 0.5em 0 !important;
+        page-break-inside: auto;
+    }
+
+    th, td {
+        border: 1pt solid #666 !important;
+        padding: 0.3em !important;
+        font-size: 10pt !important;
+    }
+
+    th {
+        background: #f0f0f0 !important;
+        font-weight: bold !important;
+    }
+
+    tr {
+        page-break-inside: avoid;
+    }
+
+    /* Images */
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+        page-break-inside: avoid;
+        border: 1pt solid #ccc !important;
+    }
+
+    /* Picture elements (WebP with fallbacks) */
+    picture {
+        display: block !important;
+        page-break-inside: avoid;
+    }
+
+    /* Links */
+    a {
+        color: #000 !important;
+        text-decoration: underline !important;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 9pt;
+        color: #666;
+    }
+
+    /* Don't show URLs for internal links */
+    a[href^="#"]:after,
+    a[href^="/"]:after {
+        content: "";
+    }
+
+    /* Lists */
+    ul, ol {
+        margin: 0.5em 0 !important;
+        padding-left: 1.5em !important;
+    }
+
+    li {
+        margin-bottom: 0.3em !important;
+    }
+
+    /* Blockquotes */
+    blockquote {
+        border-left: 3pt solid #666 !important;
+        margin: 0.8em 0 !important;
+        padding-left: 1em !important;
+        color: #555 !important;
+        font-style: italic !important;
+    }
+
+    /* Page breaks */
+    .page-break {
+        page-break-before: always;
+    }
+
+    /* Admonitions (if using Material theme admonitions) */
+    .admonition {
+        border: 1pt solid #ccc !important;
+        margin: 0.5em 0 !important;
+        padding: 0.5em !important;
+        page-break-inside: avoid;
+    }
+
+    .admonition-title {
+        font-weight: bold !important;
+        margin-bottom: 0.3em !important;
+    }
+
+    /* Footer with page info */
+    @page {
+        margin: 2cm;
+        @bottom-center {
+            content: "Page " counter(page) " of " counter(pages);
+            font-size: 9pt;
+            color: #666;
+        }
+        @bottom-left {
+            content: "0xfab1.net";
+            font-size: 9pt;
+            color: #666;
+        }
+        @bottom-right {
+            content: "Generated: " date();
+            font-size: 9pt;
+            color: #666;
+        }
+    }
+
+    /* Ensure good page breaks */
+    .md-content article > *:first-child {
+        page-break-before: avoid;
+    }
+
+    /* Hide lazy loading placeholders */
+    .lazy-image:not(.loaded) {
+        display: none !important;
+    }
+}
