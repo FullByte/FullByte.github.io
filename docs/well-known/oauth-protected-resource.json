@@ -1,0 +1,10 @@
+{
+  "resource": "https://0xfab1.net/api/",
+  "authorization_servers": [
+    "https://0xfab1.net"
+  ],
+  "scopes_supported": [
+    "api.read",
+    "api.write"
+  ]
+}

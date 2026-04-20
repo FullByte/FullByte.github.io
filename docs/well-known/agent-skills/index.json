@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "api-catalog-discovery",
+      "type": "skill-md",
+      "description": "Discover API catalog, OpenAPI description, and status endpoint for 0xfab1.net.",
+      "url": "/.well-known/agent-skills/api-catalog-discovery/SKILL.md",
+      "digest": "sha256:0152a0677aee64a8d17973c36f0a02006811e70bb1ef926ff3815ad0f3de5ee2"
+    },
+    {
+      "name": "oauth-auth-discovery",
+      "type": "skill-md",
+      "description": "Discover OAuth/OIDC authorization server metadata and JWKS for 0xfab1.net.",
+      "url": "/.well-known/agent-skills/oauth-auth-discovery/SKILL.md",
+      "digest": "sha256:9ec109cd296b4ea79c849cc8658d85d3644347f32dd03b8b60d332837c207a88"
+    },
+    {
+      "name": "mcp-server-discovery",
+      "type": "skill-md",
+      "description": "Discover MCP server capabilities and transport endpoint for 0xfab1.net.",
+      "url": "/.well-known/agent-skills/mcp-server-discovery/SKILL.md",
+      "digest": "sha256:facddf38fda67694311d13468f866b0fc10eca78ea0d26711d5a0c3f5a1d4dd9"
+    }
+  ]
+}

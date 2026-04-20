@@ -1,0 +1,53 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "0xfab1 Public API",
+    "version": "1.0.0",
+    "description": "Static API metadata and health endpoint for automated discovery."
+  },
+  "servers": [
+    {
+      "url": "https://0xfab1.net"
+    }
+  ],
+  "paths": {
+    "/api/status.json": {
+      "get": {
+        "summary": "Service health status",
+        "operationId": "getStatus",
+        "responses": {
+          "200": {
+            "description": "Service status payload",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "required": [
+                    "status",
+                    "service",
+                    "updated"
+                  ],
+                  "properties": {
+                    "status": {
+                      "type": "string",
+                      "enum": [
+                        "ok"
+                      ]
+                    },
+                    "service": {
+                      "type": "string"
+                    },
+                    "updated": {
+                      "type": "string",
+                      "format": "date-time"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 User-Agent: *
 Allow: /
+Content-Signal: ai-train=no, search=yes, ai-input=no
 
 Disallow: /harming/humans
 Disallow: /ignoring/human/orders

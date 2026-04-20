@@ -5,7 +5,7 @@ services:
     buildCommand: |
       pip install --upgrade pip
       pip install -r requirements.txt
-      python -m mkdocs build
+      python site_manager.py build --no-optimize --quiet
     staticPublishPath: ./site
     domains:
       - 0xfab1.net
@@ -25,7 +25,118 @@ services:
       - path: /*
         name: X-Robots-Tag
         value: index, follow
+      - path: /*
+        name: Link
+        value: '</.well-known/api-catalog>; rel="api-catalog"; type="application/linkset+json", </about/website/index.html>; rel="service-doc"; type="text/html", </index.md>; rel="alternate"; type="text/markdown"'
+      - path: /.well-known/api-catalog
+        name: Content-Type
+        value: 'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"'
+      - path: /well-known/api-catalog.json
+        name: Content-Type
+        value: 'application/linkset+json; profile="https://www.rfc-editor.org/info/rfc9727"'
+      - path: /.well-known/openid-configuration
+        name: Content-Type
+        value: application/json; charset=utf-8
+      - path: /well-known/openid-configuration.json
+        name: Content-Type
+        value: application/json; charset=utf-8
+      - path: /.well-known/oauth-authorization-server
+        name: Content-Type
+        value: application/json; charset=utf-8
+      - path: /well-known/oauth-authorization-server.json
+        name: Content-Type
+        value: application/json; charset=utf-8
+      - path: /.well-known/oauth-protected-resource
+        name: Content-Type
+        value: application/json; charset=utf-8
+      - path: /well-known/oauth-protected-resource.json
+        name: Content-Type
+        value: application/json; charset=utf-8
+      - path: /.well-known/mcp/server-card.json
+        name: Content-Type
+        value: application/json; charset=utf-8
+      - path: /well-known/mcp/server-card.json
+        name: Content-Type
+        value: application/json; charset=utf-8
+      - path: /.well-known/agent-skills/index.json
+        name: Content-Type
+        value: application/json; charset=utf-8
+      - path: /well-known/agent-skills/index.json
+        name: Content-Type
+        value: application/json; charset=utf-8
+      - path: /.well-known/agent-skills/api-catalog-discovery/SKILL.md
+        name: Content-Type
+        value: text/markdown; charset=utf-8
+      - path: /well-known/agent-skills/api-catalog-discovery/SKILL.md
+        name: Content-Type
+        value: text/markdown; charset=utf-8
+      - path: /.well-known/agent-skills/oauth-auth-discovery/SKILL.md
+        name: Content-Type
+        value: text/markdown; charset=utf-8
+      - path: /well-known/agent-skills/oauth-auth-discovery/SKILL.md
+        name: Content-Type
+        value: text/markdown; charset=utf-8
+      - path: /.well-known/agent-skills/mcp-server-discovery/SKILL.md
+        name: Content-Type
+        value: text/markdown; charset=utf-8
+      - path: /well-known/agent-skills/mcp-server-discovery/SKILL.md
+        name: Content-Type
+        value: text/markdown; charset=utf-8
+      - path: /.well-known/mcp/server-card.json
+        name: Access-Control-Allow-Origin
+        value: '*'
+      - path: /well-known/mcp/server-card.json
+        name: Access-Control-Allow-Origin
+        value: '*'
+      - path: /.well-known/mcp/server-card.json
+        name: Access-Control-Allow-Methods
+        value: GET
+      - path: /well-known/mcp/server-card.json
+        name: Access-Control-Allow-Methods
+        value: GET
+      - path: /.well-known/mcp/server-card.json
+        name: Access-Control-Allow-Headers
+        value: Content-Type
+      - path: /well-known/mcp/server-card.json
+        name: Access-Control-Allow-Headers
+        value: Content-Type
+      - path: /.well-known/mcp/server-card.json
+        name: Cache-Control
+        value: public, max-age=3600
+      - path: /well-known/mcp/server-card.json
+        name: Cache-Control
+        value: public, max-age=3600
+      - path: /well-known/jwks.json
+        name: Content-Type
+        value: application/jwk-set+json; charset=utf-8
     routes:
+      - type: rewrite
+        source: /.well-known/api-catalog
+        destination: /well-known/api-catalog.json
+      - type: rewrite
+        source: /.well-known/openid-configuration
+        destination: /well-known/openid-configuration.json
+      - type: rewrite
+        source: /.well-known/oauth-authorization-server
+        destination: /well-known/oauth-authorization-server.json
+      - type: rewrite
+        source: /.well-known/oauth-protected-resource
+        destination: /well-known/oauth-protected-resource.json
+      - type: rewrite
+        source: /.well-known/mcp/server-card.json
+        destination: /well-known/mcp/server-card.json
+      - type: rewrite
+        source: /.well-known/agent-skills/index.json
+        destination: /well-known/agent-skills/index.json
+      - type: rewrite
+        source: /.well-known/agent-skills/api-catalog-discovery/SKILL.md
+        destination: /well-known/agent-skills/api-catalog-discovery/SKILL.md
+      - type: rewrite
+        source: /.well-known/agent-skills/oauth-auth-discovery/SKILL.md
+        destination: /well-known/agent-skills/oauth-auth-discovery/SKILL.md
+      - type: rewrite
+        source: /.well-known/agent-skills/mcp-server-discovery/SKILL.md
+        destination: /well-known/agent-skills/mcp-server-discovery/SKILL.md
       - type: rewrite
         source: /*
         destination: /index.html

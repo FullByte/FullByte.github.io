@@ -20,6 +20,7 @@ import json
 import re
 import logging
 import io
+import shutil
 from pathlib import Path
 from collections import Counter
 from datetime import datetime
@@ -225,6 +226,23 @@ class SiteManager:
                 print(f"❌ {description} failed: {e}")
             return False
 
+    def _mirror_markdown_sources(self, quiet: bool = False) -> bool:
+        """Copy source markdown files into site/ for markdown content negotiation."""
+        if not self.site_dir.exists():
+            return False
+
+        mirrored = 0
+        for md_file in self.docs_dir.rglob("*.md"):
+            rel_path = md_file.relative_to(self.docs_dir)
+            target = self.site_dir / rel_path
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(md_file, target)
+            mirrored += 1
+
+        if not quiet:
+            print(f"✅ Mirrored {mirrored} markdown files to site output")
+        return True
+
     def build_site(self, clean: bool = False, no_optimize: bool = False, quiet: bool = False) -> bool:
         """Build the MkDocs site with optional optimization."""
         print("🏗️ Building MkDocs site...")
@@ -254,6 +272,10 @@ class SiteManager:
         # Build site
         if not self._run_command("mkdocs build", "Building site", quiet):
             return False
+
+        if not self._mirror_markdown_sources(quiet):
+            if not quiet:
+                print("⚠️ Failed to mirror markdown sources, continuing...")
         
         print("✅ Build completed successfully!")
         return True
@@ -408,7 +430,6 @@ class SiteManager:
         for artifact in artifacts:
             if artifact.exists():
                 if artifact.is_dir():
-                    import shutil
                     shutil.rmtree(artifact)
                 else:
                     artifact.unlink()

@@ -107,7 +107,8 @@ extra:
 
 # Include media files in the build
 extra_css: []
-extra_javascript: []
+extra_javascript:
+  - assets/javascripts/webmcp.js
 
 # Copy additional files to site
 docs_dir: docs

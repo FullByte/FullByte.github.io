@@ -1,0 +1,5 @@
+{
+  "status": "not_implemented",
+  "endpoint": "authorization_endpoint",
+  "message": "This static site publishes OAuth/OIDC discovery metadata only. Interactive authorization is not implemented in this repository."
+}
