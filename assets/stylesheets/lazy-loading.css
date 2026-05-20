@@ -1,0 +1,35 @@
+/* Lazy loading images */
+img {
+  loading: lazy;
+}
+
+/* Intersection Observer based lazy loading fallback */
+.lazy-image {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.lazy-image.loaded {
+  opacity: 1;
+}
+
+/* Placeholder for images while loading */
+.lazy-image:not(.loaded) {
+  background: linear-gradient(90deg, #f0f0f0 25%, transparent 25%), 
+              linear-gradient(#f0f0f0 50%, transparent 50%);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  min-height: 200px;
+}
+
+/* WebP picture element styling */
+picture {
+  display: block;
+  line-height: 0;
+}
+
+picture img {
+  width: 100%;
+  height: auto;
+  display: block;
+}

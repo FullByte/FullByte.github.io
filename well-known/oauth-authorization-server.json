@@ -1,0 +1,28 @@
+{
+  "issuer": "https://0xfab1.net",
+  "authorization_endpoint": "https://0xfab1.net/oauth/authorize.json",
+  "token_endpoint": "https://0xfab1.net/oauth/token.json",
+  "jwks_uri": "https://0xfab1.net/well-known/jwks.json",
+  "grant_types_supported": [
+    "authorization_code",
+    "refresh_token",
+    "client_credentials"
+  ],
+  "response_types_supported": [
+    "code"
+  ],
+  "token_endpoint_auth_methods_supported": [
+    "client_secret_basic",
+    "private_key_jwt"
+  ],
+  "scopes_supported": [
+    "openid",
+    "profile",
+    "email",
+    "api.read",
+    "api.write"
+  ],
+  "code_challenge_methods_supported": [
+    "S256"
+  ]
+}

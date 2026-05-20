@@ -1,0 +1,12 @@
+{
+  "keys": [
+    {
+      "kty": "RSA",
+      "use": "sig",
+      "alg": "RS256",
+      "kid": "0xfab1-static-key-1",
+      "n": "vT4q0YfIPaYgV07m4C4xR9xkWQGdIKz2q1x8uM4wJQmM4n8vY5G7m2xq6cFhH8kY6WmKX-k8G3sZs5l3tJdX7QfQh0mVn7t3v9xvZf3LkQH6x7m8uS8xXJrYx5xY2l3V0N7oSx8vQ3Z9GQ9T8k8xF1a5L7r4w2kV9uQp3X6jG9w6hM4cY2zN8qK1wL7nC4mR2uG8pN5sB6dQ9rV3kX2mP8tY7wF3vT6xN2uJ8qR4pK6wM7xQ9sL5dY8gH2kW4mR7pN3xV6qB9tF2zC5yJ8uM1nQ4sP7xA0kD3gF6hJ9",
+      "e": "AQAB"
+    }
+  ]
+}
