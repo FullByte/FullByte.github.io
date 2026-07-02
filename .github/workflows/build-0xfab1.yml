@@ -50,8 +50,12 @@ jobs:
 
       - name: Deploy Github Pages
         if: github.event_name != 'pull_request'
+        env:
+          ENABLE_SOCIAL_CARDS: "true"
         run: mkdocs gh-deploy --no-history
 
       - name: Build only (pull request)
         if: github.event_name == 'pull_request'
+        env:
+          ENABLE_SOCIAL_CARDS: "true"
         run: mkdocs build

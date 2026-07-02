@@ -54,9 +54,9 @@ plugins:
       lang: en
   - tags
   # Social cards need the cairo system library which is unavailable on Windows,
-  # so they are only generated in CI (GitHub Actions sets CI=true).
+  # so they are only generated in CI (the deploy workflow sets ENABLE_SOCIAL_CARDS).
   - social:
-      enabled: !ENV [CI, false]
+      enabled: !ENV [ENABLE_SOCIAL_CARDS, false]
       cards_layout_options:
         font_family: Roboto
   # Dates and tags come from frontmatter (scripts/update_frontmatter.py keeps
@@ -67,6 +67,8 @@ plugins:
       match_path: "^(?!about/website/stats).*"
       use_git: false
       image: https://0xfab1.net/android-chrome-512x512.png
+      # No social-card enclosures in feed items - show the text summary instead
+      use_material_social_cards: false
       date_from_meta:
         as_creation: "date"
         as_update: "modified"
