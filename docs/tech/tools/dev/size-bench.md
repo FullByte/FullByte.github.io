@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2024-05-29
+modified: 2023-12-22
 description: SizeBench is a utility that analyzes PDB information to help you optimize and reduce the size of your binaries (DLLs, EXEs, and other PE files). You can ...
 tags:
 - Tech

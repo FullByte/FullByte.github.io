@@ -1,6 +1,6 @@
 ---
 date: 2023-12-28
-modified: 2024-06-12
+modified: 2023-12-28
 description: Jupyter Notebooks are a great way to teach python and demonstrate exampes. You can view ipynb files online e.g. with nextjournal and deepnote or install ...
 tags:
 - Tech

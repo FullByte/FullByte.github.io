@@ -1,6 +1,6 @@
 ---
 date: 2024-04-29
-modified: 2025-09-05
+modified: 2024-04-29
 description: This is an adaption of the game connect 4 (in german known as "vier gewinnt").
 tags:
 - Making

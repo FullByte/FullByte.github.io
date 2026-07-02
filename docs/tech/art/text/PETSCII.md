@@ -1,6 +1,6 @@
 ---
 date: 2025-03-25
-modified: 2025-09-05
+modified: 2025-03-25
 description: ​PETSCII (PET Standard Code of Information Interchange), is a character set developed by Commodore for their 8-bit computers. (see also CBM-ASCII or ...
 tags:
 - Tech

@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-04
+modified: 2024-09-12
 description: '- Enable Developer options on your phone - Enable Remote debugging via USB in your mobile browser settings - Connect device with USB - Visit ...'
 tags:
 - Tech

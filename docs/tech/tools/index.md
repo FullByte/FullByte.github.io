@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-04
+modified: 2025-07-28
 description: Obviously there are many approaches to this. I will explain how I sort information of relevance to me and hopefully some methods are interesting to you or ...
 tags:
 - Tech

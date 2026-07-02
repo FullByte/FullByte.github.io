@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2024-05-29
+modified: 2023-12-22
 description: 'Push your secret/privat key file "privkey.asc" to keybase so you can then use it on other linked devices:'
 tags:
 - Tech

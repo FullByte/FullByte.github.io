@@ -62,7 +62,9 @@ plugins:
   # Dates and tags come from frontmatter (scripts/update_frontmatter.py keeps
   # them in sync with git history), so no slow git calls at build time.
   - rss:
-      match_path: ".*"
+      # All pages except the auto-generated stats page (rebuilt on every build,
+      # would otherwise always sit on top of the "updated" feed)
+      match_path: "^(?!about/website/stats).*"
       use_git: false
       image: https://0xfab1.net/android-chrome-512x512.png
       date_from_meta:

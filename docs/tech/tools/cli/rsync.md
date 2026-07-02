@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2024-05-29
+modified: 2023-12-22
 description: 'Remove each source file after creating a successful copy (Basically "Move"):'
 tags:
 - Tech

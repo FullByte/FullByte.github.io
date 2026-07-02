@@ -1,6 +1,6 @@
 ---
 date: 2025-05-21
-modified: 2025-09-05
+modified: 2025-05-21
 description: 'In einer gesunden Beziehung sollte folgendes möglich sein und idealerweise auch passieren:'
 tags:
 - Personal

@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2024-05-29
+modified: 2023-12-22
 description: '- VIM to navigate in the browser - VIM for browser text-fields - VIM online editor'
 tags:
 - Tech

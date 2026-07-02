@@ -1,6 +1,6 @@
 ---
 date: 2024-09-12
-modified: 2025-09-05
+modified: 2024-09-12
 description: Exploring SQL can be an adventure in its own right, especially when you mix learning with the element of play. I've come across a variety of websites that ...
 tags:
 - Tech

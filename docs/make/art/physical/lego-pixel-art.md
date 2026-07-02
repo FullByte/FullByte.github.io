@@ -1,6 +1,6 @@
 ---
 date: 2024-04-30
-modified: 2025-09-05
+modified: 2024-04-30
 description: Legofy makes images look as if they are made out of 1x1 LEGO blocks.
 tags:
 - Making

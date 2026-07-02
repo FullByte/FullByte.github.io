@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2024-05-29
+modified: 2023-12-22
 description: '- mIRC (GUI) <https://www.mirc.com/> - weechat (CLI): sudo apt-get install weechat'
 tags:
 - Tech

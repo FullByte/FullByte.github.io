@@ -1,6 +1,6 @@
 ---
 date: 2024-09-12
-modified: 2025-09-05
+modified: 2024-09-12
 description: There is an option to opt out of OpenAI using your content to train future models. This page is quite well hidden, but allows you to send a request to ...
 tags:
 - Tech

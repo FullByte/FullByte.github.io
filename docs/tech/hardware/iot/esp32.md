@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2025-01-09
 description: Esptool.py is a Python-based, open source, platform independent utility to communicate with the ROM bootloader in Espressif SoCs.
 tags:
 - Tech

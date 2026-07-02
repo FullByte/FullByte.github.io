@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2024-04-30
 description: The Projekt Stable Diffusion web UI by AUTOMATIC1111 is a great way to start experimenting with stable diffusion. I run the following code on a Windows 10 ...
 tags:
 - Making

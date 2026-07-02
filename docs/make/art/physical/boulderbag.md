@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: With two large plastic climbing grips on the side and 18mm thick wood this beast is hard to carry home after a good session. It holds chalk, brushes ...
 tags:
 - Making

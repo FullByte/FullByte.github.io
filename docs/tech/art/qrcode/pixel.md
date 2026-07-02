@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: QR codes are encoded with Reed-Solomon error-correcting codes, so that a QR scanner does not have to see every pixel correctly in order to decode the ...
 tags:
 - Tech

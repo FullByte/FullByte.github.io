@@ -1,6 +1,6 @@
 ---
 date: 2024-05-20
-modified: 2025-09-05
+modified: 2024-05-20
 description: I lasered a drinking game I found online.
 tags:
 - Making

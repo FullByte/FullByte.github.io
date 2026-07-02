@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: The "PainStation" is an interactive art piece and a unique twist on the classic video game Pong. In this version of Pong, the players not only play the ...
 tags:
 - Tech

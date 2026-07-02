@@ -1,6 +1,6 @@
 ---
 date: 2025-06-26
-modified: 2025-09-05
+modified: 2025-06-26
 description: Emoji domains are made possible by browsers and TLD registries that support IDNA and emojis, while all underlying systems just use Punycode ASCII names ...
 tags:
 - Tech

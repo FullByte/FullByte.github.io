@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-04
+modified: 2023-12-22
 description: Open a new Terminal Window with PowerShell 7, cmd and WSL (in my case Ubuntu)
 tags:
 - Tech

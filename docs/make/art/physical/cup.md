@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: 'I broke a cup and in the spirit of kintsugi made something nice with it (no gold though) by engraving a suitable emoticon:'
 tags:
 - Making

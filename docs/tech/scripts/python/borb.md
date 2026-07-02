@@ -1,6 +1,6 @@
 ---
 date: 2023-12-28
-modified: 2024-06-12
+modified: 2023-12-28
 description: borb is a library for reading, creating and manipulating PDF files in python.
 tags:
 - Tech

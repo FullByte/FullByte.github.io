@@ -9,9 +9,11 @@ Sets/updates these frontmatter keys on every markdown page in docs/:
 - tags:        derived from the directory the page lives in (--all only)
 
 The date/modified values feed the mkdocs-rss-plugin (feed_rss_created.xml /
-feed_rss_updated.xml) without any git calls at build time. Commits whose
-message contains [rss-skip] are ignored when determining the "modified" date,
-so bulk metadata commits don't flood the RSS feed.
+feed_rss_updated.xml) without any git calls at build time. So that only real
+page edits bump the "modified" date (and thus the RSS feed), two kinds of
+commits are ignored: commits whose message contains [rss-skip], and bulk
+commits touching more than BULK_COMMIT_THRESHOLD markdown files at once
+(mass formatting/metadata sweeps).
 
 Usage:
     python scripts/update_frontmatter.py --dates   # refresh dates only (CI)
@@ -32,6 +34,9 @@ ROOT = Path(__file__).resolve().parents[1]
 DOCS = ROOT / "docs"
 
 RSS_SKIP_MARKER = "[rss-skip]"
+# Commits touching more markdown files than this are treated as bulk/mechanical
+# changes and do not bump the "modified" date (only real page edits should).
+BULK_COMMIT_THRESHOLD = 25
 DESCRIPTION_MAX_LEN = 155
 
 # Small, deliberately coarse tag vocabulary mapped from directory prefixes.
@@ -95,12 +100,24 @@ def git_dates() -> dict[str, tuple[str, str]]:
             path = alias[path]
         return path
 
+    def apply_commit(date: str, skip: bool, paths: list[str]) -> None:
+        # Commits touching many pages at once are mechanical (mass formatting,
+        # metadata sweeps) - they must not count as an "edit" for the RSS feed.
+        bulk = len(paths) > BULK_COMMIT_THRESHOLD
+        for path in paths:
+            created[path] = date  # oldest occurrence wins (overwritten)
+            if path not in modified and not skip and not bulk:
+                modified[path] = date
+
     current_date = ""
     current_skip = False
+    current_paths: list[str] = []
     for line in out.splitlines():
         if line.startswith("@@@"):
+            apply_commit(current_date, current_skip, current_paths)
             current_date, _, subject = line[3:].partition("\t")
             current_skip = RSS_SKIP_MARKER in subject
+            current_paths = []
             continue
         if not line or "\t" not in line:
             continue
@@ -110,15 +127,12 @@ def git_dates() -> dict[str, tuple[str, str]]:
             old, new = parts[1], parts[2]
             target = canonical(new)
             alias[old] = target
-            paths = [target]
+            path = target
         else:
-            paths = [canonical(parts[-1])]
-        for path in paths:
-            if not path.endswith(".md"):
-                continue
-            created[path] = current_date  # oldest occurrence wins (overwritten)
-            if path not in modified and not current_skip:
-                modified[path] = current_date
+            path = canonical(parts[-1])
+        if path.endswith(".md"):
+            current_paths.append(path)
+    apply_commit(current_date, current_skip, current_paths)
 
     result = {}
     for path, created_iso in created.items():

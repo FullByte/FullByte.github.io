@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2025-03-25
 description: '- Link: mapscii.me - Use: telnet mapscii.me - Download: <https://github.com/rastapasta/mapscii/releases>'
 tags:
 - Tech

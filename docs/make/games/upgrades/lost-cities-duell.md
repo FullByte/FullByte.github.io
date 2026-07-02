@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: This is a new box for the game lost cities duell.
 tags:
 - Making

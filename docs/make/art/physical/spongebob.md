@@ -1,6 +1,6 @@
 ---
 date: 2024-04-30
-modified: 2025-09-05
+modified: 2024-04-30
 description: 'Reminder: Don''t laser too thin :)'
 tags:
 - Making

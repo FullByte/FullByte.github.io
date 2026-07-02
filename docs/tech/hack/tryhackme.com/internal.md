@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: These notes are from a challenge I did @tryhackme called Internal Penetration Testing Challenge.
 tags:
 - Tech

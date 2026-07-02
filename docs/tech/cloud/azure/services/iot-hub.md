@@ -1,6 +1,6 @@
 ---
 date: 2024-12-17
-modified: 2025-09-05
+modified: 2025-01-10
 description: Install iot extension
 tags:
 - Tech

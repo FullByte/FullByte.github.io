@@ -1,6 +1,6 @@
 ---
 date: 2023-12-28
-modified: 2025-09-05
+modified: 2023-12-28
 description: Get the current file, path, fullpath
 tags:
 - Tech

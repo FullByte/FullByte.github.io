@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2025-09-03
 description: Nobody will care more about your health than you. Treat yourself well and your body will treat you well. Take care of your physical health first, then ...
 tags:
 - Personal

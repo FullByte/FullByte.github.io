@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: The simpler forms work better and are easier to clean.
 tags:
 - Making

@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2025-01-09
 description: I was looking for a simple music player for children and although there a million devices, most of them have a display, menu and buttons with multiple ...
 tags:
 - Making

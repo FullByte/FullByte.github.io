@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: Context Free is a program that generates images from written instructions called a grammar. The program follows the instructions in a few seconds to ...
 tags:
 - Tech

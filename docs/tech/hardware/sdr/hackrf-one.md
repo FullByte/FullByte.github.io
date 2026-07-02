@@ -1,6 +1,6 @@
 ---
 date: 2024-09-18
-modified: 2025-09-04
+modified: 2024-12-17
 description: 'Get the lateset tools and software for HackRF here: <https://github.com/greatscottgadgets/hackrf/releases> To upgrade to this release, you must update ...'
 tags:
 - Tech

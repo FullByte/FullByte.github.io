@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: I tested to laser the points you get at a given position on the Prömpel itself.
 tags:
 - Making

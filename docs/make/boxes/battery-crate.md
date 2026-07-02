@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: It was really satisfying to sort the batteries I had. Looks great, works as intended - perfect :)
 tags:
 - Making

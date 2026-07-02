@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: A pangram is a sentence using every letter of a given alphabet at least once. Pangrams have been used to display typefaces, test equipment, and develop ...
 tags:
 - Tech

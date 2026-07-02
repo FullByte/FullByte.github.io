@@ -1,6 +1,6 @@
 ---
 date: 2024-12-04
-modified: 2025-09-04
+modified: 2024-12-04
 description: 'Add an API token in NOCODB: From the User (bottom left) click on "Account Settings" and navigate to "Audit Log". The URL Path should look like this ...'
 tags:
 - Tech

@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-04
+modified: 2023-12-22
 description: In an event-driven architecture, information is exchanged using a central message broker. This adds complexity at the beginning of the project, but allows ...
 tags:
 - Tech

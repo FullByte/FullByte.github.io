@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-04
+modified: 2023-12-22
 description: The standard algebraic notation for chess) also works for chessacre.
 tags:
 - Making

@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: Spectrogram imagery refers to the visual representation of a signal's frequency content over time. It is created using a mathematical technique called the ...
 tags:
 - Tech

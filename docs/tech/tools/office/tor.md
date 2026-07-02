@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2024-05-29
+modified: 2023-12-22
 description: Tor, short for The Onion Router, is a free, open-source software designed to enable anonymous communication on the internet. The main goal of Tor is to ...
 tags:
 - Tech

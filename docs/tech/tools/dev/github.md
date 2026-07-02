@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-04
+modified: 2023-12-22
 description: Add ".atom" to a given commit link to get an RSS Reader update on a given file/folder or the entire project.
 tags:
 - Tech

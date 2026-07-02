@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2025-07-28
 description: This is my collection of games for dice throne :)
 tags:
 - Making

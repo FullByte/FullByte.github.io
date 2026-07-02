@@ -1,6 +1,6 @@
 ---
 date: 2024-04-30
-modified: 2025-09-05
+modified: 2024-04-30
 description: '- The game is played on a grid that''s 3x3 Tic Tac Toe boards. - The first player may start in any cell in any mini board. - The board in which the next ...'
 tags:
 - Making

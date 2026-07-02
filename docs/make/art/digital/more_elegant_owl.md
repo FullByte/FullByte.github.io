@@ -1,6 +1,6 @@
 ---
 date: 2024-01-16
-modified: 2024-09-12
+modified: 2024-04-30
 description: The idea come from this post in which a user requests DALL-E to draw a hungry hamster and asks to make the crated image even hungrier with every ...
 tags:
 - Making

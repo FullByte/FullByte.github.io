@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: 'I built a hardware case for the original hori taiko drum controller for Nintendo Switch which is a great addition to play the game Taiko no Tatsujin: Drum ...'
 tags:
 - Making

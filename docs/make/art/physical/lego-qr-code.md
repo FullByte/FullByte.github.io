@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2024-06-07
 description: I created a Lego QR Code linking to 0xfab1.net with Bricklink Studio.
 tags:
 - Making

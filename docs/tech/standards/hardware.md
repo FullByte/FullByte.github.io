@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: '- 8-inch: 80 KB to 1.2 MB - 5.25-inch: 110 KB to 1.2 MB - 3.5-inch: 720 KB (DD) to 2.88 MB (ED)'
 tags:
 - Tech

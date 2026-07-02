@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2024-06-12
+modified: 2023-12-22
 description: This is a guest post by HiSch with notes from a challenge we did @tryhackme called Binex.
 tags:
 - Tech

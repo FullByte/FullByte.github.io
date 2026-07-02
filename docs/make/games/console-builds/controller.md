@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2023-12-22
 description: I made a station for my switch and controllers so they are all sorted, charged and available anytime. I no longer use this as of now, since I prefer to ...
 tags:
 - Making

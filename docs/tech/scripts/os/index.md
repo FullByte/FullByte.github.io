@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2025-09-05
+modified: 2025-05-21
 description: This is a list of interesting operating systems... of course there is always more.
 tags:
 - Tech

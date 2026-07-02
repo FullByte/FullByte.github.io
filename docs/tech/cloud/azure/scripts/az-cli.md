@@ -1,6 +1,6 @@
 ---
 date: 2023-12-22
-modified: 2024-06-12
+modified: 2023-12-22
 description: 'Use device code to login:'
 tags:
 - Tech
