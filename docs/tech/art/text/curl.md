@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-03-25
+description: '- Link: <https://qrenco.de/> - Use: curl qrenco.de/0xfab1.net'
+tags:
+- Tech
+- Art
+---
+
 # CurL
 
 ## QR code

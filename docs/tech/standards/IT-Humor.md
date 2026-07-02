@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: '- An assumption you made that shows up on the list is a personal attack on your programming abilities - Every item based in historical fact is worth ...'
+tags:
+- Tech
+- Standards
+---
+
 # IT Humor
 
 ## Falsehoods about Falsehoods

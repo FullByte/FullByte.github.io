@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-07-28
+description: Yet another not complete list of random codes.
+tags:
+- Tech
+- Standards
+---
+
 # Codes
 
 Yet another not complete list of random codes.

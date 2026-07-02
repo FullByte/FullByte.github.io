@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: This is a list of board games I own and play. Additionally I have a list available at Board Game Geek and geekGroup.
+tags:
+- Making
+- Games
+---
+
 # Board Games
 
 This is a list of board games I own and play. Additionally I have a list available at [Board Game Geek](https://boardgamegeek.com/collection/user/zerogdoubled) and [geekGroup](https://geekgroup.app/users/zerogdoubled/collection).

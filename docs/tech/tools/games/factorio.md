@@ -1,3 +1,12 @@
+---
+date: 2025-09-04
+modified: 2025-09-05
+description: Guest contribution by HiSch
+tags:
+- Tech
+- Tools
+---
+
 # Factorio
 
 ## Headless Server on Proxmox (LXC)

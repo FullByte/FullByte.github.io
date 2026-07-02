@@ -1,3 +1,12 @@
+---
+date: 2024-12-04
+modified: 2024-12-04
+description: Convert all images in a given folder from heic to jpg
+tags:
+- Tech
+- Tools
+---
+
 # Magick
 
 ## Examples

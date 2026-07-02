@@ -1,3 +1,12 @@
+---
+date: 2024-05-20
+modified: 2025-09-05
+description: Kyria by splitkb.com
+tags:
+- Making
+- Hardware
+---
+
 # Kyria Split Keyboard
 
 Kyria by [splitkb.com](https://splitkb.com/)

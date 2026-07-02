@@ -1,3 +1,11 @@
+---
+date: 2023-12-22
+modified: 2026-01-30
+tags:
+- Tech
+- Standards
+---
+
 # IT-Conferences
 
 ## Germany

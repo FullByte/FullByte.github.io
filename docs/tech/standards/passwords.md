@@ -1,3 +1,12 @@
+---
+date: 2024-09-18
+modified: 2025-03-25
+description: Obviously it is a bad idea to have passwords in cleartext in XML files. If you do, remember that some chars need to be escaped or avoided. Most Unicode ...
+tags:
+- Tech
+- Standards
+---
+
 # Passwords
 
 ## Passwords in XML

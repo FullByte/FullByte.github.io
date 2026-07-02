@@ -1,3 +1,12 @@
+---
+date: 2025-12-22
+modified: 2026-02-24
+description: Unscii (a portmanteau of Unicode and ASCII) is a set of bitmapped fonts. Unlike the smoothed, vector-based fonts we use in web browsers or word ...
+tags:
+- Tech
+- Art
+---
+
 # Unscii
 
 [Unscii](https://github.com/viznut/unscii) (a portmanteau of Unicode and ASCII) is a set of bitmapped fonts. Unlike the smoothed, vector-based fonts we use in web browsers or word processors, [Unscii](http://viznut.fi/unscii/) is pixel-perfect.

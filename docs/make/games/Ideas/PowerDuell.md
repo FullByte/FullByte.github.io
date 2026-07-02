@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-04-30
+description: create a 2 player game in which both players duel on who can electricute the other player. This involves basic electronic components as cards and uses amp ...
+tags:
+- Making
+- Games
+---
+
 # PowerDuell
 
 create a 2 player game in which both players duel on who can electricute the other player. This involves basic electronic components as cards and uses amp volt watt as well as logic gates and capasitors

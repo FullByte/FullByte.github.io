@@ -1,3 +1,12 @@
+---
+date: 2024-04-30
+modified: 2025-09-05
+description: The base keyboard is an EPOMAKER SKYLOONG SK64.
+tags:
+- Making
+- Hardware
+---
+
 # Lego Keyboard
 
 The base keyboard is an [EPOMAKER](https://epomaker.com/) SKYLOONG SK64.

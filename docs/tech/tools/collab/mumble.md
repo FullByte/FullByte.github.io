@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-29
+description: Things to change in the mumble-server.ini
+tags:
+- Tech
+- Tools
+---
+
 # Mumble
 
 | What          | Where                                                  |

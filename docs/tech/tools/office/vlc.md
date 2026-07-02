@@ -1,3 +1,12 @@
+---
+date: 2024-01-08
+modified: 2024-05-29
+description: Stream to chromecast with yt-dlp and vlc
+tags:
+- Tech
+- Tools
+---
+
 # VLC
 
 Stream to chromecast with yt-dlp and vlc

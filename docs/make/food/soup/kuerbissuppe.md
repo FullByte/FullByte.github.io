@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Hokkaidokürbisse muss man nicht schälen.
+tags:
+- Making
+- Food
+---
+
 # Kürbniskremesuppe
 
 Hokkaidokürbisse muss man nicht schälen.

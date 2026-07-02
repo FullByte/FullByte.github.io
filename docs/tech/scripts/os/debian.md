@@ -1,3 +1,12 @@
+---
+date: 2025-09-04
+modified: 2025-09-04
+description: 'Update source list:'
+tags:
+- Tech
+- Scripting
+---
+
 # Debian
 
 ## Default Source List

@@ -1,3 +1,11 @@
+---
+date: 2025-01-23
+modified: 2025-09-03
+description: Don't limit yourself in undesired ways but rather optimize how to consume information.
+tags:
+- Personal
+---
+
 # Digital lifestyle
 
 ## Mute stuff

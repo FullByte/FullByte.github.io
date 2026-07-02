@@ -1,3 +1,11 @@
+---
+date: 2023-12-22
+modified: 2025-09-04
+description: Here are some possibilities to support me.
+tags:
+- Personal
+---
+
 # Support
 
 Here are some possibilities to support me.

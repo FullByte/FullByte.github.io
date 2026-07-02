@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: 'I used these files: Source and built this:'
+tags:
+- Making
+- Games
+---
+
 # Pac Man
 
 I used these files: [Source](https://www.thingiverse.com/thing:5396911) and built this:

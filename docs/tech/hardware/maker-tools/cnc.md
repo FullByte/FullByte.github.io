@@ -1,3 +1,12 @@
+---
+date: 2025-03-25
+modified: 2025-12-09
+description: '- [ ] Alles anschalten nach der Reihenfolge Beschriftung (Reminder: Karte besorgen [Schritt 5])'
+tags:
+- Tech
+- Hardware
+---
+
 # CNC
 
 ## Getting Started Hafven CNC

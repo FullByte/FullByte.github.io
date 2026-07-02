@@ -1,6 +1,6 @@
 {
-    "name": "",
-    "short_name": "",
+    "name": "0xfab1 - Personal Tech Blog",
+    "short_name": "0xfab1",
     "icons": [{
         "src": "/android-chrome-192x192.png",
         "sizes": "192x192",
@@ -10,7 +10,7 @@
         "sizes": "512x512",
         "type": "image/png"
     }],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#4caf50",
+    "background_color": "#121212",
     "display": "standalone"
 }

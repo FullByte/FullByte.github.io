@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: 'My favorite shadertoy submissions:'
+tags:
+- Tech
+- Art
+---
+
 # Shader
 
 ## Shadertoy

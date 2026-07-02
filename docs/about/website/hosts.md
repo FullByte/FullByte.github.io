@@ -1,3 +1,11 @@
+---
+date: 2025-09-15
+modified: 2026-05-20
+description: I am trying out new services and if the host websites i try to run 0xfab1.net. Here ist an overview of what I have tried and what is currently running ...
+tags:
+- Personal
+---
+
 # Hosts
 
 I am trying out new services and if the host websites i try to run 0xfab1.net. Here ist an overview of what I have tried and what is currently running parallel to the main page on Github Pages:

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: In many occasions there is a relevant XKCD to refer to the situation/topic. This list contains some of them.
+tags:
+- Tech
+- Standards
+---
+
 # XKCD
 
 In many occasions there is a [relevant](https://www.explainxkcd.com) [XKCD](https://xkcd.com) to refer to the situation/topic. This list contains some of them.

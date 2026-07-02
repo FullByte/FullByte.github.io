@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: '- First RFC (7 April 1969): <https://tools.ietf.org/html/rfc1> - RFC Key word ("MUST", "REQUIRED", "SHALL", "SHOULD", "RECOMMENDED", "MAY" ...'
+tags:
+- Tech
+- Standards
+---
+
 # RFCs
 
 ![https://xkcd.com/927](_standards.webp)

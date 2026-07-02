@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-29
+description: 'Create and edit SVG files nativly in VSCoode with Draw.io with a draw.io extension:'
+tags:
+- Tech
+- Tools
+---
+
 # Draw.io
 
 | What     | Where                                       |

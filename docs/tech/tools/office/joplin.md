@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-29
+description: 'How to install plugins:'
+tags:
+- Tech
+- Tools
+---
+
 # Joplin
 
 | What          | Where                                          |

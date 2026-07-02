@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: 'Players: 3-5, Time: 20-30 min, Age: 4+'
+tags:
+- Making
+- Games
+---
+
 # Rules
 
 Players: 3-5, Time: 20-30 min, Age: 4+

@@ -1,3 +1,11 @@
+---
+date: 2026-04-08
+modified: 2026-04-08
+tags:
+- Fun
+- Games
+---
+
 # Race Sim
 
 ## RS50 Settings

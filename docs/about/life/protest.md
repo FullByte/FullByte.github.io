@@ -1,3 +1,11 @@
+---
+date: 2023-12-22
+modified: 2026-04-09
+description: It is not easy to protest in a smart and effective way. In my opinion strikes, demonstrations, letter-writing campaigns, petitions, sit-ins and occupation ...
+tags:
+- Personal
+---
+
 # Protest
 
 It is not easy to protest in a smart and effective way. In my opinion strikes, demonstrations, letter-writing campaigns, petitions, sit-ins and occupation are not very effective nor creative. Of course one can passively boycott whatever thing to not support and tell friends about what and why not to support but this is boring and small minded as well.

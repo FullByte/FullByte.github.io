@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: I created a Lego QR Code linking to 0xfab1.net with Bricklink Studio.
+tags:
+- Making
+- Art
+---
+
 # Lego QR-Code
 
 I created a Lego QR Code linking to [0xfab1.net](https://0xfab1.net/ "https://0xfab1.net/") with [Bricklink Studio](https://www.bricklink.com/v3/studio/download.page "https://www.bricklink.com/v3/studio/download.page").

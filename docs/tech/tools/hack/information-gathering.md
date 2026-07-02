@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: (MAN pages and scripts)
+tags:
+- Tech
+- Tools
+---
+
 # Information Gathering
 
 ## Network

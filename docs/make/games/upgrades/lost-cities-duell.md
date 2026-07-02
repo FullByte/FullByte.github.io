@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: This is a new box for the game lost cities duell.
+tags:
+- Making
+- Games
+---
+
 # Lost Cities Duell
 
 This is a new box for the game lost cities duell.

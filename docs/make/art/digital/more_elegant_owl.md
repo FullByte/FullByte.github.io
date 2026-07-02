@@ -1,3 +1,12 @@
+---
+date: 2024-01-16
+modified: 2024-09-12
+description: The idea come from this post in which a user requests DALL-E to draw a hungry hamster and asks to make the crated image even hungrier with every ...
+tags:
+- Making
+- Art
+---
+
 # Elegant Owl
 
 The idea come from [this post](https://www.reddit.com/r/ChatGPT/comments/185u141/blah_blah_blah_hungrier_hamster/) in which a user requests DALL-E to draw a hungry hamster and asks to make the crated image even hungrier with every iteration. The result is hilarious so I tried my own version :)

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-29
+description: Decode Scripts using Charcode to represent characters in order to evade from AV and EDR solutions.
+tags:
+- Tech
+- Tools
+---
+
 # CyberChef
 
 | What          | Where                                        |

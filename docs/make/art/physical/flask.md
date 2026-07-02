@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: I modified a whiskey logo i found online and created a black-and-white SVG file to engrave on a flask.
+tags:
+- Making
+- Art
+---
+
 # Flask
 
 I modified a whiskey logo i found online and created a black-and-white SVG file to engrave on a flask.

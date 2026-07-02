@@ -1,3 +1,11 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+tags:
+- Tech
+- Standards
+---
+
 # Speed
 
 ## Latency Table

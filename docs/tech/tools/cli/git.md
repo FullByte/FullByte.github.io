@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: '- Github quick stats: <https://github.com/arzzen/git-quick-stats> - tig helps to colorize the git output - grv is nice to view repos - lazygit is a simple ...'
+tags:
+- Tech
+- Tools
+---
+
 # Git
 
 | What          | Where                           |

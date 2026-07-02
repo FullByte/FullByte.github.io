@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-04
+description: '- System: /usr/share/applications/ - System: /usr/local/share/applications/ - Flatpak: /var/lib/flatpak/exports/share/applications/ - Snap ...'
+tags:
+- Tech
+- Scripting
+---
+
 # Linux
 
 ## Application Shortcuts

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: Some projects might have a .ruby-version file that specifies the required Ruby version. If this file exists in your project directory, ensure its content ...
+tags:
+- Tech
+- Scripting
+---
+
 # Ruby
 
 ## Run older versions

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: 'Maps: <https://noclip.website/>'
+tags:
+- Making
+- Games
+---
+
 # SNES
 
 [![xkcd](https://imgs.xkcd.com/comics/penny_arcade.jpg)](https://xkcd.com/)

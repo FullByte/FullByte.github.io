@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: 'In order to connect an Azure MSSQL Database with NocoDB the JSON string needs to be modified as follows:'
+tags:
+- Tech
+- Tools
+---
+
 # NocoDB
 
 In order to connect an Azure MSSQL Database with NocoDB the JSON string needs to be modified as follows:

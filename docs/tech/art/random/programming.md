@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Hello World in Piet with the matching pixel art by Kelly Boothby.
+tags:
+- Tech
+- Art
+---
+
 # Programming
 
 ## Piet

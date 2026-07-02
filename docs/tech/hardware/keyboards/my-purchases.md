@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: The Durgod Fusion Navigator is a wireless 65% keyboard. I use MX Brown switches in this one.
+tags:
+- Tech
+- Hardware
+---
+
 # My Keyboards
 
 ## Durgod Fusion Navigator

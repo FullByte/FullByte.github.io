@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-01-10
+description: 'Create a CognitiveServices resource from the type TextTranslation:'
+tags:
+- Tech
+- Cloud
+---
+
 # Cogntive Services
 
 ## Text Translation

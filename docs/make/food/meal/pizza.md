@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Pizza stammt vermutlich aus Neapel, ist weiblich und steht seit 1967 im Rechtschreibduden. Im Duden kommt gleich nach der Pizza der Pizzabäcker. Das bist ...
+tags:
+- Making
+- Food
+---
+
 # Pizza
 
 Pizza stammt vermutlich aus Neapel, ist weiblich und steht seit 1967 im Rechtschreibduden. Im Duden kommt gleich nach der Pizza der Pizzabäcker. Das bist heute du!

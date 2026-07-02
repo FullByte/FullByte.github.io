@@ -1,3 +1,11 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: 'Query a DNS for TXT records of 0xfab1.net to get some contact details and currently relevant pages I add content to:'
+tags:
+- Personal
+---
+
 # Contact
 
 Query a DNS for TXT records of [0xfab1.net](https://0xfab1.net) to get some contact details and currently relevant pages I add content to:

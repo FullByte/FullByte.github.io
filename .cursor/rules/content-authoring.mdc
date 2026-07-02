@@ -9,5 +9,6 @@ alwaysApply: false
 
 - New articles are created as `.md` files within the appropriate subdirectories of `docs/`.
 - When adding images, place them in the same directory as the article or a subdirectory. Reference them with relative paths.
-- The `image_optimizer.py` script will automatically process and optimize any new images during the build process.
-- Before committing, it's good practice to run `python check_media_paths.py` to find broken image or media links.
+- `python site_manager.py optimize` will automatically process and optimize any new images (also runs during `site_manager.py build`).
+- Before committing, it's good practice to run `python site_manager.py check` to find broken image or media links.
+- Every page carries YAML frontmatter with `date`, `modified`, `description` and `tags`. Run `python scripts/update_frontmatter.py --all` after adding pages to fill these in; dates are derived from git history and feed the RSS feed.

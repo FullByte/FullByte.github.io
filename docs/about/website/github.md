@@ -1,3 +1,11 @@
+---
+date: 2025-09-15
+modified: 2025-09-15
+description: All code is hosted on github.
+tags:
+- Personal
+---
+
 # Github
 
 All code is hosted on github.
@@ -62,34 +70,44 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
-        uses: actions/checkout@v2
-
-      - name: Set up Python 3.10
-        uses: actions/setup-python@v2
+        uses: actions/checkout@v4
         with:
-          python-version: '3.10'
+          # Full history is required so frontmatter dates (RSS feed) are correct
+          fetch-depth: 0
 
-      - name: Install mkdocs dependencies
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+
+      - name: Install dependencies
         run: |
-          pip install --upgrade pip          
-          pip install mkdocs-material
-          pip install mkdocs-minify-plugin
-          pip install mkdocs-rss-plugin
-          pip install mkdocs-git-revision-date-localized-plugin
-          pip install mkdocs-htmlproofer-plugin
-          pip install pillow
-          pip install cairosvg
+          # libcairo2 is required by the social cards plugin
+          sudo apt-get update && sudo apt-get install -y libcairo2-dev libfreetype6-dev libffi-dev libjpeg-dev libpng-dev libz-dev
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Cache social cards
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: social-cards-${{ hashFiles('mkdocs.yml') }}
+          restore-keys: social-cards-
+
+      - name: Refresh frontmatter dates from git history
+        run: python scripts/update_frontmatter.py --dates --quiet
 
       - name: Optimize images
-        run: |
-          python image_optimizer.py --mode build
+        run: python site_manager.py optimize --mode all --quiet
 
       - name: Deploy Github Pages
-        env:
-          PYTHONWARNINGS: ignore
-        run: |
-          git pull
-          mkdocs gh-deploy --no-history 2>&1 | grep -v '\[git-revision-date-localized-plugin\]' | grep -v 'has no git logs' | grep -v 'First revision timestamp' | grep -v 'RSS-plugin.*Dates could not be retrieved' || true
+        if: github.event_name != 'pull_request'
+        run: mkdocs gh-deploy --no-history
+
+      - name: Build only (pull request)
+        if: github.event_name == 'pull_request'
+        run: mkdocs build
 ```
 
 There are many other nice things that could be done here. The main important part is to trigger the markdown to static website generator as github action on new commits so that the site is automatically built whenever you commit new content.
@@ -100,46 +118,48 @@ This website includes several automated build tools for enhanced development exp
 
 ### Local Development Scripts
 
-**Python Build Script (`build.py`)**
+All automation lives in the unified CLI `site_manager.py`:
+
 ```bash
 # Quick build with optimization
-python build.py
+python site_manager.py build
 
-# Build and start development server
-python build.py --serve
+# Start development server
+python site_manager.py serve
 
 # Skip image optimization (faster builds during development)
-python build.py --no-optimize
+python site_manager.py build --no-optimize
 
-# Clean build
-python build.py --clean
-```
+# Clean build artifacts
+python site_manager.py clean
 
-**PowerShell Build Script (`build.ps1`)**
-```powershell
-# Quick build with optimization
-.\build.ps1
-
-# Build and serve on custom port
-.\build.ps1 -Serve -Port 3000
-
-# Skip optimization for faster development
-.\build.ps1 -NoOptimize
+# Test built site and validate media paths
+python site_manager.py test
+python site_manager.py check
 ```
 
 ### Image Optimization Tool
 
-The `image_optimizer.py` script provides comprehensive image optimization:
+`site_manager.py optimize` provides comprehensive image optimization:
 
 ```bash
 # Automatic optimization during build
-python image_optimizer.py --mode build
+python site_manager.py optimize --mode build
 
-# Show current image inventory
-python image_optimizer.py --inventory
+# Full optimization run (as used in CI)
+python site_manager.py optimize --mode all
+```
 
-# Manual optimization with clean references
-python image_optimizer.py --mode all --clean-references
+### Frontmatter Automation
+
+`scripts/update_frontmatter.py` keeps page metadata in sync with git history. Every page gets `date`, `modified`, `description` and `tags` frontmatter, which powers the RSS feeds and tag overview:
+
+```bash
+# Refresh dates only (runs in CI before each deploy)
+python scripts/update_frontmatter.py --dates
+
+# Also fill in missing descriptions and tags for new pages
+python scripts/update_frontmatter.py --all
 ```
 
 **Features:**

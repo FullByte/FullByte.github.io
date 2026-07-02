@@ -1,3 +1,12 @@
+---
+date: 2026-04-09
+modified: 2026-04-09
+description: A small collection of interesting words that are hard to translate directly.
+tags:
+- Fun
+- Culture
+---
+
 # Unique Words Across Languages
 
 A small collection of interesting words that are hard to translate directly.

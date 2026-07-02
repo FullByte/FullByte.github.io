@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: By merging an image and a QR-Code it is possible to create scannable QR-Codes with an embedded picture.
+tags:
+- Tech
+- Art
+---
+
 # Stable Diffusion
 
 By merging an image and a QR-Code it is possible to create scannable QR-Codes with an embedded picture.

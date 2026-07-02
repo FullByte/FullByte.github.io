@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: Pasta mit gebackener Feta-Tomatensauce.
+tags:
+- Making
+- Food
+---
+
 # Pasta mit Feta und Tomate
 
 Pasta mit gebackener Feta-Tomatensauce.

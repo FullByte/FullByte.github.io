@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: This is a collection of cool programs running/creating ASCII art.
+tags:
+- Tech
+- Art
+---
+
 # ASCII
 
 This is a collection of cool programs running/creating ASCII art.

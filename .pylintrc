@@ -1,0 +1,17 @@
+[MAIN]
+# Build/automation scripts intentionally catch broad exceptions so a single
+# bad file never aborts a whole site build; missing docstring checks are
+# too noisy for a personal project.
+disable=
+    broad-exception-caught,
+    missing-module-docstring,
+    missing-class-docstring,
+    missing-function-docstring,
+    too-many-instance-attributes,
+    too-many-branches,
+    too-many-locals,
+    too-many-statements,
+    too-few-public-methods
+
+[FORMAT]
+max-line-length=120

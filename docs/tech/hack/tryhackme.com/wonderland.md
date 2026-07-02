@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: These notes are from a challenge I did @tryhackme called wonderland.
+tags:
+- Tech
+- Security
+---
+
 # Wonderland
 
 These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [wonderland](https://tryhackme.com/room/wonderland).

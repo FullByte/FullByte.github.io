@@ -1,3 +1,12 @@
+---
+date: 2024-04-30
+modified: 2024-04-30
+description: '"Connect Four" is a classic two-player connection board game in which the players first choose a color and then take turns dropping colored discs into a ...'
+tags:
+- Making
+- Games
+---
+
 # Details
 
 "Connect Four" is a classic two-player connection board game in which the players first choose a color and then take turns dropping colored discs into a seven-column, six-row vertically suspended grid. The objective of the game is to be the first to form a horizontal, vertical, or diagonal line of four of one's own discs. Here are some strategies to improve your chances of winning in Connect Four:

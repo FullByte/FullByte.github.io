@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: 'Details on the original game can be found here: "Vegas"'
+tags:
+- Making
+- Games
+---
+
 # Vegas
 
 Details on the original game can be found here: "[Vegas](https://boardgamegeek.com/boardgame/117959/las-vegas)"

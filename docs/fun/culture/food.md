@@ -1,3 +1,11 @@
+---
+date: 2026-04-09
+modified: 2026-04-09
+tags:
+- Fun
+- Culture
+---
+
 # Food Culture
 
 ## Japanese Chopstick Faux Pas

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: These notes are from a challenge I did @tryhackme called Internal Penetration Testing Challenge.
+tags:
+- Tech
+- Security
+---
+
 # Internal
 
 These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [Internal Penetration Testing Challenge](https://tryhackme.com/room/internal).

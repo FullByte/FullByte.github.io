@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-03-31
+description: '- w3m Browser: <http://w3m.sourceforge.net/> - Googler: <https://github.com/jarun/googler> - DuckDuckGo: <https://github.com/jarun/ddgr> (Browser ...'
+tags:
+- Tech
+- Tools
+---
+
 # CLI Tools
 
 ## Browser

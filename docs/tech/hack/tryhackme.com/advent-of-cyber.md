@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: These notes are from a challenge I did @tryhackme called Advent of Cyber 2.
+tags:
+- Tech
+- Security
+---
+
 # Advent of Cyber
 
 ## Advent of Cyber 2

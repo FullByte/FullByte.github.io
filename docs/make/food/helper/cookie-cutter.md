@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: The simpler forms work better and are easier to clean.
+tags:
+- Making
+- Food
+---
+
 # Cookie Cutter
 
 The simpler forms work better and are easier to clean.

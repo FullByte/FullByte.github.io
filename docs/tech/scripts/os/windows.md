@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-10-31
+description: 'Install without account:'
+tags:
+- Tech
+- Scripting
+---
+
 # Windows
 
 ## Windows 11

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-01-10
+description: You can only have one Custom Script Extension attached to a VM at a time.
+tags:
+- Tech
+- Cloud
+---
+
 # Azure VM
 
 ## Custom Script Extension for Windows

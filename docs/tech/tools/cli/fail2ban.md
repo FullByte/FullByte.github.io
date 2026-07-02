@@ -1,3 +1,12 @@
+---
+date: 2026-04-15
+modified: 2026-04-15
+description: Fail2ban is a Daemon to ban hosts that cause multiple authentication errors.
+tags:
+- Tech
+- Tools
+---
+
 # Fail2ban
 
 [Fail2ban](https://github.com/fail2ban/fail2ban) is a Daemon to ban hosts that cause multiple authentication errors.

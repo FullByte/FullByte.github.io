@@ -1,3 +1,12 @@
+---
+date: 2025-03-25
+modified: 2025-09-05
+description: ​PETSCII (PET Standard Code of Information Interchange), is a character set developed by Commodore for their 8-bit computers. (see also CBM-ASCII or ...
+tags:
+- Tech
+- Art
+---
+
 # PETSCII
 
 ​PETSCII (PET Standard Code of Information Interchange), is a character set developed by Commodore for their 8-bit computers. (see also CBM-ASCII or PET-ASCII). This set extends the 1963 version of ASCII, incorporating graphical symbols alongside standard alphanumeric characters. These graphical symbols enabled users to create simple, character-based graphics, facilitating game development and enhancing the visual capabilities of Commodore computers. The character set operates in two modes:​

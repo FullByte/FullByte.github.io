@@ -1,5 +1,8 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>404 - Page Not Found | 0xfab1.net</title>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -27,10 +30,15 @@
                 background-color: black;
                 color: rgb(0, 207, 0);
                 font-family: "Courier New", Courier, monospace;
-                font-size: 9px;
+                font-size: 14px;
             }
             label{
                 font-size:12px;
+            }
+            #newVersionNum {
+                width: 40%;
+                background-color: black;
+                color: white;
             }
             canvas {
                 position: fixed;
@@ -67,16 +75,18 @@
         <br/>
         <div class="form-inline">
             <div class="form-group">
-                <label for=version>How often have you reached a 404 page on 0xfab1.net?</label>
-                <input class="form-control" id="newVersionNum" style="width:40%;background-color:black;color:white;" onchange="helper.events.versionChange()">
+                <label for="newVersionNum">How often have you reached a 404 page on 0xfab1.net?</label>
+                <input class="form-control" id="newVersionNum" onchange="helper.events.versionChange()">
             </div>
         </div>
         <br/><br/>        
         <table>
             <thead class="mainheader">
-                <th>Complete</th>
-                <th>Task</th>
-                <th>Time</th>
+                <tr>
+                    <th>Complete</th>
+                    <th>Task</th>
+                    <th>Time</th>
+                </tr>
             </thead>
             <tbody id="tasks">
             </tbody>
@@ -87,7 +97,7 @@
 
 <script>
     var tasks=[
-    `Understand that this page is not available`,
+    `Accept that this page is not available`,
     `If <span class="version">_____</span> > 1 reconsider life choices`,
     `Go to <a href="https://0xfab1.net/">0xfab1.net</a> and use the search function instead`,
     `Update the link used or inform person sending old links`,
@@ -183,5 +193,10 @@ function draw()
 	}
 }
 
-setInterval(draw, 40);
+// Respect users who prefer reduced motion: draw a single static frame instead
+if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+	draw();
+} else {
+	setInterval(draw, 40);
+}
 </script>

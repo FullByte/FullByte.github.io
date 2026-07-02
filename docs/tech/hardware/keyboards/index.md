@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: 'Generally there are few things to say:'
+tags:
+- Tech
+- Hardware
+---
+
 # Keyboard
 
 ``` txt

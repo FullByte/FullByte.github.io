@@ -1,3 +1,12 @@
+---
+date: 2024-12-04
+modified: 2025-07-28
+description: 'In my opinion there is no best TODO list, task organizer or productivity app. Here is why I think that way:'
+tags:
+- Tech
+- Tools
+---
+
 # TODO
 
 In my opinion there is no best TODO list, task organizer or productivity app. Here is why I think that way:

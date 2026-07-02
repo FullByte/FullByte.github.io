@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-01-27
+description: 'Create a repo and create a new, empty terraform script to create:'
+tags:
+- Tech
+- Cloud
+---
+
 # Static Website
 
 ## Create resources with terraform

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-04
+description: Sigal is a simple static gallery generator.
+tags:
+- Tech
+- Scripting
+---
+
 # Static Websites
 
 ## Generators

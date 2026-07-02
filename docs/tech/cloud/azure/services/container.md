@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: 'To run croc locally in docker we can run:'
+tags:
+- Tech
+- Cloud
+---
+
 # Container
 
 ## Example using an existing docker container hosted on docker (croc)

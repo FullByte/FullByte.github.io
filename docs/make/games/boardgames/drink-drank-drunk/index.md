@@ -1,3 +1,12 @@
+---
+date: 2025-04-25
+modified: 2025-04-28
+description: Das Spiel heißt "Drink Drank Drunk", weil es nicht „Shit Shat Shot“ heißen sollte. Im Prinzip ist es eine Kopie von Ultimate Tic Tac Toe mit Schanps-Theme.
+tags:
+- Making
+- Games
+---
+
 # Rules
 
 Das Spiel heißt "Drink Drank Drunk", weil es nicht „Shit Shat Shot“ heißen sollte.

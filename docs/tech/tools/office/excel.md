@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-04
+description: Translate Excel Formaulas form one language to another.
+tags:
+- Tech
+- Tools
+---
+
 # Excel
 
 | What      | Where                                                                                                          |

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Plank and press the button if flashing. Light will start flashing after some (random time again). The inspiration comes from this product ...
+tags:
+- Tech
+- Hardware
+---
+
 # Creative Coder
 
 ## Fitness app

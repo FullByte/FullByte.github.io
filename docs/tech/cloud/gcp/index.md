@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-28
+description: 'TIL: Google Cloud offers a function for its storage solution: "Requester Pays". With this model, the costs for downloading data are not borne by the ...'
+tags:
+- Tech
+- Cloud
+---
+
 # Google Cloud Platform
 
 ![OldManYellsAtCloud](_OldManYellsAtCloud.svg)

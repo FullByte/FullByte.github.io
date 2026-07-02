@@ -1,3 +1,12 @@
+---
+date: 2023-12-28
+modified: 2025-09-05
+description: Get the current file, path, fullpath
+tags:
+- Tech
+- Scripting
+---
+
 # Snippets
 
 ![_is_it_worth_the_time.png](_is_it_worth_the_time.webp)

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-04
+description: Further Links
+tags:
+- Tech
+- Cloud
+---
+
 # Azure Cloud Shell
 
 | What              | Where                                                                                                                            |

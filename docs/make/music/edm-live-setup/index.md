@@ -1,3 +1,12 @@
+---
+date: 2024-04-30
+modified: 2024-04-30
+description: 'Change octave: Group → Choose one of the blue buttons'
+tags:
+- Making
+- Music
+---
+
 # Notes
 
 ## Machine Mikro

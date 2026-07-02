@@ -1,8 +1,8 @@
-mkdocs
-mkdocs-material[recommended]
-mkdocs-minify-plugin
-mkdocs-rss-plugin
-mkdocs-git-revision-date-localized-plugin
-mkdocs-htmlproofer-plugin
-pillow
-cairosvg
+# Pinned to the currently tested versions; the [imaging] extra provides
+# pillow + cairosvg for the built-in social cards plugin.
+mkdocs~=1.6
+mkdocs-material[imaging]~=9.6
+mkdocs-minify-plugin~=0.8
+mkdocs-rss-plugin~=1.17
+pillow~=11.3
+PyYAML~=6.0

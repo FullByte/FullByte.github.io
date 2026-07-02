@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: James Stanley showed a cool way to hide messages in chess games. View the code here.
+tags:
+- Tech
+- Tools
+---
+
 # Steganography
 
 ## Chess

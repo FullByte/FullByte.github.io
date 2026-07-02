@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: There is a full cut out template available at boxes.py
+tags:
+- Making
+- Games
+---
+
 # Royal Game of Ur
 
 There is a full cut out template available at [boxes.py](https://festi.info/boxes.py/RoyalGame?language=en)

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-29
+description: '- Simple Inkscape Scripting'
+tags:
+- Tech
+- Tools
+---
+
 # Inkscape
 
 | What          | Where |

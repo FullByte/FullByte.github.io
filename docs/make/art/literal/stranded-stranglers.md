@@ -1,3 +1,12 @@
+---
+date: 2024-09-18
+modified: 2024-09-18
+description: A song text collection of my band "Stranded Stanglers".
+tags:
+- Making
+- Art
+---
+
 # Stranded Stranglers
 
 A song text collection of my band "Stranded Stanglers".

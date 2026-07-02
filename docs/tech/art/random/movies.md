@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: Technical information on screens in movies often is just made up random stuff.
+tags:
+- Tech
+- Art
+---
+
 # Movies
 
 Technical information on screens in movies often is just made up random stuff.

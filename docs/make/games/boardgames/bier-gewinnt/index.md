@@ -1,3 +1,12 @@
+---
+date: 2024-04-29
+modified: 2025-09-05
+description: This is an adaption of the game connect 4 (in german known as "vier gewinnt").
+tags:
+- Making
+- Games
+---
+
 # Rules
 
 This is an adaption of the game connect 4 (in german known as "vier gewinnt").

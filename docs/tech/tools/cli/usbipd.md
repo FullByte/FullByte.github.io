@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-29
+description: '- Make sure your WSL is up to date: wsl --update - Show currently available WSL distros: wsl --list --verbose - Set default: wsl --setdefault Ubuntu-20.04 ...'
+tags:
+- Tech
+- Tools
+---
+
 # usbipd
 
 | What    | Where                                                               |

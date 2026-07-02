@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-12-09
+description: 'To add a device run this command:'
+tags:
+- Tech
+- Tools
+---
+
 # Teleport
 
 | What          | Where |

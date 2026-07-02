@@ -1,3 +1,11 @@
+---
+date: 2023-12-22
+modified: 2025-09-03
+description: Don't get serious advice from some random website, but hey, you are here, so enjoy my input :)
+tags:
+- Personal
+---
+
 # Overview
 
 Don't get serious advice from some random website, but hey, you are here, so enjoy my input :)
@@ -29,4 +37,4 @@ Some topics I will eventually cover later:
 - Fulfillment (Spiritual Wealth)
 - Joy (Emotional Wealth)
 
-I also collected and formulated some not so serious advice in the [fun](fun.md) chapter.
+I also collected and formulated some not so serious advice in the [fun](../../fun/index.md) chapter.

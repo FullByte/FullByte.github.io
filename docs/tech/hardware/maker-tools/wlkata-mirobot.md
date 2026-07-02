@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: 'Drivers successfully installed:'
+tags:
+- Tech
+- Hardware
+---
+
 # WLKATA Mirobot
 
 <https://www.wlkata.com/products/wlkata-mirobot-introduction>

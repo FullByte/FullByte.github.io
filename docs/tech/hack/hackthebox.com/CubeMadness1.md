@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: These notes are from a challenge I did @hackthebox called CubeMadness1.
+tags:
+- Tech
+- Security
+---
+
 # Cube Madness 1
 
 These notes are from a challenge I did @[hackthebox](https://hackthebox.com) called [CubeMadness1](https://app.hackthebox.com/challenges/cubemadness1).

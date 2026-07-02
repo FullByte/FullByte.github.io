@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: Hähnchen aus dem Ofen mit Zitronenkartoffeln.
+tags:
+- Making
+- Food
+---
+
 # Ofen Hähnchen
 
 Hähnchen aus dem Ofen mit Zitronenkartoffeln.

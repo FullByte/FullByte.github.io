@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: Für trockene Müsliriegel das Backobst weglassen.
+tags:
+- Making
+- Food
+---
+
 # Müsliriegel
 
 Für trockene Müsliriegel das Backobst weglassen.

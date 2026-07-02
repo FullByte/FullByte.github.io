@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: Fortgeschritte Halli-Galli-Spieler errechnen parallel zum Spielgeschehen blitzschnell die Wahrscheinlichkeiten für ein gültiges Paar beim nächsten Zug ...
+tags:
+- Making
+- Games
+---
+
 # Details
 
 ## Statistics

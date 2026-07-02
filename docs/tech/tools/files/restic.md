@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-01-09
+description: Restic is a fast and secure backup program that supports deduplication, encryption, and a variety of backends (like local storage, SFTP, and cloud ...
+tags:
+- Tech
+- Tools
+---
+
 # Restic
 
 Restic is a fast and secure backup program that supports deduplication, encryption, and a variety of backends (like local storage, SFTP, and cloud providers). 

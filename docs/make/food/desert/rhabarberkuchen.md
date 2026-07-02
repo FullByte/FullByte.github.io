@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-05-12
+description: === "Zutaten"
+tags:
+- Making
+- Food
+---
+
 # Rhabarberkuchen
 
 ## Stats

@@ -1,3 +1,12 @@
+---
+date: 2024-12-18
+modified: 2025-12-09
+description: 'Example to read registry values:'
+tags:
+- Tech
+- Scripting
+---
+
 # Snippets
 
 ## Registry

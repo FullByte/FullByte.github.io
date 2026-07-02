@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: Meine Notizen zur Nutzung der DJI Mini 2 in Deutschland/EU.
+tags:
+- Tech
+- Hardware
+---
+
 # Drone
 
 Meine Notizen zur Nutzung der DJI Mini 2 in Deutschland/EU.

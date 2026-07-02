@@ -1,3 +1,12 @@
+---
+date: 2025-09-15
+modified: 2025-09-15
+description: 'Save Data on Windows is located here:'
+tags:
+- Tech
+- Tools
+---
+
 # Minecraft
 
 ## Save Data

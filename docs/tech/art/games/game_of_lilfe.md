@@ -1,3 +1,12 @@
+---
+date: 2025-01-16
+modified: 2025-01-16
+description: This FFmpeg filter generates a life-like grid pattern based on a generalization of John Conway’s Game of Life. Each pixel in the output video represents a ...
+tags:
+- Tech
+- Art
+---
+
 # Game of life
 
 ## FFMPEG

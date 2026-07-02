@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-02-23
+description: 'Alternative OS: <https://dietpi.com/>'
+tags:
+- Tech
+- Hardware
+---
+
 # Raspberry Pi
 
 Alternative OS: <https://dietpi.com/>

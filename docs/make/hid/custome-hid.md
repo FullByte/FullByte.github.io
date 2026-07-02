@@ -1,3 +1,12 @@
+---
+date: 2024-05-20
+modified: 2025-09-05
+description: SJ@JX Development keyboard encoder board
+tags:
+- Making
+- Hardware
+---
+
 # Custom Keyboard with SJ@JX
 
 ### CY-1124HC

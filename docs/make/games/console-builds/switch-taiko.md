@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: 'I built a hardware case for the original hori taiko drum controller for Nintendo Switch which is a great addition to play the game Taiko no Tatsujin: Drum ...'
+tags:
+- Making
+- Games
+---
+
 # Switch Taiko
 
 I built a hardware case for the original [hori taiko drum controller](https://hori.jp/products/nsw/taiko_tb/) for [Nintendo Switch](https://www.nintendo.com/switch/) which is a great addition to play the game [Taiko no Tatsujin: Drum 'n' Fun!](https://www.nintendo.com/games/detail/taiko-no-tatsujin-drum-n-fun-switch/).

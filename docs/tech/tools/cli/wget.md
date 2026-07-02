@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-06-10
+description: 'Download a file: wget https://0xfab1.net/CNAME -O CNAME Download a list of files wget -i urls.txt -N -e robots=off --user-agent="Mozilla/5.0 (Windows NT ...'
+tags:
+- Tech
+- Tools
+---
+
 # Wget
 
 | What            | Where                                |

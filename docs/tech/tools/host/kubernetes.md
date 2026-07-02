@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: kubectl controls the Kubernetes cluster manager
+tags:
+- Tech
+- Tools
+---
+
 # Kubernetes
 
 | What          | Where |

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: To enter the BIOS setup screens, tap the correct Function key listed below while booting from powered off.
+tags:
+- Tech
+- Hardware
+---
+
 # BIOS
 
 ## Boot Menu

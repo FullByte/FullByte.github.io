@@ -1,3 +1,12 @@
+---
+date: 2024-09-12
+modified: 2025-10-01
+description: Spreading false information as a tactic is as old as history itself. Incidentally, the term "disinformation" comes from the Russian word ...
+tags:
+- Making
+- Art
+---
+
 # Disinformation
 
 Spreading false information as a tactic is as old as history itself. Incidentally, the term "disinformation" comes from the Russian word "Dezinformatsiya", which was coined by the Soviet secret police in the 1920s.

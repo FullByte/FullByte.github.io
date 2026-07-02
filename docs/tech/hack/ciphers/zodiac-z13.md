@@ -1,3 +1,12 @@
+---
+date: 2026-03-05
+modified: 2026-03-05
+description: The Zodiac Killer remains one of the most notorious unidentified serial murderers in American history. Between 1968 and 1970, this individual murdered ...
+tags:
+- Tech
+- Security
+---
+
 # Zodiac Z13
 
 The Zodiac Killer remains one of the most notorious unidentified serial murderers in American history. Between 1968 and 1970, this individual murdered several people in Northern California and taunted law enforcement and the press with letters and cryptograms. Among the communications he sent to newspapers was one in April 1970 that included a short cipher of thirteen symbols prefaced by the preamble “My name is —”. This thirteen-symbol message, known in Zodiac literature as Z13, has remained stubbornly unsolved for over half a century and represents one of the most enduring puzzles in forensic cryptography. Despite its brevity, Z13 has attracted repeated attempts at decryption by professional cryptographers, independent researchers, and amateur sleuths alike, yet no solution has been universally accepted. Official histories of the Zodiac’s correspondence note that only two of the four Zodiac ciphers have ever been solved with confidence, while Z13 continues to resist traditional methods of decryption.

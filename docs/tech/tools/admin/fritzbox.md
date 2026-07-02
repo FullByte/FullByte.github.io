@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-09-12
+description: Open <http://192.168.178.1/html/capture.html> and start logging traffic. The stored file can be viewed in Wireshark.
+tags:
+- Tech
+- Tools
+---
+
 # Fritzbox
 
 ## Remote Reboot

@@ -1,3 +1,11 @@
+---
+date: 2025-09-15
+modified: 2025-09-15
+description: What started as a simple way to document solutions has evolved into something much more meaningful. Writing about my projects and technical discoveries ...
+tags:
+- Personal
+---
+
 # Motivation
 
 ## Why I Write

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-01-09
+description: rclone is a great tool to backup, copy, sync files to the cloud encrypted and without the client installed on the local machine.
+tags:
+- Tech
+- Tools
+---
+
 # rclone
 
 rclone is a great tool to backup, copy, sync files to the cloud encrypted and without the client installed on the local machine.

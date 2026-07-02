@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-04
+description: Some handy code snippets for PowerShell :)
+tags:
+- Tech
+- Scripting
+---
+
 # PowerShell Snippets
 
 Some handy code snippets for PowerShell :)

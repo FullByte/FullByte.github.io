@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: This creates a new SQL Server login and a corresponding user in a specific database, and then grants that user full permissions on the database by adding ...
+tags:
+- Tech
+- Scripting
+---
+
 # MS SQL
 
 ```txt

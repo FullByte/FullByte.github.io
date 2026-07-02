@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-05-14
+description: Understanding Regions is not as easy as one might initally assume. Understanding regions is crucial for a good cloud design and architecture.
+tags:
+- Tech
+- Cloud
+---
+
 # Azure Regions
 
 Understanding Regions is not as easy as one might initally assume. Understanding regions is crucial for a good cloud design and architecture.

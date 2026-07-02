@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: I was looking for a simple music player for children and although there a million devices, most of them have a display, menu and buttons with multiple ...
+tags:
+- Making
+- Music
+---
+
 # Hörbert
 
 I was looking for a simple music player for children and although there a million devices, most of them have a display, menu and buttons with multiple purposes. This is not suitable for small children and after researching for the best options I went with [Hörbert](https://www.hoerbert.com). My 2nd favorite option is the [phoniebox](http://phoniebox.de/).

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: 'Console: start R inside a container with:'
+tags:
+- Tech
+- Scripting
+---
+
 # R
 
 ## Docker

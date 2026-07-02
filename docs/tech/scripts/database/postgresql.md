@@ -1,3 +1,12 @@
+---
+date: 2025-07-02
+modified: 2025-07-02
+description: PostgreSQL isn’t just a database—it’s a toolbox, a playground, and sometimes a magical black box of awesome. Whether you’re new to Postgres or a longtime ...
+tags:
+- Tech
+- Scripting
+---
+
 # PostgreSQL
 
 PostgreSQL isn’t just a database—it’s a toolbox, a playground, and sometimes a magical black box of awesome. Whether you’re new to Postgres or a longtime enthusiast, here are some deeper, less-traveled paths worth exploring.

@@ -1,3 +1,11 @@
+---
+date: 2025-11-04
+modified: 2025-11-04
+tags:
+- Tech
+- Art
+---
+
 # Numbers
 
 | name/number                      | formula                                                                                      | explaintion                                                                                                                                     |

@@ -1,3 +1,11 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: 'Docs for Azure: <https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs>'
+tags:
+- Tech
+- Cloud
+---
 
 # Terraform
 

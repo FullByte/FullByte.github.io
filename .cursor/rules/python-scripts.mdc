@@ -7,9 +7,6 @@ alwaysApply: false
 
 ### Python Scripts Overview
 
-- `build.py`: Main script to build the entire site. It orchestrates other scripts like the image optimizer and stats generator.
-- `serve.py`: Starts a robust local development server with live reloading.
-- `image_optimizer.py`: Optimizes all images in the `docs` directory to reduce file size and improve website load times.
-- `generate_stats.py`: Creates various statistics about the site content.
-- `check_media_paths.py`: A utility script to validate that all media paths in Markdown files are correct.
-- `site_crawler.py` & `site_tester.py`: Scripts for testing the built site for broken links and other issues.
+- `site_manager.py`: Unified CLI for all site automation. Subcommands: `build`, `serve`, `optimize` (WebP image conversion), `stats`, `test` (checks built site), `check` (validates media paths), `clean`.
+- `scripts/update_frontmatter.py`: Keeps page frontmatter (`date`, `modified`, `description`, `tags`) in sync with git history and content. `--dates` refreshes dates only (used in CI), `--all` also fills missing descriptions/tags.
+- `scripts/augment_movies_with_descriptions.py`: Enriches the movie list table via the OMDB API.

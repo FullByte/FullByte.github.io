@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-02-02
+description: 'How to play:'
+tags:
+- Making
+- Games
+---
+
 # Rules
 
 How to play:

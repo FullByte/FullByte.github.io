@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: 'Create a new custom policy definition and add the following information:'
+tags:
+- Tech
+- Cloud
+---
+
 # Policies
 
 ## Add multiple tags to resource if missing

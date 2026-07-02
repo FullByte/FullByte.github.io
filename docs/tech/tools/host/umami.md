@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Umami is an open-source, self-hosted web analytics solution.
+tags:
+- Tech
+- Tools
+---
+
 # Umami
 
 | What          | Where                                     |

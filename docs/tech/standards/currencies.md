@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-09
+description: Overview of Signing and Curve algorithms used
+tags:
+- Tech
+- Standards
+---
+
 # Currencies
 
 ## In-Game Currencies

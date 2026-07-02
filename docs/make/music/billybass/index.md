@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: I followed this guide to build my own bluetooth billy bass.
+tags:
+- Making
+- Music
+---
+
 # Billy Bass
 
 I followed this [guide](https://maker.pro/arduino/projects/how-to-animate-billy-bass-with-bluetooth-audio-source) to build my own bluetooth billy bass.

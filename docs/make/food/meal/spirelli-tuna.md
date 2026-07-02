@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: Eignet sich besonders gut für unterwegs weil es einfach ist und alle Zutaten ungekühlt lange halten... daher sage ich auch Travel Tuna :D
+tags:
+- Making
+- Food
+---
+
 # Spirelli Tuna
 
 Eignet sich besonders gut für unterwegs weil es einfach ist und alle Zutaten ungekühlt lange halten... daher sage ich auch Travel Tuna :D

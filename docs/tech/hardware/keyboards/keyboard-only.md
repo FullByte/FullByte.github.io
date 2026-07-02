@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: '"Leave the mouse alone." - Peta'
+tags:
+- Tech
+- Hardware
+---
+
 # Keyboard Only
 
 "Leave the mouse alone." - Peta

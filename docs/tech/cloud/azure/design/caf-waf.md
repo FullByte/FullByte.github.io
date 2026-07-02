@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: Business justification & outcomes
+tags:
+- Tech
+- Cloud
+---
+
 # CAF and WAF
 
 ## Cloud Adoption Framework Steps

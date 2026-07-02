@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: These notes are from a challenge I did @hackthebox called LightningFast.
+tags:
+- Tech
+- Security
+---
+
 # Lightning Fast
 
 These notes are from a challenge I did @[hackthebox](https://hackthebox.com) called [LightningFast](https://app.hackthebox.com/challenges/lightningfast).

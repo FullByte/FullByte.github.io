@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: '"Clyde" is Discord''s new (2023) AI Chatbot.'
+tags:
+- Tech
+- Tools
+---
+
 # Discord
 
 | What          | Where                         |

@@ -19,13 +19,11 @@ import os
 import json
 import re
 import logging
-import io
 import shutil
 from pathlib import Path
 from collections import Counter
 from datetime import datetime
-from urllib.parse import urljoin
-from typing import List, Dict, Union, Optional
+from typing import List, Dict
 
 # Image processing
 try:
@@ -41,7 +39,7 @@ logger = logging.getLogger(__name__)
 
 class ImageOptimizer:
     """Optimizes JPG/JPEG/PNG images to WebP format, preserves SVG files."""
-    
+
     def __init__(self, docs_path: Path, quality: int = 85, lossless: bool = False, verbose: bool = True):
         self.docs_path = docs_path
         self.quality = quality
@@ -55,40 +53,41 @@ class ImageOptimizer:
             if self.verbose:
                 print("⚠️ PIL/Pillow not available, skipping conversion")
             return False
-            
+
         try:
             webp_path = image_path.with_suffix('.webp')
-            
+
             # Skip if WebP exists and is newer
             if webp_path.exists() and webp_path.stat().st_mtime > image_path.stat().st_mtime:
                 if self.verbose:
                     print(f"⏭ Skipping {image_path.relative_to(self.docs_path)} (WebP exists and is newer)")
                 return True
-                
+
             with Image.open(image_path) as img:
                 # Convert RGBA to RGB for lossy WebP
                 if img.mode in ('RGBA', 'LA') and not self.lossless:
                     background = Image.new('RGB', img.size, (255, 255, 255))
                     background.paste(img, mask=img.split()[-1] if img.mode == 'RGBA' else None)
                     img = background
-                
+
                 # Save as WebP
-                img.save(webp_path, 'WebP', optimize=True, 
-                        quality=self.quality if not self.lossless else 100, 
+                img.save(webp_path, 'WebP', optimize=True,
+                        quality=self.quality if not self.lossless else 100,
                         lossless=self.lossless)
-                
+
             # Update stats
             original_size = image_path.stat().st_size
             webp_size = webp_path.stat().st_size
             self.stats['original_size'] += original_size
             self.stats['webp_size'] += webp_size
             self.stats['converted'] += 1
-            
+
             if self.verbose:
                 reduction = ((original_size - webp_size) / original_size) * 100
-                print(f"✓ {image_path.relative_to(self.docs_path)}: {original_size//1024}KB → {webp_size//1024}KB ({reduction:.1f}% reduction)")
+                print(f"✓ {image_path.relative_to(self.docs_path)}: {original_size//1024}KB → "
+                      f"{webp_size//1024}KB ({reduction:.1f}% reduction)")
             return True
-            
+
         except Exception as e:
             if self.verbose:
                 print(f"✗ Failed to convert {image_path}: {e}")
@@ -97,28 +96,28 @@ class ImageOptimizer:
     def update_markdown_references(self) -> None:
         """Update markdown files to use WebP images."""
         pattern = r'!\[([^\]]*)\]\(([^)]+\.(jpg|jpeg|png))\)'
-        
+
         for md_file in self.docs_path.rglob('*.md'):
             try:
                 content = md_file.read_text(encoding='utf-8')
                 original_content = content
-                
-                def replace_with_webp(match):
+
+                def replace_with_webp(match, md_file=md_file):
                     alt_text, image_path = match.group(1), match.group(2)
                     webp_path = image_path.rsplit('.', 1)[0] + '.webp'
-                    
+
                     if (md_file.parent / webp_path).exists():
                         return f'![{alt_text}]({webp_path})'
                     return match.group(0)
-                
+
                 content = re.sub(pattern, replace_with_webp, content)
-                
+
                 if content != original_content:
                     md_file.write_text(content, encoding='utf-8')
                     self.stats['updated_files'] += 1
                     if self.verbose:
                         print(f"✓ Updated references in {md_file.relative_to(self.docs_path)}")
-                        
+
             except Exception as e:
                 if self.verbose:
                     print(f"✗ Failed to update {md_file}: {e}")
@@ -127,7 +126,7 @@ class ImageOptimizer:
         """Delete original images that have WebP equivalents."""
         if self.verbose:
             print("🧹 Cleaning up original images...")
-        
+
         for ext in extensions:
             for image_path in self.docs_path.rglob(f"*.{ext}"):
                 webp_path = image_path.with_suffix('.webp')
@@ -148,14 +147,15 @@ class ImageOptimizer:
     def print_summary(self) -> None:
         """Print optimization summary."""
         if any(self.stats.values()):
-            print(f"\n📊 Optimization Summary:")
+            print("\n📊 Optimization Summary:")
             print(f"   Images converted: {self.stats['converted']}")
             print(f"   Markdown files updated: {self.stats['updated_files']}")
             print(f"   Original images deleted: {self.stats['deleted_originals']}")
-            
+
             if self.stats['original_size'] > 0:
-                reduction = ((self.stats['original_size'] - self.stats['webp_size']) / self.stats['original_size']) * 100
-                print(f"   Size reduction: {self.stats['original_size']//1024//1024}MB → {self.stats['webp_size']//1024//1024}MB ({reduction:.1f}%)")
+                original, webp = self.stats['original_size'], self.stats['webp_size']
+                reduction = ((original - webp) / original) * 100
+                print(f"   Size reduction: {original//1024//1024}MB → {webp//1024//1024}MB ({reduction:.1f}%)")
 
     def optimize_for_build(self) -> bool:
         """Run optimization suitable for automated builds."""
@@ -163,47 +163,47 @@ class ImageOptimizer:
             if self.verbose:
                 print(f"⚠️ {self.docs_path} does not exist")
             return False
-        
+
         extensions = ["jpg", "jpeg", "png"]
         image_count = self.get_image_count(extensions)
-        
+
         if image_count == 0:
             if self.verbose:
                 print("✅ No new images to optimize")
             return False
-        
+
         if self.verbose:
             print("🔄 Converting new images to WebP...")
-        
+
         has_changes = False
         for ext in extensions:
             for image_path in self.docs_path.rglob(f"*.{ext}"):
                 if self.convert_to_webp(image_path):
                     has_changes = True
-        
+
         if has_changes:
             if self.verbose:
                 print("📝 Updating markdown references...")
             self.update_markdown_references()
-            
+
             if self.verbose:
                 print("🧹 Cleaning up original images...")
             self.cleanup_original_images(extensions)
-            
+
             if self.verbose:
                 self.print_summary()
-        
+
         return has_changes
 
 
 class SiteManager:
     """Main site management class."""
-    
+
     def __init__(self):
         self.project_root = Path.cwd()
         self.docs_dir = self.project_root / "docs"
         self.site_dir = self.project_root / "site"
-        
+
         if not (self.project_root / "mkdocs.yml").exists():
             raise ValueError("mkdocs.yml not found. Please run from project root.")
 
@@ -211,13 +211,13 @@ class SiteManager:
         """Run a command with error handling."""
         if not quiet:
             print(f"🔄 {description}...")
-        
+
         try:
             env = os.environ.copy()
             if quiet:
                 env.update({'PYTHONWARNINGS': 'ignore', 'MKDOCS_QUIET': '1'})
-            
-            result = subprocess.run(cmd, shell=True, check=True, text=True, env=env)
+
+            subprocess.run(cmd, shell=True, check=True, text=True, env=env)
             if not quiet:
                 print(f"✅ {description} completed")
             return True
@@ -246,10 +246,10 @@ class SiteManager:
     def build_site(self, clean: bool = False, no_optimize: bool = False, quiet: bool = False) -> bool:
         """Build the MkDocs site with optional optimization."""
         print("🏗️ Building MkDocs site...")
-        
+
         if clean and not self._run_command("mkdocs build --clean", "Cleaning previous build", quiet):
             return False
-        
+
         # Image optimization
         if not no_optimize:
             optimizer = ImageOptimizer(self.docs_dir, quality=85, lossless=False, verbose=not quiet)
@@ -258,7 +258,7 @@ class SiteManager:
                     print("✅ Image optimization completed")
             elif not quiet:
                 print("⚠️ Image optimization completed (no changes needed)")
-        
+
         # Generate statistics
         try:
             stats_generator = SiteStatsGenerator(str(self.docs_dir))
@@ -268,7 +268,7 @@ class SiteManager:
         except Exception:
             if not quiet:
                 print("⚠️ Statistics generation failed, continuing...")
-        
+
         # Build site
         if not self._run_command("mkdocs build", "Building site", quiet):
             return False
@@ -276,7 +276,7 @@ class SiteManager:
         if not self._mirror_markdown_sources(quiet):
             if not quiet:
                 print("⚠️ Failed to mirror markdown sources, continuing...")
-        
+
         print("✅ Build completed successfully!")
         return True
 
@@ -285,11 +285,11 @@ class SiteManager:
         print(f"🚀 Starting development server at http://{host}:{port}")
         print("💡 Press Ctrl+C to stop")
         print("-" * 50)
-        
+
         cmd = f"mkdocs serve --dev-addr={host}:{port}"
         if clean:
             cmd += " --clean"
-        
+
         try:
             subprocess.run(cmd, shell=True, check=True)
         except KeyboardInterrupt:
@@ -299,45 +299,46 @@ class SiteManager:
             return False
         return True
 
-    def optimize_images(self, mode: str = "all", quality: int = 85, lossless: bool = False, quiet: bool = False) -> bool:
+    def optimize_images(self, mode: str = "all", quality: int = 85, lossless: bool = False,
+                        quiet: bool = False) -> bool:
         """Run image optimization."""
         try:
             optimizer = ImageOptimizer(self.docs_dir, quality=quality, lossless=lossless, verbose=not quiet)
-            
+
             if mode == "build":
                 return optimizer.optimize_for_build()
-            
+
             extensions = ["jpg", "jpeg", "png"]
             image_count = optimizer.get_image_count(extensions)
-            
+
             if image_count == 0:
                 if not quiet:
                     print("✅ No images to optimize")
                 return True
-            
+
             if not quiet:
                 print("🔄 Converting images to WebP...")
-            
+
             has_changes = False
             for ext in extensions:
                 for image_path in self.docs_dir.rglob(f"*.{ext}"):
                     if optimizer.convert_to_webp(image_path):
                         has_changes = True
-            
+
             if has_changes and mode in ["update", "all"]:
                 if not quiet:
                     print("📝 Updating markdown references...")
                 optimizer.update_markdown_references()
-            
+
             if has_changes and mode in ["cleanup", "all"]:
                 if not quiet:
                     print("🧹 Cleaning up original images...")
                 optimizer.cleanup_original_images(extensions)
-            
+
             if not quiet:
                 optimizer.print_summary()
             return True
-            
+
         except Exception as e:
             if not quiet:
                 print(f"❌ Image optimization failed: {e}")
@@ -364,11 +365,11 @@ class SiteManager:
         if not self.site_dir.exists():
             print("❌ Site directory not found. Please build the site first.")
             return False
-        
+
         try:
             tester = SimpleSiteTester(str(self.site_dir))
             results = tester.run_all_tests()
-            
+
             if output_format == "json":
                 output_file = self.project_root / "test_results.json"
                 with open(output_file, 'w', encoding='utf-8') as f:
@@ -383,11 +384,11 @@ class SiteManager:
 
     def _print_test_results(self, results: Dict) -> None:
         """Print test results."""
-        print(f"\n🧪 Site Test Results")
+        print("\n🧪 Site Test Results")
         print("=" * 50)
         print(f"Total HTML files: {results.get('total_files', 0)}")
         print(f"Total issues found: {len(results.get('issues', []))}")
-        
+
         if results.get('issues'):
             print("\n⚠️ Issues found:")
             for issue in results['issues'][:10]:
@@ -403,7 +404,7 @@ class SiteManager:
         try:
             checker = MediaPathChecker(str(self.docs_dir))
             issues = checker.check_all_media()
-            
+
             if issues:
                 print(f"⚠️ Found {len(issues)} media path issues:")
                 for issue in issues[:10]:
@@ -425,7 +426,7 @@ class SiteManager:
             self.project_root / ".cache",
             self.project_root / "__pycache__"
         ]
-        
+
         cleaned = 0
         for artifact in artifacts:
             if artifact.exists():
@@ -434,21 +435,21 @@ class SiteManager:
                 else:
                     artifact.unlink()
                 cleaned += 1
-        
+
         print(f"✅ Cleaned {cleaned} artifacts")
         return True
 
 
 class SiteStatsGenerator:
     """Generate comprehensive site statistics."""
-    
+
     def __init__(self, docs_dir):
         self.docs_dir = Path(docs_dir)
         self.stats_file = self.docs_dir / "about" / "website" / "stats.md"
         self.stats_dir = self.stats_file.parent
         self.history_file = self.stats_dir / ".stats_history.json"
         self.last_json = None
-    
+
     def build_stats(self):
         """Collect stats, compute deltas, and update history."""
         stats = {
@@ -467,7 +468,7 @@ class SiteStatsGenerator:
 
         self.save_to_history(stats)
         return stats
-    
+
     def generate_all_stats(self):
         """Generate all site statistics, export JSON, and write markdown."""
         stats = self.build_stats()
@@ -532,9 +533,10 @@ class SiteStatsGenerator:
             'words': current['content_stats']['total_words'] - previous['content_stats']['total_words'],
             'total_files': current['file_stats']['total_files'] - previous['file_stats']['total_files'],
             'images': current['image_stats']['total_images'] - previous['image_stats']['total_images'],
-            'image_size_mb': round(current['image_stats']['total_size_mb'] - previous['image_stats']['total_size_mb'], 2)
+            'image_size_mb': round(
+                current['image_stats']['total_size_mb'] - previous['image_stats']['total_size_mb'], 2)
         }
-    
+
     def analyze_content(self):
         """Analyze content statistics."""
         md_files = list(self.docs_dir.rglob("*.md"))
@@ -565,25 +567,25 @@ class SiteStatsGenerator:
             'reading_time_hours': reading_time // 60,
             'reading_time_minutes': reading_time % 60
         }
-    
+
     def analyze_files(self):
         """Analyze file statistics."""
         all_files = list(self.docs_dir.rglob("*"))
         file_types = Counter(f.suffix.lower() for f in all_files if f.is_file())
-        
+
         return {
             'total_files': len([f for f in all_files if f.is_file()]),
             'file_types': dict(file_types),
             'directories': len([f for f in all_files if f.is_dir()])
         }
-    
+
     def analyze_images(self):
         """Analyze image statistics."""
         image_exts = {'.webp', '.jpg', '.jpeg', '.png', '.gif', '.svg'}
         images = [f for f in self.docs_dir.rglob("*") if f.suffix.lower() in image_exts]
-        
+
         total_size = sum(f.stat().st_size for f in images if f.exists())
-        
+
         return {
             'total_images': len(images),
             'total_size_mb': round(total_size / (1024 * 1024), 2),
@@ -642,7 +644,7 @@ class SiteStatsGenerator:
 
         file_times.sort(key=lambda x: x[2], reverse=True)
         return [(path, words, datetime.fromtimestamp(mtime)) for path, words, mtime in file_times[:limit]]
-    
+
     def write_json_export(self, stats):
         """Write stats JSON with dated filename in the stats directory."""
         if not self.stats_dir.exists():
@@ -651,7 +653,7 @@ class SiteStatsGenerator:
         output_file = self.stats_dir / f"site_stats-{timestamp}.json"
         output_file.write_text(json.dumps(stats, indent=2, default=str), encoding="utf-8")
         return output_file
-    
+
     def format_json_history_table(self):
         """Build a markdown table linking available JSON stats exports."""
         files = sorted(self.stats_dir.glob("site_stats-*.json"), key=lambda p: p.name, reverse=True)
@@ -663,7 +665,7 @@ class SiteStatsGenerator:
         for path in files:
             rows.append(f"| {self._pretty_date_from_filename(path)} | [{path.name}]({path.name}) |")
         return "\n".join(rows)
-    
+
     def _pretty_date_from_filename(self, path: Path) -> str:
         """Extract a readable timestamp from a stats filename."""
         match = re.match(r"site_stats-(\d{4}-\d{2}-\d{2})(?:-(\d{6}))?", path.name)
@@ -693,20 +695,29 @@ class SiteStatsGenerator:
 
         for entry in reversed(history[-20:]):
             timestamp = datetime.fromisoformat(entry['timestamp']).strftime('%Y-%m-%d %H:%M')
-            table += f"| {timestamp} | {entry['md_files']} | {entry['total_words']:,} | {entry['total_files']} | {entry['total_images']} | {entry['image_size_mb']} |\n"
+            table += (f"| {timestamp} | {entry['md_files']} | {entry['total_words']:,} "
+                      f"| {entry['total_files']} | {entry['total_images']} | {entry['image_size_mb']} |\n")
         return table
-    
+
     def write_stats_file(self, stats):
         """Write statistics to markdown file."""
         if not self.stats_dir.exists():
             self.stats_dir.mkdir(parents=True, exist_ok=True)
 
-        timestamp = datetime.fromisoformat(stats['generated_at']).strftime('%Y-%m-%d %H:%M')
+        generated_at = datetime.fromisoformat(stats['generated_at'])
+        timestamp = generated_at.strftime('%Y-%m-%d %H:%M')
+        generated_date = generated_at.strftime('%Y-%m-%d')
         cs = stats['content_stats']
         fs = stats['file_stats']
         imgs = stats['image_stats']
 
-        content = f"""# Site Statistics
+        content = f"""---
+date: {generated_date}
+modified: {generated_date}
+description: Automatically generated statistics about the content of this website.
+---
+
+# Site Statistics
 
 This is an automatically created page with insights on the content of this website.
 
@@ -734,7 +745,7 @@ This is an automatically created page with insights on the content of this websi
 
 - **Total Images**: {imgs['total_images']}
 - **Total Size**: {imgs['total_size_mb']} MB
-- **Average Size**: {round(imgs['total_size_mb'] / imgs['total_images'], 2) if imgs['total_images'] > 0 else 0} MB per image
+- **Average Size**: {round(imgs['total_size_mb'] / imgs['total_images'], 2) if imgs['total_images'] else 0} MB per image
 
 ### Image Types
 {self.format_image_types(imgs['by_type'])}
@@ -782,7 +793,7 @@ This is an automatically created page with insights on the content of this websi
         if value < 0:
             return f"{value:,}"
         return "0"
-    
+
     def format_file_types(self, file_types):
         """Format file types for markdown."""
         lines = []
@@ -790,7 +801,7 @@ This is an automatically created page with insights on the content of this websi
             ext_name = ext if ext else 'no extension'
             lines.append(f"- **{ext_name}**: {count}")
         return '\n'.join(lines)
-    
+
     def format_image_types(self, image_types):
         """Format image types for markdown."""
         lines = []
@@ -801,35 +812,35 @@ This is an automatically created page with insights on the content of this websi
 
 class SimpleSiteTester:
     """Simple site testing functionality."""
-    
+
     def __init__(self, site_dir):
         self.site_dir = Path(site_dir)
         self.issues = []
-    
+
     def run_all_tests(self):
         """Run all site tests."""
         html_files = list(self.site_dir.rglob("*.html"))
-        
+
         for html_file in html_files:
             self.test_html_file(html_file)
-        
+
         return {
             'total_files': len(html_files),
             'issues': self.issues
         }
-    
+
     def test_html_file(self, html_file):
         """Test a single HTML file."""
         try:
             content = html_file.read_text(encoding='utf-8')
-            
+
             # Check for basic HTML structure
             if '<html' not in content.lower():
                 self.issues.append(f"{html_file.name}: Missing <html> tag")
-            
+
             if '<title>' not in content.lower():
                 self.issues.append(f"{html_file.name}: Missing <title> tag")
-            
+
             # Check for broken internal links
             link_pattern = r'href="([^"]+)"'
             for match in re.finditer(link_pattern, content):
@@ -839,53 +850,53 @@ class SimpleSiteTester:
                     link_path = self.site_dir / link.lstrip('./')
                     if not link_path.exists() and not (link_path.parent / 'index.html').exists():
                         self.issues.append(f"{html_file.name}: Broken internal link: {link}")
-        
+
         except Exception as e:
             self.issues.append(f"{html_file.name}: Error reading file: {e}")
 
 
 class MediaPathChecker:
     """Check media file paths and references."""
-    
+
     def __init__(self, docs_dir):
         self.docs_dir = Path(docs_dir)
-    
+
     def check_all_media(self):
         """Check all media references."""
         issues = []
         md_files = list(self.docs_dir.rglob("*.md"))
-        
+
         patterns = [
             (r'!\[[^\]]*\]\(([^)]+)\)', "markdown image"),
             (r'<img[^>]*src="([^"]+)"', "HTML image"),
             (r'<source\s+src="([^"]+)"', "audio/video source")
         ]
-        
+
         for md_file in md_files:
             try:
                 content = md_file.read_text(encoding='utf-8')
                 relative_path = md_file.relative_to(self.docs_dir)
-                
+
                 for pattern, media_type in patterns:
                     for match in re.finditer(pattern, content):
                         media_path = match.group(1)
-                        
+
                         # Skip external URLs
                         if media_path.startswith(('http://', 'https://')):
                             continue
-                        
+
                         # Check if file exists
                         if media_path.startswith('/'):
                             full_path = self.docs_dir / media_path.lstrip('/')
                         else:
                             full_path = md_file.parent / media_path
-                        
+
                         if not full_path.exists():
                             issues.append(f"{relative_path}: Missing {media_type}: {media_path}")
-            
+
             except Exception as e:
                 issues.append(f"{md_file.name}: Error reading file: {e}")
-        
+
         return issues
 
 
@@ -893,48 +904,48 @@ def main():
     """Main entry point with command parsing."""
     parser = argparse.ArgumentParser(description="0xFAB1 Site Manager")
     subparsers = parser.add_subparsers(dest='command', help='Available commands')
-    
+
     # Build command
     build_parser = subparsers.add_parser('build', help='Build the site')
     build_parser.add_argument('--clean', action='store_true', help='Clean build')
     build_parser.add_argument('--no-optimize', action='store_true', help='Skip image optimization')
     build_parser.add_argument('--quiet', action='store_true', help='Quiet output')
-    
+
     # Serve command
     serve_parser = subparsers.add_parser('serve', help='Start development server')
     serve_parser.add_argument('--host', default='127.0.0.1', help='Host address')
     serve_parser.add_argument('--port', default='8000', help='Port number')
     serve_parser.add_argument('--clean', action='store_true', help='Clean serve')
-    
+
     # Optimize command
     opt_parser = subparsers.add_parser('optimize', help='Optimize images')
     opt_parser.add_argument('--mode', default='all', choices=['convert', 'update', 'cleanup', 'all'])
     opt_parser.add_argument('--quality', type=int, default=85, help='WebP quality (1-100)')
     opt_parser.add_argument('--lossless', action='store_true', help='Use lossless compression')
     opt_parser.add_argument('--quiet', action='store_true', help='Quiet output')
-    
+
     # Stats command
     subparsers.add_parser('stats', help='Generate statistics')
-    
+
     # Test command
     test_parser = subparsers.add_parser('test', help='Test the site')
     test_parser.add_argument('--format', default='console', choices=['console', 'json'])
-    
+
     # Check command
     subparsers.add_parser('check', help='Check media paths')
-    
+
     # Clean command
     subparsers.add_parser('clean', help='Clean build artifacts')
-    
+
     args = parser.parse_args()
-    
+
     if not args.command:
         parser.print_help()
         return
-    
+
     try:
         manager = SiteManager()
-        
+
         if args.command == 'build':
             success = manager.build_site(
                 clean=args.clean,
@@ -965,9 +976,9 @@ def main():
         else:
             print(f"Unknown command: {args.command}")
             success = False
-        
+
         sys.exit(0 if success else 1)
-    
+
     except Exception as e:
         print(f"❌ Error: {e}")
         sys.exit(1)

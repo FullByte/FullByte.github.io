@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: 'Helpful script: <https://raw.githubusercontent.com/angristan/wireguard-install/master/wireguard-install.sh>'
+tags:
+- Tech
+- Tools
+---
+
 # Wireguard
 
 | What          | Where                        |

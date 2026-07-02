@@ -28,7 +28,7 @@ python site_manager.py serve
 The `site_manager.py` script provides unified site management:
 
 ```bash
-# Build the site with image optimization
+# Build the site with image optimization (includes optimize and test)
 python site_manager.py build
 
 # Start development server
@@ -48,6 +48,18 @@ python site_manager.py check
 
 # Clean build artifacts
 python site_manager.py clean
+```
+
+## Frontmatter & RSS
+
+Every page carries YAML frontmatter (`date`, `modified`, `description`, `tags`) that powers the RSS feeds (`/feed_rss_created.xml`, `/feed_rss_updated.xml`) and the [tag overview](https://0xfab1.net/tags.html). Keep it in sync with:
+
+```bash
+# Refresh dates from git history (runs automatically in CI)
+python scripts/update_frontmatter.py --dates
+
+# Also fill in missing descriptions/tags for new pages
+python scripts/update_frontmatter.py --all
 ```
 
 ## Docker

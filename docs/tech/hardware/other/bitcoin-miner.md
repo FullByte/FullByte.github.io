@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: Bitcoin miner using ASIC Chips attached via USB (2015)
+tags:
+- Tech
+- Hardware
+---
+
 # Bitcoin miner
 
 Bitcoin miner using ASIC Chips attached via USB (2015)

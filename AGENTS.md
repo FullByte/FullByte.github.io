@@ -21,19 +21,21 @@ This is a personal website built with MkDocs Material theme, containing 500+ mar
 
 ## Build Commands
 
-- **Development Server**: `python serve.py` (recommended) or `mkdocs serve`
-- **Build Site**: `python build.py` or `mkdocs build`
+All automation is bundled in the unified CLI `site_manager.py`:
+
+- **Development Server**: `python site_manager.py serve` (recommended) or `mkdocs serve`
+- **Build Site**: `python site_manager.py build` or `mkdocs build`
 - **Build with Options**:
-  - `python build.py --serve` - Build and serve
-  - `python build.py --clean` - Clean build
-  - `python build.py --no-optimize` - Skip image optimization
-- **Generate Statistics**: `python generate_stats.py`
-- **Optimize Images**: `python image_optimizer.py`
+ - `python site_manager.py build --clean` - Clean build
+ - `python site_manager.py build --no-optimize` - Skip image optimization
+- **Generate Statistics**: `python site_manager.py stats`
+- **Optimize Images**: `python site_manager.py optimize`
+- **Update Frontmatter**: `python scripts/update_frontmatter.py --all` - Sync `date`/`modified`/`description`/`tags` frontmatter with git history and content
 
 ## Testing
 
-- **Site Testing**: `python site_tester.py` - Tests built site for issues
-- **Media Path Check**: `python check_media_paths.py` - Validates media file references
+- **Site Testing**: `python site_manager.py test` - Tests built site for issues
+- **Media Path Check**: `python site_manager.py check` - Validates media file references
 - **Build Validation**: Always test locally before deploying
 
 ## File Structure
@@ -102,27 +104,28 @@ scripts/             # Build automation scripts
 
 1. Create markdown file in appropriate `docs/` subdirectory
 2. Add images/media in same directory
-3. Test locally with `python serve.py`
-4. Verify media paths work correctly
+3. Run `python scripts/update_frontmatter.py --all` to fill in frontmatter (date, description, tags)
+4. Test locally with `python site_manager.py serve`
+5. Verify media paths work correctly
 
 ### Optimizing Images
 
-- Run `python image_optimizer.py` to convert new images to WebP
+- Run `python site_manager.py optimize` to convert new images to WebP
 - Script automatically updates markdown references
 - Original files are removed after conversion
 
 ### Updating Statistics
 
-- Run `python generate_stats.py` to update site metrics
+- Run `python site_manager.py stats` to update site metrics
 - Automatically adds timestamped entries to stats.md
 - Tracks word counts, file changes, reading time estimates
 
 ### Troubleshooting Build Issues
 
-- Check `python site_tester.py` output for broken links/issues
-- Verify image paths with `python check_media_paths.py`
+- Check `python site_manager.py test` output for broken links/issues
+- Verify image paths with `python site_manager.py check`
 - For slow builds, ensure heavy plugins are disabled
-- Clean build with `python build.py --clean`
+- Clean build with `python site_manager.py build --clean`
 
 ## Security Considerations
 
@@ -148,8 +151,8 @@ scripts/             # Build automation scripts
 
 ## Before Committing
 
-1. Run `python site_tester.py` to check for issues
-2. Verify build with `python build.py`
+1. Run `python site_manager.py test` to check for issues
+2. Verify build with `python site_manager.py build`
 3. Test key pages in browser
 4. Check that new media files are accessible
 
@@ -164,7 +167,6 @@ scripts/             # Build automation scripts
 ## Cursor Cloud specific instructions
 
 - **Virtual environment**: After the update script runs, activate with `source .venv/bin/activate` before running any Python or `mkdocs` commands.
-- **Unified CLI**: The AGENTS.md "Build Commands" section references legacy scripts (`build.py`, `serve.py`, `site_tester.py`, `check_media_paths.py`, etc.) that no longer exist. The actual tool is `python site_manager.py <command>`. Key subcommands: `build`, `serve`, `optimize`, `stats`, `test`, `check`, `clean`.
 - **Dev server binding**: Use `--host 0.0.0.0` when starting the dev server so it is reachable from the browser: `python site_manager.py serve --host 0.0.0.0`.
 - **Build time**: Initial build takes ~28 seconds for 460+ pages. Use `--no-optimize` to skip image conversion during development.
 - **Testing before commit**: Run `python site_manager.py build --no-optimize` and `python site_manager.py test` to validate the site. `python site_manager.py check` validates media paths.

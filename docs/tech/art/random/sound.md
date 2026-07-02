@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Spectrogram imagery refers to the visual representation of a signal's frequency content over time. It is created using a mathematical technique called the ...
+tags:
+- Tech
+- Art
+---
+
 # Sound
 
 Spectrogram imagery refers to the visual representation of a signal's frequency content over time. It is created using a mathematical technique called the Fourier transform, which decomposes a signal into its constituent frequencies. The resulting representation is a two-dimensional plot with time on the horizontal axis and frequency on the vertical axis, where the intensity or color at each point represents the strength or magnitude of the corresponding frequency component at that specific time. The following are some examples in which artists used sonification to create spectrogram imagery.

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Get a fresh ubuntu 22.04 and run
+tags:
+- Tech
+- Tools
+---
+
 # Cloudron
 
 | What          | Where                                       |

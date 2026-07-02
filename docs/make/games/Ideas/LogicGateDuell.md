@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-04-30
+description: 'Idee: Das verrückte labyrinth mit logic gates? Am rand ist dann immer das ergebnis… man muss seine reihe in ein muster bekommen… und überall sind schalter ...'
+tags:
+- Making
+- Games
+---
+
 # LogicGate Duell
 
 Idee: Das verrückte labyrinth mit logic gates? Am rand ist dann immer das ergebnis… man muss seine reihe in ein muster bekommen… und überall sind schalter die man erreichen muss und wenn man sie erreicht hat, ändern kann.

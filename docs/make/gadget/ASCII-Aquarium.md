@@ -1,3 +1,12 @@
+---
+date: 2026-06-30
+modified: 2026-06-30
+description: ASCII Aquarium turns your Cheap Yellow Display (ESP32-2432S028R) into an tiny animated ASCII fish tank. It renders a live aquarium scene with animated ...
+tags:
+- Making
+- DIY
+---
+
 # ASCII-Aquarium
 
 ASCII Aquarium turns your Cheap Yellow Display (ESP32-2432S028R) into an tiny animated ASCII fish tank. It renders a live aquarium scene with animated fish, bubbles, swaying seaweed, tap-to-feed food flakes, occasional octopus & seahorse visitors, selectable backgrounds, preferences, optional Wi-Fi clock sync,...

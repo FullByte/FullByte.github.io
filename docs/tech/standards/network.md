@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: 'Rule 53: If you can think of it, someone''s done it in the DNS'
+tags:
+- Tech
+- Standards
+---
+
 # Network
 
 ## Services

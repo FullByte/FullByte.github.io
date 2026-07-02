@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: This is a list of interesting operating systems... of course there is always more.
+tags:
+- Tech
+- Scripting
+---
+
 # Operating Systems
 
 This is a list of interesting operating systems... of course there is always [more](https://github.com/prathyvsh/os-catalog).

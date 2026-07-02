@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: These notes are from a challenge I did @tryhackme called Boogeyman 1.
+tags:
+- Tech
+- Security
+---
+
 # Boogeyman 1
 
 These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [Boogeyman 1](https://tryhackme.com/room/boogeyman1).

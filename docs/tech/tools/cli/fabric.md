@@ -1,3 +1,12 @@
+---
+date: 2024-06-21
+modified: 2024-06-21
+description: Pass text to fabric
+tags:
+- Tech
+- Tools
+---
+
 # Fabric
 
 | What          | Where                                  |

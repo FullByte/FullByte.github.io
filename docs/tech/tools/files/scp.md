@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-04
+description: 'Copying file to host:'
+tags:
+- Tech
+- Tools
+---
+
 # SCP
 
 ## File-Transfer with SCP

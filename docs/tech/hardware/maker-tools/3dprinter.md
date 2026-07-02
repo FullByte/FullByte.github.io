@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: '- <https://github.com/Klipper3d/klipper> - <https://www.klipper3d.org/>'
+tags:
+- Tech
+- Hardware
+---
+
 # 3D Printing
 
 ## 3d-printer firmware

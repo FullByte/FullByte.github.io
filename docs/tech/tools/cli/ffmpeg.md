@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-10-31
+description: FFmpeg is a great tool and here are some examples.
+tags:
+- Tech
+- Tools
+---
+
 # FFmpeg
 
 FFmpeg is a great tool and here are some examples.

@@ -1,7 +1,5 @@
-/* Lazy loading images */
-img {
-  loading: lazy;
-}
+/* Lazy loading: the loading="lazy" attribute is set via lazy-loading.js,
+   as "loading" is not a valid CSS property. */
 
 /* Intersection Observer based lazy loading fallback */
 .lazy-image {

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2026-01-30
+description: Sysinternals Suite is a bundle of the Sysinternals utilities including Process Explorer, Process Monitor, Sysmon, Autoruns, ProcDump, all of the PsTools ...
+tags:
+- Tech
+- Tools
+---
+
 # Sysinternals
 
 [Sysinternals Suite](https://www.microsoft.com/en-us/p/sysinternals-suite/9p7knl5rwt25#activetab=pivot:overviewtab) is a bundle of the Sysinternals utilities including Process Explorer, Process Monitor, Sysmon, Autoruns, ProcDump, all of the PsTools, and many more.

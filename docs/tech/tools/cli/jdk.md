@@ -1,3 +1,12 @@
+---
+date: 2025-05-23
+modified: 2025-05-23
+description: The JDK (Java Development Kit) is the full-featured development and runtime environment for Java, bundling the Java compiler (javac), a comprehensive set ...
+tags:
+- Tech
+- Tools
+---
+
 # JDK
 
 The JDK (Java Development Kit) is the full-featured development and runtime environment for Java, bundling the Java compiler (javac), a comprehensive set of development tools (such as javadoc, jdb, jar, etc.), and the JRE (Java Runtime Environment), which contains the JVM, core classes, and supporting files required to execute Java applications. While the JRE is solely intended for end-users running Java applications and omits developer tools, the JDK enables both compilation and execution, making it essential for development workflows. Since Java 9, the standalone JRE is no longer offered separately, and modularization via JPMS allows developers to create custom, minimized runtimes using tools like jlink. In practice, the JDK now serves as the default distribution for both development and production, while the historical distinction between JDK and JRE is largely obsolete except in legacy contexts.

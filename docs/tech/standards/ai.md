@@ -1,3 +1,12 @@
+---
+date: 2026-02-27
+modified: 2026-02-27
+description: 'There are six principles of responsible AI:'
+tags:
+- Tech
+- Standards
+---
+
 # AI
 
 ## Terms

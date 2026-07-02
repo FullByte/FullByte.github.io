@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: The simplest way to run backups and copy jobs on Windows.
+tags:
+- Tech
+- Tools
+---
+
 # Robocopy
 
 The simplest way to run backups and copy jobs on Windows.

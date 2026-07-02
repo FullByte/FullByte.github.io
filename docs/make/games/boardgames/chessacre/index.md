@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-07-28
+description: Chessacre is a chess variant in which figures may gain abilities and new figures can be recruited for credits. Credits are earned during the game for ...
+tags:
+- Making
+- Games
+---
+
 # Rules
 
 Chessacre is a chess variant in which figures may gain abilities and new figures can be recruited for credits.

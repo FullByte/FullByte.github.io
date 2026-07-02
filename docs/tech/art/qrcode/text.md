@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: 'Install libqrencode:'
+tags:
+- Tech
+- Art
+---
+
 # Text QR Codes
 
 ## libqrencode

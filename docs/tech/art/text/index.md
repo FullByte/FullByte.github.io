@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: I love ASCII Art and this page is dedicated to some beautiful things I found. Most of the stuff below is is the work of someone else but as I found this ...
+tags:
+- Tech
+- Art
+---
+
 # Text Art
 
 ``` txt

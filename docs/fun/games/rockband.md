@@ -1,3 +1,12 @@
+---
+date: 2026-04-08
+modified: 2026-04-09
+description: Look here for a https://en.wikipedia.org/wiki/ListofdownloadablesongsfortheRockBandseries.
+tags:
+- Fun
+- Games
+---
+
 # Rock Band 4
 
 Look here for a [https://en.wikipedia.org/wiki/List_of_downloadable_songs_for_the_Rock_Band_series](list of songs for the Rock Band).

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-03-25
+description: Textual Paint is MS Paint in your terminal.
+tags:
+- Tech
+- Art
+---
+
 # ANSI
 
 ``` txt

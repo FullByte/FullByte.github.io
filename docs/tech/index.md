@@ -1,3 +1,11 @@
+---
+date: 2023-12-22
+modified: 2025-09-03
+description: Technical topics that interest me are listed here. I mainly note down things that helped me in the past.
+tags:
+- Tech
+---
+
 # Overview
 
 Technical topics that interest me are listed here. I mainly note down things that helped me in the past.

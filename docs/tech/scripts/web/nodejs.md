@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-01-27
+description: Use NVM to switch between versions.
+tags:
+- Tech
+- Scripting
+---
+
 # Node-js
 
 ## Versions

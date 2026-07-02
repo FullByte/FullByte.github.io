@@ -5,15 +5,13 @@ RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 # Create non-root user
 RUN adduser --disabled-password --gecos "" mkdocs
 
-# Install dependencies
-RUN pip install --no-cache-dir --upgrade pip && \
-    pip install --no-cache-dir mkdocs mkdocs-material mkdocs-minify-plugin mkdocs-rss-plugin mkdocs-git-revision-date-localized-plugin mkdocs-htmlproofer-plugin pillow cairosvg
+RUN pip install --no-cache-dir --upgrade pip
 
 WORKDIR /site
 
 # Copy files in order of change frequency (least to most)
 COPY requirements.txt .
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 COPY mkdocs.yml .
 COPY overrides ./overrides

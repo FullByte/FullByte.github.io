@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-29
+description: 'You need to have tailscale running on the same version on all systems. Run this command to update on linux:'
+tags:
+- Tech
+- Tools
+---
+
 # Tailscale
 
 | What          | Where |

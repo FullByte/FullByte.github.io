@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Creating a dice mosaic picture
+tags:
+- Making
+- Art
+---
+
 # Dice Mosaic
 
 Creating a dice mosaic picture

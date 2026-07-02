@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-28
+description: '- <https://www.lednametags.de/> - <https://lesun-led.en.alibaba.com/> - <https://github.com/jnweiger/led-name-badge-ls32>'
+tags:
+- Tech
+- Hardware
+---
+
 # LED Name Tag
 
 ## Links

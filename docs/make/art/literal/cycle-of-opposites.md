@@ -1,3 +1,12 @@
+---
+date: 2024-09-12
+modified: 2024-09-12
+description: '"Everything creates its opposite, and therefore cyclically itself" is a statement that encapsulates a profound and philosophical concept. This idea can be ...'
+tags:
+- Making
+- Art
+---
+
 # Cycle of Opposites
 
 "Everything creates its opposite, and therefore cyclically itself" is a statement that encapsulates a profound and philosophical concept. This idea can be interpreted in various ways depending on the context:

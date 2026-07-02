@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: The following examples are not mine but this is soooo cool :)
+tags:
+- Tech
+- Art
+---
+
 # Spatial Data
 
 The following examples are not mine but this is soooo cool :)

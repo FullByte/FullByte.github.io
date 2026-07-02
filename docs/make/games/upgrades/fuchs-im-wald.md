@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: 'Size: 93x40x82 mm (LBH inside)'
+tags:
+- Making
+- Games
+---
+
 # Fuchs im Wald
 
 Size: 93x40x82 mm (LBH inside)

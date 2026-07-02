@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: In search of the perfect date...
+tags:
+- Tech
+- Standards
+---
+
 # Time
 
 In search of the perfect date...

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: These notes are from a challenge I did @tryhackme called Mr. Robot.
+tags:
+- Tech
+- Security
+---
+
 # Mr. Robot
 
 These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [Mr. Robot](https://tryhackme.com/room/mrrobot).

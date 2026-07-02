@@ -1,3 +1,11 @@
+---
+date: 2024-07-31
+modified: 2025-09-03
+description: 'Some people don''t want advice. They want you to listen. If they want advice but it doesn''t work, here are some possible reasons to reflect on:'
+tags:
+- Personal
+---
+
 # Social
 
 ## Advice

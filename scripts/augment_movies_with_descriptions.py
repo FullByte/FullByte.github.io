@@ -7,7 +7,7 @@ import urllib.request
 from pathlib import Path
 
 
-FILE_PATH = Path(__file__).resolve().parents[1] / "docs" / "fun" / "movies.md"
+FILE_PATH = Path(__file__).resolve().parents[1] / "docs" / "fun" / "media" / "movies.md"
 CACHE_PATH = Path(__file__).resolve().parent / ".omdb_cache.json"
 
 

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: 'Some pictures I created with midjourney:'
+tags:
+- Making
+- Art
+---
+
 # Midjourney
 
 Some pictures I created with midjourney:

@@ -1,3 +1,11 @@
+---
+date: 2025-05-21
+modified: 2025-09-05
+description: 'In einer gesunden Beziehung sollte folgendes möglich sein und idealerweise auch passieren:'
+tags:
+- Personal
+---
+
 # Partner
 
 ![partner_meme](_partner_meme4.webp)

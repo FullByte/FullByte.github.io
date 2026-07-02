@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Use OpenSSH instead of PuTTYNG to SSH with mRemoteNG like a pro.
+tags:
+- Tech
+- Tools
+---
+
 # mRemoteNG
 
 | What          | Where |

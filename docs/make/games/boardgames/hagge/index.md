@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: Halli-Galli-Extreem
+tags:
+- Making
+- Games
+---
+
 # Rules
 
 Halli-Galli-Extreem

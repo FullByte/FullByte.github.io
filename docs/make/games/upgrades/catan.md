@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: I used the regular box template to create seven equal hexagon boxes.
+tags:
+- Making
+- Games
+---
+
 # Catan
 
 ## Organizer

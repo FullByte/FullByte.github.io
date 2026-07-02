@@ -1,3 +1,12 @@
+---
+date: 2026-04-08
+modified: 2026-04-08
+description: 'A list of PlayStation games I own:'
+tags:
+- Fun
+- Games
+---
+
 # PlayStation Games
 
 A list of PlayStation games I own:

@@ -1,3 +1,11 @@
+---
+date: 2026-04-08
+modified: 2026-04-09
+description: Welcome to the fun section with collections for games, movies, series, music, books, and news.
+tags:
+- Fun
+---
+
 # Fun
 
 Welcome to the fun section with collections for games, movies, series, music, books, and news.

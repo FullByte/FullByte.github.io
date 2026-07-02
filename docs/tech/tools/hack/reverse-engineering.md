@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: '- Ghidra source: <https://github.com/NationalSecurityAgency/ghidra> - Ghidra page: <https://ghidra-sre.org>'
+tags:
+- Tech
+- Tools
+---
+
 # Reverse Engineering
 
 ## Ghidra

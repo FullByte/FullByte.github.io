@@ -1,3 +1,12 @@
+---
+date: 2024-12-18
+modified: 2024-12-18
+description: Suno is a great service to create songs.
+tags:
+- Tech
+- AI
+---
+
 # Suno
 
 Suno is a great service to create songs.

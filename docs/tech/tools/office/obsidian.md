@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Open the Obsidian settings, enable community plugins and search for Obsidian Git to install it.
+tags:
+- Tech
+- Tools
+---
+
 # Obsidian
 
 | What          | Where                     To build the website you need Hugo with "extended" Sass/SCSS version.o build the website you need Hugo with "extended" Sass/SCSS version.|

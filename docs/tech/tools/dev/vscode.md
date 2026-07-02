@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-29
+description: '- Menu: F1 or ctrl+shift+p - Insert cursor to select vertically (multi-cursor): ctrl+alt+up/down - Move selection a line up/down: alt+arrow - Duplicate a ...'
+tags:
+- Tech
+- Tools
+---
+
 # VScode
 
 | What          | Where                                  |

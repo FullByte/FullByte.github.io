@@ -1,3 +1,12 @@
+---
+date: 2024-05-20
+modified: 2025-09-05
+description: I lasered a drinking game I found online.
+tags:
+- Making
+- Games
+---
+
 # Drinking Game
 
 I lasered a drinking game I found online.

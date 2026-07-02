@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: 'Details on the Sinclair ZX Spectrum Next: <https://www.specnext.com/>'
+tags:
+- Making
+- Games
+---
+
 # ZX Spectrum Next
 
 Details on the Sinclair ZX Spectrum Next: <https://www.specnext.com/>

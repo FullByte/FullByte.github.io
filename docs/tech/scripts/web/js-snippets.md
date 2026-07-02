@@ -1,3 +1,12 @@
+---
+date: 2026-01-05
+modified: 2026-01-05
+description: Shows a message based on whether the user is running an ad blocker.
+tags:
+- Tech
+- Scripting
+---
+
 # JS Snippets
 
 ## Detect Missing AdBlocker

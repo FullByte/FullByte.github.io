@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-04
+description: This section does not aim to teach PowerShell. Rather, the scope is to teach proper scripting techniques, troubleshooting, and collaboration when ...
+tags:
+- Tech
+- Scripting
+---
+
 # Advice
 
 This section does not aim to teach PowerShell. Rather, the scope is to teach proper scripting techniques, troubleshooting, and collaboration when scripting.

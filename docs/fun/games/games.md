@@ -1,3 +1,12 @@
+---
+date: 2026-04-08
+modified: 2026-04-08
+description: Settings
+tags:
+- Fun
+- Games
+---
+
 # Game Helper
 
 ## Age of Empires

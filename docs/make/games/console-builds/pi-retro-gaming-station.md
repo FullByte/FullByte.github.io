@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: This project is from 2016 so information may be outdated.
+tags:
+- Making
+- Games
+---
+
 # Pi Gaming Station
 
 This project is from 2016 so information may be outdated.

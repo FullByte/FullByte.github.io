@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: '- Link to directly deploy to Azure via JSON File: <https://portal.azure.com/#create/Microsoft.Template/uri/> + URItoJSONtemplateFile - Example Link to ...'
+tags:
+- Tech
+- Cloud
+---
+
 # Azure Portal
 
 ## Info

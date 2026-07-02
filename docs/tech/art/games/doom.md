@@ -1,3 +1,12 @@
+---
+date: 2025-01-16
+modified: 2025-01-21
+description: There are plenty of collections already online on various things running doom.
+tags:
+- Tech
+- Art
+---
+
 # Doom
 
 There are [plenty](https://doomwiki.org/wiki/Doom_on_legacy_systems) of [collections](https://canitrundoom.org/) already [online](https://www.reddit.com/r/itrunsdoom/) on [various](https://www.reddit.com/r/itrunsdoom/comments/6u6mhs/sticky_can_it_run_doom/) things running [doom](https://de.wikipedia.org/wiki/Doom).

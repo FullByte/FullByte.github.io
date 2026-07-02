@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-05-02
+description: Youtube-dl is a command-line program to download videos from YouTube and other video sites. yt-dlp is a youtube-dl fork. Some examples on how to use ...
+tags:
+- Tech
+- Tools
+---
+
 # yt-dlp
 
 Youtube-dl is a command-line program to download videos from YouTube and other video sites. yt-dlp is a youtube-dl fork. Some examples on how to use youtube-dl or yt-dlp to download videos.  In most cases commands for youtube-dl are the same as for yt-dlp. IN case of issues e.g. with "-F" output to give format selection create `yt-dlp.conf` in the same dir as yt-dlp and write `--list-formats-old` in it. If the command line is not appealing to you, try [youtube-dl-gui](https://github.com/oleksis/youtube-dl-gui) which is a cross platform front-end GUI for youtube-dl.

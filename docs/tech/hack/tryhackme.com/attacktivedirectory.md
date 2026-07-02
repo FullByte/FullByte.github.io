@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-07-28
+description: These notes are from a challenge I did @tryhackme called attacktivedirectory.
+tags:
+- Tech
+- Security
+---
+
 # Attacktive Directory
 
 These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [attacktivedirectory](https://tryhackme.com/room/attacktivedirectory).

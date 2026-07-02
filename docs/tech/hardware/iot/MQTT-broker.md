@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-04
+description: In an event-driven architecture, information is exchanged using a central message broker. This adds complexity at the beginning of the project, but allows ...
+tags:
+- Tech
+- Hardware
+---
+
 # MQTT broker
 
 In an event-driven architecture, information is exchanged using a central message broker. This adds complexity at the beginning of the project, but allows easier adding of new microservices. The Unified Namespace represents a robust event-driven architecture that facilitates seamless communication among network nodes. It operates on the fundamental principle that all data, irrespective of immediate consumer demand, should be published and readily accessible for consumption. As a result, any node within the network can function as either a producer or a consumer, adapting to the system's requirements at any given moment. Unified Namespace typically harnesses MQTT or Apache Kafka as a central message broker, designed with a focus on high scalability and effortless node integration within the network. This stands in sharp contrast to Industry 3.0 architectures, which often exhibit a more linear data flow and limited connectivity flexibility.

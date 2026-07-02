@@ -1,3 +1,11 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: This is a guest post by HiSch with notes from a challenge we did @tryhackme called Binex.
+tags:
+- Tech
+- Security
+---
 
 # Binex
 This is a guest post by HiSch with notes from a challenge we did @[tryhackme](https://tryhackme.com) called [Binex](https://tryhackme.com/room/Binex).

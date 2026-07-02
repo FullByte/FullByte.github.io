@@ -1,3 +1,12 @@
+---
+date: 2025-01-08
+modified: 2025-01-08
+description: IaC tools enable IT teams to configure infrastructure resources such as load balancers, virtual machines, and networks using descriptive models and ...
+tags:
+- Tech
+- Cloud
+---
+
 # Infrastructure as Code
 
 IaC tools enable IT teams to configure infrastructure resources such as load balancers, virtual machines, and networks using descriptive models and languages. This approach leads to faster deployment, consistency, and reusability of infrastructure.

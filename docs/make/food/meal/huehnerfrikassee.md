@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Hühnerfrikassee mit Möhren und Reis.
+tags:
+- Making
+- Food
+---
+
 # Hühnerfrikassee
 
 Hühnerfrikassee mit Möhren und Reis.

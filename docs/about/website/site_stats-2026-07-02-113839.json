@@ -1,0 +1,306 @@
+{
+  "generated_at": "2026-07-02T11:38:38.510709",
+  "content_stats": {
+    "markdown_files": 477,
+    "total_words": 320208,
+    "total_lines": 50392,
+    "avg_words_per_file": 671,
+    "code_blocks": 2161,
+    "total_links": 2307,
+    "reading_time_hours": 26,
+    "reading_time_minutes": 41
+  },
+  "file_stats": {
+    "total_files": 1246,
+    "file_types": {
+      "": 1,
+      ".md": 477,
+      ".webp": 550,
+      ".mp3": 5,
+      ".gif": 8,
+      ".pgn": 1,
+      ".svg": 73,
+      ".7z": 4,
+      ".pp": 2,
+      ".zip": 3,
+      ".curaprofile": 2,
+      ".ino": 1,
+      ".json": 37,
+      ".h": 1,
+      ".xml": 8,
+      ".csv": 2,
+      ".sql": 3,
+      ".txt": 5,
+      ".pdf": 10,
+      ".grid": 6,
+      ".html": 1,
+      ".mkv": 2,
+      ".gz": 2,
+      ".cast": 4,
+      ".tp": 1,
+      ".sh": 1,
+      ".cdr": 21,
+      ".io": 2,
+      ".dxf": 1,
+      ".afdesign": 1,
+      ".docx": 5,
+      ".mp4": 3,
+      ".mid": 1,
+      ".c": 1,
+      ".asc": 1
+    },
+    "directories": 105
+  },
+  "image_stats": {
+    "total_images": 631,
+    "total_size_mb": 94.49,
+    "by_type": {
+      ".webp": 550,
+      ".gif": 8,
+      ".svg": 73
+    }
+  },
+  "content_by_topic": [
+    [
+      "tech\\standards",
+      {
+        "files": 19,
+        "words": 88001
+      }
+    ],
+    [
+      "fun\\media",
+      {
+        "files": 5,
+        "words": 40014
+      }
+    ],
+    [
+      "tech\\art\\database",
+      {
+        "files": 4,
+        "words": 13489
+      }
+    ],
+    [
+      "tech\\tools\\cli",
+      {
+        "files": 34,
+        "words": 13302
+      }
+    ],
+    [
+      "tech\\scripts\\os",
+      {
+        "files": 7,
+        "words": 12046
+      }
+    ],
+    [
+      "about\\life",
+      {
+        "files": 10,
+        "words": 11751
+      }
+    ],
+    [
+      "tech\\hack\\tryhackme.com",
+      {
+        "files": 13,
+        "words": 11384
+      }
+    ],
+    [
+      "fun\\games",
+      {
+        "files": 8,
+        "words": 9455
+      }
+    ],
+    [
+      "tech\\art\\text",
+      {
+        "files": 12,
+        "words": 7527
+      }
+    ],
+    [
+      "make\\food\\meal",
+      {
+        "files": 26,
+        "words": 6674
+      }
+    ],
+    [
+      "tech\\scripts\\web",
+      {
+        "files": 5,
+        "words": 5757
+      }
+    ],
+    [
+      "make\\games\\boardgames\\einhorn",
+      {
+        "files": 3,
+        "words": 5460
+      }
+    ],
+    [
+      "tech\\cloud\\azure\\design",
+      {
+        "files": 7,
+        "words": 4826
+      }
+    ],
+    [
+      "tech\\scripts\\powershell",
+      {
+        "files": 4,
+        "words": 4171
+      }
+    ],
+    [
+      "tech\\tools\\office",
+      {
+        "files": 11,
+        "words": 3957
+      }
+    ],
+    [
+      "tech\\cloud\\azure\\services",
+      {
+        "files": 10,
+        "words": 3379
+      }
+    ],
+    [
+      "tech\\tools\\hack",
+      {
+        "files": 7,
+        "words": 2982
+      }
+    ],
+    [
+      "about\\website",
+      {
+        "files": 5,
+        "words": 2981
+      }
+    ],
+    [
+      "make\\art\\literal",
+      {
+        "files": 6,
+        "words": 2893
+      }
+    ],
+    [
+      "tech\\scripts\\database",
+      {
+        "files": 5,
+        "words": 2880
+      }
+    ]
+  ],
+  "largest_files": [
+    [
+      "fun\\media\\movies.md",
+      36901
+    ],
+    [
+      "tech\\standards\\encoding.md",
+      29233
+    ],
+    [
+      "tech\\standards\\software.md",
+      21480
+    ],
+    [
+      "tech\\art\\database\\spatial-data.md",
+      11995
+    ],
+    [
+      "tech\\standards\\names.md",
+      8069
+    ],
+    [
+      "tech\\standards\\codes.md",
+      7529
+    ],
+    [
+      "tech\\standards\\time.md",
+      5749
+    ],
+    [
+      "tech\\standards\\network.md",
+      4926
+    ],
+    [
+      "tech\\scripts\\os\\windows.md",
+      4836
+    ],
+    [
+      "about\\life\\projects.md",
+      4260
+    ]
+  ],
+  "recently_modified": [
+    [
+      "about\\website\\github.md",
+      808,
+      "2026-07-02 11:38:13.666961"
+    ],
+    [
+      "about\\life\\index.md",
+      282,
+      "2026-07-02 11:32:45.371941"
+    ],
+    [
+      "about\\website\\stats.md",
+      517,
+      "2026-07-02 11:29:50.694280"
+    ],
+    [
+      "tech\\standards\\it-humor.md",
+      3318,
+      "2026-07-02 11:23:13.656775"
+    ],
+    [
+      "tech\\art\\text\\ASCII.md",
+      2949,
+      "2026-07-02 11:23:13.598965"
+    ],
+    [
+      "tech\\art\\text\\ANSI.md",
+      246,
+      "2026-07-02 11:23:13.597453"
+    ],
+    [
+      "make\\games\\boardgames\\pr\u00f6mpeln\\index.md",
+      1893,
+      "2026-07-02 11:23:13.562106"
+    ],
+    [
+      "make\\games\\boardgames\\pr\u00f6mpeln\\build.md",
+      76,
+      "2026-07-02 11:23:13.561108"
+    ],
+    [
+      "tags.md",
+      25,
+      "2026-07-02 11:21:26.815574"
+    ],
+    [
+      "tech\\tools\\office\\vlc.md",
+      40,
+      "2026-07-02 10:51:46.198436"
+    ]
+  ],
+  "changes": {
+    "md_files": 0,
+    "words": 59,
+    "total_files": 1,
+    "images": 0,
+    "image_size_mb": 0.0
+  }
+}

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: When logging movement art can be created.
+tags:
+- Tech
+- Art
+---
+
 # Movement Logs
 
 When logging movement art can be created.

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: I am using ClockworkOS on my clockworkpi.
+tags:
+- Making
+- Games
+---
+
 # Clockwork Gameshell
 
 I am using ClockworkOS on my [clockworkpi](https://www.clockworkpi.com/).

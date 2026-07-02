@@ -1,3 +1,12 @@
+---
+date: 2025-02-13
+modified: 2025-02-13
+description: 'Create an App registration, add a new client secret and save the following information:'
+tags:
+- Tech
+- Cloud
+---
+
 # Cloud Carbon Footprint
 
 ## Prepare Azure

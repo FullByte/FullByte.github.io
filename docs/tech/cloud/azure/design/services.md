@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: A list of azure tools, links to learn azure and news sources.
+tags:
+- Tech
+- Cloud
+---
+
 # Services
 
 A list of azure tools, links to learn azure and news sources.

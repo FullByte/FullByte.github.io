@@ -1,3 +1,12 @@
+---
+date: 2025-11-04
+modified: 2025-11-04
+description: === "Zutaten"
+tags:
+- Making
+- Food
+---
+
 # Linsen-Süßkartoffel-Curry
 
 ## Stats

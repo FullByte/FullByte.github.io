@@ -1,3 +1,11 @@
+---
+date: 2023-12-22
+modified: 2025-09-03
+description: Aside from spending or investing money, doing things without involving money can be very satisfying too... but this page is not about that.
+tags:
+- Personal
+---
+
 # Finances
 
 Aside from spending or investing money, doing things without involving money can be very satisfying too... but this page is not about that.

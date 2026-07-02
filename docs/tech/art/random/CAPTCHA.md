@@ -1,3 +1,12 @@
+---
+date: 2025-02-13
+modified: 2025-09-05
+description: Some real CAPTCHAs I have seen that are somehow entertaining and art :)
+tags:
+- Tech
+- Art
+---
+
 # CAPTCHA
 
 ## Real

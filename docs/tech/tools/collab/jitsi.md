@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-29
+description: '- Setup Ubunutu 20.04 LTS VM - Attach a public IP e.g. 10.11.12.13 - add a DNS entry e.g. jitsi.example.com - Add 10.11.12.13 jitsi.example.com to ...'
+tags:
+- Tech
+- Tools
+---
+
 # Jitsi Meet
 
 | What          | Where                                 |

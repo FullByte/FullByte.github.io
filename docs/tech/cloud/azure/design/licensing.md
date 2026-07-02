@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: '1. Login to MPN (be sure to use the correct user account): Navigate to "Vorteile" or "Benefits" → Azure & Cloud → Get required Key 2. Login to the ...'
+tags:
+- Tech
+- Cloud
+---
+
 # Licensing
 
 ## Add Licences from Microsoft Partner Network (MPN)

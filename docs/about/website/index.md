@@ -1,3 +1,11 @@
+---
+date: 2025-09-15
+modified: 2025-09-15
+description: 'Quick Development Setup:'
+tags:
+- Personal
+---
+
 # Build
 
 **Quick Development Setup:**

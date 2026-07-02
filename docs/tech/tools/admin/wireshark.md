@@ -1,3 +1,12 @@
+---
+date: 2023-12-28
+modified: 2024-05-29
+description: Wireshark dissectors are modules within the Wireshark network protocol analyzer that are responsible for interpreting the data structures of specific ...
+tags:
+- Tech
+- Tools
+---
+
 # Wireshark
 
 | What          | Where                        |

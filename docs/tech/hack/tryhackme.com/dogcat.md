@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-04
+description: These notes are from a challenge I did @tryhackme called dogcat.
+tags:
+- Tech
+- Security
+---
+
 # DogCat
 
 These notes are from a challenge I did @[tryhackme](https://tryhackme.com) called [dogcat](https://tryhackme.com/room/dogcat).

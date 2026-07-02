@@ -1,3 +1,11 @@
+---
+date: 2025-12-22
+modified: 2026-04-09
+tags:
+- Fun
+- Media
+---
+
 # Movies
 
 | Titel                                                        | Jahr | Genre              | Summary                                                                                                                                                                                                  |

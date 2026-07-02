@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: The following is an example game play with three players. Read the rules first.
+tags:
+- Making
+- Games
+---
+
 # Details
 
 ## Example Game

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-06-12
+description: Some note on installing, configuring and using Kali.
+tags:
+- Tech
+- Scripting
+---
+
 # Kali
 
 Some note on installing, configuring and using Kali.

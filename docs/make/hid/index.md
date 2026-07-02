@@ -1,3 +1,12 @@
+---
+date: 2024-05-20
+modified: 2025-09-05
+description: A collection of human interface devices.
+tags:
+- Making
+- Hardware
+---
+
 # HID
 
 ![xkcd_keyboard](_xkcd_keyboard.webp)

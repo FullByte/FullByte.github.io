@@ -1,3 +1,12 @@
+---
+date: 2024-09-12
+modified: 2024-09-12
+description: In the realm of cinema, the sequence of a movie series is more than just a timeline; it's a canvas for storytelling. Take the iconic "Star Wars" and "The ...
+tags:
+- Making
+- Art
+---
+
 # Movie Series
 
 ## The Art of Movie Series Ordering: Crafting Narratives Beyond Time

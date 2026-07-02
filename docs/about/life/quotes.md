@@ -1,3 +1,11 @@
+---
+date: 2024-01-11
+modified: 2025-02-13
+description: '"This is a collection of quotes I like" - 0xfab1'
+tags:
+- Personal
+---
+
 # Quotes
 
 "This is a collection of quotes I like" - 0xfab1

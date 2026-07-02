@@ -1,3 +1,12 @@
+---
+date: 2026-04-08
+modified: 2026-04-08
+description: 'A list of my Nintendo Switch games:'
+tags:
+- Fun
+- Games
+---
+
 # Switch Games
 
 A list of my Nintendo Switch games:

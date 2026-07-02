@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-04
+description: If on Linux, start PowerShell in bash with pwsh.
+tags:
+- Tech
+- Cloud
+---
+
 # Azure PowerShell
 
 | What          | Where |

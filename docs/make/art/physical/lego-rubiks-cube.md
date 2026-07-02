@@ -1,3 +1,12 @@
+---
+date: 2024-04-30
+modified: 2025-09-05
+description: I built the LEGO Rubik's Cube Lego MOC Designed by puzzLEGO.
+tags:
+- Making
+- Art
+---
+
 # Lego Rubik's Cube
 
 I built the [LEGO Rubik's Cube Lego](https://rebrickable.com/mocs/MOC-91837/puzzLEGO/working-lego-rubiks-cube-new-revised/#details) MOC Designed by [puzzLEGO](https://rebrickable.com/users/puzzLEGO/mocs/).

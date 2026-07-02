@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-04
+description: Naming things is hard.
+tags:
+- Tech
+- Standards
+---
+
 # Names
 
 Naming things is hard.

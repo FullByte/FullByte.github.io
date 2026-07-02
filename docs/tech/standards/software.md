@@ -1,3 +1,12 @@
+---
+date: 2026-02-24
+modified: 2026-02-24
+description: === "EN"
+tags:
+- Tech
+- Standards
+---
+
 # Good Software
 
 === "EN"

@@ -1,3 +1,11 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: What ever you do, what ever you want to achieve, approach it as a project- If you're constantly craving more, you won't appreciate what you already have.
+tags:
+- Personal
+---
+
 # Projects
 
 What ever you do, what ever you want to achieve, approach it as a project- If you're constantly craving more, you won't appreciate what you already have.

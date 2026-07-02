@@ -1,3 +1,11 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Our turtle awakes out of hibernation roughly mid-April. The following is a time lapse video of the final struggle to bury itself out of its hole. The ...
+tags:
+- Personal
+---
+
 # Pets
 
 ## Turtle

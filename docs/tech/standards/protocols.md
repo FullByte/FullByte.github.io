@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-01-27
+description: HTTP return codes
+tags:
+- Tech
+- Standards
+---
+
 # Protocols
 
 ## HTTP

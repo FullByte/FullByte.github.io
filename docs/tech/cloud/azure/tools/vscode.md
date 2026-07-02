@@ -1,3 +1,12 @@
+---
+date: 2025-01-21
+modified: 2025-01-21
+description: The combination of Github CoPilot + VScode + GitHub Copilot for Azure provides an interactive experience through the @azure chatbot, enabling developers ...
+tags:
+- Tech
+- Cloud
+---
+
 # VScode
 
 The combination of [Github CoPilot](https://github.com/features/copilot) + [VScode](https://code.visualstudio.com/) + [GitHub Copilot for Azure](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azure-github-copilot) provides an interactive experience through the @azure chatbot, enabling developers to learn about Azure services, manage resources, diagnose issues, monitor costs, and utilize the Azure Developer CLI (azd).

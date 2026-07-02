@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: 'Add your user to the dialout group, then logout and log back in:'
+tags:
+- Tech
+- Hardware
+---
+
 # Linux IoT
 
 Add your user to the dialout group, then logout and log back in:

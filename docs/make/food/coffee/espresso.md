@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: Currently I am using the 9barista with the JX Pro grinder and coffee from
+tags:
+- Making
+- Food
+---
+
 # Espresso
 
 ## Make Espresso

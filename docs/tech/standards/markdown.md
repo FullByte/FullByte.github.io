@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-01-27
+description: This text will be italic This will also be italic
+tags:
+- Tech
+- Standards
+---
+
 # Markdown
 
 ``` txt

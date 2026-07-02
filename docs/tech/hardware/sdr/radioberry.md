@@ -1,3 +1,12 @@
+---
+date: 2024-09-27
+modified: 2024-12-17
+description: Base OS used is Rasperry Pi OS (64 Bit).
+tags:
+- Tech
+- Hardware
+---
+
 # Radioberry
 
 ## Install Radioberry

@@ -1,3 +1,12 @@
+---
+date: 2025-06-02
+modified: 2025-06-02
+description: Some basics about tmux (terminal multiplexer), a command-line tool that lets you manage multiple terminal sessions from a single window.
+tags:
+- Tech
+- Tools
+---
+
 # tmux
 
 Some basics about tmux (terminal multiplexer), a command-line tool that lets you manage multiple terminal sessions from a single window.

@@ -1,3 +1,12 @@
+---
+date: 2024-09-27
+modified: 2025-09-05
+description: Kyria Acrylic Plate Case Clear Kailh Low Profile Choc Switches - Silver (linear) Kailh Choc Transparent Keycaps Elite-C Low Profile (rev4) Microcontroller ...
+tags:
+- Tech
+- Hardware
+---
+
 # Splitkb Kyria
 
 ![Splitkb Kyria](_splitboard_2_00.webp)

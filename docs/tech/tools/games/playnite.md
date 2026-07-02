@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-29
+description: Playnite is an open source video game library manager that provides a unified interface for all of your games.
+tags:
+- Tech
+- Tools
+---
+
 # Playnite
 
 | What          | Where |

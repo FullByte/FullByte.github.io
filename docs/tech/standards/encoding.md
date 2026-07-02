@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2026-01-05
+description: Fix this
+tags:
+- Tech
+- Standards
+---
+
 # Character encoding
 
 ## ASCII

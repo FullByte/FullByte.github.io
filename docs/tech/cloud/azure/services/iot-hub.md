@@ -1,3 +1,12 @@
+---
+date: 2024-12-17
+modified: 2025-09-05
+description: Install iot extension
+tags:
+- Tech
+- Cloud
+---
+
 # IoT Hub
 
 ## Getting started

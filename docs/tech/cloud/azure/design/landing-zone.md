@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: '- This library of content presents a structured approach for designing applications on Azure that are scalable, secure, resilient, and highly available ...'
+tags:
+- Tech
+- Cloud
+---
+
 # Landing Zone
 
 - This library of content presents a structured approach for designing applications on Azure that are scalable, secure, resilient, and highly available. The guidance is based on proven practices that we have learned from customer engagements. <https://learn.microsoft.com/en-us/azure/architecture/guide/>

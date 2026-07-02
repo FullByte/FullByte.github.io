@@ -1,3 +1,12 @@
+---
+date: 2024-09-18
+modified: 2024-09-18
+description: Starten und Beenden von „Unterstützender Zugriff“ auf dem iPhone
+tags:
+- Tech
+- Hardware
+---
+
 # iPhone
 
 ## Unterstützender Zugriff is better than a dumb phone

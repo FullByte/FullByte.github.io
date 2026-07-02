@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-07-28
+description: IPFS (InterPlanetary File System) is a distributed, peer-to-peer file storage and sharing system designed to make the web faster, safer, and more ...
+tags:
+- Tech
+- Tools
+---
+
 # IPFS
 
 IPFS (InterPlanetary File System) is a distributed, peer-to-peer file storage and sharing system designed to make the web faster, safer, and more resilient. It is an open-source project that aims to address some of the limitations and centralization issues associated with traditional web protocols, like HTTP. IPFS works by leveraging a content-addressed, distributed file system, which means that files and other data are identified based on their cryptographic hash rather than their location on a specific server. This approach ensures that the content remains available even if a particular node goes offline, as multiple nodes can host the same content.

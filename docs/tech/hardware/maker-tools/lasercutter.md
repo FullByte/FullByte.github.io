@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-09-05
+description: 'My work environment:'
+tags:
+- Tech
+- Hardware
+---
+
 # Laser cutter
 
 My work environment:

@@ -1,3 +1,12 @@
+---
+date: 2023-12-28
+modified: 2024-06-12
+description: Jupyter Notebooks are a great way to teach python and demonstrate exampes. You can view ipynb files online e.g. with nextjournal and deepnote or install ...
+tags:
+- Tech
+- Scripting
+---
+
 # Jupyter Notebooks
 
 [Jupyter Notebooks](https://jupyter.org/install) are a great way to teach python and demonstrate exampes. You can view `ipynb` files online e.g. with [nextjournal](https://github.nextjournal.com) and [deepnote](https://deepnote.com/viewer) or install locally: ```pip install notebook```. To launch jupyter locally run```jupyter notebook```. There is a great extension for [vscode](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter).

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: CSS + HTML only art (no javascript)
+tags:
+- Tech
+- Art
+---
+
 # CSS
 
 CSS + HTML only art (no javascript)

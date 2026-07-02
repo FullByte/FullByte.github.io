@@ -1,3 +1,11 @@
+---
+date: 2026-04-09
+modified: 2026-04-09
+description: Why fight the rules of nature?
+tags:
+- Personal
+---
+
 # Fun Advice
 
 ![fun advice](_fun.webp)

@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: Just a bunch of links for further tools, tips and lists on messing with the network, servers and clients.
+tags:
+- Tech
+- Security
+---
+
 # Wisdom
 
 Just a bunch of links for further tools, tips and lists on messing with the network, servers and clients.

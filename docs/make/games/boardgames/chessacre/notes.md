@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: '1: Set up board by randomly placing tiles.'
+tags:
+- Making
+- Games
+---
+
 # Notes
 
 1: Set up board by randomly placing tiles.

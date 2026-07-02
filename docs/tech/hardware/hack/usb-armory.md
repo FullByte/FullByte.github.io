@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2023-12-22
+description: 'Driver is installed but found as "Serial" "USB device(COM3)" in the device manager "Update" the driver an use this instead: "mod-duo-rndis.zip".'
+tags:
+- Tech
+- Hardware
+---
+
 # USB Armory
 
 <https://inversepath.com/usbarmory>

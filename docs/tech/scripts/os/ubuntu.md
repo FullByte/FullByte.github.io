@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-11-04
+description: Ubuntu is an ancient african word, meaning "I can't configure Debian".[^1]
+tags:
+- Tech
+- Scripting
+---
+
 # Ubuntu
 
 Ubuntu is an ancient african word, meaning "I can't configure Debian".[^1]

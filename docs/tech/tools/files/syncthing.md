@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2025-12-09
+description: A script to install syncthing on debian
+tags:
+- Tech
+- Tools
+---
+
 # Syncthing
 
 | What          | Where                                            |

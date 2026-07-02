@@ -1,10 +1,19 @@
+---
+date: 2026-04-08
+modified: 2026-04-08
+description: Playing games locally in a network requires some preparation and some tools help get organized. Here are some notes I made on the topic :)
+tags:
+- Fun
+- Games
+---
+
 # LAN Party
 
 Playing games locally in a network requires some preparation and some tools help get organized. Here are some notes I made on the topic :)
 
 Preparing:
 
-- [ ] Make a list of all games that will be played and make sure all have downloaded, updated and started the game at least once prior to the LAN party (see [games](#games) for example)
+- [ ] Make a list of all games that will be played and make sure all have downloaded, updated and started the game at least once prior to the LAN party
 - [ ] Send a list of things to think about e.g. Equipment, Snaks, Sleeping bag
 - [ ] Make sure everyone is clear on when it starts and ends and where to show up
 - [ ] Make sure everyone helps set up and clean up

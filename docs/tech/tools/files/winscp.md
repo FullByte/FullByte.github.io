@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-29
+description: If you want to automate data transfers using WinSCP, you can use scripting.
+tags:
+- Tech
+- Tools
+---
+
 # WinSCP
 
 | What          | Where                |

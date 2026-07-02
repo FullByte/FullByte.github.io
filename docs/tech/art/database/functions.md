@@ -1,3 +1,12 @@
+---
+date: 2024-01-03
+modified: 2025-09-05
+description: There are some databases with built-in functions that help create digital art.
+tags:
+- Tech
+- Art
+---
+
 # Functions
 
 There are some databases with built-in functions that help create digital art.

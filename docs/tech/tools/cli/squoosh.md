@@ -1,3 +1,12 @@
+---
+date: 2023-12-22
+modified: 2024-05-29
+description: Make images smaller using best-in-class codecs, right in the browser.
+tags:
+- Tech
+- Tools
+---
+
 # Squoosh
 
 Make images smaller using best-in-class codecs, right in the browser.

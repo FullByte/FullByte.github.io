@@ -1,3 +1,12 @@
+---
+date: 2025-01-16
+modified: 2025-01-27
+description: I played with the Ulanzi Smart Pixel Clock and flashed the custom firmware awtrix3
+tags:
+- Tech
+- Hardware
+---
+
 # Ulanzi Smart Pixel Clock
 
 I played with the Ulanzi Smart Pixel Clock and flashed the custom firmware [awtrix3](https://github.com/Blueforcer/awtrix3)
