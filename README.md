@@ -2,7 +2,7 @@
 
 [![Header](header.svg)](https://0xfab1.net)
 
-Personal website built with MkDocs Material. Contributions welcome!
+Personal website built with MkDocs Material. Contributions are welcome!
 
 ## Quick Start
 
