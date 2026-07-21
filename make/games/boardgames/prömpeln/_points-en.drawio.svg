@@ -1,0 +1,127 @@
+<svg host="65bd71144e" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="411px" height="231px" viewBox="-0.5 -0.5 411 231" content="&lt;mxfile&gt;&lt;diagram id=&quot;ewFb07dvWOo7Glj3sCyS&quot; name=&quot;Page-1&quot;&gt;7VhRb9owEP41SNsDyHEg0EdgZX1YpUo87LEyxEksnDizTQP79TvHDiQjQLVCK3XAA/bnu5zvvruLTcefppvvkuTJowgp72AUbjr+tw7Gno+H8GOQrUWCAbZALFnohPbAnP2mDkQOXbOQqoagFoJrljfBpcgyutQNjEgpiqZYJHjTak5iegDMl4Qfoj9ZqBOLjiq3DP5AWZxUlr3gzq6kpBJ2nqiEhKKoQf59x59KIbQdpZsp5SZ4VVys3uzI6m5jkmb6NQou7i+Er51vbl96WzkrxToLqZFHHX9SJEzTeU6WZrUAegFLdMph5sGQcBZnMOY0AvuTSGR67h5ltF+o1AziOHZiWhj9iHE+FVzI0qAfDczXaddw+wFcaSlWtLYSlB9Ycd6AFbo5GhFvF2dIUCpSquUWRJzCnWNmW3Hn5sWe6H6FJTWSse9A4pIr3j16H38YOAra6fDP0wEZk5shS8sk3YX0B1lQ/iQU00yY0C6E1iIFAW4WJmS5iksmq7CFNCJrro+SQlRuSydiG8P+pDQ4rlBUITBOtAaNsfESzzw87CH4QjaMRwgh4zJZUfiJSQpFi2cLQWRYTXLZwYMp+D2YBGlOeQbYcy4FLSe4l2fxZXj1EG4Qu+OrRqyHvN4dPuTWQxfgtn/jtsGtfzluffRX0eJ35nZw47bBbf963LbWbVtDBmJ7wfDt3AYt3AYlAQsYxGYA1gOSmuhnC5WXflsJE7VKqKZVy4vg11qUqJAhld2lZXlcGpRfut06/tU+xWlUz30SLNPqpEV5HjHvWnMUsi/2vZXnDoYIoS7Jc067aqs0TS004SxbPZLlvMRmpb7BHyh/oSYx7XQsGeF2qEimuopKFh16Ue1D5SRrDZDZYFeVR0ETHQ/3RvmmNSATqCBQhuMfnE6AR4gNyoTxDgpsHyZrqWkdYBuICn73s9AFKgYjf9fpTjTEUdBDoyv1w+H5mvE+vGbeWjKnUzUiKeNbu60rFZHZCvrnuuDMNHIUcWJKQ8GNytzIRJH1jhbJJ6mGtlfINathdL4azPplGvnnyMqQkVhkhHPDJFS3TdCCbFXZxj9XivZrR9NTDXt0vRS9O5+i/oc37Nsh51zZFAySBSOd0IPOvs7/h7NPSym1dvsrllJ1F7ldBt1l0Lvknzivuej7F7vow3T/X2y5VvtH27//Aw==&lt;/diagram&gt;&lt;/mxfile&gt;">
+    <defs/>
+    <g>
+        <rect x="0" y="0" width="410" height="230" fill="#f5f5f5" stroke="#666666" pointer-events="all"/>
+        <image x="11.5" y="119.5" width="101.92" height="100" xlink:href="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjEwcHgiIHZlcnNpb249IjEuMSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PHBhdGggZD0ibSAwIDAgTCAxMCAxMCBMIDAgMTAgTCAxMCAwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PC9zdmc+" preserveAspectRatio="none"/>
+        <image x="209.5" y="9.5" width="101.92" height="100" xlink:href="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjEwcHgiIHZlcnNpb249IjEuMSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PHBhdGggZD0ibSAwIDAgTCAxMCAxMCBMIDAgMTAgTCAxMCAwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PC9zdmc+" preserveAspectRatio="none"/>
+        <image x="209.5" y="119.5" width="110" height="100.67" xlink:href="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjEwcHgiIHZlcnNpb249IjEuMSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PHBhdGggZD0ibSAwIDAgTCAxMCAxMCBMIDAgMTAgTCAxMCAwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PC9zdmc+" preserveAspectRatio="none"/>
+        <rect x="113.92" y="10" width="86.08" height="100" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 84px; height: 1px; padding-top: 17px; margin-left: 116px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <b>
+                                    0
+                                </b>
+                                <b style="border-color: var(--border-color);">
+                                    Points
+                                </b>
+                                <br/>
+                                <br/>
+                                <font face="_, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+                                    <span style="font-size: 12.8px;">
+                                        Bottle cap is not on
+                                    </span>
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="116" y="29" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
+                    0 Points...
+                </text>
+            </switch>
+        </g>
+        <rect x="113.92" y="120" width="86.08" height="100" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 84px; height: 1px; padding-top: 127px; margin-left: 116px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <b>
+                                    1
+                                </b>
+                                <b style="border-color: var(--border-color);">
+                                    Point
+                                </b>
+                                <br/>
+                                <br/>
+                                <span style="font-family: _, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; font-size: 12.8px;">
+                                    Bottle cap lies flat side down.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="116" y="139" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
+                    1 Point...
+                </text>
+            </switch>
+        </g>
+        <rect x="311.92" y="10" width="88.08" height="100" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 86px; height: 1px; padding-top: 17px; margin-left: 314px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <b>
+                                    2 Points
+                                </b>
+                                <br/>
+                                <br/>
+                                <span style="font-family: _, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif; font-size: 12.8px;">
+                                    Bottle cap lies diagonally or sideways on.
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="314" y="29" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
+                    2 Points...
+                </text>
+            </switch>
+        </g>
+        <rect x="311.92" y="120" width="88.08" height="100" fill="rgb(255, 255, 255)" stroke="rgb(0, 0, 0)" pointer-events="all"/>
+        <g transform="translate(-0.5 -0.5)">
+            <switch>
+                <foreignObject pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility" style="overflow: visible; text-align: left;">
+                    <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe flex-start; width: 86px; height: 1px; padding-top: 127px; margin-left: 314px;">
+                        <div data-drawio-colors="color: rgb(0, 0, 0); " style="box-sizing: border-box; font-size: 0px; text-align: left;">
+                            <div style="display: inline-block; font-size: 12px; font-family: Helvetica; color: rgb(0, 0, 0); line-height: 1.2; pointer-events: all; white-space: normal; overflow-wrap: normal;">
+                                <b>
+                                    3
+                                </b>
+                                <b style="border-color: var(--border-color);">
+                                    Points
+                                </b>
+                                <br/>
+                                <br/>
+                                <font face="_, -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif">
+                                    <span style="font-size: 12.8px;">
+                                        Bottle cap lies with the flat side up
+                                    </span>
+                                </font>
+                            </div>
+                        </div>
+                    </div>
+                </foreignObject>
+                <text x="314" y="139" fill="rgb(0, 0, 0)" font-family="Helvetica" font-size="12px">
+                    3 Points...
+                </text>
+            </switch>
+        </g>
+        <image x="9.5" y="9.5" width="103.92" height="100" xlink:href="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHdpZHRoPSIxMHB4IiBoZWlnaHQ9IjEwcHgiIHZlcnNpb249IjEuMSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PHBhdGggZD0ibSAwIDAgTCAxMCAxMCBMIDAgMTAgTCAxMCAwIiBzdHJva2U9IiMwMDAiIGZpbGw9InRyYW5zcGFyZW50Ii8+PC9zdmc+" preserveAspectRatio="none"/>
+    </g>
+    <switch>
+        <g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/>
+        <a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank">
+            <text text-anchor="middle" font-size="10px" x="50%" y="100%">
+                Text is not SVG - cannot display
+            </text>
+        </a>
+    </switch>
+</svg>

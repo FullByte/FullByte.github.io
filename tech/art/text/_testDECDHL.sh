@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+getpos(){ r=; printf '\e[6n'>/dev/tty; read -d R r; echo "${r/*;}"; }
+check_decdhl(){ [ $COLUMNS ]||{ printf '\e[10000G';COLUMNS=$(getpos);printf '\e[A';}; printf '\e[G\e[K✅'; [ $(getpos) = 3 ]&&EMOJI=1||EMOJI=0; printf '\e[G\e[2K\e#3';eval "printf ' %.0s' {1..$[1+$COLUMNS/2]}";p=$(getpos);if [ $p = 2 ];then DECDHL=1;printf '\e[M\e[F';elif [ $p = $[2+$COLUMNS/2] ];then [ "$TERM_PROGRAM" = Apple_Terminal ]&&{ DECDHL=1;DECDHL_EMOJI=1;printf '\e[M\e[G\e[2K';return; }||{ printf '\e[G\e[2Kx\e[2b🤗\e[2b'; [ $(getpos) = 6 ]&&{ DECDHL=1;DECDHL_EMOJI=1;printf '\e[M\e[G\e[2K';return; }||DECDHL=0;};else DECDHL=0;fi;printf '\e[G\e[2K\e#3';eval "printf '☑️%.0s' {1..$[1+$COLUMNS/4]}";p=$(getpos);[ $p = 3 ]&&{ DECDHL_EMOJI=1;printf '\e[M\e[F'; }||DECDHL_EMOJI=0;printf '\e[M\e[G\e[2K'; }
+[ "${BASH_SOURCE[0]}" = "$0" ]&&check_decdhl&&echo "EMOJI=$EMOJI, DECDHL=$DECDHL, DECDHL_EMOJI=$DECDHL_EMOJI"
