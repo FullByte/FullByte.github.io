@@ -1,0 +1,306 @@
+{
+  "generated_at": "2026-01-05T20:56:45.679603",
+  "content_stats": {
+    "markdown_files": 460,
+    "total_words": 277682,
+    "total_lines": 42584,
+    "avg_words_per_file": 603,
+    "code_blocks": 2138,
+    "total_links": 2257,
+    "reading_time_hours": 23,
+    "reading_time_minutes": 8
+  },
+  "file_stats": {
+    "total_files": 1219,
+    "file_types": {
+      "": 1,
+      ".md": 460,
+      ".webp": 545,
+      ".mp3": 5,
+      ".gif": 8,
+      ".pgn": 1,
+      ".svg": 73,
+      ".7z": 4,
+      ".pp": 2,
+      ".zip": 3,
+      ".curaprofile": 2,
+      ".ino": 1,
+      ".json": 32,
+      ".h": 1,
+      ".xml": 8,
+      ".csv": 2,
+      ".sql": 3,
+      ".txt": 5,
+      ".pdf": 10,
+      ".grid": 6,
+      ".html": 1,
+      ".mkv": 2,
+      ".gz": 2,
+      ".cast": 4,
+      ".tp": 1,
+      ".sh": 1,
+      ".cdr": 21,
+      ".io": 2,
+      ".dxf": 1,
+      ".afdesign": 1,
+      ".docx": 5,
+      ".mp4": 3,
+      ".mid": 1,
+      ".c": 1,
+      ".asc": 1
+    },
+    "directories": 101
+  },
+  "image_stats": {
+    "total_images": 626,
+    "total_size_mb": 94.33,
+    "by_type": {
+      ".webp": 545,
+      ".gif": 8,
+      ".svg": 73
+    }
+  },
+  "content_by_topic": [
+    [
+      "tech\\standards",
+      {
+        "files": 17,
+        "words": 65072
+      }
+    ],
+    [
+      "fun",
+      {
+        "files": 6,
+        "words": 44411
+      }
+    ],
+    [
+      "tech\\art\\database",
+      {
+        "files": 4,
+        "words": 13393
+      }
+    ],
+    [
+      "tech\\tools\\cli",
+      {
+        "files": 33,
+        "words": 12435
+      }
+    ],
+    [
+      "tech\\scripts\\os",
+      {
+        "files": 7,
+        "words": 11902
+      }
+    ],
+    [
+      "tech\\hack\\tryhackme.com",
+      {
+        "files": 13,
+        "words": 11067
+      }
+    ],
+    [
+      "about\\life",
+      {
+        "files": 9,
+        "words": 10525
+      }
+    ],
+    [
+      "tech\\art\\text",
+      {
+        "files": 12,
+        "words": 7201
+      }
+    ],
+    [
+      "make\\food\\meal",
+      {
+        "files": 26,
+        "words": 6254
+      }
+    ],
+    [
+      "tech\\scripts\\web",
+      {
+        "files": 5,
+        "words": 5671
+      }
+    ],
+    [
+      "make\\games\\boardgames\\einhorn",
+      {
+        "files": 3,
+        "words": 5400
+      }
+    ],
+    [
+      "tech\\cloud\\azure\\design",
+      {
+        "files": 7,
+        "words": 4637
+      }
+    ],
+    [
+      "tech\\scripts\\powershell",
+      {
+        "files": 4,
+        "words": 4083
+      }
+    ],
+    [
+      "tech\\tools\\office",
+      {
+        "files": 11,
+        "words": 3672
+      }
+    ],
+    [
+      "tech\\cloud\\azure\\services",
+      {
+        "files": 10,
+        "words": 3163
+      }
+    ],
+    [
+      "tech\\tools\\hack",
+      {
+        "files": 7,
+        "words": 2808
+      }
+    ],
+    [
+      "about\\website",
+      {
+        "files": 5,
+        "words": 2754
+      }
+    ],
+    [
+      "tech\\scripts\\database",
+      {
+        "files": 5,
+        "words": 2710
+      }
+    ],
+    [
+      "make\\art\\literal",
+      {
+        "files": 6,
+        "words": 2708
+      }
+    ],
+    [
+      "tech\\tools\\host",
+      {
+        "files": 8,
+        "words": 2661
+      }
+    ]
+  ],
+  "largest_files": [
+    [
+      "fun\\movies.md",
+      36886
+    ],
+    [
+      "tech\\standards\\encoding.md",
+      29219
+    ],
+    [
+      "tech\\art\\database\\spatial-data.md",
+      11971
+    ],
+    [
+      "tech\\standards\\names.md",
+      8053
+    ],
+    [
+      "tech\\standards\\codes.md",
+      7509
+    ],
+    [
+      "tech\\standards\\time.md",
+      5731
+    ],
+    [
+      "tech\\standards\\network.md",
+      4900
+    ],
+    [
+      "tech\\scripts\\os\\windows.md",
+      4821
+    ],
+    [
+      "fun\\games.md",
+      4467
+    ],
+    [
+      "about\\life\\projects.md",
+      4223
+    ]
+  ],
+  "recently_modified": [
+    [
+      "tech\\art\\text\\unscii.md",
+      331,
+      "2026-01-05 18:08:16.639553"
+    ],
+    [
+      "make\\food\\meal\\kaese-porree-suppe.md",
+      141,
+      "2026-01-05 18:08:16.630553"
+    ],
+    [
+      "make\\food\\index.md",
+      82,
+      "2026-01-05 18:08:16.629552"
+    ],
+    [
+      "fun\\watch.md",
+      2527,
+      "2026-01-05 18:08:16.627553"
+    ],
+    [
+      "fun\\news.md",
+      174,
+      "2026-01-05 18:08:16.626548"
+    ],
+    [
+      "fun\\music.md",
+      3,
+      "2026-01-05 18:08:16.625550"
+    ],
+    [
+      "fun\\movies.md",
+      36886,
+      "2026-01-05 18:08:16.624547"
+    ],
+    [
+      "fun\\games.md",
+      4467,
+      "2026-01-05 18:08:16.622553"
+    ],
+    [
+      "fun\\books.md",
+      354,
+      "2026-01-05 18:08:16.621548"
+    ],
+    [
+      "about\\website\\stats.md",
+      490,
+      "2026-01-05 18:08:16.594548"
+    ]
+  ],
+  "changes": {
+    "md_files": 1,
+    "words": 2030,
+    "total_files": 2,
+    "images": 0,
+    "image_size_mb": 0.0
+  }
+}

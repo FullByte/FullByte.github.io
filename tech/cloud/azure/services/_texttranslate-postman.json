@@ -1,0 +1,115 @@
+{
+    "info": {
+        "_postman_id": "e9ea56cc-e63d-468a-a88a-5d0a3761faab",
+        "name": "MS Translator",
+        "schema": < https: //schema.getpostman.com/json/collection/v2.1.0/collection.json>
+    },
+    "item": [{
+        "name": "Translate from EN to various",
+        "protocolProfileBehavior": {
+            "disabledSystemHeaders": {
+                "content-length": true
+            }
+        },
+        "request": {
+            "auth": {
+                "type": "apikey",
+                "apikey": [{
+                        "key": "value",
+                        "value": "",
+                        "type": "string"
+                    },
+                    {
+                        "key": "key",
+                        "value": "Ocp-Apim-Subscription-Key",
+                        "type": "string"
+                    }
+                ]
+            },
+            "method": "POST",
+            "header": [{
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                },
+                {
+                    "key": "Ocp-Apim-Subscription-Region",
+                    "value": "westeurope",
+                    "type": "text"
+                }
+            ],
+            "body": {
+                "mode": "raw",
+                "raw": "[{'Text':'Hello, what is your name?'}]",
+                "options": {
+                    "raw": {
+                        "language": "json"
+                    }
+                }
+            },
+            "url": {
+                "raw": < https: //api.cognitive.microsofttranslator.com/translate?api-version=3.0&from=en&to=de&to=ru&to=yue&to=tlh-Latn&to=ko&to=ku>,
+                    "protocol": "https",
+                "host": [
+                    "api",
+                    "cognitive",
+                    "microsofttranslator",
+                    "com"
+                ],
+                "path": [
+                    "translate"
+                ],
+                "query": [{
+                        "key": "api-version",
+                        "value": "3.0"
+                    },
+                    {
+                        "key": "from",
+                        "value": "en"
+                    },
+                    {
+                        "key": "to",
+                        "value": "de"
+                    },
+                    {
+                        "key": "to",
+                        "value": "ru"
+                    },
+                    {
+                        "key": "to",
+                        "value": "yue"
+                    },
+                    {
+                        "key": "to",
+                        "value": "tlh-Latn"
+                    },
+                    {
+                        "key": "to",
+                        "value": "ko"
+                    },
+                    {
+                        "key": "to",
+                        "value": "ku"
+                    },
+                    {
+                        "key": "to",
+                        "value": "mn-Mong"
+                    },
+                    {
+                        "key": "to",
+                        "value": "ne"
+                    },
+                    {
+                        "key": "to",
+                        "value": "th"
+                    },
+                    {
+                        "key": "to",
+                        "value": "yua"
+                    }
+                ]
+            }
+        },
+        "response": []
+    }]
+}
