@@ -39,6 +39,109 @@ tags:
 
     ![Notaus](_CNC_Notaus.webp)
 
+## QCAD
+
+### Installation 
+
+Pro Version herunterladen und auf Community Version herunterstufen. Dazu müssen ein paar DLLs gelöscht werden. Hier zu kann dieses Skript genutzt werden:
+
+```ps1
+$ErrorActionPreference = "Stop"
+
+try {
+    if (Get-Process -Name "qcad", "qcadcam" -ErrorAction SilentlyContinue) {
+        throw "Bitte QCAD zuerst schliessen und das Skript erneut starten."
+    }
+
+    $eingabe = Read-Host "QCAD-Installationsordner eingeben (Ordner mit qcad.exe)"
+    $installation = $eingabe.Trim().Trim('"')
+
+    if (-not (Test-Path -LiteralPath $installation -PathType Container)) {
+        throw "Der angegebene Ordner existiert nicht."
+    }
+
+    $installation = (Resolve-Path -LiteralPath $installation).Path
+    $plugins = Join-Path $installation "plugins"
+
+    if (-not (Test-Path -LiteralPath (Join-Path $installation "qcad.exe") -PathType Leaf)) {
+        throw "Hier wurde keine qcad.exe gefunden. Bitte den Installationsordner angeben."
+    }
+
+    if (-not (Test-Path -LiteralPath $plugins -PathType Container)) {
+        throw "Der plugins-Ordner wurde nicht gefunden."
+    }
+
+    $dateien = @(
+        "qcadcadstd.dll"
+        "qcadcavalier.dll"
+        "qcaddbg.dll"
+        "qcadmcp.dll"
+        "qcadmodern.dll"
+        "qcadpdf.dll"
+        "qcadpolygon.dll"
+        "qcadproj.dll"
+        "qcadproscripts.dll"
+        "qcadproxies.dll"
+        "qcadrhi3d.dll"
+        "qcadshp.dll"
+        "qcadspatialindexpro.dll"
+        "qcadtrace.dll"
+        "qcadvcd.dll"
+        "qcadwig.dll"
+    )
+
+    # Dateinamen entsprechend der angezeigten QCAD-Liste:
+    $dateien[-2] = "qcadvcd.dll"
+    $dateien[-1] = "qcadwvg.dll"
+
+    $vorhanden = @(
+        foreach ($datei in $dateien) {
+            $quelle = Join-Path $plugins $datei
+            if (Test-Path -LiteralPath $quelle -PathType Leaf) {
+                $quelle
+            } else {
+                Write-Host "Nicht vorhanden: $datei"
+            }
+        }
+    )
+
+    if ($vorhanden.Count -eq 0) {
+        Write-Host "Keine der aufgefuehrten Erweiterungen gefunden. Nichts geaendert."
+    } else {
+        Write-Host "`nInstallationsordner: $installation"
+        Write-Host "Zu deaktivierende Dateien:"
+        $vorhanden | ForEach-Object { Write-Host "  $_" }
+
+        $bestaetigung = Read-Host "`nDiese Dateien sichern und deaktivieren? JA eingeben"
+
+        if ($bestaetigung -ceq "JA") {
+            $sicherung = Join-Path $installation (
+                "Plugin-Sicherung-" + (Get-Date -Format "yyyyMMdd-HHmmssfff")
+            )
+            New-Item -ItemType Directory -Path $sicherung | Out-Null
+
+            foreach ($quelle in $vorhanden) {
+                Move-Item -LiteralPath $quelle -Destination $sicherung
+            }
+
+            Write-Host "`nErweiterungen deaktiviert. Du kannst QCAD jetzt starten."
+            Write-Host "Sicherung: $sicherung"
+        } else {
+            Write-Host "Abgebrochen. Nichts geaendert."
+        }
+    }
+} catch {
+    Write-Host "`nAbgebrochen: $($_.Exception.Message)" -ForegroundColor Red
+    Write-Host "Falls bereits Dateien verschoben wurden, liegen sie im Plugin-Sicherungsordner."
+}
+```
+
+### Tipps
+
+- Rotieren: Objekte markiert lassen und Modifizieren → Rotieren wählen. (Tastenkürzel: R, dann O.)
+- Verschiesben: Wird durch ausschneiden und einfügen gelöst.
+
+
 ## EstlCAM
 
 Link: <https://www.estlcam.de/>
@@ -60,7 +163,7 @@ Hinweise:
 - Immer vor dem Export mit Vorschau und 3D-Darstellung prüfen – verdeckte Bereiche kontrollieren, Kollisionen erkennen.
 - Zum Schluss "als CNC-Programm speichern"
 
-Tastenkürzel:
+### Tastenkürzel
 
 | Taste/Schaltfläche | Funktion                                     |
 |--------------------|----------------------------------------------|
@@ -75,6 +178,15 @@ Tastenkürzel:
 | **+ / −**          | Zoom in der Vorschau                         |
 | **Rechtsklick**    | Ursprung-/Nullpunkt setzen                   |
 | **Hilfe-Button**   | Kontext-Hilfe für Parameter und Pfade öffnen |
+
+### Teil Schnitt
+
+Ausschnitt benötigen die Brettdicke und Anbindungspunkte damit sich das Brett nicht bewegt wenn es freigeschnitten wurde.
+
+- "Teil" wählen und die geschlossene Außenkontur anklicken.
+- Frästiefe prüfen (z.B. 18,4 mm bei gemessenen 18,0 mm Brettdicke und geeigneter Opferplatte.)
+- Anbindungslänge und Höhe einstellen, als besprochener Ausgangspunkt 8 mm Länge und 3 mm Höhe statt "Voll".
+- "Anbinden" wählen und die gewünschten Stellen auf der Fräsbahn anklicken.
 
 ## Fräser
 
@@ -133,7 +245,8 @@ Wichtige G-Codes & HAL-Befehle
 |--------------------|----------------------------------|---------------------------------------|
 | `M6 Txx`           | Werkzeugwechsel (mit Tool-Table) | `M6 T03`                              |
 | `G28` / `G30`      | Heimkehr-Positionen              | `G28 X0 Y0`                           |
-| `M3`  | Spindel ein / Stopp     | `M3 S12000`                           |
+| `M3`               | Spindel ein / Stopp              | `M3 S12000`                           |
+| `G10 L20 P1 Z0`    | Y Null Punkt Manuell setzten     | `G10 L20 P1 Z0`                       |
 
 ## Examples
 
